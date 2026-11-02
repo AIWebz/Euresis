@@ -407,7 +407,7 @@ class Engine:
             for y in b:
                 if y == 0:
                     continue
-                ratio = sp.simplify(y / x)
+                ratio = sp.simplify(sp.powsimp(sp.powdenest(sp.simplify(y / x), force=True), force=True))
                 if not (ratio.free_symbols & set(s2)) and not (ratio.free_symbols - set()):
                     return ratio
         return None

@@ -54,6 +54,41 @@ def cmd_explore(a):
     print(f"canvas written to {out.relative_to(ROOT)}")
 
 
+def cmd_discover(a):
+    """Find laws in measured data (built-in real datasets, or your CSV)."""
+    import warnings
+    warnings.filterwarnings("ignore")
+    from .discover import DataDiscoverer, builtin, load_csv
+    from .render import export
+    from .space import ThoughtSpace
+    kb, eng, _ = _load(with_model=False)
+    space = ThoughtSpace()
+    dd = DataDiscoverer(kb, eng, space)
+    if a.csv:
+        mapping = dict(m.split(":") for m in a.map)
+        sets = [load_csv(a.csv, a.target, mapping)]
+    else:
+        sets = [d for d in builtin() if not a.dataset or d.name == a.dataset]
+    for ds in sets:
+        dd.run(ds)
+        print()
+    export()
+
+
+def cmd_connect(a):
+    """Ask Claude for new ideas at Euresis' connection points; Euresis verifies each one."""
+    from .connect import IdeaEngine
+    from .render import export
+    from .space import ThoughtSpace
+    kb, eng, model = _load()
+    ie = IdeaEngine(kb, eng, model, ThoughtSpace(), seed=a.seed)
+    summary = ie.run(n_points=a.points, ideas_per_point=a.ideas)
+    print(summary)
+    if not summary["online"]:
+        print("Claude was not reachable: set ANTHROPIC_API_KEY (or run `ant auth login`) and `pip install anthropic`.")
+    export()
+
+
 def cmd_learn(a):
     """Feed Euresis new knowledge from a text file, validate it, and retrain."""
     import shutil
@@ -155,6 +190,13 @@ def main(argv=None):
     e.set_defaults(fn=cmd_explore)
     sub.add_parser("render").set_defaults(fn=cmd_render)
     l = sub.add_parser("learn"); l.add_argument("file"); l.set_defaults(fn=cmd_learn)
+    d = sub.add_parser("discover"); d.add_argument("--dataset", default="")
+    d.add_argument("--csv", default=""); d.add_argument("--target", default="")
+    d.add_argument("--map", nargs="*", default=[], help="column:quantity_id pairs")
+    d.set_defaults(fn=cmd_discover)
+    c = sub.add_parser("connect"); c.add_argument("--points", type=int, default=6)
+    c.add_argument("--ideas", type=int, default=3); c.add_argument("--seed", type=int, default=0)
+    c.set_defaults(fn=cmd_connect)
     b = sub.add_parser("benchmark"); b.add_argument("--cycles", type=int, default=3); b.set_defaults(fn=cmd_benchmark)
     s = sub.add_parser("solve"); s.add_argument("formula"); s.add_argument("target", nargs="?", default="")
     s.add_argument("values", nargs="*"); s.set_defaults(fn=cmd_solve)

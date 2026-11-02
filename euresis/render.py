@@ -85,12 +85,15 @@ def layout(thoughts: dict[str, dict]) -> dict[str, tuple[float, float]]:
         r = math.hypot(x, y) or 1.0
         push = {"analogy": 1.12, "hypothesis": 1.28, "scale": 1.0, "derivation": 1.3,
                 "rederivation": 1.18, "dimensional": 1.33, "prediction": 1.45, "question": 1.4,
-                "insight": 1.0}.get(t["kind"], 1.25)
+                "insight": 1.0, "data_discovery": 1.15, "idea": 1.35}.get(t["kind"], 1.25)
         tx, ty = x * push, y * push
         if t["kind"] == "scale":
             tx, ty = x * 0.6 + 900 * math.cos(len(pos)), y * 0.6 + 900 * math.sin(len(pos))
         if t["kind"] == "insight":
             tx, ty = x * 0.5, y * 0.5 - 400
+        if t["kind"] == "data":
+            k = sum(1 for v in thoughts.values() if v["kind"] == "data" and v["t"] < t["t"])
+            tx, ty = -5200 + 700 * k, 5600
         pos[t["id"]] = grid.place(tx, ty)
     return pos
 

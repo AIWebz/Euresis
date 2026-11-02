@@ -69,3 +69,28 @@ def test_equivalence_up_to_constant():
     a = KB.by_name("Escape velocity")
     b = KB.by_name("Circular orbital velocity")
     assert E.equivalent(b, a) in (sp.sqrt(2), 1 / sp.sqrt(2))
+
+
+def test_data_discovery_recovers_kepler_and_reduced_mass():
+    import warnings
+    warnings.filterwarnings("ignore")
+    from euresis.discover import DataDiscoverer, builtin
+    dd = DataDiscoverer(KB, E, log=lambda *a: None)
+    sets = {d.name: d for d in builtin()}
+    k = dd.run(sets["orbits"])
+    assert k["known"] == "Kepler's third law"
+    b = dd.run(sets["balmer"])
+    assert any("m_e/m_p" in line for line in b["lines"])
+
+
+def test_idea_verifier_accepts_consistent_and_rejects_inconsistent():
+    from euresis.connect import IdeaEngine
+    ie = IdeaEngine(KB, E, None, None, log=lambda *a: None)
+    good = {"title": "t", "equation": "v = sqrt(2*G*M/r)", "builds_on": ["Escape velocity"],
+            "variables": [{"symbol": "v", "quantity_id": "escape_velocity", "new_quantity_dimension": ""},
+                          {"symbol": "M", "quantity_id": "mass", "new_quantity_dimension": ""},
+                          {"symbol": "r", "quantity_id": "radius", "new_quantity_dimension": ""}]}
+    r = ie.verify(good)
+    assert r["ok"] and r.get("known") == "Escape velocity"
+    bad = dict(good, equation="v = G*M/r")
+    assert not ie.verify(bad)["ok"]

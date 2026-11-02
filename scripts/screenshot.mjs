@@ -34,4 +34,6 @@ await shot("05-verified-prediction.png", focus, { q: "Earth: escape speed", k: "
 await shot("06-mechanics-up-close.png", focus, { q: "Mechanics", k: "domain", z: 0.9, dx: 150, dy: 120 });
 await shot("07-frontier-problems.png", focus, { q: "Quantum gravity", k: "frontier", z: 0.16, sel: true, dx: 600 });
 await shot("08-hierarchy-insight.png", focus, { q: "Gravity is", k: "insight", z: 0.5, sel: true, dx: 250 });
+await shot("09-data-discovery-hydrogen.png", focus, { q: "From data: Hydrogen", k: "data_discovery", z: 0.5, sel: true, dx: 250 });
+await shot("10-data-discovery-kepler.png", focus, { q: "From data: Kepler", k: "data_discovery", z: 0.5, sel: true, dx: 250 });
 await browser.close();

@@ -45,6 +45,8 @@ def ask(question: str, context: str) -> str | None:
             msg = stream.get_final_message()
     except anthropic.AuthenticationError:
         return None
+    except TypeError:   # no credentials configured
+        return None
     except anthropic.APIConnectionError:
         return None
     except anthropic.APIStatusError as e:

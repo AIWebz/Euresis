@@ -91,6 +91,45 @@ law*, *same form as a known law but a different coefficient*, or *new to Euresis
 (dimensionally consistent)*. A "new" result is a **hypothesis**. It is dimensionally
 sound and logically derived, but it has not been tested by experiment.
 
+## Discovering laws in data
+
+`python -m euresis discover` looks for laws in real measurements. Euresis then checks each one
+against unit analysis and against what it already knows:
+
+* **Orbits** (8 planets, 4 Galilean moons, the Moon, GPS and geostationary orbits; NASA data).
+  Fitting the data alone gives T ∝ a^1.4989 · M^−0.4992. Unit analysis requires 3/2 and −1/2, so
+  the two agree. The prefactor is 6.2755 ≈ 2π, which recovers Kepler's third law.
+* **Hydrogen Balmer lines** (6 wavelengths, NIST). The data give 1/λ = R(1/2² − 1/n²). The fitted R
+  is 0.055% below the Rydberg constant, and Euresis explains the gap as 1/(1 + m_e/m_p). That is the
+  reduced-mass correction: the electron orbits the centre of mass, not the nucleus itself.
+* **Atmosphere** (U.S. Standard Atmosphere 1976). An exponential fits with a scale height of 6.7 km.
+  Combined with H = RT/(Mg), this implies a mean air temperature of 229 K. The fit is only accurate
+  to about 5%, because the real atmosphere is not one temperature.
+
+You can analyse your own data:
+
+```bash
+python -m euresis discover --csv mydata.csv --target y --map x:length y:period
+```
+
+## Idea engine (Claude proposes, Euresis verifies)
+
+`python -m euresis connect` finds *connection points*: laws from distant fields that share a
+quantity. For each one, it gives Claude the surrounding knowledge and asks for new ideas that
+connect the pieces. Each idea must come back with an equation, the meaning of every symbol, the
+laws it builds on, a prediction and a test. Euresis then checks every idea itself:
+
+* Does the equation parse?
+* Is it dimensionally consistent?
+* Is it already a known law?
+* Do the laws it cites exist?
+
+Each idea is recorded as verified, already known, or rejected. Passing these checks means an idea
+is well-formed, not that it is true. Each one still needs the experimental test it was proposed with.
+
+This needs the `anthropic` package and credentials (`ANTHROPIC_API_KEY`, or `ant auth login`).
+Without them, the connection points are still recorded as open questions.
+
 ## The trained model
 
 `euresis/model.py` trains two components from scratch in pure NumPy:

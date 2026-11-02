@@ -28,6 +28,9 @@ KINDS = {
     "question": "Open question",
     "frontier": "Frontier problem",
     "insight": "Insight",
+    "data": "Measured dataset",
+    "data_discovery": "Law found in data",
+    "idea": "Idea (Claude-proposed, Euresis-verified)",
 }
 
 
