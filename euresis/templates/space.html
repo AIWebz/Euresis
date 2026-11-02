@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Euresis Thought Space</title>
+<style>
+  :root {
+    --bg: #05070d; --panel: rgba(12, 16, 28, .86); --line: rgba(140, 160, 210, .18);
+    --text: #e6ebf5; --muted: #8b95ad; --accent: #7cc4ff;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; background: var(--bg); color: var(--text); overflow: hidden;
+    font: 13px/1.45 ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  canvas { display: block; position: fixed; inset: 0; cursor: grab; }
+  canvas.drag { cursor: grabbing; }
+  .hud { position: fixed; background: var(--panel); border: 1px solid var(--line); border-radius: 12px;
+    backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); }
+  #top { top: 14px; left: 14px; padding: 12px 14px; max-width: min(560px, calc(100vw - 28px)); }
+  #top h1 { margin: 0; font-size: 15px; letter-spacing: .28em; font-weight: 700; }
+  #top h1 span { color: var(--accent); }
+  #top .sub { color: var(--muted); font-size: 12px; margin-top: 2px; }
+  #stats { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+  .chip { display: inline-flex; align-items: center; gap: 6px; padding: 3px 8px; border-radius: 999px;
+    border: 1px solid var(--line); font-size: 11.5px; cursor: pointer; user-select: none; white-space: nowrap; }
+  .chip i { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
+  .chip.off { opacity: .35; }
+  #search { margin-top: 10px; width: 100%; background: rgba(255,255,255,.04); border: 1px solid var(--line);
+    color: var(--text); border-radius: 8px; padding: 7px 10px; font: inherit; outline: none; }
+  #panel { top: 14px; right: 14px; width: min(380px, calc(100vw - 28px)); max-height: calc(100vh - 210px);
+    overflow: auto; padding: 14px 16px; display: none; }
+  #panel .kind { font-size: 11px; letter-spacing: .12em; text-transform: uppercase; }
+  #panel h2 { font-size: 16px; margin: 4px 0 8px; line-height: 1.3; }
+  #panel .formula { font: 13px/1.5 ui-monospace, "SF Mono", Menlo, Consolas, monospace; background: rgba(124,196,255,.07);
+    border: 1px solid rgba(124,196,255,.2); padding: 8px 10px; border-radius: 8px; word-break: break-word; }
+  #panel .status { color: var(--muted); font-size: 12px; margin: 8px 0; }
+  #panel h3 { font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin: 14px 0 6px; }
+  #panel a { color: var(--text); text-decoration: none; display: block; padding: 4px 0; border-bottom: 1px dashed var(--line); cursor: pointer; }
+  #panel a:hover { color: var(--accent); }
+  #mini { right: 14px; bottom: 14px; width: 190px; height: 190px; padding: 0; overflow: hidden; }
+  #bench { left: 14px; bottom: 14px; padding: 10px 12px; max-width: min(420px, calc(100vw - 230px)); font-size: 12px; display: none; }
+  #bench b { color: var(--accent); }
+  #bench .row { display: flex; gap: 6px; color: var(--muted); }
+  #bench .row.ok { color: var(--text); }
+  #help { position: fixed; bottom: 14px; left: 50%; transform: translateX(-50%); color: var(--muted); font-size: 11px; pointer-events: none; }
+  @media (max-width: 640px) { #mini { display: none; } #bench { max-width: calc(100vw - 28px); } #help { display: none; } }
+</style>
+</head>
+<body>
+<canvas id="cv"></canvas>
+<div id="top" class="hud">
+  <h1>EURESIS <span>·</span> THOUGHT SPACE</h1>
+  <div class="sub" id="sub"></div>
+  <div id="stats"></div>
+  <input id="search" placeholder="Search thoughts — e.g. Planck, escape, analogy…" autocomplete="off">
+</div>
+<div id="panel" class="hud"></div>
+<div id="bench" class="hud"></div>
+<canvas id="mini" class="hud"></canvas>
+<div id="help">drag to pan · scroll to zoom · click a thought to trace its reasoning</div>
+<script>
+const DATA = /*__DATA__*/null;
+const COLORS = {
+  domain: "#ffffff", constant: "#ffd166", law: "#4ea8de", principle: "#80ffdb",
+  analogy: "#c77dff", hypothesis: "#ff7eb6", derivation: "#72efdd", rederivation: "#5e81ac",
+  dimensional: "#f4a261", scale: "#ffe066", prediction: "#9ef01a", question: "#ff9f1c",
+  frontier: "#ef476f", insight: "#f8f9fa"
+};
+const RADIUS = { domain: 30, frontier: 20, insight: 15, scale: 12, prediction: 12, analogy: 11,
+  hypothesis: 10, derivation: 8, dimensional: 8, question: 10, rederivation: 7, law: 7, principle: 7, constant: 8 };
+const nodes = DATA.nodes, byId = new Map(nodes.map(n => [n.id, n]));
+const children = new Map();
+for (const n of nodes) for (const p of n.p) { if (!children.has(p)) children.set(p, []); children.get(p).push(n.id); }
+const hidden = new Set();
+let sel = null, hover = null;
+const cv = document.getElementById("cv"), ctx = cv.getContext("2d");
+const mini = document.getElementById("mini"), mctx = mini.getContext("2d");
+let W = 0, H = 0, DPR = 1;
+const cam = { x: 0, y: 0, z: 0.07 };
+const bounds = nodes.reduce((b, n) => ({ x0: Math.min(b.x0, n.x), x1: Math.max(b.x1, n.x), y0: Math.min(b.y0, n.y), y1: Math.max(b.y1, n.y) }),
+  { x0: Infinity, x1: -Infinity, y0: Infinity, y1: -Infinity });
+
+function resize() {
+  DPR = window.devicePixelRatio || 1; W = innerWidth; H = innerHeight;
+  cv.width = W * DPR; cv.height = H * DPR; cv.style.width = W + "px"; cv.style.height = H + "px";
+  mini.width = 190 * DPR; mini.height = 190 * DPR; draw();
+}
+const sx = x => (x - cam.x) * cam.z + W / 2, sy = y => (y - cam.y) * cam.z + H / 2;
+const wx = X => (X - W / 2) / cam.z + cam.x, wy = Y => (Y - H / 2) / cam.z + cam.y;
+
+function grid() {
+  // infinite multi-scale grid of points
+  for (const step of [100, 1000, 10000]) {
+    const px = step * cam.z; if (px < 14) continue;
+    const a = Math.min(.5, (px - 14) / 120) * (step === 100 ? .5 : 1);
+    ctx.fillStyle = `rgba(120,140,200,${a * .5})`;
+    const x0 = Math.floor(wx(0) / step) * step, y0 = Math.floor(wy(0) / step) * step;
+    for (let x = x0; x < wx(W) + step; x += step)
+      for (let y = y0; y < wy(H) + step; y += step) ctx.fillRect(sx(x) - .8, sy(y) - .8, 1.6, 1.6);
+  }
+}
+function wrap(text, max) {
+  const words = text.split(/\s+/), lines = []; let cur = "";
+  for (const w of words) { const t = cur ? cur + " " + w : w; if (ctx.measureText(t).width > max && cur) { lines.push(cur); cur = w; } else cur = t; }
+  if (cur) lines.push(cur); return lines;
+}
+function visible(n) { return !hidden.has(n.k); }
+function related(id) {
+  const s = new Set([id]); const up = [id];
+  while (up.length) { const c = up.pop(); for (const p of (byId.get(c)?.p || [])) if (!s.has(p)) { s.add(p); if (byId.get(p).k !== "domain") up.push(p); } }
+  for (const c of children.get(id) || []) s.add(c); return s;
+}
+let relSet = null;
+function draw() {
+  ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
+  ctx.fillStyle = "#05070d"; ctx.fillRect(0, 0, W, H);
+  const g = ctx.createRadialGradient(sx(0), sy(0), 0, sx(0), sy(0), 9000 * cam.z);
+  g.addColorStop(0, "rgba(60,80,160,.16)"); g.addColorStop(1, "rgba(5,7,13,0)");
+  ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
+  grid();
+  const z = cam.z, pad = 300;
+  const inView = n => { const X = sx(n.x), Y = sy(n.y); return X > -pad && X < W + pad && Y > -pad && Y < H + pad; };
+  // edges
+  ctx.lineWidth = 1;
+  for (const n of nodes) {
+    if (!visible(n)) continue;
+    for (const pid of n.p) {
+      const p = byId.get(pid); if (!p || !visible(p)) continue;
+      if (!inView(n) && !inView(p)) continue;
+      const hot = relSet && relSet.has(n.id) && relSet.has(pid);
+      const base = n.k === "law" || n.k === "principle" ? .05 : .16;
+      ctx.strokeStyle = hot ? COLORS[n.k] : hexA(COLORS[n.k], relSet ? base * .4 : base);
+      ctx.lineWidth = hot ? 2 : 1;
+      const x1 = sx(p.x), y1 = sy(p.y), x2 = sx(n.x), y2 = sy(n.y);
+      const mx = (x1 + x2) / 2 - (y2 - y1) * .12, my = (y1 + y2) / 2 + (x2 - x1) * .12;
+      ctx.beginPath(); ctx.moveTo(x1, y1); ctx.quadraticCurveTo(mx, my, x2, y2); ctx.stroke();
+    }
+  }
+  // nodes
+  const order = [...nodes].sort((a, b) => (RADIUS[a.k] || 6) - (RADIUS[b.k] || 6));
+  for (const n of order) {
+    if (!visible(n) || !inView(n)) continue;
+    const X = sx(n.x), Y = sy(n.y);
+    const r = Math.max(1.6, (RADIUS[n.k] || 6) * Math.min(1.6, Math.max(.35, z * 2.2)));
+    const dim = relSet && !relSet.has(n.id);
+    const col = COLORS[n.k] || "#aaa";
+    if (!dim && z > .05 && ["scale", "prediction", "frontier", "insight", "analogy", "hypothesis"].includes(n.k)) {
+      const gl = ctx.createRadialGradient(X, Y, 0, X, Y, r * 3.2);
+      gl.addColorStop(0, hexA(col, .35)); gl.addColorStop(1, hexA(col, 0));
+      ctx.fillStyle = gl; ctx.beginPath(); ctx.arc(X, Y, r * 3.2, 0, 7); ctx.fill();
+    }
+    ctx.fillStyle = hexA(col, dim ? .18 : 1);
+    ctx.beginPath();
+    if (n.k === "domain") { ctx.arc(X, Y, r, 0, 7); ctx.fill(); ctx.strokeStyle = hexA(col, .4); ctx.lineWidth = 2; ctx.beginPath(); ctx.arc(X, Y, r + 6, 0, 7); ctx.stroke(); }
+    else if (n.k === "frontier" || n.k === "question") { ctx.moveTo(X, Y - r); ctx.lineTo(X + r, Y); ctx.lineTo(X, Y + r); ctx.lineTo(X - r, Y); ctx.closePath(); ctx.fill(); }
+    else if (n.k === "scale" || n.k === "insight") { star(X, Y, r * 1.25); ctx.fill(); }
+    else { ctx.arc(X, Y, r, 0, 7); ctx.fill(); }
+    if (n === sel || n === hover) { ctx.strokeStyle = "#fff"; ctx.lineWidth = 2; ctx.beginPath(); ctx.arc(X, Y, r + 5, 0, 7); ctx.stroke(); }
+    // labels — level of detail by zoom
+    if (dim) continue;
+    if (n.k === "domain") {
+      ctx.fillStyle = "#fff"; ctx.font = `700 ${Math.max(12, Math.min(26, 260 * z))}px system-ui, sans-serif`;
+      ctx.textAlign = "center"; ctx.fillText(n.ti.toUpperCase(), X, Y - r - 12);
+      continue;
+    }
+    const big = ["frontier", "scale", "insight", "prediction"].includes(n.k);
+    if (z > .32 || (big && z > .09) || n === sel || n === hover) {
+      ctx.textAlign = "left"; ctx.fillStyle = hexA("#e6ebf5", .95);
+      ctx.font = `600 ${big ? 12.5 : 11.5}px system-ui, sans-serif`;
+      const lines = wrap(n.ti, big ? 230 : 190).slice(0, 2);
+      lines.forEach((l, i) => ctx.fillText(l, X + r + 6, Y + 4 + i * 14));
+      if ((z > .75 || n === sel) && n.f && n.f !== n.ti) {
+        ctx.font = "11px ui-monospace, Menlo, monospace"; ctx.fillStyle = hexA(col, .95);
+        wrap(n.f, 260).slice(0, 2).forEach((l, i) => ctx.fillText(l, X + r + 6, Y + 6 + lines.length * 14 + i * 13));
+      }
+      if (z > 1.6 && n.s) {
+        ctx.font = "10px system-ui, sans-serif"; ctx.fillStyle = "#8b95ad";
+        ctx.fillText(n.s, X + r + 6, Y + 8 + lines.length * 14 + (n.f ? 26 : 0));
+      }
+    }
+  }
+  drawMini();
+}
+function star(x, y, r) { ctx.beginPath(); for (let i = 0; i < 10; i++) { const a = i * Math.PI / 5 - Math.PI / 2, rr = i % 2 ? r * .45 : r; ctx.lineTo(x + rr * Math.cos(a), y + rr * Math.sin(a)); } ctx.closePath(); }
+function hexA(h, a) { const n = parseInt(h.slice(1), 16); return `rgba(${n >> 16},${(n >> 8) & 255},${n & 255},${a})`; }
+function drawMini() {
+  mctx.setTransform(DPR, 0, 0, DPR, 0, 0); mctx.clearRect(0, 0, 190, 190);
+  const s = 170 / Math.max(bounds.x1 - bounds.x0, bounds.y1 - bounds.y0);
+  const ox = 95 - (bounds.x0 + bounds.x1) / 2 * s, oy = 95 - (bounds.y0 + bounds.y1) / 2 * s;
+  for (const n of nodes) { if (!visible(n)) continue; mctx.fillStyle = hexA(COLORS[n.k], .8); mctx.fillRect(n.x * s + ox, n.y * s + oy, n.k === "domain" ? 3 : 1.4, n.k === "domain" ? 3 : 1.4); }
+  mctx.strokeStyle = "#7cc4ff"; mctx.lineWidth = 1;
+  mctx.strokeRect(wx(0) * s + ox, wy(0) * s + oy, (W / cam.z) * s, (H / cam.z) * s);
+  mini._t = { s, ox, oy };
+}
+// ---------------------------------------------------------------- UI
+const KIND_ORDER = ["domain", "law", "principle", "constant", "analogy", "hypothesis", "derivation", "rederivation", "dimensional", "scale", "prediction", "question", "insight", "frontier"];
+function buildHud() {
+  const counts = {}; for (const n of nodes) counts[n.k] = (counts[n.k] || 0) + 1;
+  const links = nodes.reduce((a, n) => a + n.p.length, 0);
+  const cycles = Math.max(...nodes.map(n => n.c));
+  document.getElementById("sub").textContent = `${nodes.length} thoughts · ${links} links · ${cycles} exploration cycles · unbounded canvas`;
+  const st = document.getElementById("stats");
+  for (const k of KIND_ORDER) if (counts[k]) {
+    const c = document.createElement("span"); c.className = "chip"; c.title = DATA.kinds[k] || k;
+    c.innerHTML = `<i style="background:${COLORS[k]}"></i>${DATA.kinds[k] || k} <b>${counts[k]}</b>`;
+    c.onclick = () => { hidden.has(k) ? hidden.delete(k) : hidden.add(k); c.classList.toggle("off"); draw(); };
+    st.appendChild(c);
+  }
+  if (DATA.bench) {
+    const b = DATA.bench, el = document.getElementById("bench"); el.style.display = "block";
+    el.innerHTML = `<div><b>Rediscovery test</b> — ${b.found}/${b.held_out} hidden laws rediscovered (${b.exact} exact)</div>` +
+      b.laws.map(l => `<div class="row ${l.found ? "ok" : ""}">${l.found ? "✔" : "✘"} ${l.law}${l.found ? ` <span style="color:#8b95ad">· ${l.method}${l.exact ? "" : " · ×" + l.factor}</span>` : ""}</div>`).join("");
+  }
+}
+function esc(s) { return String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c])); }
+function select(id, fly = true) {
+  sel = id ? byId.get(id) : null; relSet = sel ? related(sel.id) : null;
+  const p = document.getElementById("panel");
+  if (!sel) { p.style.display = "none"; draw(); return; }
+  const link = i => { const n = byId.get(i); return n ? `<a data-id="${n.id}"><span style="color:${COLORS[n.k]}">●</span> ${esc(n.ti)}</a>` : ""; };
+  p.innerHTML = `<div class="kind" style="color:${COLORS[sel.k]}">${esc(DATA.kinds[sel.k] || sel.k)}${sel.c ? " · cycle " + sel.c : ""}</div>
+    <h2>${esc(sel.ti)}</h2>${sel.f && sel.f !== sel.ti ? `<div class="formula">${esc(sel.f)}</div>` : ""}
+    ${sel.s ? `<div class="status">${esc(sel.s)}</div>` : ""}<div>${esc(sel.b || "")}</div>
+    ${sel.p.length ? `<h3>Built from</h3>${sel.p.map(link).join("")}` : ""}
+    ${(children.get(sel.id) || []).length ? `<h3>Led to</h3>${children.get(sel.id).slice(0, 40).map(link).join("")}` : ""}`;
+  p.style.display = "block";
+  p.querySelectorAll("a").forEach(a => a.onclick = () => select(a.dataset.id));
+  if (fly) flyTo(sel.x, sel.y, Math.max(cam.z, .9)); else draw();
+}
+let anim = null;
+function flyTo(x, y, z, ms = 600) {
+  const s = { ...cam }, t0 = performance.now(); cancelAnimationFrame(anim);
+  const step = t => { const k = Math.min(1, (t - t0) / ms), e = k < .5 ? 2 * k * k : 1 - Math.pow(-2 * k + 2, 2) / 2;
+    cam.x = s.x + (x - s.x) * e; cam.y = s.y + (y - s.y) * e; cam.z = Math.exp(Math.log(s.z) + (Math.log(z) - Math.log(s.z)) * e);
+    draw(); if (k < 1) anim = requestAnimationFrame(step); };
+  if (ms === 0) { cam.x = x; cam.y = y; cam.z = z; draw(); } else anim = requestAnimationFrame(step);
+}
+function pick(X, Y) {
+  let best = null, bd = 18 * 18;
+  for (const n of nodes) { if (!visible(n)) continue; const dx = sx(n.x) - X, dy = sy(n.y) - Y, d = dx * dx + dy * dy; if (d < bd) { bd = d; best = n; } }
+  return best;
+}
+let drag = null, moved = false;
+cv.addEventListener("pointerdown", e => { drag = { x: e.clientX, y: e.clientY, cx: cam.x, cy: cam.y }; moved = false; cv.classList.add("drag"); cv.setPointerCapture(e.pointerId); });
+cv.addEventListener("pointermove", e => {
+  if (drag) { const dx = e.clientX - drag.x, dy = e.clientY - drag.y; if (Math.abs(dx) + Math.abs(dy) > 3) moved = true; cam.x = drag.cx - dx / cam.z; cam.y = drag.cy - dy / cam.z; draw(); }
+  else { const h = pick(e.clientX, e.clientY); if (h !== hover) { hover = h; draw(); } }
+});
+cv.addEventListener("pointerup", e => { cv.classList.remove("drag"); if (!moved) { const n = pick(e.clientX, e.clientY); select(n ? n.id : null, false); } drag = null; });
+cv.addEventListener("wheel", e => { e.preventDefault(); const f = Math.exp(-e.deltaY * .0015), X = wx(e.clientX), Y = wy(e.clientY);
+  cam.z = Math.min(8, Math.max(.01, cam.z * f)); cam.x = X - (e.clientX - W / 2) / cam.z; cam.y = Y - (e.clientY - H / 2) / cam.z; draw(); }, { passive: false });
+mini.addEventListener("click", e => { const r = mini.getBoundingClientRect(), t = mini._t; flyTo((e.clientX - r.left - t.ox) / t.s, (e.clientY - r.top - t.oy) / t.s, cam.z); });
+document.getElementById("search").addEventListener("keydown", e => {
+  if (e.key !== "Enter") return; const q = e.target.value.toLowerCase().trim(); if (!q) return;
+  const hits = nodes.filter(n => (n.ti + " " + n.f + " " + n.b).toLowerCase().includes(q));
+  hits.sort((a, b) => (RADIUS[b.k] || 0) - (RADIUS[a.k] || 0)); if (hits[0]) select(hits[0].id);
+});
+addEventListener("resize", resize);
+window.EURESIS = { cam, flyTo, select, nodes, find: q => nodes.filter(n => (n.ti + " " + n.f).toLowerCase().includes(q.toLowerCase())),
+  hideHud: () => document.querySelectorAll(".hud,#help").forEach(e => e.style.display = "none") };
+buildHud();
+const hp = new URLSearchParams(location.hash.slice(1));
+if (hp.has("z")) { cam.x = +hp.get("x") || 0; cam.y = +hp.get("y") || 0; cam.z = +hp.get("z"); }
+else { cam.z = Math.min(innerWidth / (bounds.x1 - bounds.x0 + 1200), innerHeight / (bounds.y1 - bounds.y0 + 1200)); cam.x = (bounds.x0 + bounds.x1) / 2; cam.y = (bounds.y0 + bounds.y1) / 2; }
+resize();
+if (hp.has("sel")) select(hp.get("sel"), false);
+</script>
+</body>
+</html>
