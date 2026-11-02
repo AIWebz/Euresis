@@ -202,6 +202,11 @@ class Engine:
                     eq = sp.Eq(target, sp.simplify(sols[0]))
                     if not self.check_dims(eq):
                         continue
+                    # drop variables that cancelled out during simplification
+                    s2q = {x: q for x, q in s2q.items() if x in eq.free_symbols}
+                    consts = {x for x in consts if x in eq.free_symbols}
+                    if len(s2q) < 2:
+                        continue
                     note = f"eliminated {self.kb.qname(elim)}"
                     if ident:
                         note += "; identified " + ", ".join(

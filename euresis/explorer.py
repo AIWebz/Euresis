@@ -95,6 +95,7 @@ class Explorer:
         self._tried: set = set()
         self._composed_from: set = set()
         self.candidates: list[dict] = []      # ranked candidate discoveries
+        self._cand_index: dict = {}
         self.directive_id = None
 
     # ---------------------------------------------------------------- helpers
@@ -137,6 +138,10 @@ class Explorer:
 
     def _record(self, rel: Relation, kind_new="derivation", extra_parents=()):
         """Verify a relation against known science and store it."""
+        rel.sym_to_q = {x: q for x, q in rel.sym_to_q.items() if x in rel.eq.free_symbols}
+        rel.constants = {x for x in rel.constants if x in rel.eq.free_symbols}
+        if len(rel.sym_to_q) < 2:
+            return None
         key = self._key(rel)
         if key in self.seen:
             return None
@@ -163,11 +168,23 @@ class Explorer:
         else:
             kind = kind_new
             doms_all = {self.kb.by_name(n).domain for n in set(rel.sources) if self.kb.by_name(n)}
-            depth = len(rel.sources)
-            novelty = (score + 0.35 * min(3, max(0, len(doms_all) - 1))
-                       + 0.1 * min(4, max(0, depth - 2)))
+            depth = len(dict.fromkeys(rel.sources))
+            cx = int(sp.count_ops(rel.eq.rhs)) + int(sp.count_ops(rel.eq.lhs))
+            # near-duplicate of an earlier candidate (same law up to a constant)?
+            fam = rel.families
+            dup = next((c for c in self._cand_index.get(fam, [])
+                        if self.E.equivalent(rel, c["relation"]) is not None), None)
+            if dup is not None:
+                return None
+            # novelty: plausible, simple, short chains that genuinely connect fields
+            novelty = (plaus + 0.3 * min(2, max(0, len(doms_all) - 1))
+                       - 0.05 * max(0, cx - 6) - 0.12 * max(0, depth - 3)
+                       + 0.15 / max(1, len(quantities) - 1))
             score = novelty
             result["score"] = score
+            result["complexity"] = cx
+            result["depth"] = depth
+            self._cand_index.setdefault(fam, []).append(result)
             if len(doms_all) >= 2:
                 status = (f"candidate discovery · bridges {', '.join(sorted(d.replace('_', ' ') for d in doms_all))}"
                           " · not in knowledge base · untested")
@@ -181,7 +198,8 @@ class Explorer:
                         parents=[p for p in parents if p], status=status, score=score,
                         method=rel.method, key=f"{kind}|{key}")
         result["id"] = tid
-        if kind != "rederivation" and not known:
+        if kind != "rederivation" and not known and result.get("complexity", 0) <= 12 \
+                and result.get("depth", 0) <= 5 and len(quantities) <= 4:
             self.relations.append((rel, tid))
             self._link_frontier(tid, quantities, consts)
         self._predict(rel, tid)
