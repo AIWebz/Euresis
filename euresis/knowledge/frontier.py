@@ -26,8 +26,10 @@ information | P vs NP: limits of efficient computation | q:information q:energy 
 
 
 def load():
+    from ..kb import user_knowledge
+    from .formulas_ext import FRONTIER_EXT
     out = []
-    for line in FRONTIER.strip().splitlines():
+    for line in FRONTIER.strip().splitlines() + FRONTIER_EXT.strip().splitlines() + user_knowledge()["frontier"]:
         dom, prob, tags = (p.strip() for p in line.split("|"))
         out.append((dom, prob, tags.split()))
     return out

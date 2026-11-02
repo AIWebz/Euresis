@@ -19,14 +19,46 @@ which you can explore as an infinite canvas.
 
 | | |
 |---|---|
-| Formulas | **185** core laws across 23 fields: mechanics, gravitation, waves, optics, thermodynamics, statistical mechanics, electromagnetism, circuits, fluids, materials, relativity, quantum, atomic, nuclear, astrophysics, chemistry, biology, earth science, information theory |
-| Principles | **60** foundational statements: Newton's laws, conservation laws, the laws of thermodynamics, Maxwell's equations, the Schrödinger equation, Noether's theorem, evolution, the central dogma, plate tectonics, Big Bang cosmology, the scientific method… |
-| Constants | **31** fundamental constants (CODATA 2018, with the exact SI-defined values marked as exact) |
-| Quantities | **218** physical quantities, each with its SI dimension |
-| Frontier | **18** open problems (quantum gravity, dark matter, the hierarchy problem, origin of life, P vs NP…) for exploration to aim at |
+| Formulas | **391** laws across 24 fields: geometry, mechanics, gravitation, waves, optics, thermodynamics, statistical mechanics, electromagnetism, circuits, fluids, materials, relativity, quantum, atomic, nuclear, astrophysics & cosmology, chemistry, biology (genetics, ecology, physiology, neuroscience, epidemiology), earth & climate science, information theory |
+| Principles | **128** foundational statements: Newton's laws, conservation laws, the laws of thermodynamics, Maxwell's equations, the Schrödinger equation, Noether's theorem, evolution, the central dogma, plate tectonics, Big Bang cosmology, the scientific method… |
+| Constants | **47** fundamental and astronomical constants (CODATA 2018, with the exact SI-defined values marked as exact) |
+| Quantities | **372** physical quantities, each with its SI dimension |
+| Frontier | **30** open problems (quantum gravity, dark matter, the Hubble tension, turbulence, origin of life, P vs NP…) for exploration to aim at |
 
 Every formula is parsed with SymPy and **checked for dimensional consistency when
 it loads**. A formula with mismatched units is rejected.
+
+## Directive
+
+Euresis explores under a standing goal, which is stored as the first thought in its Thought Space:
+
+> Discover relations that are not yet part of established knowledge. Build on the laws you were
+> given and on your own verified results; prefer bridges between different fields; check every
+> candidate for dimensional consistency and against measurements; never present an untested
+> candidate as established fact.
+
+In practice this means:
+
+* Results that turn out to be known laws are recorded, but they are not built on further.
+* Results that are not in the knowledge base are ranked by novelty. The score rewards bridging
+  several fields, depth of the derivation chain, and the trained model's plausibility estimate.
+  The top results feed the next cycle.
+* After each run, the highest-ranked candidates are written to `space/discoveries.md`, each with
+  its full derivation chain.
+
+## Feeding it more knowledge
+
+Put new knowledge in a text file, one item per line, then run `python -m euresis learn myfile.txt`.
+Euresis validates every formula (malformed or dimensionally inconsistent lines are rejected and
+listed), stores the file in `euresis/knowledge/user/`, and retrains its model.
+
+```
+formula   | chemistry | Arrhenius equation | k = A*exp(-Ea/(R*T)) | k:rate_constant A:pre_exponential Ea:activation_energy T:temperature
+principle | biology   | Cell theory | All living things are made of cells.
+quantity  | magnetic_susceptibility | magnetic susceptibility | 1
+constant  | G_F | Fermi coupling constant | 4.5437957e-14 | J^-2 | M-2 L-4 T4
+frontier  | physics   | Nature of dark energy | q:energy_density c:G
+```
 
 ## How it builds on what we know
 

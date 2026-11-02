@@ -44,22 +44,32 @@ def cmd_explore(a):
     if a.fresh and path.exists():
         path.unlink()
     space = ThoughtSpace(path)
-    first = not space.thoughts
+    start = 1 + max((t["cycle"] for t in space.thoughts.values()), default=0)
     ex = Explorer(kb, eng, model, space, seed=a.seed)
-    if not first:   # continue building on an existing space
-        ex.seed()
-        from .engine import Relation  # noqa: F401
-        ex.cycle = max(t["cycle"] for t in space.thoughts.values())
-        start = ex.cycle + 1
-        for c in range(start, start + a.cycles):
-            ex.cycle = c
-            print(f"cycle {c}")
-            ex.explore_compositions()
-    else:
-        ex.run(cycles=a.cycles)
+    ex.run(cycles=a.cycles, start=start)   # re-seeding is idempotent: existing thoughts are reused
+    rows = ex.report(SPACE_DIR / "discoveries.md")
     print("thought space:", space.stats())
+    print(f"{len(ex.candidates)} candidate discoveries; top {len(rows)} written to space/discoveries.md")
     out = export()
     print(f"canvas written to {out.relative_to(ROOT)}")
+
+
+def cmd_learn(a):
+    """Feed Euresis new knowledge from a text file, validate it, and retrain."""
+    import shutil
+    from .kb import USER_DIR, KnowledgeBase
+    from .model import train
+    USER_DIR.mkdir(parents=True, exist_ok=True)
+    src = Path(a.file)
+    dst = USER_DIR / src.name
+    shutil.copy(src, dst)
+    kb = KnowledgeBase()
+    if kb.errors:
+        print("rejected (not dimensionally consistent or malformed):")
+        for e in kb.errors:
+            print("  -", e)
+    print("knowledge base now:", kb.stats())
+    train(kb)
 
 
 def cmd_render(a):
@@ -144,6 +154,7 @@ def main(argv=None):
     e.add_argument("--fresh", action="store_true"); e.add_argument("--seed", type=int, default=1)
     e.set_defaults(fn=cmd_explore)
     sub.add_parser("render").set_defaults(fn=cmd_render)
+    l = sub.add_parser("learn"); l.add_argument("file"); l.set_defaults(fn=cmd_learn)
     b = sub.add_parser("benchmark"); b.add_argument("--cycles", type=int, default=3); b.set_defaults(fn=cmd_benchmark)
     s = sub.add_parser("solve"); s.add_argument("formula"); s.add_argument("target", nargs="?", default="")
     s.add_argument("values", nargs="*"); s.set_defaults(fn=cmd_solve)

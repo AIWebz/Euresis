@@ -22,6 +22,7 @@ from __future__ import annotations
 
 import math
 import random
+from pathlib import Path
 from itertools import combinations
 
 import numpy as np
@@ -67,6 +68,12 @@ DIM_NAMES = {"L": "length", "T": "time", "M": "mass", "M L2 T-2": "energy",
              "K": "temperature", "M L-3": "density"}
 
 
+DIRECTIVE = ("Discover relations that are not yet part of established knowledge. Build on the laws "
+             "you were given and on your own verified results; prefer bridges between different fields; "
+             "check every candidate for dimensional consistency and against measurements; never "
+             "present an untested candidate as established fact.")
+
+
 def _fmt(x: float) -> str:
     return f"{x:.4g}" if 1e-3 <= abs(x) < 1e5 else f"{x:.4e}"
 
@@ -87,6 +94,8 @@ class Explorer:
         self.cycle = 0
         self._tried: set = set()
         self._composed_from: set = set()
+        self.candidates: list[dict] = []      # ranked candidate discoveries
+        self.directive_id = None
 
     # ---------------------------------------------------------------- helpers
     def _add(self, *a, **kw):
@@ -153,14 +162,26 @@ class Explorer:
             parents.append(self.law_id.get(known.name, ""))
         else:
             kind = kind_new
-            status = "new to Euresis · dimensionally consistent"
-            body = rel.note
+            doms_all = {self.kb.by_name(n).domain for n in set(rel.sources) if self.kb.by_name(n)}
+            depth = len(rel.sources)
+            novelty = (score + 0.35 * min(3, max(0, len(doms_all) - 1))
+                       + 0.1 * min(4, max(0, depth - 2)))
+            score = novelty
+            result["score"] = score
+            if len(doms_all) >= 2:
+                status = (f"candidate discovery · bridges {', '.join(sorted(d.replace('_', ' ') for d in doms_all))}"
+                          " · not in knowledge base · untested")
+            else:
+                status = "new to Euresis · dimensionally consistent · untested"
+            body = rel.note + (". Derivation chain: " + " → ".join(dict.fromkeys(rel.sources)) if rel.sources else "")
+            result["domains"] = sorted(doms_all)
+            self.candidates.append(result)
         tid = self._add(kind, pretty if kind != "rederivation" else f"Re-derived: {known.name}",
                         body=body, formula=pretty, domain=self._domain_of(rel),
                         parents=[p for p in parents if p], status=status, score=score,
                         method=rel.method, key=f"{kind}|{key}")
         result["id"] = tid
-        if kind != "rederivation":
+        if kind != "rederivation" and not known:
             self.relations.append((rel, tid))
             self._link_frontier(tid, quantities, consts)
         self._predict(rel, tid)
@@ -169,6 +190,8 @@ class Explorer:
     # ----------------------------------------------------------------- seeding
     def seed(self):
         """Lay down the foundation: every field, law, principle and constant."""
+        self.directive_id = self._add("insight", "Directive: discover what we don't know yet", body=DIRECTIVE,
+                                      domain="method", status="standing goal", score=1.0, key="directive")
         for d in self.kb.domains:
             self.dom_id[d] = self._add("domain", d.replace("_", " ").title(), domain=d,
                                        body=f"Field of science: {d}", key=f"domain|{d}")
@@ -406,6 +429,9 @@ class Explorer:
         """Compose pairs of laws; newest discoveries are combined with known laws first."""
         known = [(_as_relation(f), self.law_id.get(f.name)) for f in self.kb.formulas]
         fresh = [r for r in self.relations if r[1] not in self._composed_from]
+        if self.space is not None:
+            fresh.sort(key=lambda r: -self.space.thoughts.get(r[1], {}).get("score", 0))
+        fresh = fresh[:60]
         pool = known + self.relations
         cands = {}
         def consider(a, b, bonus):
@@ -418,7 +444,10 @@ class Explorer:
             if k in self._tried:
                 return
             ext = (ra.quantities - rb.quantities) | (rb.quantities - ra.quantities)
-            sc = self._plausibility(ext) + bonus - 0.02 * len(ext)
+            da = {self.kb.by_name(n).domain for n in ra.sources if self.kb.by_name(n)}
+            db = {self.kb.by_name(n).domain for n in rb.sources if self.kb.by_name(n)}
+            cross = 0.3 if da and db and not (da & db) else 0.0
+            sc = self._plausibility(ext) + bonus + cross - 0.02 * len(ext)
             if k not in cands or sc > cands[k][0]:
                 cands[k] = (sc, ra, rb)
         for a in fresh:
@@ -468,6 +497,8 @@ class Explorer:
             if pred is None:
                 continue
             ratio = measured / pred
+            if rel.method == "dimensional" and not (0.05 < ratio < 20):
+                continue
             if rel.method == "dimensional":
                 guess = sp.nsimplify(ratio, [sp.pi], tolerance=0.01)
                 body = (f"Prediction {_fmt(pred)} vs measured {_fmt(measured)} ({src}). "
@@ -486,15 +517,50 @@ class Explorer:
             self.results.append({"prediction": name, "value": pred, "measured": measured, "id": pid,
                                  "status": status})
 
+    # ------------------------------------------------------------------ report
+    def report(self, path, top=30):
+        cands = sorted(self.candidates, key=lambda r: -r["score"])
+        seen, rows = set(), []
+        for r in cands:
+            if r["pretty"] in seen:
+                continue
+            seen.add(r["pretty"])
+            rows.append(r)
+            if len(rows) >= top:
+                break
+        bridges = sum(1 for r in self.candidates if len(r.get("domains", [])) >= 2)
+        L = ["# Euresis — candidate discoveries", "",
+             f"> **Directive:** {DIRECTIVE}", "",
+             f"{len(self.candidates)} relations were found that are not in Euresis' knowledge base; "
+             f"{bridges} of them bridge two or more fields. The {len(rows)} highest-ranked are listed below.", "",
+             "**How to read this.** Every candidate is dimensionally consistent and was derived step by step "
+             "from established laws, so it is *true if its premises and identifications hold*. "
+             "\"Not in the knowledge base\" is not the same as \"unknown to science\": many candidates "
+             "will turn out to be known results or algebraic consequences, and the identifications "
+             "Euresis makes (e.g. treating two masses as the same body) are assumptions. Each one needs a "
+             "literature check and, where it makes a physical claim, an experiment.", "",
+             "| # | Candidate relation | Fields bridged | Score | Built from |",
+             "|---|---|---|---|---|"]
+        for i, r in enumerate(rows, 1):
+            rel = r["relation"]
+            src = " → ".join(dict.fromkeys(rel.sources))
+            L.append(f"| {i} | `{r['pretty']}` | {', '.join(r.get('domains', [])) or '—'} | "
+                     f"{r['score']:.2f} | {src} |")
+        L += ["", "Quantities: " + "; ".join(sorted({f"{self.E.pretty(r['relation'])}: "
+                                                      + ", ".join(self.kb.qname(q) for q in sorted(r['relation'].quantities))
+                                                      for r in rows[:10]}))]
+        Path(path).write_text("\n".join(L) + "\n")
+        return rows
+
     # ------------------------------------------------------------------ driver
-    def run(self, cycles=3, seed_space=True):
+    def run(self, cycles=3, seed_space=True, start=1):
         if seed_space:
             self.seed()
-        for c in range(1, cycles + 1):
+        for c in range(start, start + cycles):
             self.cycle = c
             self.log(f"cycle {c}")
             before = len(self.results)
-            if c == 1:
+            if c == start:
                 self.explore_analogies()
                 self.explore_scales()
                 self.explore_gaps()
