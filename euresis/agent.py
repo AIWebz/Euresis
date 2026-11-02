@@ -98,6 +98,13 @@ TOOLS = [
      "input_schema": _schema({"model": {"type": "string"}, "vary": {"type": "object"},
                               "measure": {"type": "string"}, "fixed": {"type": "object"}},
                              ["model", "vary", "measure"])},
+    {"name": "find_law", "description": "Physics-informed symbolic regression: give data columns with their SI "
+     "dimensions (e.g. 'M L2 T-2'; '1' for dimensionless) and the target column; returns the exact equation if one "
+     "exists in Euresis' search space (dimensional analysis + functional-form search + constant identification).",
+     "input_schema": _schema({"columns": {"type": "object", "description": "name -> {values: [...], dimension: str}"},
+                              "target": {"type": "string"},
+                              "noise": {"type": "number", "description": "expected relative measurement error, e.g. 0.01"}},
+                             ["columns", "target"])},
     {"name": "run_python", "description": "Execute Python in a sandbox (numpy, scipy, sympy; no network; 60 s). "
      "Print what you need.", "input_schema": _schema({"code": {"type": "string"}}, ["code"])},
     {"name": "record_idea", "description": "Record an idea in the Thought Space. Euresis re-verifies the equation "
@@ -164,6 +171,20 @@ class ReasoningCore:
                          {c: c for c in cols}, {c: [r[c] for r in exp["rows"]] for c in cols}, args["measure"])
             forms = search_forms(ds)[:3]
             return {"rows": exp["rows"][:40], "best_fits": json.loads(json.dumps(forms, default=float))}
+        if name == "find_law":
+            import numpy as np
+            from .dimensions import D
+            from .sr import regress
+            cols = args["columns"]
+            names = [c for c in cols if c != args["target"]]
+            X = np.array([cols[c]["values"] for c in names], float).T
+            y = np.array(cols[args["target"]]["values"], float)
+            r = regress(X, y, [D(cols[c]["dimension"]) for c in names], D(cols[args["target"]]["dimension"]), names,
+                        noise=float(args.get("noise", 0.0)))
+            if r is None:
+                return {"found": False}
+            return {"found": True, "equation": f"{args['target']} = {r['expr']}", "exact": r["exact"],
+                    "relative_error": r["val_err"], "pi_groups": r["pi_groups"], "form": r["family"]}
         if name == "run_python":
             return verify.run_python(args["code"])
         if name == "record_idea":

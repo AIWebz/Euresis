@@ -148,6 +148,33 @@ def cmd_sandbox(a):
     print(f"[{r['status']}]")
 
 
+def cmd_lawbench(a):
+    """Law-discovery benchmark over the knowledge base."""
+    import warnings
+    warnings.filterwarnings("ignore")
+    from .srbench import run
+    run(noise=a.noise, limit=a.limit or None, processes=a.processes)
+
+
+def cmd_findlaw(a):
+    """Symbolic regression on a CSV: --dims col:'M L T-2' ... --target col."""
+    import csv as _csv
+    import numpy as np
+    from .dimensions import D
+    from .sr import regress
+    rows = list(_csv.DictReader(open(a.csv)))
+    dims = dict(x.split(":", 1) for x in a.dims)
+    names = [c for c in dims if c != a.target]
+    X = np.array([[float(r[c]) for c in names] for r in rows])
+    y = np.array([float(r[a.target]) for r in rows])
+    r = regress(X, y, [D(dims[c]) for c in names], D(dims[a.target]), names, noise=a.noise)
+    if r is None:
+        print("no law found")
+        return
+    print(f"{a.target} = {r['expr']}")
+    print(f"exact: {r['exact']}  relative error: {r['val_err']:.2e}  form: {r['family']}  Π groups: {r['pi_groups']}")
+
+
 def cmd_learn(a):
     """Feed Euresis new knowledge from a text file, validate it, and retrain."""
     import shutil
@@ -268,6 +295,13 @@ def main(argv=None):
     pr.set_defaults(fn=cmd_prove)
     sb = sub.add_parser("sandbox"); sb.add_argument("file"); sb.add_argument("--timeout", type=int, default=60)
     sb.set_defaults(fn=cmd_sandbox)
+    lb = sub.add_parser("lawbench"); lb.add_argument("--noise", type=float, default=0.0)
+    lb.add_argument("--limit", type=int, default=0); lb.add_argument("--processes", type=int, default=4)
+    lb.set_defaults(fn=cmd_lawbench)
+    fl = sub.add_parser("findlaw"); fl.add_argument("csv"); fl.add_argument("--target", required=True)
+    fl.add_argument("--dims", nargs="+", required=True, help="column:'SI dimension', e.g. v:'L T-1' m:M")
+    fl.add_argument("--noise", type=float, default=0.0, help="expected relative measurement error")
+    fl.set_defaults(fn=cmd_findlaw)
     b = sub.add_parser("benchmark"); b.add_argument("--cycles", type=int, default=3); b.set_defaults(fn=cmd_benchmark)
     s = sub.add_parser("solve"); s.add_argument("formula"); s.add_argument("target", nargs="?", default="")
     s.add_argument("values", nargs="*"); s.set_defaults(fn=cmd_solve)

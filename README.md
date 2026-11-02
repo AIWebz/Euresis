@@ -133,6 +133,55 @@ is well-formed, not that it is true. Each one still needs the experimental test 
 This needs the `anthropic` package and credentials (`ANTHROPIC_API_KEY`, or `ant auth login`).
 Without them, the connection points are still recorded as open questions.
 
+## Scorecard: law discovery from data
+
+`python -m euresis lawbench` takes every law in the knowledge base that has a single unknown on one
+side (345 laws in 24 fields), hides the formula, and hands Euresis only data and the SI units of each
+column. It follows the AI Feynman protocol (Udrescu & Tegmark, 2020):
+
+* every input, physical constants included, is sampled uniformly from [1, 5], 400 rows per law;
+* a result counts as **exact** only if the recovered *symbolic* equation reproduces the true law on
+  fresh, unseen data to within 10⁻⁶.
+
+| Version | Exact | Approximate | Missed |
+|---|---|---|---|
+| First engine (unit analysis + 14 formula shapes) | 271 / 345 (78.6%) | 30 | 44 |
+| Current engine (see below) | **337 / 345 (97.7%)** | 2 | 6 |
+
+The current engine added:
+
+* formula shapes that can be solved directly instead of by trial and error (ratios of terms; sums of
+  terms and logarithms);
+* shapes where an exponent is itself a variable;
+* closed-form recognition of constants (rational × π^a · 2^b · 3^c · 5^d · ln 2 / ln 10), with a
+  guard against contrived matches;
+* stopping as soon as an exact answer is found.
+
+Laws recovered exactly include Planck's black-body law, the Lorentz factor, relativistic velocity
+addition and Doppler shift, the Arrhenius and Eyring equations, Michaelis–Menten and Hill kinetics,
+the Otto-cycle efficiency, Shannon–Hartley capacity, the Fermi energy (3^(2/3)·π^(4/3)·ħ²n^(2/3)/2mₑ),
+the Hawking temperature, and the Jeans mass.
+
+Still missed:
+
+* the Nernst equation;
+* capillary rise;
+* the semi-empirical nuclear mass formula (4 terms);
+* beam attenuation;
+* competitive enzyme inhibition;
+* earthquake moment magnitude.
+
+Two laws are only approximate, correctly, because they contain empirical numbers with no closed form:
+the Chandrasekhar limit (0.7744…) and main-sequence lifetime.
+
+**Context.** AI Feynman reported 100 of 100 equations on its own benchmark, the Feynman Symbolic
+Regression Database. This benchmark is a different and larger set (345 laws across physics,
+chemistry, biology, earth science and information theory), so the numbers are not directly
+comparable. Running Euresis on the public Feynman/SRSD datasets is the next step for a
+like-for-like comparison. Those datasets aren't downloadable from this environment.
+
+Per-law results: `space/srbench_clean.json` (no noise) and `space/srbench_noise10.json` (1% noise).
+
 ## The reasoning core (Claude + verified tools)
 
 `python -m euresis research "your question"` runs Claude (`claude-opus-5-5`, adaptive thinking) as

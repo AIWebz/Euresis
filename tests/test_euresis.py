@@ -134,3 +134,21 @@ def test_pendulum_law_found_in_simulated_data():
     dd = DataDiscoverer(KB, E, log=lambda *a: None)
     r = dd.run(next(d for d in simulated() if d.name == "pendulum_sim"))
     assert r["known"] == "Simple pendulum period"
+
+
+def test_symbolic_regression_recovers_planck_law_exactly():
+    import numpy as np
+    import sympy as sp
+    from euresis.dimensions import D
+    from euresis.sr import identify_constant, regress
+    rng = np.random.default_rng(3)
+    X = rng.uniform(1, 5, (300, 5))
+    lam, T, h, c, kB = X.T
+    y = 2 * h * c ** 2 / (lam ** 5 * (np.exp(h * c / (lam * kB * T)) - 1))
+    dims = [D("L"), D("K"), D("M L2 T-1"), D("L T-1"), D("M L2 T-2 K-1")]
+    r = regress(X, y, dims, D("M L-1 T-3"), ["lam", "T", "h", "c", "kB"])
+    assert r["exact"]
+    s = {n: sp.Symbol(n) for n in ["lam", "T", "h", "c", "kB"]}
+    truth = 2 * s["h"] * s["c"] ** 2 / (s["lam"] ** 5 * (sp.exp(s["h"] * s["c"] / (s["lam"] * s["kB"] * s["T"])) - 1))
+    assert sp.simplify(r["expr"] - truth) == 0
+    assert str(identify_constant(0.07957747154594767)) == "1/(4*pi)"
