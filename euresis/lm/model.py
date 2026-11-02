@@ -146,17 +146,26 @@ class EuresisLM:
             return jnp.array(x), jnp.array(y)
         hist = []
         t0 = time.time()
+        vrng = np.random.default_rng(seed + 1)
+        vix = vrng.integers(0, len(val_d) - cfg.ctx - 1, 128)
+        VX = jnp.array(np.stack([val_d[i:i + cfg.ctx] for i in vix]))
+        VY = jnp.array(np.stack([val_d[i + 1:i + cfg.ctx + 1] for i in vix]))
+        best = (float("inf"), params, 0)
         for it in range(1, steps + 1):
             x, y = sample(train_d)
             params, state, l = step(params, state, x, y)
             if it % 100 == 0 or it == 1:
-                vx, vy = sample(val_d)
-                vl = float(eval_loss(params, vx, vy))
+                vl = float(np.mean([float(eval_loss(params, VX[i:i + 32], VY[i:i + 32])) for i in range(0, 128, 32)]))
                 hist.append({"step": it, "train_loss": float(l), "val_loss": vl})
-                log(f"  step {it:5d}  train {float(l):.3f}  val {vl:.3f}  ({time.time() - t0:.0f}s)")
-        m = cls(params, cfg, tok)
+                mark = ""
+                if vl < best[0]:
+                    best = (vl, params, it)
+                    mark = "  <- best"
+                log(f"  step {it:5d}  train {float(l):.3f}  val {vl:.3f}  ({time.time() - t0:.0f}s){mark}")
+        log(f"keeping the checkpoint with the lowest held-out loss: step {best[2]} (val {best[0]:.3f})")
+        m = cls(best[1], cfg, tok)
         m.save(out_dir, {"history": hist, "tokens": int(len(data)), "parameters": n_params(params),
-                         "train_seconds": round(time.time() - t0)})
+                         "best_step": best[2], "best_val_loss": best[0], "train_seconds": round(time.time() - t0)})
         return m
 
     def save(self, out_dir: Path, meta=None):

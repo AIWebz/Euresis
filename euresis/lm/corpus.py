@@ -111,7 +111,7 @@ def build(kb: KnowledgeBase | None = None, seed=0):
         laws = [f.name for f in kb.formulas if q in f.quantities][:6]
         if laws:
             docs.append(f"The quantity {name} has SI dimension {dim}. It appears in: {', '.join(laws)}.")
-    train_qa = law_questions(kb, TRAIN_TEMPLATES, n_per_law=24, seed=seed)
+    train_qa = law_questions(kb, TRAIN_TEMPLATES, n_per_law=60, seed=seed)
     test_qa = law_questions(kb, TEST_TEMPLATES, n_per_law=2, seed=seed + 1)
     for q, law in train_qa:
         docs.append(f"question: {q}\nlaw: {law}")
