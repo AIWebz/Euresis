@@ -175,10 +175,11 @@ class Engine:
                   elif len(fam_a[g]) == 1:
                       variants = [{**v, y: fam_a[g][0]} for v in variants for y in fam_b[g]][:4]
             for ident in variants:
-                eqb = rb.eq.subs(ident, simultaneous=True)
+                eqb = rb.eq.subs(ident, simultaneous=True) if ident else rb.eq
                 for sol in self.solve_for(ra, sa)[:1]:
-                    new = sp.Eq(eqb.lhs.subs(sb, sol), eqb.rhs.subs(sb, sol))
-                    expr = sp.simplify(new.lhs - new.rhs)
+                    if not isinstance(eqb, sp.Equality):
+                        continue
+                    expr = sp.simplify(eqb.lhs.subs(sb, sol) - eqb.rhs.subs(sb, sol))
                     if expr == 0 or expr.free_symbols <= set(ra.constants) | set(rb.constants):
                         continue
                     s2q = {}
