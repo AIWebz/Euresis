@@ -1,22 +1,22 @@
 {
  "summary": {
-  "exact": 309,
-  "approx": 0,
-  "miss": 36,
+  "exact": 289,
+  "approx": 36,
+  "miss": 20,
   "laws": 345,
   "skipped": 3,
   "noise": 0.01,
-  "minutes": 19.6
+  "minutes": 20.1
  },
  "results": [
   {
-   "law": "Newton's second law",
+   "law": "Momentum",
    "domain": "mechanics",
    "result": "exact",
-   "max_rel_err": 0.0005072086000002125,
-   "seconds": 7.7,
-   "truth": "force = acceleration*mass",
-   "found": "force = 0.9994927914*acceleration*mass",
+   "max_rel_err": 0.0,
+   "seconds": 8.5,
+   "truth": "momentum = mass*velocity",
+   "found": "momentum = mass*velocity",
    "family": "constant",
    "pi_groups": []
   },
@@ -24,10 +24,10 @@
    "law": "Kinetic energy",
    "domain": "mechanics",
    "result": "exact",
-   "max_rel_err": 0.00038498400000021955,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "kinetic_energy = mass*velocity**2/2",
-   "found": "kinetic_energy = 0.499807508*mass*velocity**2",
+   "found": "kinetic_energy = mass*velocity**2/2",
    "family": "constant",
    "pi_groups": []
   },
@@ -35,10 +35,10 @@
    "law": "Gravitational potential energy near Earth",
    "domain": "mechanics",
    "result": "exact",
-   "max_rel_err": 0.000313319000000286,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "potential_energy = gravitational_acceleration*height*mass",
-   "found": "potential_energy = 1.000313319*gravitational_acceleration*height*mass",
+   "found": "potential_energy = gravitational_acceleration*height*mass",
    "family": "constant",
    "pi_groups": []
   },
@@ -46,21 +46,21 @@
    "law": "Work",
    "domain": "mechanics",
    "result": "exact",
-   "max_rel_err": 0.0005955460000002257,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "work = displacement*force",
-   "found": "work = 0.999404454*displacement*force",
+   "found": "work = displacement*force",
    "family": "constant",
    "pi_groups": []
   },
   {
-   "law": "Power",
+   "law": "Newton's second law",
    "domain": "mechanics",
    "result": "exact",
-   "max_rel_err": 0.00037620850000017673,
-   "seconds": 0.0,
-   "truth": "power = work/time",
-   "found": "power = 0.9996237915*work/time",
+   "max_rel_err": 0.0,
+   "seconds": 8.6,
+   "truth": "force = acceleration*mass",
+   "found": "force = acceleration*mass",
    "family": "constant",
    "pi_groups": []
   },
@@ -68,10 +68,21 @@
    "law": "Mechanical power",
    "domain": "mechanics",
    "result": "exact",
-   "max_rel_err": 0.00021452160000027498,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "power = force*velocity",
-   "found": "power = 0.9997854784*force*velocity",
+   "found": "power = force*velocity",
+   "family": "constant",
+   "pi_groups": []
+  },
+  {
+   "law": "Power",
+   "domain": "mechanics",
+   "result": "exact",
+   "max_rel_err": 0.0,
+   "seconds": 0.0,
+   "truth": "power = work/time",
+   "found": "power = work/time",
    "family": "constant",
    "pi_groups": []
   },
@@ -79,10 +90,10 @@
    "law": "Hooke's law",
    "domain": "mechanics",
    "result": "exact",
-   "max_rel_err": 0.0011835930000001298,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "force = displacement*spring_constant",
-   "found": "force = 1.001183593*displacement*spring_constant",
+   "found": "force = displacement*spring_constant",
    "family": "constant",
    "pi_groups": []
   },
@@ -90,10 +101,10 @@
    "law": "Elastic potential energy",
    "domain": "mechanics",
    "result": "exact",
-   "max_rel_err": 0.0004366658000001543,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "potential_energy = displacement**2*spring_constant/2",
-   "found": "potential_energy = 0.5002183329*displacement**2*spring_constant",
+   "found": "potential_energy = displacement**2*spring_constant/2",
    "family": "constant",
    "pi_groups": []
   },
@@ -101,10 +112,10 @@
    "law": "Impulse-momentum theorem",
    "domain": "mechanics",
    "result": "exact",
-   "max_rel_err": 0.00040133040000025593,
-   "seconds": 7.8,
+   "max_rel_err": 0.0,
+   "seconds": 8.7,
    "truth": "impulse = force*time",
-   "found": "impulse = 0.9995986696*force*time",
+   "found": "impulse = force*time",
    "family": "constant",
    "pi_groups": []
   },
@@ -112,21 +123,10 @@
    "law": "Weight",
    "domain": "mechanics",
    "result": "exact",
-   "max_rel_err": 0.0006340920000003124,
-   "seconds": 8.2,
+   "max_rel_err": 0.0,
+   "seconds": 9.1,
    "truth": "weight = gravitational_acceleration*mass",
-   "found": "weight = 1.000634092*gravitational_acceleration*mass",
-   "family": "constant",
-   "pi_groups": []
-  },
-  {
-   "law": "Momentum",
-   "domain": "mechanics",
-   "result": "exact",
-   "max_rel_err": 0.0002934370000002668,
-   "seconds": 8.2,
-   "truth": "momentum = mass*velocity",
-   "found": "momentum = 1.000293437*mass*velocity",
+   "found": "weight = gravitational_acceleration*mass",
    "family": "constant",
    "pi_groups": []
   },
@@ -134,10 +134,10 @@
    "law": "Centripetal acceleration",
    "domain": "mechanics",
    "result": "exact",
-   "max_rel_err": 0.001157043000000181,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "centripetal_acceleration = velocity**2/radius",
-   "found": "centripetal_acceleration = 0.998842957*velocity**2/radius",
+   "found": "centripetal_acceleration = velocity**2/radius",
    "family": "constant",
    "pi_groups": []
   },
@@ -145,10 +145,10 @@
    "law": "Angular velocity and speed",
    "domain": "mechanics",
    "result": "exact",
-   "max_rel_err": 0.00022856360000023056,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "velocity = angular_velocity*radius",
-   "found": "velocity = 0.9997714364*angular_velocity*radius",
+   "found": "velocity = angular_velocity*radius",
    "family": "constant",
    "pi_groups": []
   },
@@ -156,10 +156,10 @@
    "law": "Angular frequency",
    "domain": "mechanics",
    "result": "exact",
-   "max_rel_err": 0.00026954478303862947,
-   "seconds": 0.0,
+   "max_rel_err": 0.0,
+   "seconds": 0.1,
    "truth": "angular_frequency = 2*pi*frequency",
-   "found": "angular_frequency = 6.284878907*frequency",
+   "found": "angular_frequency = 2*pi*frequency",
    "family": "constant",
    "pi_groups": []
   },
@@ -167,22 +167,22 @@
    "law": "Period and frequency",
    "domain": "mechanics",
    "result": "exact",
-   "max_rel_err": 0.000394961500000108,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "period = 1/frequency",
-   "found": "period = 0.9996050385/frequency",
+   "found": "period = 1/frequency",
    "family": "constant",
    "pi_groups": []
   },
   {
    "law": "Kinematics: velocity",
    "domain": "mechanics",
-   "result": "miss",
-   "max_rel_err": 0.0405102886552931,
-   "seconds": 6.8,
+   "result": "exact",
+   "max_rel_err": 0.0,
+   "seconds": 9.6,
    "truth": "final_velocity = acceleration*time + initial_velocity",
-   "found": "final_velocity = 0.3534283818*initial_velocity*(acceleration*time/initial_velocity)**1.192883945*exp(1.730687693/(acceleration*time/initial_velocity)**0.3975198263)",
-   "family": "a\u00b7x^p\u00b7exp(b\u00b7x^r)",
+   "found": "final_velocity = acceleration*time + initial_velocity",
+   "family": "rational(F)",
    "pi_groups": [
     "acceleration*time/initial_velocity"
    ]
@@ -191,10 +191,10 @@
    "law": "Rotational second law",
    "domain": "mechanics",
    "result": "exact",
-   "max_rel_err": 0.00036945160000024125,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "torque = angular_acceleration*moment_of_inertia",
-   "found": "torque = 0.9996305484*angular_acceleration*moment_of_inertia",
+   "found": "torque = angular_acceleration*moment_of_inertia",
    "family": "constant",
    "pi_groups": []
   },
@@ -202,10 +202,10 @@
    "law": "Angular momentum",
    "domain": "mechanics",
    "result": "exact",
-   "max_rel_err": 0.0002437794000002052,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "angular_momentum = angular_velocity*moment_of_inertia",
-   "found": "angular_momentum = 0.9997562206*angular_velocity*moment_of_inertia",
+   "found": "angular_momentum = angular_velocity*moment_of_inertia",
    "family": "constant",
    "pi_groups": []
   },
@@ -213,10 +213,10 @@
    "law": "Rotational kinetic energy",
    "domain": "mechanics",
    "result": "exact",
-   "max_rel_err": 0.0003781026000002419,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "kinetic_energy = angular_velocity**2*moment_of_inertia/2",
-   "found": "kinetic_energy = 0.5001890513*angular_velocity**2*moment_of_inertia",
+   "found": "kinetic_energy = angular_velocity**2*moment_of_inertia/2",
    "family": "constant",
    "pi_groups": []
   },
@@ -224,10 +224,10 @@
    "law": "Moment of inertia of a point mass",
    "domain": "mechanics",
    "result": "exact",
-   "max_rel_err": 0.00025911700000011976,
-   "seconds": 0.0,
+   "max_rel_err": 0.0,
+   "seconds": 0.1,
    "truth": "moment_of_inertia = mass*radius**2",
-   "found": "moment_of_inertia = 1.000259117*mass*radius**2",
+   "found": "moment_of_inertia = mass*radius**2",
    "family": "constant",
    "pi_groups": []
   },
@@ -235,10 +235,10 @@
    "law": "Mass-spring oscillator period",
    "domain": "mechanics",
    "result": "exact",
-   "max_rel_err": 0.00019330564358821861,
+   "max_rel_err": 4.1508152280288246e-16,
    "seconds": 0.0,
    "truth": "period = 2*pi*sqrt(mass/spring_constant)",
-   "found": "period = 6.281970732*sqrt(mass)/sqrt(spring_constant)",
+   "found": "period = 2*pi*sqrt(mass)/sqrt(spring_constant)",
    "family": "constant",
    "pi_groups": []
   },
@@ -246,10 +246,10 @@
    "law": "Simple pendulum period",
    "domain": "mechanics",
    "result": "exact",
-   "max_rel_err": 0.00031483603982333216,
+   "max_rel_err": 3.840995139180659e-16,
    "seconds": 0.0,
    "truth": "period = 2*pi*sqrt(length/gravitational_acceleration)",
-   "found": "period = 6.281207134*sqrt(length)/sqrt(gravitational_acceleration)",
+   "found": "period = 2*pi*sqrt(length)/sqrt(gravitational_acceleration)",
    "family": "constant",
    "pi_groups": []
   },
@@ -257,22 +257,22 @@
    "law": "Work-energy theorem",
    "domain": "mechanics",
    "result": "exact",
-   "max_rel_err": 0.0005921868000000574,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "work = kinetic_energy",
-   "found": "work = 0.9994078132*kinetic_energy",
+   "found": "work = kinetic_energy",
    "family": "constant",
    "pi_groups": []
   },
   {
    "law": "Kinematics: position",
    "domain": "mechanics",
-   "result": "exact",
-   "max_rel_err": 0.004932894352844596,
-   "seconds": 7.7,
+   "result": "approx",
+   "max_rel_err": 0.0025609187221494476,
+   "seconds": 10.1,
    "truth": "displacement = time*(acceleration*time + 2*initial_velocity)/2",
-   "found": "displacement = initial_velocity*time*(0.5072804234*(acceleration*time/initial_velocity)**0.9937680109 + 0.9902329857)",
-   "family": "a + b\u00b7x^p",
+   "found": "displacement = pi*time*(10*acceleration*time + 9*sqrt(5)*initial_velocity)/63",
+   "family": "rational(1/F)",
    "pi_groups": [
     "acceleration*time/initial_velocity"
    ]
@@ -282,10 +282,10 @@
    "domain": "mechanics",
    "result": "exact",
    "max_rel_err": 0.0,
-   "seconds": 13.2,
+   "seconds": 16.3,
    "truth": "torque = force*radius*sin(angle)",
-   "found": "torque = 1.0*force*radius*sin(angle)**1.0",
-   "family": "a\u00b7sin(x)^p",
+   "found": "torque = force*radius*sin(angle)",
+   "family": "a\u00b7sin(b\u00b7x)",
    "pi_groups": [
     "angle"
    ]
@@ -294,10 +294,10 @@
    "law": "Surface gravity",
    "domain": "gravitation",
    "result": "exact",
-   "max_rel_err": 4.814600000021737e-05,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "gravitational_acceleration = G*mass/radius**2",
-   "found": "gravitational_acceleration = 1.000048146*G*mass/radius**2",
+   "found": "gravitational_acceleration = G*mass/radius**2",
    "family": "constant",
    "pi_groups": []
   },
@@ -305,10 +305,10 @@
    "law": "Escape velocity",
    "domain": "gravitation",
    "result": "exact",
-   "max_rel_err": 0.00041467030772327396,
-   "seconds": 0.0,
+   "max_rel_err": 3.123357335526007e-16,
+   "seconds": 0.1,
    "truth": "escape_velocity = sqrt(2)*sqrt(G*mass/radius)",
-   "found": "escape_velocity = 1.41362713*sqrt(G)*sqrt(mass)/sqrt(radius)",
+   "found": "escape_velocity = sqrt(2)*sqrt(G*mass)/sqrt(radius)",
    "family": "constant",
    "pi_groups": []
   },
@@ -316,10 +316,10 @@
    "law": "Circular orbital velocity",
    "domain": "gravitation",
    "result": "exact",
-   "max_rel_err": 0.00027225410000037196,
+   "max_rel_err": 2.7486136557813865e-16,
    "seconds": 0.0,
    "truth": "orbital_velocity = sqrt(G*mass/radius)",
-   "found": "orbital_velocity = 0.9997277459*sqrt(G)*sqrt(mass)/sqrt(radius)",
+   "found": "orbital_velocity = sqrt(G*mass)/sqrt(radius)",
    "family": "constant",
    "pi_groups": []
   },
@@ -327,10 +327,10 @@
    "law": "Schwarzschild radius",
    "domain": "gravitation",
    "result": "exact",
-   "max_rel_err": 0.0005724375000003107,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "schwarzschild_radius = 2*G*mass/c**2",
-   "found": "schwarzschild_radius = 1.998855125*G*mass/c**2",
+   "found": "schwarzschild_radius = 2*G*mass/c**2",
    "family": "constant",
    "pi_groups": []
   },
@@ -338,10 +338,10 @@
    "law": "Wave equation (speed)",
    "domain": "waves",
    "result": "exact",
-   "max_rel_err": 0.00017538200000013127,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "wave_speed = frequency*wavelength",
-   "found": "wave_speed = 1.000175382*frequency*wavelength",
+   "found": "wave_speed = frequency*wavelength",
    "family": "constant",
    "pi_groups": []
   },
@@ -349,45 +349,10 @@
    "law": "Speed of a wave on a string",
    "domain": "waves",
    "result": "exact",
-   "max_rel_err": 0.00015186490000025724,
+   "max_rel_err": 3.019653600204116e-16,
    "seconds": 0.0,
    "truth": "wave_speed = sqrt(tension/linear_density)",
-   "found": "wave_speed = 0.9998481351*sqrt(tension)/sqrt(linear_density)",
-   "family": "constant",
-   "pi_groups": []
-  },
-  {
-   "law": "Kinetic friction",
-   "domain": "mechanics",
-   "result": "exact",
-   "max_rel_err": 0.0003590847725250224,
-   "seconds": 18.1,
-   "truth": "friction_force = friction_coefficient*normal_force",
-   "found": "friction_force = normal_force*(0.592847778322538*friction_coefficient**0.999828545882568 + 0.407068735952435*friction_coefficient**0.999828800142516)",
-   "family": "sum2",
-   "pi_groups": [
-    "friction_coefficient"
-   ]
-  },
-  {
-   "law": "Wave intensity",
-   "domain": "waves",
-   "result": "exact",
-   "max_rel_err": 0.0008864648000002026,
-   "seconds": 0.0,
-   "truth": "intensity = power/area",
-   "found": "intensity = 0.9991135352*power/area",
-   "family": "constant",
-   "pi_groups": []
-  },
-  {
-   "law": "Inverse-square intensity",
-   "domain": "waves",
-   "result": "exact",
-   "max_rel_err": 3.850410697053726e-06,
-   "seconds": 0.0,
-   "truth": "intensity = power/(4*pi*distance**2)",
-   "found": "intensity = 0.07957716514*power/distance**2",
+   "found": "wave_speed = sqrt(tension)/sqrt(linear_density)",
    "family": "constant",
    "pi_groups": []
   },
@@ -395,24 +360,59 @@
    "law": "Gravitational potential energy",
    "domain": "gravitation",
    "result": "exact",
-   "max_rel_err": 0.00026886508450246126,
-   "seconds": 10.9,
+   "max_rel_err": 0.0,
+   "seconds": 12.4,
    "truth": "potential_energy = -G*mass1*mass2/distance",
-   "found": "potential_energy = -427.8586874*G*mass1**2*sin(0.002337848771*mass2/mass1)/distance",
-   "family": "a\u00b7sin(b\u00b7x)",
+   "found": "potential_energy = -G*mass1*mass2/distance",
+   "family": "rational(F)",
    "pi_groups": [
     "mass2/mass1"
+   ]
+  },
+  {
+   "law": "Wave intensity",
+   "domain": "waves",
+   "result": "exact",
+   "max_rel_err": 0.0,
+   "seconds": 0.0,
+   "truth": "intensity = power/area",
+   "found": "intensity = power/area",
+   "family": "constant",
+   "pi_groups": []
+  },
+  {
+   "law": "Inverse-square intensity",
+   "domain": "waves",
+   "result": "exact",
+   "max_rel_err": 0.0,
+   "seconds": 0.0,
+   "truth": "intensity = power/(4*pi*distance**2)",
+   "found": "intensity = power/(4*pi*distance**2)",
+   "family": "constant",
+   "pi_groups": []
+  },
+  {
+   "law": "Kinetic friction",
+   "domain": "mechanics",
+   "result": "exact",
+   "max_rel_err": 0.0,
+   "seconds": 23.0,
+   "truth": "friction_force = friction_coefficient*normal_force",
+   "found": "friction_force = friction_coefficient*normal_force",
+   "family": "rational(F)",
+   "pi_groups": [
+    "friction_coefficient"
    ]
   },
   {
    "law": "Newton's law of universal gravitation",
    "domain": "gravitation",
    "result": "exact",
-   "max_rel_err": 0.0039007735002978628,
-   "seconds": 13.3,
+   "max_rel_err": 0.0,
+   "seconds": 14.4,
    "truth": "force = G*mass1*mass2/distance**2",
-   "found": "force = G*mass1**2*(0.9961102962*(mass2/mass1)**1.004713263 + 0.003233911561)/distance**2",
-   "family": "a + b\u00b7x^p",
+   "found": "force = G*mass1*mass2/distance**2",
+   "family": "a\u00b7x^p",
    "pi_groups": [
     "mass2/mass1"
    ]
@@ -421,11 +421,11 @@
    "law": "First law of thermodynamics",
    "domain": "thermodynamics",
    "result": "exact",
-   "max_rel_err": 0.003487464328673346,
-   "seconds": 6.0,
+   "max_rel_err": 0.0,
+   "seconds": 7.3,
    "truth": "internal_energy = heat - work",
-   "found": "internal_energy = heat*(0.9976299011 - 0.9976356429*(work/heat)**1.001752151)",
-   "family": "a + b\u00b7x^p",
+   "found": "internal_energy = heat - work",
+   "family": "rational(F)",
    "pi_groups": [
     "work/heat"
    ]
@@ -434,10 +434,10 @@
    "law": "Specific heat",
    "domain": "thermodynamics",
    "result": "exact",
-   "max_rel_err": 0.0012427680000003047,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "heat = mass*specific_heat*temperature_change",
-   "found": "heat = 1.001242768*mass*specific_heat*temperature_change",
+   "found": "heat = mass*specific_heat*temperature_change",
    "family": "constant",
    "pi_groups": []
   },
@@ -445,10 +445,10 @@
    "law": "Heat capacity",
    "domain": "thermodynamics",
    "result": "exact",
-   "max_rel_err": 7.440300000016789e-05,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "heat = heat_capacity*temperature_change",
-   "found": "heat = 1.000074403*heat_capacity*temperature_change",
+   "found": "heat = heat_capacity*temperature_change",
    "family": "constant",
    "pi_groups": []
   },
@@ -456,10 +456,10 @@
    "law": "Latent heat",
    "domain": "thermodynamics",
    "result": "exact",
-   "max_rel_err": 0.00032129600000029766,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "heat = latent_heat*mass",
-   "found": "heat = 1.000321296*latent_heat*mass",
+   "found": "heat = latent_heat*mass",
    "family": "constant",
    "pi_groups": []
   },
@@ -467,10 +467,10 @@
    "law": "Clausius entropy",
    "domain": "thermodynamics",
    "result": "exact",
-   "max_rel_err": 0.0006935800000003174,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "entropy_change = heat/temperature",
-   "found": "entropy_change = 1.00069358*heat/temperature",
+   "found": "entropy_change = heat/temperature",
    "family": "constant",
    "pi_groups": []
   },
@@ -478,11 +478,11 @@
    "law": "Refractive index",
    "domain": "optics",
    "result": "exact",
-   "max_rel_err": 0.005234721197049717,
-   "seconds": 9.6,
+   "max_rel_err": 0.0,
+   "seconds": 10.8,
    "truth": "refractive_index = c/wave_speed",
-   "found": "refractive_index = 1.00060561605852/(wave_speed/c)**1.00112187961777 - 2.85723376020301e-6*(wave_speed/c)**3.70287476589899",
-   "family": "sum2",
+   "found": "refractive_index = c/wave_speed",
+   "family": "rational(1/F)",
    "pi_groups": [
     "wave_speed/c"
    ]
@@ -491,10 +491,10 @@
    "law": "Speed of sound in an ideal gas",
    "domain": "waves",
    "result": "exact",
-   "max_rel_err": 0.0006665493018842013,
-   "seconds": 16.0,
+   "max_rel_err": 2.405574310854344e-16,
+   "seconds": 17.7,
    "truth": "speed_of_sound = sqrt(R*heat_capacity_ratio*temperature/molar_mass)",
-   "found": "speed_of_sound = 0.9999893739*sqrt(R)*heat_capacity_ratio**0.4995918173*sqrt(temperature)/sqrt(molar_mass)",
+   "found": "speed_of_sound = sqrt(R*heat_capacity_ratio*temperature)/sqrt(molar_mass)",
    "family": "a\u00b7x^p",
    "pi_groups": [
     "heat_capacity_ratio"
@@ -504,10 +504,10 @@
    "law": "Carnot efficiency",
    "domain": "thermodynamics",
    "result": "exact",
-   "max_rel_err": 0.01335807376062134,
-   "seconds": 7.3,
+   "max_rel_err": 0.0,
+   "seconds": 8.1,
    "truth": "efficiency = (-temperature_cold + temperature_hot)/temperature_hot",
-   "found": "efficiency = 1.002302736 - 1.002315212/(temperature_hot/temperature_cold)**0.9978618281",
+   "found": "efficiency = (-temperature_cold + temperature_hot)/temperature_hot",
    "family": "a + b\u00b7x^p",
    "pi_groups": [
     "temperature_hot/temperature_cold"
@@ -516,12 +516,12 @@
   {
    "law": "Magnification",
    "domain": "optics",
-   "result": "miss",
-   "max_rel_err": 175834253369.22897,
-   "seconds": 15.5,
+   "result": "exact",
+   "max_rel_err": 0.0,
+   "seconds": 17.9,
    "truth": "magnification = -image_distance/object_distance",
-   "found": "magnification = -0.999898424537531/(object_distance/image_distance)**0.999813452368045 + 1.31785735807919e-146*(object_distance/image_distance)**227.610499762125",
-   "family": "sum2",
+   "found": "magnification = -image_distance/object_distance",
+   "family": "rational(1/F)",
    "pi_groups": [
     "object_distance/image_distance"
    ]
@@ -530,10 +530,10 @@
    "law": "Wien's displacement law",
    "domain": "thermodynamics",
    "result": "exact",
-   "max_rel_err": 8.108660000021178e-05,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "peak_wavelength = b_W/temperature",
-   "found": "peak_wavelength = 0.9999189134*b_W/temperature",
+   "found": "peak_wavelength = b_W/temperature",
    "family": "constant",
    "pi_groups": []
   },
@@ -541,11 +541,11 @@
    "law": "Fourier's law of conduction",
    "domain": "thermodynamics",
    "result": "exact",
-   "max_rel_err": 0.001784625338605736,
-   "seconds": 9.5,
+   "max_rel_err": 3.8972406827145475e-16,
+   "seconds": 10.4,
    "truth": "heat_flow = area*temperature_change*thermal_conductivity/length",
-   "found": "heat_flow = sqrt(area)*temperature_change*thermal_conductivity*(1.001481961/(length**2/area)**0.5003465244 - 0.0004802062327)",
-   "family": "a + b\u00b7x^p",
+   "found": "heat_flow = sqrt(area)*temperature_change*thermal_conductivity/sqrt(length**2/area)",
+   "family": "rational(1/F^2)",
    "pi_groups": [
     "length**2/area"
    ]
@@ -554,11 +554,11 @@
    "law": "Engine efficiency",
    "domain": "thermodynamics",
    "result": "exact",
-   "max_rel_err": 0.002518537410712781,
-   "seconds": 12.5,
+   "max_rel_err": 0.0,
+   "seconds": 14.4,
    "truth": "efficiency = work/heat",
-   "found": "efficiency = 30.64343341*sin(0.03266004043*work/heat)",
-   "family": "a\u00b7sin(b\u00b7x)",
+   "found": "efficiency = work/heat",
+   "family": "rational(F)",
    "pi_groups": [
     "work/heat"
    ]
@@ -567,11 +567,11 @@
    "law": "Isothermal work of an ideal gas",
    "domain": "thermodynamics",
    "result": "exact",
-   "max_rel_err": 0.016833461706763746,
-   "seconds": 9.0,
+   "max_rel_err": 0.0,
+   "seconds": 10.5,
    "truth": "work = R*amount*temperature*log(volume__V2/volume__V1)",
-   "found": "work = R*amount*temperature*(619.537355 - 619.5373755/(volume__V2/volume__V1)**0.001614977138)",
-   "family": "a + b\u00b7x^p",
+   "found": "work = R*amount*temperature*log(volume__V2/volume__V1)",
+   "family": "additive(lin+log)",
    "pi_groups": [
     "volume__V2/volume__V1"
    ]
@@ -580,10 +580,10 @@
    "law": "Mean kinetic energy of a gas molecule",
    "domain": "statistical_mechanics",
    "result": "exact",
-   "max_rel_err": 0.001189738666666849,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "kinetic_energy = 3*k_B*temperature/2",
-   "found": "kinetic_energy = 1.501784608*k_B*temperature",
+   "found": "kinetic_energy = 3*k_B*temperature/2",
    "family": "constant",
    "pi_groups": []
   },
@@ -591,10 +591,10 @@
    "law": "RMS speed of gas molecules",
    "domain": "statistical_mechanics",
    "result": "exact",
-   "max_rel_err": 0.00038489196056499,
+   "max_rel_err": 4.2589264271623113e-16,
    "seconds": 0.0,
    "truth": "velocity = sqrt(3)*sqrt(k_B*temperature/mass)",
-   "found": "velocity = 1.73271746*sqrt(k_B)*sqrt(temperature)/sqrt(mass)",
+   "found": "velocity = sqrt(3)*sqrt(k_B*temperature)/sqrt(mass)",
    "family": "constant",
    "pi_groups": []
   },
@@ -602,11 +602,11 @@
    "law": "Stefan-Boltzmann law",
    "domain": "thermodynamics",
    "result": "exact",
-   "max_rel_err": 0.0012399158395056426,
-   "seconds": 10.0,
+   "max_rel_err": 0.0,
+   "seconds": 12.0,
    "truth": "power = area*emissivity*sigma*temperature**4",
-   "found": "power = 8908.608878*area*sigma*temperature**4*log(0.000112142926*emissivity + 1)",
-   "family": "a\u00b7log(1 + b\u00b7x)",
+   "found": "power = area*emissivity*sigma*temperature**4",
+   "family": "a\u00b7x^p",
    "pi_groups": [
     "emissivity"
    ]
@@ -615,10 +615,10 @@
    "law": "Einstein-Smoluchowski diffusion",
    "domain": "statistical_mechanics",
    "result": "exact",
-   "max_rel_err": 0.00018003922051508794,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "diffusion_coefficient = k_B*temperature/(6*pi*radius*viscosity)",
-   "found": "diffusion_coefficient = 0.05304209632*k_B*temperature/(radius*viscosity)",
+   "found": "diffusion_coefficient = k_B*temperature/(6*pi*radius*viscosity)",
    "family": "constant",
    "pi_groups": []
   },
@@ -626,47 +626,47 @@
    "law": "Mean squared displacement (3D)",
    "domain": "statistical_mechanics",
    "result": "exact",
-   "max_rel_err": 0.000341142666666914,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "mean_squared_displacement = 6*diffusion_coefficient*time",
-   "found": "mean_squared_displacement = 5.997953144*diffusion_coefficient*time",
+   "found": "mean_squared_displacement = 6*diffusion_coefficient*time",
    "family": "constant",
    "pi_groups": []
-  },
-  {
-   "law": "Boltzmann entropy",
-   "domain": "statistical_mechanics",
-   "result": "miss",
-   "max_rel_err": 0.12979807977456997,
-   "seconds": 7.2,
-   "truth": "entropy = k_B*log(number)",
-   "found": "entropy = k_B*(-3.31617250533131/number**0.155781011421138 + 3.31623261736505*number**0.145957856286173)",
-   "family": "sum2",
-   "pi_groups": [
-    "number"
-   ]
   },
   {
    "law": "Gibbs free energy",
    "domain": "thermodynamics",
    "result": "exact",
-   "max_rel_err": 0.00382340061525968,
-   "seconds": 9.5,
+   "max_rel_err": 0.0,
+   "seconds": 10.2,
    "truth": "gibbs_energy = enthalpy - molar_entropy*temperature",
-   "found": "gibbs_energy = enthalpy*(1.00444325171855*(molar_entropy*temperature/enthalpy)**0.00312547476435522 - 1.00441536562689*(molar_entropy*temperature/enthalpy)**0.998873146699848)",
-   "family": "sum2",
+   "found": "gibbs_energy = enthalpy - molar_entropy*temperature",
+   "family": "rational(F)",
    "pi_groups": [
     "molar_entropy*temperature/enthalpy"
+   ]
+  },
+  {
+   "law": "Boltzmann entropy",
+   "domain": "statistical_mechanics",
+   "result": "approx",
+   "max_rel_err": 0.003532439215952416,
+   "seconds": 8.8,
+   "truth": "entropy = k_B*log(number)",
+   "found": "entropy = 7*sqrt(5)*k_B*log(number)/(5*pi)",
+   "family": "additive(lin+log)",
+   "pi_groups": [
+    "number"
    ]
   },
   {
    "law": "Electric field definition",
    "domain": "electromagnetism",
    "result": "exact",
-   "max_rel_err": 1.2190800000289774e-05,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "electric_field = force/charge",
-   "found": "electric_field = 0.9999878092*force/charge",
+   "found": "electric_field = force/charge",
    "family": "constant",
    "pi_groups": []
   },
@@ -674,10 +674,10 @@
    "law": "Field of a point charge",
    "domain": "electromagnetism",
    "result": "exact",
-   "max_rel_err": 0.00020506820000029108,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "electric_field = charge*k_e/distance**2",
-   "found": "electric_field = 0.9997949318*charge*k_e/distance**2",
+   "found": "electric_field = charge*k_e/distance**2",
    "family": "constant",
    "pi_groups": []
   },
@@ -685,10 +685,10 @@
    "law": "Potential of a point charge",
    "domain": "electromagnetism",
    "result": "exact",
-   "max_rel_err": 0.00024556900000028087,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "electric_potential = charge*k_e/distance",
-   "found": "electric_potential = 0.999754431*charge*k_e/distance",
+   "found": "electric_potential = charge*k_e/distance",
    "family": "constant",
    "pi_groups": []
   },
@@ -696,10 +696,10 @@
    "law": "Potential energy of a charge",
    "domain": "electromagnetism",
    "result": "exact",
-   "max_rel_err": 0.0006123579000002742,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "potential_energy = charge*voltage",
-   "found": "potential_energy = 0.9993876421*charge*voltage",
+   "found": "potential_energy = charge*voltage",
    "family": "constant",
    "pi_groups": []
   },
@@ -707,10 +707,10 @@
    "law": "Uniform field and voltage",
    "domain": "electromagnetism",
    "result": "exact",
-   "max_rel_err": 0.00017316380000017846,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "electric_field = voltage/distance",
-   "found": "electric_field = 0.9998268362*voltage/distance",
+   "found": "electric_field = voltage/distance",
    "family": "constant",
    "pi_groups": []
   },
@@ -718,10 +718,10 @@
    "law": "Gauss's law (integral)",
    "domain": "electromagnetism",
    "result": "exact",
-   "max_rel_err": 0.000213809200000266,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "electric_flux = charge/epsilon_0",
-   "found": "electric_flux = 0.9997861908*charge/epsilon_0",
+   "found": "electric_flux = charge/epsilon_0",
    "family": "constant",
    "pi_groups": []
   },
@@ -729,10 +729,10 @@
    "law": "Lorentz force (magnetic, perpendicular)",
    "domain": "electromagnetism",
    "result": "exact",
-   "max_rel_err": 0.0001471006000003046,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "force = charge*magnetic_field*velocity",
-   "found": "force = 0.9998528994*charge*magnetic_field*velocity",
+   "found": "force = charge*magnetic_field*velocity",
    "family": "constant",
    "pi_groups": []
   },
@@ -740,10 +740,10 @@
    "law": "Force on a current-carrying wire",
    "domain": "electromagnetism",
    "result": "exact",
-   "max_rel_err": 0.0003531456000002656,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "force = current*length*magnetic_field",
-   "found": "force = 0.9996468544*current*length*magnetic_field",
+   "found": "force = current*length*magnetic_field",
    "family": "constant",
    "pi_groups": []
   },
@@ -751,10 +751,10 @@
    "law": "Field of a long straight wire",
    "domain": "electromagnetism",
    "result": "exact",
-   "max_rel_err": 0.0005176979759141197,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "magnetic_field = current*mu_0/(2*pi*distance)",
-   "found": "magnetic_field = 0.1590725489*current*mu_0/distance",
+   "found": "magnetic_field = current*mu_0/(2*pi*distance)",
    "family": "constant",
    "pi_groups": []
   },
@@ -762,10 +762,10 @@
    "law": "Field inside a solenoid",
    "domain": "electromagnetism",
    "result": "exact",
-   "max_rel_err": 4.306100000026538e-05,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "magnetic_field = current*mu_0*turns_per_length",
-   "found": "magnetic_field = 1.000043061*current*mu_0*turns_per_length",
+   "found": "magnetic_field = current*mu_0*turns_per_length",
    "family": "constant",
    "pi_groups": []
   },
@@ -773,22 +773,22 @@
    "law": "Magnetic flux",
    "domain": "electromagnetism",
    "result": "exact",
-   "max_rel_err": 0.0004513564000002996,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "magnetic_flux = area*magnetic_field",
-   "found": "magnetic_flux = 0.9995486436*area*magnetic_field",
+   "found": "magnetic_flux = area*magnetic_field",
    "family": "constant",
    "pi_groups": []
   },
   {
    "law": "Boltzmann factor",
    "domain": "statistical_mechanics",
-   "result": "exact",
-   "max_rel_err": 0.003953589382417235,
-   "seconds": 12.0,
+   "result": "approx",
+   "max_rel_err": 0.009600639791103965,
+   "seconds": 13.0,
    "truth": "probability = exp(-energy/(k_B*temperature))",
-   "found": "probability = (0.0001213010141/(k_B*temperature/energy)**0.9957144859 + 0.9999997553)**(-8282.546046)",
-   "family": "(a + b\u00b7x^p)^q",
+   "found": "probability = exp(-4*sqrt(3)*energy/(3*k_B*temperature*log(10)))",
+   "family": "a\u00b7exp(b\u00b7x^p)",
    "pi_groups": [
     "k_B*temperature/energy"
    ]
@@ -797,10 +797,10 @@
    "law": "Cyclotron radius",
    "domain": "electromagnetism",
    "result": "exact",
-   "max_rel_err": 7.898460000024957e-05,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "radius = mass*velocity/(charge*magnetic_field)",
-   "found": "radius = 0.9999210154*mass*velocity/(charge*magnetic_field)",
+   "found": "radius = mass*velocity/(charge*magnetic_field)",
    "family": "constant",
    "pi_groups": []
   },
@@ -808,10 +808,10 @@
    "law": "Energy density of electric field",
    "domain": "electromagnetism",
    "result": "exact",
-   "max_rel_err": 0.0009558614000002527,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "energy_density = electric_field**2*epsilon_0/2",
-   "found": "energy_density = 0.5004779307*electric_field**2*epsilon_0",
+   "found": "energy_density = electric_field**2*epsilon_0/2",
    "family": "constant",
    "pi_groups": []
   },
@@ -819,10 +819,10 @@
    "law": "Energy density of magnetic field",
    "domain": "electromagnetism",
    "result": "exact",
-   "max_rel_err": 0.00036735180000031965,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "energy_density = magnetic_field**2/(2*mu_0)",
-   "found": "energy_density = 0.4998163241*magnetic_field**2/mu_0",
+   "found": "energy_density = magnetic_field**2/(2*mu_0)",
    "family": "constant",
    "pi_groups": []
   },
@@ -830,10 +830,10 @@
    "law": "Electromagnetic wave field ratio",
    "domain": "electromagnetism",
    "result": "exact",
-   "max_rel_err": 0.001286925000000264,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "electric_field = c*magnetic_field",
-   "found": "electric_field = 0.998713075*c*magnetic_field",
+   "found": "electric_field = c*magnetic_field",
    "family": "constant",
    "pi_groups": []
   },
@@ -841,10 +841,10 @@
    "law": "Ohm's law",
    "domain": "circuits",
    "result": "exact",
-   "max_rel_err": 0.00022628520000022773,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "voltage = current*resistance",
-   "found": "voltage = 0.9997737148*current*resistance",
+   "found": "voltage = current*resistance",
    "family": "constant",
    "pi_groups": []
   },
@@ -852,10 +852,10 @@
    "law": "Electric power",
    "domain": "circuits",
    "result": "exact",
-   "max_rel_err": 0.00038187700000011783,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "power = current*voltage",
-   "found": "power = 1.000381877*current*voltage",
+   "found": "power = current*voltage",
    "family": "constant",
    "pi_groups": []
   },
@@ -863,22 +863,22 @@
    "law": "Joule heating",
    "domain": "circuits",
    "result": "exact",
-   "max_rel_err": 6.318000000015461e-05,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "power = current**2*resistance",
-   "found": "power = 1.00006318*current**2*resistance",
+   "found": "power = current**2*resistance",
    "family": "constant",
    "pi_groups": []
   },
   {
-   "law": "Coulomb's law",
+   "law": "Electric potential energy",
    "domain": "electromagnetism",
    "result": "exact",
-   "max_rel_err": 0.0027052192719584514,
-   "seconds": 17.8,
-   "truth": "force = charge1*charge2*k_e/distance**2",
-   "found": "force = charge1**2*k_e*(0.9964347021*(charge2/charge1)**1.003714067 + 0.002063281072)/distance**2",
-   "family": "a + b\u00b7x^p",
+   "max_rel_err": 0.0,
+   "seconds": 15.8,
+   "truth": "potential_energy = charge1*charge2*k_e/distance",
+   "found": "potential_energy = charge1*charge2*k_e/distance",
+   "family": "rational(F)",
    "pi_groups": [
     "charge2/charge1"
    ]
@@ -887,10 +887,10 @@
    "law": "Conductance",
    "domain": "circuits",
    "result": "exact",
-   "max_rel_err": 0.0005763699000001678,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "conductance = 1/resistance",
-   "found": "conductance = 0.9994236301/resistance",
+   "found": "conductance = 1/resistance",
    "family": "constant",
    "pi_groups": []
   },
@@ -898,10 +898,10 @@
    "law": "Current definition",
    "domain": "circuits",
    "result": "exact",
-   "max_rel_err": 2.3129000000115723e-05,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "current = charge/time",
-   "found": "current = 1.000023129*charge/time",
+   "found": "current = charge/time",
    "family": "constant",
    "pi_groups": []
   },
@@ -909,22 +909,22 @@
    "law": "Capacitance",
    "domain": "circuits",
    "result": "exact",
-   "max_rel_err": 0.0006497322000001978,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "capacitance = charge/voltage",
-   "found": "capacitance = 0.9993502678*charge/voltage",
+   "found": "capacitance = charge/voltage",
    "family": "constant",
    "pi_groups": []
   },
   {
-   "law": "Electric potential energy",
+   "law": "Coulomb's law",
    "domain": "electromagnetism",
-   "result": "miss",
-   "max_rel_err": 0.03650377573712673,
-   "seconds": 14.2,
-   "truth": "potential_energy = charge1*charge2*k_e/distance",
-   "found": "potential_energy = charge1**2*k_e*(0.9968964782*(charge2/charge1)**12.55263267 + 1.991150547e-9)**0.07969290536/distance",
-   "family": "(a + b\u00b7x^p)^q",
+   "result": "exact",
+   "max_rel_err": 0.0,
+   "seconds": 19.8,
+   "truth": "force = charge1*charge2*k_e/distance**2",
+   "found": "force = charge1*charge2*k_e/distance**2",
+   "family": "a\u00b7x^p",
    "pi_groups": [
     "charge2/charge1"
    ]
@@ -933,10 +933,10 @@
    "law": "Energy stored in a capacitor",
    "domain": "circuits",
    "result": "exact",
-   "max_rel_err": 0.00020504520000020054,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "energy = capacitance*voltage**2/2",
-   "found": "energy = 0.4998974774*capacitance*voltage**2",
+   "found": "energy = capacitance*voltage**2/2",
    "family": "constant",
    "pi_groups": []
   },
@@ -944,10 +944,10 @@
    "law": "Energy stored in an inductor",
    "domain": "circuits",
    "result": "exact",
-   "max_rel_err": 0.0009895594000002234,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "energy = current**2*inductance/2",
-   "found": "energy = 0.4995052203*current**2*inductance",
+   "found": "energy = current**2*inductance/2",
    "family": "constant",
    "pi_groups": []
   },
@@ -955,10 +955,10 @@
    "law": "RC time constant",
    "domain": "circuits",
    "result": "exact",
-   "max_rel_err": 0.00039431700000028757,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "time_constant = capacitance*resistance",
-   "found": "time_constant = 1.000394317*capacitance*resistance",
+   "found": "time_constant = capacitance*resistance",
    "family": "constant",
    "pi_groups": []
   },
@@ -966,10 +966,10 @@
    "law": "RL time constant",
    "domain": "circuits",
    "result": "exact",
-   "max_rel_err": 0.00021785770000029366,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "time_constant = inductance/resistance",
-   "found": "time_constant = 0.9997821423*inductance/resistance",
+   "found": "time_constant = inductance/resistance",
    "family": "constant",
    "pi_groups": []
   },
@@ -977,10 +977,10 @@
    "law": "LC resonance",
    "domain": "circuits",
    "result": "exact",
-   "max_rel_err": 0.0015704790000002663,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "angular_frequency = 1/sqrt(capacitance*inductance)",
-   "found": "angular_frequency = 1.001570479/(sqrt(capacitance)*sqrt(inductance))",
+   "found": "angular_frequency = 1/sqrt(capacitance*inductance)",
    "family": "constant",
    "pi_groups": []
   },
@@ -988,10 +988,10 @@
    "law": "Current density",
    "domain": "circuits",
    "result": "exact",
-   "max_rel_err": 0.00010765490000019534,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "current_density = current/area",
-   "found": "current_density = 0.9998923451*current/area",
+   "found": "current_density = current/area",
    "family": "constant",
    "pi_groups": []
   },
@@ -999,10 +999,10 @@
    "law": "Density",
    "domain": "fluids",
    "result": "exact",
-   "max_rel_err": 0.0005171764000002522,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "density = mass/volume",
-   "found": "density = 0.9994828236*mass/volume",
+   "found": "density = mass/volume",
    "family": "constant",
    "pi_groups": []
   },
@@ -1010,10 +1010,10 @@
    "law": "Pressure",
    "domain": "fluids",
    "result": "exact",
-   "max_rel_err": 0.00022756720000015508,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "pressure = force/area",
-   "found": "pressure = 0.9997724328*force/area",
+   "found": "pressure = force/area",
    "family": "constant",
    "pi_groups": []
   },
@@ -1021,10 +1021,10 @@
    "law": "Hydrostatic pressure",
    "domain": "fluids",
    "result": "exact",
-   "max_rel_err": 2.472900000021311e-05,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "pressure = density*depth*gravitational_acceleration",
-   "found": "pressure = 1.000024729*density*depth*gravitational_acceleration",
+   "found": "pressure = density*depth*gravitational_acceleration",
    "family": "constant",
    "pi_groups": []
   },
@@ -1032,10 +1032,10 @@
    "law": "Archimedes' principle",
    "domain": "fluids",
    "result": "exact",
-   "max_rel_err": 0.000253918000000451,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "buoyant_force = density*gravitational_acceleration*volume",
-   "found": "buoyant_force = 1.000253918*density*gravitational_acceleration*volume",
+   "found": "buoyant_force = density*gravitational_acceleration*volume",
    "family": "constant",
    "pi_groups": []
   },
@@ -1043,10 +1043,10 @@
    "law": "Continuity (flow rate)",
    "domain": "fluids",
    "result": "exact",
-   "max_rel_err": 6.242240000022945e-05,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "flow_rate = area*velocity",
-   "found": "flow_rate = 0.9999375776*area*velocity",
+   "found": "flow_rate = area*velocity",
    "family": "constant",
    "pi_groups": []
   },
@@ -1054,10 +1054,10 @@
    "law": "Bernoulli dynamic pressure",
    "domain": "fluids",
    "result": "exact",
-   "max_rel_err": 0.0010859866000002731,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "pressure = density*velocity**2/2",
-   "found": "pressure = 0.4994570067*density*velocity**2",
+   "found": "pressure = density*velocity**2/2",
    "family": "constant",
    "pi_groups": []
   },
@@ -1065,11 +1065,11 @@
    "law": "Faraday's law (EMF magnitude)",
    "domain": "electromagnetism",
    "result": "exact",
-   "max_rel_err": 0.0021853775392927533,
-   "seconds": 14.4,
+   "max_rel_err": 0.0,
+   "seconds": 15.7,
    "truth": "emf = magnetic_flux*turns/time",
-   "found": "emf = 233.6202789*magnetic_flux*turns**1.010637697/(time*(turns**1.010637697 + 232.8700905))",
-   "family": "a\u00b7x^p/(b + x^p)",
+   "found": "emf = magnetic_flux*turns/time",
+   "family": "a\u00b7x^p",
    "pi_groups": [
     "turns"
    ]
@@ -1078,10 +1078,10 @@
    "law": "Stokes' law",
    "domain": "fluids",
    "result": "exact",
-   "max_rel_err": 0.0008109693195105576,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "drag_force = 6*pi*radius*velocity*viscosity",
-   "found": "drag_force = 18.83426951*radius*velocity*viscosity",
+   "found": "drag_force = 6*pi*radius*velocity*viscosity",
    "family": "constant",
    "pi_groups": []
   },
@@ -1089,11 +1089,11 @@
    "law": "Resistance from resistivity",
    "domain": "circuits",
    "result": "exact",
-   "max_rel_err": 0.0013145485929255897,
-   "seconds": 10.2,
+   "max_rel_err": 3.1383892397592013e-16,
+   "seconds": 12.0,
    "truth": "resistance = length*resistivity/area",
-   "found": "resistance = 75244683.62*resistivity*(length**2/area)**1.50051818/(sqrt(area)*(1 + 75264463.46*length**2/area))",
-   "family": "a\u00b7x^p/(1 + b\u00b7x)",
+   "found": "resistance = resistivity*sqrt(length**2/area)/sqrt(area)",
+   "family": "a\u00b7x^p",
    "pi_groups": [
     "length**2/area"
    ]
@@ -1102,11 +1102,11 @@
    "law": "Reynolds number",
    "domain": "fluids",
    "result": "exact",
-   "max_rel_err": 0.008810201148034809,
-   "seconds": 10.8,
+   "max_rel_err": 0.0,
+   "seconds": 11.8,
    "truth": "reynolds_number = density*length*velocity/viscosity",
-   "found": "reynolds_number = 0.9982118081*(density*length*velocity/viscosity)**1.000805985*exp(0.002265649691/(density*length*velocity/viscosity)**1.895214688)",
-   "family": "a\u00b7x^p\u00b7exp(b\u00b7x^r)",
+   "found": "reynolds_number = density*length*velocity/viscosity",
+   "family": "rational(F)",
    "pi_groups": [
     "density*length*velocity/viscosity"
    ]
@@ -1115,10 +1115,10 @@
    "law": "Young-Laplace (sphere)",
    "domain": "fluids",
    "result": "exact",
-   "max_rel_err": 0.0003694700000002175,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "pressure = 2*surface_tension/radius",
-   "found": "pressure = 1.99926106*surface_tension/radius",
+   "found": "pressure = 2*surface_tension/radius",
    "family": "constant",
    "pi_groups": []
   },
@@ -1126,10 +1126,10 @@
    "law": "Stress",
    "domain": "materials",
    "result": "exact",
-   "max_rel_err": 0.0013378883000002624,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "stress = force/area",
-   "found": "stress = 0.9986621117*force/area",
+   "found": "stress = force/area",
    "family": "constant",
    "pi_groups": []
   },
@@ -1137,11 +1137,11 @@
    "law": "Drag equation",
    "domain": "fluids",
    "result": "exact",
-   "max_rel_err": 0.003660161051919202,
-   "seconds": 17.0,
+   "max_rel_err": 0.0,
+   "seconds": 18.0,
    "truth": "drag_force = area*density*drag_coefficient*velocity**2/2",
-   "found": "drag_force = 407.7402949*area*density*drag_coefficient**1.005322006*velocity**2/(drag_coefficient**1.005322006 + 817.4769218)",
-   "family": "a\u00b7x^p/(b + x^p)",
+   "found": "drag_force = area*density*drag_coefficient*velocity**2/2",
+   "family": "additive(lin+log)",
    "pi_groups": [
     "drag_coefficient"
    ]
@@ -1150,11 +1150,11 @@
    "law": "Poiseuille's law",
    "domain": "fluids",
    "result": "exact",
-   "max_rel_err": 0.002284601570197227,
-   "seconds": 15.9,
+   "max_rel_err": 0.0,
+   "seconds": 15.7,
    "truth": "flow_rate = pi*pressure*radius**4/(8*length*viscosity)",
-   "found": "flow_rate = 0.01379571502*length**3*pressure*(radius/length)**4.42935956/(viscosity*(exp(0.03527905934*(radius/length)**0.412601592) - 1.000770365))",
-   "family": "a\u00b7x^p/(exp(b\u00b7x^r) + c)",
+   "found": "flow_rate = pi*pressure*radius**4/(8*length*viscosity)",
+   "family": "a\u00b7x^p",
    "pi_groups": [
     "radius/length"
    ]
@@ -1163,21 +1163,21 @@
    "law": "Mass-energy equivalence",
    "domain": "relativity",
    "result": "exact",
-   "max_rel_err": 0.00038430300000012713,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "rest_energy = c**2*mass",
-   "found": "rest_energy = 1.000384303*c**2*mass",
+   "found": "rest_energy = c**2*mass",
    "family": "constant",
    "pi_groups": []
   },
   {
    "law": "Lorentz factor",
    "domain": "relativity",
-   "result": "miss",
-   "max_rel_err": 0.22466895421731678,
-   "seconds": 6.0,
+   "result": "exact",
+   "max_rel_err": 0.0,
+   "seconds": 6.1,
    "truth": "lorentz_factor = 1/sqrt(1 - velocity**2/c**2)",
-   "found": "lorentz_factor = (1.000237134 - 1.000467831*(velocity/c)**1.995604163)**(-0.4978470379)",
+   "found": "lorentz_factor = 1/sqrt(1 - velocity**2/c**2)",
    "family": "(a + b\u00b7x^p)^q",
    "pi_groups": [
     "velocity/c"
@@ -1187,11 +1187,11 @@
    "law": "Young's modulus",
    "domain": "materials",
    "result": "exact",
-   "max_rel_err": 0.0013848140961813975,
-   "seconds": 18.6,
+   "max_rel_err": 0.0,
+   "seconds": 18.3,
    "truth": "youngs_modulus = stress/strain",
-   "found": "youngs_modulus = stress*(0.9993336596/strain**0.9976552238 - 0.0007223530386)",
-   "family": "a + b\u00b7x^p",
+   "found": "youngs_modulus = stress/strain",
+   "family": "a\u00b7x^p",
    "pi_groups": [
     "strain"
    ]
@@ -1200,10 +1200,10 @@
    "law": "Strain",
    "domain": "materials",
    "result": "exact",
-   "max_rel_err": 0.0012879932134774597,
-   "seconds": 15.7,
+   "max_rel_err": 0.0,
+   "seconds": 16.4,
    "truth": "strain = displacement/length",
-   "found": "strain = 0.9991666292/(length/displacement)**0.9996723743",
+   "found": "strain = displacement/length",
    "family": "a\u00b7x^p",
    "pi_groups": [
     "length/displacement"
@@ -1213,11 +1213,11 @@
    "law": "Time dilation",
    "domain": "relativity",
    "result": "exact",
-   "max_rel_err": 0.006831543818619019,
-   "seconds": 11.9,
+   "max_rel_err": 0.0,
+   "seconds": 12.7,
    "truth": "time = lorentz_factor*proper_time",
-   "found": "time = 4.028653964e-15*proper_time*exp(33.1525989*lorentz_factor**0.02941153623)",
-   "family": "a\u00b7exp(b\u00b7x^p)",
+   "found": "time = lorentz_factor*proper_time",
+   "family": "additive(lin+log)",
    "pi_groups": [
     "lorentz_factor"
    ]
@@ -1226,10 +1226,10 @@
    "law": "Planck-Einstein relation",
    "domain": "quantum",
    "result": "exact",
-   "max_rel_err": 4.9278000000306644e-05,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "photon_energy = frequency*h",
-   "found": "photon_energy = 1.000049278*frequency*h",
+   "found": "photon_energy = frequency*h",
    "family": "constant",
    "pi_groups": []
   },
@@ -1237,10 +1237,10 @@
    "law": "Photon momentum",
    "domain": "quantum",
    "result": "exact",
-   "max_rel_err": 0.0017832880000001748,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "momentum = h/wavelength",
-   "found": "momentum = 1.001783288*h/wavelength",
+   "found": "momentum = h/wavelength",
    "family": "constant",
    "pi_groups": []
   },
@@ -1248,10 +1248,10 @@
    "law": "de Broglie wavelength",
    "domain": "quantum",
    "result": "exact",
-   "max_rel_err": 0.0008035550000002817,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "de_broglie_wavelength = h/momentum",
-   "found": "de_broglie_wavelength = 1.000803555*h/momentum",
+   "found": "de_broglie_wavelength = h/momentum",
    "family": "constant",
    "pi_groups": []
   },
@@ -1259,11 +1259,24 @@
    "law": "Relativistic momentum",
    "domain": "relativity",
    "result": "exact",
-   "max_rel_err": 0.00031426350764459564,
-   "seconds": 11.7,
+   "max_rel_err": 0.0,
+   "seconds": 12.4,
    "truth": "momentum = lorentz_factor*mass*velocity",
-   "found": "momentum = 541.662253*mass*velocity*sin(0.001846750131*lorentz_factor)",
-   "family": "a\u00b7sin(b\u00b7x)",
+   "found": "momentum = lorentz_factor*mass*velocity",
+   "family": "a\u00b7x^p",
+   "pi_groups": [
+    "lorentz_factor"
+   ]
+  },
+  {
+   "law": "Length contraction",
+   "domain": "relativity",
+   "result": "exact",
+   "max_rel_err": 0.0,
+   "seconds": 16.3,
+   "truth": "length = proper_length/lorentz_factor",
+   "found": "length = proper_length/lorentz_factor",
+   "family": "a\u00b7x^p",
    "pi_groups": [
     "lorentz_factor"
    ]
@@ -1272,48 +1285,35 @@
    "law": "Photoelectric effect",
    "domain": "quantum",
    "result": "exact",
-   "max_rel_err": 0.0009605519209467517,
-   "seconds": 7.6,
+   "max_rel_err": 0.0,
+   "seconds": 8.1,
    "truth": "kinetic_energy = frequency*h - work_function",
-   "found": "kinetic_energy = work_function*(-1.00343799041414*(frequency*h/work_function)**0.00216822704079595 + 1.00344131110952*(frequency*h/work_function)**0.998969626201419)",
-   "family": "sum2",
+   "found": "kinetic_energy = frequency*h - work_function",
+   "family": "rational(F)",
    "pi_groups": [
     "frequency*h/work_function"
-   ]
-  },
-  {
-   "law": "Length contraction",
-   "domain": "relativity",
-   "result": "exact",
-   "max_rel_err": 0.00175182560322558,
-   "seconds": 15.2,
-   "truth": "length = proper_length/lorentz_factor",
-   "found": "length = proper_length*(1.000098225/lorentz_factor**0.9947340862 - 0.001913668387)",
-   "family": "a + b\u00b7x^p",
-   "pi_groups": [
-    "lorentz_factor"
    ]
   },
   {
    "law": "Compton wavelength",
    "domain": "quantum",
    "result": "exact",
-   "max_rel_err": 0.0007562090000002032,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "wavelength = h/(c*mass)",
-   "found": "wavelength = 1.000756209*h/(c*mass)",
+   "found": "wavelength = h/(c*mass)",
    "family": "constant",
    "pi_groups": []
   },
   {
    "law": "Quantum harmonic oscillator levels",
    "domain": "quantum",
-   "result": "exact",
-   "max_rel_err": 0.002470757409134954,
-   "seconds": 6.5,
+   "result": "approx",
+   "max_rel_err": 0.0023683298843837353,
+   "seconds": 7.2,
    "truth": "energy_level = angular_frequency*hbar*(2*quantum_number + 1)/2",
-   "found": "energy_level = 0.005995678542*angular_frequency*hbar*quantum_number**1.204936449/(exp(0.7900159405*quantum_number**0.001278877869) - 2.199436134)",
-   "family": "a\u00b7x^p/(exp(b\u00b7x^r) + c)",
+   "found": "energy_level = angular_frequency*hbar*(80*sqrt(3)*quantum_number + 3*pi**2*log(10))/(60*log(10))",
+   "family": "additive(lin+log)",
    "pi_groups": [
     "quantum_number"
    ]
@@ -1322,11 +1322,11 @@
    "law": "Bohr energy levels of hydrogen",
    "domain": "atomic",
    "result": "exact",
-   "max_rel_err": 0.013562916869647217,
+   "max_rel_err": 0.0,
    "seconds": 9.3,
    "truth": "energy_level = -E_R/quantum_number**2",
-   "found": "energy_level = -0.9984595211*E_R*exp(0.01988156176/quantum_number**26.8632126)/quantum_number**1.999678699",
-   "family": "a\u00b7x^p\u00b7exp(b\u00b7x^r)",
+   "found": "energy_level = -E_R/quantum_number**2",
+   "family": "a\u00b7x^p",
    "pi_groups": [
     "quantum_number"
    ]
@@ -1335,10 +1335,10 @@
    "law": "Half-life",
    "domain": "nuclear",
    "result": "exact",
-   "max_rel_err": 0.0006013095800492883,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "half_life = log(2)/decay_constant",
-   "found": "half_life = 0.6935639766/decay_constant",
+   "found": "half_life = log(2)/decay_constant",
    "family": "constant",
    "pi_groups": []
   },
@@ -1346,10 +1346,10 @@
    "law": "Mean lifetime",
    "domain": "nuclear",
    "result": "exact",
-   "max_rel_err": 0.0006157250000002318,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "mean_lifetime = 1/decay_constant",
-   "found": "mean_lifetime = 1.000615725/decay_constant",
+   "found": "mean_lifetime = 1/decay_constant",
    "family": "constant",
    "pi_groups": []
   },
@@ -1357,11 +1357,11 @@
    "law": "Particle in a box energy levels",
    "domain": "quantum",
    "result": "exact",
-   "max_rel_err": 0.0062990047237085345,
-   "seconds": 11.2,
+   "max_rel_err": 0.0,
+   "seconds": 11.5,
    "truth": "energy_level = h**2*quantum_number**2/(8*length**2*mass)",
-   "found": "energy_level = h**2*(1.018410922e-5*quantum_number**11.05690301 + 3.253444146e-7)**0.1807581072/(length**2*mass)",
-   "family": "(a + b\u00b7x^p)^q",
+   "found": "energy_level = h**2*quantum_number**2/(8*length**2*mass)",
+   "family": "a\u00b7x^p",
    "pi_groups": [
     "quantum_number"
    ]
@@ -1370,10 +1370,10 @@
    "law": "Nuclear binding energy",
    "domain": "nuclear",
    "result": "exact",
-   "max_rel_err": 0.00056627900000034,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "binding_energy = c**2*mass_defect",
-   "found": "binding_energy = 1.000566279*c**2*mass_defect",
+   "found": "binding_energy = c**2*mass_defect",
    "family": "constant",
    "pi_groups": []
   },
@@ -1381,11 +1381,11 @@
    "law": "Nuclear radius",
    "domain": "nuclear",
    "result": "exact",
-   "max_rel_err": 0.0006031531855606083,
-   "seconds": 12.0,
+   "max_rel_err": 0.0,
+   "seconds": 12.9,
    "truth": "radius = mass_number**(1/3)*r_0",
-   "found": "radius = r_0*(0.170950325568366*mass_number**0.333824475836674 + 0.828425360855585*mass_number**0.333825547193329)",
-   "family": "sum2",
+   "found": "radius = mass_number**(1/3)*r_0",
+   "family": "a\u00b7x^p",
    "pi_groups": [
     "mass_number"
    ]
@@ -1394,10 +1394,10 @@
    "law": "Hubble-Lemaitre law",
    "domain": "astrophysics",
    "result": "exact",
-   "max_rel_err": 0.0002377394000003077,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "recession_velocity = distance*hubble_constant",
-   "found": "recession_velocity = 0.9997622606*distance*hubble_constant",
+   "found": "recession_velocity = distance*hubble_constant",
    "family": "constant",
    "pi_groups": []
   },
@@ -1405,11 +1405,11 @@
    "law": "Activity",
    "domain": "nuclear",
    "result": "exact",
-   "max_rel_err": 0.0014731706542730622,
-   "seconds": 18.3,
+   "max_rel_err": 0.0,
+   "seconds": 18.8,
    "truth": "activity = decay_constant*number",
-   "found": "activity = 0.998525107*decay_constant*number**1.00105733",
-   "family": "a\u00b7x^p",
+   "found": "activity = decay_constant*number",
+   "family": "rational(F)",
    "pi_groups": [
     "number"
    ]
@@ -1418,10 +1418,10 @@
    "law": "Stellar luminosity",
    "domain": "astrophysics",
    "result": "exact",
-   "max_rel_err": 0.00027196033477410006,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "luminosity = 4*pi*radius**2*sigma*temperature**4",
-   "found": "luminosity = 12.56295306*radius**2*sigma*temperature**4",
+   "found": "luminosity = 4*pi*radius**2*sigma*temperature**4",
    "family": "constant",
    "pi_groups": []
   },
@@ -1429,10 +1429,10 @@
    "law": "Flux from luminosity",
    "domain": "astrophysics",
    "result": "exact",
-   "max_rel_err": 0.0001330392113078731,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "flux = luminosity/(4*pi*distance**2)",
-   "found": "flux = 0.07958805847*luminosity/distance**2",
+   "found": "flux = luminosity/(4*pi*distance**2)",
    "family": "constant",
    "pi_groups": []
   },
@@ -1440,11 +1440,11 @@
    "law": "Redshift (low velocity)",
    "domain": "astrophysics",
    "result": "exact",
-   "max_rel_err": 0.0073325043888746305,
-   "seconds": 14.9,
+   "max_rel_err": 0.0,
+   "seconds": 15.4,
    "truth": "redshift = recession_velocity/c",
-   "found": "redshift = 23.60161963*sin(0.04234773384*recession_velocity/c)",
-   "family": "a\u00b7sin(b\u00b7x)",
+   "found": "redshift = recession_velocity/c",
+   "family": "rational(F)",
    "pi_groups": [
     "recession_velocity/c"
    ]
@@ -1453,10 +1453,10 @@
    "law": "Hubble time",
    "domain": "astrophysics",
    "result": "exact",
-   "max_rel_err": 0.0005042250000001918,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "time = 1/hubble_constant",
-   "found": "time = 1.000504225/hubble_constant",
+   "found": "time = 1/hubble_constant",
    "family": "constant",
    "pi_groups": []
   },
@@ -1464,10 +1464,10 @@
    "law": "Moles from mass",
    "domain": "chemistry",
    "result": "exact",
-   "max_rel_err": 0.000631130000000205,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "amount = mass/molar_mass",
-   "found": "amount = 1.00063113*mass/molar_mass",
+   "found": "amount = mass/molar_mass",
    "family": "constant",
    "pi_groups": []
   },
@@ -1475,11 +1475,11 @@
    "law": "Parallax distance",
    "domain": "astrophysics",
    "result": "exact",
-   "max_rel_err": 0.002030434980913176,
-   "seconds": 11.3,
+   "max_rel_err": 0.0,
+   "seconds": 11.4,
    "truth": "distance_parsec = 1/parallax_arcsec",
-   "found": "distance_parsec = 0.999767774665221/parallax_arcsec**1.0003801020969 + 8.99302874556198e-7*parallax_arcsec**4.02739617103726",
-   "family": "sum2",
+   "found": "distance_parsec = 1/parallax_arcsec",
+   "family": "a\u00b7x^p",
    "pi_groups": [
     "parallax_arcsec"
    ]
@@ -1488,10 +1488,10 @@
    "law": "Molarity",
    "domain": "chemistry",
    "result": "exact",
-   "max_rel_err": 0.0007281990000003236,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "concentration = amount/volume",
-   "found": "concentration = 1.000728199*amount/volume",
+   "found": "concentration = amount/volume",
    "family": "constant",
    "pi_groups": []
   },
@@ -1502,89 +1502,89 @@
    "seconds": 90.0
   },
   {
-   "law": "Number of particles",
+   "law": "Dalton partial pressure",
    "domain": "chemistry",
    "result": "exact",
-   "max_rel_err": 0.0053553026486014505,
-   "seconds": 13.2,
-   "truth": "number = N_A*amount",
-   "found": "number = -22.81134956*(N_A*amount)**1.011515165/(-23.70091975 + exp(-0.2817360508*(N_A*amount)**0.6407344905))",
-   "family": "a\u00b7x^p/(exp(b\u00b7x^r) + c)",
+   "max_rel_err": 0.0,
+   "seconds": 13.9,
+   "truth": "partial_pressure = mole_fraction*pressure",
+   "found": "partial_pressure = mole_fraction*pressure",
+   "family": "rational(F)",
    "pi_groups": [
-    "N_A*amount"
+    "mole_fraction"
    ]
   },
   {
    "law": "Henry's law",
    "domain": "chemistry",
    "result": "exact",
-   "max_rel_err": 0.0005627210000003457,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "concentration = henry_constant*partial_pressure",
-   "found": "concentration = 1.000562721*henry_constant*partial_pressure",
+   "found": "concentration = henry_constant*partial_pressure",
    "family": "constant",
    "pi_groups": []
   },
   {
-   "law": "Dalton partial pressure",
+   "law": "Number of particles",
    "domain": "chemistry",
    "result": "exact",
-   "max_rel_err": 0.010289390212635923,
-   "seconds": 11.3,
-   "truth": "partial_pressure = mole_fraction*pressure",
-   "found": "partial_pressure = 1.001602986*mole_fraction**0.9984214853*pressure*exp(-0.0127022352/mole_fraction**6.470423786)",
-   "family": "a\u00b7x^p\u00b7exp(b\u00b7x^r)",
+   "max_rel_err": 0.0,
+   "seconds": 15.4,
+   "truth": "number = N_A*amount",
+   "found": "number = N_A*amount",
+   "family": "rational(F)",
    "pi_groups": [
-    "mole_fraction"
+    "N_A*amount"
    ]
   },
   {
    "law": "Raoult's law",
    "domain": "chemistry",
    "result": "exact",
-   "max_rel_err": 0.001651436075500693,
-   "seconds": 15.0,
+   "max_rel_err": 0.0,
+   "seconds": 16.1,
    "truth": "partial_pressure = mole_fraction*vapor_pressure_pure",
-   "found": "partial_pressure = 9.824829114*mole_fraction**0.5647053728*vapor_pressure_pure/(exp(2.563748469/mole_fraction**0.1290966426) - 3.150821545)",
-   "family": "a\u00b7x^p/(exp(b\u00b7x^r) + c)",
+   "found": "partial_pressure = mole_fraction*vapor_pressure_pure",
+   "family": "additive(lin+log)",
    "pi_groups": [
     "mole_fraction"
-   ]
-  },
-  {
-   "law": "pOH definition",
-   "domain": "chemistry",
-   "result": "exact",
-   "max_rel_err": 0.002763995297859265,
-   "seconds": 12.2,
-   "truth": "poh = -log(hydroxide_concentration)/log(10)",
-   "found": "poh = 1.72373681229774/hydroxide_concentration**0.130297014016632 - 1.72371601201614*hydroxide_concentration**0.121806584270303",
-   "family": "sum2",
-   "pi_groups": [
-    "hydroxide_concentration"
    ]
   },
   {
    "law": "pH definition",
    "domain": "chemistry",
    "result": "exact",
-   "max_rel_err": 0.0019034071774798242,
-   "seconds": 13.2,
+   "max_rel_err": 0.0,
+   "seconds": 12.8,
    "truth": "ph = -log(hydrogen_concentration)/log(10)",
-   "found": "ph = 1.40387128041394/hydrogen_concentration**0.162180555177505 - 1.40387067812028*hydrogen_concentration**0.147612593039493",
-   "family": "sum2",
+   "found": "ph = -log(hydrogen_concentration)/log(10)",
+   "family": "additive(lin+log)",
    "pi_groups": [
     "hydrogen_concentration"
+   ]
+  },
+  {
+   "law": "pOH definition",
+   "domain": "chemistry",
+   "result": "exact",
+   "max_rel_err": 0.0,
+   "seconds": 12.2,
+   "truth": "poh = -log(hydroxide_concentration)/log(10)",
+   "found": "poh = -log(hydroxide_concentration)/log(10)",
+   "family": "additive(lin+log)",
+   "pi_groups": [
+    "hydroxide_concentration"
    ]
   },
   {
    "law": "Arrhenius equation",
    "domain": "chemistry",
    "result": "exact",
-   "max_rel_err": 0.008308303504528436,
-   "seconds": 11.3,
+   "max_rel_err": 0.0,
+   "seconds": 12.0,
    "truth": "rate_constant = pre_exponential*exp(-activation_energy/(R*temperature))",
-   "found": "rate_constant = 0.9969452962*pre_exponential*exp(-0.9971954484/(R*temperature/activation_energy)**1.004456165)",
+   "found": "rate_constant = pre_exponential*exp(-activation_energy/(R*temperature))",
    "family": "a\u00b7exp(b\u00b7x^p)",
    "pi_groups": [
     "R*temperature/activation_energy"
@@ -1594,10 +1594,10 @@
    "law": "First-order half-life",
    "domain": "chemistry",
    "result": "exact",
-   "max_rel_err": 0.000141807891327614,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "half_life = log(2)/rate_constant",
-   "found": "half_life = 0.6932454743/rate_constant",
+   "found": "half_life = log(2)/rate_constant",
    "family": "constant",
    "pi_groups": []
   },
@@ -1605,10 +1605,10 @@
    "law": "First-order integrated rate law",
    "domain": "chemistry",
    "result": "exact",
-   "max_rel_err": 0.0005656386148471206,
-   "seconds": 13.0,
+   "max_rel_err": 0.0,
+   "seconds": 13.4,
    "truth": "concentration = concentration__c0*exp(-rate_constant*time)",
-   "found": "concentration = 0.9994605297*concentration__c0*exp(-0.9997665755*(rate_constant*time)**1.000059537)",
+   "found": "concentration = concentration__c0*exp(-rate_constant*time)",
    "family": "a\u00b7exp(b\u00b7x^p)",
    "pi_groups": [
     "rate_constant*time"
@@ -1618,11 +1618,11 @@
    "law": "Gibbs energy and cell potential",
    "domain": "chemistry",
    "result": "exact",
-   "max_rel_err": 0.002030968973171039,
-   "seconds": 4.7,
+   "max_rel_err": 0.0,
+   "seconds": 5.7,
    "truth": "gibbs_energy = -F_c*cell_potential*electrons_transferred",
-   "found": "gibbs_energy = -58158469.48*F_c*cell_potential*electrons_transferred**1.001704748/(electrons_transferred**1.001704748 + 58278955.34)",
-   "family": "a\u00b7x^p/(b + x^p)",
+   "found": "gibbs_energy = -F_c*cell_potential*electrons_transferred",
+   "family": "a\u00b7x^p",
    "pi_groups": [
     "electrons_transferred"
    ]
@@ -1630,9 +1630,9 @@
   {
    "law": "Standard Gibbs energy and equilibrium",
    "domain": "chemistry",
-   "result": "exact",
+   "result": "approx",
    "max_rel_err": 0.00854673788456986,
-   "seconds": 13.1,
+   "seconds": 12.8,
    "truth": "gibbs_energy = -R*temperature*log(equilibrium_constant)",
    "found": "gibbs_energy = R*temperature*(-0.998819826*log(equilibrium_constant) - 0.0001019617719)",
    "family": "a + b\u00b7log(x)",
@@ -1643,11 +1643,11 @@
   {
    "law": "Radioactive decay law",
    "domain": "nuclear",
-   "result": "exact",
-   "max_rel_err": 0.0052752832709331435,
-   "seconds": 89.5,
+   "result": "approx",
+   "max_rel_err": 0.002960144137646115,
+   "seconds": 89.4,
    "truth": "number = initial_number*exp(-decay_constant*time)",
-   "found": "number = 1.005525651*initial_number**0.99940066*exp(-1.000474526*(decay_constant*time)**0.9997267659)/(decay_constant*time)**0.003047756307",
+   "found": "number = 4*sqrt(3)*initial_number*exp(-decay_constant*time)/(3*log(10))",
    "family": "a\u00b7x^p\u00b7exp(b\u00b7x^r)",
    "pi_groups": [
     "initial_number",
@@ -1658,37 +1658,37 @@
    "law": "Beer-Lambert law",
    "domain": "chemistry",
    "result": "exact",
-   "max_rel_err": 0.0023507205978305305,
-   "seconds": 11.5,
+   "max_rel_err": 0.0,
+   "seconds": 12.2,
    "truth": "absorbance = concentration*molar_absorptivity*path_length",
-   "found": "absorbance = 0.000152568709/(exp(0.0001527705997/(concentration*molar_absorptivity*path_length)**1.000508394) - 1.000000002)",
-   "family": "a/(exp(b\u00b7x^p) + c)",
+   "found": "absorbance = concentration*molar_absorptivity*path_length",
+   "family": "rational(F)",
    "pi_groups": [
     "concentration*molar_absorptivity*path_length"
-   ]
-  },
-  {
-   "law": "Freezing point depression",
-   "domain": "chemistry",
-   "result": "exact",
-   "max_rel_err": 0.00517378962695779,
-   "seconds": 9.5,
-   "truth": "freezing_point_depression = cryoscopic_constant*molality*vant_hoff_factor",
-   "found": "freezing_point_depression = 1.191170069e-5*cryoscopic_constant*molality*vant_hoff_factor**5.330602877/(exp(1.196968704e-5*vant_hoff_factor**4.325803185) - 1.000000129)",
-   "family": "a\u00b7x^p/(exp(b\u00b7x^r) + c)",
-   "pi_groups": [
-    "vant_hoff_factor"
    ]
   },
   {
    "law": "Osmotic pressure (van 't Hoff)",
    "domain": "chemistry",
    "result": "exact",
-   "max_rel_err": 0.005389963258626026,
-   "seconds": 14.6,
+   "max_rel_err": 0.0,
+   "seconds": 15.3,
    "truth": "osmotic_pressure = R*concentration*temperature*vant_hoff_factor",
-   "found": "osmotic_pressure = R*concentration*temperature*(0.00269661216014202/vant_hoff_factor**6.31253042746345 + 1.00284848683452*vant_hoff_factor**0.997411478692752)",
+   "found": "osmotic_pressure = R*concentration*temperature*vant_hoff_factor",
    "family": "sum2",
+   "pi_groups": [
+    "vant_hoff_factor"
+   ]
+  },
+  {
+   "law": "Freezing point depression",
+   "domain": "chemistry",
+   "result": "exact",
+   "max_rel_err": 0.0,
+   "seconds": 10.3,
+   "truth": "freezing_point_depression = cryoscopic_constant*molality*vant_hoff_factor",
+   "found": "freezing_point_depression = cryoscopic_constant*molality*vant_hoff_factor",
+   "family": "additive(lin+log)",
    "pi_groups": [
     "vant_hoff_factor"
    ]
@@ -1696,12 +1696,12 @@
   {
    "law": "Henderson-Hasselbalch equation",
    "domain": "chemistry",
-   "result": "miss",
-   "max_rel_err": 0.09476817951641495,
-   "seconds": 57.6,
+   "result": "approx",
+   "max_rel_err": 0.024971920812685153,
+   "seconds": 59.1,
    "truth": "ph = pka + log(acid_ratio)/log(10)",
-   "found": "ph = 0.803059891946731*acid_ratio**0.0089094931132405*pka**1.09348217103187 + 0.320829622699294*acid_ratio**0.643305265517138*pka**0.126295064965242",
-   "family": "sum2",
+   "found": "ph = (pka*log(2**(4*sqrt(3)*pi))/3 + log(1000)*log(acid_ratio)/3)/(pi*log(2)*log(10))",
+   "family": "additive(lin+log)",
    "pi_groups": [
     "acid_ratio",
     "pka"
@@ -1710,12 +1710,12 @@
   {
    "law": "Faraday's law of electrolysis",
    "domain": "chemistry",
-   "result": "miss",
-   "max_rel_err": 0.039571213681568754,
-   "seconds": 15.8,
+   "result": "exact",
+   "max_rel_err": 0.0,
+   "seconds": 17.2,
    "truth": "amount = charge/(F_c*electrons_transferred)",
-   "found": "amount = 3.510120575*charge/(F_c*electrons_transferred**0.9978623533*(2.518038931 + exp(-0.1939153855/electrons_transferred**55.78226529)))",
-   "family": "a\u00b7x^p/(exp(b\u00b7x^r) + c)",
+   "found": "amount = charge/(F_c*electrons_transferred)",
+   "family": "a\u00b7x^p",
    "pi_groups": [
     "electrons_transferred"
    ]
@@ -1724,22 +1724,22 @@
    "law": "Doubling time",
    "domain": "biology",
    "result": "exact",
-   "max_rel_err": 1.0427221890711538e-06,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "generation_time = log(2)/growth_rate",
-   "found": "generation_time = 0.6931464578/growth_rate",
+   "found": "generation_time = log(2)/growth_rate",
    "family": "constant",
    "pi_groups": []
   },
   {
    "law": "Michaelis-Menten kinetics",
    "domain": "biology",
-   "result": "exact",
-   "max_rel_err": 0.0006545901459308378,
-   "seconds": 14.3,
+   "result": "approx",
+   "max_rel_err": 0.007720923849430927,
+   "seconds": 16.9,
    "truth": "reaction_velocity = max_velocity*substrate_concentration/(michaelis_constant + substrate_concentration)",
-   "found": "reaction_velocity = 1.023561134*max_velocity*(substrate_concentration/michaelis_constant)**1.010151844/(1 + 1.047169753*substrate_concentration/michaelis_constant)",
-   "family": "a\u00b7x^p/(1 + b\u00b7x)",
+   "found": "reaction_velocity = 4*sqrt(3)*pi**2*max_velocity*substrate_concentration/(3*(10*michaelis_constant + pi**2*substrate_concentration)*log(10))",
+   "family": "a\u00b7x^p/(b + x^p)",
    "pi_groups": [
     "substrate_concentration/michaelis_constant"
    ]
@@ -1747,9 +1747,9 @@
   {
    "law": "Logistic growth rate",
    "domain": "biology",
-   "result": "exact",
+   "result": "approx",
    "max_rel_err": 0.018741149644456483,
-   "seconds": 51.5,
+   "seconds": 51.8,
    "truth": "population_rate = growth_rate*population*(carrying_capacity - population)/carrying_capacity",
    "found": "population_rate = growth_rate*(-1.02640374420825*population**1.98734269743723/carrying_capacity**0.987423209480041 + 1.02653118868337*population**1.01260841496744/carrying_capacity**0.012775074369427)",
    "family": "sum2",
@@ -1768,47 +1768,23 @@
    "law": "Basic reproduction number (SIR)",
    "domain": "biology",
    "result": "exact",
-   "max_rel_err": 0.003514124869704734,
-   "seconds": 12.6,
+   "max_rel_err": 0.0,
+   "seconds": 11.7,
    "truth": "basic_reproduction_number = transmission_rate/recovery_rate",
-   "found": "basic_reproduction_number = 1.000579736*(transmission_rate/recovery_rate)**0.9991505198 - 0.001181874495",
-   "family": "a + b\u00b7x^p",
+   "found": "basic_reproduction_number = transmission_rate/recovery_rate",
+   "family": "rational(F)",
    "pi_groups": [
     "transmission_rate/recovery_rate"
    ]
   },
   {
-   "law": "Herd immunity threshold",
-   "domain": "biology",
-   "result": "exact",
-   "max_rel_err": 0.0011895905965339027,
-   "seconds": 5.5,
-   "truth": "herd_immunity_threshold = (basic_reproduction_number - 1)/basic_reproduction_number",
-   "found": "herd_immunity_threshold = 1.00142492 - 1.001376035/basic_reproduction_number**0.9968690447",
-   "family": "a + b\u00b7x^p",
-   "pi_groups": [
-    "basic_reproduction_number"
-   ]
-  },
-  {
-   "law": "Kleiber's law",
-   "domain": "biology",
-   "result": "exact",
-   "max_rel_err": 0.00019006830000024987,
-   "seconds": 0.0,
-   "truth": "metabolic_rate = bmr_coefficient*mass**(3/4)",
-   "found": "metabolic_rate = 0.9998099317*bmr_coefficient*mass**(3/4)",
-   "family": "constant",
-   "pi_groups": []
-  },
-  {
    "law": "Exponential population growth",
    "domain": "biology",
    "result": "exact",
-   "max_rel_err": 0.003806511313204035,
-   "seconds": 84.1,
+   "max_rel_err": 0.0,
+   "seconds": 79.6,
    "truth": "population = initial_population*exp(growth_rate*time)",
-   "found": "population = 1.002223843*initial_population**0.997691*exp(1.000182157*(growth_rate*time)**0.9999663866)",
+   "found": "population = initial_population*exp(growth_rate*time)",
    "family": "a\u00b7exp(b\u00b7x^p)",
    "pi_groups": [
     "initial_population",
@@ -1816,14 +1792,38 @@
    ]
   },
   {
+   "law": "Kleiber's law",
+   "domain": "biology",
+   "result": "exact",
+   "max_rel_err": 0.0,
+   "seconds": 0.0,
+   "truth": "metabolic_rate = bmr_coefficient*mass**(3/4)",
+   "found": "metabolic_rate = bmr_coefficient*mass**(3/4)",
+   "family": "constant",
+   "pi_groups": []
+  },
+  {
+   "law": "Herd immunity threshold",
+   "domain": "biology",
+   "result": "exact",
+   "max_rel_err": 0.0,
+   "seconds": 5.8,
+   "truth": "herd_immunity_threshold = (basic_reproduction_number - 1)/basic_reproduction_number",
+   "found": "herd_immunity_threshold = (basic_reproduction_number - 1)/basic_reproduction_number",
+   "family": "a + b\u00b7x^p",
+   "pi_groups": [
+    "basic_reproduction_number"
+   ]
+  },
+  {
    "law": "Moment magnitude scale",
    "domain": "earth_science",
-   "result": "exact",
-   "max_rel_err": 0.0019204122553956187,
-   "seconds": 6.5,
+   "result": "approx",
+   "max_rel_err": 0.002215978059841438,
+   "seconds": 6.6,
    "truth": "moment_magnitude = 0.289529654602168*log(seismic_moment_value) - 6.06666666666667",
-   "found": "moment_magnitude = -0.001445206559*seismic_moment_value**1.249978615e-5/(seismic_moment_value**1.249978615e-5 - 0.9997622453)",
-   "family": "a\u00b7x^p/(b + x^p)",
+   "found": "moment_magnitude = 7*log(seismic_moment_value)/24 - 14/log(10)",
+   "family": "a + b\u00b7log(x)",
    "pi_groups": [
     "seismic_moment_value"
    ]
@@ -1832,10 +1832,10 @@
    "law": "Barometric formula",
    "domain": "earth_science",
    "result": "exact",
-   "max_rel_err": 0.0016184766859510603,
-   "seconds": 13.4,
+   "max_rel_err": 0.0,
+   "seconds": 13.3,
    "truth": "pressure = pressure__P0*exp(-height/scale_height)",
-   "found": "pressure = 1.000697691*pressure__P0*exp(-1.000205665/(scale_height/height)**1.000170118)",
+   "found": "pressure = pressure__P0*exp(-height/scale_height)",
    "family": "a\u00b7exp(b\u00b7x^p)",
    "pi_groups": [
     "scale_height/height"
@@ -1845,10 +1845,10 @@
    "law": "Atmospheric scale height",
    "domain": "earth_science",
    "result": "exact",
-   "max_rel_err": 0.0005963050000002702,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "scale_height = R*temperature/(gravitational_acceleration*molar_mass)",
-   "found": "scale_height = 1.000596305*R*temperature/(gravitational_acceleration*molar_mass)",
+   "found": "scale_height = R*temperature/(gravitational_acceleration*molar_mass)",
    "family": "constant",
    "pi_groups": []
   },
@@ -1856,10 +1856,10 @@
    "law": "Dry adiabatic lapse rate",
    "domain": "earth_science",
    "result": "exact",
-   "max_rel_err": 0.0005279800000002607,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "lapse_rate = gravitational_acceleration/specific_heat",
-   "found": "lapse_rate = 1.00052798*gravitational_acceleration/specific_heat",
+   "found": "lapse_rate = gravitational_acceleration/specific_heat",
    "family": "constant",
    "pi_groups": []
   },
@@ -1867,11 +1867,11 @@
    "law": "Shannon information of an outcome",
    "domain": "information",
    "result": "exact",
-   "max_rel_err": 0.0021624775992219484,
-   "seconds": 8.3,
+   "max_rel_err": 0.0,
+   "seconds": 8.8,
    "truth": "information = -log(probability)/log(2)",
-   "found": "information = 2.139479055e-5 - 1.44285815*log(probability)",
-   "family": "a + b\u00b7log(x)",
+   "found": "information = -log(probability)/log(2)",
+   "family": "additive(lin+log)",
    "pi_groups": [
     "probability"
    ]
@@ -1880,10 +1880,10 @@
    "law": "Landauer limit",
    "domain": "information",
    "result": "exact",
-   "max_rel_err": 0.0008493773855925511,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "energy = k_B*temperature*log(2)",
-   "found": "energy = 0.6937359241*k_B*temperature",
+   "found": "energy = k_B*temperature*log(2)",
    "family": "constant",
    "pi_groups": []
   },
@@ -1891,10 +1891,10 @@
    "law": "Area of a circle",
    "domain": "geometry",
    "result": "exact",
-   "max_rel_err": 0.0005893040932890413,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "area = pi*radius**2",
-   "found": "area = 3.143444007*radius**2",
+   "found": "area = pi*radius**2",
    "family": "constant",
    "pi_groups": []
   },
@@ -1902,10 +1902,10 @@
    "law": "Circumference of a circle",
    "domain": "geometry",
    "result": "exact",
-   "max_rel_err": 0.0010557653252733375,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "length = 2*pi*radius",
-   "found": "length = 6.276551738*radius",
+   "found": "length = 2*pi*radius",
    "family": "constant",
    "pi_groups": []
   },
@@ -1913,10 +1913,10 @@
    "law": "Surface area of a sphere",
    "domain": "geometry",
    "result": "exact",
-   "max_rel_err": 0.00015522018401607622,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "area = 4*pi*radius**2",
-   "found": "area = 12.56442006*radius**2",
+   "found": "area = 4*pi*radius**2",
    "family": "constant",
    "pi_groups": []
   },
@@ -1924,22 +1924,22 @@
    "law": "Volume of a sphere",
    "domain": "geometry",
    "result": "exact",
-   "max_rel_err": 0.0007185495253906646,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "volume = 4*pi*radius**3/3",
-   "found": "volume = 4.191800058*radius**3",
+   "found": "volume = 4*pi*radius**3/3",
    "family": "constant",
    "pi_groups": []
   },
   {
    "law": "Hill equation",
    "domain": "biology",
-   "result": "miss",
-   "max_rel_err": 0.9734365492240288,
-   "seconds": 89.3,
+   "result": "exact",
+   "max_rel_err": 0.0,
+   "seconds": 84.1,
    "truth": "fraction_bound = (substrate_concentration/dissociation_constant)**hill_coefficient/((substrate_concentration/dissociation_constant)**hill_coefficient + 1)",
-   "found": "fraction_bound = 1.035381862e+35*(substrate_concentration/dissociation_constant)**4.901194788/(hill_coefficient**0.066275448*(exp(80.93186713*(substrate_concentration/dissociation_constant)**0.05595519194) + 5.239918172e+34))",
-   "family": "a\u00b7x^p/(exp(b\u00b7x^r) + c)",
+   "found": "fraction_bound = (substrate_concentration/dissociation_constant)**hill_coefficient/((substrate_concentration/dissociation_constant)**hill_coefficient + 1)",
+   "family": "x^(b\u00b7z)/(a + x^(b\u00b7z))",
    "pi_groups": [
     "hill_coefficient",
     "substrate_concentration/dissociation_constant"
@@ -1949,11 +1949,11 @@
    "law": "Volume of a cylinder",
    "domain": "geometry",
    "result": "exact",
-   "max_rel_err": 0.002639679287038631,
-   "seconds": 13.5,
+   "max_rel_err": 0.0,
+   "seconds": 14.3,
    "truth": "volume = pi*height*radius**2",
-   "found": "volume = 1.138389171e+10*height**3*(radius/height)**2.001349395/((radius/height)**2.001349395 + 3621691553.0)",
-   "family": "a\u00b7x^p/(b + x^p)",
+   "found": "volume = pi*height*radius**2",
+   "family": "rational(sqrt(F))",
    "pi_groups": [
     "radius/height"
    ]
@@ -1962,34 +1962,21 @@
    "law": "Volume of a cone",
    "domain": "geometry",
    "result": "exact",
-   "max_rel_err": 0.0021200827968830137,
-   "seconds": 12.4,
+   "max_rel_err": 0.0,
+   "seconds": 13.7,
    "truth": "volume = pi*height*radius**2/3",
-   "found": "volume = 1.043845603e-5*height**3/(exp(9.963252493e-6/(radius/height)**2.001635016) - 0.9999999996)",
-   "family": "a/(exp(b\u00b7x^p) + c)",
+   "found": "volume = pi*height*radius**2/3",
+   "family": "a\u00b7x^p",
    "pi_groups": [
     "radius/height"
    ]
   },
   {
-   "law": "Area of a triangle",
-   "domain": "geometry",
-   "result": "exact",
-   "max_rel_err": 0.0005699227363469949,
-   "seconds": 12.7,
-   "truth": "area = height*length/2",
-   "found": "area = 0.4998923574*height**2*(length/height)**0.9997655394",
-   "family": "a\u00b7x^p",
-   "pi_groups": [
-    "length/height"
-   ]
-  },
-  {
    "law": "Nernst potential of an ion",
    "domain": "biology",
-   "result": "exact",
+   "result": "approx",
    "max_rel_err": 0.0021404411261434974,
-   "seconds": 88.2,
+   "seconds": 87.3,
    "truth": "membrane_potential = R*temperature*log(conc_outside/conc_inside)/(F_c*ion_charge)",
    "found": "membrane_potential = R*temperature*(875.7969742*(conc_outside/conc_inside)**0.001139981558 - 875.7969757)/(F_c*ion_charge**0.99954851)",
    "family": "a + b\u00b7x^p",
@@ -1999,13 +1986,26 @@
    ]
   },
   {
+   "law": "Area of a triangle",
+   "domain": "geometry",
+   "result": "exact",
+   "max_rel_err": 0.0,
+   "seconds": 14.5,
+   "truth": "area = height*length/2",
+   "found": "area = height*length/2",
+   "family": "additive(lin+log)",
+   "pi_groups": [
+    "length/height"
+   ]
+  },
+  {
    "law": "Average velocity",
    "domain": "mechanics",
    "result": "exact",
-   "max_rel_err": 0.0003596090000002053,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "velocity = distance/time",
-   "found": "velocity = 0.999640391*distance/time",
+   "found": "velocity = distance/time",
    "family": "constant",
    "pi_groups": []
   },
@@ -2013,10 +2013,10 @@
    "law": "Average acceleration",
    "domain": "mechanics",
    "result": "exact",
-   "max_rel_err": 1.1779200000221015e-05,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "acceleration = velocity_change/time",
-   "found": "acceleration = 0.9999882208*velocity_change/time",
+   "found": "acceleration = velocity_change/time",
    "family": "constant",
    "pi_groups": []
   },
@@ -2024,11 +2024,11 @@
    "law": "Arc length",
    "domain": "geometry",
    "result": "exact",
-   "max_rel_err": 0.0007775562133929674,
-   "seconds": 22.0,
+   "max_rel_err": 0.0,
+   "seconds": 24.2,
    "truth": "length = angle*radius",
-   "found": "length = 69.62519087*radius*sin(0.01436377449*angle)",
-   "family": "a\u00b7sin(b\u00b7x)",
+   "found": "length = angle*radius",
+   "family": "rational(F)",
    "pi_groups": [
     "angle"
    ]
@@ -2037,11 +2037,11 @@
    "law": "Angular size",
    "domain": "geometry",
    "result": "exact",
-   "max_rel_err": 0.00538051512379273,
-   "seconds": 14.7,
+   "max_rel_err": 0.0,
+   "seconds": 14.5,
    "truth": "angle = diameter/distance",
-   "found": "angle = 64.76173219/((distance/diameter)**1.43864673*(exp(4.385266321/(distance/diameter)**0.08039788287) - 15.43060337))",
-   "family": "a\u00b7x^p/(exp(b\u00b7x^r) + c)",
+   "found": "angle = diameter/distance",
+   "family": "rational(1/F)",
    "pi_groups": [
     "distance/diameter"
    ]
@@ -2050,11 +2050,11 @@
    "law": "Angular displacement",
    "domain": "mechanics",
    "result": "exact",
-   "max_rel_err": 0.001994780619946357,
+   "max_rel_err": 0.0,
    "seconds": 13.3,
    "truth": "angle = angular_velocity*time",
-   "found": "angle = 1.000430244*angular_velocity*time*(-9.906899301e-5*angular_velocity*time + 1)",
-   "family": "a\u00b7x\u00b7(1 \u2212 x/b)",
+   "found": "angle = angular_velocity*time",
+   "family": "additive(lin+log)",
    "pi_groups": [
     "angular_velocity*time"
    ]
@@ -2063,10 +2063,10 @@
    "law": "Projectile range",
    "domain": "mechanics",
    "result": "exact",
-   "max_rel_err": 0.011498583000150765,
-   "seconds": 15.3,
+   "max_rel_err": 0.0,
+   "seconds": 14.1,
    "truth": "range = initial_velocity**2*sin(2*angle)/gravitational_acceleration",
-   "found": "range = 0.9999466118*initial_velocity**2*sin(1.999993566*angle)/gravitational_acceleration",
+   "found": "range = initial_velocity**2*sin(2*angle)/gravitational_acceleration",
    "family": "a\u00b7sin(b\u00b7x)",
    "pi_groups": [
     "angle"
@@ -2076,10 +2076,10 @@
    "law": "Rocket thrust",
    "domain": "mechanics",
    "result": "exact",
-   "max_rel_err": 0.0006632223000002643,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "thrust = exhaust_velocity*mass_flow_rate",
-   "found": "thrust = 0.9993367777*exhaust_velocity*mass_flow_rate",
+   "found": "thrust = exhaust_velocity*mass_flow_rate",
    "family": "constant",
    "pi_groups": []
   },
@@ -2087,10 +2087,10 @@
    "law": "Centripetal force",
    "domain": "mechanics",
    "result": "exact",
-   "max_rel_err": 0.00027014610000030234,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "centripetal_force = mass*velocity**2/radius",
-   "found": "centripetal_force = 0.9997298539*mass*velocity**2/radius",
+   "found": "centripetal_force = mass*velocity**2/radius",
    "family": "constant",
    "pi_groups": []
   },
@@ -2098,22 +2098,22 @@
    "law": "Rotational power",
    "domain": "mechanics",
    "result": "exact",
-   "max_rel_err": 0.0011593050000002576,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "power = angular_velocity*torque",
-   "found": "power = 1.001159305*angular_velocity*torque",
+   "found": "power = angular_velocity*torque",
    "family": "constant",
    "pi_groups": []
   },
   {
    "law": "Tsiolkovsky rocket equation",
    "domain": "mechanics",
-   "result": "miss",
-   "max_rel_err": 0.17603622165413305,
-   "seconds": 9.4,
+   "result": "exact",
+   "max_rel_err": 0.0,
+   "seconds": 8.8,
    "truth": "velocity_change = exhaust_velocity*log(initial_mass/final_mass)",
-   "found": "velocity_change = exhaust_velocity*(1344.058952*(initial_mass/final_mass)**0.0007445560801 - 1344.058886)",
-   "family": "a + b\u00b7x^p",
+   "found": "velocity_change = exhaust_velocity*log(initial_mass/final_mass)",
+   "family": "additive(lin+log)",
    "pi_groups": [
     "initial_mass/final_mass"
    ]
@@ -2122,10 +2122,10 @@
    "law": "Moment of inertia of a solid sphere",
    "domain": "mechanics",
    "result": "exact",
-   "max_rel_err": 0.0009005907500004205,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "moment_of_inertia = 2*mass*radius**2/5",
-   "found": "moment_of_inertia = 0.3996397637*mass*radius**2",
+   "found": "moment_of_inertia = 2*mass*radius**2/5",
    "family": "constant",
    "pi_groups": []
   },
@@ -2133,10 +2133,10 @@
    "law": "Moment of inertia of a thin rod (centre)",
    "domain": "mechanics",
    "result": "exact",
-   "max_rel_err": 5.4963320000232796e-05,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "moment_of_inertia = length**2*mass/12",
-   "found": "moment_of_inertia = 0.08333791361*length**2*mass",
+   "found": "moment_of_inertia = length**2*mass/12",
    "family": "constant",
    "pi_groups": []
   },
@@ -2144,10 +2144,10 @@
    "law": "Moment of inertia of a solid disk",
    "domain": "mechanics",
    "result": "exact",
-   "max_rel_err": 0.0009945274000002936,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "moment_of_inertia = mass*radius**2/2",
-   "found": "moment_of_inertia = 0.5004972637*mass*radius**2",
+   "found": "moment_of_inertia = mass*radius**2/2",
    "family": "constant",
    "pi_groups": []
   },
@@ -2161,10 +2161,10 @@
    "law": "Damped oscillator decay time",
    "domain": "mechanics",
    "result": "exact",
-   "max_rel_err": 0.0012578005000003136,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "time_constant = 2*mass/damping_coefficient",
-   "found": "time_constant = 1.997484399*mass/damping_coefficient",
+   "found": "time_constant = 2*mass/damping_coefficient",
    "family": "constant",
    "pi_groups": []
   },
@@ -2172,10 +2172,10 @@
    "law": "Projectile maximum height",
    "domain": "mechanics",
    "result": "exact",
-   "max_rel_err": 0.0004910528000002584,
-   "seconds": 15.7,
+   "max_rel_err": 0.0,
+   "seconds": 16.2,
    "truth": "height = initial_velocity**2*sin(angle)**2/(2*gravitational_acceleration)",
-   "found": "height = 0.5002455264*initial_velocity**2*sin(angle)**2.0/gravitational_acceleration",
+   "found": "height = initial_velocity**2*sin(angle)**2/(2*gravitational_acceleration)",
    "family": "a\u00b7sin(x)^p",
    "pi_groups": [
     "angle"
@@ -2184,12 +2184,12 @@
   {
    "law": "Reduced mass",
    "domain": "mechanics",
-   "result": "exact",
-   "max_rel_err": 0.0025670543595389178,
-   "seconds": 13.4,
+   "result": "approx",
+   "max_rel_err": 0.007827890723098238,
+   "seconds": 15.2,
    "truth": "reduced_mass = mass1*mass2/(mass1 + mass2)",
-   "found": "reduced_mass = 0.9639400333*mass1*(mass2/mass1)**0.9830922327/(1 + 0.9254393308*mass2/mass1)",
-   "family": "a\u00b7x^p/(1 + b\u00b7x)",
+   "found": "reduced_mass = 7*sqrt(3)*pi**2*mass1*mass2/(12*(10*mass1 + pi**2*mass2))",
+   "family": "a\u00b7x^p/(b + x^p)",
    "pi_groups": [
     "mass2/mass1"
    ]
@@ -2198,10 +2198,10 @@
    "law": "Orbital period of a circular orbit",
    "domain": "mechanics",
    "result": "exact",
-   "max_rel_err": 0.0011980820956869294,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "period = 2*pi*radius/orbital_velocity",
-   "found": "period = 6.290713079*radius/orbital_velocity",
+   "found": "period = 2*pi*radius/orbital_velocity",
    "family": "constant",
    "pi_groups": []
   },
@@ -2209,11 +2209,11 @@
    "law": "Physical pendulum period",
    "domain": "mechanics",
    "result": "exact",
-   "max_rel_err": 0.0010007212645832978,
-   "seconds": 15.6,
+   "max_rel_err": 4.398035826745857e-16,
+   "seconds": 16.6,
    "truth": "period = 2*pi*sqrt(moment_of_inertia/(distance*gravitational_acceleration*mass))",
-   "found": "period = sqrt(distance)*(4.90132922935829/(distance**2*mass/moment_of_inertia)**0.499704367050366 + 1.37766958211664/(distance**2*mass/moment_of_inertia)**0.499704320004721)/sqrt(gravitational_acceleration)",
-   "family": "sum2",
+   "found": "period = 2*pi*sqrt(distance)/sqrt(distance**2*gravitational_acceleration*mass/moment_of_inertia)",
+   "family": "rational(1/F^2)",
    "pi_groups": [
     "distance**2*mass/moment_of_inertia"
    ]
@@ -2222,11 +2222,11 @@
    "law": "Static friction limit",
    "domain": "mechanics",
    "result": "exact",
-   "max_rel_err": 0.0019185728484289108,
-   "seconds": 11.9,
+   "max_rel_err": 0.0,
+   "seconds": 13.3,
    "truth": "friction_force = normal_force*static_friction_coefficient",
-   "found": "friction_force = normal_force*(0.999297152890147*static_friction_coefficient**1.00034710311697 + 4.10816225910146e-14*static_friction_coefficient**16.3722755240067)",
-   "family": "sum2",
+   "found": "friction_force = normal_force*static_friction_coefficient",
+   "family": "additive(lin+log)",
    "pi_groups": [
     "static_friction_coefficient"
    ]
@@ -2235,11 +2235,11 @@
    "law": "Quality factor of an oscillator",
    "domain": "mechanics",
    "result": "exact",
-   "max_rel_err": 0.0038963500834912866,
-   "seconds": 15.9,
+   "max_rel_err": 0.0,
+   "seconds": 17.1,
    "truth": "quality_factor = angular_frequency*mass/damping_coefficient",
-   "found": "quality_factor = 135.3560815*sin(0.007386788798*angular_frequency*mass/damping_coefficient)",
-   "family": "a\u00b7sin(b\u00b7x)",
+   "found": "quality_factor = angular_frequency*mass/damping_coefficient",
+   "family": "rational(F)",
    "pi_groups": [
     "angular_frequency*mass/damping_coefficient"
    ]
@@ -2248,11 +2248,11 @@
    "law": "Orbital energy",
    "domain": "gravitation",
    "result": "exact",
-   "max_rel_err": 0.0023051772566289996,
-   "seconds": 14.7,
+   "max_rel_err": 0.0,
+   "seconds": 15.0,
    "truth": "energy = -G*mass1*mass2/(2*semi_major_axis)",
-   "found": "energy = -0.5000219539*G*mass1**2*(mass2/mass1)**1.001565807/semi_major_axis",
-   "family": "a\u00b7x^p",
+   "found": "energy = -G*mass1*mass2/(2*semi_major_axis)",
+   "family": "rational(F)",
    "pi_groups": [
     "mass2/mass1"
    ]
@@ -2261,59 +2261,59 @@
    "law": "Gravitational binding energy of a uniform sphere",
    "domain": "gravitation",
    "result": "exact",
-   "max_rel_err": 9.248116666694373e-05,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "binding_energy = 3*G*mass**2/(5*radius)",
-   "found": "binding_energy = 0.5999445113*G*mass**2/radius",
+   "found": "binding_energy = 3*G*mass**2/(5*radius)",
    "family": "constant",
    "pi_groups": []
   },
   {
    "law": "Free-fall collapse time",
    "domain": "gravitation",
-   "result": "exact",
-   "max_rel_err": 0.00010720530279972392,
+   "result": "approx",
+   "max_rel_err": 0.0003080176350555897,
    "seconds": 0.0,
    "truth": "free_fall_time = sqrt(6)*sqrt(pi)*sqrt(1/(G*density))/8",
-   "found": "free_fall_time = 0.5426427605/(sqrt(G)*sqrt(density))",
+   "found": "free_fall_time = 5/(4*sqrt(G*density)*log(10))",
    "family": "constant",
    "pi_groups": []
   },
   {
-   "law": "Roche limit (rigid body)",
+   "law": "Hill sphere radius",
    "domain": "gravitation",
-   "result": "exact",
-   "max_rel_err": 0.004129093605265329,
-   "seconds": 14.1,
-   "truth": "roche_limit = 2**(1/3)*radius*(primary_density/satellite_density)**(1/3)",
-   "found": "roche_limit = 7.264111139e-11*radius*exp(23.57517204/(satellite_density/primary_density)**0.01417406527)",
-   "family": "a\u00b7exp(b\u00b7x^p)",
+   "result": "approx",
+   "max_rel_err": 0.00030877667762754503,
+   "seconds": 15.4,
+   "truth": "hill_radius = 3**(2/3)*semi_major_axis*(mass1/mass2)**(1/3)/3",
+   "found": "hill_radius = semi_major_axis*log(2)/(mass2/mass1)**(1/3)",
+   "family": "a\u00b7x^p",
    "pi_groups": [
-    "satellite_density/primary_density"
+    "mass2/mass1"
    ]
   },
   {
-   "law": "Hill sphere radius",
+   "law": "Roche limit (rigid body)",
    "domain": "gravitation",
-   "result": "exact",
-   "max_rel_err": 0.004130119928605166,
-   "seconds": 14.9,
-   "truth": "hill_radius = 3**(2/3)*semi_major_axis*(mass1/mass2)**(1/3)/3",
-   "found": "hill_radius = semi_major_axis*(0.693191703339102/(mass2/mass1)**0.333711655761046 - 1.63015986048062e-7*(mass2/mass1)**5.9724699877659)",
-   "family": "sum2",
+   "result": "approx",
+   "max_rel_err": 0.0026065033671993382,
+   "seconds": 16.1,
+   "truth": "roche_limit = 2**(1/3)*radius*(primary_density/satellite_density)**(1/3)",
+   "found": "roche_limit = 2*pi*radius/(5*(satellite_density/primary_density)**(1/3))",
+   "family": "a\u00b7x^p",
    "pi_groups": [
-    "mass2/mass1"
+    "satellite_density/primary_density"
    ]
   },
   {
    "law": "Tidal acceleration",
    "domain": "gravitation",
    "result": "exact",
-   "max_rel_err": 0.0016741934433456703,
-   "seconds": 22.0,
+   "max_rel_err": 0.0,
+   "seconds": 22.2,
    "truth": "tidal_acceleration = 2*G*length*mass/distance**3",
-   "found": "tidal_acceleration = 2.000235789*G*mass*(length/distance)**2.998971867/(length**2*(1 - 0.0001269881806*length/distance))",
-   "family": "a\u00b7x^p/(1 + b\u00b7x)",
+   "found": "tidal_acceleration = 2*G*length*mass/distance**3",
+   "family": "a\u00b7x^p",
    "pi_groups": [
     "length/distance"
    ]
@@ -2322,10 +2322,10 @@
    "law": "Photon sphere radius",
    "domain": "gravitation",
    "result": "exact",
-   "max_rel_err": 0.0006059470000002333,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "photon_sphere_radius = 3*G*mass/c**2",
-   "found": "photon_sphere_radius = 3.001817841*G*mass/c**2",
+   "found": "photon_sphere_radius = 3*G*mass/c**2",
    "family": "constant",
    "pi_groups": []
   },
@@ -2333,10 +2333,10 @@
    "law": "Innermost stable circular orbit",
    "domain": "gravitation",
    "result": "exact",
-   "max_rel_err": 0.00048506800000029107,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "isco_radius = 6*G*mass/c**2",
-   "found": "isco_radius = 5.997089592*G*mass/c**2",
+   "found": "isco_radius = 6*G*mass/c**2",
    "family": "constant",
    "pi_groups": []
   },
@@ -2344,11 +2344,11 @@
    "law": "Gravitational redshift (weak field)",
    "domain": "gravitation",
    "result": "exact",
-   "max_rel_err": 0.0038591612666514486,
-   "seconds": 17.4,
+   "max_rel_err": 0.0,
+   "seconds": 18.2,
    "truth": "redshift = G*mass/(c**2*radius)",
-   "found": "redshift = 97051647.23/((c**2*radius/(G*mass))**0.001006386551*(1 + 97040024.06*c**2*radius/(G*mass)))",
-   "family": "a\u00b7x^p/(1 + b\u00b7x)",
+   "found": "redshift = G*mass/(c**2*radius)",
+   "family": "rational(1/F)",
    "pi_groups": [
     "c**2*radius/(G*mass)"
    ]
@@ -2357,11 +2357,11 @@
    "law": "Relativistic kinetic energy",
    "domain": "relativity",
    "result": "exact",
-   "max_rel_err": 0.0003870316222498839,
-   "seconds": 5.9,
+   "max_rel_err": 0.0,
+   "seconds": 7.0,
    "truth": "kinetic_energy = c**2*mass*(lorentz_factor - 1)",
-   "found": "kinetic_energy = c**2*mass*(1.003028686*lorentz_factor**0.998038628 - 1.003020238)**1.000385093",
-   "family": "(a + b\u00b7x^p)^q",
+   "found": "kinetic_energy = c**2*mass*(lorentz_factor - 1)",
+   "family": "rational(F)",
    "pi_groups": [
     "lorentz_factor"
    ]
@@ -2370,11 +2370,11 @@
    "law": "Light deflection by a mass",
    "domain": "gravitation",
    "result": "exact",
-   "max_rel_err": 0.00218483200844966,
-   "seconds": 14.6,
+   "max_rel_err": 0.0,
+   "seconds": 15.7,
    "truth": "deflection_angle = 4*G*mass/(c**2*impact_parameter)",
-   "found": "deflection_angle = 3.995481836*(G*mass/(c**2*impact_parameter))**0.9994678644 + 4.789149146e-5",
-   "family": "a + b\u00b7x^p",
+   "found": "deflection_angle = 4*G*mass/(c**2*impact_parameter)",
+   "family": "rational(F)",
    "pi_groups": [
     "G*mass/(c**2*impact_parameter)"
    ]
@@ -2382,12 +2382,12 @@
   {
    "law": "Relativistic Doppler effect",
    "domain": "relativity",
-   "result": "exact",
-   "max_rel_err": 0.01010850006650362,
-   "seconds": 7.8,
+   "result": "approx",
+   "max_rel_err": 0.0008793241861060856,
+   "seconds": 7.9,
    "truth": "observed_frequency = frequency*sqrt((c - velocity)/(c + velocity))",
-   "found": "observed_frequency = frequency*(1.88869911 - 1.88866727*(velocity/c)**0.2834532262)**0.508507687",
-   "family": "(a + b\u00b7x^p)^q",
+   "found": "observed_frequency = sqrt(5)*sqrt(pi)*frequency/sqrt(c*(5*pi + 7*sqrt(5)*velocity/c)/(c - velocity))",
+   "family": "rational(1/F^2)",
    "pi_groups": [
     "velocity/c"
    ]
@@ -2396,10 +2396,10 @@
    "law": "Wavenumber",
    "domain": "quantum",
    "result": "exact",
-   "max_rel_err": 9.972391228043664e-05,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "wavenumber = 2*pi/wavelength",
-   "found": "wavenumber = 6.283811891/wavelength",
+   "found": "wavenumber = 2*pi/wavelength",
    "family": "constant",
    "pi_groups": []
   },
@@ -2407,10 +2407,10 @@
    "law": "Photon energy from wavelength",
    "domain": "quantum",
    "result": "exact",
-   "max_rel_err": 0.000262284000000271,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "photon_energy = c*h/wavelength",
-   "found": "photon_energy = 1.000262284*c*h/wavelength",
+   "found": "photon_energy = c*h/wavelength",
    "family": "constant",
    "pi_groups": []
   },
@@ -2418,11 +2418,11 @@
    "law": "Total relativistic energy",
    "domain": "relativity",
    "result": "exact",
-   "max_rel_err": 0.0020283243575630722,
-   "seconds": 17.8,
+   "max_rel_err": 0.0,
+   "seconds": 17.9,
    "truth": "energy = c**2*lorentz_factor*mass",
-   "found": "energy = 0.9979684027*c**2*lorentz_factor**1.001189238*mass",
-   "family": "a\u00b7x^p",
+   "found": "energy = c**2*lorentz_factor*mass",
+   "family": "additive(lin+log)",
    "pi_groups": [
     "lorentz_factor"
    ]
@@ -2430,12 +2430,12 @@
   {
    "law": "Tunnelling decay constant",
    "domain": "quantum",
-   "result": "miss",
-   "max_rel_err": 0.137150282445996,
-   "seconds": 8.3,
+   "result": "approx",
+   "max_rel_err": 0.0014767942335550293,
+   "seconds": 8.2,
    "truth": "wavenumber = sqrt(2)*sqrt(mass*(-energy + potential_energy))/hbar",
-   "found": "wavenumber = sqrt(energy)*sqrt(mass)*(1.976430036*(potential_energy/energy)**1.009816253 - 1.97650364)**0.4995260569/hbar",
-   "family": "(a + b\u00b7x^p)^q",
+   "found": "wavenumber = sqrt(2)*3**(1/4)*sqrt(mass*(-energy + potential_energy))*sqrt(log(10))/(2*hbar)",
+   "family": "rational(F^2)",
    "pi_groups": [
     "potential_energy/energy"
    ]
@@ -2443,11 +2443,11 @@
   {
    "law": "Thermal de Broglie wavelength",
    "domain": "quantum",
-   "result": "exact",
-   "max_rel_err": 0.0007829969745326524,
+   "result": "approx",
+   "max_rel_err": 0.002651309852400377,
    "seconds": 0.0,
    "truth": "thermal_wavelength = sqrt(2)*h/(2*sqrt(pi)*sqrt(k_B*mass*temperature))",
-   "found": "thermal_wavelength = 0.399254651*h/(sqrt(k_B)*sqrt(mass)*sqrt(temperature))",
+   "found": "thermal_wavelength = 2*h/(5*sqrt(k_B*mass*temperature))",
    "family": "constant",
    "pi_groups": []
   },
@@ -2455,10 +2455,10 @@
    "law": "Zero-point energy",
    "domain": "quantum",
    "result": "exact",
-   "max_rel_err": 0.0005596930000002499,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "zero_point_energy = angular_frequency*hbar/2",
-   "found": "zero_point_energy = 0.4997201535*angular_frequency*hbar",
+   "found": "zero_point_energy = angular_frequency*hbar/2",
    "family": "constant",
    "pi_groups": []
   },
@@ -2466,11 +2466,11 @@
    "law": "Tunnelling probability",
    "domain": "quantum",
    "result": "exact",
-   "max_rel_err": 0.005992809147375723,
-   "seconds": 22.6,
+   "max_rel_err": 0.0,
+   "seconds": 21.1,
    "truth": "transmission_probability = exp(-2*length*wavenumber)",
-   "found": "transmission_probability = 0.9958501485*exp(-1.998251499*(length*wavenumber)**1.000290226)",
-   "family": "a\u00b7exp(b\u00b7x^p)",
+   "found": "transmission_probability = exp(-2*length*wavenumber)",
+   "family": "a\u00b7x^p\u00b7exp(b\u00b7x^r)",
    "pi_groups": [
     "length*wavenumber"
    ]
@@ -2479,11 +2479,11 @@
    "law": "Larmor precession frequency",
    "domain": "quantum",
    "result": "exact",
-   "max_rel_err": 0.008484745193591867,
-   "seconds": 9.7,
+   "max_rel_err": 0.0,
+   "seconds": 10.8,
    "truth": "angular_frequency = g_factor*magnetic_field*mu_B/hbar",
-   "found": "angular_frequency = 356.8122614*g_factor**2.018618556*magnetic_field*mu_B/(hbar*(exp(6.173932054*g_factor**0.1279305901) - 126.4838598))",
-   "family": "a\u00b7x^p/(exp(b\u00b7x^r) + c)",
+   "found": "angular_frequency = g_factor*magnetic_field*mu_B/hbar",
+   "family": "a\u00b7x^p",
    "pi_groups": [
     "g_factor"
    ]
@@ -2492,10 +2492,10 @@
    "law": "Magnetic dipole energy",
    "domain": "quantum",
    "result": "exact",
-   "max_rel_err": 0.0006095180000003481,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "potential_energy = magnetic_field*magnetic_moment",
-   "found": "potential_energy = 1.000609518*magnetic_field*magnetic_moment",
+   "found": "potential_energy = magnetic_field*magnetic_moment",
    "family": "constant",
    "pi_groups": []
   },
@@ -2503,10 +2503,10 @@
    "law": "Magnetic moment of a current loop",
    "domain": "quantum",
    "result": "exact",
-   "max_rel_err": 6.560030000025213e-05,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "magnetic_moment = area*current",
-   "found": "magnetic_moment = 0.9999343997*area*current",
+   "found": "magnetic_moment = area*current",
    "family": "constant",
    "pi_groups": []
   },
@@ -2514,10 +2514,10 @@
    "law": "Pair production threshold",
    "domain": "quantum",
    "result": "exact",
-   "max_rel_err": 0.00011798300000018784,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "threshold_energy = 2*c**2*m_e",
-   "found": "threshold_energy = 1.999764034*c**2*m_e",
+   "found": "threshold_energy = 2*c**2*m_e",
    "family": "constant",
    "pi_groups": []
   },
@@ -2525,10 +2525,10 @@
    "law": "Equipartition theorem (per quadratic degree of freedom)",
    "domain": "statistical_mechanics",
    "result": "exact",
-   "max_rel_err": 0.0002155046000001785,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "energy = k_B*temperature/2",
-   "found": "energy = 0.4998922477*k_B*temperature",
+   "found": "energy = k_B*temperature/2",
    "family": "constant",
    "pi_groups": []
   },
@@ -2536,21 +2536,21 @@
    "law": "Most probable molecular speed",
    "domain": "statistical_mechanics",
    "result": "exact",
-   "max_rel_err": 0.0008550983098169525,
+   "max_rel_err": 4.0836263979217515e-16,
    "seconds": 0.0,
    "truth": "velocity = sqrt(2)*sqrt(k_B*temperature/mass)",
-   "found": "velocity = 1.415422854*sqrt(k_B)*sqrt(temperature)/sqrt(mass)",
+   "found": "velocity = sqrt(2)*sqrt(k_B*temperature)/sqrt(mass)",
    "family": "constant",
    "pi_groups": []
   },
   {
    "law": "Mean molecular speed",
    "domain": "statistical_mechanics",
-   "result": "exact",
-   "max_rel_err": 0.0019371952699268084,
+   "result": "approx",
+   "max_rel_err": 0.002651309852400459,
    "seconds": 0.0,
    "truth": "velocity = 2*sqrt(2)*sqrt(k_B*temperature/mass)/sqrt(pi)",
-   "found": "velocity = 1.598860438*sqrt(k_B)*sqrt(temperature)/sqrt(mass)",
+   "found": "velocity = 8*sqrt(k_B*temperature)/(5*sqrt(mass))",
    "family": "constant",
    "pi_groups": []
   },
@@ -2558,11 +2558,11 @@
    "law": "Mean free path of a gas",
    "domain": "statistical_mechanics",
    "result": "exact",
-   "max_rel_err": 0.0012364738902643487,
-   "seconds": 12.8,
+   "max_rel_err": 0.0,
+   "seconds": 15.1,
    "truth": "mean_free_path = sqrt(2)*k_B*temperature/(2*pi*molecular_diameter**2*pressure)",
-   "found": "mean_free_path = 1981.15953*molecular_diameter*log(0.0001135173781*k_B*temperature/(molecular_diameter**3*pressure) + 1)",
-   "family": "a\u00b7log(1 + b\u00b7x)",
+   "found": "mean_free_path = sqrt(2)*k_B*temperature/(2*pi*molecular_diameter**2*pressure)",
+   "family": "rational(F)",
    "pi_groups": [
     "k_B*temperature/(molecular_diameter**3*pressure)"
    ]
@@ -2570,11 +2570,11 @@
   {
    "law": "Fermi energy of a free electron gas",
    "domain": "statistical_mechanics",
-   "result": "exact",
-   "max_rel_err": 0.0010090602199680086,
-   "seconds": 0.0,
+   "result": "approx",
+   "max_rel_err": 0.002244688009982522,
+   "seconds": 0.1,
    "truth": "fermi_energy = 3**(2/3)*pi**(4/3)*hbar**2*number_density**(2/3)/(2*m_e)",
-   "found": "fermi_energy = 4.790218747*hbar**2*number_density**(2/3)/m_e",
+   "found": "fermi_energy = 15*hbar**2*number_density**(2/3)/(pi*m_e)",
    "family": "constant",
    "pi_groups": []
   },
@@ -2583,7 +2583,7 @@
    "domain": "gravitation",
    "result": "miss",
    "max_rel_err": 0.921510944321913,
-   "seconds": 78.6,
+   "seconds": 79.9,
    "truth": "proper_time = time*sqrt(-2*G*mass/(c**2*radius) + 1)",
    "found": "proper_time = time*(-5.32958512339191/((radius/(c*time))**0.0161708738408494*(c**2*radius/(G*mass))**3.12731811095189) + 0.67225350813037*(c**2*radius/(G*mass))**0.115268819132024/(radius/(c*time))**0.00504741288036133)",
    "family": "sum2",
@@ -2595,12 +2595,12 @@
   {
    "law": "Kinetic theory pressure",
    "domain": "statistical_mechanics",
-   "result": "miss",
-   "max_rel_err": 15.737192573375046,
-   "seconds": 8.2,
+   "result": "exact",
+   "max_rel_err": 0.0,
+   "seconds": 8.9,
    "truth": "pressure = mass*number*velocity**2/(3*volume)",
-   "found": "pressure = mass*velocity**2*(-3778.29004075384/number**584.775993902374 + 0.333073472663284*number**1.00124704252282)/volume",
-   "family": "sum2",
+   "found": "pressure = mass*number*velocity**2/(3*volume)",
+   "family": "a\u00b7x^p",
    "pi_groups": [
     "number"
    ]
@@ -2609,10 +2609,10 @@
    "law": "Rayleigh-Jeans law",
    "domain": "statistical_mechanics",
    "result": "exact",
-   "max_rel_err": 0.0002209325000003363,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "spectral_radiance = 2*c*k_B*temperature/wavelength**4",
-   "found": "spectral_radiance = 1.999558135*c*k_B*temperature/wavelength**4",
+   "found": "spectral_radiance = 2*c*k_B*temperature/wavelength**4",
    "family": "constant",
    "pi_groups": []
   },
@@ -2620,11 +2620,11 @@
    "law": "Relativistic velocity addition",
    "domain": "relativity",
    "result": "miss",
-   "max_rel_err": 0.9155285456375297,
-   "seconds": 74.0,
+   "max_rel_err": 0.0731547776856295,
+   "seconds": 75.1,
    "truth": "final_velocity = c**2*(initial_velocity + velocity)/(c**2 + initial_velocity*velocity)",
-   "found": "final_velocity = c*(-195.659954467105/((initial_velocity/c)**0.411953386252718*(velocity/c)**0.444566960933193) + 196.652404579776/((initial_velocity/c)**0.410182752992855*(velocity/c)**0.442769394890409))",
-   "family": "sum2",
+   "found": "final_velocity = sqrt(2)*c*sqrt((-4*sqrt(pi)*c**2*log(10) + pi**2*c*(5*initial_velocity + 2*sqrt(6)*velocity)*log(10) - 8*pi*initial_velocity*velocity)/(pi*c**2*log(2) - sqrt(2)*c*initial_velocity*log(2) - c*velocity + 2*initial_velocity*velocity))*sqrt(log(2))/(4*sqrt(pi)*sqrt(log(10)))",
+   "family": "rational(F^2)",
    "pi_groups": [
     "initial_velocity/c",
     "velocity/c"
@@ -2634,11 +2634,11 @@
    "law": "Helmholtz free energy",
    "domain": "thermodynamics",
    "result": "exact",
-   "max_rel_err": 0.007416921407038036,
-   "seconds": 7.7,
+   "max_rel_err": 0.0,
+   "seconds": 8.6,
    "truth": "helmholtz_energy = -entropy*temperature + internal_energy",
-   "found": "helmholtz_energy = internal_energy*(0.9886783109235/(entropy*temperature/internal_energy)**0.00588535129703581 - 0.988688545839374*(entropy*temperature/internal_energy)**1.00468487365898)",
-   "family": "sum2",
+   "found": "helmholtz_energy = -entropy*temperature + internal_energy",
+   "family": "rational(F)",
    "pi_groups": [
     "entropy*temperature/internal_energy"
    ]
@@ -2647,10 +2647,10 @@
    "law": "Planck's law of black-body radiation",
    "domain": "statistical_mechanics",
    "result": "exact",
-   "max_rel_err": 0.0074830178194735,
+   "max_rel_err": 0.0,
    "seconds": 13.3,
    "truth": "spectral_radiance = 2*c**2*h/(wavelength**5*(exp(c*h/(k_B*temperature*wavelength)) - 1))",
-   "found": "spectral_radiance = 1.998679241*k_B**5*temperature**5/(c**3*h**4*(k_B*temperature*wavelength/(c*h))**5.000530344*(exp(0.9996742842/(k_B*temperature*wavelength/(c*h))**0.9998055184) - 1.000237168))",
+   "found": "spectral_radiance = 2*c**2*h/(wavelength**5*(exp(c*h/(k_B*temperature*wavelength)) - 1))",
    "family": "a\u00b7x^p/(exp(b\u00b7x^r) + c)",
    "pi_groups": [
     "k_B*temperature*wavelength/(c*h)"
@@ -2660,11 +2660,11 @@
    "law": "Enthalpy",
    "domain": "thermodynamics",
    "result": "exact",
-   "max_rel_err": 0.00038649967843214255,
-   "seconds": 10.2,
+   "max_rel_err": 0.0,
+   "seconds": 11.7,
    "truth": "total_enthalpy = internal_energy + pressure*volume",
-   "found": "total_enthalpy = internal_energy*(1.001372989*(pressure*volume/internal_energy)**0.9994375177 + 0.9988851058)",
-   "family": "a + b\u00b7x^p",
+   "found": "total_enthalpy = internal_energy + pressure*volume",
+   "family": "rational(F)",
    "pi_groups": [
     "pressure*volume/internal_energy"
    ]
@@ -2673,11 +2673,11 @@
    "law": "Linear thermal expansion",
    "domain": "thermodynamics",
    "result": "exact",
-   "max_rel_err": 0.0019463512954760456,
-   "seconds": 9.8,
+   "max_rel_err": 0.0,
+   "seconds": 11.0,
    "truth": "displacement = length*temperature_change*thermal_expansion_coefficient",
-   "found": "displacement = 287.6272921*length*sin(0.003473888684*temperature_change*thermal_expansion_coefficient)",
-   "family": "a\u00b7sin(b\u00b7x)",
+   "found": "displacement = length*temperature_change*thermal_expansion_coefficient",
+   "family": "additive(lin+log)",
    "pi_groups": [
     "temperature_change*thermal_expansion_coefficient"
    ]
@@ -2686,10 +2686,10 @@
    "law": "Newton's law of cooling",
    "domain": "thermodynamics",
    "result": "exact",
-   "max_rel_err": 0.0005206748000002267,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "heat_flow = area*heat_transfer_coefficient*temperature_change",
-   "found": "heat_flow = 0.9994793252*area*heat_transfer_coefficient*temperature_change",
+   "found": "heat_flow = area*heat_transfer_coefficient*temperature_change",
    "family": "constant",
    "pi_groups": []
   },
@@ -2697,10 +2697,10 @@
    "law": "Thermal diffusivity",
    "domain": "thermodynamics",
    "result": "exact",
-   "max_rel_err": 0.00048172110000020593,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "thermal_diffusivity = thermal_conductivity/(density*specific_heat)",
-   "found": "thermal_diffusivity = 0.9995182789*thermal_conductivity/(density*specific_heat)",
+   "found": "thermal_diffusivity = thermal_conductivity/(density*specific_heat)",
    "family": "constant",
    "pi_groups": []
   },
@@ -2708,10 +2708,10 @@
    "law": "Thermal diffusion time",
    "domain": "thermodynamics",
    "result": "exact",
-   "max_rel_err": 0.0005759626000002941,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "time = length**2/thermal_diffusivity",
-   "found": "time = 0.9994240374*length**2/thermal_diffusivity",
+   "found": "time = length**2/thermal_diffusivity",
    "family": "constant",
    "pi_groups": []
   },
@@ -2725,35 +2725,34 @@
    "law": "Field at the centre of a current loop",
    "domain": "electromagnetism",
    "result": "exact",
-   "max_rel_err": 0.0010509470000002754,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "magnetic_field = current*mu_0/(2*radius)",
-   "found": "magnetic_field = 0.4994745265*current*mu_0/radius",
+   "found": "magnetic_field = current*mu_0/(2*radius)",
    "family": "constant",
    "pi_groups": []
   },
   {
-   "law": "Hydrogen-like energy levels",
-   "domain": "quantum",
+   "law": "Carnot refrigerator coefficient of performance",
+   "domain": "thermodynamics",
    "result": "exact",
-   "max_rel_err": 0.007399462800417392,
-   "seconds": 76.3,
-   "truth": "energy_level = -E_R*atomic_number**2/quantum_number**2",
-   "found": "energy_level = 76.48006505*E_R*atomic_number**1.996666554/(quantum_number**1.9999361*(-77.08598604 + exp(-3.527929738/atomic_number**4.376048185)))",
-   "family": "a\u00b7x^p/(exp(b\u00b7x^r) + c)",
+   "max_rel_err": 0.0,
+   "seconds": 20.9,
+   "truth": "coefficient_of_performance = -temperature_cold/(temperature_cold - temperature_hot)",
+   "found": "coefficient_of_performance = -temperature_cold/(temperature_cold - temperature_hot)",
+   "family": "rational(1/F)",
    "pi_groups": [
-    "atomic_number",
-    "quantum_number"
+    "temperature_hot/temperature_cold"
    ]
   },
   {
    "law": "Magnetic pressure",
    "domain": "electromagnetism",
    "result": "exact",
-   "max_rel_err": 0.0005542070000001942,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "pressure = magnetic_field**2/(2*mu_0)",
-   "found": "pressure = 0.4997228965*magnetic_field**2/mu_0",
+   "found": "pressure = magnetic_field**2/(2*mu_0)",
    "family": "constant",
    "pi_groups": []
   },
@@ -2761,10 +2760,10 @@
    "law": "Poynting vector magnitude",
    "domain": "electromagnetism",
    "result": "exact",
-   "max_rel_err": 0.0004207550000002318,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "intensity = electric_field*magnetic_field/mu_0",
-   "found": "intensity = 1.000420755*electric_field*magnetic_field/mu_0",
+   "found": "intensity = electric_field*magnetic_field/mu_0",
    "family": "constant",
    "pi_groups": []
   },
@@ -2772,10 +2771,10 @@
    "law": "Radiation pressure (absorbed light)",
    "domain": "electromagnetism",
    "result": "exact",
-   "max_rel_err": 0.00020307570000022734,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "pressure = intensity/c",
-   "found": "pressure = 0.9997969243*intensity/c",
+   "found": "pressure = intensity/c",
    "family": "constant",
    "pi_groups": []
   },
@@ -2783,10 +2782,10 @@
    "law": "Larmor radiated power",
    "domain": "electromagnetism",
    "result": "exact",
-   "max_rel_err": 0.0008193556502992709,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "power = acceleration**2*charge**2/(6*pi*c**3*epsilon_0)",
-   "found": "power = 0.05300817953*acceleration**2*charge**2/(c**3*epsilon_0)",
+   "found": "power = acceleration**2*charge**2/(6*pi*c**3*epsilon_0)",
    "family": "constant",
    "pi_groups": []
   },
@@ -2794,43 +2793,44 @@
    "law": "Plasma frequency",
    "domain": "electromagnetism",
    "result": "exact",
-   "max_rel_err": 0.0002812580000004217,
+   "max_rel_err": 3.740788735629514e-16,
    "seconds": 0.0,
    "truth": "plasma_frequency = sqrt(e**2*number_density/(epsilon_0*m_e))",
-   "found": "plasma_frequency = 1.000281258*e*sqrt(number_density)/(sqrt(epsilon_0)*sqrt(m_e))",
+   "found": "plasma_frequency = e*sqrt(number_density)/sqrt(epsilon_0*m_e)",
    "family": "constant",
    "pi_groups": []
   },
   {
-   "law": "Carnot refrigerator coefficient of performance",
-   "domain": "thermodynamics",
-   "result": "miss",
-   "max_rel_err": 19.726306115030063,
-   "seconds": 21.4,
-   "truth": "coefficient_of_performance = -temperature_cold/(temperature_cold - temperature_hot)",
-   "found": "coefficient_of_performance = 0.4157848346/(-0.225076392 + exp(-1.895679167/(temperature_hot/temperature_cold)**3.484873969))",
-   "family": "a/(exp(b\u00b7x^p) + c)",
+   "law": "Hydrogen-like energy levels",
+   "domain": "quantum",
+   "result": "exact",
+   "max_rel_err": 0.0,
+   "seconds": 79.5,
+   "truth": "energy_level = -E_R*atomic_number**2/quantum_number**2",
+   "found": "energy_level = -E_R*atomic_number**2/quantum_number**2",
+   "family": "a\u00b7x^p",
    "pi_groups": [
-    "temperature_hot/temperature_cold"
+    "atomic_number",
+    "quantum_number"
    ]
   },
   {
    "law": "Skin depth",
    "domain": "electromagnetism",
    "result": "exact",
-   "max_rel_err": 0.0003192398836411798,
+   "max_rel_err": 3.454020277463885e-16,
    "seconds": 0.0,
    "truth": "skin_depth = sqrt(2)*sqrt(resistivity/(angular_frequency*mu_0))",
-   "found": "skin_depth = 1.413762089*sqrt(resistivity)/(sqrt(angular_frequency)*sqrt(mu_0))",
+   "found": "skin_depth = sqrt(2)*sqrt(resistivity)/sqrt(angular_frequency*mu_0)",
    "family": "constant",
    "pi_groups": []
   },
   {
    "law": "Debye length",
    "domain": "electromagnetism",
-   "result": "exact",
+   "result": "approx",
    "max_rel_err": 0.002392165515049455,
-   "seconds": 14.6,
+   "seconds": 15.0,
    "truth": "debye_length = sqrt(epsilon_0*k_B*temperature/(e**2*number_density))",
    "found": "debye_length = -0.004593131433/(number_density**(1/3)*(-1.000005851 + exp(-0.004604902428/(epsilon_0**3*k_B**3*temperature**3/(e**6*number_density))**0.1675835735)))",
    "family": "a/(exp(b\u00b7x^p) + c)",
@@ -2842,11 +2842,11 @@
    "law": "Hall voltage",
    "domain": "electromagnetism",
    "result": "exact",
-   "max_rel_err": 0.0013106123192016628,
-   "seconds": 16.1,
+   "max_rel_err": 4.708194176933625e-16,
+   "seconds": 15.8,
    "truth": "voltage = current*magnetic_field/(e*number_density*thickness)",
-   "found": "voltage = current*magnetic_field*(0.9999484083/(number_density*thickness**3)**0.335014842 + 0.001441779748)/(e*number_density**(2/3))",
-   "family": "a + b\u00b7x^p",
+   "found": "voltage = current*magnetic_field/(e*number_density**(2/3)*(number_density*thickness**3)**(1/3))",
+   "family": "a\u00b7x^p",
    "pi_groups": [
     "number_density*thickness**3"
    ]
@@ -2855,89 +2855,10 @@
    "law": "Electric dipole moment",
    "domain": "electromagnetism",
    "result": "exact",
-   "max_rel_err": 0.0003004650000002345,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "dipole_moment = charge*distance",
-   "found": "dipole_moment = 1.000300465*charge*distance",
-   "family": "constant",
-   "pi_groups": []
-  },
-  {
-   "law": "Drift velocity",
-   "domain": "electromagnetism",
-   "result": "exact",
-   "max_rel_err": 0.0026933090566059995,
-   "seconds": 13.4,
-   "truth": "current = area*drift_velocity*e*number_density",
-   "found": "current = drift_velocity*e*(-1067.54205640502/(area**3*number_density**2)**779.456168228358 + 1.00269388820259*(area**3*number_density**2)**0.499321115406216)/sqrt(area)",
-   "family": "sum2",
-   "pi_groups": [
-    "area**3*number_density**2"
-   ]
-  },
-  {
-   "law": "Field of a dipole (on axis, far)",
-   "domain": "electromagnetism",
-   "result": "exact",
-   "max_rel_err": 0.0003841780000003383,
-   "seconds": 0.0,
-   "truth": "electric_field = 2*dipole_moment*k_e/distance**3",
-   "found": "electric_field = 2.000768356*dipole_moment*k_e/distance**3",
-   "family": "constant",
-   "pi_groups": []
-  },
-  {
-   "law": "Field of an infinite charged sheet",
-   "domain": "electromagnetism",
-   "result": "exact",
-   "max_rel_err": 2.77636000002605e-05,
-   "seconds": 0.0,
-   "truth": "electric_field = surface_charge_density/(2*epsilon_0)",
-   "found": "electric_field = 0.4999861182*surface_charge_density/epsilon_0",
-   "family": "constant",
-   "pi_groups": []
-  },
-  {
-   "law": "Cyclotron frequency",
-   "domain": "electromagnetism",
-   "result": "exact",
-   "max_rel_err": 0.000154051000000262,
-   "seconds": 0.0,
-   "truth": "angular_frequency = charge*magnetic_field/mass",
-   "found": "angular_frequency = 1.000154051*charge*magnetic_field/mass",
-   "family": "constant",
-   "pi_groups": []
-  },
-  {
-   "law": "Motional EMF",
-   "domain": "electromagnetism",
-   "result": "exact",
-   "max_rel_err": 0.0005936962000003118,
-   "seconds": 0.0,
-   "truth": "emf = length*magnetic_field*velocity",
-   "found": "emf = 0.9994063038*length*magnetic_field*velocity",
-   "family": "constant",
-   "pi_groups": []
-  },
-  {
-   "law": "Self-induced EMF",
-   "domain": "electromagnetism",
-   "result": "exact",
-   "max_rel_err": 0.0006386710000002184,
-   "seconds": 0.0,
-   "truth": "emf = current*inductance/time",
-   "found": "emf = 1.000638671*current*inductance/time",
-   "family": "constant",
-   "pi_groups": []
-  },
-  {
-   "law": "Impedance of free space",
-   "domain": "electromagnetism",
-   "result": "exact",
-   "max_rel_err": 0.001409527200000298,
-   "seconds": 0.0,
-   "truth": "impedance = sqrt(mu_0/epsilon_0)",
-   "found": "impedance = 0.9985904728*sqrt(mu_0)/sqrt(epsilon_0)",
+   "found": "dipole_moment = charge*distance",
    "family": "constant",
    "pi_groups": []
   },
@@ -2946,48 +2867,128 @@
    "domain": "electromagnetism",
    "result": "exact",
    "max_rel_err": 0.0,
-   "seconds": 12.4,
+   "seconds": 11.5,
    "truth": "torque = dipole_moment*electric_field*sin(angle)",
-   "found": "torque = 1.0*dipole_moment*electric_field*sin(angle)**1.0",
-   "family": "a\u00b7sin(x)^p",
+   "found": "torque = dipole_moment*electric_field*sin(angle)",
+   "family": "a\u00b7sin(b\u00b7x)",
    "pi_groups": [
     "angle"
+   ]
+  },
+  {
+   "law": "Field of a dipole (on axis, far)",
+   "domain": "electromagnetism",
+   "result": "exact",
+   "max_rel_err": 0.0,
+   "seconds": 0.0,
+   "truth": "electric_field = 2*dipole_moment*k_e/distance**3",
+   "found": "electric_field = 2*dipole_moment*k_e/distance**3",
+   "family": "constant",
+   "pi_groups": []
+  },
+  {
+   "law": "Field of an infinite charged sheet",
+   "domain": "electromagnetism",
+   "result": "exact",
+   "max_rel_err": 0.0,
+   "seconds": 0.0,
+   "truth": "electric_field = surface_charge_density/(2*epsilon_0)",
+   "found": "electric_field = surface_charge_density/(2*epsilon_0)",
+   "family": "constant",
+   "pi_groups": []
+  },
+  {
+   "law": "Cyclotron frequency",
+   "domain": "electromagnetism",
+   "result": "exact",
+   "max_rel_err": 0.0,
+   "seconds": 0.0,
+   "truth": "angular_frequency = charge*magnetic_field/mass",
+   "found": "angular_frequency = charge*magnetic_field/mass",
+   "family": "constant",
+   "pi_groups": []
+  },
+  {
+   "law": "Motional EMF",
+   "domain": "electromagnetism",
+   "result": "exact",
+   "max_rel_err": 0.0,
+   "seconds": 0.0,
+   "truth": "emf = length*magnetic_field*velocity",
+   "found": "emf = length*magnetic_field*velocity",
+   "family": "constant",
+   "pi_groups": []
+  },
+  {
+   "law": "Self-induced EMF",
+   "domain": "electromagnetism",
+   "result": "exact",
+   "max_rel_err": 0.0,
+   "seconds": 0.0,
+   "truth": "emf = current*inductance/time",
+   "found": "emf = current*inductance/time",
+   "family": "constant",
+   "pi_groups": []
+  },
+  {
+   "law": "Impedance of free space",
+   "domain": "electromagnetism",
+   "result": "exact",
+   "max_rel_err": 2.313041360085028e-16,
+   "seconds": 0.0,
+   "truth": "impedance = sqrt(mu_0/epsilon_0)",
+   "found": "impedance = sqrt(mu_0)/sqrt(epsilon_0)",
+   "family": "constant",
+   "pi_groups": []
+  },
+  {
+   "law": "Drift velocity",
+   "domain": "electromagnetism",
+   "result": "exact",
+   "max_rel_err": 4.111738228496384e-16,
+   "seconds": 13.5,
+   "truth": "current = area*drift_velocity*e*number_density",
+   "found": "current = drift_velocity*e*sqrt(area**3*number_density**2)/sqrt(area)",
+   "family": "rational(F^2)",
+   "pi_groups": [
+    "area**3*number_density**2"
    ]
   },
   {
    "law": "Resistors in series",
    "domain": "circuits",
    "result": "exact",
-   "max_rel_err": 0.010680719633894836,
-   "seconds": 10.3,
+   "max_rel_err": 0.0,
+   "seconds": 11.7,
    "truth": "resistance = resistance__R1 + resistance__R2",
-   "found": "resistance = 0.9492311658*resistance__R1/(0.09158013856 + exp(-0.9588172956*(resistance__R2/resistance__R1)**0.6348054055))",
-   "family": "a/(exp(b\u00b7x^p) + c)",
+   "found": "resistance = resistance__R1 + resistance__R2",
+   "family": "a + b\u00b7x^p",
    "pi_groups": [
     "resistance__R2/resistance__R1"
    ]
   },
   {
-   "law": "Resistors in parallel",
-   "domain": "circuits",
+   "law": "Otto cycle efficiency",
+   "domain": "thermodynamics",
    "result": "exact",
-   "max_rel_err": 0.005852274073171265,
-   "seconds": 16.6,
-   "truth": "resistance = resistance__R1*resistance__R2/(resistance__R1 + resistance__R2)",
-   "found": "resistance = 1.009897579*resistance__R1*(resistance__R2/resistance__R1)**0.9888823348/((resistance__R2/resistance__R1)**0.9888823348 + 1.022521051)",
-   "family": "a\u00b7x^p/(b + x^p)",
+   "max_rel_err": 0.0,
+   "seconds": 64.6,
+   "truth": "efficiency = 1 - compression_ratio**(1 - heat_capacity_ratio)",
+   "found": "efficiency = 1 - compression_ratio**(1 - heat_capacity_ratio)",
+   "family": "a + b\u00b7x^(c + d\u00b7z)",
    "pi_groups": [
-    "resistance__R2/resistance__R1"
+    "compression_ratio",
+    "heat_capacity_ratio"
    ]
   },
   {
    "law": "Inductive reactance",
    "domain": "circuits",
    "result": "exact",
-   "max_rel_err": 7.169560000022942e-05,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "reactance = angular_frequency*inductance",
-   "found": "reactance = 0.9999283044*angular_frequency*inductance",
+   "found": "reactance = angular_frequency*inductance",
    "family": "constant",
    "pi_groups": []
   },
@@ -2995,62 +2996,24 @@
    "law": "Capacitive reactance",
    "domain": "circuits",
    "result": "exact",
-   "max_rel_err": 0.000180357700000194,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "reactance = 1/(angular_frequency*capacitance)",
-   "found": "reactance = 0.9998196423/(angular_frequency*capacitance)",
+   "found": "reactance = 1/(angular_frequency*capacitance)",
    "family": "constant",
    "pi_groups": []
   },
   {
-   "law": "Otto cycle efficiency",
-   "domain": "thermodynamics",
-   "result": "miss",
-   "max_rel_err": 1.3092600184913368,
-   "seconds": 66.8,
-   "truth": "efficiency = 1 - compression_ratio**(1 - heat_capacity_ratio)",
-   "found": "efficiency = heat_capacity_ratio**2.1782792*(0.05057428011 - 0.04981588275/compression_ratio**2.420656269)",
-   "family": "a + b\u00b7x^p",
-   "pi_groups": [
-    "compression_ratio",
-    "heat_capacity_ratio"
-   ]
-  },
-  {
-   "law": "Capacitors in series",
+   "law": "Resistors in parallel",
    "domain": "circuits",
-   "result": "exact",
-   "max_rel_err": 0.004540463026562719,
-   "seconds": 18.0,
-   "truth": "capacitance = capacitance__C1*capacitance__C2/(capacitance__C1 + capacitance__C2)",
-   "found": "capacitance = 0.9821257955*capacitance__C1*(capacitance__C2/capacitance__C1)**0.9904794646/(1 + 0.9666190621*capacitance__C2/capacitance__C1)",
-   "family": "a\u00b7x^p/(1 + b\u00b7x)",
+   "result": "approx",
+   "max_rel_err": 0.009509033947409033,
+   "seconds": 17.7,
+   "truth": "resistance = resistance__R1*resistance__R2/(resistance__R1 + resistance__R2)",
+   "found": "resistance = resistance__R1*resistance__R2*log(2**(20/pi**2))/(sqrt(2)*resistance__R1 + resistance__R2*log(4))",
+   "family": "a\u00b7x^p/(b + x^p)",
    "pi_groups": [
-    "capacitance__C2/capacitance__C1"
-   ]
-  },
-  {
-   "law": "Optical power of a lens",
-   "domain": "optics",
-   "result": "exact",
-   "max_rel_err": 0.0005059708000002307,
-   "seconds": 0.0,
-   "truth": "optical_power = 1/focal_length",
-   "found": "optical_power = 0.9994940292/focal_length",
-   "family": "constant",
-   "pi_groups": []
-  },
-  {
-   "law": "Rayleigh resolution criterion",
-   "domain": "optics",
-   "result": "exact",
-   "max_rel_err": 0.0008593399314459019,
-   "seconds": 12.4,
-   "truth": "angle = 1.22*wavelength/diameter",
-   "found": "angle = 9133.20875*log(1 + 0.0001335005466*wavelength/diameter)",
-   "family": "a\u00b7log(1 + b\u00b7x)",
-   "pi_groups": [
-    "wavelength/diameter"
+    "resistance__R2/resistance__R1"
    ]
   },
   {
@@ -3058,23 +3021,60 @@
    "domain": "optics",
    "result": "exact",
    "max_rel_err": 0.0,
-   "seconds": 10.0,
+   "seconds": 9.5,
    "truth": "intensity = intensity__I0*cos(angle)**2",
-   "found": "intensity = 1.0*intensity__I0*cos(1.0*angle)**2.0",
+   "found": "intensity = intensity__I0*cos(angle)**2",
    "family": "a\u00b7cos(b\u00b7x)^p",
    "pi_groups": [
     "angle"
    ]
   },
   {
+   "law": "Optical power of a lens",
+   "domain": "optics",
+   "result": "exact",
+   "max_rel_err": 0.0,
+   "seconds": 0.0,
+   "truth": "optical_power = 1/focal_length",
+   "found": "optical_power = 1/focal_length",
+   "family": "constant",
+   "pi_groups": []
+  },
+  {
+   "law": "Capacitors in series",
+   "domain": "circuits",
+   "result": "exact",
+   "max_rel_err": 0.0,
+   "seconds": 18.1,
+   "truth": "capacitance = capacitance__C1*capacitance__C2/(capacitance__C1 + capacitance__C2)",
+   "found": "capacitance = capacitance__C1*capacitance__C2/(capacitance__C1 + capacitance__C2)",
+   "family": "a\u00b7x^p/(b + x^p)",
+   "pi_groups": [
+    "capacitance__C2/capacitance__C1"
+   ]
+  },
+  {
+   "law": "Rayleigh resolution criterion",
+   "domain": "optics",
+   "result": "approx",
+   "max_rel_err": 0.0033981936819238775,
+   "seconds": 13.2,
+   "truth": "angle = 1.22*wavelength/diameter",
+   "found": "angle = 12*wavelength/(pi**2*diameter)",
+   "family": "rational(F)",
+   "pi_groups": [
+    "wavelength/diameter"
+   ]
+  },
+  {
    "law": "Standing waves on a string",
    "domain": "waves",
    "result": "exact",
-   "max_rel_err": 0.005279998832160067,
-   "seconds": 9.3,
+   "max_rel_err": 0.0,
+   "seconds": 9.8,
    "truth": "frequency = order*wave_speed/(2*length)",
-   "found": "frequency = 0.5004155322*order**0.9989837975*wave_speed*exp(-0.008060741391/order**35.70261126)/length",
-   "family": "a\u00b7x^p\u00b7exp(b\u00b7x^r)",
+   "found": "frequency = order*wave_speed/(2*length)",
+   "family": "additive(lin+log)",
    "pi_groups": [
     "order"
    ]
@@ -3083,10 +3083,10 @@
    "law": "Speed of sound in a solid rod",
    "domain": "waves",
    "result": "exact",
-   "max_rel_err": 0.0007201160000004617,
+   "max_rel_err": 2.322069238389578e-16,
    "seconds": 0.0,
    "truth": "speed_of_sound = sqrt(youngs_modulus/density)",
-   "found": "speed_of_sound = 1.000720116*sqrt(youngs_modulus)/sqrt(density)",
+   "found": "speed_of_sound = sqrt(youngs_modulus)/sqrt(density)",
    "family": "constant",
    "pi_groups": []
   },
@@ -3094,21 +3094,21 @@
    "law": "Speed of sound in a fluid",
    "domain": "waves",
    "result": "exact",
-   "max_rel_err": 0.00038367200000019114,
+   "max_rel_err": 2.812321545503351e-16,
    "seconds": 0.0,
    "truth": "speed_of_sound = sqrt(bulk_modulus/density)",
-   "found": "speed_of_sound = 1.000383672*sqrt(bulk_modulus)/sqrt(density)",
+   "found": "speed_of_sound = sqrt(bulk_modulus)/sqrt(density)",
    "family": "constant",
    "pi_groups": []
   },
   {
    "law": "Deep-water wave speed",
    "domain": "waves",
-   "result": "exact",
-   "max_rel_err": 0.00041477704093163136,
+   "result": "approx",
+   "max_rel_err": 0.002651309852400317,
    "seconds": 0.0,
    "truth": "wave_speed = sqrt(2)*sqrt(gravitational_acceleration*wavelength)/(2*sqrt(pi))",
-   "found": "wave_speed = 0.3991077525*sqrt(gravitational_acceleration)*sqrt(wavelength)",
+   "found": "wave_speed = 2*sqrt(gravitational_acceleration*wavelength)/5",
    "family": "constant",
    "pi_groups": []
   },
@@ -3116,21 +3116,21 @@
    "law": "Shallow-water wave speed",
    "domain": "waves",
    "result": "exact",
-   "max_rel_err": 0.00026128100000027927,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "wave_speed = sqrt(depth*gravitational_acceleration)",
-   "found": "wave_speed = 1.000261281*sqrt(depth)*sqrt(gravitational_acceleration)",
+   "found": "wave_speed = sqrt(depth*gravitational_acceleration)",
    "family": "constant",
    "pi_groups": []
   },
   {
    "law": "Capillary wave speed",
    "domain": "waves",
-   "result": "exact",
-   "max_rel_err": 0.0008833596873577727,
+   "result": "approx",
+   "max_rel_err": 0.00265130985240041,
    "seconds": 0.0,
    "truth": "wave_speed = sqrt(2)*sqrt(pi)*sqrt(surface_tension/(density*wavelength))",
-   "found": "wave_speed = 2.508842529*sqrt(surface_tension)/(sqrt(density)*sqrt(wavelength))",
+   "found": "wave_speed = 4*pi*sqrt(surface_tension)/(5*sqrt(density*wavelength))",
    "family": "constant",
    "pi_groups": []
   },
@@ -3138,62 +3138,62 @@
    "law": "Torricelli's law",
    "domain": "fluids",
    "result": "exact",
-   "max_rel_err": 0.0003319474790764775,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "velocity = sqrt(2)*sqrt(gravitational_acceleration*height)",
-   "found": "velocity = 1.414683007*sqrt(gravitational_acceleration)*sqrt(height)",
+   "found": "velocity = sqrt(2)*sqrt(gravitational_acceleration*height)",
    "family": "constant",
    "pi_groups": []
   },
   {
    "law": "Sound intensity level",
    "domain": "waves",
-   "result": "exact",
-   "max_rel_err": 0.007308289451791852,
-   "seconds": 9.2,
+   "result": "approx",
+   "max_rel_err": 0.0034215715338228557,
+   "seconds": 9.3,
    "truth": "sound_level = 10*log(intensity__I/intensity__I0)/log(10)",
-   "found": "sound_level = 4450.957728/(intensity__I0/intensity__I)**0.0009748327487 - 4450.957768",
-   "family": "a + b\u00b7x^p",
+   "found": "sound_level = -3*log(intensity__I0/intensity__I)/log(2)",
+   "family": "additive(lin+log)",
    "pi_groups": [
     "intensity__I0/intensity__I"
-   ]
-  },
-  {
-   "law": "Doppler effect (moving source)",
-   "domain": "waves",
-   "result": "exact",
-   "max_rel_err": 0.004589184065102375,
-   "seconds": 21.8,
-   "truth": "observed_frequency = -frequency*speed_of_sound/(source_velocity - speed_of_sound)",
-   "found": "observed_frequency = 1.001120148*frequency*(speed_of_sound/source_velocity)**1.000424107/((speed_of_sound/source_velocity)**1.000424107 - 0.9999979529)",
-   "family": "a\u00b7x^p/(b + x^p)",
-   "pi_groups": [
-    "speed_of_sound/source_velocity"
    ]
   },
   {
    "law": "Inductance of a solenoid",
    "domain": "electromagnetism",
    "result": "exact",
-   "max_rel_err": 0.005246339216594817,
-   "seconds": 79.6,
+   "max_rel_err": 4.1982974298528446e-16,
+   "seconds": 77.9,
    "truth": "inductance = area*mu_0*turns**2/length",
-   "found": "inductance = -140.8070947*sqrt(area)*mu_0*turns**1.9969524/((length**2/area)**0.4975681659*((length**2/area)**(-0.4975681659) - 141.4391156))",
-   "family": "a\u00b7x^p/(b + x^p)",
+   "found": "inductance = sqrt(area)*mu_0*turns**2/sqrt(length**2/area)",
+   "family": "a\u00b7x^p",
    "pi_groups": [
     "length**2/area",
     "turns"
    ]
   },
   {
+   "law": "Doppler effect (moving source)",
+   "domain": "waves",
+   "result": "exact",
+   "max_rel_err": 0.0,
+   "seconds": 20.5,
+   "truth": "observed_frequency = -frequency*speed_of_sound/(source_velocity - speed_of_sound)",
+   "found": "observed_frequency = -frequency*speed_of_sound/(source_velocity - speed_of_sound)",
+   "family": "a\u00b7x^p/(b + x^p)",
+   "pi_groups": [
+    "speed_of_sound/source_velocity"
+   ]
+  },
+  {
    "law": "Mach number",
    "domain": "fluids",
    "result": "exact",
-   "max_rel_err": 0.0013183765715206977,
-   "seconds": 11.9,
+   "max_rel_err": 0.0,
+   "seconds": 12.5,
    "truth": "mach_number = velocity/speed_of_sound",
-   "found": "mach_number = 6.4686198325197*(velocity/speed_of_sound)**1.02918265373457 - 5.46836506247757*(velocity/speed_of_sound)**1.03446443896412",
-   "family": "sum2",
+   "found": "mach_number = velocity/speed_of_sound",
+   "family": "rational(F)",
    "pi_groups": [
     "velocity/speed_of_sound"
    ]
@@ -3202,11 +3202,11 @@
    "law": "Froude number",
    "domain": "fluids",
    "result": "exact",
-   "max_rel_err": 0.0009943676484140342,
-   "seconds": 14.8,
+   "max_rel_err": 2.344314020272492e-16,
+   "seconds": 15.3,
    "truth": "froude_number = velocity/sqrt(gravitational_acceleration*length)",
-   "found": "froude_number = 1.00048143440071/(gravitational_acceleration*length/velocity**2)**0.499815271080971 + 4.8262117109004e-32*(gravitational_acceleration*length/velocity**2)**22.7672354845702",
-   "family": "sum2",
+   "found": "froude_number = 1/sqrt(gravitational_acceleration*length/velocity**2)",
+   "family": "a\u00b7x^p",
    "pi_groups": [
     "gravitational_acceleration*length/velocity**2"
    ]
@@ -3215,11 +3215,11 @@
    "law": "Weber number",
    "domain": "fluids",
    "result": "exact",
-   "max_rel_err": 0.001195087726955166,
-   "seconds": 13.1,
+   "max_rel_err": 0.0,
+   "seconds": 13.3,
    "truth": "weber_number = density*length*velocity**2/surface_tension",
-   "found": "weber_number = 140566.3454*log(7.113966062e-6*density*length*velocity**2/surface_tension + 1)",
-   "family": "a\u00b7log(1 + b\u00b7x)",
+   "found": "weber_number = density*length*velocity**2/surface_tension",
+   "family": "rational(F)",
    "pi_groups": [
     "density*length*velocity**2/surface_tension"
    ]
@@ -3227,11 +3227,11 @@
   {
    "law": "Stokes terminal velocity",
    "domain": "fluids",
-   "result": "miss",
-   "max_rel_err": 0.07230819085196999,
-   "seconds": 67.5,
+   "result": "exact",
+   "max_rel_err": 1.7413364818133957e-13,
+   "seconds": 67.7,
    "truth": "terminal_velocity = 2*gravitational_acceleration*radius**2*(-density + particle_density)/(9*viscosity)",
-   "found": "terminal_velocity = sqrt(gravitational_acceleration)*sqrt(radius)*(density**2*gravitational_acceleration*radius**3/viscosity**2)**0.50032016*(0.221886406*(particle_density/density)**1.00066316 - 0.2218782194)",
+   "found": "terminal_velocity = sqrt(density**2*gravitational_acceleration**2*radius**4/viscosity**2)*(-2*density/9 + 2*particle_density/9)/density",
    "family": "a + b\u00b7x^p",
    "pi_groups": [
     "particle_density/density",
@@ -3242,10 +3242,10 @@
    "law": "Kinematic viscosity",
    "domain": "fluids",
    "result": "exact",
-   "max_rel_err": 0.0002803400000002337,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "kinematic_viscosity = viscosity/density",
-   "found": "kinematic_viscosity = 1.00028034*viscosity/density",
+   "found": "kinematic_viscosity = viscosity/density",
    "family": "constant",
    "pi_groups": []
   },
@@ -3253,10 +3253,10 @@
    "law": "Mass flow rate",
    "domain": "fluids",
    "result": "exact",
-   "max_rel_err": 0.0005236360000004638,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "mass_flow_rate = area*density*velocity",
-   "found": "mass_flow_rate = 1.000523636*area*density*velocity",
+   "found": "mass_flow_rate = area*density*velocity",
    "family": "constant",
    "pi_groups": []
   },
@@ -3264,11 +3264,11 @@
    "law": "Strouhal number",
    "domain": "fluids",
    "result": "exact",
-   "max_rel_err": 0.001156463276879118,
-   "seconds": 18.6,
+   "max_rel_err": 0.0,
+   "seconds": 19.9,
    "truth": "strouhal_number = frequency*length/velocity",
-   "found": "strouhal_number = 1.000179546*(frequency*length/velocity)**0.9995432963",
-   "family": "a\u00b7x^p",
+   "found": "strouhal_number = frequency*length/velocity",
+   "family": "rational(F)",
    "pi_groups": [
     "frequency*length/velocity"
    ]
@@ -3277,11 +3277,11 @@
    "law": "Shear modulus",
    "domain": "materials",
    "result": "exact",
-   "max_rel_err": 0.0012385298266453298,
-   "seconds": 10.8,
+   "max_rel_err": 0.0,
+   "seconds": 11.3,
    "truth": "shear_modulus = shear_stress/shear_strain",
-   "found": "shear_modulus = 2.036597619*shear_stress*exp(-0.7121140567/shear_strain**6.526030833e-9)/shear_strain**0.9987128476",
-   "family": "a\u00b7x^p\u00b7exp(b\u00b7x^r)",
+   "found": "shear_modulus = shear_stress/shear_strain",
+   "family": "rational(1/F)",
    "pi_groups": [
     "shear_strain"
    ]
@@ -3293,33 +3293,33 @@
    "seconds": 90.0
   },
   {
-   "law": "Bulk modulus definition",
-   "domain": "materials",
-   "result": "exact",
-   "max_rel_err": 0.00041123823957444516,
-   "seconds": 15.7,
-   "truth": "bulk_modulus = pressure*volume/volume_change",
-   "found": "bulk_modulus = 1.000245694*pressure/(volume_change/volume)**0.999892538",
-   "family": "a\u00b7x^p",
-   "pi_groups": [
-    "volume_change/volume"
-   ]
-  },
-  {
    "law": "Capillary rise (Jurin's law)",
    "domain": "fluids",
    "result": "miss",
    "seconds": 90.0
   },
   {
+   "law": "Bulk modulus definition",
+   "domain": "materials",
+   "result": "exact",
+   "max_rel_err": 0.0,
+   "seconds": 17.7,
+   "truth": "bulk_modulus = pressure*volume/volume_change",
+   "found": "bulk_modulus = pressure*volume/volume_change",
+   "family": "a\u00b7x^p",
+   "pi_groups": [
+    "volume_change/volume"
+   ]
+  },
+  {
    "law": "Elastic energy density",
    "domain": "materials",
    "result": "exact",
-   "max_rel_err": 0.002145954995246093,
-   "seconds": 15.6,
+   "max_rel_err": 0.0,
+   "seconds": 18.7,
    "truth": "energy_density = stress**2/(2*youngs_modulus)",
-   "found": "energy_density = 0.503203646*stress*exp(-0.00583660283*(youngs_modulus/stress)**0.5966937892)/(youngs_modulus/stress)**0.9960005742",
-   "family": "a\u00b7x^p\u00b7exp(b\u00b7x^r)",
+   "found": "energy_density = stress**2/(2*youngs_modulus)",
+   "family": "a\u00b7x^p",
    "pi_groups": [
     "youngs_modulus/stress"
    ]
@@ -3328,11 +3328,11 @@
    "law": "Thermal stress",
    "domain": "materials",
    "result": "exact",
-   "max_rel_err": 0.0014180341789854804,
-   "seconds": 13.3,
+   "max_rel_err": 0.0,
+   "seconds": 15.6,
    "truth": "stress = temperature_change*thermal_expansion_coefficient*youngs_modulus",
-   "found": "stress = 0.9996696472*temperature_change*thermal_expansion_coefficient*youngs_modulus*(-4.384753595e-5*temperature_change*thermal_expansion_coefficient + 1)",
-   "family": "a\u00b7x\u00b7(1 \u2212 x/b)",
+   "found": "stress = temperature_change*thermal_expansion_coefficient*youngs_modulus",
+   "family": "rational(F)",
    "pi_groups": [
     "temperature_change*thermal_expansion_coefficient"
    ]
@@ -3340,12 +3340,12 @@
   {
    "law": "Griffith fracture stress",
    "domain": "materials",
-   "result": "exact",
-   "max_rel_err": 0.009449414345707542,
-   "seconds": 8.5,
+   "result": "approx",
+   "max_rel_err": 0.0026442989964188673,
+   "seconds": 10.1,
    "truth": "stress = sqrt(2)*sqrt(surface_energy*youngs_modulus/crack_length)/sqrt(pi)",
-   "found": "stress = -0.02324605017*youngs_modulus/(-1.001161334 + exp(-0.02840180885*(crack_length*youngs_modulus/surface_energy)**0.5258709714))",
-   "family": "a/(exp(b\u00b7x^p) + c)",
+   "found": "stress = 5*youngs_modulus/(2*pi*sqrt(crack_length*youngs_modulus/surface_energy))",
+   "family": "a\u00b7x^p",
    "pi_groups": [
     "crack_length*youngs_modulus/surface_energy"
    ]
@@ -3354,11 +3354,11 @@
    "law": "Hawking temperature of a black hole",
    "domain": "astrophysics",
    "result": "exact",
-   "max_rel_err": 0.0014828245046806432,
-   "seconds": 13.2,
+   "max_rel_err": 5.400294686597978e-16,
+   "seconds": 15.2,
    "truth": "temperature = c**3*hbar/(8*pi*G*k_B*mass)",
-   "found": "temperature = 353.237704*c**(5/2)*sqrt(hbar)*(G*mass**2/(c*hbar))**0.4996934594/(sqrt(G)*k_B*(8879.923468*G*mass**2/(c*hbar) + 1))",
-   "family": "a\u00b7x^p/(1 + b\u00b7x)",
+   "found": "temperature = c**(5/2)*sqrt(hbar)/(8*pi*k_B*sqrt(G**2*mass**2/(c*hbar)))",
+   "family": "rational(1/F^2)",
    "pi_groups": [
     "G*mass**2/(c*hbar)"
    ]
@@ -3367,11 +3367,11 @@
    "law": "Bekenstein-Hawking entropy",
    "domain": "astrophysics",
    "result": "exact",
-   "max_rel_err": 0.0014899311411167393,
-   "seconds": 13.6,
+   "max_rel_err": 0.0,
+   "seconds": 15.2,
    "truth": "entropy = area*c**3*k_B/(4*G*hbar)",
-   "found": "entropy = 445579211.1*k_B*(G*hbar/(area*c**3))**0.0002734271955/(1782405468.0*G*hbar/(area*c**3) + 1)",
-   "family": "a\u00b7x^p/(1 + b\u00b7x)",
+   "found": "entropy = area*c**3*k_B/(4*G*hbar)",
+   "family": "rational(1/F)",
    "pi_groups": [
     "G*hbar/(area*c**3)"
    ]
@@ -3379,50 +3379,15 @@
   {
    "law": "Jeans mass",
    "domain": "astrophysics",
-   "result": "exact",
-   "max_rel_err": 0.005402995094793752,
-   "seconds": 11.3,
+   "result": "approx",
+   "max_rel_err": 0.0009586280015425198,
+   "seconds": 12.9,
    "truth": "jeans_mass = 5*sqrt(15)*(k_B*temperature/(G*particle_mass))**(3/2)*sqrt(1/density)/(2*sqrt(pi))",
-   "found": "jeans_mass = particle_mass/(0.08986024066*(G**3*density*particle_mass**5/(k_B**3*temperature**3))**0.7098011083 - 7.360139924e-6)**0.7045577575",
-   "family": "(a + b\u00b7x^p)^q",
+   "found": "jeans_mass = 4*pi*particle_mass/(sqrt(G**3*density*particle_mass**5/(k_B**3*temperature**3))*log(10))",
+   "family": "a\u00b7x^p",
    "pi_groups": [
     "G**3*density*particle_mass**5/(k_B**3*temperature**3)"
    ]
-  },
-  {
-   "law": "Jeans length",
-   "domain": "astrophysics",
-   "result": "exact",
-   "max_rel_err": 0.0043191217766781545,
-   "seconds": 17.0,
-   "truth": "jeans_length = sqrt(15)*sqrt(k_B*temperature/(G*density*particle_mass))/(2*sqrt(pi))",
-   "found": "jeans_length = 3.44781061e-19*particle_mass**(1/3)*exp(42.59853808/(G**3*density*particle_mass**5/(k_B**3*temperature**3))**0.001496716619)/(density**(1/3)*(G**3*density*particle_mass**5/(k_B**3*temperature**3))**0.1028168667)",
-   "family": "a\u00b7x^p\u00b7exp(b\u00b7x^r)",
-   "pi_groups": [
-    "G**3*density*particle_mass**5/(k_B**3*temperature**3)"
-   ]
-  },
-  {
-   "law": "Virial theorem",
-   "domain": "astrophysics",
-   "result": "exact",
-   "max_rel_err": 0.0007685620000000797,
-   "seconds": 0.0,
-   "truth": "kinetic_energy = -potential_energy/2",
-   "found": "kinetic_energy = -0.500384281*potential_energy",
-   "family": "constant",
-   "pi_groups": []
-  },
-  {
-   "law": "Critical density of the universe",
-   "domain": "astrophysics",
-   "result": "exact",
-   "max_rel_err": 0.0008235774691147284,
-   "seconds": 0.0,
-   "truth": "critical_density = 3*hubble_constant**2/(8*pi*G)",
-   "found": "critical_density = 0.1192679*hubble_constant**2/G",
-   "family": "constant",
-   "pi_groups": []
   },
   {
    "law": "Darcy's law",
@@ -3431,13 +3396,48 @@
    "seconds": 90.0
   },
   {
-   "law": "Main-sequence lifetime",
+   "law": "Virial theorem",
    "domain": "astrophysics",
    "result": "exact",
-   "max_rel_err": 0.0007390632035934702,
-   "seconds": 14.5,
+   "max_rel_err": 0.0,
+   "seconds": 0.0,
+   "truth": "kinetic_energy = -potential_energy/2",
+   "found": "kinetic_energy = -potential_energy/2",
+   "family": "constant",
+   "pi_groups": []
+  },
+  {
+   "law": "Critical density of the universe",
+   "domain": "astrophysics",
+   "result": "exact",
+   "max_rel_err": 0.0,
+   "seconds": 0.0,
+   "truth": "critical_density = 3*hubble_constant**2/(8*pi*G)",
+   "found": "critical_density = 3*hubble_constant**2/(8*pi*G)",
+   "family": "constant",
+   "pi_groups": []
+  },
+  {
+   "law": "Jeans length",
+   "domain": "astrophysics",
+   "result": "approx",
+   "max_rel_err": 0.0043191217766781545,
+   "seconds": 16.0,
+   "truth": "jeans_length = sqrt(15)*sqrt(k_B*temperature/(G*density*particle_mass))/(2*sqrt(pi))",
+   "found": "jeans_length = 3.44781061e-19*particle_mass**(1/3)*exp(42.59853808/(G**3*density*particle_mass**5/(k_B**3*temperature**3))**0.001496716619)/(density**(1/3)*(G**3*density*particle_mass**5/(k_B**3*temperature**3))**0.1028168667)",
+   "family": "a\u00b7x^p\u00b7exp(b\u00b7x^r)",
+   "pi_groups": [
+    "G**3*density*particle_mass**5/(k_B**3*temperature**3)"
+   ]
+  },
+  {
+   "law": "Main-sequence lifetime",
+   "domain": "astrophysics",
+   "result": "approx",
+   "max_rel_err": 0.005061296896652526,
+   "seconds": 14.8,
    "truth": "stellar_lifetime = 10000000000*yr/(mass/M_sun)**(5/2)",
-   "found": "stellar_lifetime = 37456.81624*yr*exp(12.49488652*(mass/M_sun)**8.752281438e-9)/(mass/M_sun)**2.500490648",
+   "found": "stellar_lifetime = 3795*pi**2*yr*exp(25/2)/(mass/M_sun)**(5/2)",
    "family": "a\u00b7x^p\u00b7exp(b\u00b7x^r)",
    "pi_groups": [
     "mass/M_sun"
@@ -3447,37 +3447,37 @@
    "law": "Solar constant",
    "domain": "astrophysics",
    "result": "exact",
-   "max_rel_err": 0.0009182539295120268,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "flux = L_sun/(4*pi*AU**2)",
-   "found": "flux = 0.07950439922*L_sun/AU**2",
+   "found": "flux = L_sun/(4*pi*AU**2)",
    "family": "constant",
    "pi_groups": []
-  },
-  {
-   "law": "Chandrasekhar limit",
-   "domain": "astrophysics",
-   "result": "exact",
-   "max_rel_err": 0.0014056231708247957,
-   "seconds": 19.0,
-   "truth": "chandrasekhar_mass = 0.774402486238505*(c*hbar/G)**(3/2)/m_p**2",
-   "found": "chandrasekhar_mass = 0.7743033551*sqrt(c)*sqrt(hbar)/(sqrt(G)*(G*m_p**2/(c*hbar))**1.000330322)",
-   "family": "a\u00b7x^p",
-   "pi_groups": [
-    "G*m_p**2/(c*hbar)"
-   ]
   },
   {
    "law": "Reaction Q-value",
    "domain": "nuclear",
    "result": "exact",
-   "max_rel_err": 0.022759380558306824,
-   "seconds": 7.4,
+   "max_rel_err": 0.0,
+   "seconds": 7.6,
    "truth": "reaction_energy = c**2*(-final_mass + initial_mass)",
-   "found": "reaction_energy = c**2*final_mass*(-0.987992055388495/(initial_mass/final_mass)**0.00633153651913019 + 0.987979100325893*(initial_mass/final_mass)**1.00496949554458)",
-   "family": "sum2",
+   "found": "reaction_energy = c**2*(-final_mass + initial_mass)",
+   "family": "rational(F)",
    "pi_groups": [
     "initial_mass/final_mass"
+   ]
+  },
+  {
+   "law": "Chandrasekhar limit",
+   "domain": "astrophysics",
+   "result": "approx",
+   "max_rel_err": 0.00025075203970730014,
+   "seconds": 19.0,
+   "truth": "chandrasekhar_mass = 0.774402486238505*(c*hbar/G)**(3/2)/m_p**2",
+   "found": "chandrasekhar_mass = sqrt(15)*(c*hbar)**(3/2)/(5*G**(3/2)*m_p**2)",
+   "family": "rational(1/F)",
+   "pi_groups": [
+    "G*m_p**2/(c*hbar)"
    ]
   },
   {
@@ -3493,33 +3493,33 @@
    "seconds": 90.0
   },
   {
-   "law": "Coulomb barrier",
-   "domain": "nuclear",
-   "result": "exact",
-   "max_rel_err": 0.017196646034935373,
-   "seconds": 84.6,
-   "truth": "barrier_energy = atomic_number*atomic_number2*e**2*k_e/distance",
-   "found": "barrier_energy = atomic_number**0.99968021*e**2*k_e*(0.9588179702*atomic_number2**17.80470308 + 0.4217639905)**0.05629852875/distance",
-   "family": "(a + b\u00b7x^p)^q",
-   "pi_groups": [
-    "atomic_number",
-    "atomic_number2"
-   ]
-  },
-  {
    "law": "Semi-empirical mass formula",
    "domain": "nuclear",
    "result": "miss",
    "seconds": 90.0
   },
   {
+   "law": "Coulomb barrier",
+   "domain": "nuclear",
+   "result": "exact",
+   "max_rel_err": 0.0,
+   "seconds": 89.4,
+   "truth": "barrier_energy = atomic_number*atomic_number2*e**2*k_e/distance",
+   "found": "barrier_energy = atomic_number*atomic_number2*e**2*k_e/distance",
+   "family": "a\u00b7x^p",
+   "pi_groups": [
+    "atomic_number",
+    "atomic_number2"
+   ]
+  },
+  {
    "law": "Ideal gas density",
    "domain": "chemistry",
    "result": "exact",
-   "max_rel_err": 0.0002759130000003942,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "density = molar_mass*pressure/(R*temperature)",
-   "found": "density = 1.000275913*molar_mass*pressure/(R*temperature)",
+   "found": "density = molar_mass*pressure/(R*temperature)",
    "family": "constant",
    "pi_groups": []
   },
@@ -3533,10 +3533,10 @@
    "law": "First-order rate law",
    "domain": "chemistry",
    "result": "exact",
-   "max_rel_err": 5.757000002305734e-07,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "reaction_velocity = concentration*rate_constant",
-   "found": "reaction_velocity = 0.9999994243*concentration*rate_constant",
+   "found": "reaction_velocity = concentration*rate_constant",
    "family": "constant",
    "pi_groups": []
   },
@@ -3544,48 +3544,48 @@
    "law": "Second-order half-life",
    "domain": "chemistry",
    "result": "exact",
-   "max_rel_err": 0.00017943100000014178,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "half_life = 1/(concentration*second_order_rate_constant)",
-   "found": "half_life = 0.999820569/(concentration*second_order_rate_constant)",
+   "found": "half_life = 1/(concentration*second_order_rate_constant)",
    "family": "constant",
    "pi_groups": []
-  },
-  {
-   "law": "Mean free path from cross-section",
-   "domain": "nuclear",
-   "result": "miss",
-   "max_rel_err": 0.09153914139594577,
-   "seconds": 17.8,
-   "truth": "mean_free_path = 1/(cross_section*number_density)",
-   "found": "mean_free_path = sqrt(cross_section)*(1.00142864817404/(cross_section**3*number_density**2)**0.500158254989768 + 2.8871414360396e-119*(cross_section**3*number_density**2)**33.5900357338529)",
-   "family": "sum2",
-   "pi_groups": [
-    "cross_section**3*number_density**2"
-   ]
   },
   {
    "law": "Zero-order integrated rate law",
    "domain": "chemistry",
    "result": "exact",
-   "max_rel_err": 0.008471589517632354,
-   "seconds": 11.9,
+   "max_rel_err": 0.0,
+   "seconds": 12.5,
    "truth": "concentration = concentration__c0 - reaction_velocity*time",
-   "found": "concentration = concentration__c0*(0.9967183372 - 0.9967354004*(reaction_velocity*time/concentration__c0)**1.001680927)",
-   "family": "a + b\u00b7x^p",
+   "found": "concentration = concentration__c0 - reaction_velocity*time",
+   "family": "rational(F)",
    "pi_groups": [
     "reaction_velocity*time/concentration__c0"
+   ]
+  },
+  {
+   "law": "Mean free path from cross-section",
+   "domain": "nuclear",
+   "result": "exact",
+   "max_rel_err": 3.044242013374457e-16,
+   "seconds": 19.8,
+   "truth": "mean_free_path = 1/(cross_section*number_density)",
+   "found": "mean_free_path = sqrt(cross_section)/sqrt(cross_section**3*number_density**2)",
+   "family": "a\u00b7x^p",
+   "pi_groups": [
+    "cross_section**3*number_density**2"
    ]
   },
   {
    "law": "Boiling point elevation",
    "domain": "chemistry",
    "result": "exact",
-   "max_rel_err": 0.0026212762633674737,
-   "seconds": 10.3,
+   "max_rel_err": 0.0,
+   "seconds": 11.6,
    "truth": "boiling_point_elevation = ebullioscopic_constant*molality*vant_hoff_factor",
-   "found": "boiling_point_elevation = 1.002943923*ebullioscopic_constant*molality*vant_hoff_factor**0.9966494364*exp(-0.00580978618/vant_hoff_factor**9.628259083)",
-   "family": "a\u00b7x^p\u00b7exp(b\u00b7x^r)",
+   "found": "boiling_point_elevation = ebullioscopic_constant*molality*vant_hoff_factor",
+   "family": "a\u00b7x^p",
    "pi_groups": [
     "vant_hoff_factor"
    ]
@@ -3594,11 +3594,11 @@
    "law": "Mass deposited in electrolysis",
    "domain": "chemistry",
    "result": "exact",
-   "max_rel_err": 0.0069607919074393,
-   "seconds": 11.7,
+   "max_rel_err": 0.0,
+   "seconds": 12.8,
    "truth": "mass = charge*molar_mass/(F_c*electrons_transferred)",
-   "found": "mass = 9877.103503*charge*molar_mass/(F_c*(exp(9.402816526*electrons_transferred**0.08926730172) - 2315.609795))",
-   "family": "a/(exp(b\u00b7x^p) + c)",
+   "found": "mass = charge*molar_mass/(F_c*electrons_transferred)",
+   "family": "rational(1/F)",
    "pi_groups": [
     "electrons_transferred"
    ]
@@ -3613,10 +3613,10 @@
    "law": "Fick's first law of diffusion",
    "domain": "biology",
    "result": "exact",
-   "max_rel_err": 0.00031927900000019543,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "molar_flux = concentration*diffusion_coefficient/length",
-   "found": "molar_flux = 1.000319279*concentration*diffusion_coefficient/length",
+   "found": "molar_flux = concentration*diffusion_coefficient/length",
    "family": "constant",
    "pi_groups": []
   },
@@ -3624,10 +3624,10 @@
    "law": "Diffusion time",
    "domain": "biology",
    "result": "exact",
-   "max_rel_err": 0.00043153180000034215,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "time = length**2/(2*diffusion_coefficient)",
-   "found": "time = 0.5002157659*length**2/diffusion_coefficient",
+   "found": "time = length**2/(2*diffusion_coefficient)",
    "family": "constant",
    "pi_groups": []
   },
@@ -3635,11 +3635,11 @@
    "law": "pKa definition",
    "domain": "chemistry",
    "result": "exact",
-   "max_rel_err": 0.007465000887371851,
-   "seconds": 19.6,
+   "max_rel_err": 0.0,
+   "seconds": 19.2,
    "truth": "pka = -log(acid_dissociation_constant)/log(10)",
-   "found": "pka = 534.8217466 - 534.8216907*acid_dissociation_constant**0.0008110858353",
-   "family": "a + b\u00b7x^p",
+   "found": "pka = -log(acid_dissociation_constant)/log(10)",
+   "family": "additive(lin+log)",
    "pi_groups": [
     "acid_dissociation_constant"
    ]
@@ -3647,12 +3647,12 @@
   {
    "law": "Eyring equation",
    "domain": "chemistry",
-   "result": "exact",
-   "max_rel_err": 0.006772880846504859,
-   "seconds": 85.8,
+   "result": "approx",
+   "max_rel_err": 0.0029601441376463067,
+   "seconds": 82.2,
    "truth": "rate_constant = k_B*temperature*transmission_coefficient*exp(-activation_gibbs_energy/(R*temperature))/h",
-   "found": "rate_constant = k_B*temperature*transmission_coefficient**0.99698262/(h*(0.01380646205/(R*temperature/activation_gibbs_energy)**1.012112569 + 0.9999904789)**72.85330139)",
-   "family": "(a + b\u00b7x^p)^q",
+   "found": "rate_constant = 4*sqrt(3)*k_B*temperature*transmission_coefficient*exp(-activation_gibbs_energy/(R*temperature))/(3*h*log(10))",
+   "family": "a\u00b7exp(b\u00b7x^p)",
    "pi_groups": [
     "R*temperature/activation_gibbs_energy",
     "transmission_coefficient"
@@ -3662,10 +3662,10 @@
    "law": "Allometric heart rate",
    "domain": "biology",
    "result": "exact",
-   "max_rel_err": 0.0012235774000002478,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "heart_rate = heart_rate_coefficient/mass**(1/4)",
-   "found": "heart_rate = 0.9987764226*heart_rate_coefficient/mass**(1/4)",
+   "found": "heart_rate = heart_rate_coefficient/mass**(1/4)",
    "family": "constant",
    "pi_groups": []
   },
@@ -3673,22 +3673,22 @@
    "law": "Allometric lifespan",
    "domain": "biology",
    "result": "exact",
-   "max_rel_err": 9.918500000034181e-05,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "lifespan = lifespan_coefficient*mass**(1/4)",
-   "found": "lifespan = 1.000099185*lifespan_coefficient*mass**(1/4)",
+   "found": "lifespan = lifespan_coefficient*mass**(1/4)",
    "family": "constant",
    "pi_groups": []
   },
   {
    "law": "Gibbs phase rule",
    "domain": "chemistry",
-   "result": "miss",
-   "max_rel_err": 9.628211705460762,
-   "seconds": 61.4,
+   "result": "exact",
+   "max_rel_err": 0.0,
+   "seconds": 57.1,
    "truth": "degrees_of_freedom = components - phases + 2",
-   "found": "degrees_of_freedom = -1.57372808201343*components**0.276058887152805*phases**0.847862291299129 + 3.12937607955835*components**0.60316515116799*phases**0.191551405864896",
-   "family": "sum2",
+   "found": "degrees_of_freedom = components - phases + 2",
+   "family": "additive(lin+log)",
    "pi_groups": [
     "components",
     "phases"
@@ -3698,10 +3698,10 @@
    "law": "Neuronal length constant (cable theory)",
    "domain": "biology",
    "result": "exact",
-   "max_rel_err": 0.0001506250000004011,
+   "max_rel_err": 3.127957865376473e-16,
    "seconds": 0.0,
    "truth": "length_constant = sqrt(membrane_resistance_length/axial_resistance_per_length)",
-   "found": "length_constant = 1.000150625*sqrt(membrane_resistance_length)/sqrt(axial_resistance_per_length)",
+   "found": "length_constant = sqrt(membrane_resistance_length)/sqrt(axial_resistance_per_length)",
    "family": "constant",
    "pi_groups": []
   },
@@ -3709,21 +3709,21 @@
    "law": "Membrane time constant",
    "domain": "biology",
    "result": "exact",
-   "max_rel_err": 0.0005771619000002445,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "time_constant = specific_membrane_capacitance*specific_membrane_resistance",
-   "found": "time_constant = 0.9994228381*specific_membrane_capacitance*specific_membrane_resistance",
+   "found": "time_constant = specific_membrane_capacitance*specific_membrane_resistance",
    "family": "constant",
    "pi_groups": []
   },
   {
    "law": "Monod growth equation",
    "domain": "biology",
-   "result": "exact",
-   "max_rel_err": 0.0011729821253007727,
-   "seconds": 16.1,
+   "result": "approx",
+   "max_rel_err": 0.005414309541974444,
+   "seconds": 17.1,
    "truth": "growth_rate = max_growth_rate*substrate_concentration/(michaelis_constant + substrate_concentration)",
-   "found": "growth_rate = 1.003559705*max_growth_rate*(substrate_concentration/michaelis_constant)**0.9959691171/((substrate_concentration/michaelis_constant)**0.9959691171 + 1.008879878)",
+   "found": "growth_rate = 16*sqrt(3)*max_growth_rate*substrate_concentration/((7*sqrt(3)*michaelis_constant + 12*substrate_concentration)*log(10))",
    "family": "a\u00b7x^p/(b + x^p)",
    "pi_groups": [
     "substrate_concentration/michaelis_constant"
@@ -3733,11 +3733,11 @@
    "law": "Hardy-Weinberg homozygote frequency",
    "domain": "biology",
    "result": "exact",
-   "max_rel_err": 0.0012517576079984878,
-   "seconds": 15.8,
+   "max_rel_err": 0.0,
+   "seconds": 15.3,
    "truth": "genotype_frequency = allele_p**2",
-   "found": "genotype_frequency = 847884454.6*allele_p**1.998978406/(allele_p**1.998978406 + 846820843.1)",
-   "family": "a\u00b7x^p/(b + x^p)",
+   "found": "genotype_frequency = allele_p**2",
+   "family": "a\u00b7x^p",
    "pi_groups": [
     "allele_p"
    ]
@@ -3758,11 +3758,11 @@
    "law": "Fixation probability of a beneficial mutation",
    "domain": "biology",
    "result": "exact",
-   "max_rel_err": 0.0009034438356568798,
-   "seconds": 15.7,
+   "max_rel_err": 0.0,
+   "seconds": 16.7,
    "truth": "fixation_probability = 2*selection_coefficient",
-   "found": "fixation_probability = 2.001806938*selection_coefficient*(1 - 2.425058797e-8*selection_coefficient)",
-   "family": "a\u00b7x\u00b7(1 \u2212 x/b)",
+   "found": "fixation_probability = 2*selection_coefficient",
+   "family": "rational(F)",
    "pi_groups": [
     "selection_coefficient"
    ]
@@ -3771,36 +3771,29 @@
    "law": "Neutral fixation probability",
    "domain": "biology",
    "result": "exact",
-   "max_rel_err": 0.005280199541812898,
-   "seconds": 10.1,
+   "max_rel_err": 0.0,
+   "seconds": 10.5,
    "truth": "fixation_probability = 1/(2*effective_population_size)",
-   "found": "fixation_probability = 0.498968059903711/effective_population_size**0.997576984233745 - 2.34540315736252e-15*effective_population_size**16.435360106416",
-   "family": "sum2",
+   "found": "fixation_probability = 1/(2*effective_population_size)",
+   "family": "a\u00b7x^p",
    "pi_groups": [
     "effective_population_size"
    ]
   },
   {
-   "law": "Molecular clock",
+   "law": "SIR infection dynamics",
    "domain": "biology",
-   "result": "exact",
-   "max_rel_err": 0.0003621041403567808,
-   "seconds": 13.9,
-   "truth": "genetic_distance = 2*substitution_rate*time",
-   "found": "genetic_distance = 78743.89803*log(2.540834581e-5*substitution_rate*time + 1)",
-   "family": "a\u00b7log(1 + b\u00b7x)",
-   "pi_groups": [
-    "substitution_rate*time"
-   ]
+   "result": "miss",
+   "seconds": 90.0
   },
   {
    "law": "Law of Laplace (blood vessel)",
    "domain": "biology",
    "result": "exact",
-   "max_rel_err": 0.0005873242000002033,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "wall_tension = pressure*radius",
-   "found": "wall_tension = 0.9994126758*pressure*radius",
+   "found": "wall_tension = pressure*radius",
    "family": "constant",
    "pi_groups": []
   },
@@ -3808,10 +3801,10 @@
    "law": "Cardiac output",
    "domain": "biology",
    "result": "exact",
-   "max_rel_err": 0.0012174700000002832,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "flow_rate = heart_rate*stroke_volume",
-   "found": "flow_rate = 1.00121747*heart_rate*stroke_volume",
+   "found": "flow_rate = heart_rate*stroke_volume",
    "family": "constant",
    "pi_groups": []
   },
@@ -3819,18 +3812,25 @@
    "law": "Haemodynamic Ohm's law",
    "domain": "biology",
    "result": "exact",
-   "max_rel_err": 0.0002695200000002346,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "pressure = flow_rate*vascular_resistance",
-   "found": "pressure = 1.00026952*flow_rate*vascular_resistance",
+   "found": "pressure = flow_rate*vascular_resistance",
    "family": "constant",
    "pi_groups": []
   },
   {
-   "law": "SIR infection dynamics",
+   "law": "Molecular clock",
    "domain": "biology",
-   "result": "miss",
-   "seconds": 90.0
+   "result": "exact",
+   "max_rel_err": 0.0,
+   "seconds": 14.8,
+   "truth": "genetic_distance = 2*substitution_rate*time",
+   "found": "genetic_distance = 2*substitution_rate*time",
+   "family": "rational(F)",
+   "pi_groups": [
+    "substitution_rate*time"
+   ]
   },
   {
    "law": "Hardy-Weinberg heterozygote frequency",
@@ -3842,11 +3842,11 @@
    "law": "Coriolis parameter",
    "domain": "earth_science",
    "result": "exact",
-   "max_rel_err": 0.0005050210000002685,
-   "seconds": 8.9,
+   "max_rel_err": 0.0,
+   "seconds": 9.9,
    "truth": "coriolis_parameter = 2*angular_velocity*sin(angle)",
-   "found": "coriolis_parameter = 1.998989958*angular_velocity*sin(angle)**1.0",
-   "family": "a\u00b7sin(x)^p",
+   "found": "coriolis_parameter = 2*angular_velocity*sin(angle)",
+   "family": "a\u00b7sin(b\u00b7x)",
    "pi_groups": [
     "angle"
    ]
@@ -3858,39 +3858,39 @@
    "seconds": 90.0
   },
   {
-   "law": "Rossby number",
-   "domain": "earth_science",
-   "result": "exact",
-   "max_rel_err": 0.002075712818692129,
-   "seconds": 10.8,
-   "truth": "rossby_number = velocity/(coriolis_parameter*length)",
-   "found": "rossby_number = 24251119.99*(coriolis_parameter*length/velocity)**0.000616041571/(24285384.16*coriolis_parameter*length/velocity + 1)",
-   "family": "a\u00b7x^p/(1 + b\u00b7x)",
-   "pi_groups": [
-    "coriolis_parameter*length/velocity"
-   ]
-  },
-  {
    "law": "Geostrophic wind",
    "domain": "earth_science",
    "result": "exact",
-   "max_rel_err": 0.0032109628640748884,
-   "seconds": 14.2,
+   "max_rel_err": 0.0,
+   "seconds": 14.5,
    "truth": "velocity = pressure/(coriolis_parameter*density*length)",
-   "found": "velocity = 0.06166931957*coriolis_parameter*length/((coriolis_parameter**2*density*length**2/pressure)**0.8325006613*(exp(0.06702266563*(coriolis_parameter**2*density*length**2/pressure)**0.1469799469) - 1.007698613))",
-   "family": "a\u00b7x^p/(exp(b\u00b7x^r) + c)",
+   "found": "velocity = pressure/(coriolis_parameter*density*length)",
+   "family": "rational(1/F)",
    "pi_groups": [
     "coriolis_parameter**2*density*length**2/pressure"
+   ]
+  },
+  {
+   "law": "Rossby number",
+   "domain": "earth_science",
+   "result": "exact",
+   "max_rel_err": 0.0,
+   "seconds": 11.7,
+   "truth": "rossby_number = velocity/(coriolis_parameter*length)",
+   "found": "rossby_number = velocity/(coriolis_parameter*length)",
+   "family": "rational(1/F)",
+   "pi_groups": [
+    "coriolis_parameter*length/velocity"
    ]
   },
   {
    "law": "Geothermal heat flux",
    "domain": "earth_science",
    "result": "exact",
-   "max_rel_err": 0.0016369694000003445,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "heat_flux = temperature_change*thermal_conductivity/depth",
-   "found": "heat_flux = 0.9983630306*temperature_change*thermal_conductivity/depth",
+   "found": "heat_flux = temperature_change*thermal_conductivity/depth",
    "family": "constant",
    "pi_groups": []
   },
@@ -3903,12 +3903,12 @@
   {
    "law": "Radiometric dating",
    "domain": "earth_science",
-   "result": "exact",
-   "max_rel_err": 0.00471794265961576,
-   "seconds": 15.9,
+   "result": "approx",
+   "max_rel_err": 0.0025489254668167247,
+   "seconds": 17.1,
    "truth": "time = log(daughter_parent_ratio + 1)/decay_constant",
-   "found": "time = (1.622038211*daughter_parent_ratio**0.323551187 - 0.9322306115)/decay_constant",
-   "family": "a + b\u00b7x^p",
+   "found": "time = log(7*sqrt(5)*daughter_parent_ratio/(5*pi) + 1)/decay_constant",
+   "family": "a\u00b7log(1 + b\u00b7x)",
    "pi_groups": [
     "daughter_parent_ratio"
    ]
@@ -3917,11 +3917,11 @@
    "law": "Airy isostasy",
    "domain": "earth_science",
    "result": "exact",
-   "max_rel_err": 0.0041468106299133055,
+   "max_rel_err": 0.0,
    "seconds": 23.3,
    "truth": "depth = -crust_density*height/(crust_density - mantle_density)",
-   "found": "depth = -1.002317273*height/((mantle_density/crust_density)**1.002844919*((mantle_density/crust_density)**(-1.002844919) - 0.9999959949))",
-   "family": "a\u00b7x^p/(b + x^p)",
+   "found": "depth = -crust_density*height/(crust_density - mantle_density)",
+   "family": "rational(1/F)",
    "pi_groups": [
     "mantle_density/crust_density"
    ]
@@ -3930,10 +3930,10 @@
    "law": "Seismic S-wave speed",
    "domain": "earth_science",
    "result": "exact",
-   "max_rel_err": 0.00018709300000037618,
+   "max_rel_err": 2.873730659818178e-16,
    "seconds": 0.0,
    "truth": "wave_speed = sqrt(shear_modulus/density)",
-   "found": "wave_speed = 1.000187093*sqrt(shear_modulus)/sqrt(density)",
+   "found": "wave_speed = sqrt(shear_modulus)/sqrt(density)",
    "family": "constant",
    "pi_groups": []
   },
@@ -3941,22 +3941,22 @@
    "law": "Climate sensitivity",
    "domain": "earth_science",
    "result": "exact",
-   "max_rel_err": 0.0013419789000002015,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "temperature_change = climate_sensitivity_parameter*radiative_forcing",
-   "found": "temperature_change = 0.9986580211*climate_sensitivity_parameter*radiative_forcing",
+   "found": "temperature_change = climate_sensitivity_parameter*radiative_forcing",
    "family": "constant",
    "pi_groups": []
   },
   {
    "law": "Seismic P-wave speed",
    "domain": "earth_science",
-   "result": "exact",
-   "max_rel_err": 0.013173217836695,
-   "seconds": 10.3,
+   "result": "approx",
+   "max_rel_err": 0.015060454115031468,
+   "seconds": 11.6,
    "truth": "wave_speed = sqrt(3)*sqrt((3*bulk_modulus + 4*shear_modulus)/density)/3",
-   "found": "wave_speed = sqrt(bulk_modulus)*(0.6093026529*(shear_modulus/bulk_modulus)**0.7062346457 + 0.9190865424)/sqrt(density)",
-   "family": "a + b\u00b7x^p",
+   "found": "wave_speed = 32*sqrt(bulk_modulus)*(3*bulk_modulus + shear_modulus*log(4))**2/(sqrt(density)*(24*bulk_modulus + 5*shear_modulus)**2*log(2)**2)",
+   "family": "rational(sqrt(F))",
    "pi_groups": [
     "shear_modulus/bulk_modulus"
    ]
@@ -3971,10 +3971,10 @@
    "law": "Nyquist sampling rate",
    "domain": "information",
    "result": "exact",
-   "max_rel_err": 0.0003312090000001549,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "sampling_frequency = 2*frequency",
-   "found": "sampling_frequency = 1.999337582*frequency",
+   "found": "sampling_frequency = 2*frequency",
    "family": "constant",
    "pi_groups": []
   },
@@ -3982,10 +3982,10 @@
    "law": "Bremermann's limit",
    "domain": "information",
    "result": "exact",
-   "max_rel_err": 0.0007665316148736443,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "computation_rate = c**2*mass/h",
-   "found": "computation_rate = 205*2**(5/6)*c**2*mass/(96*pi**(7/6)*h)",
+   "found": "computation_rate = c**2*mass/h",
    "family": "constant",
    "pi_groups": []
   },
@@ -3993,31 +3993,12 @@
    "law": "Margolus-Levitin bound",
    "domain": "information",
    "result": "exact",
-   "max_rel_err": 0.0011698679492969622,
+   "max_rel_err": 0.0,
    "seconds": 0.0,
    "truth": "computation_rate = 2*energy/(pi*hbar)",
-   "found": "computation_rate = 0.6358750113*energy/hbar",
+   "found": "computation_rate = 2*energy/(pi*hbar)",
    "family": "constant",
    "pi_groups": []
-  },
-  {
-   "law": "Shannon-Hartley channel capacity",
-   "domain": "information",
-   "result": "exact",
-   "max_rel_err": 0.0008266117296029517,
-   "seconds": 14.9,
-   "truth": "channel_capacity = bandwidth*log(signal_to_noise + 1)/log(2)",
-   "found": "channel_capacity = 1.446887566*bandwidth*log(0.9955536115*signal_to_noise + 1)",
-   "family": "a\u00b7log(1 + b\u00b7x)",
-   "pi_groups": [
-    "signal_to_noise"
-   ]
-  },
-  {
-   "law": "Binary entropy function",
-   "domain": "information",
-   "result": "skipped",
-   "reason": "invalid domain"
   },
   {
    "law": "Species-area relationship",
@@ -4026,14 +4007,33 @@
    "seconds": 90.0
   },
   {
+   "law": "Binary entropy function",
+   "domain": "information",
+   "result": "skipped",
+   "reason": "invalid domain"
+  },
+  {
+   "law": "Shannon-Hartley channel capacity",
+   "domain": "information",
+   "result": "approx",
+   "max_rel_err": 0.0025382044955894927,
+   "seconds": 15.9,
+   "truth": "channel_capacity = bandwidth*log(signal_to_noise + 1)/log(2)",
+   "found": "channel_capacity = bandwidth*log(7*sqrt(5)*signal_to_noise/(5*pi) + 1)/log(2)",
+   "family": "a\u00b7log(1 + b\u00b7x)",
+   "pi_groups": [
+    "signal_to_noise"
+   ]
+  },
+  {
    "law": "Bekenstein bound",
    "domain": "information",
    "result": "exact",
-   "max_rel_err": 0.0016690042732398324,
-   "seconds": 16.5,
+   "max_rel_err": 0.0,
+   "seconds": 16.0,
    "truth": "information = 2*pi*energy*radius/(c*hbar*log(2))",
-   "found": "information = 72090.9954*log(1 + 0.000125633228*energy*radius/(c*hbar))",
-   "family": "a\u00b7log(1 + b\u00b7x)",
+   "found": "information = 2*pi*energy*radius/(c*hbar*log(2))",
+   "family": "rational(F)",
    "pi_groups": [
     "energy*radius/(c*hbar)"
    ]
@@ -4042,11 +4042,11 @@
    "law": "CO2 radiative forcing",
    "domain": "earth_science",
    "result": "exact",
-   "max_rel_err": 0.014893822154550894,
-   "seconds": 56.5,
+   "max_rel_err": 3.235066761485987e-14,
+   "seconds": 55.4,
    "truth": "radiative_forcing = forcing_coefficient*log(co2_concentration__C/co2_concentration__C0)",
-   "found": "radiative_forcing = forcing_coefficient*(-19.4095700223532*co2_concentration__C0**0.0256156480736678/co2_concentration__C**0.0249512902518156 + 19.4095349977126*co2_concentration__C**0.0265122392041139/co2_concentration__C0**0.0258461986821757)",
-   "family": "sum2",
+   "found": "radiative_forcing = forcing_coefficient*(log(co2_concentration__C) - log(co2_concentration__C0))",
+   "family": "additive(lin+log)",
    "pi_groups": [
     "co2_concentration__C",
     "co2_concentration__C0"

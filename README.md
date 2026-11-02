@@ -145,8 +145,14 @@ column. It follows the AI Feynman protocol (Udrescu & Tegmark, 2020):
 
 | Version | Exact | Approximate | Missed |
 |---|---|---|---|
-| First engine (unit analysis + 14 formula shapes) | 271 / 345 (78.6%) | 30 | 44 |
-| Current engine (see below) | **337 / 345 (97.7%)** | 2 | 6 |
+| First engine (unit analysis + 14 formula shapes), noiseless data | 271 / 345 (78.6%) | 30 | 44 |
+| Current engine, noiseless data | **337 / 345 (97.7%)** | 2 | 6 |
+| Current engine, **1% Gaussian noise** on the target | **289 / 345 (83.8%)** | 36 | 20 |
+
+"Exact" under noise means that the equation recovered from noisy data matches the *noiseless* true
+law to 10⁻⁶ on fresh data. In other words, it is the law itself, not a curve fitted to the noise.
+With noisy data, Euresis identifies constants only as precisely as the noise allows, collects every
+closed-form candidate, and keeps the simplest one that fits as well as the noise permits.
 
 The current engine added:
 
@@ -155,7 +161,8 @@ The current engine added:
 * shapes where an exponent is itself a variable;
 * closed-form recognition of constants (rational × π^a · 2^b · 3^c · 5^d · ln 2 / ln 10), with a
   guard against contrived matches;
-* stopping as soon as an exact answer is found.
+* stopping as soon as an exact answer is found;
+* noise-aware model selection.
 
 Laws recovered exactly include Planck's black-body law, the Lorentz factor, relativistic velocity
 addition and Doppler shift, the Arrhenius and Eyring equations, Michaelis–Menten and Hill kinetics,
