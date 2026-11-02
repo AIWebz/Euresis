@@ -58,7 +58,7 @@ def cmd_discover(a):
     """Find laws in measured data (built-in real datasets, or your CSV)."""
     import warnings
     warnings.filterwarnings("ignore")
-    from .discover import DataDiscoverer, builtin, load_csv
+    from .discover import DataDiscoverer, builtin, load_csv, simulated
     from .render import export
     from .space import ThoughtSpace
     kb, eng, _ = _load(with_model=False)
@@ -68,7 +68,7 @@ def cmd_discover(a):
         mapping = dict(m.split(":") for m in a.map)
         sets = [load_csv(a.csv, a.target, mapping)]
     else:
-        sets = [d for d in builtin() if not a.dataset or d.name == a.dataset]
+        sets = [d for d in builtin() + simulated() if not a.dataset or d.name == a.dataset]
     for ds in sets:
         dd.run(ds)
         print()
@@ -87,6 +87,65 @@ def cmd_connect(a):
     if not summary["online"]:
         print("Claude was not reachable: set ANTHROPIC_API_KEY (or run `ant auth login`) and `pip install anthropic`.")
     export()
+
+
+def cmd_research(a):
+    """Claude as reasoning core, with Euresis' verified tools."""
+    from .agent import ReasoningCore
+    from .render import export
+    from .space import ThoughtSpace
+    kb, eng, model = _load()
+    core = ReasoningCore(kb, eng, model, ThoughtSpace())
+    report = core.research(a.question, max_turns=a.max_turns)
+    if report:
+        print("\n" + report)
+    export()
+
+
+def cmd_literature(a):
+    from . import literature
+    if a.action == "search":
+        papers, status = literature.search(" ".join(a.query), a.n, log=print)
+        for p in papers[: a.n]:
+            print(f"- {p.title} ({p.year}, {p.source}) {p.url}")
+    elif a.action == "harvest":
+        literature.harvest([" ".join(a.query)], per_query=a.n)
+    elif a.action == "novelty":
+        r = literature.novelty(" ".join(a.query), log=print)
+        print(r["verdict"])
+        for c in r["closest"]:
+            print(f"  {c['similarity']:.2f}  {c['title']} ({c['year']}) {c['url']}")
+    print(f"local index: {literature.Library().count()} papers")
+
+
+def cmd_simulate(a):
+    from .simulate import run
+    params = {}
+    for kv in a.params:
+        k, v = kv.split("=", 1)
+        try:
+            params[k] = json.loads(v)
+        except json.JSONDecodeError:
+            params[k] = v
+    print(json.dumps(run(a.model, **params), indent=2, default=float))
+
+
+def cmd_prove(a):
+    from .verify import check_lean, prove_z3
+    if a.lean:
+        print(check_lean(Path(a.lean).read_text()))
+    else:
+        variables = dict(v.split(":") for v in a.vars)
+        print(prove_z3(a.claim, variables, a.assume))
+
+
+def cmd_sandbox(a):
+    from .verify import run_python
+    r = run_python(Path(a.file).read_text(), timeout=a.timeout)
+    print(r["stdout"], end="")
+    if r["stderr"]:
+        print(r["stderr"], file=sys.stderr, end="")
+    print(f"[{r['status']}]")
 
 
 def cmd_learn(a):
@@ -197,6 +256,18 @@ def main(argv=None):
     c = sub.add_parser("connect"); c.add_argument("--points", type=int, default=6)
     c.add_argument("--ideas", type=int, default=3); c.add_argument("--seed", type=int, default=0)
     c.set_defaults(fn=cmd_connect)
+    r = sub.add_parser("research"); r.add_argument("question"); r.add_argument("--max-turns", type=int, default=30)
+    r.set_defaults(fn=cmd_research)
+    li = sub.add_parser("literature"); li.add_argument("action", choices=["search", "harvest", "novelty"])
+    li.add_argument("query", nargs="+"); li.add_argument("-n", type=int, default=10); li.set_defaults(fn=cmd_literature)
+    si = sub.add_parser("simulate"); si.add_argument("model"); si.add_argument("params", nargs="*")
+    si.set_defaults(fn=cmd_simulate)
+    pr = sub.add_parser("prove"); pr.add_argument("claim", nargs="?", default="")
+    pr.add_argument("--vars", nargs="*", default=[], help="name:Real|Int|Bool")
+    pr.add_argument("--assume", nargs="*", default=[]); pr.add_argument("--lean", default="")
+    pr.set_defaults(fn=cmd_prove)
+    sb = sub.add_parser("sandbox"); sb.add_argument("file"); sb.add_argument("--timeout", type=int, default=60)
+    sb.set_defaults(fn=cmd_sandbox)
     b = sub.add_parser("benchmark"); b.add_argument("--cycles", type=int, default=3); b.set_defaults(fn=cmd_benchmark)
     s = sub.add_parser("solve"); s.add_argument("formula"); s.add_argument("target", nargs="?", default="")
     s.add_argument("values", nargs="*"); s.set_defaults(fn=cmd_solve)

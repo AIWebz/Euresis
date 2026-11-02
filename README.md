@@ -102,6 +102,9 @@ against unit analysis and against what it already knows:
 * **Hydrogen Balmer lines** (6 wavelengths, NIST). The data give 1/λ = R(1/2² − 1/n²). The fitted R
   is 0.055% below the Rydberg constant, and Euresis explains the gap as 1/(1 + m_e/m_p). That is the
   reduced-mass correction: the electron orbits the centre of mass, not the nucleus itself.
+* **Simulated pendulum and projectile** (Euresis' own simulators). The data give
+  period = 2π·√(L/g) and range = v²/g at 45°. The exponents match unit analysis, the prefactors
+  come out as 2π and 1, and each result is matched to the known law.
 * **Atmosphere** (U.S. Standard Atmosphere 1976). An exponential fits with a scale height of 6.7 km.
   Combined with H = RT/(Mg), this implies a mean air temperature of 229 K. The fit is only accurate
   to about 5%, because the real atmosphere is not one temperature.
@@ -129,6 +132,64 @@ is well-formed, not that it is true. Each one still needs the experimental test 
 
 This needs the `anthropic` package and credentials (`ANTHROPIC_API_KEY`, or `ant auth login`).
 Without them, the connection points are still recorded as open questions.
+
+## The reasoning core (Claude + verified tools)
+
+`python -m euresis research "your question"` runs Claude (`claude-opus-5-5`, adaptive thinking) as
+the reasoning core. Claude does the open-ended work: reading, connecting fields, and designing
+derivations and experiments. Every claim it can check, it must check with a tool that cannot
+make mistakes in its own domain:
+
+| Layer | Tool | What it does |
+|---|---|---|
+| Knowledge | `search_knowledge` | 391 laws, 128 principles, 47 constants, plus Euresis' own past results |
+| Literature | `search_literature`, `check_novelty` | arXiv, PubMed, Semantic Scholar and OpenAlex, plus a local SQLite full-text index that grows with every search |
+| Exact maths | `computer_algebra`, `check_dimensions` | SymPy, and Euresis' dimensional analysis |
+| Proof | `prove`, `check_lean` | Z3 theorem prover (gives a proof or a counterexample); Lean 4 when installed |
+| Simulation | `simulate`, `run_experiment` | Nonlinear ODE models for physics (pendulum, orbits, projectiles, oscillators, RLC circuits, heat diffusion), chemistry (mass-action kinetics, Arrhenius) and climate (energy balance with ice-albedo feedback). Parameter sweeps feed the law search. |
+| Code | `run_python` | Sandboxed Python (numpy, scipy, sympy), with no network access, CPU/memory limits and a timeout |
+| Memory | `record_idea` | Re-verifies each idea, checks it against the literature, and stores it in the Thought Space |
+
+Every tool call and every idea is written to the Thought Space. `connect` now also runs the
+literature novelty check on each verified idea.
+
+Each layer can also be used directly:
+
+```bash
+python -m euresis literature search black hole entropy
+```
+
+```bash
+python -m euresis literature harvest "dark matter rotation curves" -n 200
+```
+
+```bash
+python -m euresis literature novelty "pendulum period grows with amplitude as theta^2/16"
+```
+
+```bash
+python -m euresis simulate pendulum length=1 theta0=1.5
+```
+
+```bash
+python -m euresis simulate ebm co2_ppm=560
+```
+
+```bash
+python -m euresis prove "x**2 + y**2 >= 2*x*y" --vars x:Real y:Real
+```
+
+```bash
+python -m euresis sandbox script.py
+```
+
+**Requirements.**
+
+* **Claude credentials** for `research` and `connect`: `ANTHROPIC_API_KEY`, or `ant auth login`.
+* **Network access to the literature APIs**: `export.arxiv.org`, `eutils.ncbi.nlm.nih.gov`,
+  `api.semanticscholar.org` and `api.openalex.org`. If they can't be reached, novelty is reported
+  as *unchecked*, never guessed.
+* **Lean 4** (optional), installed with elan.
 
 ## The trained model
 

@@ -31,6 +31,7 @@ KINDS = {
     "data": "Measured dataset",
     "data_discovery": "Law found in data",
     "idea": "Idea (Claude-proposed, Euresis-verified)",
+    "evidence": "Tool evidence",
 }
 
 

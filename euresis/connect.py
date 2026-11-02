@@ -308,6 +308,11 @@ class IdeaEngine:
             online = True
             for idea in ideas:
                 res = self.verify(idea)
+                if res["ok"] and not res.get("known"):
+                    from . import literature
+                    nov = literature.novelty(f"{idea.get('title', '')}. {idea.get('statement', '')}",
+                                             idea.get("fields"))
+                    res["checks"].append(f"literature: {nov['verdict']}")
                 self.record(res, qid)
                 summary["ideas"] += 1
                 if not res["ok"]:

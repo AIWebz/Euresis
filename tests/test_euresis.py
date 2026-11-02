@@ -94,3 +94,43 @@ def test_idea_verifier_accepts_consistent_and_rejects_inconsistent():
     assert r["ok"] and r.get("known") == "Escape velocity"
     bad = dict(good, equation="v = G*M/r")
     assert not ie.verify(bad)["ok"]
+
+
+def test_simulators_match_exact_physics():
+    import math
+    from euresis.simulate import orbit, pendulum, projectile
+    assert abs(pendulum(1.0, theta0=1.0)["ratio_to_small_angle"] - 1.0663) < 1e-3   # elliptic-integral value
+    assert abs(orbit()["period"] / 3.15581e7 - 1) < 1e-3                             # one sidereal year
+    assert abs(projectile(v0=20.0)["range"] - 20.0 ** 2 / 9.80665) < 1e-3          # v²/g at 45°
+
+
+def test_verifiers():
+    from euresis.verify import cas, prove_z3, run_python
+    assert prove_z3("x**2 + y**2 >= 2*x*y", {"x": "Real", "y": "Real"})["status"] == "proved"
+    assert prove_z3("x**2 >= x", {"x": "Real"})["status"] == "refuted"
+    assert cas("equal", "sin(x)**2 + cos(x)**2 == 1")["result"] is True
+    assert run_python("print(6*7)")["stdout"].strip() == "42"
+
+
+def test_literature_reports_unavailable_sources_honestly(tmp_path, monkeypatch):
+    from euresis import literature
+    def down(q, n):
+        raise literature.SourceUnavailable("blocked")
+    monkeypatch.setattr(literature, "SOURCES", {k: down for k in literature.SOURCES})
+    monkeypatch.setattr(literature, "DB_PATH", tmp_path / "lit.db")
+    lib = literature.Library(tmp_path / "lit.db")
+    monkeypatch.setattr(literature, "Library", lambda path=None: lib)
+    r = literature.novelty("black hole temperature inversely proportional to mass")
+    assert r["verdict"].startswith("unchecked")
+    lib.add([literature.Paper("test", "1", "Black hole temperature", "temperature of a black hole scales as 1/M",
+                              2000, "", "")])
+    assert lib.search("black hole temperature")[0].title == "Black hole temperature"
+
+
+def test_pendulum_law_found_in_simulated_data():
+    import warnings
+    warnings.filterwarnings("ignore")
+    from euresis.discover import DataDiscoverer, simulated
+    dd = DataDiscoverer(KB, E, log=lambda *a: None)
+    r = dd.run(next(d for d in simulated() if d.name == "pendulum_sim"))
+    assert r["known"] == "Simple pendulum period"

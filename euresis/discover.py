@@ -85,6 +85,26 @@ def builtin() -> list[Dataset]:
     return [orbits, balmer, atmosphere]
 
 
+def simulated() -> list[Dataset]:
+    """Datasets produced by Euresis' own simulators (clearly labelled as simulated)."""
+    from .simulate import experiment
+    pend = experiment("pendulum", {"length": [0.25, 0.5, 1.0, 2.0, 4.0], "g": [1.62, 3.71, 9.81, 24.8]},
+                      "period", {"theta0": 0.01})
+    rows = pend["rows"]
+    pendulum = Dataset("pendulum_sim", "Simulated pendulum: length, gravity, period (nonlinear ODE, 1° swing)",
+                       "Euresis simulator (euresis.simulate.pendulum)",
+                       {"length": "length", "g": "gravitational_acceleration", "period": "period"},
+                       {c: [r[c] for r in rows] for c in ("length", "g", "period")}, "period")
+    proj = experiment("projectile", {"v0": [5.0, 10.0, 20.0, 40.0], "g": [1.62, 9.81, 24.8]}, "range",
+                      {"angle_deg": 45.0})
+    rows = proj["rows"]
+    projectile = Dataset("projectile_sim", "Simulated projectile at 45°: launch speed, gravity, range",
+                         "Euresis simulator (euresis.simulate.projectile)",
+                         {"v0": "initial_velocity", "g": "gravitational_acceleration", "range": "range"},
+                         {c: [r[c] for r in rows] for c in ("v0", "g", "range")}, "range")
+    return [pendulum, projectile]
+
+
 def load_csv(path, target, mapping: dict[str, str], name=None) -> Dataset:
     rows = list(csv.DictReader(open(path)))
     data = {c: [float(r[c]) for r in rows] for c in mapping}
@@ -313,7 +333,7 @@ class DataDiscoverer:
 
     def _conclude(self, ds, did, rel, lines, status):
         known = None
-        if rel is not None and rel.constants:
+        if rel is not None and isinstance(rel.eq, sp.Equality):
             k, ratio = self.E.find_known(rel)
             if k is not None:
                 known = k.name
@@ -329,6 +349,10 @@ class DataDiscoverer:
             parents += self._law_ids(["Rydberg formula", "Bohr energy levels of hydrogen", "Reduced mass"])
         if ds.name == "orbits":
             parents += self._law_ids(["Kepler's third law"])
+        if ds.name == "pendulum_sim":
+            parents += self._law_ids(["Simple pendulum period"])
+        if ds.name == "projectile_sim":
+            parents += self._law_ids(["Projectile range"])
         self._add("data_discovery", title, body=" ".join(lines), formula=formula, domain="method",
                   parents=parents, status=status, score=1.0, key=f"datadisc|{ds.name}")
         return {"lines": lines, "known": known, "status": status, "formula": formula}
