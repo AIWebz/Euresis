@@ -72,7 +72,8 @@ class MysterySolver:
             names = [f.name for f in self.kb.formulas]
             r_lm = {n: i for i, (n, _) in enumerate(lm.rank(q, names))}
             r_wm = {f.name: i for i, f in enumerate(laws)}
-            fused = sorted(names, key=lambda n: -(1 / (10 + r_lm.get(n, 999)) + 0.5 / (10 + r_wm.get(n, 999))))
+            # word-matching-led fusion: best measured combination (see `euresis lm eval`)
+            fused = sorted(names, key=lambda n: -(0.5 / (10 + r_lm.get(n, 999)) + 1 / (10 + r_wm.get(n, 999))))
             laws = [self.kb.by_name(n) for n in fused[:10]]
         principles = [d[1] for d, _ in hits if d[0] == "principle"]
         consts = {c.name for f in laws for c in f.constants}

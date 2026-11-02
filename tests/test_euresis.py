@@ -152,3 +152,15 @@ def test_symbolic_regression_recovers_planck_law_exactly():
     truth = 2 * s["h"] * s["c"] ** 2 / (s["lam"] ** 5 * (sp.exp(s["h"] * s["c"] / (s["lam"] * s["kB"] * s["T"])) - 1))
     assert sp.simplify(r["expr"] - truth) == 0
     assert str(identify_constant(0.07957747154594767)) == "1/(4*pi)"
+
+
+def test_euresis_lm_understands_scientific_questions():
+    import pytest
+    from euresis.lm.model import EuresisLM
+    if not EuresisLM.available():
+        pytest.skip("Euresis-LM not trained")
+    lm = EuresisLM.load()
+    names = [f.name for f in KB.formulas]
+    top = [n for n, _ in lm.rank("Explain the relationship between force and acceleration.", names)[:3]]
+    assert "Newton's second law" in top
+    assert "V = I*R" in lm.generate("explain: Ohm's law\nanswer:", max_new=40, temperature=0.1)

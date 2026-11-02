@@ -247,6 +247,58 @@ python -m euresis sandbox script.py
   as *unchecked*, never guessed.
 * **Lean 4** (optional), installed with elan.
 
+## Euresis-LM: its own language model
+
+Euresis-LM is a GPT-style transformer, written from scratch in JAX (`euresis/lm/`) and trained on
+CPU from Euresis' own knowledge:
+
+* **Architecture:** 6 decoder layers, d = 256, 8 attention heads, a 128-token context, and a
+  byte-level BPE tokenizer with a 4,096-token vocabulary.
+* **Size:** 5.8 M parameters.
+* **Training:** 554 k tokens of laws, principles, constants, quantities, explanations and
+  question → law pairs; 1,500 AdamW steps; about 29 minutes.
+* **Overfitting control:** early stopping on held-out loss. A first run overfit and was discarded.
+  Best held-out loss: 0.569.
+
+It is used for language understanding: deciding which laws a question is about, inside the mystery
+solver. It also writes short explanations (`python -m euresis lm explain "Ohm's law"`).
+
+**Measured (`python -m euresis lm eval`)** on questions it never saw in training:
+
+| Method | Held-out phrasings: top-1 / top-5 | Everyday questions: top-1 / top-5 |
+|---|---|---|
+| Word matching (previous) | 68.0% / 92.0% | 16.7% / 25.0% |
+| Euresis-LM alone | 64.0% / 84.7% | 8.3% / 12.5% |
+| **Word matching + Euresis-LM (used)** | **74.0% / 95.3%** | 12.5% / 25.0% |
+
+**Limits.** Euresis-LM learned only from Euresis' knowledge base. It understands scientific phrasing
+but lacks world knowledge: it does not know that "leaving Earth" means escape velocity. It is
+millions of times smaller than frontier language models and does not reason like them. More text
+would be the biggest improvement, either a large public-domain science corpus or a pretrained
+open-weight model. Neither is downloadable from this environment.
+
+Commands:
+
+```bash
+python -m euresis lm train
+```
+
+```bash
+python -m euresis lm eval
+```
+
+```bash
+python -m euresis lm ask "How hot is a black hole?"
+```
+
+```bash
+python -m euresis lm explain "Ohm's law"
+```
+
+```bash
+python -m euresis lm generate "question: why do stars shine?"
+```
+
 ## The trained model
 
 `euresis/model.py` trains two components from scratch in pure NumPy:

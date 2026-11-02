@@ -213,8 +213,9 @@ class EuresisLM:
                 out[i + j] = np.mean([lp[j, t - 1, s[t]] for t in tgt]) if len(s) > start else -1e9
         return out
 
-    def rank(self, question: str, candidates: list[str], prompt="question: {q}\nlaw: ") -> list[tuple[str, float]]:
-        scores = self.logprob(prompt.format(q=question), candidates)
+    def rank(self, question: str, candidates: list[str], prompt="question: {q}\nlaw:") -> list[tuple[str, float]]:
+        # byte-level BPE attaches the space to the following word, exactly as in training text
+        scores = self.logprob(prompt.format(q=question), [" " + c for c in candidates])
         order = np.argsort(-scores)
         return [(candidates[i], float(scores[i])) for i in order]
 

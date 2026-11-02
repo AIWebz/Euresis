@@ -65,7 +65,7 @@ def evaluate(n_heldout=150, seed=0, log=print):
     sets = {"held-out phrasings": test, "natural questions": [(q, a) for q, a in NATURAL if a in names]}
     report = {}
     for label, qa in sets.items():
-        ranks = {"word matching (previous)": [], "Euresis-LM": [], "fusion": []}
+        ranks = {"word matching (previous)": [], "Euresis-LM": [], "fusion": [], "fusion (word-matching led)": []}
         for q, truth in qa:
             r_ret = [d[1] for d, _ in retr.search(q, len(names))]
             r_lm = [n for n, _ in lm.rank(q, names)]
@@ -75,12 +75,14 @@ def evaluate(n_heldout=150, seed=0, log=print):
             ranks["word matching (previous)"].append(_rr(r_ret, truth))
             ranks["Euresis-LM"].append(_rr(r_lm, truth))
             ranks["fusion"].append(_rr(fused, truth))
+            fused2 = sorted(names, key=lambda n: -(0.5 / (10 + pos_l.get(n, 999)) + 1 / (10 + pos_r.get(n, 999))))
+            ranks["fusion (word-matching led)"].append(_rr(fused2, truth))
         report[label] = {}
         log(f"{label} ({len(qa)} questions):")
         for k, v in ranks.items():
             v = np.array(v)
             res = {"top1": float(np.mean(v < 1)), "top5": float(np.mean(v < 5)), "top10": float(np.mean(v < 10))}
             report[label][k] = res
-            log(f"  {k:26s} top-1 {res['top1'] * 100:5.1f}%   top-5 {res['top5'] * 100:5.1f}%   "
+            log(f"  {k:28s} top-1 {res['top1'] * 100:5.1f}%   top-5 {res['top5'] * 100:5.1f}%   "
                 f"top-10 {res['top10'] * 100:5.1f}%")
     return report
