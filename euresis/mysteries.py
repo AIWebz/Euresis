@@ -150,7 +150,7 @@ class MysterySolver:
         return out
 
     # ------------------------------------------------- 3 connect fields
-    def connections(self, ctx, max_out=6):
+    def connections(self, ctx, max_out=8):
         rel_names = {f.name for f in ctx["laws"]}
         found = []
         for fa, fb, m in self.E.analogies():
@@ -179,11 +179,40 @@ class MysterySolver:
             # relevance: how many of the quantities the question asks about does this relation involve?
             asked = {family(q) for q in ctx["named"]}
             relevance = len({family(q) for q in r.quantities} & asked)
+            invariant = self._invariant(r)
             out.append({"kind": kind, "relation": key, "via": " → ".join(dict.fromkeys(r.sources)),
                         "known": known.name if known is not None and ratio in (1, -1) else None,
-                        "score": plaus + 0.6 * relevance + 0.15 * (len(doms) > 1) - 0.04 * cx, "note": r.note})
+                        "score": plaus + 0.6 * relevance + 0.15 * (len(doms) > 1) - 0.04 * cx + 0.5 * bool(invariant),
+                        "note": r.note, "invariant": invariant})
         out.sort(key=lambda d: (d["known"] is not None, -d["score"]))
         return out[:max_out]
+
+    PARAM_WORDS = ("coefficient", "constant", "factor", "exponent", "parameter")
+
+    def _invariant(self, r):
+        """If eliminating a quantity left two *variables* in a fixed power relation, state it plainly."""
+        if "eliminated" not in (r.note or ""):
+            return None
+        variables = {s: q for s, q in r.sym_to_q.items()
+                     if not any(w in self.kb.qname(q) for w in self.PARAM_WORDS)}
+        if len(variables) != 2:
+            return None
+        (s1, q1), (s2, q2) = variables.items()
+        try:
+            sol = self.E.solve_for(r, s1)
+            if not sol:
+                return None
+            k = sp.simplify(sp.diff(sp.log(sol[0]), s2) * s2)       # d ln q1 / d ln q2
+        except Exception:
+            return None
+        if not k.is_number:
+            return None
+        elim = r.note.split("eliminated ")[1].split(";")[0]
+        k = sp.nsimplify(k)
+        n1, n2 = self.kb.qname(q1), self.kb.qname(q2)
+        if k == -1:
+            return f"{n1} × {n2} is the same for every {elim}: the {elim} cancels out"
+        return f"{n1} ∝ {n2}^{k}, whatever the {elim}"
 
     # ------------------------------------------------------- 4 experiment
     def experiment(self, ctx):
@@ -259,6 +288,8 @@ class MysterySolver:
         for c in conns:
             tag = f"recovers known law '{c['known']}'" if c["known"] else "candidate (not in knowledge base, untested)"
             findings.append(f"{c['kind'].title()}: {c['relation']}  [{tag}; via {c['via']}]")
+            if c.get("invariant"):
+                findings.append(f"Interpretation: {c['invariant']}.")
         findings += [f"Experiment: {e}" for e in exps]
         findings += [f"Data: {d}" for d in data_lines]
         verdict = self._verdict(m, ctx, scales, conns, exps, data_lines)
