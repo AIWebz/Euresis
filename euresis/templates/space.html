@@ -37,7 +37,7 @@
   #panel h3 { font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin: 14px 0 6px; }
   #panel a { color: var(--text); text-decoration: none; display: block; padding: 4px 0; border-bottom: 1px dashed var(--line); cursor: pointer; }
   #panel a:hover { color: var(--accent); }
-  #mini { right: 14px; bottom: 14px; width: 190px; height: 190px; padding: 0; overflow: hidden; }
+  #mini { inset: auto; right: 14px; bottom: 14px; width: 190px; height: 190px; padding: 0; overflow: hidden; }
   #bench { left: 14px; bottom: 14px; padding: 10px 12px; max-width: min(420px, calc(100vw - 230px)); font-size: 12px; display: none; }
   #bench b { color: var(--accent); }
   #bench .row { display: flex; gap: 6px; color: var(--muted); }
@@ -159,7 +159,7 @@ function draw() {
     // labels — level of detail by zoom
     if (dim) continue;
     if (n.k === "domain") {
-      ctx.fillStyle = "#fff"; ctx.font = `700 ${Math.max(12, Math.min(26, 260 * z))}px system-ui, sans-serif`;
+      ctx.fillStyle = "#fff"; ctx.font = `700 ${Math.max(10, Math.min(26, 150 * z))}px system-ui, sans-serif`;
       ctx.textAlign = "center"; ctx.fillText(n.ti.toUpperCase(), X, Y - r - 12);
       continue;
     }
