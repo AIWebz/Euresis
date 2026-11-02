@@ -1,6 +1,6 @@
 {
   "held_out": 10,
-  "results_examined": 204,
+  "results_examined": 479,
   "laws": [
     {
       "law": "Simple pendulum period",
@@ -52,11 +52,15 @@
     },
     {
       "law": "Compton wavelength",
-      "found": false
+      "found": true,
+      "exact": false,
+      "factor": "2*pi",
+      "method": "scale",
+      "as": "length_scale = \u0127/(c*m)"
     }
   ],
-  "found": 3,
+  "found": 4,
   "exact": 2,
-  "recall": 0.3,
-  "seconds": 97.5
+  "recall": 0.4,
+  "seconds": 290.5
 }
