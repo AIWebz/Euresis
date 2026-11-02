@@ -176,9 +176,12 @@ class MysterySolver:
             plaus = np.mean([self.model.score(f"q:{a}", f"q:{b}") for a, b in combinations(sorted(r.quantities), 2)]) \
                 if self.model and len(r.quantities) > 1 else 0.5
             cx = int(sp.count_ops(r.eq))
+            # relevance: how many of the quantities the question asks about does this relation involve?
+            asked = {family(q) for q in ctx["named"]}
+            relevance = len({family(q) for q in r.quantities} & asked)
             out.append({"kind": kind, "relation": key, "via": " → ".join(dict.fromkeys(r.sources)),
                         "known": known.name if known is not None and ratio in (1, -1) else None,
-                        "score": plaus + 0.3 * (len(doms) > 1) - 0.04 * cx, "note": r.note})
+                        "score": plaus + 0.6 * relevance + 0.15 * (len(doms) > 1) - 0.04 * cx, "note": r.note})
         out.sort(key=lambda d: (d["known"] is not None, -d["score"]))
         return out[:max_out]
 
