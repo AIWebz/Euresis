@@ -73,6 +73,11 @@ def layout(thoughts: dict[str, dict]) -> dict[str, tuple[float, float]]:
     for i, t in enumerate(fr):
         a = 2 * math.pi * (i + 0.5) / max(1, len(fr)) - math.pi / 2
         pos[t["id"]] = grid.place(7600 * math.cos(a), 7600 * math.sin(a))
+    # mysteries posed to Euresis: an inner ring between the constants and the fields
+    ms = [t for t in thoughts.values() if t["kind"] == "mystery"]
+    for i, t in enumerate(ms):
+        a = 2 * math.pi * (i + 0.25) / max(1, len(ms)) - math.pi / 2
+        pos[t["id"]] = grid.place(1900 * math.cos(a), 1900 * math.sin(a))
     # everything Euresis thought of: near its parents, pushed outward by generation
     rest = sorted((t for t in thoughts.values() if t["id"] not in pos), key=lambda t: (t["cycle"], t["t"]))
     for t in rest:

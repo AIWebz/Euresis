@@ -32,6 +32,7 @@ KINDS = {
     "data_discovery": "Law found in data",
     "idea": "Idea (Claude-proposed, Euresis-verified)",
     "evidence": "Tool evidence",
+    "mystery": "Open mystery posed to Euresis",
 }
 
 

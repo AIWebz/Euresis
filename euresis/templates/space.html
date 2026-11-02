@@ -64,10 +64,10 @@ const COLORS = {
   domain: "#ffffff", constant: "#ffd166", law: "#4ea8de", principle: "#80ffdb",
   analogy: "#c77dff", hypothesis: "#ff7eb6", derivation: "#72efdd", rederivation: "#5e81ac",
   dimensional: "#f4a261", scale: "#ffe066", prediction: "#9ef01a", question: "#ff9f1c",
-  frontier: "#ef476f", insight: "#f8f9fa", data: "#00bbf9", data_discovery: "#00f5d4", idea: "#fee440", evidence: "#a0a8c0"
+  frontier: "#ef476f", insight: "#f8f9fa", data: "#00bbf9", data_discovery: "#00f5d4", idea: "#fee440", evidence: "#a0a8c0", mystery: "#ff006e"
 };
 const RADIUS = { domain: 30, frontier: 20, insight: 15, scale: 12, prediction: 12, analogy: 11,
-  hypothesis: 10, data: 13, data_discovery: 16, idea: 12, derivation: 8, dimensional: 8, question: 10, rederivation: 7, law: 7, principle: 7, constant: 8 };
+  hypothesis: 10, mystery: 22, data: 13, data_discovery: 16, idea: 12, derivation: 8, dimensional: 8, question: 10, rederivation: 7, law: 7, principle: 7, constant: 8 };
 const nodes = DATA.nodes, byId = new Map(nodes.map(n => [n.id, n]));
 const children = new Map();
 for (const n of nodes) for (const p of n.p) { if (!children.has(p)) children.set(p, []); children.get(p).push(n.id); }
@@ -152,7 +152,7 @@ function draw() {
     ctx.fillStyle = hexA(col, dim ? .18 : 1);
     ctx.beginPath();
     if (n.k === "domain") { ctx.arc(X, Y, r, 0, 7); ctx.fill(); ctx.strokeStyle = hexA(col, .4); ctx.lineWidth = 2; ctx.beginPath(); ctx.arc(X, Y, r + 6, 0, 7); ctx.stroke(); }
-    else if (n.k === "frontier" || n.k === "question") { ctx.moveTo(X, Y - r); ctx.lineTo(X + r, Y); ctx.lineTo(X, Y + r); ctx.lineTo(X - r, Y); ctx.closePath(); ctx.fill(); }
+    else if (n.k === "frontier" || n.k === "question" || n.k === "mystery") { ctx.moveTo(X, Y - r); ctx.lineTo(X + r, Y); ctx.lineTo(X, Y + r); ctx.lineTo(X - r, Y); ctx.closePath(); ctx.fill(); }
     else if (n.k === "scale" || n.k === "insight") { star(X, Y, r * 1.25); ctx.fill(); }
     else { ctx.arc(X, Y, r, 0, 7); ctx.fill(); }
     if (n === sel || n === hover) { ctx.strokeStyle = "#fff"; ctx.lineWidth = 2; ctx.beginPath(); ctx.arc(X, Y, r + 5, 0, 7); ctx.stroke(); }
@@ -163,7 +163,7 @@ function draw() {
       ctx.textAlign = "center"; ctx.fillText(n.ti.toUpperCase(), X, Y - r - 12);
       continue;
     }
-    const big = ["frontier", "scale", "insight", "prediction", "data_discovery", "idea", "data"].includes(n.k);
+    const big = ["frontier", "scale", "insight", "prediction", "data_discovery", "idea", "data", "mystery"].includes(n.k);
     if (z > .32 || (big && z > .09) || n === sel || n === hover) {
       ctx.textAlign = "left"; ctx.fillStyle = hexA("#e6ebf5", .95);
       ctx.font = `600 ${big ? 12.5 : 11.5}px system-ui, sans-serif`;
@@ -193,7 +193,7 @@ function drawMini() {
   mini._t = { s, ox, oy };
 }
 // ---------------------------------------------------------------- UI
-const KIND_ORDER = ["domain", "law", "principle", "constant", "analogy", "hypothesis", "derivation", "rederivation", "dimensional", "scale", "prediction", "data", "data_discovery", "idea", "evidence", "question", "insight", "frontier"];
+const KIND_ORDER = ["domain", "law", "principle", "constant", "analogy", "hypothesis", "derivation", "rederivation", "dimensional", "scale", "prediction", "data", "data_discovery", "idea", "mystery", "evidence", "question", "insight", "frontier"];
 function buildHud() {
   const counts = {}; for (const n of nodes) counts[n.k] = (counts[n.k] || 0) + 1;
   const links = nodes.reduce((a, n) => a + n.p.length, 0);

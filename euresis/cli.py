@@ -175,6 +175,14 @@ def cmd_findlaw(a):
     print(f"exact: {r['exact']}  relative error: {r['val_err']:.2e}  form: {r['family']}  Π groups: {r['pi_groups']}")
 
 
+def cmd_mysteries(a):
+    """Pose the open mysteries in knowledge/mysteries.txt; Euresis works on each one itself."""
+    import warnings
+    warnings.filterwarnings("ignore")
+    from .mysteries import run
+    run(ids=a.ids or None)
+
+
 def cmd_learn(a):
     """Feed Euresis new knowledge from a text file, validate it, and retrain."""
     import shutil
@@ -295,6 +303,7 @@ def main(argv=None):
     pr.set_defaults(fn=cmd_prove)
     sb = sub.add_parser("sandbox"); sb.add_argument("file"); sb.add_argument("--timeout", type=int, default=60)
     sb.set_defaults(fn=cmd_sandbox)
+    my = sub.add_parser("mysteries"); my.add_argument("ids", nargs="*"); my.set_defaults(fn=cmd_mysteries)
     lb = sub.add_parser("lawbench"); lb.add_argument("--noise", type=float, default=0.0)
     lb.add_argument("--limit", type=int, default=0); lb.add_argument("--processes", type=int, default=4)
     lb.set_defaults(fn=cmd_lawbench)
