@@ -81,7 +81,7 @@ class MysterySolver:
                     counts[q_] = counts.get(q_, 0) + 1
             target = max(counts, key=counts.get) if counts else None
         quantities |= set(named)
-        return {"laws": laws, "principles": principles, "constants": sorted(consts),
+        return {"question": q, "laws": laws, "principles": principles, "constants": sorted(consts),
                 "quantities": sorted(quantities), "target": target, "named": named}
 
     # ---------------------------------------------------- 2 units reasoning
@@ -92,9 +92,12 @@ class MysterySolver:
         if t is None:
             return out
         tdim = self.kb.quantities[t][1]
-        pool = [c for c in ctx["constants"]] + [q for q in ctx["named"] if q != t and family(q) != family(t)
+        tlaws = [f for f in self.kb.formulas if any(family(q) == family(t) for q in f.quantities)]
+        tconsts = {c.name for f in tlaws for c in f.constants}
+        ranked = [c for c in ctx["constants"] if c in tconsts] or [c for c in ctx["constants"]]
+        pool = ranked + [q for q in ctx["named"] if q != t and family(q) != family(t)
                                                 and not self.kb.quantities[q][1].dimensionless]
-        pool = list(dict.fromkeys(pool))[:9]
+        pool = list(dict.fromkeys(pool))[:7]
         seen = set()
         for r in (2, 3, 4):
             for sub in combinations(pool, r):
@@ -167,7 +170,14 @@ class MysterySolver:
     # ------------------------------------------------------- 4 experiment
     def experiment(self, ctx):
         from . import simulate
-        q = set(ctx["quantities"]) | set(ctx["named"])
+        q = set(ctx["named"])
+        text = ctx.get("question", "").lower()
+        if re.search(r"carbon dioxide|co2|climate|greenhouse", text):
+            q |= {"co2_concentration"}
+        if re.search(r"reaction|replicat|activation|catal", text):
+            q |= {"rate_constant"}
+        if re.search(r"turbulen|viscosity|fluid flow", text):
+            q |= {"reynolds_number"}
         res = []
         if q & {"radiative_forcing", "co2_concentration", "climate_sensitivity_parameter", "albedo"}:
             for fb in (False, True):
@@ -175,10 +185,15 @@ class MysterySolver:
                 dbl = simulate.ebm(560, years=400, ice_albedo_feedback=fb)
                 res.append(f"Energy-balance model, CO₂ 280→560 ppm, ice-albedo feedback {'on' if fb else 'off'}: "
                            f"warming {dbl['warming_K']:.2f} K (baseline {base['baseline_equilibrium_K']:.1f} K).")
-            cold = simulate.ebm(560, years=400, ice_albedo_feedback=True, T0=250.0)
-            res.append(f"Same model started from a cold, icy Earth (250 K): settles at "
-                       f"{cold['temperature_K'][-1]:.1f} K — the ice–albedo feedback creates a second, frozen "
-                       f"equilibrium (hysteresis).")
+            warm = simulate.ebm(560, years=400, ice_albedo_feedback=True)
+            cold = simulate.ebm(560, years=400, ice_albedo_feedback=True, T0=230.0)
+            Tw, Tc = warm["temperature_K"][-1], cold["temperature_K"][-1]
+            if abs(Tw - Tc) > 5:
+                res.append(f"Started from a frozen Earth (230 K) the same model settles at {Tc:.1f} K instead of "
+                           f"{Tw:.1f} K: two stable climates exist (ice–albedo hysteresis).")
+            else:
+                res.append(f"Started from a frozen Earth (230 K) the model returns to {Tc:.1f} K: no second stable "
+                           f"climate in this model at today's sunlight.")
         if q & {"rate_constant", "activation_energy", "pre_exponential"}:
             for Ea in (50e3, 100e3):
                 ks = simulate.arrhenius(A=1e13, Ea=Ea, temperatures=(273, 298, 323, 373))["k"]
