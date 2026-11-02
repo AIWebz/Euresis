@@ -57,9 +57,23 @@ class MysterySolver:
         self.retriever = TextRetriever(kb.documents())
 
     # --------------------------------------------------------- 1 understand
+    def _lm(self):
+        if not hasattr(self, "_lm_model"):
+            from .lm.model import EuresisLM
+            self._lm_model = EuresisLM.load() if EuresisLM.available() else None
+        return self._lm_model
+
     def understand(self, q: str):
         hits = self.retriever.search(q, 14)
         laws = [self.kb.by_name(d[1]) for d, _ in hits if d[0] == "formula" and self.kb.by_name(d[1])]
+        lm = self._lm()
+        if lm is not None:
+            # Euresis-LM reads the question and ranks every law; fuse with word matching
+            names = [f.name for f in self.kb.formulas]
+            r_lm = {n: i for i, (n, _) in enumerate(lm.rank(q, names))}
+            r_wm = {f.name: i for i, f in enumerate(laws)}
+            fused = sorted(names, key=lambda n: -(1 / (10 + r_lm.get(n, 999)) + 0.5 / (10 + r_wm.get(n, 999))))
+            laws = [self.kb.by_name(n) for n in fused[:10]]
         principles = [d[1] for d, _ in hits if d[0] == "principle"]
         consts = {c.name for f in laws for c in f.constants}
         for d, _ in hits:
