@@ -247,6 +247,33 @@ python -m euresis sandbox script.py
   as *unchecked*, never guessed.
 * **Lean 4** (optional), installed with elan.
 
+## Mathematical discovery: formulas for fundamental constants
+
+`python -m euresis conjecture [basic|frontier|sweep]` searches polynomial continued fractions,
+using the Ramanujan Machine method (Raayoni et al., *Nature* 2021). Each run has four stages:
+
+1. Screen every continued fraction in double precision.
+2. Match each limit against Möbius transforms (p + q·c)/(r + s·c) of 18 constants.
+3. Re-verify each match with 120-digit arithmetic at two depths.
+4. Discard classical and reducible families.
+
+| Search | Fractions screened | Verified ≥ 60 digits | Irreducible, outside classical families |
+|---|---|---|---|
+| basic (linear / quadratic / cubic a(n)) | 203,167 | 78 | 3 |
+| frontier (Apéry-type cubics, ζ(5)-oriented quintics) | 329,778 | 2 | 1 |
+| sweep (quadratic a(n), quartic b(n)) | 319,616 | 78 | 13 |
+
+Notable results include 8/(7ζ(3)) = 1 − 1⁶/(21 − 2⁶/(95 − 3⁶/(259 − …))) and
+1/(2G) = 1 − 2·1⁴/(7 − 2·2⁴/(19 − 2·3⁴/(37 − …))), where G is Catalan's constant. They appear to
+match formulas first reported by the Ramanujan Machine in 2021, so they were rediscovered
+independently, not discovered.
+
+No formula for ζ(5) was found in the searched families.
+
+**The novelty of every candidate is unverified.** The published catalogues (Ramanujan Machine
+database, OEIS, arXiv) are not reachable from this environment. Results:
+`space/conjectures.md`, `space/conjectures_frontier.md`, `space/conjectures_sweep.md`.
+
 ## Euresis-LM: its own language model
 
 Euresis-LM is a GPT-style transformer, written from scratch in JAX (`euresis/lm/`) and trained on

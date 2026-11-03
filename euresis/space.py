@@ -33,6 +33,7 @@ KINDS = {
     "idea": "Idea (Claude-proposed, Euresis-verified)",
     "evidence": "Tool evidence",
     "mystery": "Open mystery posed to Euresis",
+    "conjecture": "Mathematical conjecture (numerically verified)",
 }
 
 

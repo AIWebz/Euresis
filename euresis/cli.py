@@ -211,6 +211,16 @@ def cmd_lm(a):
         print(lm.generate(text, max_new=120, temperature=a.temperature))
 
 
+def cmd_conjecture(a):
+    """Search continued fractions for new formulas for fundamental constants."""
+    from .conjecture import run
+    from .render import export
+    from .space import ThoughtSpace
+    mode = {"basic": False, "frontier": True, "sweep": "sweep"}[a.mode]
+    run(space=ThoughtSpace(), frontier=mode)
+    export()
+
+
 def cmd_learn(a):
     """Feed Euresis new knowledge from a text file, validate it, and retrain."""
     import shutil
@@ -336,6 +346,9 @@ def main(argv=None):
     lmp.add_argument("--layers", type=int, default=6); lmp.add_argument("--d", type=int, default=256)
     lmp.add_argument("--heads", type=int, default=8); lmp.add_argument("--temperature", type=float, default=0.7)
     lmp.set_defaults(fn=cmd_lm)
+    cj = sub.add_parser("conjecture"); cj.add_argument("mode", nargs="?", default="sweep",
+                                                       choices=["basic", "frontier", "sweep"])
+    cj.set_defaults(fn=cmd_conjecture)
     my = sub.add_parser("mysteries"); my.add_argument("ids", nargs="*"); my.set_defaults(fn=cmd_mysteries)
     lb = sub.add_parser("lawbench"); lb.add_argument("--noise", type=float, default=0.0)
     lb.add_argument("--limit", type=int, default=0); lb.add_argument("--processes", type=int, default=4)
