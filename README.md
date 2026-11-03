@@ -274,6 +274,30 @@ No formula for ζ(5) was found in the searched families.
 database, OEIS, arXiv) are not reachable from this environment. Results:
 `space/conjectures.md`, `space/conjectures_frontier.md`, `space/conjectures_sweep.md`.
 
+## Answering questions from measured knowledge
+
+`python -m euresis answer "<question>"` answers questions from measured facts (`euresis/knowledge/facts.py`).
+Each fact comes with its source: the composition of the universe (Planck 2018), dry air, the Sun,
+the human body, Earth's crust, seawater and atoms. For each answer, Euresis:
+
+* finds the facts relevant to the question;
+* works out which components add up to any percentage the question names;
+* evaluates its own laws on the measured numbers;
+* explains how we know (its principles) and what is still unknown (its open problems).
+
+The mystery solver uses this first.
+
+For example, *"What is 95% of our universe actually made of?"* gives:
+
+* **dark energy (68.9%) + dark matter (26.1%) = 95%**, with ordinary matter the remaining ~5%;
+* from its critical-density law and the measured expansion rate, a critical density of
+  8.6 × 10⁻²⁷ kg/m³, about 5 proton masses per cubic metre, of which ordinary matter is only 0.25;
+* how we know (galaxy rotation curves, accelerating expansion, the cosmic microwave background);
+* that *what* dark energy and dark matter are is still undiscovered.
+
+Questions it has no facts for are answered honestly: "Euresis has no measured facts that answer
+this question."
+
 ## Reading the literature and discovering while reading
 
 Euresis has read **195,654 real abstracts** of published clinical trials (PubMed 200k RCT,

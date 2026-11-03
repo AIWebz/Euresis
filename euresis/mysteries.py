@@ -187,6 +187,12 @@ class MysterySolver:
         out.sort(key=lambda d: (d["known"] is not None, -d["score"]))
         return out[:max_out]
 
+    @staticmethod
+    def _answerer_mystery(known):
+        from .knowledge.facts import FACTS
+        f = next((x for x in FACTS if x["id"] == known.get("fact")), {})
+        return f.get("unexplained_components", [])
+
     PARAM_WORDS = ("coefficient", "constant", "factor", "exponent", "parameter")
 
     def _invariant(self, r):
@@ -271,6 +277,10 @@ class MysterySolver:
     # -------------------------------------------------------- 6 judge
     def solve(self, m):
         self.log(f"\n▶ {m['title']}")
+        if not hasattr(self, "_answerer"):
+            from .answer import Answerer
+            self._answerer = Answerer(self.kb, self.E)
+        known = self._answerer.answer(m["question"])
         ctx = self.understand(m["question"])
         self.log(f"  understands it through: {', '.join(f.name for f in ctx['laws'][:6])}")
         self.log(f"  target quantity: {self.kb.qname(ctx['target']) if ctx['target'] else '—'}")
@@ -293,6 +303,12 @@ class MysterySolver:
         findings += [f"Experiment: {e}" for e in exps]
         findings += [f"Data: {d}" for d in data_lines]
         verdict = self._verdict(m, ctx, scales, conns, exps, data_lines)
+        if known["answered"]:
+            findings = [f"Answer from measured knowledge: {line}" for line in known["text"].splitlines()
+                        if line.strip()] + findings
+            verdict = ("Answered from established, measured knowledge (" + known["confidence"] + "), with Euresis' own "
+                       "derivations. " + ("The open part — what " + " and ".join(self._answerer_mystery(known)) + " actually are — remains unsolved."
+                                          if self._answerer_mystery(known) else ""))
         for line in findings:
             self.log("   • " + line)
         self.log(f"  verdict: {verdict}")

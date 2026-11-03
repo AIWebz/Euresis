@@ -250,6 +250,14 @@ def cmd_read_papers(a):
     export()
 
 
+def cmd_answer(a):
+    """Answer a question from Euresis' measured facts, principles and laws."""
+    import warnings
+    warnings.filterwarnings("ignore")
+    from .answer import Answerer
+    print(Answerer().answer(" ".join(a.question))["text"])
+
+
 def cmd_learn(a):
     """Feed Euresis new knowledge from a text file, validate it, and retrain."""
     import shutil
@@ -383,6 +391,7 @@ def main(argv=None):
     fn = sub.add_parser("find-new"); fn.add_argument("--minutes", type=float, default=120)
     fn.set_defaults(fn=cmd_findnew)
     sub.add_parser("read-papers").set_defaults(fn=cmd_read_papers)
+    an = sub.add_parser("answer"); an.add_argument("question", nargs="+"); an.set_defaults(fn=cmd_answer)
     my = sub.add_parser("mysteries"); my.add_argument("ids", nargs="*"); my.set_defaults(fn=cmd_mysteries)
     lb = sub.add_parser("lawbench"); lb.add_argument("--noise", type=float, default=0.0)
     lb.add_argument("--limit", type=int, default=0); lb.add_argument("--processes", type=int, default=4)

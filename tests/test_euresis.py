@@ -164,3 +164,15 @@ def test_euresis_lm_understands_scientific_questions():
     top = [n for n, _ in lm.rank("Explain the relationship between force and acceleration.", names)[:3]]
     assert "Newton's second law" in top
     assert "V = I*R" in lm.generate("explain: Ohm's law\nanswer:", max_new=40, temperature=0.1)
+
+
+def test_answers_what_the_universe_is_made_of():
+    from euresis.answer import Answerer
+    a = Answerer(KB, E)
+    r = a.answer("What is 95% of our universe actually made of?")
+    assert r["answered"] and r["fact"] == "universe_composition"
+    assert "dark energy (68.9%) + dark matter (26.1%) = 95.0%" in r["text"]
+    rho = next(d["value"] for d in r["derived"] if d["quantity"] == "critical_density")
+    assert abs(rho - 8.6e-27) / 8.6e-27 < 0.01
+    assert a.answer("What is 99% of the air made of?")["fact"] == "air_composition"
+    assert not a.answer("Why do cats purr?")["answered"]
