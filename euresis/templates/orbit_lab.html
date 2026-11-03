@@ -1,0 +1,212 @@
+<title>Euresis Orbit Lab</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: an observatory console — the orbit canvas is the instrument; orbit list and readouts frame it. */
+:root {
+  --bg: #0b0d14; --panel: #12151f; --line: #232838; --fg: #e8e6df; --muted: #9097a8;
+  --b1: #6fb1ff; --b2: #ff8a5c; --b3: #f3d36b; --accent: #9fe0c3; --warn: #ffb35c;
+  --display: "Fraunces", Georgia, serif; --body: "IBM Plex Sans", system-ui, sans-serif; --mono: "IBM Plex Mono", ui-monospace, monospace;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html, body { background: var(--bg); color: var(--fg); }
+body { font-family: var(--body); line-height: 1.5; padding-block: 20px 40px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.wrap { max-width: 1180px; margin: 0 auto; display: grid; gap: 18px; }
+header h1 { font-family: var(--display); font-weight: 700; font-size: clamp(1.7rem, 3.6vw, 2.5rem); margin: 0; letter-spacing: -0.01em; text-wrap: balance; }
+header p { margin: 4px 0 0; color: var(--muted); max-width: 68ch; }
+.law { font-family: var(--mono); color: var(--accent); }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; }
+.stat { border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; background: var(--panel); }
+.stat b { display: block; font-family: var(--mono); font-size: 1.35rem; font-variant-numeric: tabular-nums; }
+.stat span { color: var(--muted); font-size: .8rem; letter-spacing: .04em; text-transform: uppercase; }
+.main { display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: 18px; align-items: start; }
+@media (max-width: 860px) { .main { grid-template-columns: minmax(0, 1fr); } }
+.stage { border: 1px solid var(--line); border-radius: 12px; background: radial-gradient(ellipse at center, #141a2b 0%, var(--bg) 70%); overflow: hidden; }
+canvas { display: block; width: 100%; aspect-ratio: 4 / 3; max-width: 100%; }
+.controls { display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: center; padding: 10px 14px; border-top: 1px solid var(--line); background: var(--panel); }
+button { font: 500 .9rem var(--body); color: var(--bg); background: var(--accent); border: 0; border-radius: 8px; padding: 7px 14px; cursor: pointer; }
+button.ghost { background: transparent; color: var(--fg); border: 1px solid var(--line); }
+button:focus-visible, input:focus-visible, .orbit:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+label { color: var(--muted); font-size: .85rem; display: inline-flex; gap: 8px; align-items: center; }
+input[type=range] { accent-color: var(--accent); width: 130px; }
+.readout { font-family: var(--mono); font-size: .82rem; color: var(--muted); padding: 10px 14px; border-top: 1px solid var(--line); font-variant-numeric: tabular-nums; overflow-x: auto; }
+.readout em { color: var(--fg); font-style: normal; }
+aside { border: 1px solid var(--line); border-radius: 12px; background: var(--panel); display: grid; max-height: 640px; overflow: auto; }
+aside h2 { font: 600 .8rem var(--body); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 0; padding: 12px 14px; border-bottom: 1px solid var(--line); position: sticky; top: 0; background: var(--panel); }
+.orbit { display: grid; grid-template-columns: 1fr auto; gap: 2px 10px; padding: 9px 14px; border-bottom: 1px solid var(--line); cursor: pointer; text-align: left; background: none; color: var(--fg); border-left: 3px solid transparent; width: 100%; font: inherit; }
+.orbit:hover { background: #171b28; }
+.orbit[aria-pressed="true"] { border-left-color: var(--accent); background: #171c2b; }
+.orbit .nm { font-weight: 600; }
+.orbit .meta { grid-column: 1 / -1; font-family: var(--mono); font-size: .75rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+.pill { font-size: .7rem; padding: 2px 8px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); align-self: center; white-space: nowrap; }
+.pill.new { color: var(--bg); background: var(--warn); border-color: var(--warn); font-weight: 600; }
+.notes { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; }
+.note { border-top: 1px solid var(--line); padding-top: 10px; color: var(--muted); font-size: .92rem; }
+.note h3 { font-family: var(--display); font-weight: 500; color: var(--fg); font-size: 1.1rem; margin: 0 0 4px; }
+@media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto; } }
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>Euresis Orbit Lab</h1>
+    <p>A live model of known science: three equal masses moving under Newton's law of gravity, <span class="law">F = G·m₁m₂ / r²</span>. Euresis explored it for periodic orbits, rare motions that repeat exactly, and checked each against the largest published catalogue (Li &amp; Liao, Shanghai Jiao Tong University).</p>
+  </header>
+
+  <section class="stats" id="stats"></section>
+
+  <section class="main">
+    <div class="stage">
+      <canvas id="cv" width="960" height="720" aria-label="Animation of three bodies orbiting"></canvas>
+      <div class="controls">
+        <button id="play" type="button">Pause</button>
+        <button id="mode" type="button" class="ghost">Switch to live physics</button>
+        <label for="speed">Speed <input id="speed" type="range" min="0.2" max="4" step="0.1" value="1"></label>
+        <label for="nudge">Nudge <input id="nudge" type="range" min="0" max="0.01" step="0.0005" value="0"></label>
+        <button id="reset" type="button" class="ghost">Restart</button>
+      </div>
+      <div class="readout" id="readout"></div>
+    </div>
+    <aside aria-label="Periodic orbits found by Euresis">
+      <h2 id="listhead">Periodic orbits found</h2>
+      <div id="list"></div>
+    </aside>
+  </section>
+
+  <section class="notes">
+    <div class="note"><h3>What the model is</h3>Euresis' own law of universal gravitation, integrated numerically. Bodies start at (−1, 0), (1, 0) and (0, 0) with velocities (v₁, v₂), (v₁, v₂) and (−2v₁, −2v₂), the standard setting used in the literature, so results can be compared directly.</div>
+    <div class="note"><h3>How Euresis explored it</h3><span id="how"></span></div>
+    <div class="note"><h3>Live physics and chaos</h3>"Orbit" mode plays each orbit from a high-accuracy solution. "Live physics" integrates Newton's law in your browser from the same starting velocities. Raise "Nudge" to change the start very slightly and watch the bodies drift apart from the repeating path. That sensitivity is why periodic three-body orbits are so hard to find.</div>
+  </section>
+</div>
+
+<script>
+const DATA = /*__DATA__*/null;
+const cv = document.getElementById("cv"), ctx = cv.getContext("2d");
+const css = getComputedStyle(document.documentElement);
+const COL = [css.getPropertyValue("--b1").trim(), css.getPropertyValue("--b2").trim(), css.getPropertyValue("--b3").trim()];
+const orbits = DATA.orbits;
+let cur = 0, playing = true, live = false, phase = 0, sim = null, trail = [[], [], []];
+
+function stats() {
+  const n = orbits.length, known = orbits.filter(o => o.catalog).length;
+  const items = [
+    [DATA.screened.toLocaleString(), "starting conditions simulated"],
+    [n, "periodic orbits confirmed"],
+    [known, "match the published catalogue"],
+    [n - known, "not in the catalogue"],
+    [DATA.catalog_size, "orbits in the catalogue"],
+  ];
+  document.getElementById("stats").innerHTML = items.map(([v, l]) => `<div class="stat"><b>${v}</b><span>${l}</span></div>`).join("");
+  document.getElementById("how").textContent =
+    `It simulated a ${DATA.grid}×${DATA.grid} grid of starting velocities up to time ${DATA.T_max}, kept the motions that came back close to where they started, then refined each one until it closed on itself to better than one part in 10⁸. Every confirmed orbit was compared with the ${DATA.catalog_size} orbits Li & Liao published.`;
+}
+
+function list() {
+  document.getElementById("listhead").textContent = `Periodic orbits found (${orbits.length})`;
+  document.getElementById("list").innerHTML = orbits.map((o, i) => `
+    <button class="orbit" type="button" id="orbit-${i}" aria-pressed="${i === cur}" data-i="${i}">
+      <span class="nm">${o.catalog ? "Li & Liao " + o.catalog : "Euresis orbit " + (i + 1)}</span>
+      <span class="pill ${o.catalog ? "" : "new"}">${o.catalog ? "rediscovered" : "not in catalogue"}</span>
+      <span class="meta">v₁ ${o.v1.toFixed(6)} · v₂ ${o.v2.toFixed(6)} · T ${o.T.toFixed(3)}</span>
+    </button>`).join("");
+  document.querySelectorAll(".orbit").forEach(b => b.onclick = () => select(+b.dataset.i));
+}
+
+function select(i) {
+  cur = i; phase = 0; trail = [[], [], []]; sim = null;
+  document.querySelectorAll(".orbit").forEach(b => b.setAttribute("aria-pressed", String(+b.dataset.i === i)));
+  readout();
+}
+
+function readout(extra = "") {
+  const o = orbits[cur];
+  document.getElementById("readout").innerHTML =
+    `<em>${o.catalog ? "Li & Liao " + o.catalog : "Not in the published catalogue"}</em> · v₁ = ${o.v1.toFixed(10)} · v₂ = ${o.v2.toFixed(10)} · period T = ${o.T.toFixed(6)} · closes to ${o.closure_error.toExponential(1)}${extra}`;
+}
+
+// live physics: leapfrog (velocity Verlet) with substeps
+function startSim() {
+  const o = orbits[cur], e = +document.getElementById("nudge").value;
+  const v1 = o.v1 + e, v2 = o.v2;
+  sim = { p: [[-1, 0], [1, 0], [0, 0]], v: [[v1, v2], [v1, v2], [-2 * v1, -2 * v2]], t: 0 };
+  sim.a = acc(sim.p);
+}
+function acc(p) {
+  const a = [[0, 0], [0, 0], [0, 0]];
+  for (let i = 0; i < 3; i++) for (let j = 0; j < 3; j++) if (i !== j) {
+    const dx = p[j][0] - p[i][0], dy = p[j][1] - p[i][1], r2 = dx * dx + dy * dy + 1e-9, r3 = r2 * Math.sqrt(r2);
+    a[i][0] += dx / r3; a[i][1] += dy / r3;
+  }
+  return a;
+}
+function stepSim(dtTotal) {
+  const n = Math.ceil(dtTotal / 0.0005), h = dtTotal / n;
+  for (let k = 0; k < n; k++) {
+    for (let i = 0; i < 3; i++) { sim.v[i][0] += 0.5 * h * sim.a[i][0]; sim.v[i][1] += 0.5 * h * sim.a[i][1];
+      sim.p[i][0] += h * sim.v[i][0]; sim.p[i][1] += h * sim.v[i][1]; }
+    sim.a = acc(sim.p);
+    for (let i = 0; i < 3; i++) { sim.v[i][0] += 0.5 * h * sim.a[i][0]; sim.v[i][1] += 0.5 * h * sim.a[i][1]; }
+  }
+  sim.t += dtTotal;
+}
+
+function bounds(o) {
+  let m = 0.5;
+  for (const r of o.trajectory) for (let k = 0; k < 6; k++) m = Math.max(m, Math.abs(r[k]));
+  return Math.min(m * 1.15, 4);
+}
+
+function draw(positions, path) {
+  const o = orbits[cur], W = cv.width, H = cv.height, s = Math.min(W, H) / (2 * bounds(o));
+  ctx.clearRect(0, 0, W, H);
+  const X = x => W / 2 + x * s, Y = y => H / 2 - y * s;
+  ctx.lineWidth = 1.5;
+  for (let b = 0; b < 3; b++) {
+    ctx.strokeStyle = COL[b] + "55"; ctx.beginPath();
+    path.forEach((r, k) => { const x = X(r[2 * b]), y = Y(r[2 * b + 1]); k ? ctx.lineTo(x, y) : ctx.moveTo(x, y); });
+    ctx.stroke();
+  }
+  if (live) for (let b = 0; b < 3; b++) {
+    ctx.strokeStyle = COL[b]; ctx.lineWidth = 2; ctx.beginPath();
+    trail[b].forEach((r, k) => k ? ctx.lineTo(X(r[0]), Y(r[1])) : ctx.moveTo(X(r[0]), Y(r[1]))); ctx.stroke();
+  }
+  for (let b = 0; b < 3; b++) {
+    const x = X(positions[b][0]), y = Y(positions[b][1]);
+    const g = ctx.createRadialGradient(x, y, 0, x, y, 16); g.addColorStop(0, COL[b]); g.addColorStop(1, COL[b] + "00");
+    ctx.fillStyle = g; ctx.beginPath(); ctx.arc(x, y, 16, 0, 7); ctx.fill();
+    ctx.fillStyle = COL[b]; ctx.beginPath(); ctx.arc(x, y, 5, 0, 7); ctx.fill();
+  }
+}
+
+let last = performance.now();
+const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
+function frame(now) {
+  const dt = Math.min(0.05, (now - last) / 1000); last = now;
+  const o = orbits[cur], speed = +document.getElementById("speed").value;
+  if (!live) {
+    if (playing && !reduced) phase = (phase + dt * speed * 0.6 / o.T * Math.max(1, o.T / 6)) % 1;
+    const r = o.trajectory[Math.floor(phase * (o.trajectory.length - 1))];
+    draw([[r[0], r[1]], [r[2], r[3]], [r[4], r[5]]], o.trajectory);
+  } else {
+    if (!sim) { startSim(); trail = [[], [], []]; }
+    if (playing) {
+      stepSim(dt * speed * 0.6 * Math.max(1, o.T / 6));
+      for (let b = 0; b < 3; b++) { trail[b].push([...sim.p[b]]); if (trail[b].length > 900) trail[b].shift(); }
+    }
+    draw(sim.p, o.trajectory);
+    readout(` · live time ${sim.t.toFixed(2)} (${(sim.t / o.T).toFixed(2)} periods)`);
+  }
+  requestAnimationFrame(frame);
+}
+
+document.getElementById("play").onclick = e => { playing = !playing; e.target.textContent = playing ? "Pause" : "Play"; };
+document.getElementById("mode").onclick = e => { live = !live; sim = null; e.target.textContent = live ? "Switch to orbit playback" : "Switch to live physics"; if (!live) readout(); };
+document.getElementById("reset").onclick = () => { phase = 0; sim = null; trail = [[], [], []]; };
+document.getElementById("nudge").oninput = () => { sim = null; trail = [[], [], []]; };
+
+stats(); list(); select(Math.max(0, orbits.findIndex(o => !o.catalog)) || 0);
+requestAnimationFrame(frame);
+</script>
