@@ -53,6 +53,19 @@ def load_catalog():
 
 
 def match_catalog(orbit, catalog, tol=2e-5):
+    """Same orbit if the starting velocities match, or — since one orbit passes through several collinear
+    configurations, each a rescaled starting point — if the scale-invariant period T* = T·|E|^(3/2) matches
+    (the catalogue rounds T* to 3 decimals), or is a k-fold repetition of a catalogued T*."""
+    ts = orbit.get("Tstar")
+    if ts is not None:
+        for c in catalog:
+            if abs(c["Tstar"] - ts) <= 0.0015:
+                return c["name"] + (" (same orbit, different starting point)"
+                                    if abs(c["v1"] - orbit["v1"]) > tol else "")
+        for c in catalog:
+            for k in (2, 3, 4, 5, 6):
+                if abs(k * c["Tstar"] - ts) <= 0.0015 * k:
+                    return f"{c['name']} repeated {k}×"
     for c in catalog:
         if abs(c["v1"] - orbit["v1"]) < tol and abs(c["v2"] - orbit["v2"]) < tol:
             for k in (1, 2, 3, 4, 5, 6):

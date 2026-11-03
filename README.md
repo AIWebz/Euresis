@@ -274,6 +274,37 @@ No formula for ζ(5) was found in the searched families.
 database, OEIS, arXiv) are not reachable from this environment. Results:
 `space/conjectures.md`, `space/conjectures_frontier.md`, `space/conjectures_sweep.md`.
 
+## Live model: the three-body problem
+
+`euresis/threebody.py` turns Euresis' law of gravity into a live simulation of three equal masses. It
+then explores that simulation for **periodic orbits**: motions that repeat exactly, which are rare and
+which physicists still search for.
+
+The search ran in four steps:
+
+1. **Screen:** simulate 57,836 starting velocities to time 40.
+2. **Shortlist:** 1,066 motions came back close to their start.
+3. **Refine:** confirm 5 distinct periodic orbits that close to better than 10⁻⁸.
+4. **Check:** compare each orbit with Li & Liao's catalogue of 695 equal-mass orbits
+   (github.com/sjtu-liao/three-body), using starting velocities and the scale-invariant period
+   T* = T·|E|^{3/2}.
+
+Results:
+
+| Orbit (v₁, v₂) | T* | Status |
+|---|---|---|
+| (0.3471, 0.5327) | 9.238 | figure-eight, catalogue I.A1: rediscovered |
+| (0.3394, 0.5362) | 9.238 | the same figure-eight, seen from another starting point |
+| (0.4644, 0.3961) | 24.206 | catalogue I.B1: rediscovered |
+| (0.1819, 0.5148) | 36.909 | **not in the catalogue**; closes to 10⁻⁸ over 3 periods; collision-free |
+| (0.1890, 0.5398) | 36.940 | **not in the catalogue**; periodic to 8 × 10⁻⁹; unstable |
+
+The two orbits that are not in the catalogue have T* close to 4 × the figure-eight's, so they
+look like "satellites" of the figure-eight. Šuvakov (2014) searched exactly that family of orbits, and
+that paper could not be checked here. They are therefore **candidates**, not confirmed discoveries.
+
+The interactive Orbit Lab (`space/orbit_lab.html`) plays every orbit and includes a live-physics mode.
+
 ## Answering questions from measured knowledge
 
 `python -m euresis answer "<question>"` answers questions from measured facts (`euresis/knowledge/facts.py`).
