@@ -1,0 +1,41 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt pytest
+          pip install -e . --no-deps
+      - name: Tests
+        run: python -m pytest -q
+      - name: Verification gate self-test and scorecard
+        run: python -m euresis scorecard
+
+  orbit-prover:
+    # compiles the rigorous three-body prover; the ~20-minute proof itself runs only when requested
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Boost and fetch kv
+        run: |
+          sudo apt-get update && sudo apt-get install -y libboost-dev g++
+          git clone --depth 1 https://github.com/mskashi/kv.git data/external/verified/kv
+      - name: Compile
+        run: g++ -O3 -DNDEBUG -I data/external/verified/kv euresis/proofs/threebody_proof2.cc -o tbproof2
+      - name: Prove a catalogued orbit (I.A1)
+        if: contains(github.event.head_commit.message, '[slow]')
+        run: KV_RADII="1e-9 1e-8" ./tbproof2 0.3394074123 0.5361849780 3.145410 24

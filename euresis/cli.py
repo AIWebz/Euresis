@@ -370,9 +370,60 @@ SYN = {"fast": "velocity speed", "speed": "velocity", "leave": "escape", "planet
        "evolution": "selection", "gene": "allele", "earthquake": "seismic magnitude"}
 
 
+def cmd_collect(a):
+    from . import collect
+    collect.run()
+
+
+def cmd_gate(a):
+    from . import gate
+    print(gate.run(include_slow=a.slow, recheck=a.recheck))
+
+
+def cmd_claims(a):
+    from . import gate
+    from .registry import Registry
+    reg = Registry()
+    for c in reg.claims(status=a.status or None, kind=a.kind or None):
+        print(f"{c['id']}  [{gate.label(c)}]  {c['statement']}")
+    print(reg.stats())
+
+
+def cmd_jobs(a):
+    from . import jobs
+    from .registry import Registry
+    reg = Registry()
+    if a.action == "work":
+        n = jobs.work(reg, forever=a.forever)
+        print(f"{n} job(s) processed")
+    else:
+        for j in reg.jobs():
+            print(f"{j['id']:4d} {j['state']:8s} {j['kind']} {j['args']}" + (f"  error: {j['error'][:80]}" if j["error"] else ""))
+
+
+def cmd_scorecard(a):
+    from . import scorecard
+    scorecard.run()
+
+
+def cmd_writeup(a):
+    from . import writeup
+    writeup.run()
+
+
 def main(argv=None):
     p = argparse.ArgumentParser(prog="euresis", description="Euresis — scientific discovery engine")
     sub = p.add_subparsers(dest="cmd", required=True)
+    sub.add_parser("collect", help="import engine results into the claims registry").set_defaults(fn=cmd_collect)
+    g = sub.add_parser("gate", help="verify every unchecked claim"); g.add_argument("--slow", action="store_true",
+                       help="run slow verifiers (orbit proofs) inline instead of queueing them")
+    g.add_argument("--recheck", action="store_true"); g.set_defaults(fn=cmd_gate)
+    cl = sub.add_parser("claims"); cl.add_argument("--status", default=""); cl.add_argument("--kind", default="")
+    cl.set_defaults(fn=cmd_claims)
+    jb = sub.add_parser("jobs"); jb.add_argument("action", choices=["list", "work"], nargs="?", default="list")
+    jb.add_argument("--forever", action="store_true"); jb.set_defaults(fn=cmd_jobs)
+    sub.add_parser("scorecard").set_defaults(fn=cmd_scorecard)
+    sub.add_parser("writeup").set_defaults(fn=cmd_writeup)
     sub.add_parser("info").set_defaults(fn=cmd_info)
     t = sub.add_parser("train"); t.add_argument("--epochs", type=int, default=400); t.set_defaults(fn=cmd_train)
     e = sub.add_parser("explore"); e.add_argument("--cycles", type=int, default=3)

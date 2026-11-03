@@ -454,6 +454,42 @@ from what is left, and checks whether any output matches a removed law (exactly,
 or up to a dimensionless factor that dimensional analysis cannot fix). The latest
 result is saved in `space/benchmark.json` and shown on the canvas.
 
+## Verification gate, claims registry, scorecard
+
+Nothing Euresis says counts until a machine has checked it.
+
+* **Claims registry** (`euresis/registry.py`). Every candidate result is stored as a claim with an exact,
+  machine-checkable payload. Claims live in a SQLite database (`data/registry.db`) and are exported to
+  `space/claims.json`, which is committed and rebuilds the database on a new machine.
+* **Verification gate** (`euresis/gate.py`). Each kind of claim goes to a verifier that can decide it:
+  Z3 for inequalities and algebra (cross-checked by random sampling), SymPy plus 50-digit arithmetic for
+  identities, mpmath for continued fractions, kv interval arithmetic with a Krawczyk test for three-body
+  orbits, and Lean 4 when installed. Statuses: `proved`, `verified-numeric` (evidence, not proof), `refuted`
+  (a counterexample was found) and `unverified` (a failed proof attempt, which is not a refutation). Only the
+  gate can change a status. A **discovery** must be *proved* and not known.
+* **Job queue** (`euresis/jobs.py`). Long proofs, such as orbits that take hours, run as queued jobs stored in
+  the database. A job left running by a crashed worker is put back in the queue.
+* **Scorecard** (`space/scorecard.md`). This page includes the gate self-test: 12 claims with known answers,
+  where every true one must be proved and every false one refuted. It also shows the latest benchmarks and
+  every claim with its honest status.
+* **Write-ups for expert review** (`space/writeups/`). Each claim that passed the gate and is not known gets
+  a one-page note (Markdown and LaTeX) with its statement, method, evidence, what was and was not searched
+  for novelty, and the commands that reproduce it.
+* **Rigorous three-body proofs** (`euresis/proofs/`). These are computer-assisted existence proofs of periodic
+  orbits; see `euresis/proofs/README.md`.
+
+```bash
+python -m euresis collect      # bring engine results into the registry
+python -m euresis gate         # verify everything; slow proofs are queued
+python -m euresis jobs work    # process queued proofs
+python -m euresis claims       # list claims with their status
+python -m euresis scorecard    # self-test + benchmarks + claims → space/scorecard.md
+python -m euresis writeup      # notes for expert review → space/writeups/
+```
+
+The package installs with `pip install -e .` (this provides the `euresis` command). CI (`.github/workflows/ci.yml`)
+runs the tests and the gate self-test on every push and compiles the orbit prover.
+
 ## Usage
 
 ```bash

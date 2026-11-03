@@ -1,0 +1,421 @@
+[
+ {
+  "evidence": {
+   "samples": 200000,
+   "sampling_min": 8.30833419507293e-06,
+   "sharp": true,
+   "z3": "proved"
+  },
+  "id": "ine-30e44f74930a",
+  "kind": "inequality",
+  "novelty": "known (very likely: both sides classical)",
+  "payload": {
+   "P": "(a**2 + b**2 + c**2)/(a*b + a*c + b*c)",
+   "Q": "a/(b + c) + b/(a + c) + c/(a + b)",
+   "k": "1"
+  },
+  "source": "theorems.py",
+  "statement": "For all a,b,c > 0:  [(a\u00b2+b\u00b2+c\u00b2)/(ab+bc+ca)] \u2212 min  \u2265  1 \u00b7 ([a/(b+c)+b/(c+a)+c/(a+b)] \u2212 min)",
+  "status": "proved",
+  "verifier": "z3+sampling"
+ },
+ {
+  "evidence": {
+   "samples": 200000,
+   "sampling_min": 8.379998729601823e-06,
+   "sharp": true,
+   "z3": "proved"
+  },
+  "id": "ine-614fbcc71762",
+  "kind": "inequality",
+  "novelty": "known (very likely: both sides classical)",
+  "payload": {
+   "P": "a/(b + c) + b/(a + c) + c/(a + b)",
+   "Q": "(a**2 + b**2 + c**2)/(a*b + a*c + b*c)",
+   "k": "1/2"
+  },
+  "source": "theorems.py",
+  "statement": "For all a,b,c > 0:  [a/(b+c)+b/(c+a)+c/(a+b)] \u2212 min  \u2265  1/2 \u00b7 ([(a\u00b2+b\u00b2+c\u00b2)/(ab+bc+ca)] \u2212 min)",
+  "status": "proved",
+  "verifier": "z3+sampling"
+ },
+ {
+  "evidence": {
+   "samples": 200000,
+   "sampling_min": 4.540349007875477e-08,
+   "sharp": true,
+   "z3": "proved"
+  },
+  "id": "ine-1d5e9eb56bf3",
+  "kind": "inequality",
+  "novelty": "not among the classical inequalities Euresis knows; inequality literature not searched",
+  "payload": {
+   "P": "a/(b + c) + b/(a + c) + c/(a + b)",
+   "Q": "(3*a**2 + 3*b**2 + 3*c**2)/(a + b + c)**2",
+   "k": "1"
+  },
+  "source": "theorems.py",
+  "statement": "For all a,b,c > 0:  [a/(b+c)+b/(c+a)+c/(a+b)] \u2212 min  \u2265  1 \u00b7 ([3(a\u00b2+b\u00b2+c\u00b2)/(a+b+c)\u00b2] \u2212 min)",
+  "status": "proved",
+  "verifier": "z3+sampling"
+ },
+ {
+  "evidence": {
+   "depths": [
+    2000,
+    4000
+   ],
+   "digits_agree": 129.8,
+   "digits_converged": 130.0,
+   "note": "numerical agreement is evidence, not proof"
+  },
+  "id": "con-320dfd212b47",
+  "kind": "constant",
+  "novelty": "not in classical families or the Ramanujan Machine's published search domains; LIReC/OEIS/arXiv not checked",
+  "payload": {
+   "a": "3*n**2 + 3*n + 1",
+   "b": "-2*n**3*(n + 1)",
+   "digits": 100,
+   "value": "(-2) / (1 - 2*catalan)"
+  },
+  "source": "novelty_math.py",
+  "statement": "G (Catalan): continued fraction a(n) = 3n\u00b2 + 3n + 1, b(n) = -2\u00b7n^3\u00b7(n + 1) equals (-2) / (1 \u2212 2\u00b7G (Catalan))",
+  "status": "verified-numeric",
+  "verifier": "mpmath"
+ },
+ {
+  "evidence": {
+   "depths": [
+    2000,
+    4000
+   ],
+   "digits_agree": 130.7,
+   "digits_converged": 130.0,
+   "note": "numerical agreement is evidence, not proof"
+  },
+  "id": "con-475d29988f45",
+  "kind": "constant",
+  "novelty": "not in classical families or the Ramanujan Machine's published search domains; LIReC/OEIS/arXiv not checked",
+  "payload": {
+   "a": "3*n**2 + 3*n + 1",
+   "b": "-2*n**4",
+   "digits": 100,
+   "value": "(-1) / (-2*catalan)"
+  },
+  "source": "novelty_math.py",
+  "statement": "G (Catalan): continued fraction a(n) = 3n\u00b2 + 3n + 1, b(n) = -2\u00b7n^4 equals (-1) / (-2\u00b7G (Catalan))",
+  "status": "verified-numeric",
+  "verifier": "mpmath"
+ },
+ {
+  "evidence": {
+   "depths": [
+    2000,
+    4000
+   ],
+   "digits_agree": 130.0,
+   "digits_converged": 130.0,
+   "note": "numerical agreement is evidence, not proof"
+  },
+  "id": "con-992a35417cdf",
+  "kind": "constant",
+  "novelty": "not in classical families or the Ramanujan Machine's published search domains; LIReC/OEIS/arXiv not checked",
+  "payload": {
+   "a": "3*n**2 + 6*n + 2",
+   "b": "-2*n**3*(n + 2)",
+   "digits": 100,
+   "value": "(-2) / (-1 - log(2))"
+  },
+  "source": "novelty_math.py",
+  "statement": "ln 2: continued fraction a(n) = 3n\u00b2 + 6n + 2, b(n) = -2\u00b7n^3\u00b7(n + 2) equals (-2) / (-1 \u2212 ln 2)",
+  "status": "verified-numeric",
+  "verifier": "mpmath"
+ },
+ {
+  "evidence": {
+   "depths": [
+    2000,
+    4000
+   ],
+   "digits_agree": 130.0,
+   "digits_converged": 130.0,
+   "note": "numerical agreement is evidence, not proof"
+  },
+  "id": "con-e8a25327f261",
+  "kind": "constant",
+  "novelty": "not in classical families or the Ramanujan Machine's published search domains; LIReC/OEIS/arXiv not checked",
+  "payload": {
+   "a": "3*n**2 + 7*n + 3",
+   "b": "-2*n**3*(n + 2)",
+   "digits": 100,
+   "value": "(-2) / (1 - 2*catalan)"
+  },
+  "source": "novelty_math.py",
+  "statement": "G (Catalan): continued fraction a(n) = 3n\u00b2 + 7n + 3, b(n) = -2\u00b7n^3\u00b7(n + 2) equals (-2) / (1 \u2212 2\u00b7G (Catalan))",
+  "status": "verified-numeric",
+  "verifier": "mpmath"
+ },
+ {
+  "evidence": {
+   "depths": [
+    2000,
+    4000
+   ],
+   "digits_agree": 130.3,
+   "digits_converged": 130.0,
+   "note": "numerical agreement is evidence, not proof"
+  },
+  "id": "con-ac1dbfeff3e3",
+  "kind": "constant",
+  "novelty": "not in classical families or the Ramanujan Machine's published search domains; LIReC/OEIS/arXiv not checked",
+  "payload": {
+   "a": "3*n**2 + 9*n + 7",
+   "b": "-2*n*(n + 1)**3",
+   "digits": 100,
+   "value": "(1) / (2 - 2*catalan)"
+  },
+  "source": "novelty_math.py",
+  "statement": "G (Catalan): continued fraction a(n) = 3n\u00b2 + 9n + 7, b(n) = -2\u00b7n\u00b7(n + 1)^3 equals (1) / (2 \u2212 2\u00b7G (Catalan))",
+  "status": "verified-numeric",
+  "verifier": "mpmath"
+ },
+ {
+  "evidence": {
+   "depths": [
+    2000,
+    4000
+   ],
+   "digits_agree": 130.7,
+   "digits_converged": 130.0,
+   "note": "numerical agreement is evidence, not proof"
+  },
+  "id": "con-8f1d1cb3e093",
+  "kind": "constant",
+  "novelty": "not in classical families or the Ramanujan Machine's published search domains; LIReC/OEIS/arXiv not checked",
+  "payload": {
+   "a": "3*n**2 + 10*n + 6",
+   "b": "-2*n**2*(n + 2)**2",
+   "digits": 100,
+   "value": "(-4) / (-5 + 6*log(2))"
+  },
+  "source": "novelty_math.py",
+  "statement": "ln 2: continued fraction a(n) = 3n\u00b2 + 10n + 6, b(n) = -2\u00b7n^2\u00b7(n + 2)^2 equals (-4) / (-5 + 6\u00b7ln 2)",
+  "status": "verified-numeric",
+  "verifier": "mpmath"
+ },
+ {
+  "evidence": {
+   "depths": [
+    2000,
+    4000
+   ],
+   "digits_agree": 130.0,
+   "digits_converged": 130.0,
+   "note": "numerical agreement is evidence, not proof"
+  },
+  "id": "con-c072ef0cf45e",
+  "kind": "constant",
+  "novelty": "not in classical families or the Ramanujan Machine's published search domains; LIReC/OEIS/arXiv not checked",
+  "payload": {
+   "a": "3*n**2 + 11*n + 9",
+   "b": "-2*n**2*(n + 2)**2",
+   "digits": 100,
+   "value": "(4) / (-5 + 6*catalan)"
+  },
+  "source": "novelty_math.py",
+  "statement": "G (Catalan): continued fraction a(n) = 3n\u00b2 + 11n + 9, b(n) = -2\u00b7n^2\u00b7(n + 2)^2 equals (4) / (-5 + 6\u00b7G (Catalan))",
+  "status": "verified-numeric",
+  "verifier": "mpmath"
+ },
+ {
+  "evidence": {
+   "depths": [
+    2000,
+    4000
+   ],
+   "digits_agree": 130.0,
+   "digits_converged": 130.0,
+   "note": "numerical agreement is evidence, not proof"
+  },
+  "id": "con-d4370f44d668",
+  "kind": "constant",
+  "novelty": "not in classical families or the Ramanujan Machine's published search domains; LIReC/OEIS/arXiv not checked",
+  "payload": {
+   "a": "4*n**2 + 12*n + 7",
+   "b": "-1*n**2*(n + 2)**2",
+   "digits": 100,
+   "value": "(-8 - 4*sqrt(3)) / (-4 + sqrt(3))"
+  },
+  "source": "novelty_math.py",
+  "statement": "\u221a3: continued fraction a(n) = 4n\u00b2 + 12n + 7, b(n) = -1\u00b7n^2\u00b7(n + 2)^2 equals (-8 \u2212 4\u00b7\u221a3) / (-4 + \u221a3)",
+  "status": "verified-numeric",
+  "verifier": "mpmath"
+ },
+ {
+  "evidence": {
+   "depths": [
+    2000,
+    4000
+   ],
+   "digits_agree": 130.7,
+   "digits_converged": 130.0,
+   "note": "numerical agreement is evidence, not proof"
+  },
+  "id": "con-4e5a0e307d56",
+  "kind": "constant",
+  "novelty": "not in classical families or the Ramanujan Machine's published search domains; LIReC/OEIS/arXiv not checked",
+  "payload": {
+   "a": "4*n**2 + 12*n + 9",
+   "b": "-1*n**2*(n + 2)**2",
+   "digits": 100,
+   "value": "(-8 - 4*sqrt(3)) / (-sqrt(3))"
+  },
+  "source": "novelty_math.py",
+  "statement": "\u221a3: continued fraction a(n) = 4n\u00b2 + 12n + 9, b(n) = -1\u00b7n^2\u00b7(n + 2)^2 equals (-8 \u2212 4\u00b7\u221a3) / (-\u221a3)",
+  "status": "verified-numeric",
+  "verifier": "mpmath"
+ },
+ {
+  "evidence": {
+   "depths": [
+    2000,
+    4000
+   ],
+   "digits_agree": 130.8,
+   "digits_converged": 130.0,
+   "note": "numerical agreement is evidence, not proof"
+  },
+  "id": "con-95201abc2af8",
+  "kind": "constant",
+  "novelty": "not in classical families or the Ramanujan Machine's published search domains; LIReC/OEIS/arXiv not checked",
+  "payload": {
+   "a": "10*n**2 + 24*n + 11",
+   "b": "-9*n**3*(n + 2)",
+   "digits": 100,
+   "value": "(4) / (-1 + 2*log(2))"
+  },
+  "source": "novelty_math.py",
+  "statement": "ln 2: continued fraction a(n) = 10n\u00b2 + 24n + 11, b(n) = -9\u00b7n^3\u00b7(n + 2) equals (4) / (-1 + 2\u00b7ln 2)",
+  "status": "verified-numeric",
+  "verifier": "mpmath"
+ },
+ {
+  "evidence": {
+   "z3": "proved"
+  },
+  "id": "phy-7e0ea1dad03f",
+  "kind": "physics-relation",
+  "novelty": "known (E = K + mc\u00b2, so K \u2264 E)",
+  "payload": {
+   "claim": "m*c**2/sqrt(1 - v**2/c**2) >= m*c**2*(1/sqrt(1 - v**2/c**2) - 1)",
+   "symbols": [
+    "c",
+    "m",
+    "v"
+   ]
+  },
+  "source": "physics_theorems.py",
+  "statement": "Relativistic kinetic energy \u2264 total relativistic energy (all m, c > 0, 0 < v < c)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "box": {
+    "p1": [
+     0.3394074119858467,
+     0.3394074119958561
+    ],
+    "p2": [
+     0.5361849781491369,
+     0.5361849781537203
+    ],
+    "tau": [
+     3.1454093825280376,
+     3.1454093825479568
+    ]
+   },
+   "contraction_bounds": [
+    0.00011379385507304107
+   ],
+   "log_tail": [
+    "  x0 in [0.33940741198584667,0.33940741199585612]  width 1.0009437723113024e-11",
+    "  x1 in [0.5361849781491369,0.53618497815372035]  width 4.5834447348624963e-12",
+    "  x2 in [3.1454093825280375,3.1454093825479568]  width 1.9919177418614709e-11",
+    "  period 2*tau in [6.2908187650560751,6.2908187650959136]",
+    "",
+    "real\t17m19.181s",
+    "user\t17m2.709s",
+    "sys\t0m0.495s"
+   ],
+   "period": [
+    6.290818765056075,
+    6.2908187650959135
+   ],
+   "run_args": {
+    "order": 24,
+    "p1": 0.3394074123,
+    "p2": 0.536184978,
+    "tau": 3.14541
+   },
+   "theorem": "There is exactly one (p1, p2, tau) in the box such that the solution is periodic with period 2*tau; the motion is collision-free."
+  },
+  "id": "orb-8451aeafa81b",
+  "kind": "orbit",
+  "novelty": "known (Li & Liao 2017 catalogue: I.A1 (same orbit, different starting point))",
+  "payload": {
+   "p1": 0.3394074123,
+   "p2": 0.536184978,
+   "tau": 3.145409
+  },
+  "source": "threebody.py",
+  "statement": "Periodic equal-mass three-body orbit with v = (0.3394074123, 0.5361849780), T \u2248 6.290819, T* \u2248 9.238",
+  "status": "proved",
+  "verifier": "kv-krawczyk"
+ },
+ {
+  "evidence": null,
+  "id": "orb-41389d3a92ee",
+  "kind": "orbit",
+  "novelty": "known (Li & Liao 2017 catalogue: I.B1)",
+  "payload": {
+   "p1": 0.4644451728,
+   "p2": 0.3960600147,
+   "tau": 7.447153
+  },
+  "source": "threebody.py",
+  "statement": "Periodic equal-mass three-body orbit with v = (0.4644451728, 0.3960600147), T \u2248 14.894305, T* \u2248 24.206",
+  "status": "candidate",
+  "verifier": null
+ },
+ {
+  "evidence": null,
+  "id": "orb-6bdb5019f241",
+  "kind": "orbit",
+  "novelty": "not in Li & Liao 2017 catalogue (695 families); newer catalogues (e.g. Hristov et al. 2022\u20132025) not checked \u2014 arXiv unreachable here",
+  "payload": {
+   "p1": 0.1819428805,
+   "p2": 0.5148059977,
+   "tau": 9.070684
+  },
+  "source": "threebody.py",
+  "statement": "Periodic equal-mass three-body orbit with v = (0.1819428805, 0.5148059977), T \u2248 18.141368, T* \u2248 36.909",
+  "status": "candidate",
+  "verifier": null
+ },
+ {
+  "evidence": null,
+  "id": "orb-7b24348bf480",
+  "kind": "orbit",
+  "novelty": "not in Li & Liao 2017 catalogue (695 families); newer catalogues (e.g. Hristov et al. 2022\u20132025) not checked \u2014 arXiv unreachable here",
+  "payload": {
+   "p1": 0.1890048924,
+   "p2": 0.5397624528,
+   "tau": 9.867696
+  },
+  "source": "threebody.py",
+  "statement": "Periodic equal-mass three-body orbit with v = (0.1890048924, 0.5397624528), T \u2248 19.735392, T* \u2248 36.940",
+  "status": "candidate",
+  "verifier": null
+ }
+]

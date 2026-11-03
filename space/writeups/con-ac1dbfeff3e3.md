@@ -1,0 +1,48 @@
+# G (Catalan): continued fraction a(n) = 3n² + 9n + 7, b(n) = -2·n·(n + 1)^3 equals (1) / (2 − 2·G (Catalan))
+
+*Claim `con-ac1dbfeff3e3` · source: `euresis/novelty_math.py` · status: **numerically verified, not proved***
+
+## Statement
+
+G (Catalan): continued fraction a(n) = 3n² + 9n + 7, b(n) = -2·n·(n + 1)^3 equals (1) / (2 − 2·G (Catalan))
+
+Exact payload checked by the verifier:
+
+```json
+{
+ "a": "3*n**2 + 9*n + 7",
+ "b": "-2*n*(n + 1)**3",
+ "digits": 100,
+ "value": "(1) / (2 - 2*catalan)"
+}
+```
+
+## Method
+
+Found by a Ramanujan-Machine-style search over polynomial continued fractions; the fraction is evaluated with mpmath at two depths (to show convergence) and compared with the closed form. This is numerical evidence, not a proof.
+
+## Evidence
+
+```json
+{
+ "depths": [
+  2000,
+  4000
+ ],
+ "digits_agree": 130.3,
+ "digits_converged": 130.0,
+ "note": "numerical agreement is evidence, not proof"
+}
+```
+
+## Novelty
+
+not in classical families or the Ramanujan Machine's published search domains; LIReC/OEIS/arXiv not checked.
+
+Before this is called new, an expert should check the literature this environment could not reach.
+
+## Reproduce
+
+```bash
+python -m euresis gate --recheck   # re-runs every verifier
+```

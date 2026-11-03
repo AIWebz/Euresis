@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "euresis"
+version = "0.2.0"
+description = "Euresis — a scientific discovery engine whose claims must pass a machine-verification gate"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.26",
+    "scipy>=1.11",
+    "sympy>=1.12",
+    "mpmath>=1.3",
+    "z3-solver>=4.12",
+]
+
+[project.optional-dependencies]
+lm = ["jax[cpu]>=0.4", "optax>=0.2", "tokenizers>=0.15"]
+claude = ["anthropic>=0.40"]
+dev = ["pytest>=8"]
+all = ["euresis[lm,claude,dev]"]
+
+[project.scripts]
+euresis = "euresis.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["euresis*"]
+
+[tool.setuptools.package-data]
+euresis = ["templates/*", "knowledge/*", "proofs/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

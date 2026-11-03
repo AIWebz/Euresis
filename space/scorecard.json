@@ -1,0 +1,139 @@
+{
+ "date": "2026-11-03",
+ "gate_self_test": {
+  "passed": 12,
+  "total": 12,
+  "rows": [
+   {
+    "claim": "AM\u2013GM: (a+b+c)\u00b3 \u2265 27abc (true)",
+    "kind": "inequality",
+    "expected": "proved",
+    "got": "proved",
+    "pass": true,
+    "seconds": 0.39
+   },
+   {
+    "claim": "(a+b+c)\u00b3/27abc \u2212 1 \u2265 (a\u00b2+b\u00b2+c\u00b2)/(ab+bc+ca) \u2212 1 (false at a=b=1, c=2)",
+    "kind": "inequality",
+    "expected": "refuted",
+    "got": "refuted",
+    "pass": true,
+    "seconds": 0.02
+   },
+   {
+    "claim": "Nesbitt bound with constant 2 (false: sharp constant is 1)",
+    "kind": "inequality",
+    "expected": "refuted",
+    "got": "refuted",
+    "pass": true,
+    "seconds": 0.02
+   },
+   {
+    "claim": "x\u00b2 + y\u00b2 \u2265 2xy",
+    "kind": "z3",
+    "expected": "proved",
+    "got": "proved",
+    "pass": true,
+    "seconds": 0.0
+   },
+   {
+    "claim": "x\u00b2 \u2265 x for all real x (false at x = 1/2)",
+    "kind": "z3",
+    "expected": "refuted",
+    "got": "refuted",
+    "pass": true,
+    "seconds": 0.0
+   },
+   {
+    "claim": "sin\u00b2 + cos\u00b2 = 1",
+    "kind": "identity",
+    "expected": "proved",
+    "got": "proved",
+    "pass": true,
+    "seconds": 0.12
+   },
+   {
+    "claim": "(x+y)\u00b2 = x\u00b2 + y\u00b2 (false)",
+    "kind": "identity",
+    "expected": "refuted",
+    "got": "refuted",
+    "pass": true,
+    "seconds": 0.02
+   },
+   {
+    "claim": "4/\u03c0 = 1 + 1/(3 + 4/(5 + 9/(7 + \u2026))) (true)",
+    "kind": "constant",
+    "expected": "verified-numeric",
+    "got": "verified-numeric",
+    "pass": true,
+    "seconds": 0.01
+   },
+   {
+    "claim": "the same fraction equals 4/\u03c0 + 10\u207b\u2074\u2070 (false at digit 40)",
+    "kind": "constant",
+    "expected": "refuted",
+    "got": "refuted",
+    "pass": true,
+    "seconds": 0.01
+   },
+   {
+    "claim": "2 + 1/(2 + 1/(2 + \u2026)) = 1 + \u221a2 (true)",
+    "kind": "constant",
+    "expected": "verified-numeric",
+    "got": "verified-numeric",
+    "pass": true,
+    "seconds": 0.0
+   },
+   {
+    "claim": "relativistic K \u2264 E (true)",
+    "kind": "physics-relation",
+    "expected": "proved",
+    "got": "proved",
+    "pass": true,
+    "seconds": 0.02
+   },
+   {
+    "claim": "classical KE \u2265 relativistic KE (false)",
+    "kind": "physics-relation",
+    "expected": "refuted",
+    "got": "refuted",
+    "pass": true,
+    "seconds": 0.01
+   }
+  ]
+ },
+ "benchmarks": [
+  {
+   "name": "Rediscovery of held-out laws",
+   "result": "4/10 recovered (2 exactly)",
+   "date": "2026-11-02",
+   "source": "space/benchmark.json"
+  },
+  {
+   "name": "Symbolic regression, 345 laws (no noise)",
+   "result": "337/345 exact (97.7%)",
+   "date": "2026-11-02",
+   "source": "space/srbench_clean.json"
+  },
+  {
+   "name": "Symbolic regression, 345 laws (1% noise)",
+   "result": "289/345 exact (83.8%)",
+   "date": "2026-11-02",
+   "source": "space/srbench_noise10.json"
+  },
+  {
+   "name": "Literature-based discovery, time-sliced (PubMed)",
+   "result": "127/500 predicted links later published (25.4%) vs 2.2% for random pairs",
+   "date": "2026-11-03",
+   "source": "space/literature_discovery.md"
+  }
+ ],
+ "claims": {
+  "candidate": 3,
+  "proved": 5,
+  "verified-numeric": 10
+ },
+ "discoveries": [
+  "ine-1d5e9eb56bf3"
+ ]
+}

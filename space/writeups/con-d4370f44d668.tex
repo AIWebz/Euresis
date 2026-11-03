@@ -1,0 +1,39 @@
+% compile with xelatex or lualatex (the text contains Unicode math symbols)
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{fontspec}
+\setmainfont{DejaVu Serif}
+\setmonofont{DejaVu Sans Mono}
+\usepackage[margin=1in]{geometry}
+\title{√3: continued fraction a(n) = 4n² + 12n + 7, b(n) = -1·n\^{}2·(n + 2)\^{}2 equals (-8 − 4·√3) / (-4 + √3)}
+\author{Euresis (automated discovery system)}
+\date{\today}
+\begin{document}
+\maketitle
+\paragraph{Status.} numerically verified, not proved.
+\section{Method}
+Found by a Ramanujan-Machine-style search over polynomial continued fractions; the fraction is evaluated with mpmath at two depths (to show convergence) and compared with the closed form. This is numerical evidence, not a proof.
+\section{Evidence}
+\begin{verbatim}
+{
+ "depths": [
+  2000,
+  4000
+ ],
+ "digits_agree": 130.0,
+ "digits_converged": 130.0,
+ "note": "numerical agreement is evidence, not proof"
+}
+\end{verbatim}
+\section{Exact claim}
+\begin{verbatim}
+{
+ "a": "4*n**2 + 12*n + 7",
+ "b": "-1*n**2*(n + 2)**2",
+ "digits": 100,
+ "value": "(-8 - 4*sqrt(3)) / (-4 + sqrt(3))"
+}
+\end{verbatim}
+\section{Novelty}
+not in classical families or the Ramanujan Machine's published search domains; LIReC/OEIS/arXiv not checked.
+\end{document}

@@ -1,0 +1,35 @@
+% compile with xelatex or lualatex (the text contains Unicode math symbols)
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{fontspec}
+\setmainfont{DejaVu Serif}
+\setmonofont{DejaVu Sans Mono}
+\usepackage[margin=1in]{geometry}
+\title{For all a,b,c > 0:  [a/(b+c)+b/(c+a)+c/(a+b)] − min  ≥  1 · ([3(a²+b²+c²)/(a+b+c)²] − min)}
+\author{Euresis (automated discovery system)}
+\date{\today}
+\begin{document}
+\maketitle
+\paragraph{Status.} proved; novelty: not among the classical inequalities Euresis knows; inequality literature not searched.
+\section{Method}
+Found by numerical minimisation of the ratio (P − min P)/(Q − min Q) and snapped to an exact rational. Proved with the Z3 SMT solver, which decides real polynomial inequalities completely: both sides are homogeneous of degree 0, so a = 1 without loss of generality, denominators are cleared and shown positive, and the negation of the numerator inequality is shown unsatisfiable. Cross-checked independently at 200 000 random points.
+\section{Evidence}
+\begin{verbatim}
+{
+ "samples": 200000,
+ "sampling_min": 4.540349007875477e-08,
+ "sharp": true,
+ "z3": "proved"
+}
+\end{verbatim}
+\section{Exact claim}
+\begin{verbatim}
+{
+ "P": "a/(b + c) + b/(a + c) + c/(a + b)",
+ "Q": "(3*a**2 + 3*b**2 + 3*c**2)/(a + b + c)**2",
+ "k": "1"
+}
+\end{verbatim}
+\section{Novelty}
+not among the classical inequalities Euresis knows; inequality literature not searched.
+\end{document}
