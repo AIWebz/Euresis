@@ -258,6 +258,18 @@ def cmd_answer(a):
     print(Answerer().answer(" ".join(a.question))["text"])
 
 
+def cmd_prove_new(a):
+    """Discover sharp inequalities and prove them; runs until a proven, non-classical theorem is found."""
+    import warnings
+    warnings.filterwarnings("ignore")
+    from .render import export
+    from .space import ThoughtSpace
+    from .theorems import run
+    best, found = run(space=ThoughtSpace())
+    print("\nRESULT:", best)
+    export()
+
+
 def cmd_learn(a):
     """Feed Euresis new knowledge from a text file, validate it, and retrain."""
     import shutil
@@ -392,6 +404,7 @@ def main(argv=None):
     fn.set_defaults(fn=cmd_findnew)
     sub.add_parser("read-papers").set_defaults(fn=cmd_read_papers)
     an = sub.add_parser("answer"); an.add_argument("question", nargs="+"); an.set_defaults(fn=cmd_answer)
+    sub.add_parser("prove-new").set_defaults(fn=cmd_prove_new)
     my = sub.add_parser("mysteries"); my.add_argument("ids", nargs="*"); my.set_defaults(fn=cmd_mysteries)
     lb = sub.add_parser("lawbench"); lb.add_argument("--noise", type=float, default=0.0)
     lb.add_argument("--limit", type=int, default=0); lb.add_argument("--processes", type=int, default=4)
