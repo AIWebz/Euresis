@@ -274,6 +274,26 @@ No formula for ζ(5) was found in the searched families.
 database, OEIS, arXiv) are not reachable from this environment. Results:
 `space/conjectures.md`, `space/conjectures_frontier.md`, `space/conjectures_sweep.md`.
 
+## Proven discoveries: sharp inequalities
+
+`python -m euresis prove-new` searches pairs of symmetric expressions in positive a, b, c. For each
+pair it finds the best constant numerically, then **proves** the inequality with the Z3 theorem prover,
+a complete decision procedure for real polynomial inequalities. It confirms the constant is sharp
+(Z3 refutes a constant 0.1% larger) and runs until it has a proven, sharp theorem that goes beyond the
+classical inequalities it knows.
+
+First result, found and proved in 3.5 s:
+
+> For all positive real a, b, c: a/(b+c) + b/(c+a) + c/(a+b) − 3/2 ≥ 3(a²+b²+c²)/(a+b+c)² − 1,
+> with equality approached at a = b, c → 0. The constant 1 is best possible.
+
+Independent checks found no counterexample in 1,000,000 random points or in 2,000 exact rational
+points. The difference of the two sides factors as a degree-5 symmetric polynomial over a positive
+denominator.
+
+It is **proven**. Its **novelty is unverified**: the inequality literature cannot be searched from this
+environment, and a statement this compact may well already be known.
+
 ## Live model: the three-body problem
 
 `euresis/threebody.py` turns Euresis' law of gravity into a live simulation of three equal masses. It
