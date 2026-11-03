@@ -110,13 +110,22 @@ class EuresisLM:
     def train(cls, docs, cfg: Config | None = None, steps=3000, batch=32, lr=3e-3, seed=0, log=print,
               out_dir: Path = MODEL_DIR):
         cfg = cfg or Config()
-        tok = train_tokenizer(docs, cfg.vocab)
+        out_dir.mkdir(parents=True, exist_ok=True)
+        tok_path, data_path = out_dir / "tokenizer.json", out_dir / "corpus_tokens.npy"
+        if tok_path.exists() and data_path.exists():          # cached: skip tokenizer training and encoding
+            from tokenizers import Tokenizer
+            tok = Tokenizer.from_file(str(tok_path))
+            data = np.load(data_path)
+            log("loaded cached tokenizer and tokenised corpus")
+        else:
+            tok = train_tokenizer(docs, cfg.vocab)
+            tok.save(str(tok_path))
+            eos_id = tok.token_to_id("<|eos|>")
+            enc = tok.encode_batch(docs)                       # parallel encoding
+            data = np.fromiter((i for e in enc for i in (e.ids + [eos_id])), dtype=np.int32)
+            np.save(data_path, data)
         cfg.vocab = tok.get_vocab_size()
         eos = tok.token_to_id("<|eos|>")
-        ids = []
-        for d in docs:
-            ids += tok.encode(d).ids + [eos]
-        data = np.array(ids, np.int32)
         n_val = len(data) // 20
         train_d, val_d = data[:-n_val], data[-n_val:]
         log(f"corpus: {len(data):,} tokens (vocab {cfg.vocab}); training {steps} steps × {batch}×{cfg.ctx} tokens")
@@ -151,9 +160,34 @@ class EuresisLM:
         VX = jnp.array(np.stack([val_d[i:i + cfg.ctx] for i in vix]))
         VY = jnp.array(np.stack([val_d[i + 1:i + cfg.ctx + 1] for i in vix]))
         best = (float("inf"), params, 0)
-        for it in range(1, steps + 1):
+        start = 1
+        ckpt = out_dir / "checkpoint.npz"
+        if ckpt.exists():                                       # resume after an interruption
+            z = np.load(ckpt, allow_pickle=False)
+            pflat, ptree = jax.tree_util.tree_flatten(params)
+            sflat, stree = jax.tree_util.tree_flatten(state)
+            params = jax.tree_util.tree_unflatten(ptree, [jnp.array(z[f"p{i}"]) for i in range(len(pflat))])
+            state = jax.tree_util.tree_unflatten(stree, [jnp.array(z[f"s{i}"]) for i in range(len(sflat))])
+            bflat = [jnp.array(z[f"b{i}"]) for i in range(len(pflat))]
+            best = (float(z["best_val"]), jax.tree_util.tree_unflatten(ptree, bflat), int(z["best_step"]))
+            start = int(z["step"]) + 1
+            hist = json.loads(str(z["hist"]))
+            rng = np.random.default_rng(seed + start)
+            log(f"resuming from checkpoint at step {start - 1}")
+
+        def save_ckpt(it):
+            arrs = {f"p{i}": np.asarray(a) for i, a in enumerate(jax.tree_util.tree_leaves(params))}
+            arrs.update({f"s{i}": np.asarray(a) for i, a in enumerate(jax.tree_util.tree_leaves(state))})
+            arrs.update({f"b{i}": np.asarray(a) for i, a in enumerate(jax.tree_util.tree_leaves(best[1]))})
+            tmp = out_dir / "checkpoint.tmp.npz"
+            np.savez(tmp, step=it, best_val=best[0], best_step=best[2], hist=json.dumps(hist), **arrs)
+            tmp.replace(ckpt)
+
+        for it in range(start, steps + 1):
             x, y = sample(train_d)
             params, state, l = step(params, state, x, y)
+            if it % 100 == 0:
+                save_ckpt(it)
             if it % 100 == 0 or it == 1:
                 vl = float(np.mean([float(eval_loss(params, VX[i:i + 32], VY[i:i + 32])) for i in range(0, 128, 32)]))
                 hist.append({"step": it, "train_loss": float(l), "val_loss": vl})
@@ -166,6 +200,8 @@ class EuresisLM:
         m = cls(best[1], cfg, tok)
         m.save(out_dir, {"history": hist, "tokens": int(len(data)), "parameters": n_params(params),
                          "best_step": best[2], "best_val_loss": best[0], "train_seconds": round(time.time() - t0)})
+        if ckpt.exists():
+            ckpt.unlink()
         return m
 
     def save(self, out_dir: Path, meta=None):
