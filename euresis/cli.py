@@ -270,6 +270,15 @@ def cmd_prove_new(a):
     export()
 
 
+def cmd_prove_physics(a):
+    """Discover and prove sharp relations between laws that predict the same quantity."""
+    import warnings
+    warnings.filterwarnings("ignore")
+    from .physics_theorems import run
+    from .space import ThoughtSpace
+    run(space=ThoughtSpace())
+
+
 def cmd_learn(a):
     """Feed Euresis new knowledge from a text file, validate it, and retrain."""
     import shutil
@@ -405,6 +414,7 @@ def main(argv=None):
     sub.add_parser("read-papers").set_defaults(fn=cmd_read_papers)
     an = sub.add_parser("answer"); an.add_argument("question", nargs="+"); an.set_defaults(fn=cmd_answer)
     sub.add_parser("prove-new").set_defaults(fn=cmd_prove_new)
+    sub.add_parser("prove-physics").set_defaults(fn=cmd_prove_physics)
     my = sub.add_parser("mysteries"); my.add_argument("ids", nargs="*"); my.set_defaults(fn=cmd_mysteries)
     lb = sub.add_parser("lawbench"); lb.add_argument("--noise", type=float, default=0.0)
     lb.add_argument("--limit", type=int, default=0); lb.add_argument("--processes", type=int, default=4)
