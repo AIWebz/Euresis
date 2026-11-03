@@ -221,6 +221,16 @@ def cmd_conjecture(a):
     export()
 
 
+def cmd_findnew(a):
+    """Keep searching until a formula passes every available novelty check."""
+    from .novelty_math import run
+    from .render import export
+    from .space import ThoughtSpace
+    found, recs = run(max_minutes=a.minutes, space=ThoughtSpace())
+    print("FOUND" if found else "not found", found or "")
+    export()
+
+
 def cmd_learn(a):
     """Feed Euresis new knowledge from a text file, validate it, and retrain."""
     import shutil
@@ -349,6 +359,8 @@ def main(argv=None):
     cj = sub.add_parser("conjecture"); cj.add_argument("mode", nargs="?", default="sweep",
                                                        choices=["basic", "frontier", "sweep"])
     cj.set_defaults(fn=cmd_conjecture)
+    fn = sub.add_parser("find-new"); fn.add_argument("--minutes", type=float, default=120)
+    fn.set_defaults(fn=cmd_findnew)
     my = sub.add_parser("mysteries"); my.add_argument("ids", nargs="*"); my.set_defaults(fn=cmd_mysteries)
     lb = sub.add_parser("lawbench"); lb.add_argument("--noise", type=float, default=0.0)
     lb.add_argument("--limit", type=int, default=0); lb.add_argument("--processes", type=int, default=4)
