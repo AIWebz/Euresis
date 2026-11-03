@@ -204,7 +204,8 @@ def cmd_lm(a):
         from .lm.evaluate import evaluate
         evaluate()
         return
-    lm = EuresisLM.load()
+    from .lm.model import MODEL_DIR
+    lm = EuresisLM.load(MODEL_DIR.parent / "euresis-lm2-ft") if a.model == "papers" else EuresisLM.load()
     text = " ".join(a.text)
     if a.action == "ask":
         from .kb import KnowledgeBase
@@ -373,6 +374,8 @@ def main(argv=None):
     lmp.add_argument("text", nargs="*"); lmp.add_argument("--steps", type=int, default=2500)
     lmp.add_argument("--layers", type=int, default=6); lmp.add_argument("--d", type=int, default=256)
     lmp.add_argument("--heads", type=int, default=8); lmp.add_argument("--temperature", type=float, default=0.7)
+    lmp.add_argument("--model", choices=["science", "papers"], default="science",
+                     help="science = Euresis-LM 1 (question understanding); papers = Euresis-LM 2 (medical literature)")
     lmp.set_defaults(fn=cmd_lm)
     cj = sub.add_parser("conjecture"); cj.add_argument("mode", nargs="?", default="sweep",
                                                        choices=["basic", "frontier", "sweep"])

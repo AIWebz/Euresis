@@ -49,13 +49,13 @@ def _rr(ranked, truth):
     return 10 ** 6
 
 
-def evaluate(n_heldout=150, seed=0, log=print):
+def evaluate(n_heldout=150, seed=0, log=print, model_dir=None):
     from ..kb import KnowledgeBase
     from ..model import TextRetriever
     from .corpus import build
     from .model import EuresisLM
     kb = KnowledgeBase()
-    lm = EuresisLM.load()
+    lm = EuresisLM.load(model_dir) if model_dir else EuresisLM.load()
     names = [f.name for f in kb.formulas]
     docs = [d for d in kb.documents() if d[0] == "formula"]
     retr = TextRetriever(docs)
@@ -86,3 +86,31 @@ def evaluate(n_heldout=150, seed=0, log=print):
             log(f"  {k:28s} top-1 {res['top1'] * 100:5.1f}%   top-5 {res['top5'] * 100:5.1f}%   "
                 f"top-10 {res['top10'] * 100:5.1f}%")
     return report
+
+
+def bits_per_char(lm, texts):
+    """Compression of unseen text: lower = the model has absorbed more of the language and knowledge."""
+    import jax
+    import jax.numpy as jnp
+    tot_bits, tot_chars = 0.0, 0
+    for t in texts:
+        ids = lm.tok.encode(t).ids[: lm.cfg.ctx]
+        if len(ids) < 2:
+            continue
+        x = jnp.array([ids])
+        lp = np.asarray(jax.nn.log_softmax(lm._fwd(lm.params, x), -1))[0]
+        nll = -sum(lp[i - 1, ids[i]] for i in range(1, len(ids)))
+        tot_bits += nll / np.log(2)
+        tot_chars += len(lm.tok.decode(ids[1:]))
+    return tot_bits / max(1, tot_chars)
+
+
+def unseen_abstracts(n=300, seed=0):
+    import random
+    from ..papers import read_abstracts
+    papers = [t for _, t in read_abstracts()]
+    rng = random.Random(seed)
+    rng.shuffle(papers)                                     # same shuffle as build_with_papers(seed=0)
+    unseen = papers[60000:]
+    clean = [p.replace(" , ", ", ").replace(" . ", ". ").replace(" ( ", " (").replace(" ) ", ") ") for p in unseen]
+    return random.Random(seed + 7).sample(clean, n)

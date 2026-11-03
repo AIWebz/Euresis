@@ -274,6 +274,38 @@ No formula for ζ(5) was found in the searched families.
 database, OEIS, arXiv) are not reachable from this environment. Results:
 `space/conjectures.md`, `space/conjectures_frontier.md`, `space/conjectures_sweep.md`.
 
+## Reading the literature and discovering while reading
+
+Euresis has read **195,654 real abstracts** of published clinical trials (PubMed 200k RCT,
+Dernoncourt & Lee 2017). All of them are indexed in its local full-text library, so offline literature
+search works for medicine. `python -m euresis read-papers` rebuilds the library and reruns discovery.
+
+While reading the papers in publication order, Euresis generates **literature-based discovery**
+hypotheses (Swanson's ABC model): concepts never mentioned together, but strongly linked through
+shared intermediate concepts.
+
+**Measured (time-sliced).** Hypotheses were built from the first 156,523 papers only, then checked
+against the next 39,131:
+
+| | Predicted links later published |
+|---|---|
+| **Euresis** | **127 / 500 (25.4%)** |
+| Frequency-matched random pairs | 2.2% |
+
+That is 11.5× better than chance: Euresis predicts connections before they appear in the literature.
+
+**Limits.** Its open hypotheses from all 195k papers are mostly links between neighbouring topics
+within one field (dentistry materials, eye surgery). Separating medically surprising links would
+need concept types (drug, disease, gene), which this text-only method lacks. The corpus is clinical
+trials only, not "millions of papers": the large paper databases are not reachable from this
+environment.
+
+**Euresis-LM 2** (`models/euresis-lm2-ft`) is a 6.9 M-parameter transformer with an 8,192-token
+vocabulary. It was trained on 25 M tokens (60 k abstracts plus Euresis' knowledge), then fine-tuned.
+It absorbed medical language: 1.28 bits/char on unseen abstracts, against 6.49 for Euresis-LM 1.
+But it lost Euresis-LM 1's science-question understanding. Euresis therefore uses two specialists:
+`--model science` (LM 1, the default, used by the mystery solver) and `--model papers` (LM 2).
+
 ## Euresis-LM: its own language model
 
 Euresis-LM is a GPT-style transformer, written from scratch in JAX (`euresis/lm/`) and trained on

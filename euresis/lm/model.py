@@ -108,7 +108,17 @@ class EuresisLM:
     # ----------------------------------------------------------- training
     @classmethod
     def train(cls, docs, cfg: Config | None = None, steps=3000, batch=32, lr=3e-3, seed=0, log=print,
-              out_dir: Path = MODEL_DIR):
+              out_dir: Path = MODEL_DIR, init_from: Path | None = None):
+        """init_from: continue from an existing model (fine-tuning) — reuses its tokenizer and weights."""
+        if init_from is not None:
+            base = cls.load(init_from)
+            cfg = base.cfg
+            out_dir.mkdir(parents=True, exist_ok=True)
+            base.tok.save(str(out_dir / "tokenizer.json"))
+            eos_id = base.tok.token_to_id("<|eos|>")
+            enc = base.tok.encode_batch(docs)
+            np.save(out_dir / "corpus_tokens.npy",
+                    np.fromiter((i for e in enc for i in (e.ids + [eos_id])), dtype=np.int32))
         cfg = cfg or Config()
         out_dir.mkdir(parents=True, exist_ok=True)
         tok_path, data_path = out_dir / "tokenizer.json", out_dir / "corpus_tokens.npy"
@@ -129,7 +139,7 @@ class EuresisLM:
         n_val = len(data) // 20
         train_d, val_d = data[:-n_val], data[-n_val:]
         log(f"corpus: {len(data):,} tokens (vocab {cfg.vocab}); training {steps} steps × {batch}×{cfg.ctx} tokens")
-        params = init_params(cfg, jax.random.PRNGKey(seed))
+        params = base.params if init_from is not None else init_params(cfg, jax.random.PRNGKey(seed))
         log(f"model: {n_params(params):,} parameters, {cfg.layers} layers, d={cfg.d}, {cfg.heads} heads")
         sched = optax.warmup_cosine_decay_schedule(0.0, lr, min(200, steps // 10), steps, lr * 0.05)
         opt = optax.chain(optax.clip_by_global_norm(1.0), optax.adamw(sched, b1=0.9, b2=0.95, weight_decay=0.05))
