@@ -117,3 +117,17 @@ def build(kb: KnowledgeBase | None = None, seed=0):
         docs.append(f"question: {q}\nlaw: {law}")
     rng.shuffle(docs)
     return docs, train_qa, test_qa
+
+
+def build_with_papers(n_abstracts=60000, kb_repeat=2, seed=0):
+    """Euresis-LM 2 corpus: Euresis' knowledge (repeated) + real paper abstracts."""
+    from ..papers import read_abstracts
+    docs, train_qa, test_qa = build(seed=seed)
+    rng = random.Random(seed)
+    papers = [t for _, t in read_abstracts()]
+    rng.shuffle(papers)
+    papers = [p.replace(" , ", ", ").replace(" . ", ". ").replace(" ( ", " (").replace(" ) ", ") ")
+              for p in papers[:n_abstracts]]
+    all_docs = docs * kb_repeat + papers
+    rng.shuffle(all_docs)
+    return all_docs, train_qa, test_qa

@@ -193,6 +193,13 @@ def cmd_lm(a):
         docs, _, _ = build()
         EuresisLM.train(docs, Config(layers=a.layers, d=a.d, heads=a.heads), steps=a.steps)
         return
+    if a.action == "train-papers":
+        from .lm.corpus import build_with_papers
+        from .lm.model import MODEL_DIR
+        docs, _, _ = build_with_papers()
+        EuresisLM.train(docs, Config(vocab=8192, layers=a.layers, d=a.d, heads=a.heads), steps=a.steps,
+                        out_dir=MODEL_DIR.parent / "euresis-lm2")
+        return
     if a.action == "eval":
         from .lm.evaluate import evaluate
         evaluate()
@@ -228,6 +235,17 @@ def cmd_findnew(a):
     from .space import ThoughtSpace
     found, recs = run(max_minutes=a.minutes, space=ThoughtSpace())
     print("FOUND" if found else "not found", found or "")
+    export()
+
+
+def cmd_read_papers(a):
+    """Ingest the paper corpus and discover while reading (literature-based discovery)."""
+    import warnings
+    warnings.filterwarnings("ignore")
+    from .papers import run
+    from .render import export
+    from .space import ThoughtSpace
+    run(space=ThoughtSpace())
     export()
 
 
@@ -351,7 +369,7 @@ def main(argv=None):
     pr.set_defaults(fn=cmd_prove)
     sb = sub.add_parser("sandbox"); sb.add_argument("file"); sb.add_argument("--timeout", type=int, default=60)
     sb.set_defaults(fn=cmd_sandbox)
-    lmp = sub.add_parser("lm"); lmp.add_argument("action", choices=["train", "eval", "ask", "explain", "generate"])
+    lmp = sub.add_parser("lm"); lmp.add_argument("action", choices=["train", "train-papers", "eval", "ask", "explain", "generate"])
     lmp.add_argument("text", nargs="*"); lmp.add_argument("--steps", type=int, default=2500)
     lmp.add_argument("--layers", type=int, default=6); lmp.add_argument("--d", type=int, default=256)
     lmp.add_argument("--heads", type=int, default=8); lmp.add_argument("--temperature", type=float, default=0.7)
@@ -361,6 +379,7 @@ def main(argv=None):
     cj.set_defaults(fn=cmd_conjecture)
     fn = sub.add_parser("find-new"); fn.add_argument("--minutes", type=float, default=120)
     fn.set_defaults(fn=cmd_findnew)
+    sub.add_parser("read-papers").set_defaults(fn=cmd_read_papers)
     my = sub.add_parser("mysteries"); my.add_argument("ids", nargs="*"); my.set_defaults(fn=cmd_mysteries)
     lb = sub.add_parser("lawbench"); lb.add_argument("--noise", type=float, default=0.0)
     lb.add_argument("--limit", type=int, default=0); lb.add_argument("--processes", type=int, default=4)
