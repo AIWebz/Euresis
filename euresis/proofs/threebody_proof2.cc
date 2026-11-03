@@ -91,6 +91,7 @@ ub::vector<itv> flow(itv p1, itv p2, itv tau, bool var) {
 	ub::vector<itv> z = init_state(p1, p2, tau, var);
 	kv::ode_param<double> prm;
 	prm.set_order(ORDER);
+	if (getenv("KV_ODE_VERBOSE")) prm.set_verbose(1);
 	ub::vector< kv::affine<double> > a = z;
 	for (int k = 0; k < NSEG; k++) {
 		itv s0 = itv(k) / NSEG, s1 = itv(k + 1) / NSEG;
@@ -176,7 +177,7 @@ int main(int argc, char** argv) {
 	ub::vector<itv> C(3);
 	for (int i = 0; i < 3; i++) C(i) = c(i);
 	ub::vector<itv> fc = residual(flow(C(0), C(1), C(2), false));
-	std::cout << "F(c) enclosure: " << fc << "\n";
+	std::cout << "F(c) enclosure: " << fc << "\n" << std::flush;
 	ub::vector<itv> Rfc = prod(R, fc);
 
 	std::vector<double> radii = {1e-9, 1e-8, 1e-10, 1e-7};
