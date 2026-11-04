@@ -25,3 +25,5 @@
 - 2026-11-04 03:40 segment start (budget 100 min; model: Qwen3-14B; 2 discoveries so far)
 - 2026-11-04 03:40 round 15: heat engines
 - 2026-11-04 03:41 round 16: relativity
+- 2026-11-04 03:42 segment start (budget 100 min; model: Qwen3-14B; 2 discoveries so far)
+- 2026-11-04 03:42 round 16: relativity
