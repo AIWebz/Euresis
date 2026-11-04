@@ -167,3 +167,7 @@
 - 2026-11-04 17:13 round 160: Compton scattering
 - 2026-11-04 17:14 round 161: two-body decay
 - 2026-11-04 17:16 round 162: collision
+- 2026-11-04 17:17 round 163: driven oscillator
+- 2026-11-04 17:21 round 164: velocity addition
+- 2026-11-04 17:24 round 165: Compton scattering
+- 2026-11-04 17:25 segment end: 165 rounds, 1 discoveries, 2 known laws rediscovered
