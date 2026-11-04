@@ -5253,6 +5253,26 @@
    "family": "collision",
    "expr": "e",
    "why": "affine combination of known quantities (target speed / initial speed, momentum transferred / initial momentum)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "atan(2*z*r/(1 - r**2))",
+   "why": "only + \u2212 \u00d7 \u00f7, integer powers and square roots (so the prover can decide it)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt((1 - r**2)**2 + (2*z*r)**2)",
+   "why": "affine combination of known quantities (amplitude / static deflection, 1/(amplitude / static deflection))"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(1 - z**2)/z",
+   "why": "affine combination of known quantities (amplitude / static deflection, log decrement [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "r**2/(sqrt(4*r**2*z**2 + (1 - r**2)**2) + 1)",
+   "why": "affine combination of known quantities (amplitude / static deflection, resonance amplitude ratio [model-proposed; physical meaning unverified])"
   }
  ],
  "tried": [
@@ -8397,7 +8417,7 @@
    "k": "1"
   }
  ],
- "rounds": 274,
+ "rounds": 275,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",

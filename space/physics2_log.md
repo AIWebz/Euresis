@@ -296,3 +296,4 @@
 - 2026-11-04 23:47 round 273: two-body decay
 - 2026-11-04 23:49 round 274: collision
 - 2026-11-04 23:50 round 275: driven oscillator
+- 2026-11-04 23:52 round 276: velocity addition
