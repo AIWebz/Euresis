@@ -331,3 +331,5 @@
 - 2026-11-04 09:43 round 307: heat engines
 - 2026-11-04 09:45 round 308: collisions
 - 2026-11-04 09:46 segment end: 308 rounds, 2 discoveries, 2 known laws rediscovered
+- 2026-11-04 09:46 segment start (budget 100 min; model: Qwen3-14B; 2 discoveries so far)
+- 2026-11-04 09:46 round 309: quantum step
