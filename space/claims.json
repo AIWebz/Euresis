@@ -463756,7 +463756,7 @@
   },
   "id": "gam-414dc7158319",
   "kind": "game",
-  "novelty": "not checked",
+  "novelty": "novelty unchecked: octal games of up to three digits are tabulated in Winning Ways and Flammenkamp's tables, which cannot be searched from here",
   "payload": {
    "code": "052501",
    "period": 2,
@@ -463766,5 +463766,221 @@
   "statement": "Octal game 0.052501 is completely solved: its Grundy values are periodic with pre-period 1 and period 2 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14142968",
+   "held_out_r2": 0.956,
+   "held_out_rows": 33,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-66d4e5972f4f",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "0a898ad368ceea4c.csv",
+   "doi": "10.5281/zenodo.14142968",
+   "form": "linear",
+   "params": [
+    8.272445374717627,
+    0.9905276893416262
+   ],
+   "seed": 2364314948,
+   "x": "tstart",
+   "y": "tend"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'RoHuCAD: Robots and Humans Collaborative Anomaly Detection' (Zenodo, doi 10.5281/zenodo.14142968): 'tend' is linear in 'tstart' (R\u00b2 = 0.998 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23124538",
+   "held_out_r2": 0.947,
+   "held_out_rows": 122,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c3c980c513ed",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "16491bea97a90409.csv",
+   "doi": "10.5281/zenodo.23124538",
+   "form": "linear",
+   "params": [
+    -0.02254904778332523,
+    0.11939894921306562
+   ],
+   "seed": 1383338582,
+   "x": "diff_daily_water_level_river_cm",
+   "y": "diff_daily_discharge_river_m3_s"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data supporting \"Hydrological connectivity regulates CO2 and CH4 emissions from a temperat' (Zenodo, doi 10.5281/zenodo.23124538): 'diff_daily_discharge_river_m3_s' is linear in 'diff_daily_water_level_river_cm' (R\u00b2 = 0.947 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.4066594",
+   "held_out_r2": 0.9065,
+   "held_out_rows": 344,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-7ba4832b5838",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "7e0d82e238d5d7c4.csv",
+   "doi": "10.5281/zenodo.4066594",
+   "form": "linear",
+   "params": [
+    -89.22496618514747,
+    18.87259264604357
+   ],
+   "seed": 348852577,
+   "x": "fish_length_mm",
+   "y": "left_otolith_lenght_\u00b5m"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Photos and measurements of otoliths from fish caught in the southern part of the North Sea' (Zenodo, doi 10.5281/zenodo.4066594): 'left_otolith_lenght_\u00b5m' is linear in 'fish_length_mm' (R\u00b2 = 0.917 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.4066594",
+   "held_out_r2": 0.9183,
+   "held_out_rows": 344,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-466acd03f324",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "7e0d82e238d5d7c4.csv",
+   "doi": "10.5281/zenodo.4066594",
+   "form": "linear",
+   "params": [
+    -89.66542325755643,
+    18.931840925106815
+   ],
+   "seed": 348852577,
+   "x": "fish_length_mm",
+   "y": "right_otolith_length_\u00b5m"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Photos and measurements of otoliths from fish caught in the southern part of the North Sea' (Zenodo, doi 10.5281/zenodo.4066594): 'right_otolith_length_\u00b5m' is linear in 'fish_length_mm' (R\u00b2 = 0.919 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.4066594",
+   "held_out_r2": 0.9493,
+   "held_out_rows": 344,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f4852965b452",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "7e0d82e238d5d7c4.csv",
+   "doi": "10.5281/zenodo.4066594",
+   "form": "power law",
+   "params": [
+    1.4456546423477463,
+    0.7336617164647631
+   ],
+   "seed": 348852577,
+   "x": "left_otolith_lenght_\u00b5m",
+   "y": "left_otolith_width_\u00b5m"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Photos and measurements of otoliths from fish caught in the southern part of the North Sea' (Zenodo, doi 10.5281/zenodo.4066594): 'left_otolith_width_\u00b5m' follows a power law in 'left_otolith_lenght_\u00b5m' (R\u00b2 = 0.946 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.4066594",
+   "held_out_r2": 0.947,
+   "held_out_rows": 344,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d68ff3b86660",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "7e0d82e238d5d7c4.csv",
+   "doi": "10.5281/zenodo.4066594",
+   "form": "power law",
+   "params": [
+    1.3942161879486665,
+    0.7404962067526963
+   ],
+   "seed": 348852577,
+   "x": "left_otolith_lenght_\u00b5m",
+   "y": "right_otolith_width_\u00b5m"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Photos and measurements of otoliths from fish caught in the southern part of the North Sea' (Zenodo, doi 10.5281/zenodo.4066594): 'right_otolith_width_\u00b5m' follows a power law in 'left_otolith_lenght_\u00b5m' (R\u00b2 = 0.948 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.4066594",
+   "held_out_r2": 0.951,
+   "held_out_rows": 344,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-2272c6905aa9",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "7e0d82e238d5d7c4.csv",
+   "doi": "10.5281/zenodo.4066594",
+   "form": "power law",
+   "params": [
+    -1.533943981075273,
+    1.2991554622048664
+   ],
+   "seed": 348852577,
+   "x": "left_otolith_width_\u00b5m",
+   "y": "right_otolith_length_\u00b5m"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Photos and measurements of otoliths from fish caught in the southern part of the North Sea' (Zenodo, doi 10.5281/zenodo.4066594): 'right_otolith_length_\u00b5m' follows a power law in 'left_otolith_width_\u00b5m' (R\u00b2 = 0.942 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.4066594",
+   "held_out_r2": 0.9511,
+   "held_out_rows": 344,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-35f496c4b625",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "7e0d82e238d5d7c4.csv",
+   "doi": "10.5281/zenodo.4066594",
+   "form": "power law",
+   "params": [
+    1.445310770341568,
+    0.7332925761967608
+   ],
+   "seed": 348852577,
+   "x": "right_otolith_length_\u00b5m",
+   "y": "right_otolith_width_\u00b5m"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Photos and measurements of otoliths from fish caught in the southern part of the North Sea' (Zenodo, doi 10.5281/zenodo.4066594): 'right_otolith_width_\u00b5m' follows a power law in 'right_otolith_length_\u00b5m' (R\u00b2 = 0.947 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
