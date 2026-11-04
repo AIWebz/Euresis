@@ -46,7 +46,8 @@
    "Relative velocity in terms of rapidities [model-proposed; physical meaning unverified]": "sqrt(-(1 - u**2)*(1 - v**2) + 1)/(u*v + 1)",
    "Relativistic velocity parameter [model-proposed; physical meaning unverified]": "sqrt((1 - u**2)*(1 - v**2))/(-u*v + 1)",
    "Energy-momentum invariant [model-proposed; physical meaning unverified]": "sqrt(1 - u**2) + sqrt(1 - v**2) - sqrt(-(u + v)**2/(u*v + 1)**2 + 1)",
-   "Energy-momentum ratio [model-proposed; physical meaning unverified]": "sqrt(-(u + v)**2/(u*v + 1)**2 + 1)*(1/sqrt(1 - v**2) + 1/sqrt(1 - u**2))"
+   "Energy-momentum ratio [model-proposed; physical meaning unverified]": "sqrt(-(u + v)**2/(u*v + 1)**2 + 1)*(1/sqrt(1 - v**2) + 1/sqrt(1 - u**2))",
+   "Total relativistic energy / mc\u00b2 [model-proposed; physical meaning unverified]": "sqrt(1 - u**2) + sqrt(1 - v**2) + (u*v + 1)/(sqrt(1 - u**2)*sqrt(1 - v**2))"
   },
   "Compton scattering": {
    "scattered photon energy / initial energy": "1/(1 + x*c)",
@@ -1036,6 +1037,121 @@
    "family": "velocity addition",
    "expr": "u/sqrt(1 - u**2) + v/sqrt(1 - v**2)",
    "why": "affine combination of known quantities (composed speed / c, Relativistic momentum ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "1/(1 + x*c)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy)"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "x*c/(1 + x*c)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy)"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "x**2*c/(1 + x*c)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, electron kinetic energy / (m_e c\u00b2))"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "c",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, wavelength shift / Compton wavelength)"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "(a**2 + b**2 - (a - b)**2)/(1 - a - b)**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "(1 + a**2 - b**2)/(1 - a**2 + b**2)",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), 1/(energy of product 2 / (Mc\u00b2)))"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "(1 + a**2 - b**2 + 1 - a**2 + b**2)/2",
+   "why": "must depend only on a, b"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "((1 - a)**2 - b**2)/(2*(1 - a - b))",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2 * m",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "collision",
+   "expr": "1 - (1 + e)/(1 + m)",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "collision",
+   "expr": "(1 - e*m)/(1 + m)",
+   "why": "affine combination of known quantities (target speed / initial speed)"
+  },
+  {
+   "family": "collision",
+   "expr": "(1 - e*m)**2/( (1 + e)**2 * m )",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "atan(2*z*r/(1 - r**2))",
+   "why": "only + \u2212 \u00d7 \u00f7, integer powers and square roots (so the prover can decide it)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "1/(2*z*sqrt(1 - r**2))",
+   "why": "not finite on the whole physical domain"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "z*r**2/sqrt((1 - r**2)**2 + (2*z*r)**2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(1 - z**2)/sqrt(1 + (2*z*r)**2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "atanh(u) + atanh(v)",
+   "why": "only + \u2212 \u00d7 \u00f7, integer powers and square roots (so the prover can decide it)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "1 - (u + v)**2/(1 + u*v)**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "(u + v)/(sqrt(1 - u**2)*sqrt(1 - v**2)*(1 + u*v))",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "c/(1 + c*x)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "x*c/(1 + c*x)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy)"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "1/(1 + c*x)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy)"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "c*x*(1 + c*x)/(1 + c*x)**2",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy)"
   }
  ],
  "tried": [
@@ -1502,7 +1618,31 @@
   "collision|relative velocity after collision divided by initial velocity of projectile [model-proposed; physical meaning unverified]|speed of the centre of mass / initial speed",
   "collision|relative velocity after collision divided by initial velocity of projectile [model-proposed; physical meaning unverified]|relative speed after / relative speed before",
   "collision|relative velocity after collision divided by initial velocity of projectile [model-proposed; physical meaning unverified]|velocity ratio of target to projectile after collision [model-proposed; physical meaning unverified]",
-  "collision|relative velocity after collision divided by initial velocity of projectile [model-proposed; physical meaning unverified]|velocity ratio of projectile to target after collision [model-proposed; physical meaning unverified]"
+  "collision|relative velocity after collision divided by initial velocity of projectile [model-proposed; physical meaning unverified]|velocity ratio of projectile to target after collision [model-proposed; physical meaning unverified]",
+  "velocity addition|composed speed / c|Total relativistic energy / mc\u00b2 [model-proposed; physical meaning unverified]",
+  "velocity addition|Galilean sum / c|Total relativistic energy / mc\u00b2 [model-proposed; physical meaning unverified]",
+  "velocity addition|Lorentz factor of the composed motion|Total relativistic energy / mc\u00b2 [model-proposed; physical meaning unverified]",
+  "velocity addition|product of the two Lorentz factors|Total relativistic energy / mc\u00b2 [model-proposed; physical meaning unverified]",
+  "velocity addition|Doppler factor of the composed motion|Total relativistic energy / mc\u00b2 [model-proposed; physical meaning unverified]",
+  "velocity addition|kinetic energy of the composed motion / mc\u00b2|Total relativistic energy / mc\u00b2 [model-proposed; physical meaning unverified]",
+  "velocity addition|sum of the two kinetic energies / mc\u00b2|Total relativistic energy / mc\u00b2 [model-proposed; physical meaning unverified]",
+  "velocity addition|Relativistic momentum ratio [model-proposed; physical meaning unverified]|Total relativistic energy / mc\u00b2 [model-proposed; physical meaning unverified]",
+  "velocity addition|Lorentz gamma of the composed motion [model-proposed; physical meaning unverified]|Total relativistic energy / mc\u00b2 [model-proposed; physical meaning unverified]",
+  "velocity addition|Relative velocity in terms of rapidities [model-proposed; physical meaning unverified]|Total relativistic energy / mc\u00b2 [model-proposed; physical meaning unverified]",
+  "velocity addition|Relativistic velocity parameter [model-proposed; physical meaning unverified]|Total relativistic energy / mc\u00b2 [model-proposed; physical meaning unverified]",
+  "velocity addition|Energy-momentum invariant [model-proposed; physical meaning unverified]|Total relativistic energy / mc\u00b2 [model-proposed; physical meaning unverified]",
+  "velocity addition|Energy-momentum ratio [model-proposed; physical meaning unverified]|Total relativistic energy / mc\u00b2 [model-proposed; physical meaning unverified]",
+  "velocity addition|Total relativistic energy / mc\u00b2 [model-proposed; physical meaning unverified]|composed speed / c",
+  "velocity addition|Total relativistic energy / mc\u00b2 [model-proposed; physical meaning unverified]|Galilean sum / c",
+  "velocity addition|Total relativistic energy / mc\u00b2 [model-proposed; physical meaning unverified]|Lorentz factor of the composed motion",
+  "velocity addition|Total relativistic energy / mc\u00b2 [model-proposed; physical meaning unverified]|product of the two Lorentz factors",
+  "velocity addition|Total relativistic energy / mc\u00b2 [model-proposed; physical meaning unverified]|Doppler factor of the composed motion",
+  "velocity addition|Total relativistic energy / mc\u00b2 [model-proposed; physical meaning unverified]|kinetic energy of the composed motion / mc\u00b2",
+  "velocity addition|Total relativistic energy / mc\u00b2 [model-proposed; physical meaning unverified]|sum of the two kinetic energies / mc\u00b2",
+  "velocity addition|Total relativistic energy / mc\u00b2 [model-proposed; physical meaning unverified]|Relativistic momentum ratio [model-proposed; physical meaning unverified]",
+  "velocity addition|Total relativistic energy / mc\u00b2 [model-proposed; physical meaning unverified]|Lorentz gamma of the composed motion [model-proposed; physical meaning unverified]",
+  "velocity addition|Total relativistic energy / mc\u00b2 [model-proposed; physical meaning unverified]|Relative velocity in terms of rapidities [model-proposed; physical meaning unverified]",
+  "velocity addition|Total relativistic energy / mc\u00b2 [model-proposed; physical meaning unverified]|Relativistic velocity parameter [model-proposed; physical meaning unverified]"
  ],
  "edges": [
   {
@@ -2250,7 +2390,7 @@
    "k": "1"
   }
  ],
- "rounds": 54,
+ "rounds": 60,
  "discoveries": [],
  "rediscoveries": [
   {
