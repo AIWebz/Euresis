@@ -475,6 +475,25 @@ from what is left, and checks whether any output matches a removed law (exactly,
 or up to a dimensionless factor that dimensional analysis cannot fix). The latest
 result is saved in `space/benchmark.json` and shown on the canvas.
 
+## Local 14B language model (no API needed)
+
+Euresis can use **Qwen3-14B** (14.8 B parameters, Apache-2.0, by the Qwen team) as its reasoning core. The model
+runs on the CPU through llama.cpp at 4-bit quantisation, which needs 9 GB of disk and about 12 GB of RAM. It
+drives the same verified tools Claude does: knowledge search, computer algebra, dimensional checks, Z3,
+simulators, sandboxed Python, and `submit_claim`, which sends a formal claim through the verification gate. The
+gate's verdict, not the model, decides whether a claim is proved. On 4 CPU cores it writes a few tokens per
+second, so a research run takes minutes rather than seconds.
+
+```bash
+pip install llama-cpp-python
+python -m euresis local download                       # 9.0 GB → data/models/
+python -m euresis local chat "Why is the sky blue?"
+python -m euresis research "..." --backend local       # reasoning core with tools
+python -m euresis ask "..."                            # written answer (Claude if a key is set, else local)
+```
+
+`--backend auto` (the default) uses Claude when `ANTHROPIC_API_KEY` is set and the local model otherwise.
+
 ## Verification gate, claims registry, scorecard
 
 Nothing Euresis says counts until a machine has checked it.

@@ -19,8 +19,9 @@ dependencies = [
 [project.optional-dependencies]
 lm = ["jax[cpu]>=0.4", "optax>=0.2", "tokenizers>=0.15"]
 claude = ["anthropic>=0.40"]
+local = ["llama-cpp-python>=0.3"]
 dev = ["pytest>=8"]
-all = ["euresis[lm,claude,dev]"]
+all = ["euresis[lm,claude,local,dev]"]
 
 [project.scripts]
 euresis = "euresis.cli:main"

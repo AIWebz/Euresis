@@ -96,12 +96,12 @@ def cmd_research(a):
     from .space import ThoughtSpace
     kb, eng, model = _load()
     core = ReasoningCore(kb, eng, model, ThoughtSpace())
-    report = core.research(a.question, max_turns=a.max_turns)
+    report = core.research(a.question, max_turns=a.max_turns, backend=a.backend, think=a.think)
     if report:
         print("\n" + report)
         print(f"report saved to {core.save_report(report).relative_to(ROOT)}; claims in space/claims.json")
     else:
-        print("No report: Claude was not reachable (see message above). Nothing was claimed.")
+        print("No report: no language model was reachable (see message above). Nothing was claimed.")
     export()
 
 
@@ -363,11 +363,17 @@ def cmd_ask(a):
         lines.append(f"- [euresis {t['kind']}] {t['title']}: {t['formula']} ({t['status']})")
     context = "\n".join(lines)
     print("Relevant knowledge:\n" + context)
-    answer = llm.ask(q, context) if llm.available() else None
+    from . import local_llm
+    from .agent import ReasoningCore
+    answer, via = None, None
+    if llm.available() and ReasoningCore._has_credentials():
+        answer, via = llm.ask(q, context), "Claude"
+    if not answer and local_llm.available():
+        answer, via = local_llm.ask(q, context), "local Qwen3-14B"
     if answer:
-        print("\nEuresis (via Claude):\n" + answer)
+        print(f"\nEuresis (via {via}):\n" + answer)
     else:
-        print("\n(Offline mode — install `anthropic` and set credentials for written explanations.)")
+        print("\n(Offline mode — no language model: set ANTHROPIC_API_KEY, or `python -m euresis local download`.)")
     qid = space.add("question", q, body=answer or "answered from knowledge base", status="asked by user",
                     domain="physics", parents=[space.make_id("law", f"law|{h[0][1]}") for h in hits
                                                if space.make_id("law", f"law|{h[0][1]}") in space.thoughts])
@@ -423,6 +429,24 @@ def cmd_writeup(a):
     writeup.run()
 
 
+def cmd_local(a):
+    from . import local_llm
+    if a.action == "download":
+        local_llm.download()
+    elif a.action == "info":
+        print(json.dumps({**local_llm.MODEL_INFO, "path": str(local_llm.model_path()),
+                          "installed": local_llm.available()}, indent=1))
+    else:
+        if not local_llm.available():
+            print("Local model not installed: `pip install llama-cpp-python` and `python -m euresis local download`.")
+            return
+        r = local_llm.complete("You are Euresis, a careful scientific assistant. Be precise; say when something is "
+                               "uncertain.", [{"role": "user", "content": " ".join(a.text)}], think=a.think,
+                               max_tokens=1500)
+        print(r["text"])
+        print(f"[{r['prompt_tokens']} prompt + {r['completion_tokens']} new tokens in {r['seconds']} s]")
+
+
 def main(argv=None):
     p = argparse.ArgumentParser(prog="euresis", description="Euresis — scientific discovery engine")
     sub = p.add_subparsers(dest="cmd", required=True)
@@ -452,7 +476,13 @@ def main(argv=None):
     c.add_argument("--ideas", type=int, default=3); c.add_argument("--seed", type=int, default=0)
     c.set_defaults(fn=cmd_connect)
     r = sub.add_parser("research"); r.add_argument("question"); r.add_argument("--max-turns", type=int, default=30)
+    r.add_argument("--backend", choices=["auto", "claude", "local"], default="auto",
+                   help="claude = API; local = Qwen3-14B on this machine; auto = Claude if credentials, else local")
+    r.add_argument("--think", action="store_true", help="local model: enable step-by-step thinking (much slower)")
     r.set_defaults(fn=cmd_research)
+    lo = sub.add_parser("local", help="the local 14B language model")
+    lo.add_argument("action", choices=["download", "info", "chat"]); lo.add_argument("text", nargs="*")
+    lo.add_argument("--think", action="store_true"); lo.set_defaults(fn=cmd_local)
     li = sub.add_parser("literature"); li.add_argument("action", choices=["search", "harvest", "novelty"])
     li.add_argument("query", nargs="+"); li.add_argument("-n", type=int, default=10); li.set_defaults(fn=cmd_literature)
     si = sub.add_parser("simulate"); si.add_argument("model"); si.add_argument("params", nargs="*")

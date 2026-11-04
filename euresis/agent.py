@@ -218,7 +218,7 @@ class ReasoningCore:
         missing = [f for f in CLAIM_FIELDS[kind] if f not in (payload or {})]
         if missing:
             return {"error": f"payload for {kind} is missing {missing}", "registered": False}
-        src = f"reasoning-core (Claude): {self.question[:80]}"
+        src = f"reasoning-core ({getattr(self, 'backend_name', 'Claude')}): {self.question[:80]}"
         cid = self.registry.add(kind, statement, payload, source=src)
         if cid not in self.session_claims:
             self.session_claims.append(cid)
@@ -388,7 +388,16 @@ class ReasoningCore:
                        score=0.3)
 
     # -------------------------------------------------------------- loop
-    def research(self, question: str, max_turns: int = 30, client=None) -> str | None:
+    def research(self, question: str, max_turns: int = 30, client=None, backend: str = "auto",
+                 think: bool = False) -> str | None:
+        """backend: 'claude' (API), 'local' (Qwen3-14B on this machine), 'auto' (Claude if credentials, else local)."""
+        from . import local_llm
+        if backend == "auto":
+            backend = ("claude" if client is not None or self._has_credentials()
+                       else "local" if local_llm.available() else "claude")
+        if backend == "local":
+            return self._research_local(question, max_turns=min(max_turns, 16), think=think)
+        self.backend_name = "Claude"
         try:
             import anthropic
         except ImportError:
@@ -450,6 +459,54 @@ class ReasoningCore:
                 results.append({"type": "tool_result", "tool_use_id": c.id,
                                 "content": json.dumps(out, default=str)[:20000], "is_error": err})
             messages.append({"role": "user", "content": results})
+        self.log("Stopped after the maximum number of turns.")
+        return self._partial()
+
+    # ------------------------------------------------------- local model loop
+    LOCAL_TOOLS = ("search_knowledge", "search_literature", "check_novelty", "computer_algebra", "check_dimensions",
+                   "propose", "submit_claim", "simulate", "run_experiment", "run_python", "record_idea")
+
+    def _research_local(self, question: str, max_turns: int = 16, think: bool = False) -> str | None:
+        """Same tools, same gate, same report — driven by Qwen3-14B running on this machine."""
+        from . import local_llm
+        if not local_llm.available():
+            self.log("Local model not installed: `pip install llama-cpp-python` and `python -m euresis local download`.")
+            return None
+        self.backend_name, self.question = "local Qwen3-14B", question
+        if self.space is not None:
+            self.qid = self.space.add("question", question, status="research question", domain="method",
+                                      body="Investigated by the reasoning core (local Qwen3-14B).", score=1.0)
+        tools = [t for t in TOOLS if t["name"] in self.LOCAL_TOOLS]
+        system = SYSTEM + ("\n\nCall tools with <tool_call> blocks as described below. When you are finished, "
+                           "write the final report with no tool calls.")
+        llm = local_llm.load(log=self.log)
+        messages = [{"role": "user", "content": question}]
+        for turn in range(max_turns):
+            # stay inside the context window: shorten the oldest tool results first
+            while len(llm.tokenize(local_llm.render(system, messages, tools, think).encode())) > llm.n_ctx() - 1800:
+                old = next((m for m in messages if m["role"] == "tool" and not m.get("short")), None)
+                if old is None:
+                    break
+                old["content"], old["short"] = old["content"][:300] + " …[shortened]", True
+            r = local_llm.complete(system, messages, tools, think=think, max_tokens=1500, log=self.log)
+            self.log(f"  [{turn + 1}] local model: {r['prompt_tokens']} prompt + {r['completion_tokens']} new tokens "
+                     f"in {r['seconds']} s")
+            messages.append({"role": "assistant", "content": re.sub(r"<think>.*?</think>", "", r["raw"], flags=re.S).strip()})
+            if not r["calls"]:
+                text = self.final_report(r["text"])
+                if self.space is not None:
+                    self.space.add("insight", f"Research report: {question[:80]}", body=text[:6000], domain="method",
+                                   parents=[self.qid], status="reasoning-core report (local Qwen3-14B)", score=1.0)
+                return text
+            for c in r["calls"]:
+                self.log(f"      {c['name']}({json.dumps(c['arguments'])[:110]})")
+                try:
+                    out = (self.execute(c["name"], c["arguments"]) if c["name"] in self.LOCAL_TOOLS
+                           else {"error": f"unknown or unavailable tool {c['name']}"})
+                except Exception as e:     # tool failure is reported to the model, not hidden
+                    out = {"error": f"{type(e).__name__}: {e}"}
+                self._note(c["name"], c["arguments"], out)
+                messages.append({"role": "tool", "content": json.dumps(out, default=str)[:2500]})
         self.log("Stopped after the maximum number of turns.")
         return self._partial()
 
