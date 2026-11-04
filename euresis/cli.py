@@ -447,6 +447,18 @@ def cmd_local(a):
         print(f"[{r['prompt_tokens']} prompt + {r['completion_tokens']} new tokens in {r['seconds']} s]")
 
 
+def cmd_discover_new(a):
+    from . import discover_loop
+    if a.stop:
+        discover_loop.STOP.parent.mkdir(parents=True, exist_ok=True)
+        discover_loop.STOP.write_text("stop requested\n")
+        print("stop requested: the discovery loop will stop after its current round")
+        return
+    discover_loop.STOP.unlink(missing_ok=True) if a.resume else None
+    st = discover_loop.run(minutes=a.minutes, use_llm=False if a.no_llm else None)
+    print(f"{st['rounds']} rounds, {len(st['discoveries'])} discoveries; log: space/discovery_log.md")
+
+
 def main(argv=None):
     p = argparse.ArgumentParser(prog="euresis", description="Euresis — scientific discovery engine")
     sub = p.add_subparsers(dest="cmd", required=True)
@@ -459,6 +471,11 @@ def main(argv=None):
     jb = sub.add_parser("jobs"); jb.add_argument("action", choices=["list", "work"], nargs="?", default="list")
     jb.add_argument("--forever", action="store_true"); jb.set_defaults(fn=cmd_jobs)
     sub.add_parser("scorecard").set_defaults(fn=cmd_scorecard)
+    dn = sub.add_parser("discover-new", help="open-ended proved-discovery loop (runs until stopped)")
+    dn.add_argument("--minutes", type=float, default=100); dn.add_argument("--no-llm", action="store_true")
+    dn.add_argument("--stop", action="store_true", help="ask a running loop to stop")
+    dn.add_argument("--resume", action="store_true", help="clear a previous stop request first")
+    dn.set_defaults(fn=cmd_discover_new)
     sub.add_parser("claude-ping", help="one test call to the Claude API").set_defaults(fn=cmd_claude_ping)
     sub.add_parser("writeup").set_defaults(fn=cmd_writeup)
     sub.add_parser("info").set_defaults(fn=cmd_info)
