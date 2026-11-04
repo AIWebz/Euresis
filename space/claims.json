@@ -434,5 +434,22 @@
   "statement": "Relativistic kinetic energy is always at least the classical value m v^2/2 for 0 < v < c.",
   "status": "unverified",
   "verifier": "z3+sampling"
+ },
+ {
+  "evidence": {
+   "error": "TypeError: unsupported operand type(s) for *: 'FunctionClass' and 'Symbol'"
+  },
+  "id": "ine-02ee0c144b53",
+  "kind": "inequality",
+  "novelty": "known (Known result)",
+  "payload": {
+   "P": "gamma * m * c^2 - m * c^2",
+   "Q": "0.5 * m * v^2",
+   "k": "1"
+  },
+  "source": "reasoning-core (local Qwen3-14B): Is relativistic kinetic energy always at least the classical value m v^2/2 for 0",
+  "statement": "Relativistic kinetic energy is always at least the classical value m v^2/2 for 0 < v < c",
+  "status": "unverified",
+  "verifier": "z3+sampling"
  }
 ]
