@@ -410,3 +410,5 @@
 - 2026-11-04 11:25 round 384: wave boundary
 - 2026-11-04 11:26 round 385: relativity
 - 2026-11-04 11:27 segment end: 385 rounds, 2 discoveries, 2 known laws rediscovered
+- 2026-11-04 11:28 segment start (budget 100 min; model: Qwen3-14B; 2 discoveries so far)
+- 2026-11-04 11:28 round 386: kepler
