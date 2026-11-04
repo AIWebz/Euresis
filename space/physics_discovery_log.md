@@ -105,3 +105,7 @@
 - 2026-11-04 04:57 round 88: wave boundary
 - 2026-11-04 04:57 round 89: relativity
 - 2026-11-04 04:59 round 90: kepler
+- 2026-11-04 05:00 round 91: heat engines
+- 2026-11-04 05:01 round 92: collisions
+- 2026-11-04 05:03 round 93: quantum step
+- 2026-11-04 05:04 round 94: acoustic Doppler
