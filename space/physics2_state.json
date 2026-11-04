@@ -39,7 +39,8 @@
    "sum of the two kinetic energies / mc\u00b2": "1/sqrt(1 - u**2) + 1/sqrt(1 - v**2) - 2",
    "Relativistic momentum ratio [model-proposed; physical meaning unverified]": "u/sqrt(1 - u**2) + v/sqrt(1 - v**2)",
    "Lorentz gamma of the composed motion [model-proposed; physical meaning unverified]": "1/sqrt(-(u + v)**2/(u*v + 1)**2 + 1)",
-   "Relative velocity in terms of rapidities [model-proposed; physical meaning unverified]": "sqrt(-(1 - u**2)*(1 - v**2) + 1)/(u*v + 1)"
+   "Relative velocity in terms of rapidities [model-proposed; physical meaning unverified]": "sqrt(-(1 - u**2)*(1 - v**2) + 1)/(u*v + 1)",
+   "Relativistic velocity parameter [model-proposed; physical meaning unverified]": "sqrt((1 - u**2)*(1 - v**2))/(-u*v + 1)"
   },
   "Compton scattering": {
    "scattered photon energy / initial energy": "1/(1 + x*c)",
@@ -136,6 +137,61 @@
    "family": "two-body decay",
    "expr": "(1 + a**2 - b**2) / (1 - a**2 + b**2)",
    "why": "affine combination of known quantities (momentum of each product / (Mc), 1/(energy of product 2 / (Mc\u00b2)))"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2 * m",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "collision",
+   "expr": "e * (1 + m) / (1 + e * m)",
+   "why": "affine combination of known quantities (target speed / initial speed, velocity ratio of target to projectile after collision [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2 * m / (1 + m)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "collision",
+   "expr": "e * m / (1 + e * m)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "atan(2*z*r/(1 - r**2))",
+   "why": "only + \u2212 \u00d7 \u00f7, integer powers and square roots (so the prover can decide it)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(1 - 2*z**2)/r",
+   "why": "not finite on the whole physical domain"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(1 - z**2)/z",
+   "why": "affine combination of known quantities (amplitude / static deflection, log decrement [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "z*r**2/(1 - r**2)",
+   "why": "not finite on the whole physical domain"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 - u**2)*(1 - v**2))/(1 + u*v)",
+   "why": "affine combination of known quantities (composed speed / c, 1/(Lorentz factor of the composed motion))"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 - u**2)*(1 - v**2))/(1 + u*v)",
+   "why": "affine combination of known quantities (composed speed / c, 1/(Lorentz factor of the composed motion))"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 - u**2)*(1 - v**2))/(1 + u*v)",
+   "why": "affine combination of known quantities (composed speed / c, 1/(Lorentz factor of the composed motion))"
   }
  ],
  "tried": [
@@ -282,7 +338,67 @@
   "two-body decay|kinetic energy of product 1 / (Mc\u00b2)|momentum of each product / (Mc)",
   "two-body decay|kinetic energy of product 1 / (Mc\u00b2)|energy of product 1 / (Mc\u00b2)",
   "two-body decay|kinetic energy of product 1 / (Mc\u00b2)|energy of product 2 / (Mc\u00b2)",
-  "two-body decay|kinetic energy of product 1 / (Mc\u00b2)|kinetic energy released Q / (Mc\u00b2)"
+  "two-body decay|kinetic energy of product 1 / (Mc\u00b2)|kinetic energy released Q / (Mc\u00b2)",
+  "collision|fraction of kinetic energy lost|fraction of kinetic energy given to the target",
+  "collision|fraction of kinetic energy lost|speed of the centre of mass / initial speed",
+  "collision|fraction of kinetic energy lost|relative speed after / relative speed before",
+  "collision|fraction of kinetic energy given to the target|target speed / initial speed",
+  "collision|fraction of kinetic energy given to the target|momentum transferred / initial momentum",
+  "collision|fraction of kinetic energy given to the target|fraction of kinetic energy lost",
+  "collision|fraction of kinetic energy given to the target|speed of the centre of mass / initial speed",
+  "collision|fraction of kinetic energy given to the target|relative speed after / relative speed before",
+  "collision|speed of the centre of mass / initial speed|target speed / initial speed",
+  "collision|speed of the centre of mass / initial speed|momentum transferred / initial momentum",
+  "collision|speed of the centre of mass / initial speed|fraction of kinetic energy lost",
+  "collision|speed of the centre of mass / initial speed|fraction of kinetic energy given to the target",
+  "collision|speed of the centre of mass / initial speed|relative speed after / relative speed before",
+  "collision|relative speed after / relative speed before|target speed / initial speed",
+  "collision|relative speed after / relative speed before|momentum transferred / initial momentum",
+  "collision|relative speed after / relative speed before|fraction of kinetic energy lost",
+  "collision|relative speed after / relative speed before|fraction of kinetic energy given to the target",
+  "collision|relative speed after / relative speed before|speed of the centre of mass / initial speed",
+  "driven oscillator|velocity amplitude / (\u03c90 \u00d7 static deflection)|acceleration amplitude / (\u03c90\u00b2 \u00d7 static deflection)",
+  "driven oscillator|velocity amplitude / (\u03c90 \u00d7 static deflection)|mean absorbed power (normalised)",
+  "driven oscillator|velocity amplitude / (\u03c90 \u00d7 static deflection)|quality factor",
+  "driven oscillator|acceleration amplitude / (\u03c90\u00b2 \u00d7 static deflection)|amplitude / static deflection",
+  "driven oscillator|acceleration amplitude / (\u03c90\u00b2 \u00d7 static deflection)|transmissibility",
+  "driven oscillator|acceleration amplitude / (\u03c90\u00b2 \u00d7 static deflection)|velocity amplitude / (\u03c90 \u00d7 static deflection)",
+  "driven oscillator|acceleration amplitude / (\u03c90\u00b2 \u00d7 static deflection)|mean absorbed power (normalised)",
+  "driven oscillator|acceleration amplitude / (\u03c90\u00b2 \u00d7 static deflection)|quality factor",
+  "driven oscillator|mean absorbed power (normalised)|amplitude / static deflection",
+  "driven oscillator|mean absorbed power (normalised)|transmissibility",
+  "driven oscillator|mean absorbed power (normalised)|velocity amplitude / (\u03c90 \u00d7 static deflection)",
+  "driven oscillator|mean absorbed power (normalised)|acceleration amplitude / (\u03c90\u00b2 \u00d7 static deflection)",
+  "driven oscillator|mean absorbed power (normalised)|quality factor",
+  "driven oscillator|quality factor|amplitude / static deflection",
+  "driven oscillator|quality factor|transmissibility",
+  "driven oscillator|quality factor|velocity amplitude / (\u03c90 \u00d7 static deflection)",
+  "driven oscillator|quality factor|acceleration amplitude / (\u03c90\u00b2 \u00d7 static deflection)",
+  "driven oscillator|quality factor|mean absorbed power (normalised)",
+  "velocity addition|composed speed / c|Relativistic velocity parameter [model-proposed; physical meaning unverified]",
+  "velocity addition|Galilean sum / c|Relativistic velocity parameter [model-proposed; physical meaning unverified]",
+  "velocity addition|Lorentz factor of the composed motion|Relativistic velocity parameter [model-proposed; physical meaning unverified]",
+  "velocity addition|product of the two Lorentz factors|Relativistic velocity parameter [model-proposed; physical meaning unverified]",
+  "velocity addition|Doppler factor of the composed motion|Relativistic velocity parameter [model-proposed; physical meaning unverified]",
+  "velocity addition|kinetic energy of the composed motion / mc\u00b2|Relativistic velocity parameter [model-proposed; physical meaning unverified]",
+  "velocity addition|sum of the two kinetic energies / mc\u00b2|Relativistic velocity parameter [model-proposed; physical meaning unverified]",
+  "velocity addition|Relativistic momentum ratio [model-proposed; physical meaning unverified]|Relativistic velocity parameter [model-proposed; physical meaning unverified]",
+  "velocity addition|Lorentz gamma of the composed motion [model-proposed; physical meaning unverified]|Relativistic velocity parameter [model-proposed; physical meaning unverified]",
+  "velocity addition|Relative velocity in terms of rapidities [model-proposed; physical meaning unverified]|Relativistic velocity parameter [model-proposed; physical meaning unverified]",
+  "velocity addition|Relativistic velocity parameter [model-proposed; physical meaning unverified]|composed speed / c",
+  "velocity addition|Relativistic velocity parameter [model-proposed; physical meaning unverified]|Galilean sum / c",
+  "velocity addition|Relativistic velocity parameter [model-proposed; physical meaning unverified]|Lorentz factor of the composed motion",
+  "velocity addition|Relativistic velocity parameter [model-proposed; physical meaning unverified]|product of the two Lorentz factors",
+  "velocity addition|Relativistic velocity parameter [model-proposed; physical meaning unverified]|Doppler factor of the composed motion",
+  "velocity addition|Relativistic velocity parameter [model-proposed; physical meaning unverified]|kinetic energy of the composed motion / mc\u00b2",
+  "velocity addition|Relativistic velocity parameter [model-proposed; physical meaning unverified]|sum of the two kinetic energies / mc\u00b2",
+  "velocity addition|Relativistic velocity parameter [model-proposed; physical meaning unverified]|Relativistic momentum ratio [model-proposed; physical meaning unverified]",
+  "velocity addition|Relativistic velocity parameter [model-proposed; physical meaning unverified]|Lorentz gamma of the composed motion [model-proposed; physical meaning unverified]",
+  "velocity addition|Relativistic velocity parameter [model-proposed; physical meaning unverified]|Relative velocity in terms of rapidities [model-proposed; physical meaning unverified]",
+  "velocity addition|composed speed / c|Galilean sum / c",
+  "velocity addition|composed speed / c|Lorentz factor of the composed motion",
+  "velocity addition|composed speed / c|product of the two Lorentz factors",
+  "velocity addition|composed speed / c|Doppler factor of the composed motion"
  ],
  "edges": [
   {
@@ -560,9 +676,105 @@
    "f": "kinetic energy released Q / (Mc\u00b2)",
    "g": "kinetic energy of product 1 / (Mc\u00b2)",
    "k": "1"
+  },
+  {
+   "family": "collision",
+   "f": "fraction of kinetic energy given to the target",
+   "g": "target speed / initial speed",
+   "k": "1/2"
+  },
+  {
+   "family": "collision",
+   "f": "fraction of kinetic energy given to the target",
+   "g": "speed of the centre of mass / initial speed",
+   "k": "1/2"
+  },
+  {
+   "family": "collision",
+   "f": "speed of the centre of mass / initial speed",
+   "g": "target speed / initial speed",
+   "k": "1/2"
+  },
+  {
+   "family": "collision",
+   "f": "speed of the centre of mass / initial speed",
+   "g": "fraction of kinetic energy given to the target",
+   "k": "1/4"
+  },
+  {
+   "family": "driven oscillator",
+   "f": "velocity amplitude / (\u03c90 \u00d7 static deflection)",
+   "g": "acceleration amplitude / (\u03c90\u00b2 \u00d7 static deflection)",
+   "k": "1/2"
+  },
+  {
+   "family": "driven oscillator",
+   "f": "velocity amplitude / (\u03c90 \u00d7 static deflection)",
+   "g": "mean absorbed power (normalised)",
+   "k": "1"
+  },
+  {
+   "family": "driven oscillator",
+   "f": "acceleration amplitude / (\u03c90\u00b2 \u00d7 static deflection)",
+   "g": "mean absorbed power (normalised)",
+   "k": "1/2"
+  },
+  {
+   "family": "driven oscillator",
+   "f": "quality factor",
+   "g": "amplitude / static deflection",
+   "k": "1/2"
+  },
+  {
+   "family": "driven oscillator",
+   "f": "quality factor",
+   "g": "velocity amplitude / (\u03c90 \u00d7 static deflection)",
+   "k": "1"
+  },
+  {
+   "family": "driven oscillator",
+   "f": "quality factor",
+   "g": "acceleration amplitude / (\u03c90\u00b2 \u00d7 static deflection)",
+   "k": "5/8"
+  },
+  {
+   "family": "driven oscillator",
+   "f": "quality factor",
+   "g": "mean absorbed power (normalised)",
+   "k": "1"
+  },
+  {
+   "family": "velocity addition",
+   "f": "Lorentz factor of the composed motion",
+   "g": "Relativistic velocity parameter [model-proposed; physical meaning unverified]",
+   "k": "1"
+  },
+  {
+   "family": "velocity addition",
+   "f": "product of the two Lorentz factors",
+   "g": "Relativistic velocity parameter [model-proposed; physical meaning unverified]",
+   "k": "1"
+  },
+  {
+   "family": "velocity addition",
+   "f": "Doppler factor of the composed motion",
+   "g": "Relativistic velocity parameter [model-proposed; physical meaning unverified]",
+   "k": "1"
+  },
+  {
+   "family": "velocity addition",
+   "f": "Lorentz gamma of the composed motion [model-proposed; physical meaning unverified]",
+   "g": "Relativistic velocity parameter [model-proposed; physical meaning unverified]",
+   "k": "1"
+  },
+  {
+   "family": "velocity addition",
+   "f": "composed speed / c",
+   "g": "Galilean sum / c",
+   "k": "1/2"
   }
  ],
- "rounds": 6,
+ "rounds": 9,
  "discoveries": [],
  "rediscoveries": []
 }
