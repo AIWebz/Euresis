@@ -8,3 +8,4 @@
 - 2026-11-04 23:15 FINDING (confirmed on held-out rows): In 'Photos and measurements of otoliths from fish caught in the southern part of the North Sea' (Zenodo, doi 10.5281/zenodo.4066594): 'right_otolith_length_µm' follows a power law in 'left_otolith_width_µm' (R² = 0.942 on the discovery half); held-out R² = 0.951 [emp-2272c6905aa9]
 - 2026-11-04 23:15 FINDING (confirmed on held-out rows): In 'Photos and measurements of otoliths from fish caught in the southern part of the North Sea' (Zenodo, doi 10.5281/zenodo.4066594): 'right_otolith_width_µm' follows a power law in 'right_otolith_length_µm' (R² = 0.947 on the discovery half); held-out R² = 0.951 [emp-35f496c4b625]
 - 2026-11-04 23:15 data feeds: 43 datasets analysed so far, 8 confirmed findings
+- 2026-11-04 23:22 data feeds: online
