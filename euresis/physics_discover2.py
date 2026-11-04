@@ -101,6 +101,47 @@ FAMILIES = {
             "wavelength shift / Compton wavelength": "c",
             "photon energy / (m_e c²)": "x",
         }},
+    # ------------------------------------------------------------------ economics
+    "Cournot duopoly": {
+        "subject": "economics", "vars": ("c1", "c2"), "bounds": ((0, 0.5), (0, 0.5)),
+        "meaning": "two firms compete in quantities; linear demand P = 1 − Q; marginal costs c1, c2",
+        "assumptions": ["c1 < 1/2", "c2 < 1/2"], "region": None,
+        "quantities": {
+            "output of firm 1": "(1 - 2*c1 + c2)/3",
+            "output of firm 2": "(1 - 2*c2 + c1)/3",
+            "market price": "(1 + c1 + c2)/3",
+            "profit of firm 1": "(1 - 2*c1 + c2)**2/9",
+            "profit of firm 2": "(1 - 2*c2 + c1)**2/9",
+            "consumer surplus": "(2 - c1 - c2)**2/18",
+            "total industry profit": "((1 - 2*c1 + c2)**2 + (1 - 2*c2 + c1)**2)/9",
+            "firm 1's profit as a monopolist": "(1 - c1)**2/4",
+        }},
+    "insurance and risk": {
+        "subject": "economics", "vars": ("p", "L"), "bounds": ((0, 1), (0, 1)),
+        "meaning": "a risk-averse person (utility √wealth, wealth 1) loses a fraction L of wealth with probability p",
+        "assumptions": ["p < 1", "L < 1"], "region": None,
+        "quantities": {
+            "expected wealth": "1 - p*L",
+            "expected utility": "p*sqrt(1 - L) + 1 - p",
+            "certainty equivalent": "(p*sqrt(1 - L) + 1 - p)**2",
+            "risk premium": "1 - p*L - (p*sqrt(1 - L) + 1 - p)**2",
+            "actuarially fair insurance premium": "p*L",
+            "maximum premium the person would pay for full insurance": "1 - (p*sqrt(1 - L) + 1 - p)**2",
+            "variance of wealth": "p*(1 - p)*L**2",
+        }},
+    "auction with a reserve price": {
+        "subject": "economics", "vars": ("r", "v"), "bounds": ((0, 1), (0, 1)),
+        "meaning": "second-price auction, two bidders with values uniform on [0, 1], reserve price r, "
+                   "seller values the item at v",
+        "assumptions": ["r < 1", "v < 1"], "region": None,
+        "quantities": {
+            "expected revenue": "1/3 + r**2 - 4*r**3/3",
+            "seller's expected payoff": "1/3 + r**2 - 4*r**3/3 + v*r**2",
+            "probability the item is not sold": "r**2",
+            "expected total bidder surplus": "1/3 - r**2 + 2*r**3/3",
+            "expected total welfare": "2*(1 - r**3)/3 + v*r**2",
+            "welfare with the efficient reserve (r = v)": "2/3 + v**3/3",
+        }},
 }
 
 KNOWN = {
@@ -403,7 +444,8 @@ def run_round(st, reg, use_llm, echo=print, max_pairs=24):
         inn = interior(fam, x0, y0)
         where = (f"equality at ({s1}, {s2}) ≈ ({x0:.6g}, {y0:.6g})" if inn
                  else f"tight only at the edge of the domain, near ({x0:.3g}, {y0:.3g})")
-        stmt = f"[{fam}] {fn} ≥ {k} × {gn}   on {', '.join(FAMILIES[fam]['assumptions'])} ({where})"
+        subj = FAMILIES[fam].get("subject", "physics")
+        stmt = f"[{subj}: {fam}] {fn} ≥ {k} × {gn}   on {', '.join(FAMILIES[fam]['assumptions'])} ({where})"
         cid = reg.add("physics-relation", stmt, payload, source=f"physics_discover2 round {st['rounds']}")
         gate.check(reg, cid, log=lambda *a: None)
         if reg.get(cid)["status"] != "proved":

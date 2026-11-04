@@ -180,3 +180,6 @@
 - 2026-11-04 17:34 round 171: two-body decay
 - 2026-11-04 17:36 round 172: collision
 - 2026-11-04 17:38 round 173: driven oscillator
+- 2026-11-04 17:40 round 174: velocity addition
+- 2026-11-04 17:42 round 175: Compton scattering
+- 2026-11-04 17:44 round 176: two-body decay

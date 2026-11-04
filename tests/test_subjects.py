@@ -1,0 +1,39 @@
+from euresis import games, gate, linguistics, music
+from euresis.registry import Registry
+
+
+def test_music_hexachord_theorem_and_counterexamples():
+    assert music.verify_claim({"premise": [], "conclusion": "has the same interval vector as its complement",
+                               "cardinality": 6})[0] == "proved"
+    st, ev = music.verify_claim({"premise": [], "conclusion": "has the same interval vector as its complement",
+                                 "cardinality": 5})
+    assert st == "refuted" and len(ev["counterexample"]) == 5
+    dia = 0b101010110101
+    assert music.interval_vector(dia) == (2, 5, 4, 3, 6, 1)
+    assert music.maximally_even(dia) and music.myhill(dia) and music.deep(dia) and music.generated(dia)
+
+
+def test_games_known_solutions():
+    assert games.find_period(games.grundy("77", 1200), 2) == (71, 12)          # Kayles
+    assert games.find_period(games.grundy("07", 1200), 2) == (53, 34)          # Dawson's Kayles
+    assert games.verify_claim({"code": "77", "preperiod": 71, "period": 12})[0] == "proved"
+    assert games.verify_claim({"code": "77", "preperiod": 10, "period": 12})[0] == "refuted"
+
+
+def test_linguistics_replicates_menzerath_and_rejects_false_direction():
+    p = {"unit": "sentence", "x": "number of words", "y": "mean word length", "sign": -1}
+    assert linguistics.verify_claim(p)[0] == "verified-numeric"
+    assert linguistics.verify_claim({**p, "sign": 1})[0] == "refuted"
+
+
+def test_gate_routes_new_kinds(tmp_path):
+    reg = Registry(tmp_path / "r.db", tmp_path / "c.json")
+    a = reg.add("game", "Kayles", {"code": "77", "preperiod": 71, "period": 12}, source="t")
+    b = reg.add("music", "hexachords", {"premise": [], "conclusion": "has the same interval vector as its complement",
+                                        "cardinality": 6}, source="t")
+    assert gate.check(reg, a, log=lambda *x: None) == "proved"
+    assert gate.check(reg, b, log=lambda *x: None) == "proved"
+    c = reg.add("empirical", "Menzerath", {"unit": "sentence", "x": "number of words", "y": "mean word length",
+                                           "sign": -1}, source="t")
+    gate.check(reg, c, log=lambda *x: None)
+    assert gate.label(reg.get(c)).startswith("confirmed on held-out data")

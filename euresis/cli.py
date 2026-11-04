@@ -487,6 +487,11 @@ def cmd_physics_discover2(a):
           "rediscovered; log: space/physics2_log.md")
 
 
+def cmd_subjects(a):
+    from . import subjects
+    subjects.run(max_game_digits=a.game_digits, game_minutes=a.game_minutes)
+
+
 def main(argv=None):
     p = argparse.ArgumentParser(prog="euresis", description="Euresis — scientific discovery engine")
     sub = p.add_subparsers(dest="cmd", required=True)
@@ -512,6 +517,9 @@ def main(argv=None):
     p2.add_argument("--minutes", type=float, default=100); p2.add_argument("--no-llm", action="store_true")
     p2.add_argument("--stop", action="store_true"); p2.add_argument("--resume", action="store_true")
     p2.set_defaults(fn=cmd_physics_discover2)
+    sj = sub.add_parser("discover-subjects", help="music theory, linguistics, game theory (economics: physics-discover2)")
+    sj.add_argument("--game-digits", type=int, default=3); sj.add_argument("--game-minutes", type=float, default=30)
+    sj.set_defaults(fn=cmd_subjects)
     sub.add_parser("claude-ping", help="one test call to the Claude API").set_defaults(fn=cmd_claude_ping)
     sub.add_parser("writeup").set_defaults(fn=cmd_writeup)
     sub.add_parser("info").set_defaults(fn=cmd_info)

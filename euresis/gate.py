@@ -215,8 +215,20 @@ def verify_music(p: dict) -> tuple[str, dict]:
     return verify_claim(p)
 
 
+def verify_empirical(p: dict) -> tuple[str, dict]:
+    from .linguistics import verify_claim
+    return verify_claim(p)
+
+
+def verify_game(p: dict) -> tuple[str, dict]:
+    from .games import verify_claim
+    return verify_claim(p)
+
+
 VERIFIERS = {
+    "game": ("guy-smith-periodicity", verify_game),
     "music": ("exhaustive-z12", verify_music),
+    "empirical": ("held-out-replication", verify_empirical),
     "inequality": ("z3+sampling", verify_inequality),
     "z3": ("z3", verify_z3),
     "physics-relation": ("z3-sqrt", verify_physics_relation),
@@ -271,6 +283,8 @@ def label(c: dict) -> str:
     if s == "proved":
         nov = c.get("novelty", "not checked")
         return "proved; " + ("already known" if nov.startswith("known") else f"novelty: {nov}")
+    if s == "verified-numeric" and c.get("kind") == "empirical":
+        return "confirmed on held-out data (empirical evidence, not proof)"
     return {"verified-numeric": "numerically verified, not proved", "refuted": "false",
             "unverified": "not verified", "candidate": "not yet checked"}[s]
 
