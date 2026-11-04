@@ -459,6 +459,20 @@ def cmd_discover_new(a):
     print(f"{st['rounds']} rounds, {len(st['discoveries'])} discoveries; log: space/discovery_log.md")
 
 
+def cmd_physics_discover(a):
+    from . import physics_discover
+    if a.stop:
+        physics_discover.STOP.parent.mkdir(parents=True, exist_ok=True)
+        physics_discover.STOP.write_text("stop requested\n")
+        print("stop requested: the physics discovery loop will stop after its current round")
+        return
+    if a.resume:
+        physics_discover.STOP.unlink(missing_ok=True)
+    st = physics_discover.run(minutes=a.minutes, use_llm=False if a.no_llm else None)
+    print(f"{st['rounds']} rounds, {len(st['discoveries'])} discoveries, {len(st['rediscoveries'])} known laws "
+          "rediscovered; log: space/physics_discovery_log.md")
+
+
 def main(argv=None):
     p = argparse.ArgumentParser(prog="euresis", description="Euresis — scientific discovery engine")
     sub = p.add_subparsers(dest="cmd", required=True)
@@ -476,6 +490,10 @@ def main(argv=None):
     dn.add_argument("--stop", action="store_true", help="ask a running loop to stop")
     dn.add_argument("--resume", action="store_true", help="clear a previous stop request first")
     dn.set_defaults(fn=cmd_discover_new)
+    pd = sub.add_parser("physics-discover", help="proved physics discoveries: sharp bounds between physical quantities")
+    pd.add_argument("--minutes", type=float, default=100); pd.add_argument("--no-llm", action="store_true")
+    pd.add_argument("--stop", action="store_true"); pd.add_argument("--resume", action="store_true")
+    pd.set_defaults(fn=cmd_physics_discover)
     sub.add_parser("claude-ping", help="one test call to the Claude API").set_defaults(fn=cmd_claude_ping)
     sub.add_parser("writeup").set_defaults(fn=cmd_writeup)
     sub.add_parser("info").set_defaults(fn=cmd_info)

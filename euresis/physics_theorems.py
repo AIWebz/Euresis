@@ -100,11 +100,13 @@ def _snap(x):
     return sp.Rational(fr.numerator, fr.denominator) if abs(float(fr) - x) < 1e-6 * max(1, abs(x)) else None
 
 
-def z3_prove(claim, syms):
-    """Prove claim (a sympy relational with sqrt allowed) for all positive symbols with real square roots."""
+def z3_prove(claim, syms, assumptions=()):
+    """Prove claim (a sympy relational with sqrt allowed) for all positive symbols with real square roots,
+    within the domain given by `assumptions` (sympy relationals, e.g. beta < 1)."""
     import z3
     env, cons, counter = {}, [], itertools.count()
-    syms = sorted(set(syms) | claim.free_symbols, key=str)
+    syms = sorted(set(syms) | getattr(claim, "free_symbols", set())
+                  | set().union(*[getattr(x, "free_symbols", set()) for x in assumptions]), key=str)
     zs = {s: z3.Real(str(s)) for s in syms}
     cons += [v > 0 for v in zs.values()]
 
@@ -161,6 +163,11 @@ def z3_prove(claim, syms):
         return "unsupported"
     try:
         goal = op(conv(lhs), conv(rhs))
+        for asm in assumptions:                 # the physical domain
+            aop = next((f for cls, f in ops.items() if isinstance(asm, cls)), None)
+            if aop is None:
+                return "unsupported"
+            cons.append(aop(conv(asm.lhs), conv(asm.rhs)))
     except (ValueError, TypeError):
         return "unsupported"
     s.add(*cons)

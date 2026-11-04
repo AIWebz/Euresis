@@ -89,8 +89,9 @@ def verify_physics_relation(p: dict) -> tuple[str, dict]:
     names = p["symbols"]
     loc = {n: sp.Symbol(n, positive=True) for n in names}
     claim = sp.sympify(p["claim"], locals=loc)
-    r = z3_prove(claim, list(loc.values()))
-    return {"proved": "proved", "refuted": "refuted"}.get(r, "unverified"), {"z3": r}
+    asms = [sp.sympify(x, locals=loc) for x in p.get("assumptions", [])]
+    r = z3_prove(claim, list(loc.values()), asms)
+    return {"proved": "proved", "refuted": "refuted"}.get(r, "unverified"), {"z3": r, "domain": p.get("assumptions", [])}
 
 
 def verify_identity(p: dict) -> tuple[str, dict]:
