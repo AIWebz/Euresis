@@ -107,3 +107,8 @@
 - 2026-11-04 15:33 round 103: driven oscillator
 - 2026-11-04 15:34 round 104: velocity addition
 - 2026-11-04 15:36 round 105: Compton scattering
+- 2026-11-04 15:38 round 106: two-body decay
+- 2026-11-04 15:40 round 107: collision
+- 2026-11-04 15:41 round 108: driven oscillator
+- 2026-11-04 15:42 round 109: velocity addition
+- 2026-11-04 15:45 segment end: 109 rounds, 0 discoveries, 2 known laws rediscovered
