@@ -44,11 +44,13 @@ def run_segment(minutes: float = 100, echo=print) -> dict:
     if nxt <= 18:
         echo(f"== music theory: extending to {music_n.N_MIN}–{nxt}-note equal temperaments")
         music_n.run(reg, echo=echo, n_max=nxt)
-    left = minutes - (time.time() - t0) / 60
-    if left > 1:
+    while (left := minutes - (time.time() - t0) / 60) > 1:
         gst = json.loads(games.STATE.read_text()) if games.STATE.exists() else {"done": []}
         done = set(gst["done"])
-        digits = next((d for d in (3, 4, 5, 6) if any(c not in done for c in games.codes(d))), 6)
-        echo(f"== game theory: octal games up to {digits} digits ({left:.0f} min)")
+        digits = next((d for d in (3, 4, 5, 6, 7) if any(c not in done for c in games.codes(d))), None)
+        if digits is None:
+            echo("== game theory: every octal game up to 7 digits has been checked")
+            break
+        echo(f"== game theory: octal games up to {digits} digits ({left:.0f} min left)")
         games.run(max_digits=digits, N=3000, reg=reg, echo=echo, max_minutes=left)
     return {"minutes": round((time.time() - t0) / 60, 1)}
