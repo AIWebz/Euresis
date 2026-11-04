@@ -7055,5 +7055,545 @@
   "statement": "[collision] velocity ratio of projectile to target after collision [model-proposed; physical meaning unverified] \u2265 1 \u00d7 relative velocity after collision divided by initial velocity of projectile [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (9.12e-05, 1))",
   "status": "proved",
   "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-5b3332e83de8",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "1/(c*x + 1) >= 3/25*(c/(x + 1) + 1)",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 70",
+  "statement": "[Compton scattering] scattered photon energy / initial energy \u2265 3/25 \u00d7 Scattered photon wavelength / initial photon wavelength [model-proposed; physical meaning unverified]   on x < 2, c < 2 (tight only at the edge of the domain, near (2, 2))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-0c577464807f",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'scattered photon energy / initial energy'",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "1/(2*c**2*x**2 + 1) >= 1/55*(c/(x + 1) + 1)",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 70",
+  "statement": "[Compton scattering] Electron recoil angle (cosine) [model-proposed; physical meaning unverified] \u2265 1/55 \u00d7 Scattered photon wavelength / initial photon wavelength [model-proposed; physical meaning unverified]   on x < 2, c < 2 (tight only at the edge of the domain, near (2, 2))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-6ea4933301ca",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'scattered photon energy / initial energy'",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "1/(2*c*x + 1) >= 1/15*(c/(x + 1) + 1)",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 70",
+  "statement": "[Compton scattering] Compton scattering formula (recoil angle cosine) [model-proposed; physical meaning unverified] \u2265 1/15 \u00d7 Scattered photon wavelength / initial photon wavelength [model-proposed; physical meaning unverified]   on x < 2, c < 2 (tight only at the edge of the domain, near (2, 2))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-31a7fcb531d8",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "c/(x + 1) + 1 >= 1*(1/(c*x + 1))",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 70",
+  "statement": "[Compton scattering] Scattered photon wavelength / initial photon wavelength [model-proposed; physical meaning unverified] \u2265 1 \u00d7 scattered photon energy / initial energy   on x < 2, c < 2 (tight only at the edge of the domain, near (0.000233, 6.9e-17))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-ccc33cad379a",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'scattered photon energy / initial energy'",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "c/(x + 1) + 1 >= 1/2*(x/(c*x + 1))",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 70",
+  "statement": "[Compton scattering] Scattered photon wavelength / initial photon wavelength [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 scattered photon energy / (m_e c\u00b2)   on x < 2, c < 2 (tight only at the edge of the domain, near (2, 2.21e-16))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-ecb3deed1baf",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "c/(x + 1) + 1 >= 5/6*(c)",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 70",
+  "statement": "[Compton scattering] Scattered photon wavelength / initial photon wavelength [model-proposed; physical meaning unverified] \u2265 5/6 \u00d7 wavelength shift / Compton wavelength   on x < 2, c < 2 (tight only at the edge of the domain, near (2, 2))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-0280da86db6d",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "c/(x + 1) + 1 >= 1/2*(x)",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 70",
+  "statement": "[Compton scattering] Scattered photon wavelength / initial photon wavelength [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 photon energy / (m_e c\u00b2)   on x < 2, c < 2 (tight only at the edge of the domain, near (2, 6.09e-15))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-529a05b343df",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "c/(x + 1) + 1 >= 1*(1/(2*c**2*x**2 + 1))",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 70",
+  "statement": "[Compton scattering] Scattered photon wavelength / initial photon wavelength [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Electron recoil angle (cosine) [model-proposed; physical meaning unverified]   on x < 2, c < 2 (tight only at the edge of the domain, near (1.89, 1.6e-16))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-b70eb045ea0e",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "c/(x + 1) + 1 >= 1*(c/(c + x))",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 70",
+  "statement": "[Compton scattering] Scattered photon wavelength / initial photon wavelength [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Compton wavelength shift / (initial photon wavelength) [model-proposed; physical meaning unverified]   on x < 2, c < 2 (tight only at the edge of the domain, near (9.57e-29, 1.16e-14))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-130db6903c33",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'scattered photon energy / initial energy'",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "c/(x + 1) + 1 >= 1*(1/(2*c*x + 1))",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 70",
+  "statement": "[Compton scattering] Scattered photon wavelength / initial photon wavelength [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Compton scattering formula (recoil angle cosine) [model-proposed; physical meaning unverified]   on x < 2, c < 2 (tight only at the edge of the domain, near (0.000233, 6.9e-17))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 2",
+    "z < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-30d33bb7fd35",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 2",
+    "z < 1"
+   ],
+   "claim": "1/sqrt(4*r**2*z**2 + (1 - r**2)**2) >= 3/10*(r**2/(sqrt(4*r**2*z**2 + (1 - r**2)**2) + 1))",
+   "symbols": [
+    "r",
+    "z"
+   ]
+  },
+  "source": "physics_discover2 round 78",
+  "statement": "[driven oscillator] amplitude / static deflection \u2265 3/10 \u00d7 resonance amplitude ratio [model-proposed; physical meaning unverified]   on r < 2, z < 1 (tight only at the edge of the domain, near (2, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 2",
+    "z < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-70cdb2877922",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 2",
+    "z < 1"
+   ],
+   "claim": "r/sqrt(4*r**2*z**2 + (1 - r**2)**2) >= 3/5*(r**2/(sqrt(4*r**2*z**2 + (1 - r**2)**2) + 1))",
+   "symbols": [
+    "r",
+    "z"
+   ]
+  },
+  "source": "physics_discover2 round 78",
+  "statement": "[driven oscillator] velocity amplitude / (\u03c90 \u00d7 static deflection) \u2265 3/5 \u00d7 resonance amplitude ratio [model-proposed; physical meaning unverified]   on r < 2, z < 1 (tight only at the edge of the domain, near (2, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 2",
+    "z < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-61c9a5521739",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 2",
+    "z < 1"
+   ],
+   "claim": "r**2/sqrt(4*r**2*z**2 + (1 - r**2)**2) >= 6/5*(r**2/(sqrt(4*r**2*z**2 + (1 - r**2)**2) + 1))",
+   "symbols": [
+    "r",
+    "z"
+   ]
+  },
+  "source": "physics_discover2 round 78",
+  "statement": "[driven oscillator] acceleration amplitude / (\u03c90\u00b2 \u00d7 static deflection) \u2265 6/5 \u00d7 resonance amplitude ratio [model-proposed; physical meaning unverified]   on r < 2, z < 1 (tight only at the edge of the domain, near (2, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 2",
+    "z < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-5bb3735a2374",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'acceleration amplitude / (\u03c90\u00b2 \u00d7 static deflection)'",
+  "payload": {
+   "assumptions": [
+    "r < 2",
+    "z < 1"
+   ],
+   "claim": "1/(2*z) >= 3/4*(r**2/(sqrt(4*r**2*z**2 + (1 - r**2)**2) + 1))",
+   "symbols": [
+    "r",
+    "z"
+   ]
+  },
+  "source": "physics_discover2 round 78",
+  "statement": "[driven oscillator] quality factor \u2265 3/4 \u00d7 resonance amplitude ratio [model-proposed; physical meaning unverified]   on r < 2, z < 1 (tight only at the edge of the domain, near (2, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 2",
+    "z < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-86445206ff5f",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 2",
+    "z < 1"
+   ],
+   "claim": "sqrt(-z**2/(z**2 + 1) + 1) >= 1*(r**2/(sqrt(4*r**2*z**2 + (1 - r**2)**2) + 1))",
+   "symbols": [
+    "r",
+    "z"
+   ]
+  },
+  "source": "physics_discover2 round 78",
+  "statement": "[driven oscillator] resonance frequency ratio [model-proposed; physical meaning unverified] \u2265 1 \u00d7 resonance amplitude ratio [model-proposed; physical meaning unverified]   on r < 2, z < 1 (tight only at the edge of the domain, near (1.98, 7.47e-09))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 2",
+    "z < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-c20b2a3912eb",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 2",
+    "z < 1"
+   ],
+   "claim": "1/sqrt(4*r**2*z**2 + (1 - r**2)**2) >= 1*(sqrt(1 - z**2)/(r**2 + 1))",
+   "symbols": [
+    "r",
+    "z"
+   ]
+  },
+  "source": "physics_discover2 round 83",
+  "statement": "[driven oscillator] amplitude / static deflection \u2265 1 \u00d7 Resonance frequency shift [model-proposed; physical meaning unverified]   on r < 2, z < 1 (tight only at the edge of the domain, near (6.25e-10, 5.17e-09))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 2",
+    "z < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-631cff3efe72",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'amplitude / static deflection'",
+  "payload": {
+   "assumptions": [
+    "r < 2",
+    "z < 1"
+   ],
+   "claim": "sqrt(4*r**2*z**2 + 1)/sqrt(4*r**2*z**2 + (1 - r**2)**2) >= 1*(sqrt(1 - z**2)/(r**2 + 1))",
+   "symbols": [
+    "r",
+    "z"
+   ]
+  },
+  "source": "physics_discover2 round 83",
+  "statement": "[driven oscillator] transmissibility \u2265 1 \u00d7 Resonance frequency shift [model-proposed; physical meaning unverified]   on r < 2, z < 1 (tight only at the edge of the domain, near (6.25e-10, 5.17e-09))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 2",
+    "z < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-c04bd8ac54b9",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 2",
+    "z < 1"
+   ],
+   "claim": "1/(2*z) >= 1*(sqrt(1 - z**2)/(r**2 + 1))",
+   "symbols": [
+    "r",
+    "z"
+   ]
+  },
+  "source": "physics_discover2 round 83",
+  "statement": "[driven oscillator] quality factor \u2265 1 \u00d7 Resonance frequency shift [model-proposed; physical meaning unverified]   on r < 2, z < 1 (tight only at the edge of the domain, near (8.92e-09, 0.707))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 2",
+    "z < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-8c83ebb3a74d",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 2",
+    "z < 1"
+   ],
+   "claim": "2*sqrt(1 - z**2)/z >= 2*(sqrt(1 - z**2)/(r**2 + 1))",
+   "symbols": [
+    "r",
+    "z"
+   ]
+  },
+  "source": "physics_discover2 round 83",
+  "statement": "[driven oscillator] log decrement [model-proposed; physical meaning unverified] \u2265 2 \u00d7 Resonance frequency shift [model-proposed; physical meaning unverified]   on r < 2, z < 1 (tight only at the edge of the domain, near (0.000182, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 2",
+    "z < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-668da93365e1",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 2",
+    "z < 1"
+   ],
+   "claim": "sqrt(-z**2/(z**2 + 1) + 1) >= 1*(sqrt(1 - z**2)/(r**2 + 1))",
+   "symbols": [
+    "r",
+    "z"
+   ]
+  },
+  "source": "physics_discover2 round 83",
+  "statement": "[driven oscillator] resonance frequency ratio [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Resonance frequency shift [model-proposed; physical meaning unverified]   on r < 2, z < 1 (tight only at the edge of the domain, near (2.51e-19, 0.000147))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]
