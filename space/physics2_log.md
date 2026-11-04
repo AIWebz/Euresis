@@ -126,3 +126,8 @@
 - 2026-11-04 16:02 round 120: Compton scattering
 - 2026-11-04 16:03 round 121: two-body decay
 - 2026-11-04 16:05 round 122: collision
+- 2026-11-04 16:06 round 123: driven oscillator
+- 2026-11-04 16:08 round 124: velocity addition
+- 2026-11-04 16:10 round 125: Compton scattering
+- 2026-11-04 16:12 DISCOVERY (proved, sharp to 1e-6, two-variable): [Compton scattering] Scattered photon wavelength / Compton wavelength [model-proposed; physical meaning unverified] ≥ 5 × Compton wavelength shift / (initial photon wavelength) [model-proposed; physical meaning unverified]   on x < 2, c < 2 (equality at (x, c) ≈ (1, 1))  [phy-3ee0aeffbd83]
+- 2026-11-04 16:12 round 126: two-body decay

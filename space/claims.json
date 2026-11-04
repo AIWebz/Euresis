@@ -7730,5 +7730,302 @@
   "statement": "[Compton scattering] Scattered photon momentum / initial photon momentum [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 Compton scattering formula (recoil angle cosine) [model-proposed; physical meaning unverified]   on x < 2, c < 2 (tight only at the edge of the domain, near (2, 5.9e-15))",
   "status": "proved",
   "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-bdfa62b615f8",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "c/(c*x + 1) + (c*x + 1)/x >= 1/2*(1/(c*x + 1))",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 125",
+  "statement": "[Compton scattering] Scattered photon wavelength / Compton wavelength [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 scattered photon energy / initial energy   on x < 2, c < 2 (tight only at the edge of the domain, near (2, 8.28e-16))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-5a19be375fd4",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "c/(c*x + 1) + (c*x + 1)/x >= 5/2*(c*x/(c*x + 1))",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 125",
+  "statement": "[Compton scattering] Scattered photon wavelength / Compton wavelength [model-proposed; physical meaning unverified] \u2265 5/2 \u00d7 electron kinetic energy / photon energy   on x < 2, c < 2 (tight only at the edge of the domain, near (2, 0.5))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-b652fa4321dc",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'scattered photon energy / initial energy'",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "c/(c*x + 1) + (c*x + 1)/x >= 1/4*(x/(c*x + 1))",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 125",
+  "statement": "[Compton scattering] Scattered photon wavelength / Compton wavelength [model-proposed; physical meaning unverified] \u2265 1/4 \u00d7 scattered photon energy / (m_e c\u00b2)   on x < 2, c < 2 (tight only at the edge of the domain, near (2, 1.37e-15))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-622eb0f595d6",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'electron kinetic energy / photon energy'",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "c/(c*x + 1) + (c*x + 1)/x >= 5/4*(c*x**2/(c*x + 1))",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 125",
+  "statement": "[Compton scattering] Scattered photon wavelength / Compton wavelength [model-proposed; physical meaning unverified] \u2265 5/4 \u00d7 electron kinetic energy / (m_e c\u00b2)   on x < 2, c < 2 (tight only at the edge of the domain, near (2, 0.5))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-a7a5dfb78d31",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "c/(c*x + 1) + (c*x + 1)/x >= 29/20*(c)",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 125",
+  "statement": "[Compton scattering] Scattered photon wavelength / Compton wavelength [model-proposed; physical meaning unverified] \u2265 29/20 \u00d7 wavelength shift / Compton wavelength   on x < 2, c < 2 (tight only at the edge of the domain, near (2, 2))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-d9333a46747c",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "c/(c*x + 1) + (c*x + 1)/x >= 1/4*(x)",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 125",
+  "statement": "[Compton scattering] Scattered photon wavelength / Compton wavelength [model-proposed; physical meaning unverified] \u2265 1/4 \u00d7 photon energy / (m_e c\u00b2)   on x < 2, c < 2 (tight only at the edge of the domain, near (2, 5.9e-15))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-2b0ef15ce5bc",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "c/(c*x + 1) + (c*x + 1)/x >= 1/2*(1/(2*c**2*x**2 + 1))",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 125",
+  "statement": "[Compton scattering] Scattered photon wavelength / Compton wavelength [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 Electron recoil angle (cosine) [model-proposed; physical meaning unverified]   on x < 2, c < 2 (tight only at the edge of the domain, near (2, 1.28e-15))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-3ee0aeffbd83",
+  "kind": "physics-relation",
+  "novelty": "not a known result in Euresis' knowledge; not implied by proved bounds; physics literature unchecked (arXiv unreachable from this environment); involves a model-proposed quantity whose physical meaning is unverified; PHYSICS CHECK (by hand): the model's labels are wrong \u2014 scattered wavelength / Compton wavelength is 1/x + c and the wavelength shift / initial wavelength is c\u00b7x, so this is a true sharp two-variable inequality but NOT a statement about Compton scattering",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "c/(c*x + 1) + (c*x + 1)/x >= 5*(c/(c + x))",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 125",
+  "statement": "[Compton scattering] Scattered photon wavelength / Compton wavelength [model-proposed; physical meaning unverified] \u2265 5 \u00d7 Compton wavelength shift / (initial photon wavelength) [model-proposed; physical meaning unverified]   on x < 2, c < 2 (equality at (x, c) \u2248 (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-affa969cc665",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'scattered photon energy / initial energy'",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "c/(c*x + 1) + (c*x + 1)/x >= 1/2*(1/(2*c*x + 1))",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 125",
+  "statement": "[Compton scattering] Scattered photon wavelength / Compton wavelength [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 Compton scattering formula (recoil angle cosine) [model-proposed; physical meaning unverified]   on x < 2, c < 2 (tight only at the edge of the domain, near (2, 1.29e-15))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-b8ba186b59a8",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "c/(c*x + 1) + (c*x + 1)/x >= 1/2*(c/(x + 1) + 1)",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 125",
+  "statement": "[Compton scattering] Scattered photon wavelength / Compton wavelength [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 Scattered photon wavelength / initial photon wavelength [model-proposed; physical meaning unverified]   on x < 2, c < 2 (tight only at the edge of the domain, near (2, 1.62e-14))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-6093ef0f77eb",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "c/(c*x + 1) + (c*x + 1)/x >= 1*(sqrt(c**2*x**2 + 1)/(x*(c*x + 1)))",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 125",
+  "statement": "[Compton scattering] Scattered photon wavelength / Compton wavelength [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Scattered photon momentum / initial photon momentum [model-proposed; physical meaning unverified]   on x < 2, c < 2 (tight only at the edge of the domain, near (0.000226, 3.59e-13))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]
