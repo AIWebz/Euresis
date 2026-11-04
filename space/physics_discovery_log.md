@@ -251,3 +251,5 @@
 - 2026-11-04 08:03 round 229: quantum step
 - 2026-11-04 08:04 round 230: acoustic Doppler
 - 2026-11-04 08:05 segment end: 230 rounds, 2 discoveries, 2 known laws rediscovered
+- 2026-11-04 08:05 segment start (budget 100 min; model: Qwen3-14B; 2 discoveries so far)
+- 2026-11-04 08:05 round 231: damped oscillator
