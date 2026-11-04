@@ -4651,5 +4651,248 @@
   "statement": "[velocity addition] Doppler factor of the composed motion \u2265 1 \u00d7 Lorentz gamma of the composed motion [model-proposed; physical meaning unverified]   on u < 1, v < 1 (tight only at the edge of the domain, near (6.42e-15, 1.69e-16))",
   "status": "proved",
   "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "u < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-25280894e3be",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "u < 1",
+    "v < 1"
+   ],
+   "claim": "u/sqrt(1 - u**2) + v/sqrt(1 - v**2) >= 1*((u + v)/(u*v + 1))",
+   "symbols": [
+    "u",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 4",
+  "statement": "[velocity addition] Relativistic momentum ratio [model-proposed; physical meaning unverified] \u2265 1 \u00d7 composed speed / c   on u < 1, v < 1 (tight only at the edge of the domain, near (1.91e-08, 3.12e-10))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "u < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-df4894400d98",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "u < 1",
+    "v < 1"
+   ],
+   "claim": "u/sqrt(1 - u**2) + v/sqrt(1 - v**2) >= 1*(u + v)",
+   "symbols": [
+    "u",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 4",
+  "statement": "[velocity addition] Relativistic momentum ratio [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Galilean sum / c   on u < 1, v < 1 (tight only at the edge of the domain, near (1.54e-08, 2.13e-08))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-8a9c156a9f3a",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "1/(c*x + 1) >= 1/4*(c*x/(c*x + 1))",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 5",
+  "statement": "[Compton scattering] scattered photon energy / initial energy \u2265 1/4 \u00d7 electron kinetic energy / photon energy   on x < 2, c < 2 (tight only at the edge of the domain, near (2, 2))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-a692d6700fa9",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "1/(c*x + 1) >= 1/2*(x/(c*x + 1))",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 5",
+  "statement": "[Compton scattering] scattered photon energy / initial energy \u2265 1/2 \u00d7 scattered photon energy / (m_e c\u00b2)   on x < 2, c < 2 (tight only at the edge of the domain, near (2, 2))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-859f5dc0e46c",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "1/(c*x + 1) >= 1/8*(c*x**2/(c*x + 1))",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 5",
+  "statement": "[Compton scattering] scattered photon energy / initial energy \u2265 1/8 \u00d7 electron kinetic energy / (m_e c\u00b2)   on x < 2, c < 2 (tight only at the edge of the domain, near (2, 2))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-b28935242839",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "1/(c*x + 1) >= 1/10*(c)",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 5",
+  "statement": "[Compton scattering] scattered photon energy / initial energy \u2265 1/10 \u00d7 wavelength shift / Compton wavelength   on x < 2, c < 2 (tight only at the edge of the domain, near (2, 2))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-0c13c18a590b",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "1/(c*x + 1) >= 1/10*(x)",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 5",
+  "statement": "[Compton scattering] scattered photon energy / initial energy \u2265 1/10 \u00d7 photon energy / (m_e c\u00b2)   on x < 2, c < 2 (tight only at the edge of the domain, near (2, 2))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-2087713ec1cd",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "c*x/(c*x + 1) >= 1/2*(c*x**2/(c*x + 1))",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 5",
+  "statement": "[Compton scattering] electron kinetic energy / photon energy \u2265 1/2 \u00d7 electron kinetic energy / (m_e c\u00b2)   on x < 2, c < 2 (tight only at the edge of the domain, near (2, 2))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-b33c9dc1b0c9",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "x/(c*x + 1) >= 1/2*(c*x/(c*x + 1))",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 5",
+  "statement": "[Compton scattering] scattered photon energy / (m_e c\u00b2) \u2265 1/2 \u00d7 electron kinetic energy / photon energy   on x < 2, c < 2 (tight only at the edge of the domain, near (2, 2))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]

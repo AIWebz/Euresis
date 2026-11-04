@@ -3,3 +3,5 @@
 - 2026-11-04 12:24 round 2: collision
 - 2026-11-04 12:25 round 3: driven oscillator
 - 2026-11-04 12:27 round 4: velocity addition
+- 2026-11-04 12:33 round 5: Compton scattering
+- 2026-11-04 12:34 round 6: two-body decay
