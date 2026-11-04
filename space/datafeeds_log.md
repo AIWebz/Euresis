@@ -15,3 +15,4 @@
 - 2026-11-04 23:23 FINDING (confirmed on held-out rows): In 'Feeling the future: A meta-analysis of 90 experiments on the anomalous anticipation of ran' (Zenodo, doi 10.5281/zenodo.14171311): 'SE' follows a power law in 'n' (R² = 1.000 on the discovery half); held-out R² = 0.998 [emp-f5299327bfcf]
 - 2026-11-04 23:23 FINDING (confirmed on held-out rows): In 'Interpretative Profiles' (Zenodo, doi 10.5281/zenodo.14939151): 'it_imageability' grows logarithmically in 'it_concreteness' (R² = 0.944 on the discovery half); held-out R² = 0.855 [emp-30dc7110c9e9]
 - 2026-11-04 23:23 FINDING (confirmed on held-out rows): In 'Tree species richness strengthens forest microclimate cooling under high evaporative deman' (Figshare, doi 10.6084/m9.figshare.34913139.v1): 'TT_TU_mean' is linear in 'TT_TU' (R² = 0.944 on the discovery half); held-out R² = 0.941 [emp-1cce3ec5fe80]
+- 2026-11-04 23:24 data feeds: 104 datasets analysed so far, 14 confirmed findings
