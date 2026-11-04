@@ -729,6 +729,66 @@
    "family": "quantum step",
    "expr": "(2/(1 + sqrt(1 - x)))**2",
    "why": "affine combination of known quantities (transmission probability, transmitted amplitude ratio)"
+  },
+  {
+   "family": "acoustic Doppler",
+   "expr": "1 / (1 - m) if m < 0 else 1 / (1 + m)",
+   "why": "affine combination of known quantities (frequency ratio, source receding)"
+  },
+  {
+   "family": "acoustic Doppler",
+   "expr": "1 / (1 + m)",
+   "why": "affine combination of known quantities (frequency ratio, source receding)"
+  },
+  {
+   "family": "acoustic Doppler",
+   "expr": "1 + m if m > 0 else 1 - m",
+   "why": "affine combination of known quantities (frequency ratio, source receding, frequency ratio, observer approaching)"
+  },
+  {
+   "family": "acoustic Doppler",
+   "expr": "m / (1 - m) if m < 1 else m / (1 + m)",
+   "why": "does not parse"
+  },
+  {
+   "family": "damped oscillator",
+   "expr": "2 * pi * z / sqrt(1 - z**2)",
+   "why": "affine combination of known quantities (damped frequency / natural frequency, decay rate / damped frequency)"
+  },
+  {
+   "family": "damped oscillator",
+   "expr": "z / sqrt(1 - z**2)",
+   "why": "affine combination of known quantities (damped frequency / natural frequency, decay rate / damped frequency)"
+  },
+  {
+   "family": "damped oscillator",
+   "expr": "2 * pi * z / sqrt(1 - z**2)",
+   "why": "affine combination of known quantities (damped frequency / natural frequency, decay rate / damped frequency)"
+  },
+  {
+   "family": "damped oscillator",
+   "expr": "atan(2 * z / (1 - z**2))",
+   "why": "only + \u2212 \u00d7 \u00f7, integer powers and square roots (so the prover can decide it)"
+  },
+  {
+   "family": "wave boundary",
+   "expr": "(1 - r)**2 / (1 + r)**2",
+   "why": "affine combination of known quantities (reflected power fraction)"
+  },
+  {
+   "family": "wave boundary",
+   "expr": "4*r / (1 + r)**2",
+   "why": "affine combination of known quantities (reflected power fraction)"
+  },
+  {
+   "family": "wave boundary",
+   "expr": "(1 - r)/(2*sqrt(r))",
+   "why": "a power or product of known quantities: C \u00b7 (reflected power fraction)^0.4 \u00b7 (transmitted power fraction)^-0.417 \u00b7 (reflected amplitude ratio)^0.2 \u00b7 (transmitted amplitude ratio)^-0.167 \u00b7 (standing-wave r"
+  },
+  {
+   "family": "wave boundary",
+   "expr": "log(4*r/(1 + r)**2)",
+   "why": "only + \u2212 \u00d7 \u00f7, integer powers and square roots (so the prover can decide it)"
   }
  ],
  "tried": [
@@ -1853,7 +1913,7 @@
    "k": "1"
   }
  ],
- "rounds": 45,
+ "rounds": 48,
  "discoveries": [
   {
    "claim": "phy-e72aa596c5f7",

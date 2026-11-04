@@ -61,3 +61,6 @@
 - 2026-11-04 04:07 round 44: collisions
 - 2026-11-04 04:08 round 45: quantum step
 - 2026-11-04 04:09 round 46: acoustic Doppler
+- 2026-11-04 04:10 round 47: damped oscillator
+- 2026-11-04 04:11 round 48: wave boundary
+- 2026-11-04 04:12 round 49: relativity
