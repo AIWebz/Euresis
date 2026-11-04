@@ -26,7 +26,7 @@
    "Carnot refrigerator coefficient of performance": "t/(1 - t)",
    "Carnot heat pump coefficient of performance": "1/(1 - t)",
    "Low-dissipation refrigerator efficiency [model-proposed; physical meaning unverified]": "t/(t**2 - t + 1)",
-   "Thermal dissipation factor [model-proposed; physical meaning unverified]": "(1 - t)/(sqrt(t) + t)"
+   "Refrigeration efficiency factor [model-proposed; physical meaning unverified]": "t/(-t**0.5 + t**2 + 1)"
   }
  },
  "rejected": [
@@ -249,6 +249,16 @@
    "family": "kepler",
    "expr": "2*(1 - e**2)/( (1 - e) + (1 + e) )",
    "why": "product of known quantities (perihelion distance / a, aphelion distance / a)"
+  },
+  {
+   "family": "heat engines",
+   "expr": "1 - t**0.5 - t**1.5",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "heat engines",
+   "expr": "(1 - t**2)/(1 - t**0.5)",
+   "why": "a power or product of known quantities: C \u00b7 (Carnot efficiency)^-1.33e-16 \u00b7 (Thermal efficiency ratio [model-proposed; physical meaning unverified])^-1"
   }
  ],
  "tried": [
@@ -441,7 +451,23 @@
   "kepler|square root of time-averaged distance [model-proposed; physical meaning unverified]|aphelion speed / circular speed at a",
   "kepler|square root of time-averaged distance [model-proposed; physical meaning unverified]|semi-minor axis / a",
   "kepler|square root of time-averaged distance [model-proposed; physical meaning unverified]|semi-latus rectum / a",
-  "kepler|square root of time-averaged distance [model-proposed; physical meaning unverified]|time-averaged distance / a"
+  "kepler|square root of time-averaged distance [model-proposed; physical meaning unverified]|time-averaged distance / a",
+  "heat engines|Carnot efficiency|Thermal efficiency ratio [model-proposed; physical meaning unverified]",
+  "heat engines|Carnot efficiency|Refrigeration efficiency factor [model-proposed; physical meaning unverified]",
+  "heat engines|Curzon\u2013Ahlborn efficiency (endoreversible engine at maximum power)|Thermal efficiency ratio [model-proposed; physical meaning unverified]",
+  "heat engines|Curzon\u2013Ahlborn efficiency (endoreversible engine at maximum power)|Refrigeration efficiency factor [model-proposed; physical meaning unverified]",
+  "heat engines|low-dissipation engine efficiency at maximum power, upper bound (Esposito et al.)|Thermal efficiency ratio [model-proposed; physical meaning unverified]",
+  "heat engines|low-dissipation engine efficiency at maximum power, upper bound (Esposito et al.)|Refrigeration efficiency factor [model-proposed; physical meaning unverified]",
+  "heat engines|Carnot refrigerator coefficient of performance|Thermal efficiency ratio [model-proposed; physical meaning unverified]",
+  "heat engines|Carnot refrigerator coefficient of performance|Refrigeration efficiency factor [model-proposed; physical meaning unverified]",
+  "heat engines|Carnot heat pump coefficient of performance|Thermal efficiency ratio [model-proposed; physical meaning unverified]",
+  "heat engines|Carnot heat pump coefficient of performance|Refrigeration efficiency factor [model-proposed; physical meaning unverified]",
+  "heat engines|Low-dissipation refrigerator efficiency [model-proposed; physical meaning unverified]|Thermal efficiency ratio [model-proposed; physical meaning unverified]",
+  "heat engines|Low-dissipation refrigerator efficiency [model-proposed; physical meaning unverified]|Refrigeration efficiency factor [model-proposed; physical meaning unverified]",
+  "heat engines|Thermal dissipation factor [model-proposed; physical meaning unverified]|Thermal efficiency ratio [model-proposed; physical meaning unverified]",
+  "heat engines|Thermal dissipation factor [model-proposed; physical meaning unverified]|Refrigeration efficiency factor [model-proposed; physical meaning unverified]",
+  "heat engines|Thermal efficiency ratio [model-proposed; physical meaning unverified]|Carnot efficiency",
+  "heat engines|Thermal efficiency ratio [model-proposed; physical meaning unverified]|Curzon\u2013Ahlborn efficiency (endoreversible engine at maximum power)"
  ],
  "edges": [
   {
@@ -765,9 +791,16 @@
    "g": "semi-latus rectum / a",
    "kind": "lower",
    "k": "1"
+  },
+  {
+   "family": "heat engines",
+   "f": "Thermal efficiency ratio [model-proposed; physical meaning unverified]",
+   "g": "Curzon\u2013Ahlborn efficiency (endoreversible engine at maximum power)",
+   "kind": "lower",
+   "k": "1"
   }
  ],
- "rounds": 14,
+ "rounds": 15,
  "discoveries": [
   {
    "claim": "phy-e72aa596c5f7",

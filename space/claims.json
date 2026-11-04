@@ -1883,5 +1883,29 @@
   "statement": "[kepler] square root of time-averaged distance [model-proposed; physical meaning unverified] \u2265 1 \u00d7 semi-latus rectum / a   for 0 < e < 1 (tight only in the limit e \u2192 0)",
   "status": "proved",
   "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "t < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-ae15d82d026e",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "t < 1"
+   ],
+   "claim": "(1 - t**0.5)/(1 - t**2) >= 1*(1 - sqrt(t))",
+   "symbols": [
+    "t"
+   ]
+  },
+  "source": "physics_discover round 15",
+  "statement": "[heat engines] Thermal efficiency ratio [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Curzon\u2013Ahlborn efficiency (endoreversible engine at maximum power)   for 0 < t < 1 (tight only in the limit t \u2192 0)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]

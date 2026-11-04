@@ -152,22 +152,26 @@ def validate(fam: str, expr: str, known: dict) -> tuple[sp.Expr | None, str]:
     K = {n: np.asarray(sp.lambdify(v, sp.sympify(s, locals={v.name: v}), "numpy")(GRID), float) for n, s in known.items()}
     K.update({f"1/({n})": 1 / x for n, x in list(K.items())})       # reciprocals of known quantities are known too
     one = np.ones_like(vals)
-    sel = slice(None, None, 37)
-    for i, ni in enumerate(K):
-        for nj in [None] + list(K)[i:]:
-            A = np.stack([one, K[ni]] + ([K[nj]] if nj and nj != ni else []), 1)[sel]
+    sel = slice(None, None, 7)
+    names = list(K)
+    # 1. affine combination of one or two known quantities (or their reciprocals): well-conditioned pairwise fits
+    for i, ni in enumerate(names):
+        for nj in [None] + names[i + 1:]:
+            A = np.stack([one, K[ni]] + ([K[nj]] if nj else []), 1)[sel]
+            if not np.all(np.isfinite(A)):
+                continue
             coef, *_ = np.linalg.lstsq(A, vals[sel], rcond=None)
             if np.abs(A @ coef - vals[sel]).max() < 1e-9 * max(1, np.abs(vals).max()):
-                return None, f"affine combination of known quantities ({ni}{', ' + nj if nj and nj != ni else ''})"
-            # monomial: f = C · Ki^p · Kj^q for any real p, q (products, ratios, reciprocals, roots, powers)
-            L = [np.log(K[ni][sel])] + ([np.log(K[nj][sel])] if nj and nj != ni else [])
-            if all(np.all(np.isfinite(x)) for x in L):
-                B = np.stack([one[sel]] + L, 1)
-                lv = np.log(vals[sel])
-                cf, *_ = np.linalg.lstsq(B, lv, rcond=None)
-                if np.abs(B @ cf - lv).max() < 1e-9:
-                    pw = " · ".join(f"({n})^{c:.4g}" for n, c in zip([ni] + ([nj] if len(L) > 1 else []), cf[1:]))
-                    return None, f"a power or product of known quantities: C · {pw}"
+                return None, f"affine combination of known quantities ({ni}{', ' + nj if nj else ''})"
+    # 2. product of powers of ANY number of known quantities: log f in the span of log K_i
+    base = [n for n in names if not n.startswith("1/(")]          # reciprocals are covered by negative powers
+    Lg = np.stack([one] + [np.log(K[n]) for n in base], 1)[sel]
+    if np.all(np.isfinite(Lg)):
+        lv = np.log(vals[sel])
+        cf, *_ = np.linalg.lstsq(Lg, lv, rcond=None)
+        if np.abs(Lg @ cf - lv).max() < 1e-9:
+            used = [f"({n})^{c:.3g}" for n, c in zip(base, cf[1:]) if abs(c) > 1e-8]
+            return None, f"a power or product of known quantities: C · {' · '.join(used)[:160]}"
     return E, "ok"
 
 
