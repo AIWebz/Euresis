@@ -267,3 +267,12 @@
 - 2026-11-04 08:21 round 243: heat engines
 - 2026-11-04 08:22 round 244: collisions
 - 2026-11-04 08:23 round 245: quantum step
+- 2026-11-04 08:25 round 246: acoustic Doppler
+- 2026-11-04 08:26 round 247: damped oscillator
+- 2026-11-04 08:27 round 248: wave boundary
+- 2026-11-04 08:28 round 249: relativity
+- 2026-11-04 08:29 round 250: kepler
+- 2026-11-04 08:31 round 251: heat engines
+- 2026-11-04 08:32 round 252: collisions
+- 2026-11-04 08:33 round 253: quantum step
+- 2026-11-04 08:35 round 254: acoustic Doppler

@@ -4665,6 +4665,186 @@
    "family": "collisions",
    "expr": "1/(1 + m)",
    "why": "affine combination of known quantities (elastic: rebound speed of the projectile / initial speed)"
+  },
+  {
+   "family": "quantum step",
+   "expr": "sqrt(1 - x) * 4 * sqrt(1 - x) / (1 + sqrt(1 - x))**2",
+   "why": "affine combination of known quantities (transmission probability, transmitted amplitude ratio)"
+  },
+  {
+   "family": "quantum step",
+   "expr": "2 * atan(sqrt(x) / (1 - sqrt(1 - x)))",
+   "why": "only + \u2212 \u00d7 \u00f7, integer powers and square roots (so the prover can decide it)"
+  },
+  {
+   "family": "quantum step",
+   "expr": "1 / sqrt(x) * sqrt(1 - x)",
+   "why": "a power or product of known quantities: C \u00b7 (wavenumber ratio k2/k1 beyond the step)^0.5 \u00b7 (transmission probability)^0.5 \u00b7 (reflection probability)^-0.2 \u00b7 (reflected amplitude ratio)^-0.1"
+  },
+  {
+   "family": "quantum step",
+   "expr": "(4 * sqrt(1 - x) / (1 + sqrt(1 - x))**2) / ((1 - sqrt(1 - x)) / (1 + sqrt(1 - x)))**2",
+   "why": "affine combination of known quantities (wavenumber ratio k2/k1 beyond the step, 1/(reflection probability))"
+  },
+  {
+   "family": "acoustic Doppler",
+   "expr": "1 / (1 - m)",
+   "why": "affine combination of known quantities (frequency ratio, source approaching)"
+  },
+  {
+   "family": "acoustic Doppler",
+   "expr": "1 + m",
+   "why": "affine combination of known quantities (frequency ratio, source receding, frequency ratio, observer approaching)"
+  },
+  {
+   "family": "acoustic Doppler",
+   "expr": "1 - m",
+   "why": "affine combination of known quantities (frequency ratio, source approaching, frequency ratio, observer receding)"
+  },
+  {
+   "family": "acoustic Doppler",
+   "expr": "m / sqrt(1 - m**2)",
+   "why": "affine combination of known quantities (frequency ratio, source approaching, relative velocity factor for sound propagation [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "damped oscillator",
+   "expr": "2 * pi * z / sqrt(1 - z**2)",
+   "why": "affine combination of known quantities (damped frequency / natural frequency, decay rate / damped frequency)"
+  },
+  {
+   "family": "damped oscillator",
+   "expr": "z / sqrt(1 - z**2)",
+   "why": "affine combination of known quantities (damped frequency / natural frequency, decay rate / damped frequency)"
+  },
+  {
+   "family": "damped oscillator",
+   "expr": "sqrt(1 - z**2) / z",
+   "why": "affine combination of known quantities (damped frequency / natural frequency, 1/(decay rate / damped frequency))"
+  },
+  {
+   "family": "damped oscillator",
+   "expr": "4 * z / sqrt(1 - z**2)",
+   "why": "affine combination of known quantities (damped frequency / natural frequency, decay rate / damped frequency)"
+  },
+  {
+   "family": "wave boundary",
+   "expr": "((1 - r)/(1 + r))**2",
+   "why": "affine combination of known quantities (reflected power fraction)"
+  },
+  {
+   "family": "wave boundary",
+   "expr": "(4*r)/(1 + r)**2",
+   "why": "affine combination of known quantities (reflected power fraction)"
+  },
+  {
+   "family": "wave boundary",
+   "expr": "1/r",
+   "why": "affine combination of known quantities (reflected power fraction, standing-wave ratio)"
+  },
+  {
+   "family": "wave boundary",
+   "expr": "r",
+   "why": "affine combination of known quantities (reflected power fraction, 1/(transmitted amplitude ratio))"
+  },
+  {
+   "family": "relativity",
+   "expr": "1/sqrt(1 - b**2)",
+   "why": "affine combination of known quantities (Lorentz factor \u03b3)"
+  },
+  {
+   "family": "relativity",
+   "expr": "b**2/(1 - b**2)",
+   "why": "a power or product of known quantities: C \u00b7 (Lorentz factor \u03b3)^0.535 \u00b7 (classical kinetic energy / mc\u00b2)^0.535 \u00b7 (relativistic momentum / (mc))^0.931 \u00b7 (time-dilation factor 1/\u03b3)^-0.535"
+  },
+  {
+   "family": "relativity",
+   "expr": "sqrt((1 - b)/(1 + b))",
+   "why": "affine combination of known quantities (Lorentz factor \u03b3, relativistic momentum / (mc))"
+  },
+  {
+   "family": "relativity",
+   "expr": "b/sqrt(1 - b**2)",
+   "why": "affine combination of known quantities (Lorentz factor \u03b3, relativistic momentum / (mc))"
+  },
+  {
+   "family": "kepler",
+   "expr": "-e**2/2",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "kepler",
+   "expr": "sqrt(1 - e**2)",
+   "why": "affine combination of known quantities (perihelion distance / a, semi-minor axis / a)"
+  },
+  {
+   "family": "kepler",
+   "expr": "1",
+   "why": "must depend on e only"
+  },
+  {
+   "family": "kepler",
+   "expr": "sqrt(1 - e**2)/(sqrt(1 - e**2) + 1)",
+   "why": "affine combination of known quantities (perihelion distance / a, eccentric anomaly at perihelion / pi [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "heat engines",
+   "expr": "t/(1 - t)",
+   "why": "affine combination of known quantities (Carnot efficiency, Carnot refrigerator coefficient of performance)"
+  },
+  {
+   "family": "heat engines",
+   "expr": "1/(1 - t)",
+   "why": "affine combination of known quantities (Carnot efficiency, Carnot refrigerator coefficient of performance)"
+  },
+  {
+   "family": "heat engines",
+   "expr": "1 - t",
+   "why": "affine combination of known quantities (Carnot efficiency)"
+  },
+  {
+   "family": "heat engines",
+   "expr": "1 - sqrt(t)",
+   "why": "affine combination of known quantities (Carnot efficiency, Curzon\u2013Ahlborn efficiency (endoreversible engine at maximum power))"
+  },
+  {
+   "family": "collisions",
+   "expr": "(1 - m)/(1 + m)",
+   "why": "affine combination of known quantities (elastic: rebound speed of the projectile / initial speed)"
+  },
+  {
+   "family": "collisions",
+   "expr": "(1 - m)/(1 + m)",
+   "why": "affine combination of known quantities (elastic: rebound speed of the projectile / initial speed)"
+  },
+  {
+   "family": "collisions",
+   "expr": "((1 - m)**2 + 4*m)/(1 + m)**2",
+   "why": "affine combination of known quantities (elastic: rebound speed of the projectile / initial speed)"
+  },
+  {
+   "family": "collisions",
+   "expr": "(1 - m + 2*m)/(1 + m)",
+   "why": "must depend on m only"
+  },
+  {
+   "family": "quantum step",
+   "expr": "sqrt(1 - x) * 4 * sqrt(1 - x) / (1 + sqrt(1 - x))**2",
+   "why": "affine combination of known quantities (transmission probability, transmitted amplitude ratio)"
+  },
+  {
+   "family": "quantum step",
+   "expr": "2 * atan(sqrt(x) / (1 - sqrt(1 - x)))",
+   "why": "only + \u2212 \u00d7 \u00f7, integer powers and square roots (so the prover can decide it)"
+  },
+  {
+   "family": "quantum step",
+   "expr": "((1 - sqrt(1 - x))/(1 + sqrt(1 - x)))**2 / (4*sqrt(1 - x)/(1 + sqrt(1 - x))**2)",
+   "why": "affine combination of known quantities (wavenumber ratio k2/k1 beyond the step, 1/(wavenumber ratio k2/k1 beyond the step))"
+  },
+  {
+   "family": "quantum step",
+   "expr": "2 * sqrt(x)",
+   "why": "affine combination of known quantities (wavenumber ratio k2/k1 beyond the step, Phase difference between reflected and transmitted waves [model-proposed; physical meaning unverified])"
   }
  ],
  "tried": [
@@ -6020,7 +6200,7 @@
    "k": "1"
   }
  ],
- "rounds": 244,
+ "rounds": 253,
  "discoveries": [
   {
    "claim": "phy-e72aa596c5f7",
