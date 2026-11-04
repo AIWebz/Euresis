@@ -1715,5 +1715,173 @@
   "statement": "[kepler] time-averaged distance / a \u2265 1 \u00d7 semi-latus rectum / a   for 0 < e < 1 (tight only in the limit e \u2192 0)",
   "status": "proved",
   "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-9c485f0ce903",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "e < 1"
+   ],
+   "claim": "e + 1 >= 1*(sqrt(e**2/2 + 1))",
+   "symbols": [
+    "e"
+   ]
+  },
+  "source": "physics_discover round 14",
+  "statement": "[kepler] aphelion distance / a \u2265 1 \u00d7 square root of time-averaged distance [model-proposed; physical meaning unverified]   for 0 < e < 1 (tight only in the limit e \u2192 0)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-3e5b72e0e36c",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'aphelion distance / a'",
+  "payload": {
+   "assumptions": [
+    "e < 1"
+   ],
+   "claim": "sqrt(e + 1)*sqrt(1/(1 - e)) >= 1*(sqrt(e**2/2 + 1))",
+   "symbols": [
+    "e"
+   ]
+  },
+  "source": "physics_discover round 14",
+  "statement": "[kepler] perihelion speed / circular speed at a \u2265 1 \u00d7 square root of time-averaged distance [model-proposed; physical meaning unverified]   for 0 < e < 1 (tight only in the limit e \u2192 0)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-73ba4a6bce8e",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "e < 1"
+   ],
+   "claim": "e**2/2 + 1 >= 1*(sqrt(e**2/2 + 1))",
+   "symbols": [
+    "e"
+   ]
+  },
+  "source": "physics_discover round 14",
+  "statement": "[kepler] time-averaged distance / a \u2265 1 \u00d7 square root of time-averaged distance [model-proposed; physical meaning unverified]   for 0 < e < 1 (tight only in the limit e \u2192 0)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-6efecf6d6c23",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "e < 1"
+   ],
+   "claim": "sqrt(e**2/2 + 1) >= 1*(1 - e)",
+   "symbols": [
+    "e"
+   ]
+  },
+  "source": "physics_discover round 14",
+  "statement": "[kepler] square root of time-averaged distance [model-proposed; physical meaning unverified] \u2265 1 \u00d7 perihelion distance / a   for 0 < e < 1 (tight only in the limit e \u2192 0)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-9f8e3dd17f46",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "e < 1"
+   ],
+   "claim": "sqrt(e**2/2 + 1) >= 1*(sqrt(1 - e)/sqrt(e + 1))",
+   "symbols": [
+    "e"
+   ]
+  },
+  "source": "physics_discover round 14",
+  "statement": "[kepler] square root of time-averaged distance [model-proposed; physical meaning unverified] \u2265 1 \u00d7 aphelion speed / circular speed at a   for 0 < e < 1 (tight only in the limit e \u2192 0)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-5ec5c266d5a3",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "e < 1"
+   ],
+   "claim": "sqrt(e**2/2 + 1) >= 1*(sqrt(1 - e**2))",
+   "symbols": [
+    "e"
+   ]
+  },
+  "source": "physics_discover round 14",
+  "statement": "[kepler] square root of time-averaged distance [model-proposed; physical meaning unverified] \u2265 1 \u00d7 semi-minor axis / a   for 0 < e < 1 (tight only in the limit e \u2192 0)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-24a4b530e621",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'semi-minor axis / a'",
+  "payload": {
+   "assumptions": [
+    "e < 1"
+   ],
+   "claim": "sqrt(e**2/2 + 1) >= 1*(1 - e**2)",
+   "symbols": [
+    "e"
+   ]
+  },
+  "source": "physics_discover round 14",
+  "statement": "[kepler] square root of time-averaged distance [model-proposed; physical meaning unverified] \u2265 1 \u00d7 semi-latus rectum / a   for 0 < e < 1 (tight only in the limit e \u2192 0)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]

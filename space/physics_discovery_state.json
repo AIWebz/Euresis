@@ -25,9 +25,7 @@
    "low-dissipation engine efficiency at maximum power, upper bound (Esposito et al.)": "(1 - t)/(1 + t)",
    "Carnot refrigerator coefficient of performance": "t/(1 - t)",
    "Carnot heat pump coefficient of performance": "1/(1 - t)",
-   "Power efficiency ratio [model-proposed; physical meaning unverified]": "sqrt(1 - t)/sqrt(t + 1)",
    "Low-dissipation refrigerator efficiency [model-proposed; physical meaning unverified]": "t/(t**2 - t + 1)",
-   "Heat pump performance ratio [model-proposed; physical meaning unverified]": "sqrt(1 - t)/t",
    "Thermal dissipation factor [model-proposed; physical meaning unverified]": "(1 - t)/(sqrt(t) + t)"
   }
  },
@@ -216,6 +214,41 @@
    "family": "heat engines",
    "expr": "sqrt(t)/(1 - t)",
    "why": "affine combination of known quantities (Carnot refrigerator coefficient of performance, 1/(Curzon\u2013Ahlborn efficiency (endoreversible engine at maximum power)))"
+  },
+  {
+   "family": "relativity",
+   "expr": "sqrt((1 - b)/(1 + b))",
+   "why": "affine combination of known quantities (Lorentz factor \u03b3, relativistic momentum / (mc))"
+  },
+  {
+   "family": "relativity",
+   "expr": "(2 * b) / (1 - b**2)",
+   "why": "product of known quantities (Lorentz factor \u03b3, relativistic momentum / (mc))"
+  },
+  {
+   "family": "relativity",
+   "expr": "1 / sqrt(1 - b**2)",
+   "why": "affine combination of known quantities (Lorentz factor \u03b3)"
+  },
+  {
+   "family": "relativity",
+   "expr": "b / (c * sqrt(1 - b**2))",
+   "why": "must depend on b only"
+  },
+  {
+   "family": "kepler",
+   "expr": "( ( (1 + e)/(1 - e) ) + ( (1 - e)/(1 + e) ) ) / 2",
+   "why": "affine combination of known quantities (perihelion distance / a, 1/(semi-latus rectum / a))"
+  },
+  {
+   "family": "kepler",
+   "expr": "sqrt(1 - e**2)/(1 - e**2)",
+   "why": "ratio of known quantities (perihelion distance / a, aphelion speed / circular speed at a)"
+  },
+  {
+   "family": "kepler",
+   "expr": "2*(1 - e**2)/( (1 - e) + (1 + e) )",
+   "why": "product of known quantities (perihelion distance / a, aphelion distance / a)"
   }
  ],
  "tried": [
@@ -394,7 +427,21 @@
   "heat engines|Low-dissipation refrigerator efficiency [model-proposed; physical meaning unverified]|Heat pump performance ratio [model-proposed; physical meaning unverified]",
   "heat engines|Low-dissipation refrigerator efficiency [model-proposed; physical meaning unverified]|Thermal dissipation factor [model-proposed; physical meaning unverified]",
   "heat engines|Heat pump performance ratio [model-proposed; physical meaning unverified]|Carnot efficiency",
-  "heat engines|Heat pump performance ratio [model-proposed; physical meaning unverified]|Curzon\u2013Ahlborn efficiency (endoreversible engine at maximum power)"
+  "heat engines|Heat pump performance ratio [model-proposed; physical meaning unverified]|Curzon\u2013Ahlborn efficiency (endoreversible engine at maximum power)",
+  "kepler|perihelion distance / a|square root of time-averaged distance [model-proposed; physical meaning unverified]",
+  "kepler|aphelion distance / a|square root of time-averaged distance [model-proposed; physical meaning unverified]",
+  "kepler|perihelion speed / circular speed at a|square root of time-averaged distance [model-proposed; physical meaning unverified]",
+  "kepler|aphelion speed / circular speed at a|square root of time-averaged distance [model-proposed; physical meaning unverified]",
+  "kepler|semi-minor axis / a|square root of time-averaged distance [model-proposed; physical meaning unverified]",
+  "kepler|semi-latus rectum / a|square root of time-averaged distance [model-proposed; physical meaning unverified]",
+  "kepler|time-averaged distance / a|square root of time-averaged distance [model-proposed; physical meaning unverified]",
+  "kepler|square root of time-averaged distance [model-proposed; physical meaning unverified]|perihelion distance / a",
+  "kepler|square root of time-averaged distance [model-proposed; physical meaning unverified]|aphelion distance / a",
+  "kepler|square root of time-averaged distance [model-proposed; physical meaning unverified]|perihelion speed / circular speed at a",
+  "kepler|square root of time-averaged distance [model-proposed; physical meaning unverified]|aphelion speed / circular speed at a",
+  "kepler|square root of time-averaged distance [model-proposed; physical meaning unverified]|semi-minor axis / a",
+  "kepler|square root of time-averaged distance [model-proposed; physical meaning unverified]|semi-latus rectum / a",
+  "kepler|square root of time-averaged distance [model-proposed; physical meaning unverified]|time-averaged distance / a"
  ],
  "edges": [
   {
@@ -669,9 +716,58 @@
    "g": "semi-latus rectum / a",
    "kind": "lower",
    "k": "1"
+  },
+  {
+   "family": "kepler",
+   "f": "aphelion distance / a",
+   "g": "square root of time-averaged distance [model-proposed; physical meaning unverified]",
+   "kind": "lower",
+   "k": "1"
+  },
+  {
+   "family": "kepler",
+   "f": "perihelion speed / circular speed at a",
+   "g": "square root of time-averaged distance [model-proposed; physical meaning unverified]",
+   "kind": "lower",
+   "k": "1"
+  },
+  {
+   "family": "kepler",
+   "f": "time-averaged distance / a",
+   "g": "square root of time-averaged distance [model-proposed; physical meaning unverified]",
+   "kind": "lower",
+   "k": "1"
+  },
+  {
+   "family": "kepler",
+   "f": "square root of time-averaged distance [model-proposed; physical meaning unverified]",
+   "g": "perihelion distance / a",
+   "kind": "lower",
+   "k": "1"
+  },
+  {
+   "family": "kepler",
+   "f": "square root of time-averaged distance [model-proposed; physical meaning unverified]",
+   "g": "aphelion speed / circular speed at a",
+   "kind": "lower",
+   "k": "1"
+  },
+  {
+   "family": "kepler",
+   "f": "square root of time-averaged distance [model-proposed; physical meaning unverified]",
+   "g": "semi-minor axis / a",
+   "kind": "lower",
+   "k": "1"
+  },
+  {
+   "family": "kepler",
+   "f": "square root of time-averaged distance [model-proposed; physical meaning unverified]",
+   "g": "semi-latus rectum / a",
+   "kind": "lower",
+   "k": "1"
   }
  ],
- "rounds": 12,
+ "rounds": 14,
  "discoveries": [
   {
    "claim": "phy-e72aa596c5f7",

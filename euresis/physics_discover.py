@@ -159,15 +159,15 @@ def validate(fam: str, expr: str, known: dict) -> tuple[sp.Expr | None, str]:
             coef, *_ = np.linalg.lstsq(A, vals[sel], rcond=None)
             if np.abs(A @ coef - vals[sel]).max() < 1e-9 * max(1, np.abs(vals).max()):
                 return None, f"affine combination of known quantities ({ni}{', ' + nj if nj and nj != ni else ''})"
-            if nj is None:
-                r = vals[sel] * K[ni][sel]
-                if r.max() - r.min() < 1e-9 * max(1, abs(r).max()):
-                    return None, f"reciprocal of a known quantity ({ni})"
-            else:
-                for label, other in (("product", K[ni] * K[nj]), ("ratio", K[ni] / K[nj]), ("ratio", K[nj] / K[ni])):
-                    r = vals[sel] / other[sel]
-                    if r.max() - r.min() < 1e-9 * max(1, abs(r).max()):
-                        return None, f"{label} of known quantities ({ni}, {nj})"
+            # monomial: f = C · Ki^p · Kj^q for any real p, q (products, ratios, reciprocals, roots, powers)
+            L = [np.log(K[ni][sel])] + ([np.log(K[nj][sel])] if nj and nj != ni else [])
+            if all(np.all(np.isfinite(x)) for x in L):
+                B = np.stack([one[sel]] + L, 1)
+                lv = np.log(vals[sel])
+                cf, *_ = np.linalg.lstsq(B, lv, rcond=None)
+                if np.abs(B @ cf - lv).max() < 1e-9:
+                    pw = " · ".join(f"({n})^{c:.4g}" for n, c in zip([ni] + ([nj] if len(L) > 1 else []), cf[1:]))
+                    return None, f"a power or product of known quantities: C · {pw}"
     return E, "ok"
 
 
