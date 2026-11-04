@@ -4820,6 +4820,51 @@
    "family": "driven oscillator",
    "expr": "2*r**2*z/(4*r**2*z**2 + (1 - r**2)**2 + 1)",
    "why": "affine combination of known quantities (amplitude / static deflection, Relative energy loss per cycle [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 + u)/(1 - u)) * sqrt((1 + v)/(1 - v))",
+   "why": "affine combination of known quantities (composed speed / c, Doppler factor of the composed motion)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "1 - (u + v)**2/(1 + u*v)**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "atanh(u) + atanh(v)",
+   "why": "only + \u2212 \u00d7 \u00f7, integer powers and square roots (so the prover can decide it)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt(1 - (u + v)**2/(1 + u*v)**2)}",
+   "why": "does not parse"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "1/(1 + 2*c*x)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, Compton scattering formula (recoil angle cosine) [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "( ( (1 + c1 + c2)/3 - c1 ) / ( (1 + c1 + c2)/3 ) )",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "( ( (1 + c1 + c2)/3 - c2 ) / ( (1 + c1 + c2)/3 ) )",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "(( (1 - 2*c1 + c2)/3 )**2 + ((1 - 2*c2 + c1)/3 )**2 ) / ( ( (1 - 2*c1 + c2)/3 + (1 - 2*c2 + c1)/3 )*",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "( (1 + c1 + c2)/3 - (c1 + c2)/2 ) / ( (1 + c1 + c2)/3 )",
+   "why": "affine combination of known quantities (output of firm 1, 1/(market price))"
   }
  ],
  "tried": [
@@ -7810,7 +7855,7 @@
    "k": "1"
   }
  ],
- "rounds": 251,
+ "rounds": 254,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",

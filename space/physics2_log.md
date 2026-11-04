@@ -269,3 +269,6 @@
 - 2026-11-04 21:33 round 250: collision
 - 2026-11-04 21:40 round 251: driven oscillator
 - 2026-11-04 21:48 round 252: velocity addition
+- 2026-11-04 21:56 round 253: Compton scattering
+- 2026-11-04 21:58 round 254: Cournot duopoly
+- 2026-11-04 22:06 round 255: insurance and risk
