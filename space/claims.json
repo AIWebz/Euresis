@@ -417,5 +417,22 @@
   "statement": "Periodic equal-mass three-body orbit with v = (0.1890048924, 0.5397624528), T \u2248 19.735392, T* \u2248 36.940",
   "status": "candidate",
   "verifier": null
+ },
+ {
+  "evidence": {
+   "error": "TypeError: unsupported operand type(s) for *: 'FunctionClass' and 'Symbol'"
+  },
+  "id": "ine-628f54ee6f44",
+  "kind": "inequality",
+  "novelty": "known (Relativistic kinetic energy inequality)",
+  "payload": {
+   "P": "gamma*m*c^2 - m*c^2",
+   "Q": "0.5*m*v^2",
+   "k": "1"
+  },
+  "source": "reasoning-core (local Qwen3-14B): Is relativistic kinetic energy always at least the classical value m v^2/2 for 0",
+  "statement": "Relativistic kinetic energy is always at least the classical value m v^2/2 for 0 < v < c.",
+  "status": "unverified",
+  "verifier": "z3+sampling"
  }
 ]
