@@ -21176,5 +21176,140 @@
   "statement": "[economics: insurance and risk] Coefficient of Risk Aversion [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 maximum premium the person would pay for full insurance   on p < 1, L < 1 (tight only at the edge of the domain, near (1, 1))",
   "status": "proved",
   "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-5f9c479288de",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "1/(2 - 2*sqrt(1 - L)) >= 1*(sqrt(p)*sqrt((1 - p)*(sqrt(1 - L) - 1)**2))",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 215",
+  "statement": "[economics: insurance and risk] Coefficient of Risk Aversion [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Expected Utility Deviation [model-proposed; physical meaning unverified]   on p < 1, L < 1 (tight only at the edge of the domain, near (0.5, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-8a2de0d37a53",
+  "kind": "physics-relation",
+  "novelty": "not a known result in Euresis' knowledge; not implied by proved bounds; physics literature unchecked (arXiv unreachable from this environment); involves a model-proposed quantity whose physical meaning is unverified; ECONOMICS CHECK (by hand): the left side 1/\u221a(1\u2212L) is NOT relative risk aversion (which is the constant 1/2 for \u221a utility) but twice the marginal utility in the loss state; the right side is 8 \u00d7 the standard deviation of utility. True and sharp (equality p = 1/2, L = 3/4), but it factors into \u221a(p(1\u2212p)) \u2264 1/2 and (2s\u22121)\u00b2 \u2265 0 with s = \u221a(1\u2212L): elementary",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "1/sqrt(1 - L) >= 8*(sqrt(p)*sqrt((1 - p)*(sqrt(1 - L) - 1)**2))",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 215",
+  "statement": "[economics: insurance and risk] Relative Risk Aversion [model-proposed; physical meaning unverified] \u2265 8 \u00d7 Expected Utility Deviation [model-proposed; physical meaning unverified]   on p < 1, L < 1 (equality at (p, L) \u2248 (0.5, 0.75))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-a458ddd0948a",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "sqrt(p)*sqrt((1 - p)*(sqrt(1 - L) - 1)**2) >= 2*(-L*p - (p*sqrt(1 - L) - p + 1)**2 + 1)",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 215",
+  "statement": "[economics: insurance and risk] Expected Utility Deviation [model-proposed; physical meaning unverified] \u2265 2 \u00d7 risk premium   on p < 1, L < 1 (tight only at the edge of the domain, near (0.5, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-8e5d9380fd92",
+  "kind": "physics-relation",
+  "novelty": "not a known result in Euresis' knowledge; not implied by proved bounds; physics literature unchecked (arXiv unreachable from this environment); involves a model-proposed quantity whose physical meaning is unverified; ECONOMICS CHECK (by hand): the left side is exactly the standard deviation of utility (label correct); claim: \u03c3_utility \u2265 (27/16)\u00b7Var(wealth) for a \u221a-utility person facing a loss L with probability p. True and sharp (equality p = 1/2, L = 8/9); it reduces to \u221a(p(1\u2212p)) \u2264 1/2 and max of (1\u2212s)(1+s)\u00b2 = 32/27 at s = 1/3: elementary",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "sqrt(p)*sqrt((1 - p)*(sqrt(1 - L) - 1)**2) >= 27/16*(L**2*p*(1 - p))",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 215",
+  "statement": "[economics: insurance and risk] Expected Utility Deviation [model-proposed; physical meaning unverified] \u2265 27/16 \u00d7 variance of wealth   on p < 1, L < 1 (equality at (p, L) \u2248 (0.5, 0.888889))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-fb9bfac433a5",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "L*p/(-p*sqrt(1 - L) + p + sqrt(-L*p + 1) - 1) >= 256/27*(-L*p - (p*sqrt(1 - L) - p + 1)**2 + 1)",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 215",
+  "statement": "[economics: insurance and risk] Insurance risk sensitivity [model-proposed; physical meaning unverified] \u2265 256/27 \u00d7 risk premium   on p < 1, L < 1 (tight only at the edge of the domain, near (0.438, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]
