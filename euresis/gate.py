@@ -210,7 +210,13 @@ def verify_lean(p: dict) -> tuple[str, dict]:
     return {"proved": "proved", "failed": "unverified"}.get(r["status"], "unverified"), r
 
 
+def verify_music(p: dict) -> tuple[str, dict]:
+    from .music import verify_claim
+    return verify_claim(p)
+
+
 VERIFIERS = {
+    "music": ("exhaustive-z12", verify_music),
     "inequality": ("z3+sampling", verify_inequality),
     "z3": ("z3", verify_z3),
     "physics-relation": ("z3-sqrt", verify_physics_relation),

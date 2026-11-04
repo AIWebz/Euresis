@@ -31,7 +31,8 @@ DB_PATH = ROOT / "data" / "registry.db"
 EXPORT = ROOT / "space" / "claims.json"
 
 STATUSES = ("candidate", "proved", "verified-numeric", "refuted", "unverified")
-KINDS = ("inequality", "z3", "identity", "constant", "orbit", "lean", "physics-relation")
+KINDS = ("inequality", "z3", "identity", "constant", "orbit", "lean", "physics-relation", "music", "game",
+         "empirical")
 
 SCHEMA = """
 CREATE TABLE IF NOT EXISTS claims (

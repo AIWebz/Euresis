@@ -10,7 +10,8 @@
    "speed of product 2 / c": "sqrt((1 - (a + b)**2)*(1 - (a - b)**2))/(1 - a**2 + b**2)",
    "Lorentz factor of product 1": "(1 + a**2 - b**2)/(2*a)",
    "Invariant mass squared of the two products [model-proposed; physical meaning unverified]": "(a**2 + b**2 - (a - b)**2)/(-a - b + 1)",
-   "Ratio of kinetic energies of product 1 to product 2 [model-proposed; physical meaning unverified]": "(-b**2 + (1 - a)**2)/(-a**2 + 2*b**2 - (1 - a)**2 + 1)"
+   "Ratio of kinetic energies of product 1 to product 2 [model-proposed; physical meaning unverified]": "(-b**2 + (1 - a)**2)/(-a**2 + 2*b**2 - (1 - a)**2 + 1)",
+   "Total kinetic energy of the two products / (Mc\u00b2) [model-proposed; physical meaning unverified]": "-a**2/2 - b**2 + (1 - a)**2/2 + 1/2"
   },
   "collision": {
    "target speed / initial speed": "(1 + e)*m/(1 + m)",
@@ -3179,6 +3180,141 @@
    "family": "Compton scattering",
    "expr": "1/(c*x) + 1",
    "why": "affine combination of known quantities (scattered photon energy / initial energy, 1/(electron kinetic energy / photon energy))"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "sqrt((1 - (a + b)**2)*(1 - (a - b)**2))/(1 + a**2 - b**2) / sqrt((1 - (a + b)**2)*(1 - (a - b)**2))/",
+   "why": "affine combination of known quantities (1/(energy of product 1 / (Mc\u00b2)), 1/(energy of product 2 / (Mc\u00b2)))"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "(a**2 + b**2 - (a - b)**2)/(1 - a - b)",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), Invariant mass squared of the two products [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "(1 + a**2 - b**2)/2 + (1 - a**2 + b**2)/2",
+   "why": "must depend only on a, b"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "((1 - a)**2 - b**2)/2 / ((1 - a**2 + b**2)/2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "collision",
+   "expr": "m**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "collision",
+   "expr": "(1 - (1 + e)**2 * m / (1 + m)**2)",
+   "why": "affine combination of known quantities (target speed / initial speed, fraction of kinetic energy given to the target)"
+  },
+  {
+   "family": "collision",
+   "expr": "e",
+   "why": "affine combination of known quantities (target speed / initial speed, momentum transferred / initial momentum)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "atan(2*z*r/(1 - r**2))",
+   "why": "only + \u2212 \u00d7 \u00f7, integer powers and square roots (so the prover can decide it)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "atan(2*z*r/(1 - r**2)) - atan(2*z*r/(1 - r**2))",
+   "why": "must depend only on r, z"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "2*atan(2*z*r/(1 - r**2))",
+   "why": "only + \u2212 \u00d7 \u00f7, integer powers and square roots (so the prover can decide it)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "z / sqrt(1 - z**2)",
+   "why": "affine combination of known quantities (amplitude / static deflection, 1/(log decrement [model-proposed; physical meaning unverified]))"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "(u + v)/(sqrt(1 - u**2)*sqrt(1 - v**2)*(1 + u*v))",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt(1 - (u + v)**2/(1 + u*v)**2)",
+   "why": "affine combination of known quantities (composed speed / c, 1/(Lorentz factor of the composed motion))"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 - u**2)*(1 - v**2))/(-u*v + 1)",
+   "why": "affine combination of known quantities (composed speed / c, Relativistic velocity parameter [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt(1 - (u + v)**2/(1 + u*v)**2) + (1 + u*v)/(sqrt(1 - u**2)*sqrt(1 - v**2))",
+   "why": "affine combination of known quantities (Lorentz factor of the composed motion, 1/(Lorentz factor of the composed motion))"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "c/(x + 1)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, Scattered photon wavelength / initial photon wavelength [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "(1 - (x*c)/(1 + x*c))",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy)"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "1 + c/(x + 1)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, Scattered photon wavelength / initial photon wavelength [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "(x*c)/(1 + x*c)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy)"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "sqrt((1 - (a + b)**2)*(1 - (a - b)**2))/(1 + a**2 - b**2) / sqrt((1 - (a + b)**2)*(1 - (a - b)**2))/",
+   "why": "affine combination of known quantities (1/(energy of product 1 / (Mc\u00b2)), 1/(energy of product 2 / (Mc\u00b2)))"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "sqrt((a**2 + b**2 - (a - b)**2)/(-a - b + 1))",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "(1 + a**2 - b**2)/2 + (1 - a**2 + b**2)/2",
+   "why": "must depend only on a, b"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2 * m",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "collision",
+   "expr": "e",
+   "why": "affine combination of known quantities (target speed / initial speed, momentum transferred / initial momentum)"
+  },
+  {
+   "family": "collision",
+   "expr": "(1 + e)**2 * m / (1 + m)**2",
+   "why": "affine combination of known quantities (target speed / initial speed, fraction of kinetic energy given to the target)"
+  },
+  {
+   "family": "collision",
+   "expr": "e",
+   "why": "affine combination of known quantities (target speed / initial speed, momentum transferred / initial momentum)"
   }
  ],
  "tried": [
@@ -3947,7 +4083,27 @@
   "driven oscillator|Acceleration transmissibility [model-proposed; physical meaning unverified]|Resonance frequency ratio (corrected) [model-proposed; physical meaning unverified]",
   "driven oscillator|Acceleration transmissibility [model-proposed; physical meaning unverified]|Relative energy loss per cycle [model-proposed; physical meaning unverified]",
   "driven oscillator|Acceleration transmissibility [model-proposed; physical meaning unverified]|Normalized power transmission [model-proposed; physical meaning unverified]",
-  "driven oscillator|Acceleration transmissibility [model-proposed; physical meaning unverified]|Velocity transmissibility [model-proposed; physical meaning unverified]"
+  "driven oscillator|Acceleration transmissibility [model-proposed; physical meaning unverified]|Velocity transmissibility [model-proposed; physical meaning unverified]",
+  "two-body decay|momentum of each product / (Mc)|Total kinetic energy of the two products / (Mc\u00b2) [model-proposed; physical meaning unverified]",
+  "two-body decay|energy of product 1 / (Mc\u00b2)|Total kinetic energy of the two products / (Mc\u00b2) [model-proposed; physical meaning unverified]",
+  "two-body decay|energy of product 2 / (Mc\u00b2)|Total kinetic energy of the two products / (Mc\u00b2) [model-proposed; physical meaning unverified]",
+  "two-body decay|kinetic energy released Q / (Mc\u00b2)|Total kinetic energy of the two products / (Mc\u00b2) [model-proposed; physical meaning unverified]",
+  "two-body decay|kinetic energy of product 1 / (Mc\u00b2)|Total kinetic energy of the two products / (Mc\u00b2) [model-proposed; physical meaning unverified]",
+  "two-body decay|speed of product 1 / c|Total kinetic energy of the two products / (Mc\u00b2) [model-proposed; physical meaning unverified]",
+  "two-body decay|speed of product 2 / c|Total kinetic energy of the two products / (Mc\u00b2) [model-proposed; physical meaning unverified]",
+  "two-body decay|Lorentz factor of product 1|Total kinetic energy of the two products / (Mc\u00b2) [model-proposed; physical meaning unverified]",
+  "two-body decay|Invariant mass squared of the two products [model-proposed; physical meaning unverified]|Total kinetic energy of the two products / (Mc\u00b2) [model-proposed; physical meaning unverified]",
+  "two-body decay|Ratio of kinetic energies of product 1 to product 2 [model-proposed; physical meaning unverified]|Total kinetic energy of the two products / (Mc\u00b2) [model-proposed; physical meaning unverified]",
+  "two-body decay|Total kinetic energy of the two products / (Mc\u00b2) [model-proposed; physical meaning unverified]|momentum of each product / (Mc)",
+  "two-body decay|Total kinetic energy of the two products / (Mc\u00b2) [model-proposed; physical meaning unverified]|energy of product 1 / (Mc\u00b2)",
+  "two-body decay|Total kinetic energy of the two products / (Mc\u00b2) [model-proposed; physical meaning unverified]|energy of product 2 / (Mc\u00b2)",
+  "two-body decay|Total kinetic energy of the two products / (Mc\u00b2) [model-proposed; physical meaning unverified]|kinetic energy released Q / (Mc\u00b2)",
+  "two-body decay|Total kinetic energy of the two products / (Mc\u00b2) [model-proposed; physical meaning unverified]|kinetic energy of product 1 / (Mc\u00b2)",
+  "two-body decay|Total kinetic energy of the two products / (Mc\u00b2) [model-proposed; physical meaning unverified]|speed of product 1 / c",
+  "two-body decay|Total kinetic energy of the two products / (Mc\u00b2) [model-proposed; physical meaning unverified]|speed of product 2 / c",
+  "two-body decay|Total kinetic energy of the two products / (Mc\u00b2) [model-proposed; physical meaning unverified]|Lorentz factor of product 1",
+  "two-body decay|Total kinetic energy of the two products / (Mc\u00b2) [model-proposed; physical meaning unverified]|Invariant mass squared of the two products [model-proposed; physical meaning unverified]",
+  "two-body decay|Total kinetic energy of the two products / (Mc\u00b2) [model-proposed; physical meaning unverified]|Ratio of kinetic energies of product 1 to product 2 [model-proposed; physical meaning unverified]"
  ],
  "edges": [
   {
@@ -5095,9 +5251,39 @@
    "f": "Acceleration transmissibility [model-proposed; physical meaning unverified]",
    "g": "Resonance frequency shift [model-proposed; physical meaning unverified]",
    "k": "1"
+  },
+  {
+   "family": "two-body decay",
+   "f": "energy of product 1 / (Mc\u00b2)",
+   "g": "Total kinetic energy of the two products / (Mc\u00b2) [model-proposed; physical meaning unverified]",
+   "k": "1/2"
+  },
+  {
+   "family": "two-body decay",
+   "f": "energy of product 2 / (Mc\u00b2)",
+   "g": "Total kinetic energy of the two products / (Mc\u00b2) [model-proposed; physical meaning unverified]",
+   "k": "1/2"
+  },
+  {
+   "family": "two-body decay",
+   "f": "Total kinetic energy of the two products / (Mc\u00b2) [model-proposed; physical meaning unverified]",
+   "g": "momentum of each product / (Mc)",
+   "k": "1"
+  },
+  {
+   "family": "two-body decay",
+   "f": "Total kinetic energy of the two products / (Mc\u00b2) [model-proposed; physical meaning unverified]",
+   "g": "kinetic energy released Q / (Mc\u00b2)",
+   "k": "1"
+  },
+  {
+   "family": "two-body decay",
+   "f": "Total kinetic energy of the two products / (Mc\u00b2) [model-proposed; physical meaning unverified]",
+   "g": "kinetic energy of product 1 / (Mc\u00b2)",
+   "k": "2"
   }
  ],
- "rounds": 165,
+ "rounds": 172,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",

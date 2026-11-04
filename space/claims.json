@@ -8864,5 +8864,150 @@
   "statement": "[driven oscillator] Acceleration transmissibility [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Resonance frequency shift [model-proposed; physical meaning unverified]   on r < 2, z < 1 (tight only at the edge of the domain, near (6.25e-10, 5.17e-09))",
   "status": "proved",
   "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-97d79f823e0d",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "claim": "a**2/2 - b**2/2 + 1/2 >= 1/2*(-a**2/2 - b**2 + (1 - a)**2/2 + 1/2)",
+   "symbols": [
+    "a",
+    "b"
+   ]
+  },
+  "source": "physics_discover2 round 171",
+  "statement": "[two-body decay] energy of product 1 / (Mc\u00b2) \u2265 1/2 \u00d7 Total kinetic energy of the two products / (Mc\u00b2) [model-proposed; physical meaning unverified]   on a < 1, b < 1, a + b < 1 (tight only at the edge of the domain, near (3.45e-17, 0.000117))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-f987f30968fa",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "claim": "-a**2/2 + b**2/2 + 1/2 >= 1/2*(-a**2/2 - b**2 + (1 - a)**2/2 + 1/2)",
+   "symbols": [
+    "a",
+    "b"
+   ]
+  },
+  "source": "physics_discover2 round 171",
+  "statement": "[two-body decay] energy of product 2 / (Mc\u00b2) \u2265 1/2 \u00d7 Total kinetic energy of the two products / (Mc\u00b2) [model-proposed; physical meaning unverified]   on a < 1, b < 1, a + b < 1 (tight only at the edge of the domain, near (2.43e-17, 5.16e-09))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-6f0adcc44eea",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "claim": "-a**2/2 - b**2 + (1 - a)**2/2 + 1/2 >= 1*(sqrt((1 - (a - b)**2)*(1 - (a + b)**2))/2)",
+   "symbols": [
+    "a",
+    "b"
+   ]
+  },
+  "source": "physics_discover2 round 171",
+  "statement": "[two-body decay] Total kinetic energy of the two products / (Mc\u00b2) [model-proposed; physical meaning unverified] \u2265 1 \u00d7 momentum of each product / (Mc)   on a < 1, b < 1, a + b < 1 (tight only at the edge of the domain, near (1, 3.84e-17))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-3b877a8fb4b3",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "claim": "-a**2/2 - b**2 + (1 - a)**2/2 + 1/2 >= 1*(-a - b + 1)",
+   "symbols": [
+    "a",
+    "b"
+   ]
+  },
+  "source": "physics_discover2 round 171",
+  "statement": "[two-body decay] Total kinetic energy of the two products / (Mc\u00b2) [model-proposed; physical meaning unverified] \u2265 1 \u00d7 kinetic energy released Q / (Mc\u00b2)   on a < 1, b < 1, a + b < 1 (tight only at the edge of the domain, near (0.000117, 3.45e-17))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-23b2c0b1c525",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "claim": "-a**2/2 - b**2 + (1 - a)**2/2 + 1/2 >= 2*(-b**2/2 + (1 - a)**2/2)",
+   "symbols": [
+    "a",
+    "b"
+   ]
+  },
+  "source": "physics_discover2 round 171",
+  "statement": "[two-body decay] Total kinetic energy of the two products / (Mc\u00b2) [model-proposed; physical meaning unverified] \u2265 2 \u00d7 kinetic energy of product 1 / (Mc\u00b2)   on a < 1, b < 1, a + b < 1 (tight only at the edge of the domain, near (2.65e-17, 0.000132))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]
