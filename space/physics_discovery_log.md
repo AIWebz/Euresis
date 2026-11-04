@@ -435,3 +435,15 @@
 - 2026-11-04 11:56 round 407: damped oscillator
 - 2026-11-04 11:57 round 408: wave boundary
 - 2026-11-04 11:58 round 409: relativity
+- 2026-11-04 11:59 round 410: kepler
+- 2026-11-04 12:01 round 411: heat engines
+- 2026-11-04 12:02 round 412: collisions
+- 2026-11-04 12:04 round 413: quantum step
+- 2026-11-04 12:05 round 414: acoustic Doppler
+- 2026-11-04 12:06 round 415: damped oscillator
+- 2026-11-04 12:07 round 416: wave boundary
+- 2026-11-04 12:08 round 417: relativity
+- 2026-11-04 12:10 round 418: kepler
+- 2026-11-04 12:11 round 419: heat engines
+- 2026-11-04 12:17 round 420: collisions
+- 2026-11-04 12:21 round 421: quantum step

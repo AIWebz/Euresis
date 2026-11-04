@@ -473,6 +473,20 @@ def cmd_physics_discover(a):
           "rediscovered; log: space/physics_discovery_log.md")
 
 
+def cmd_physics_discover2(a):
+    from . import physics_discover2 as pd2
+    if a.stop:
+        pd2.STOP.parent.mkdir(parents=True, exist_ok=True)
+        pd2.STOP.write_text("stop requested\n")
+        print("stop requested: the two-variable discovery loop will stop after its current round")
+        return
+    if a.resume:
+        pd2.STOP.unlink(missing_ok=True)
+    st = pd2.run(minutes=a.minutes, use_llm=False if a.no_llm else None)
+    print(f"{st['rounds']} rounds, {len(st['discoveries'])} discoveries, {len(st['rediscoveries'])} known laws "
+          "rediscovered; log: space/physics2_log.md")
+
+
 def main(argv=None):
     p = argparse.ArgumentParser(prog="euresis", description="Euresis — scientific discovery engine")
     sub = p.add_subparsers(dest="cmd", required=True)
@@ -494,6 +508,10 @@ def main(argv=None):
     pd.add_argument("--minutes", type=float, default=100); pd.add_argument("--no-llm", action="store_true")
     pd.add_argument("--stop", action="store_true"); pd.add_argument("--resume", action="store_true")
     pd.set_defaults(fn=cmd_physics_discover)
+    p2 = sub.add_parser("physics-discover2", help="two-variable physics discovery (sharp proved bounds over 2-D domains)")
+    p2.add_argument("--minutes", type=float, default=100); p2.add_argument("--no-llm", action="store_true")
+    p2.add_argument("--stop", action="store_true"); p2.add_argument("--resume", action="store_true")
+    p2.set_defaults(fn=cmd_physics_discover2)
     sub.add_parser("claude-ping", help="one test call to the Claude API").set_defaults(fn=cmd_claude_ping)
     sub.add_parser("writeup").set_defaults(fn=cmd_writeup)
     sub.add_parser("info").set_defaults(fn=cmd_info)

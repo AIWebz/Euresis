@@ -475,6 +475,22 @@ from what is left, and checks whether any output matches a removed law (exactly,
 or up to a dimensionless factor that dimensional analysis cannot fix). The latest
 result is saved in `space/benchmark.json` and shown on the canvas.
 
+## Two-variable physics discovery
+
+`python -m euresis physics-discover2` searches for sharp, machine-proved bounds between physical quantities that
+depend on **two** parameters: two-body decay (mass ratios a, b with a + b < 1), partially elastic collisions
+(mass ratio, coefficient of restitution), the driven damped oscillator (frequency ratio, damping ratio),
+relativistic velocity addition (u, v) and Compton scattering (photon energy, angle). The local 14B model proposes
+new quantities. For each pair Euresis finds the best constant over the 2-D domain and Z3 proves it. A result
+counts as a discovery only if all of these hold:
+
+- it is proved and sharp to 10⁻⁶;
+- equality is reached at an **isolated interior point**, checked through the Hessian, because a bound that is
+  tight along a whole curve is a one-variable inequality in disguise;
+- it depends on both variables;
+- it is not a known result, does not follow from proved bounds, and is not the same inequality as an earlier
+  discovery.
+
 ## Local 14B language model (no API needed)
 
 Euresis can use **Qwen3-14B** (14.8 B parameters, Apache-2.0, by the Qwen team) as its reasoning core. The model
