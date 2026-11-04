@@ -52,3 +52,12 @@
 - 2026-11-04 03:58 segment start (budget 100 min; model: Qwen3-14B; 2 discoveries so far)
 - 2026-11-04 03:58 round 36: collisions
 - 2026-11-04 04:00 round 37: quantum step
+- 2026-11-04 04:00 round 38: acoustic Doppler
+- 2026-11-04 04:01 round 39: damped oscillator
+- 2026-11-04 04:02 round 40: wave boundary
+- 2026-11-04 04:03 round 41: relativity
+- 2026-11-04 04:04 round 42: kepler
+- 2026-11-04 04:05 round 43: heat engines
+- 2026-11-04 04:07 round 44: collisions
+- 2026-11-04 04:08 round 45: quantum step
+- 2026-11-04 04:09 round 46: acoustic Doppler
