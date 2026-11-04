@@ -4544,6 +4544,46 @@
    "family": "velocity addition",
    "expr": "sqrt((u/sqrt(1 - u**2) + v/sqrt(1 - v**2))**2)",
    "why": "affine combination of known quantities (composed speed / c, Relativistic momentum ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "c/(x + 1)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, Scattered photon wavelength / initial photon wavelength [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "x/(1 + x*c)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, scattered photon energy / (m_e c\u00b2))"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "x*c/(1 + x*c)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy)"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "sqrt(1 + x**2*c**2)/(1 + x*c)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "( ( (1 + c1 + c2)/3 - c1 ) / ( (1 + c1 + c2)/3 ) )",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "( ( (1 + c1 + c2)/3 - c2 ) / ( (1 + c1 + c2)/3 ) )",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "(( (1 - 2*c1 + c2)/3 )**2 + ((1 - 2*c2 + c1)/3 )**2 ) / ( ( (1 - 2*c1 + c2)/3 + (1 - 2*c2 + c1)/3 )*",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "( ( (1 + c1 + c2)/3 - c1 ) / ( (1 + c1 + c2)/3 - c2 ) )",
+   "why": "a power or product of known quantities"
   }
  ],
  "tried": [
@@ -7452,7 +7492,7 @@
    "k": "1"
   }
  ],
- "rounds": 236,
+ "rounds": 238,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",
