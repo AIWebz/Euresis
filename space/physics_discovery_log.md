@@ -323,3 +323,11 @@
 - 2026-11-04 09:32 round 299: heat engines
 - 2026-11-04 09:34 round 300: collisions
 - 2026-11-04 09:35 round 301: quantum step
+- 2026-11-04 09:37 round 302: acoustic Doppler
+- 2026-11-04 09:38 round 303: damped oscillator
+- 2026-11-04 09:39 round 304: wave boundary
+- 2026-11-04 09:40 round 305: relativity
+- 2026-11-04 09:42 round 306: kepler
+- 2026-11-04 09:43 round 307: heat engines
+- 2026-11-04 09:45 round 308: collisions
+- 2026-11-04 09:46 segment end: 308 rounds, 2 discoveries, 2 known laws rediscovered
