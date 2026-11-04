@@ -24,7 +24,8 @@
    "velocity ratio of target to projectile after collision [model-proposed; physical meaning unverified]": "e*(m + 1)/(e*m + 1)",
    "velocity ratio of projectile to target after collision [model-proposed; physical meaning unverified]": "(-e*m + 1)/(e*m + 1)",
    "relative velocity after collision divided by initial velocity of projectile [model-proposed; physical meaning unverified]": "e*(1 - m)/(m + 1)",
-   "Fraction of kinetic energy retained by projectile [model-proposed; physical meaning unverified]": "(-e**2*m + 1)/(m + 1)"
+   "Fraction of kinetic energy retained by projectile [model-proposed; physical meaning unverified]": "(-e**2*m + 1)/(m + 1)",
+   "Fraction of kinetic energy retained by target [model-proposed; physical meaning unverified]": "e**2*(m**2 + 1)/(m + 1)**2"
   },
   "driven oscillator": {
    "amplitude / static deflection": "1/sqrt((1 - r**2)**2 + (2*z*r)**2)",
@@ -113,7 +114,8 @@
    "expected bidder surplus ratio [model-proposed; physical meaning unverified]": "(2*r**3/3 - r**2 + 1/3)/(2/3 - 2*r**3/3)",
    "reserve price elasticity of welfare [model-proposed; physical meaning unverified]": "(-2*r**3/3 + r**2*v + 2/3)/(-2*r**3 + 2*r**2)",
    "expected bidder surplus given reserve [model-proposed; physical meaning unverified]": "(2*r**3/3 - r**2 + 1/3)/(1 - r**2)",
-   "reserve price elasticity of bidder surplus [model-proposed; physical meaning unverified]": "(2*r**3/3 - r**2 + 1/3)/(2*r**3/3 - r**2*(2*r**3/3 - r**2 + 1/3) - r**2 + 1/3)"
+   "reserve price elasticity of bidder surplus [model-proposed; physical meaning unverified]": "(2*r**3/3 - r**2 + 1/3)/(2*r**3/3 - r**2*(2*r**3/3 - r**2 + 1/3) - r**2 + 1/3)",
+   "expected bidder surplus given reserve and seller's value [model-proposed; physical meaning unverified]": "(2*r**3/3 + r**2*v - r**2 + 1/3)/(1 - r**2)"
   }
  },
  "rejected": [
@@ -5001,6 +5003,256 @@
    "family": "Compton scattering",
    "expr": "sqrt(1 + x**2*c**2)/(x*c)",
    "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "( ( (1 + c1 + c2)/3 - c1 ) / ( (1 + c1 + c2)/3 ) )",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "( ( (1 + c1 + c2)/3 - c2 ) / ( (1 + c1 + c2)/3 ) )",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "2 / (1 + c1 + c2)",
+   "why": "affine combination of known quantities (output of firm 1, 1/(market price))"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "( ( (1 - 2*c1 + c2)**2 / 9 ) / ( (1 + c1 + c2)/3 ) )",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "sqrt(1 - p*L) / (p*sqrt(1 - L) + 1 - p)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "sqrt(p*(1 - p)*L**2) / (p*sqrt(1 - L) + 1 - p)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "p*(sqrt(1 - L) - 1) / (p*sqrt(1 - L) + 1 - p)",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "sqrt((p*sqrt(1 - L) + 1 - p)**2 / (1 - p*L))",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "1 - r**2*v/(-4*r**3/3 + r**2*v + r**2 + 1/3)",
+   "why": "affine combination of known quantities (expected revenue, probability the seller's value is below reserve [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(2*(1 - r**3)/3 + v*r**2 - (2/3 + v**3/3))/(2/3 + v**3/3)",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(-2*r**3/3 + r**2*v + 2/3)/(-2*r**3 + 2*r**2)",
+   "why": "affine combination of known quantities (expected revenue, reserve price elasticity of welfare [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "(a**2 + b**2 - (a - b)**2)/(1 - a - b)",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), Invariant mass squared of the two products [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "(1 - a**2 + b**2)/(2*b)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "sqrt((1 - (a + b)**2)*(1 - (a - b)**2))/((1 + a**2 - b**2)*(1 - a**2 + b**2))",
+   "why": "affine combination of known quantities (speed of product 1 / c, speed of product 2 / c)"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "(1 + a**2 - b**2)/(1 - a**2 + b**2)",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), 1/(energy of product 2 / (Mc\u00b2)))"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2 * m",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "collision",
+   "expr": "e",
+   "why": "affine combination of known quantities (target speed / initial speed, momentum transferred / initial momentum)"
+  },
+  {
+   "family": "collision",
+   "expr": "(1 - e*m) / (1 + m)",
+   "why": "affine combination of known quantities (target speed / initial speed)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "atan(2*z*r/(1 - r**2))",
+   "why": "only + \u2212 \u00d7 \u00f7, integer powers and square roots (so the prover can decide it)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt((1 - r**2)**2 + (2*z*r)**2)",
+   "why": "affine combination of known quantities (amplitude / static deflection, 1/(amplitude / static deflection))"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(1 - z**2)/(1 - r**2 + 2*z*r)",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "1/(sqrt((1 - r**2)**2 + (2*z*r)**2) * (1 - z**2))",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 - u**2)*(1 - v**2))/(-u*v + 1)",
+   "why": "affine combination of known quantities (composed speed / c, Relativistic velocity parameter [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 - u**2)*(1 - v**2))/(-u*v + 1)",
+   "why": "affine combination of known quantities (composed speed / c, Relativistic velocity parameter [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt(1 - (u + v)**2/(1 + u*v)**2)",
+   "why": "affine combination of known quantities (composed speed / c, 1/(Lorentz factor of the composed motion))"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt(1 - u**2) + sqrt(1 - v**2) - sqrt(1 - (u + v)**2/(1 + u*v)**2)",
+   "why": "affine combination of known quantities (composed speed / c, Energy-momentum invariant [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "c/(1 + x*c)",
+   "why": "affine combination of known quantities (Scattered photon wavelength / Compton wavelength [model-proposed; physical meaning unverified], 1/(scattered photon energy / (m_e c\u00b2)))"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "1 + c/(1 + x*c)",
+   "why": "affine combination of known quantities (Scattered photon wavelength / Compton wavelength [model-proposed; physical meaning unverified], 1/(scattered photon energy / (m_e c\u00b2)))"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "(1 + x*c - c*x)/(1 + x*c)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy)"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "1/(1 + x*c)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy)"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "( ( (1 + c1 + c2)/3 - c1 ) / ( (1 + c1 + c2)/3 ) )",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "( ( (1 + c1 + c2)/3 - c2 ) / ( (1 + c1 + c2)/3 ) )",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "( (1 + c1 + c2)/3 - (c1 + c2)/2 ) / ( (1 + c1 + c2)/3 )",
+   "why": "affine combination of known quantities (output of firm 1, 1/(market price))"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "1 - ( ( (1 - 2*c1 + c2)/3 + (1 - 2*c2 + c1)/3 ) / ( (1 + c1 + c2)/3 ) )",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "1/(2*(1 - sqrt(1 - L)))",
+   "why": "affine combination of known quantities (expected wealth, Coefficient of Risk Aversion [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "(-L*p*(p*sqrt(1 - L) + 1 - p) + p*(sqrt(1 - L) - 1))/(-L*p + 1)**2",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "(p*sqrt(1 - L) + 1 - p)/(1 - p*L)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "sqrt(1 - L)/sqrt(1 - p*L)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "1 - r**2*v/(-4*r**3/3 + r**2*v + r**2 + 1/3)",
+   "why": "affine combination of known quantities (expected revenue, probability the seller's value is below reserve [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(1/3 + r**2 - 4*r**3/3 + v*r**2)/(2*(1 - r**3)/3 + v*r**2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(1/3 + r**2 - 4*r**3/3 + v*r**2)/(1/3 + r**2 - 4*r**3/3 + v*r**2 - (1/3 + r**2 - 4*r**3/3 + v*r**2)*",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(1/3 - r**2 + 2*r**3/3)/(2*(1 - r**3)/3 + v*r**2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "((a**2 + b**2) - (a - b)**2)/(1 - a - b)",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), Invariant mass squared of the two products [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "(1 + a**2 - b**2)/(1 - a**2 + b**2)",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), 1/(energy of product 2 / (Mc\u00b2)))"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "(1 + a**2 - b**2 + 1 - a**2 + b**2)/2",
+   "why": "must depend only on a, b"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "(1 + a**2 - b**2)/(1 - a**2 + b**2)",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), 1/(energy of product 2 / (Mc\u00b2)))"
+  },
+  {
+   "family": "collision",
+   "expr": "e*(1 - m) / (1 + m)",
+   "why": "affine combination of known quantities (target speed / initial speed, relative velocity after collision divided by initial velocity of projectile [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "(1 - e)/(1 + m)",
+   "why": "affine combination of known quantities (target speed / initial speed, relative velocity after collision divided by initial velocity of projectile [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "e*m/(1 + m)",
+   "why": "affine combination of known quantities (target speed / initial speed, speed of the centre of mass / initial speed)"
+  },
+  {
+   "family": "collision",
+   "expr": "e",
+   "why": "affine combination of known quantities (target speed / initial speed, momentum transferred / initial momentum)"
   }
  ],
  "tried": [
@@ -6175,7 +6427,53 @@
   "velocity addition|Relativistic momentum magnitude ratio [model-proposed; physical meaning unverified]|sum of the two kinetic energies / mc\u00b2",
   "velocity addition|Relativistic momentum magnitude ratio [model-proposed; physical meaning unverified]|Relativistic momentum ratio [model-proposed; physical meaning unverified]",
   "velocity addition|Relativistic momentum magnitude ratio [model-proposed; physical meaning unverified]|Lorentz gamma of the composed motion [model-proposed; physical meaning unverified]",
-  "velocity addition|Relativistic momentum magnitude ratio [model-proposed; physical meaning unverified]|Relative velocity in terms of rapidities [model-proposed; physical meaning unverified]"
+  "velocity addition|Relativistic momentum magnitude ratio [model-proposed; physical meaning unverified]|Relative velocity in terms of rapidities [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|expected revenue|expected bidder surplus given reserve and seller's value [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|seller's expected payoff|expected bidder surplus given reserve and seller's value [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|probability the item is not sold|expected bidder surplus given reserve and seller's value [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|expected total bidder surplus|expected bidder surplus given reserve and seller's value [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|expected total welfare|expected bidder surplus given reserve and seller's value [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|welfare with the efficient reserve (r = v)|expected bidder surplus given reserve and seller's value [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|probability the seller's value is below reserve [model-proposed; physical meaning unverified]|expected bidder surplus given reserve and seller's value [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|expected bidder surplus ratio [model-proposed; physical meaning unverified]|expected bidder surplus given reserve and seller's value [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|reserve price elasticity of welfare [model-proposed; physical meaning unverified]|expected bidder surplus given reserve and seller's value [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|expected bidder surplus given reserve [model-proposed; physical meaning unverified]|expected bidder surplus given reserve and seller's value [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|reserve price elasticity of bidder surplus [model-proposed; physical meaning unverified]|expected bidder surplus given reserve and seller's value [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|expected bidder surplus given reserve and seller's value [model-proposed; physical meaning unverified]|expected revenue",
+  "auction with a reserve price|expected bidder surplus given reserve and seller's value [model-proposed; physical meaning unverified]|seller's expected payoff",
+  "auction with a reserve price|expected bidder surplus given reserve and seller's value [model-proposed; physical meaning unverified]|probability the item is not sold",
+  "auction with a reserve price|expected bidder surplus given reserve and seller's value [model-proposed; physical meaning unverified]|expected total bidder surplus",
+  "auction with a reserve price|expected bidder surplus given reserve and seller's value [model-proposed; physical meaning unverified]|expected total welfare",
+  "auction with a reserve price|expected bidder surplus given reserve and seller's value [model-proposed; physical meaning unverified]|welfare with the efficient reserve (r = v)",
+  "auction with a reserve price|expected bidder surplus given reserve and seller's value [model-proposed; physical meaning unverified]|probability the seller's value is below reserve [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|expected bidder surplus given reserve and seller's value [model-proposed; physical meaning unverified]|expected bidder surplus ratio [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|expected bidder surplus given reserve and seller's value [model-proposed; physical meaning unverified]|reserve price elasticity of welfare [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|expected bidder surplus given reserve and seller's value [model-proposed; physical meaning unverified]|expected bidder surplus given reserve [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|expected bidder surplus given reserve and seller's value [model-proposed; physical meaning unverified]|reserve price elasticity of bidder surplus [model-proposed; physical meaning unverified]",
+  "collision|target speed / initial speed|Fraction of kinetic energy retained by target [model-proposed; physical meaning unverified]",
+  "collision|momentum transferred / initial momentum|Fraction of kinetic energy retained by target [model-proposed; physical meaning unverified]",
+  "collision|fraction of kinetic energy lost|Fraction of kinetic energy retained by target [model-proposed; physical meaning unverified]",
+  "collision|fraction of kinetic energy given to the target|Fraction of kinetic energy retained by target [model-proposed; physical meaning unverified]",
+  "collision|speed of the centre of mass / initial speed|Fraction of kinetic energy retained by target [model-proposed; physical meaning unverified]",
+  "collision|relative speed after / relative speed before|Fraction of kinetic energy retained by target [model-proposed; physical meaning unverified]",
+  "collision|velocity ratio of target to projectile after collision [model-proposed; physical meaning unverified]|Fraction of kinetic energy retained by target [model-proposed; physical meaning unverified]",
+  "collision|velocity ratio of projectile to target after collision [model-proposed; physical meaning unverified]|Fraction of kinetic energy retained by target [model-proposed; physical meaning unverified]",
+  "collision|relative velocity after collision divided by initial velocity of projectile [model-proposed; physical meaning unverified]|Fraction of kinetic energy retained by target [model-proposed; physical meaning unverified]",
+  "collision|Fraction of kinetic energy retained by projectile [model-proposed; physical meaning unverified]|Fraction of kinetic energy retained by target [model-proposed; physical meaning unverified]",
+  "collision|Fraction of kinetic energy retained by target [model-proposed; physical meaning unverified]|target speed / initial speed",
+  "collision|Fraction of kinetic energy retained by target [model-proposed; physical meaning unverified]|momentum transferred / initial momentum",
+  "collision|Fraction of kinetic energy retained by target [model-proposed; physical meaning unverified]|fraction of kinetic energy lost",
+  "collision|Fraction of kinetic energy retained by target [model-proposed; physical meaning unverified]|fraction of kinetic energy given to the target",
+  "collision|Fraction of kinetic energy retained by target [model-proposed; physical meaning unverified]|speed of the centre of mass / initial speed",
+  "collision|Fraction of kinetic energy retained by target [model-proposed; physical meaning unverified]|relative speed after / relative speed before",
+  "collision|Fraction of kinetic energy retained by target [model-proposed; physical meaning unverified]|velocity ratio of target to projectile after collision [model-proposed; physical meaning unverified]",
+  "collision|Fraction of kinetic energy retained by target [model-proposed; physical meaning unverified]|velocity ratio of projectile to target after collision [model-proposed; physical meaning unverified]",
+  "collision|Fraction of kinetic energy retained by target [model-proposed; physical meaning unverified]|relative velocity after collision divided by initial velocity of projectile [model-proposed; physical meaning unverified]",
+  "collision|Fraction of kinetic energy retained by target [model-proposed; physical meaning unverified]|Fraction of kinetic energy retained by projectile [model-proposed; physical meaning unverified]",
+  "velocity addition|Relativistic momentum magnitude ratio [model-proposed; physical meaning unverified]|Relativistic velocity parameter [model-proposed; physical meaning unverified]",
+  "velocity addition|Relativistic momentum magnitude ratio [model-proposed; physical meaning unverified]|Energy-momentum invariant [model-proposed; physical meaning unverified]",
+  "velocity addition|Relativistic momentum magnitude ratio [model-proposed; physical meaning unverified]|Energy-momentum ratio [model-proposed; physical meaning unverified]",
+  "velocity addition|Relativistic momentum magnitude ratio [model-proposed; physical meaning unverified]|Total relativistic energy / mc\u00b2 [model-proposed; physical meaning unverified]"
  ],
  "edges": [
   {
@@ -8037,9 +8335,69 @@
    "f": "Relativistic momentum magnitude ratio [model-proposed; physical meaning unverified]",
    "g": "Lorentz gamma of the composed motion [model-proposed; physical meaning unverified]",
    "k": "1"
+  },
+  {
+   "family": "auction with a reserve price",
+   "f": "reserve price elasticity of welfare [model-proposed; physical meaning unverified]",
+   "g": "expected bidder surplus given reserve and seller's value [model-proposed; physical meaning unverified]",
+   "k": "1"
+  },
+  {
+   "family": "auction with a reserve price",
+   "f": "expected bidder surplus given reserve and seller's value [model-proposed; physical meaning unverified]",
+   "g": "expected revenue",
+   "k": "1/4"
+  },
+  {
+   "family": "auction with a reserve price",
+   "f": "expected bidder surplus given reserve and seller's value [model-proposed; physical meaning unverified]",
+   "g": "seller's expected payoff",
+   "k": "1/4"
+  },
+  {
+   "family": "auction with a reserve price",
+   "f": "expected bidder surplus given reserve and seller's value [model-proposed; physical meaning unverified]",
+   "g": "expected total bidder surplus",
+   "k": "1"
+  },
+  {
+   "family": "auction with a reserve price",
+   "f": "expected bidder surplus given reserve and seller's value [model-proposed; physical meaning unverified]",
+   "g": "expected total welfare",
+   "k": "1/4"
+  },
+  {
+   "family": "auction with a reserve price",
+   "f": "expected bidder surplus given reserve and seller's value [model-proposed; physical meaning unverified]",
+   "g": "expected bidder surplus ratio [model-proposed; physical meaning unverified]",
+   "k": "2/3"
+  },
+  {
+   "family": "auction with a reserve price",
+   "f": "expected bidder surplus given reserve and seller's value [model-proposed; physical meaning unverified]",
+   "g": "expected bidder surplus given reserve [model-proposed; physical meaning unverified]",
+   "k": "1"
+  },
+  {
+   "family": "collision",
+   "f": "momentum transferred / initial momentum",
+   "g": "Fraction of kinetic energy retained by target [model-proposed; physical meaning unverified]",
+   "k": "2"
+  },
+  {
+   "family": "collision",
+   "f": "relative speed after / relative speed before",
+   "g": "Fraction of kinetic energy retained by target [model-proposed; physical meaning unverified]",
+   "k": "1"
+  },
+  {
+   "family": "collision",
+   "f": "velocity ratio of target to projectile after collision [model-proposed; physical meaning unverified]",
+   "g": "Fraction of kinetic energy retained by target [model-proposed; physical meaning unverified]",
+   "k": "1"
   }
  ],
- "rounds": 261,
+ "rounds": 274,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",

@@ -283,3 +283,16 @@
 - 2026-11-04 23:24 segment start (budget 30 min; model: Qwen3-14B; 4 discoveries so far)
 - 2026-11-04 23:24 round 261: Compton scattering
 - 2026-11-04 23:25 round 262: Cournot duopoly
+- 2026-11-04 23:27 round 263: insurance and risk
+- 2026-11-04 23:28 round 264: auction with a reserve price
+- 2026-11-04 23:30 round 265: two-body decay
+- 2026-11-04 23:32 round 266: collision
+- 2026-11-04 23:33 round 267: driven oscillator
+- 2026-11-04 23:35 round 268: velocity addition
+- 2026-11-04 23:41 round 269: Compton scattering
+- 2026-11-04 23:42 round 270: Cournot duopoly
+- 2026-11-04 23:44 round 271: insurance and risk
+- 2026-11-04 23:45 round 272: auction with a reserve price
+- 2026-11-04 23:47 round 273: two-body decay
+- 2026-11-04 23:49 round 274: collision
+- 2026-11-04 23:50 round 275: driven oscillator
