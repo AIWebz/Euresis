@@ -22,7 +22,7 @@ import json
 import time
 from functools import lru_cache
 
-from .registry import ROOT, Registry
+from .registry import ROOT, Registry, atomic_write
 
 STATE = ROOT / "space" / "music_state.json"
 LOG = ROOT / "space" / "music_log.md"

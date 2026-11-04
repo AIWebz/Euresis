@@ -30,7 +30,7 @@ from functools import lru_cache
 import numpy as np
 from scipy import stats
 
-from .registry import ROOT, Registry
+from .registry import ROOT, Registry, atomic_write
 
 CORPUS = ROOT / "data" / "external" / "papers" / "pubmed-rct" / "PubMed_200k_RCT_numbers_replaced_with_at_sign"
 STATE = ROOT / "space" / "linguistics_state.json"

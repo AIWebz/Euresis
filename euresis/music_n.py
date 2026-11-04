@@ -23,7 +23,7 @@ import math
 import time
 from functools import lru_cache
 
-from .registry import ROOT, Registry
+from .registry import ROOT, Registry, atomic_write
 
 N_MIN, N_MAX = 5, 16
 STATE = ROOT / "space" / "music_n_state.json"

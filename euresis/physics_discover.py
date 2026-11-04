@@ -37,7 +37,7 @@ import numpy as np
 import sympy as sp
 
 from . import gate
-from .registry import ROOT, Registry
+from .registry import ROOT, Registry, atomic_write
 
 STATE = ROOT / "space" / "physics_discovery_state.json"
 LOG = ROOT / "space" / "physics_discovery_log.md"

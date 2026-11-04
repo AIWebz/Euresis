@@ -30,7 +30,7 @@ from scipy.optimize import minimize
 
 from . import gate
 from .physics_discover import parse_items
-from .registry import ROOT, Registry
+from .registry import ROOT, Registry, atomic_write
 
 STATE = ROOT / "space" / "physics2_state.json"
 LOG = ROOT / "space" / "physics2_log.md"

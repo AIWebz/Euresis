@@ -33,7 +33,7 @@ import numpy as np
 import sympy as sp
 
 from . import gate, theorems
-from .registry import ROOT, Registry
+from .registry import ROOT, Registry, atomic_write
 
 a, b, c = theorems.a, theorems.b, theorems.c
 STATE = ROOT / "space" / "discovery_state.json"
