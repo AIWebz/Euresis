@@ -19637,5 +19637,1004 @@
   "statement": "[economics: Cournot duopoly] market price \u2265 4/3 \u00d7 firm 1's profit as a monopolist   on c1 < 1/2, c2 < 1/2 (tight only at the edge of the domain, near (1.81e-17, 2.91e-15))",
   "status": "proved",
   "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-38cdf4dd7a30",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "-L*p + 1 >= 1*((p*sqrt(1 - L) - p + 1)**2)",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 183",
+  "statement": "[economics: insurance and risk] expected wealth \u2265 1 \u00d7 certainty equivalent   on p < 1, L < 1 (tight only at the edge of the domain, near (0.00012, 1.09e-06))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-d5081a81bbc9",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "-L*p + 1 >= 1*(-L*p - (p*sqrt(1 - L) - p + 1)**2 + 1)",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 183",
+  "statement": "[economics: insurance and risk] expected wealth \u2265 1 \u00d7 risk premium   on p < 1, L < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-823fefd9eb59",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "-L*p + 1 >= 1*(L**2*p*(1 - p))",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 183",
+  "statement": "[economics: insurance and risk] expected wealth \u2265 1 \u00d7 variance of wealth   on p < 1, L < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-de9889aa12d5",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "p*sqrt(1 - L) - p + 1 >= 1*(-L*p + 1)",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 183",
+  "statement": "[economics: insurance and risk] expected utility \u2265 1 \u00d7 expected wealth   on p < 1, L < 1 (tight only at the edge of the domain, near (4.23e-13, 0.000113))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-a5d84ffe2403",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'expected wealth'",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "p*sqrt(1 - L) - p + 1 >= 1*((p*sqrt(1 - L) - p + 1)**2)",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 183",
+  "statement": "[economics: insurance and risk] expected utility \u2265 1 \u00d7 certainty equivalent   on p < 1, L < 1 (tight only at the edge of the domain, near (0.000113, 4.23e-13))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-4c28abae8a3c",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "-4*r**3/3 + r**2 + 1/3 >= 2/3*((2*r**3/3 - r**2 + 1/3)/(2/3 - 2*r**3/3))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 184",
+  "statement": "[economics: auction with a reserve price] expected revenue \u2265 2/3 \u00d7 expected bidder surplus ratio [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (1.39e-19, 0.000152))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-dbc0ecc4d75e",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'expected revenue'",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "-4*r**3/3 + r**2*v + r**2 + 1/3 >= 2/3*((2*r**3/3 - r**2 + 1/3)/(2/3 - 2*r**3/3))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 184",
+  "statement": "[economics: auction with a reserve price] seller's expected payoff \u2265 2/3 \u00d7 expected bidder surplus ratio [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (4.88e-09, 0.000119))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-aa879959c2db",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "r**2 >= 1/3*(r**2*v/(-4*r**3/3 + r**2*v + r**2 + 1/3))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 184",
+  "statement": "[economics: auction with a reserve price] probability the item is not sold \u2265 1/3 \u00d7 probability the seller's value is below reserve [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (9.12e-05, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-0c353d1ee2b9",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "-2*r**3/3 + r**2*v + 2/3 >= 4/3*((2*r**3/3 - r**2 + 1/3)/(2/3 - 2*r**3/3))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 184",
+  "statement": "[economics: auction with a reserve price] expected total welfare \u2265 4/3 \u00d7 expected bidder surplus ratio [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (4.88e-09, 0.000119))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-c37271b963a9",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "v**3/3 + 2/3 >= 2/3*(r**2*v/(-4*r**3/3 + r**2*v + r**2 + 1/3))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 184",
+  "statement": "[economics: auction with a reserve price] welfare with the efficient reserve (r = v) \u2265 2/3 \u00d7 probability the seller's value is below reserve [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (1, 0.000175))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-24ef6b87b796",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "v**3/3 + 2/3 >= 4/3*((2*r**3/3 - r**2 + 1/3)/(2/3 - 2*r**3/3))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 184",
+  "statement": "[economics: auction with a reserve price] welfare with the efficient reserve (r = v) \u2265 4/3 \u00d7 expected bidder surplus ratio [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (4.47e-09, 3.82e-06))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-b58f36fa5fcb",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "(2*r**3/3 - r**2 + 1/3)/(2/3 - 2*r**3/3) >= 3/2*(2*r**3/3 - r**2 + 1/3)",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 184",
+  "statement": "[economics: auction with a reserve price] expected bidder surplus ratio [model-proposed; physical meaning unverified] \u2265 3/2 \u00d7 expected total bidder surplus   on r < 1, v < 1 (tight only at the edge of the domain, near (1.39e-19, 0.000152))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-b9f6b1829ee2",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "claim": "(-c1 - c2 + 2)**2/18 >= 1/4*(-2*c1/3 + c2/3 + 1/3)",
+   "symbols": [
+    "c1",
+    "c2"
+   ]
+  },
+  "source": "physics_discover2 round 190",
+  "statement": "[economics: Cournot duopoly] consumer surplus \u2265 1/4 \u00d7 output of firm 1   on c1 < 1/2, c2 < 1/2 (tight only at the edge of the domain, near (4.56e-05, 0.5))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-197e0507d642",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "claim": "(-c1 - c2 + 2)**2/18 >= 1/4*(c1/3 - 2*c2/3 + 1/3)",
+   "symbols": [
+    "c1",
+    "c2"
+   ]
+  },
+  "source": "physics_discover2 round 190",
+  "statement": "[economics: Cournot duopoly] consumer surplus \u2265 1/4 \u00d7 output of firm 2   on c1 < 1/2, c2 < 1/2 (tight only at the edge of the domain, near (0.5, 4.56e-05))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-7bf3adfe00a1",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "claim": "(-c1 - c2 + 2)**2/18 >= 1/12*(c1/3 + c2/3 + 1/3)",
+   "symbols": [
+    "c1",
+    "c2"
+   ]
+  },
+  "source": "physics_discover2 round 190",
+  "statement": "[economics: Cournot duopoly] consumer surplus \u2265 1/12 \u00d7 market price   on c1 < 1/2, c2 < 1/2 (tight only at the edge of the domain, near (0.5, 0.5))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-80e165540535",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'output of firm 1'",
+  "payload": {
+   "assumptions": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "claim": "(-c1 - c2 + 2)**2/18 >= 1/2*((-2*c1 + c2 + 1)**2/9)",
+   "symbols": [
+    "c1",
+    "c2"
+   ]
+  },
+  "source": "physics_discover2 round 190",
+  "statement": "[economics: Cournot duopoly] consumer surplus \u2265 1/2 \u00d7 profit of firm 1   on c1 < 1/2, c2 < 1/2 (tight only at the edge of the domain, near (9.23e-15, 0.5))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-9ac6bfd14734",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'output of firm 2'",
+  "payload": {
+   "assumptions": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "claim": "(-c1 - c2 + 2)**2/18 >= 1/2*((c1 - 2*c2 + 1)**2/9)",
+   "symbols": [
+    "c1",
+    "c2"
+   ]
+  },
+  "source": "physics_discover2 round 190",
+  "statement": "[economics: Cournot duopoly] consumer surplus \u2265 1/2 \u00d7 profit of firm 2   on c1 < 1/2, c2 < 1/2 (tight only at the edge of the domain, near (0.5, 9.23e-15))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-52a98040d728",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "claim": "(-c1 - c2 + 2)**2/18 >= 1/2*((-2*c1 + c2 + 1)**2/9 + (c1 - 2*c2 + 1)**2/9)",
+   "symbols": [
+    "c1",
+    "c2"
+   ]
+  },
+  "source": "physics_discover2 round 190",
+  "statement": "[economics: Cournot duopoly] consumer surplus \u2265 1/2 \u00d7 total industry profit   on c1 < 1/2, c2 < 1/2 (tight only at the edge of the domain, near (1.3e-14, 0.5))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-54ebd0d374bb",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "claim": "(-c1 - c2 + 2)**2/18 >= 1/2*((1 - c1)**2/4)",
+   "symbols": [
+    "c1",
+    "c2"
+   ]
+  },
+  "source": "physics_discover2 round 190",
+  "statement": "[economics: Cournot duopoly] consumer surplus \u2265 1/2 \u00d7 firm 1's profit as a monopolist   on c1 < 1/2, c2 < 1/2 (tight only at the edge of the domain, near (9.23e-15, 0.5))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-6ad9401a0363",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "claim": "(-2*c1 + c2 + 1)**2/9 + (c1 - 2*c2 + 1)**2/9 >= 1/12*(c1/3 + c2/3 + 1/3)",
+   "symbols": [
+    "c1",
+    "c2"
+   ]
+  },
+  "source": "physics_discover2 round 190",
+  "statement": "[economics: Cournot duopoly] total industry profit \u2265 1/12 \u00d7 market price   on c1 < 1/2, c2 < 1/2 (tight only at the edge of the domain, near (0.5, 0.5))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-1a571baf3f95",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "claim": "(-2*c1 + c2 + 1)**2/9 + (c1 - 2*c2 + 1)**2/9 >= 1*((-2*c1 + c2 + 1)**2/9)",
+   "symbols": [
+    "c1",
+    "c2"
+   ]
+  },
+  "source": "physics_discover2 round 190",
+  "statement": "[economics: Cournot duopoly] total industry profit \u2265 1 \u00d7 profit of firm 1   on c1 < 1/2, c2 < 1/2 (tight only at the edge of the domain, near (1.11e-09, 0.5))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-5ddbe67375d7",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "claim": "(-2*c1 + c2 + 1)**2/9 + (c1 - 2*c2 + 1)**2/9 >= 1*((c1 - 2*c2 + 1)**2/9)",
+   "symbols": [
+    "c1",
+    "c2"
+   ]
+  },
+  "source": "physics_discover2 round 190",
+  "statement": "[economics: Cournot duopoly] total industry profit \u2265 1 \u00d7 profit of firm 2   on c1 < 1/2, c2 < 1/2 (tight only at the edge of the domain, near (0.5, 1.11e-09))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-65098be1cbf4",
+  "kind": "physics-relation",
+  "novelty": "equality holds along a whole curve \u2014 a one-variable inequality in disguise; proved, not counted",
+  "payload": {
+   "assumptions": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "claim": "(-2*c1 + c2 + 1)**2/9 + (c1 - 2*c2 + 1)**2/9 >= 1*((-c1 - c2 + 2)**2/18)",
+   "symbols": [
+    "c1",
+    "c2"
+   ]
+  },
+  "source": "physics_discover2 round 190",
+  "statement": "[economics: Cournot duopoly] total industry profit \u2265 1 \u00d7 consumer surplus   on c1 < 1/2, c2 < 1/2 (equality at (c1, c2) \u2248 (0.489909, 0.489909))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-d47f696025dc",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "L*p >= 1*(L**2*p*(1 - p))",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 191",
+  "statement": "[economics: insurance and risk] actuarially fair insurance premium \u2265 1 \u00d7 variance of wealth   on p < 1, L < 1 (tight only at the edge of the domain, near (1.01e-13, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-3938be29574b",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "1 - (p*sqrt(1 - L) - p + 1)**2 >= 1*(L*p)",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 191",
+  "statement": "[economics: insurance and risk] maximum premium the person would pay for full insurance \u2265 1 \u00d7 actuarially fair insurance premium   on p < 1, L < 1 (tight only at the edge of the domain, near (1, 0.000103))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-7533a4eafe86",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "1 - (p*sqrt(1 - L) - p + 1)**2 >= 27/16*(L**2*p*(1 - p))",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 191",
+  "statement": "[economics: insurance and risk] maximum premium the person would pay for full insurance \u2265 27/16 \u00d7 variance of wealth   on p < 1, L < 1 (tight only at the edge of the domain, near (2.43e-11, 0.889))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-e19ca978271f",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "L**2*p*(1 - p) >= 1*(-L*p - (p*sqrt(1 - L) - p + 1)**2 + 1)",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 191",
+  "statement": "[economics: insurance and risk] variance of wealth \u2265 1 \u00d7 risk premium   on p < 1, L < 1 (tight only at the edge of the domain, near (0.000111, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-2afa6ae74639",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "(-2*r**3/3 + r**2*v + 2/3)/(-2*r**3 + 2*r**2) >= 1*(r**2)",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 192",
+  "statement": "[economics: auction with a reserve price] reserve price elasticity of welfare [model-proposed; physical meaning unverified] \u2265 1 \u00d7 probability the item is not sold   on r < 1, v < 1 (tight only at the edge of the domain, near (1, 3.4e-17))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-3f07ba531ee2",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "(-2*r**3/3 + r**2*v + 2/3)/(-2*r**3 + 2*r**2) >= 27/8*(-2*r**3/3 + r**2*v + 2/3)",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 192",
+  "statement": "[economics: auction with a reserve price] reserve price elasticity of welfare [model-proposed; physical meaning unverified] \u2265 27/8 \u00d7 expected total welfare   on r < 1, v < 1 (tight only at the edge of the domain, near (0.667, 0.000551))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-c1a7c56e3948",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "(-2*r**3/3 + r**2*v + 2/3)/(-2*r**3 + 2*r**2) >= 3/2*(v**3/3 + 2/3)",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 192",
+  "statement": "[economics: auction with a reserve price] reserve price elasticity of welfare [model-proposed; physical meaning unverified] \u2265 3/2 \u00d7 welfare with the efficient reserve (r = v)   on r < 1, v < 1 (tight only at the edge of the domain, near (1, 3.57e-17))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-7486a33ed5d2",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "(-2*r**3/3 + r**2*v + 2/3)/(-2*r**3 + 2*r**2) >= 4*(r**2*v/(-4*r**3/3 + r**2*v + r**2 + 1/3))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 192",
+  "statement": "[economics: auction with a reserve price] reserve price elasticity of welfare [model-proposed; physical meaning unverified] \u2265 4 \u00d7 probability the seller's value is below reserve [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (1, 4.38e-09))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-cdfb098a8bb8",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "(-2*r**3/3 + r**2*v + 2/3)/(-2*r**3 + 2*r**2) >= 8*((2*r**3/3 - r**2 + 1/3)/(2/3 - 2*r**3/3))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 192",
+  "statement": "[economics: auction with a reserve price] reserve price elasticity of welfare [model-proposed; physical meaning unverified] \u2265 8 \u00d7 expected bidder surplus ratio [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (0.558, 9.38e-17))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-32c85ed208aa",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "v**3/3 + 2/3 >= 8/5*(-4*r**3/3 + r**2 + 1/3)",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 192",
+  "statement": "[economics: auction with a reserve price] welfare with the efficient reserve (r = v) \u2265 8/5 \u00d7 expected revenue   on r < 1, v < 1 (tight only at the edge of the domain, near (0.5, 2.63e-06))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-4037b8d5e386",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "v**3/3 + 2/3 >= 1*(-4*r**3/3 + r**2*v + r**2 + 1/3)",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 192",
+  "statement": "[economics: auction with a reserve price] welfare with the efficient reserve (r = v) \u2265 1 \u00d7 seller's expected payoff   on r < 1, v < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-af94ec83d090",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "v**3/3 + 2/3 >= 2/3*(r**2)",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 192",
+  "statement": "[economics: auction with a reserve price] welfare with the efficient reserve (r = v) \u2265 2/3 \u00d7 probability the item is not sold   on r < 1, v < 1 (tight only at the edge of the domain, near (1, 9.12e-05))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-524165a98ccc",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'expected bidder surplus ratio [model-proposed; physical meaning unverified]'",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "v**3/3 + 2/3 >= 2*(2*r**3/3 - r**2 + 1/3)",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 192",
+  "statement": "[economics: auction with a reserve price] welfare with the efficient reserve (r = v) \u2265 2 \u00d7 expected total bidder surplus   on r < 1, v < 1 (tight only at the edge of the domain, near (3.54e-09, 5.15e-06))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-1be7ca1d9718",
+  "kind": "physics-relation",
+  "novelty": "equality holds along a whole curve \u2014 a one-variable inequality in disguise; proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "v**3/3 + 2/3 >= 1*(-2*r**3/3 + r**2*v + 2/3)",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 192",
+  "statement": "[economics: auction with a reserve price] welfare with the efficient reserve (r = v) \u2265 1 \u00d7 expected total welfare   on r < 1, v < 1 (equality at (r, v) \u2248 (0.97076, 0.97076))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]

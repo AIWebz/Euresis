@@ -99,7 +99,10 @@
    "probability the item is not sold": "r**2",
    "expected total bidder surplus": "1/3 - r**2 + 2*r**3/3",
    "expected total welfare": "2*(1 - r**3)/3 + v*r**2",
-   "welfare with the efficient reserve (r = v)": "2/3 + v**3/3"
+   "welfare with the efficient reserve (r = v)": "2/3 + v**3/3",
+   "probability the seller's value is below reserve [model-proposed; physical meaning unverified]": "r**2*v/(-4*r**3/3 + r**2*v + r**2 + 1/3)",
+   "expected bidder surplus ratio [model-proposed; physical meaning unverified]": "(2*r**3/3 - r**2 + 1/3)/(2/3 - 2*r**3/3)",
+   "reserve price elasticity of welfare [model-proposed; physical meaning unverified]": "(-2*r**3/3 + r**2*v + 2/3)/(-2*r**3 + 2*r**2)"
   }
  },
  "rejected": [
@@ -3527,6 +3530,231 @@
    "family": "Cournot duopoly",
    "expr": "((1 + c1 + c2)/3 - (c1 + c2)/2)",
    "why": "affine combination of known quantities (output of firm 1, output of firm 2)"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "1/(2*sqrt(1))",
+   "why": "must depend only on p, L"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "1 - (p*sqrt(1 - L) + 1 - p)",
+   "why": "affine combination of known quantities (expected wealth, expected utility)"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "1/(2*sqrt(1))",
+   "why": "must depend only on p, L"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "(1 - (p*sqrt(1 - L) + 1 - p)**2)/(p*L)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(1/3 - r**2 + 2*r**3/3)/2",
+   "why": "affine combination of known quantities (expected revenue, probability the item is not sold)"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "2/3 - 2*(1 - r**3)/3 - v*r**2",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "1 - 2*a - 2*b + 2*a*b",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "(1 + a**2 - b**2)/(1 - a**2 + b**2)",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), 1/(energy of product 2 / (Mc\u00b2)))"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "(1 - a**2 + b**2)/(2*b)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "(1 + a**2 - b**2 + 1 - a**2 + b**2)/2",
+   "why": "must depend only on a, b"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2 * m",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "collision",
+   "expr": "((1 - e**2) * m) / (1 + m)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "collision",
+   "expr": "(1 - e*m) / (1 + e*m)",
+   "why": "affine combination of known quantities (target speed / initial speed, velocity ratio of projectile to target after collision [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "e",
+   "why": "affine combination of known quantities (target speed / initial speed, momentum transferred / initial momentum)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "atan(2*z*r/(1 - r**2))",
+   "why": "only + \u2212 \u00d7 \u00f7, integer powers and square roots (so the prover can decide it)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt((1 - r**2)**2 + (2*z*r)**2)/(1 + (2*z*r)**2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt((1 - r**2)**2 + (2*z*r)**2)/(1 - r**2)",
+   "why": "not finite on the whole physical domain"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(1 + (2*z*r)**2)/sqrt((1 - r**2)**2 + (2*z*r)**2)",
+   "why": "affine combination of known quantities (amplitude / static deflection, transmissibility)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "(u + v)/(sqrt(1 - u**2)*sqrt(1 - v**2)*(1 + u*v))",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "1 - (u + v)**2/(1 + u*v)**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "atanh(u) - atanh(v)",
+   "why": "only + \u2212 \u00d7 \u00f7, integer powers and square roots (so the prover can decide it)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt(1 - u**2) + sqrt(1 - v**2) + (1 + u*v)/(sqrt(1 - u**2)*sqrt(1 - v**2))",
+   "why": "affine combination of known quantities (composed speed / c, Total relativistic energy / mc\u00b2 [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "c/(1 + c*x)",
+   "why": "affine combination of known quantities (Scattered photon wavelength / Compton wavelength [model-proposed; physical meaning unverified], 1/(scattered photon energy / (m_e c\u00b2)))"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "x/(1 + c*x)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, scattered photon energy / (m_e c\u00b2))"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "x*c*x/(1 + c*x)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, electron kinetic energy / (m_e c\u00b2))"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "sqrt(1 + (c*x)**2)/(c*x)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "((1 + c1 + c2)/3 - c1)/((1 + c1 + c2)/3)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "((1 + c1 + c2)/3 - c2)/((1 + c1 + c2)/3)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "(1 + c1 + c2)/3 / (1 - (c1 + c2)/2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "((1 - 2*c1 + c2)/3)**2 + ((1 - 2*c2 + c1)/3)**2",
+   "why": "affine combination of known quantities (output of firm 1, total industry profit)"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "1/(2*sqrt(1))",
+   "why": "must depend only on p, L"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "1/(sqrt(1))",
+   "why": "must depend only on p, L"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "1/(sqrt(1))",
+   "why": "must depend only on p, L"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "p*(1 - p)*(sqrt(1 - L) - 1)**2",
+   "why": "affine combination of known quantities (expected wealth, certainty equivalent)"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(1/3 + r**2 - 4*r**3/3 + v*r**2) / (1/3 + r**2 - 4*r**3/3)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(1/3 - r**2 + 2*r**3/3) / (2*(1 - r**3)/3 + v*r**2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "1 - (r**2*v)/(-4*r**3/3 + r**2*v + r**2 + 1/3)",
+   "why": "affine combination of known quantities (expected revenue, probability the seller's value is below reserve [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "((a**2 + b**2) - (a - b)**2)/(-a - b + 1)",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), Invariant mass squared of the two products [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "((-b**2 + (1 - a)**2)/(-a**2 + 2*b**2 - (1 - a)**2 + 1))",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), Ratio of kinetic energies of product 1 to product 2 [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "(-a**2/2 - b**2 + (1 - a)**2/2 + 1/2)",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), Total kinetic energy of the two products / (Mc\u00b2) [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "(2*a*b)/(1 - a - b)",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), Invariant mass squared of the two products [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2 * m",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "collision",
+   "expr": "1 - (1 + e)**2 * m / (1 + m)**2",
+   "why": "affine combination of known quantities (target speed / initial speed, fraction of kinetic energy given to the target)"
+  },
+  {
+   "family": "collision",
+   "expr": "e",
+   "why": "affine combination of known quantities (target speed / initial speed, momentum transferred / initial momentum)"
+  },
+  {
+   "family": "collision",
+   "expr": "(1 - e*m) / (1 + m)",
+   "why": "affine combination of known quantities (target speed / initial speed)"
   }
  ],
  "tried": [
@@ -4363,7 +4591,121 @@
   "Cournot duopoly|market price|firm 1's profit as a monopolist",
   "Cournot duopoly|profit of firm 1|output of firm 1",
   "Cournot duopoly|profit of firm 1|output of firm 2",
-  "Cournot duopoly|profit of firm 1|market price"
+  "Cournot duopoly|profit of firm 1|market price",
+  "insurance and risk|expected wealth|expected utility",
+  "insurance and risk|expected wealth|certainty equivalent",
+  "insurance and risk|expected wealth|risk premium",
+  "insurance and risk|expected wealth|actuarially fair insurance premium",
+  "insurance and risk|expected wealth|maximum premium the person would pay for full insurance",
+  "insurance and risk|expected wealth|variance of wealth",
+  "insurance and risk|expected utility|expected wealth",
+  "insurance and risk|expected utility|certainty equivalent",
+  "insurance and risk|expected utility|risk premium",
+  "insurance and risk|expected utility|actuarially fair insurance premium",
+  "insurance and risk|expected utility|maximum premium the person would pay for full insurance",
+  "insurance and risk|expected utility|variance of wealth",
+  "insurance and risk|certainty equivalent|expected wealth",
+  "insurance and risk|certainty equivalent|expected utility",
+  "insurance and risk|certainty equivalent|risk premium",
+  "insurance and risk|certainty equivalent|actuarially fair insurance premium",
+  "insurance and risk|certainty equivalent|maximum premium the person would pay for full insurance",
+  "insurance and risk|certainty equivalent|variance of wealth",
+  "insurance and risk|risk premium|expected wealth",
+  "insurance and risk|risk premium|expected utility",
+  "insurance and risk|risk premium|certainty equivalent",
+  "insurance and risk|risk premium|actuarially fair insurance premium",
+  "insurance and risk|risk premium|maximum premium the person would pay for full insurance",
+  "insurance and risk|risk premium|variance of wealth",
+  "auction with a reserve price|expected revenue|probability the seller's value is below reserve [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|expected revenue|expected bidder surplus ratio [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|seller's expected payoff|probability the seller's value is below reserve [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|seller's expected payoff|expected bidder surplus ratio [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|probability the item is not sold|probability the seller's value is below reserve [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|probability the item is not sold|expected bidder surplus ratio [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|expected total bidder surplus|probability the seller's value is below reserve [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|expected total bidder surplus|expected bidder surplus ratio [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|expected total welfare|probability the seller's value is below reserve [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|expected total welfare|expected bidder surplus ratio [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|welfare with the efficient reserve (r = v)|probability the seller's value is below reserve [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|welfare with the efficient reserve (r = v)|expected bidder surplus ratio [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|probability the seller's value is below reserve [model-proposed; physical meaning unverified]|expected revenue",
+  "auction with a reserve price|probability the seller's value is below reserve [model-proposed; physical meaning unverified]|seller's expected payoff",
+  "auction with a reserve price|probability the seller's value is below reserve [model-proposed; physical meaning unverified]|probability the item is not sold",
+  "auction with a reserve price|probability the seller's value is below reserve [model-proposed; physical meaning unverified]|expected total bidder surplus",
+  "auction with a reserve price|probability the seller's value is below reserve [model-proposed; physical meaning unverified]|expected total welfare",
+  "auction with a reserve price|probability the seller's value is below reserve [model-proposed; physical meaning unverified]|welfare with the efficient reserve (r = v)",
+  "auction with a reserve price|probability the seller's value is below reserve [model-proposed; physical meaning unverified]|expected bidder surplus ratio [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|expected bidder surplus ratio [model-proposed; physical meaning unverified]|expected revenue",
+  "auction with a reserve price|expected bidder surplus ratio [model-proposed; physical meaning unverified]|seller's expected payoff",
+  "auction with a reserve price|expected bidder surplus ratio [model-proposed; physical meaning unverified]|probability the item is not sold",
+  "auction with a reserve price|expected bidder surplus ratio [model-proposed; physical meaning unverified]|expected total bidder surplus",
+  "auction with a reserve price|expected bidder surplus ratio [model-proposed; physical meaning unverified]|expected total welfare",
+  "Cournot duopoly|profit of firm 1|profit of firm 2",
+  "Cournot duopoly|profit of firm 1|consumer surplus",
+  "Cournot duopoly|profit of firm 1|total industry profit",
+  "Cournot duopoly|profit of firm 1|firm 1's profit as a monopolist",
+  "Cournot duopoly|profit of firm 2|output of firm 1",
+  "Cournot duopoly|profit of firm 2|output of firm 2",
+  "Cournot duopoly|profit of firm 2|market price",
+  "Cournot duopoly|profit of firm 2|profit of firm 1",
+  "Cournot duopoly|profit of firm 2|consumer surplus",
+  "Cournot duopoly|profit of firm 2|total industry profit",
+  "Cournot duopoly|profit of firm 2|firm 1's profit as a monopolist",
+  "Cournot duopoly|consumer surplus|output of firm 1",
+  "Cournot duopoly|consumer surplus|output of firm 2",
+  "Cournot duopoly|consumer surplus|market price",
+  "Cournot duopoly|consumer surplus|profit of firm 1",
+  "Cournot duopoly|consumer surplus|profit of firm 2",
+  "Cournot duopoly|consumer surplus|total industry profit",
+  "Cournot duopoly|consumer surplus|firm 1's profit as a monopolist",
+  "Cournot duopoly|total industry profit|output of firm 1",
+  "Cournot duopoly|total industry profit|output of firm 2",
+  "Cournot duopoly|total industry profit|market price",
+  "Cournot duopoly|total industry profit|profit of firm 1",
+  "Cournot duopoly|total industry profit|profit of firm 2",
+  "Cournot duopoly|total industry profit|consumer surplus",
+  "insurance and risk|actuarially fair insurance premium|expected wealth",
+  "insurance and risk|actuarially fair insurance premium|expected utility",
+  "insurance and risk|actuarially fair insurance premium|certainty equivalent",
+  "insurance and risk|actuarially fair insurance premium|risk premium",
+  "insurance and risk|actuarially fair insurance premium|maximum premium the person would pay for full insurance",
+  "insurance and risk|actuarially fair insurance premium|variance of wealth",
+  "insurance and risk|maximum premium the person would pay for full insurance|expected wealth",
+  "insurance and risk|maximum premium the person would pay for full insurance|expected utility",
+  "insurance and risk|maximum premium the person would pay for full insurance|certainty equivalent",
+  "insurance and risk|maximum premium the person would pay for full insurance|risk premium",
+  "insurance and risk|maximum premium the person would pay for full insurance|actuarially fair insurance premium",
+  "insurance and risk|maximum premium the person would pay for full insurance|variance of wealth",
+  "insurance and risk|variance of wealth|expected wealth",
+  "insurance and risk|variance of wealth|expected utility",
+  "insurance and risk|variance of wealth|certainty equivalent",
+  "insurance and risk|variance of wealth|risk premium",
+  "insurance and risk|variance of wealth|actuarially fair insurance premium",
+  "insurance and risk|variance of wealth|maximum premium the person would pay for full insurance",
+  "auction with a reserve price|expected revenue|reserve price elasticity of welfare [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|seller's expected payoff|reserve price elasticity of welfare [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|probability the item is not sold|reserve price elasticity of welfare [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|expected total bidder surplus|reserve price elasticity of welfare [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|expected total welfare|reserve price elasticity of welfare [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|welfare with the efficient reserve (r = v)|reserve price elasticity of welfare [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|probability the seller's value is below reserve [model-proposed; physical meaning unverified]|reserve price elasticity of welfare [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|expected bidder surplus ratio [model-proposed; physical meaning unverified]|reserve price elasticity of welfare [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|reserve price elasticity of welfare [model-proposed; physical meaning unverified]|expected revenue",
+  "auction with a reserve price|reserve price elasticity of welfare [model-proposed; physical meaning unverified]|seller's expected payoff",
+  "auction with a reserve price|reserve price elasticity of welfare [model-proposed; physical meaning unverified]|probability the item is not sold",
+  "auction with a reserve price|reserve price elasticity of welfare [model-proposed; physical meaning unverified]|expected total bidder surplus",
+  "auction with a reserve price|reserve price elasticity of welfare [model-proposed; physical meaning unverified]|expected total welfare",
+  "auction with a reserve price|reserve price elasticity of welfare [model-proposed; physical meaning unverified]|welfare with the efficient reserve (r = v)",
+  "auction with a reserve price|reserve price elasticity of welfare [model-proposed; physical meaning unverified]|probability the seller's value is below reserve [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|reserve price elasticity of welfare [model-proposed; physical meaning unverified]|expected bidder surplus ratio [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|expected total welfare|welfare with the efficient reserve (r = v)",
+  "auction with a reserve price|welfare with the efficient reserve (r = v)|expected revenue",
+  "auction with a reserve price|welfare with the efficient reserve (r = v)|seller's expected payoff",
+  "auction with a reserve price|welfare with the efficient reserve (r = v)|probability the item is not sold",
+  "auction with a reserve price|welfare with the efficient reserve (r = v)|expected total bidder surplus",
+  "auction with a reserve price|welfare with the efficient reserve (r = v)|expected total welfare",
+  "auction with a reserve price|expected bidder surplus ratio [model-proposed; physical meaning unverified]|welfare with the efficient reserve (r = v)",
+  "auction with a reserve price|expected bidder surplus ratio [model-proposed; physical meaning unverified]|probability the seller's value is below reserve [model-proposed; physical meaning unverified]"
  ],
  "edges": [
   {
@@ -5637,9 +5979,231 @@
    "f": "market price",
    "g": "firm 1's profit as a monopolist",
    "k": "4/3"
+  },
+  {
+   "family": "insurance and risk",
+   "f": "expected wealth",
+   "g": "certainty equivalent",
+   "k": "1"
+  },
+  {
+   "family": "insurance and risk",
+   "f": "expected wealth",
+   "g": "risk premium",
+   "k": "1"
+  },
+  {
+   "family": "insurance and risk",
+   "f": "expected wealth",
+   "g": "variance of wealth",
+   "k": "1"
+  },
+  {
+   "family": "insurance and risk",
+   "f": "expected utility",
+   "g": "expected wealth",
+   "k": "1"
+  },
+  {
+   "family": "insurance and risk",
+   "f": "expected utility",
+   "g": "certainty equivalent",
+   "k": "1"
+  },
+  {
+   "family": "auction with a reserve price",
+   "f": "expected revenue",
+   "g": "expected bidder surplus ratio [model-proposed; physical meaning unverified]",
+   "k": "2/3"
+  },
+  {
+   "family": "auction with a reserve price",
+   "f": "seller's expected payoff",
+   "g": "expected bidder surplus ratio [model-proposed; physical meaning unverified]",
+   "k": "2/3"
+  },
+  {
+   "family": "auction with a reserve price",
+   "f": "probability the item is not sold",
+   "g": "probability the seller's value is below reserve [model-proposed; physical meaning unverified]",
+   "k": "1/3"
+  },
+  {
+   "family": "auction with a reserve price",
+   "f": "expected total welfare",
+   "g": "expected bidder surplus ratio [model-proposed; physical meaning unverified]",
+   "k": "4/3"
+  },
+  {
+   "family": "auction with a reserve price",
+   "f": "welfare with the efficient reserve (r = v)",
+   "g": "probability the seller's value is below reserve [model-proposed; physical meaning unverified]",
+   "k": "2/3"
+  },
+  {
+   "family": "auction with a reserve price",
+   "f": "welfare with the efficient reserve (r = v)",
+   "g": "expected bidder surplus ratio [model-proposed; physical meaning unverified]",
+   "k": "4/3"
+  },
+  {
+   "family": "auction with a reserve price",
+   "f": "expected bidder surplus ratio [model-proposed; physical meaning unverified]",
+   "g": "expected total bidder surplus",
+   "k": "3/2"
+  },
+  {
+   "family": "Cournot duopoly",
+   "f": "consumer surplus",
+   "g": "output of firm 1",
+   "k": "1/4"
+  },
+  {
+   "family": "Cournot duopoly",
+   "f": "consumer surplus",
+   "g": "output of firm 2",
+   "k": "1/4"
+  },
+  {
+   "family": "Cournot duopoly",
+   "f": "consumer surplus",
+   "g": "market price",
+   "k": "1/12"
+  },
+  {
+   "family": "Cournot duopoly",
+   "f": "consumer surplus",
+   "g": "profit of firm 1",
+   "k": "1/2"
+  },
+  {
+   "family": "Cournot duopoly",
+   "f": "consumer surplus",
+   "g": "profit of firm 2",
+   "k": "1/2"
+  },
+  {
+   "family": "Cournot duopoly",
+   "f": "consumer surplus",
+   "g": "total industry profit",
+   "k": "1/2"
+  },
+  {
+   "family": "Cournot duopoly",
+   "f": "consumer surplus",
+   "g": "firm 1's profit as a monopolist",
+   "k": "1/2"
+  },
+  {
+   "family": "Cournot duopoly",
+   "f": "total industry profit",
+   "g": "market price",
+   "k": "1/12"
+  },
+  {
+   "family": "Cournot duopoly",
+   "f": "total industry profit",
+   "g": "profit of firm 1",
+   "k": "1"
+  },
+  {
+   "family": "Cournot duopoly",
+   "f": "total industry profit",
+   "g": "profit of firm 2",
+   "k": "1"
+  },
+  {
+   "family": "Cournot duopoly",
+   "f": "total industry profit",
+   "g": "consumer surplus",
+   "k": "1"
+  },
+  {
+   "family": "insurance and risk",
+   "f": "actuarially fair insurance premium",
+   "g": "variance of wealth",
+   "k": "1"
+  },
+  {
+   "family": "insurance and risk",
+   "f": "maximum premium the person would pay for full insurance",
+   "g": "actuarially fair insurance premium",
+   "k": "1"
+  },
+  {
+   "family": "insurance and risk",
+   "f": "maximum premium the person would pay for full insurance",
+   "g": "variance of wealth",
+   "k": "27/16"
+  },
+  {
+   "family": "insurance and risk",
+   "f": "variance of wealth",
+   "g": "risk premium",
+   "k": "1"
+  },
+  {
+   "family": "auction with a reserve price",
+   "f": "reserve price elasticity of welfare [model-proposed; physical meaning unverified]",
+   "g": "probability the item is not sold",
+   "k": "1"
+  },
+  {
+   "family": "auction with a reserve price",
+   "f": "reserve price elasticity of welfare [model-proposed; physical meaning unverified]",
+   "g": "expected total welfare",
+   "k": "27/8"
+  },
+  {
+   "family": "auction with a reserve price",
+   "f": "reserve price elasticity of welfare [model-proposed; physical meaning unverified]",
+   "g": "welfare with the efficient reserve (r = v)",
+   "k": "3/2"
+  },
+  {
+   "family": "auction with a reserve price",
+   "f": "reserve price elasticity of welfare [model-proposed; physical meaning unverified]",
+   "g": "probability the seller's value is below reserve [model-proposed; physical meaning unverified]",
+   "k": "4"
+  },
+  {
+   "family": "auction with a reserve price",
+   "f": "reserve price elasticity of welfare [model-proposed; physical meaning unverified]",
+   "g": "expected bidder surplus ratio [model-proposed; physical meaning unverified]",
+   "k": "8"
+  },
+  {
+   "family": "auction with a reserve price",
+   "f": "welfare with the efficient reserve (r = v)",
+   "g": "expected revenue",
+   "k": "8/5"
+  },
+  {
+   "family": "auction with a reserve price",
+   "f": "welfare with the efficient reserve (r = v)",
+   "g": "seller's expected payoff",
+   "k": "1"
+  },
+  {
+   "family": "auction with a reserve price",
+   "f": "welfare with the efficient reserve (r = v)",
+   "g": "probability the item is not sold",
+   "k": "2/3"
+  },
+  {
+   "family": "auction with a reserve price",
+   "f": "welfare with the efficient reserve (r = v)",
+   "g": "expected total bidder surplus",
+   "k": "2"
+  },
+  {
+   "family": "auction with a reserve price",
+   "f": "welfare with the efficient reserve (r = v)",
+   "g": "expected total welfare",
+   "k": "1"
   }
  ],
- "rounds": 182,
+ "rounds": 194,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",
