@@ -272,3 +272,4 @@
 - 2026-11-04 21:56 round 253: Compton scattering
 - 2026-11-04 21:58 round 254: Cournot duopoly
 - 2026-11-04 22:06 round 255: insurance and risk
+- 2026-11-04 22:11 round 256: auction with a reserve price

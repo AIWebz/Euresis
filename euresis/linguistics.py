@@ -212,5 +212,5 @@ def run(reg: Registry | None = None, echo=print) -> dict:
             st["discoveries"].append(rec)
             log(f"FINDING (confirmed on held-out text, not proved): {stmt}; held-out ρ = {ev['held_out_rho']:+.3f} "
                 f"[{cid}]", echo)
-    STATE.write_text(json.dumps(st, indent=1) + "\n")
+    atomic_write(STATE, json.dumps(st, indent=1) + "\n")
     return st

@@ -270,5 +270,5 @@ def run(reg: Registry | None = None, echo=print, n_max: int = N_MAX) -> dict:
             log(f"{'CANDIDATE (likely known)' if likely else 'DISCOVERY'} (proved by exhaustion in {len(Ns)} tunings): "
                 f"{stmt}  [{cid}; {support} scale classes]", echo)
     st["n_max_done"] = n_max
-    STATE.write_text(json.dumps(st, indent=1) + "\n")
+    atomic_write(STATE, json.dumps(st, indent=1) + "\n")
     return st

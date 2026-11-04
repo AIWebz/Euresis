@@ -4865,6 +4865,26 @@
    "family": "Cournot duopoly",
    "expr": "( (1 + c1 + c2)/3 - (c1 + c2)/2 ) / ( (1 + c1 + c2)/3 )",
    "why": "affine combination of known quantities (output of firm 1, 1/(market price))"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "1/(2*(1 - sqrt(1 - L)))",
+   "why": "affine combination of known quantities (expected wealth, Coefficient of Risk Aversion [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "sqrt(1 - p*L)/(p*sqrt(1 - L) + 1 - p)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "L*p/(1 - (p*sqrt(1 - L) + 1 - p)**2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "p*(sqrt(1 - L) - 1)/sqrt(1 - p*L - (p*sqrt(1 - L) + 1 - p)**2)",
+   "why": "not positive on the physical domain"
   }
  ],
  "tried": [
@@ -7855,7 +7875,7 @@
    "k": "1"
   }
  ],
- "rounds": 254,
+ "rounds": 255,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",

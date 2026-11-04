@@ -221,7 +221,7 @@ def load_state():
 
 
 def save_state(st):
-    STATE.write_text(json.dumps(st, indent=1) + "\n")
+    atomic_write(STATE, json.dumps(st, indent=1) + "\n")
 
 
 def log(msg, echo=print):

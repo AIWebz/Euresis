@@ -89,6 +89,14 @@ def verify_claim(payload: dict) -> tuple[str, dict]:
     return "proved", ev
 
 
+def save(st):
+    """Atomic write (git or another reader never sees a half-written file)."""
+    import os
+    tmp = STATE.with_suffix(f".tmp{os.getpid()}")
+    tmp.write_text(json.dumps(st) + "\n")
+    os.replace(tmp, STATE)
+
+
 def log(msg, echo=print):
     echo(msg)
     with LOG.open("a") as f:
@@ -121,7 +129,8 @@ def run(max_digits: int = 3, N: int = 1500, reg: Registry | None = None, echo=pr
             if code not in st["unresolved"]:
                 st["unresolved"].append(code)
             echo(f"  0.{code}: no period found up to heap size {N} (open within this range)")
-            STATE.write_text(json.dumps(st, indent=1) + "\n")
+            if len(done) % 100 == 0:
+                save(st)
             continue
         n0, p = per
         stmt = (f"Octal game 0.{code} is completely solved: its Grundy values are periodic with pre-period {n0} "
@@ -137,7 +146,8 @@ def run(max_digits: int = 3, N: int = 1500, reg: Registry | None = None, echo=pr
             st["solved"][code] = {"claim": cid, "preperiod": n0, "period": p}
             if code not in KNOWN_GAMES and (p > 12 or n0 > 50):
                 log(f"SOLVED (proved): 0.{code} — pre-period {n0}, period {p}  [{cid}]", echo)
-        STATE.write_text(json.dumps(st, indent=1) + "\n")
-    STATE.write_text(json.dumps(st, indent=1) + "\n")
+        if len(done) % 100 == 0:
+            save(st)
+    save(st)
     log(f"games: {len(st['solved'])} octal games solved, {len(st['unresolved'])} unresolved up to n = {N}", echo)
     return st

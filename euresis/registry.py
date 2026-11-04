@@ -65,6 +65,14 @@ CREATE INDEX IF NOT EXISTS jobs_state ON jobs(state);
 """
 
 
+def atomic_write(path, text: str):
+    """Write a file so that readers (git, other processes) never see it half-written."""
+    path = Path(path)
+    tmp = path.with_suffix(path.suffix + f".tmp{os.getpid()}")
+    tmp.write_text(text)
+    os.replace(tmp, path)
+
+
 def claim_id(kind: str, payload: dict) -> str:
     """Content address: the same claim always gets the same id."""
     blob = json.dumps({"kind": kind, "payload": payload}, sort_keys=True)
