@@ -356,3 +356,27 @@
 - 2026-11-04 10:13 round 330: kepler
 - 2026-11-04 10:15 round 331: heat engines
 - 2026-11-04 10:16 round 332: collisions
+- 2026-11-04 10:17 round 333: quantum step
+- 2026-11-04 10:19 round 334: acoustic Doppler
+- 2026-11-04 10:20 round 335: damped oscillator
+- 2026-11-04 10:21 round 336: wave boundary
+- 2026-11-04 10:22 round 337: relativity
+- 2026-11-04 10:24 round 338: kepler
+- 2026-11-04 10:25 round 339: heat engines
+- 2026-11-04 10:27 round 340: collisions
+- 2026-11-04 10:28 round 341: quantum step
+- 2026-11-04 10:29 round 342: acoustic Doppler
+- 2026-11-04 10:31 round 343: damped oscillator
+- 2026-11-04 10:32 round 344: wave boundary
+- 2026-11-04 10:33 round 345: relativity
+- 2026-11-04 10:34 round 346: kepler
+- 2026-11-04 10:36 round 347: heat engines
+- 2026-11-04 10:37 round 348: collisions
+- 2026-11-04 10:38 round 349: quantum step
+- 2026-11-04 10:40 round 350: acoustic Doppler
+- 2026-11-04 10:41 round 351: damped oscillator
+- 2026-11-04 10:43 round 352: wave boundary
+- 2026-11-04 10:44 round 353: relativity
+- 2026-11-04 10:45 round 354: kepler
+- 2026-11-04 10:47 round 355: heat engines
+- 2026-11-04 10:48 round 356: collisions
