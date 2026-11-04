@@ -3611,5 +3611,53 @@
   "statement": "[acoustic Doppler] relative wavelength shift for a moving observer [model-proposed; physical meaning unverified] \u2265 1 \u00d7 frequency ratio, observer receding   for 0 < m < 1 (tight only in the limit m \u2192 0)",
   "status": "proved",
   "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "t < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-4a57d05a1412",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "t < 1"
+   ],
+   "claim": "t/(t**2 - t + 1) >= 1*(t/(t**0.5 - t**1.5 + 1))",
+   "symbols": [
+    "t"
+   ]
+  },
+  "source": "physics_discover round 315",
+  "statement": "[heat engines] Low-dissipation refrigerator efficiency [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Refrigeration efficiency factor for a low-dissipation model with time-dependent  [model-proposed; physical meaning unverified]   for 0 < t < 1 (tight only in the limit t \u2192 1)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "t < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-d846e4a5078c",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'Low-dissipation refrigerator efficiency [model-proposed; physical meaning unverified]'",
+  "payload": {
+   "assumptions": [
+    "t < 1"
+   ],
+   "claim": "t/(-t**0.5 + t**2 + 1) >= 1*(t/(t**0.5 - t**1.5 + 1))",
+   "symbols": [
+    "t"
+   ]
+  },
+  "source": "physics_discover round 315",
+  "statement": "[heat engines] Refrigeration efficiency factor [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Refrigeration efficiency factor for a low-dissipation model with time-dependent  [model-proposed; physical meaning unverified]   for 0 < t < 1 (tight only in the limit t \u2192 1)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]
