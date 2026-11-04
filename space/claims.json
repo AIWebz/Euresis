@@ -875,5 +875,101 @@
   "statement": "[heat engines] Entropy production ratio \u2265 2 \u00d7 Carnot refrigerator coefficient of performance   for 0 < t < 1 (tight only in the limit t \u2192 1)",
   "status": "proved",
   "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "b < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-e72aa596c5f7",
+  "kind": "physics-relation",
+  "novelty": "not a known result in Euresis' knowledge; not implied by proved bounds; physics literature unchecked (arXiv unreachable from this environment)",
+  "payload": {
+   "assumptions": [
+    "b < 1"
+   ],
+   "claim": "b/sqrt(1 - b**2) >= 4*(b**2/2)",
+   "symbols": [
+    "b"
+   ]
+  },
+  "source": "physics_discover round 4",
+  "statement": "[relativity] relativistic momentum / (mc) \u2265 4 \u00d7 classical kinetic energy / mc\u00b2   for 0 < b < 1 (equality at b \u2248 0.707127)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "b < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-9440a7aa16a9",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "b < 1"
+   ],
+   "claim": "b/sqrt(1 - b**2) >= 1/2*(2*b/(b**2 + 1))",
+   "symbols": [
+    "b"
+   ]
+  },
+  "source": "physics_discover round 4",
+  "statement": "[relativity] relativistic momentum / (mc) \u2265 1/2 \u00d7 relative speed of two bodies each at speed b, head-on (velocity addition) / c   for 0 < b < 1 (tight only in the limit b \u2192 0)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "b < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-0f3efafdd553",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "b < 1"
+   ],
+   "claim": "sqrt(b + 1)*sqrt(1/(1 - b)) >= 1*(1/sqrt(1 - b**2))",
+   "symbols": [
+    "b"
+   ]
+  },
+  "source": "physics_discover round 4",
+  "statement": "[relativity] relativistic Doppler factor (approaching source) \u2265 1 \u00d7 Lorentz factor \u03b3   for 0 < b < 1 (tight only in the limit b \u2192 0)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "b < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-142fc98595ad",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "b < 1"
+   ],
+   "claim": "sqrt(b + 1)*sqrt(1/(1 - b)) >= 2*(b/sqrt(1 - b**2))",
+   "symbols": [
+    "b"
+   ]
+  },
+  "source": "physics_discover round 4",
+  "statement": "[relativity] relativistic Doppler factor (approaching source) \u2265 2 \u00d7 relativistic momentum / (mc)   for 0 < b < 1 (tight only in the limit b \u2192 1)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]

@@ -5,3 +5,5 @@
 - 2026-11-04 03:23 round 2: kepler
 - 2026-11-04 03:24 round 3: heat engines
 - 2026-11-04 03:25 round 4: relativity
+- 2026-11-04 03:26 DISCOVERY (proved, sharp to 1e-6): [relativity] relativistic momentum / (mc) ≥ 4 × classical kinetic energy / mc²   for 0 < b < 1 (equality at b ≈ 0.707127)  [phy-e72aa596c5f7]
+- 2026-11-04 03:26 round 5: kepler
