@@ -171,3 +171,5 @@
 - 2026-11-04 17:21 round 164: velocity addition
 - 2026-11-04 17:24 round 165: Compton scattering
 - 2026-11-04 17:25 segment end: 165 rounds, 1 discoveries, 2 known laws rediscovered
+- 2026-11-04 17:25 segment start (budget 100 min; model: Qwen3-14B; 1 discoveries so far)
+- 2026-11-04 17:25 round 166: two-body decay
