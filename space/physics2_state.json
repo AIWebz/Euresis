@@ -4644,6 +4644,86 @@
    "family": "collision",
    "expr": "e",
    "why": "affine combination of known quantities (target speed / initial speed, momentum transferred / initial momentum)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "atan(2*z*r/(1 - r**2))",
+   "why": "only + \u2212 \u00d7 \u00f7, integer powers and square roots (so the prover can decide it)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(1 - z**2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "1/(2*z*sqrt(1 - z**2))",
+   "why": "affine combination of known quantities (log decrement [model-proposed; physical meaning unverified], 1/(log decrement [model-proposed; physical meaning unverified]))"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "z/(sqrt(1 - r**2)**2 + (2*z*r)**2)",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "(u + v)/(sqrt(1 - u**2)*sqrt(1 - v**2)*(1 + u*v))",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "1 - (u + v)**2/(1 + u*v)**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 - u**2)*(1 - v**2))/(-u*v + 1)",
+   "why": "affine combination of known quantities (composed speed / c, Relativistic velocity parameter [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "1 - (u + v)**2/(1 + u*v)**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "c/(c + x)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, Compton wavelength shift / (initial photon wavelength) [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "1 + c/(x + 1)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, Scattered photon wavelength / initial photon wavelength [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "x**2*c/(1 + x*c)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, electron kinetic energy / (m_e c\u00b2))"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "x/(1 + x*c)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, scattered photon energy / (m_e c\u00b2))"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "( ( (1 + c1 + c2)/3 - c1 ) / ( (1 + c1 + c2)/3 ) )",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "( ( (1 + c1 + c2)/3 - c2 ) / ( (1 + c1 + c2)/3 ) )",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "( ( (1 - 2*c1 + c2)/3 - (1 - 2*c2 + c1)/3 ) / ( (1 - 2*c1 + c2)/3 + (1 - 2*c2 + c1)/3 ) )",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "( ( (1 + c1 + c2)/3 - (c1 + c2)/2 ) / ( (1 + c1 + c2)/3 ) )",
+   "why": "affine combination of known quantities (output of firm 1, 1/(market price))"
   }
  ],
  "tried": [
@@ -7552,7 +7632,7 @@
    "k": "1"
   }
  ],
- "rounds": 242,
+ "rounds": 246,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",

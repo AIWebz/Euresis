@@ -258,3 +258,7 @@
 - 2026-11-04 20:22 round 241: two-body decay
 - 2026-11-04 20:31 round 242: collision
 - 2026-11-04 20:38 round 243: driven oscillator
+- 2026-11-04 20:47 round 244: velocity addition
+- 2026-11-04 20:53 round 245: Compton scattering
+- 2026-11-04 20:58 round 246: Cournot duopoly
+- 2026-11-04 21:07 round 247: insurance and risk
