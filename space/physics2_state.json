@@ -4925,6 +4925,46 @@
    "family": "two-body decay",
    "expr": "((-b**2 + (1 - a)**2)/(-a**2 - b**2 + (1 - a)**2 + 1))",
    "why": "affine combination of known quantities (momentum of each product / (Mc), Ratio of kinetic energy of product 1 to total kinetic energy [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2 * m",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "collision",
+   "expr": "(e**2 * (1 + m)) / (1 + m)**2",
+   "why": "affine combination of known quantities (fraction of kinetic energy lost, speed of the centre of mass / initial speed)"
+  },
+  {
+   "family": "collision",
+   "expr": "(1 - e*m) / (1 + m)",
+   "why": "affine combination of known quantities (target speed / initial speed)"
+  },
+  {
+   "family": "collision",
+   "expr": "e*(1 + m) / (1 + e*m)",
+   "why": "affine combination of known quantities (target speed / initial speed, velocity ratio of target to projectile after collision [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "atan(2*z*r/(1 - r**2))",
+   "why": "only + \u2212 \u00d7 \u00f7, integer powers and square roots (so the prover can decide it)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "z/(1 - r**2 + 2*z*r)",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt((1 - r**2)**2 + (2*z*r)**2)/(1 - r**2)",
+   "why": "not finite on the whole physical domain"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt((1 - r**2)**2 + (2*z*r)**2)/r",
+   "why": "affine combination of known quantities (amplitude / static deflection, 1/(velocity amplitude / (\u03c90 \u00d7 static deflection)))"
   }
  ],
  "tried": [
@@ -7915,7 +7955,7 @@
    "k": "1"
   }
  ],
- "rounds": 257,
+ "rounds": 259,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",

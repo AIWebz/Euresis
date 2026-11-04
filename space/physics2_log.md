@@ -275,3 +275,5 @@
 - 2026-11-04 22:11 round 256: auction with a reserve price
 - 2026-11-04 22:23 round 257: two-body decay
 - 2026-11-04 22:35 round 258: collision
+- 2026-11-04 22:42 round 259: driven oscillator
+- 2026-11-04 22:50 round 260: velocity addition
