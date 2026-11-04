@@ -183,14 +183,28 @@ def propose_llm(fam: str, st: dict, n: int = 4, echo=print) -> list[dict]:
     r = local_llm.complete("You are the physics idea generator of Euresis. You propose; a theorem prover decides "
                            "what is true. Reply with JSON only.", [{"role": "user", "content": msg}],
                            think=False, max_tokens=700, temperature=0.8, log=echo)
-    m = re.search(r"\[.*\]", r["text"], re.S)
-    try:
-        items = json.loads(m.group(0)) if m else []
-    except json.JSONDecodeError:
-        items = []
-    items = [x for x in items if isinstance(x, dict) and isinstance(x.get("expr"), str)]
+    items = parse_items(r["text"] or r["raw"])
+    if not items:
+        log(f"model reply could not be parsed ({fam}): {(r['raw'] or '')[:300]!r}", echo)
     echo(f"  model proposed {len(items)} quantities for {fam} in {r['seconds']} s")
     return items[:n]
+
+
+def parse_items(text: str) -> list[dict]:
+    """JSON list of {name, expr}; falls back to pulling out each name/expr pair if the JSON is malformed."""
+    text = re.sub(r"<think>.*?</think>", "", text or "", flags=re.S)
+    text = re.sub(r"```(?:json)?", "", text)
+    m = re.search(r"\[.*\]", text, re.S)
+    if m:
+        try:
+            items = json.loads(m.group(0))
+            items = [x for x in items if isinstance(x, dict) and isinstance(x.get("expr"), str)]
+            if items:
+                return items
+        except json.JSONDecodeError:
+            pass
+    pairs = re.findall(r'"name"\s*:\s*"([^"]*)"\s*,\s*"expr"\s*:\s*"([^"]*)"', text)
+    return [{"name": n, "expr": e} for n, e in pairs]
 
 
 # ---------------------------------------------------------------- bounds

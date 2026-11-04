@@ -491,5 +491,77 @@
   "statement": "Relativistic kinetic energy is always at least the classical value m v^2/2 for 0 < v < c",
   "status": "proved",
   "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "b < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-c1551ed1f9eb",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "b < 1"
+   ],
+   "claim": "1/sqrt(1 - b**2) >= 1*(b/sqrt(1 - b**2))",
+   "symbols": [
+    "b"
+   ]
+  },
+  "source": "physics_discover round 1",
+  "statement": "[relativity] Lorentz factor \u03b3 \u2265 1 \u00d7 relativistic momentum / (mc)   for 0 < b < 1 (tight only in the limit b \u2192 1)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "b < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-769b39657d25",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "b < 1"
+   ],
+   "claim": "1/sqrt(1 - b**2) >= 1/2*(sqrt(b + 1)*sqrt(1/(1 - b)))",
+   "symbols": [
+    "b"
+   ]
+  },
+  "source": "physics_discover round 1",
+  "statement": "[relativity] Lorentz factor \u03b3 \u2265 1/2 \u00d7 relativistic Doppler factor (approaching source)   for 0 < b < 1 (tight only in the limit b \u2192 1)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "b < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-9b0b602e3862",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "b < 1"
+   ],
+   "claim": "1/sqrt(1 - b**2) >= 1*(sqrt(1 - b**2))",
+   "symbols": [
+    "b"
+   ]
+  },
+  "source": "physics_discover round 1",
+  "statement": "[relativity] Lorentz factor \u03b3 \u2265 1 \u00d7 time-dilation factor 1/\u03b3   for 0 < b < 1 (tight only in the limit b \u2192 0)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]

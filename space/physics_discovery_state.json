@@ -1,0 +1,75 @@
+{
+ "families": {
+  "relativity": {
+   "Lorentz factor \u03b3": "1/sqrt(1 - b**2)",
+   "relativistic kinetic energy / mc\u00b2": "1/sqrt(1 - b**2) - 1",
+   "classical kinetic energy / mc\u00b2": "b**2/2",
+   "relativistic momentum / (mc)": "b/sqrt(1 - b**2)",
+   "relativistic Doppler factor (approaching source)": "sqrt((1 + b)/(1 - b))",
+   "time-dilation factor 1/\u03b3": "sqrt(1 - b**2)",
+   "relative speed of two bodies each at speed b, head-on (velocity addition) / c": "2*b/(1 + b**2)",
+   "kinetic energy / (momentum \u00d7 c)": "(1 - sqrt(1 - b**2))/b"
+  },
+  "kepler": {
+   "perihelion distance / a": "1 - e",
+   "aphelion distance / a": "1 + e",
+   "perihelion speed / circular speed at a": "sqrt((1 + e)/(1 - e))",
+   "aphelion speed / circular speed at a": "sqrt((1 - e)/(1 + e))",
+   "semi-minor axis / a": "sqrt(1 - e**2)",
+   "semi-latus rectum / a": "1 - e**2",
+   "time-averaged distance / a": "1 + e**2/2"
+  },
+  "heat engines": {
+   "Carnot efficiency": "1 - t",
+   "Curzon\u2013Ahlborn efficiency (endoreversible engine at maximum power)": "1 - sqrt(t)",
+   "low-dissipation engine efficiency at maximum power, upper bound (Esposito et al.)": "(1 - t)/(1 + t)",
+   "Carnot refrigerator coefficient of performance": "t/(1 - t)",
+   "Carnot heat pump coefficient of performance": "1/(1 - t)"
+  }
+ },
+ "rejected": [],
+ "tried": [
+  "relativity|Lorentz factor \u03b3|relativistic kinetic energy / mc\u00b2",
+  "relativity|Lorentz factor \u03b3|classical kinetic energy / mc\u00b2",
+  "relativity|Lorentz factor \u03b3|relativistic momentum / (mc)",
+  "relativity|Lorentz factor \u03b3|relativistic Doppler factor (approaching source)",
+  "relativity|Lorentz factor \u03b3|time-dilation factor 1/\u03b3",
+  "relativity|Lorentz factor \u03b3|relative speed of two bodies each at speed b, head-on (velocity addition) / c",
+  "relativity|Lorentz factor \u03b3|kinetic energy / (momentum \u00d7 c)",
+  "relativity|relativistic kinetic energy / mc\u00b2|Lorentz factor \u03b3",
+  "relativity|relativistic kinetic energy / mc\u00b2|classical kinetic energy / mc\u00b2",
+  "relativity|relativistic kinetic energy / mc\u00b2|relativistic momentum / (mc)",
+  "relativity|relativistic kinetic energy / mc\u00b2|relativistic Doppler factor (approaching source)",
+  "relativity|relativistic kinetic energy / mc\u00b2|time-dilation factor 1/\u03b3",
+  "relativity|relativistic kinetic energy / mc\u00b2|relative speed of two bodies each at speed b, head-on (velocity addition) / c",
+  "relativity|relativistic kinetic energy / mc\u00b2|kinetic energy / (momentum \u00d7 c)",
+  "relativity|classical kinetic energy / mc\u00b2|Lorentz factor \u03b3",
+  "relativity|classical kinetic energy / mc\u00b2|relativistic kinetic energy / mc\u00b2"
+ ],
+ "edges": [
+  {
+   "family": "relativity",
+   "f": "Lorentz factor \u03b3",
+   "g": "relativistic momentum / (mc)",
+   "kind": "lower",
+   "k": "1"
+  },
+  {
+   "family": "relativity",
+   "f": "Lorentz factor \u03b3",
+   "g": "relativistic Doppler factor (approaching source)",
+   "kind": "lower",
+   "k": "1/2"
+  },
+  {
+   "family": "relativity",
+   "f": "Lorentz factor \u03b3",
+   "g": "time-dilation factor 1/\u03b3",
+   "kind": "lower",
+   "k": "1"
+  }
+ ],
+ "rounds": 1,
+ "discoveries": [],
+ "rediscoveries": []
+}
