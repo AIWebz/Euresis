@@ -26,7 +26,9 @@
    "Carnot refrigerator coefficient of performance": "t/(1 - t)",
    "Carnot heat pump coefficient of performance": "1/(1 - t)",
    "Power efficiency ratio [model-proposed; physical meaning unverified]": "sqrt(1 - t)/sqrt(t + 1)",
-   "Low-dissipation refrigerator efficiency [model-proposed; physical meaning unverified]": "t/(t**2 - t + 1)"
+   "Low-dissipation refrigerator efficiency [model-proposed; physical meaning unverified]": "t/(t**2 - t + 1)",
+   "Heat pump performance ratio [model-proposed; physical meaning unverified]": "sqrt(1 - t)/t",
+   "Thermal dissipation factor [model-proposed; physical meaning unverified]": "(1 - t)/(sqrt(t) + t)"
   }
  },
  "rejected": [
@@ -204,6 +206,16 @@
    "family": "kepler",
    "expr": "(1 - e**2)/(1 - e**2)",
    "why": "must depend on e only"
+  },
+  {
+   "family": "heat engines",
+   "expr": "1 - (t**(1/3))",
+   "why": "only + \u2212 \u00d7 \u00f7, integer powers and square roots (so the prover can decide it)"
+  },
+  {
+   "family": "heat engines",
+   "expr": "sqrt(t)/(1 - t)",
+   "why": "affine combination of known quantities (Carnot refrigerator coefficient of performance, 1/(Curzon\u2013Ahlborn efficiency (endoreversible engine at maximum power)))"
   }
  ],
  "tried": [
@@ -366,7 +378,23 @@
   "kepler|time-averaged distance / a|perihelion speed / circular speed at a",
   "kepler|time-averaged distance / a|aphelion speed / circular speed at a",
   "kepler|time-averaged distance / a|semi-minor axis / a",
-  "kepler|time-averaged distance / a|semi-latus rectum / a"
+  "kepler|time-averaged distance / a|semi-latus rectum / a",
+  "heat engines|Carnot efficiency|Heat pump performance ratio [model-proposed; physical meaning unverified]",
+  "heat engines|Carnot efficiency|Thermal dissipation factor [model-proposed; physical meaning unverified]",
+  "heat engines|Curzon\u2013Ahlborn efficiency (endoreversible engine at maximum power)|Heat pump performance ratio [model-proposed; physical meaning unverified]",
+  "heat engines|Curzon\u2013Ahlborn efficiency (endoreversible engine at maximum power)|Thermal dissipation factor [model-proposed; physical meaning unverified]",
+  "heat engines|low-dissipation engine efficiency at maximum power, upper bound (Esposito et al.)|Heat pump performance ratio [model-proposed; physical meaning unverified]",
+  "heat engines|low-dissipation engine efficiency at maximum power, upper bound (Esposito et al.)|Thermal dissipation factor [model-proposed; physical meaning unverified]",
+  "heat engines|Carnot refrigerator coefficient of performance|Heat pump performance ratio [model-proposed; physical meaning unverified]",
+  "heat engines|Carnot refrigerator coefficient of performance|Thermal dissipation factor [model-proposed; physical meaning unverified]",
+  "heat engines|Carnot heat pump coefficient of performance|Heat pump performance ratio [model-proposed; physical meaning unverified]",
+  "heat engines|Carnot heat pump coefficient of performance|Thermal dissipation factor [model-proposed; physical meaning unverified]",
+  "heat engines|Power efficiency ratio [model-proposed; physical meaning unverified]|Heat pump performance ratio [model-proposed; physical meaning unverified]",
+  "heat engines|Power efficiency ratio [model-proposed; physical meaning unverified]|Thermal dissipation factor [model-proposed; physical meaning unverified]",
+  "heat engines|Low-dissipation refrigerator efficiency [model-proposed; physical meaning unverified]|Heat pump performance ratio [model-proposed; physical meaning unverified]",
+  "heat engines|Low-dissipation refrigerator efficiency [model-proposed; physical meaning unverified]|Thermal dissipation factor [model-proposed; physical meaning unverified]",
+  "heat engines|Heat pump performance ratio [model-proposed; physical meaning unverified]|Carnot efficiency",
+  "heat engines|Heat pump performance ratio [model-proposed; physical meaning unverified]|Curzon\u2013Ahlborn efficiency (endoreversible engine at maximum power)"
  ],
  "edges": [
   {
@@ -643,7 +671,7 @@
    "k": "1"
   }
  ],
- "rounds": 11,
+ "rounds": 12,
  "discoveries": [
   {
    "claim": "phy-e72aa596c5f7",
