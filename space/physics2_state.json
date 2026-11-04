@@ -25,7 +25,8 @@
    "velocity amplitude / (\u03c90 \u00d7 static deflection)": "r/sqrt((1 - r**2)**2 + (2*z*r)**2)",
    "acceleration amplitude / (\u03c90\u00b2 \u00d7 static deflection)": "r**2/sqrt((1 - r**2)**2 + (2*z*r)**2)",
    "mean absorbed power (normalised)": "2*z*r**2/((1 - r**2)**2 + (2*z*r)**2)",
-   "quality factor": "1/(2*z)"
+   "quality factor": "1/(2*z)",
+   "log decrement [model-proposed; physical meaning unverified]": "2*sqrt(1 - z**2)/z"
   },
   "velocity addition": {
    "composed speed / c": "(u + v)/(1 + u*v)",
@@ -80,6 +81,21 @@
    "family": "collision",
    "expr": "(1 - e) / (1 + m)",
    "why": "affine combination of known quantities (momentum transferred / initial momentum, speed of the centre of mass / initial speed)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "atan2(2*z*r, 1 - r**2)",
+   "why": "only + \u2212 \u00d7 \u00f7, integer powers and square roots (so the prover can decide it)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(1 - 2*z**2)",
+   "why": "not finite on the whole physical domain"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "1/(2*z*sqrt(1 - z**2))",
+   "why": "affine combination of known quantities (log decrement [model-proposed; physical meaning unverified], 1/(log decrement [model-proposed; physical meaning unverified]))"
   }
  ],
  "tried": [
@@ -130,7 +146,31 @@
   "collision|momentum transferred / initial momentum|speed of the centre of mass / initial speed",
   "collision|momentum transferred / initial momentum|relative speed after / relative speed before",
   "collision|fraction of kinetic energy lost|target speed / initial speed",
-  "collision|fraction of kinetic energy lost|momentum transferred / initial momentum"
+  "collision|fraction of kinetic energy lost|momentum transferred / initial momentum",
+  "driven oscillator|amplitude / static deflection|log decrement [model-proposed; physical meaning unverified]",
+  "driven oscillator|transmissibility|log decrement [model-proposed; physical meaning unverified]",
+  "driven oscillator|velocity amplitude / (\u03c90 \u00d7 static deflection)|log decrement [model-proposed; physical meaning unverified]",
+  "driven oscillator|acceleration amplitude / (\u03c90\u00b2 \u00d7 static deflection)|log decrement [model-proposed; physical meaning unverified]",
+  "driven oscillator|mean absorbed power (normalised)|log decrement [model-proposed; physical meaning unverified]",
+  "driven oscillator|quality factor|log decrement [model-proposed; physical meaning unverified]",
+  "driven oscillator|log decrement [model-proposed; physical meaning unverified]|amplitude / static deflection",
+  "driven oscillator|log decrement [model-proposed; physical meaning unverified]|transmissibility",
+  "driven oscillator|log decrement [model-proposed; physical meaning unverified]|velocity amplitude / (\u03c90 \u00d7 static deflection)",
+  "driven oscillator|log decrement [model-proposed; physical meaning unverified]|acceleration amplitude / (\u03c90\u00b2 \u00d7 static deflection)",
+  "driven oscillator|log decrement [model-proposed; physical meaning unverified]|mean absorbed power (normalised)",
+  "driven oscillator|log decrement [model-proposed; physical meaning unverified]|quality factor",
+  "driven oscillator|amplitude / static deflection|transmissibility",
+  "driven oscillator|amplitude / static deflection|velocity amplitude / (\u03c90 \u00d7 static deflection)",
+  "driven oscillator|amplitude / static deflection|acceleration amplitude / (\u03c90\u00b2 \u00d7 static deflection)",
+  "driven oscillator|amplitude / static deflection|mean absorbed power (normalised)",
+  "driven oscillator|amplitude / static deflection|quality factor",
+  "driven oscillator|transmissibility|amplitude / static deflection",
+  "driven oscillator|transmissibility|velocity amplitude / (\u03c90 \u00d7 static deflection)",
+  "driven oscillator|transmissibility|acceleration amplitude / (\u03c90\u00b2 \u00d7 static deflection)",
+  "driven oscillator|transmissibility|mean absorbed power (normalised)",
+  "driven oscillator|transmissibility|quality factor",
+  "driven oscillator|velocity amplitude / (\u03c90 \u00d7 static deflection)|amplitude / static deflection",
+  "driven oscillator|velocity amplitude / (\u03c90 \u00d7 static deflection)|transmissibility"
  ],
  "edges": [
   {
@@ -252,9 +292,57 @@
    "f": "momentum transferred / initial momentum",
    "g": "relative speed after / relative speed before",
    "k": "1"
+  },
+  {
+   "family": "driven oscillator",
+   "f": "quality factor",
+   "g": "log decrement [model-proposed; physical meaning unverified]",
+   "k": "1/4"
+  },
+  {
+   "family": "driven oscillator",
+   "f": "amplitude / static deflection",
+   "g": "velocity amplitude / (\u03c90 \u00d7 static deflection)",
+   "k": "1/2"
+  },
+  {
+   "family": "driven oscillator",
+   "f": "amplitude / static deflection",
+   "g": "acceleration amplitude / (\u03c90\u00b2 \u00d7 static deflection)",
+   "k": "1/4"
+  },
+  {
+   "family": "driven oscillator",
+   "f": "amplitude / static deflection",
+   "g": "mean absorbed power (normalised)",
+   "k": "5/8"
+  },
+  {
+   "family": "driven oscillator",
+   "f": "transmissibility",
+   "g": "amplitude / static deflection",
+   "k": "1"
+  },
+  {
+   "family": "driven oscillator",
+   "f": "transmissibility",
+   "g": "velocity amplitude / (\u03c90 \u00d7 static deflection)",
+   "k": "1/2"
+  },
+  {
+   "family": "driven oscillator",
+   "f": "transmissibility",
+   "g": "acceleration amplitude / (\u03c90\u00b2 \u00d7 static deflection)",
+   "k": "1/4"
+  },
+  {
+   "family": "driven oscillator",
+   "f": "transmissibility",
+   "g": "mean absorbed power (normalised)",
+   "k": "1"
   }
  ],
- "rounds": 2,
+ "rounds": 3,
  "discoveries": [],
  "rediscoveries": []
 }

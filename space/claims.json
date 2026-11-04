@@ -4219,5 +4219,221 @@
   "statement": "[collision] momentum transferred / initial momentum \u2265 1 \u00d7 relative speed after / relative speed before   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
   "status": "proved",
   "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 2",
+    "z < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-ed0aae0ba38e",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 2",
+    "z < 1"
+   ],
+   "claim": "1/(2*z) >= 1/4*(2*sqrt(1 - z**2)/z)",
+   "symbols": [
+    "r",
+    "z"
+   ]
+  },
+  "source": "physics_discover2 round 3",
+  "statement": "[driven oscillator] quality factor \u2265 1/4 \u00d7 log decrement [model-proposed; physical meaning unverified]   on r < 2, z < 1 (tight only at the edge of the domain, near (1.73, 7.8e-11))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 2",
+    "z < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-edbf3afcc33b",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 2",
+    "z < 1"
+   ],
+   "claim": "1/sqrt(4*r**2*z**2 + (1 - r**2)**2) >= 1/2*(r/sqrt(4*r**2*z**2 + (1 - r**2)**2))",
+   "symbols": [
+    "r",
+    "z"
+   ]
+  },
+  "source": "physics_discover2 round 3",
+  "statement": "[driven oscillator] amplitude / static deflection \u2265 1/2 \u00d7 velocity amplitude / (\u03c90 \u00d7 static deflection)   on r < 2, z < 1 (tight only at the edge of the domain, near (2, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 2",
+    "z < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-784327cf2105",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 2",
+    "z < 1"
+   ],
+   "claim": "1/sqrt(4*r**2*z**2 + (1 - r**2)**2) >= 1/4*(r**2/sqrt(4*r**2*z**2 + (1 - r**2)**2))",
+   "symbols": [
+    "r",
+    "z"
+   ]
+  },
+  "source": "physics_discover2 round 3",
+  "statement": "[driven oscillator] amplitude / static deflection \u2265 1/4 \u00d7 acceleration amplitude / (\u03c90\u00b2 \u00d7 static deflection)   on r < 2, z < 1 (tight only at the edge of the domain, near (2, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 2",
+    "z < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-d5fce17acf91",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 2",
+    "z < 1"
+   ],
+   "claim": "1/sqrt(4*r**2*z**2 + (1 - r**2)**2) >= 5/8*(2*r**2*z/(4*r**2*z**2 + (1 - r**2)**2))",
+   "symbols": [
+    "r",
+    "z"
+   ]
+  },
+  "source": "physics_discover2 round 3",
+  "statement": "[driven oscillator] amplitude / static deflection \u2265 5/8 \u00d7 mean absorbed power (normalised)   on r < 2, z < 1 (tight only at the edge of the domain, near (2, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 2",
+    "z < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-f1deed5e3b18",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 2",
+    "z < 1"
+   ],
+   "claim": "sqrt(4*r**2*z**2 + 1)/sqrt(4*r**2*z**2 + (1 - r**2)**2) >= 1*(1/sqrt(4*r**2*z**2 + (1 - r**2)**2))",
+   "symbols": [
+    "r",
+    "z"
+   ]
+  },
+  "source": "physics_discover2 round 3",
+  "statement": "[driven oscillator] transmissibility \u2265 1 \u00d7 amplitude / static deflection   on r < 2, z < 1 (tight only at the edge of the domain, near (0.0002, 0.0001))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 2",
+    "z < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-344d116fe030",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'amplitude / static deflection'",
+  "payload": {
+   "assumptions": [
+    "r < 2",
+    "z < 1"
+   ],
+   "claim": "sqrt(4*r**2*z**2 + 1)/sqrt(4*r**2*z**2 + (1 - r**2)**2) >= 1/2*(r/sqrt(4*r**2*z**2 + (1 - r**2)**2))",
+   "symbols": [
+    "r",
+    "z"
+   ]
+  },
+  "source": "physics_discover2 round 3",
+  "statement": "[driven oscillator] transmissibility \u2265 1/2 \u00d7 velocity amplitude / (\u03c90 \u00d7 static deflection)   on r < 2, z < 1 (tight only at the edge of the domain, near (2, 9.12e-05))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 2",
+    "z < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-20a0c6b780b0",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'amplitude / static deflection'",
+  "payload": {
+   "assumptions": [
+    "r < 2",
+    "z < 1"
+   ],
+   "claim": "sqrt(4*r**2*z**2 + 1)/sqrt(4*r**2*z**2 + (1 - r**2)**2) >= 1/4*(r**2/sqrt(4*r**2*z**2 + (1 - r**2)**2))",
+   "symbols": [
+    "r",
+    "z"
+   ]
+  },
+  "source": "physics_discover2 round 3",
+  "statement": "[driven oscillator] transmissibility \u2265 1/4 \u00d7 acceleration amplitude / (\u03c90\u00b2 \u00d7 static deflection)   on r < 2, z < 1 (tight only at the edge of the domain, near (2, 9.12e-05))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 2",
+    "z < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-44e9fb3e8392",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 2",
+    "z < 1"
+   ],
+   "claim": "sqrt(4*r**2*z**2 + 1)/sqrt(4*r**2*z**2 + (1 - r**2)**2) >= 1*(2*r**2*z/(4*r**2*z**2 + (1 - r**2)**2))",
+   "symbols": [
+    "r",
+    "z"
+   ]
+  },
+  "source": "physics_discover2 round 3",
+  "statement": "[driven oscillator] transmissibility \u2265 1 \u00d7 mean absorbed power (normalised)   on r < 2, z < 1 (tight only at the edge of the domain, near (1, 6.19e-09))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]
