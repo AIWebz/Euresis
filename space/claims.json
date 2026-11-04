@@ -470429,7 +470429,7 @@
   },
   "id": "emp-a8b4c7e17ed8",
   "kind": "empirical",
-  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted; the file has no header row: the 'column names' are values from its first row \u2014 the dataset's documentation is needed to say what the columns are",
   "payload": {
    "dataset": "15e957afa868f607.csv",
    "doi": "10.5281/zenodo.7520657",
@@ -470456,7 +470456,7 @@
   },
   "id": "emp-59883c0ec14a",
   "kind": "empirical",
-  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted; the file has no header row: the 'column names' are values from its first row \u2014 the dataset's documentation is needed to say what the columns are",
   "payload": {
    "dataset": "15e957afa868f607.csv",
    "doi": "10.5281/zenodo.7520657",
@@ -470471,6 +470471,87 @@
   },
   "source": "datafeeds.py",
   "statement": "In 'Physical state of water controls friction of gabbro-built faults' (Zenodo, doi 10.5281/zenodo.7520657): '-0.0043120708' is linear in '0.1' (R\u00b2 = 0.938 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14171311",
+   "held_out_r2": 0.9983,
+   "held_out_rows": 44,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f5299327bfcf",
+  "kind": "empirical",
+  "novelty": "KNOWN/DEFINITIONAL: standard error = \u03c3/\u221an, so SE \u221d n^(\u22121/2) by construction \u2014 not a discovery",
+  "payload": {
+   "dataset": "adbcf8ea0ea3e8f6.csv",
+   "doi": "10.5281/zenodo.14171311",
+   "form": "power law",
+   "params": [
+    -0.015662985840822624,
+    -0.4974014812024875
+   ],
+   "seed": 2286711405,
+   "x": "n",
+   "y": "SE"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Feeling the future: A meta-analysis of 90 experiments on the anomalous anticipation of ran' (Zenodo, doi 10.5281/zenodo.14171311): 'SE' follows a power law in 'n' (R\u00b2 = 1.000 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14939151",
+   "held_out_r2": 0.8545,
+   "held_out_rows": 38,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-30dc7110c9e9",
+  "kind": "empirical",
+  "novelty": "KNOWN: imageability and concreteness ratings of words are strongly correlated (well established in psycholinguistics)",
+  "payload": {
+   "dataset": "d673cb766b97f8f0.csv",
+   "doi": "10.5281/zenodo.14939151",
+   "form": "logarithmic",
+   "params": [
+    0.6457083388179105,
+    2.6015529328812774
+   ],
+   "seed": 1538229227,
+   "x": "it_concreteness",
+   "y": "it_imageability"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Interpretative Profiles' (Zenodo, doi 10.5281/zenodo.14939151): 'it_imageability' grows logarithmically in 'it_concreteness' (R\u00b2 = 0.944 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.6084/m9.figshare.34913139.v1",
+   "held_out_r2": 0.9411,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-1cce3ec5fe80",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "96c1cd32ef5a2e93.csv",
+   "doi": "10.6084/m9.figshare.34913139.v1",
+   "form": "linear",
+   "params": [
+    -1.341081873322633,
+    0.7984530349610848
+   ],
+   "seed": 1664893853,
+   "x": "TT_TU",
+   "y": "TT_TU_mean"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Tree species richness strengthens forest microclimate cooling under high evaporative deman' (Figshare, doi 10.6084/m9.figshare.34913139.v1): 'TT_TU_mean' is linear in 'TT_TU' (R\u00b2 = 0.944 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
  }
