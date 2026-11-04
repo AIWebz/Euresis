@@ -107,17 +107,21 @@ def run(max_digits: int = 3, N: int = 1500, reg: Registry | None = None, echo=pr
     reg = reg or Registry()
     st = json.loads(STATE.read_text()) if STATE.exists() else {"solved": {}, "unresolved": [], "done": []}
     t0 = time.time()
+    done = set(st["done"])
     for code in codes(max_digits):
-        if code in st["done"]:
+        if code in done:
             continue
         if time.time() - t0 > max_minutes * 60:
             break
         G = grundy(code, N)
         per = find_period(G, len(code))
         st["done"].append(code)
+        done.add(code)
         if per is None:
-            st["unresolved"].append(code)
+            if code not in st["unresolved"]:
+                st["unresolved"].append(code)
             echo(f"  0.{code}: no period found up to heap size {N} (open within this range)")
+            STATE.write_text(json.dumps(st, indent=1) + "\n")
             continue
         n0, p = per
         stmt = (f"Octal game 0.{code} is completely solved: its Grundy values are periodic with pre-period {n0} "
@@ -134,5 +138,6 @@ def run(max_digits: int = 3, N: int = 1500, reg: Registry | None = None, echo=pr
             if code not in KNOWN_GAMES and (p > 12 or n0 > 50):
                 log(f"SOLVED (proved): 0.{code} — pre-period {n0}, period {p}  [{cid}]", echo)
         STATE.write_text(json.dumps(st, indent=1) + "\n")
+    STATE.write_text(json.dumps(st, indent=1) + "\n")
     log(f"games: {len(st['solved'])} octal games solved, {len(st['unresolved'])} unresolved up to n = {N}", echo)
     return st
