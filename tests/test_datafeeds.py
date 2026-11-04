@@ -24,3 +24,16 @@ def test_planted_law_found_and_duplicates_ignored(tmp_path, monkeypatch):
     assert not any("'noise'" in s for s in stmts)
     c = reg.get(found[0]["claim"])
     assert c["status"] == "verified-numeric" and gate.label(c).startswith("confirmed on held-out data")
+
+
+def test_timestamp_columns_are_not_laws(tmp_path, monkeypatch):
+    monkeypatch.setattr(F, "CACHE", tmp_path)
+    monkeypatch.setattr(F, "LOG", tmp_path / "log.md")
+    F._SEEN_PAIRS.clear()
+    rng = np.random.default_rng(1)
+    start = np.cumsum(rng.uniform(1, 5, 300))
+    end = start + rng.uniform(0.5, 2, 300)
+    path = tmp_path / "times.csv"
+    path.write_text("tstart,tend\n" + "\n".join(f"{a},{b}" for a, b in zip(start, end)))
+    reg = Registry(tmp_path / "r.db", tmp_path / "c.json")
+    assert F.analyse(path, {"source": "t", "doi": "", "title": "t", "file": "times.csv"}, reg, echo=lambda *a: None) == []

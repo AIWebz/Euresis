@@ -209,6 +209,9 @@ def analyse(path: Path, item: dict, reg: Registry, echo=print) -> list[dict]:
             # trivial: the same quantity twice (duplicate, rescaled or shifted column)
             if abs(np.corrcoef(x, y)[0, 1]) > 0.995:
                 continue                      # the same quantity measured twice (e.g. left/right, duplicate sensors)
+            order = np.arange(len(x))
+            if all(abs(np.corrcoef(np.argsort(np.argsort(v)), order)[0, 1]) > 0.98 for v in (x, y)):
+                continue                      # both columns just increase down the table (timestamps, counters)
             key = f"{item.get('doi')}|{cx}|{cy}"
             if key in _SEEN_PAIRS:
                 continue                      # same relation already found in another file of this dataset
