@@ -248,6 +248,26 @@
    "family": "collision",
    "expr": "(1 - e*m)/(1 + m)",
    "why": "affine combination of known quantities (target speed / initial speed)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "atan2(2*z*r, 1 - r**2)",
+   "why": "only + \u2212 \u00d7 \u00f7, integer powers and square roots (so the prover can decide it)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(1 - 2*z**2)",
+   "why": "not finite on the whole physical domain"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(1 - z**2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "2*sqrt(1 - z**2)/z",
+   "why": "affine combination of known quantities (amplitude / static deflection, log decrement [model-proposed; physical meaning unverified])"
   }
  ],
  "tried": [
@@ -1000,7 +1020,7 @@
    "k": "1/2"
   }
  ],
- "rounds": 12,
+ "rounds": 13,
  "discoveries": [],
  "rediscoveries": []
 }

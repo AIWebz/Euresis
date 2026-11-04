@@ -12,3 +12,4 @@
 - 2026-11-04 12:41 round 11: two-body decay
 - 2026-11-04 12:43 round 12: collision
 - 2026-11-04 12:45 round 13: driven oscillator
+- 2026-11-04 12:46 round 14: velocity addition
