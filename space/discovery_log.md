@@ -1,0 +1,2 @@
+- 2026-11-04 03:15 segment start (budget 100 min; model: Qwen3-14B; 0 discoveries so far)
+- 2026-11-04 03:15 round 1: proposing expressions (Qwen3-14B + structural)
