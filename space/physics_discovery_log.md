@@ -38,3 +38,14 @@
 - 2026-11-04 03:53 round 25: relativity
 - 2026-11-04 03:54 round 26: kepler
 - 2026-11-04 03:55 round 27: heat engines
+- 2026-11-04 03:57 round 28: relativity
+- 2026-11-04 03:57 round 28: collisions
+- 2026-11-04 03:57 round 29: quantum step
+- 2026-11-04 03:57 round 30: acoustic Doppler
+- 2026-11-04 03:57 round 31: damped oscillator
+- 2026-11-04 03:57 DISCOVERY (proved, sharp to 1e-6): [damped oscillator] quality factor Q ≥ 1 × damped frequency / natural frequency   for 0 < z < 1 (equality at z ≈ 0.707127)  [phy-3f4efb7aaf51]
+- 2026-11-04 03:57 DISCOVERY (proved, sharp to 1e-6): [damped oscillator] damped period / natural period ≥ 1 × energy decay rate / natural frequency   for 0 < z < 1 (equality at z ≈ 0.707127)  [phy-889f21272ec8]
+- 2026-11-04 03:57 round 32: wave boundary
+- 2026-11-04 03:57 round 33: relativity
+- 2026-11-04 03:57 round 34: kepler
+- 2026-11-04 03:57 round 35: heat engines

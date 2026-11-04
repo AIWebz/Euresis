@@ -77,6 +77,58 @@ FAMILIES = {
             "Carnot refrigerator coefficient of performance": "t/(1 - t)",
             "Carnot heat pump coefficient of performance": "1/(1 - t)",
         }},
+    "collisions": {
+        "var": "m", "meaning": "m = m1/m2, mass ratio of a moving body m1 hitting a body m2 at rest (head-on)",
+        "domain": ["m < 1"],
+        "quantities": {
+            "elastic: rebound speed of the projectile / initial speed": "(1 - m)/(1 + m)",
+            "elastic: speed of the target / initial speed": "2*m/(1 + m)",
+            "elastic: fraction of kinetic energy transferred to the target": "4*m/(1 + m)**2",
+            "elastic: fraction of kinetic energy kept by the projectile": "((1 - m)/(1 + m))**2",
+            "elastic: momentum transferred to the target / initial momentum": "2/(1 + m)",
+            "perfectly inelastic: final speed / initial speed": "m/(1 + m)",
+            "perfectly inelastic: fraction of kinetic energy lost": "1/(1 + m)",
+        }},
+    "quantum step": {
+        "var": "x", "meaning": "x = V0/E, height of a potential step relative to the particle's energy (E > V0)",
+        "domain": ["x < 1"],
+        "quantities": {
+            "wavenumber ratio k2/k1 beyond the step": "sqrt(1 - x)",
+            "transmission probability": "4*sqrt(1 - x)/(1 + sqrt(1 - x))**2",
+            "reflection probability": "((1 - sqrt(1 - x))/(1 + sqrt(1 - x)))**2",
+            "transmitted amplitude ratio": "2/(1 + sqrt(1 - x))",
+            "reflected amplitude ratio": "(1 - sqrt(1 - x))/(1 + sqrt(1 - x))",
+        }},
+    "acoustic Doppler": {
+        "var": "m", "meaning": "m = v/c, speed of source or observer as a fraction of the speed of sound",
+        "domain": ["m < 1"],
+        "quantities": {
+            "frequency ratio, source approaching": "1/(1 - m)",
+            "frequency ratio, source receding": "1/(1 + m)",
+            "frequency ratio, observer approaching": "1 + m",
+            "frequency ratio, observer receding": "1 - m",
+            "frequency ratio, source and observer approaching at the same speed": "(1 + m)/(1 - m)",
+            "wavelength ratio ahead of a moving source": "1 - m",
+        }},
+    "damped oscillator": {
+        "var": "z", "meaning": "z = damping ratio ζ of an underdamped harmonic oscillator", "domain": ["z < 1"],
+        "quantities": {
+            "damped frequency / natural frequency": "sqrt(1 - z**2)",
+            "quality factor Q": "1/(2*z)",
+            "decay rate / damped frequency": "z/sqrt(1 - z**2)",
+            "energy decay rate / natural frequency": "2*z",
+            "damped period / natural period": "1/sqrt(1 - z**2)",
+        }},
+    "wave boundary": {
+        "var": "r", "meaning": "r = Z1/Z2, impedance ratio at a boundary between two media (normal incidence)",
+        "domain": ["r < 1"],
+        "quantities": {
+            "reflected power fraction": "((1 - r)/(1 + r))**2",
+            "transmitted power fraction": "4*r/(1 + r)**2",
+            "reflected amplitude ratio": "(1 - r)/(1 + r)",
+            "transmitted amplitude ratio": "2/(1 + r)",
+            "standing-wave ratio": "1/r",
+        }},
 }
 
 # bounds the physics literature already has (family, f, g, direction) — rediscoveries, not discoveries
@@ -96,7 +148,10 @@ KNOWN = {
 # ------------------------------------------------------------------ state
 def load_state() -> dict:
     if STATE.exists():
-        return json.loads(STATE.read_text())
+        st = json.loads(STATE.read_text())
+        for k, v in FAMILIES.items():                    # systems added since the state was saved
+            st["families"].setdefault(k, dict(v["quantities"]))
+        return st
     return {"families": {k: dict(v["quantities"]) for k, v in FAMILIES.items()}, "rejected": [], "tried": [],
             "edges": [], "rounds": 0, "discoveries": [], "rediscoveries": []}
 
@@ -184,7 +239,8 @@ def propose_llm(fam: str, st: dict, n: int = 4, echo=print) -> list[dict]:
     msg = (f"Physical system: {fam}. Variable: {F['meaning']}; physical domain 0 < {F['var']} < 1.\n"
            "Known dimensionless quantities (name: SymPy expression):\n"
            + "\n".join(f"  {k}: {v}" for k, v in known.items())
-           + f"\n\nPropose {n} OTHER physically meaningful dimensionless quantities of this system, as functions of "
+           + f"\n\nPropose {n} OTHER dimensionless quantities that physicists actually use for this system — real "
+           "textbook formulas, not invented ones; name each precisely (what it is the ratio of) — as functions of "
            f"{F['var']} only. Use only + - * /, integer powers (**) and sqrt. Each must be positive and finite for "
            f"0 < {F['var']} < 1 and must not be a simple sum or product of the known ones.\n"
            + ("Rejected before (reason in brackets):\n" + "\n".join(f"  {r['expr']} [{r['why']}]" for r in rej) + "\n"
@@ -262,6 +318,27 @@ def prove_bound(fam, kind, k, f, g, v) -> tuple[str, dict, bool]:
     return status, payload, sharp
 
 
+_CMP = slice(None, None, 53)          # grid sample used to compare ratio functions across systems
+
+
+def ratio_samples(f, g, v) -> list[float]:
+    with np.errstate(all="ignore"):
+        return [float(x) for x in np.asarray(sp.lambdify(v, f / g, "numpy")(GRID), float)[_CMP]]
+
+
+def equivalent_to_earlier(st: dict, r: list[float]) -> str:
+    """Same inequality as an earlier discovery (in any system): f/g equals c·(earlier ratio) or c/(earlier ratio)."""
+    r = np.array(r)
+    for d in st["discoveries"]:
+        q = np.array(d.get("ratio") or [])
+        if q.size != r.size:
+            continue
+        for w in (r / q, r * q):
+            if np.all(np.isfinite(w)) and w.max() - w.min() < 1e-8 * max(1.0, abs(w).max()):
+                return f"same inequality as earlier discovery {d['claim']} ({d['statement'][:70]}…)"
+    return ""
+
+
 def implied(st: dict, fam: str, fn: str, gn: str, kind: str, k) -> str:
     """Follows from two proved bounds f ≥ k1·h, h ≥ k2·g (or the upper-bound analogue)?"""
     E = {(e["f"], e["g"], e["kind"]): sp.Rational(e["k"]) for e in st["edges"] if e["family"] == fam}
@@ -310,7 +387,8 @@ def run_round(st: dict, reg: Registry, use_llm: bool, echo=print, max_pairs: int
             where = f"equality at {v} ≈ {x_eq:.6g}" if interior else f"tight only in the limit {v} → {round(x_eq)}"
             stmt = f"[{fam}] {fn} {rel} {k} × {gn}   for 0 < {v} < 1 ({where})"
             known = KNOWN.get((fam, fn, gn, kind))
-            chain = implied(st, fam, fn, gn, kind, k)
+            rs = ratio_samples(f, g, v)
+            chain = implied(st, fam, fn, gn, kind, k) or (equivalent_to_earlier(st, rs) if interior else "")
             cid = reg.add("physics-relation", stmt, payload, source=f"physics_discover round {st['rounds']}")
             gate.check(reg, cid, log=lambda *x: None)            # the registry's own, independent gate run
             if reg.get(cid)["status"] != "proved":
@@ -332,7 +410,7 @@ def run_round(st: dict, reg: Registry, use_llm: bool, echo=print, max_pairs: int
                           if "model-proposed" in fn + gn else "")
                 reg.set_novelty(cid, "not a known result in Euresis' knowledge; not implied by proved bounds; "
                                      "physics literature unchecked (arXiv unreachable from this environment)" + caveat)
-                rec = {"claim": cid, "statement": stmt, "round": st["rounds"]}
+                rec = {"claim": cid, "statement": stmt, "round": st["rounds"], "ratio": rs}
                 st["discoveries"].append(rec)
                 found.append(rec)
                 log(f"DISCOVERY (proved, sharp to 1e-6): {stmt}  [{cid}]", echo)

@@ -2123,5 +2123,1013 @@
   "statement": "[heat engines] Thermal efficiency ratio 2 [model-proposed; physical meaning unverified] \u2265 1/3 \u00d7 low-dissipation engine efficiency at maximum power, upper bound (Esposito et al.)   for 0 < t < 1 (tight only in the limit t \u2192 1)",
   "status": "proved",
   "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-d0a335aa7edf",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "m < 1"
+   ],
+   "claim": "(1 - m)/(m + 1) >= 1*((1 - m)**2/(m + 1)**2)",
+   "symbols": [
+    "m"
+   ]
+  },
+  "source": "physics_discover round 28",
+  "statement": "[collisions] elastic: rebound speed of the projectile / initial speed \u2265 1 \u00d7 elastic: fraction of kinetic energy kept by the projectile   for 0 < m < 1 (tight only in the limit m \u2192 0)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-c3e15c4668f5",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "m < 1"
+   ],
+   "claim": "2*m/(m + 1) >= 1/2*(4*m/(m + 1)**2)",
+   "symbols": [
+    "m"
+   ]
+  },
+  "source": "physics_discover round 28",
+  "statement": "[collisions] elastic: speed of the target / initial speed \u2265 1/2 \u00d7 elastic: fraction of kinetic energy transferred to the target   for 0 < m < 1 (tight only in the limit m \u2192 0)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-d8b91e903efd",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "m < 1"
+   ],
+   "claim": "4*m/(m + 1)**2 >= 1*(2*m/(m + 1))",
+   "symbols": [
+    "m"
+   ]
+  },
+  "source": "physics_discover round 28",
+  "statement": "[collisions] elastic: fraction of kinetic energy transferred to the target \u2265 1 \u00d7 elastic: speed of the target / initial speed   for 0 < m < 1 (tight only in the limit m \u2192 1)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-d50aef49c9ad",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "m < 1"
+   ],
+   "claim": "4*m/(m + 1)**2 >= 2*(m/(m + 1))",
+   "symbols": [
+    "m"
+   ]
+  },
+  "source": "physics_discover round 28",
+  "statement": "[collisions] elastic: fraction of kinetic energy transferred to the target \u2265 2 \u00d7 perfectly inelastic: final speed / initial speed   for 0 < m < 1 (tight only in the limit m \u2192 1)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-1be3bfd23c8f",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "m < 1"
+   ],
+   "claim": "2/(m + 1) >= 2*((1 - m)/(m + 1))",
+   "symbols": [
+    "m"
+   ]
+  },
+  "source": "physics_discover round 28",
+  "statement": "[collisions] elastic: momentum transferred to the target / initial momentum \u2265 2 \u00d7 elastic: rebound speed of the projectile / initial speed   for 0 < m < 1 (tight only in the limit m \u2192 0)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-9c8c07235cf9",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "m < 1"
+   ],
+   "claim": "2/(m + 1) >= 1*(2*m/(m + 1))",
+   "symbols": [
+    "m"
+   ]
+  },
+  "source": "physics_discover round 28",
+  "statement": "[collisions] elastic: momentum transferred to the target / initial momentum \u2265 1 \u00d7 elastic: speed of the target / initial speed   for 0 < m < 1 (tight only in the limit m \u2192 1)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-1f52927e9550",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "m < 1"
+   ],
+   "claim": "2/(m + 1) >= 1*(4*m/(m + 1)**2)",
+   "symbols": [
+    "m"
+   ]
+  },
+  "source": "physics_discover round 28",
+  "statement": "[collisions] elastic: momentum transferred to the target / initial momentum \u2265 1 \u00d7 elastic: fraction of kinetic energy transferred to the target   for 0 < m < 1 (tight only in the limit m \u2192 1)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-0d48201e44ff",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'elastic: rebound speed of the projectile / initial speed'",
+  "payload": {
+   "assumptions": [
+    "m < 1"
+   ],
+   "claim": "2/(m + 1) >= 2*((1 - m)**2/(m + 1)**2)",
+   "symbols": [
+    "m"
+   ]
+  },
+  "source": "physics_discover round 28",
+  "statement": "[collisions] elastic: momentum transferred to the target / initial momentum \u2265 2 \u00d7 elastic: fraction of kinetic energy kept by the projectile   for 0 < m < 1 (tight only in the limit m \u2192 0)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-49b3e7cde0db",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'elastic: fraction of kinetic energy transferred to the target'",
+  "payload": {
+   "assumptions": [
+    "m < 1"
+   ],
+   "claim": "2/(m + 1) >= 2*(m/(m + 1))",
+   "symbols": [
+    "m"
+   ]
+  },
+  "source": "physics_discover round 28",
+  "statement": "[collisions] elastic: momentum transferred to the target / initial momentum \u2265 2 \u00d7 perfectly inelastic: final speed / initial speed   for 0 < m < 1 (tight only in the limit m \u2192 1)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-52822fb16843",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "m < 1"
+   ],
+   "claim": "m/(m + 1) >= 1/4*(4*m/(m + 1)**2)",
+   "symbols": [
+    "m"
+   ]
+  },
+  "source": "physics_discover round 28",
+  "statement": "[collisions] perfectly inelastic: final speed / initial speed \u2265 1/4 \u00d7 elastic: fraction of kinetic energy transferred to the target   for 0 < m < 1 (tight only in the limit m \u2192 0)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-530f49ddf3b8",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "m < 1"
+   ],
+   "claim": "1/(m + 1) >= 1*((1 - m)/(m + 1))",
+   "symbols": [
+    "m"
+   ]
+  },
+  "source": "physics_discover round 28",
+  "statement": "[collisions] perfectly inelastic: fraction of kinetic energy lost \u2265 1 \u00d7 elastic: rebound speed of the projectile / initial speed   for 0 < m < 1 (tight only in the limit m \u2192 0)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-5c428b031ab7",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "m < 1"
+   ],
+   "claim": "1/(m + 1) >= 1/2*(2*m/(m + 1))",
+   "symbols": [
+    "m"
+   ]
+  },
+  "source": "physics_discover round 28",
+  "statement": "[collisions] perfectly inelastic: fraction of kinetic energy lost \u2265 1/2 \u00d7 elastic: speed of the target / initial speed   for 0 < m < 1 (tight only in the limit m \u2192 1)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-4d850fd3d699",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "m < 1"
+   ],
+   "claim": "1/(m + 1) >= 1/2*(4*m/(m + 1)**2)",
+   "symbols": [
+    "m"
+   ]
+  },
+  "source": "physics_discover round 28",
+  "statement": "[collisions] perfectly inelastic: fraction of kinetic energy lost \u2265 1/2 \u00d7 elastic: fraction of kinetic energy transferred to the target   for 0 < m < 1 (tight only in the limit m \u2192 1)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-1188bf7fb04f",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'elastic: rebound speed of the projectile / initial speed'",
+  "payload": {
+   "assumptions": [
+    "m < 1"
+   ],
+   "claim": "1/(m + 1) >= 1*((1 - m)**2/(m + 1)**2)",
+   "symbols": [
+    "m"
+   ]
+  },
+  "source": "physics_discover round 28",
+  "statement": "[collisions] perfectly inelastic: fraction of kinetic energy lost \u2265 1 \u00d7 elastic: fraction of kinetic energy kept by the projectile   for 0 < m < 1 (tight only in the limit m \u2192 0)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-72eec2629087",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'elastic: fraction of kinetic energy transferred to the target'",
+  "payload": {
+   "assumptions": [
+    "m < 1"
+   ],
+   "claim": "1/(m + 1) >= 1*(m/(m + 1))",
+   "symbols": [
+    "m"
+   ]
+  },
+  "source": "physics_discover round 28",
+  "statement": "[collisions] perfectly inelastic: fraction of kinetic energy lost \u2265 1 \u00d7 perfectly inelastic: final speed / initial speed   for 0 < m < 1 (tight only in the limit m \u2192 1)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-8236a09c1e8e",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "x < 1"
+   ],
+   "claim": "4*sqrt(1 - x)/(sqrt(1 - x) + 1)**2 >= 1*(sqrt(1 - x))",
+   "symbols": [
+    "x"
+   ]
+  },
+  "source": "physics_discover round 29",
+  "statement": "[quantum step] transmission probability \u2265 1 \u00d7 wavenumber ratio k2/k1 beyond the step   for 0 < x < 1 (tight only in the limit x \u2192 0)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-24b05b519747",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "x < 1"
+   ],
+   "claim": "2/(sqrt(1 - x) + 1) >= 1*(sqrt(1 - x))",
+   "symbols": [
+    "x"
+   ]
+  },
+  "source": "physics_discover round 29",
+  "statement": "[quantum step] transmitted amplitude ratio \u2265 1 \u00d7 wavenumber ratio k2/k1 beyond the step   for 0 < x < 1 (tight only in the limit x \u2192 0)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-7b7f75d57300",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "x < 1"
+   ],
+   "claim": "2/(sqrt(1 - x) + 1) >= 1*(4*sqrt(1 - x)/(sqrt(1 - x) + 1)**2)",
+   "symbols": [
+    "x"
+   ]
+  },
+  "source": "physics_discover round 29",
+  "statement": "[quantum step] transmitted amplitude ratio \u2265 1 \u00d7 transmission probability   for 0 < x < 1 (tight only in the limit x \u2192 0)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-d905bb90773e",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "m < 1"
+   ],
+   "claim": "1/(1 - m) >= 1*(1/(m + 1))",
+   "symbols": [
+    "m"
+   ]
+  },
+  "source": "physics_discover round 30",
+  "statement": "[acoustic Doppler] frequency ratio, source approaching \u2265 1 \u00d7 frequency ratio, source receding   for 0 < m < 1 (tight only in the limit m \u2192 0)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-1f2dc38053d2",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "m < 1"
+   ],
+   "claim": "1/(1 - m) >= 1*(m + 1)",
+   "symbols": [
+    "m"
+   ]
+  },
+  "source": "physics_discover round 30",
+  "statement": "[acoustic Doppler] frequency ratio, source approaching \u2265 1 \u00d7 frequency ratio, observer approaching   for 0 < m < 1 (tight only in the limit m \u2192 0)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-6df3fce561a0",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "m < 1"
+   ],
+   "claim": "1/(1 - m) >= 1*(1 - m)",
+   "symbols": [
+    "m"
+   ]
+  },
+  "source": "physics_discover round 30",
+  "statement": "[acoustic Doppler] frequency ratio, source approaching \u2265 1 \u00d7 frequency ratio, observer receding   for 0 < m < 1 (tight only in the limit m \u2192 0)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-94e73c68a277",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "m < 1"
+   ],
+   "claim": "1/(1 - m) >= 1/2*((m + 1)/(1 - m))",
+   "symbols": [
+    "m"
+   ]
+  },
+  "source": "physics_discover round 30",
+  "statement": "[acoustic Doppler] frequency ratio, source approaching \u2265 1/2 \u00d7 frequency ratio, source and observer approaching at the same speed   for 0 < m < 1 (tight only in the limit m \u2192 1)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-8eb96f5a7be7",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "m < 1"
+   ],
+   "claim": "1/(m + 1) >= 1/4*(m + 1)",
+   "symbols": [
+    "m"
+   ]
+  },
+  "source": "physics_discover round 30",
+  "statement": "[acoustic Doppler] frequency ratio, source receding \u2265 1/4 \u00d7 frequency ratio, observer approaching   for 0 < m < 1 (tight only in the limit m \u2192 1)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-470df0deb146",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "m < 1"
+   ],
+   "claim": "1/(m + 1) >= 1*(1 - m)",
+   "symbols": [
+    "m"
+   ]
+  },
+  "source": "physics_discover round 30",
+  "statement": "[acoustic Doppler] frequency ratio, source receding \u2265 1 \u00d7 frequency ratio, observer receding   for 0 < m < 1 (tight only in the limit m \u2192 0)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-f3a28f120d5f",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "m < 1"
+   ],
+   "claim": "m + 1 >= 1*(1/(m + 1))",
+   "symbols": [
+    "m"
+   ]
+  },
+  "source": "physics_discover round 30",
+  "statement": "[acoustic Doppler] frequency ratio, observer approaching \u2265 1 \u00d7 frequency ratio, source receding   for 0 < m < 1 (tight only in the limit m \u2192 0)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-a0b862df1a70",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'frequency ratio, source receding'",
+  "payload": {
+   "assumptions": [
+    "m < 1"
+   ],
+   "claim": "m + 1 >= 1*(1 - m)",
+   "symbols": [
+    "m"
+   ]
+  },
+  "source": "physics_discover round 30",
+  "statement": "[acoustic Doppler] frequency ratio, observer approaching \u2265 1 \u00d7 frequency ratio, observer receding   for 0 < m < 1 (tight only in the limit m \u2192 0)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-bf0eb71ff0c6",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "m < 1"
+   ],
+   "claim": "(m + 1)/(1 - m) >= 1*(1/(1 - m))",
+   "symbols": [
+    "m"
+   ]
+  },
+  "source": "physics_discover round 30",
+  "statement": "[acoustic Doppler] frequency ratio, source and observer approaching at the same speed \u2265 1 \u00d7 frequency ratio, source approaching   for 0 < m < 1 (tight only in the limit m \u2192 0)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-156d26254f7a",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'frequency ratio, source approaching'",
+  "payload": {
+   "assumptions": [
+    "m < 1"
+   ],
+   "claim": "(m + 1)/(1 - m) >= 1*(1/(m + 1))",
+   "symbols": [
+    "m"
+   ]
+  },
+  "source": "physics_discover round 30",
+  "statement": "[acoustic Doppler] frequency ratio, source and observer approaching at the same speed \u2265 1 \u00d7 frequency ratio, source receding   for 0 < m < 1 (tight only in the limit m \u2192 0)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-bbd51df06699",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'frequency ratio, source approaching'",
+  "payload": {
+   "assumptions": [
+    "m < 1"
+   ],
+   "claim": "(m + 1)/(1 - m) >= 1*(m + 1)",
+   "symbols": [
+    "m"
+   ]
+  },
+  "source": "physics_discover round 30",
+  "statement": "[acoustic Doppler] frequency ratio, source and observer approaching at the same speed \u2265 1 \u00d7 frequency ratio, observer approaching   for 0 < m < 1 (tight only in the limit m \u2192 0)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-832cfe5cafe9",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'frequency ratio, source approaching'",
+  "payload": {
+   "assumptions": [
+    "m < 1"
+   ],
+   "claim": "(m + 1)/(1 - m) >= 1*(1 - m)",
+   "symbols": [
+    "m"
+   ]
+  },
+  "source": "physics_discover round 30",
+  "statement": "[acoustic Doppler] frequency ratio, source and observer approaching at the same speed \u2265 1 \u00d7 frequency ratio, observer receding   for 0 < m < 1 (tight only in the limit m \u2192 0)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "z < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-3f4efb7aaf51",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: same inequality as earlier discovery phy-e72aa596c5f7 ([relativity] relativistic momentum / (mc) \u2265 4 \u00d7 classical kinetic ener\u2026)",
+  "payload": {
+   "assumptions": [
+    "z < 1"
+   ],
+   "claim": "1/(2*z) >= 1*(sqrt(1 - z**2))",
+   "symbols": [
+    "z"
+   ]
+  },
+  "source": "physics_discover round 31",
+  "statement": "[damped oscillator] quality factor Q \u2265 1 \u00d7 damped frequency / natural frequency   for 0 < z < 1 (equality at z \u2248 0.707127)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "z < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-69afeb02cc00",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "z < 1"
+   ],
+   "claim": "1/(2*z) >= 1/4*(2*z)",
+   "symbols": [
+    "z"
+   ]
+  },
+  "source": "physics_discover round 31",
+  "statement": "[damped oscillator] quality factor Q \u2265 1/4 \u00d7 energy decay rate / natural frequency   for 0 < z < 1 (tight only in the limit z \u2192 1)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "z < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-ae6ff863db81",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "z < 1"
+   ],
+   "claim": "z/sqrt(1 - z**2) >= 1/2*(2*z)",
+   "symbols": [
+    "z"
+   ]
+  },
+  "source": "physics_discover round 31",
+  "statement": "[damped oscillator] decay rate / damped frequency \u2265 1/2 \u00d7 energy decay rate / natural frequency   for 0 < z < 1 (tight only in the limit z \u2192 0)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "z < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-ea0084af6a96",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "z < 1"
+   ],
+   "claim": "1/sqrt(1 - z**2) >= 1*(sqrt(1 - z**2))",
+   "symbols": [
+    "z"
+   ]
+  },
+  "source": "physics_discover round 31",
+  "statement": "[damped oscillator] damped period / natural period \u2265 1 \u00d7 damped frequency / natural frequency   for 0 < z < 1 (tight only in the limit z \u2192 0)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "z < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-ee6606d92de7",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "z < 1"
+   ],
+   "claim": "1/sqrt(1 - z**2) >= 1*(z/sqrt(1 - z**2))",
+   "symbols": [
+    "z"
+   ]
+  },
+  "source": "physics_discover round 31",
+  "statement": "[damped oscillator] damped period / natural period \u2265 1 \u00d7 decay rate / damped frequency   for 0 < z < 1 (tight only in the limit z \u2192 1)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "z < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-889f21272ec8",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: same inequality as earlier discovery phy-e72aa596c5f7 ([relativity] relativistic momentum / (mc) \u2265 4 \u00d7 classical kinetic ener\u2026)",
+  "payload": {
+   "assumptions": [
+    "z < 1"
+   ],
+   "claim": "1/sqrt(1 - z**2) >= 1*(2*z)",
+   "symbols": [
+    "z"
+   ]
+  },
+  "source": "physics_discover round 31",
+  "statement": "[damped oscillator] damped period / natural period \u2265 1 \u00d7 energy decay rate / natural frequency   for 0 < z < 1 (equality at z \u2248 0.707127)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-448f517a6840",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "r < 1"
+   ],
+   "claim": "(1 - r)/(r + 1) >= 1*((1 - r)**2/(r + 1)**2)",
+   "symbols": [
+    "r"
+   ]
+  },
+  "source": "physics_discover round 32",
+  "statement": "[wave boundary] reflected amplitude ratio \u2265 1 \u00d7 reflected power fraction   for 0 < r < 1 (tight only in the limit r \u2192 0)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-274bdf6614e6",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "r < 1"
+   ],
+   "claim": "2/(r + 1) >= 2*((1 - r)**2/(r + 1)**2)",
+   "symbols": [
+    "r"
+   ]
+  },
+  "source": "physics_discover round 32",
+  "statement": "[wave boundary] transmitted amplitude ratio \u2265 2 \u00d7 reflected power fraction   for 0 < r < 1 (tight only in the limit r \u2192 0)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-73a809dd3609",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "r < 1"
+   ],
+   "claim": "2/(r + 1) >= 1*(4*r/(r + 1)**2)",
+   "symbols": [
+    "r"
+   ]
+  },
+  "source": "physics_discover round 32",
+  "statement": "[wave boundary] transmitted amplitude ratio \u2265 1 \u00d7 transmitted power fraction   for 0 < r < 1 (tight only in the limit r \u2192 1)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-7c194d4ff265",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "r < 1"
+   ],
+   "claim": "2/(r + 1) >= 2*((1 - r)/(r + 1))",
+   "symbols": [
+    "r"
+   ]
+  },
+  "source": "physics_discover round 32",
+  "statement": "[wave boundary] transmitted amplitude ratio \u2265 2 \u00d7 reflected amplitude ratio   for 0 < r < 1 (tight only in the limit r \u2192 0)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-939363504aaf",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "r < 1"
+   ],
+   "claim": "1/r >= 1*(4*r/(r + 1)**2)",
+   "symbols": [
+    "r"
+   ]
+  },
+  "source": "physics_discover round 32",
+  "statement": "[wave boundary] standing-wave ratio \u2265 1 \u00d7 transmitted power fraction   for 0 < r < 1 (tight only in the limit r \u2192 1)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-8528582758d3",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "r < 1"
+   ],
+   "claim": "1/r >= 1*(2/(r + 1))",
+   "symbols": [
+    "r"
+   ]
+  },
+  "source": "physics_discover round 32",
+  "statement": "[wave boundary] standing-wave ratio \u2265 1 \u00d7 transmitted amplitude ratio   for 0 < r < 1 (tight only in the limit r \u2192 1)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]
