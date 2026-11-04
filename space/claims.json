@@ -471,5 +471,25 @@
   "statement": "Relativistic kinetic energy is always at least the classical value m v^2/2 for 0 < v < c",
   "status": "unverified",
   "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "z3": "proved"
+  },
+  "id": "phy-73edbe8c8ebe",
+  "kind": "physics-relation",
+  "novelty": "known (Known result)",
+  "payload": {
+   "claim": "m * c**2 / sqrt(1 - v**2/c**2) - m * c**2 >= 0.5 * m * v**2",
+   "symbols": [
+    "m",
+    "v",
+    "c"
+   ]
+  },
+  "source": "reasoning-core (local Qwen3-14B): Is relativistic kinetic energy always at least the classical value m v^2/2 for 0",
+  "statement": "Relativistic kinetic energy is always at least the classical value m v^2/2 for 0 < v < c",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]

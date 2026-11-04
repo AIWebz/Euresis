@@ -41,6 +41,10 @@ SELF_TEST = [
                           "symbols": ["c", "m", "v"]}, "proved", "relativistic K ≤ E (true)"),
     ("physics-relation", {"claim": "m*v**2/2 >= m*c**2*(1/sqrt(1 - v**2/c**2) - 1)", "symbols": ["c", "m", "v"]},
      "refuted", "classical KE ≥ relativistic KE (false)"),
+    ("physics-relation", {"claim": "m*c**2/sqrt(1 - v**2/c**2) - m*c**2 >= m*v**2/2", "symbols": ["c", "m", "v"]},
+     "proved", "relativistic KE ≥ ½mv² (true; regression: no fake counterexample at v = c)"),
+    ("physics-relation", {"claim": "m*c**2/sqrt(1 - v**2/c**2) - m*c**2 <= m*v**2/2", "symbols": ["c", "m", "v"]},
+     "refuted", "relativistic KE ≤ ½mv² (false; regression: '≤' must not be checked as '≥')"),
 ]
 
 

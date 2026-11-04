@@ -127,6 +127,8 @@ def z3_prove(claim, syms):
                 s = z3.Real(f"s{next(counter)}")
                 bz = conv(base)
                 cons.extend([s >= 0, s * s == bz, bz >= 0])
+                if ex < 0:                                      # in a denominator: only where it is defined
+                    cons.append(s > 0)
                 r = s
                 p = abs(ex.p)
                 out = r
@@ -135,16 +137,30 @@ def z3_prove(claim, syms):
                 return out if ex > 0 else 1 / out
             if ex.q == 1:
                 bz = conv(base)
+                if ex < 0:                                      # 1/x is asserted only where x ≠ 0
+                    cons.append(bz != 0)
                 out = bz
                 for _ in range(abs(ex.p) - 1):
                     out = out * bz
                 return out if ex > 0 else 1 / out
         raise ValueError(f"unsupported: {e}")
+    if claim is sp.true:                       # SymPy already decided it identically
+        return "proved"
+    if claim is sp.false:
+        return "refuted"
+    if not isinstance(claim, sp.core.relational.Relational):
+        return "unsupported"
     lhs, rhs = claim.lhs, claim.rhs
     s = z3.Solver()
     s.set("timeout", 60000)
+    ops = {sp.GreaterThan: lambda a, b: a >= b, sp.StrictGreaterThan: lambda a, b: a > b,
+           sp.LessThan: lambda a, b: a <= b, sp.StrictLessThan: lambda a, b: a < b,
+           sp.Equality: lambda a, b: a == b}
+    op = next((f for cls, f in ops.items() if isinstance(claim, cls)), None)
+    if op is None:
+        return "unsupported"
     try:
-        goal = conv(lhs) >= conv(rhs)
+        goal = op(conv(lhs), conv(rhs))
     except (ValueError, TypeError):
         return "unsupported"
     s.add(*cons)
