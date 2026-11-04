@@ -483,6 +483,7 @@ result is saved in `space/benchmark.json` and shown on the canvas.
 |---|---|---|
 | Music theory | theorems about scales and chords ("every 7-note set with property A has property B") | **proof by exhaustion** over all 4096 pitch-class sets; rediscovers Babbitt's hexachord theorem, the deep scale theorem, and Myhill ⇔ generated |
 | Linguistics | statistical laws of written language in 58 000 sentences of real medical abstracts | found on one corpus and **confirmed on a held-out corpus**: evidence, not proof; rediscovers the Menzerath–Altmann law |
+| Music across tunings | theorems about scales in every equal temperament from 5 to 16+ notes per octave (`music_n.py`); for example, the classical deep scale theorem (deep ⇒ generated) holds in every tuning except 6-TET, where {0,1,2,4} is deep but not generated | **proof by exhaustion** in each tuning; a conjecture beyond the range checked |
 | Game theory | complete solutions of octal take-away games | **proof** by the Guy–Smith periodicity theorem; reproduces Kayles, Dawson's Kayles and Dawson's chess |
 
 A fourth subject, **economics** (Cournot competition, insurance under risk aversion, auctions with a reserve price),

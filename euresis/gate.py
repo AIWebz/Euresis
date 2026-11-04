@@ -211,8 +211,11 @@ def verify_lean(p: dict) -> tuple[str, dict]:
 
 
 def verify_music(p: dict) -> tuple[str, dict]:
-    from .music import verify_claim
-    return verify_claim(p)
+    if "universes" in p:                         # several equal temperaments
+        from .music_n import verify_claim as v
+    else:                                        # 12-TET
+        from .music import verify_claim as v
+    return v(p)
 
 
 def verify_empirical(p: dict) -> tuple[str, dict]:

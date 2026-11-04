@@ -244,3 +244,8 @@
 - 2026-11-04 19:15 round 231: insurance and risk
 - 2026-11-04 19:17 DISCOVERY (proved, sharp to 1e-6, two-variable): [economics: insurance and risk] Relative Risk Aversion [model-proposed; physical meaning unverified] ≥ 27 × risk premium   on p < 1, L < 1 (equality at (p, L) ≈ (0.5, 0.888889))  [phy-b5dc046e9dfe]
 - 2026-11-04 19:18 round 232: auction with a reserve price
+- 2026-11-04 19:20 round 233: two-body decay
+- 2026-11-04 19:21 round 234: collision
+- 2026-11-04 19:23 round 235: driven oscillator
+- 2026-11-04 19:24 round 236: velocity addition
+- 2026-11-04 19:27 segment end: 236 rounds, 4 discoveries, 2 known laws rediscovered

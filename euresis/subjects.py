@@ -29,3 +29,23 @@ def run(max_game_digits: int = 3, game_minutes: float = 30, echo=print) -> dict:
     echo("== economics runs inside the two-variable engine: python -m euresis physics-discover2")
     echo(str(out))
     return out
+
+
+def run_segment(minutes: float = 100, echo=print) -> dict:
+    """One time-boxed segment of the open-ended search (call repeatedly; state is saved between segments):
+    extend music theory to the next equal temperament, then keep solving octal games (4 digits)."""
+    import json
+    import time
+    from . import music_n
+    t0 = time.time()
+    reg = Registry()
+    st = json.loads(music_n.STATE.read_text()) if music_n.STATE.exists() else {"n_max_done": 0}
+    nxt = max(music_n.N_MAX, st.get("n_max_done", 0) + 1)
+    if nxt <= 18:
+        echo(f"== music theory: extending to {music_n.N_MIN}–{nxt}-note equal temperaments")
+        music_n.run(reg, echo=echo, n_max=nxt)
+    left = minutes - (time.time() - t0) / 60
+    if left > 1:
+        echo(f"== game theory: octal games up to 4 digits ({left:.0f} min)")
+        games.run(max_digits=4, N=3000, reg=reg, echo=echo, max_minutes=left)
+    return {"minutes": round((time.time() - t0) / 60, 1)}

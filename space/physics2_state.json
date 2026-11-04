@@ -22,7 +22,8 @@
    "relative speed after / relative speed before": "e",
    "velocity ratio of target to projectile after collision [model-proposed; physical meaning unverified]": "e*(m + 1)/(e*m + 1)",
    "velocity ratio of projectile to target after collision [model-proposed; physical meaning unverified]": "(-e*m + 1)/(e*m + 1)",
-   "relative velocity after collision divided by initial velocity of projectile [model-proposed; physical meaning unverified]": "e*(1 - m)/(m + 1)"
+   "relative velocity after collision divided by initial velocity of projectile [model-proposed; physical meaning unverified]": "e*(1 - m)/(m + 1)",
+   "Fraction of kinetic energy retained by projectile [model-proposed; physical meaning unverified]": "(-e**2*m + 1)/(m + 1)"
   },
   "driven oscillator": {
    "amplitude / static deflection": "1/sqrt((1 - r**2)**2 + (2*z*r)**2)",
@@ -4448,6 +4449,101 @@
    "family": "insurance and risk",
    "expr": "p*(sqrt(1 - L) - 1)/(p*sqrt(1 - L) + 1 - p)",
    "why": "not positive on the physical domain"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "1 - r**2*v/(-4*r**3/3 + r**2*v + r**2 + 1/3)",
+   "why": "affine combination of known quantities (expected revenue, probability the seller's value is below reserve [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(1/3 + r**2 - 4*r**3/3 + v*r**2)/(2*(1 - r**3)/3 + v*r**2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(2*(1 - r**3)/3 + v*r**2)/(2/3 + v**3/3)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(-2*r**3/3 + r**2*v + 2/3)/(-2*r**3 + 2*r**2)",
+   "why": "affine combination of known quantities (expected revenue, reserve price elasticity of welfare [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "1 - 2*a - 2*b + 2*a*b",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "((1 - a)**2 - b**2)/(b**2 - (1 - b)**2 + 1)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "(1 - 2*a - 2*b + 2*a*b)/2",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "(1 - a**2 + b**2)/(2*b)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2 * m",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "collision",
+   "expr": "(1 - e*m)/(1 + m)",
+   "why": "affine combination of known quantities (target speed / initial speed)"
+  },
+  {
+   "family": "collision",
+   "expr": "e*m/(1 + m)",
+   "why": "affine combination of known quantities (target speed / initial speed, speed of the centre of mass / initial speed)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "atan(2*z*r/(1 - r**2))",
+   "why": "only + \u2212 \u00d7 \u00f7, integer powers and square roots (so the prover can decide it)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "1/(2*z*sqrt(1 - r**2))",
+   "why": "not finite on the whole physical domain"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "z/sqrt(1 - r**2 + (2*z*r)**2)",
+   "why": "not finite on the whole physical domain"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "2*z*r**2/(sqrt((1 - r**2)**2 + (2*z*r)**2))",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 + u)/(1 - u)) * sqrt((1 + v)/(1 - v))",
+   "why": "affine combination of known quantities (composed speed / c, Doppler factor of the composed motion)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "1 - (u + v)**2/(1 + u*v)**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt(1 - u**2) + sqrt(1 - v**2) + (u*v + 1)/(sqrt(1 - u**2)*sqrt(1 - v**2))",
+   "why": "affine combination of known quantities (composed speed / c, Total relativistic energy / mc\u00b2 [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((u/sqrt(1 - u**2) + v/sqrt(1 - v**2))**2)",
+   "why": "affine combination of known quantities (composed speed / c, Relativistic momentum ratio [model-proposed; physical meaning unverified])"
   }
  ],
  "tried": [
@@ -5558,7 +5654,25 @@
   "insurance and risk|Relative Risk Aversion [model-proposed; physical meaning unverified]|variance of wealth",
   "insurance and risk|Relative Risk Aversion [model-proposed; physical meaning unverified]|Risk-adjusted expected utility [model-proposed; physical meaning unverified]",
   "insurance and risk|Relative Risk Aversion [model-proposed; physical meaning unverified]|Insurance risk sensitivity [model-proposed; physical meaning unverified]",
-  "insurance and risk|Relative Risk Aversion [model-proposed; physical meaning unverified]|Coefficient of Risk Aversion [model-proposed; physical meaning unverified]"
+  "insurance and risk|Relative Risk Aversion [model-proposed; physical meaning unverified]|Coefficient of Risk Aversion [model-proposed; physical meaning unverified]",
+  "collision|target speed / initial speed|Fraction of kinetic energy retained by projectile [model-proposed; physical meaning unverified]",
+  "collision|momentum transferred / initial momentum|Fraction of kinetic energy retained by projectile [model-proposed; physical meaning unverified]",
+  "collision|fraction of kinetic energy lost|Fraction of kinetic energy retained by projectile [model-proposed; physical meaning unverified]",
+  "collision|fraction of kinetic energy given to the target|Fraction of kinetic energy retained by projectile [model-proposed; physical meaning unverified]",
+  "collision|speed of the centre of mass / initial speed|Fraction of kinetic energy retained by projectile [model-proposed; physical meaning unverified]",
+  "collision|relative speed after / relative speed before|Fraction of kinetic energy retained by projectile [model-proposed; physical meaning unverified]",
+  "collision|velocity ratio of target to projectile after collision [model-proposed; physical meaning unverified]|Fraction of kinetic energy retained by projectile [model-proposed; physical meaning unverified]",
+  "collision|velocity ratio of projectile to target after collision [model-proposed; physical meaning unverified]|Fraction of kinetic energy retained by projectile [model-proposed; physical meaning unverified]",
+  "collision|relative velocity after collision divided by initial velocity of projectile [model-proposed; physical meaning unverified]|Fraction of kinetic energy retained by projectile [model-proposed; physical meaning unverified]",
+  "collision|Fraction of kinetic energy retained by projectile [model-proposed; physical meaning unverified]|target speed / initial speed",
+  "collision|Fraction of kinetic energy retained by projectile [model-proposed; physical meaning unverified]|momentum transferred / initial momentum",
+  "collision|Fraction of kinetic energy retained by projectile [model-proposed; physical meaning unverified]|fraction of kinetic energy lost",
+  "collision|Fraction of kinetic energy retained by projectile [model-proposed; physical meaning unverified]|fraction of kinetic energy given to the target",
+  "collision|Fraction of kinetic energy retained by projectile [model-proposed; physical meaning unverified]|speed of the centre of mass / initial speed",
+  "collision|Fraction of kinetic energy retained by projectile [model-proposed; physical meaning unverified]|relative speed after / relative speed before",
+  "collision|Fraction of kinetic energy retained by projectile [model-proposed; physical meaning unverified]|velocity ratio of target to projectile after collision [model-proposed; physical meaning unverified]",
+  "collision|Fraction of kinetic energy retained by projectile [model-proposed; physical meaning unverified]|velocity ratio of projectile to target after collision [model-proposed; physical meaning unverified]",
+  "collision|Fraction of kinetic energy retained by projectile [model-proposed; physical meaning unverified]|relative velocity after collision divided by initial velocity of projectile [model-proposed; physical meaning unverified]"
  ],
  "edges": [
   {
@@ -7306,9 +7420,39 @@
    "f": "Relative Risk Aversion [model-proposed; physical meaning unverified]",
    "g": "risk premium",
    "k": "27"
+  },
+  {
+   "family": "collision",
+   "f": "momentum transferred / initial momentum",
+   "g": "Fraction of kinetic energy retained by projectile [model-proposed; physical meaning unverified]",
+   "k": "1"
+  },
+  {
+   "family": "collision",
+   "f": "velocity ratio of projectile to target after collision [model-proposed; physical meaning unverified]",
+   "g": "Fraction of kinetic energy retained by projectile [model-proposed; physical meaning unverified]",
+   "k": "1/2"
+  },
+  {
+   "family": "collision",
+   "f": "Fraction of kinetic energy retained by projectile [model-proposed; physical meaning unverified]",
+   "g": "fraction of kinetic energy lost",
+   "k": "1"
+  },
+  {
+   "family": "collision",
+   "f": "Fraction of kinetic energy retained by projectile [model-proposed; physical meaning unverified]",
+   "g": "velocity ratio of projectile to target after collision [model-proposed; physical meaning unverified]",
+   "k": "1/2"
+  },
+  {
+   "family": "collision",
+   "f": "Fraction of kinetic energy retained by projectile [model-proposed; physical meaning unverified]",
+   "g": "relative velocity after collision divided by initial velocity of projectile [model-proposed; physical meaning unverified]",
+   "k": "1"
   }
  ],
- "rounds": 231,
+ "rounds": 236,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",

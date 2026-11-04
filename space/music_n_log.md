@@ -1,0 +1,2 @@
+- 2026-11-04 19:27 DISCOVERY (proved by exhaustion in 12 tunings): In every N-note equal temperament (5 ≤ N ≤ 16): a scale is strictly proper (Rothenberg)  ⇒  it has no two single steps in a row  [mus-6f00b483fab2; 204 scale classes]
+- 2026-11-04 19:27 DISCOVERY (proved by exhaustion in 12 tunings): In every N-note equal temperament (5 ≤ N ≤ 16): a scale is a deep scale  ⇒  it is inversionally symmetric  [mus-30e6001b05e2; 75 scale classes]
