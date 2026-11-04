@@ -12,3 +12,5 @@
 - 2026-11-04 03:28 round 6: heat engines
 - 2026-11-04 03:29 DISCOVERY (proved, sharp to 1e-6): [heat engines] Carnot heat pump coefficient of performance ≥ 3 × Low-dissipation refrigerator efficiency   for 0 < t < 1 (equality at t ≈ 0.5)  [phy-5f9c2c1fd306]
 - 2026-11-04 03:29 round 7: relativity
+- 2026-11-04 03:30 segment start (budget 100 min; model: Qwen3-14B; 2 discoveries so far)
+- 2026-11-04 03:30 round 7: relativity
