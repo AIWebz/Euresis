@@ -4624,5 +4624,32 @@
   "statement": "[velocity addition] product of the two Lorentz factors \u2265 2 \u00d7 Relative velocity in terms of rapidities [model-proposed; physical meaning unverified]   on u < 1, v < 1 (tight only at the edge of the domain, near (1.46e-17, 0.707))",
   "status": "proved",
   "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "u < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-8bd7b15abc59",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "u < 1",
+    "v < 1"
+   ],
+   "claim": "sqrt(u + 1)*sqrt(v + 1)*sqrt(1/(1 - u))*sqrt(1/(1 - v)) >= 1*(1/sqrt(-(u + v)**2/(u*v + 1)**2 + 1))",
+   "symbols": [
+    "u",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 4",
+  "statement": "[velocity addition] Doppler factor of the composed motion \u2265 1 \u00d7 Lorentz gamma of the composed motion [model-proposed; physical meaning unverified]   on u < 1, v < 1 (tight only at the edge of the domain, near (6.42e-15, 1.69e-16))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]
