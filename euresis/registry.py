@@ -21,6 +21,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import os
 import sqlite3
 import time
 from contextlib import contextmanager
@@ -167,7 +168,9 @@ class Registry:
             d.pop("created", None)
             d.pop("updated", None)
         self.export_path.parent.mkdir(parents=True, exist_ok=True)
-        self.export_path.write_text(json.dumps(data, indent=1, sort_keys=True, default=str) + "\n")
+        tmp = self.export_path.with_suffix(f".tmp{os.getpid()}")
+        tmp.write_text(json.dumps(data, indent=1, sort_keys=True, default=str) + "\n")
+        os.replace(tmp, self.export_path)          # atomic: readers (e.g. git) never see a half-written file
 
     def load_export(self):
         data = json.loads(self.export_path.read_text())
