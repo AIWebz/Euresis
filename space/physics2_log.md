@@ -204,3 +204,22 @@
 - 2026-11-04 18:11 round 193: two-body decay
 - 2026-11-04 18:13 round 194: collision
 - 2026-11-04 18:14 round 195: driven oscillator
+- 2026-11-04 18:16 round 196: velocity addition
+- 2026-11-04 18:18 round 197: Compton scattering
+- 2026-11-04 18:19 round 198: Cournot duopoly
+- 2026-11-04 18:21 round 199: insurance and risk
+- 2026-11-04 18:23 round 200: auction with a reserve price
+- 2026-11-04 18:24 round 201: two-body decay
+- 2026-11-04 18:26 round 202: collision
+- 2026-11-04 18:27 round 203: driven oscillator
+- 2026-11-04 18:28 round 204: velocity addition
+- 2026-11-04 18:30 round 205: Compton scattering
+- 2026-11-04 18:31 round 206: Cournot duopoly
+- 2026-11-04 18:33 round 207: insurance and risk
+- 2026-11-04 18:34 round 208: auction with a reserve price
+- 2026-11-04 18:36 round 209: two-body decay
+- 2026-11-04 18:38 round 210: collision
+- 2026-11-04 18:39 round 211: driven oscillator
+- 2026-11-04 18:41 round 212: velocity addition
+- 2026-11-04 18:43 round 213: Compton scattering
+- 2026-11-04 18:44 round 214: Cournot duopoly
