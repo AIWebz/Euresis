@@ -158,10 +158,15 @@ def validate(fam: str, expr: str, known: dict) -> tuple[sp.Expr | None, str]:
             coef, *_ = np.linalg.lstsq(A, vals[sel], rcond=None)
             if np.abs(A @ coef - vals[sel]).max() < 1e-9 * max(1, np.abs(vals).max()):
                 return None, f"affine combination of known quantities ({ni}{', ' + nj if nj and nj != ni else ''})"
-            if nj:
-                r = vals[sel] / (K[ni] * K[nj])[sel]
+            if nj is None:
+                r = vals[sel] * K[ni][sel]
                 if r.max() - r.min() < 1e-9 * max(1, abs(r).max()):
-                    return None, f"product of known quantities ({ni}, {nj})"
+                    return None, f"reciprocal of a known quantity ({ni})"
+            else:
+                for label, other in (("product", K[ni] * K[nj]), ("ratio", K[ni] / K[nj]), ("ratio", K[nj] / K[ni])):
+                    r = vals[sel] / other[sel]
+                    if r.max() - r.min() < 1e-9 * max(1, abs(r).max()):
+                        return None, f"{label} of known quantities ({ni}, {nj})"
     return E, "ok"
 
 

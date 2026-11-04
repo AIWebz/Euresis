@@ -25,7 +25,6 @@
    "low-dissipation engine efficiency at maximum power, upper bound (Esposito et al.)": "(1 - t)/(1 + t)",
    "Carnot refrigerator coefficient of performance": "t/(1 - t)",
    "Carnot heat pump coefficient of performance": "1/(1 - t)",
-   "Entropy production ratio": "1/(1 - sqrt(t))",
    "Power efficiency ratio": "sqrt(1 - t)/sqrt(t + 1)"
   }
  },
@@ -79,6 +78,21 @@
    "family": "relativity",
    "expr": "b/sqrt(1 - b**2)",
    "why": "affine combination of known quantities (Lorentz factor \u03b3, relativistic momentum / (mc))"
+  },
+  {
+   "family": "kepler",
+   "expr": "sqrt(1 - e**2)",
+   "why": "product of known quantities (perihelion distance / a, perihelion speed / circular speed at a)"
+  },
+  {
+   "family": "kepler",
+   "expr": "1 / sqrt(1 - e**2)",
+   "why": "affine combination of known quantities (perihelion speed / circular speed at a, aphelion speed / circular speed at a)"
+  },
+  {
+   "family": "kepler",
+   "expr": "sqrt((1 + e)/(1 - e)) * (1 - e)",
+   "why": "product of known quantities (perihelion distance / a, perihelion speed / circular speed at a)"
   }
  ],
  "tried": [
@@ -145,7 +159,23 @@
   "relativity|relativistic Doppler factor (approaching source)|Lorentz factor \u03b3",
   "relativity|relativistic Doppler factor (approaching source)|relativistic kinetic energy / mc\u00b2",
   "relativity|relativistic Doppler factor (approaching source)|classical kinetic energy / mc\u00b2",
-  "relativity|relativistic Doppler factor (approaching source)|relativistic momentum / (mc)"
+  "relativity|relativistic Doppler factor (approaching source)|relativistic momentum / (mc)",
+  "kepler|perihelion distance / a|mean motion / (a^(3/2))",
+  "kepler|aphelion distance / a|mean motion / (a^(3/2))",
+  "kepler|perihelion speed / circular speed at a|mean motion / (a^(3/2))",
+  "kepler|aphelion speed / circular speed at a|mean motion / (a^(3/2))",
+  "kepler|semi-minor axis / a|mean motion / (a^(3/2))",
+  "kepler|semi-latus rectum / a|mean motion / (a^(3/2))",
+  "kepler|time-averaged distance / a|mean motion / (a^(3/2))",
+  "kepler|mean motion / (a^(3/2))|perihelion distance / a",
+  "kepler|mean motion / (a^(3/2))|aphelion distance / a",
+  "kepler|mean motion / (a^(3/2))|perihelion speed / circular speed at a",
+  "kepler|mean motion / (a^(3/2))|aphelion speed / circular speed at a",
+  "kepler|mean motion / (a^(3/2))|semi-minor axis / a",
+  "kepler|mean motion / (a^(3/2))|semi-latus rectum / a",
+  "kepler|mean motion / (a^(3/2))|time-averaged distance / a",
+  "kepler|perihelion speed / circular speed at a|semi-latus rectum / a",
+  "kepler|perihelion speed / circular speed at a|time-averaged distance / a"
  ],
  "edges": [
   {
@@ -242,23 +272,9 @@
   {
    "family": "heat engines",
    "f": "Carnot heat pump coefficient of performance",
-   "g": "Entropy production ratio",
-   "kind": "lower",
-   "k": "1/2"
-  },
-  {
-   "family": "heat engines",
-   "f": "Carnot heat pump coefficient of performance",
    "g": "Power efficiency ratio",
    "kind": "lower",
    "k": "1"
-  },
-  {
-   "family": "heat engines",
-   "f": "Entropy production ratio",
-   "g": "Carnot refrigerator coefficient of performance",
-   "kind": "lower",
-   "k": "2"
   },
   {
    "family": "relativity",
@@ -287,9 +303,23 @@
    "g": "relativistic momentum / (mc)",
    "kind": "lower",
    "k": "2"
+  },
+  {
+   "family": "kepler",
+   "f": "perihelion speed / circular speed at a",
+   "g": "semi-latus rectum / a",
+   "kind": "lower",
+   "k": "1"
+  },
+  {
+   "family": "kepler",
+   "f": "perihelion speed / circular speed at a",
+   "g": "time-averaged distance / a",
+   "kind": "lower",
+   "k": "1"
   }
  ],
- "rounds": 4,
+ "rounds": 5,
  "discoveries": [
   {
    "claim": "phy-e72aa596c5f7",

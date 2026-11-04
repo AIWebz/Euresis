@@ -971,5 +971,245 @@
   "statement": "[relativity] relativistic Doppler factor (approaching source) \u2265 2 \u00d7 relativistic momentum / (mc)   for 0 < b < 1 (tight only in the limit b \u2192 1)",
   "status": "proved",
   "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-258649a7f9f2",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "e < 1"
+   ],
+   "claim": "e + 1 >= 1*(sqrt(1 - e**2)/(e**2/2 + 1))",
+   "symbols": [
+    "e"
+   ]
+  },
+  "source": "physics_discover round 5",
+  "statement": "[kepler] aphelion distance / a \u2265 1 \u00d7 mean motion / (a^(3/2))   for 0 < e < 1 (tight only in the limit e \u2192 0)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-f294faeb0fbf",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'aphelion distance / a'",
+  "payload": {
+   "assumptions": [
+    "e < 1"
+   ],
+   "claim": "sqrt(e + 1)*sqrt(1/(1 - e)) >= 1*(sqrt(1 - e**2)/(e**2/2 + 1))",
+   "symbols": [
+    "e"
+   ]
+  },
+  "source": "physics_discover round 5",
+  "statement": "[kepler] perihelion speed / circular speed at a \u2265 1 \u00d7 mean motion / (a^(3/2))   for 0 < e < 1 (tight only in the limit e \u2192 0)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-52673ff366e5",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "e < 1"
+   ],
+   "claim": "sqrt(1 - e**2) >= 1*(sqrt(1 - e**2)/(e**2/2 + 1))",
+   "symbols": [
+    "e"
+   ]
+  },
+  "source": "physics_discover round 5",
+  "statement": "[kepler] semi-minor axis / a \u2265 1 \u00d7 mean motion / (a^(3/2))   for 0 < e < 1 (tight only in the limit e \u2192 0)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-975c4a49e2f7",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "e < 1"
+   ],
+   "claim": "e**2/2 + 1 >= 1*(sqrt(1 - e**2)/(e**2/2 + 1))",
+   "symbols": [
+    "e"
+   ]
+  },
+  "source": "physics_discover round 5",
+  "statement": "[kepler] time-averaged distance / a \u2265 1 \u00d7 mean motion / (a^(3/2))   for 0 < e < 1 (tight only in the limit e \u2192 0)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-1a82543105c6",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "e < 1"
+   ],
+   "claim": "sqrt(1 - e**2)/(e**2/2 + 1) >= 1*(1 - e)",
+   "symbols": [
+    "e"
+   ]
+  },
+  "source": "physics_discover round 5",
+  "statement": "[kepler] mean motion / (a^(3/2)) \u2265 1 \u00d7 perihelion distance / a   for 0 < e < 1 (tight only in the limit e \u2192 0)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-9f5b0e92eaae",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "e < 1"
+   ],
+   "claim": "sqrt(1 - e**2)/(e**2/2 + 1) >= 1*(sqrt(1 - e)/sqrt(e + 1))",
+   "symbols": [
+    "e"
+   ]
+  },
+  "source": "physics_discover round 5",
+  "statement": "[kepler] mean motion / (a^(3/2)) \u2265 1 \u00d7 aphelion speed / circular speed at a   for 0 < e < 1 (tight only in the limit e \u2192 0)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-a0f837f05303",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "e < 1"
+   ],
+   "claim": "sqrt(1 - e**2)/(e**2/2 + 1) >= 2/3*(sqrt(1 - e**2))",
+   "symbols": [
+    "e"
+   ]
+  },
+  "source": "physics_discover round 5",
+  "statement": "[kepler] mean motion / (a^(3/2)) \u2265 2/3 \u00d7 semi-minor axis / a   for 0 < e < 1 (tight only in the limit e \u2192 1)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-ba60b01f3929",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "e < 1"
+   ],
+   "claim": "sqrt(1 - e**2)/(e**2/2 + 1) >= 1*(1 - e**2)",
+   "symbols": [
+    "e"
+   ]
+  },
+  "source": "physics_discover round 5",
+  "statement": "[kepler] mean motion / (a^(3/2)) \u2265 1 \u00d7 semi-latus rectum / a   for 0 < e < 1 (tight only in the limit e \u2192 0)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-166d174db4b1",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'aphelion distance / a'",
+  "payload": {
+   "assumptions": [
+    "e < 1"
+   ],
+   "claim": "sqrt(e + 1)*sqrt(1/(1 - e)) >= 1*(1 - e**2)",
+   "symbols": [
+    "e"
+   ]
+  },
+  "source": "physics_discover round 5",
+  "statement": "[kepler] perihelion speed / circular speed at a \u2265 1 \u00d7 semi-latus rectum / a   for 0 < e < 1 (tight only in the limit e \u2192 0)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-82822615049b",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'aphelion distance / a'",
+  "payload": {
+   "assumptions": [
+    "e < 1"
+   ],
+   "claim": "sqrt(e + 1)*sqrt(1/(1 - e)) >= 1*(e**2/2 + 1)",
+   "symbols": [
+    "e"
+   ]
+  },
+  "source": "physics_discover round 5",
+  "statement": "[kepler] perihelion speed / circular speed at a \u2265 1 \u00d7 time-averaged distance / a   for 0 < e < 1 (tight only in the limit e \u2192 0)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]
