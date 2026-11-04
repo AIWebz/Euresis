@@ -13,3 +13,18 @@
 - 2026-11-04 12:43 round 12: collision
 - 2026-11-04 12:45 round 13: driven oscillator
 - 2026-11-04 12:46 round 14: velocity addition
+- 2026-11-04 12:53 round 15: Compton scattering
+- 2026-11-04 12:54 round 16: two-body decay
+- 2026-11-04 12:56 round 17: collision
+- 2026-11-04 12:58 round 18: driven oscillator
+- 2026-11-04 12:59 round 19: velocity addition
+- 2026-11-04 13:02 round 20: Compton scattering
+- 2026-11-04 13:04 round 21: two-body decay
+- 2026-11-04 13:06 round 22: collision
+- 2026-11-04 13:07 round 23: driven oscillator
+- 2026-11-04 13:08 round 24: velocity addition
+- 2026-11-04 13:15 round 25: Compton scattering
+- 2026-11-04 13:16 round 26: two-body decay
+- 2026-11-04 13:19 round 27: collision
+- 2026-11-04 13:20 round 28: driven oscillator
+- 2026-11-04 13:22 round 29: velocity addition

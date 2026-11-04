@@ -9,7 +9,8 @@
    "speed of product 1 / c": "sqrt((1 - (a + b)**2)*(1 - (a - b)**2))/(1 + a**2 - b**2)",
    "speed of product 2 / c": "sqrt((1 - (a + b)**2)*(1 - (a - b)**2))/(1 - a**2 + b**2)",
    "Lorentz factor of product 1": "(1 + a**2 - b**2)/(2*a)",
-   "Invariant mass squared of the two products [model-proposed; physical meaning unverified]": "(a**2 + b**2 - (a - b)**2)/(-a - b + 1)"
+   "Invariant mass squared of the two products [model-proposed; physical meaning unverified]": "(a**2 + b**2 - (a - b)**2)/(-a - b + 1)",
+   "Ratio of kinetic energies of product 1 to product 2 [model-proposed; physical meaning unverified]": "(-b**2 + (1 - a)**2)/(-a**2 + 2*b**2 - (1 - a)**2 + 1)"
   },
   "collision": {
    "target speed / initial speed": "(1 + e)*m/(1 + m)",
@@ -41,7 +42,9 @@
    "Relativistic momentum ratio [model-proposed; physical meaning unverified]": "u/sqrt(1 - u**2) + v/sqrt(1 - v**2)",
    "Lorentz gamma of the composed motion [model-proposed; physical meaning unverified]": "1/sqrt(-(u + v)**2/(u*v + 1)**2 + 1)",
    "Relative velocity in terms of rapidities [model-proposed; physical meaning unverified]": "sqrt(-(1 - u**2)*(1 - v**2) + 1)/(u*v + 1)",
-   "Relativistic velocity parameter [model-proposed; physical meaning unverified]": "sqrt((1 - u**2)*(1 - v**2))/(-u*v + 1)"
+   "Relativistic velocity parameter [model-proposed; physical meaning unverified]": "sqrt((1 - u**2)*(1 - v**2))/(-u*v + 1)",
+   "Energy-momentum invariant [model-proposed; physical meaning unverified]": "sqrt(1 - u**2) + sqrt(1 - v**2) - sqrt(-(u + v)**2/(u*v + 1)**2 + 1)",
+   "Energy-momentum ratio [model-proposed; physical meaning unverified]": "sqrt(-(u + v)**2/(u*v + 1)**2 + 1)*(1/sqrt(1 - v**2) + 1/sqrt(1 - u**2))"
   },
   "Compton scattering": {
    "scattered photon energy / initial energy": "1/(1 + x*c)",
@@ -268,6 +271,291 @@
    "family": "driven oscillator",
    "expr": "2*sqrt(1 - z**2)/z",
    "why": "affine combination of known quantities (amplitude / static deflection, log decrement [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "(u + v)/(sqrt(1 - u**2)*sqrt(1 - v**2)*(1 + u*v))",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "1 - (u + v)**2/(1 + u*v)**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "atanh(u) + atanh(v)",
+   "why": "only + \u2212 \u00d7 \u00f7, integer powers and square roots (so the prover can decide it)"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "x*c/(1 + x*c)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy)"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "(x*c - 1)/(x*c + 1)",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "x/(1 + x*c)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, scattered photon energy / (m_e c\u00b2))"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "x*c/(1 + x*c)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy)"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "a**2 + b**2 - (a - b)**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "sqrt((1 - (a + b)**2)*(1 - (a - b)**2))/(1 + a**2 - b**2) / sqrt((1 - (a + b)**2)*(1 - (a - b)**2))/",
+   "why": "affine combination of known quantities (1/(energy of product 1 / (Mc\u00b2)), 1/(energy of product 2 / (Mc\u00b2)))"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "(1 + a**2 - b**2)/2 + (1 - a**2 + b**2)/2",
+   "why": "must depend only on a, b"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "(1 - a**2 + b**2)/(2*b)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2 * m",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "collision",
+   "expr": "e * (1 + m) / (1 + e * m)",
+   "why": "affine combination of known quantities (target speed / initial speed, velocity ratio of target to projectile after collision [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2 * m / (1 + m)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "collision",
+   "expr": "(1 - e * m) / (1 + e * m)",
+   "why": "affine combination of known quantities (target speed / initial speed, velocity ratio of projectile to target after collision [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "atan(2*z*r/(1 - r**2))",
+   "why": "only + \u2212 \u00d7 \u00f7, integer powers and square roots (so the prover can decide it)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(1 - 2*z**2)",
+   "why": "not finite on the whole physical domain"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "2*z*r**2/(1 + (2*z*r)**2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "z*r/(sqrt(1 - r**2))",
+   "why": "not finite on the whole physical domain"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "atanh(u) + atanh(v)",
+   "why": "only + \u2212 \u00d7 \u00f7, integer powers and square roots (so the prover can decide it)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "(u + v)/(sqrt(1 - u**2)*sqrt(1 - v**2)*(1 + u*v))",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "1 - (u + v)**2/(1 + u*v)**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "atanh((u + v)/(1 + u*v)) - atanh(u) - atanh(v)",
+   "why": "only + \u2212 \u00d7 \u00f7, integer powers and square roots (so the prover can decide it)"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "x*c/(1 + x*c)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy)"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "x**2*c/(1 + x*c)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, electron kinetic energy / (m_e c\u00b2))"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "x/(1 + x*c)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, scattered photon energy / (m_e c\u00b2))"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "sqrt(c**2*x**2/(1 + x*c)**2 + c*x**2/(1 + x*c))",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, Recoil electron momentum / (m_e c) [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "(a**2 + b**2 - (a - b)**2)/(-a - b + 1)",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), Invariant mass squared of the two products [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "(1 + a**2 - b**2)/(1 - a**2 + b**2)",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), 1/(energy of product 2 / (Mc\u00b2)))"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "(1 + a**2 - b**2)/(1 - a**2 + b**2)",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), 1/(energy of product 2 / (Mc\u00b2)))"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "((1 - a)**2 - b**2)/(1 - a**2 + b**2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2 * m",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "collision",
+   "expr": "e * (1 + m) / (1 + e * m)",
+   "why": "affine combination of known quantities (target speed / initial speed, velocity ratio of target to projectile after collision [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "2 * e * m / (1 + m)",
+   "why": "affine combination of known quantities (target speed / initial speed, speed of the centre of mass / initial speed)"
+  },
+  {
+   "family": "collision",
+   "expr": "(1 - e) * m / (1 + m)",
+   "why": "affine combination of known quantities (target speed / initial speed, speed of the centre of mass / initial speed)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "atan2(2*z*r, 1 - r**2)",
+   "why": "only + \u2212 \u00d7 \u00f7, integer powers and square roots (so the prover can decide it)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(1 - 2*z**2)",
+   "why": "not finite on the whole physical domain"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "z*r**2/(1 - r**2)",
+   "why": "not finite on the whole physical domain"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "r**2/(1 + (2*z*r)**2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 + u)/(1 - u)) * sqrt((1 + v)/(1 - v)) - sqrt((1 + (u + v)/(1 + u*v))/(1 - (u + v)/(1 + u*v))",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt(1 - (u + v)**2/(1 + u*v)**2) * (u/sqrt(1 - u**2) + v/sqrt(1 - v**2))",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt(1 - u**2) * sqrt(1 - v**2) - (u + v)/(1 + u*v)",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "c/(1 + x*c)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "x*c/(1 + x*c)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy)"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "(x*c - 1)/(x*c + 1)",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "1/(1 + x*c)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy)"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "sqrt((1 - (a + b)**2)*(1 - (a - b)**2))/(1 + a**2 - b**2) - sqrt((1 - (a + b)**2)*(1 - (a - b)**2))/",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "1 - a - b",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), kinetic energy released Q / (Mc\u00b2))"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "(1 + a**2 - b**2)/2 + (1 - a**2 + b**2)/2",
+   "why": "must depend only on a, b"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2 * m",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "collision",
+   "expr": "(1 - (1 + e)**2 * m / (1 + m)**2)",
+   "why": "affine combination of known quantities (target speed / initial speed, fraction of kinetic energy given to the target)"
+  },
+  {
+   "family": "collision",
+   "expr": "(-e*m + 1)/(e*m + 1)",
+   "why": "affine combination of known quantities (target speed / initial speed, velocity ratio of projectile to target after collision [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "( ( (m * ( ( (1 + e) * m / (1 + m) )**2 ) ) + ( ( (1 + e)**2 * m**2 / (1 + m)**2 ) ) ) ) / ( (m + 1)",
+   "why": "does not parse"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "atan(2*z*r/(1 - r**2))",
+   "why": "only + \u2212 \u00d7 \u00f7, integer powers and square roots (so the prover can decide it)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(1 - 2*z**2)",
+   "why": "not finite on the whole physical domain"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "z*r/(sqrt(1 - r**2))",
+   "why": "not finite on the whole physical domain"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "r**2/(1 + (2*z*r)**2)",
+   "why": "a power or product of known quantities"
   }
  ],
  "tried": [
@@ -530,7 +818,97 @@
   "collision|velocity ratio of projectile to target after collision [model-proposed; physical meaning unverified]|fraction of kinetic energy given to the target",
   "collision|velocity ratio of projectile to target after collision [model-proposed; physical meaning unverified]|speed of the centre of mass / initial speed",
   "collision|velocity ratio of projectile to target after collision [model-proposed; physical meaning unverified]|relative speed after / relative speed before",
-  "collision|velocity ratio of projectile to target after collision [model-proposed; physical meaning unverified]|velocity ratio of target to projectile after collision [model-proposed; physical meaning unverified]"
+  "collision|velocity ratio of projectile to target after collision [model-proposed; physical meaning unverified]|velocity ratio of target to projectile after collision [model-proposed; physical meaning unverified]",
+  "velocity addition|composed speed / c|Energy-momentum invariant [model-proposed; physical meaning unverified]",
+  "velocity addition|Galilean sum / c|Energy-momentum invariant [model-proposed; physical meaning unverified]",
+  "velocity addition|Lorentz factor of the composed motion|Energy-momentum invariant [model-proposed; physical meaning unverified]",
+  "velocity addition|product of the two Lorentz factors|Energy-momentum invariant [model-proposed; physical meaning unverified]",
+  "velocity addition|Doppler factor of the composed motion|Energy-momentum invariant [model-proposed; physical meaning unverified]",
+  "velocity addition|kinetic energy of the composed motion / mc\u00b2|Energy-momentum invariant [model-proposed; physical meaning unverified]",
+  "velocity addition|sum of the two kinetic energies / mc\u00b2|Energy-momentum invariant [model-proposed; physical meaning unverified]",
+  "velocity addition|Relativistic momentum ratio [model-proposed; physical meaning unverified]|Energy-momentum invariant [model-proposed; physical meaning unverified]",
+  "velocity addition|Lorentz gamma of the composed motion [model-proposed; physical meaning unverified]|Energy-momentum invariant [model-proposed; physical meaning unverified]",
+  "velocity addition|Relative velocity in terms of rapidities [model-proposed; physical meaning unverified]|Energy-momentum invariant [model-proposed; physical meaning unverified]",
+  "velocity addition|Relativistic velocity parameter [model-proposed; physical meaning unverified]|Energy-momentum invariant [model-proposed; physical meaning unverified]",
+  "velocity addition|Energy-momentum invariant [model-proposed; physical meaning unverified]|composed speed / c",
+  "velocity addition|Energy-momentum invariant [model-proposed; physical meaning unverified]|Galilean sum / c",
+  "velocity addition|Energy-momentum invariant [model-proposed; physical meaning unverified]|Lorentz factor of the composed motion",
+  "velocity addition|Energy-momentum invariant [model-proposed; physical meaning unverified]|product of the two Lorentz factors",
+  "velocity addition|Energy-momentum invariant [model-proposed; physical meaning unverified]|Doppler factor of the composed motion",
+  "velocity addition|Energy-momentum invariant [model-proposed; physical meaning unverified]|kinetic energy of the composed motion / mc\u00b2",
+  "velocity addition|Energy-momentum invariant [model-proposed; physical meaning unverified]|sum of the two kinetic energies / mc\u00b2",
+  "velocity addition|Energy-momentum invariant [model-proposed; physical meaning unverified]|Relativistic momentum ratio [model-proposed; physical meaning unverified]",
+  "velocity addition|Energy-momentum invariant [model-proposed; physical meaning unverified]|Lorentz gamma of the composed motion [model-proposed; physical meaning unverified]",
+  "velocity addition|Energy-momentum invariant [model-proposed; physical meaning unverified]|Relative velocity in terms of rapidities [model-proposed; physical meaning unverified]",
+  "velocity addition|Energy-momentum invariant [model-proposed; physical meaning unverified]|Relativistic velocity parameter [model-proposed; physical meaning unverified]",
+  "velocity addition|composed speed / c|kinetic energy of the composed motion / mc\u00b2",
+  "velocity addition|composed speed / c|sum of the two kinetic energies / mc\u00b2",
+  "velocity addition|Galilean sum / c|composed speed / c",
+  "velocity addition|Galilean sum / c|Lorentz factor of the composed motion",
+  "velocity addition|Galilean sum / c|product of the two Lorentz factors",
+  "velocity addition|Galilean sum / c|Doppler factor of the composed motion",
+  "velocity addition|Galilean sum / c|kinetic energy of the composed motion / mc\u00b2",
+  "velocity addition|Galilean sum / c|sum of the two kinetic energies / mc\u00b2",
+  "velocity addition|Lorentz factor of the composed motion|composed speed / c",
+  "velocity addition|Lorentz factor of the composed motion|Galilean sum / c",
+  "velocity addition|Lorentz factor of the composed motion|product of the two Lorentz factors",
+  "velocity addition|Lorentz factor of the composed motion|Doppler factor of the composed motion",
+  "velocity addition|Lorentz factor of the composed motion|kinetic energy of the composed motion / mc\u00b2",
+  "velocity addition|Lorentz factor of the composed motion|sum of the two kinetic energies / mc\u00b2",
+  "velocity addition|product of the two Lorentz factors|composed speed / c",
+  "velocity addition|product of the two Lorentz factors|Galilean sum / c",
+  "velocity addition|product of the two Lorentz factors|Lorentz factor of the composed motion",
+  "velocity addition|product of the two Lorentz factors|Doppler factor of the composed motion",
+  "velocity addition|product of the two Lorentz factors|kinetic energy of the composed motion / mc\u00b2",
+  "velocity addition|product of the two Lorentz factors|sum of the two kinetic energies / mc\u00b2",
+  "velocity addition|Doppler factor of the composed motion|composed speed / c",
+  "velocity addition|Doppler factor of the composed motion|Galilean sum / c",
+  "velocity addition|Doppler factor of the composed motion|Lorentz factor of the composed motion",
+  "velocity addition|Doppler factor of the composed motion|product of the two Lorentz factors",
+  "velocity addition|Doppler factor of the composed motion|kinetic energy of the composed motion / mc\u00b2",
+  "velocity addition|Doppler factor of the composed motion|sum of the two kinetic energies / mc\u00b2",
+  "velocity addition|composed speed / c|Energy-momentum ratio [model-proposed; physical meaning unverified]",
+  "velocity addition|Galilean sum / c|Energy-momentum ratio [model-proposed; physical meaning unverified]",
+  "velocity addition|Lorentz factor of the composed motion|Energy-momentum ratio [model-proposed; physical meaning unverified]",
+  "velocity addition|product of the two Lorentz factors|Energy-momentum ratio [model-proposed; physical meaning unverified]",
+  "velocity addition|Doppler factor of the composed motion|Energy-momentum ratio [model-proposed; physical meaning unverified]",
+  "velocity addition|kinetic energy of the composed motion / mc\u00b2|Energy-momentum ratio [model-proposed; physical meaning unverified]",
+  "velocity addition|sum of the two kinetic energies / mc\u00b2|Energy-momentum ratio [model-proposed; physical meaning unverified]",
+  "velocity addition|Relativistic momentum ratio [model-proposed; physical meaning unverified]|Energy-momentum ratio [model-proposed; physical meaning unverified]",
+  "velocity addition|Lorentz gamma of the composed motion [model-proposed; physical meaning unverified]|Energy-momentum ratio [model-proposed; physical meaning unverified]",
+  "velocity addition|Relative velocity in terms of rapidities [model-proposed; physical meaning unverified]|Energy-momentum ratio [model-proposed; physical meaning unverified]",
+  "velocity addition|Relativistic velocity parameter [model-proposed; physical meaning unverified]|Energy-momentum ratio [model-proposed; physical meaning unverified]",
+  "velocity addition|Energy-momentum invariant [model-proposed; physical meaning unverified]|Energy-momentum ratio [model-proposed; physical meaning unverified]",
+  "velocity addition|Energy-momentum ratio [model-proposed; physical meaning unverified]|composed speed / c",
+  "velocity addition|Energy-momentum ratio [model-proposed; physical meaning unverified]|Galilean sum / c",
+  "velocity addition|Energy-momentum ratio [model-proposed; physical meaning unverified]|Lorentz factor of the composed motion",
+  "velocity addition|Energy-momentum ratio [model-proposed; physical meaning unverified]|product of the two Lorentz factors",
+  "velocity addition|Energy-momentum ratio [model-proposed; physical meaning unverified]|Doppler factor of the composed motion",
+  "velocity addition|Energy-momentum ratio [model-proposed; physical meaning unverified]|kinetic energy of the composed motion / mc\u00b2",
+  "velocity addition|Energy-momentum ratio [model-proposed; physical meaning unverified]|sum of the two kinetic energies / mc\u00b2",
+  "velocity addition|Energy-momentum ratio [model-proposed; physical meaning unverified]|Relativistic momentum ratio [model-proposed; physical meaning unverified]",
+  "velocity addition|Energy-momentum ratio [model-proposed; physical meaning unverified]|Lorentz gamma of the composed motion [model-proposed; physical meaning unverified]",
+  "velocity addition|Energy-momentum ratio [model-proposed; physical meaning unverified]|Relative velocity in terms of rapidities [model-proposed; physical meaning unverified]",
+  "velocity addition|Energy-momentum ratio [model-proposed; physical meaning unverified]|Relativistic velocity parameter [model-proposed; physical meaning unverified]",
+  "velocity addition|Energy-momentum ratio [model-proposed; physical meaning unverified]|Energy-momentum invariant [model-proposed; physical meaning unverified]",
+  "two-body decay|momentum of each product / (Mc)|Ratio of kinetic energies of product 1 to product 2 [model-proposed; physical meaning unverified]",
+  "two-body decay|energy of product 1 / (Mc\u00b2)|Ratio of kinetic energies of product 1 to product 2 [model-proposed; physical meaning unverified]",
+  "two-body decay|energy of product 2 / (Mc\u00b2)|Ratio of kinetic energies of product 1 to product 2 [model-proposed; physical meaning unverified]",
+  "two-body decay|kinetic energy released Q / (Mc\u00b2)|Ratio of kinetic energies of product 1 to product 2 [model-proposed; physical meaning unverified]",
+  "two-body decay|kinetic energy of product 1 / (Mc\u00b2)|Ratio of kinetic energies of product 1 to product 2 [model-proposed; physical meaning unverified]",
+  "two-body decay|speed of product 1 / c|Ratio of kinetic energies of product 1 to product 2 [model-proposed; physical meaning unverified]",
+  "two-body decay|speed of product 2 / c|Ratio of kinetic energies of product 1 to product 2 [model-proposed; physical meaning unverified]",
+  "two-body decay|Lorentz factor of product 1|Ratio of kinetic energies of product 1 to product 2 [model-proposed; physical meaning unverified]",
+  "two-body decay|Invariant mass squared of the two products [model-proposed; physical meaning unverified]|Ratio of kinetic energies of product 1 to product 2 [model-proposed; physical meaning unverified]",
+  "two-body decay|Ratio of kinetic energies of product 1 to product 2 [model-proposed; physical meaning unverified]|momentum of each product / (Mc)",
+  "two-body decay|Ratio of kinetic energies of product 1 to product 2 [model-proposed; physical meaning unverified]|energy of product 1 / (Mc\u00b2)",
+  "two-body decay|Ratio of kinetic energies of product 1 to product 2 [model-proposed; physical meaning unverified]|energy of product 2 / (Mc\u00b2)",
+  "two-body decay|Ratio of kinetic energies of product 1 to product 2 [model-proposed; physical meaning unverified]|kinetic energy released Q / (Mc\u00b2)",
+  "two-body decay|Ratio of kinetic energies of product 1 to product 2 [model-proposed; physical meaning unverified]|kinetic energy of product 1 / (Mc\u00b2)",
+  "two-body decay|Ratio of kinetic energies of product 1 to product 2 [model-proposed; physical meaning unverified]|speed of product 1 / c",
+  "two-body decay|Ratio of kinetic energies of product 1 to product 2 [model-proposed; physical meaning unverified]|speed of product 2 / c",
+  "two-body decay|Ratio of kinetic energies of product 1 to product 2 [model-proposed; physical meaning unverified]|Lorentz factor of product 1",
+  "two-body decay|Ratio of kinetic energies of product 1 to product 2 [model-proposed; physical meaning unverified]|Invariant mass squared of the two products [model-proposed; physical meaning unverified]"
  ],
  "edges": [
   {
@@ -1018,9 +1396,116 @@
    "f": "velocity ratio of projectile to target after collision [model-proposed; physical meaning unverified]",
    "g": "fraction of kinetic energy lost",
    "k": "1/2"
+  },
+  {
+   "family": "velocity addition",
+   "f": "Lorentz gamma of the composed motion [model-proposed; physical meaning unverified]",
+   "g": "Energy-momentum invariant [model-proposed; physical meaning unverified]",
+   "k": "1"
+  },
+  {
+   "family": "velocity addition",
+   "f": "Galilean sum / c",
+   "g": "composed speed / c",
+   "k": "1"
+  },
+  {
+   "family": "velocity addition",
+   "f": "Lorentz factor of the composed motion",
+   "g": "composed speed / c",
+   "k": "2"
+  },
+  {
+   "family": "velocity addition",
+   "f": "Lorentz factor of the composed motion",
+   "g": "product of the two Lorentz factors",
+   "k": "1"
+  },
+  {
+   "family": "velocity addition",
+   "f": "Lorentz factor of the composed motion",
+   "g": "Doppler factor of the composed motion",
+   "k": "1/2"
+  },
+  {
+   "family": "velocity addition",
+   "f": "Lorentz factor of the composed motion",
+   "g": "kinetic energy of the composed motion / mc\u00b2",
+   "k": "1"
+  },
+  {
+   "family": "velocity addition",
+   "f": "product of the two Lorentz factors",
+   "g": "Lorentz factor of the composed motion",
+   "k": "1/2"
+  },
+  {
+   "family": "velocity addition",
+   "f": "product of the two Lorentz factors",
+   "g": "Doppler factor of the composed motion",
+   "k": "1/4"
+  },
+  {
+   "family": "velocity addition",
+   "f": "product of the two Lorentz factors",
+   "g": "kinetic energy of the composed motion / mc\u00b2",
+   "k": "1/2"
+  },
+  {
+   "family": "velocity addition",
+   "f": "product of the two Lorentz factors",
+   "g": "sum of the two kinetic energies / mc\u00b2",
+   "k": "1"
+  },
+  {
+   "family": "velocity addition",
+   "f": "Doppler factor of the composed motion",
+   "g": "Lorentz factor of the composed motion",
+   "k": "1"
+  },
+  {
+   "family": "velocity addition",
+   "f": "Doppler factor of the composed motion",
+   "g": "product of the two Lorentz factors",
+   "k": "1"
+  },
+  {
+   "family": "velocity addition",
+   "f": "Doppler factor of the composed motion",
+   "g": "kinetic energy of the composed motion / mc\u00b2",
+   "k": "2"
+  },
+  {
+   "family": "two-body decay",
+   "f": "Lorentz factor of product 1",
+   "g": "Ratio of kinetic energies of product 1 to product 2 [model-proposed; physical meaning unverified]",
+   "k": "1"
+  },
+  {
+   "family": "two-body decay",
+   "f": "Ratio of kinetic energies of product 1 to product 2 [model-proposed; physical meaning unverified]",
+   "g": "kinetic energy released Q / (Mc\u00b2)",
+   "k": "1/2"
+  },
+  {
+   "family": "two-body decay",
+   "f": "Ratio of kinetic energies of product 1 to product 2 [model-proposed; physical meaning unverified]",
+   "g": "kinetic energy of product 1 / (Mc\u00b2)",
+   "k": "1"
   }
  ],
- "rounds": 13,
+ "rounds": 28,
  "discoveries": [],
- "rediscoveries": []
+ "rediscoveries": [
+  {
+   "claim": "phy-d4a182118623",
+   "statement": "[velocity addition] Galilean sum / c \u2265 1 \u00d7 composed speed / c   on u < 1, v < 1 (tight only at the edge of the domain, near (0.000113, 4.23e-13))",
+   "known": "relativistic composition never exceeds the Galilean sum"
+  },
+  {
+   "claim": "phy-54857ab86a58",
+   "statement": "[velocity addition] Lorentz factor of the composed motion \u2265 1 \u00d7 product of the two Lorentz factors   on u < 1, v < 1 (tight only at the edge of the domain, near (0.000113, 4.23e-13))",
+   "known": "\u03b3_w = \u03b3_u \u03b3_v (1 + uv)"
+  }
+ ]
 }
