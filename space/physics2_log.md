@@ -183,3 +183,5 @@
 - 2026-11-04 17:40 round 174: velocity addition
 - 2026-11-04 17:42 round 175: Compton scattering
 - 2026-11-04 17:44 round 176: two-body decay
+- 2026-11-04 17:45 segment start (budget 100 min; model: Qwen3-14B; 1 discoveries so far)
+- 2026-11-04 17:45 round 176: auction with a reserve price
