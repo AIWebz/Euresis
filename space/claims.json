@@ -1221,7 +1221,7 @@
   },
   "id": "phy-8625482bfd58",
   "kind": "physics-relation",
-  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "novelty": "follows from proved bounds: a bound at least as strong is already proved",
   "payload": {
    "assumptions": [
     "t < 1"
@@ -1269,7 +1269,7 @@
   },
   "id": "phy-5f9c2c1fd306",
   "kind": "physics-relation",
-  "novelty": "not a known result in Euresis' knowledge; not implied by proved bounds; physics literature unchecked (arXiv unreachable from this environment); involves a model-proposed quantity whose physical meaning is unverified",
+  "novelty": "follows from proved bounds: a bound at least as strong is already proved",
   "payload": {
    "assumptions": [
     "t < 1"
@@ -1905,6 +1905,126 @@
   },
   "source": "physics_discover round 15",
   "statement": "[heat engines] Thermal efficiency ratio [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Curzon\u2013Ahlborn efficiency (endoreversible engine at maximum power)   for 0 < t < 1 (tight only in the limit t \u2192 0)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "t < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-61eaf39f397d",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "t < 1"
+   ],
+   "claim": "1/(1 - t) >= 1*(1 - t)",
+   "symbols": [
+    "t"
+   ]
+  },
+  "source": "physics_discover round 18",
+  "statement": "[heat engines] Carnot heat pump coefficient of performance \u2265 1 \u00d7 Carnot efficiency   for 0 < t < 1 (tight only in the limit t \u2192 0)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "t < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-19718b8c3668",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'Carnot efficiency'",
+  "payload": {
+   "assumptions": [
+    "t < 1"
+   ],
+   "claim": "1/(1 - t) >= 1*((1 - t)/(t + 1))",
+   "symbols": [
+    "t"
+   ]
+  },
+  "source": "physics_discover round 18",
+  "statement": "[heat engines] Carnot heat pump coefficient of performance \u2265 1 \u00d7 low-dissipation engine efficiency at maximum power, upper bound (Esposito et al.)   for 0 < t < 1 (tight only in the limit t \u2192 0)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "t < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-3cbcd76b8b6f",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "t < 1"
+   ],
+   "claim": "1/(1 - t) >= 1*(t/(1 - t))",
+   "symbols": [
+    "t"
+   ]
+  },
+  "source": "physics_discover round 18",
+  "statement": "[heat engines] Carnot heat pump coefficient of performance \u2265 1 \u00d7 Carnot refrigerator coefficient of performance   for 0 < t < 1 (tight only in the limit t \u2192 1)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "t < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-44dc8121af96",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "t < 1"
+   ],
+   "claim": "t/(t**2 - t + 1) >= 1*(t**2/(-t**0.5 + t**1.5 + 1))",
+   "symbols": [
+    "t"
+   ]
+  },
+  "source": "physics_discover round 21",
+  "statement": "[heat engines] Low-dissipation refrigerator efficiency [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Refrigeration efficiency factor 2 [model-proposed; physical meaning unverified]   for 0 < t < 1 (tight only in the limit t \u2192 1)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "t < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-bf2411d0975c",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "t < 1"
+   ],
+   "claim": "t/(-t**0.5 + t**2 + 1) >= 1*(t**2/(-t**0.5 + t**1.5 + 1))",
+   "symbols": [
+    "t"
+   ]
+  },
+  "source": "physics_discover round 21",
+  "statement": "[heat engines] Refrigeration efficiency factor [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Refrigeration efficiency factor 2 [model-proposed; physical meaning unverified]   for 0 < t < 1 (tight only in the limit t \u2192 1)",
   "status": "proved",
   "verifier": "z3-sqrt"
  }

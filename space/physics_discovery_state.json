@@ -26,7 +26,9 @@
    "Carnot refrigerator coefficient of performance": "t/(1 - t)",
    "Carnot heat pump coefficient of performance": "1/(1 - t)",
    "Low-dissipation refrigerator efficiency [model-proposed; physical meaning unverified]": "t/(t**2 - t + 1)",
-   "Refrigeration efficiency factor [model-proposed; physical meaning unverified]": "t/(-t**0.5 + t**2 + 1)"
+   "Refrigeration efficiency factor [model-proposed; physical meaning unverified]": "t/(-t**0.5 + t**2 + 1)",
+   "Refrigeration efficiency factor 2 [model-proposed; physical meaning unverified]": "t**2/(-t**0.5 + t**1.5 + 1)",
+   "Thermal efficiency ratio 2 [model-proposed; physical meaning unverified]": "(1 - t**0.5)/(t**0.5 + t**1.5 + 1)"
   }
  },
  "rejected": [
@@ -259,6 +261,116 @@
    "family": "heat engines",
    "expr": "(1 - t**2)/(1 - t**0.5)",
    "why": "a power or product of known quantities: C \u00b7 (Carnot efficiency)^-1.33e-16 \u00b7 (Thermal efficiency ratio [model-proposed; physical meaning unverified])^-1"
+  },
+  {
+   "family": "relativity",
+   "expr": "sqrt((1 - b)/(1 + b))",
+   "why": "affine combination of known quantities (Lorentz factor \u03b3, relativistic momentum / (mc))"
+  },
+  {
+   "family": "relativity",
+   "expr": "1/sqrt(1 - b**2)",
+   "why": "affine combination of known quantities (Lorentz factor \u03b3)"
+  },
+  {
+   "family": "relativity",
+   "expr": "b/(c * sqrt(1 - b**2))",
+   "why": "must depend on b only"
+  },
+  {
+   "family": "relativity",
+   "expr": "2*b/(1 - b**2)",
+   "why": "a power or product of known quantities: C \u00b7 (Lorentz factor \u03b3)^0.569 \u00b7 (classical kinetic energy / mc\u00b2)^0.0695 \u00b7 (relativistic momentum / (mc))^0.861 \u00b7 (time-dilation factor 1/\u03b3)^-0.569"
+  },
+  {
+   "family": "kepler",
+   "expr": "sqrt((1 + e)/(1 - e)) / sqrt((1 - e)/(1 + e))",
+   "why": "affine combination of known quantities (perihelion distance / a, 1/(perihelion distance / a))"
+  },
+  {
+   "family": "kepler",
+   "expr": "sqrt((1 + e)/(1 - e)) / sqrt((1 - e)/(1 + e))",
+   "why": "affine combination of known quantities (perihelion distance / a, 1/(perihelion distance / a))"
+  },
+  {
+   "family": "kepler",
+   "expr": "(1 - e)/sqrt(1 - e**2)",
+   "why": "affine combination of known quantities (perihelion distance / a, aphelion speed / circular speed at a)"
+  },
+  {
+   "family": "kepler",
+   "expr": "(1 - e**2)/(1 + e**2/2)",
+   "why": "affine combination of known quantities (perihelion distance / a, 1/(time-averaged distance / a))"
+  },
+  {
+   "family": "heat engines",
+   "expr": "sqrt(1 - t)/sqrt(t)",
+   "why": "a power or product of known quantities: C \u00b7 (Carnot refrigerator coefficient of performance)^-0.5"
+  },
+  {
+   "family": "heat engines",
+   "expr": "(1 - t**0.5)/(1 + t**0.5)",
+   "why": "a power or product of known quantities: C \u00b7 (Carnot efficiency)^-0.5 \u00b7 (Curzon\u2013Ahlborn efficiency (endoreversible engine at maximum power))^2 \u00b7 (Carnot heat pump coefficient of performance)^0.5"
+  },
+  {
+   "family": "heat engines",
+   "expr": "(1 - t**2)/(1 - t)**2",
+   "why": "affine combination of known quantities (Carnot efficiency, Carnot refrigerator coefficient of performance)"
+  },
+  {
+   "family": "heat engines",
+   "expr": "sqrt(t)/(1 - t**0.5)",
+   "why": "affine combination of known quantities (Carnot efficiency, 1/(Curzon\u2013Ahlborn efficiency (endoreversible engine at maximum power)))"
+  },
+  {
+   "family": "relativity",
+   "expr": "sqrt((1 - b)/(1 + b))",
+   "why": "affine combination of known quantities (Lorentz factor \u03b3, relativistic momentum / (mc))"
+  },
+  {
+   "family": "relativity",
+   "expr": "1/sqrt(1 - b**2)",
+   "why": "affine combination of known quantities (Lorentz factor \u03b3)"
+  },
+  {
+   "family": "relativity",
+   "expr": "b/sqrt(1 - b**2)",
+   "why": "affine combination of known quantities (Lorentz factor \u03b3, relativistic momentum / (mc))"
+  },
+  {
+   "family": "relativity",
+   "expr": "1/(1 - b**2)",
+   "why": "a power or product of known quantities: C \u00b7 (Lorentz factor \u03b3)^0.733 \u00b7 (classical kinetic energy / mc\u00b2)^-0.267 \u00b7 (relativistic momentum / (mc))^0.535 \u00b7 (time-dilation factor 1/\u03b3)^-0.733"
+  },
+  {
+   "family": "kepler",
+   "expr": "sqrt((1 + e)/(1 - e))/sqrt((1 - e)/(1 + e))",
+   "why": "affine combination of known quantities (perihelion distance / a, 1/(perihelion distance / a))"
+  },
+  {
+   "family": "kepler",
+   "expr": "sqrt(1 - e**2)",
+   "why": "affine combination of known quantities (perihelion distance / a, semi-minor axis / a)"
+  },
+  {
+   "family": "kepler",
+   "expr": "( (1 - e)**2 + (1 + e)**2 ) / 2",
+   "why": "affine combination of known quantities (perihelion distance / a, semi-latus rectum / a)"
+  },
+  {
+   "family": "kepler",
+   "expr": "(1 - e)*(1 + e)",
+   "why": "affine combination of known quantities (perihelion distance / a, semi-latus rectum / a)"
+  },
+  {
+   "family": "heat engines",
+   "expr": "1 - t**0.5 - t**1.5",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "heat engines",
+   "expr": "(1 - t**2)/(1 + t**0.5 + t**1.5)",
+   "why": "a power or product of known quantities: C \u00b7 (Carnot efficiency)^1 \u00b7 (Curzon\u2013Ahlborn efficiency (endoreversible engine at maximum power))^-1 \u00b7 (low-dissipation engine efficiency at maximum power, upper bou"
   }
  ],
  "tried": [
@@ -467,7 +579,39 @@
   "heat engines|Thermal dissipation factor [model-proposed; physical meaning unverified]|Thermal efficiency ratio [model-proposed; physical meaning unverified]",
   "heat engines|Thermal dissipation factor [model-proposed; physical meaning unverified]|Refrigeration efficiency factor [model-proposed; physical meaning unverified]",
   "heat engines|Thermal efficiency ratio [model-proposed; physical meaning unverified]|Carnot efficiency",
-  "heat engines|Thermal efficiency ratio [model-proposed; physical meaning unverified]|Curzon\u2013Ahlborn efficiency (endoreversible engine at maximum power)"
+  "heat engines|Thermal efficiency ratio [model-proposed; physical meaning unverified]|Curzon\u2013Ahlborn efficiency (endoreversible engine at maximum power)",
+  "heat engines|low-dissipation engine efficiency at maximum power, upper bound (Esposito et al.)|Low-dissipation refrigerator efficiency [model-proposed; physical meaning unverified]",
+  "heat engines|Carnot refrigerator coefficient of performance|Carnot efficiency",
+  "heat engines|Carnot refrigerator coefficient of performance|Curzon\u2013Ahlborn efficiency (endoreversible engine at maximum power)",
+  "heat engines|Carnot refrigerator coefficient of performance|low-dissipation engine efficiency at maximum power, upper bound (Esposito et al.)",
+  "heat engines|Carnot refrigerator coefficient of performance|Carnot heat pump coefficient of performance",
+  "heat engines|Carnot refrigerator coefficient of performance|Low-dissipation refrigerator efficiency [model-proposed; physical meaning unverified]",
+  "heat engines|Carnot heat pump coefficient of performance|Carnot efficiency",
+  "heat engines|Carnot heat pump coefficient of performance|Curzon\u2013Ahlborn efficiency (endoreversible engine at maximum power)",
+  "heat engines|Carnot heat pump coefficient of performance|low-dissipation engine efficiency at maximum power, upper bound (Esposito et al.)",
+  "heat engines|Carnot heat pump coefficient of performance|Carnot refrigerator coefficient of performance",
+  "heat engines|Carnot heat pump coefficient of performance|Low-dissipation refrigerator efficiency [model-proposed; physical meaning unverified]",
+  "heat engines|Low-dissipation refrigerator efficiency [model-proposed; physical meaning unverified]|Carnot efficiency",
+  "heat engines|Low-dissipation refrigerator efficiency [model-proposed; physical meaning unverified]|Curzon\u2013Ahlborn efficiency (endoreversible engine at maximum power)",
+  "heat engines|Low-dissipation refrigerator efficiency [model-proposed; physical meaning unverified]|low-dissipation engine efficiency at maximum power, upper bound (Esposito et al.)",
+  "heat engines|Low-dissipation refrigerator efficiency [model-proposed; physical meaning unverified]|Carnot refrigerator coefficient of performance",
+  "heat engines|Low-dissipation refrigerator efficiency [model-proposed; physical meaning unverified]|Carnot heat pump coefficient of performance",
+  "heat engines|Carnot efficiency|Refrigeration efficiency factor 2 [model-proposed; physical meaning unverified]",
+  "heat engines|Carnot efficiency|Thermal efficiency ratio 2 [model-proposed; physical meaning unverified]",
+  "heat engines|Curzon\u2013Ahlborn efficiency (endoreversible engine at maximum power)|Refrigeration efficiency factor 2 [model-proposed; physical meaning unverified]",
+  "heat engines|Curzon\u2013Ahlborn efficiency (endoreversible engine at maximum power)|Thermal efficiency ratio 2 [model-proposed; physical meaning unverified]",
+  "heat engines|low-dissipation engine efficiency at maximum power, upper bound (Esposito et al.)|Refrigeration efficiency factor 2 [model-proposed; physical meaning unverified]",
+  "heat engines|low-dissipation engine efficiency at maximum power, upper bound (Esposito et al.)|Thermal efficiency ratio 2 [model-proposed; physical meaning unverified]",
+  "heat engines|Carnot refrigerator coefficient of performance|Refrigeration efficiency factor 2 [model-proposed; physical meaning unverified]",
+  "heat engines|Carnot refrigerator coefficient of performance|Thermal efficiency ratio 2 [model-proposed; physical meaning unverified]",
+  "heat engines|Carnot heat pump coefficient of performance|Refrigeration efficiency factor 2 [model-proposed; physical meaning unverified]",
+  "heat engines|Carnot heat pump coefficient of performance|Thermal efficiency ratio 2 [model-proposed; physical meaning unverified]",
+  "heat engines|Low-dissipation refrigerator efficiency [model-proposed; physical meaning unverified]|Refrigeration efficiency factor 2 [model-proposed; physical meaning unverified]",
+  "heat engines|Low-dissipation refrigerator efficiency [model-proposed; physical meaning unverified]|Thermal efficiency ratio 2 [model-proposed; physical meaning unverified]",
+  "heat engines|Refrigeration efficiency factor [model-proposed; physical meaning unverified]|Refrigeration efficiency factor 2 [model-proposed; physical meaning unverified]",
+  "heat engines|Refrigeration efficiency factor [model-proposed; physical meaning unverified]|Thermal efficiency ratio 2 [model-proposed; physical meaning unverified]",
+  "heat engines|Refrigeration efficiency factor 2 [model-proposed; physical meaning unverified]|Carnot efficiency",
+  "heat engines|Refrigeration efficiency factor 2 [model-proposed; physical meaning unverified]|Curzon\u2013Ahlborn efficiency (endoreversible engine at maximum power)"
  ],
  "edges": [
   {
@@ -798,9 +942,58 @@
    "g": "Curzon\u2013Ahlborn efficiency (endoreversible engine at maximum power)",
    "kind": "lower",
    "k": "1"
+  },
+  {
+   "family": "heat engines",
+   "f": "Carnot refrigerator coefficient of performance",
+   "g": "Low-dissipation refrigerator efficiency [model-proposed; physical meaning unverified]",
+   "kind": "lower",
+   "k": "1"
+  },
+  {
+   "family": "heat engines",
+   "f": "Carnot heat pump coefficient of performance",
+   "g": "Carnot efficiency",
+   "kind": "lower",
+   "k": "1"
+  },
+  {
+   "family": "heat engines",
+   "f": "Carnot heat pump coefficient of performance",
+   "g": "low-dissipation engine efficiency at maximum power, upper bound (Esposito et al.)",
+   "kind": "lower",
+   "k": "1"
+  },
+  {
+   "family": "heat engines",
+   "f": "Carnot heat pump coefficient of performance",
+   "g": "Carnot refrigerator coefficient of performance",
+   "kind": "lower",
+   "k": "1"
+  },
+  {
+   "family": "heat engines",
+   "f": "Carnot heat pump coefficient of performance",
+   "g": "Low-dissipation refrigerator efficiency [model-proposed; physical meaning unverified]",
+   "kind": "lower",
+   "k": "3"
+  },
+  {
+   "family": "heat engines",
+   "f": "Low-dissipation refrigerator efficiency [model-proposed; physical meaning unverified]",
+   "g": "Refrigeration efficiency factor 2 [model-proposed; physical meaning unverified]",
+   "kind": "lower",
+   "k": "1"
+  },
+  {
+   "family": "heat engines",
+   "f": "Refrigeration efficiency factor [model-proposed; physical meaning unverified]",
+   "g": "Refrigeration efficiency factor 2 [model-proposed; physical meaning unverified]",
+   "kind": "lower",
+   "k": "1"
   }
  ],
- "rounds": 15,
+ "rounds": 21,
  "discoveries": [
   {
    "claim": "phy-e72aa596c5f7",
