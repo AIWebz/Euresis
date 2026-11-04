@@ -193,15 +193,36 @@ Per-law results: `space/srbench_clean.json` (no noise) and `space/srbench_noise1
 
 `python -m euresis research "your question"` runs Claude (`claude-opus-5-5`, adaptive thinking) as
 the reasoning core. Claude does the open-ended work: reading, connecting fields, and designing
-derivations and experiments. Every claim it can check, it must check with a tool that cannot
-make mistakes in its own domain:
+derivations and experiments. **Claude proposes; only verifiers decide.** It records its hypotheses
+and plan with `propose`, and every claim it wants to report must go through `submit_claim`, which
+writes it to the claims registry (`registry.py`) and runs the verification gate (`gate.py`) for its
+kind. The status comes from the verifier, never from the model, and there is no ungated prover tool.
+A claim counts as a discovery only when it is proved and not known. Claude may flag a result as
+known (`known_as`). Otherwise a proved claim is checked against the literature, and a close match
+marks it known.
+
+The final report is built in two parts. Every claim id that Claude cites, such as `[z3-0123456789ab]`,
+is rewritten with the status the gate recorded, and an id that isn't in the registry is marked
+*NOT IN REGISTRY — unverified*. Euresis then appends the authoritative claim table, the totals, the
+discoveries, any submitted claims the narrative left out, and the hypotheses (labelled as not
+results). The report is saved to `space/research/` and the claims to `space/claims.json`. If a run
+stops early, the claims gated so far are still reported.
+
+```bash
+python -m euresis claude-ping       # one test call: confirms credentials, never prints the key
+```
+
+```bash
+python -m euresis research "largest k with a/(b+c)+b/(c+a)+c/(a+b)-3/2 >= k((a²+b²+c²)/(ab+bc+ca)-1)?"
+```
 
 | Layer | Tool | What it does |
 |---|---|---|
 | Knowledge | `search_knowledge` | 391 laws, 128 principles, 47 constants, plus Euresis' own past results |
 | Literature | `search_literature`, `check_novelty` | arXiv, PubMed, Semantic Scholar and OpenAlex, plus a local SQLite full-text index that grows with every search |
 | Exact maths | `computer_algebra`, `check_dimensions` | SymPy, and Euresis' dimensional analysis |
-| Proof | `prove`, `check_lean` | Z3 theorem prover (gives a proof or a counterexample); Lean 4 when installed |
+| Planning | `propose` | Hypotheses and research plan, stored in the Thought Space as hypotheses, never as results |
+| Gate | `submit_claim` | Claim → registry → verifier for its kind: Z3 (`z3`, `inequality`, `physics-relation`), SymPy + mpmath (`identity`, `constant`), Lean 4 (`lean`), interval arithmetic (`orbit`, queued) |
 | Simulation | `simulate`, `run_experiment` | Nonlinear ODE models for physics (pendulum, orbits, projectiles, oscillators, RLC circuits, heat diffusion), chemistry (mass-action kinetics, Arrhenius) and climate (energy balance with ice-albedo feedback). Parameter sweeps feed the law search. |
 | Code | `run_python` | Sandboxed Python (numpy, scipy, sympy), with no network access, CPU/memory limits and a timeout |
 | Memory | `record_idea` | Re-verifies each idea, checks it against the literature, and stores it in the Thought Space |

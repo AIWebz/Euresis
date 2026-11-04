@@ -99,7 +99,19 @@ def cmd_research(a):
     report = core.research(a.question, max_turns=a.max_turns)
     if report:
         print("\n" + report)
+        print(f"report saved to {core.save_report(report).relative_to(ROOT)}; claims in space/claims.json")
+    else:
+        print("No report: Claude was not reachable (see message above). Nothing was claimed.")
     export()
+
+
+def cmd_claude_ping(a):
+    """Confirm Claude credentials with one minimal API call (the key itself is never printed)."""
+    from .llm import ping
+    r = ping()
+    for k, v in r.items():
+        print(f"  {k:14s} {v}")
+    sys.exit(0 if r["ok"] else 1)
 
 
 def cmd_literature(a):
@@ -423,6 +435,7 @@ def main(argv=None):
     jb = sub.add_parser("jobs"); jb.add_argument("action", choices=["list", "work"], nargs="?", default="list")
     jb.add_argument("--forever", action="store_true"); jb.set_defaults(fn=cmd_jobs)
     sub.add_parser("scorecard").set_defaults(fn=cmd_scorecard)
+    sub.add_parser("claude-ping", help="one test call to the Claude API").set_defaults(fn=cmd_claude_ping)
     sub.add_parser("writeup").set_defaults(fn=cmd_writeup)
     sub.add_parser("info").set_defaults(fn=cmd_info)
     t = sub.add_parser("train"); t.add_argument("--epochs", type=int, default=400); t.set_defaults(fn=cmd_train)
