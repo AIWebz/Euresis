@@ -242,3 +242,5 @@
 - 2026-11-04 19:12 round 229: Compton scattering
 - 2026-11-04 19:13 round 230: Cournot duopoly
 - 2026-11-04 19:15 round 231: insurance and risk
+- 2026-11-04 19:17 DISCOVERY (proved, sharp to 1e-6, two-variable): [economics: insurance and risk] Relative Risk Aversion [model-proposed; physical meaning unverified] ≥ 27 × risk premium   on p < 1, L < 1 (equality at (p, L) ≈ (0.5, 0.888889))  [phy-b5dc046e9dfe]
+- 2026-11-04 19:18 round 232: auction with a reserve price
