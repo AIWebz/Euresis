@@ -193,3 +193,28 @@
 - 2026-11-04 06:50 round 172: collisions
 - 2026-11-04 06:51 round 173: quantum step
 - 2026-11-04 06:53 round 174: acoustic Doppler
+- 2026-11-04 06:54 round 175: damped oscillator
+- 2026-11-04 06:55 round 176: wave boundary
+- 2026-11-04 06:56 round 177: relativity
+- 2026-11-04 06:58 round 178: kepler
+- 2026-11-04 06:59 round 179: heat engines
+- 2026-11-04 07:01 round 180: collisions
+- 2026-11-04 07:02 round 181: quantum step
+- 2026-11-04 07:04 round 182: acoustic Doppler
+- 2026-11-04 07:05 round 183: damped oscillator
+- 2026-11-04 07:06 round 184: wave boundary
+- 2026-11-04 07:07 model reply could not be parsed (wave boundary): '[{"name": "reflected energy ratio", "expr": (1 - r)**2 / (1 + r)**2}, {"name": "transmitted energy ratio", "expr": 4*r / (1 + r)**2}, {"name": "reflected intensity ratio", "expr": (1 - r)/(1 + r)}, {"name": "transmitted intensity ratio", "expr": 2/(1 + r)}]'
+- 2026-11-04 07:07 round 185: relativity
+- 2026-11-04 07:08 round 186: kepler
+- 2026-11-04 07:10 round 187: heat engines
+- 2026-11-04 07:11 round 188: collisions
+- 2026-11-04 07:12 round 189: quantum step
+- 2026-11-04 07:14 round 190: acoustic Doppler
+- 2026-11-04 07:15 round 191: damped oscillator
+- 2026-11-04 07:16 round 192: wave boundary
+- 2026-11-04 07:17 round 193: relativity
+- 2026-11-04 07:18 round 194: kepler
+- 2026-11-04 07:20 round 195: heat engines
+- 2026-11-04 07:21 round 196: collisions
+- 2026-11-04 07:23 round 197: quantum step
+- 2026-11-04 07:24 round 198: acoustic Doppler
