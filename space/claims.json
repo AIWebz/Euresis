@@ -7649,5 +7649,86 @@
   "statement": "[driven oscillator] Peak amplitude ratio [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Resonance frequency shift [model-proposed; physical meaning unverified]   on r < 2, z < 1 (tight only at the edge of the domain, near (5.78e-09, 3.02e-09))",
   "status": "proved",
   "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-92d33f96373e",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "sqrt(c**2*x**2 + 1)/(x*(c*x + 1)) >= 1/2*(1/(c*x + 1))",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 120",
+  "statement": "[Compton scattering] Scattered photon momentum / initial photon momentum [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 scattered photon energy / initial energy   on x < 2, c < 2 (tight only at the edge of the domain, near (2, 0.000182))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-5d840716262f",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'scattered photon energy / initial energy'",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "sqrt(c**2*x**2 + 1)/(x*(c*x + 1)) >= 1/4*(x/(c*x + 1))",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 120",
+  "statement": "[Compton scattering] Scattered photon momentum / initial photon momentum [model-proposed; physical meaning unverified] \u2265 1/4 \u00d7 scattered photon energy / (m_e c\u00b2)   on x < 2, c < 2 (tight only at the edge of the domain, near (2, 0.000182))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-740395ec8e3f",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'scattered photon energy / initial energy'",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "sqrt(c**2*x**2 + 1)/(x*(c*x + 1)) >= 1/2*(1/(2*c*x + 1))",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 120",
+  "statement": "[Compton scattering] Scattered photon momentum / initial photon momentum [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 Compton scattering formula (recoil angle cosine) [model-proposed; physical meaning unverified]   on x < 2, c < 2 (tight only at the edge of the domain, near (2, 5.9e-15))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]
