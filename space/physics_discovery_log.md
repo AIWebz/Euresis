@@ -130,3 +130,11 @@
 - 2026-11-04 05:25 round 113: relativity
 - 2026-11-04 05:27 round 114: kepler
 - 2026-11-04 05:29 round 115: heat engines
+- 2026-11-04 05:30 round 116: collisions
+- 2026-11-04 05:31 round 117: quantum step
+- 2026-11-04 05:33 round 118: acoustic Doppler
+- 2026-11-04 05:34 round 119: damped oscillator
+- 2026-11-04 05:35 round 120: wave boundary
+- 2026-11-04 05:36 round 121: relativity
+- 2026-11-04 05:37 round 122: kepler
+- 2026-11-04 05:38 segment end: 122 rounds, 2 discoveries, 2 known laws rediscovered
