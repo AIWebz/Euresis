@@ -129,3 +129,4 @@
 - 2026-11-04 05:25 round 112: wave boundary
 - 2026-11-04 05:25 round 113: relativity
 - 2026-11-04 05:27 round 114: kepler
+- 2026-11-04 05:29 round 115: heat engines

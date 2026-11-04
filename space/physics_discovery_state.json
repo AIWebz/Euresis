@@ -18,7 +18,8 @@
    "semi-minor axis / a": "sqrt(1 - e**2)",
    "semi-latus rectum / a": "1 - e**2",
    "time-averaged distance / a": "1 + e**2/2",
-   "angular velocity at perihelion / (sqrt(GM)/a^(3/2)) [model-proposed; physical meaning unverified]": "sqrt(e + 1)*sqrt(1/(1 - e**3))"
+   "angular velocity at perihelion / (sqrt(GM)/a^(3/2)) [model-proposed; physical meaning unverified]": "sqrt(e + 1)*sqrt(1/(1 - e**3))",
+   "true anomaly at perihelion / pi [model-proposed; physical meaning unverified]": "e/(sqrt(1 - e**2) + 1)"
   },
   "heat engines": {
    "Carnot efficiency": "1 - t",
@@ -2081,6 +2082,21 @@
    "family": "relativity",
    "expr": "1/(1 - b**2)",
    "why": "a power or product of known quantities: C \u00b7 (Lorentz factor \u03b3)^0.733 \u00b7 (classical kinetic energy / mc\u00b2)^-0.267 \u00b7 (relativistic momentum / (mc))^0.535 \u00b7 (time-dilation factor 1/\u03b3)^-0.733"
+  },
+  {
+   "family": "kepler",
+   "expr": "sqrt(1 - e**2) * sqrt(1 - e) * sqrt(1 + e)",
+   "why": "affine combination of known quantities (perihelion distance / a, semi-latus rectum / a)"
+  },
+  {
+   "family": "kepler",
+   "expr": "2 * pi / sqrt(1 - e**2) * sqrt(1 - e) * sqrt(1 + e)",
+   "why": "affine combination of known quantities (perihelion distance / a)"
+  },
+  {
+   "family": "kepler",
+   "expr": "1 - (1 + e) / (2 * sqrt(1 - e**2))",
+   "why": "not positive on the physical domain"
   }
  ],
  "tried": [
@@ -2497,7 +2513,23 @@
   "kepler|angular velocity at perihelion / (sqrt(GM)/a^(3/2)) [model-proposed; physical meaning unverified]|aphelion speed / circular speed at a",
   "kepler|angular velocity at perihelion / (sqrt(GM)/a^(3/2)) [model-proposed; physical meaning unverified]|semi-minor axis / a",
   "kepler|angular velocity at perihelion / (sqrt(GM)/a^(3/2)) [model-proposed; physical meaning unverified]|semi-latus rectum / a",
-  "kepler|angular velocity at perihelion / (sqrt(GM)/a^(3/2)) [model-proposed; physical meaning unverified]|time-averaged distance / a"
+  "kepler|angular velocity at perihelion / (sqrt(GM)/a^(3/2)) [model-proposed; physical meaning unverified]|time-averaged distance / a",
+  "kepler|perihelion distance / a|true anomaly at perihelion / pi [model-proposed; physical meaning unverified]",
+  "kepler|aphelion distance / a|true anomaly at perihelion / pi [model-proposed; physical meaning unverified]",
+  "kepler|perihelion speed / circular speed at a|true anomaly at perihelion / pi [model-proposed; physical meaning unverified]",
+  "kepler|aphelion speed / circular speed at a|true anomaly at perihelion / pi [model-proposed; physical meaning unverified]",
+  "kepler|semi-minor axis / a|true anomaly at perihelion / pi [model-proposed; physical meaning unverified]",
+  "kepler|semi-latus rectum / a|true anomaly at perihelion / pi [model-proposed; physical meaning unverified]",
+  "kepler|time-averaged distance / a|true anomaly at perihelion / pi [model-proposed; physical meaning unverified]",
+  "kepler|angular velocity at perihelion / (sqrt(GM)/a^(3/2)) [model-proposed; physical meaning unverified]|true anomaly at perihelion / pi [model-proposed; physical meaning unverified]",
+  "kepler|true anomaly at perihelion / pi [model-proposed; physical meaning unverified]|perihelion distance / a",
+  "kepler|true anomaly at perihelion / pi [model-proposed; physical meaning unverified]|aphelion distance / a",
+  "kepler|true anomaly at perihelion / pi [model-proposed; physical meaning unverified]|perihelion speed / circular speed at a",
+  "kepler|true anomaly at perihelion / pi [model-proposed; physical meaning unverified]|aphelion speed / circular speed at a",
+  "kepler|true anomaly at perihelion / pi [model-proposed; physical meaning unverified]|semi-minor axis / a",
+  "kepler|true anomaly at perihelion / pi [model-proposed; physical meaning unverified]|semi-latus rectum / a",
+  "kepler|true anomaly at perihelion / pi [model-proposed; physical meaning unverified]|time-averaged distance / a",
+  "kepler|true anomaly at perihelion / pi [model-proposed; physical meaning unverified]|angular velocity at perihelion / (sqrt(GM)/a^(3/2)) [model-proposed; physical meaning unverified]"
  ],
  "edges": [
   {
@@ -3271,7 +3303,7 @@
    "k": "1"
   }
  ],
- "rounds": 113,
+ "rounds": 114,
  "discoveries": [
   {
    "claim": "phy-e72aa596c5f7",
