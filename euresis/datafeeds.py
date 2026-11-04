@@ -218,7 +218,11 @@ def analyse(path: Path, item: dict, reg: Registry, echo=print) -> list[dict]:
             # trivial: the same quantity twice (duplicate, rescaled or shifted column)
             if abs(np.corrcoef(x, y)[0, 1]) > 0.995:
                 continue                      # the same quantity measured twice (e.g. left/right, duplicate sensors)
-            names = {str(cx).strip().lower(), str(cy).strip().lower()}
+            a_, b_ = str(cx).strip().lower(), str(cy).strip().lower()
+            if a_ != b_ and (a_.startswith(b_) or b_.startswith(a_) or a_.endswith(b_) or b_.endswith(a_)) and \
+                    min(len(a_), len(b_)) >= 2:
+                continue                      # derived column: x vs x_mean, x_max, log_x, …
+            names = {a_, b_}
             if names & {"se", "sem", "standard error", "std_err", "stderr"} and names & {"n", "sample size", "n_total", "size"}:
                 continue                      # SE = σ/√n: a statistical identity, not a law
             order = np.arange(len(x))
