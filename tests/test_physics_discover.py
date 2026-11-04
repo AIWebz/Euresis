@@ -4,7 +4,8 @@ from euresis.registry import Registry
 
 def test_validation():
     known = d.FAMILIES["relativity"]["quantities"]
-    assert d.validate("relativity", "b**2*(1-b**2)", known)[1] == "ok"
+    assert d.validate("relativity", "b**2*(1-b**2)", known)[1].startswith("a power or product")   # = 2·KE·(1/γ)²
+    assert d.validate("relativity", "1 + b**3", known)[1] == "ok"
     assert d.validate("relativity", "1/(1-b)", known)[1].startswith("a power or product of known")   # = γ × Doppler factor
     assert d.validate("relativity", "b - 1", known)[1] == "not positive on the physical domain"
     assert d.validate("relativity", "exp(b)", known)[1].startswith("only")
