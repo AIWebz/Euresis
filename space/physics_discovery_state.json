@@ -27,7 +27,28 @@
    "Carnot heat pump coefficient of performance": "1/(1 - t)"
   }
  },
- "rejected": [],
+ "rejected": [
+  {
+   "family": "kepler",
+   "expr": "sqrt(1 - e**2) * sqrt(1 - e**2)",
+   "why": "product of known quantities (perihelion distance / a, aphelion distance / a)"
+  },
+  {
+   "family": "kepler",
+   "expr": "sqrt(1 - e**2) * sqrt(1 - e**2)",
+   "why": "product of known quantities (perihelion distance / a, aphelion distance / a)"
+  },
+  {
+   "family": "kepler",
+   "expr": "sqrt(1 - e**2) * sqrt(1 - e**2)",
+   "why": "product of known quantities (perihelion distance / a, aphelion distance / a)"
+  },
+  {
+   "family": "kepler",
+   "expr": "sqrt(1 - e**2) * sqrt(1 - e**2)",
+   "why": "product of known quantities (perihelion distance / a, aphelion distance / a)"
+  }
+ ],
  "tried": [
   "relativity|Lorentz factor \u03b3|relativistic kinetic energy / mc\u00b2",
   "relativity|Lorentz factor \u03b3|classical kinetic energy / mc\u00b2",
@@ -44,7 +65,23 @@
   "relativity|relativistic kinetic energy / mc\u00b2|relative speed of two bodies each at speed b, head-on (velocity addition) / c",
   "relativity|relativistic kinetic energy / mc\u00b2|kinetic energy / (momentum \u00d7 c)",
   "relativity|classical kinetic energy / mc\u00b2|Lorentz factor \u03b3",
-  "relativity|classical kinetic energy / mc\u00b2|relativistic kinetic energy / mc\u00b2"
+  "relativity|classical kinetic energy / mc\u00b2|relativistic kinetic energy / mc\u00b2",
+  "kepler|perihelion distance / a|aphelion distance / a",
+  "kepler|perihelion distance / a|perihelion speed / circular speed at a",
+  "kepler|perihelion distance / a|aphelion speed / circular speed at a",
+  "kepler|perihelion distance / a|semi-minor axis / a",
+  "kepler|perihelion distance / a|semi-latus rectum / a",
+  "kepler|perihelion distance / a|time-averaged distance / a",
+  "kepler|aphelion distance / a|perihelion distance / a",
+  "kepler|aphelion distance / a|perihelion speed / circular speed at a",
+  "kepler|aphelion distance / a|aphelion speed / circular speed at a",
+  "kepler|aphelion distance / a|semi-minor axis / a",
+  "kepler|aphelion distance / a|semi-latus rectum / a",
+  "kepler|aphelion distance / a|time-averaged distance / a",
+  "kepler|perihelion speed / circular speed at a|perihelion distance / a",
+  "kepler|perihelion speed / circular speed at a|aphelion distance / a",
+  "kepler|perihelion speed / circular speed at a|aphelion speed / circular speed at a",
+  "kepler|perihelion speed / circular speed at a|semi-minor axis / a"
  ],
  "edges": [
   {
@@ -67,9 +104,79 @@
    "g": "time-dilation factor 1/\u03b3",
    "kind": "lower",
    "k": "1"
+  },
+  {
+   "family": "kepler",
+   "f": "perihelion distance / a",
+   "g": "semi-latus rectum / a",
+   "kind": "lower",
+   "k": "1/2"
+  },
+  {
+   "family": "kepler",
+   "f": "aphelion distance / a",
+   "g": "perihelion distance / a",
+   "kind": "lower",
+   "k": "1"
+  },
+  {
+   "family": "kepler",
+   "f": "aphelion distance / a",
+   "g": "aphelion speed / circular speed at a",
+   "kind": "lower",
+   "k": "1"
+  },
+  {
+   "family": "kepler",
+   "f": "aphelion distance / a",
+   "g": "semi-minor axis / a",
+   "kind": "lower",
+   "k": "1"
+  },
+  {
+   "family": "kepler",
+   "f": "aphelion distance / a",
+   "g": "semi-latus rectum / a",
+   "kind": "lower",
+   "k": "1"
+  },
+  {
+   "family": "kepler",
+   "f": "aphelion distance / a",
+   "g": "time-averaged distance / a",
+   "kind": "lower",
+   "k": "1"
+  },
+  {
+   "family": "kepler",
+   "f": "perihelion speed / circular speed at a",
+   "g": "perihelion distance / a",
+   "kind": "lower",
+   "k": "1"
+  },
+  {
+   "family": "kepler",
+   "f": "perihelion speed / circular speed at a",
+   "g": "aphelion distance / a",
+   "kind": "lower",
+   "k": "1"
+  },
+  {
+   "family": "kepler",
+   "f": "perihelion speed / circular speed at a",
+   "g": "aphelion speed / circular speed at a",
+   "kind": "lower",
+   "k": "1"
+  },
+  {
+   "family": "kepler",
+   "f": "perihelion speed / circular speed at a",
+   "g": "semi-minor axis / a",
+   "kind": "lower",
+   "k": "1"
   }
  ],
- "rounds": 1,
+ "rounds": 2,
  "discoveries": [],
  "rediscoveries": []
 }
