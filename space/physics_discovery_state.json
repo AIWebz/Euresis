@@ -17,7 +17,8 @@
    "aphelion speed / circular speed at a": "sqrt((1 - e)/(1 + e))",
    "semi-minor axis / a": "sqrt(1 - e**2)",
    "semi-latus rectum / a": "1 - e**2",
-   "time-averaged distance / a": "1 + e**2/2"
+   "time-averaged distance / a": "1 + e**2/2",
+   "angular velocity at perihelion / (sqrt(GM)/a^(3/2)) [model-proposed; physical meaning unverified]": "sqrt(e + 1)*sqrt(1/(1 - e**3))"
   },
   "heat engines": {
    "Carnot efficiency": "1 - t",
@@ -1685,6 +1686,261 @@
    "family": "quantum step",
    "expr": "log(4*sqrt(1 - x)/(1 + sqrt(1 - x))**2)",
    "why": "only + \u2212 \u00d7 \u00f7, integer powers and square roots (so the prover can decide it)"
+  },
+  {
+   "family": "acoustic Doppler",
+   "expr": "1 / (1 - m)",
+   "why": "affine combination of known quantities (frequency ratio, source approaching)"
+  },
+  {
+   "family": "acoustic Doppler",
+   "expr": "(1 - m) / (1 + m)",
+   "why": "affine combination of known quantities (frequency ratio, source approaching, 1/(frequency ratio, source and observer approaching at the same speed))"
+  },
+  {
+   "family": "acoustic Doppler",
+   "expr": "m / (1 - m**2)",
+   "why": "affine combination of known quantities (frequency ratio, source approaching, frequency ratio, source receding)"
+  },
+  {
+   "family": "acoustic Doppler",
+   "expr": "1 / (1 - m)",
+   "why": "affine combination of known quantities (frequency ratio, source approaching)"
+  },
+  {
+   "family": "damped oscillator",
+   "expr": "2 * pi * z / sqrt(1 - z**2)",
+   "why": "affine combination of known quantities (damped frequency / natural frequency, decay rate / damped frequency)"
+  },
+  {
+   "family": "damped oscillator",
+   "expr": "1 - exp(-2 * pi * z / sqrt(1 - z**2))",
+   "why": "only + \u2212 \u00d7 \u00f7, integer powers and square roots (so the prover can decide it)"
+  },
+  {
+   "family": "damped oscillator",
+   "expr": "1 / (2 * pi * z)",
+   "why": "affine combination of known quantities (damped frequency / natural frequency, quality factor Q)"
+  },
+  {
+   "family": "damped oscillator",
+   "expr": "1 - z**2",
+   "why": "a power or product of known quantities: C \u00b7 (damped frequency / natural frequency)^0.798 \u00b7 (quality factor Q)^-0.202 \u00b7 (decay rate / damped frequency)^-0.403 \u00b7 (energy decay rate / natural frequency)^0.20"
+  },
+  {
+   "family": "wave boundary",
+   "expr": "(1 - r)**2 / (1 + r)**2",
+   "why": "affine combination of known quantities (reflected power fraction)"
+  },
+  {
+   "family": "wave boundary",
+   "expr": "4*r / (1 + r)**2",
+   "why": "affine combination of known quantities (reflected power fraction)"
+  },
+  {
+   "family": "wave boundary",
+   "expr": "1 / r",
+   "why": "affine combination of known quantities (reflected power fraction, standing-wave ratio)"
+  },
+  {
+   "family": "wave boundary",
+   "expr": "r",
+   "why": "affine combination of known quantities (reflected power fraction, 1/(transmitted amplitude ratio))"
+  },
+  {
+   "family": "relativity",
+   "expr": "1/sqrt(1 - b**2)",
+   "why": "affine combination of known quantities (Lorentz factor \u03b3)"
+  },
+  {
+   "family": "relativity",
+   "expr": "b**2/(1 - b**2)",
+   "why": "a power or product of known quantities: C \u00b7 (Lorentz factor \u03b3)^0.535 \u00b7 (classical kinetic energy / mc\u00b2)^0.535 \u00b7 (relativistic momentum / (mc))^0.931 \u00b7 (time-dilation factor 1/\u03b3)^-0.535"
+  },
+  {
+   "family": "relativity",
+   "expr": "sqrt((1 - b)/(1 + b))",
+   "why": "affine combination of known quantities (Lorentz factor \u03b3, relativistic momentum / (mc))"
+  },
+  {
+   "family": "relativity",
+   "expr": "1/(1 - b**2)",
+   "why": "a power or product of known quantities: C \u00b7 (Lorentz factor \u03b3)^0.733 \u00b7 (classical kinetic energy / mc\u00b2)^-0.267 \u00b7 (relativistic momentum / (mc))^0.535 \u00b7 (time-dilation factor 1/\u03b3)^-0.733"
+  },
+  {
+   "family": "kepler",
+   "expr": "sqrt(1 - e**2)",
+   "why": "affine combination of known quantities (perihelion distance / a, semi-minor axis / a)"
+  },
+  {
+   "family": "kepler",
+   "expr": "1 / sqrt(1 - e**2)",
+   "why": "affine combination of known quantities (perihelion distance / a, 1/(semi-minor axis / a))"
+  },
+  {
+   "family": "kepler",
+   "expr": "1",
+   "why": "must depend on e only"
+  },
+  {
+   "family": "kepler",
+   "expr": "sqrt(1 - e**2)",
+   "why": "affine combination of known quantities (perihelion distance / a, semi-minor axis / a)"
+  },
+  {
+   "family": "heat engines",
+   "expr": "sqrt(t)/(1 - sqrt(t))",
+   "why": "affine combination of known quantities (Carnot efficiency, 1/(Curzon\u2013Ahlborn efficiency (endoreversible engine at maximum power)))"
+  },
+  {
+   "family": "heat engines",
+   "expr": "(1 - t)/(1 + t)",
+   "why": "affine combination of known quantities (Carnot efficiency, low-dissipation engine efficiency at maximum power, upper bound (Esposito et al.))"
+  },
+  {
+   "family": "heat engines",
+   "expr": "sqrt(t)/(1 + sqrt(t))",
+   "why": "a power or product of known quantities: C \u00b7 (Carnot efficiency)^-0.25 \u00b7 (Curzon\u2013Ahlborn efficiency (endoreversible engine at maximum power))^1 \u00b7 (Carnot refrigerator coefficient of performance)^0.5 \u00b7 (Car"
+  },
+  {
+   "family": "heat engines",
+   "expr": "1/(1 - t)",
+   "why": "affine combination of known quantities (Carnot efficiency, Carnot refrigerator coefficient of performance)"
+  },
+  {
+   "family": "collisions",
+   "expr": "((1 - m)/(1 + m))**2",
+   "why": "affine combination of known quantities (elastic: rebound speed of the projectile / initial speed, elastic: fraction of kinetic energy transferred to the target)"
+  },
+  {
+   "family": "collisions",
+   "expr": "(((1 - m)/(1 + m))**2) / (4*m/(1 + m)**2)",
+   "why": "affine combination of known quantities (elastic: rebound speed of the projectile / initial speed, 1/(elastic: fraction of kinetic energy transferred to the target))"
+  },
+  {
+   "family": "collisions",
+   "expr": "( ( (1 - m)/(1 + m) ) - (m/(1 + m)) ) / (1 - 0)",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "collisions",
+   "expr": "(((1 - m)/(1 + m)) / (2*m/(1 + m)))",
+   "why": "affine combination of known quantities (elastic: rebound speed of the projectile / initial speed, 1/(elastic: speed of the target / initial speed))"
+  },
+  {
+   "family": "quantum step",
+   "expr": "2*sqrt(1 - x)/(1 + sqrt(1 - x))",
+   "why": "affine combination of known quantities (wavenumber ratio k2/k1 beyond the step, transmitted amplitude ratio)"
+  },
+  {
+   "family": "quantum step",
+   "expr": "2*sqrt(1 - x)/(1 - sqrt(1 - x))",
+   "why": "affine combination of known quantities (wavenumber ratio k2/k1 beyond the step, 1/(reflected amplitude ratio))"
+  },
+  {
+   "family": "quantum step",
+   "expr": "2*sqrt(1 - x)",
+   "why": "affine combination of known quantities (wavenumber ratio k2/k1 beyond the step)"
+  },
+  {
+   "family": "quantum step",
+   "expr": "2*sqrt(x)",
+   "why": "affine combination of known quantities (wavenumber ratio k2/k1 beyond the step, Phase difference between reflected and transmitted waves [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "acoustic Doppler",
+   "expr": "1 / (1 - m)",
+   "why": "affine combination of known quantities (frequency ratio, source approaching)"
+  },
+  {
+   "family": "acoustic Doppler",
+   "expr": "(1 + m) / (1 - m)",
+   "why": "affine combination of known quantities (frequency ratio, source approaching)"
+  },
+  {
+   "family": "acoustic Doppler",
+   "expr": "(1 - m) / (1 + m)",
+   "why": "affine combination of known quantities (frequency ratio, source approaching, 1/(frequency ratio, source and observer approaching at the same speed))"
+  },
+  {
+   "family": "acoustic Doppler",
+   "expr": "1 / (1 - m) - 1",
+   "why": "affine combination of known quantities (frequency ratio, source approaching)"
+  },
+  {
+   "family": "damped oscillator",
+   "expr": "2 * pi * z / sqrt(1 - z**2)",
+   "why": "affine combination of known quantities (damped frequency / natural frequency, decay rate / damped frequency)"
+  },
+  {
+   "family": "damped oscillator",
+   "expr": "1 - exp(-2 * pi * z / sqrt(1 - z**2))",
+   "why": "only + \u2212 \u00d7 \u00f7, integer powers and square roots (so the prover can decide it)"
+  },
+  {
+   "family": "damped oscillator",
+   "expr": "1/(2 * z * sqrt(1 - z**2))",
+   "why": "affine combination of known quantities (decay rate / damped frequency, 1/(decay rate / damped frequency))"
+  },
+  {
+   "family": "damped oscillator",
+   "expr": "2 * pi * z / sqrt(1 - z**2)",
+   "why": "affine combination of known quantities (damped frequency / natural frequency, decay rate / damped frequency)"
+  },
+  {
+   "family": "wave boundary",
+   "expr": "(1 - r)**2 / (1 + r)**2",
+   "why": "affine combination of known quantities (reflected power fraction)"
+  },
+  {
+   "family": "wave boundary",
+   "expr": "4*r / (1 + r)**2",
+   "why": "affine combination of known quantities (reflected power fraction)"
+  },
+  {
+   "family": "wave boundary",
+   "expr": "1 / r",
+   "why": "affine combination of known quantities (reflected power fraction, standing-wave ratio)"
+  },
+  {
+   "family": "wave boundary",
+   "expr": "(1 - r)**2 / (1 + r)**2",
+   "why": "affine combination of known quantities (reflected power fraction)"
+  },
+  {
+   "family": "relativity",
+   "expr": "1/sqrt(1 - b**2)",
+   "why": "affine combination of known quantities (Lorentz factor \u03b3)"
+  },
+  {
+   "family": "relativity",
+   "expr": "1/sqrt(1 - b**2)",
+   "why": "affine combination of known quantities (Lorentz factor \u03b3)"
+  },
+  {
+   "family": "relativity",
+   "expr": "sqrt((1 - b)/(1 + b))",
+   "why": "affine combination of known quantities (Lorentz factor \u03b3, relativistic momentum / (mc))"
+  },
+  {
+   "family": "relativity",
+   "expr": "1/(1 - b**2)",
+   "why": "a power or product of known quantities: C \u00b7 (Lorentz factor \u03b3)^0.733 \u00b7 (classical kinetic energy / mc\u00b2)^-0.267 \u00b7 (relativistic momentum / (mc))^0.535 \u00b7 (time-dilation factor 1/\u03b3)^-0.733"
+  },
+  {
+   "family": "kepler",
+   "expr": "sqrt(1 - e**2)",
+   "why": "affine combination of known quantities (perihelion distance / a, semi-minor axis / a)"
+  },
+  {
+   "family": "kepler",
+   "expr": "1 / sqrt(1 - e**2)",
+   "why": "affine combination of known quantities (perihelion distance / a, 1/(semi-minor axis / a))"
+  },
+  {
+   "family": "kepler",
+   "expr": "-e**2 / (1 - e**2)",
+   "why": "not positive on the physical domain"
   }
  ],
  "tried": [
@@ -2087,7 +2343,21 @@
   "quantum step|Phase difference between reflected and transmitted waves [model-proposed; physical meaning unverified]|transmission probability",
   "quantum step|Phase difference between reflected and transmitted waves [model-proposed; physical meaning unverified]|reflection probability",
   "quantum step|Phase difference between reflected and transmitted waves [model-proposed; physical meaning unverified]|transmitted amplitude ratio",
-  "quantum step|Phase difference between reflected and transmitted waves [model-proposed; physical meaning unverified]|reflected amplitude ratio"
+  "quantum step|Phase difference between reflected and transmitted waves [model-proposed; physical meaning unverified]|reflected amplitude ratio",
+  "kepler|perihelion distance / a|angular velocity at perihelion / (sqrt(GM)/a^(3/2)) [model-proposed; physical meaning unverified]",
+  "kepler|aphelion distance / a|angular velocity at perihelion / (sqrt(GM)/a^(3/2)) [model-proposed; physical meaning unverified]",
+  "kepler|perihelion speed / circular speed at a|angular velocity at perihelion / (sqrt(GM)/a^(3/2)) [model-proposed; physical meaning unverified]",
+  "kepler|aphelion speed / circular speed at a|angular velocity at perihelion / (sqrt(GM)/a^(3/2)) [model-proposed; physical meaning unverified]",
+  "kepler|semi-minor axis / a|angular velocity at perihelion / (sqrt(GM)/a^(3/2)) [model-proposed; physical meaning unverified]",
+  "kepler|semi-latus rectum / a|angular velocity at perihelion / (sqrt(GM)/a^(3/2)) [model-proposed; physical meaning unverified]",
+  "kepler|time-averaged distance / a|angular velocity at perihelion / (sqrt(GM)/a^(3/2)) [model-proposed; physical meaning unverified]",
+  "kepler|angular velocity at perihelion / (sqrt(GM)/a^(3/2)) [model-proposed; physical meaning unverified]|perihelion distance / a",
+  "kepler|angular velocity at perihelion / (sqrt(GM)/a^(3/2)) [model-proposed; physical meaning unverified]|aphelion distance / a",
+  "kepler|angular velocity at perihelion / (sqrt(GM)/a^(3/2)) [model-proposed; physical meaning unverified]|perihelion speed / circular speed at a",
+  "kepler|angular velocity at perihelion / (sqrt(GM)/a^(3/2)) [model-proposed; physical meaning unverified]|aphelion speed / circular speed at a",
+  "kepler|angular velocity at perihelion / (sqrt(GM)/a^(3/2)) [model-proposed; physical meaning unverified]|semi-minor axis / a",
+  "kepler|angular velocity at perihelion / (sqrt(GM)/a^(3/2)) [model-proposed; physical meaning unverified]|semi-latus rectum / a",
+  "kepler|angular velocity at perihelion / (sqrt(GM)/a^(3/2)) [model-proposed; physical meaning unverified]|time-averaged distance / a"
  ],
  "edges": [
   {
@@ -2817,9 +3087,51 @@
    "g": "transmitted amplitude ratio",
    "kind": "lower",
    "k": "1"
+  },
+  {
+   "family": "kepler",
+   "f": "perihelion speed / circular speed at a",
+   "g": "angular velocity at perihelion / (sqrt(GM)/a^(3/2)) [model-proposed; physical meaning unverified]",
+   "kind": "lower",
+   "k": "1"
+  },
+  {
+   "family": "kepler",
+   "f": "angular velocity at perihelion / (sqrt(GM)/a^(3/2)) [model-proposed; physical meaning unverified]",
+   "g": "perihelion distance / a",
+   "kind": "lower",
+   "k": "1"
+  },
+  {
+   "family": "kepler",
+   "f": "angular velocity at perihelion / (sqrt(GM)/a^(3/2)) [model-proposed; physical meaning unverified]",
+   "g": "aphelion speed / circular speed at a",
+   "kind": "lower",
+   "k": "1"
+  },
+  {
+   "family": "kepler",
+   "f": "angular velocity at perihelion / (sqrt(GM)/a^(3/2)) [model-proposed; physical meaning unverified]",
+   "g": "semi-minor axis / a",
+   "kind": "lower",
+   "k": "1"
+  },
+  {
+   "family": "kepler",
+   "f": "angular velocity at perihelion / (sqrt(GM)/a^(3/2)) [model-proposed; physical meaning unverified]",
+   "g": "semi-latus rectum / a",
+   "kind": "lower",
+   "k": "1"
+  },
+  {
+   "family": "kepler",
+   "f": "angular velocity at perihelion / (sqrt(GM)/a^(3/2)) [model-proposed; physical meaning unverified]",
+   "g": "time-averaged distance / a",
+   "kind": "lower",
+   "k": "1"
   }
  ],
- "rounds": 93,
+ "rounds": 106,
  "discoveries": [
   {
    "claim": "phy-e72aa596c5f7",

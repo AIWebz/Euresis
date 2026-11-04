@@ -3131,5 +3131,149 @@
   "statement": "[wave boundary] standing-wave ratio \u2265 1 \u00d7 transmitted amplitude ratio   for 0 < r < 1 (tight only in the limit r \u2192 1)",
   "status": "proved",
   "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-d6c482723835",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "e < 1"
+   ],
+   "claim": "sqrt(e + 1)*sqrt(1/(1 - e)) >= 1*(sqrt(e + 1)*sqrt(1/(1 - e**3)))",
+   "symbols": [
+    "e"
+   ]
+  },
+  "source": "physics_discover round 106",
+  "statement": "[kepler] perihelion speed / circular speed at a \u2265 1 \u00d7 angular velocity at perihelion / (sqrt(GM)/a^(3/2)) [model-proposed; physical meaning unverified]   for 0 < e < 1 (tight only in the limit e \u2192 0)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-3d2f049314d0",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "e < 1"
+   ],
+   "claim": "sqrt(e + 1)*sqrt(1/(1 - e**3)) >= 1*(1 - e)",
+   "symbols": [
+    "e"
+   ]
+  },
+  "source": "physics_discover round 106",
+  "statement": "[kepler] angular velocity at perihelion / (sqrt(GM)/a^(3/2)) [model-proposed; physical meaning unverified] \u2265 1 \u00d7 perihelion distance / a   for 0 < e < 1 (tight only in the limit e \u2192 0)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-d4b577aaf94f",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "e < 1"
+   ],
+   "claim": "sqrt(e + 1)*sqrt(1/(1 - e**3)) >= 1*(sqrt(1 - e)/sqrt(e + 1))",
+   "symbols": [
+    "e"
+   ]
+  },
+  "source": "physics_discover round 106",
+  "statement": "[kepler] angular velocity at perihelion / (sqrt(GM)/a^(3/2)) [model-proposed; physical meaning unverified] \u2265 1 \u00d7 aphelion speed / circular speed at a   for 0 < e < 1 (tight only in the limit e \u2192 0)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-4a359e0eead2",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "e < 1"
+   ],
+   "claim": "sqrt(e + 1)*sqrt(1/(1 - e**3)) >= 1*(sqrt(1 - e**2))",
+   "symbols": [
+    "e"
+   ]
+  },
+  "source": "physics_discover round 106",
+  "statement": "[kepler] angular velocity at perihelion / (sqrt(GM)/a^(3/2)) [model-proposed; physical meaning unverified] \u2265 1 \u00d7 semi-minor axis / a   for 0 < e < 1 (tight only in the limit e \u2192 0)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-9ef38f8c673c",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'semi-minor axis / a'",
+  "payload": {
+   "assumptions": [
+    "e < 1"
+   ],
+   "claim": "sqrt(e + 1)*sqrt(1/(1 - e**3)) >= 1*(1 - e**2)",
+   "symbols": [
+    "e"
+   ]
+  },
+  "source": "physics_discover round 106",
+  "statement": "[kepler] angular velocity at perihelion / (sqrt(GM)/a^(3/2)) [model-proposed; physical meaning unverified] \u2265 1 \u00d7 semi-latus rectum / a   for 0 < e < 1 (tight only in the limit e \u2192 0)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-760b1103fef2",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "e < 1"
+   ],
+   "claim": "sqrt(e + 1)*sqrt(1/(1 - e**3)) >= 1*(e**2/2 + 1)",
+   "symbols": [
+    "e"
+   ]
+  },
+  "source": "physics_discover round 106",
+  "statement": "[kepler] angular velocity at perihelion / (sqrt(GM)/a^(3/2)) [model-proposed; physical meaning unverified] \u2265 1 \u00d7 time-averaged distance / a   for 0 < e < 1 (tight only in the limit e \u2192 0)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]
