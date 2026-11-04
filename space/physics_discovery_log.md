@@ -14,3 +14,6 @@
 - 2026-11-04 03:29 round 7: relativity
 - 2026-11-04 03:30 segment start (budget 100 min; model: Qwen3-14B; 2 discoveries so far)
 - 2026-11-04 03:30 round 7: relativity
+- 2026-11-04 03:31 round 8: kepler
+- 2026-11-04 03:32 round 9: heat engines
+- 2026-11-04 03:33 round 10: relativity

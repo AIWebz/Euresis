@@ -1307,5 +1307,293 @@
   "statement": "[heat engines] Curzon\u2013Ahlborn refrigerator efficiency \u2265 2 \u00d7 Carnot refrigerator coefficient of performance   for 0 < t < 1 (tight only in the limit t \u2192 1)",
   "status": "proved",
   "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "b < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-63715d81c58a",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'Lorentz factor \u03b3'",
+  "payload": {
+   "assumptions": [
+    "b < 1"
+   ],
+   "claim": "sqrt(b + 1)*sqrt(1/(1 - b)) >= 1*(sqrt(1 - b**2))",
+   "symbols": [
+    "b"
+   ]
+  },
+  "source": "physics_discover round 7",
+  "statement": "[relativity] relativistic Doppler factor (approaching source) \u2265 1 \u00d7 time-dilation factor 1/\u03b3   for 0 < b < 1 (tight only in the limit b \u2192 0)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "b < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-57b9a7e7c745",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "b < 1"
+   ],
+   "claim": "2*b/(b**2 + 1) >= 2*(b**2/2)",
+   "symbols": [
+    "b"
+   ]
+  },
+  "source": "physics_discover round 7",
+  "statement": "[relativity] relative speed of two bodies each at speed b, head-on (velocity addition) / c \u2265 2 \u00d7 classical kinetic energy / mc\u00b2   for 0 < b < 1 (tight only in the limit b \u2192 1)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-11dc6302129d",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "e < 1"
+   ],
+   "claim": "sqrt(1 - e)/sqrt(e + 1) >= 1*(1 - e)",
+   "symbols": [
+    "e"
+   ]
+  },
+  "source": "physics_discover round 8",
+  "statement": "[kepler] aphelion speed / circular speed at a \u2265 1 \u00d7 perihelion distance / a   for 0 < e < 1 (tight only in the limit e \u2192 0)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-dd2ad0e9fc44",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "e < 1"
+   ],
+   "claim": "sqrt(1 - e)/sqrt(e + 1) >= 1/2*(sqrt(1 - e**2))",
+   "symbols": [
+    "e"
+   ]
+  },
+  "source": "physics_discover round 8",
+  "statement": "[kepler] aphelion speed / circular speed at a \u2265 1/2 \u00d7 semi-minor axis / a   for 0 < e < 1 (tight only in the limit e \u2192 1)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-6f29a76059bc",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "e < 1"
+   ],
+   "claim": "sqrt(1 - e**2) >= 1*(1 - e)",
+   "symbols": [
+    "e"
+   ]
+  },
+  "source": "physics_discover round 8",
+  "statement": "[kepler] semi-minor axis / a \u2265 1 \u00d7 perihelion distance / a   for 0 < e < 1 (tight only in the limit e \u2192 0)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-e9d8980f5d5b",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "e < 1"
+   ],
+   "claim": "sqrt(1 - e**2) >= 1*(sqrt(1 - e)/sqrt(e + 1))",
+   "symbols": [
+    "e"
+   ]
+  },
+  "source": "physics_discover round 8",
+  "statement": "[kepler] semi-minor axis / a \u2265 1 \u00d7 aphelion speed / circular speed at a   for 0 < e < 1 (tight only in the limit e \u2192 0)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-47f5e15fb8aa",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "e < 1"
+   ],
+   "claim": "sqrt(1 - e**2) >= 1*(1 - e**2)",
+   "symbols": [
+    "e"
+   ]
+  },
+  "source": "physics_discover round 8",
+  "statement": "[kepler] semi-minor axis / a \u2265 1 \u00d7 semi-latus rectum / a   for 0 < e < 1 (tight only in the limit e \u2192 0)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-1de761821349",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "e < 1"
+   ],
+   "claim": "1 - e**2 >= 1*(1 - e)",
+   "symbols": [
+    "e"
+   ]
+  },
+  "source": "physics_discover round 8",
+  "statement": "[kepler] semi-latus rectum / a \u2265 1 \u00d7 perihelion distance / a   for 0 < e < 1 (tight only in the limit e \u2192 0)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "t < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-c6a5b347f537",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "t < 1"
+   ],
+   "claim": "1 - t >= 1*((1 - t)/(t + 1))",
+   "symbols": [
+    "t"
+   ]
+  },
+  "source": "physics_discover round 9",
+  "statement": "[heat engines] Carnot efficiency \u2265 1 \u00d7 low-dissipation engine efficiency at maximum power, upper bound (Esposito et al.)   for 0 < t < 1 (tight only in the limit t \u2192 0)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "t < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-584196fcccb0",
+  "kind": "physics-relation",
+  "novelty": "known (\u03b7_CA \u2265 \u03b7_C/2 (Esposito et al. 2010))",
+  "payload": {
+   "assumptions": [
+    "t < 1"
+   ],
+   "claim": "1 - sqrt(t) >= 1/2*(1 - t)",
+   "symbols": [
+    "t"
+   ]
+  },
+  "source": "physics_discover round 9",
+  "statement": "[heat engines] Curzon\u2013Ahlborn efficiency (endoreversible engine at maximum power) \u2265 1/2 \u00d7 Carnot efficiency   for 0 < t < 1 (tight only in the limit t \u2192 1)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "t < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-b713784ca2a4",
+  "kind": "physics-relation",
+  "novelty": "known (\u03b7_C/(2 \u2212 \u03b7_C) \u2265 \u03b7_C/2 (Esposito et al. 2010))",
+  "payload": {
+   "assumptions": [
+    "t < 1"
+   ],
+   "claim": "(1 - t)/(t + 1) >= 1/2*(1 - t)",
+   "symbols": [
+    "t"
+   ]
+  },
+  "source": "physics_discover round 9",
+  "statement": "[heat engines] low-dissipation engine efficiency at maximum power, upper bound (Esposito et al.) \u2265 1/2 \u00d7 Carnot efficiency   for 0 < t < 1 (tight only in the limit t \u2192 1)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "t < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-09864e7bdf98",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "t < 1"
+   ],
+   "claim": "(1 - t)/(t + 1) >= 1*(1 - sqrt(t))",
+   "symbols": [
+    "t"
+   ]
+  },
+  "source": "physics_discover round 9",
+  "statement": "[heat engines] low-dissipation engine efficiency at maximum power, upper bound (Esposito et al.) \u2265 1 \u00d7 Curzon\u2013Ahlborn efficiency (endoreversible engine at maximum power)   for 0 < t < 1 (tight only in the limit t \u2192 1)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]

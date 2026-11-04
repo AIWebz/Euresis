@@ -104,6 +104,66 @@
    "family": "heat engines",
    "expr": "sqrt(1 - t) * sqrt(1/(1 + t))",
    "why": "affine combination of known quantities (Carnot efficiency, Power efficiency ratio)"
+  },
+  {
+   "family": "relativity",
+   "expr": "1/(b * sqrt(1 - b**2))",
+   "why": "ratio of known quantities (classical kinetic energy / mc\u00b2, relativistic momentum / (mc))"
+  },
+  {
+   "family": "relativity",
+   "expr": "1/sqrt(1 - b**2)",
+   "why": "affine combination of known quantities (Lorentz factor \u03b3)"
+  },
+  {
+   "family": "relativity",
+   "expr": "(2 * b) / (1 + b**2)",
+   "why": "affine combination of known quantities (Lorentz factor \u03b3, relative speed of two bodies each at speed b, head-on (velocity addition) / c)"
+  },
+  {
+   "family": "relativity",
+   "expr": "sqrt((1 - b)/(1 + b))",
+   "why": "affine combination of known quantities (Lorentz factor \u03b3, relativistic momentum / (mc))"
+  },
+  {
+   "family": "kepler",
+   "expr": "sqrt(1 - e**2)",
+   "why": "product of known quantities (perihelion distance / a, perihelion speed / circular speed at a)"
+  },
+  {
+   "family": "kepler",
+   "expr": "1 - (1 - e**2)/2",
+   "why": "affine combination of known quantities (perihelion distance / a, semi-latus rectum / a)"
+  },
+  {
+   "family": "kepler",
+   "expr": "sqrt(1 - e**2)",
+   "why": "product of known quantities (perihelion distance / a, perihelion speed / circular speed at a)"
+  },
+  {
+   "family": "kepler",
+   "expr": "(sqrt((1 + e)/(1 - e))**2 + sqrt((1 - e)/(1 + e))**2)/2",
+   "why": "affine combination of known quantities (perihelion distance / a, 1/(semi-latus rectum / a))"
+  },
+  {
+   "family": "heat engines",
+   "expr": "(1 - t)/(1 - sqrt(t))",
+   "why": "affine combination of known quantities (Carnot efficiency, Curzon\u2013Ahlborn efficiency (endoreversible engine at maximum power))"
+  },
+  {
+   "family": "heat engines",
+   "expr": "t/(1 - t**2)",
+   "why": "affine combination of known quantities (low-dissipation engine efficiency at maximum power, upper bound (Esposito et al.), Carnot refrigerator coefficient of performance)"
+  },
+  {
+   "family": "heat engines",
+   "expr": "1/(1 - t**2)",
+   "why": "affine combination of known quantities (low-dissipation engine efficiency at maximum power, upper bound (Esposito et al.), Carnot refrigerator coefficient of performance)"
+  },
+  {
+   "family": "heat engines",
+   "expr": "(1 - t**2)/(1 - t)",
+   "why": "affine combination of known quantities (Carnot efficiency)"
   }
  ],
  "tried": [
@@ -202,7 +262,55 @@
   "heat engines|Curzon\u2013Ahlborn refrigerator efficiency|Carnot efficiency",
   "heat engines|Curzon\u2013Ahlborn refrigerator efficiency|Curzon\u2013Ahlborn efficiency (endoreversible engine at maximum power)",
   "heat engines|Curzon\u2013Ahlborn refrigerator efficiency|low-dissipation engine efficiency at maximum power, upper bound (Esposito et al.)",
-  "heat engines|Curzon\u2013Ahlborn refrigerator efficiency|Carnot refrigerator coefficient of performance"
+  "heat engines|Curzon\u2013Ahlborn refrigerator efficiency|Carnot refrigerator coefficient of performance",
+  "relativity|relativistic Doppler factor (approaching source)|time-dilation factor 1/\u03b3",
+  "relativity|relativistic Doppler factor (approaching source)|relative speed of two bodies each at speed b, head-on (velocity addition) / c",
+  "relativity|relativistic Doppler factor (approaching source)|kinetic energy / (momentum \u00d7 c)",
+  "relativity|time-dilation factor 1/\u03b3|Lorentz factor \u03b3",
+  "relativity|time-dilation factor 1/\u03b3|relativistic kinetic energy / mc\u00b2",
+  "relativity|time-dilation factor 1/\u03b3|classical kinetic energy / mc\u00b2",
+  "relativity|time-dilation factor 1/\u03b3|relativistic momentum / (mc)",
+  "relativity|time-dilation factor 1/\u03b3|relativistic Doppler factor (approaching source)",
+  "relativity|time-dilation factor 1/\u03b3|relative speed of two bodies each at speed b, head-on (velocity addition) / c",
+  "relativity|time-dilation factor 1/\u03b3|kinetic energy / (momentum \u00d7 c)",
+  "relativity|relative speed of two bodies each at speed b, head-on (velocity addition) / c|Lorentz factor \u03b3",
+  "relativity|relative speed of two bodies each at speed b, head-on (velocity addition) / c|relativistic kinetic energy / mc\u00b2",
+  "relativity|relative speed of two bodies each at speed b, head-on (velocity addition) / c|classical kinetic energy / mc\u00b2",
+  "relativity|relative speed of two bodies each at speed b, head-on (velocity addition) / c|relativistic momentum / (mc)",
+  "relativity|relative speed of two bodies each at speed b, head-on (velocity addition) / c|relativistic Doppler factor (approaching source)",
+  "relativity|relative speed of two bodies each at speed b, head-on (velocity addition) / c|time-dilation factor 1/\u03b3",
+  "kepler|aphelion speed / circular speed at a|perihelion distance / a",
+  "kepler|aphelion speed / circular speed at a|aphelion distance / a",
+  "kepler|aphelion speed / circular speed at a|perihelion speed / circular speed at a",
+  "kepler|aphelion speed / circular speed at a|semi-minor axis / a",
+  "kepler|aphelion speed / circular speed at a|semi-latus rectum / a",
+  "kepler|aphelion speed / circular speed at a|time-averaged distance / a",
+  "kepler|semi-minor axis / a|perihelion distance / a",
+  "kepler|semi-minor axis / a|aphelion distance / a",
+  "kepler|semi-minor axis / a|perihelion speed / circular speed at a",
+  "kepler|semi-minor axis / a|aphelion speed / circular speed at a",
+  "kepler|semi-minor axis / a|semi-latus rectum / a",
+  "kepler|semi-minor axis / a|time-averaged distance / a",
+  "kepler|semi-latus rectum / a|perihelion distance / a",
+  "kepler|semi-latus rectum / a|aphelion distance / a",
+  "kepler|semi-latus rectum / a|perihelion speed / circular speed at a",
+  "kepler|semi-latus rectum / a|aphelion speed / circular speed at a",
+  "heat engines|Carnot efficiency|Curzon\u2013Ahlborn efficiency (endoreversible engine at maximum power)",
+  "heat engines|Carnot efficiency|low-dissipation engine efficiency at maximum power, upper bound (Esposito et al.)",
+  "heat engines|Carnot efficiency|Carnot refrigerator coefficient of performance",
+  "heat engines|Carnot efficiency|Carnot heat pump coefficient of performance",
+  "heat engines|Carnot efficiency|Power efficiency ratio [model-proposed; physical meaning unverified]",
+  "heat engines|Carnot efficiency|Low-dissipation refrigerator efficiency [model-proposed; physical meaning unverified]",
+  "heat engines|Curzon\u2013Ahlborn efficiency (endoreversible engine at maximum power)|Carnot efficiency",
+  "heat engines|Curzon\u2013Ahlborn efficiency (endoreversible engine at maximum power)|low-dissipation engine efficiency at maximum power, upper bound (Esposito et al.)",
+  "heat engines|Curzon\u2013Ahlborn efficiency (endoreversible engine at maximum power)|Carnot refrigerator coefficient of performance",
+  "heat engines|Curzon\u2013Ahlborn efficiency (endoreversible engine at maximum power)|Carnot heat pump coefficient of performance",
+  "heat engines|Curzon\u2013Ahlborn efficiency (endoreversible engine at maximum power)|Power efficiency ratio [model-proposed; physical meaning unverified]",
+  "heat engines|Curzon\u2013Ahlborn efficiency (endoreversible engine at maximum power)|Low-dissipation refrigerator efficiency [model-proposed; physical meaning unverified]",
+  "heat engines|low-dissipation engine efficiency at maximum power, upper bound (Esposito et al.)|Carnot efficiency",
+  "heat engines|low-dissipation engine efficiency at maximum power, upper bound (Esposito et al.)|Curzon\u2013Ahlborn efficiency (endoreversible engine at maximum power)",
+  "heat engines|low-dissipation engine efficiency at maximum power, upper bound (Esposito et al.)|Carnot refrigerator coefficient of performance",
+  "heat engines|low-dissipation engine efficiency at maximum power, upper bound (Esposito et al.)|Carnot heat pump coefficient of performance"
  ],
  "edges": [
   {
@@ -358,9 +466,93 @@
    "g": "Low-dissipation refrigerator efficiency [model-proposed; physical meaning unverified]",
    "kind": "lower",
    "k": "3"
+  },
+  {
+   "family": "relativity",
+   "f": "relativistic Doppler factor (approaching source)",
+   "g": "time-dilation factor 1/\u03b3",
+   "kind": "lower",
+   "k": "1"
+  },
+  {
+   "family": "relativity",
+   "f": "relative speed of two bodies each at speed b, head-on (velocity addition) / c",
+   "g": "classical kinetic energy / mc\u00b2",
+   "kind": "lower",
+   "k": "2"
+  },
+  {
+   "family": "kepler",
+   "f": "aphelion speed / circular speed at a",
+   "g": "perihelion distance / a",
+   "kind": "lower",
+   "k": "1"
+  },
+  {
+   "family": "kepler",
+   "f": "aphelion speed / circular speed at a",
+   "g": "semi-minor axis / a",
+   "kind": "lower",
+   "k": "1/2"
+  },
+  {
+   "family": "kepler",
+   "f": "semi-minor axis / a",
+   "g": "perihelion distance / a",
+   "kind": "lower",
+   "k": "1"
+  },
+  {
+   "family": "kepler",
+   "f": "semi-minor axis / a",
+   "g": "aphelion speed / circular speed at a",
+   "kind": "lower",
+   "k": "1"
+  },
+  {
+   "family": "kepler",
+   "f": "semi-minor axis / a",
+   "g": "semi-latus rectum / a",
+   "kind": "lower",
+   "k": "1"
+  },
+  {
+   "family": "kepler",
+   "f": "semi-latus rectum / a",
+   "g": "perihelion distance / a",
+   "kind": "lower",
+   "k": "1"
+  },
+  {
+   "family": "heat engines",
+   "f": "Carnot efficiency",
+   "g": "low-dissipation engine efficiency at maximum power, upper bound (Esposito et al.)",
+   "kind": "lower",
+   "k": "1"
+  },
+  {
+   "family": "heat engines",
+   "f": "Curzon\u2013Ahlborn efficiency (endoreversible engine at maximum power)",
+   "g": "Carnot efficiency",
+   "kind": "lower",
+   "k": "1/2"
+  },
+  {
+   "family": "heat engines",
+   "f": "low-dissipation engine efficiency at maximum power, upper bound (Esposito et al.)",
+   "g": "Carnot efficiency",
+   "kind": "lower",
+   "k": "1/2"
+  },
+  {
+   "family": "heat engines",
+   "f": "low-dissipation engine efficiency at maximum power, upper bound (Esposito et al.)",
+   "g": "Curzon\u2013Ahlborn efficiency (endoreversible engine at maximum power)",
+   "kind": "lower",
+   "k": "1"
   }
  ],
- "rounds": 6,
+ "rounds": 9,
  "discoveries": [
   {
    "claim": "phy-e72aa596c5f7",
@@ -373,5 +565,16 @@
    "round": 6
   }
  ],
- "rediscoveries": []
+ "rediscoveries": [
+  {
+   "claim": "phy-584196fcccb0",
+   "statement": "[heat engines] Curzon\u2013Ahlborn efficiency (endoreversible engine at maximum power) \u2265 1/2 \u00d7 Carnot efficiency   for 0 < t < 1 (tight only in the limit t \u2192 1)",
+   "known": "\u03b7_CA \u2265 \u03b7_C/2 (Esposito et al. 2010)"
+  },
+  {
+   "claim": "phy-b713784ca2a4",
+   "statement": "[heat engines] low-dissipation engine efficiency at maximum power, upper bound (Esposito et al.) \u2265 1/2 \u00d7 Carnot efficiency   for 0 < t < 1 (tight only in the limit t \u2192 1)",
+   "known": "\u03b7_C/(2 \u2212 \u03b7_C) \u2265 \u03b7_C/2 (Esposito et al. 2010)"
+  }
+ ]
 }
