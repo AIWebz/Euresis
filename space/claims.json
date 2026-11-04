@@ -8405,5 +8405,356 @@
   "statement": "[driven oscillator] Peak amplitude ratio [model-proposed; physical meaning unverified] \u2265 13/28 \u00d7 Relative energy loss per cycle [model-proposed; physical meaning unverified]   on r < 2, z < 1 (tight only at the edge of the domain, near (2, 1))",
   "status": "proved",
   "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 2",
+    "z < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-836df73b8367",
+  "kind": "physics-relation",
+  "novelty": "equality holds along a whole curve \u2014 a one-variable inequality in disguise; proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 2",
+    "z < 1"
+   ],
+   "claim": "2*r**2*z/(8*r**2*z**2 + (1 - r**2)**2) >= 1/2*(2*r**2*z/(4*r**2*z**2 + (1 - r**2)**2))",
+   "symbols": [
+    "r",
+    "z"
+   ]
+  },
+  "source": "physics_discover2 round 148",
+  "statement": "[driven oscillator] Normalized power transmission [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 mean absorbed power (normalised)   on r < 2, z < 1 (equality at (r, z) \u2248 (1, 0.0613239))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 2",
+    "z < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-894dfde22970",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 2",
+    "z < 1"
+   ],
+   "claim": "sqrt(8*r**2*z**2 + 1)/sqrt(4*r**2*z**2 + (1 - r**2)**2) >= 1*(1/sqrt(4*r**2*z**2 + (1 - r**2)**2))",
+   "symbols": [
+    "r",
+    "z"
+   ]
+  },
+  "source": "physics_discover2 round 158",
+  "statement": "[driven oscillator] Velocity transmissibility [model-proposed; physical meaning unverified] \u2265 1 \u00d7 amplitude / static deflection   on r < 2, z < 1 (tight only at the edge of the domain, near (9e-05, 5.09e-05))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 2",
+    "z < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-7115c45ee166",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 2",
+    "z < 1"
+   ],
+   "claim": "sqrt(8*r**2*z**2 + 1)/sqrt(4*r**2*z**2 + (1 - r**2)**2) >= 1*(sqrt(4*r**2*z**2 + 1)/sqrt(4*r**2*z**2 + (1 - r**2)**2))",
+   "symbols": [
+    "r",
+    "z"
+   ]
+  },
+  "source": "physics_discover2 round 158",
+  "statement": "[driven oscillator] Velocity transmissibility [model-proposed; physical meaning unverified] \u2265 1 \u00d7 transmissibility   on r < 2, z < 1 (tight only at the edge of the domain, near (0.000205, 0.0001))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 2",
+    "z < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-31defc3b2d27",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'amplitude / static deflection'",
+  "payload": {
+   "assumptions": [
+    "r < 2",
+    "z < 1"
+   ],
+   "claim": "sqrt(8*r**2*z**2 + 1)/sqrt(4*r**2*z**2 + (1 - r**2)**2) >= 1/2*(r/sqrt(4*r**2*z**2 + (1 - r**2)**2))",
+   "symbols": [
+    "r",
+    "z"
+   ]
+  },
+  "source": "physics_discover2 round 158",
+  "statement": "[driven oscillator] Velocity transmissibility [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 velocity amplitude / (\u03c90 \u00d7 static deflection)   on r < 2, z < 1 (tight only at the edge of the domain, near (2, 9.12e-05))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 2",
+    "z < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-ea526e72d7a7",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'amplitude / static deflection'",
+  "payload": {
+   "assumptions": [
+    "r < 2",
+    "z < 1"
+   ],
+   "claim": "sqrt(8*r**2*z**2 + 1)/sqrt(4*r**2*z**2 + (1 - r**2)**2) >= 1/4*(r**2/sqrt(4*r**2*z**2 + (1 - r**2)**2))",
+   "symbols": [
+    "r",
+    "z"
+   ]
+  },
+  "source": "physics_discover2 round 158",
+  "statement": "[driven oscillator] Velocity transmissibility [model-proposed; physical meaning unverified] \u2265 1/4 \u00d7 acceleration amplitude / (\u03c90\u00b2 \u00d7 static deflection)   on r < 2, z < 1 (tight only at the edge of the domain, near (2, 9.12e-05))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 2",
+    "z < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-d35ea8cc3a4f",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'transmissibility'",
+  "payload": {
+   "assumptions": [
+    "r < 2",
+    "z < 1"
+   ],
+   "claim": "sqrt(8*r**2*z**2 + 1)/sqrt(4*r**2*z**2 + (1 - r**2)**2) >= 1*(2*r**2*z/(4*r**2*z**2 + (1 - r**2)**2))",
+   "symbols": [
+    "r",
+    "z"
+   ]
+  },
+  "source": "physics_discover2 round 158",
+  "statement": "[driven oscillator] Velocity transmissibility [model-proposed; physical meaning unverified] \u2265 1 \u00d7 mean absorbed power (normalised)   on r < 2, z < 1 (tight only at the edge of the domain, near (1, 6.32e-09))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 2",
+    "z < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-04409ab92d18",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'transmissibility'",
+  "payload": {
+   "assumptions": [
+    "r < 2",
+    "z < 1"
+   ],
+   "claim": "sqrt(8*r**2*z**2 + 1)/sqrt(4*r**2*z**2 + (1 - r**2)**2) >= 1/3*(sqrt(-z**2/(z**2 + 1) + 1))",
+   "symbols": [
+    "r",
+    "z"
+   ]
+  },
+  "source": "physics_discover2 round 158",
+  "statement": "[driven oscillator] Velocity transmissibility [model-proposed; physical meaning unverified] \u2265 1/3 \u00d7 resonance frequency ratio [model-proposed; physical meaning unverified]   on r < 2, z < 1 (tight only at the edge of the domain, near (2, 9.12e-05))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 2",
+    "z < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-cd78942e2f72",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'resonance frequency ratio [model-proposed; physical meaning unverified]'",
+  "payload": {
+   "assumptions": [
+    "r < 2",
+    "z < 1"
+   ],
+   "claim": "sqrt(8*r**2*z**2 + 1)/sqrt(4*r**2*z**2 + (1 - r**2)**2) >= 1/3*(r**2/(sqrt(4*r**2*z**2 + (1 - r**2)**2) + 1))",
+   "symbols": [
+    "r",
+    "z"
+   ]
+  },
+  "source": "physics_discover2 round 158",
+  "statement": "[driven oscillator] Velocity transmissibility [model-proposed; physical meaning unverified] \u2265 1/3 \u00d7 resonance amplitude ratio [model-proposed; physical meaning unverified]   on r < 2, z < 1 (tight only at the edge of the domain, near (2, 9.12e-05))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 2",
+    "z < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-108c935e858d",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'amplitude / static deflection'",
+  "payload": {
+   "assumptions": [
+    "r < 2",
+    "z < 1"
+   ],
+   "claim": "sqrt(8*r**2*z**2 + 1)/sqrt(4*r**2*z**2 + (1 - r**2)**2) >= 1*(sqrt(1 - z**2)/(r**2 + 1))",
+   "symbols": [
+    "r",
+    "z"
+   ]
+  },
+  "source": "physics_discover2 round 158",
+  "statement": "[driven oscillator] Velocity transmissibility [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Resonance frequency shift [model-proposed; physical meaning unverified]   on r < 2, z < 1 (tight only at the edge of the domain, near (6.25e-10, 5.17e-09))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 2",
+    "z < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-c8a9e9c3aacf",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'amplitude / static deflection'",
+  "payload": {
+   "assumptions": [
+    "r < 2",
+    "z < 1"
+   ],
+   "claim": "sqrt(8*r**2*z**2 + 1)/sqrt(4*r**2*z**2 + (1 - r**2)**2) >= 1/3*(sqrt(1 - z**2)/sqrt(4*r**2*z**2 - z**2 + 1))",
+   "symbols": [
+    "r",
+    "z"
+   ]
+  },
+  "source": "physics_discover2 round 158",
+  "statement": "[driven oscillator] Velocity transmissibility [model-proposed; physical meaning unverified] \u2265 1/3 \u00d7 Resonance frequency ratio (corrected) [model-proposed; physical meaning unverified]   on r < 2, z < 1 (tight only at the edge of the domain, near (2, 9.12e-05))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 2",
+    "z < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-008a44ece0e4",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 2",
+    "z < 1"
+   ],
+   "claim": "sqrt(16*r**4*z**4 + 4*r**2*z**2 + 1)/sqrt(4*r**2*z**2 + (1 - r**2)**2) >= 1*(1/sqrt(4*r**2*z**2 + (1 - r**2)**2))",
+   "symbols": [
+    "r",
+    "z"
+   ]
+  },
+  "source": "physics_discover2 round 158",
+  "statement": "[driven oscillator] Acceleration transmissibility [model-proposed; physical meaning unverified] \u2265 1 \u00d7 amplitude / static deflection   on r < 2, z < 1 (tight only at the edge of the domain, near (0.0002, 0.0001))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 2",
+    "z < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-76fcc97a4d52",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 2",
+    "z < 1"
+   ],
+   "claim": "sqrt(16*r**4*z**4 + 4*r**2*z**2 + 1)/sqrt(4*r**2*z**2 + (1 - r**2)**2) >= 1*(sqrt(4*r**2*z**2 + 1)/sqrt(4*r**2*z**2 + (1 - r**2)**2))",
+   "symbols": [
+    "r",
+    "z"
+   ]
+  },
+  "source": "physics_discover2 round 158",
+  "statement": "[driven oscillator] Acceleration transmissibility [model-proposed; physical meaning unverified] \u2265 1 \u00d7 transmissibility   on r < 2, z < 1 (tight only at the edge of the domain, near (0.0404, 0.000389))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 2",
+    "z < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-ce32e00be749",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'amplitude / static deflection'",
+  "payload": {
+   "assumptions": [
+    "r < 2",
+    "z < 1"
+   ],
+   "claim": "sqrt(16*r**4*z**4 + 4*r**2*z**2 + 1)/sqrt(4*r**2*z**2 + (1 - r**2)**2) >= 1/2*(r/sqrt(4*r**2*z**2 + (1 - r**2)**2))",
+   "symbols": [
+    "r",
+    "z"
+   ]
+  },
+  "source": "physics_discover2 round 158",
+  "statement": "[driven oscillator] Acceleration transmissibility [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 velocity amplitude / (\u03c90 \u00d7 static deflection)   on r < 2, z < 1 (tight only at the edge of the domain, near (2, 9.12e-05))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]

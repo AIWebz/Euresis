@@ -37,7 +37,9 @@
    "Peak amplitude ratio [model-proposed; physical meaning unverified]": "1/sqrt(4*r**4*z**4 - 4*r**2*z**2 + 1)",
    "Resonance frequency ratio (corrected) [model-proposed; physical meaning unverified]": "sqrt(1 - z**2)/sqrt(4*r**2*z**2 - z**2 + 1)",
    "Relative energy loss per cycle [model-proposed; physical meaning unverified]": "2*r**2*z/(4*r**2*z**2 + (1 - r**2)**2 + 1)",
-   "Normalized power transmission [model-proposed; physical meaning unverified]": "2*r**2*z/(8*r**2*z**2 + (1 - r**2)**2)"
+   "Normalized power transmission [model-proposed; physical meaning unverified]": "2*r**2*z/(8*r**2*z**2 + (1 - r**2)**2)",
+   "Velocity transmissibility [model-proposed; physical meaning unverified]": "sqrt(8*r**2*z**2 + 1)/sqrt(4*r**2*z**2 + (1 - r**2)**2)",
+   "Acceleration transmissibility [model-proposed; physical meaning unverified]": "sqrt(16*r**4*z**4 + 4*r**2*z**2 + 1)/sqrt(4*r**2*z**2 + (1 - r**2)**2)"
   },
   "velocity addition": {
    "composed speed / c": "(u + v)/(1 + u*v)",
@@ -68,7 +70,8 @@
    "Compton scattering formula (recoil angle cosine) [model-proposed; physical meaning unverified]": "1/(2*c*x + 1)",
    "Scattered photon wavelength / initial photon wavelength [model-proposed; physical meaning unverified]": "c/(x + 1) + 1",
    "Scattered photon momentum / initial photon momentum [model-proposed; physical meaning unverified]": "sqrt(c**2*x**2 + 1)/(x*(c*x + 1))",
-   "Scattered photon wavelength / Compton wavelength [model-proposed; physical meaning unverified]": "c/(c*x + 1) + (c*x + 1)/x"
+   "Scattered photon wavelength / Compton wavelength [model-proposed; physical meaning unverified]": "c/(c*x + 1) + (c*x + 1)/x",
+   "Electron recoil angle (sine squared) [model-proposed; physical meaning unverified]": "1 - 1/(2*c**2*x**2 + 1)**2"
   }
  },
  "rejected": [
@@ -2771,6 +2774,331 @@
    "family": "velocity addition",
    "expr": "sqrt(1 - u**2) + sqrt(1 - v**2) - sqrt(1 - (u + v)**2/(1 + u*v)**2)",
    "why": "affine combination of known quantities (composed speed / c, Energy-momentum invariant [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "c/(c + x)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, Compton wavelength shift / (initial photon wavelength) [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "x**2*c/(1 + x*c)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, electron kinetic energy / (m_e c\u00b2))"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "1 + c/(x + 1)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, Scattered photon wavelength / initial photon wavelength [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "sqrt(c**2*x**2/(c*x + 1)**2 + c*x**2/(c*x + 1))",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, Recoil electron momentum / (m_e c) [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "1",
+   "why": "must depend only on a, b"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "(sqrt((1 - (a + b)**2)*(1 - (a - b)**2))/(1 + a**2 - b**2)) / (sqrt((1 - (a + b)**2)*(1 - (a - b)**2",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), 1/(energy of product 1 / (Mc\u00b2)))"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "1",
+   "why": "must depend only on a, b"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "((1 + a**2 - b**2)/(2*a)) / ((1 - a**2 + b**2)/(2*b))",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2 * m",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "collision",
+   "expr": "(1 - e)**2 / (1 + m)**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "collision",
+   "expr": "(1 - e*m)/(1 + m)",
+   "why": "affine combination of known quantities (target speed / initial speed)"
+  },
+  {
+   "family": "collision",
+   "expr": "(1 - e*m)/(1 + m)",
+   "why": "affine combination of known quantities (target speed / initial speed)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "atan(2*z*r/(1 - r**2))",
+   "why": "only + \u2212 \u00d7 \u00f7, integer powers and square roots (so the prover can decide it)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(1 - z**2)/(sqrt(4*r**2*z**2 - z**2 + 1))",
+   "why": "affine combination of known quantities (amplitude / static deflection, Resonance frequency ratio (corrected) [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "1/sqrt(4*r**4*z**4 - 4*r**2*z**2 + 1)",
+   "why": "affine combination of known quantities (amplitude / static deflection, Peak amplitude ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "2*z*r**2/(sqrt((1 - r**2)**2 + (2*z*r)**2))",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 + u)/(1 - u)) * sqrt((1 + v)/(1 - v))",
+   "why": "affine combination of known quantities (composed speed / c, Doppler factor of the composed motion)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "1 - (u + v)**2/(1 + u*v)**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt(1 - u**2) + sqrt(1 - v**2) + (1 + u*v)/(sqrt(1 - u**2)*sqrt(1 - v**2))",
+   "why": "affine combination of known quantities (composed speed / c, Total relativistic energy / mc\u00b2 [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt(1 - (u + v)**2/(1 + u*v)**2)",
+   "why": "affine combination of known quantities (composed speed / c, 1/(Lorentz factor of the composed motion))"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "c/(x + 1)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, Scattered photon wavelength / initial photon wavelength [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "x**2*c/(1 + x*c)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, electron kinetic energy / (m_e c\u00b2))"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "x/(1 + x*c)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, scattered photon energy / (m_e c\u00b2))"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "sqrt((1 - (a + b)**2)*(1 - (a - b)**2))/(1 + a**2 - b**2) + sqrt((1 - (a + b)**2)*(1 - (a - b)**2))/",
+   "why": "affine combination of known quantities (speed of product 1 / c, speed of product 2 / c)"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "1",
+   "why": "must depend only on a, b"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "1",
+   "why": "must depend only on a, b"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "a / b",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2 * m",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "collision",
+   "expr": "(1 - (1 + e)**2 * m / (1 + m)**2)",
+   "why": "affine combination of known quantities (target speed / initial speed, fraction of kinetic energy given to the target)"
+  },
+  {
+   "family": "collision",
+   "expr": "e*(1 - m)/(m + 1)",
+   "why": "affine combination of known quantities (target speed / initial speed, relative velocity after collision divided by initial velocity of projectile [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "e*(m + 1)/(e*m + 1)",
+   "why": "affine combination of known quantities (target speed / initial speed, velocity ratio of target to projectile after collision [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "atan(2*z*r/(1 - r**2))",
+   "why": "only + \u2212 \u00d7 \u00f7, integer powers and square roots (so the prover can decide it)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt( (1 + (2*z*r)**2 + (2*z*r)**2 + (2*z*r)**4 ) / ( (1 - r**2)**2 + (2*z*r)**2 ))",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 + u)/(1 - u)) * sqrt((1 + v)/(1 - v))",
+   "why": "affine combination of known quantities (composed speed / c, Doppler factor of the composed motion)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "1 - (u + v)**2/(1 + u*v)**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt(1 - u**2) + sqrt(1 - v**2) + (1 + u*v)/(sqrt(1 - u**2)*sqrt(1 - v**2))",
+   "why": "affine combination of known quantities (composed speed / c, Total relativistic energy / mc\u00b2 [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt(1 - u**2) + sqrt(1 - v**2) - sqrt(1 - (u + v)**2/(1 + u*v)**2)",
+   "why": "affine combination of known quantities (composed speed / c, Energy-momentum invariant [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "c/(c + x)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, Compton wavelength shift / (initial photon wavelength) [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "1 + c/(x + 1)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, Scattered photon wavelength / initial photon wavelength [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "1/(2*c**2*x**2 + 1)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, Electron recoil angle (cosine) [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "sqrt(c**2*x**2 + 1)/(x*(c*x + 1))",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, Scattered photon momentum / initial photon momentum [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "(-a**2 - b**2 + (a - b)**2)/(a + b - 1)",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), Invariant mass squared of the two products [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "(-b**2 + (1 - a)**2)/(a**2 - 2*b**2 + (1 - a)**2 - 1)",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "(1 - a**2 + b**2)/(1 + a**2 - b**2)",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), 1/(energy of product 1 / (Mc\u00b2)))"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "(1 + a**2 - b**2)/(2*a) / (1 - a**2 + b**2)/(2*b)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2 * m",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "collision",
+   "expr": "(1 - (1 + e)**2 * m / (1 + m)**2)",
+   "why": "affine combination of known quantities (target speed / initial speed, fraction of kinetic energy given to the target)"
+  },
+  {
+   "family": "collision",
+   "expr": "e",
+   "why": "affine combination of known quantities (target speed / initial speed, momentum transferred / initial momentum)"
+  },
+  {
+   "family": "collision",
+   "expr": "(1 - e*m)/(1 + m)",
+   "why": "affine combination of known quantities (target speed / initial speed)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "atan(2*z*r/(1 - r**2))",
+   "why": "only + \u2212 \u00d7 \u00f7, integer powers and square roots (so the prover can decide it)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "atan((1 - r**2)/(2*z*r))",
+   "why": "only + \u2212 \u00d7 \u00f7, integer powers and square roots (so the prover can decide it)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "atan(2*z*r/(1 - r**2)) - atan(2*z*r/(1 - r**2))",
+   "why": "must depend only on r, z"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(1 - z**2)/(sqrt(4*r**2*z**2 - z**2 + 1))",
+   "why": "affine combination of known quantities (amplitude / static deflection, Resonance frequency ratio (corrected) [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "(u + v)/(sqrt(1 - u**2)*sqrt(1 - v**2)*(1 + u*v))",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt(1 - u**2) + sqrt(1 - v**2) - (u + v)/(1 + u*v)",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 - u**2)*(1 - v**2))/((1 + u*v) - (u + v))",
+   "why": "affine combination of known quantities (composed speed / c, Doppler factor of the composed motion)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt(1 - (u + v)**2/(1 + u*v)**2) - 1",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "c/(1 + c*x)",
+   "why": "affine combination of known quantities (Scattered photon wavelength / Compton wavelength [model-proposed; physical meaning unverified], 1/(scattered photon energy / (m_e c\u00b2)))"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "1/(1 + c*x)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy)"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "c*x/(1 + c*x)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy)"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "1 + c/(1 + c*x)",
+   "why": "affine combination of known quantities (Scattered photon wavelength / Compton wavelength [model-proposed; physical meaning unverified], 1/(scattered photon energy / (m_e c\u00b2)))"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "(a**2 + b**2 - (a - b)**2)/(-a - b + 1)",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), Invariant mass squared of the two products [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "(-b**2 + (1 - a)**2)/(-a**2 + 2*b**2 - (1 - a)**2 + 1)",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), Ratio of kinetic energies of product 1 to product 2 [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "(1 + a**2 - b**2)/(2*a)",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), Lorentz factor of product 1)"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "sqrt((1 - (a + b)**2)*(1 - (a - b)**2))/(1 + a**2 - b**2)",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), speed of product 1 / c)"
   }
  ],
  "tried": [
@@ -3429,7 +3757,105 @@
   "driven oscillator|Peak amplitude ratio [model-proposed; physical meaning unverified]|Relative energy loss per cycle [model-proposed; physical meaning unverified]",
   "driven oscillator|Peak amplitude ratio [model-proposed; physical meaning unverified]|Normalized power transmission [model-proposed; physical meaning unverified]",
   "driven oscillator|Resonance frequency ratio (corrected) [model-proposed; physical meaning unverified]|Relative energy loss per cycle [model-proposed; physical meaning unverified]",
-  "driven oscillator|Resonance frequency ratio (corrected) [model-proposed; physical meaning unverified]|Normalized power transmission [model-proposed; physical meaning unverified]"
+  "driven oscillator|Resonance frequency ratio (corrected) [model-proposed; physical meaning unverified]|Normalized power transmission [model-proposed; physical meaning unverified]",
+  "driven oscillator|Relative energy loss per cycle [model-proposed; physical meaning unverified]|amplitude / static deflection",
+  "driven oscillator|Relative energy loss per cycle [model-proposed; physical meaning unverified]|transmissibility",
+  "driven oscillator|Relative energy loss per cycle [model-proposed; physical meaning unverified]|velocity amplitude / (\u03c90 \u00d7 static deflection)",
+  "driven oscillator|Relative energy loss per cycle [model-proposed; physical meaning unverified]|acceleration amplitude / (\u03c90\u00b2 \u00d7 static deflection)",
+  "driven oscillator|Relative energy loss per cycle [model-proposed; physical meaning unverified]|mean absorbed power (normalised)",
+  "driven oscillator|Relative energy loss per cycle [model-proposed; physical meaning unverified]|quality factor",
+  "driven oscillator|Relative energy loss per cycle [model-proposed; physical meaning unverified]|log decrement [model-proposed; physical meaning unverified]",
+  "driven oscillator|Relative energy loss per cycle [model-proposed; physical meaning unverified]|resonance frequency ratio [model-proposed; physical meaning unverified]",
+  "driven oscillator|Relative energy loss per cycle [model-proposed; physical meaning unverified]|resonance amplitude ratio [model-proposed; physical meaning unverified]",
+  "driven oscillator|Relative energy loss per cycle [model-proposed; physical meaning unverified]|Resonance frequency shift [model-proposed; physical meaning unverified]",
+  "driven oscillator|Relative energy loss per cycle [model-proposed; physical meaning unverified]|Peak amplitude ratio [model-proposed; physical meaning unverified]",
+  "driven oscillator|Relative energy loss per cycle [model-proposed; physical meaning unverified]|Resonance frequency ratio (corrected) [model-proposed; physical meaning unverified]",
+  "driven oscillator|Relative energy loss per cycle [model-proposed; physical meaning unverified]|Normalized power transmission [model-proposed; physical meaning unverified]",
+  "driven oscillator|Normalized power transmission [model-proposed; physical meaning unverified]|amplitude / static deflection",
+  "driven oscillator|Normalized power transmission [model-proposed; physical meaning unverified]|transmissibility",
+  "driven oscillator|Normalized power transmission [model-proposed; physical meaning unverified]|velocity amplitude / (\u03c90 \u00d7 static deflection)",
+  "driven oscillator|Normalized power transmission [model-proposed; physical meaning unverified]|acceleration amplitude / (\u03c90\u00b2 \u00d7 static deflection)",
+  "driven oscillator|Normalized power transmission [model-proposed; physical meaning unverified]|mean absorbed power (normalised)",
+  "driven oscillator|Normalized power transmission [model-proposed; physical meaning unverified]|quality factor",
+  "driven oscillator|Normalized power transmission [model-proposed; physical meaning unverified]|log decrement [model-proposed; physical meaning unverified]",
+  "driven oscillator|Normalized power transmission [model-proposed; physical meaning unverified]|resonance frequency ratio [model-proposed; physical meaning unverified]",
+  "driven oscillator|Normalized power transmission [model-proposed; physical meaning unverified]|resonance amplitude ratio [model-proposed; physical meaning unverified]",
+  "driven oscillator|Normalized power transmission [model-proposed; physical meaning unverified]|Resonance frequency shift [model-proposed; physical meaning unverified]",
+  "driven oscillator|Normalized power transmission [model-proposed; physical meaning unverified]|Peak amplitude ratio [model-proposed; physical meaning unverified]",
+  "Compton scattering|scattered photon energy / initial energy|Electron recoil angle (sine squared) [model-proposed; physical meaning unverified]",
+  "Compton scattering|electron kinetic energy / photon energy|Electron recoil angle (sine squared) [model-proposed; physical meaning unverified]",
+  "Compton scattering|scattered photon energy / (m_e c\u00b2)|Electron recoil angle (sine squared) [model-proposed; physical meaning unverified]",
+  "Compton scattering|electron kinetic energy / (m_e c\u00b2)|Electron recoil angle (sine squared) [model-proposed; physical meaning unverified]",
+  "Compton scattering|wavelength shift / Compton wavelength|Electron recoil angle (sine squared) [model-proposed; physical meaning unverified]",
+  "Compton scattering|photon energy / (m_e c\u00b2)|Electron recoil angle (sine squared) [model-proposed; physical meaning unverified]",
+  "Compton scattering|Recoil electron momentum / (m_e c) [model-proposed; physical meaning unverified]|Electron recoil angle (sine squared) [model-proposed; physical meaning unverified]",
+  "Compton scattering|Electron recoil angle (cosine) [model-proposed; physical meaning unverified]|Electron recoil angle (sine squared) [model-proposed; physical meaning unverified]",
+  "Compton scattering|Compton wavelength shift / (initial photon wavelength) [model-proposed; physical meaning unverified]|Electron recoil angle (sine squared) [model-proposed; physical meaning unverified]",
+  "Compton scattering|Compton scattering formula (recoil angle cosine) [model-proposed; physical meaning unverified]|Electron recoil angle (sine squared) [model-proposed; physical meaning unverified]",
+  "Compton scattering|Scattered photon wavelength / initial photon wavelength [model-proposed; physical meaning unverified]|Electron recoil angle (sine squared) [model-proposed; physical meaning unverified]",
+  "Compton scattering|Scattered photon momentum / initial photon momentum [model-proposed; physical meaning unverified]|Electron recoil angle (sine squared) [model-proposed; physical meaning unverified]",
+  "Compton scattering|Scattered photon wavelength / Compton wavelength [model-proposed; physical meaning unverified]|Electron recoil angle (sine squared) [model-proposed; physical meaning unverified]",
+  "Compton scattering|Electron recoil angle (sine squared) [model-proposed; physical meaning unverified]|scattered photon energy / initial energy",
+  "Compton scattering|Electron recoil angle (sine squared) [model-proposed; physical meaning unverified]|electron kinetic energy / photon energy",
+  "Compton scattering|Electron recoil angle (sine squared) [model-proposed; physical meaning unverified]|scattered photon energy / (m_e c\u00b2)",
+  "Compton scattering|Electron recoil angle (sine squared) [model-proposed; physical meaning unverified]|electron kinetic energy / (m_e c\u00b2)",
+  "Compton scattering|Electron recoil angle (sine squared) [model-proposed; physical meaning unverified]|wavelength shift / Compton wavelength",
+  "Compton scattering|Electron recoil angle (sine squared) [model-proposed; physical meaning unverified]|photon energy / (m_e c\u00b2)",
+  "Compton scattering|Electron recoil angle (sine squared) [model-proposed; physical meaning unverified]|Recoil electron momentum / (m_e c) [model-proposed; physical meaning unverified]",
+  "Compton scattering|Electron recoil angle (sine squared) [model-proposed; physical meaning unverified]|Electron recoil angle (cosine) [model-proposed; physical meaning unverified]",
+  "Compton scattering|Electron recoil angle (sine squared) [model-proposed; physical meaning unverified]|Compton wavelength shift / (initial photon wavelength) [model-proposed; physical meaning unverified]",
+  "Compton scattering|Electron recoil angle (sine squared) [model-proposed; physical meaning unverified]|Compton scattering formula (recoil angle cosine) [model-proposed; physical meaning unverified]",
+  "Compton scattering|Electron recoil angle (sine squared) [model-proposed; physical meaning unverified]|Scattered photon wavelength / initial photon wavelength [model-proposed; physical meaning unverified]",
+  "driven oscillator|amplitude / static deflection|Velocity transmissibility [model-proposed; physical meaning unverified]",
+  "driven oscillator|amplitude / static deflection|Acceleration transmissibility [model-proposed; physical meaning unverified]",
+  "driven oscillator|transmissibility|Velocity transmissibility [model-proposed; physical meaning unverified]",
+  "driven oscillator|transmissibility|Acceleration transmissibility [model-proposed; physical meaning unverified]",
+  "driven oscillator|velocity amplitude / (\u03c90 \u00d7 static deflection)|Velocity transmissibility [model-proposed; physical meaning unverified]",
+  "driven oscillator|velocity amplitude / (\u03c90 \u00d7 static deflection)|Acceleration transmissibility [model-proposed; physical meaning unverified]",
+  "driven oscillator|acceleration amplitude / (\u03c90\u00b2 \u00d7 static deflection)|Velocity transmissibility [model-proposed; physical meaning unverified]",
+  "driven oscillator|acceleration amplitude / (\u03c90\u00b2 \u00d7 static deflection)|Acceleration transmissibility [model-proposed; physical meaning unverified]",
+  "driven oscillator|mean absorbed power (normalised)|Velocity transmissibility [model-proposed; physical meaning unverified]",
+  "driven oscillator|mean absorbed power (normalised)|Acceleration transmissibility [model-proposed; physical meaning unverified]",
+  "driven oscillator|quality factor|Velocity transmissibility [model-proposed; physical meaning unverified]",
+  "driven oscillator|quality factor|Acceleration transmissibility [model-proposed; physical meaning unverified]",
+  "driven oscillator|log decrement [model-proposed; physical meaning unverified]|Velocity transmissibility [model-proposed; physical meaning unverified]",
+  "driven oscillator|log decrement [model-proposed; physical meaning unverified]|Acceleration transmissibility [model-proposed; physical meaning unverified]",
+  "driven oscillator|resonance frequency ratio [model-proposed; physical meaning unverified]|Velocity transmissibility [model-proposed; physical meaning unverified]",
+  "driven oscillator|resonance frequency ratio [model-proposed; physical meaning unverified]|Acceleration transmissibility [model-proposed; physical meaning unverified]",
+  "driven oscillator|resonance amplitude ratio [model-proposed; physical meaning unverified]|Velocity transmissibility [model-proposed; physical meaning unverified]",
+  "driven oscillator|resonance amplitude ratio [model-proposed; physical meaning unverified]|Acceleration transmissibility [model-proposed; physical meaning unverified]",
+  "driven oscillator|Resonance frequency shift [model-proposed; physical meaning unverified]|Velocity transmissibility [model-proposed; physical meaning unverified]",
+  "driven oscillator|Resonance frequency shift [model-proposed; physical meaning unverified]|Acceleration transmissibility [model-proposed; physical meaning unverified]",
+  "driven oscillator|Peak amplitude ratio [model-proposed; physical meaning unverified]|Velocity transmissibility [model-proposed; physical meaning unverified]",
+  "driven oscillator|Peak amplitude ratio [model-proposed; physical meaning unverified]|Acceleration transmissibility [model-proposed; physical meaning unverified]",
+  "driven oscillator|Resonance frequency ratio (corrected) [model-proposed; physical meaning unverified]|Velocity transmissibility [model-proposed; physical meaning unverified]",
+  "driven oscillator|Resonance frequency ratio (corrected) [model-proposed; physical meaning unverified]|Acceleration transmissibility [model-proposed; physical meaning unverified]",
+  "Compton scattering|Electron recoil angle (sine squared) [model-proposed; physical meaning unverified]|Scattered photon momentum / initial photon momentum [model-proposed; physical meaning unverified]",
+  "Compton scattering|Electron recoil angle (sine squared) [model-proposed; physical meaning unverified]|Scattered photon wavelength / Compton wavelength [model-proposed; physical meaning unverified]",
+  "driven oscillator|Relative energy loss per cycle [model-proposed; physical meaning unverified]|Velocity transmissibility [model-proposed; physical meaning unverified]",
+  "driven oscillator|Relative energy loss per cycle [model-proposed; physical meaning unverified]|Acceleration transmissibility [model-proposed; physical meaning unverified]",
+  "driven oscillator|Normalized power transmission [model-proposed; physical meaning unverified]|Resonance frequency ratio (corrected) [model-proposed; physical meaning unverified]",
+  "driven oscillator|Normalized power transmission [model-proposed; physical meaning unverified]|Relative energy loss per cycle [model-proposed; physical meaning unverified]",
+  "driven oscillator|Normalized power transmission [model-proposed; physical meaning unverified]|Velocity transmissibility [model-proposed; physical meaning unverified]",
+  "driven oscillator|Normalized power transmission [model-proposed; physical meaning unverified]|Acceleration transmissibility [model-proposed; physical meaning unverified]",
+  "driven oscillator|Velocity transmissibility [model-proposed; physical meaning unverified]|amplitude / static deflection",
+  "driven oscillator|Velocity transmissibility [model-proposed; physical meaning unverified]|transmissibility",
+  "driven oscillator|Velocity transmissibility [model-proposed; physical meaning unverified]|velocity amplitude / (\u03c90 \u00d7 static deflection)",
+  "driven oscillator|Velocity transmissibility [model-proposed; physical meaning unverified]|acceleration amplitude / (\u03c90\u00b2 \u00d7 static deflection)",
+  "driven oscillator|Velocity transmissibility [model-proposed; physical meaning unverified]|mean absorbed power (normalised)",
+  "driven oscillator|Velocity transmissibility [model-proposed; physical meaning unverified]|quality factor",
+  "driven oscillator|Velocity transmissibility [model-proposed; physical meaning unverified]|log decrement [model-proposed; physical meaning unverified]",
+  "driven oscillator|Velocity transmissibility [model-proposed; physical meaning unverified]|resonance frequency ratio [model-proposed; physical meaning unverified]",
+  "driven oscillator|Velocity transmissibility [model-proposed; physical meaning unverified]|resonance amplitude ratio [model-proposed; physical meaning unverified]",
+  "driven oscillator|Velocity transmissibility [model-proposed; physical meaning unverified]|Resonance frequency shift [model-proposed; physical meaning unverified]",
+  "driven oscillator|Velocity transmissibility [model-proposed; physical meaning unverified]|Peak amplitude ratio [model-proposed; physical meaning unverified]",
+  "driven oscillator|Velocity transmissibility [model-proposed; physical meaning unverified]|Resonance frequency ratio (corrected) [model-proposed; physical meaning unverified]",
+  "driven oscillator|Velocity transmissibility [model-proposed; physical meaning unverified]|Relative energy loss per cycle [model-proposed; physical meaning unverified]",
+  "driven oscillator|Velocity transmissibility [model-proposed; physical meaning unverified]|Normalized power transmission [model-proposed; physical meaning unverified]",
+  "driven oscillator|Velocity transmissibility [model-proposed; physical meaning unverified]|Acceleration transmissibility [model-proposed; physical meaning unverified]",
+  "driven oscillator|Acceleration transmissibility [model-proposed; physical meaning unverified]|amplitude / static deflection",
+  "driven oscillator|Acceleration transmissibility [model-proposed; physical meaning unverified]|transmissibility",
+  "driven oscillator|Acceleration transmissibility [model-proposed; physical meaning unverified]|velocity amplitude / (\u03c90 \u00d7 static deflection)"
  ],
  "edges": [
   {
@@ -4475,9 +4901,87 @@
    "f": "Peak amplitude ratio [model-proposed; physical meaning unverified]",
    "g": "Relative energy loss per cycle [model-proposed; physical meaning unverified]",
    "k": "13/28"
+  },
+  {
+   "family": "driven oscillator",
+   "f": "Normalized power transmission [model-proposed; physical meaning unverified]",
+   "g": "mean absorbed power (normalised)",
+   "k": "1/2"
+  },
+  {
+   "family": "driven oscillator",
+   "f": "Velocity transmissibility [model-proposed; physical meaning unverified]",
+   "g": "amplitude / static deflection",
+   "k": "1"
+  },
+  {
+   "family": "driven oscillator",
+   "f": "Velocity transmissibility [model-proposed; physical meaning unverified]",
+   "g": "transmissibility",
+   "k": "1"
+  },
+  {
+   "family": "driven oscillator",
+   "f": "Velocity transmissibility [model-proposed; physical meaning unverified]",
+   "g": "velocity amplitude / (\u03c90 \u00d7 static deflection)",
+   "k": "1/2"
+  },
+  {
+   "family": "driven oscillator",
+   "f": "Velocity transmissibility [model-proposed; physical meaning unverified]",
+   "g": "acceleration amplitude / (\u03c90\u00b2 \u00d7 static deflection)",
+   "k": "1/4"
+  },
+  {
+   "family": "driven oscillator",
+   "f": "Velocity transmissibility [model-proposed; physical meaning unverified]",
+   "g": "mean absorbed power (normalised)",
+   "k": "1"
+  },
+  {
+   "family": "driven oscillator",
+   "f": "Velocity transmissibility [model-proposed; physical meaning unverified]",
+   "g": "resonance frequency ratio [model-proposed; physical meaning unverified]",
+   "k": "1/3"
+  },
+  {
+   "family": "driven oscillator",
+   "f": "Velocity transmissibility [model-proposed; physical meaning unverified]",
+   "g": "resonance amplitude ratio [model-proposed; physical meaning unverified]",
+   "k": "1/3"
+  },
+  {
+   "family": "driven oscillator",
+   "f": "Velocity transmissibility [model-proposed; physical meaning unverified]",
+   "g": "Resonance frequency shift [model-proposed; physical meaning unverified]",
+   "k": "1"
+  },
+  {
+   "family": "driven oscillator",
+   "f": "Velocity transmissibility [model-proposed; physical meaning unverified]",
+   "g": "Resonance frequency ratio (corrected) [model-proposed; physical meaning unverified]",
+   "k": "1/3"
+  },
+  {
+   "family": "driven oscillator",
+   "f": "Acceleration transmissibility [model-proposed; physical meaning unverified]",
+   "g": "amplitude / static deflection",
+   "k": "1"
+  },
+  {
+   "family": "driven oscillator",
+   "f": "Acceleration transmissibility [model-proposed; physical meaning unverified]",
+   "g": "transmissibility",
+   "k": "1"
+  },
+  {
+   "family": "driven oscillator",
+   "f": "Acceleration transmissibility [model-proposed; physical meaning unverified]",
+   "g": "velocity amplitude / (\u03c90 \u00d7 static deflection)",
+   "k": "1/2"
   }
  ],
- "rounds": 144,
+ "rounds": 161,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",
