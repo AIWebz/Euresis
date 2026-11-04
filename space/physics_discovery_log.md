@@ -253,3 +253,17 @@
 - 2026-11-04 08:05 segment end: 230 rounds, 2 discoveries, 2 known laws rediscovered
 - 2026-11-04 08:05 segment start (budget 100 min; model: Qwen3-14B; 2 discoveries so far)
 - 2026-11-04 08:05 round 231: damped oscillator
+- 2026-11-04 08:07 round 232: wave boundary
+- 2026-11-04 08:08 round 233: relativity
+- 2026-11-04 08:10 round 234: kepler
+- 2026-11-04 08:11 round 235: heat engines
+- 2026-11-04 08:13 round 236: collisions
+- 2026-11-04 08:14 round 237: quantum step
+- 2026-11-04 08:15 round 238: acoustic Doppler
+- 2026-11-04 08:16 round 239: damped oscillator
+- 2026-11-04 08:17 round 240: wave boundary
+- 2026-11-04 08:18 round 241: relativity
+- 2026-11-04 08:20 round 242: kepler
+- 2026-11-04 08:21 round 243: heat engines
+- 2026-11-04 08:22 round 244: collisions
+- 2026-11-04 08:23 round 245: quantum step
