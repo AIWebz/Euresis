@@ -227,3 +227,18 @@
 - 2026-11-04 18:48 DISCOVERY (proved, sharp to 1e-6, two-variable): [economics: insurance and risk] Relative Risk Aversion [model-proposed; physical meaning unverified] ≥ 8 × Expected Utility Deviation [model-proposed; physical meaning unverified]   on p < 1, L < 1 (equality at (p, L) ≈ (0.5, 0.75))  [phy-8a2de0d37a53]
 - 2026-11-04 18:48 DISCOVERY (proved, sharp to 1e-6, two-variable): [economics: insurance and risk] Expected Utility Deviation [model-proposed; physical meaning unverified] ≥ 27/16 × variance of wealth   on p < 1, L < 1 (equality at (p, L) ≈ (0.5, 0.888889))  [phy-8e5d9380fd92]
 - 2026-11-04 18:48 round 216: auction with a reserve price
+- 2026-11-04 18:51 round 217: two-body decay
+- 2026-11-04 18:53 round 218: collision
+- 2026-11-04 18:54 round 219: driven oscillator
+- 2026-11-04 18:56 round 220: velocity addition
+- 2026-11-04 18:58 round 221: Compton scattering
+- 2026-11-04 19:00 round 222: Cournot duopoly
+- 2026-11-04 19:01 round 223: insurance and risk
+- 2026-11-04 19:03 round 224: auction with a reserve price
+- 2026-11-04 19:05 round 225: two-body decay
+- 2026-11-04 19:07 round 226: collision
+- 2026-11-04 19:08 round 227: driven oscillator
+- 2026-11-04 19:10 round 228: velocity addition
+- 2026-11-04 19:12 round 229: Compton scattering
+- 2026-11-04 19:13 round 230: Cournot duopoly
+- 2026-11-04 19:15 round 231: insurance and risk
