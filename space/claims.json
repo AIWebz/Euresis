@@ -5355,5 +5355,538 @@
   "statement": "[velocity addition] composed speed / c \u2265 1/2 \u00d7 Galilean sum / c   on u < 1, v < 1 (tight only at the edge of the domain, near (1, 1))",
   "status": "proved",
   "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-dc250f7ca493",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'electron kinetic energy / photon energy'",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "x/(c*x + 1) >= 1/4*(c*x**2/(c*x + 1))",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 10",
+  "statement": "[Compton scattering] scattered photon energy / (m_e c\u00b2) \u2265 1/4 \u00d7 electron kinetic energy / (m_e c\u00b2)   on x < 2, c < 2 (tight only at the edge of the domain, near (2, 2))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-618c3c50afb4",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "x/(c*x + 1) >= 1/5*(x)",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 10",
+  "statement": "[Compton scattering] scattered photon energy / (m_e c\u00b2) \u2265 1/5 \u00d7 photon energy / (m_e c\u00b2)   on x < 2, c < 2 (tight only at the edge of the domain, near (2, 2))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-ceb016832198",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "c >= 1/2*(c*x/(c*x + 1))",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 10",
+  "statement": "[Compton scattering] wavelength shift / Compton wavelength \u2265 1/2 \u00d7 electron kinetic energy / photon energy   on x < 2, c < 2 (tight only at the edge of the domain, near (2, 5.9e-15))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-ad8128247189",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'electron kinetic energy / photon energy'",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "c >= 1/4*(c*x**2/(c*x + 1))",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 10",
+  "statement": "[Compton scattering] wavelength shift / Compton wavelength \u2265 1/4 \u00d7 electron kinetic energy / (m_e c\u00b2)   on x < 2, c < 2 (tight only at the edge of the domain, near (2, 1.5e-14))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-ed944444176a",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "x >= 1/2*(c*x/(c*x + 1))",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 10",
+  "statement": "[Compton scattering] photon energy / (m_e c\u00b2) \u2265 1/2 \u00d7 electron kinetic energy / photon energy   on x < 2, c < 2 (tight only at the edge of the domain, near (5.9e-15, 2))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-42cee2723eba",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "x >= 1*(x/(c*x + 1))",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 10",
+  "statement": "[Compton scattering] photon energy / (m_e c\u00b2) \u2265 1 \u00d7 scattered photon energy / (m_e c\u00b2)   on x < 2, c < 2 (tight only at the edge of the domain, near (0.000226, 8.49e-14))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-d80ad626cb4b",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "x >= 5/4*(c*x**2/(c*x + 1))",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 10",
+  "statement": "[Compton scattering] photon energy / (m_e c\u00b2) \u2265 5/4 \u00d7 electron kinetic energy / (m_e c\u00b2)   on x < 2, c < 2 (tight only at the edge of the domain, near (2, 2))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-7edfa37dfa78",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "claim": "sqrt((1 - (a - b)**2)*(1 - (a + b)**2))/(a**2 - b**2 + 1) >= 1*(sqrt((1 - (a - b)**2)*(1 - (a + b)**2))/2)",
+   "symbols": [
+    "a",
+    "b"
+   ]
+  },
+  "source": "physics_discover2 round 11",
+  "statement": "[two-body decay] speed of product 1 / c \u2265 1 \u00d7 momentum of each product / (Mc)   on a < 1, b < 1, a + b < 1 (tight only at the edge of the domain, near (1, 2.28e-15))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-67b551a2aa7e",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "claim": "sqrt((1 - (a - b)**2)*(1 - (a + b)**2))/(a**2 - b**2 + 1) >= 1*(-a - b + 1)",
+   "symbols": [
+    "a",
+    "b"
+   ]
+  },
+  "source": "physics_discover2 round 11",
+  "statement": "[two-body decay] speed of product 1 / c \u2265 1 \u00d7 kinetic energy released Q / (Mc\u00b2)   on a < 1, b < 1, a + b < 1 (tight only at the edge of the domain, near (1.03e-14, 2.26e-14))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-e5515f5befe5",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "claim": "sqrt((1 - (a - b)**2)*(1 - (a + b)**2))/(a**2 - b**2 + 1) >= 2*(-b**2/2 + (1 - a)**2/2)",
+   "symbols": [
+    "a",
+    "b"
+   ]
+  },
+  "source": "physics_discover2 round 11",
+  "statement": "[two-body decay] speed of product 1 / c \u2265 2 \u00d7 kinetic energy of product 1 / (Mc\u00b2)   on a < 1, b < 1, a + b < 1 (tight only at the edge of the domain, near (3.82e-17, 2.71e-09))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-fe6f2662658b",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "claim": "sqrt((1 - (a - b)**2)*(1 - (a + b)**2))/(-a**2 + b**2 + 1) >= 1*(sqrt((1 - (a - b)**2)*(1 - (a + b)**2))/2)",
+   "symbols": [
+    "a",
+    "b"
+   ]
+  },
+  "source": "physics_discover2 round 11",
+  "statement": "[two-body decay] speed of product 2 / c \u2265 1 \u00d7 momentum of each product / (Mc)   on a < 1, b < 1, a + b < 1 (tight only at the edge of the domain, near (2.28e-15, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-fc23e4421163",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "claim": "sqrt((1 - (a - b)**2)*(1 - (a + b)**2))/(-a**2 + b**2 + 1) >= 1*(-a - b + 1)",
+   "symbols": [
+    "a",
+    "b"
+   ]
+  },
+  "source": "physics_discover2 round 11",
+  "statement": "[two-body decay] speed of product 2 / c \u2265 1 \u00d7 kinetic energy released Q / (Mc\u00b2)   on a < 1, b < 1, a + b < 1 (tight only at the edge of the domain, near (2.26e-14, 1.03e-14))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-544289e4373f",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'momentum of each product / (Mc)'",
+  "payload": {
+   "assumptions": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "claim": "sqrt((1 - (a - b)**2)*(1 - (a + b)**2))/(-a**2 + b**2 + 1) >= 1*(-b**2/2 + (1 - a)**2/2)",
+   "symbols": [
+    "a",
+    "b"
+   ]
+  },
+  "source": "physics_discover2 round 11",
+  "statement": "[two-body decay] speed of product 2 / c \u2265 1 \u00d7 kinetic energy of product 1 / (Mc\u00b2)   on a < 1, b < 1, a + b < 1 (tight only at the edge of the domain, near (4.18e-17, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-6fc198170d1e",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "claim": "(a**2 - b**2 + 1)/(2*a) >= 1*(a**2/2 - b**2/2 + 1/2)",
+   "symbols": [
+    "a",
+    "b"
+   ]
+  },
+  "source": "physics_discover2 round 11",
+  "statement": "[two-body decay] Lorentz factor of product 1 \u2265 1 \u00d7 energy of product 1 / (Mc\u00b2)   on a < 1, b < 1, a + b < 1 (tight only at the edge of the domain, near (1, 1.73e-15))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-e228208fa317",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "claim": "(a**2 - b**2 + 1)/(2*a) >= 1*(-a**2/2 + b**2/2 + 1/2)",
+   "symbols": [
+    "a",
+    "b"
+   ]
+  },
+  "source": "physics_discover2 round 11",
+  "statement": "[two-body decay] Lorentz factor of product 1 \u2265 1 \u00d7 energy of product 2 / (Mc\u00b2)   on a < 1, b < 1, a + b < 1 (tight only at the edge of the domain, near (9.67e-09, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-a39ab186cca4",
+  "kind": "physics-relation",
+  "novelty": "equality holds along a whole curve \u2014 a one-variable inequality in disguise; proved, not counted",
+  "payload": {
+   "assumptions": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "claim": "(a**2 - b**2 + 1)/(2*a) >= 2*(sqrt((1 - (a - b)**2)*(1 - (a + b)**2))/(a**2 - b**2 + 1))",
+   "symbols": [
+    "a",
+    "b"
+   ]
+  },
+  "source": "physics_discover2 round 11",
+  "statement": "[two-body decay] Lorentz factor of product 1 \u2265 2 \u00d7 speed of product 1 / c   on a < 1, b < 1, a + b < 1 (equality at (a, b) \u2248 (0.0545239, 0.921279))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-a398a88b4208",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "claim": "(a**2 - b**2 + 1)/(2*a) >= 1*(sqrt((1 - (a - b)**2)*(1 - (a + b)**2))/(-a**2 + b**2 + 1))",
+   "symbols": [
+    "a",
+    "b"
+   ]
+  },
+  "source": "physics_discover2 round 11",
+  "statement": "[two-body decay] Lorentz factor of product 1 \u2265 1 \u00d7 speed of product 2 / c   on a < 1, b < 1, a + b < 1 (tight only at the edge of the domain, near (1, 4.06e-12))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-7b25cf2b446a",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "(e + 1)/(m + 1) >= 1/2*((-e*m + 1)/(e*m + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 12",
+  "statement": "[collision] momentum transferred / initial momentum \u2265 1/2 \u00d7 velocity ratio of projectile to target after collision [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 6.87e-16))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-db8cb4a93908",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "(-e*m + 1)/(e*m + 1) >= 1/2*((1 - e**2)/(m + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 12",
+  "statement": "[collision] velocity ratio of projectile to target after collision [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 fraction of kinetic energy lost   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]

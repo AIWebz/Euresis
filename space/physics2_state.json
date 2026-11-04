@@ -18,7 +18,8 @@
    "fraction of kinetic energy given to the target": "(1 + e)**2*m/(1 + m)**2",
    "speed of the centre of mass / initial speed": "m/(1 + m)",
    "relative speed after / relative speed before": "e",
-   "velocity ratio of target to projectile after collision [model-proposed; physical meaning unverified]": "e*(m + 1)/(e*m + 1)"
+   "velocity ratio of target to projectile after collision [model-proposed; physical meaning unverified]": "e*(m + 1)/(e*m + 1)",
+   "velocity ratio of projectile to target after collision [model-proposed; physical meaning unverified]": "(-e*m + 1)/(e*m + 1)"
   },
   "driven oscillator": {
    "amplitude / static deflection": "1/sqrt((1 - r**2)**2 + (2*z*r)**2)",
@@ -192,6 +193,61 @@
    "family": "velocity addition",
    "expr": "sqrt((1 - u**2)*(1 - v**2))/(1 + u*v)",
    "why": "affine combination of known quantities (composed speed / c, 1/(Lorentz factor of the composed motion))"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "x*c/(1 + x*c)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy)"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "x**2*c/(1 + x*c)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, electron kinetic energy / (m_e c\u00b2))"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "x/(1 + x*c)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, scattered photon energy / (m_e c\u00b2))"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "c",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, wavelength shift / Compton wavelength)"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "(a**2 + b**2 - (a - b)**2)/(-a - b + 1)",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), Invariant mass squared of the two products [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "((1 - a)**2 - b**2)/(1 - a**2 + b**2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "sqrt((1 - (a + b)**2)*(1 - (a - b)**2))/((1 + a**2 - b**2) * (1 - a**2 + b**2))",
+   "why": "affine combination of known quantities (speed of product 1 / c, speed of product 2 / c)"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "(1 + a**2 - b**2)/(1 - a**2 + b**2)",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), 1/(energy of product 2 / (Mc\u00b2)))"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2 * m",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "collision",
+   "expr": "(m*(1 - e**2))/(1 + m)**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "collision",
+   "expr": "(1 - e*m)/(1 + m)",
+   "why": "affine combination of known quantities (target speed / initial speed)"
   }
  ],
  "tried": [
@@ -398,7 +454,63 @@
   "velocity addition|composed speed / c|Galilean sum / c",
   "velocity addition|composed speed / c|Lorentz factor of the composed motion",
   "velocity addition|composed speed / c|product of the two Lorentz factors",
-  "velocity addition|composed speed / c|Doppler factor of the composed motion"
+  "velocity addition|composed speed / c|Doppler factor of the composed motion",
+  "Compton scattering|scattered photon energy / (m_e c\u00b2)|electron kinetic energy / (m_e c\u00b2)",
+  "Compton scattering|scattered photon energy / (m_e c\u00b2)|wavelength shift / Compton wavelength",
+  "Compton scattering|scattered photon energy / (m_e c\u00b2)|photon energy / (m_e c\u00b2)",
+  "Compton scattering|electron kinetic energy / (m_e c\u00b2)|scattered photon energy / initial energy",
+  "Compton scattering|electron kinetic energy / (m_e c\u00b2)|electron kinetic energy / photon energy",
+  "Compton scattering|electron kinetic energy / (m_e c\u00b2)|scattered photon energy / (m_e c\u00b2)",
+  "Compton scattering|electron kinetic energy / (m_e c\u00b2)|wavelength shift / Compton wavelength",
+  "Compton scattering|electron kinetic energy / (m_e c\u00b2)|photon energy / (m_e c\u00b2)",
+  "Compton scattering|wavelength shift / Compton wavelength|scattered photon energy / initial energy",
+  "Compton scattering|wavelength shift / Compton wavelength|electron kinetic energy / photon energy",
+  "Compton scattering|wavelength shift / Compton wavelength|scattered photon energy / (m_e c\u00b2)",
+  "Compton scattering|wavelength shift / Compton wavelength|electron kinetic energy / (m_e c\u00b2)",
+  "Compton scattering|wavelength shift / Compton wavelength|photon energy / (m_e c\u00b2)",
+  "Compton scattering|photon energy / (m_e c\u00b2)|scattered photon energy / initial energy",
+  "Compton scattering|photon energy / (m_e c\u00b2)|electron kinetic energy / photon energy",
+  "Compton scattering|photon energy / (m_e c\u00b2)|scattered photon energy / (m_e c\u00b2)",
+  "Compton scattering|photon energy / (m_e c\u00b2)|electron kinetic energy / (m_e c\u00b2)",
+  "Compton scattering|photon energy / (m_e c\u00b2)|wavelength shift / Compton wavelength",
+  "two-body decay|kinetic energy of product 1 / (Mc\u00b2)|speed of product 1 / c",
+  "two-body decay|kinetic energy of product 1 / (Mc\u00b2)|speed of product 2 / c",
+  "two-body decay|kinetic energy of product 1 / (Mc\u00b2)|Lorentz factor of product 1",
+  "two-body decay|speed of product 1 / c|momentum of each product / (Mc)",
+  "two-body decay|speed of product 1 / c|energy of product 1 / (Mc\u00b2)",
+  "two-body decay|speed of product 1 / c|energy of product 2 / (Mc\u00b2)",
+  "two-body decay|speed of product 1 / c|kinetic energy released Q / (Mc\u00b2)",
+  "two-body decay|speed of product 1 / c|kinetic energy of product 1 / (Mc\u00b2)",
+  "two-body decay|speed of product 1 / c|speed of product 2 / c",
+  "two-body decay|speed of product 1 / c|Lorentz factor of product 1",
+  "two-body decay|speed of product 2 / c|momentum of each product / (Mc)",
+  "two-body decay|speed of product 2 / c|energy of product 1 / (Mc\u00b2)",
+  "two-body decay|speed of product 2 / c|energy of product 2 / (Mc\u00b2)",
+  "two-body decay|speed of product 2 / c|kinetic energy released Q / (Mc\u00b2)",
+  "two-body decay|speed of product 2 / c|kinetic energy of product 1 / (Mc\u00b2)",
+  "two-body decay|speed of product 2 / c|speed of product 1 / c",
+  "two-body decay|speed of product 2 / c|Lorentz factor of product 1",
+  "two-body decay|Lorentz factor of product 1|momentum of each product / (Mc)",
+  "two-body decay|Lorentz factor of product 1|energy of product 1 / (Mc\u00b2)",
+  "two-body decay|Lorentz factor of product 1|energy of product 2 / (Mc\u00b2)",
+  "two-body decay|Lorentz factor of product 1|kinetic energy released Q / (Mc\u00b2)",
+  "two-body decay|Lorentz factor of product 1|kinetic energy of product 1 / (Mc\u00b2)",
+  "two-body decay|Lorentz factor of product 1|speed of product 1 / c",
+  "two-body decay|Lorentz factor of product 1|speed of product 2 / c",
+  "collision|target speed / initial speed|velocity ratio of projectile to target after collision [model-proposed; physical meaning unverified]",
+  "collision|momentum transferred / initial momentum|velocity ratio of projectile to target after collision [model-proposed; physical meaning unverified]",
+  "collision|fraction of kinetic energy lost|velocity ratio of projectile to target after collision [model-proposed; physical meaning unverified]",
+  "collision|fraction of kinetic energy given to the target|velocity ratio of projectile to target after collision [model-proposed; physical meaning unverified]",
+  "collision|speed of the centre of mass / initial speed|velocity ratio of projectile to target after collision [model-proposed; physical meaning unverified]",
+  "collision|relative speed after / relative speed before|velocity ratio of projectile to target after collision [model-proposed; physical meaning unverified]",
+  "collision|velocity ratio of target to projectile after collision [model-proposed; physical meaning unverified]|velocity ratio of projectile to target after collision [model-proposed; physical meaning unverified]",
+  "collision|velocity ratio of projectile to target after collision [model-proposed; physical meaning unverified]|target speed / initial speed",
+  "collision|velocity ratio of projectile to target after collision [model-proposed; physical meaning unverified]|momentum transferred / initial momentum",
+  "collision|velocity ratio of projectile to target after collision [model-proposed; physical meaning unverified]|fraction of kinetic energy lost",
+  "collision|velocity ratio of projectile to target after collision [model-proposed; physical meaning unverified]|fraction of kinetic energy given to the target",
+  "collision|velocity ratio of projectile to target after collision [model-proposed; physical meaning unverified]|speed of the centre of mass / initial speed",
+  "collision|velocity ratio of projectile to target after collision [model-proposed; physical meaning unverified]|relative speed after / relative speed before",
+  "collision|velocity ratio of projectile to target after collision [model-proposed; physical meaning unverified]|velocity ratio of target to projectile after collision [model-proposed; physical meaning unverified]"
  ],
  "edges": [
   {
@@ -772,9 +884,123 @@
    "f": "composed speed / c",
    "g": "Galilean sum / c",
    "k": "1/2"
+  },
+  {
+   "family": "Compton scattering",
+   "f": "scattered photon energy / (m_e c\u00b2)",
+   "g": "electron kinetic energy / (m_e c\u00b2)",
+   "k": "1/4"
+  },
+  {
+   "family": "Compton scattering",
+   "f": "scattered photon energy / (m_e c\u00b2)",
+   "g": "photon energy / (m_e c\u00b2)",
+   "k": "1/5"
+  },
+  {
+   "family": "Compton scattering",
+   "f": "wavelength shift / Compton wavelength",
+   "g": "electron kinetic energy / photon energy",
+   "k": "1/2"
+  },
+  {
+   "family": "Compton scattering",
+   "f": "wavelength shift / Compton wavelength",
+   "g": "electron kinetic energy / (m_e c\u00b2)",
+   "k": "1/4"
+  },
+  {
+   "family": "Compton scattering",
+   "f": "photon energy / (m_e c\u00b2)",
+   "g": "electron kinetic energy / photon energy",
+   "k": "1/2"
+  },
+  {
+   "family": "Compton scattering",
+   "f": "photon energy / (m_e c\u00b2)",
+   "g": "scattered photon energy / (m_e c\u00b2)",
+   "k": "1"
+  },
+  {
+   "family": "Compton scattering",
+   "f": "photon energy / (m_e c\u00b2)",
+   "g": "electron kinetic energy / (m_e c\u00b2)",
+   "k": "5/4"
+  },
+  {
+   "family": "two-body decay",
+   "f": "speed of product 1 / c",
+   "g": "momentum of each product / (Mc)",
+   "k": "1"
+  },
+  {
+   "family": "two-body decay",
+   "f": "speed of product 1 / c",
+   "g": "kinetic energy released Q / (Mc\u00b2)",
+   "k": "1"
+  },
+  {
+   "family": "two-body decay",
+   "f": "speed of product 1 / c",
+   "g": "kinetic energy of product 1 / (Mc\u00b2)",
+   "k": "2"
+  },
+  {
+   "family": "two-body decay",
+   "f": "speed of product 2 / c",
+   "g": "momentum of each product / (Mc)",
+   "k": "1"
+  },
+  {
+   "family": "two-body decay",
+   "f": "speed of product 2 / c",
+   "g": "kinetic energy released Q / (Mc\u00b2)",
+   "k": "1"
+  },
+  {
+   "family": "two-body decay",
+   "f": "speed of product 2 / c",
+   "g": "kinetic energy of product 1 / (Mc\u00b2)",
+   "k": "1"
+  },
+  {
+   "family": "two-body decay",
+   "f": "Lorentz factor of product 1",
+   "g": "energy of product 1 / (Mc\u00b2)",
+   "k": "1"
+  },
+  {
+   "family": "two-body decay",
+   "f": "Lorentz factor of product 1",
+   "g": "energy of product 2 / (Mc\u00b2)",
+   "k": "1"
+  },
+  {
+   "family": "two-body decay",
+   "f": "Lorentz factor of product 1",
+   "g": "speed of product 1 / c",
+   "k": "2"
+  },
+  {
+   "family": "two-body decay",
+   "f": "Lorentz factor of product 1",
+   "g": "speed of product 2 / c",
+   "k": "1"
+  },
+  {
+   "family": "collision",
+   "f": "momentum transferred / initial momentum",
+   "g": "velocity ratio of projectile to target after collision [model-proposed; physical meaning unverified]",
+   "k": "1/2"
+  },
+  {
+   "family": "collision",
+   "f": "velocity ratio of projectile to target after collision [model-proposed; physical meaning unverified]",
+   "g": "fraction of kinetic energy lost",
+   "k": "1/2"
   }
  ],
- "rounds": 9,
+ "rounds": 12,
  "discoveries": [],
  "rediscoveries": []
 }
