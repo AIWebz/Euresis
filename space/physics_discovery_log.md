@@ -138,3 +138,5 @@
 - 2026-11-04 05:36 round 121: relativity
 - 2026-11-04 05:37 round 122: kepler
 - 2026-11-04 05:38 segment end: 122 rounds, 2 discoveries, 2 known laws rediscovered
+- 2026-11-04 05:38 segment start (budget 100 min; model: Qwen3-14B; 2 discoveries so far)
+- 2026-11-04 05:38 round 123: heat engines
