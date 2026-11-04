@@ -20,7 +20,8 @@
    "speed of the centre of mass / initial speed": "m/(1 + m)",
    "relative speed after / relative speed before": "e",
    "velocity ratio of target to projectile after collision [model-proposed; physical meaning unverified]": "e*(m + 1)/(e*m + 1)",
-   "velocity ratio of projectile to target after collision [model-proposed; physical meaning unverified]": "(-e*m + 1)/(e*m + 1)"
+   "velocity ratio of projectile to target after collision [model-proposed; physical meaning unverified]": "(-e*m + 1)/(e*m + 1)",
+   "relative velocity after collision divided by initial velocity of projectile [model-proposed; physical meaning unverified]": "e*(1 - m)/(m + 1)"
   },
   "driven oscillator": {
    "amplitude / static deflection": "1/sqrt((1 - r**2)**2 + (2*z*r)**2)",
@@ -56,7 +57,8 @@
    "photon energy / (m_e c\u00b2)": "x",
    "Recoil electron momentum / (m_e c) [model-proposed; physical meaning unverified]": "sqrt(c**2*x**2/(c*x + 1)**2 + c*x**2/(c*x + 1))",
    "Electron recoil angle (cosine) [model-proposed; physical meaning unverified]": "1/(2*c**2*x**2 + 1)",
-   "Compton wavelength shift / (initial photon wavelength) [model-proposed; physical meaning unverified]": "c/(c + x)"
+   "Compton wavelength shift / (initial photon wavelength) [model-proposed; physical meaning unverified]": "c/(c + x)",
+   "Compton scattering formula (recoil angle cosine) [model-proposed; physical meaning unverified]": "1/(2*c*x + 1)"
   }
  },
  "rejected": [
@@ -884,6 +886,156 @@
    "family": "two-body decay",
    "expr": "sqrt((1 - (a + b)**2)*(1 - (a - b)**2))",
    "why": "affine combination of known quantities (momentum of each product / (Mc))"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2 * m",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "collision",
+   "expr": "e",
+   "why": "affine combination of known quantities (target speed / initial speed, momentum transferred / initial momentum)"
+  },
+  {
+   "family": "collision",
+   "expr": "(1 + e)**2 * m / (1 + m)**2",
+   "why": "affine combination of known quantities (target speed / initial speed, fraction of kinetic energy given to the target)"
+  },
+  {
+   "family": "collision",
+   "expr": "(1 - (1 + e)**2 * m / (1 + m)**2)",
+   "why": "affine combination of known quantities (target speed / initial speed, fraction of kinetic energy given to the target)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "atan(2*z*r/(1 - r**2))",
+   "why": "only + \u2212 \u00d7 \u00f7, integer powers and square roots (so the prover can decide it)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "1/(2*z*sqrt(1 - r**2))",
+   "why": "not finite on the whole physical domain"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "z*r**2/(sqrt((1 - r**2)**2 + (2*z*r)**2))",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(1 - r**2)/sqrt(1 + (2*z*r)**2)",
+   "why": "not finite on the whole physical domain"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "(u + v)/(sqrt(1 - u**2)*sqrt(1 - v**2)*(1 + u*v))",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 - u**2)*(1 - v**2))/(1 - u*v)",
+   "why": "affine combination of known quantities (composed speed / c, Relativistic velocity parameter [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "log((1 + u)/(1 - u)) + log((1 + v)/(1 - v))",
+   "why": "only + \u2212 \u00d7 \u00f7, integer powers and square roots (so the prover can decide it)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "1 - (u + v)**2/(1 + u*v)**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "x*c/(1 + x*c)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy)"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "1 - 1/(1 + x*c)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy)"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "x*c/(1 + x*c)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy)"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "sqrt((1 - (a + b)**2)*(1 - (a - b)**2))/((1 + a**2 - b**2)*(1 - a**2 + b**2))",
+   "why": "affine combination of known quantities (speed of product 1 / c, speed of product 2 / c)"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "(a**2 + b**2 - (a - b)**2)/(1 - a - b)**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "1/(1 - a - b)",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), 1/(kinetic energy released Q / (Mc\u00b2)))"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "(1 + a**2 - b**2)/(1 - a**2 + b**2)",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), 1/(energy of product 2 / (Mc\u00b2)))"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2 * m",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "collision",
+   "expr": "(1 - e)/(1 + m)",
+   "why": "affine combination of known quantities (target speed / initial speed, relative velocity after collision divided by initial velocity of projectile [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "(1 - e**2)/(1 + m)",
+   "why": "affine combination of known quantities (target speed / initial speed, fraction of kinetic energy lost)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "atan(2*z*r/(1 - r**2))",
+   "why": "only + \u2212 \u00d7 \u00f7, integer powers and square roots (so the prover can decide it)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "z/(sqrt(1 - r**2))",
+   "why": "not finite on the whole physical domain"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "r**2/(1 + (2*z*r)**2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "1/(sqrt((1 - r**2)**2 + (2*z*r)**2))",
+   "why": "affine combination of known quantities (amplitude / static deflection)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 + u)/(1 - u)) * sqrt((1 + v)/(1 - v))",
+   "why": "affine combination of known quantities (composed speed / c, Doppler factor of the composed motion)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "1 - (u + v)**2/(1 + u*v)**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 - u**2)*(1 - v**2))/(1 - u*v)",
+   "why": "affine combination of known quantities (composed speed / c, Relativistic velocity parameter [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "u/sqrt(1 - u**2) + v/sqrt(1 - v**2)",
+   "why": "affine combination of known quantities (composed speed / c, Relativistic momentum ratio [model-proposed; physical meaning unverified])"
   }
  ],
  "tried": [
@@ -1316,7 +1468,41 @@
   "Compton scattering|Compton wavelength shift / (initial photon wavelength) [model-proposed; physical meaning unverified]|wavelength shift / Compton wavelength",
   "Compton scattering|Compton wavelength shift / (initial photon wavelength) [model-proposed; physical meaning unverified]|photon energy / (m_e c\u00b2)",
   "Compton scattering|Compton wavelength shift / (initial photon wavelength) [model-proposed; physical meaning unverified]|Recoil electron momentum / (m_e c) [model-proposed; physical meaning unverified]",
-  "Compton scattering|Compton wavelength shift / (initial photon wavelength) [model-proposed; physical meaning unverified]|Electron recoil angle (cosine) [model-proposed; physical meaning unverified]"
+  "Compton scattering|Compton wavelength shift / (initial photon wavelength) [model-proposed; physical meaning unverified]|Electron recoil angle (cosine) [model-proposed; physical meaning unverified]",
+  "Compton scattering|scattered photon energy / initial energy|Compton scattering formula (recoil angle cosine) [model-proposed; physical meaning unverified]",
+  "Compton scattering|electron kinetic energy / photon energy|Compton scattering formula (recoil angle cosine) [model-proposed; physical meaning unverified]",
+  "Compton scattering|scattered photon energy / (m_e c\u00b2)|Compton scattering formula (recoil angle cosine) [model-proposed; physical meaning unverified]",
+  "Compton scattering|electron kinetic energy / (m_e c\u00b2)|Compton scattering formula (recoil angle cosine) [model-proposed; physical meaning unverified]",
+  "Compton scattering|wavelength shift / Compton wavelength|Compton scattering formula (recoil angle cosine) [model-proposed; physical meaning unverified]",
+  "Compton scattering|photon energy / (m_e c\u00b2)|Compton scattering formula (recoil angle cosine) [model-proposed; physical meaning unverified]",
+  "Compton scattering|Recoil electron momentum / (m_e c) [model-proposed; physical meaning unverified]|Compton scattering formula (recoil angle cosine) [model-proposed; physical meaning unverified]",
+  "Compton scattering|Electron recoil angle (cosine) [model-proposed; physical meaning unverified]|Compton scattering formula (recoil angle cosine) [model-proposed; physical meaning unverified]",
+  "Compton scattering|Compton wavelength shift / (initial photon wavelength) [model-proposed; physical meaning unverified]|Compton scattering formula (recoil angle cosine) [model-proposed; physical meaning unverified]",
+  "Compton scattering|Compton scattering formula (recoil angle cosine) [model-proposed; physical meaning unverified]|scattered photon energy / initial energy",
+  "Compton scattering|Compton scattering formula (recoil angle cosine) [model-proposed; physical meaning unverified]|electron kinetic energy / photon energy",
+  "Compton scattering|Compton scattering formula (recoil angle cosine) [model-proposed; physical meaning unverified]|scattered photon energy / (m_e c\u00b2)",
+  "Compton scattering|Compton scattering formula (recoil angle cosine) [model-proposed; physical meaning unverified]|electron kinetic energy / (m_e c\u00b2)",
+  "Compton scattering|Compton scattering formula (recoil angle cosine) [model-proposed; physical meaning unverified]|wavelength shift / Compton wavelength",
+  "Compton scattering|Compton scattering formula (recoil angle cosine) [model-proposed; physical meaning unverified]|photon energy / (m_e c\u00b2)",
+  "Compton scattering|Compton scattering formula (recoil angle cosine) [model-proposed; physical meaning unverified]|Recoil electron momentum / (m_e c) [model-proposed; physical meaning unverified]",
+  "Compton scattering|Compton scattering formula (recoil angle cosine) [model-proposed; physical meaning unverified]|Electron recoil angle (cosine) [model-proposed; physical meaning unverified]",
+  "Compton scattering|Compton scattering formula (recoil angle cosine) [model-proposed; physical meaning unverified]|Compton wavelength shift / (initial photon wavelength) [model-proposed; physical meaning unverified]",
+  "collision|target speed / initial speed|relative velocity after collision divided by initial velocity of projectile [model-proposed; physical meaning unverified]",
+  "collision|momentum transferred / initial momentum|relative velocity after collision divided by initial velocity of projectile [model-proposed; physical meaning unverified]",
+  "collision|fraction of kinetic energy lost|relative velocity after collision divided by initial velocity of projectile [model-proposed; physical meaning unverified]",
+  "collision|fraction of kinetic energy given to the target|relative velocity after collision divided by initial velocity of projectile [model-proposed; physical meaning unverified]",
+  "collision|speed of the centre of mass / initial speed|relative velocity after collision divided by initial velocity of projectile [model-proposed; physical meaning unverified]",
+  "collision|relative speed after / relative speed before|relative velocity after collision divided by initial velocity of projectile [model-proposed; physical meaning unverified]",
+  "collision|velocity ratio of target to projectile after collision [model-proposed; physical meaning unverified]|relative velocity after collision divided by initial velocity of projectile [model-proposed; physical meaning unverified]",
+  "collision|velocity ratio of projectile to target after collision [model-proposed; physical meaning unverified]|relative velocity after collision divided by initial velocity of projectile [model-proposed; physical meaning unverified]",
+  "collision|relative velocity after collision divided by initial velocity of projectile [model-proposed; physical meaning unverified]|target speed / initial speed",
+  "collision|relative velocity after collision divided by initial velocity of projectile [model-proposed; physical meaning unverified]|momentum transferred / initial momentum",
+  "collision|relative velocity after collision divided by initial velocity of projectile [model-proposed; physical meaning unverified]|fraction of kinetic energy lost",
+  "collision|relative velocity after collision divided by initial velocity of projectile [model-proposed; physical meaning unverified]|fraction of kinetic energy given to the target",
+  "collision|relative velocity after collision divided by initial velocity of projectile [model-proposed; physical meaning unverified]|speed of the centre of mass / initial speed",
+  "collision|relative velocity after collision divided by initial velocity of projectile [model-proposed; physical meaning unverified]|relative speed after / relative speed before",
+  "collision|relative velocity after collision divided by initial velocity of projectile [model-proposed; physical meaning unverified]|velocity ratio of target to projectile after collision [model-proposed; physical meaning unverified]",
+  "collision|relative velocity after collision divided by initial velocity of projectile [model-proposed; physical meaning unverified]|velocity ratio of projectile to target after collision [model-proposed; physical meaning unverified]"
  ],
  "edges": [
   {
@@ -1990,9 +2176,81 @@
    "f": "Compton wavelength shift / (initial photon wavelength) [model-proposed; physical meaning unverified]",
    "g": "wavelength shift / Compton wavelength",
    "k": "1/4"
+  },
+  {
+   "family": "Compton scattering",
+   "f": "scattered photon energy / initial energy",
+   "g": "Compton scattering formula (recoil angle cosine) [model-proposed; physical meaning unverified]",
+   "k": "1"
+  },
+  {
+   "family": "Compton scattering",
+   "f": "Electron recoil angle (cosine) [model-proposed; physical meaning unverified]",
+   "g": "Compton scattering formula (recoil angle cosine) [model-proposed; physical meaning unverified]",
+   "k": "3/11"
+  },
+  {
+   "family": "Compton scattering",
+   "f": "Compton scattering formula (recoil angle cosine) [model-proposed; physical meaning unverified]",
+   "g": "scattered photon energy / initial energy",
+   "k": "5/9"
+  },
+  {
+   "family": "Compton scattering",
+   "f": "Compton scattering formula (recoil angle cosine) [model-proposed; physical meaning unverified]",
+   "g": "electron kinetic energy / photon energy",
+   "k": "5/36"
+  },
+  {
+   "family": "Compton scattering",
+   "f": "Compton scattering formula (recoil angle cosine) [model-proposed; physical meaning unverified]",
+   "g": "scattered photon energy / (m_e c\u00b2)",
+   "k": "5/18"
+  },
+  {
+   "family": "Compton scattering",
+   "f": "Compton scattering formula (recoil angle cosine) [model-proposed; physical meaning unverified]",
+   "g": "wavelength shift / Compton wavelength",
+   "k": "1/18"
+  },
+  {
+   "family": "Compton scattering",
+   "f": "Compton scattering formula (recoil angle cosine) [model-proposed; physical meaning unverified]",
+   "g": "photon energy / (m_e c\u00b2)",
+   "k": "1/18"
+  },
+  {
+   "family": "Compton scattering",
+   "f": "Compton scattering formula (recoil angle cosine) [model-proposed; physical meaning unverified]",
+   "g": "Compton wavelength shift / (initial photon wavelength) [model-proposed; physical meaning unverified]",
+   "k": "2/9"
+  },
+  {
+   "family": "collision",
+   "f": "momentum transferred / initial momentum",
+   "g": "relative velocity after collision divided by initial velocity of projectile [model-proposed; physical meaning unverified]",
+   "k": "2"
+  },
+  {
+   "family": "collision",
+   "f": "relative speed after / relative speed before",
+   "g": "relative velocity after collision divided by initial velocity of projectile [model-proposed; physical meaning unverified]",
+   "k": "1"
+  },
+  {
+   "family": "collision",
+   "f": "velocity ratio of target to projectile after collision [model-proposed; physical meaning unverified]",
+   "g": "relative velocity after collision divided by initial velocity of projectile [model-proposed; physical meaning unverified]",
+   "k": "1"
+  },
+  {
+   "family": "collision",
+   "f": "velocity ratio of projectile to target after collision [model-proposed; physical meaning unverified]",
+   "g": "relative velocity after collision divided by initial velocity of projectile [model-proposed; physical meaning unverified]",
+   "k": "1"
   }
  ],
- "rounds": 46,
+ "rounds": 54,
  "discoveries": [],
  "rediscoveries": [
   {
