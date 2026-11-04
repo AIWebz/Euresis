@@ -73,6 +73,33 @@
    "Scattered photon momentum / initial photon momentum [model-proposed; physical meaning unverified]": "sqrt(c**2*x**2 + 1)/(x*(c*x + 1))",
    "Scattered photon wavelength / Compton wavelength [model-proposed; physical meaning unverified]": "c/(c*x + 1) + (c*x + 1)/x",
    "Electron recoil angle (sine squared) [model-proposed; physical meaning unverified]": "1 - 1/(2*c**2*x**2 + 1)**2"
+  },
+  "Cournot duopoly": {
+   "output of firm 1": "(1 - 2*c1 + c2)/3",
+   "output of firm 2": "(1 - 2*c2 + c1)/3",
+   "market price": "(1 + c1 + c2)/3",
+   "profit of firm 1": "(1 - 2*c1 + c2)**2/9",
+   "profit of firm 2": "(1 - 2*c2 + c1)**2/9",
+   "consumer surplus": "(2 - c1 - c2)**2/18",
+   "total industry profit": "((1 - 2*c1 + c2)**2 + (1 - 2*c2 + c1)**2)/9",
+   "firm 1's profit as a monopolist": "(1 - c1)**2/4"
+  },
+  "insurance and risk": {
+   "expected wealth": "1 - p*L",
+   "expected utility": "p*sqrt(1 - L) + 1 - p",
+   "certainty equivalent": "(p*sqrt(1 - L) + 1 - p)**2",
+   "risk premium": "1 - p*L - (p*sqrt(1 - L) + 1 - p)**2",
+   "actuarially fair insurance premium": "p*L",
+   "maximum premium the person would pay for full insurance": "1 - (p*sqrt(1 - L) + 1 - p)**2",
+   "variance of wealth": "p*(1 - p)*L**2"
+  },
+  "auction with a reserve price": {
+   "expected revenue": "1/3 + r**2 - 4*r**3/3",
+   "seller's expected payoff": "1/3 + r**2 - 4*r**3/3 + v*r**2",
+   "probability the item is not sold": "r**2",
+   "expected total bidder surplus": "1/3 - r**2 + 2*r**3/3",
+   "expected total welfare": "2*(1 - r**3)/3 + v*r**2",
+   "welfare with the efficient reserve (r = v)": "2/3 + v**3/3"
   }
  },
  "rejected": [
@@ -3375,6 +3402,131 @@
    "family": "Compton scattering",
    "expr": "1 + c/(x + 1)",
    "why": "affine combination of known quantities (scattered photon energy / initial energy, Scattered photon wavelength / initial photon wavelength [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "r - v",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(1/3 - r**2 + 2*r**3/3)/2",
+   "why": "affine combination of known quantities (expected revenue, probability the item is not sold)"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "r**2/2",
+   "why": "affine combination of known quantities (expected revenue, probability the item is not sold)"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "2/3 - 2*r**3/3 - v*r**2",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "1 - a - b",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), kinetic energy released Q / (Mc\u00b2))"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "(1 + a**2 - b**2)/(1 - a**2 + b**2)",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), 1/(energy of product 2 / (Mc\u00b2)))"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "(1 - a**2 + b**2)/(2*b)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "1 + (1 - a - b)",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), kinetic energy released Q / (Mc\u00b2))"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "collision",
+   "expr": "m",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "collision",
+   "expr": "1 - (1 + e)**2 * m / (1 + m)**2",
+   "why": "affine combination of known quantities (target speed / initial speed, fraction of kinetic energy given to the target)"
+  },
+  {
+   "family": "collision",
+   "expr": "e",
+   "why": "affine combination of known quantities (target speed / initial speed, momentum transferred / initial momentum)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "atan(2*z*r/(1 - r**2))",
+   "why": "only + \u2212 \u00d7 \u00f7, integer powers and square roots (so the prover can decide it)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "atan(2*z*r/(1 - r**2)) - atan(2*z*r/(1 - r**2))",
+   "why": "must depend only on r, z"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "atan(2*z*r/(1 - r**2))",
+   "why": "only + \u2212 \u00d7 \u00f7, integer powers and square roots (so the prover can decide it)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "atan(2*z*r/(1 - r**2))",
+   "why": "only + \u2212 \u00d7 \u00f7, integer powers and square roots (so the prover can decide it)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 - u**2)*(1 - v**2))/(1 + u*v)",
+   "why": "affine combination of known quantities (composed speed / c, 1/(Lorentz factor of the composed motion))"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "(u/sqrt(1 - u**2) + v/sqrt(1 - v**2))/(1 + u*v)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt(1 - (u + v)**2/(1 + u*v)**2)",
+   "why": "affine combination of known quantities (composed speed / c, 1/(Lorentz factor of the composed motion))"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt(1 - u**2) + sqrt(1 - v**2) - sqrt(1 - (u + v)**2/(1 + u*v)**2)",
+   "why": "affine combination of known quantities (composed speed / c, Energy-momentum invariant [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "1/(1 + 2*c*x)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, Compton scattering formula (recoil angle cosine) [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "(1 - 2*c1 + c2)/3 / ((1 + c1 + c2)/3)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "(1 - 2*c2 + c1)/3 / ((1 + c1 + c2)/3)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "((1 - 2*c1 + c2)/3)**2 + ((1 - 2*c2 + c1)/3)**2",
+   "why": "affine combination of known quantities (output of firm 1, total industry profit)"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "((1 + c1 + c2)/3 - (c1 + c2)/2)",
+   "why": "affine combination of known quantities (output of firm 1, output of firm 2)"
   }
  ],
  "tried": [
@@ -4163,7 +4315,55 @@
   "two-body decay|Total kinetic energy of the two products / (Mc\u00b2) [model-proposed; physical meaning unverified]|speed of product 2 / c",
   "two-body decay|Total kinetic energy of the two products / (Mc\u00b2) [model-proposed; physical meaning unverified]|Lorentz factor of product 1",
   "two-body decay|Total kinetic energy of the two products / (Mc\u00b2) [model-proposed; physical meaning unverified]|Invariant mass squared of the two products [model-proposed; physical meaning unverified]",
-  "two-body decay|Total kinetic energy of the two products / (Mc\u00b2) [model-proposed; physical meaning unverified]|Ratio of kinetic energies of product 1 to product 2 [model-proposed; physical meaning unverified]"
+  "two-body decay|Total kinetic energy of the two products / (Mc\u00b2) [model-proposed; physical meaning unverified]|Ratio of kinetic energies of product 1 to product 2 [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|expected revenue|seller's expected payoff",
+  "auction with a reserve price|expected revenue|probability the item is not sold",
+  "auction with a reserve price|expected revenue|expected total bidder surplus",
+  "auction with a reserve price|expected revenue|expected total welfare",
+  "auction with a reserve price|expected revenue|welfare with the efficient reserve (r = v)",
+  "auction with a reserve price|seller's expected payoff|expected revenue",
+  "auction with a reserve price|seller's expected payoff|probability the item is not sold",
+  "auction with a reserve price|seller's expected payoff|expected total bidder surplus",
+  "auction with a reserve price|seller's expected payoff|expected total welfare",
+  "auction with a reserve price|seller's expected payoff|welfare with the efficient reserve (r = v)",
+  "auction with a reserve price|probability the item is not sold|expected revenue",
+  "auction with a reserve price|probability the item is not sold|seller's expected payoff",
+  "auction with a reserve price|probability the item is not sold|expected total bidder surplus",
+  "auction with a reserve price|probability the item is not sold|expected total welfare",
+  "auction with a reserve price|probability the item is not sold|welfare with the efficient reserve (r = v)",
+  "auction with a reserve price|expected total bidder surplus|expected revenue",
+  "auction with a reserve price|expected total bidder surplus|seller's expected payoff",
+  "auction with a reserve price|expected total bidder surplus|probability the item is not sold",
+  "auction with a reserve price|expected total bidder surplus|expected total welfare",
+  "auction with a reserve price|expected total bidder surplus|welfare with the efficient reserve (r = v)",
+  "auction with a reserve price|expected total welfare|expected revenue",
+  "auction with a reserve price|expected total welfare|seller's expected payoff",
+  "auction with a reserve price|expected total welfare|probability the item is not sold",
+  "auction with a reserve price|expected total welfare|expected total bidder surplus",
+  "Cournot duopoly|output of firm 1|output of firm 2",
+  "Cournot duopoly|output of firm 1|market price",
+  "Cournot duopoly|output of firm 1|profit of firm 1",
+  "Cournot duopoly|output of firm 1|profit of firm 2",
+  "Cournot duopoly|output of firm 1|consumer surplus",
+  "Cournot duopoly|output of firm 1|total industry profit",
+  "Cournot duopoly|output of firm 1|firm 1's profit as a monopolist",
+  "Cournot duopoly|output of firm 2|output of firm 1",
+  "Cournot duopoly|output of firm 2|market price",
+  "Cournot duopoly|output of firm 2|profit of firm 1",
+  "Cournot duopoly|output of firm 2|profit of firm 2",
+  "Cournot duopoly|output of firm 2|consumer surplus",
+  "Cournot duopoly|output of firm 2|total industry profit",
+  "Cournot duopoly|output of firm 2|firm 1's profit as a monopolist",
+  "Cournot duopoly|market price|output of firm 1",
+  "Cournot duopoly|market price|output of firm 2",
+  "Cournot duopoly|market price|profit of firm 1",
+  "Cournot duopoly|market price|profit of firm 2",
+  "Cournot duopoly|market price|consumer surplus",
+  "Cournot duopoly|market price|total industry profit",
+  "Cournot duopoly|market price|firm 1's profit as a monopolist",
+  "Cournot duopoly|profit of firm 1|output of firm 1",
+  "Cournot duopoly|profit of firm 1|output of firm 2",
+  "Cournot duopoly|profit of firm 1|market price"
  ],
  "edges": [
   {
@@ -5341,9 +5541,105 @@
    "f": "Total kinetic energy of the two products / (Mc\u00b2) [model-proposed; physical meaning unverified]",
    "g": "kinetic energy of product 1 / (Mc\u00b2)",
    "k": "2"
+  },
+  {
+   "family": "auction with a reserve price",
+   "f": "expected revenue",
+   "g": "expected total bidder surplus",
+   "k": "1"
+  },
+  {
+   "family": "auction with a reserve price",
+   "f": "seller's expected payoff",
+   "g": "expected revenue",
+   "k": "1"
+  },
+  {
+   "family": "auction with a reserve price",
+   "f": "seller's expected payoff",
+   "g": "expected total bidder surplus",
+   "k": "1"
+  },
+  {
+   "family": "auction with a reserve price",
+   "f": "seller's expected payoff",
+   "g": "expected total welfare",
+   "k": "1/2"
+  },
+  {
+   "family": "auction with a reserve price",
+   "f": "expected total welfare",
+   "g": "expected revenue",
+   "k": "1"
+  },
+  {
+   "family": "auction with a reserve price",
+   "f": "expected total welfare",
+   "g": "seller's expected payoff",
+   "k": "1"
+  },
+  {
+   "family": "auction with a reserve price",
+   "f": "expected total welfare",
+   "g": "expected total bidder surplus",
+   "k": "2"
+  },
+  {
+   "family": "Cournot duopoly",
+   "f": "output of firm 1",
+   "g": "profit of firm 1",
+   "k": "2"
+  },
+  {
+   "family": "Cournot duopoly",
+   "f": "output of firm 2",
+   "g": "profit of firm 2",
+   "k": "2"
+  },
+  {
+   "family": "Cournot duopoly",
+   "f": "market price",
+   "g": "output of firm 1",
+   "k": "1"
+  },
+  {
+   "family": "Cournot duopoly",
+   "f": "market price",
+   "g": "output of firm 2",
+   "k": "1"
+  },
+  {
+   "family": "Cournot duopoly",
+   "f": "market price",
+   "g": "profit of firm 1",
+   "k": "2"
+  },
+  {
+   "family": "Cournot duopoly",
+   "f": "market price",
+   "g": "profit of firm 2",
+   "k": "2"
+  },
+  {
+   "family": "Cournot duopoly",
+   "f": "market price",
+   "g": "consumer surplus",
+   "k": "3/2"
+  },
+  {
+   "family": "Cournot duopoly",
+   "f": "market price",
+   "g": "total industry profit",
+   "k": "3/2"
+  },
+  {
+   "family": "Cournot duopoly",
+   "f": "market price",
+   "g": "firm 1's profit as a monopolist",
+   "k": "4/3"
   }
  ],
- "rounds": 175,
+ "rounds": 182,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",

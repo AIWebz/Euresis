@@ -185,3 +185,10 @@
 - 2026-11-04 17:44 round 176: two-body decay
 - 2026-11-04 17:45 segment start (budget 100 min; model: Qwen3-14B; 1 discoveries so far)
 - 2026-11-04 17:45 round 176: auction with a reserve price
+- 2026-11-04 17:46 round 177: two-body decay
+- 2026-11-04 17:48 round 178: collision
+- 2026-11-04 17:49 round 179: driven oscillator
+- 2026-11-04 17:51 round 180: velocity addition
+- 2026-11-04 17:53 round 181: Compton scattering
+- 2026-11-04 17:54 round 182: Cournot duopoly
+- 2026-11-04 17:55 round 183: insurance and risk
