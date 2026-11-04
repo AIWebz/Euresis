@@ -4604,6 +4604,46 @@
    "family": "insurance and risk",
    "expr": "p*L/(1 - (p*sqrt(1 - L) + 1 - p)**2)",
    "why": "a power or product of known quantities"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "1 - 2*a - 2*b + 2*a*b",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "(1 + a**2 - b**2)/(1 - a**2 + b**2)",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), 1/(energy of product 2 / (Mc\u00b2)))"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "(1 + a**2 - b**2 + 1 - a**2 + b**2)/2",
+   "why": "must depend only on a, b"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "(1 - a**2 + b**2)/(2*b)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2 * m",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "collision",
+   "expr": "1 - (1 - e**2)/(1 + m)",
+   "why": "affine combination of known quantities (target speed / initial speed, fraction of kinetic energy lost)"
+  },
+  {
+   "family": "collision",
+   "expr": "(1 - e*m)/(1 + m)",
+   "why": "affine combination of known quantities (target speed / initial speed)"
+  },
+  {
+   "family": "collision",
+   "expr": "e",
+   "why": "affine combination of known quantities (target speed / initial speed, momentum transferred / initial momentum)"
   }
  ],
  "tried": [
@@ -7512,7 +7552,7 @@
    "k": "1"
   }
  ],
- "rounds": 239,
+ "rounds": 242,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",

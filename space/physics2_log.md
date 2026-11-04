@@ -254,3 +254,7 @@
 - 2026-11-04 19:32 round 238: Cournot duopoly
 - 2026-11-04 19:40 round 239: insurance and risk
 - 2026-11-04 19:49 round 240: auction with a reserve price
+- 2026-11-04 20:22 model reply could not be parsed (auction with a reserve price): '[{"name": "reserve price elasticity of seller\'s payoff", "expr": "(1/3 + r**2 - 4*r**3/3 + v*r**2)/(1/3 + r**2 - 4*r**3/3 + v*r**2) * (1/3 + r**2 - 4*r**3/3 + v*r**2) * (1/3 + r**2 - 4*r**3/3 + v*r**2) * (1/3 + r**2 - 4*r**3/3 + v*r**2) * (1/3 + r**2 - 4*r**3/3 + v*r**2) * (1/3 + r**2 - 4*r**3/3 + v'
+- 2026-11-04 20:22 round 241: two-body decay
+- 2026-11-04 20:31 round 242: collision
+- 2026-11-04 20:38 round 243: driven oscillator
