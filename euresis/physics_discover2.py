@@ -202,14 +202,14 @@ def validate(fam, expr, known):
             if not np.all(np.isfinite(A)):
                 continue
             coef, *_ = np.linalg.lstsq(A, vals[sel], rcond=None)
-            if np.abs(A @ coef - vals[sel]).max() < 1e-9 * max(1, np.abs(vals).max()):
+            if np.max(np.abs(A @ coef - vals[sel]) / np.maximum(1.0, np.abs(vals[sel]))) < 1e-7:
                 return None, f"affine combination of known quantities ({ni}{', ' + nj if nj else ''})"
     base = [n for n in names if not n.startswith("1/(")]
     Lg = np.stack([one] + [np.log(K[n]) for n in base], 1)[sel]
     if np.all(np.isfinite(Lg)):
         lv = np.log(vals[sel])
         cf, *_ = np.linalg.lstsq(Lg, lv, rcond=None)
-        if np.abs(Lg @ cf - lv).max() < 1e-9:
+        if np.abs(Lg @ cf - lv).max() < 1e-7:
             return None, "a power or product of known quantities"
     return E, "ok"
 

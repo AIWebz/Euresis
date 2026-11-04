@@ -216,7 +216,7 @@ def validate(fam: str, expr: str, known: dict) -> tuple[sp.Expr | None, str]:
             if not np.all(np.isfinite(A)):
                 continue
             coef, *_ = np.linalg.lstsq(A, vals[sel], rcond=None)
-            if np.abs(A @ coef - vals[sel]).max() < 1e-9 * max(1, np.abs(vals).max()):
+            if np.max(np.abs(A @ coef - vals[sel]) / np.maximum(1.0, np.abs(vals[sel]))) < 1e-7:
                 return None, f"affine combination of known quantities ({ni}{', ' + nj if nj else ''})"
     # 2. product of powers of ANY number of known quantities: log f in the span of log K_i
     base = [n for n in names if not n.startswith("1/(")]          # reciprocals are covered by negative powers
@@ -224,7 +224,7 @@ def validate(fam: str, expr: str, known: dict) -> tuple[sp.Expr | None, str]:
     if np.all(np.isfinite(Lg)):
         lv = np.log(vals[sel])
         cf, *_ = np.linalg.lstsq(Lg, lv, rcond=None)
-        if np.abs(Lg @ cf - lv).max() < 1e-9:
+        if np.abs(Lg @ cf - lv).max() < 1e-7:
             used = [f"({n})^{c:.3g}" for n, c in zip(base, cf[1:]) if abs(c) > 1e-8]
             return None, f"a power or product of known quantities: C · {' · '.join(used)[:160]}"
     return E, "ok"
