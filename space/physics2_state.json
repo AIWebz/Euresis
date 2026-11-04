@@ -2413,6 +2413,41 @@
    "family": "Compton scattering",
    "expr": "sqrt(c**2*x**2 + 2*c*x + 1)/(c*x + 1)",
    "why": "affine combination of known quantities (scattered photon energy / initial energy)"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "1 - 2*a - 2*b + 2*a*b",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "(1 + a**2 - b**2)/(1 - a**2 + b**2)",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), 1/(energy of product 2 / (Mc\u00b2)))"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "(1 - a**2 + b**2)/(2*b)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2 * m",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "collision",
+   "expr": "(1 + e)**2 * m / (1 + m)**2",
+   "why": "affine combination of known quantities (target speed / initial speed, fraction of kinetic energy given to the target)"
+  },
+  {
+   "family": "collision",
+   "expr": "(1 - e*m) / (1 + e*m)",
+   "why": "affine combination of known quantities (target speed / initial speed, velocity ratio of projectile to target after collision [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "e * (1 - m) / (1 + m)",
+   "why": "affine combination of known quantities (target speed / initial speed, relative velocity after collision divided by initial velocity of projectile [model-proposed; physical meaning unverified])"
   }
  ],
  "tried": [
@@ -3989,7 +4024,7 @@
    "k": "1"
   }
  ],
- "rounds": 125,
+ "rounds": 127,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",
@@ -4201,8 +4236,7 @@
    "equality_at": [
     1.0000000004976537,
     1.0000000110355192
-   ],
-   "physics_check": "labels incorrect: a mathematical inequality, not a Compton-scattering result"
+   ]
   }
  ],
  "rediscoveries": [
