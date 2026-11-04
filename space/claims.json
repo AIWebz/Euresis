@@ -803,5 +803,77 @@
   "statement": "[kepler] perihelion speed / circular speed at a \u2265 1 \u00d7 semi-minor axis / a   for 0 < e < 1 (tight only in the limit e \u2192 0)",
   "status": "proved",
   "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "t < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-4d448d4dd840",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "t < 1"
+   ],
+   "claim": "1/(1 - t) >= 1/2*(1/(1 - sqrt(t)))",
+   "symbols": [
+    "t"
+   ]
+  },
+  "source": "physics_discover round 3",
+  "statement": "[heat engines] Carnot heat pump coefficient of performance \u2265 1/2 \u00d7 Entropy production ratio   for 0 < t < 1 (tight only in the limit t \u2192 1)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "t < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-ec201bf26fe4",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "t < 1"
+   ],
+   "claim": "1/(1 - t) >= 1*(sqrt(1 - t)/sqrt(t + 1))",
+   "symbols": [
+    "t"
+   ]
+  },
+  "source": "physics_discover round 3",
+  "statement": "[heat engines] Carnot heat pump coefficient of performance \u2265 1 \u00d7 Power efficiency ratio   for 0 < t < 1 (tight only in the limit t \u2192 0)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "t < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-ba4d76e365b7",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "t < 1"
+   ],
+   "claim": "1/(1 - sqrt(t)) >= 2*(t/(1 - t))",
+   "symbols": [
+    "t"
+   ]
+  },
+  "source": "physics_discover round 3",
+  "statement": "[heat engines] Entropy production ratio \u2265 2 \u00d7 Carnot refrigerator coefficient of performance   for 0 < t < 1 (tight only in the limit t \u2192 1)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]

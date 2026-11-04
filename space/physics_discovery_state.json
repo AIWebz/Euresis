@@ -24,7 +24,9 @@
    "Curzon\u2013Ahlborn efficiency (endoreversible engine at maximum power)": "1 - sqrt(t)",
    "low-dissipation engine efficiency at maximum power, upper bound (Esposito et al.)": "(1 - t)/(1 + t)",
    "Carnot refrigerator coefficient of performance": "t/(1 - t)",
-   "Carnot heat pump coefficient of performance": "1/(1 - t)"
+   "Carnot heat pump coefficient of performance": "1/(1 - t)",
+   "Entropy production ratio": "1/(1 - sqrt(t))",
+   "Power efficiency ratio": "sqrt(1 - t)/sqrt(t + 1)"
   }
  },
  "rejected": [
@@ -47,6 +49,16 @@
    "family": "kepler",
    "expr": "sqrt(1 - e**2) * sqrt(1 - e**2)",
    "why": "product of known quantities (perihelion distance / a, aphelion distance / a)"
+  },
+  {
+   "family": "heat engines",
+   "expr": "(1 + t)/(1 - t**2)",
+   "why": "affine combination of known quantities (Carnot efficiency, Carnot refrigerator coefficient of performance)"
+  },
+  {
+   "family": "heat engines",
+   "expr": "(1 - t**2)/(1 + t)",
+   "why": "affine combination of known quantities (Carnot efficiency)"
   }
  ],
  "tried": [
@@ -81,7 +93,23 @@
   "kepler|perihelion speed / circular speed at a|perihelion distance / a",
   "kepler|perihelion speed / circular speed at a|aphelion distance / a",
   "kepler|perihelion speed / circular speed at a|aphelion speed / circular speed at a",
-  "kepler|perihelion speed / circular speed at a|semi-minor axis / a"
+  "kepler|perihelion speed / circular speed at a|semi-minor axis / a",
+  "heat engines|Carnot efficiency|Entropy production ratio",
+  "heat engines|Carnot efficiency|Power efficiency ratio",
+  "heat engines|Curzon\u2013Ahlborn efficiency (endoreversible engine at maximum power)|Entropy production ratio",
+  "heat engines|Curzon\u2013Ahlborn efficiency (endoreversible engine at maximum power)|Power efficiency ratio",
+  "heat engines|low-dissipation engine efficiency at maximum power, upper bound (Esposito et al.)|Entropy production ratio",
+  "heat engines|low-dissipation engine efficiency at maximum power, upper bound (Esposito et al.)|Power efficiency ratio",
+  "heat engines|Carnot refrigerator coefficient of performance|Entropy production ratio",
+  "heat engines|Carnot refrigerator coefficient of performance|Power efficiency ratio",
+  "heat engines|Carnot heat pump coefficient of performance|Entropy production ratio",
+  "heat engines|Carnot heat pump coefficient of performance|Power efficiency ratio",
+  "heat engines|Entropy production ratio|Carnot efficiency",
+  "heat engines|Entropy production ratio|Curzon\u2013Ahlborn efficiency (endoreversible engine at maximum power)",
+  "heat engines|Entropy production ratio|low-dissipation engine efficiency at maximum power, upper bound (Esposito et al.)",
+  "heat engines|Entropy production ratio|Carnot refrigerator coefficient of performance",
+  "heat engines|Entropy production ratio|Carnot heat pump coefficient of performance",
+  "heat engines|Entropy production ratio|Power efficiency ratio"
  ],
  "edges": [
   {
@@ -174,9 +202,30 @@
    "g": "semi-minor axis / a",
    "kind": "lower",
    "k": "1"
+  },
+  {
+   "family": "heat engines",
+   "f": "Carnot heat pump coefficient of performance",
+   "g": "Entropy production ratio",
+   "kind": "lower",
+   "k": "1/2"
+  },
+  {
+   "family": "heat engines",
+   "f": "Carnot heat pump coefficient of performance",
+   "g": "Power efficiency ratio",
+   "kind": "lower",
+   "k": "1"
+  },
+  {
+   "family": "heat engines",
+   "f": "Entropy production ratio",
+   "g": "Carnot refrigerator coefficient of performance",
+   "kind": "lower",
+   "k": "2"
   }
  ],
- "rounds": 2,
+ "rounds": 3,
  "discoveries": [],
  "rediscoveries": []
 }
