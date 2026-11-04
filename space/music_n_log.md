@@ -2,3 +2,5 @@
 - 2026-11-04 19:27 DISCOVERY (proved by exhaustion in 12 tunings): In every N-note equal temperament (5 ≤ N ≤ 16): a scale is a deep scale  ⇒  it is inversionally symmetric  [mus-30e6001b05e2; 75 scale classes]
 - 2026-11-04 19:29 DISCOVERY (proved by exhaustion in 13 tunings): In every N-note equal temperament (5 ≤ N ≤ 17): a scale is strictly proper (Rothenberg)  ⇒  it has no two single steps in a row  [mus-82397eaa7ee2; 253 scale classes]
 - 2026-11-04 19:29 DISCOVERY (proved by exhaustion in 13 tunings): In every N-note equal temperament (5 ≤ N ≤ 17): a scale is a deep scale  ⇒  it is inversionally symmetric  [mus-ac7446de8352; 91 scale classes]
+- 2026-11-04 19:41 DISCOVERY (proved by exhaustion in 14 tunings): In every N-note equal temperament (5 ≤ N ≤ 18): a scale is strictly proper (Rothenberg)  ⇒  it has no two single steps in a row  [mus-fc1d8897e428; 313 scale classes]
+- 2026-11-04 19:41 DISCOVERY (proved by exhaustion in 14 tunings): In every N-note equal temperament (5 ≤ N ≤ 18): a scale is a deep scale  ⇒  it is inversionally symmetric  [mus-8a33d6e78559; 97 scale classes]
