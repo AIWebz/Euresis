@@ -150,6 +150,7 @@ def validate(fam: str, expr: str, known: dict) -> tuple[sp.Expr | None, str]:
     if vals.min() <= 0:
         return None, "not positive on the physical domain"
     K = {n: np.asarray(sp.lambdify(v, sp.sympify(s, locals={v.name: v}), "numpy")(GRID), float) for n, s in known.items()}
+    K.update({f"1/({n})": 1 / x for n, x in list(K.items())})       # reciprocals of known quantities are known too
     one = np.ones_like(vals)
     sel = slice(None, None, 37)
     for i, ni in enumerate(K):
@@ -281,7 +282,7 @@ def run_round(st: dict, reg: Registry, use_llm: bool, echo=print, max_pairs: int
     if use_llm:
         for item in propose_llm(fam, st, echo=echo):
             E, why = validate(fam, item["expr"], {**exprs, **new})
-            name = str(item.get("name") or item["expr"])[:90]
+            name = str(item.get("name") or item["expr"])[:80] + " [model-proposed; physical meaning unverified]"
             if E is None:
                 st["rejected"].append({"family": fam, "expr": item["expr"][:100], "why": why})
                 echo(f"    rejected: {name}: {item['expr'][:60]}  [{why}]")
@@ -323,8 +324,10 @@ def run_round(st: dict, reg: Registry, use_llm: bool, echo=print, max_pairs: int
                                      "not counted as a discovery")
                 echo(f"    proved (asymptotic only): {stmt}")
             else:
+                caveat = ("; involves a model-proposed quantity whose physical meaning is unverified"
+                          if "model-proposed" in fn + gn else "")
                 reg.set_novelty(cid, "not a known result in Euresis' knowledge; not implied by proved bounds; "
-                                     "physics literature unchecked (arXiv unreachable from this environment)")
+                                     "physics literature unchecked (arXiv unreachable from this environment)" + caveat)
                 rec = {"claim": cid, "statement": stmt, "round": st["rounds"]}
                 st["discoveries"].append(rec)
                 found.append(rec)
