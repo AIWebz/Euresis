@@ -282,3 +282,4 @@
 - 2026-11-04 23:15 round 261: Compton scattering
 - 2026-11-04 23:24 segment start (budget 30 min; model: Qwen3-14B; 4 discoveries so far)
 - 2026-11-04 23:24 round 261: Compton scattering
+- 2026-11-04 23:25 round 262: Cournot duopoly

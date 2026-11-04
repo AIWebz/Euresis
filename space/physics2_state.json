@@ -4981,6 +4981,26 @@
    "family": "velocity addition",
    "expr": "sqrt(1 - (u + v)**2/(1 + u*v)**2)",
    "why": "affine combination of known quantities (composed speed / c, 1/(Lorentz factor of the composed motion))"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "c/(x + 1)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, Scattered photon wavelength / initial photon wavelength [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "1/(x*c)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, 1/(electron kinetic energy / photon energy))"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "x*c",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, 1/(scattered photon energy / initial energy))"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "sqrt(1 + x**2*c**2)/(x*c)",
+   "why": "a power or product of known quantities"
   }
  ],
  "tried": [
@@ -8019,7 +8039,7 @@
    "k": "1"
   }
  ],
- "rounds": 260,
+ "rounds": 261,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",
