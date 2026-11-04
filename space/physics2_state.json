@@ -1,0 +1,260 @@
+{
+ "families": {
+  "two-body decay": {
+   "momentum of each product / (Mc)": "sqrt((1 - (a + b)**2)*(1 - (a - b)**2))/2",
+   "energy of product 1 / (Mc\u00b2)": "(1 + a**2 - b**2)/2",
+   "energy of product 2 / (Mc\u00b2)": "(1 - a**2 + b**2)/2",
+   "kinetic energy released Q / (Mc\u00b2)": "1 - a - b",
+   "kinetic energy of product 1 / (Mc\u00b2)": "((1 - a)**2 - b**2)/2",
+   "speed of product 1 / c": "sqrt((1 - (a + b)**2)*(1 - (a - b)**2))/(1 + a**2 - b**2)",
+   "speed of product 2 / c": "sqrt((1 - (a + b)**2)*(1 - (a - b)**2))/(1 - a**2 + b**2)",
+   "Lorentz factor of product 1": "(1 + a**2 - b**2)/(2*a)"
+  },
+  "collision": {
+   "target speed / initial speed": "(1 + e)*m/(1 + m)",
+   "momentum transferred / initial momentum": "(1 + e)/(1 + m)",
+   "fraction of kinetic energy lost": "(1 - e**2)/(1 + m)",
+   "fraction of kinetic energy given to the target": "(1 + e)**2*m/(1 + m)**2",
+   "speed of the centre of mass / initial speed": "m/(1 + m)",
+   "relative speed after / relative speed before": "e",
+   "velocity ratio of target to projectile after collision [model-proposed; physical meaning unverified]": "e*(m + 1)/(e*m + 1)"
+  },
+  "driven oscillator": {
+   "amplitude / static deflection": "1/sqrt((1 - r**2)**2 + (2*z*r)**2)",
+   "transmissibility": "sqrt((1 + (2*z*r)**2)/((1 - r**2)**2 + (2*z*r)**2))",
+   "velocity amplitude / (\u03c90 \u00d7 static deflection)": "r/sqrt((1 - r**2)**2 + (2*z*r)**2)",
+   "acceleration amplitude / (\u03c90\u00b2 \u00d7 static deflection)": "r**2/sqrt((1 - r**2)**2 + (2*z*r)**2)",
+   "mean absorbed power (normalised)": "2*z*r**2/((1 - r**2)**2 + (2*z*r)**2)",
+   "quality factor": "1/(2*z)"
+  },
+  "velocity addition": {
+   "composed speed / c": "(u + v)/(1 + u*v)",
+   "Galilean sum / c": "u + v",
+   "Lorentz factor of the composed motion": "(1 + u*v)/(sqrt(1 - u**2)*sqrt(1 - v**2))",
+   "product of the two Lorentz factors": "1/(sqrt(1 - u**2)*sqrt(1 - v**2))",
+   "Doppler factor of the composed motion": "sqrt((1 + u)/(1 - u))*sqrt((1 + v)/(1 - v))",
+   "kinetic energy of the composed motion / mc\u00b2": "(1 + u*v)/(sqrt(1 - u**2)*sqrt(1 - v**2)) - 1",
+   "sum of the two kinetic energies / mc\u00b2": "1/sqrt(1 - u**2) + 1/sqrt(1 - v**2) - 2"
+  },
+  "Compton scattering": {
+   "scattered photon energy / initial energy": "1/(1 + x*c)",
+   "electron kinetic energy / photon energy": "x*c/(1 + x*c)",
+   "scattered photon energy / (m_e c\u00b2)": "x/(1 + x*c)",
+   "electron kinetic energy / (m_e c\u00b2)": "x**2*c/(1 + x*c)",
+   "wavelength shift / Compton wavelength": "c",
+   "photon energy / (m_e c\u00b2)": "x"
+  }
+ },
+ "rejected": [
+  {
+   "family": "two-body decay",
+   "expr": "(1 + a**2 - b**2)/(1 - a**2 + b**2)",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), 1/(energy of product 2 / (Mc\u00b2)))"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "(1 - a**2 + b**2)/(1 + a**2 - b**2)",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), 1/(energy of product 1 / (Mc\u00b2)))"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "(1 + a**2 - b**2)/(1 - a**2 + b**2)",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), 1/(energy of product 2 / (Mc\u00b2)))"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "(1 + a**2 - b**2)/(1 - a**2 + b**2)",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), 1/(energy of product 2 / (Mc\u00b2)))"
+  },
+  {
+   "family": "collision",
+   "expr": "e / m",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "collision",
+   "expr": "(m * (1 - e)**2) / (1 + m)**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "collision",
+   "expr": "(1 - e) / (1 + m)",
+   "why": "affine combination of known quantities (momentum transferred / initial momentum, speed of the centre of mass / initial speed)"
+  }
+ ],
+ "tried": [
+  "two-body decay|momentum of each product / (Mc)|energy of product 1 / (Mc\u00b2)",
+  "two-body decay|momentum of each product / (Mc)|energy of product 2 / (Mc\u00b2)",
+  "two-body decay|momentum of each product / (Mc)|kinetic energy released Q / (Mc\u00b2)",
+  "two-body decay|momentum of each product / (Mc)|kinetic energy of product 1 / (Mc\u00b2)",
+  "two-body decay|momentum of each product / (Mc)|speed of product 1 / c",
+  "two-body decay|momentum of each product / (Mc)|speed of product 2 / c",
+  "two-body decay|momentum of each product / (Mc)|Lorentz factor of product 1",
+  "two-body decay|energy of product 1 / (Mc\u00b2)|momentum of each product / (Mc)",
+  "two-body decay|energy of product 1 / (Mc\u00b2)|energy of product 2 / (Mc\u00b2)",
+  "two-body decay|energy of product 1 / (Mc\u00b2)|kinetic energy released Q / (Mc\u00b2)",
+  "two-body decay|energy of product 1 / (Mc\u00b2)|kinetic energy of product 1 / (Mc\u00b2)",
+  "two-body decay|energy of product 1 / (Mc\u00b2)|speed of product 1 / c",
+  "two-body decay|energy of product 1 / (Mc\u00b2)|speed of product 2 / c",
+  "two-body decay|energy of product 1 / (Mc\u00b2)|Lorentz factor of product 1",
+  "two-body decay|energy of product 2 / (Mc\u00b2)|momentum of each product / (Mc)",
+  "two-body decay|energy of product 2 / (Mc\u00b2)|energy of product 1 / (Mc\u00b2)",
+  "two-body decay|energy of product 2 / (Mc\u00b2)|kinetic energy released Q / (Mc\u00b2)",
+  "two-body decay|energy of product 2 / (Mc\u00b2)|kinetic energy of product 1 / (Mc\u00b2)",
+  "two-body decay|energy of product 2 / (Mc\u00b2)|speed of product 1 / c",
+  "two-body decay|energy of product 2 / (Mc\u00b2)|speed of product 2 / c",
+  "two-body decay|energy of product 2 / (Mc\u00b2)|Lorentz factor of product 1",
+  "two-body decay|kinetic energy released Q / (Mc\u00b2)|momentum of each product / (Mc)",
+  "two-body decay|kinetic energy released Q / (Mc\u00b2)|energy of product 1 / (Mc\u00b2)",
+  "two-body decay|kinetic energy released Q / (Mc\u00b2)|energy of product 2 / (Mc\u00b2)",
+  "collision|target speed / initial speed|velocity ratio of target to projectile after collision [model-proposed; physical meaning unverified]",
+  "collision|momentum transferred / initial momentum|velocity ratio of target to projectile after collision [model-proposed; physical meaning unverified]",
+  "collision|fraction of kinetic energy lost|velocity ratio of target to projectile after collision [model-proposed; physical meaning unverified]",
+  "collision|fraction of kinetic energy given to the target|velocity ratio of target to projectile after collision [model-proposed; physical meaning unverified]",
+  "collision|speed of the centre of mass / initial speed|velocity ratio of target to projectile after collision [model-proposed; physical meaning unverified]",
+  "collision|relative speed after / relative speed before|velocity ratio of target to projectile after collision [model-proposed; physical meaning unverified]",
+  "collision|velocity ratio of target to projectile after collision [model-proposed; physical meaning unverified]|target speed / initial speed",
+  "collision|velocity ratio of target to projectile after collision [model-proposed; physical meaning unverified]|momentum transferred / initial momentum",
+  "collision|velocity ratio of target to projectile after collision [model-proposed; physical meaning unverified]|fraction of kinetic energy lost",
+  "collision|velocity ratio of target to projectile after collision [model-proposed; physical meaning unverified]|fraction of kinetic energy given to the target",
+  "collision|velocity ratio of target to projectile after collision [model-proposed; physical meaning unverified]|speed of the centre of mass / initial speed",
+  "collision|velocity ratio of target to projectile after collision [model-proposed; physical meaning unverified]|relative speed after / relative speed before",
+  "collision|target speed / initial speed|momentum transferred / initial momentum",
+  "collision|target speed / initial speed|fraction of kinetic energy lost",
+  "collision|target speed / initial speed|fraction of kinetic energy given to the target",
+  "collision|target speed / initial speed|speed of the centre of mass / initial speed",
+  "collision|target speed / initial speed|relative speed after / relative speed before",
+  "collision|momentum transferred / initial momentum|target speed / initial speed",
+  "collision|momentum transferred / initial momentum|fraction of kinetic energy lost",
+  "collision|momentum transferred / initial momentum|fraction of kinetic energy given to the target",
+  "collision|momentum transferred / initial momentum|speed of the centre of mass / initial speed",
+  "collision|momentum transferred / initial momentum|relative speed after / relative speed before",
+  "collision|fraction of kinetic energy lost|target speed / initial speed",
+  "collision|fraction of kinetic energy lost|momentum transferred / initial momentum"
+ ],
+ "edges": [
+  {
+   "family": "two-body decay",
+   "f": "momentum of each product / (Mc)",
+   "g": "kinetic energy released Q / (Mc\u00b2)",
+   "k": "1/2"
+  },
+  {
+   "family": "two-body decay",
+   "f": "momentum of each product / (Mc)",
+   "g": "kinetic energy of product 1 / (Mc\u00b2)",
+   "k": "1"
+  },
+  {
+   "family": "two-body decay",
+   "f": "energy of product 1 / (Mc\u00b2)",
+   "g": "momentum of each product / (Mc)",
+   "k": "1"
+  },
+  {
+   "family": "two-body decay",
+   "f": "energy of product 1 / (Mc\u00b2)",
+   "g": "kinetic energy released Q / (Mc\u00b2)",
+   "k": "1/2"
+  },
+  {
+   "family": "two-body decay",
+   "f": "energy of product 1 / (Mc\u00b2)",
+   "g": "kinetic energy of product 1 / (Mc\u00b2)",
+   "k": "1"
+  },
+  {
+   "family": "two-body decay",
+   "f": "energy of product 1 / (Mc\u00b2)",
+   "g": "speed of product 2 / c",
+   "k": "1/2"
+  },
+  {
+   "family": "two-body decay",
+   "f": "energy of product 2 / (Mc\u00b2)",
+   "g": "momentum of each product / (Mc)",
+   "k": "1"
+  },
+  {
+   "family": "two-body decay",
+   "f": "energy of product 2 / (Mc\u00b2)",
+   "g": "kinetic energy released Q / (Mc\u00b2)",
+   "k": "1/2"
+  },
+  {
+   "family": "two-body decay",
+   "f": "energy of product 2 / (Mc\u00b2)",
+   "g": "kinetic energy of product 1 / (Mc\u00b2)",
+   "k": "1"
+  },
+  {
+   "family": "two-body decay",
+   "f": "energy of product 2 / (Mc\u00b2)",
+   "g": "speed of product 1 / c",
+   "k": "1/2"
+  },
+  {
+   "family": "collision",
+   "f": "momentum transferred / initial momentum",
+   "g": "velocity ratio of target to projectile after collision [model-proposed; physical meaning unverified]",
+   "k": "1"
+  },
+  {
+   "family": "collision",
+   "f": "relative speed after / relative speed before",
+   "g": "velocity ratio of target to projectile after collision [model-proposed; physical meaning unverified]",
+   "k": "1/2"
+  },
+  {
+   "family": "collision",
+   "f": "velocity ratio of target to projectile after collision [model-proposed; physical meaning unverified]",
+   "g": "relative speed after / relative speed before",
+   "k": "1"
+  },
+  {
+   "family": "collision",
+   "f": "target speed / initial speed",
+   "g": "fraction of kinetic energy given to the target",
+   "k": "1/2"
+  },
+  {
+   "family": "collision",
+   "f": "target speed / initial speed",
+   "g": "speed of the centre of mass / initial speed",
+   "k": "1"
+  },
+  {
+   "family": "collision",
+   "f": "momentum transferred / initial momentum",
+   "g": "target speed / initial speed",
+   "k": "1"
+  },
+  {
+   "family": "collision",
+   "f": "momentum transferred / initial momentum",
+   "g": "fraction of kinetic energy lost",
+   "k": "1"
+  },
+  {
+   "family": "collision",
+   "f": "momentum transferred / initial momentum",
+   "g": "fraction of kinetic energy given to the target",
+   "k": "1"
+  },
+  {
+   "family": "collision",
+   "f": "momentum transferred / initial momentum",
+   "g": "speed of the centre of mass / initial speed",
+   "k": "1"
+  },
+  {
+   "family": "collision",
+   "f": "momentum transferred / initial momentum",
+   "g": "relative speed after / relative speed before",
+   "k": "1"
+  }
+ ],
+ "rounds": 2,
+ "discoveries": [],
+ "rediscoveries": []
+}
