@@ -1152,6 +1152,126 @@
    "family": "Compton scattering",
    "expr": "c*x*(1 + c*x)/(1 + c*x)**2",
    "why": "affine combination of known quantities (scattered photon energy / initial energy)"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "((a**2 + b**2 - (a - b)**2)/(1 - a - b))",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), Invariant mass squared of the two products [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "(1 - a**2 + b**2)/(2*b)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "(1 + a**2 - b**2)/(1 - a**2 + b**2)",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), 1/(energy of product 2 / (Mc\u00b2)))"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "(1 + a**2 - b**2 + 1 - a**2 + b**2)/2",
+   "why": "must depend only on a, b"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2 * m",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "collision",
+   "expr": "e",
+   "why": "affine combination of known quantities (target speed / initial speed, momentum transferred / initial momentum)"
+  },
+  {
+   "family": "collision",
+   "expr": "(1 + e)**2 * m / (1 + m)**2",
+   "why": "affine combination of known quantities (target speed / initial speed, fraction of kinetic energy given to the target)"
+  },
+  {
+   "family": "collision",
+   "expr": "(1 - e)**2 / (1 + m)**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "atan(2*z*r/(1 - r**2))",
+   "why": "only + \u2212 \u00d7 \u00f7, integer powers and square roots (so the prover can decide it)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "z/(sqrt(1 - r**2))",
+   "why": "not finite on the whole physical domain"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "r**2/(1 + (2*z*r)**2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(1 - r**2)/sqrt(1 + (2*z*r)**2)",
+   "why": "not finite on the whole physical domain"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 + u)/(1 - u)) * sqrt((1 + v)/(1 - v))",
+   "why": "affine combination of known quantities (composed speed / c, Doppler factor of the composed motion)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "1 - (u + v)**2/(1 + u*v)**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "atanh(u) + atanh(v)",
+   "why": "only + \u2212 \u00d7 \u00f7, integer powers and square roots (so the prover can decide it)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 - u**2)*(1 - v**2))",
+   "why": "affine combination of known quantities (composed speed / c, 1/(product of the two Lorentz factors))"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "c/(1 + c*x)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "sqrt(1 - (1/(2*c*x + 1))**2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "(x/(1 + c*x))**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "(x**2*c/(1 + c*x))**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "((a**2 + b**2 - (a - b)**2)/(1 - a - b))",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), Invariant mass squared of the two products [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "(sqrt((1 - (a + b)**2)*(1 - (a - b)**2))/(1 + a**2 - b**2)) / (sqrt((1 - (a + b)**2)*(1 - (a - b)**2",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), 1/(energy of product 1 / (Mc\u00b2)))"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "(1 + a**2 - b**2)/2 + (1 - a**2 + b**2)/2",
+   "why": "must depend only on a, b"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "((1 - a)**2 - b**2)/2 + ((1 - b)**2 - a**2)/2",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), kinetic energy released Q / (Mc\u00b2))"
   }
  ],
  "tried": [
@@ -1642,7 +1762,9 @@
   "velocity addition|Total relativistic energy / mc\u00b2 [model-proposed; physical meaning unverified]|Relativistic momentum ratio [model-proposed; physical meaning unverified]",
   "velocity addition|Total relativistic energy / mc\u00b2 [model-proposed; physical meaning unverified]|Lorentz gamma of the composed motion [model-proposed; physical meaning unverified]",
   "velocity addition|Total relativistic energy / mc\u00b2 [model-proposed; physical meaning unverified]|Relative velocity in terms of rapidities [model-proposed; physical meaning unverified]",
-  "velocity addition|Total relativistic energy / mc\u00b2 [model-proposed; physical meaning unverified]|Relativistic velocity parameter [model-proposed; physical meaning unverified]"
+  "velocity addition|Total relativistic energy / mc\u00b2 [model-proposed; physical meaning unverified]|Relativistic velocity parameter [model-proposed; physical meaning unverified]",
+  "velocity addition|Total relativistic energy / mc\u00b2 [model-proposed; physical meaning unverified]|Energy-momentum invariant [model-proposed; physical meaning unverified]",
+  "velocity addition|Total relativistic energy / mc\u00b2 [model-proposed; physical meaning unverified]|Energy-momentum ratio [model-proposed; physical meaning unverified]"
  ],
  "edges": [
   {
@@ -2390,7 +2512,7 @@
    "k": "1"
   }
  ],
- "rounds": 60,
+ "rounds": 66,
  "discoveries": [],
  "rediscoveries": [
   {

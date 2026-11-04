@@ -63,3 +63,9 @@
 - 2026-11-04 14:10 round 59: velocity addition
 - 2026-11-04 14:22 round 60: Compton scattering
 - 2026-11-04 14:23 round 61: two-body decay
+- 2026-11-04 14:25 round 62: collision
+- 2026-11-04 14:26 round 63: driven oscillator
+- 2026-11-04 14:28 round 64: velocity addition
+- 2026-11-04 14:30 round 65: Compton scattering
+- 2026-11-04 14:32 round 66: two-body decay
+- 2026-11-04 14:34 round 67: collision
