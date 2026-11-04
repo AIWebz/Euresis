@@ -164,6 +164,46 @@
    "family": "heat engines",
    "expr": "(1 - t**2)/(1 - t)",
    "why": "affine combination of known quantities (Carnot efficiency)"
+  },
+  {
+   "family": "relativity",
+   "expr": "1 / (1 + (1 / sqrt(1 - b**2) - 1))",
+   "why": "reciprocal of a known quantity (Lorentz factor \u03b3)"
+  },
+  {
+   "family": "relativity",
+   "expr": "sqrt((1 - b)/(1 + b))",
+   "why": "affine combination of known quantities (Lorentz factor \u03b3, relativistic momentum / (mc))"
+  },
+  {
+   "family": "relativity",
+   "expr": "b**2 / (1 - b**2)",
+   "why": "product of known quantities (relativistic momentum / (mc), relativistic momentum / (mc))"
+  },
+  {
+   "family": "relativity",
+   "expr": "1 - b**2",
+   "why": "affine combination of known quantities (Lorentz factor \u03b3, classical kinetic energy / mc\u00b2)"
+  },
+  {
+   "family": "kepler",
+   "expr": "sqrt((1 + e)/(1 - e))/sqrt((1 - e)/(1 + e))",
+   "why": "ratio of known quantities (perihelion distance / a, aphelion distance / a)"
+  },
+  {
+   "family": "kepler",
+   "expr": "( (1 - e)**2 + (1 + e)**2 ) / 2",
+   "why": "affine combination of known quantities (perihelion distance / a, semi-latus rectum / a)"
+  },
+  {
+   "family": "kepler",
+   "expr": "(1 - e)*(1 + e)",
+   "why": "product of known quantities (perihelion distance / a, aphelion distance / a)"
+  },
+  {
+   "family": "kepler",
+   "expr": "(1 - e**2)/(1 - e**2)",
+   "why": "must depend on e only"
   }
  ],
  "tried": [
@@ -310,7 +350,23 @@
   "heat engines|low-dissipation engine efficiency at maximum power, upper bound (Esposito et al.)|Carnot efficiency",
   "heat engines|low-dissipation engine efficiency at maximum power, upper bound (Esposito et al.)|Curzon\u2013Ahlborn efficiency (endoreversible engine at maximum power)",
   "heat engines|low-dissipation engine efficiency at maximum power, upper bound (Esposito et al.)|Carnot refrigerator coefficient of performance",
-  "heat engines|low-dissipation engine efficiency at maximum power, upper bound (Esposito et al.)|Carnot heat pump coefficient of performance"
+  "heat engines|low-dissipation engine efficiency at maximum power, upper bound (Esposito et al.)|Carnot heat pump coefficient of performance",
+  "relativity|relative speed of two bodies each at speed b, head-on (velocity addition) / c|kinetic energy / (momentum \u00d7 c)",
+  "relativity|kinetic energy / (momentum \u00d7 c)|Lorentz factor \u03b3",
+  "relativity|kinetic energy / (momentum \u00d7 c)|relativistic kinetic energy / mc\u00b2",
+  "relativity|kinetic energy / (momentum \u00d7 c)|classical kinetic energy / mc\u00b2",
+  "relativity|kinetic energy / (momentum \u00d7 c)|relativistic momentum / (mc)",
+  "relativity|kinetic energy / (momentum \u00d7 c)|relativistic Doppler factor (approaching source)",
+  "relativity|kinetic energy / (momentum \u00d7 c)|time-dilation factor 1/\u03b3",
+  "relativity|kinetic energy / (momentum \u00d7 c)|relative speed of two bodies each at speed b, head-on (velocity addition) / c",
+  "kepler|semi-latus rectum / a|semi-minor axis / a",
+  "kepler|semi-latus rectum / a|time-averaged distance / a",
+  "kepler|time-averaged distance / a|perihelion distance / a",
+  "kepler|time-averaged distance / a|aphelion distance / a",
+  "kepler|time-averaged distance / a|perihelion speed / circular speed at a",
+  "kepler|time-averaged distance / a|aphelion speed / circular speed at a",
+  "kepler|time-averaged distance / a|semi-minor axis / a",
+  "kepler|time-averaged distance / a|semi-latus rectum / a"
  ],
  "edges": [
   {
@@ -550,9 +606,44 @@
    "g": "Curzon\u2013Ahlborn efficiency (endoreversible engine at maximum power)",
    "kind": "lower",
    "k": "1"
+  },
+  {
+   "family": "relativity",
+   "f": "kinetic energy / (momentum \u00d7 c)",
+   "g": "relative speed of two bodies each at speed b, head-on (velocity addition) / c",
+   "kind": "lower",
+   "k": "1/4"
+  },
+  {
+   "family": "kepler",
+   "f": "time-averaged distance / a",
+   "g": "perihelion distance / a",
+   "kind": "lower",
+   "k": "1"
+  },
+  {
+   "family": "kepler",
+   "f": "time-averaged distance / a",
+   "g": "aphelion speed / circular speed at a",
+   "kind": "lower",
+   "k": "1"
+  },
+  {
+   "family": "kepler",
+   "f": "time-averaged distance / a",
+   "g": "semi-minor axis / a",
+   "kind": "lower",
+   "k": "1"
+  },
+  {
+   "family": "kepler",
+   "f": "time-averaged distance / a",
+   "g": "semi-latus rectum / a",
+   "kind": "lower",
+   "k": "1"
   }
  ],
- "rounds": 9,
+ "rounds": 11,
  "discoveries": [
   {
    "claim": "phy-e72aa596c5f7",
