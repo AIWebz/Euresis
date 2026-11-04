@@ -9,3 +9,6 @@
 - 2026-11-04 23:15 FINDING (confirmed on held-out rows): In 'Photos and measurements of otoliths from fish caught in the southern part of the North Sea' (Zenodo, doi 10.5281/zenodo.4066594): 'right_otolith_width_µm' follows a power law in 'right_otolith_length_µm' (R² = 0.947 on the discovery half); held-out R² = 0.951 [emp-35f496c4b625]
 - 2026-11-04 23:15 data feeds: 43 datasets analysed so far, 8 confirmed findings
 - 2026-11-04 23:22 data feeds: online
+- 2026-11-04 23:22 FINDING (confirmed on held-out rows): In 'Physical state of water controls friction of gabbro-built faults' (Zenodo, doi 10.5281/zenodo.7520657): '384.4903' grows exponentially in '-7.0747711' (R² = 0.953 on the discovery half); held-out R² = 0.953 [emp-507fe79ade81]
+- 2026-11-04 23:22 FINDING (confirmed on held-out rows): In 'Physical state of water controls friction of gabbro-built faults' (Zenodo, doi 10.5281/zenodo.7520657): '-0.0043120708' is linear in '0' (R² = 0.938 on the discovery half); held-out R² = 0.934 [emp-a8b4c7e17ed8]
+- 2026-11-04 23:22 FINDING (confirmed on held-out rows): In 'Physical state of water controls friction of gabbro-built faults' (Zenodo, doi 10.5281/zenodo.7520657): '-0.0043120708' is linear in '0.1' (R² = 0.938 on the discovery half); held-out R² = 0.935 [emp-59883c0ec14a]

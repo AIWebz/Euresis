@@ -174,6 +174,15 @@ def load_table(path: Path):
             break
     else:
         return None
+    def _num(v):
+        try:
+            float(str(v))
+            return True
+        except ValueError:
+            return False
+    if all(_num(c) for c in df.columns):           # no header row: the first data row was read as names
+        df = pd.read_csv(io.BytesIO(raw), sep=sep, header=None, low_memory=False)
+        df.columns = [f"column {i + 1} (unlabelled)" for i in range(df.shape[1])]
     num = df.apply(pd.to_numeric, errors="coerce")
     keep = [c for c in num.columns if num[c].notna().mean() > 0.9 and num[c].nunique() > 10]
     num = num[keep]
@@ -236,8 +245,11 @@ def analyse(path: Path, item: dict, reg: Registry, echo=print) -> list[dict]:
             if gate.check(reg, cid, log=lambda *a: None) != "verified-numeric":
                 continue
             ev = reg.get(cid)["evidence"]
+            unl = "unlabelled" in cx + cy
             reg.set_novelty(cid, "empirical regularity in a published dataset; probably known to its authors — "
-                                 "check the linked paper; units unknown, so not a law until interpreted")
+                                 "check the linked paper; units unknown, so not a law until interpreted"
+                            + ("; the file has no column names — the dataset's documentation is needed to say what "
+                               "the columns are" if unl else ""))
             rec = {"claim": cid, "statement": stmt, "held_out_r2": ev.get("held_out_r2")}
             found.append(rec)
             log(f"FINDING (confirmed on held-out rows): {stmt}; held-out R² = {ev.get('held_out_r2'):.3f} [{cid}]", echo)

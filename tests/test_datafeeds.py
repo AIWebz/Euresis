@@ -37,3 +37,12 @@ def test_timestamp_columns_are_not_laws(tmp_path, monkeypatch):
     path.write_text("tstart,tend\n" + "\n".join(f"{a},{b}" for a, b in zip(start, end)))
     reg = Registry(tmp_path / "r.db", tmp_path / "c.json")
     assert F.analyse(path, {"source": "t", "doi": "", "title": "t", "file": "times.csv"}, reg, echo=lambda *a: None) == []
+
+
+def test_headerless_csv_gets_column_numbers(tmp_path):
+    rng = np.random.default_rng(2)
+    x = rng.uniform(1, 10, 200)
+    path = tmp_path / "noheader.csv"
+    path.write_text("\n".join(f"{a},{2 * a ** 2}" for a in x))
+    T = F.load_table(path)
+    assert list(T.columns) == ["column 1 (unlabelled)", "column 2 (unlabelled)"] and len(T) == 200

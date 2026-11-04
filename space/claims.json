@@ -470392,5 +470392,86 @@
   "statement": "Octal game 0.053357 is completely solved: its Grundy values are periodic with pre-period 1145 and period 10 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7520657",
+   "held_out_r2": 0.9528,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-507fe79ade81",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted; the file has no header row: '384.4903' and '-7.0747711' are values from its first row, not column names \u2014 the dataset's documentation is needed to say what the columns are",
+  "payload": {
+   "dataset": "ecb52952ffe4619b.csv",
+   "doi": "10.5281/zenodo.7520657",
+   "form": "exponential",
+   "params": [
+    5.991209085480307,
+    -0.00020773499302091897
+   ],
+   "seed": 815786323,
+   "x": "-7.0747711",
+   "y": "384.4903"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Physical state of water controls friction of gabbro-built faults' (Zenodo, doi 10.5281/zenodo.7520657): '384.4903' grows exponentially in '-7.0747711' (R\u00b2 = 0.953 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7520657",
+   "held_out_r2": 0.9344,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a8b4c7e17ed8",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "15e957afa868f607.csv",
+   "doi": "10.5281/zenodo.7520657",
+   "form": "linear",
+   "params": [
+    0.10558387303381007,
+    -0.004510739561259389
+   ],
+   "seed": 1451042130,
+   "x": "0",
+   "y": "-0.0043120708"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Physical state of water controls friction of gabbro-built faults' (Zenodo, doi 10.5281/zenodo.7520657): '-0.0043120708' is linear in '0' (R\u00b2 = 0.938 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7520657",
+   "held_out_r2": 0.9351,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-59883c0ec14a",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "15e957afa868f607.csv",
+   "doi": "10.5281/zenodo.7520657",
+   "form": "linear",
+   "params": [
+    0.09863924694750033,
+    -0.0004541937839069588
+   ],
+   "seed": 1451042130,
+   "x": "0.1",
+   "y": "-0.0043120708"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Physical state of water controls friction of gabbro-built faults' (Zenodo, doi 10.5281/zenodo.7520657): '-0.0043120708' is linear in '0.1' (R\u00b2 = 0.938 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
