@@ -28,3 +28,22 @@
 - 2026-11-04 13:19 round 27: collision
 - 2026-11-04 13:20 round 28: driven oscillator
 - 2026-11-04 13:22 round 29: velocity addition
+- 2026-11-04 13:26 round 30: Compton scattering
+- 2026-11-04 13:28 round 31: two-body decay
+- 2026-11-04 13:30 round 32: collision
+- 2026-11-04 13:31 round 33: driven oscillator
+- 2026-11-04 13:32 round 34: velocity addition
+- 2026-11-04 13:34 round 35: Compton scattering
+- 2026-11-04 13:35 round 36: two-body decay
+- 2026-11-04 13:37 round 37: collision
+- 2026-11-04 13:38 round 38: driven oscillator
+- 2026-11-04 13:39 round 39: velocity addition
+- 2026-11-04 13:41 round 40: Compton scattering
+- 2026-11-04 13:42 round 41: two-body decay
+- 2026-11-04 13:45 round 42: collision
+- 2026-11-04 13:46 model reply could not be parsed (collision): '[{"name": "fraction of kinetic energy retained by the projectile", "expr": (1 - (1 + e)**2 * m**2 / (1 + m)**2)}, {"name": "relative velocity of projectile to target after collision", "expr": (1 - e*m)/(1 + m)}, {"name": "coefficient of restitution squared times mass ratio", "expr": (e**2 * m)}, {"n'
+- 2026-11-04 13:46 round 43: driven oscillator
+- 2026-11-04 13:47 round 44: velocity addition
+- 2026-11-04 13:49 round 45: Compton scattering
+- 2026-11-04 13:50 round 46: two-body decay
+- 2026-11-04 13:52 round 47: collision

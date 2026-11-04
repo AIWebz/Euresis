@@ -29,7 +29,8 @@
    "acceleration amplitude / (\u03c90\u00b2 \u00d7 static deflection)": "r**2/sqrt((1 - r**2)**2 + (2*z*r)**2)",
    "mean absorbed power (normalised)": "2*z*r**2/((1 - r**2)**2 + (2*z*r)**2)",
    "quality factor": "1/(2*z)",
-   "log decrement [model-proposed; physical meaning unverified]": "2*sqrt(1 - z**2)/z"
+   "log decrement [model-proposed; physical meaning unverified]": "2*sqrt(1 - z**2)/z",
+   "resonance frequency ratio [model-proposed; physical meaning unverified]": "sqrt(-z**2/(z**2 + 1) + 1)"
   },
   "velocity addition": {
    "composed speed / c": "(u + v)/(1 + u*v)",
@@ -53,7 +54,9 @@
    "electron kinetic energy / (m_e c\u00b2)": "x**2*c/(1 + x*c)",
    "wavelength shift / Compton wavelength": "c",
    "photon energy / (m_e c\u00b2)": "x",
-   "Recoil electron momentum / (m_e c) [model-proposed; physical meaning unverified]": "sqrt(c**2*x**2/(c*x + 1)**2 + c*x**2/(c*x + 1))"
+   "Recoil electron momentum / (m_e c) [model-proposed; physical meaning unverified]": "sqrt(c**2*x**2/(c*x + 1)**2 + c*x**2/(c*x + 1))",
+   "Electron recoil angle (cosine) [model-proposed; physical meaning unverified]": "1/(2*c**2*x**2 + 1)",
+   "Compton wavelength shift / (initial photon wavelength) [model-proposed; physical meaning unverified]": "c/(c + x)"
   }
  },
  "rejected": [
@@ -556,6 +559,331 @@
    "family": "driven oscillator",
    "expr": "r**2/(1 + (2*z*r)**2)",
    "why": "a power or product of known quantities"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 + u)/(1 - u)) * sqrt((1 + v)/(1 - v))",
+   "why": "affine combination of known quantities (composed speed / c, Doppler factor of the composed motion)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "1 - (u + v)**2/(1 + u*v)**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 - u**2)*(1 - v**2))/(-u*v + 1)",
+   "why": "affine combination of known quantities (composed speed / c, Relativistic velocity parameter [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 - u**2)*(1 - v**2))/(1 - u*v)",
+   "why": "affine combination of known quantities (composed speed / c, Relativistic velocity parameter [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "x*c/(1 + x*c) * (1/(1 + x*c))",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "x**2*c/(1 + x*c) * (1/(1 + x*c))",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "x/(1 + x*c) / (x**2*c/(1 + x*c) + x/(1 + x*c))",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy)"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "c / (1 + x*c)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "1",
+   "why": "must depend only on a, b"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "1",
+   "why": "must depend only on a, b"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "0",
+   "why": "must depend only on a, b"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "(sqrt((1 - (a + b)**2)*(1 - (a - b)**2))/(1 + a**2 - b**2)) / (sqrt((1 - (a + b)**2)*(1 - (a - b)**2",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), 1/(energy of product 1 / (Mc\u00b2)))"
+  },
+  {
+   "family": "collision",
+   "expr": "e",
+   "why": "affine combination of known quantities (target speed / initial speed, momentum transferred / initial momentum)"
+  },
+  {
+   "family": "collision",
+   "expr": "e",
+   "why": "affine combination of known quantities (target speed / initial speed, momentum transferred / initial momentum)"
+  },
+  {
+   "family": "collision",
+   "expr": "(1 - (1 + e)**2 * m / (1 + m)**2)",
+   "why": "affine combination of known quantities (target speed / initial speed, fraction of kinetic energy given to the target)"
+  },
+  {
+   "family": "collision",
+   "expr": "(1 - e*m)/(1 + m)",
+   "why": "affine combination of known quantities (target speed / initial speed)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "atan2(2*z*r, 1 - r**2)",
+   "why": "only + \u2212 \u00d7 \u00f7, integer powers and square roots (so the prover can decide it)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(1 - 2*z**2)",
+   "why": "not finite on the whole physical domain"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(1 - z**2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "2*z*r**2/(1 - r**2)",
+   "why": "not finite on the whole physical domain"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 - u**2)*(1 - v**2) + (u + v)**2)/(1 + u*v)",
+   "why": "affine combination of known quantities (composed speed / c)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "u/sqrt(1 - u**2) + v/sqrt(1 - v**2)",
+   "why": "affine combination of known quantities (composed speed / c, Relativistic momentum ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "1/sqrt(1 - (u + v)**2/(1 + u*v)**2)",
+   "why": "affine combination of known quantities (composed speed / c, Lorentz gamma of the composed motion [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt(1 - u**2) + sqrt(1 - v**2) - sqrt(1 - (u + v)**2/(1 + u*v)**2)",
+   "why": "affine combination of known quantities (composed speed / c, Energy-momentum invariant [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "c / (1 + x*c)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "x*c / (1 + x*c)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy)"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "(x*c - 1) / (x*c + 1)",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "sqrt(c**2*x**2/(1 + x*c)**2 + c*x**2/(1 + x*c))",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, Recoil electron momentum / (m_e c) [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "1 - 2*a - 2*b + 2*a*b",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "(1 + a**2 - b**2)/(1 - a**2 + b**2)",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), 1/(energy of product 2 / (Mc\u00b2)))"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "(1 - a**2 + b**2)/(2*b)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "(1 + a**2 - b**2)/(1 - a**2 + b**2)",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), 1/(energy of product 2 / (Mc\u00b2)))"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2 * m",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "collision",
+   "expr": "((1 - e**2) * m) / (1 + m)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "collision",
+   "expr": "(1 - e*m) / (1 + m)",
+   "why": "affine combination of known quantities (target speed / initial speed)"
+  },
+  {
+   "family": "collision",
+   "expr": "sqrt((1 - e**2) / (1 + m))",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "atan(2*z*r/(1 - r**2))",
+   "why": "only + \u2212 \u00d7 \u00f7, integer powers and square roots (so the prover can decide it)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(1 - 2*z**2)",
+   "why": "not finite on the whole physical domain"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "z/(sqrt(1 - r**2))",
+   "why": "not finite on the whole physical domain"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "r**2/(1 + (2*z*r)**2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 + u)/(1 - u)) * sqrt((1 + v)/(1 - v))",
+   "why": "affine combination of known quantities (composed speed / c, Doppler factor of the composed motion)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "1 - (u + v)**2/(1 + u*v)**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 - u**2)*(1 - v**2))/(1 + u*v)",
+   "why": "affine combination of known quantities (composed speed / c, 1/(Lorentz factor of the composed motion))"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "u/sqrt(1 - u**2) + v/sqrt(1 - v**2)",
+   "why": "affine combination of known quantities (composed speed / c, Relativistic momentum ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "x*c/(1 + x*c)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy)"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "1 + c",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, wavelength shift / Compton wavelength)"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "x*c/(1 + x*c)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy)"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "((a**2 + b**2) - (a - b)**2)/(-a - b + 1)",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), Invariant mass squared of the two products [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "((-b**2 + (1 - a)**2)/(-a**2 + 2*b**2 - (1 - a)**2 + 1))",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), Ratio of kinetic energies of product 1 to product 2 [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "((sqrt((1 - (a + b)**2)*(1 - (a - b)**2))/(1 + a**2 - b**2)) / (sqrt((1 - (a + b)**2)*(1 - (a - b)**",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), 1/(energy of product 1 / (Mc\u00b2)))"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "((1 + a**2 - b**2)/(2*a)) / ((1 - a**2 + b**2)/(2*b))",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "atan2(2*z*r, 1 - r**2)",
+   "why": "only + \u2212 \u00d7 \u00f7, integer powers and square roots (so the prover can decide it)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt((1 - r**2)**2 + (2*z*r)**2)/(1 + (2*z*r)**2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "r**2/(1 + (2*z*r)**2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "(u + v)/(sqrt(1 - u**2)*sqrt(1 - v**2)*(1 + u*v))",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "1/(sqrt(1 - u**2)*sqrt(1 - v**2))",
+   "why": "affine combination of known quantities (composed speed / c, product of the two Lorentz factors)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 - u**2)*(1 - v**2))/(1 - u*v)",
+   "why": "affine combination of known quantities (composed speed / c, Relativistic velocity parameter [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 - u**2)*(1 - v**2))/(1 - u*v) - 1",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "c/(1 + x*c)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "x*c/(1 + x*c)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy)"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "1/(1 + x*c)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy)"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "(a**2 + b**2 - (a - b)**2)/(1 - a - b)**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "(1 + a**2 - b**2)/(1 - a**2 + b**2)",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), 1/(energy of product 2 / (Mc\u00b2)))"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "(1 + a**2 - b**2)/(1 - a**2 + b**2)",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), 1/(energy of product 2 / (Mc\u00b2)))"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "sqrt((1 - (a + b)**2)*(1 - (a - b)**2))",
+   "why": "affine combination of known quantities (momentum of each product / (Mc))"
   }
  ],
  "tried": [
@@ -908,7 +1236,87 @@
   "two-body decay|Ratio of kinetic energies of product 1 to product 2 [model-proposed; physical meaning unverified]|speed of product 1 / c",
   "two-body decay|Ratio of kinetic energies of product 1 to product 2 [model-proposed; physical meaning unverified]|speed of product 2 / c",
   "two-body decay|Ratio of kinetic energies of product 1 to product 2 [model-proposed; physical meaning unverified]|Lorentz factor of product 1",
-  "two-body decay|Ratio of kinetic energies of product 1 to product 2 [model-proposed; physical meaning unverified]|Invariant mass squared of the two products [model-proposed; physical meaning unverified]"
+  "two-body decay|Ratio of kinetic energies of product 1 to product 2 [model-proposed; physical meaning unverified]|Invariant mass squared of the two products [model-proposed; physical meaning unverified]",
+  "velocity addition|kinetic energy of the composed motion / mc\u00b2|composed speed / c",
+  "velocity addition|kinetic energy of the composed motion / mc\u00b2|Galilean sum / c",
+  "velocity addition|kinetic energy of the composed motion / mc\u00b2|Lorentz factor of the composed motion",
+  "velocity addition|kinetic energy of the composed motion / mc\u00b2|product of the two Lorentz factors",
+  "velocity addition|kinetic energy of the composed motion / mc\u00b2|Doppler factor of the composed motion",
+  "velocity addition|kinetic energy of the composed motion / mc\u00b2|sum of the two kinetic energies / mc\u00b2",
+  "velocity addition|sum of the two kinetic energies / mc\u00b2|composed speed / c",
+  "velocity addition|sum of the two kinetic energies / mc\u00b2|Galilean sum / c",
+  "velocity addition|sum of the two kinetic energies / mc\u00b2|Lorentz factor of the composed motion",
+  "velocity addition|sum of the two kinetic energies / mc\u00b2|product of the two Lorentz factors",
+  "velocity addition|sum of the two kinetic energies / mc\u00b2|Doppler factor of the composed motion",
+  "velocity addition|sum of the two kinetic energies / mc\u00b2|kinetic energy of the composed motion / mc\u00b2",
+  "velocity addition|Relativistic momentum ratio [model-proposed; physical meaning unverified]|product of the two Lorentz factors",
+  "velocity addition|Relativistic momentum ratio [model-proposed; physical meaning unverified]|Doppler factor of the composed motion",
+  "velocity addition|Relativistic momentum ratio [model-proposed; physical meaning unverified]|kinetic energy of the composed motion / mc\u00b2",
+  "velocity addition|Relativistic momentum ratio [model-proposed; physical meaning unverified]|sum of the two kinetic energies / mc\u00b2",
+  "velocity addition|Relativistic momentum ratio [model-proposed; physical meaning unverified]|Lorentz gamma of the composed motion [model-proposed; physical meaning unverified]",
+  "velocity addition|Relativistic momentum ratio [model-proposed; physical meaning unverified]|Relative velocity in terms of rapidities [model-proposed; physical meaning unverified]",
+  "velocity addition|Lorentz gamma of the composed motion [model-proposed; physical meaning unverified]|composed speed / c",
+  "velocity addition|Lorentz gamma of the composed motion [model-proposed; physical meaning unverified]|Galilean sum / c",
+  "velocity addition|Lorentz gamma of the composed motion [model-proposed; physical meaning unverified]|Lorentz factor of the composed motion",
+  "velocity addition|Lorentz gamma of the composed motion [model-proposed; physical meaning unverified]|product of the two Lorentz factors",
+  "velocity addition|Lorentz gamma of the composed motion [model-proposed; physical meaning unverified]|Doppler factor of the composed motion",
+  "velocity addition|Lorentz gamma of the composed motion [model-proposed; physical meaning unverified]|kinetic energy of the composed motion / mc\u00b2",
+  "velocity addition|Lorentz gamma of the composed motion [model-proposed; physical meaning unverified]|sum of the two kinetic energies / mc\u00b2",
+  "velocity addition|Lorentz gamma of the composed motion [model-proposed; physical meaning unverified]|Relativistic momentum ratio [model-proposed; physical meaning unverified]",
+  "velocity addition|Lorentz gamma of the composed motion [model-proposed; physical meaning unverified]|Relative velocity in terms of rapidities [model-proposed; physical meaning unverified]",
+  "velocity addition|Relative velocity in terms of rapidities [model-proposed; physical meaning unverified]|composed speed / c",
+  "velocity addition|Relative velocity in terms of rapidities [model-proposed; physical meaning unverified]|Galilean sum / c",
+  "velocity addition|Relative velocity in terms of rapidities [model-proposed; physical meaning unverified]|Lorentz factor of the composed motion",
+  "velocity addition|Relative velocity in terms of rapidities [model-proposed; physical meaning unverified]|product of the two Lorentz factors",
+  "velocity addition|Relative velocity in terms of rapidities [model-proposed; physical meaning unverified]|Doppler factor of the composed motion",
+  "velocity addition|Relative velocity in terms of rapidities [model-proposed; physical meaning unverified]|kinetic energy of the composed motion / mc\u00b2",
+  "velocity addition|Relative velocity in terms of rapidities [model-proposed; physical meaning unverified]|sum of the two kinetic energies / mc\u00b2",
+  "velocity addition|Relative velocity in terms of rapidities [model-proposed; physical meaning unverified]|Relativistic momentum ratio [model-proposed; physical meaning unverified]",
+  "velocity addition|Relative velocity in terms of rapidities [model-proposed; physical meaning unverified]|Lorentz gamma of the composed motion [model-proposed; physical meaning unverified]",
+  "Compton scattering|scattered photon energy / initial energy|Electron recoil angle (cosine) [model-proposed; physical meaning unverified]",
+  "Compton scattering|electron kinetic energy / photon energy|Electron recoil angle (cosine) [model-proposed; physical meaning unverified]",
+  "Compton scattering|scattered photon energy / (m_e c\u00b2)|Electron recoil angle (cosine) [model-proposed; physical meaning unverified]",
+  "Compton scattering|electron kinetic energy / (m_e c\u00b2)|Electron recoil angle (cosine) [model-proposed; physical meaning unverified]",
+  "Compton scattering|wavelength shift / Compton wavelength|Electron recoil angle (cosine) [model-proposed; physical meaning unverified]",
+  "Compton scattering|photon energy / (m_e c\u00b2)|Electron recoil angle (cosine) [model-proposed; physical meaning unverified]",
+  "Compton scattering|Recoil electron momentum / (m_e c) [model-proposed; physical meaning unverified]|Electron recoil angle (cosine) [model-proposed; physical meaning unverified]",
+  "Compton scattering|Electron recoil angle (cosine) [model-proposed; physical meaning unverified]|scattered photon energy / initial energy",
+  "Compton scattering|Electron recoil angle (cosine) [model-proposed; physical meaning unverified]|electron kinetic energy / photon energy",
+  "Compton scattering|Electron recoil angle (cosine) [model-proposed; physical meaning unverified]|scattered photon energy / (m_e c\u00b2)",
+  "Compton scattering|Electron recoil angle (cosine) [model-proposed; physical meaning unverified]|electron kinetic energy / (m_e c\u00b2)",
+  "Compton scattering|Electron recoil angle (cosine) [model-proposed; physical meaning unverified]|wavelength shift / Compton wavelength",
+  "Compton scattering|Electron recoil angle (cosine) [model-proposed; physical meaning unverified]|photon energy / (m_e c\u00b2)",
+  "Compton scattering|Electron recoil angle (cosine) [model-proposed; physical meaning unverified]|Recoil electron momentum / (m_e c) [model-proposed; physical meaning unverified]",
+  "driven oscillator|amplitude / static deflection|resonance frequency ratio [model-proposed; physical meaning unverified]",
+  "driven oscillator|transmissibility|resonance frequency ratio [model-proposed; physical meaning unverified]",
+  "driven oscillator|velocity amplitude / (\u03c90 \u00d7 static deflection)|resonance frequency ratio [model-proposed; physical meaning unverified]",
+  "driven oscillator|acceleration amplitude / (\u03c90\u00b2 \u00d7 static deflection)|resonance frequency ratio [model-proposed; physical meaning unverified]",
+  "driven oscillator|mean absorbed power (normalised)|resonance frequency ratio [model-proposed; physical meaning unverified]",
+  "driven oscillator|quality factor|resonance frequency ratio [model-proposed; physical meaning unverified]",
+  "driven oscillator|log decrement [model-proposed; physical meaning unverified]|resonance frequency ratio [model-proposed; physical meaning unverified]",
+  "driven oscillator|resonance frequency ratio [model-proposed; physical meaning unverified]|amplitude / static deflection",
+  "driven oscillator|resonance frequency ratio [model-proposed; physical meaning unverified]|transmissibility",
+  "driven oscillator|resonance frequency ratio [model-proposed; physical meaning unverified]|velocity amplitude / (\u03c90 \u00d7 static deflection)",
+  "driven oscillator|resonance frequency ratio [model-proposed; physical meaning unverified]|acceleration amplitude / (\u03c90\u00b2 \u00d7 static deflection)",
+  "driven oscillator|resonance frequency ratio [model-proposed; physical meaning unverified]|mean absorbed power (normalised)",
+  "driven oscillator|resonance frequency ratio [model-proposed; physical meaning unverified]|quality factor",
+  "driven oscillator|resonance frequency ratio [model-proposed; physical meaning unverified]|log decrement [model-proposed; physical meaning unverified]",
+  "Compton scattering|scattered photon energy / initial energy|Compton wavelength shift / (initial photon wavelength) [model-proposed; physical meaning unverified]",
+  "Compton scattering|electron kinetic energy / photon energy|Compton wavelength shift / (initial photon wavelength) [model-proposed; physical meaning unverified]",
+  "Compton scattering|scattered photon energy / (m_e c\u00b2)|Compton wavelength shift / (initial photon wavelength) [model-proposed; physical meaning unverified]",
+  "Compton scattering|electron kinetic energy / (m_e c\u00b2)|Compton wavelength shift / (initial photon wavelength) [model-proposed; physical meaning unverified]",
+  "Compton scattering|wavelength shift / Compton wavelength|Compton wavelength shift / (initial photon wavelength) [model-proposed; physical meaning unverified]",
+  "Compton scattering|photon energy / (m_e c\u00b2)|Compton wavelength shift / (initial photon wavelength) [model-proposed; physical meaning unverified]",
+  "Compton scattering|Recoil electron momentum / (m_e c) [model-proposed; physical meaning unverified]|Compton wavelength shift / (initial photon wavelength) [model-proposed; physical meaning unverified]",
+  "Compton scattering|Electron recoil angle (cosine) [model-proposed; physical meaning unverified]|Compton wavelength shift / (initial photon wavelength) [model-proposed; physical meaning unverified]",
+  "Compton scattering|Compton wavelength shift / (initial photon wavelength) [model-proposed; physical meaning unverified]|scattered photon energy / initial energy",
+  "Compton scattering|Compton wavelength shift / (initial photon wavelength) [model-proposed; physical meaning unverified]|electron kinetic energy / photon energy",
+  "Compton scattering|Compton wavelength shift / (initial photon wavelength) [model-proposed; physical meaning unverified]|scattered photon energy / (m_e c\u00b2)",
+  "Compton scattering|Compton wavelength shift / (initial photon wavelength) [model-proposed; physical meaning unverified]|electron kinetic energy / (m_e c\u00b2)",
+  "Compton scattering|Compton wavelength shift / (initial photon wavelength) [model-proposed; physical meaning unverified]|wavelength shift / Compton wavelength",
+  "Compton scattering|Compton wavelength shift / (initial photon wavelength) [model-proposed; physical meaning unverified]|photon energy / (m_e c\u00b2)",
+  "Compton scattering|Compton wavelength shift / (initial photon wavelength) [model-proposed; physical meaning unverified]|Recoil electron momentum / (m_e c) [model-proposed; physical meaning unverified]",
+  "Compton scattering|Compton wavelength shift / (initial photon wavelength) [model-proposed; physical meaning unverified]|Electron recoil angle (cosine) [model-proposed; physical meaning unverified]"
  ],
  "edges": [
   {
@@ -1492,9 +1900,99 @@
    "f": "Ratio of kinetic energies of product 1 to product 2 [model-proposed; physical meaning unverified]",
    "g": "kinetic energy of product 1 / (Mc\u00b2)",
    "k": "1"
+  },
+  {
+   "family": "velocity addition",
+   "f": "Lorentz gamma of the composed motion [model-proposed; physical meaning unverified]",
+   "g": "composed speed / c",
+   "k": "2"
+  },
+  {
+   "family": "velocity addition",
+   "f": "Lorentz gamma of the composed motion [model-proposed; physical meaning unverified]",
+   "g": "Lorentz factor of the composed motion",
+   "k": "1"
+  },
+  {
+   "family": "velocity addition",
+   "f": "Lorentz gamma of the composed motion [model-proposed; physical meaning unverified]",
+   "g": "product of the two Lorentz factors",
+   "k": "1"
+  },
+  {
+   "family": "velocity addition",
+   "f": "Lorentz gamma of the composed motion [model-proposed; physical meaning unverified]",
+   "g": "Doppler factor of the composed motion",
+   "k": "1/2"
+  },
+  {
+   "family": "velocity addition",
+   "f": "Lorentz gamma of the composed motion [model-proposed; physical meaning unverified]",
+   "g": "Relativistic momentum ratio [model-proposed; physical meaning unverified]",
+   "k": "1"
+  },
+  {
+   "family": "velocity addition",
+   "f": "Lorentz gamma of the composed motion [model-proposed; physical meaning unverified]",
+   "g": "Relative velocity in terms of rapidities [model-proposed; physical meaning unverified]",
+   "k": "2"
+  },
+  {
+   "family": "velocity addition",
+   "f": "Relative velocity in terms of rapidities [model-proposed; physical meaning unverified]",
+   "g": "composed speed / c",
+   "k": "1/2"
+  },
+  {
+   "family": "velocity addition",
+   "f": "Relative velocity in terms of rapidities [model-proposed; physical meaning unverified]",
+   "g": "Galilean sum / c",
+   "k": "1/4"
+  },
+  {
+   "family": "Compton scattering",
+   "f": "Electron recoil angle (cosine) [model-proposed; physical meaning unverified]",
+   "g": "scattered photon energy / initial energy",
+   "k": "5/33"
+  },
+  {
+   "family": "driven oscillator",
+   "f": "transmissibility",
+   "g": "resonance frequency ratio [model-proposed; physical meaning unverified]",
+   "k": "1/3"
+  },
+  {
+   "family": "Compton scattering",
+   "f": "scattered photon energy / initial energy",
+   "g": "Compton wavelength shift / (initial photon wavelength) [model-proposed; physical meaning unverified]",
+   "k": "2/5"
+  },
+  {
+   "family": "Compton scattering",
+   "f": "Electron recoil angle (cosine) [model-proposed; physical meaning unverified]",
+   "g": "Compton wavelength shift / (initial photon wavelength) [model-proposed; physical meaning unverified]",
+   "k": "2/33"
+  },
+  {
+   "family": "Compton scattering",
+   "f": "Compton wavelength shift / (initial photon wavelength) [model-proposed; physical meaning unverified]",
+   "g": "electron kinetic energy / photon energy",
+   "k": "1/4"
+  },
+  {
+   "family": "Compton scattering",
+   "f": "Compton wavelength shift / (initial photon wavelength) [model-proposed; physical meaning unverified]",
+   "g": "electron kinetic energy / (m_e c\u00b2)",
+   "k": "1/8"
+  },
+  {
+   "family": "Compton scattering",
+   "f": "Compton wavelength shift / (initial photon wavelength) [model-proposed; physical meaning unverified]",
+   "g": "wavelength shift / Compton wavelength",
+   "k": "1/4"
   }
  ],
- "rounds": 28,
+ "rounds": 46,
  "discoveries": [],
  "rediscoveries": [
   {

@@ -6326,5 +6326,410 @@
   "statement": "[two-body decay] Ratio of kinetic energies of product 1 to product 2 [model-proposed; physical meaning unverified] \u2265 1 \u00d7 kinetic energy of product 1 / (Mc\u00b2)   on a < 1, b < 1, a + b < 1 (tight only at the edge of the domain, near (1.31e-15, 1))",
   "status": "proved",
   "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "u < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-1274ca09c6c3",
+  "kind": "physics-relation",
+  "novelty": "equality holds along a whole curve \u2014 a one-variable inequality in disguise; proved, not counted",
+  "payload": {
+   "assumptions": [
+    "u < 1",
+    "v < 1"
+   ],
+   "claim": "1/sqrt(-(u + v)**2/(u*v + 1)**2 + 1) >= 2*((u + v)/(u*v + 1))",
+   "symbols": [
+    "u",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 29",
+  "statement": "[velocity addition] Lorentz gamma of the composed motion [model-proposed; physical meaning unverified] \u2265 2 \u00d7 composed speed / c   on u < 1, v < 1 (equality at (u, v) \u2248 (0.695081, 0.0236494))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "u < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-15da76788ac5",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "u < 1",
+    "v < 1"
+   ],
+   "claim": "1/sqrt(-(u + v)**2/(u*v + 1)**2 + 1) >= 1*((u*v + 1)/(sqrt(1 - u**2)*sqrt(1 - v**2)))",
+   "symbols": [
+    "u",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 29",
+  "statement": "[velocity addition] Lorentz gamma of the composed motion [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Lorentz factor of the composed motion   on u < 1, v < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "u < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-20cfd5d0dc3a",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'Lorentz factor of the composed motion'",
+  "payload": {
+   "assumptions": [
+    "u < 1",
+    "v < 1"
+   ],
+   "claim": "1/sqrt(-(u + v)**2/(u*v + 1)**2 + 1) >= 1*(1/(sqrt(1 - u**2)*sqrt(1 - v**2)))",
+   "symbols": [
+    "u",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 29",
+  "statement": "[velocity addition] Lorentz gamma of the composed motion [model-proposed; physical meaning unverified] \u2265 1 \u00d7 product of the two Lorentz factors   on u < 1, v < 1 (tight only at the edge of the domain, near (0.000113, 2.97e-14))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "u < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-b77f999d54d8",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'Lorentz factor of the composed motion'",
+  "payload": {
+   "assumptions": [
+    "u < 1",
+    "v < 1"
+   ],
+   "claim": "1/sqrt(-(u + v)**2/(u*v + 1)**2 + 1) >= 1/2*(sqrt(u + 1)*sqrt(v + 1)*sqrt(1/(1 - u))*sqrt(1/(1 - v)))",
+   "symbols": [
+    "u",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 29",
+  "statement": "[velocity addition] Lorentz gamma of the composed motion [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 Doppler factor of the composed motion   on u < 1, v < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "u < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-20037f78a262",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'Lorentz factor of the composed motion'",
+  "payload": {
+   "assumptions": [
+    "u < 1",
+    "v < 1"
+   ],
+   "claim": "1/sqrt(-(u + v)**2/(u*v + 1)**2 + 1) >= 1*(u/sqrt(1 - u**2) + v/sqrt(1 - v**2))",
+   "symbols": [
+    "u",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 34",
+  "statement": "[velocity addition] Lorentz gamma of the composed motion [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Relativistic momentum ratio [model-proposed; physical meaning unverified]   on u < 1, v < 1 (tight only at the edge of the domain, near (1.05e-08, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "u < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-ee2cae6f8cbe",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'composed speed / c'",
+  "payload": {
+   "assumptions": [
+    "u < 1",
+    "v < 1"
+   ],
+   "claim": "1/sqrt(-(u + v)**2/(u*v + 1)**2 + 1) >= 2*(sqrt((1 - v**2)*(u**2 - 1) + 1)/(u*v + 1))",
+   "symbols": [
+    "u",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 34",
+  "statement": "[velocity addition] Lorentz gamma of the composed motion [model-proposed; physical meaning unverified] \u2265 2 \u00d7 Relative velocity in terms of rapidities [model-proposed; physical meaning unverified]   on u < 1, v < 1 (tight only at the edge of the domain, near (0.707, 1.64e-16))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "u < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-974594dfc9b5",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "u < 1",
+    "v < 1"
+   ],
+   "claim": "sqrt((1 - v**2)*(u**2 - 1) + 1)/(u*v + 1) >= 1/2*((u + v)/(u*v + 1))",
+   "symbols": [
+    "u",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 34",
+  "statement": "[velocity addition] Relative velocity in terms of rapidities [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 composed speed / c   on u < 1, v < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "u < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-0c4c10fd282a",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'composed speed / c'",
+  "payload": {
+   "assumptions": [
+    "u < 1",
+    "v < 1"
+   ],
+   "claim": "sqrt((1 - v**2)*(u**2 - 1) + 1)/(u*v + 1) >= 1/4*(u + v)",
+   "symbols": [
+    "u",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 34",
+  "statement": "[velocity addition] Relative velocity in terms of rapidities [model-proposed; physical meaning unverified] \u2265 1/4 \u00d7 Galilean sum / c   on u < 1, v < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-f34d2cf00de5",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "1/(2*c**2*x**2 + 1) >= 5/33*(1/(c*x + 1))",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 40",
+  "statement": "[Compton scattering] Electron recoil angle (cosine) [model-proposed; physical meaning unverified] \u2265 5/33 \u00d7 scattered photon energy / initial energy   on x < 2, c < 2 (tight only at the edge of the domain, near (2, 2))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 2",
+    "z < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-e1a354ed18e2",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 2",
+    "z < 1"
+   ],
+   "claim": "sqrt(4*r**2*z**2 + 1)/sqrt(4*r**2*z**2 + (1 - r**2)**2) >= 1/3*(sqrt(-z**2/(z**2 + 1) + 1))",
+   "symbols": [
+    "r",
+    "z"
+   ]
+  },
+  "source": "physics_discover2 round 43",
+  "statement": "[driven oscillator] transmissibility \u2265 1/3 \u00d7 resonance frequency ratio [model-proposed; physical meaning unverified]   on r < 2, z < 1 (tight only at the edge of the domain, near (2, 9.12e-05))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-bf7bdf020977",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "1/(c*x + 1) >= 2/5*(c/(c + x))",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 45",
+  "statement": "[Compton scattering] scattered photon energy / initial energy \u2265 2/5 \u00d7 Compton wavelength shift / (initial photon wavelength) [model-proposed; physical meaning unverified]   on x < 2, c < 2 (tight only at the edge of the domain, near (2, 2))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-292d1d1a5a94",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'scattered photon energy / initial energy'",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "1/(2*c**2*x**2 + 1) >= 2/33*(c/(c + x))",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 45",
+  "statement": "[Compton scattering] Electron recoil angle (cosine) [model-proposed; physical meaning unverified] \u2265 2/33 \u00d7 Compton wavelength shift / (initial photon wavelength) [model-proposed; physical meaning unverified]   on x < 2, c < 2 (tight only at the edge of the domain, near (2, 2))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-af7bd6956301",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "c/(c + x) >= 1/4*(c*x/(c*x + 1))",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 45",
+  "statement": "[Compton scattering] Compton wavelength shift / (initial photon wavelength) [model-proposed; physical meaning unverified] \u2265 1/4 \u00d7 electron kinetic energy / photon energy   on x < 2, c < 2 (tight only at the edge of the domain, near (2, 1.71e-14))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-7cb6932fa385",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'electron kinetic energy / photon energy'",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "c/(c + x) >= 1/8*(c*x**2/(c*x + 1))",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 45",
+  "statement": "[Compton scattering] Compton wavelength shift / (initial photon wavelength) [model-proposed; physical meaning unverified] \u2265 1/8 \u00d7 electron kinetic energy / (m_e c\u00b2)   on x < 2, c < 2 (tight only at the edge of the domain, near (2, 1.92e-13))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-5dc09a84843d",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "c/(c + x) >= 1/4*(c)",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 45",
+  "statement": "[Compton scattering] Compton wavelength shift / (initial photon wavelength) [model-proposed; physical meaning unverified] \u2265 1/4 \u00d7 wavelength shift / Compton wavelength   on x < 2, c < 2 (tight only at the edge of the domain, near (2, 2))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]
