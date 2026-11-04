@@ -35,3 +35,6 @@
 - 2026-11-04 03:50 round 22: relativity
 - 2026-11-04 03:51 round 23: kepler
 - 2026-11-04 03:52 round 24: heat engines
+- 2026-11-04 03:53 round 25: relativity
+- 2026-11-04 03:54 round 26: kepler
+- 2026-11-04 03:55 round 27: heat engines
