@@ -8,7 +8,8 @@
    "kinetic energy of product 1 / (Mc\u00b2)": "((1 - a)**2 - b**2)/2",
    "speed of product 1 / c": "sqrt((1 - (a + b)**2)*(1 - (a - b)**2))/(1 + a**2 - b**2)",
    "speed of product 2 / c": "sqrt((1 - (a + b)**2)*(1 - (a - b)**2))/(1 - a**2 + b**2)",
-   "Lorentz factor of product 1": "(1 + a**2 - b**2)/(2*a)"
+   "Lorentz factor of product 1": "(1 + a**2 - b**2)/(2*a)",
+   "Invariant mass squared of the two products [model-proposed; physical meaning unverified]": "(a**2 + b**2 - (a - b)**2)/(-a - b + 1)"
   },
   "collision": {
    "target speed / initial speed": "(1 + e)*m/(1 + m)",
@@ -120,6 +121,21 @@
    "family": "Compton scattering",
    "expr": "1 - c/(x + 1)",
    "why": "not positive on the physical domain"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "sqrt((1 - (a + b)**2)*(1 - (a - b)**2)) / ((1 + a**2 - b**2) * (1 - a**2 + b**2))",
+   "why": "affine combination of known quantities (speed of product 1 / c, speed of product 2 / c)"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "(1 + a**2 - b**2) / (1 - a**2 + b**2)",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), 1/(energy of product 2 / (Mc\u00b2)))"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "(1 + a**2 - b**2) / (1 - a**2 + b**2)",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), 1/(energy of product 2 / (Mc\u00b2)))"
   }
  ],
  "tried": [
@@ -242,7 +258,31 @@
   "Compton scattering|electron kinetic energy / photon energy|wavelength shift / Compton wavelength",
   "Compton scattering|electron kinetic energy / photon energy|photon energy / (m_e c\u00b2)",
   "Compton scattering|scattered photon energy / (m_e c\u00b2)|scattered photon energy / initial energy",
-  "Compton scattering|scattered photon energy / (m_e c\u00b2)|electron kinetic energy / photon energy"
+  "Compton scattering|scattered photon energy / (m_e c\u00b2)|electron kinetic energy / photon energy",
+  "two-body decay|momentum of each product / (Mc)|Invariant mass squared of the two products [model-proposed; physical meaning unverified]",
+  "two-body decay|energy of product 1 / (Mc\u00b2)|Invariant mass squared of the two products [model-proposed; physical meaning unverified]",
+  "two-body decay|energy of product 2 / (Mc\u00b2)|Invariant mass squared of the two products [model-proposed; physical meaning unverified]",
+  "two-body decay|kinetic energy released Q / (Mc\u00b2)|Invariant mass squared of the two products [model-proposed; physical meaning unverified]",
+  "two-body decay|kinetic energy of product 1 / (Mc\u00b2)|Invariant mass squared of the two products [model-proposed; physical meaning unverified]",
+  "two-body decay|speed of product 1 / c|Invariant mass squared of the two products [model-proposed; physical meaning unverified]",
+  "two-body decay|speed of product 2 / c|Invariant mass squared of the two products [model-proposed; physical meaning unverified]",
+  "two-body decay|Lorentz factor of product 1|Invariant mass squared of the two products [model-proposed; physical meaning unverified]",
+  "two-body decay|Invariant mass squared of the two products [model-proposed; physical meaning unverified]|momentum of each product / (Mc)",
+  "two-body decay|Invariant mass squared of the two products [model-proposed; physical meaning unverified]|energy of product 1 / (Mc\u00b2)",
+  "two-body decay|Invariant mass squared of the two products [model-proposed; physical meaning unverified]|energy of product 2 / (Mc\u00b2)",
+  "two-body decay|Invariant mass squared of the two products [model-proposed; physical meaning unverified]|kinetic energy released Q / (Mc\u00b2)",
+  "two-body decay|Invariant mass squared of the two products [model-proposed; physical meaning unverified]|kinetic energy of product 1 / (Mc\u00b2)",
+  "two-body decay|Invariant mass squared of the two products [model-proposed; physical meaning unverified]|speed of product 1 / c",
+  "two-body decay|Invariant mass squared of the two products [model-proposed; physical meaning unverified]|speed of product 2 / c",
+  "two-body decay|Invariant mass squared of the two products [model-proposed; physical meaning unverified]|Lorentz factor of product 1",
+  "two-body decay|kinetic energy released Q / (Mc\u00b2)|kinetic energy of product 1 / (Mc\u00b2)",
+  "two-body decay|kinetic energy released Q / (Mc\u00b2)|speed of product 1 / c",
+  "two-body decay|kinetic energy released Q / (Mc\u00b2)|speed of product 2 / c",
+  "two-body decay|kinetic energy released Q / (Mc\u00b2)|Lorentz factor of product 1",
+  "two-body decay|kinetic energy of product 1 / (Mc\u00b2)|momentum of each product / (Mc)",
+  "two-body decay|kinetic energy of product 1 / (Mc\u00b2)|energy of product 1 / (Mc\u00b2)",
+  "two-body decay|kinetic energy of product 1 / (Mc\u00b2)|energy of product 2 / (Mc\u00b2)",
+  "two-body decay|kinetic energy of product 1 / (Mc\u00b2)|kinetic energy released Q / (Mc\u00b2)"
  ],
  "edges": [
   {
@@ -514,9 +554,15 @@
    "f": "scattered photon energy / (m_e c\u00b2)",
    "g": "electron kinetic energy / photon energy",
    "k": "1/2"
+  },
+  {
+   "family": "two-body decay",
+   "f": "kinetic energy released Q / (Mc\u00b2)",
+   "g": "kinetic energy of product 1 / (Mc\u00b2)",
+   "k": "1"
   }
  ],
- "rounds": 5,
+ "rounds": 6,
  "discoveries": [],
  "rediscoveries": []
 }

@@ -4894,5 +4894,34 @@
   "statement": "[Compton scattering] scattered photon energy / (m_e c\u00b2) \u2265 1/2 \u00d7 electron kinetic energy / photon energy   on x < 2, c < 2 (tight only at the edge of the domain, near (2, 2))",
   "status": "proved",
   "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-0cca6fe36e76",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "claim": "-a - b + 1 >= 1*(-b**2/2 + (1 - a)**2/2)",
+   "symbols": [
+    "a",
+    "b"
+   ]
+  },
+  "source": "physics_discover2 round 6",
+  "statement": "[two-body decay] kinetic energy released Q / (Mc\u00b2) \u2265 1 \u00d7 kinetic energy of product 1 / (Mc\u00b2)   on a < 1, b < 1, a + b < 1 (tight only at the edge of the domain, near (9.08e-09, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]
