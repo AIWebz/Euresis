@@ -196,6 +196,23 @@ def _novelty_from_literature(nov: dict) -> str:
     return v
 
 
+def _payload_hint(kind: str, payload: dict, evidence) -> str:
+    """When a verifier could not even read a claim, say how to restate it (the verdict itself is unchanged)."""
+    if not (isinstance(evidence, dict) and "error" in evidence):
+        return ""
+    tips = ["the verifier could not parse this payload — fix it and resubmit (the gate, not you, decides the status)"]
+    text = " ".join(json.dumps(v) for v in (payload or {}).values())      # values only, not field names
+    if re.search(r"\bgamma\b", text):
+        tips.append("'gamma' is SymPy's gamma function: write the Lorentz factor explicitly, 1/sqrt(1 - v**2/c**2)")
+    if re.search(r"\b(lambda|beta|E|I|S|N|O|Q)\b", text):
+        tips.append("avoid single-letter names that SymPy reserves (E, I, S, N, O, Q) and 'lambda'")
+    if kind == "inequality" and not {"a", "b"} <= set(re.findall(r"[A-Za-z_]\w*", text)):
+        tips.append("kind 'inequality' is only for symmetric expressions in a, b, c > 0; for a physical relation "
+                    "use kind 'physics-relation' with {'claim': 'lhs >= rhs', 'symbols': [...]}")
+    tips.append("every symbol must be listed and the payload must use the exact field names for its kind")
+    return "; ".join(tips)
+
+
 class ReasoningCore:
     def __init__(self, kb: KnowledgeBase, engine: Engine, model, space: ThoughtSpace | None,
                  registry: Registry | None = None, log=print):
@@ -246,9 +263,10 @@ class ReasoningCore:
             self.registry.set_novelty(cid, f"known ({known_as})")
         c = self.registry.get(cid)
         ev = json.dumps(c.get("evidence"), default=str)
+        hint = _payload_hint(kind, payload, c.get("evidence"))
         return {"claim_id": cid, "status": c["status"], "verifier": c.get("verifier"), "label": gate.label(c),
                 "novelty": c["novelty"], "is_discovery": gate.is_discovery(c),
-                "evidence": ev[:3000], **({"note": note} if note else {})}
+                "evidence": ev[:3000], **({"note": note} if note else {}), **({"fix_hint": hint} if hint else {})}
 
     def claim_table(self) -> list[dict]:
         return [c for c in (self.registry.get(cid) for cid in self.session_claims) if c]
@@ -477,8 +495,9 @@ class ReasoningCore:
             self.qid = self.space.add("question", question, status="research question", domain="method",
                                       body="Investigated by the reasoning core (local Qwen3-14B).", score=1.0)
         tools = [t for t in TOOLS if t["name"] in self.LOCAL_TOOLS]
-        system = SYSTEM + ("\n\nCall tools with <tool_call> blocks as described below. When you are finished, "
-                           "write the final report with no tool calls.")
+        system = SYSTEM + ("\n\nCall tools with <tool_call> blocks as described below. If submit_claim returns a "
+                           "fix_hint, correct the payload and resubmit (up to two retries) before reporting. "
+                           "When you are finished, write the final report with no tool calls.")
         llm = local_llm.load(log=self.log)
         messages = [{"role": "user", "content": question}]
         for turn in range(max_turns):
