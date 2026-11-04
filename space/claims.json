@@ -5888,5 +5888,26 @@
   "statement": "[collision] velocity ratio of projectile to target after collision [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 fraction of kinetic energy lost   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
   "status": "proved",
   "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": null,
+  "id": "phy-2277d63a6742",
+  "kind": "physics-relation",
+  "novelty": "not checked",
+  "payload": {
+   "assumptions": [
+    "u < 1",
+    "v < 1"
+   ],
+   "claim": "1/sqrt(-(u + v)**2/(u*v + 1)**2 + 1) >= 1*(sqrt(1 - u**2) + sqrt(1 - v**2) - sqrt(-(u + v)**2/(u*v + 1)**2 + 1))",
+   "symbols": [
+    "u",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 14",
+  "statement": "[velocity addition] Lorentz gamma of the composed motion [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Energy-momentum invariant [model-proposed; physical meaning unverified]   on u < 1, v < 1 (tight only at the edge of the domain, near (1.64e-08, 6.98e-09))",
+  "status": "candidate",
+  "verifier": null
  }
 ]
