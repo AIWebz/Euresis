@@ -19,7 +19,8 @@
    "semi-latus rectum / a": "1 - e**2",
    "time-averaged distance / a": "1 + e**2/2",
    "angular velocity at perihelion / (sqrt(GM)/a^(3/2)) [model-proposed; physical meaning unverified]": "sqrt(e + 1)*sqrt(1/(1 - e**3))",
-   "true anomaly at perihelion / pi [model-proposed; physical meaning unverified]": "e/(sqrt(1 - e**2) + 1)"
+   "true anomaly at perihelion / pi [model-proposed; physical meaning unverified]": "e/(sqrt(1 - e**2) + 1)",
+   "eccentric anomaly at perihelion / pi [model-proposed; physical meaning unverified]": "sqrt(1 - e**2)/(sqrt(1 - e**2) + 1)"
   },
   "heat engines": {
    "Carnot efficiency": "1 - t",
@@ -56,7 +57,8 @@
    "frequency ratio, observer receding": "1 - m",
    "frequency ratio, source and observer approaching at the same speed": "(1 + m)/(1 - m)",
    "wavelength ratio ahead of a moving source": "1 - m",
-   "relative velocity factor for sound propagation [model-proposed; physical meaning unverified]": "m/sqrt(1 - m**2)"
+   "relative velocity factor for sound propagation [model-proposed; physical meaning unverified]": "m/sqrt(1 - m**2)",
+   "relative wavelength shift for a moving observer [model-proposed; physical meaning unverified]": "1/(m**2 + 1)"
   },
   "damped oscillator": {
    "damped frequency / natural frequency": "sqrt(1 - z**2)",
@@ -2253,6 +2255,316 @@
    "family": "kepler",
    "expr": "sqrt(1 / (1 - e**2))",
    "why": "affine combination of known quantities (perihelion distance / a, 1/(semi-minor axis / a))"
+  },
+  {
+   "family": "heat engines",
+   "expr": "t/(1 - t)",
+   "why": "affine combination of known quantities (Carnot efficiency, Carnot refrigerator coefficient of performance)"
+  },
+  {
+   "family": "heat engines",
+   "expr": "1 - t**((1/3))",
+   "why": "only + \u2212 \u00d7 \u00f7, integer powers and square roots (so the prover can decide it)"
+  },
+  {
+   "family": "heat engines",
+   "expr": "t**((1/3))/(1 - t**((1/3)))",
+   "why": "only + \u2212 \u00d7 \u00f7, integer powers and square roots (so the prover can decide it)"
+  },
+  {
+   "family": "heat engines",
+   "expr": "(1 - t)/(sqrt(t) * (1 - sqrt(t)))",
+   "why": "affine combination of known quantities (1/(Low-dissipation refrigerator efficiency [model-proposed; physical meaning unverified]), 1/(Refrigeration efficiency factor [model-proposed; physical meaning unverified]))"
+  },
+  {
+   "family": "collisions",
+   "expr": "(1 - m)/(1 + m)",
+   "why": "affine combination of known quantities (elastic: rebound speed of the projectile / initial speed)"
+  },
+  {
+   "family": "collisions",
+   "expr": "((1 - m)/(1 + m)) - (2*m/(1 + m))",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "collisions",
+   "expr": "(((1 - m)/(1 + m))**2) / (4*m/(1 + m)**2)",
+   "why": "affine combination of known quantities (elastic: rebound speed of the projectile / initial speed, 1/(elastic: fraction of kinetic energy transferred to the target))"
+  },
+  {
+   "family": "collisions",
+   "expr": "((1 - m)/(1 + m)) / (2*m/(1 + m))",
+   "why": "affine combination of known quantities (elastic: rebound speed of the projectile / initial speed, 1/(elastic: speed of the target / initial speed))"
+  },
+  {
+   "family": "quantum step",
+   "expr": "2*sqrt(1 - x)/(1 + sqrt(1 - x))",
+   "why": "affine combination of known quantities (wavenumber ratio k2/k1 beyond the step, transmitted amplitude ratio)"
+  },
+  {
+   "family": "quantum step",
+   "expr": "2*atan((1 - sqrt(1 - x))/(1 + sqrt(1 - x)))",
+   "why": "only + \u2212 \u00d7 \u00f7, integer powers and square roots (so the prover can decide it)"
+  },
+  {
+   "family": "quantum step",
+   "expr": "2*atan(sqrt(1 - x))",
+   "why": "only + \u2212 \u00d7 \u00f7, integer powers and square roots (so the prover can decide it)"
+  },
+  {
+   "family": "quantum step",
+   "expr": "4*sqrt(1 - x)/(1 + sqrt(1 - x))**2",
+   "why": "affine combination of known quantities (wavenumber ratio k2/k1 beyond the step, transmission probability)"
+  },
+  {
+   "family": "acoustic Doppler",
+   "expr": "1 / sqrt(1 - m**2)",
+   "why": "a power or product of known quantities: C \u00b7 (frequency ratio, source approaching)^0.182 \u00b7 (frequency ratio, source receding)^0.227 \u00b7 (frequency ratio, observer approaching)^-0.227 \u00b7 (frequency ratio, obse"
+  },
+  {
+   "family": "acoustic Doppler",
+   "expr": "1 / (1 + m)",
+   "why": "affine combination of known quantities (frequency ratio, source receding)"
+  },
+  {
+   "family": "acoustic Doppler",
+   "expr": "sqrt(1 - m**2)",
+   "why": "a power or product of known quantities: C \u00b7 (frequency ratio, source approaching)^-0.182 \u00b7 (frequency ratio, source receding)^-0.227 \u00b7 (frequency ratio, observer approaching)^0.227 \u00b7 (frequency ratio, obs"
+  },
+  {
+   "family": "acoustic Doppler",
+   "expr": "sqrt((1 + m) / (1 - m))",
+   "why": "a power or product of known quantities: C \u00b7 (frequency ratio, source approaching)^0.0909 \u00b7 (frequency ratio, source receding)^-0.136 \u00b7 (frequency ratio, observer approaching)^0.136 \u00b7 (frequency ratio, obs"
+  },
+  {
+   "family": "damped oscillator",
+   "expr": "2 * pi * z / sqrt(1 - z**2)",
+   "why": "affine combination of known quantities (damped frequency / natural frequency, decay rate / damped frequency)"
+  },
+  {
+   "family": "damped oscillator",
+   "expr": "z / sqrt(1 - z**2)",
+   "why": "affine combination of known quantities (damped frequency / natural frequency, decay rate / damped frequency)"
+  },
+  {
+   "family": "damped oscillator",
+   "expr": "1 - exp(-2 * pi * z / sqrt(1 - z**2))",
+   "why": "only + \u2212 \u00d7 \u00f7, integer powers and square roots (so the prover can decide it)"
+  },
+  {
+   "family": "damped oscillator",
+   "expr": "atan(z / sqrt(1 - z**2))",
+   "why": "only + \u2212 \u00d7 \u00f7, integer powers and square roots (so the prover can decide it)"
+  },
+  {
+   "family": "wave boundary",
+   "expr": "(1 - r)**2 / (1 + r)**2",
+   "why": "affine combination of known quantities (reflected power fraction)"
+  },
+  {
+   "family": "wave boundary",
+   "expr": "4*r / (1 + r)**2",
+   "why": "affine combination of known quantities (reflected power fraction)"
+  },
+  {
+   "family": "wave boundary",
+   "expr": "log((1 - r)/(1 + r))",
+   "why": "only + \u2212 \u00d7 \u00f7, integer powers and square roots (so the prover can decide it)"
+  },
+  {
+   "family": "wave boundary",
+   "expr": "sqrt(r)",
+   "why": "a power or product of known quantities: C \u00b7 (transmitted power fraction)^0.0833 \u00b7 (transmitted amplitude ratio)^-0.167 \u00b7 (standing-wave ratio)^-0.417"
+  },
+  {
+   "family": "relativity",
+   "expr": "1/sqrt(1 - b**2)",
+   "why": "affine combination of known quantities (Lorentz factor \u03b3)"
+  },
+  {
+   "family": "relativity",
+   "expr": "sqrt(1 + (b**2)/(1 - b**2))",
+   "why": "affine combination of known quantities (Lorentz factor \u03b3)"
+  },
+  {
+   "family": "relativity",
+   "expr": "(1/(1 - b**2))/(1 + b**2)",
+   "why": "a power or product of known quantities: C \u00b7 (Lorentz factor \u03b3)^0.896 \u00b7 (classical kinetic energy / mc\u00b2)^-0.604 \u00b7 (relativistic momentum / (mc))^0.208 \u00b7 (time-dilation factor 1/\u03b3)^-0.896 \u00b7 (relative speed "
+  },
+  {
+   "family": "relativity",
+   "expr": "sqrt(1 - b**2)",
+   "why": "affine combination of known quantities (Lorentz factor \u03b3, time-dilation factor 1/\u03b3)"
+  },
+  {
+   "family": "kepler",
+   "expr": "sqrt(1 - e**2)",
+   "why": "affine combination of known quantities (perihelion distance / a, semi-minor axis / a)"
+  },
+  {
+   "family": "kepler",
+   "expr": "1 / sqrt(1 - e**2)",
+   "why": "affine combination of known quantities (perihelion distance / a, 1/(semi-minor axis / a))"
+  },
+  {
+   "family": "kepler",
+   "expr": "sqrt((1 + e)/(1 - e)) - 1",
+   "why": "affine combination of known quantities (perihelion distance / a, perihelion speed / circular speed at a)"
+  },
+  {
+   "family": "heat engines",
+   "expr": "t/(1 - t)",
+   "why": "affine combination of known quantities (Carnot efficiency, Carnot refrigerator coefficient of performance)"
+  },
+  {
+   "family": "heat engines",
+   "expr": "1/(1 - t)",
+   "why": "affine combination of known quantities (Carnot efficiency, Carnot refrigerator coefficient of performance)"
+  },
+  {
+   "family": "heat engines",
+   "expr": "1 - t",
+   "why": "affine combination of known quantities (Carnot efficiency)"
+  },
+  {
+   "family": "heat engines",
+   "expr": "1 - sqrt(t)",
+   "why": "affine combination of known quantities (Carnot efficiency, Curzon\u2013Ahlborn efficiency (endoreversible engine at maximum power))"
+  },
+  {
+   "family": "collisions",
+   "expr": "((1 - m)/(1 + m) + 2*m/(1 + m))/1",
+   "why": "affine combination of known quantities (elastic: rebound speed of the projectile / initial speed)"
+  },
+  {
+   "family": "collisions",
+   "expr": "(2*m/(1 + m))**2 / ((1 - m)/(1 + m))**2",
+   "why": "affine combination of known quantities (1/(elastic: rebound speed of the projectile / initial speed), 1/(elastic: fraction of kinetic energy kept by the projectile))"
+  },
+  {
+   "family": "collisions",
+   "expr": "1/(1 + m)",
+   "why": "affine combination of known quantities (elastic: rebound speed of the projectile / initial speed)"
+  },
+  {
+   "family": "collisions",
+   "expr": "1 / ((1 - m)/(1 + m))**2",
+   "why": "affine combination of known quantities (elastic: rebound speed of the projectile / initial speed, 1/(elastic: fraction of kinetic energy kept by the projectile))"
+  },
+  {
+   "family": "quantum step",
+   "expr": "sqrt(1 - x) * (2 / (1 + sqrt(1 - x)))**2",
+   "why": "affine combination of known quantities (wavenumber ratio k2/k1 beyond the step, transmission probability)"
+  },
+  {
+   "family": "quantum step",
+   "expr": "2 * atan((1 - sqrt(1 - x)) / (1 + sqrt(1 - x)))",
+   "why": "only + \u2212 \u00d7 \u00f7, integer powers and square roots (so the prover can decide it)"
+  },
+  {
+   "family": "quantum step",
+   "expr": "4 * (1 - x) / (1 + sqrt(1 - x))**2",
+   "why": "affine combination of known quantities (transmission probability, transmitted amplitude ratio)"
+  },
+  {
+   "family": "quantum step",
+   "expr": "log((1 - sqrt(1 - x)) / (1 + sqrt(1 - x)))",
+   "why": "only + \u2212 \u00d7 \u00f7, integer powers and square roots (so the prover can decide it)"
+  },
+  {
+   "family": "acoustic Doppler",
+   "expr": "1 / (1 - m**2)",
+   "why": "affine combination of known quantities (frequency ratio, source approaching, frequency ratio, source receding)"
+  },
+  {
+   "family": "acoustic Doppler",
+   "expr": "(1 + m) / (1 - m**2)",
+   "why": "affine combination of known quantities (frequency ratio, source approaching)"
+  },
+  {
+   "family": "acoustic Doppler",
+   "expr": "(1 - m) / (1 - m**2)",
+   "why": "affine combination of known quantities (frequency ratio, source receding)"
+  },
+  {
+   "family": "damped oscillator",
+   "expr": "2 * pi * z / sqrt(1 - z**2)",
+   "why": "affine combination of known quantities (damped frequency / natural frequency, decay rate / damped frequency)"
+  },
+  {
+   "family": "damped oscillator",
+   "expr": "1 - exp(-2 * pi * z / sqrt(1 - z**2))",
+   "why": "only + \u2212 \u00d7 \u00f7, integer powers and square roots (so the prover can decide it)"
+  },
+  {
+   "family": "damped oscillator",
+   "expr": "atan(z / sqrt(1 - z**2))",
+   "why": "only + \u2212 \u00d7 \u00f7, integer powers and square roots (so the prover can decide it)"
+  },
+  {
+   "family": "damped oscillator",
+   "expr": "1 / (2 * pi * z)",
+   "why": "affine combination of known quantities (damped frequency / natural frequency, quality factor Q)"
+  },
+  {
+   "family": "wave boundary",
+   "expr": "(1 - r)**2 / (1 + r)**2",
+   "why": "affine combination of known quantities (reflected power fraction)"
+  },
+  {
+   "family": "wave boundary",
+   "expr": "4*r / (1 + r)**2",
+   "why": "affine combination of known quantities (reflected power fraction)"
+  },
+  {
+   "family": "wave boundary",
+   "expr": "(1 - r)**2 / (1 + r)**2",
+   "why": "affine combination of known quantities (reflected power fraction)"
+  },
+  {
+   "family": "wave boundary",
+   "expr": "4*r / (1 + r)**2",
+   "why": "affine combination of known quantities (reflected power fraction)"
+  },
+  {
+   "family": "relativity",
+   "expr": "1/sqrt(1 - b**2)",
+   "why": "affine combination of known quantities (Lorentz factor \u03b3)"
+  },
+  {
+   "family": "relativity",
+   "expr": "b/(1 - b**2)",
+   "why": "a power or product of known quantities: C \u00b7 (Lorentz factor \u03b3)^0.634 \u00b7 (classical kinetic energy / mc\u00b2)^0.134 \u00b7 (relativistic momentum / (mc))^0.733 \u00b7 (time-dilation factor 1/\u03b3)^-0.634"
+  },
+  {
+   "family": "relativity",
+   "expr": "sqrt((1 - b)/(1 + b))",
+   "why": "affine combination of known quantities (Lorentz factor \u03b3, relativistic momentum / (mc))"
+  },
+  {
+   "family": "relativity",
+   "expr": "1/(1 - b**2)",
+   "why": "a power or product of known quantities: C \u00b7 (Lorentz factor \u03b3)^0.733 \u00b7 (classical kinetic energy / mc\u00b2)^-0.267 \u00b7 (relativistic momentum / (mc))^0.535 \u00b7 (time-dilation factor 1/\u03b3)^-0.733"
+  },
+  {
+   "family": "kepler",
+   "expr": "sqrt(1 - e**2)",
+   "why": "affine combination of known quantities (perihelion distance / a, semi-minor axis / a)"
+  },
+  {
+   "family": "kepler",
+   "expr": "1 / sqrt(1 - e**2)",
+   "why": "affine combination of known quantities (perihelion distance / a, 1/(semi-minor axis / a))"
+  },
+  {
+   "family": "kepler",
+   "expr": "1 / sqrt(1 - e**2)",
+   "why": "affine combination of known quantities (perihelion distance / a, 1/(semi-minor axis / a))"
+  },
+  {
+   "family": "kepler",
+   "expr": "sqrt(1 - e**2)/(sqrt(1 - e**2) + 1)",
+   "why": "affine combination of known quantities (perihelion distance / a, eccentric anomaly at perihelion / pi [model-proposed; physical meaning unverified])"
   }
  ],
  "tried": [
@@ -2697,7 +3009,39 @@
   "acoustic Doppler|relative velocity factor for sound propagation [model-proposed; physical meaning unverified]|frequency ratio, observer approaching",
   "acoustic Doppler|relative velocity factor for sound propagation [model-proposed; physical meaning unverified]|frequency ratio, observer receding",
   "acoustic Doppler|relative velocity factor for sound propagation [model-proposed; physical meaning unverified]|frequency ratio, source and observer approaching at the same speed",
-  "acoustic Doppler|relative velocity factor for sound propagation [model-proposed; physical meaning unverified]|wavelength ratio ahead of a moving source"
+  "acoustic Doppler|relative velocity factor for sound propagation [model-proposed; physical meaning unverified]|wavelength ratio ahead of a moving source",
+  "kepler|perihelion distance / a|eccentric anomaly at perihelion / pi [model-proposed; physical meaning unverified]",
+  "kepler|aphelion distance / a|eccentric anomaly at perihelion / pi [model-proposed; physical meaning unverified]",
+  "kepler|perihelion speed / circular speed at a|eccentric anomaly at perihelion / pi [model-proposed; physical meaning unverified]",
+  "kepler|aphelion speed / circular speed at a|eccentric anomaly at perihelion / pi [model-proposed; physical meaning unverified]",
+  "kepler|semi-minor axis / a|eccentric anomaly at perihelion / pi [model-proposed; physical meaning unverified]",
+  "kepler|semi-latus rectum / a|eccentric anomaly at perihelion / pi [model-proposed; physical meaning unverified]",
+  "kepler|time-averaged distance / a|eccentric anomaly at perihelion / pi [model-proposed; physical meaning unverified]",
+  "kepler|angular velocity at perihelion / (sqrt(GM)/a^(3/2)) [model-proposed; physical meaning unverified]|eccentric anomaly at perihelion / pi [model-proposed; physical meaning unverified]",
+  "kepler|true anomaly at perihelion / pi [model-proposed; physical meaning unverified]|eccentric anomaly at perihelion / pi [model-proposed; physical meaning unverified]",
+  "kepler|eccentric anomaly at perihelion / pi [model-proposed; physical meaning unverified]|perihelion distance / a",
+  "kepler|eccentric anomaly at perihelion / pi [model-proposed; physical meaning unverified]|aphelion distance / a",
+  "kepler|eccentric anomaly at perihelion / pi [model-proposed; physical meaning unverified]|perihelion speed / circular speed at a",
+  "kepler|eccentric anomaly at perihelion / pi [model-proposed; physical meaning unverified]|aphelion speed / circular speed at a",
+  "kepler|eccentric anomaly at perihelion / pi [model-proposed; physical meaning unverified]|semi-minor axis / a",
+  "kepler|eccentric anomaly at perihelion / pi [model-proposed; physical meaning unverified]|semi-latus rectum / a",
+  "kepler|eccentric anomaly at perihelion / pi [model-proposed; physical meaning unverified]|time-averaged distance / a",
+  "acoustic Doppler|frequency ratio, source approaching|relative wavelength shift for a moving observer [model-proposed; physical meaning unverified]",
+  "acoustic Doppler|frequency ratio, source receding|relative wavelength shift for a moving observer [model-proposed; physical meaning unverified]",
+  "acoustic Doppler|frequency ratio, observer approaching|relative wavelength shift for a moving observer [model-proposed; physical meaning unverified]",
+  "acoustic Doppler|frequency ratio, observer receding|relative wavelength shift for a moving observer [model-proposed; physical meaning unverified]",
+  "acoustic Doppler|frequency ratio, source and observer approaching at the same speed|relative wavelength shift for a moving observer [model-proposed; physical meaning unverified]",
+  "acoustic Doppler|wavelength ratio ahead of a moving source|relative wavelength shift for a moving observer [model-proposed; physical meaning unverified]",
+  "acoustic Doppler|relative velocity factor for sound propagation [model-proposed; physical meaning unverified]|relative wavelength shift for a moving observer [model-proposed; physical meaning unverified]",
+  "acoustic Doppler|relative wavelength shift for a moving observer [model-proposed; physical meaning unverified]|frequency ratio, source approaching",
+  "acoustic Doppler|relative wavelength shift for a moving observer [model-proposed; physical meaning unverified]|frequency ratio, source receding",
+  "acoustic Doppler|relative wavelength shift for a moving observer [model-proposed; physical meaning unverified]|frequency ratio, observer approaching",
+  "acoustic Doppler|relative wavelength shift for a moving observer [model-proposed; physical meaning unverified]|frequency ratio, observer receding",
+  "acoustic Doppler|relative wavelength shift for a moving observer [model-proposed; physical meaning unverified]|frequency ratio, source and observer approaching at the same speed",
+  "acoustic Doppler|relative wavelength shift for a moving observer [model-proposed; physical meaning unverified]|wavelength ratio ahead of a moving source",
+  "acoustic Doppler|relative wavelength shift for a moving observer [model-proposed; physical meaning unverified]|relative velocity factor for sound propagation [model-proposed; physical meaning unverified]",
+  "kepler|eccentric anomaly at perihelion / pi [model-proposed; physical meaning unverified]|angular velocity at perihelion / (sqrt(GM)/a^(3/2)) [model-proposed; physical meaning unverified]",
+  "kepler|eccentric anomaly at perihelion / pi [model-proposed; physical meaning unverified]|true anomaly at perihelion / pi [model-proposed; physical meaning unverified]"
  ],
  "edges": [
   {
@@ -3469,9 +3813,114 @@
    "g": "time-averaged distance / a",
    "kind": "lower",
    "k": "1"
+  },
+  {
+   "family": "kepler",
+   "f": "aphelion distance / a",
+   "g": "eccentric anomaly at perihelion / pi [model-proposed; physical meaning unverified]",
+   "kind": "lower",
+   "k": "2"
+  },
+  {
+   "family": "kepler",
+   "f": "perihelion speed / circular speed at a",
+   "g": "eccentric anomaly at perihelion / pi [model-proposed; physical meaning unverified]",
+   "kind": "lower",
+   "k": "2"
+  },
+  {
+   "family": "kepler",
+   "f": "time-averaged distance / a",
+   "g": "eccentric anomaly at perihelion / pi [model-proposed; physical meaning unverified]",
+   "kind": "lower",
+   "k": "2"
+  },
+  {
+   "family": "kepler",
+   "f": "angular velocity at perihelion / (sqrt(GM)/a^(3/2)) [model-proposed; physical meaning unverified]",
+   "g": "eccentric anomaly at perihelion / pi [model-proposed; physical meaning unverified]",
+   "kind": "lower",
+   "k": "2"
+  },
+  {
+   "family": "kepler",
+   "f": "eccentric anomaly at perihelion / pi [model-proposed; physical meaning unverified]",
+   "g": "perihelion distance / a",
+   "kind": "lower",
+   "k": "1/2"
+  },
+  {
+   "family": "kepler",
+   "f": "eccentric anomaly at perihelion / pi [model-proposed; physical meaning unverified]",
+   "g": "aphelion speed / circular speed at a",
+   "kind": "lower",
+   "k": "1/2"
+  },
+  {
+   "family": "kepler",
+   "f": "eccentric anomaly at perihelion / pi [model-proposed; physical meaning unverified]",
+   "g": "semi-minor axis / a",
+   "kind": "lower",
+   "k": "1/2"
+  },
+  {
+   "family": "kepler",
+   "f": "eccentric anomaly at perihelion / pi [model-proposed; physical meaning unverified]",
+   "g": "semi-latus rectum / a",
+   "kind": "lower",
+   "k": "1/2"
+  },
+  {
+   "family": "acoustic Doppler",
+   "f": "frequency ratio, source approaching",
+   "g": "relative wavelength shift for a moving observer [model-proposed; physical meaning unverified]",
+   "kind": "lower",
+   "k": "1"
+  },
+  {
+   "family": "acoustic Doppler",
+   "f": "frequency ratio, observer approaching",
+   "g": "relative wavelength shift for a moving observer [model-proposed; physical meaning unverified]",
+   "kind": "lower",
+   "k": "1"
+  },
+  {
+   "family": "acoustic Doppler",
+   "f": "frequency ratio, source and observer approaching at the same speed",
+   "g": "relative wavelength shift for a moving observer [model-proposed; physical meaning unverified]",
+   "kind": "lower",
+   "k": "1"
+  },
+  {
+   "family": "acoustic Doppler",
+   "f": "relative wavelength shift for a moving observer [model-proposed; physical meaning unverified]",
+   "g": "frequency ratio, source receding",
+   "kind": "lower",
+   "k": "1"
+  },
+  {
+   "family": "acoustic Doppler",
+   "f": "relative wavelength shift for a moving observer [model-proposed; physical meaning unverified]",
+   "g": "frequency ratio, observer approaching",
+   "kind": "lower",
+   "k": "1/4"
+  },
+  {
+   "family": "acoustic Doppler",
+   "f": "relative wavelength shift for a moving observer [model-proposed; physical meaning unverified]",
+   "g": "frequency ratio, observer receding",
+   "kind": "lower",
+   "k": "1"
+  },
+  {
+   "family": "acoustic Doppler",
+   "f": "relative wavelength shift for a moving observer [model-proposed; physical meaning unverified]",
+   "g": "wavelength ratio ahead of a moving source",
+   "kind": "lower",
+   "k": "1"
   }
  ],
- "rounds": 122,
+ "rounds": 138,
  "discoveries": [
   {
    "claim": "phy-e72aa596c5f7",

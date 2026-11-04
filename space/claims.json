@@ -3275,5 +3275,341 @@
   "statement": "[kepler] angular velocity at perihelion / (sqrt(GM)/a^(3/2)) [model-proposed; physical meaning unverified] \u2265 1 \u00d7 time-averaged distance / a   for 0 < e < 1 (tight only in the limit e \u2192 0)",
   "status": "proved",
   "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-7f5f7d7b7ac9",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "e < 1"
+   ],
+   "claim": "e + 1 >= 2*(sqrt(1 - e**2)/(sqrt(1 - e**2) + 1))",
+   "symbols": [
+    "e"
+   ]
+  },
+  "source": "physics_discover round 130",
+  "statement": "[kepler] aphelion distance / a \u2265 2 \u00d7 eccentric anomaly at perihelion / pi [model-proposed; physical meaning unverified]   for 0 < e < 1 (tight only in the limit e \u2192 0)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-d471048375ca",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'aphelion distance / a'",
+  "payload": {
+   "assumptions": [
+    "e < 1"
+   ],
+   "claim": "sqrt(e + 1)*sqrt(1/(1 - e)) >= 2*(sqrt(1 - e**2)/(sqrt(1 - e**2) + 1))",
+   "symbols": [
+    "e"
+   ]
+  },
+  "source": "physics_discover round 130",
+  "statement": "[kepler] perihelion speed / circular speed at a \u2265 2 \u00d7 eccentric anomaly at perihelion / pi [model-proposed; physical meaning unverified]   for 0 < e < 1 (tight only in the limit e \u2192 0)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-daa7755f74f6",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "e < 1"
+   ],
+   "claim": "e**2/2 + 1 >= 2*(sqrt(1 - e**2)/(sqrt(1 - e**2) + 1))",
+   "symbols": [
+    "e"
+   ]
+  },
+  "source": "physics_discover round 130",
+  "statement": "[kepler] time-averaged distance / a \u2265 2 \u00d7 eccentric anomaly at perihelion / pi [model-proposed; physical meaning unverified]   for 0 < e < 1 (tight only in the limit e \u2192 0)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-6955a87f0b6a",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'time-averaged distance / a'",
+  "payload": {
+   "assumptions": [
+    "e < 1"
+   ],
+   "claim": "sqrt(e + 1)*sqrt(1/(1 - e**3)) >= 2*(sqrt(1 - e**2)/(sqrt(1 - e**2) + 1))",
+   "symbols": [
+    "e"
+   ]
+  },
+  "source": "physics_discover round 130",
+  "statement": "[kepler] angular velocity at perihelion / (sqrt(GM)/a^(3/2)) [model-proposed; physical meaning unverified] \u2265 2 \u00d7 eccentric anomaly at perihelion / pi [model-proposed; physical meaning unverified]   for 0 < e < 1 (tight only in the limit e \u2192 0)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-17287ec04998",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "e < 1"
+   ],
+   "claim": "sqrt(1 - e**2)/(sqrt(1 - e**2) + 1) >= 1/2*(1 - e)",
+   "symbols": [
+    "e"
+   ]
+  },
+  "source": "physics_discover round 130",
+  "statement": "[kepler] eccentric anomaly at perihelion / pi [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 perihelion distance / a   for 0 < e < 1 (tight only in the limit e \u2192 0)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-08808b3f3cb8",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "e < 1"
+   ],
+   "claim": "sqrt(1 - e**2)/(sqrt(1 - e**2) + 1) >= 1/2*(sqrt(1 - e)/sqrt(e + 1))",
+   "symbols": [
+    "e"
+   ]
+  },
+  "source": "physics_discover round 130",
+  "statement": "[kepler] eccentric anomaly at perihelion / pi [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 aphelion speed / circular speed at a   for 0 < e < 1 (tight only in the limit e \u2192 0)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-27abfdde9974",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "e < 1"
+   ],
+   "claim": "sqrt(1 - e**2)/(sqrt(1 - e**2) + 1) >= 1/2*(sqrt(1 - e**2))",
+   "symbols": [
+    "e"
+   ]
+  },
+  "source": "physics_discover round 130",
+  "statement": "[kepler] eccentric anomaly at perihelion / pi [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 semi-minor axis / a   for 0 < e < 1 (tight only in the limit e \u2192 0)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-fa24504eb92c",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'semi-minor axis / a'",
+  "payload": {
+   "assumptions": [
+    "e < 1"
+   ],
+   "claim": "sqrt(1 - e**2)/(sqrt(1 - e**2) + 1) >= 1/2*(1 - e**2)",
+   "symbols": [
+    "e"
+   ]
+  },
+  "source": "physics_discover round 130",
+  "statement": "[kepler] eccentric anomaly at perihelion / pi [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 semi-latus rectum / a   for 0 < e < 1 (tight only in the limit e \u2192 0)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-b32e1d7c4e24",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "m < 1"
+   ],
+   "claim": "1/(1 - m) >= 1*(1/(m**2 + 1))",
+   "symbols": [
+    "m"
+   ]
+  },
+  "source": "physics_discover round 134",
+  "statement": "[acoustic Doppler] frequency ratio, source approaching \u2265 1 \u00d7 relative wavelength shift for a moving observer [model-proposed; physical meaning unverified]   for 0 < m < 1 (tight only in the limit m \u2192 0)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-008349888565",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "m < 1"
+   ],
+   "claim": "m + 1 >= 1*(1/(m**2 + 1))",
+   "symbols": [
+    "m"
+   ]
+  },
+  "source": "physics_discover round 134",
+  "statement": "[acoustic Doppler] frequency ratio, observer approaching \u2265 1 \u00d7 relative wavelength shift for a moving observer [model-proposed; physical meaning unverified]   for 0 < m < 1 (tight only in the limit m \u2192 0)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-2fddeaced562",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'frequency ratio, source approaching'",
+  "payload": {
+   "assumptions": [
+    "m < 1"
+   ],
+   "claim": "(m + 1)/(1 - m) >= 1*(1/(m**2 + 1))",
+   "symbols": [
+    "m"
+   ]
+  },
+  "source": "physics_discover round 134",
+  "statement": "[acoustic Doppler] frequency ratio, source and observer approaching at the same speed \u2265 1 \u00d7 relative wavelength shift for a moving observer [model-proposed; physical meaning unverified]   for 0 < m < 1 (tight only in the limit m \u2192 0)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-9a2292952041",
+  "kind": "physics-relation",
+  "novelty": "asymptotic comparison (tight only at the edge of the domain) \u2014 proved, not counted as a discovery",
+  "payload": {
+   "assumptions": [
+    "m < 1"
+   ],
+   "claim": "1/(m**2 + 1) >= 1*(1/(m + 1))",
+   "symbols": [
+    "m"
+   ]
+  },
+  "source": "physics_discover round 134",
+  "statement": "[acoustic Doppler] relative wavelength shift for a moving observer [model-proposed; physical meaning unverified] \u2265 1 \u00d7 frequency ratio, source receding   for 0 < m < 1 (tight only in the limit m \u2192 1)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-23f8d749d3ff",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'frequency ratio, source receding'",
+  "payload": {
+   "assumptions": [
+    "m < 1"
+   ],
+   "claim": "1/(m**2 + 1) >= 1/4*(m + 1)",
+   "symbols": [
+    "m"
+   ]
+  },
+  "source": "physics_discover round 134",
+  "statement": "[acoustic Doppler] relative wavelength shift for a moving observer [model-proposed; physical meaning unverified] \u2265 1/4 \u00d7 frequency ratio, observer approaching   for 0 < m < 1 (tight only in the limit m \u2192 1)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-84bf6b236d2f",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'frequency ratio, source receding'",
+  "payload": {
+   "assumptions": [
+    "m < 1"
+   ],
+   "claim": "1/(m**2 + 1) >= 1*(1 - m)",
+   "symbols": [
+    "m"
+   ]
+  },
+  "source": "physics_discover round 134",
+  "statement": "[acoustic Doppler] relative wavelength shift for a moving observer [model-proposed; physical meaning unverified] \u2265 1 \u00d7 frequency ratio, observer receding   for 0 < m < 1 (tight only in the limit m \u2192 0)",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]
