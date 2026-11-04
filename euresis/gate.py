@@ -219,7 +219,10 @@ def verify_music(p: dict) -> tuple[str, dict]:
 
 
 def verify_empirical(p: dict) -> tuple[str, dict]:
-    from .linguistics import verify_claim
+    if "dataset" in p:                           # a published research dataset (datafeeds.py)
+        from .datafeeds import verify_claim
+    else:                                        # the held-out text corpus (linguistics.py)
+        from .linguistics import verify_claim
     return verify_claim(p)
 
 

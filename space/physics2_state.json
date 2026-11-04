@@ -58,7 +58,8 @@
    "Relativistic velocity parameter [model-proposed; physical meaning unverified]": "sqrt((1 - u**2)*(1 - v**2))/(-u*v + 1)",
    "Energy-momentum invariant [model-proposed; physical meaning unverified]": "sqrt(1 - u**2) + sqrt(1 - v**2) - sqrt(-(u + v)**2/(u*v + 1)**2 + 1)",
    "Energy-momentum ratio [model-proposed; physical meaning unverified]": "sqrt(-(u + v)**2/(u*v + 1)**2 + 1)*(1/sqrt(1 - v**2) + 1/sqrt(1 - u**2))",
-   "Total relativistic energy / mc\u00b2 [model-proposed; physical meaning unverified]": "sqrt(1 - u**2) + sqrt(1 - v**2) + (u*v + 1)/(sqrt(1 - u**2)*sqrt(1 - v**2))"
+   "Total relativistic energy / mc\u00b2 [model-proposed; physical meaning unverified]": "sqrt(1 - u**2) + sqrt(1 - v**2) + (u*v + 1)/(sqrt(1 - u**2)*sqrt(1 - v**2))",
+   "Relativistic momentum magnitude ratio [model-proposed; physical meaning unverified]": "sqrt((u**2 + 2*u*v + v**2)/(u*v + 1)**2 + (u*v + 1)**2/((1 - u**2)*(1 - v**2)))"
   },
   "Compton scattering": {
    "scattered photon energy / initial energy": "1/(1 + x*c)",
@@ -4965,6 +4966,21 @@
    "family": "driven oscillator",
    "expr": "sqrt((1 - r**2)**2 + (2*z*r)**2)/r",
    "why": "affine combination of known quantities (amplitude / static deflection, 1/(velocity amplitude / (\u03c90 \u00d7 static deflection)))"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "atanh(u) + atanh(v)",
+   "why": "only + \u2212 \u00d7 \u00f7, integer powers and square roots (so the prover can decide it)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "atanh(u) - atanh(v)",
+   "why": "only + \u2212 \u00d7 \u00f7, integer powers and square roots (so the prover can decide it)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt(1 - (u + v)**2/(1 + u*v)**2)",
+   "why": "affine combination of known quantities (composed speed / c, 1/(Lorentz factor of the composed motion))"
   }
  ],
  "tried": [
@@ -6115,7 +6131,31 @@
   "two-body decay|Ratio of kinetic energy of product 1 to total kinetic energy [model-proposed; physical meaning unverified]|Lorentz factor of product 1",
   "two-body decay|Ratio of kinetic energy of product 1 to total kinetic energy [model-proposed; physical meaning unverified]|Invariant mass squared of the two products [model-proposed; physical meaning unverified]",
   "two-body decay|Ratio of kinetic energy of product 1 to total kinetic energy [model-proposed; physical meaning unverified]|Ratio of kinetic energies of product 1 to product 2 [model-proposed; physical meaning unverified]",
-  "two-body decay|Ratio of kinetic energy of product 1 to total kinetic energy [model-proposed; physical meaning unverified]|Total kinetic energy of the two products / (Mc\u00b2) [model-proposed; physical meaning unverified]"
+  "two-body decay|Ratio of kinetic energy of product 1 to total kinetic energy [model-proposed; physical meaning unverified]|Total kinetic energy of the two products / (Mc\u00b2) [model-proposed; physical meaning unverified]",
+  "velocity addition|composed speed / c|Relativistic momentum magnitude ratio [model-proposed; physical meaning unverified]",
+  "velocity addition|Galilean sum / c|Relativistic momentum magnitude ratio [model-proposed; physical meaning unverified]",
+  "velocity addition|Lorentz factor of the composed motion|Relativistic momentum magnitude ratio [model-proposed; physical meaning unverified]",
+  "velocity addition|product of the two Lorentz factors|Relativistic momentum magnitude ratio [model-proposed; physical meaning unverified]",
+  "velocity addition|Doppler factor of the composed motion|Relativistic momentum magnitude ratio [model-proposed; physical meaning unverified]",
+  "velocity addition|kinetic energy of the composed motion / mc\u00b2|Relativistic momentum magnitude ratio [model-proposed; physical meaning unverified]",
+  "velocity addition|sum of the two kinetic energies / mc\u00b2|Relativistic momentum magnitude ratio [model-proposed; physical meaning unverified]",
+  "velocity addition|Relativistic momentum ratio [model-proposed; physical meaning unverified]|Relativistic momentum magnitude ratio [model-proposed; physical meaning unverified]",
+  "velocity addition|Lorentz gamma of the composed motion [model-proposed; physical meaning unverified]|Relativistic momentum magnitude ratio [model-proposed; physical meaning unverified]",
+  "velocity addition|Relative velocity in terms of rapidities [model-proposed; physical meaning unverified]|Relativistic momentum magnitude ratio [model-proposed; physical meaning unverified]",
+  "velocity addition|Relativistic velocity parameter [model-proposed; physical meaning unverified]|Relativistic momentum magnitude ratio [model-proposed; physical meaning unverified]",
+  "velocity addition|Energy-momentum invariant [model-proposed; physical meaning unverified]|Relativistic momentum magnitude ratio [model-proposed; physical meaning unverified]",
+  "velocity addition|Energy-momentum ratio [model-proposed; physical meaning unverified]|Relativistic momentum magnitude ratio [model-proposed; physical meaning unverified]",
+  "velocity addition|Total relativistic energy / mc\u00b2 [model-proposed; physical meaning unverified]|Relativistic momentum magnitude ratio [model-proposed; physical meaning unverified]",
+  "velocity addition|Relativistic momentum magnitude ratio [model-proposed; physical meaning unverified]|composed speed / c",
+  "velocity addition|Relativistic momentum magnitude ratio [model-proposed; physical meaning unverified]|Galilean sum / c",
+  "velocity addition|Relativistic momentum magnitude ratio [model-proposed; physical meaning unverified]|Lorentz factor of the composed motion",
+  "velocity addition|Relativistic momentum magnitude ratio [model-proposed; physical meaning unverified]|product of the two Lorentz factors",
+  "velocity addition|Relativistic momentum magnitude ratio [model-proposed; physical meaning unverified]|Doppler factor of the composed motion",
+  "velocity addition|Relativistic momentum magnitude ratio [model-proposed; physical meaning unverified]|kinetic energy of the composed motion / mc\u00b2",
+  "velocity addition|Relativistic momentum magnitude ratio [model-proposed; physical meaning unverified]|sum of the two kinetic energies / mc\u00b2",
+  "velocity addition|Relativistic momentum magnitude ratio [model-proposed; physical meaning unverified]|Relativistic momentum ratio [model-proposed; physical meaning unverified]",
+  "velocity addition|Relativistic momentum magnitude ratio [model-proposed; physical meaning unverified]|Lorentz gamma of the composed motion [model-proposed; physical meaning unverified]",
+  "velocity addition|Relativistic momentum magnitude ratio [model-proposed; physical meaning unverified]|Relative velocity in terms of rapidities [model-proposed; physical meaning unverified]"
  ],
  "edges": [
   {
@@ -7953,9 +7993,33 @@
    "f": "Ratio of kinetic energy of product 1 to total kinetic energy [model-proposed; physical meaning unverified]",
    "g": "kinetic energy of product 1 / (Mc\u00b2)",
    "k": "1"
+  },
+  {
+   "family": "velocity addition",
+   "f": "Relativistic momentum magnitude ratio [model-proposed; physical meaning unverified]",
+   "g": "Lorentz factor of the composed motion",
+   "k": "1"
+  },
+  {
+   "family": "velocity addition",
+   "f": "Relativistic momentum magnitude ratio [model-proposed; physical meaning unverified]",
+   "g": "Doppler factor of the composed motion",
+   "k": "1/2"
+  },
+  {
+   "family": "velocity addition",
+   "f": "Relativistic momentum magnitude ratio [model-proposed; physical meaning unverified]",
+   "g": "kinetic energy of the composed motion / mc\u00b2",
+   "k": "1"
+  },
+  {
+   "family": "velocity addition",
+   "f": "Relativistic momentum magnitude ratio [model-proposed; physical meaning unverified]",
+   "g": "Lorentz gamma of the composed motion [model-proposed; physical meaning unverified]",
+   "k": "1"
   }
  ],
- "rounds": 259,
+ "rounds": 260,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",

@@ -475,6 +475,23 @@ from what is left, and checks whether any output matches a removed law (exactly,
 or up to a dimensionless factor that dimensional analysis cannot fix). The latest
 result is saved in `space/benchmark.json` and shown on the canvas.
 
+## Always-on discovery and research-data feeds
+
+`python -m euresis feeds` connects Euresis to **published research datasets**: Zenodo and Figshare datasets
+attached to papers, each with a DOI. It downloads small tabular files and searches every pair of numeric columns
+for linear, power-law, exponential and logarithmic laws. A relation is kept only if it holds on a random half of
+the rows **and** on the held-out half. Trivial relations (duplicate or rescaled columns, identifiers) are removed,
+and each finding records the dataset's DOI so it can be traced to its paper. **Offline**, it falls back to
+datasets already on disk.
+
+`python -m euresis daemon` keeps every engine running in turn, forever, **online or offline**: data feeds,
+physics and economics, then music and games. It saves after every slice and can be stopped by creating
+`data/STOP`. To run it on your own computer:
+
+```bash
+nohup python -m euresis daemon --git-push > euresis.log 2>&1 &
+```
+
 ## Discovery beyond mathematics and physics
 
 `python -m euresis discover-subjects` covers three subjects, each with its own check:

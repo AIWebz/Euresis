@@ -495,6 +495,16 @@ def cmd_subjects(a):
         subjects.run(max_game_digits=a.game_digits, game_minutes=a.game_minutes)
 
 
+def cmd_daemon(a):
+    from . import daemon
+    daemon.run(hours=a.hours or None, slice_minutes=a.slice, git_push=a.git_push)
+
+
+def cmd_feeds(a):
+    from . import datafeeds
+    datafeeds.run(minutes=a.minutes)
+
+
 def main(argv=None):
     p = argparse.ArgumentParser(prog="euresis", description="Euresis — scientific discovery engine")
     sub = p.add_subparsers(dest="cmd", required=True)
@@ -524,6 +534,13 @@ def main(argv=None):
     sj.add_argument("--game-digits", type=int, default=3); sj.add_argument("--game-minutes", type=float, default=30)
     sj.add_argument("--segment", type=float, default=0, help="run one time-boxed segment of the open-ended search")
     sj.set_defaults(fn=cmd_subjects)
+    dm = sub.add_parser("daemon", help="always-on discovery across every engine, online or offline")
+    dm.add_argument("--hours", type=float, default=0, help="stop after this many hours (default: forever)")
+    dm.add_argument("--slice", type=float, default=30, help="minutes per engine per cycle")
+    dm.add_argument("--git-push", action="store_true", help="commit and push results after every slice")
+    dm.set_defaults(fn=cmd_daemon)
+    fd = sub.add_parser("feeds", help="analyse published research datasets (Zenodo, Figshare; offline: on disk)")
+    fd.add_argument("--minutes", type=float, default=30); fd.set_defaults(fn=cmd_feeds)
     sub.add_parser("claude-ping", help="one test call to the Claude API").set_defaults(fn=cmd_claude_ping)
     sub.add_parser("writeup").set_defaults(fn=cmd_writeup)
     sub.add_parser("info").set_defaults(fn=cmd_info)
