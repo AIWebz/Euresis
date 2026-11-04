@@ -122,3 +122,10 @@
 - 2026-11-04 05:16 round 105: relativity
 - 2026-11-04 05:18 round 106: kepler
 - 2026-11-04 05:19 round 107: heat engines
+- 2026-11-04 05:20 round 108: collisions
+- 2026-11-04 05:21 round 109: quantum step
+- 2026-11-04 05:23 round 110: acoustic Doppler
+- 2026-11-04 05:24 round 111: damped oscillator
+- 2026-11-04 05:25 round 112: wave boundary
+- 2026-11-04 05:25 round 113: relativity
+- 2026-11-04 05:27 round 114: kepler
