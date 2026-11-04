@@ -529,6 +529,26 @@
    "family": "heat engines",
    "expr": "t**0.5 / (1 - t**0.5)",
    "why": "affine combination of known quantities (Carnot efficiency, 1/(Curzon\u2013Ahlborn efficiency (endoreversible engine at maximum power)))"
+  },
+  {
+   "family": "collisions",
+   "expr": "((2*m)/(1 + m) - (1 - m)/(1 + m))/(1 - 0)",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "collisions",
+   "expr": "(1 - m)/(1 + m)",
+   "why": "affine combination of known quantities (elastic: rebound speed of the projectile / initial speed)"
+  },
+  {
+   "family": "collisions",
+   "expr": "(4*m/(1 + m)**2)/(((1 - m)/(1 + m))**2)",
+   "why": "affine combination of known quantities (elastic: rebound speed of the projectile / initial speed, 1/(elastic: fraction of kinetic energy kept by the projectile))"
+  },
+  {
+   "family": "collisions",
+   "expr": "(2*m/(1 + m))/( (1 - m)/(1 + m) )",
+   "why": "affine combination of known quantities (elastic: rebound speed of the projectile / initial speed, 1/(elastic: rebound speed of the projectile / initial speed))"
   }
  ],
  "tried": [
@@ -1653,7 +1673,7 @@
    "k": "1"
   }
  ],
- "rounds": 35,
+ "rounds": 36,
  "discoveries": [
   {
    "claim": "phy-e72aa596c5f7",
