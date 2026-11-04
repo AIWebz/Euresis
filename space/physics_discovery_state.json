@@ -371,6 +371,46 @@
    "family": "heat engines",
    "expr": "(1 - t**2)/(1 + t**0.5 + t**1.5)",
    "why": "a power or product of known quantities: C \u00b7 (Carnot efficiency)^1 \u00b7 (Curzon\u2013Ahlborn efficiency (endoreversible engine at maximum power))^-1 \u00b7 (low-dissipation engine efficiency at maximum power, upper bou"
+  },
+  {
+   "family": "relativity",
+   "expr": "1/sqrt(1 - b**2)",
+   "why": "affine combination of known quantities (Lorentz factor \u03b3)"
+  },
+  {
+   "family": "relativity",
+   "expr": "sqrt(1 + (b**2)/(1 - b**2))",
+   "why": "affine combination of known quantities (Lorentz factor \u03b3)"
+  },
+  {
+   "family": "relativity",
+   "expr": "b/sqrt(1 - b**2)",
+   "why": "affine combination of known quantities (Lorentz factor \u03b3, relativistic momentum / (mc))"
+  },
+  {
+   "family": "relativity",
+   "expr": "b/(sqrt(1 - b**2))",
+   "why": "affine combination of known quantities (Lorentz factor \u03b3, relativistic momentum / (mc))"
+  },
+  {
+   "family": "kepler",
+   "expr": "sqrt((1 + e)/(1 - e)) / sqrt((1 - e)/(1 + e))",
+   "why": "affine combination of known quantities (perihelion distance / a, 1/(perihelion distance / a))"
+  },
+  {
+   "family": "kepler",
+   "expr": "sqrt(1 - e**2) / sqrt(1 - e**2)",
+   "why": "must depend on e only"
+  },
+  {
+   "family": "kepler",
+   "expr": "(1 - e + 1 + e)/2",
+   "why": "must depend on e only"
+  },
+  {
+   "family": "kepler",
+   "expr": "(1 + e) - (1 - e)",
+   "why": "affine combination of known quantities (perihelion distance / a)"
   }
  ],
  "tried": [
@@ -993,7 +1033,7 @@
    "k": "1"
   }
  ],
- "rounds": 21,
+ "rounds": 23,
  "discoveries": [
   {
    "claim": "phy-e72aa596c5f7",
