@@ -418,3 +418,4 @@
 - 2026-11-05 17:26 FINDING (confirmed on held-out rows): In 'Datasets and R scripts for ecomorphology of agamids' (Zenodo, doi 10.5281/zenodo.4777158): 'jaw outlever' follows a power law in 'head width' (R² = 0.923 on the discovery half); held-out R² = 0.924 [emp-d65de9e29e19]
 - 2026-11-05 17:26 FINDING (confirmed on held-out rows): In 'Datasets and R scripts for ecomorphology of agamids' (Zenodo, doi 10.5281/zenodo.4777158): 'bite corrected' follows a power law in 'jaw outlever' (R² = 0.939 on the discovery half); held-out R² = 0.922 [emp-0fe9645de005]
 - 2026-11-05 17:26 data feeds: 2780 datasets analysed so far, 381 confirmed findings
+- 2026-11-05 18:06 data feeds: online
