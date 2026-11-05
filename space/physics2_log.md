@@ -746,3 +746,8 @@
 - 2026-11-05 23:21 round 671: insurance and risk
 - 2026-11-05 23:22 round 672: auction with a reserve price
 - 2026-11-05 23:24 round 673: two-body decay
+- 2026-11-05 23:26 round 674: collision
+- 2026-11-05 23:27 round 675: driven oscillator
+- 2026-11-05 23:28 round 676: velocity addition
+- 2026-11-05 23:30 round 677: Compton scattering
+- 2026-11-05 23:31 segment end: 677 rounds, 4 discoveries, 2 known laws rediscovered
