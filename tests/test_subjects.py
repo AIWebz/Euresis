@@ -1,5 +1,11 @@
+import pytest
+
 from euresis import games, gate, linguistics, music
 from euresis.registry import Registry
+
+# the PubMed RCT abstracts are a downloaded dataset (data/external is not in the repository, e.g. on CI)
+needs_corpus = pytest.mark.skipif(not (linguistics.CORPUS / "dev.txt").exists(),
+                                  reason="PubMed RCT corpus not downloaded (data/external/papers/pubmed-rct)")
 
 
 def test_music_hexachord_theorem_and_counterexamples():
@@ -20,6 +26,7 @@ def test_games_known_solutions():
     assert games.verify_claim({"code": "77", "preperiod": 10, "period": 12})[0] == "refuted"
 
 
+@needs_corpus
 def test_linguistics_replicates_menzerath_and_rejects_false_direction():
     p = {"unit": "sentence", "x": "number of words", "y": "mean word length", "sign": -1}
     assert linguistics.verify_claim(p)[0] == "verified-numeric"
@@ -33,6 +40,11 @@ def test_gate_routes_new_kinds(tmp_path):
                                         "cardinality": 6}, source="t")
     assert gate.check(reg, a, log=lambda *x: None) == "proved"
     assert gate.check(reg, b, log=lambda *x: None) == "proved"
+
+
+@needs_corpus
+def test_gate_routes_empirical_kind(tmp_path):
+    reg = Registry(tmp_path / "r.db", tmp_path / "c.json")
     c = reg.add("empirical", "Menzerath", {"unit": "sentence", "x": "number of words", "y": "mean word length",
                                            "sign": -1}, source="t")
     gate.check(reg, c, log=lambda *x: None)
