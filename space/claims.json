@@ -788619,5 +788619,167 @@
   "statement": "Octal game 0.157373 is completely solved: its Grundy values are periodic with pre-period 1 and period 9 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3974293",
+   "held_out_r2": 0.987,
+   "held_out_rows": 845,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f5cd3eb892c3",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "54a80b6800e99bc6.csv",
+   "doi": "10.5281/zenodo.3974293",
+   "form": "power law",
+   "params": [
+    0.03286194081758757,
+    0.9904805562564044
+   ],
+   "seed": 1708385187,
+   "x": "TEC15",
+   "y": "TECTOW"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset from the ground-based TEC and scintillation receiver in Troll station for February' (Zenodo, doi 10.5281/zenodo.3974293): 'TECTOW' follows a power law in 'TEC15' (R\u00b2 = 0.990 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3974293",
+   "held_out_r2": 0.9902,
+   "held_out_rows": 845,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b97f0096e9b4",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "54a80b6800e99bc6.csv",
+   "doi": "10.5281/zenodo.3974293",
+   "form": "power law",
+   "params": [
+    0.019228900064057,
+    0.994396805540053
+   ],
+   "seed": 1708385187,
+   "x": "TEC30",
+   "y": "TECTOW"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset from the ground-based TEC and scintillation receiver in Troll station for February' (Zenodo, doi 10.5281/zenodo.3974293): 'TECTOW' follows a power law in 'TEC30' (R\u00b2 = 0.994 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.21314887",
+   "held_out_r2": 0.9829,
+   "held_out_rows": 500,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-baa78cf2dfb6",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "beb6eaa35b73ce72.csv",
+   "doi": "10.5281/zenodo.21314887",
+   "form": "power law",
+   "params": [
+    -1.464487975084145,
+    0.9453657774623389
+   ],
+   "seed": 417107269,
+   "x": "filter_response",
+   "y": "psd_filtered"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Robust High-Throughput Flickering Spectroscopy for Measurement of Red Blood Cell Membrane ' (Zenodo, doi 10.5281/zenodo.21314887): 'psd_filtered' follows a power law in 'filter_response' (R\u00b2 = 0.978 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.21314887",
+   "held_out_r2": 0.9513,
+   "held_out_rows": 111,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c3a5f6a62ac8",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "0cd7a8049360ac06.csv",
+   "doi": "10.5281/zenodo.21314887",
+   "form": "power law",
+   "params": [
+    5.940199379237101,
+    -2.264784646804131
+   ],
+   "seed": 1778054713,
+   "x": "mode",
+   "y": "mean_power_nm2"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Robust High-Throughput Flickering Spectroscopy for Measurement of Red Blood Cell Membrane ' (Zenodo, doi 10.5281/zenodo.21314887): 'mean_power_nm2' follows a power law in 'mode' (R\u00b2 = 0.944 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.21314887",
+   "held_out_r2": 0.9138,
+   "held_out_rows": 111,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-8d6c8589ffc5",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "0cd7a8049360ac06.csv",
+   "doi": "10.5281/zenodo.21314887",
+   "form": "power law",
+   "params": [
+    2.3854654065571523,
+    -2.0891822415670256
+   ],
+   "seed": 1778054713,
+   "x": "mode",
+   "y": "mean_power_err_nm2"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Robust High-Throughput Flickering Spectroscopy for Measurement of Red Blood Cell Membrane ' (Zenodo, doi 10.5281/zenodo.21314887): 'mean_power_err_nm2' follows a power law in 'mode' (R\u00b2 = 0.925 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.12113065",
+   "held_out_r2": 0.9677,
+   "held_out_rows": 314,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-822112832252",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "855c30180be0e2ad.csv",
+   "doi": "10.5281/zenodo.12113065",
+   "form": "linear",
+   "params": [
+    -0.5836410569809907,
+    1.8576920947673388
+   ],
+   "seed": 1544817357,
+   "x": "a",
+   "y": "Q"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'The data for Radar Circular Polarization Ratio of Near-Earth Asteroids: Links to Spectral ' (Zenodo, doi 10.5281/zenodo.12113065): 'Q' is linear in 'a' (R\u00b2 = 0.969 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
