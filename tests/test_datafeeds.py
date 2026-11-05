@@ -65,3 +65,8 @@ def test_generic_column_names_skipped(tmp_path, monkeypatch):
     path.write_text("Column1.6,Column1.9\n" + "\n".join(f"{a},{3 * a + rng.normal(0, 0.5)}" for a in x))
     reg = Registry(tmp_path / "r.db", tmp_path / "c.json")
     assert F.analyse(path, {"source": "t", "doi": "", "title": "t", "file": "g.csv"}, reg, echo=lambda *a: None) == []
+
+
+def test_known_families():
+    assert F.known_family("TankpH", "TankCO2")
+    assert not F.known_family("fish_length_mm", "otolith_width_um")

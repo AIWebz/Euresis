@@ -477895,7 +477895,7 @@
   },
   "id": "emp-6c3681bdf600",
   "kind": "empirical",
-  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "novelty": "KNOWN: seawater carbonate chemistry \u2014 [CO2] \u221d 10^(\u2212k\u00b7pH) (fitted ln-slope -2.99; \u2212ln10 = \u22122.30 for CO2 \u221d [H\u207a], \u22124.61 for CO2 \u221d [H\u207a]\u00b2 at fixed alkalinity); carbonate-system columns are usually computed from each other (e.g. CO2SYS), so this is chemistry, not a discovery",
   "payload": {
    "dataset": "d9fd30852ca1febc.csv",
    "doi": "10.5061/dryad.nm1ns61",
@@ -477922,7 +477922,7 @@
   },
   "id": "emp-60e374aa2aa8",
   "kind": "empirical",
-  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "novelty": "KNOWN: seawater carbonate chemistry \u2014 [CO2] \u221d 10^(\u2212k\u00b7pH) (fitted ln-slope -2.99; \u2212ln10 = \u22122.30 for CO2 \u221d [H\u207a], \u22124.61 for CO2 \u221d [H\u207a]\u00b2 at fixed alkalinity); carbonate-system columns are usually computed from each other (e.g. CO2SYS), so this is chemistry, not a discovery",
   "payload": {
    "dataset": "d9fd30852ca1febc.csv",
    "doi": "10.5061/dryad.nm1ns61",
@@ -477949,7 +477949,7 @@
   },
   "id": "emp-d49321a9532f",
   "kind": "empirical",
-  "novelty": "not checked",
+  "novelty": "KNOWN: seawater carbonate chemistry \u2014 [CO2] \u221d 10^(\u2212k\u00b7pH) (fitted ln-slope -2.99; \u2212ln10 = \u22122.30 for CO2 \u221d [H\u207a], \u22124.61 for CO2 \u221d [H\u207a]\u00b2 at fixed alkalinity); carbonate-system columns are usually computed from each other (e.g. CO2SYS), so this is chemistry, not a discovery",
   "payload": {
    "dataset": "d9fd30852ca1febc.csv",
    "doi": "10.5061/dryad.nm1ns61",
@@ -477964,6 +477964,114 @@
   },
   "source": "datafeeds.py",
   "statement": "In 'Data from: Nutrient pollution disrupts key ecosystem functions on coral reefs' (Zenodo, doi 10.5061/dryad.nm1ns61): 'TankHCO3' grows logarithmically in 'TankCO2' (R\u00b2 = 0.984 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20307143",
+   "held_out_r2": -Infinity,
+   "held_out_rows": 98,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3884cf04d170",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "02d000969b3b04ef.csv",
+   "doi": "10.5281/zenodo.20307143",
+   "form": "power law",
+   "params": [
+    7.016503493498248,
+    0.9940378053469507
+   ],
+   "seed": 1133209930,
+   "x": "Residue mass [g]",
+   "y": "Calculated solubility [mg/mL]"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Solubility of lactose, mannitol and maltose in binary water-organic solvent mixtures' (Zenodo, doi 10.5281/zenodo.20307143): 'Calculated solubility [mg/mL]' follows a power law in 'Residue mass [g]' (R\u00b2 = 0.938 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14041273",
+   "held_out_r2": 0.9475,
+   "held_out_rows": 92,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-1838a5a08bbe",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "b6e68b8d657c3a41.csv",
+   "doi": "10.5281/zenodo.14041273",
+   "form": "linear",
+   "params": [
+    -0.18437505583417582,
+    1.0671292536440984
+   ],
+   "seed": 1116757880,
+   "x": "pKa_exp",
+   "y": "pKa_pred"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Supporting materials for: pKa Prediction in Non-Aqueous Solvents' (Zenodo, doi 10.5281/zenodo.14041273): 'pKa_pred' is linear in 'pKa_exp' (R\u00b2 = 0.946 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14041273",
+   "held_out_r2": 0.9694,
+   "held_out_rows": 92,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5ef3f7624f98",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "b6e68b8d657c3a41.csv",
+   "doi": "10.5281/zenodo.14041273",
+   "form": "linear",
+   "params": [
+    0.3307362923150525,
+    1.0117993718775922
+   ],
+   "seed": 1116757880,
+   "x": "pKa_OK",
+   "y": "pKa_pred"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Supporting materials for: pKa Prediction in Non-Aqueous Solvents' (Zenodo, doi 10.5281/zenodo.14041273): 'pKa_pred' is linear in 'pKa_OK' (R\u00b2 = 0.955 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14041273",
+   "held_out_r2": 0.9664,
+   "held_out_rows": 114,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e0f0071154df",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "0dec68f376a9b93c.csv",
+   "doi": "10.5281/zenodo.14041273",
+   "form": "linear",
+   "params": [
+    0.33030368704197133,
+    0.9628727251300785
+   ],
+   "seed": 1456872857,
+   "x": "pKa_expt",
+   "y": "calculated_pKa"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Supporting materials for: pKa Prediction in Non-Aqueous Solvents' (Zenodo, doi 10.5281/zenodo.14041273): 'calculated_pKa' is linear in 'pKa_expt' (R\u00b2 = 0.969 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
  }

@@ -208,6 +208,22 @@ GEOMETRIC_WORDS = ("area", "volume", "radius", "diameter", "length", "width", "h
                    "µm", "μm", "mm", "cm", "m^2", "m^3", "m2", "m3", "km")
 
 
+# families of quantities whose mutual relations are textbook science (usually computed from one another)
+KNOWN_FAMILIES = {
+    "seawater carbonate chemistry (CO2SYS-type calculations)": ("ph", "co2", "hco3", "co3", "dic", "alkalinity",
+                                                                "talk", "omega", "pco2", "fco2"),
+    "thermodynamic temperature conversions": ("temp_c", "temp_k", "temp_f", "celsius", "kelvin", "fahrenheit"),
+}
+
+
+def known_family(cx, cy) -> str | None:
+    a, b = str(cx).lower(), str(cy).lower()
+    for fam, words in KNOWN_FAMILIES.items():
+        if any(w in a for w in words) and any(w in b for w in words):
+            return fam
+    return None
+
+
 def geometric(cx, cy, exponent) -> bool:
     """A power law between two size-like quantities with a simple exponent (2/3, 1/2, 3, …) is geometry."""
     names = (str(cx) + " " + str(cy)).lower()
@@ -277,6 +293,11 @@ def analyse(path: Path, item: dict, reg: Registry, echo=print) -> list[dict]:
             if gate.check(reg, cid, log=lambda *a: None) != "verified-numeric":
                 continue
             ev = reg.get(cid)["evidence"]
+            fam = known_family(cx, cy)
+            if fam:
+                reg.set_novelty(cid, f"KNOWN: {fam} — not a discovery")
+                echo(f"    known relation ({fam}): {stmt}")
+                continue
             unl = "unlabelled" in cx + cy
             reg.set_novelty(cid, "empirical regularity in a published dataset; probably known to its authors — "
                                  "check the linked paper; units unknown, so not a law until interpreted"
