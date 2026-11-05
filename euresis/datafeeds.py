@@ -281,6 +281,11 @@ def analyse(path: Path, item: dict, reg: Registry, echo=print) -> list[dict]:
             generic = re.compile(r"^(column|col|unnamed|var|field|v|x|y|c)\W*\d|unlabelled")
             if generic.search(a_) or generic.search(b_):
                 continue                      # generic column names: cannot be interpreted, so not reportable
+            if re.search(r"includ|total|sum|overall|all\b", a_ + " " + b_) and core(cx) & core(cy) == frozenset() and \
+                    re.search(r"includ", a_ + b_):
+                continue                      # one column explicitly includes the other (part vs whole)
+            if a_.startswith("estimated") or b_.startswith("estimated"):
+                continue                      # estimates are computed from the other columns
             if same_quantity(cx, cy):
                 continue                      # predicted vs measured, or one quantity from several instruments
             if re.sub(r"\d+", "", a_) == re.sub(r"\d+", "", b_):

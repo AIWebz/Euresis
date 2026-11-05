@@ -513841,7 +513841,7 @@
   },
   "id": "emp-1230fbde0aa9",
   "kind": "empirical",
-  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "novelty": "TRIVIAL: 'Invited' explicitly includes the declined reviewers \u2014 a component compared with its own total",
   "payload": {
    "dataset": "4b5d4b9051d1edb7.csv",
    "doi": "10.5061/dryad.3539k",
@@ -513868,7 +513868,7 @@
   },
   "id": "emp-2ef211fcdb66",
   "kind": "empirical",
-  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "novelty": "DEFINITIONAL: Amazon-wide population estimates are extrapolated from the plot counts (ATDN method), so one is computed from the other",
   "payload": {
    "dataset": "6b9d7ab0f23e539d.csv",
    "doi": "10.1002/ecy.4135",
@@ -513883,6 +513883,114 @@
   },
   "source": "datafeeds.py",
   "statement": "In 'MADERA: A standardized Pan-Amazonian dataset for tropical timber species' (Zenodo, doi 10.1002/ecy.4135): 'estimated_ind_Amazon' follows a power law in 'number_individuals_ATDN_plots' (R\u00b2 = 0.908 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11373417",
+   "held_out_r2": 0.9061,
+   "held_out_rows": 40,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-afce4ddb4a38",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "dfaa2709ecb02212.csv",
+   "doi": "10.5281/zenodo.11373417",
+   "form": "power law",
+   "params": [
+    -0.6329860615079517,
+    1.0110647991165231
+   ],
+   "seed": 2263390874,
+   "x": "l_cladodio",
+   "y": "d_parte_apical_a_ancha"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Morphological and phenological variation of flower colour morphs in a wild population of O' (Zenodo, doi 10.5281/zenodo.11373417): 'd_parte_apical_a_ancha' follows a power law in 'l_cladodio' (R\u00b2 = 0.906 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11373417",
+   "held_out_r2": 0.9154,
+   "held_out_rows": 40,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-cf88ca26ca88",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "dfaa2709ecb02212.csv",
+   "doi": "10.5281/zenodo.11373417",
+   "form": "linear",
+   "params": [
+    2.205242339101361,
+    0.4820434981013907
+   ],
+   "seed": 2263390874,
+   "x": "l_cladodio",
+   "y": "d_parte_basal_a_ancha"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Morphological and phenological variation of flower colour morphs in a wild population of O' (Zenodo, doi 10.5281/zenodo.11373417): 'd_parte_basal_a_ancha' is linear in 'l_cladodio' (R\u00b2 = 0.900 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.7c01654",
+   "held_out_r2": 0.9665,
+   "held_out_rows": 94,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-adf6349385c5",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "0fa6578e3306507f.csv",
+   "doi": "10.5061/dryad.7c01654",
+   "form": "linear",
+   "params": [
+    -0.16753581099069076,
+    1.0164389256570023
+   ],
+   "seed": 1109508161,
+   "x": "Rz",
+   "y": "CILB"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Limited evidence for spatial resource partitioning across temperate grassland b' (Zenodo, doi 10.5061/dryad.7c01654): 'CILB' is linear in 'Rz' (R\u00b2 = 0.966 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.7c01654",
+   "held_out_r2": 0.965,
+   "held_out_rows": 94,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-11cb16f52f2f",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "0fa6578e3306507f.csv",
+   "doi": "10.5061/dryad.7c01654",
+   "form": "linear",
+   "params": [
+    0.16753581095261708,
+    0.9835610743768478
+   ],
+   "seed": 1109508161,
+   "x": "Rz",
+   "y": "CIUB"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Limited evidence for spatial resource partitioning across temperate grassland b' (Zenodo, doi 10.5061/dryad.7c01654): 'CIUB' is linear in 'Rz' (R\u00b2 = 0.964 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
  }
