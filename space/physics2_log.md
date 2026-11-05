@@ -339,3 +339,16 @@
 - 2026-11-05 02:42 round 310: Cournot duopoly
 - 2026-11-05 02:43 round 311: insurance and risk
 - 2026-11-05 02:44 round 312: auction with a reserve price
+- 2026-11-05 02:46 round 313: two-body decay
+- 2026-11-05 02:48 round 314: collision
+- 2026-11-05 02:49 round 315: driven oscillator
+- 2026-11-05 02:51 round 316: velocity addition
+- 2026-11-05 02:53 round 317: Compton scattering
+- 2026-11-05 02:54 round 318: Cournot duopoly
+- 2026-11-05 02:56 round 319: insurance and risk
+- 2026-11-05 02:57 round 320: auction with a reserve price
+- 2026-11-05 02:59 round 321: two-body decay
+- 2026-11-05 03:01 round 322: collision
+- 2026-11-05 03:02 round 323: driven oscillator
+- 2026-11-05 03:04 round 324: velocity addition
+- 2026-11-05 03:05 round 325: Compton scattering

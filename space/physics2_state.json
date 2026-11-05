@@ -5989,6 +5989,266 @@
    "family": "insurance and risk",
    "expr": "p*(sqrt(1 - L) - 1)/sqrt(1 - p*L)",
    "why": "not positive on the physical domain"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "1 - r**2*v/(-4*r**3/3 + r**2*v + r**2 + 1/3)",
+   "why": "affine combination of known quantities (expected revenue, probability the seller's value is below reserve [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "2*(1 - r**3)/3 + v*r**2 - (2/3 + v**3/3)",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(2*r**3/3 - r**2 + 1/3)/(2/3 - 2*r**3/3 + v*r**2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(-2*r**3/3 + r**2*v + 2/3)/(-2*r**3 + 2*r**2)",
+   "why": "affine combination of known quantities (expected revenue, reserve price elasticity of welfare [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "((a**2 + b**2) - (a - b)**2)/(1 - a - b)",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), Invariant mass squared of the two products [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "((1 - a)**2 - b**2)/(1 - a**2 + b**2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "((1 - a)**2 - b**2 + 1 - a**2 + b**2 - 2)/2",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "((1 - a)**2 - b**2)/((1 - a)**2 - b**2 + 1 - a**2 + b**2 - 2)",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2 * m",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "collision",
+   "expr": "(1 - e**2 * m)**2 / (1 + m)**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "collision",
+   "expr": "e / (1 + m) * (1 - m) + e",
+   "why": "affine combination of known quantities (momentum transferred / initial momentum, speed of the centre of mass / initial speed)"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2 * m**2 / (1 + m)**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "atan(2*z*r/(1 - r**2))",
+   "why": "only + \u2212 \u00d7 \u00f7, integer powers and square roots (so the prover can decide it)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(1 - z**2)/sqrt(1 - z**2 + 4*z**2*r**2)",
+   "why": "affine combination of known quantities (amplitude / static deflection, Resonance frequency ratio (corrected) [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "2*z*r**2/(1 + (2*z*r)**2 + (1 - r**2)**2)",
+   "why": "affine combination of known quantities (amplitude / static deflection, Relative energy loss per cycle [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt((1 + (2*z*r)**2)/((1 - r**2)**2 + (2*z*r)**2))",
+   "why": "affine combination of known quantities (amplitude / static deflection, transmissibility)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "(u + v)/(sqrt(1 - u**2)*sqrt(1 - v**2)*(1 + u*v))",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "1 - (u + v)**2/(1 + u*v)**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 - u**2)*(1 - v**2))/((1 + u*v) - (u + v))",
+   "why": "affine combination of known quantities (composed speed / c, Doppler factor of the composed motion)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt(1 - (u + v)**2/(1 + u*v)**2)/(sqrt(1 - u**2)*sqrt(1 - v**2))",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "c/(x + 1)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, Scattered photon wavelength / initial photon wavelength [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "x*c/(1 + x*c)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy)"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "1/(x*c/(1 + x*c))",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, 1/(electron kinetic energy / photon energy))"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "sqrt(1 + c**2*x**2)/(c*x + 1)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "( (1 + c1 + c2)/3 - c1 )",
+   "why": "affine combination of known quantities (output of firm 1)"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "( (1 + c1 + c2)/3 - c2 )",
+   "why": "affine combination of known quantities (output of firm 1, output of firm 2)"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "( (1 - 2*c1 + c2)/3 ) / ( (1 - 2*c1 + c2)/3 + (1 - 2*c2 + c1)/3 )",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "( (1 - 2*c2 + c1)/3 ) / ( (1 - 2*c1 + c2)/3 + (1 - 2*c2 + c1)/3 )",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "1/(2*sqrt(1 - L))",
+   "why": "affine combination of known quantities (expected wealth, Relative Risk Aversion [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "sqrt(1 - p*L)/(p*sqrt(1 - L) + 1 - p)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "sqrt(p*(1 - p)*(sqrt(1 - L) - 1)**2)",
+   "why": "affine combination of known quantities (expected wealth, Expected Utility Deviation [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "p*L/(1 - (p*sqrt(1 - L) + 1 - p)**2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "1 - r**2*v/(-4*r**3/3 + r**2*v + r**2 + 1/3)",
+   "why": "affine combination of known quantities (expected revenue, probability the seller's value is below reserve [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(1/3 + r**2 - 4*r**3/3 + v*r**2)/(1 - r**2)",
+   "why": "affine combination of known quantities (expected bidder surplus given reserve [model-proposed; physical meaning unverified], expected bidder surplus given reserve and seller's value [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(2*r**3/3 - r**2 + 1/3)/(2*(1 - r**3)/3 + v*r**2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(2*(1 - r**3)/3 + v*r**2 - (2/3 + v**3/3))/(2*(1 - r**3)/3 + v*r**2)",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "(-a**2 - b**2 + (a - b)**2)/(a + b - 1)",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), Invariant mass squared of the two products [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "(-b**2 + (1 - a)**2)/(-a**2 + 2*b**2 - (1 - a)**2 + 1)",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), Ratio of kinetic energies of product 1 to product 2 [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "-a**2/2 - b**2 + (1 - a)**2/2 + 1/2",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), Total kinetic energy of the two products / (Mc\u00b2) [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "(-b**2 + (1 - a)**2)/(-a**2 - b**2 + (1 - a)**2 + 1)",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), Ratio of kinetic energy of product 1 to total kinetic energy [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "e*(1 - m)/(1 + m) + e",
+   "why": "affine combination of known quantities (momentum transferred / initial momentum, speed of the centre of mass / initial speed)"
+  },
+  {
+   "family": "collision",
+   "expr": "e*(1 - m)/(1 + m)",
+   "why": "affine combination of known quantities (target speed / initial speed, relative velocity after collision divided by initial velocity of projectile [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "(-e**2*m + 1)/(1 + m)",
+   "why": "affine combination of known quantities (target speed / initial speed, Fraction of kinetic energy retained by projectile [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2*(m**2 + 1)/(1 + m)**2",
+   "why": "affine combination of known quantities (target speed / initial speed, Fraction of kinetic energy retained by target [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "atan(2*z*r/(1 - r**2))",
+   "why": "only + \u2212 \u00d7 \u00f7, integer powers and square roots (so the prover can decide it)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "atan(2*z*r/(1 - r**2)) - atan(2*z*r/(1 - r**2))",
+   "why": "must depend only on r, z"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "2*atan(2*z*r/(1 - r**2))",
+   "why": "only + \u2212 \u00d7 \u00f7, integer powers and square roots (so the prover can decide it)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "atan((2*z*r)/(1 - r**2))",
+   "why": "only + \u2212 \u00d7 \u00f7, integer powers and square roots (so the prover can decide it)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 + u)/(1 - u)) * sqrt((1 + v)/(1 - v))",
+   "why": "affine combination of known quantities (composed speed / c, Doppler factor of the composed motion)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "1 - (u + v)**2/(1 + u*v)**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 - u**2)*(1 - v**2))/(-u*v + 1)",
+   "why": "affine combination of known quantities (composed speed / c, Relativistic velocity parameter [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt(1 - u**2) + sqrt(1 - v**2) + (u*v + 1)/(sqrt(1 - u**2)*sqrt(1 - v**2))",
+   "why": "affine combination of known quantities (composed speed / c, Total relativistic energy / mc\u00b2 [model-proposed; physical meaning unverified])"
   }
  ],
  "tried": [
@@ -9179,7 +9439,7 @@
    "k": "1/16"
   }
  ],
- "rounds": 311,
+ "rounds": 324,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",
