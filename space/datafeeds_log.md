@@ -206,3 +206,4 @@
 - 2026-11-05 08:44 FINDING (confirmed on held-out rows): In 'Data Sheet 15_Digital inclusive finance and basic medical and health supply capacity in Ch' (Figshare, doi 10.3389/fpubh.2026.1945127.s012): 'beds_total' follows a power law in 'pop_10k' (R² = 0.953 on the discovery half); held-out R² = 0.964 [emp-ad834c535f09]
 - 2026-11-05 08:44 FINDING (confirmed on held-out rows): In 'Data Sheet 15_Digital inclusive finance and basic medical and health supply capacity in Ch' (Figshare, doi 10.3389/fpubh.2026.1945127.s012): 'CB' follows a power law in 'DFI' (R² = 0.957 on the discovery half); held-out R² = 0.929 [emp-0b705db4b68b]
 - 2026-11-05 08:44 data feeds: 1036 datasets analysed so far, 187 confirmed findings
+- 2026-11-05 09:45 data feeds: online
