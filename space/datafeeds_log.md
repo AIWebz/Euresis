@@ -286,3 +286,4 @@
 - 2026-11-05 12:24 FINDING (confirmed on held-out rows): In 'The forest, the cicadas, and the holey fluxes: Chamber and Cicada Hole Data' (Zenodo, doi 10.5281/zenodo.10150209): 'RAWCO2' grows exponentially in 'Cdry' (R² = 0.975 on the discovery half); held-out R² = 0.981 [emp-97d5df49e4a3]
 - 2026-11-05 12:24 FINDING (confirmed on held-out rows): In 'data & codes for PS<sup>3</sup>R' (Figshare, doi 10.6084/m9.figshare.32330238.v1): 'Profile' follows a power law in 'Samples' (R² = 0.997 on the discovery half); held-out R² = 0.996 [emp-8b243c7654ff]
 - 2026-11-05 12:25 data feeds: 1640 datasets analysed so far, 259 confirmed findings
+- 2026-11-05 13:26 data feeds: online
