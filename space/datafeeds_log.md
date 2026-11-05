@@ -308,3 +308,4 @@
 - 2026-11-05 15:22 FINDING (confirmed on held-out rows): In 'Robust High-Throughput Flickering Spectroscopy for Measurement of Red Blood Cell Membrane ' (Zenodo, doi 10.5281/zenodo.21314887): 'mean_power_err_nm2' follows a power law in 'mode' (R² = 0.925 on the discovery half); held-out R² = 0.914 [emp-8d6c8589ffc5]
 - 2026-11-05 15:23 FINDING (confirmed on held-out rows): In 'The data for Radar Circular Polarization Ratio of Near-Earth Asteroids: Links to Spectral ' (Zenodo, doi 10.5281/zenodo.12113065): 'Q' is linear in 'a' (R² = 0.969 on the discovery half); held-out R² = 0.968 [emp-822112832252]
 - 2026-11-05 15:23 data feeds: 1987 datasets analysed so far, 275 confirmed findings
+- 2026-11-05 16:11 data feeds: online
