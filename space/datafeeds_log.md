@@ -177,3 +177,4 @@
 - 2026-11-05 04:08 FINDING (confirmed on held-out rows): In 'Causality for (Re)Insurance' (Figshare, doi 10.6084/m9.figshare.34918680.v1): 'CPI' is linear in 'Start Year' (R² = 0.970 on the discovery half); held-out R² = 0.899 [emp-e053598e6d00]
 - 2026-11-05 04:08 FINDING (confirmed on held-out rows): In 'Causality for (Re)Insurance' (Figshare, doi 10.6084/m9.figshare.34918680.v1): 'CPI' is linear in 'End Year' (R² = 0.970 on the discovery half); held-out R² = 0.899 [emp-533b413b714b]
 - 2026-11-05 04:08 data feeds: 834 datasets analysed so far, 164 confirmed findings
+- 2026-11-05 06:38 data feeds: online
