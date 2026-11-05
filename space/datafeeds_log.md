@@ -464,3 +464,4 @@
 - 2026-11-05 20:02 FINDING (confirmed on held-out rows): In 'Predicting plant species climate preferences on the basis of mechanistic traits' (Zenodo, doi 10.5061/dryad.cnp5hqcb2): 'C_N' follows a power law in 'Nmass_mg.g-1' (R² = 0.967 on the discovery half); held-out R² = 0.982 [emp-791752d29cee]
 - 2026-11-05 20:03 FINDING (confirmed on held-out rows): In 'Tweets on carbon dioxide removal' (Zenodo, doi 10.5281/zenodo.10418701): 'tpd' follows a power law in 'n_tweets' (R² = 0.942 on the discovery half); held-out R² = 0.939 [emp-de8fd73d55d0]
 - 2026-11-05 20:05 data feeds: 3696 datasets analysed so far, 421 confirmed findings
+- 2026-11-05 21:05 data feeds: online
