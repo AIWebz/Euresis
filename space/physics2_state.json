@@ -13,7 +13,8 @@
    "Ratio of kinetic energies of product 1 to product 2 [model-proposed; physical meaning unverified]": "(-b**2 + (1 - a)**2)/(-a**2 + 2*b**2 - (1 - a)**2 + 1)",
    "Total kinetic energy of the two products / (Mc\u00b2) [model-proposed; physical meaning unverified]": "-a**2/2 - b**2 + (1 - a)**2/2 + 1/2",
    "Ratio of kinetic energy of product 1 to total kinetic energy [model-proposed; physical meaning unverified]": "(-b**2 + (1 - a)**2)/(-a**2 - b**2 + (1 - a)**2 + 1)",
-   "Invariant mass squared of the system [model-proposed; physical meaning unverified]": "1 - (a + b)**2"
+   "Invariant mass squared of the system [model-proposed; physical meaning unverified]": "1 - (a + b)**2",
+   "Relative velocity squared of products [model-proposed; physical meaning unverified]": "(1 - (a - b)**2)*(1 - (a + b)**2)/((-a**2 + b**2 + 1)**2 + (a**2 - b**2 + 1)**2)"
   },
   "collision": {
    "target speed / initial speed": "(1 + e)*m/(1 + m)",
@@ -27,7 +28,8 @@
    "relative velocity after collision divided by initial velocity of projectile [model-proposed; physical meaning unverified]": "e*(1 - m)/(m + 1)",
    "Fraction of kinetic energy retained by projectile [model-proposed; physical meaning unverified]": "(-e**2*m + 1)/(m + 1)",
    "Fraction of kinetic energy retained by target [model-proposed; physical meaning unverified]": "e**2*(m**2 + 1)/(m + 1)**2",
-   "Fraction of kinetic energy retained by the system [model-proposed; physical meaning unverified]": "-m*(1 - e**2)*(e + 1)**2/(m + 1)**2 - m*(1 - e**2)/(m + 1) + 1"
+   "Fraction of kinetic energy retained by the system [model-proposed; physical meaning unverified]": "-m*(1 - e**2)*(e + 1)**2/(m + 1)**2 - m*(1 - e**2)/(m + 1) + 1",
+   "Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified]": "-e**2*m**2/(m + 1)**2 + 1"
   },
   "driven oscillator": {
    "amplitude / static deflection": "1/sqrt((1 - r**2)**2 + (2*z*r)**2)",
@@ -79,7 +81,8 @@
    "Scattered photon momentum / initial photon momentum [model-proposed; physical meaning unverified]": "sqrt(c**2*x**2 + 1)/(x*(c*x + 1))",
    "Scattered photon wavelength / Compton wavelength [model-proposed; physical meaning unverified]": "c/(c*x + 1) + (c*x + 1)/x",
    "Electron recoil angle (sine squared) [model-proposed; physical meaning unverified]": "1 - 1/(2*c**2*x**2 + 1)**2",
-   "Electron momentum fraction [model-proposed; physical meaning unverified]": "1 + sqrt(c**2*x**2/(c*x + 1)**2 + c*x**2/(c*x + 1))/(c*x + 1) + 1/(c*x + 1)"
+   "Electron momentum fraction [model-proposed; physical meaning unverified]": "1 + sqrt(c**2*x**2/(c*x + 1)**2 + c*x**2/(c*x + 1))/(c*x + 1) + 1/(c*x + 1)",
+   "Electron kinetic energy fraction [model-proposed; physical meaning unverified]": "c*x**2/(c*x**2 + 1)"
   },
   "Cournot duopoly": {
    "output of firm 1": "(1 - 2*c1 + c2)/3",
@@ -7026,6 +7029,206 @@
    "family": "Compton scattering",
    "expr": "1 + c/(x + 1)",
    "why": "affine combination of known quantities (scattered photon energy / initial energy, Scattered photon wavelength / initial photon wavelength [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "((1 - 2*c1 + c2)**2/9) / ((1 - 2*c2 + c1)**2/9)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "1 - p*L - (p*sqrt(1 - L) + 1 - p)**2 / (1 - p*L)",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "p*L / (1 - p*L - (p*sqrt(1 - L) + 1 - p)**2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "p*sqrt(1 - L) / (p*sqrt(1 - L) + 1 - p - (p*sqrt(1 - L) + 1 - p)**2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "p*sqrt(1 - L) / (1 - p*L - (p*sqrt(1 - L) + 1 - p)**2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(-2*r**3/3 + r**2*v + 2/3)/(2*(1 - r**3)/3 + v*r**2)",
+   "why": "must depend only on r, v"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(-2*r**3/3 + r**2*v + 2/3)/(2/3 + v**3/3)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(1/3 + r**2 - 4*r**3/3)/(2*(1 - r**3)/3 + v*r**2)",
+   "why": "affine combination of known quantities (1/(reserve price elasticity of welfare [model-proposed; physical meaning unverified]), 1/(Welfare Efficiency Ratio [model-proposed; physical meaning unverified]))"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(v*r**2)/(1/3 + r**2 - 4*r**3/3 + v*r**2)",
+   "why": "affine combination of known quantities (expected revenue, probability the seller's value is below reserve [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "((1 + a**2 - b**2)**2)/( (1 - a**2 + b**2)**2 )",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "((-b**2 + (1 - a)**2)**2)/((-a**2 + b**2)**2)",
+   "why": "not finite on the whole physical domain"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2 * m * (1 + m) / (1 + m)**2",
+   "why": "affine combination of known quantities (speed of the centre of mass / initial speed, Fraction of kinetic energy retained by projectile [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "(1 - e**2 * m) / (1 + m) + 1",
+   "why": "affine combination of known quantities (target speed / initial speed, Fraction of kinetic energy retained by projectile [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2 * (1 - m)**2 / (1 + m)**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "z**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(1 - z**2)/sqrt(1 + 4*z**2 - 4*z**2*r**2)",
+   "why": "not finite on the whole physical domain"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 - u**2)*(1 - v**2))/sqrt(1 - (u + v)**2/(1 + u*v)**2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "1/sqrt(1 - (u + v)**2/(1 + u*v)**2)",
+   "why": "affine combination of known quantities (composed speed / c, Lorentz factor of the composed motion)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "(u + v)/(1 + u*v)",
+   "why": "affine combination of known quantities (composed speed / c)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 + u)/(1 - u)) * sqrt((1 + v)/(1 - v))",
+   "why": "affine combination of known quantities (composed speed / c, Doppler factor of the composed motion)"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "1/(1 + x*c)**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "c/(x + 1) - 1",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "sqrt(c**2*x**2 + 1)/(x*(c*x + 1))",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, Scattered photon momentum / initial photon momentum [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "((1 - 2*c1 + c2)/3) / ((1 - 2*c2 + c1)/3)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "p*L / (p*sqrt(1 - L) + 1 - p - (p*sqrt(1 - L) + 1 - p)**2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(-2*r**3/3 + r**2*v + 2/3)/(2*(1 - r**3)/3 + v*r**2)",
+   "why": "must depend only on r, v"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(1/3 + r**2 - 4*r**3/3)/(2*(1 - r**3)/3 + v*r**2)",
+   "why": "affine combination of known quantities (1/(reserve price elasticity of welfare [model-proposed; physical meaning unverified]), 1/(Welfare Efficiency Ratio [model-proposed; physical meaning unverified]))"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(1/3 + r**2 - 4*r**3/3 + v*r**2)/(1/3 + r**2 - 4*r**3/3)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(1/3 - r**2 + 2*r**3/3)/(2*(1 - r**3)/3 + v*r**2)",
+   "why": "affine combination of known quantities (expected revenue, 1/(Welfare Efficiency Ratio [model-proposed; physical meaning unverified]))"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "((1 + a**2 - b**2)/(2*a)) / ((1 - a**2 + b**2)/(2*b))",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "((1 + a**2 - b**2)/2) / ((1 - a**2 + b**2)/2)",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), 1/(energy of product 2 / (Mc\u00b2)))"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "((1 - (a + b)**2)*(1 - (a - b)**2))/( (1 + a**2 - b**2)**2 )",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "((-b**2 + (1 - a)**2)/2) / ((-a**2 + b**2)/2)",
+   "why": "not finite on the whole physical domain"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2 * m**2 / (1 + m)**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2 * (1 + m)**2 / (1 + m)**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "atan(2*z*r/(1 - r**2))",
+   "why": "only + \u2212 \u00d7 \u00f7, integer powers and square roots (so the prover can decide it)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "z**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "r**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "1/sqrt((1 - r**2)**2 + (2*z*r)**2)",
+   "why": "affine combination of known quantities (amplitude / static deflection)"
   }
  ],
  "tried": [
@@ -8420,7 +8623,81 @@
   "Compton scattering|Electron momentum fraction [model-proposed; physical meaning unverified]|Scattered photon wavelength / initial photon wavelength [model-proposed; physical meaning unverified]",
   "Compton scattering|Electron momentum fraction [model-proposed; physical meaning unverified]|Scattered photon momentum / initial photon momentum [model-proposed; physical meaning unverified]",
   "Compton scattering|Electron momentum fraction [model-proposed; physical meaning unverified]|Scattered photon wavelength / Compton wavelength [model-proposed; physical meaning unverified]",
-  "Compton scattering|Electron momentum fraction [model-proposed; physical meaning unverified]|Electron recoil angle (sine squared) [model-proposed; physical meaning unverified]"
+  "Compton scattering|Electron momentum fraction [model-proposed; physical meaning unverified]|Electron recoil angle (sine squared) [model-proposed; physical meaning unverified]",
+  "two-body decay|momentum of each product / (Mc)|Relative velocity squared of products [model-proposed; physical meaning unverified]",
+  "two-body decay|energy of product 1 / (Mc\u00b2)|Relative velocity squared of products [model-proposed; physical meaning unverified]",
+  "two-body decay|energy of product 2 / (Mc\u00b2)|Relative velocity squared of products [model-proposed; physical meaning unverified]",
+  "two-body decay|kinetic energy released Q / (Mc\u00b2)|Relative velocity squared of products [model-proposed; physical meaning unverified]",
+  "two-body decay|kinetic energy of product 1 / (Mc\u00b2)|Relative velocity squared of products [model-proposed; physical meaning unverified]",
+  "two-body decay|speed of product 1 / c|Relative velocity squared of products [model-proposed; physical meaning unverified]",
+  "two-body decay|speed of product 2 / c|Relative velocity squared of products [model-proposed; physical meaning unverified]",
+  "two-body decay|Lorentz factor of product 1|Relative velocity squared of products [model-proposed; physical meaning unverified]",
+  "two-body decay|Invariant mass squared of the two products [model-proposed; physical meaning unverified]|Relative velocity squared of products [model-proposed; physical meaning unverified]",
+  "two-body decay|Ratio of kinetic energies of product 1 to product 2 [model-proposed; physical meaning unverified]|Relative velocity squared of products [model-proposed; physical meaning unverified]",
+  "two-body decay|Total kinetic energy of the two products / (Mc\u00b2) [model-proposed; physical meaning unverified]|Relative velocity squared of products [model-proposed; physical meaning unverified]",
+  "two-body decay|Ratio of kinetic energy of product 1 to total kinetic energy [model-proposed; physical meaning unverified]|Relative velocity squared of products [model-proposed; physical meaning unverified]",
+  "two-body decay|Invariant mass squared of the system [model-proposed; physical meaning unverified]|Relative velocity squared of products [model-proposed; physical meaning unverified]",
+  "two-body decay|Relative velocity squared of products [model-proposed; physical meaning unverified]|momentum of each product / (Mc)",
+  "two-body decay|Relative velocity squared of products [model-proposed; physical meaning unverified]|energy of product 1 / (Mc\u00b2)",
+  "two-body decay|Relative velocity squared of products [model-proposed; physical meaning unverified]|energy of product 2 / (Mc\u00b2)",
+  "two-body decay|Relative velocity squared of products [model-proposed; physical meaning unverified]|kinetic energy released Q / (Mc\u00b2)",
+  "two-body decay|Relative velocity squared of products [model-proposed; physical meaning unverified]|kinetic energy of product 1 / (Mc\u00b2)",
+  "two-body decay|Relative velocity squared of products [model-proposed; physical meaning unverified]|speed of product 1 / c",
+  "two-body decay|Relative velocity squared of products [model-proposed; physical meaning unverified]|speed of product 2 / c",
+  "two-body decay|Relative velocity squared of products [model-proposed; physical meaning unverified]|Lorentz factor of product 1",
+  "two-body decay|Relative velocity squared of products [model-proposed; physical meaning unverified]|Invariant mass squared of the two products [model-proposed; physical meaning unverified]",
+  "two-body decay|Relative velocity squared of products [model-proposed; physical meaning unverified]|Ratio of kinetic energies of product 1 to product 2 [model-proposed; physical meaning unverified]",
+  "two-body decay|Relative velocity squared of products [model-proposed; physical meaning unverified]|Total kinetic energy of the two products / (Mc\u00b2) [model-proposed; physical meaning unverified]",
+  "Compton scattering|scattered photon energy / initial energy|Electron kinetic energy fraction [model-proposed; physical meaning unverified]",
+  "Compton scattering|electron kinetic energy / photon energy|Electron kinetic energy fraction [model-proposed; physical meaning unverified]",
+  "Compton scattering|scattered photon energy / (m_e c\u00b2)|Electron kinetic energy fraction [model-proposed; physical meaning unverified]",
+  "Compton scattering|electron kinetic energy / (m_e c\u00b2)|Electron kinetic energy fraction [model-proposed; physical meaning unverified]",
+  "Compton scattering|wavelength shift / Compton wavelength|Electron kinetic energy fraction [model-proposed; physical meaning unverified]",
+  "Compton scattering|photon energy / (m_e c\u00b2)|Electron kinetic energy fraction [model-proposed; physical meaning unverified]",
+  "Compton scattering|Recoil electron momentum / (m_e c) [model-proposed; physical meaning unverified]|Electron kinetic energy fraction [model-proposed; physical meaning unverified]",
+  "Compton scattering|Electron recoil angle (cosine) [model-proposed; physical meaning unverified]|Electron kinetic energy fraction [model-proposed; physical meaning unverified]",
+  "Compton scattering|Compton wavelength shift / (initial photon wavelength) [model-proposed; physical meaning unverified]|Electron kinetic energy fraction [model-proposed; physical meaning unverified]",
+  "Compton scattering|Compton scattering formula (recoil angle cosine) [model-proposed; physical meaning unverified]|Electron kinetic energy fraction [model-proposed; physical meaning unverified]",
+  "Compton scattering|Scattered photon wavelength / initial photon wavelength [model-proposed; physical meaning unverified]|Electron kinetic energy fraction [model-proposed; physical meaning unverified]",
+  "Compton scattering|Scattered photon momentum / initial photon momentum [model-proposed; physical meaning unverified]|Electron kinetic energy fraction [model-proposed; physical meaning unverified]",
+  "Compton scattering|Scattered photon wavelength / Compton wavelength [model-proposed; physical meaning unverified]|Electron kinetic energy fraction [model-proposed; physical meaning unverified]",
+  "Compton scattering|Electron recoil angle (sine squared) [model-proposed; physical meaning unverified]|Electron kinetic energy fraction [model-proposed; physical meaning unverified]",
+  "Compton scattering|Electron momentum fraction [model-proposed; physical meaning unverified]|Electron kinetic energy fraction [model-proposed; physical meaning unverified]",
+  "Compton scattering|Electron kinetic energy fraction [model-proposed; physical meaning unverified]|scattered photon energy / initial energy",
+  "Compton scattering|Electron kinetic energy fraction [model-proposed; physical meaning unverified]|electron kinetic energy / photon energy",
+  "Compton scattering|Electron kinetic energy fraction [model-proposed; physical meaning unverified]|scattered photon energy / (m_e c\u00b2)",
+  "Compton scattering|Electron kinetic energy fraction [model-proposed; physical meaning unverified]|electron kinetic energy / (m_e c\u00b2)",
+  "Compton scattering|Electron kinetic energy fraction [model-proposed; physical meaning unverified]|wavelength shift / Compton wavelength",
+  "Compton scattering|Electron kinetic energy fraction [model-proposed; physical meaning unverified]|photon energy / (m_e c\u00b2)",
+  "Compton scattering|Electron kinetic energy fraction [model-proposed; physical meaning unverified]|Recoil electron momentum / (m_e c) [model-proposed; physical meaning unverified]",
+  "Compton scattering|Electron kinetic energy fraction [model-proposed; physical meaning unverified]|Electron recoil angle (cosine) [model-proposed; physical meaning unverified]",
+  "Compton scattering|Electron kinetic energy fraction [model-proposed; physical meaning unverified]|Compton wavelength shift / (initial photon wavelength) [model-proposed; physical meaning unverified]",
+  "two-body decay|Relative velocity squared of products [model-proposed; physical meaning unverified]|Ratio of kinetic energy of product 1 to total kinetic energy [model-proposed; physical meaning unverified]",
+  "two-body decay|Relative velocity squared of products [model-proposed; physical meaning unverified]|Invariant mass squared of the system [model-proposed; physical meaning unverified]",
+  "collision|target speed / initial speed|Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified]",
+  "collision|momentum transferred / initial momentum|Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified]",
+  "collision|fraction of kinetic energy lost|Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified]",
+  "collision|fraction of kinetic energy given to the target|Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified]",
+  "collision|speed of the centre of mass / initial speed|Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified]",
+  "collision|relative speed after / relative speed before|Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified]",
+  "collision|velocity ratio of target to projectile after collision [model-proposed; physical meaning unverified]|Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified]",
+  "collision|velocity ratio of projectile to target after collision [model-proposed; physical meaning unverified]|Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified]",
+  "collision|relative velocity after collision divided by initial velocity of projectile [model-proposed; physical meaning unverified]|Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified]",
+  "collision|Fraction of kinetic energy retained by projectile [model-proposed; physical meaning unverified]|Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified]",
+  "collision|Fraction of kinetic energy retained by target [model-proposed; physical meaning unverified]|Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified]",
+  "collision|Fraction of kinetic energy retained by the system [model-proposed; physical meaning unverified]|Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified]",
+  "collision|Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified]|target speed / initial speed",
+  "collision|Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified]|momentum transferred / initial momentum",
+  "collision|Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified]|fraction of kinetic energy lost",
+  "collision|Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified]|fraction of kinetic energy given to the target",
+  "collision|Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified]|speed of the centre of mass / initial speed",
+  "collision|Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified]|relative speed after / relative speed before",
+  "collision|Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified]|velocity ratio of target to projectile after collision [model-proposed; physical meaning unverified]",
+  "collision|Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified]|velocity ratio of projectile to target after collision [model-proposed; physical meaning unverified]",
+  "collision|Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified]|relative velocity after collision divided by initial velocity of projectile [model-proposed; physical meaning unverified]",
+  "collision|Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified]|Fraction of kinetic energy retained by projectile [model-proposed; physical meaning unverified]",
+  "collision|Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified]|Fraction of kinetic energy retained by target [model-proposed; physical meaning unverified]",
+  "collision|Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified]|Fraction of kinetic energy retained by the system [model-proposed; physical meaning unverified]"
  ],
  "edges": [
   {
@@ -10594,9 +10871,177 @@
    "f": "Electron momentum fraction [model-proposed; physical meaning unverified]",
    "g": "Scattered photon wavelength / initial photon wavelength [model-proposed; physical meaning unverified]",
    "k": "2/3"
+  },
+  {
+   "family": "two-body decay",
+   "f": "momentum of each product / (Mc)",
+   "g": "Relative velocity squared of products [model-proposed; physical meaning unverified]",
+   "k": "1"
+  },
+  {
+   "family": "two-body decay",
+   "f": "energy of product 1 / (Mc\u00b2)",
+   "g": "Relative velocity squared of products [model-proposed; physical meaning unverified]",
+   "k": "1"
+  },
+  {
+   "family": "two-body decay",
+   "f": "energy of product 2 / (Mc\u00b2)",
+   "g": "Relative velocity squared of products [model-proposed; physical meaning unverified]",
+   "k": "1"
+  },
+  {
+   "family": "two-body decay",
+   "f": "kinetic energy released Q / (Mc\u00b2)",
+   "g": "Relative velocity squared of products [model-proposed; physical meaning unverified]",
+   "k": "1"
+  },
+  {
+   "family": "two-body decay",
+   "f": "speed of product 1 / c",
+   "g": "Relative velocity squared of products [model-proposed; physical meaning unverified]",
+   "k": "2"
+  },
+  {
+   "family": "two-body decay",
+   "f": "speed of product 2 / c",
+   "g": "Relative velocity squared of products [model-proposed; physical meaning unverified]",
+   "k": "2"
+  },
+  {
+   "family": "two-body decay",
+   "f": "Ratio of kinetic energies of product 1 to product 2 [model-proposed; physical meaning unverified]",
+   "g": "Relative velocity squared of products [model-proposed; physical meaning unverified]",
+   "k": "1"
+  },
+  {
+   "family": "two-body decay",
+   "f": "Invariant mass squared of the system [model-proposed; physical meaning unverified]",
+   "g": "Relative velocity squared of products [model-proposed; physical meaning unverified]",
+   "k": "2"
+  },
+  {
+   "family": "Compton scattering",
+   "f": "scattered photon energy / initial energy",
+   "g": "Electron kinetic energy fraction [model-proposed; physical meaning unverified]",
+   "k": "9/40"
+  },
+  {
+   "family": "Compton scattering",
+   "f": "electron kinetic energy / photon energy",
+   "g": "Electron kinetic energy fraction [model-proposed; physical meaning unverified]",
+   "k": "1/2"
+  },
+  {
+   "family": "Compton scattering",
+   "f": "scattered photon energy / (m_e c\u00b2)",
+   "g": "Electron kinetic energy fraction [model-proposed; physical meaning unverified]",
+   "k": "9/20"
+  },
+  {
+   "family": "Compton scattering",
+   "f": "wavelength shift / Compton wavelength",
+   "g": "Electron kinetic energy fraction [model-proposed; physical meaning unverified]",
+   "k": "1/4"
+  },
+  {
+   "family": "Compton scattering",
+   "f": "Compton wavelength shift / (initial photon wavelength) [model-proposed; physical meaning unverified]",
+   "g": "Electron kinetic energy fraction [model-proposed; physical meaning unverified]",
+   "k": "1/8"
+  },
+  {
+   "family": "Compton scattering",
+   "f": "Compton scattering formula (recoil angle cosine) [model-proposed; physical meaning unverified]",
+   "g": "Electron kinetic energy fraction [model-proposed; physical meaning unverified]",
+   "k": "1/8"
+  },
+  {
+   "family": "Compton scattering",
+   "f": "Electron kinetic energy fraction [model-proposed; physical meaning unverified]",
+   "g": "electron kinetic energy / (m_e c\u00b2)",
+   "k": "5/9"
+  },
+  {
+   "family": "collision",
+   "f": "momentum transferred / initial momentum",
+   "g": "Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified]",
+   "k": "1/2"
+  },
+  {
+   "family": "collision",
+   "f": "Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified]",
+   "g": "target speed / initial speed",
+   "k": "3/4"
+  },
+  {
+   "family": "collision",
+   "f": "Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified]",
+   "g": "momentum transferred / initial momentum",
+   "k": "1/2"
+  },
+  {
+   "family": "collision",
+   "f": "Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified]",
+   "g": "fraction of kinetic energy lost",
+   "k": "1"
+  },
+  {
+   "family": "collision",
+   "f": "Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified]",
+   "g": "fraction of kinetic energy given to the target",
+   "k": "3/4"
+  },
+  {
+   "family": "collision",
+   "f": "Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified]",
+   "g": "speed of the centre of mass / initial speed",
+   "k": "3/2"
+  },
+  {
+   "family": "collision",
+   "f": "Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified]",
+   "g": "relative speed after / relative speed before",
+   "k": "3/4"
+  },
+  {
+   "family": "collision",
+   "f": "Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified]",
+   "g": "velocity ratio of target to projectile after collision [model-proposed; physical meaning unverified]",
+   "k": "3/4"
+  },
+  {
+   "family": "collision",
+   "f": "Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified]",
+   "g": "velocity ratio of projectile to target after collision [model-proposed; physical meaning unverified]",
+   "k": "1"
+  },
+  {
+   "family": "collision",
+   "f": "Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified]",
+   "g": "relative velocity after collision divided by initial velocity of projectile [model-proposed; physical meaning unverified]",
+   "k": "1"
+  },
+  {
+   "family": "collision",
+   "f": "Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified]",
+   "g": "Fraction of kinetic energy retained by projectile [model-proposed; physical meaning unverified]",
+   "k": "1"
+  },
+  {
+   "family": "collision",
+   "f": "Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified]",
+   "g": "Fraction of kinetic energy retained by target [model-proposed; physical meaning unverified]",
+   "k": "1"
+  },
+  {
+   "family": "collision",
+   "f": "Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified]",
+   "g": "Fraction of kinetic energy retained by the system [model-proposed; physical meaning unverified]",
+   "k": "3/4"
   }
  ],
- "rounds": 373,
+ "rounds": 387,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",
