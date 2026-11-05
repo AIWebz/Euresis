@@ -85,19 +85,43 @@ def download(which: str | None = None, log=print) -> Path:
     return out
 
 
-def mem_available_gb() -> float:
-    """Free memory as the kernel reports it (MemAvailable), in GB; inf if unknown."""
+def _cgroup_free_gb() -> float:
+    """Free memory under this container's memory limit (cgroup v2 or v1), counting reclaimable inactive file
+    cache as free; inf if there is no limit. The kernel kills a process when the cgroup limit is hit, even while
+    /proc/meminfo still shows memory available, so this is the number that matters."""
     try:
-        for line in Path("/proc/meminfo").read_text().splitlines():
-            if line.startswith("MemAvailable:"):
-                return int(line.split()[1]) / 1e6
-    except OSError:
+        cg = next((l.split(":", 2)[2] for l in Path("/proc/self/cgroup").read_text().splitlines()
+                   if l.split(":")[1] in ("memory", "")), "/")
+        for base, lim, cur in ((Path("/sys/fs/cgroup") / cg.lstrip("/"), "memory.max", "memory.current"),
+                               (Path("/sys/fs/cgroup/memory") / cg.lstrip("/"), "memory.limit_in_bytes",
+                                "memory.usage_in_bytes")):
+            if (base / lim).exists() and (base / cur).exists():
+                raw = (base / lim).read_text().strip()
+                if raw == "max" or int(raw) > 1 << 60:
+                    return float("inf")
+                stat = dict(l.split() for l in (base / "memory.stat").read_text().splitlines() if " " in l)
+                free = int(raw) - int((base / cur).read_text()) + int(stat.get("inactive_file", 0))
+                return free / 1e9
+    except (OSError, ValueError, StopIteration, IndexError):
         pass
     return float("inf")
 
 
+def mem_available_gb() -> float:
+    """Free memory in GB: the smaller of the container limit's headroom and the kernel's MemAvailable."""
+    avail = float("inf")
+    try:
+        for line in Path("/proc/meminfo").read_text().splitlines():
+            if line.startswith("MemAvailable:"):
+                avail = int(line.split()[1]) / 1e6
+    except OSError:
+        pass
+    return min(avail, _cgroup_free_gb())
+
+
 def mem_needed_gb() -> float:
-    return MODELS[size()]["size_gb"] + 2.5      # weights + context and compute buffers
+    # measured for the 8B model: ~6.8 GB private memory (llama.cpp repacks the weights) + context buffers
+    return MODELS[size()]["size_gb"] + 2.5
 
 
 def touch_chat():

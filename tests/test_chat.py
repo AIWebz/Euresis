@@ -86,3 +86,32 @@ def test_context_uses_exact_claim_ids():
     c = rows[len(rows) // 2]
     ctx, claims = chat.context_for(f"explain [{c['id']}]")
     assert claims[0]["id"] == c["id"] and c["id"] in ctx and f"status: {c['status']}" in ctx
+
+
+def test_euresis_lm_chooses_laws_when_installed():
+    from euresis.lm.model import EuresisLM
+    steps = []
+    lines = chat.kb_hits("How hot is a black hole?", emit=steps.append)
+    assert lines and steps
+    if EuresisLM.available():
+        assert steps[0]["text"].startswith("Euresis-LM + word matching") and "Hawking" in steps[0]["text"]
+
+
+def test_citation_check_flags_ids_not_supplied(monkeypatch):
+    def fake_answer(turns, claims, emit):
+        emit({"type": "token", "text": "As shown in [abc-0123456789ab], black holes are hot."})
+    monkeypatch.setattr(chat, "_answer", fake_answer)
+    evs = []
+    chat.ask([{"role": "user", "content": "How hot is a black hole?"}], evs.append)
+    text = "".join(e["text"] for e in evs if e["type"] == "token")
+    assert "Citation check" in text and "abc-0123456789ab" in text.split("Citation check")[1]
+
+
+def test_status_check_flags_statuses_without_gate_results(monkeypatch):
+    def fake_answer(turns, claims, emit):
+        emit({"type": "token", "text": "This result is verified-numeric in Euresis."})
+    monkeypatch.setattr(chat, "_answer", fake_answer)
+    monkeypatch.setattr(chat, "claim_hits", lambda q, k=8: [])
+    evs = []
+    chat.ask([{"role": "user", "content": "How hot is a black hole?"}], evs.append)
+    assert "Status check" in "".join(e["text"] for e in evs if e["type"] == "token")

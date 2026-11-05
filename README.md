@@ -30,8 +30,11 @@ dark themes, and a phone layout. Replies stream in as they are written. Two mode
 * **Research**: the full reasoning loop. The model proposes claims, the verification gate decides each one,
   and the page shows the live research log, a card for every claim decided in the run, and the final report.
 
-It uses Claude when `ANTHROPIC_API_KEY` is set, otherwise the local Qwen3 model, otherwise an offline summary of
-matching results. Chats are kept in the browser. The server binds to 127.0.0.1 and has no login; use
+Who does what: **Euresis-LM** (Euresis' own 5.8 M-parameter model) and word matching choose which laws from the
+knowledge base are relevant, using the same fusion as the mystery solver; Euresis' registry and verification gate
+supply every claim and its status; the reply text is written by Claude when `ANTHROPIC_API_KEY` is set, otherwise
+by the local Qwen3 model, otherwise it is an offline summary of matching results. Euresis-LM is too small to write
+conversational replies itself. Chats are kept in the browser. The server binds to 127.0.0.1 and has no login; use
 `--host 0.0.0.0` only on a network you trust. With the local model an Ask reply takes about 1 minute on this
 container's CPU (slower while the discovery daemon is running) and Research takes several minutes.
 

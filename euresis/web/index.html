@@ -519,7 +519,8 @@ async function refreshSide() {
     const s = await (await fetch("/api/status")).json();
     const proved = (s.claims && s.claims.proved) || 0;
     $("#dot").classList.toggle("live", !!s.daemon);
-    $("#st1").textContent = `Model: ${s.backend}`;
+    $("#st1").textContent = `Writer: ${s.backend} · laws: ${s.laws_by === "word matching" ? "word matching" : "Euresis-LM"}`;
+    $("#st1").title = `Replies are written by ${s.backend}; the relevant laws are chosen by ${s.laws_by}; claim statuses come only from Euresis' verification gate.`;
     $("#st2").textContent = `${proved.toLocaleString()} proved · discovery ${s.daemon ? "running" : "stopped"}`;
   } catch (e) { $("#st1").textContent = "server not reachable"; $("#st2").textContent = ""; }
   try {

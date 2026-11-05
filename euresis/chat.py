@@ -4,8 +4,9 @@
 
 Two modes, both streamed to the page as they run:
 
-* **Ask** — a conversational answer grounded in Euresis' knowledge base and its gate-verified results
-  (Claude if ANTHROPIC_API_KEY is set, else the local Qwen3 model, else an offline summary of what is known).
+* **Ask** — a conversational answer grounded in Euresis' knowledge base and its gate-verified results. Euresis-LM
+  (Euresis' own 5.8 M-parameter model) and word matching choose the relevant laws; the reply is written by Claude
+  if ANTHROPIC_API_KEY is set, else the local Qwen3 model, else it is an offline summary of what is known.
 * **Research** — the full reasoning loop: the model proposes claims, the verification gate decides their
   status, and the page shows every step and every claim with its honest label (proved / numerically verified /
   confirmed on held-out data / refuted).
@@ -35,11 +36,13 @@ ASK_SYSTEM = (
     "You are Euresis, a scientific discovery engine, talking with a user in a chat. Answer clearly and directly, "
     "using the <knowledge> block: it holds textbook laws from Euresis' knowledge base and results from Euresis' "
     "own verification gate, each with its exact status. Rules: (1) Never call something proved, verified or new "
-    "unless the knowledge block gives it that status; quote statuses and claim ids exactly, e.g. [phy-3f4efb7aaf51]. "
+    "unless the knowledge block gives it that status; cite a claim id only if it appears in the knowledge block, copied "
+    "exactly, and only for the result it belongs to; textbook laws have no claim id. "
     "(2) 'novelty unchecked' means nobody has checked whether it is already published — say so rather than calling "
     "it new. (3) Empirical findings are evidence from data, not proofs. (4) If the knowledge block does not cover "
     "the question, answer from general knowledge and say that this part is not verified by Euresis; suggest "
-    "Research mode when a claim could be proved. Use Markdown; write equations in plain text or simple LaTeX.")
+    "Research mode when a claim could be proved. (5) Textbook laws are established science, not Euresis results: give them no gate status. Use Markdown; "
+    "write equations in plain text with Unicode symbols (e.g. T = ħc³ / (8πGMk_B)), not LaTeX.")
 
 STOP = set("the of and a an to in is for by on with as at from that this be are or it its into what which how why "
            "does do can could would should about any there their them they you your me my we our has have had was "
@@ -50,6 +53,8 @@ CATEGORY = {"games_log.md": "Games", "physics2_log.md": "Physics & economics", "
 LOG_LINE = re.compile(r"^- (\d{4}-\d\d-\d\d \d\d:\d\d) (DISCOVERY|FINDING|SOLVED|THEOREM)\b\s*(?:\(([^)]*)\))?:?\s*"
                       r"(.*?)\s*\[([a-z]{3}-[0-9a-f]{12})\]\s*$")
 CLAIM_ID = re.compile(r"\b([a-z]{3}-[0-9a-f]{12})\b")
+STATUS_WORDS = re.compile(r"verified-numeric|numerically verified|\b(?:is|was|been|are|were) (?:proved|proven|refuted)\b|"
+                          r"\bconfirmed on held-out", re.I)
 
 
 # ------------------------------------------------------------------ knowledge
@@ -95,18 +100,54 @@ def overview() -> str:
     return "\n".join(lines)
 
 
-def kb_hits(q: str, k: int = 5) -> list[str]:
+def _kb():
+    if "retr" not in _CACHE:
+        from .kb import KnowledgeBase
+        from .model import TextRetriever
+        kb = KnowledgeBase()
+        _CACHE["kb"], _CACHE["retr"] = kb, TextRetriever(kb.documents())
+    return _CACHE["kb"], _CACHE["retr"]
+
+
+def euresis_lm():
+    """Euresis' own language model (5.8 M parameters, trained on its knowledge base), or None."""
+    if "lm" not in _CACHE:
+        try:
+            from .lm.model import EuresisLM
+            _CACHE["lm"] = EuresisLM.load() if EuresisLM.available() else None
+        except Exception:
+            _CACHE["lm"] = None
+    return _CACHE["lm"]
+
+
+def relevant_laws(q: str, k: int = 5) -> tuple[list, bool]:
+    """The laws a question is about: Euresis-LM ranks every law in the knowledge base and is fused with word
+    matching (word-matching led), the combination that measured best in `euresis lm eval` (74% top-1 on held-out
+    phrasings vs 68% for word matching alone)."""
+    kb, retr = _kb()
+    hits = retr.search(q, 14)
+    laws = [kb.by_name(d[1]) for d, _ in hits if d[0] == "formula" and kb.by_name(d[1])]
+    lm = euresis_lm()
+    if lm is None or not kb.formulas:
+        return laws[:k], False
+    names = [f.name for f in kb.formulas]
+    r_lm = {n: i for i, (n, _) in enumerate(lm.rank(q, names))}
+    r_wm = {f.name: i for i, f in enumerate(laws)}
+    fused = sorted(names, key=lambda n: -(0.5 / (10 + r_lm.get(n, 999)) + 1 / (10 + r_wm.get(n, 999))))
+    return [kb.by_name(n) for n in fused[:k]], True
+
+
+def kb_hits(q: str, k: int = 5, emit=None) -> list[str]:
     try:
-        if "retr" not in _CACHE:
-            from .kb import KnowledgeBase
-            from .model import TextRetriever
-            kb = KnowledgeBase()
-            _CACHE["kb"], _CACHE["retr"] = kb, TextRetriever(kb.documents())
-        kb, retr = _CACHE["kb"], _CACHE["retr"]
-        out = []
-        for (kind, title, text), _ in retr.search(q, k=k):
-            f = kb.by_name(title)
-            out.append(f"- [textbook {kind}] {title}: {f.pretty() if f else text[:300]}")
+        kb, retr = _kb()
+        laws, used_lm = relevant_laws(q, k)
+        if emit:
+            emit({"type": "step", "text": ("Euresis-LM + word matching" if used_lm else "word matching") +
+                  " chose the relevant laws: " + "; ".join(f.name for f in laws)})
+        out = [f"- [textbook law] {f.name}: {f.pretty()}" for f in laws]
+        for (kind, title, text), _ in retr.search(q, 8):          # principles and constants by word matching
+            if kind != "formula" and len(out) < k + 3:
+                out.append(f"- [textbook {kind}] {title}: {text[:300]}")
         return out
     except Exception:          # the chat still works without the knowledge base
         return []
@@ -133,9 +174,9 @@ def claim_hits(q: str, k: int = 8) -> list[dict]:
     return out
 
 
-def context_for(q: str) -> tuple[str, list[dict]]:
+def context_for(q: str, emit=None) -> tuple[str, list[dict]]:
     claims = claim_hits(q)
-    lines = [overview()] + kb_hits(q)
+    lines = [overview()] + kb_hits(q, emit=emit)
     for c in claims:
         nov = f"; novelty: {c['novelty']}" if c.get("novelty") else ""
         lines.append(f"- [Euresis {c['kind']} claim {c['id']}] status: {c['status']} ({label(c)}{nov}) — {c['statement']}")
@@ -197,7 +238,9 @@ def backend() -> str:
 
 def status() -> dict:
     st = Registry().stats()
+    from .lm.model import EuresisLM
     return {"backend": backend(), "daemon": daemon_running(), "claims": st,
+            "laws_by": "Euresis-LM + word matching" if EuresisLM.available() else "word matching",
             "fake": bool(os.environ.get("EURESIS_CHAT_FAKE"))}
 
 
@@ -216,11 +259,33 @@ def _history(messages: list[dict], budget: int = 6000) -> list[dict]:
 
 def ask(messages: list[dict], emit) -> None:
     q = str(messages[-1]["content"])
-    ctx, claims = context_for(q)
+    ctx, claims = context_for(q, emit)
     for c in claims[:6]:
         emit({"type": "claim", "claim": claim_card(c), "source": "context"})
     content = f"<knowledge>\n{ctx}\n</knowledge>\n\n{q}"
     turns = _history(messages) + [{"role": "user", "content": content}]
+    allowed, written = set(CLAIM_ID.findall(ctx)), []
+    raw_emit = emit
+
+    def emit(ev):                                       # keep the reply text for the citation check below
+        if ev.get("type") == "token":
+            written.append(ev["text"])
+        raw_emit(ev)
+    try:
+        _answer(turns, claims, emit)
+    finally:
+        reply = "".join(written)
+        bad = sorted(set(CLAIM_ID.findall(reply)) - allowed)
+        if not claims and STATUS_WORDS.search(reply):    # a gate status with no gate result behind it
+            raw_emit({"type": "token", "text": "\n\n> **Status check:** Euresis' verification gate supplied no results "
+                      "for this question, so any proved / verified status mentioned above does not come from Euresis."})
+        if bad:       # a cited id Euresis did not supply for this question: say so instead of letting it stand
+            raw_emit({"type": "token", "text": "\n\n> **Citation check:** " + ", ".join(f"`{b}`" for b in bad) +
+                      (" is" if len(bad) == 1 else " are") + " not among the results Euresis supplied for this "
+                      "question, so that citation is not supported; ignore it."})
+
+
+def _answer(turns, claims, emit):
     if os.environ.get("EURESIS_CHAT_FAKE"):            # UI testing without loading a model
         emit({"type": "backend", "name": "test backend"})
         for w in re.findall(r"\S+\s*", "This is a test reply (EURESIS_CHAT_FAKE is set). Relevant verified results "
@@ -421,7 +486,7 @@ class Handler(BaseHTTPRequestHandler):
 def serve(host: str = "127.0.0.1", port: int = 8765, log=print) -> None:
     srv = ThreadingHTTPServer((host, port), Handler)
     srv.daemon_threads = True
-    threading.Thread(target=lambda: (claims_index(), kb_hits("warm up")), daemon=True).start()   # first reply fast
+    threading.Thread(target=lambda: (claims_index(), euresis_lm(), kb_hits("warm up")), daemon=True).start()   # first reply fast
     threading.Thread(target=_idle_unloader, daemon=True).start()
     log(f"Euresis Chat on http://{host}:{port}  (backend: {backend()}; Ctrl-C to stop)")
     try:
