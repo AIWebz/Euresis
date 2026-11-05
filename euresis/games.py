@@ -22,6 +22,7 @@ from __future__ import annotations
 
 import itertools
 import json
+import os
 import time
 
 import numpy as np
@@ -110,19 +111,28 @@ def codes(max_digits: int):
                 yield "".join(ds)
 
 
-def run(max_digits: int = 3, N: int = 1500, reg: Registry | None = None, echo=print, max_minutes: float = 60) -> dict:
+def _solve(arg):
+    """Worker: Grundy values and period for one game (runs in parallel processes)."""
+    code, N = arg
+    return code, find_period(grundy(code, N), len(code))
+
+
+def run(max_digits: int = 3, N: int = 1500, reg: Registry | None = None, echo=print, max_minutes: float = 60,
+        workers_all: bool = True) -> dict:
     from . import gate
     reg = reg or Registry()
     st = json.loads(STATE.read_text()) if STATE.exists() else {"solved": {}, "unresolved": [], "done": []}
     t0 = time.time()
     done = set(st["done"])
-    for code in codes(max_digits):
-        if code in done:
-            continue
+    pending = [c for c in codes(max_digits) if c not in done]
+    workers = max(1, (os.cpu_count() or 2) - (0 if workers_all else 1))
+    import multiprocessing as mp
+    pool = mp.get_context("fork").Pool(workers) if workers > 1 and len(pending) > 20 else None
+    results = (pool.imap(_solve, [(c, N) for c in pending], chunksize=8) if pool
+               else map(_solve, [(c, N) for c in pending]))
+    for code, per in results:
         if time.time() - t0 > max_minutes * 60:
             break
-        G = grundy(code, N)
-        per = find_period(G, len(code))
         st["done"].append(code)
         done.add(code)
         if per is None:
@@ -148,6 +158,8 @@ def run(max_digits: int = 3, N: int = 1500, reg: Registry | None = None, echo=pr
                 log(f"SOLVED (proved): 0.{code} — pre-period {n0}, period {p}  [{cid}]", echo)
         if len(done) % 100 == 0:
             save(st)
+    if pool:
+        pool.terminate()
     save(st)
     log(f"games: {len(st['solved'])} octal games solved, {len(st['unresolved'])} unresolved up to n = {N}", echo)
     return st

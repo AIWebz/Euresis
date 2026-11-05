@@ -213,6 +213,32 @@ def _payload_hint(kind: str, payload: dict, evidence) -> str:
     return "; ".join(tips)
 
 
+LOCAL_SYSTEM = """You are the reasoning core of Euresis, a scientific discovery system. You propose hypotheses and
+claims; Euresis' verifiers decide what is true — you never set a claim's status.
+1. Search knowledge and literature first. 2. Optionally call propose with hypotheses and a short plan.
+3. Explore with computer_algebra, check_dimensions, simulate, run_experiment, run_python (working notes only).
+4. Send every claim you will report through submit_claim, stated exactly; say known_as if it is an established result.
+5. Final report: cite each result by its claim id in square brackets, e.g. [z3-0123456789ab]; Euresis fills in the
+status the gate recorded. Label anything without a claim id as speculation. A discovery is proved AND not known."""
+
+
+def _compact(tool: dict) -> dict:
+    """Shorter tool description for the local model (fewer prompt tokens to read on a CPU). submit_claim keeps its
+    payload formats, which the model needs to state claims exactly."""
+    d = tool["description"]
+    if tool["name"] != "submit_claim":
+        d = d.split(". ")[0].rstrip(".") + "."
+    else:
+        d = ("Submit a claim to the verification gate (it, not you, decides the status). Payloads — z3: {claim, "
+             "variables:{x:Real}}; identity: {lhs, rhs, symbols}; inequality: {P, Q, k} in a,b,c>0; physics-relation: "
+             "{claim, symbols, assumptions}; constant: {a, b, value} continued fraction.")
+    def strip(schema):
+        if isinstance(schema, dict):
+            return {k: strip(v) for k, v in schema.items() if k != "description"}
+        return schema
+    return {**tool, "description": d, "input_schema": strip(tool["input_schema"])}
+
+
 class ReasoningCore:
     def __init__(self, kb: KnowledgeBase, engine: Engine, model, space: ThoughtSpace | None,
                  registry: Registry | None = None, log=print):
@@ -408,7 +434,7 @@ class ReasoningCore:
     # -------------------------------------------------------------- loop
     def research(self, question: str, max_turns: int = 30, client=None, backend: str = "auto",
                  think: bool = False) -> str | None:
-        """backend: 'claude' (API), 'local' (Qwen3-14B on this machine), 'auto' (Claude if credentials, else local)."""
+        """backend: 'claude' (API), 'local' (Qwen3 8B/14B on this machine), 'auto' (Claude if credentials, else local)."""
         from . import local_llm
         if backend == "auto":
             backend = ("claude" if client is not None or self._has_credentials()
@@ -478,6 +504,7 @@ class ReasoningCore:
                                 "content": json.dumps(out, default=str)[:20000], "is_error": err})
             messages.append({"role": "user", "content": results})
         self.log("Stopped after the maximum number of turns.")
+        self.ended = f"stopped after the maximum of {max_turns} turns before the model wrote a report or submitted a claim"
         return self._partial()
 
     # ------------------------------------------------------- local model loop
@@ -485,17 +512,18 @@ class ReasoningCore:
                    "propose", "submit_claim", "simulate", "run_experiment", "run_python", "record_idea")
 
     def _research_local(self, question: str, max_turns: int = 16, think: bool = False) -> str | None:
-        """Same tools, same gate, same report — driven by Qwen3-14B running on this machine."""
+        """Same tools, same gate, same report — driven by the local Qwen3 model (8B or 14B) on this machine."""
         from . import local_llm
         if not local_llm.available():
             self.log("Local model not installed: `pip install llama-cpp-python` and `python -m euresis local download`.")
             return None
-        self.backend_name, self.question = "local Qwen3-14B", question
+        name = local_llm.MODELS[local_llm.size()]["file"].split("-Q")[0]
+        self.backend_name, self.question = f"local {name}", question
         if self.space is not None:
             self.qid = self.space.add("question", question, status="research question", domain="method",
-                                      body="Investigated by the reasoning core (local Qwen3-14B).", score=1.0)
-        tools = [t for t in TOOLS if t["name"] in self.LOCAL_TOOLS]
-        system = SYSTEM + ("\n\nCall tools with <tool_call> blocks as described below. If submit_claim returns a "
+                                      body=f"Investigated by the reasoning core ({self.backend_name}).", score=1.0)
+        tools = [_compact(t) for t in TOOLS if t["name"] in self.LOCAL_TOOLS]
+        system = LOCAL_SYSTEM + ("\n\nCall tools with <tool_call> blocks as described below. If submit_claim returns a "
                            "fix_hint, correct the payload and resubmit (up to two retries) before reporting. "
                            "When you are finished, write the final report with no tool calls.")
         llm = local_llm.load(log=self.log)
@@ -515,7 +543,7 @@ class ReasoningCore:
                 text = self.final_report(r["text"])
                 if self.space is not None:
                     self.space.add("insight", f"Research report: {question[:80]}", body=text[:6000], domain="method",
-                                   parents=[self.qid], status="reasoning-core report (local Qwen3-14B)", score=1.0)
+                                   parents=[self.qid], status=f"reasoning-core report ({self.backend_name})", score=1.0)
                 return text
             for c in r["calls"]:
                 self.log(f"      {c['name']}({json.dumps(c['arguments'])[:110]})")
@@ -527,13 +555,14 @@ class ReasoningCore:
                 self._note(c["name"], c["arguments"], out)
                 messages.append({"role": "tool", "content": json.dumps(out, default=str)[:2500]})
         self.log("Stopped after the maximum number of turns.")
+        self.ended = f"stopped after the maximum of {max_turns} turns before the model wrote a report or submitted a claim"
         return self._partial()
 
     def _partial(self) -> str | None:
         """The run ended early: report what the gate decided so far (nothing if no claims)."""
         if not self.session_claims:
             return None
-        return self.final_report("*The run ended before Claude wrote its report; only gated claims are shown.*")
+        return self.final_report("*The run ended before the model wrote its report; only gated claims are shown.*")
 
     @staticmethod
     def _has_credentials() -> bool:

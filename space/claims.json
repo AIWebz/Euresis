@@ -555515,5 +555515,64 @@
   "statement": "Octal game 0.114534 is completely solved: its Grundy values are periodic with pre-period 4 and period 14 (Guy\u2013Smith periodicity theorem)",
   "status": "candidate",
   "verifier": null
+ },
+ {
+  "evidence": {
+   "error": "SympifyError: Sympify of expression 'could not parse 'Relativistic kinetic energy'' failed, because of exception being raised:\nSyntaxError: invalid syntax (<string>, line 1)"
+  },
+  "id": "ine-689be17330ff",
+  "kind": "inequality",
+  "novelty": "known (Relativistic kinetic energy is greater than or equal to classical kinetic energy in the range 0 < v < c)",
+  "payload": {
+   "P": "Relativistic kinetic energy",
+   "Q": "Classical kinetic energy",
+   "k": "For all velocities 0 < v < c"
+  },
+  "source": "reasoning-core (local Qwen3-14B): Is relativistic kinetic energy always at least the classical value m v^2/2 for 0",
+  "statement": "Relativistic kinetic energy is always at least the classical value m v^2/2 for 0 < v < c.",
+  "status": "unverified",
+  "verifier": "z3+sampling"
+ },
+ {
+  "evidence": {
+   "error": "TypeError: name should be a string, not <class 'dict'>"
+  },
+  "id": "phy-5f0c77873812",
+  "kind": "physics-relation",
+  "novelty": "known (Relativistic kinetic energy is greater than or equal to classical kinetic energy in the range 0 < v < c)",
+  "payload": {
+   "claim": "K_relativistic >= K_classical",
+   "symbols": [
+    {
+     "new_quantity_dimension": "energy",
+     "quantity_id": "kinetic energy",
+     "symbol": "K_relativistic"
+    },
+    {
+     "new_quantity_dimension": "energy",
+     "quantity_id": "kinetic energy",
+     "symbol": "K_classical"
+    },
+    {
+     "new_quantity_dimension": "mass",
+     "quantity_id": "mass",
+     "symbol": "m"
+    },
+    {
+     "new_quantity_dimension": "velocity",
+     "quantity_id": "velocity",
+     "symbol": "v"
+    },
+    {
+     "new_quantity_dimension": "speed",
+     "quantity_id": "speed of light",
+     "symbol": "c"
+    }
+   ]
+  },
+  "source": "reasoning-core (local Qwen3-14B): Is relativistic kinetic energy always at least the classical value m v^2/2 for 0",
+  "statement": "Relativistic kinetic energy is always at least the classical value m v^2/2 for 0 < v < c.",
+  "status": "unverified",
+  "verifier": "z3-sqrt"
  }
 ]

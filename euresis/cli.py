@@ -101,7 +101,8 @@ def cmd_research(a):
         print("\n" + report)
         print(f"report saved to {core.save_report(report).relative_to(ROOT)}; claims in space/claims.json")
     else:
-        print("No report: no language model was reachable (see message above). Nothing was claimed.")
+        why = getattr(core, "ended", None) or "no language model was reachable (see message above)"
+        print(f"No report: {why}. Nothing was claimed.")
     export()
 
 
@@ -432,9 +433,9 @@ def cmd_writeup(a):
 def cmd_local(a):
     from . import local_llm
     if a.action == "download":
-        local_llm.download()
+        local_llm.download(a.text[0].lower() if a.text else None)          # `local download 8b` or `14b`
     elif a.action == "info":
-        print(json.dumps({**local_llm.MODEL_INFO, "path": str(local_llm.model_path()),
+        print(json.dumps({**local_llm.info(), "path": str(local_llm.model_path()),
                           "installed": local_llm.available()}, indent=1))
     else:
         if not local_llm.available():

@@ -67,7 +67,7 @@ def test_local_loop_routes_claims_through_gate(tmp_path, monkeypatch):
     reg = core.registry
     assert reg.get(claim_id("z3", true_p))["status"] == "proved"
     assert reg.get(claim_id("identity", false_p))["status"] == "refuted"
-    assert "local Qwen3-14B" in reg.get(claim_id("z3", true_p))["source"]
+    assert "local Qwen3-" in reg.get(claim_id("z3", true_p))["source"]
     assert "unknown or unavailable tool prove" in seen[-1]["content"]     # ungated prover is not offered
     assert "refuted" in report and "proved" in report
 

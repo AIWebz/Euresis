@@ -25,16 +25,45 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 MODEL_DIR = ROOT / "data" / "models"
-MODEL_FILE = "Qwen3-14B-Q4_K_M.gguf"
-MODEL_URL = "https://huggingface.co/Qwen/Qwen3-14B-GGUF/resolve/main/" + MODEL_FILE
-MODEL_INFO = {"name": "Qwen3-14B", "parameters": "14.8 B", "quantisation": "Q4_K_M (4-bit)", "size_gb": 9.0,
-              "license": "Apache-2.0", "source": "https://huggingface.co/Qwen/Qwen3-14B-GGUF"}
+CACHE_DIR = ROOT / "data" / "llm_cache"
+MODELS = {
+    "8b": {"file": "Qwen3-8B-Q4_K_M.gguf", "name": "Qwen3-8B", "parameters": "8.2 B", "size_gb": 5.0,
+           "url": "https://huggingface.co/Qwen/Qwen3-8B-GGUF/resolve/main/Qwen3-8B-Q4_K_M.gguf",
+           "source": "https://huggingface.co/Qwen/Qwen3-8B-GGUF"},
+    "14b": {"file": "Qwen3-14B-Q4_K_M.gguf", "name": "Qwen3-14B", "parameters": "14.8 B", "size_gb": 9.0,
+            "url": "https://huggingface.co/Qwen/Qwen3-14B-GGUF/resolve/main/Qwen3-14B-Q4_K_M.gguf",
+            "source": "https://huggingface.co/Qwen/Qwen3-14B-GGUF"},
+}
+
+
+def _installed(size: str) -> bool:
+    f = MODEL_DIR / MODELS[size]["file"]
+    return f.exists() and f.stat().st_size > MODELS[size]["size_gb"] * 0.9e9
+
+
+def size() -> str:
+    """Which local model to use: EURESIS_LOCAL_SIZE (8b | 14b), else the faster 8B if installed, else 14B."""
+    want = os.environ.get("EURESIS_LOCAL_SIZE", "").lower()
+    if want in MODELS:
+        return want
+    return "8b" if _installed("8b") else "14b"
+
+
+def info() -> dict:
+    m = MODELS[size()]
+    return {"name": m["name"], "parameters": m["parameters"], "quantisation": "Q4_K_M (4-bit)", "size_gb": m["size_gb"],
+            "license": "Apache-2.0", "source": m["source"]}
+
+
+MODEL_INFO = info()            # kept for callers that read it at import time
+MODEL_FILE = MODELS[size()]["file"]
+MODEL_URL = MODELS[size()]["url"]
 
 _LLM = None
 
 
 def model_path() -> Path:
-    return Path(os.environ.get("EURESIS_LOCAL_MODEL", MODEL_DIR / MODEL_FILE))
+    return Path(os.environ.get("EURESIS_LOCAL_MODEL", MODEL_DIR / MODELS[size()]["file"]))
 
 
 def available() -> bool:
@@ -43,26 +72,34 @@ def available() -> bool:
     except ImportError:
         return False
     p = model_path()
-    return p.exists() and p.stat().st_size > 8_000_000_000
+    return p.exists() and p.stat().st_size > 4_000_000_000
 
 
-def download(log=print) -> Path:
+def download(which: str | None = None, log=print) -> Path:
+    m = MODELS[which or size()]
     MODEL_DIR.mkdir(parents=True, exist_ok=True)
-    out = MODEL_DIR / MODEL_FILE
-    log(f"downloading {MODEL_INFO['name']} ({MODEL_INFO['size_gb']} GB) → {out}")
-    subprocess.run(["curl", "-L", "-C", "-", "--retry", "5", "-o", str(out), MODEL_URL], check=True)
+    out = MODEL_DIR / m["file"]
+    log(f"downloading {m['name']} ({m['size_gb']} GB) → {out}")
+    subprocess.run(["curl", "-L", "-C", "-", "--retry", "5", "-o", str(out), m["url"]], check=True)
     return out
 
 
 def load(n_ctx: int = 12288, log=print):
-    """Load once per process (about 10–30 s); later calls reuse it."""
+    """Load once per process; later calls reuse it.
+    Speed-up: a disk cache of evaluated prompts, so the long system prompt with the tool list is not re-read on
+    every run."""
     global _LLM
     if _LLM is None:
-        from llama_cpp import Llama
+        from llama_cpp import Llama, LlamaDiskCache
         t0 = time.time()
-        _LLM = Llama(model_path=str(model_path()), n_ctx=n_ctx, n_threads=os.cpu_count() or 4,
-                     n_batch=512, verbose=False)
-        log(f"loaded {MODEL_INFO['name']} in {time.time() - t0:.0f} s")
+        # (prompt-lookup decoding was tried: in this llama.cpp version it needs logits for every context position,
+        #  ~7.5 GB extra at this context length — more than the machine has — so it is not used)
+        _LLM = Llama(model_path=str(model_path()), n_ctx=n_ctx, n_threads=os.cpu_count() or 4, n_batch=512,
+                     verbose=False)
+        if os.environ.get("EURESIS_NO_PROMPT_CACHE") is None:
+            CACHE_DIR.mkdir(parents=True, exist_ok=True)
+            _LLM.set_cache(LlamaDiskCache(cache_dir=str(CACHE_DIR / size()), capacity_bytes=3 << 30))
+        log(f"loaded {info()['name']} in {time.time() - t0:.0f} s")
     return _LLM
 
 

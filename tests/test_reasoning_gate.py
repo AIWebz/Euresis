@@ -101,4 +101,4 @@ def test_existing_verdict_is_reused_not_overwritten(core):
 def test_partial_report_when_run_stops_early(core):
     client = FakeClient([[tool(1, "submit_claim", kind="z3", statement="x² ≥ x", payload=FALSE)]] * 2)
     report = core.research("q", max_turns=2, client=client)
-    assert report and "ended before Claude wrote its report" in report and "**refuted**" in report
+    assert report and "ended before the model wrote its report" in report and "**refuted**" in report
