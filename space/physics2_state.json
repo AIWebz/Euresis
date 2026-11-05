@@ -6309,6 +6309,26 @@
    "family": "insurance and risk",
    "expr": "(1 - p*L - (p*sqrt(1 - L) + 1 - p)**2)/sqrt(p*(1 - p)*L**2)",
    "why": "a power or product of known quantities"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "1 - r**2*v/(-4*r**3/3 + r**2*v + r**2 + 1/3)",
+   "why": "affine combination of known quantities (expected revenue, probability the seller's value is below reserve [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "2/3 + v**3/3 - (2*(1 - r**3)/3 + v*r**2)",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(1/3 + r**2 - 4*r**3/3 + v*r**2)/(2*(1 - r**3)/3 + v*r**2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(2*r**3/3 + r**2*v - r**2 + 1/3)/(2*(1 - r**3)/3 + v*r**2)",
+   "why": "a power or product of known quantities"
   }
  ],
  "tried": [
@@ -9499,7 +9519,7 @@
    "k": "1/16"
   }
  ],
- "rounds": 327,
+ "rounds": 328,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",
