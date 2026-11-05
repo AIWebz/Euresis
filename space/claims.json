@@ -839918,5 +839918,59 @@
   "statement": "[physics: driven oscillator] Energy Dissipation Ratio [model-proposed; physical meaning unverified] \u2265 1 \u00d7 resonance frequency ratio [model-proposed; physical meaning unverified]   on r < 2, z < 1 (tight only at the edge of the domain, near (0.000233, 8.79e-10))",
   "status": "proved",
   "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 2",
+    "z < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-bbc24c39718b",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'resonance frequency ratio [model-proposed; physical meaning unverified]'",
+  "payload": {
+   "assumptions": [
+    "r < 2",
+    "z < 1"
+   ],
+   "claim": "2*r**2*z/((r**2 + 1)*(4*r**2*z**2 + (1 - r**2)**2)) + 1 >= 1*(r**2/(sqrt(4*r**2*z**2 + (1 - r**2)**2) + 1))",
+   "symbols": [
+    "r",
+    "z"
+   ]
+  },
+  "source": "physics_discover2 round 579",
+  "statement": "[physics: driven oscillator] Energy Dissipation Ratio [model-proposed; physical meaning unverified] \u2265 1 \u00d7 resonance amplitude ratio [model-proposed; physical meaning unverified]   on r < 2, z < 1 (tight only at the edge of the domain, near (1.98, 4.17e-16))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 2",
+    "z < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-534ec08cddd6",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'resonance frequency ratio [model-proposed; physical meaning unverified]'",
+  "payload": {
+   "assumptions": [
+    "r < 2",
+    "z < 1"
+   ],
+   "claim": "2*r**2*z/((r**2 + 1)*(4*r**2*z**2 + (1 - r**2)**2)) + 1 >= 1*(sqrt(1 - z**2)/(r**2 + 1))",
+   "symbols": [
+    "r",
+    "z"
+   ]
+  },
+  "source": "physics_discover2 round 579",
+  "statement": "[physics: driven oscillator] Energy Dissipation Ratio [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Resonance frequency shift [model-proposed; physical meaning unverified]   on r < 2, z < 1 (tight only at the edge of the domain, near (5.78e-09, 3.02e-09))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]

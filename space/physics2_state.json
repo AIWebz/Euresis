@@ -9901,6 +9901,26 @@
    "family": "collision",
    "expr": "(1 - e**2) * m / (1 + m)",
    "why": "affine combination of known quantities (speed of the centre of mass / initial speed, Fraction of kinetic energy retained by projectile [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "1/sqrt((1 - r**2)**2 + (2*z*r)**2)",
+   "why": "affine combination of known quantities (amplitude / static deflection)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt((1 + (2*z*r)**2)/((1 - r**2)**2 + (2*z*r)**2))",
+   "why": "affine combination of known quantities (amplitude / static deflection, transmissibility)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "2*r**2*z/(8*r**2*z**2 + (1 - r**2)**2)",
+   "why": "affine combination of known quantities (amplitude / static deflection, Normalized power transmission [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "2*r**2*z/((r**2 + 1)*(4*r**2*z**2 + (1 - r**2)**2))",
+   "why": "affine combination of known quantities (amplitude / static deflection, Energy Dissipation Ratio [model-proposed; physical meaning unverified])"
   }
  ],
  "tried": [
@@ -11727,7 +11747,15 @@
   "driven oscillator|Energy Dissipation Ratio [model-proposed; physical meaning unverified]|mean absorbed power (normalised)",
   "driven oscillator|Energy Dissipation Ratio [model-proposed; physical meaning unverified]|quality factor",
   "driven oscillator|Energy Dissipation Ratio [model-proposed; physical meaning unverified]|log decrement [model-proposed; physical meaning unverified]",
-  "driven oscillator|Energy Dissipation Ratio [model-proposed; physical meaning unverified]|resonance frequency ratio [model-proposed; physical meaning unverified]"
+  "driven oscillator|Energy Dissipation Ratio [model-proposed; physical meaning unverified]|resonance frequency ratio [model-proposed; physical meaning unverified]",
+  "driven oscillator|Energy Dissipation Ratio [model-proposed; physical meaning unverified]|resonance amplitude ratio [model-proposed; physical meaning unverified]",
+  "driven oscillator|Energy Dissipation Ratio [model-proposed; physical meaning unverified]|Resonance frequency shift [model-proposed; physical meaning unverified]",
+  "driven oscillator|Energy Dissipation Ratio [model-proposed; physical meaning unverified]|Peak amplitude ratio [model-proposed; physical meaning unverified]",
+  "driven oscillator|Energy Dissipation Ratio [model-proposed; physical meaning unverified]|Resonance frequency ratio (corrected) [model-proposed; physical meaning unverified]",
+  "driven oscillator|Energy Dissipation Ratio [model-proposed; physical meaning unverified]|Relative energy loss per cycle [model-proposed; physical meaning unverified]",
+  "driven oscillator|Energy Dissipation Ratio [model-proposed; physical meaning unverified]|Normalized power transmission [model-proposed; physical meaning unverified]",
+  "driven oscillator|Energy Dissipation Ratio [model-proposed; physical meaning unverified]|Velocity transmissibility [model-proposed; physical meaning unverified]",
+  "driven oscillator|Energy Dissipation Ratio [model-proposed; physical meaning unverified]|Acceleration transmissibility [model-proposed; physical meaning unverified]"
  ],
  "edges": [
   {
@@ -14459,9 +14487,21 @@
    "f": "Energy Dissipation Ratio [model-proposed; physical meaning unverified]",
    "g": "resonance frequency ratio [model-proposed; physical meaning unverified]",
    "k": "1"
+  },
+  {
+   "family": "driven oscillator",
+   "f": "Energy Dissipation Ratio [model-proposed; physical meaning unverified]",
+   "g": "resonance amplitude ratio [model-proposed; physical meaning unverified]",
+   "k": "1"
+  },
+  {
+   "family": "driven oscillator",
+   "f": "Energy Dissipation Ratio [model-proposed; physical meaning unverified]",
+   "g": "Resonance frequency shift [model-proposed; physical meaning unverified]",
+   "k": "1"
   }
  ],
- "rounds": 578,
+ "rounds": 579,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",
