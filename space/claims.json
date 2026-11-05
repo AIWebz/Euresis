@@ -513895,7 +513895,7 @@
   },
   "id": "emp-afce4ddb4a38",
   "kind": "empirical",
-  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "novelty": "EXPECTED: dimensions of the same organ (cactus cladode lengths and widths) scale together \u2014 allometry, not a discovery",
   "payload": {
    "dataset": "dfaa2709ecb02212.csv",
    "doi": "10.5281/zenodo.11373417",
@@ -513922,7 +513922,7 @@
   },
   "id": "emp-cf88ca26ca88",
   "kind": "empirical",
-  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "novelty": "EXPECTED: dimensions of the same organ (cactus cladode lengths and widths) scale together \u2014 allometry, not a discovery",
   "payload": {
    "dataset": "dfaa2709ecb02212.csv",
    "doi": "10.5281/zenodo.11373417",
@@ -513949,7 +513949,7 @@
   },
   "id": "emp-adf6349385c5",
   "kind": "empirical",
-  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "novelty": "DERIVED: CILB/CIUB look like the lower/upper bounds of a confidence interval computed from Rz itself \u2014 check the dataset documentation",
   "payload": {
    "dataset": "0fa6578e3306507f.csv",
    "doi": "10.5061/dryad.7c01654",
@@ -513976,7 +513976,7 @@
   },
   "id": "emp-11cb16f52f2f",
   "kind": "empirical",
-  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "novelty": "DERIVED: CILB/CIUB look like the lower/upper bounds of a confidence interval computed from Rz itself \u2014 check the dataset documentation",
   "payload": {
    "dataset": "0fa6578e3306507f.csv",
    "doi": "10.5061/dryad.7c01654",
@@ -513991,6 +513991,114 @@
   },
   "source": "datafeeds.py",
   "statement": "In 'Data from: Limited evidence for spatial resource partitioning across temperate grassland b' (Zenodo, doi 10.5061/dryad.7c01654): 'CIUB' is linear in 'Rz' (R\u00b2 = 0.964 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11032138",
+   "held_out_r2": 0.8957,
+   "held_out_rows": 9268,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-247bbd8a66f1",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "becb9b627c3ff639.csv",
+   "doi": "10.5281/zenodo.11032138",
+   "form": "linear",
+   "params": [
+    8508351.43856207,
+    -6.493224600789777
+   ],
+   "seed": 3155897478,
+   "x": "x",
+   "y": "y"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data: Soil moisture modeling with ERA5-Land retrievals, topographic indices, and in situ m' (Zenodo, doi 10.5281/zenodo.11032138): 'y' is linear in 'x' (R\u00b2 = 0.900 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11032138",
+   "held_out_r2": 0.9741,
+   "held_out_rows": 9268,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-db035505523a",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "becb9b627c3ff639.csv",
+   "doi": "10.5281/zenodo.11032138",
+   "form": "linear",
+   "params": [
+    443782.6717098029,
+    -0.07778211072934724
+   ],
+   "seed": 3155897478,
+   "x": "y",
+   "y": "Basin"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data: Soil moisture modeling with ERA5-Land retrievals, topographic indices, and in situ m' (Zenodo, doi 10.5281/zenodo.11032138): 'Basin' is linear in 'y' (R\u00b2 = 0.974 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11032138",
+   "held_out_r2": 0.974,
+   "held_out_rows": 9268,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-cbbe22f9eb1c",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "becb9b627c3ff639.csv",
+   "doi": "10.5281/zenodo.11032138",
+   "form": "linear",
+   "params": [
+    443958.19904455374,
+    -0.0778129292268464
+   ],
+   "seed": 3155897478,
+   "x": "y",
+   "y": "Half_Basin"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data: Soil moisture modeling with ERA5-Land retrievals, topographic indices, and in situ m' (Zenodo, doi 10.5281/zenodo.11032138): 'Half_Basin' is linear in 'y' (R\u00b2 = 0.974 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11032138",
+   "held_out_r2": 0.9717,
+   "held_out_rows": 9268,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5133478eae8d",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "becb9b627c3ff639.csv",
+   "doi": "10.5281/zenodo.11032138",
+   "form": "power law",
+   "params": [
+    -0.4192809758242331,
+    0.8584138599046777
+   ],
+   "seed": 3155897478,
+   "x": "Length_slope",
+   "y": "Slope_steepness"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data: Soil moisture modeling with ERA5-Land retrievals, topographic indices, and in situ m' (Zenodo, doi 10.5281/zenodo.11032138): 'Slope_steepness' follows a power law in 'Length_slope' (R\u00b2 = 0.972 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
  }

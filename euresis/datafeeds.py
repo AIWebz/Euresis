@@ -284,6 +284,9 @@ def analyse(path: Path, item: dict, reg: Registry, echo=print) -> list[dict]:
             if re.search(r"includ|total|sum|overall|all\b", a_ + " " + b_) and core(cx) & core(cy) == frozenset() and \
                     re.search(r"includ", a_ + b_):
                 continue                      # one column explicitly includes the other (part vs whole)
+            ci = re.compile(r"(^ci|_ci|conf|lower|upper|lwr|upr|\blb\b|\bub\b|ci[lu]b|[lu]cl|[lu]ci)")
+            if ci.search(a_) or ci.search(b_):
+                continue                      # confidence-interval bounds are computed from the estimate
             if a_.startswith("estimated") or b_.startswith("estimated"):
                 continue                      # estimates are computed from the other columns
             if same_quantity(cx, cy):
