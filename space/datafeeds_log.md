@@ -472,3 +472,4 @@
 - 2026-11-05 21:07 FINDING (confirmed on held-out rows): In 'Data for: Assortative mating in an ecological context: Effects of mate choice errors and r' (Zenodo, doi 10.5061/dryad.qnk98sfhd): 'homPairs' is linear in 'CFFn' (R² = 0.986 on the discovery half); held-out R² = 0.978 [emp-b3ddbb96cc8d]
 - 2026-11-05 21:07 FINDING (confirmed on held-out rows): In 'Data for: Assortative mating in an ecological context: Effects of mate choice errors and r' (Zenodo, doi 10.5061/dryad.qnk98sfhd): 'homPairs' is linear in 'CFMn' (R² = 0.983 on the discovery half); held-out R² = 0.976 [emp-57ab701596a4]
 - 2026-11-05 21:07 data feeds: 3764 datasets analysed so far, 427 confirmed findings
+- 2026-11-05 21:55 data feeds: online
