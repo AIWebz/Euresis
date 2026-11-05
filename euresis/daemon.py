@@ -37,6 +37,8 @@ def _git_push(log):
         return
     run("commit", "-q", "-m", "Euresis daemon: discovery progress")
     for i in range(4):
+        # another shift may have pushed meanwhile: replay our commit on top (state files: keep ours)
+        run("pull", "-q", "--rebase", "-X", "theirs")
         if run("push", "-q").returncode == 0:
             log("  results committed and pushed")
             return
