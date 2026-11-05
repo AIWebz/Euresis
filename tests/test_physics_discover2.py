@@ -37,3 +37,12 @@ def test_isolated_minimum_detects_curves():
     a, b = d.syms("collision")
     assert d.isolated_minimum("collision", (a - sp.Rational(1, 2)) ** 2 + (b - sp.Rational(1, 2)) ** 2 + 1, sp.Integer(1), 0.5, 0.5)
     assert not d.isolated_minimum("collision", (a - b) ** 2 + 1, sp.Integer(1), 0.5, 0.5)
+
+
+def test_infinite_expressions_are_rejected_not_crashing():
+    import sympy as sp
+    from euresis import physics_discover2 as p
+    fam = list(p.FAMILIES)[0]
+    s1, s2 = p.syms(fam)
+    assert p.validate(fam, f"{s1} + {s2}*(1/({s1}-{s1}))", {})[1].startswith("undefined")
+    assert p.ratio_min(fam, sp.zoo * s1, s2 + 1) is None

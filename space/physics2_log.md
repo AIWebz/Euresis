@@ -379,3 +379,10 @@
 - 2026-11-05 04:08 segment end: 340 rounds, 4 discoveries, 2 known laws rediscovered
 - 2026-11-05 06:45 segment start (budget 30 min; model: Qwen3-8B; 4 discoveries so far)
 - 2026-11-05 06:45 round 341: Compton scattering
+- 2026-11-05 06:54 round 342: Cournot duopoly
+- 2026-11-05 06:55 round 343: insurance and risk
+- 2026-11-05 06:56 round 344: auction with a reserve price
+- 2026-11-05 06:58 round 345: two-body decay
+- 2026-11-05 07:00 round failed: KeyError: 'ComplexInfinity'
+- 2026-11-05 07:00 round 346: collision
+- 2026-11-05 07:02 round 347: driven oscillator

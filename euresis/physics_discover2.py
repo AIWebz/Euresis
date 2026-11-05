@@ -214,12 +214,19 @@ def _allowed(E):
     return True
 
 
+def _undefined(E) -> bool:
+    """sympy writes 1/0 as zoo (complex infinity); such expressions cannot be evaluated or proved."""
+    return E.has(sp.zoo, sp.oo, -sp.oo, sp.nan)
+
+
 def validate(fam, expr, known):
     s1, s2 = syms(fam)
     try:
         E = sp.sympify(expr.replace("^", "**"), locals={s1.name: s1, s2.name: s2})
     except Exception:
         return None, "does not parse"
+    if isinstance(E, sp.Expr) and _undefined(E):
+        return None, "undefined (contains a division by zero or an infinity)"
     if not isinstance(E, sp.Expr) or not E.free_symbols or E.free_symbols - {s1, s2}:
         return None, f"must depend only on {s1}, {s2}"
     try:
@@ -296,6 +303,8 @@ def ratio_min(fam, f, g):
     F = FAMILIES[fam]
     X, Y = mesh(fam)
     s1, s2 = syms(fam)
+    if _undefined(f / g):
+        return None
     with np.errstate(all="ignore"):
         rfun = sp.lambdify((s1, s2), f / g, "numpy")
         R = np.asarray(rfun(X, Y), float)
@@ -430,7 +439,11 @@ def run_round(st, reg, use_llm, echo=print, max_pairs=24):
     for fn, gn in pairs[:max_pairs]:
         st["tried"].append(f"{fam}|{fn}|{gn}")
         f, g = sp.sympify(exprs[fn], locals=loc), sp.sympify(exprs[gn], locals=loc)
-        res = ratio_min(fam, f, g)
+        try:
+            res = ratio_min(fam, f, g)
+        except Exception as e:                           # one bad pair must not end the round
+            echo(f"    pair skipped ({type(e).__name__}): {fn} / {gn}"[:160])
+            continue
         if res is None:
             continue
         (val, x0, y0), both = res
