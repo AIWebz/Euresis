@@ -266,3 +266,4 @@
 - 2026-11-05 11:33 FINDING (confirmed on held-out rows): In 'Disentangling rainfall and water management in surface hydrology' (Zenodo, doi 10.5281/zenodo.22002736): 'Predictions' grows exponentially in 'Observations' (R² = 0.958 on the discovery half); held-out R² = 0.962 [emp-8f9a01184836]
 - 2026-11-05 11:33 FINDING (confirmed on held-out rows): In 'Disentangling rainfall and water management in surface hydrology' (Zenodo, doi 10.5281/zenodo.22002736): 'sumComponents' grows exponentially in 'Observations' (R² = 0.958 on the discovery half); held-out R² = 0.962 [emp-e2fc58aa9b95]
 - 2026-11-05 11:38 data feeds: 1557 datasets analysed so far, 241 confirmed findings
+- 2026-11-05 12:22 data feeds: online
