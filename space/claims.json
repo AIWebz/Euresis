@@ -747663,5 +747663,221 @@
   "statement": "Octal game 0.153734 is completely solved: its Grundy values are periodic with pre-period 1 and period 8 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.8343635",
+   "held_out_r2": 0.9539,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-462929d5e08d",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "83192b11d3aa4dc7.csv",
+   "doi": "10.5281/zenodo.8343635",
+   "form": "exponential",
+   "params": [
+    10.341897628050836,
+    1.1791587807295986e-05
+   ],
+   "seed": 1925377016,
+   "x": "VA:Magnitude",
+   "y": "VB:Magnitude"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Real data from PMUs' (Zenodo, doi 10.5281/zenodo.8343635): 'VB:Magnitude' grows exponentially in 'VA:Magnitude' (R\u00b2 = 0.998 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.8343635",
+   "held_out_r2": 0.596,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-8e0fecda55f3",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "83192b11d3aa4dc7.csv",
+   "doi": "10.5281/zenodo.8343635",
+   "form": "exponential",
+   "params": [
+    9.972289475153005,
+    1.66027049662526e-05
+   ],
+   "seed": 1925377016,
+   "x": "VA:Magnitude",
+   "y": "VC:Magnitude"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Real data from PMUs' (Zenodo, doi 10.5281/zenodo.8343635): 'VC:Magnitude' grows exponentially in 'VA:Magnitude' (R\u00b2 = 0.950 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.8343635",
+   "held_out_r2": 0.9538,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5af3c03514f0",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "83192b11d3aa4dc7.csv",
+   "doi": "10.5281/zenodo.8343635",
+   "form": "exponential",
+   "params": [
+    10.34237799114103,
+    1.1783453873536233e-05
+   ],
+   "seed": 1925377016,
+   "x": "VA:Magnitude",
+   "y": "VB:Magnitude.1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Real data from PMUs' (Zenodo, doi 10.5281/zenodo.8343635): 'VB:Magnitude.1' grows exponentially in 'VA:Magnitude' (R\u00b2 = 0.998 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.8343635",
+   "held_out_r2": 0.6791,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e2cfc2da1a2b",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "83192b11d3aa4dc7.csv",
+   "doi": "10.5281/zenodo.8343635",
+   "form": "exponential",
+   "params": [
+    9.826591926301687,
+    1.8524970919472453e-05
+   ],
+   "seed": 1925377016,
+   "x": "VB:Magnitude",
+   "y": "VC:Magnitude"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Real data from PMUs' (Zenodo, doi 10.5281/zenodo.8343635): 'VC:Magnitude' grows exponentially in 'VB:Magnitude' (R\u00b2 = 0.960 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.8343635",
+   "held_out_r2": 0.9357,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-af24b7e76e0e",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "83192b11d3aa4dc7.csv",
+   "doi": "10.5281/zenodo.8343635",
+   "form": "logarithmic",
+   "params": [
+    -875233.031959921,
+    84645.11329318267
+   ],
+   "seed": 1925377016,
+   "x": "VB:Magnitude",
+   "y": "VA:Magnitude.1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Real data from PMUs' (Zenodo, doi 10.5281/zenodo.8343635): 'VA:Magnitude.1' grows logarithmically in 'VB:Magnitude' (R\u00b2 = 0.998 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.8343635",
+   "held_out_r2": -0.9765,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-87f2a5034fd4",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "83192b11d3aa4dc7.csv",
+   "doi": "10.5281/zenodo.8343635",
+   "form": "logarithmic",
+   "params": [
+    -566469.5723763518,
+    57196.95979812378
+   ],
+   "seed": 1925377016,
+   "x": "VC:Magnitude",
+   "y": "VA:Magnitude.1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Real data from PMUs' (Zenodo, doi 10.5281/zenodo.8343635): 'VA:Magnitude.1' grows logarithmically in 'VC:Magnitude' (R\u00b2 = 0.950 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.8343635",
+   "held_out_r2": -0.2684,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-1d299f52fac3",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "83192b11d3aa4dc7.csv",
+   "doi": "10.5281/zenodo.8343635",
+   "form": "logarithmic",
+   "params": [
+    -505665.61588337726,
+    51778.771724233244
+   ],
+   "seed": 1925377016,
+   "x": "VC:Magnitude",
+   "y": "VB:Magnitude.1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Real data from PMUs' (Zenodo, doi 10.5281/zenodo.8343635): 'VB:Magnitude.1' grows logarithmically in 'VC:Magnitude' (R\u00b2 = 0.960 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.8343635",
+   "held_out_r2": 0.9538,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-8510d6db5bd1",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "83192b11d3aa4dc7.csv",
+   "doi": "10.5281/zenodo.8343635",
+   "form": "exponential",
+   "params": [
+    10.342266646685745,
+    1.1783243626043376e-05
+   ],
+   "seed": 1925377016,
+   "x": "VA:Magnitude.1",
+   "y": "VB:Magnitude.1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Real data from PMUs' (Zenodo, doi 10.5281/zenodo.8343635): 'VB:Magnitude.1' grows exponentially in 'VA:Magnitude.1' (R\u00b2 = 0.998 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]

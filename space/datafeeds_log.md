@@ -287,3 +287,8 @@
 - 2026-11-05 12:24 FINDING (confirmed on held-out rows): In 'data & codes for PS<sup>3</sup>R' (Figshare, doi 10.6084/m9.figshare.32330238.v1): 'Profile' follows a power law in 'Samples' (R² = 0.997 on the discovery half); held-out R² = 0.996 [emp-8b243c7654ff]
 - 2026-11-05 12:25 data feeds: 1640 datasets analysed so far, 259 confirmed findings
 - 2026-11-05 13:26 data feeds: online
+- 2026-11-05 13:28 FINDING (confirmed on held-out rows): In 'Real data from PMUs' (Zenodo, doi 10.5281/zenodo.8343635): 'VB:Magnitude' grows exponentially in 'VA:Magnitude' (R² = 0.998 on the discovery half); held-out R² = 0.954 [emp-462929d5e08d]
+- 2026-11-05 13:28 FINDING (confirmed on held-out rows): In 'Real data from PMUs' (Zenodo, doi 10.5281/zenodo.8343635): 'VB:Magnitude.1' grows exponentially in 'VA:Magnitude' (R² = 0.998 on the discovery half); held-out R² = 0.954 [emp-5af3c03514f0]
+- 2026-11-05 13:28 FINDING (confirmed on held-out rows): In 'Real data from PMUs' (Zenodo, doi 10.5281/zenodo.8343635): 'VA:Magnitude.1' grows logarithmically in 'VB:Magnitude' (R² = 0.998 on the discovery half); held-out R² = 0.936 [emp-af24b7e76e0e]
+- 2026-11-05 13:28 FINDING (confirmed on held-out rows): In 'Real data from PMUs' (Zenodo, doi 10.5281/zenodo.8343635): 'VB:Magnitude.1' grows exponentially in 'VA:Magnitude.1' (R² = 0.998 on the discovery half); held-out R² = 0.954 [emp-8510d6db5bd1]
+- 2026-11-05 13:28 data feeds: 1745 datasets analysed so far, 263 confirmed findings
