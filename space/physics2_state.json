@@ -7229,6 +7229,36 @@
    "family": "driven oscillator",
    "expr": "1/sqrt((1 - r**2)**2 + (2*z*r)**2)",
    "why": "affine combination of known quantities (amplitude / static deflection)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 + u)/(1 - u)) * sqrt((1 + v)/(1 - v)) / sqrt((1 + (u + v)/(1 + u*v))/(1 - (u + v)/(1 + u*v))",
+   "why": "affine combination of known quantities (composed speed / c)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 - u**2)*(1 - v**2)) / sqrt(1 - ((u + v)/(1 + u*v))**2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "1 - c/(x + 1)",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "((1 - c1 - c2)**2)/((1 - 2*c1 + c2)**2 + (1 - 2*c2 + c1)**2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "p*L / (p*sqrt(1 - L) + 1 - p - (p*sqrt(1 - L) + 1 - p)**2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(1/3 - r**2 + 2*r**3/3)/(2*(1 - r**3)/3 + v*r**2)",
+   "why": "affine combination of known quantities (expected revenue, 1/(Welfare Efficiency Ratio [model-proposed; physical meaning unverified]))"
   }
  ],
  "tried": [
@@ -8697,7 +8727,13 @@
   "collision|Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified]|relative velocity after collision divided by initial velocity of projectile [model-proposed; physical meaning unverified]",
   "collision|Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified]|Fraction of kinetic energy retained by projectile [model-proposed; physical meaning unverified]",
   "collision|Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified]|Fraction of kinetic energy retained by target [model-proposed; physical meaning unverified]",
-  "collision|Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified]|Fraction of kinetic energy retained by the system [model-proposed; physical meaning unverified]"
+  "collision|Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified]|Fraction of kinetic energy retained by the system [model-proposed; physical meaning unverified]",
+  "Compton scattering|Electron kinetic energy fraction [model-proposed; physical meaning unverified]|Compton scattering formula (recoil angle cosine) [model-proposed; physical meaning unverified]",
+  "Compton scattering|Electron kinetic energy fraction [model-proposed; physical meaning unverified]|Scattered photon wavelength / initial photon wavelength [model-proposed; physical meaning unverified]",
+  "Compton scattering|Electron kinetic energy fraction [model-proposed; physical meaning unverified]|Scattered photon momentum / initial photon momentum [model-proposed; physical meaning unverified]",
+  "Compton scattering|Electron kinetic energy fraction [model-proposed; physical meaning unverified]|Scattered photon wavelength / Compton wavelength [model-proposed; physical meaning unverified]",
+  "Compton scattering|Electron kinetic energy fraction [model-proposed; physical meaning unverified]|Electron recoil angle (sine squared) [model-proposed; physical meaning unverified]",
+  "Compton scattering|Electron kinetic energy fraction [model-proposed; physical meaning unverified]|Electron momentum fraction [model-proposed; physical meaning unverified]"
  ],
  "edges": [
   {
@@ -11039,9 +11075,15 @@
    "f": "Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified]",
    "g": "Fraction of kinetic energy retained by the system [model-proposed; physical meaning unverified]",
    "k": "3/4"
+  },
+  {
+   "family": "Compton scattering",
+   "f": "Electron kinetic energy fraction [model-proposed; physical meaning unverified]",
+   "g": "Electron recoil angle (sine squared) [model-proposed; physical meaning unverified]",
+   "k": "1/8"
   }
  ],
- "rounds": 387,
+ "rounds": 392,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",

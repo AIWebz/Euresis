@@ -620775,5 +620775,32 @@
   "statement": "[physics: collision] Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified] \u2265 3/4 \u00d7 Fraction of kinetic energy retained by the system [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
   "status": "proved",
   "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-cad44e30ea2a",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "c*x**2/(c*x**2 + 1) >= 1/8*(1 - 1/(2*c**2*x**2 + 1)**2)",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 389",
+  "statement": "[physics: Compton scattering] Electron kinetic energy fraction [model-proposed; physical meaning unverified] \u2265 1/8 \u00d7 Electron recoil angle (sine squared) [model-proposed; physical meaning unverified]   on x < 2, c < 2 (tight only at the edge of the domain, near (0.000182, 2))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]
