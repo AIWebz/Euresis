@@ -892331,5 +892331,194 @@
   "statement": "In 'Data for: Assortative mating in an ecological context: Effects of mate choice errors and r' (Zenodo, doi 10.5061/dryad.qnk98sfhd): 'homPairs' is linear in 'CFMn' (R\u00b2 = 0.983 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-81bef2f9045d",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "(e + 1)/(m + 1) >= 4/5*(e**2*m**2/(m + 1)**2 + e**2)",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 626",
+  "statement": "[physics: collision] momentum transferred / initial momentum \u2265 4/5 \u00d7 Fraction of kinetic energy transferred to the target [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-18e6983ee80e",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "e >= 4/5*(e**2*m**2/(m + 1)**2 + e**2)",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 626",
+  "statement": "[physics: collision] relative speed after / relative speed before \u2265 4/5 \u00d7 Fraction of kinetic energy transferred to the target [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-9b21bfac74f5",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'relative speed after / relative speed before'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "e*(m + 1)/(e*m + 1) >= 4/5*(e**2*m**2/(m + 1)**2 + e**2)",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 626",
+  "statement": "[physics: collision] velocity ratio of target to projectile after collision [model-proposed; physical meaning unverified] \u2265 4/5 \u00d7 Fraction of kinetic energy transferred to the target [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-39528ace44bf",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "e**2*(m**2 + 1)/(m + 1)**2 >= 2/5*(e**2*m**2/(m + 1)**2 + e**2)",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 626",
+  "statement": "[physics: collision] Fraction of kinetic energy retained by target [model-proposed; physical meaning unverified] \u2265 2/5 \u00d7 Fraction of kinetic energy transferred to the target [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 0.999))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-f9803fa377b8",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "-m*(1 - e**2)*(e + 1)**2/(m + 1)**2 - m*(1 - e**2)/(m + 1) + 1 >= 3/5*(e**2*m**2/(m + 1)**2 + e**2)",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 626",
+  "statement": "[physics: collision] Fraction of kinetic energy retained by the system [model-proposed; physical meaning unverified] \u2265 3/5 \u00d7 Fraction of kinetic energy transferred to the target [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 0.618))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-00733e48f56a",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'relative speed after / relative speed before'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "-e**2*m**2/(m + 1)**2 + 1 >= 3/5*(e**2*m**2/(m + 1)**2 + e**2)",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 626",
+  "statement": "[physics: collision] Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified] \u2265 3/5 \u00d7 Fraction of kinetic energy transferred to the target [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-ed5c3a4699c1",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "e**2*m**2/(m + 1)**2 + e**2 >= 1*(e**2*(m**2 + 1)/(m + 1)**2)",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 626",
+  "statement": "[physics: collision] Fraction of kinetic energy transferred to the target [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Fraction of kinetic energy retained by target [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1.39e-19, 0.000195))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]
