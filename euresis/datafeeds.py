@@ -213,6 +213,10 @@ KNOWN_FAMILIES = {
     "seawater carbonate chemistry (CO2SYS-type calculations)": ("ph", "co2", "hco3", "co3", "dic", "alkalinity",
                                                                 "talk", "omega", "pco2", "fco2"),
     "thermodynamic temperature conversions": ("temp_c", "temp_k", "temp_f", "celsius", "kelvin", "fahrenheit"),
+    "standard atmosphere / hydrostatics (temperature, pressure and altitude, T ∝ P^(R·Γ/g))":
+        ("alt", "altitude", "height", "p_hpa", "hpa", "pressure", "t_obs", "t_mod", "temperature", "temp"),
+    "equation of state of a simulated fluid (pressure, density, temperature, chemical potential, kinetic energy)":
+        ("rho", "density", "pressure", "mu", "ke", "st", "temperature", "chem"),
 }
 
 

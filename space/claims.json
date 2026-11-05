@@ -478074,5 +478074,491 @@
   "statement": "In 'Supporting materials for: pKa Prediction in Non-Aqueous Solvents' (Zenodo, doi 10.5281/zenodo.14041273): 'calculated_pKa' is linear in 'pKa_expt' (R\u00b2 = 0.969 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.10581235",
+   "held_out_r2": 0.2078,
+   "held_out_rows": 148,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-23cff8460a08",
+  "kind": "empirical",
+  "novelty": "SAME QUANTITY: observed vs modelled (or instrument copies) \u2014 a model check, not a law",
+  "payload": {
+   "dataset": "d8bbea069dadacb4.csv",
+   "doi": "10.5281/zenodo.10581235",
+   "form": "linear",
+   "params": [
+    0.09289937376965446,
+    0.08715410848149925
+   ],
+   "seed": 1127218634,
+   "x": "CH4_ug_g_C",
+   "y": "CH4_rate_ug_g_C_day"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Patterns and drivers of organic matter decomposition in peatland open-water pools' (Zenodo, doi 10.5281/zenodo.10581235): 'CH4_rate_ug_g_C_day' is linear in 'CH4_ug_g_C' (R\u00b2 = 0.936 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.6472323",
+   "held_out_r2": 0.9321,
+   "held_out_rows": 58,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-01e97c6280bd",
+  "kind": "empirical",
+  "novelty": "LIKELY KNOWN: if 'Ke' is kinetic energy and 'sT' temperature (abbreviations \u2014 check the dataset documentation), a linear relation is the equipartition theorem (\u27e8KE\u27e9 \u221d T) \u2014 not a discovery",
+  "payload": {
+   "dataset": "dbc3caff15af5cb9.csv",
+   "doi": "10.5281/zenodo.6472323",
+   "form": "linear",
+   "params": [
+    1.550115664517598,
+    -5.155699220995739
+   ],
+   "seed": 1572183077,
+   "x": "sT",
+   "y": "Ke"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset to \"Defining the pressures of a fluid in a nanoporous, heterogeneous medium\"' (Zenodo, doi 10.5281/zenodo.6472323): 'Ke' is linear in 'sT' (R\u00b2 = 0.973 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.6472323",
+   "held_out_r2": 0.974,
+   "held_out_rows": 58,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-eea6d8b7ed0f",
+  "kind": "empirical",
+  "novelty": "KNOWN: equation of state of a simulated fluid (pressure, density, temperature, chemical potential, kinetic energy) \u2014 not a discovery",
+  "payload": {
+   "dataset": "dbc3caff15af5cb9.csv",
+   "doi": "10.5281/zenodo.6472323",
+   "form": "power law",
+   "params": [
+    -0.026981476018102184,
+    0.9111979427725114
+   ],
+   "seed": 1572183077,
+   "x": "sT",
+   "y": "sKe"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset to \"Defining the pressures of a fluid in a nanoporous, heterogeneous medium\"' (Zenodo, doi 10.5281/zenodo.6472323): 'sKe' follows a power law in 'sT' (R\u00b2 = 0.993 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.6472323",
+   "held_out_r2": 0.9436,
+   "held_out_rows": 58,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d5a6850d5d9c",
+  "kind": "empirical",
+  "novelty": "KNOWN: equation of state of a simulated fluid (pressure, density, temperature, chemical potential, kinetic energy) \u2014 not a discovery",
+  "payload": {
+   "dataset": "dbc3caff15af5cb9.csv",
+   "doi": "10.5281/zenodo.6472323",
+   "form": "power law",
+   "params": [
+    -10.674951074806575,
+    -1.8479582998057535
+   ],
+   "seed": 1572183077,
+   "x": "sT",
+   "y": "Rho"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset to \"Defining the pressures of a fluid in a nanoporous, heterogeneous medium\"' (Zenodo, doi 10.5281/zenodo.6472323): 'Rho' follows a power law in 'sT' (R\u00b2 = 0.929 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.6472323",
+   "held_out_r2": 0.9755,
+   "held_out_rows": 58,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5ecd6721f9c0",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "dbc3caff15af5cb9.csv",
+   "doi": "10.5281/zenodo.6472323",
+   "form": "exponential",
+   "params": [
+    0.5009406446121509,
+    1.0955835677305616
+   ],
+   "seed": 1572183077,
+   "x": "mu",
+   "y": "P"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset to \"Defining the pressures of a fluid in a nanoporous, heterogeneous medium\"' (Zenodo, doi 10.5281/zenodo.6472323): 'P' grows exponentially in 'mu' (R\u00b2 = 0.973 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.6472323",
+   "held_out_r2": 0.8994,
+   "held_out_rows": 58,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-34808e39ce62",
+  "kind": "empirical",
+  "novelty": "KNOWN: equation of state of a simulated fluid (pressure, density, temperature, chemical potential, kinetic energy) \u2014 not a discovery",
+  "payload": {
+   "dataset": "dbc3caff15af5cb9.csv",
+   "doi": "10.5281/zenodo.6472323",
+   "form": "power law",
+   "params": [
+    -10.657545601828637,
+    -2.0092191948763096
+   ],
+   "seed": 1572183077,
+   "x": "sKe",
+   "y": "Rho"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset to \"Defining the pressures of a fluid in a nanoporous, heterogeneous medium\"' (Zenodo, doi 10.5281/zenodo.6472323): 'Rho' follows a power law in 'sKe' (R\u00b2 = 0.918 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.6472323",
+   "held_out_r2": 0.9302,
+   "held_out_rows": 58,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5777607f8a4a",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "dbc3caff15af5cb9.csv",
+   "doi": "10.5281/zenodo.6472323",
+   "form": "power law",
+   "params": [
+    0.48053511145985206,
+    1.0448744278992101
+   ],
+   "seed": 1572183077,
+   "x": "Rho",
+   "y": "P"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset to \"Defining the pressures of a fluid in a nanoporous, heterogeneous medium\"' (Zenodo, doi 10.5281/zenodo.6472323): 'P' follows a power law in 'Rho' (R\u00b2 = 0.948 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23742841",
+   "held_out_r2": 0.9454,
+   "held_out_rows": 6858,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ce61c320515a",
+  "kind": "empirical",
+  "novelty": "KNOWN: standard atmosphere / hydrostatics (temperature, pressure and altitude, T \u221d P^(R\u00b7\u0393/g)) \u2014 not a discovery",
+  "payload": {
+   "dataset": "b141f5915af25e4a.csv",
+   "doi": "10.5281/zenodo.23742841",
+   "form": "exponential",
+   "params": [
+    5.7019929689879625,
+    -2.973552776829833e-05
+   ],
+   "seed": 2794730823,
+   "x": "ALT_m",
+   "y": "T_mod_K"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Geos-Chem output along AEROMMA flight track' (Zenodo, doi 10.5281/zenodo.23742841): 'T_mod_K' grows exponentially in 'ALT_m' (R\u00b2 = 0.946 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23742841",
+   "held_out_r2": 0.9565,
+   "held_out_rows": 6858,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-8028e416c416",
+  "kind": "empirical",
+  "novelty": "KNOWN: standard atmosphere / hydrostatics (temperature, pressure and altitude, T \u221d P^(R\u00b7\u0393/g)) \u2014 not a discovery",
+  "payload": {
+   "dataset": "b141f5915af25e4a.csv",
+   "doi": "10.5281/zenodo.23742841",
+   "form": "exponential",
+   "params": [
+    5.707787575939894,
+    -2.962557012463967e-05
+   ],
+   "seed": 2794730823,
+   "x": "ALT_m",
+   "y": "T_obs_K"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Geos-Chem output along AEROMMA flight track' (Zenodo, doi 10.5281/zenodo.23742841): 'T_obs_K' grows exponentially in 'ALT_m' (R\u00b2 = 0.956 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23742841",
+   "held_out_r2": 0.9503,
+   "held_out_rows": 6858,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ed50c4498d54",
+  "kind": "empirical",
+  "novelty": "KNOWN: standard atmosphere / hydrostatics (temperature, pressure and altitude, T \u221d P^(R\u00b7\u0393/g)) \u2014 not a discovery",
+  "payload": {
+   "dataset": "b141f5915af25e4a.csv",
+   "doi": "10.5281/zenodo.23742841",
+   "form": "power law",
+   "params": [
+    3.9214476885605447,
+    0.2574116218752218
+   ],
+   "seed": 2794730823,
+   "x": "P_hPa",
+   "y": "T_mod_K"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Geos-Chem output along AEROMMA flight track' (Zenodo, doi 10.5281/zenodo.23742841): 'T_mod_K' follows a power law in 'P_hPa' (R\u00b2 = 0.951 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23742841",
+   "held_out_r2": 0.9599,
+   "held_out_rows": 6858,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f4da142535f8",
+  "kind": "empirical",
+  "novelty": "KNOWN: standard atmosphere / hydrostatics (temperature, pressure and altitude, T \u221d P^(R\u00b7\u0393/g)) \u2014 not a discovery",
+  "payload": {
+   "dataset": "b141f5915af25e4a.csv",
+   "doi": "10.5281/zenodo.23742841",
+   "form": "power law",
+   "params": [
+    3.935323876071575,
+    0.2562410500159559
+   ],
+   "seed": 2794730823,
+   "x": "P_hPa",
+   "y": "T_obs_K"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Geos-Chem output along AEROMMA flight track' (Zenodo, doi 10.5281/zenodo.23742841): 'T_obs_K' follows a power law in 'P_hPa' (R\u00b2 = 0.959 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23742841",
+   "held_out_r2": 0.9459,
+   "held_out_rows": 6858,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ec022fc9002b",
+  "kind": "empirical",
+  "novelty": "KNOWN: standard atmosphere / hydrostatics (temperature, pressure and altitude, T \u221d P^(R\u00b7\u0393/g)) \u2014 not a discovery",
+  "payload": {
+   "dataset": "b141f5915af25e4a.csv",
+   "doi": "10.5281/zenodo.23742841",
+   "form": "power law",
+   "params": [
+    0.2078967267636856,
+    0.9644546598092923
+   ],
+   "seed": 2794730823,
+   "x": "T_mod_K",
+   "y": "T_obs_K"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Geos-Chem output along AEROMMA flight track' (Zenodo, doi 10.5281/zenodo.23742841): 'T_obs_K' follows a power law in 'T_mod_K' (R\u00b2 = 0.947 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23742841",
+   "held_out_r2": 0.9285,
+   "held_out_rows": 6858,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-fd77044c2a5a",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "b141f5915af25e4a.csv",
+   "doi": "10.5281/zenodo.23742841",
+   "form": "exponential",
+   "params": [
+    -1.8377844803657912,
+    1.3916359168221952
+   ],
+   "seed": 2794730823,
+   "x": "NHx_mod_ugm3",
+   "y": "NH3_mod_ugm3"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Geos-Chem output along AEROMMA flight track' (Zenodo, doi 10.5281/zenodo.23742841): 'NH3_mod_ugm3' grows exponentially in 'NHx_mod_ugm3' (R\u00b2 = 0.928 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23742841",
+   "held_out_r2": 0.9871,
+   "held_out_rows": 6858,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9ed6342ec6b0",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "b141f5915af25e4a.csv",
+   "doi": "10.5281/zenodo.23742841",
+   "form": "linear",
+   "params": [
+    0.030080080759304444,
+    0.927278009220173
+   ],
+   "seed": 2794730823,
+   "x": "Total_NO3_mod_ugm3",
+   "y": "HNO3_mod_ugm3"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Geos-Chem output along AEROMMA flight track' (Zenodo, doi 10.5281/zenodo.23742841): 'HNO3_mod_ugm3' is linear in 'Total_NO3_mod_ugm3' (R\u00b2 = 0.984 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23742841",
+   "held_out_r2": 0.9354,
+   "held_out_rows": 6858,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-0c2b839aa052",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "b141f5915af25e4a.csv",
+   "doi": "10.5281/zenodo.23742841",
+   "form": "linear",
+   "params": [
+    0.03964988872702335,
+    0.37025483062614256
+   ],
+   "seed": 2794730823,
+   "x": "SO4_mod_ugm3",
+   "y": "NH4_mod_ugm3"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Geos-Chem output along AEROMMA flight track' (Zenodo, doi 10.5281/zenodo.23742841): 'NH4_mod_ugm3' is linear in 'SO4_mod_ugm3' (R\u00b2 = 0.921 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.dr48cf6",
+   "held_out_r2": 0.9367,
+   "held_out_rows": 272,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-fdef87846b19",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "58a017ca41d82c1f.csv",
+   "doi": "10.5061/dryad.dr48cf6",
+   "form": "linear",
+   "params": [
+    -983.5168120584896,
+    980.2659631712969
+   ],
+   "seed": 3618274590,
+   "x": "ADOD",
+   "y": "CEC (cmol/kg)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Soil chemistry, and not short-term (1-2 year) deer exclusion, explains understo' (Zenodo, doi 10.5061/dryad.dr48cf6): 'CEC (cmol/kg)' is linear in 'ADOD' (R\u00b2 = 0.932 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.dr48cf6",
+   "held_out_r2": 0.9367,
+   "held_out_rows": 272,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-37c14774b899",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "58a017ca41d82c1f.csv",
+   "doi": "10.5061/dryad.dr48cf6",
+   "form": "linear",
+   "params": [
+    -1532.6359110817712,
+    1530.6115075615828
+   ],
+   "seed": 3618274590,
+   "x": "ADOD",
+   "y": "Extractable Acidity (cmol/kg)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Soil chemistry, and not short-term (1-2 year) deer exclusion, explains understo' (Zenodo, doi 10.5061/dryad.dr48cf6): 'Extractable Acidity (cmol/kg)' is linear in 'ADOD' (R\u00b2 = 0.929 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.dr48cf6",
+   "held_out_r2": 0.9613,
+   "held_out_rows": 272,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-bc67e1f219c2",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "58a017ca41d82c1f.csv",
+   "doi": "10.5061/dryad.dr48cf6",
+   "form": "power law",
+   "params": [
+    0.8212010940432967,
+    0.9179439342894344
+   ],
+   "seed": 3618274590,
+   "x": "CEC (cmol/kg)",
+   "y": "Extractable Acidity (cmol/kg)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Soil chemistry, and not short-term (1-2 year) deer exclusion, explains understo' (Zenodo, doi 10.5061/dryad.dr48cf6): 'Extractable Acidity (cmol/kg)' follows a power law in 'CEC (cmol/kg)' (R\u00b2 = 0.972 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
