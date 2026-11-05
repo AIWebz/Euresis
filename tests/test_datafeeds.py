@@ -70,3 +70,10 @@ def test_generic_column_names_skipped(tmp_path, monkeypatch):
 def test_known_families():
     assert F.known_family("TankpH", "TankCO2")
     assert not F.known_family("fish_length_mm", "otolith_width_um")
+
+
+def test_same_quantity_detection():
+    assert F.same_quantity("pKa_pred", "pKa_exp") and F.same_quantity("calculated_pKa", "pKa_expt")
+    assert F.same_quantity("x_gse_mms1", "x_gse_mms2")
+    assert not F.same_quantity("fish_length_mm", "otolith_width_um")
+    assert not F.same_quantity("diameter", "mass")

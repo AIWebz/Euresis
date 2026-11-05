@@ -216,6 +216,24 @@ KNOWN_FAMILIES = {
 }
 
 
+_QUALIFIERS = {"pred", "predicted", "prediction", "exp", "expt", "experimental", "experiment", "calc", "calculated",
+               "computed", "measured", "meas", "obs", "observed", "true", "est", "estimated", "model", "modelled",
+               "modeled", "fit", "fitted", "ok", "sim", "simulated", "ref", "reference", "actual", "target", "output",
+               "input", "raw", "corrected", "corr", "adj", "adjusted", "mean", "avg", "average", "median", "std", "sd",
+               "min", "max", "total", "new", "old", "prime", "tank", "lab", "field", "the", "of", "and", "in", "at"}
+
+
+def core(name) -> frozenset:
+    """The quantity a column measures, without qualifiers such as predicted / measured / instrument numbers."""
+    toks = re.findall(r"[a-zA-Z]+", str(name).lower())
+    return frozenset(t for t in toks if t not in _QUALIFIERS and len(t) >= 2)
+
+
+def same_quantity(cx, cy) -> bool:
+    a, b = core(cx), core(cy)
+    return bool(a) and bool(b) and (a == b or (a & b and min(len(a), len(b)) == len(a & b)))
+
+
 def known_family(cx, cy) -> str | None:
     a, b = str(cx).lower(), str(cy).lower()
     for fam, words in KNOWN_FAMILIES.items():
@@ -259,6 +277,8 @@ def analyse(path: Path, item: dict, reg: Registry, echo=print) -> list[dict]:
             generic = re.compile(r"^(column|col|unnamed|var|field|v|x|y|c)\W*\d|unlabelled")
             if generic.search(a_) or generic.search(b_):
                 continue                      # generic column names: cannot be interpreted, so not reportable
+            if same_quantity(cx, cy):
+                continue                      # predicted vs measured, or one quantity from several instruments
             if re.sub(r"\d+", "", a_) == re.sub(r"\d+", "", b_):
                 continue                      # the same quantity from different instruments/sensors (mms1 vs mms2)
             names = {a_, b_}
