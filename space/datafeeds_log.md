@@ -300,3 +300,4 @@
 - 2026-11-05 14:17 FINDING (confirmed on held-out rows): In 'Permafrost Thaw Settlement Dataset' (Zenodo, doi 10.5281/zenodo.15192404): 'volumetric_wc_calc' is linear in 'frozen_dry_density_calc' (R² = 0.916 on the discovery half); held-out R² = 0.890 [emp-abbef355089f]
 - 2026-11-05 14:17 FINDING (confirmed on held-out rows): In 'Permafrost Thaw Settlement Dataset' (Zenodo, doi 10.5281/zenodo.15192404): 'frozen_void_ratio_calc' follows a power law in 'frozen_dry_density_calc' (R² = 0.963 on the discovery half); held-out R² = 0.967 [emp-00002f157483]
 - 2026-11-05 14:18 data feeds: 1819 datasets analysed so far, 269 confirmed findings
+- 2026-11-05 15:19 data feeds: online
