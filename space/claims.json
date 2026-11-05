@@ -862925,5 +862925,518 @@
   "statement": "Octal game 0.207011 is completely solved: its Grundy values are periodic with pre-period 70 and period 7 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15878792",
+   "held_out_r2": 0.6015,
+   "held_out_rows": 38,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d8500a06b9c8",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "403fe72f9b17a2e6.csv",
+   "doi": "10.5281/zenodo.15878792",
+   "form": "linear",
+   "params": [
+    0.08534361112692299,
+    -0.8690458898766893
+   ],
+   "seed": 4241288872,
+   "x": "sensitivity_C_multi",
+   "y": "sensitivity_e_MgO"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Study of magneto-thermal resistance effect in a Co50Fe50/Cu multilayer through the analysi' (Zenodo, doi 10.5281/zenodo.15878792): 'sensitivity_e_MgO' is linear in 'sensitivity_C_multi' (R\u00b2 = 0.963 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15878792",
+   "held_out_r2": 0.9411,
+   "held_out_rows": 286,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c051020bd6ce",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "97e30552470e72f7.csv",
+   "doi": "10.5281/zenodo.15878792",
+   "form": "exponential",
+   "params": [
+    5.749055819180471,
+    -0.00031956868854418385
+   ],
+   "seed": 2360201626,
+   "x": "posi_20 (nm)",
+   "y": "temp_20 (K)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Study of magneto-thermal resistance effect in a Co50Fe50/Cu multilayer through the analysi' (Zenodo, doi 10.5281/zenodo.15878792): 'temp_20 (K)' grows exponentially in 'posi_20 (nm)' (R\u00b2 = 0.948 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15878792",
+   "held_out_r2": 0.946,
+   "held_out_rows": 286,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b56d5ed71c91",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "97e30552470e72f7.csv",
+   "doi": "10.5281/zenodo.15878792",
+   "form": "linear",
+   "params": [
+    336.308278466194,
+    -0.2413316321764813
+   ],
+   "seed": 2360201626,
+   "x": "posi_20 (nm)",
+   "y": "temp_50 (K)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Study of magneto-thermal resistance effect in a Co50Fe50/Cu multilayer through the analysi' (Zenodo, doi 10.5281/zenodo.15878792): 'temp_50 (K)' is linear in 'posi_20 (nm)' (R\u00b2 = 0.950 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15878792",
+   "held_out_r2": 0.9495,
+   "held_out_rows": 286,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-bc84bb3f171c",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "97e30552470e72f7.csv",
+   "doi": "10.5281/zenodo.15878792",
+   "form": "linear",
+   "params": [
+    371.88701565270236,
+    -0.48062914404429696
+   ],
+   "seed": 2360201626,
+   "x": "posi_20 (nm)",
+   "y": "temp_100 (K)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Study of magneto-thermal resistance effect in a Co50Fe50/Cu multilayer through the analysi' (Zenodo, doi 10.5281/zenodo.15878792): 'temp_100 (K)' is linear in 'posi_20 (nm)' (R\u00b2 = 0.953 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15878792",
+   "held_out_r2": 0.9413,
+   "held_out_rows": 286,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-fe790746980b",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "97e30552470e72f7.csv",
+   "doi": "10.5281/zenodo.15878792",
+   "form": "logarithmic",
+   "params": [
+    17053.761691834767,
+    -2964.999094201889
+   ],
+   "seed": 2360201626,
+   "x": "temp_20 (K)",
+   "y": "posi_50 (nm)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Study of magneto-thermal resistance effect in a Co50Fe50/Cu multilayer through the analysi' (Zenodo, doi 10.5281/zenodo.15878792): 'posi_50 (nm)' grows logarithmically in 'temp_20 (K)' (R\u00b2 = 0.948 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15878792",
+   "held_out_r2": 0.9413,
+   "held_out_rows": 286,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a472232012f9",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "97e30552470e72f7.csv",
+   "doi": "10.5281/zenodo.15878792",
+   "form": "logarithmic",
+   "params": [
+    17053.761691834767,
+    -2964.999094201889
+   ],
+   "seed": 2360201626,
+   "x": "temp_20 (K)",
+   "y": "posi_100 (nm)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Study of magneto-thermal resistance effect in a Co50Fe50/Cu multilayer through the analysi' (Zenodo, doi 10.5281/zenodo.15878792): 'posi_100 (nm)' grows logarithmically in 'temp_20 (K)' (R\u00b2 = 0.948 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15878792",
+   "held_out_r2": 0.946,
+   "held_out_rows": 286,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d100385f6b1a",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "97e30552470e72f7.csv",
+   "doi": "10.5281/zenodo.15878792",
+   "form": "linear",
+   "params": [
+    336.308278466194,
+    -0.2413316321764813
+   ],
+   "seed": 2360201626,
+   "x": "posi_50 (nm)",
+   "y": "temp_50 (K)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Study of magneto-thermal resistance effect in a Co50Fe50/Cu multilayer through the analysi' (Zenodo, doi 10.5281/zenodo.15878792): 'temp_50 (K)' is linear in 'posi_50 (nm)' (R\u00b2 = 0.950 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15878792",
+   "held_out_r2": 0.9495,
+   "held_out_rows": 286,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-be6b21f6c349",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "97e30552470e72f7.csv",
+   "doi": "10.5281/zenodo.15878792",
+   "form": "linear",
+   "params": [
+    371.88701565270236,
+    -0.48062914404429696
+   ],
+   "seed": 2360201626,
+   "x": "posi_50 (nm)",
+   "y": "temp_100 (K)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Study of magneto-thermal resistance effect in a Co50Fe50/Cu multilayer through the analysi' (Zenodo, doi 10.5281/zenodo.15878792): 'temp_100 (K)' is linear in 'posi_50 (nm)' (R\u00b2 = 0.953 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15878792",
+   "held_out_r2": 0.9461,
+   "held_out_rows": 286,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a6a66ddf883e",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "97e30552470e72f7.csv",
+   "doi": "10.5281/zenodo.15878792",
+   "form": "linear",
+   "params": [
+    1330.9949314011726,
+    -3.9354031288500595
+   ],
+   "seed": 2360201626,
+   "x": "temp_50 (K)",
+   "y": "posi_100 (nm)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Study of magneto-thermal resistance effect in a Co50Fe50/Cu multilayer through the analysi' (Zenodo, doi 10.5281/zenodo.15878792): 'posi_100 (nm)' is linear in 'temp_50 (K)' (R\u00b2 = 0.950 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15878792",
+   "held_out_r2": 0.9495,
+   "held_out_rows": 286,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-010f38640191",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "97e30552470e72f7.csv",
+   "doi": "10.5281/zenodo.15878792",
+   "form": "linear",
+   "params": [
+    371.88701565270236,
+    -0.48062914404429696
+   ],
+   "seed": 2360201626,
+   "x": "posi_100 (nm)",
+   "y": "temp_100 (K)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Study of magneto-thermal resistance effect in a Co50Fe50/Cu multilayer through the analysi' (Zenodo, doi 10.5281/zenodo.15878792): 'temp_100 (K)' is linear in 'posi_100 (nm)' (R\u00b2 = 0.953 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14633767",
+   "held_out_r2": 0.9279,
+   "held_out_rows": 333,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-437b2b332be5",
+  "kind": "empirical",
+  "novelty": "KNOWN: equation of state of a simulated fluid (pressure, density, temperature, chemical potential, kinetic energy) \u2014 not a discovery",
+  "payload": {
+   "dataset": "ebbacace0ce48d99.csv",
+   "doi": "10.5281/zenodo.14633767",
+   "form": "power law",
+   "params": [
+    0.21823104920353545,
+    0.9591730897773064
+   ],
+   "seed": 3229255821,
+   "x": "Tonic_Rest",
+   "y": "Tonic_Stress"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'In the Ear of the Beholder: Audio-Visual Characteristics of Restorative Spaces tested in 3' (Zenodo, doi 10.5281/zenodo.14633767): 'Tonic_Stress' follows a power law in 'Tonic_Rest' (R\u00b2 = 0.906 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17062801",
+   "held_out_r2": 0.9101,
+   "held_out_rows": 78,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-fcdada18fea1",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "2d458e31741d2cb0.csv",
+   "doi": "10.5281/zenodo.17062801",
+   "form": "power law",
+   "params": [
+    -2.969056886665165,
+    1.153018087805861
+   ],
+   "seed": 2728490061,
+   "x": "toluene.Value",
+   "y": "o.xylene.Value"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Measurement report: 30 years of monitoring aromatic hydrocarbons (BTEX) at a suburban site' (Zenodo, doi 10.5281/zenodo.17062801): 'o.xylene.Value' follows a power law in 'toluene.Value' (R\u00b2 = 0.922 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17062801",
+   "held_out_r2": 0.9812,
+   "held_out_rows": 78,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-aba54eded4a9",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "2d458e31741d2cb0.csv",
+   "doi": "10.5281/zenodo.17062801",
+   "form": "power law",
+   "params": [
+    1.031250843508269,
+    1.0671206257828163
+   ],
+   "seed": 2728490061,
+   "x": "ethylbenzene.Value",
+   "y": "m.p.xylene.Value"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Measurement report: 30 years of monitoring aromatic hydrocarbons (BTEX) at a suburban site' (Zenodo, doi 10.5281/zenodo.17062801): 'm.p.xylene.Value' follows a power law in 'ethylbenzene.Value' (R\u00b2 = 0.982 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17062801",
+   "held_out_r2": 0.9903,
+   "held_out_rows": 78,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-31bec3f1224c",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "2d458e31741d2cb0.csv",
+   "doi": "10.5281/zenodo.17062801",
+   "form": "power law",
+   "params": [
+    -0.1328702962348717,
+    1.067516374614018
+   ],
+   "seed": 2728490061,
+   "x": "ethylbenzene.Value",
+   "y": "o.xylene.Value"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Measurement report: 30 years of monitoring aromatic hydrocarbons (BTEX) at a suburban site' (Zenodo, doi 10.5281/zenodo.17062801): 'o.xylene.Value' follows a power law in 'ethylbenzene.Value' (R\u00b2 = 0.992 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.18546379",
+   "held_out_r2": 0.8783,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-eb375fe579b5",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "27ca06cffc35dc3f.csv",
+   "doi": "10.5281/zenodo.18546379",
+   "form": "linear",
+   "params": [
+    0.04459691692288382,
+    -1182.5326166845439
+   ],
+   "seed": 3310011358,
+   "x": "33_1k33_WZ_V86 [m/s]",
+   "y": "50_2k18_Accel_BAM_SH2 [m/s\u00b2]"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'openLAB Bridge Bautzen Germany - Load Test 05th - 07th May 2025 - Vibration Excitation Mea' (Zenodo, doi 10.5281/zenodo.18546379): '50_2k18_Accel_BAM_SH2 [m/s\u00b2]' is linear in '33_1k33_WZ_V86 [m/s]' (R\u00b2 = 0.900 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.18546379",
+   "held_out_r2": 0.9623,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-de009e2a4c80",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "27ca06cffc35dc3f.csv",
+   "doi": "10.5281/zenodo.18546379",
+   "form": "linear",
+   "params": [
+    -0.8378786220653318,
+    92.23349795557355
+   ],
+   "seed": 3310011358,
+   "x": "49_2k17_Accel_UR_SH1 [m/s\u00b2]",
+   "y": "50_2k18_Accel_BAM_SH2 [m/s\u00b2]"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'openLAB Bridge Bautzen Germany - Load Test 05th - 07th May 2025 - Vibration Excitation Mea' (Zenodo, doi 10.5281/zenodo.18546379): '50_2k18_Accel_BAM_SH2 [m/s\u00b2]' is linear in '49_2k17_Accel_UR_SH1 [m/s\u00b2]' (R\u00b2 = 0.962 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.5242901",
+   "held_out_r2": 0.9823,
+   "held_out_rows": 294,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f422f784c53a",
+  "kind": "empirical",
+  "novelty": "KNOWN: standard atmosphere / hydrostatics (temperature, pressure and altitude, T \u221d P^(R\u00b7\u0393/g)) \u2014 not a discovery",
+  "payload": {
+   "dataset": "6fbcb28f8a1e7e01.csv",
+   "doi": "10.5281/zenodo.5242901",
+   "form": "linear",
+   "params": [
+    16.75716266127965,
+    0.9965108494373902
+   ],
+   "seed": 649654571,
+   "x": "speicherinhalt_ganzeschweiz_absolut",
+   "y": "speicherinhalt_ganzeschweiz_wochenanfang"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data on the Swiss energy system and electric vehicles' (Zenodo, doi 10.5281/zenodo.5242901): 'speicherinhalt_ganzeschweiz_wochenanfang' is linear in 'speicherinhalt_ganzeschweiz_absolut' (R\u00b2 = 0.981 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.5242901",
+   "held_out_r2": 0.8995,
+   "held_out_rows": 294,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-80e262f4fe00",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "6fbcb28f8a1e7e01.csv",
+   "doi": "10.5281/zenodo.5242901",
+   "form": "linear",
+   "params": [
+    364.1701726851679,
+    1.0117490916475544
+   ],
+   "seed": 649654571,
+   "x": "speicherzuwachs",
+   "y": "zufluss"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data on the Swiss energy system and electric vehicles' (Zenodo, doi 10.5281/zenodo.5242901): 'zufluss' is linear in 'speicherzuwachs' (R\u00b2 = 0.906 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.5242901",
+   "held_out_r2": 0.9902,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-2669b5725a21",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3801372edf159b6b.csv",
+   "doi": "10.5281/zenodo.5242901",
+   "form": "power law",
+   "params": [
+    -0.05898161543470909,
+    1.0070909672721677
+   ],
+   "seed": 489714148,
+   "x": "Fossil",
+   "y": "LC"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data on the Swiss energy system and electric vehicles' (Zenodo, doi 10.5281/zenodo.5242901): 'LC' follows a power law in 'Fossil' (R\u00b2 = 0.990 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
