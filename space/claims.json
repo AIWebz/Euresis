@@ -892520,5 +892520,59 @@
   "statement": "[physics: collision] Fraction of kinetic energy transferred to the target [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Fraction of kinetic energy retained by target [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1.39e-19, 0.000195))",
   "status": "proved",
   "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "checked_up_to": 58,
+   "method": "Grundy values recomputed; Guy\u2013Smith periodicity theorem condition checked",
+   "values_of_one_period": [
+    2,
+    3,
+    4,
+    5,
+    4,
+    2,
+    3
+   ]
+  },
+  "id": "gam-9627f992f645",
+  "kind": "game",
+  "novelty": "novelty unchecked: octal games of up to three digits are tabulated in Winning Ways and Flammenkamp's tables, which cannot be searched from here",
+  "payload": {
+   "code": "217351",
+   "period": 7,
+   "preperiod": 19
+  },
+  "source": "games.py",
+  "statement": "Octal game 0.217351 is completely solved: its Grundy values are periodic with pre-period 19 and period 7 (Guy\u2013Smith periodicity theorem)",
+  "status": "proved",
+  "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "checked_up_to": 58,
+   "method": "Grundy values recomputed; Guy\u2013Smith periodicity theorem condition checked",
+   "values_of_one_period": [
+    2,
+    3,
+    4,
+    5,
+    4,
+    2,
+    3
+   ]
+  },
+  "id": "gam-4b9ca11c177f",
+  "kind": "game",
+  "novelty": "novelty unchecked: octal games of up to three digits are tabulated in Winning Ways and Flammenkamp's tables, which cannot be searched from here",
+  "payload": {
+   "code": "217353",
+   "period": 7,
+   "preperiod": 19
+  },
+  "source": "games.py",
+  "statement": "Octal game 0.217353 is completely solved: its Grundy values are periodic with pre-period 19 and period 7 (Guy\u2013Smith periodicity theorem)",
+  "status": "proved",
+  "verifier": "guy-smith-periodicity"
  }
 ]
