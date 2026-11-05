@@ -20,6 +20,7 @@ from __future__ import annotations
 import hashlib
 import io
 import json
+import re
 import time
 import urllib.parse
 import urllib.request
@@ -203,6 +204,19 @@ _PHRASE = {"linear": "is linear", "power law": "follows a power law", "exponenti
            "logarithmic": "grows logarithmically"}
 
 
+GEOMETRIC_WORDS = ("area", "volume", "radius", "diameter", "length", "width", "height", "size", "perimeter",
+                   "µm", "μm", "mm", "cm", "m^2", "m^3", "m2", "m3", "km")
+
+
+def geometric(cx, cy, exponent) -> bool:
+    """A power law between two size-like quantities with a simple exponent (2/3, 1/2, 3, …) is geometry."""
+    names = (str(cx) + " " + str(cy)).lower()
+    if sum(w in names for w in GEOMETRIC_WORDS) < 2 and not all(any(w in str(c).lower() for w in GEOMETRIC_WORDS)
+                                                                 for c in (cx, cy)):
+        return False
+    return any(abs(exponent - p / q) < 0.03 for q in (1, 2, 3) for p in range(1, 10))
+
+
 def analyse(path: Path, item: dict, reg: Registry, echo=print) -> list[dict]:
     from . import gate
     T = load_table(path)
@@ -226,6 +240,11 @@ def analyse(path: Path, item: dict, reg: Registry, echo=print) -> list[dict]:
             if a_ != b_ and (a_.startswith(b_) or b_.startswith(a_) or a_.endswith(b_) or b_.endswith(a_)) and \
                     min(len(a_), len(b_)) >= 2:
                 continue                      # derived column: x vs x_mean, x_max, log_x, …
+            generic = re.compile(r"^(column|col|unnamed|var|field|v|x|y|c)\W*\d|unlabelled")
+            if generic.search(a_) or generic.search(b_):
+                continue                      # generic column names: cannot be interpreted, so not reportable
+            if re.sub(r"\d+", "", a_) == re.sub(r"\d+", "", b_):
+                continue                      # the same quantity from different instruments/sensors (mms1 vs mms2)
             names = {a_, b_}
             if names & {"se", "sem", "standard error", "std_err", "stderr"} and names & {"n", "sample size", "n_total", "size"}:
                 continue                      # SE = σ/√n: a statistical identity, not a law
@@ -248,6 +267,8 @@ def analyse(path: Path, item: dict, reg: Registry, echo=print) -> list[dict]:
             if best is None or best[2] < 0.9 or best[2] > 0.99999:
                 continue                      # weak, or an exact (definitional) relation
             form, params, sA = best
+            if form == "power law" and geometric(cx, cy, params[1]):
+                continue                      # area ∝ volume^(2/3), radius ∝ area^(1/2), …: geometry, not a law
             payload = {"dataset": str(path.name), "x": str(cx), "y": str(cy), "form": form, "seed": seed,
                        "params": [float(params[0]), float(params[1])], "doi": item.get("doi", "")}
             stmt = (f"In '{item.get('title', '')[:90]}' ({item.get('source')}{', doi ' + item['doi'] if item.get('doi') else ''}): "

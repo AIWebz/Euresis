@@ -46,3 +46,22 @@ def test_headerless_csv_gets_column_numbers(tmp_path):
     path.write_text("\n".join(f"{a},{2 * a ** 2}" for a in x))
     T = F.load_table(path)
     assert list(T.columns) == ["column 1 (unlabelled)", "column 2 (unlabelled)"] and len(T) == 200
+
+
+def test_geometry_and_same_quantity_filters():
+    assert F.geometric("Area [µm^2]", "Volume [µm^3]", 0.667)
+    assert F.geometric("EqRadius [µm]", "Area [µm^2]", 0.5)
+    assert not F.geometric("fish_length_mm", "otolith_mass_g", 0.81)
+    assert not F.geometric("temperature", "pressure", 1.0)
+
+
+def test_generic_column_names_skipped(tmp_path, monkeypatch):
+    monkeypatch.setattr(F, "CACHE", tmp_path)
+    monkeypatch.setattr(F, "LOG", tmp_path / "log.md")
+    F._SEEN_PAIRS.clear()
+    rng = np.random.default_rng(3)
+    x = rng.uniform(1, 10, 300)
+    path = tmp_path / "g.csv"
+    path.write_text("Column1.6,Column1.9\n" + "\n".join(f"{a},{3 * a + rng.normal(0, 0.5)}" for a in x))
+    reg = Registry(tmp_path / "r.db", tmp_path / "c.json")
+    assert F.analyse(path, {"source": "t", "doi": "", "title": "t", "file": "g.csv"}, reg, echo=lambda *a: None) == []
