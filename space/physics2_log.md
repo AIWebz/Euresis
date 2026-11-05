@@ -377,3 +377,5 @@
 - 2026-11-05 04:08 round 340: velocity addition
 - 2026-11-05 04:08 seed library exhausted and no model to propose new quantities
 - 2026-11-05 04:08 segment end: 340 rounds, 4 discoveries, 2 known laws rediscovered
+- 2026-11-05 06:45 segment start (budget 30 min; model: Qwen3-8B; 4 discoveries so far)
+- 2026-11-05 06:45 round 341: Compton scattering
