@@ -564946,5 +564946,32 @@
   "statement": "In 'ApexFold multi-solvent circular dichroism (CD) dataset' (Zenodo, doi 10.5281/zenodo.20616716): 'TFE_water_CONTINLL_Unstruct' is linear in 'TFE_water_CONTINLL_Alpha' (R\u00b2 = 0.934 on the discovery half)",
   "status": "refuted",
   "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20616716",
+   "held_out_r2": 0.7204,
+   "held_out_rows": 68,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-76a0b731b807",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "aed74ba5249cd122.csv",
+   "doi": "10.5281/zenodo.20616716",
+   "form": "exponential",
+   "params": [
+    -0.6795294079370455,
+    -2.9976153546678934
+   ],
+   "seed": 323106254,
+   "x": "MEOH_water_BestSel_alpha",
+   "y": "MEOH_water_BestSel_beta"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'ApexFold multi-solvent circular dichroism (CD) dataset' (Zenodo, doi 10.5281/zenodo.20616716): 'MEOH_water_BestSel_beta' grows exponentially in 'MEOH_water_BestSel_alpha' (R\u00b2 = 0.914 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
  }
 ]
