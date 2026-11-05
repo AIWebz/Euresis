@@ -557054,5 +557054,140 @@
   "statement": "[economics: Cournot duopoly] Hirshleifer Index [model-proposed; physical meaning unverified] \u2265 4 \u00d7 firm 1's profit as a monopolist   on c1 < 1/2, c2 < 1/2 (tight only at the edge of the domain, near (4.86e-17, 1.05e-08))",
   "status": "proved",
   "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.5c84j",
+   "held_out_r2": 0.9436,
+   "held_out_rows": 160,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-71e3494827e8",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "850397f7c2a4fd21.csv",
+   "doi": "10.5061/dryad.5c84j",
+   "form": "logarithmic",
+   "params": [
+    0.9876118356862202,
+    0.7244780360191883
+   ],
+   "seed": 1169034227,
+   "x": "Long-term Climate Training AUC",
+   "y": "Short-term Variability Training AUC"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Potential breeding distributions of U.S. birds predicted with both short-term v' (Zenodo, doi 10.5061/dryad.5c84j): 'Short-term Variability Training AUC' grows logarithmically in 'Long-term Climate Training AUC' (R\u00b2 = 0.960 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.5c84j",
+   "held_out_r2": 0.9564,
+   "held_out_rows": 160,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ccce71adafc8",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "850397f7c2a4fd21.csv",
+   "doi": "10.5061/dryad.5c84j",
+   "form": "linear",
+   "params": [
+    0.10292782355015075,
+    0.8902938648995501
+   ],
+   "seed": 1169034227,
+   "x": "Long-term Climate Training AUC",
+   "y": "Short-term Variability Testing AUC"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Potential breeding distributions of U.S. birds predicted with both short-term v' (Zenodo, doi 10.5061/dryad.5c84j): 'Short-term Variability Testing AUC' is linear in 'Long-term Climate Training AUC' (R\u00b2 = 0.967 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.5c84j",
+   "held_out_r2": 0.9113,
+   "held_out_rows": 160,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-2b2c3516cf0f",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "850397f7c2a4fd21.csv",
+   "doi": "10.5061/dryad.5c84j",
+   "form": "exponential",
+   "params": [
+    -1.3113779253913853,
+    1.3172076106163588
+   ],
+   "seed": 1169034227,
+   "x": "Short-term Variability Training AUC",
+   "y": "Long-term Climate Testing AUC"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Potential breeding distributions of U.S. birds predicted with both short-term v' (Zenodo, doi 10.5061/dryad.5c84j): 'Long-term Climate Testing AUC' grows exponentially in 'Short-term Variability Training AUC' (R\u00b2 = 0.948 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.5c84j",
+   "held_out_r2": 0.9833,
+   "held_out_rows": 160,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-7a2e6add24d6",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "850397f7c2a4fd21.csv",
+   "doi": "10.5061/dryad.5c84j",
+   "form": "power law",
+   "params": [
+    -0.005340192837328827,
+    0.9899563049593768
+   ],
+   "seed": 1169034227,
+   "x": "Short-term Variability Training AUC",
+   "y": "Short-term Variability Testing AUC"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Potential breeding distributions of U.S. birds predicted with both short-term v' (Zenodo, doi 10.5061/dryad.5c84j): 'Short-term Variability Testing AUC' follows a power law in 'Short-term Variability Training AUC' (R\u00b2 = 0.994 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.5c84j",
+   "held_out_r2": 0.945,
+   "held_out_rows": 160,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-0a5c63e2a371",
+  "kind": "empirical",
+  "novelty": "KNOWN: equation of state of a simulated fluid (pressure, density, temperature, chemical potential, kinetic energy) \u2014 not a discovery",
+  "payload": {
+   "dataset": "850397f7c2a4fd21.csv",
+   "doi": "10.5061/dryad.5c84j",
+   "form": "logarithmic",
+   "params": [
+    0.9848269913912102,
+    0.7185289349760872
+   ],
+   "seed": 1169034227,
+   "x": "Long-term Climate Testing AUC",
+   "y": "Short-term Variability Testing AUC"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Potential breeding distributions of U.S. birds predicted with both short-term v' (Zenodo, doi 10.5061/dryad.5c84j): 'Short-term Variability Testing AUC' grows logarithmically in 'Long-term Climate Testing AUC' (R\u00b2 = 0.962 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
