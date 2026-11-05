@@ -473,3 +473,7 @@
 - 2026-11-05 21:07 FINDING (confirmed on held-out rows): In 'Data for: Assortative mating in an ecological context: Effects of mate choice errors and r' (Zenodo, doi 10.5061/dryad.qnk98sfhd): 'homPairs' is linear in 'CFMn' (R² = 0.983 on the discovery half); held-out R² = 0.976 [emp-57ab701596a4]
 - 2026-11-05 21:07 data feeds: 3764 datasets analysed so far, 427 confirmed findings
 - 2026-11-05 21:55 data feeds: online
+- 2026-11-05 21:56 FINDING (confirmed on held-out rows): In 'Data from: Long-term, not short-term, temperatures predict timing of egg-laying in Europea' (Zenodo, doi 10.5061/dryad.ttdz08m3g): 'meanT' is linear in 'maxT' (R² = 0.921 on the discovery half); held-out R² = 0.924 [emp-4aa9a410aa85]
+- 2026-11-05 21:56 FINDING (confirmed on held-out rows): In 'Data from: Long-term, not short-term, temperatures predict timing of egg-laying in Europea' (Zenodo, doi 10.5061/dryad.ttdz08m3g): 'heatdays' is linear in 'meanT' (R² = 0.979 on the discovery half); held-out R² = 0.979 [emp-aa1748ada8dd]
+- 2026-11-05 21:57 FINDING (confirmed on held-out rows): In 'Literature review on the effect of conspecific density on animal dispersal (2000-2023)' (Zenodo, doi 10.5061/dryad.cz8w9gj6c): 'Zr' is linear in 'r' (R² = 0.988 on the discovery half); held-out R² = 0.990 [emp-e2098caf7a35]
+- 2026-11-05 21:58 data feeds: 3867 datasets analysed so far, 430 confirmed findings

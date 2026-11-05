@@ -901680,5 +901680,140 @@
   "statement": "Octal game 0.222721 is completely solved: its Grundy values are periodic with pre-period 1 and period 6 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7075323",
+   "held_out_r2": 0.7109,
+   "held_out_rows": 74,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-491d97d2370d",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "ac1c34ad61c5b875.csv",
+   "doi": "10.5281/zenodo.7075323",
+   "form": "linear",
+   "params": [
+    -44.69006681313353,
+    0.4272084670808348
+   ],
+   "seed": 3276205684,
+   "x": "deposit_area_m2",
+   "y": "deposit_volume_m3"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Washover morphometry: lidar-derived and reported in literature' (Zenodo, doi 10.5281/zenodo.7075323): 'deposit_volume_m3' is linear in 'deposit_area_m2' (R\u00b2 = 0.965 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.ttdz08m3g",
+   "held_out_r2": 0.924,
+   "held_out_rows": 3654,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4aa9a410aa85",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "dcaf443bc9c990e9.csv",
+   "doi": "10.5061/dryad.ttdz08m3g",
+   "form": "linear",
+   "params": [
+    -1.4127672850745887,
+    0.7874649272621507
+   ],
+   "seed": 71519559,
+   "x": "maxT",
+   "y": "meanT"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Long-term, not short-term, temperatures predict timing of egg-laying in Europea' (Zenodo, doi 10.5061/dryad.ttdz08m3g): 'meanT' is linear in 'maxT' (R\u00b2 = 0.921 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.ttdz08m3g",
+   "held_out_r2": 0.9789,
+   "held_out_rows": 3654,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-aa1748ada8dd",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "dcaf443bc9c990e9.csv",
+   "doi": "10.5061/dryad.ttdz08m3g",
+   "form": "linear",
+   "params": [
+    17.405777656299925,
+    -0.9148485406049645
+   ],
+   "seed": 71519559,
+   "x": "meanT",
+   "y": "heatdays"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Long-term, not short-term, temperatures predict timing of egg-laying in Europea' (Zenodo, doi 10.5061/dryad.ttdz08m3g): 'heatdays' is linear in 'meanT' (R\u00b2 = 0.979 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.cz8w9gj6c",
+   "held_out_r2": 0.9903,
+   "held_out_rows": 49,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e2098caf7a35",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "6b3ae74e6577c28c.csv",
+   "doi": "10.5061/dryad.cz8w9gj6c",
+   "form": "linear",
+   "params": [
+    -0.007477744714856606,
+    1.2098714651969233
+   ],
+   "seed": 2148719614,
+   "x": "r",
+   "y": "Zr"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Literature review on the effect of conspecific density on animal dispersal (2000-2023)' (Zenodo, doi 10.5061/dryad.cz8w9gj6c): 'Zr' is linear in 'r' (R\u00b2 = 0.988 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.q83bk3jpc",
+   "held_out_r2": 0.9518,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-01066507b4ba",
+  "kind": "empirical",
+  "novelty": "KNOWN: standard atmosphere / hydrostatics (temperature, pressure and altitude, T \u221d P^(R\u00b7\u0393/g)) \u2014 not a discovery",
+  "payload": {
+   "dataset": "eadc35b82ebda411.csv",
+   "doi": "10.5061/dryad.q83bk3jpc",
+   "form": "linear",
+   "params": [
+    0.01800484390080529,
+    0.8958500676293177
+   ],
+   "seed": 3867937559,
+   "x": "temp_100km",
+   "y": "temp_met"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Lake effect on summer cooling of shorelines and adjacent inland forests on Lake Superior's' (Zenodo, doi 10.5061/dryad.q83bk3jpc): 'temp_met' is linear in 'temp_100km' (R\u00b2 = 0.951 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
