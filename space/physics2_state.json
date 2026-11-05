@@ -6621,6 +6621,101 @@
    "family": "Cournot duopoly",
    "expr": "((1 - c1)**2/4) / (((1 - 2*c1 + c2)**2 + (1 - 2*c2 + c1)**2)/9)",
    "why": "a power or product of known quantities"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "p*sqrt(1 - L) / (1 - p + p*sqrt(1 - L))",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "sqrt(1 - p*L) / (p*sqrt(1 - L) + 1 - p)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "L*p / (sqrt(1 - L) - 1 + 1 - p)",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "p*(1 - p)*L**2 / (1 - p*L)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(1/3 - r**2 + 2*r**3/3)/(2*(1 - r**3)/3 + v*r**2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(2*r**3/3 - r**2 + 1/3)/(2*(1 - r**3)/3 + v*r**2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(1/3 + r**2 - 4*r**3/3 + v*r**2)/(1/3 + r**2 - 4*r**3/3)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(2*r**3/3 + r**2*v - r**2 + 1/3)/(1 - r**2)",
+   "why": "affine combination of known quantities (expected revenue, expected bidder surplus given reserve and seller's value [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "((sqrt((1 - (a + b)**2)*(1 - (a - b)**2))/(1 + a**2 - b**2)) - sqrt((1 - (a + b)**2)*(1 - (a - b)**2",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "((1 + a**2 - b**2)/(2*a)) * ((1 - a**2 + b**2)/(2*b))",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "((1 + a**2 - b**2)/2)**2 / ((1 - a**2 + b**2)/2)**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "1 - (a + b)**2",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), Invariant mass squared of the system [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "collision",
+   "expr": "(-e*m + 1)/(e*m + 1)",
+   "why": "affine combination of known quantities (target speed / initial speed, velocity ratio of projectile to target after collision [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2 * m / (1 + m)",
+   "why": "affine combination of known quantities (speed of the centre of mass / initial speed, Fraction of kinetic energy retained by projectile [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "(1 - e**2 * m**2) / (1 + m)**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "atan(2*z*r/(1 - r**2))",
+   "why": "only + \u2212 \u00d7 \u00f7, integer powers and square roots (so the prover can decide it)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "z/sqrt(1 - r**2)**2 + 4*z**2*r**2",
+   "why": "not finite on the whole physical domain"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "1/sqrt((1 - r**2)**2 + 4*z**2*r**2)",
+   "why": "affine combination of known quantities (amplitude / static deflection)"
   }
  ],
  "tried": [
@@ -9961,7 +10056,7 @@
    "k": "4"
   }
  ],
- "rounds": 350,
+ "rounds": 355,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",
