@@ -555574,5 +555574,977 @@
   "statement": "Relativistic kinetic energy is always at least the classical value m v^2/2 for 0 < v < c.",
   "status": "unverified",
   "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7050972",
+   "held_out_r2": 0.9553,
+   "held_out_rows": 48,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b7b057c19bb4",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "cc49c14f0a97dd62.csv",
+   "doi": "10.5281/zenodo.7050972",
+   "form": "linear",
+   "params": [
+    -0.3870733297165833,
+    4.507905377769272
+   ],
+   "seed": 2486949454,
+   "x": "Mean Maximum Slope (uA/(cm2*h))",
+   "y": "Enhancement Factor"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Bayesian Estimation on Microbial Electrochemical Time Profiles obtained by a High-Throughp' (Zenodo, doi 10.5281/zenodo.7050972): 'Enhancement Factor' is linear in 'Mean Maximum Slope (uA/(cm2*h))' (R\u00b2 = 0.936 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7050972",
+   "held_out_r2": 0.9766,
+   "held_out_rows": 48,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-de8c77a0985e",
+  "kind": "empirical",
+  "novelty": "KNOWN: equation of state of a simulated fluid (pressure, density, temperature, chemical potential, kinetic energy) \u2014 not a discovery",
+  "payload": {
+   "dataset": "cc49c14f0a97dd62.csv",
+   "doi": "10.5281/zenodo.7050972",
+   "form": "power law",
+   "params": [
+    1.064248010650226,
+    0.9262484191047341
+   ],
+   "seed": 2486949454,
+   "x": "Standard Deviation (uA/(cm2*h))",
+   "y": "Standard Error"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Bayesian Estimation on Microbial Electrochemical Time Profiles obtained by a High-Throughp' (Zenodo, doi 10.5281/zenodo.7050972): 'Standard Error' follows a power law in 'Standard Deviation (uA/(cm2*h))' (R\u00b2 = 0.935 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.5702329",
+   "held_out_r2": 0.9237,
+   "held_out_rows": 35,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-fb8325bf7e3e",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "0e9c651cef97d72f.csv",
+   "doi": "10.5281/zenodo.5702329",
+   "form": "linear",
+   "params": [
+    0.2347107313175479,
+    0.7601447745910779
+   ],
+   "seed": 727475951,
+   "x": "0",
+   "y": "0.1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Confocal Microscopy Visualizes Particle-Crack Interactions in Epoxy Composites with Optica' (Zenodo, doi 10.5281/zenodo.5702329): '0.1' is linear in '0' (R\u00b2 = 0.941 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.5702329",
+   "held_out_r2": 0.966,
+   "held_out_rows": 35,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-044adad88494",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "0e9c651cef97d72f.csv",
+   "doi": "10.5281/zenodo.5702329",
+   "form": "linear",
+   "params": [
+    0.1243602402442342,
+    0.8490530411431656
+   ],
+   "seed": 727475951,
+   "x": "0",
+   "y": "0.2"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Confocal Microscopy Visualizes Particle-Crack Interactions in Epoxy Composites with Optica' (Zenodo, doi 10.5281/zenodo.5702329): '0.2' is linear in '0' (R\u00b2 = 0.979 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.5815297",
+   "held_out_r2": 0.9138,
+   "held_out_rows": 869,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-8ca4731d680e",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "1ab065e7323a8f78.csv",
+   "doi": "10.5281/zenodo.5815297",
+   "form": "linear",
+   "params": [
+    0.03387678354509625,
+    1.0649555704059297
+   ],
+   "seed": 796146672,
+   "x": "PVCL",
+   "y": "5 mol% +C 0.5 mol% OFP"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Mechanically Resistant Poly(N-vinylcaprolactam) Microgels with Sacrificial Supramolecular ' (Zenodo, doi 10.5281/zenodo.5815297): '5 mol% +C 0.5 mol% OFP' is linear in 'PVCL' (R\u00b2 = 0.930 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.18377859",
+   "held_out_r2": 0.9672,
+   "held_out_rows": 55,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-7f34fc923d5f",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3e128e89472b9965.csv",
+   "doi": "10.5281/zenodo.18377859",
+   "form": "power law",
+   "params": [
+    3.1893986884727186,
+    1.1959199505228475
+   ],
+   "seed": 1585955225,
+   "x": "Yield 5nm",
+   "y": "Elastic 5nm"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'LAMMPS inputs and MD-calculated mechanical properties - dataset supporting J. Appl. Phys.,' (Zenodo, doi 10.5281/zenodo.18377859): 'Elastic 5nm' follows a power law in 'Yield 5nm' (R\u00b2 = 0.948 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.18377859",
+   "held_out_r2": 0.9748,
+   "held_out_rows": 55,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a69446055ae3",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3e128e89472b9965.csv",
+   "doi": "10.5281/zenodo.18377859",
+   "form": "power law",
+   "params": [
+    3.1057472846020797,
+    1.1377237703883634
+   ],
+   "seed": 1585955225,
+   "x": "Yield 5nm",
+   "y": "Elastic 7.5nm"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'LAMMPS inputs and MD-calculated mechanical properties - dataset supporting J. Appl. Phys.,' (Zenodo, doi 10.5281/zenodo.18377859): 'Elastic 7.5nm' follows a power law in 'Yield 5nm' (R\u00b2 = 0.953 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.18377859",
+   "held_out_r2": 0.9732,
+   "held_out_rows": 55,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-db4da35b8d14",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3e128e89472b9965.csv",
+   "doi": "10.5281/zenodo.18377859",
+   "form": "power law",
+   "params": [
+    3.087134107859835,
+    1.114298125143211
+   ],
+   "seed": 1585955225,
+   "x": "Yield 5nm",
+   "y": "Elastic 10nm"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'LAMMPS inputs and MD-calculated mechanical properties - dataset supporting J. Appl. Phys.,' (Zenodo, doi 10.5281/zenodo.18377859): 'Elastic 10nm' follows a power law in 'Yield 5nm' (R\u00b2 = 0.952 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.18377859",
+   "held_out_r2": 0.9727,
+   "held_out_rows": 55,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-650438156815",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3e128e89472b9965.csv",
+   "doi": "10.5281/zenodo.18377859",
+   "form": "power law",
+   "params": [
+    3.250043047910366,
+    1.222248090737192
+   ],
+   "seed": 1585955225,
+   "x": "Yield 7.5nm",
+   "y": "Elastic 5nm"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'LAMMPS inputs and MD-calculated mechanical properties - dataset supporting J. Appl. Phys.,' (Zenodo, doi 10.5281/zenodo.18377859): 'Elastic 5nm' follows a power law in 'Yield 7.5nm' (R\u00b2 = 0.954 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.18377859",
+   "held_out_r2": 0.9781,
+   "held_out_rows": 55,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-576ead69b726",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3e128e89472b9965.csv",
+   "doi": "10.5281/zenodo.18377859",
+   "form": "power law",
+   "params": [
+    3.16446212574179,
+    1.16397344367872
+   ],
+   "seed": 1585955225,
+   "x": "Yield 7.5nm",
+   "y": "Elastic 7.5nm"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'LAMMPS inputs and MD-calculated mechanical properties - dataset supporting J. Appl. Phys.,' (Zenodo, doi 10.5281/zenodo.18377859): 'Elastic 7.5nm' follows a power law in 'Yield 7.5nm' (R\u00b2 = 0.962 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.18377859",
+   "held_out_r2": 0.9771,
+   "held_out_rows": 55,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-126db8a1c324",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3e128e89472b9965.csv",
+   "doi": "10.5281/zenodo.18377859",
+   "form": "power law",
+   "params": [
+    3.1451296881874096,
+    1.140583822159432
+   ],
+   "seed": 1585955225,
+   "x": "Yield 7.5nm",
+   "y": "Elastic 10nm"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'LAMMPS inputs and MD-calculated mechanical properties - dataset supporting J. Appl. Phys.,' (Zenodo, doi 10.5281/zenodo.18377859): 'Elastic 10nm' follows a power law in 'Yield 7.5nm' (R\u00b2 = 0.961 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.18377859",
+   "held_out_r2": 0.9744,
+   "held_out_rows": 55,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-293da477370d",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3e128e89472b9965.csv",
+   "doi": "10.5281/zenodo.18377859",
+   "form": "power law",
+   "params": [
+    3.279485310096402,
+    1.2402342666074528
+   ],
+   "seed": 1585955225,
+   "x": "Yield 10nm",
+   "y": "Elastic 5nm"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'LAMMPS inputs and MD-calculated mechanical properties - dataset supporting J. Appl. Phys.,' (Zenodo, doi 10.5281/zenodo.18377859): 'Elastic 5nm' follows a power law in 'Yield 10nm' (R\u00b2 = 0.957 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.18377859",
+   "held_out_r2": 0.9811,
+   "held_out_rows": 55,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-da241c0124a1",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3e128e89472b9965.csv",
+   "doi": "10.5281/zenodo.18377859",
+   "form": "power law",
+   "params": [
+    3.1924074509409657,
+    1.1809938212361883
+   ],
+   "seed": 1585955225,
+   "x": "Yield 10nm",
+   "y": "Elastic 7.5nm"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'LAMMPS inputs and MD-calculated mechanical properties - dataset supporting J. Appl. Phys.,' (Zenodo, doi 10.5281/zenodo.18377859): 'Elastic 7.5nm' follows a power law in 'Yield 10nm' (R\u00b2 = 0.965 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.18377859",
+   "held_out_r2": 0.9801,
+   "held_out_rows": 55,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-13e03b1df57f",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3e128e89472b9965.csv",
+   "doi": "10.5281/zenodo.18377859",
+   "form": "power law",
+   "params": [
+    3.1729405722727706,
+    1.1577583550948376
+   ],
+   "seed": 1585955225,
+   "x": "Yield 10nm",
+   "y": "Elastic 10nm"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'LAMMPS inputs and MD-calculated mechanical properties - dataset supporting J. Appl. Phys.,' (Zenodo, doi 10.5281/zenodo.18377859): 'Elastic 10nm' follows a power law in 'Yield 10nm' (R\u00b2 = 0.965 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.13366859",
+   "held_out_r2": 0.9574,
+   "held_out_rows": 126,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-104bf8836829",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "416b6961883cc503.csv",
+   "doi": "10.5281/zenodo.13366859",
+   "form": "power law",
+   "params": [
+    -0.0008115885921960668,
+    0.9946357424635237
+   ],
+   "seed": 216850936,
+   "x": "\u00b5_(slow)",
+   "y": "\u00b5_(fast)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data set for manuscript \"Perceptual Constancy in the Speed Dependence of Friction During A' (Zenodo, doi 10.5281/zenodo.13366859): '\u00b5_(fast)' follows a power law in '\u00b5_(slow)' (R\u00b2 = 0.950 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.21635676",
+   "held_out_r2": 0.9491,
+   "held_out_rows": 738,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e3646bd837be",
+  "kind": "empirical",
+  "novelty": "KNOWN: equation of state of a simulated fluid (pressure, density, temperature, chemical potential, kinetic energy) \u2014 not a discovery",
+  "payload": {
+   "dataset": "4c14eca655bd6a26.csv",
+   "doi": "10.5281/zenodo.21635676",
+   "form": "linear",
+   "params": [
+    0.010739334674420021,
+    0.07632743510637113
+   ],
+   "seed": 3095948265,
+   "x": "mu_{0} H (T)_c/a0.987",
+   "y": "rho_{yx} (micro-Ohm cm)_c/a0.987"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Influence of strain on the anomalous Hall and Nernst effects in Fe thin films' (Zenodo, doi 10.5281/zenodo.21635676): 'rho_{yx} (micro-Ohm cm)_c/a0.987' is linear in 'mu_{0} H (T)_c/a0.987' (R\u00b2 = 0.949 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22045972",
+   "held_out_r2": 0.9163,
+   "held_out_rows": 1170,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-57d0a11dfd1d",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "664ba62c080f598a.csv",
+   "doi": "10.5281/zenodo.22045972",
+   "form": "power law",
+   "params": [
+    1.5044078278370494,
+    0.6630870986344466
+   ],
+   "seed": 210826297,
+   "x": "LASmax",
+   "y": "LAE_auralisation"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset to \"Short-term noise annoyance towards drones and other transportation noise sourc' (Zenodo, doi 10.5281/zenodo.22045972): 'LAE_auralisation' follows a power law in 'LASmax' (R\u00b2 = 0.917 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22045972",
+   "held_out_r2": 0.9146,
+   "held_out_rows": 1170,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-47c55d274fd1",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "664ba62c080f598a.csv",
+   "doi": "10.5281/zenodo.22045972",
+   "form": "power law",
+   "params": [
+    0.581665409939445,
+    0.8327578272292454
+   ],
+   "seed": 210826297,
+   "x": "LASmax",
+   "y": "Level (Fast; A)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset to \"Short-term noise annoyance towards drones and other transportation noise sourc' (Zenodo, doi 10.5281/zenodo.22045972): 'Level (Fast; A)' follows a power law in 'LASmax' (R\u00b2 = 0.914 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22045972",
+   "held_out_r2": 0.9585,
+   "held_out_rows": 1170,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-61c131cb019a",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "664ba62c080f598a.csv",
+   "doi": "10.5281/zenodo.22045972",
+   "form": "power law",
+   "params": [
+    -10.23098878053981,
+    3.1878444937696506
+   ],
+   "seed": 210826297,
+   "x": "LASmax",
+   "y": "Loudness (ANSI S3.4 2007 (FFT))"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset to \"Short-term noise annoyance towards drones and other transportation noise sourc' (Zenodo, doi 10.5281/zenodo.22045972): 'Loudness (ANSI S3.4 2007 (FFT))' follows a power law in 'LASmax' (R\u00b2 = 0.960 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22045972",
+   "held_out_r2": 0.9453,
+   "held_out_rows": 1170,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-bbf84c27fd7c",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "664ba62c080f598a.csv",
+   "doi": "10.5281/zenodo.22045972",
+   "form": "power law",
+   "params": [
+    -16.494994220817965,
+    4.575617199848498
+   ],
+   "seed": 210826297,
+   "x": "LAE_auralisation",
+   "y": "Loudness (ANSI S3.4 2007 (FFT))"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset to \"Short-term noise annoyance towards drones and other transportation noise sourc' (Zenodo, doi 10.5281/zenodo.22045972): 'Loudness (ANSI S3.4 2007 (FFT))' follows a power law in 'LAE_auralisation' (R\u00b2 = 0.948 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22045972",
+   "held_out_r2": 0.9467,
+   "held_out_rows": 1170,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-15cc11e6ee63",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "664ba62c080f598a.csv",
+   "doi": "10.5281/zenodo.22045972",
+   "form": "power law",
+   "params": [
+    -11.72447348980827,
+    3.6417954749542703
+   ],
+   "seed": 210826297,
+   "x": "Level (Fast; A)",
+   "y": "Loudness (ANSI S3.4 2007 (FFT))"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset to \"Short-term noise annoyance towards drones and other transportation noise sourc' (Zenodo, doi 10.5281/zenodo.22045972): 'Loudness (ANSI S3.4 2007 (FFT))' follows a power law in 'Level (Fast; A)' (R\u00b2 = 0.950 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22045972",
+   "held_out_r2": 0.9511,
+   "held_out_rows": 1170,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ed27924ead76",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "664ba62c080f598a.csv",
+   "doi": "10.5281/zenodo.22045972",
+   "form": "linear",
+   "params": [
+    -0.015309958566559102,
+    0.6376668868429506
+   ],
+   "seed": 210826297,
+   "x": "K5",
+   "y": "Kmean"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset to \"Short-term noise annoyance towards drones and other transportation noise sourc' (Zenodo, doi 10.5281/zenodo.22045972): 'Kmean' is linear in 'K5' (R\u00b2 = 0.955 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20538212",
+   "held_out_r2": 0.9413,
+   "held_out_rows": 2503,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-8c998251872a",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "578cd04297f31a93.csv",
+   "doi": "10.5281/zenodo.20538212",
+   "form": "logarithmic",
+   "params": [
+    198.14256862248038,
+    -43.75544465140719
+   ],
+   "seed": 2245877350,
+   "x": "SiO2_Content(%)",
+   "y": "CaO_Content(%)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Synthetic Dataset for Sequential Learning-Based Optimisation of Bio-Ash  Binder Formulatio' (Zenodo, doi 10.5281/zenodo.20538212): 'CaO_Content(%)' grows logarithmically in 'SiO2_Content(%)' (R\u00b2 = 0.945 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20538212",
+   "held_out_r2": 0.9692,
+   "held_out_rows": 2503,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-bb1188836515",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "578cd04297f31a93.csv",
+   "doi": "10.5281/zenodo.20538212",
+   "form": "exponential",
+   "params": [
+    1.8578100915236377,
+    -0.052380569334913016
+   ],
+   "seed": 2245877350,
+   "x": "SiO2_Content(%)",
+   "y": "CaO/(SiO2+Al2O3+Fe2O3)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Synthetic Dataset for Sequential Learning-Based Optimisation of Bio-Ash  Binder Formulatio' (Zenodo, doi 10.5281/zenodo.20538212): 'CaO/(SiO2+Al2O3+Fe2O3)' grows exponentially in 'SiO2_Content(%)' (R\u00b2 = 0.970 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20538212",
+   "held_out_r2": 0.973,
+   "held_out_rows": 2503,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-1ee966e8963f",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "578cd04297f31a93.csv",
+   "doi": "10.5281/zenodo.20538212",
+   "form": "exponential",
+   "params": [
+    -2.2287346806568222,
+    0.05738636929823669
+   ],
+   "seed": 2245877350,
+   "x": "SiO2_Content(%)",
+   "y": "SiO2/CaO"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Synthetic Dataset for Sequential Learning-Based Optimisation of Bio-Ash  Binder Formulatio' (Zenodo, doi 10.5281/zenodo.20538212): 'SiO2/CaO' grows exponentially in 'SiO2_Content(%)' (R\u00b2 = 0.974 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20538212",
+   "held_out_r2": 0.9063,
+   "held_out_rows": 2503,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3a6c6d16cab1",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "578cd04297f31a93.csv",
+   "doi": "10.5281/zenodo.20538212",
+   "form": "exponential",
+   "params": [
+    0.6830807478512637,
+    0.04056608321142287
+   ],
+   "seed": 2245877350,
+   "x": "SiO2_Content(%)",
+   "y": "SiO2/Al2O3"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Synthetic Dataset for Sequential Learning-Based Optimisation of Bio-Ash  Binder Formulatio' (Zenodo, doi 10.5281/zenodo.20538212): 'SiO2/Al2O3' grows exponentially in 'SiO2_Content(%)' (R\u00b2 = 0.907 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20538212",
+   "held_out_r2": 0.9405,
+   "held_out_rows": 2503,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-6e2725cbd1cb",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "578cd04297f31a93.csv",
+   "doi": "10.5281/zenodo.20538212",
+   "form": "linear",
+   "params": [
+    -0.16734742100761263,
+    0.04061605576557087
+   ],
+   "seed": 2245877350,
+   "x": "CaO_Content(%)",
+   "y": "SO4_Content(%)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Synthetic Dataset for Sequential Learning-Based Optimisation of Bio-Ash  Binder Formulatio' (Zenodo, doi 10.5281/zenodo.20538212): 'SO4_Content(%)' is linear in 'CaO_Content(%)' (R\u00b2 = 0.940 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20538212",
+   "held_out_r2": 0.9827,
+   "held_out_rows": 2503,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-85e6b3aea464",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "578cd04297f31a93.csv",
+   "doi": "10.5281/zenodo.20538212",
+   "form": "power law",
+   "params": [
+    -5.612403873676231,
+    1.5006441626190827
+   ],
+   "seed": 2245877350,
+   "x": "CaO_Content(%)",
+   "y": "CaO/(SiO2+Al2O3+Fe2O3)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Synthetic Dataset for Sequential Learning-Based Optimisation of Bio-Ash  Binder Formulatio' (Zenodo, doi 10.5281/zenodo.20538212): 'CaO/(SiO2+Al2O3+Fe2O3)' follows a power law in 'CaO_Content(%)' (R\u00b2 = 0.983 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20538212",
+   "held_out_r2": 0.9773,
+   "held_out_rows": 2503,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3fe563eb1ebd",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "578cd04297f31a93.csv",
+   "doi": "10.5281/zenodo.20538212",
+   "form": "power law",
+   "params": [
+    5.92884628082796,
+    -1.6365677308285742
+   ],
+   "seed": 2245877350,
+   "x": "CaO_Content(%)",
+   "y": "SiO2/CaO"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Synthetic Dataset for Sequential Learning-Based Optimisation of Bio-Ash  Binder Formulatio' (Zenodo, doi 10.5281/zenodo.20538212): 'SiO2/CaO' follows a power law in 'CaO_Content(%)' (R\u00b2 = 0.978 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20538212",
+   "held_out_r2": 0.9321,
+   "held_out_rows": 2503,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-0cc8104d86d1",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "578cd04297f31a93.csv",
+   "doi": "10.5281/zenodo.20538212",
+   "form": "logarithmic",
+   "params": [
+    68.55026632809698,
+    -15.9319642965407
+   ],
+   "seed": 2245877350,
+   "x": "CaO_Content(%)",
+   "y": "SiO2/Al2O3"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Synthetic Dataset for Sequential Learning-Based Optimisation of Bio-Ash  Binder Formulatio' (Zenodo, doi 10.5281/zenodo.20538212): 'SiO2/Al2O3' grows logarithmically in 'CaO_Content(%)' (R\u00b2 = 0.933 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20538212",
+   "held_out_r2": 0.9217,
+   "held_out_rows": 2503,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a3b82588cbdc",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "578cd04297f31a93.csv",
+   "doi": "10.5281/zenodo.20538212",
+   "form": "linear",
+   "params": [
+    -0.22501161070366604,
+    0.8239076551196904
+   ],
+   "seed": 2245877350,
+   "x": "SO4_Content(%)",
+   "y": "CaO/(SiO2+Al2O3+Fe2O3)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Synthetic Dataset for Sequential Learning-Based Optimisation of Bio-Ash  Binder Formulatio' (Zenodo, doi 10.5281/zenodo.20538212): 'CaO/(SiO2+Al2O3+Fe2O3)' is linear in 'SO4_Content(%)' (R\u00b2 = 0.923 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20538212",
+   "held_out_r2": 0.9046,
+   "held_out_rows": 2503,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-bbb4efaa23c3",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "578cd04297f31a93.csv",
+   "doi": "10.5281/zenodo.20538212",
+   "form": "power law",
+   "params": [
+    0.4113743291554854,
+    -1.4070303944818252
+   ],
+   "seed": 2245877350,
+   "x": "SO4_Content(%)",
+   "y": "SiO2/CaO"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Synthetic Dataset for Sequential Learning-Based Optimisation of Bio-Ash  Binder Formulatio' (Zenodo, doi 10.5281/zenodo.20538212): 'SiO2/CaO' follows a power law in 'SO4_Content(%)' (R\u00b2 = 0.908 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20538212",
+   "held_out_r2": 0.9389,
+   "held_out_rows": 2503,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d3b65d0f2605",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "578cd04297f31a93.csv",
+   "doi": "10.5281/zenodo.20538212",
+   "form": "power law",
+   "params": [
+    2.258168708411055,
+    0.7099183851720853
+   ],
+   "seed": 2245877350,
+   "x": "SiO2/CaO",
+   "y": "SiO2/Al2O3"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Synthetic Dataset for Sequential Learning-Based Optimisation of Bio-Ash  Binder Formulatio' (Zenodo, doi 10.5281/zenodo.20538212): 'SiO2/Al2O3' follows a power law in 'SiO2/CaO' (R\u00b2 = 0.939 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17230377",
+   "held_out_r2": 0.9617,
+   "held_out_rows": 480,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4e778f39cca9",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "49745d6b2128221c.csv",
+   "doi": "10.5281/zenodo.17230377",
+   "form": "power law",
+   "params": [
+    2.9985140334547964,
+    -1.1159984886333798
+   ],
+   "seed": 1483563975,
+   "x": "EquivalentDiameters",
+   "y": "SurfaceAreaVolumeRatio"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset used in the publication entitled \"Slip transfer, slip blocking and slip-to-twin tr' (Zenodo, doi 10.5281/zenodo.17230377): 'SurfaceAreaVolumeRatio' follows a power law in 'EquivalentDiameters' (R\u00b2 = 0.970 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17230377",
+   "held_out_r2": 0.9596,
+   "held_out_rows": 480,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b1b6ec55c0af",
+  "kind": "empirical",
+  "novelty": "KNOWN: stellar structure relations (radius, log g, mass, luminosity, Teff) \u2014 not a discovery",
+  "payload": {
+   "dataset": "49745d6b2128221c.csv",
+   "doi": "10.5281/zenodo.17230377",
+   "form": "power law",
+   "params": [
+    2.783759301662948,
+    -0.3734120960085817
+   ],
+   "seed": 1483563975,
+   "x": "GrainVolumes",
+   "y": "SurfaceAreaVolumeRatio"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset used in the publication entitled \"Slip transfer, slip blocking and slip-to-twin tr' (Zenodo, doi 10.5281/zenodo.17230377): 'SurfaceAreaVolumeRatio' follows a power law in 'GrainVolumes' (R\u00b2 = 0.969 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.21871870",
+   "held_out_r2": 0.7858,
+   "held_out_rows": 159,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-507c08dd93b1",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "529f1360db0acec0.csv",
+   "doi": "10.5281/zenodo.21871870",
+   "form": "linear",
+   "params": [
+    0.000222012743482389,
+    0.001215460974316525
+   ],
+   "seed": 1626409341,
+   "x": "antisense_reads",
+   "y": "antisense_rpkm"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Shadow_ORF_1' (Zenodo, doi 10.5281/zenodo.21871870): 'antisense_rpkm' is linear in 'antisense_reads' (R\u00b2 = 0.930 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
  }
 ]
