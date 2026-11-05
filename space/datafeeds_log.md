@@ -187,3 +187,4 @@
 - 2026-11-05 06:43 FINDING (confirmed on held-out rows): In 'Dataset and code for nematode paper' (Zenodo, doi 10.5281/zenodo.17397723): 'larval_density' follows a power law in 'larvae' (R² = 0.989 on the discovery half); held-out R² = 0.988 [emp-e7b0d2e05fa4]
 - 2026-11-05 06:43 FINDING (confirmed on held-out rows): In 'A database with 1 million individual observations on intra-specific trait variation for 10' (Zenodo, doi 10.5281/zenodo.22233548): 'n.survivors' is linear in 'init.trees' (R² = 0.970 on the discovery half); held-out R² = 0.969 [emp-96c9a7b8387c]
 - 2026-11-05 06:45 data feeds: 906 datasets analysed so far, 172 confirmed findings
+- 2026-11-05 07:46 data feeds: online
