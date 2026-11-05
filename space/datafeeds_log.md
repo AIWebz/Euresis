@@ -293,3 +293,10 @@
 - 2026-11-05 13:28 FINDING (confirmed on held-out rows): In 'Real data from PMUs' (Zenodo, doi 10.5281/zenodo.8343635): 'VB:Magnitude.1' grows exponentially in 'VA:Magnitude.1' (R² = 0.998 on the discovery half); held-out R² = 0.954 [emp-8510d6db5bd1]
 - 2026-11-05 13:28 data feeds: 1745 datasets analysed so far, 263 confirmed findings
 - 2026-11-05 14:16 data feeds: online
+- 2026-11-05 14:17 FINDING (confirmed on held-out rows): In 'Permafrost Thaw Settlement Dataset' (Zenodo, doi 10.5281/zenodo.15192404): 'frozen_bulk_density_rep' follows a power law in 'gravimetric_wc_init' (R² = 0.927 on the discovery half); held-out R² = 0.914 [emp-b63f3e3ff082]
+- 2026-11-05 14:17 FINDING (confirmed on held-out rows): In 'Permafrost Thaw Settlement Dataset' (Zenodo, doi 10.5281/zenodo.15192404): 'frozen_dry_density_calc' follows a power law in 'gravimetric_wc_init' (R² = 0.984 on the discovery half); held-out R² = 0.984 [emp-a062caf59258]
+- 2026-11-05 14:17 FINDING (confirmed on held-out rows): In 'Permafrost Thaw Settlement Dataset' (Zenodo, doi 10.5281/zenodo.15192404): 'frozen_void_ratio_calc' follows a power law in 'gravimetric_wc_init' (R² = 0.984 on the discovery half); held-out R² = 0.987 [emp-a104175e9e4b]
+- 2026-11-05 14:17 FINDING (confirmed on held-out rows): In 'Permafrost Thaw Settlement Dataset' (Zenodo, doi 10.5281/zenodo.15192404): 'frozen_void_ratio_calc' follows a power law in 'frozen_bulk_density_rep' (R² = 0.951 on the discovery half); held-out R² = 0.942 [emp-43154c2147cf]
+- 2026-11-05 14:17 FINDING (confirmed on held-out rows): In 'Permafrost Thaw Settlement Dataset' (Zenodo, doi 10.5281/zenodo.15192404): 'volumetric_wc_calc' is linear in 'frozen_dry_density_calc' (R² = 0.916 on the discovery half); held-out R² = 0.890 [emp-abbef355089f]
+- 2026-11-05 14:17 FINDING (confirmed on held-out rows): In 'Permafrost Thaw Settlement Dataset' (Zenodo, doi 10.5281/zenodo.15192404): 'frozen_void_ratio_calc' follows a power law in 'frozen_dry_density_calc' (R² = 0.963 on the discovery half); held-out R² = 0.967 [emp-00002f157483]
+- 2026-11-05 14:18 data feeds: 1819 datasets analysed so far, 269 confirmed findings

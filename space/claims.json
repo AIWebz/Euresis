@@ -765321,5 +765321,275 @@
   "statement": "Octal game 0.154723 is completely solved: its Grundy values are periodic with pre-period 4 and period 11 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15192404",
+   "held_out_r2": 0.9136,
+   "held_out_rows": 217,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b63f3e3ff082",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "fb7d665f77f116f0.csv",
+   "doi": "10.5281/zenodo.15192404",
+   "form": "power law",
+   "params": [
+    8.174078077949318,
+    -0.20491603581053833
+   ],
+   "seed": 598774569,
+   "x": "gravimetric_wc_init",
+   "y": "frozen_bulk_density_rep"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Permafrost Thaw Settlement Dataset' (Zenodo, doi 10.5281/zenodo.15192404): 'frozen_bulk_density_rep' follows a power law in 'gravimetric_wc_init' (R\u00b2 = 0.927 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15192404",
+   "held_out_r2": 0.9841,
+   "held_out_rows": 217,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a062caf59258",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "fb7d665f77f116f0.csv",
+   "doi": "10.5281/zenodo.15192404",
+   "form": "power law",
+   "params": [
+    9.97261693027738,
+    -0.7944519265343915
+   ],
+   "seed": 598774569,
+   "x": "gravimetric_wc_init",
+   "y": "frozen_dry_density_calc"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Permafrost Thaw Settlement Dataset' (Zenodo, doi 10.5281/zenodo.15192404): 'frozen_dry_density_calc' follows a power law in 'gravimetric_wc_init' (R\u00b2 = 0.984 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15192404",
+   "held_out_r2": 0.9871,
+   "held_out_rows": 217,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a104175e9e4b",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "fb7d665f77f116f0.csv",
+   "doi": "10.5281/zenodo.15192404",
+   "form": "power law",
+   "params": [
+    -2.9905792064644636,
+    0.866105908654013
+   ],
+   "seed": 598774569,
+   "x": "gravimetric_wc_init",
+   "y": "frozen_void_ratio_calc"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Permafrost Thaw Settlement Dataset' (Zenodo, doi 10.5281/zenodo.15192404): 'frozen_void_ratio_calc' follows a power law in 'gravimetric_wc_init' (R\u00b2 = 0.984 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15192404",
+   "held_out_r2": 0.9769,
+   "held_out_rows": 217,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c548cab26d80",
+  "kind": "empirical",
+  "novelty": "KNOWN: equation of state of a simulated fluid (pressure, density, temperature, chemical potential, kinetic energy) \u2014 not a discovery",
+  "payload": {
+   "dataset": "fb7d665f77f116f0.csv",
+   "doi": "10.5281/zenodo.15192404",
+   "form": "linear",
+   "params": [
+    -1148.2742873719542,
+    1.3999461681133896
+   ],
+   "seed": 598774569,
+   "x": "frozen_bulk_density_rep",
+   "y": "frozen_dry_density_calc"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Permafrost Thaw Settlement Dataset' (Zenodo, doi 10.5281/zenodo.15192404): 'frozen_dry_density_calc' is linear in 'frozen_bulk_density_rep' (R\u00b2 = 0.984 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15192404",
+   "held_out_r2": 0.9418,
+   "held_out_rows": 217,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-43154c2147cf",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "fb7d665f77f116f0.csv",
+   "doi": "10.5281/zenodo.15192404",
+   "form": "power law",
+   "params": [
+    29.90576925830001,
+    -4.000706829274251
+   ],
+   "seed": 598774569,
+   "x": "frozen_bulk_density_rep",
+   "y": "frozen_void_ratio_calc"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Permafrost Thaw Settlement Dataset' (Zenodo, doi 10.5281/zenodo.15192404): 'frozen_void_ratio_calc' follows a power law in 'frozen_bulk_density_rep' (R\u00b2 = 0.951 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15192404",
+   "held_out_r2": 0.8897,
+   "held_out_rows": 217,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-abbef355089f",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "fb7d665f77f116f0.csv",
+   "doi": "10.5281/zenodo.15192404",
+   "form": "linear",
+   "params": [
+    83.19905386810343,
+    -0.02972134734040223
+   ],
+   "seed": 598774569,
+   "x": "frozen_dry_density_calc",
+   "y": "volumetric_wc_calc"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Permafrost Thaw Settlement Dataset' (Zenodo, doi 10.5281/zenodo.15192404): 'volumetric_wc_calc' is linear in 'frozen_dry_density_calc' (R\u00b2 = 0.916 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15192404",
+   "held_out_r2": 0.9674,
+   "held_out_rows": 217,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-00002f157483",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "fb7d665f77f116f0.csv",
+   "doi": "10.5281/zenodo.15192404",
+   "form": "power law",
+   "params": [
+    7.745101787279926,
+    -1.0696488069292163
+   ],
+   "seed": 598774569,
+   "x": "frozen_dry_density_calc",
+   "y": "frozen_void_ratio_calc"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Permafrost Thaw Settlement Dataset' (Zenodo, doi 10.5281/zenodo.15192404): 'frozen_void_ratio_calc' follows a power law in 'frozen_dry_density_calc' (R\u00b2 = 0.963 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.tn2d16t",
+   "held_out_r2": 0.7827,
+   "held_out_rows": 228,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-01d63b71a70e",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "96962379e539c3ac.csv",
+   "doi": "10.5061/dryad.tn2d16t",
+   "form": "linear",
+   "params": [
+    1.1217162481034155,
+    0.015478686899998739
+   ],
+   "seed": 1119046127,
+   "x": "VWC",
+   "y": "PER"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Grass competition overwhelms effects of herbivores and precipitation on early t' (Zenodo, doi 10.5061/dryad.tn2d16t): 'PER' is linear in 'VWC' (R\u00b2 = 0.995 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.tn2d16t",
+   "held_out_r2": 0.9356,
+   "held_out_rows": 1497,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-98bc326025ac",
+  "kind": "empirical",
+  "novelty": "KNOWN: equation of state of a simulated fluid (pressure, density, temperature, chemical potential, kinetic energy) \u2014 not a discovery",
+  "payload": {
+   "dataset": "2a8819bc8664db4f.csv",
+   "doi": "10.5061/dryad.tn2d16t",
+   "form": "linear",
+   "params": [
+    32.28417130588577,
+    1.1995338183618918
+   ],
+   "seed": 2356697508,
+   "x": "START",
+   "y": "STOP"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Grass competition overwhelms effects of herbivores and precipitation on early t' (Zenodo, doi 10.5061/dryad.tn2d16t): 'STOP' is linear in 'START' (R\u00b2 = 0.937 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.6084/m9.figshare.34918707.v1",
+   "held_out_r2": 0.9689,
+   "held_out_rows": 150,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a56553e44a5e",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "f986e25c0c9a2aa5.csv",
+   "doi": "10.6084/m9.figshare.34918707.v1",
+   "form": "linear",
+   "params": [
+    0.03267009440454451,
+    1.114590221694293
+   ],
+   "seed": 462175329,
+   "x": "NOM_P_VAL",
+   "y": "FDR_Q_VAL"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Source Data and Supplemental Data for: <b>Renal Dysfunction Is the Dominant Driver of Isch' (Figshare, doi 10.6084/m9.figshare.34918707.v1): 'FDR_Q_VAL' is linear in 'NOM_P_VAL' (R\u00b2 = 0.956 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
