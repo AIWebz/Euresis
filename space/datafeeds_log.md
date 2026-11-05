@@ -146,3 +146,4 @@
 - 2026-11-05 02:38 FINDING (confirmed on held-out rows): In 'Data for XID+PRIMA, II: Stepping Through Hyperspectral Imaging to Deblend PRIMAger Beyond ' (Figshare, doi 10.25377/sussex.33123632.v2): 'f_xid_l' is linear in 'f_true' (R² = 0.990 on the discovery half); held-out R² = 0.983 [emp-2398361f571f]
 - 2026-11-05 02:38 FINDING (confirmed on held-out rows): In 'Data for XID+PRIMA, II: Stepping Through Hyperspectral Imaging to Deblend PRIMAger Beyond ' (Figshare, doi 10.25377/sussex.33123632.v2): 'f_xid_u' is linear in 'f_true' (R² = 0.990 on the discovery half); held-out R² = 0.982 [emp-d45346b3d989]
 - 2026-11-05 02:40 data feeds: 550 datasets analysed so far, 137 confirmed findings
+- 2026-11-05 03:32 data feeds: online
