@@ -437,3 +437,4 @@
 - 2026-11-05 18:07 FINDING (confirmed on held-out rows): In 'Data for "ASASSN-21js: A multi-year transit of a ringed disc"' (Zenodo, doi 10.5281/zenodo.13788842): 'flux(mJy)' is linear in 'mag_err' (R² = 0.963 on the discovery half); held-out R² = 0.954 [emp-15ce977d89b7]
 - 2026-11-05 18:08 FINDING (confirmed on held-out rows): In 'Geochemical data of obsidian from the Oki Islands, Iki Island, and northwestern Kyushu.' (Figshare, doi 10.51087/data.geosoc.33161816.v1): 'Major element compositions (wt%), 100% anhydrous normalization' grows exponentially in 'Major element compositions (wt%), original data' (R² = 0.934 on the discovery half); held-out R² = 0.921 [emp-b8ddfd70fbec]
 - 2026-11-05 18:08 data feeds: 2835 datasets analysed so far, 398 confirmed findings
+- 2026-11-05 19:12 data feeds: online
