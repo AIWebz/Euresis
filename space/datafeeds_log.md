@@ -312,3 +312,4 @@
 - 2026-11-05 16:17 FINDING (confirmed on held-out rows): In 'Soil chemistry and ITS sequences of permanent forest plots at the Station de biologie des ' (Zenodo, doi 10.5281/zenodo.3631861): 'orgP' follows a power law in 'totalP' (R² = 0.946 on the discovery half); held-out R² = 0.880 [emp-0328e15f5b69]
 - 2026-11-05 16:18 FINDING (confirmed on held-out rows): In 'Dataset of "CuBi2O4 Electrodes for Visible Light Driven Photoelectrochemical Reduction Rea' (Zenodo, doi 10.5281/zenodo.19111990): 'intensity.3' grows exponentially in 'binding energy' (R² = 0.945 on the discovery half); held-out R² = 0.934 [emp-72784ef065ae]
 - 2026-11-05 16:20 data feeds: 2661 datasets analysed so far, 277 confirmed findings
+- 2026-11-05 17:21 data feeds: online
