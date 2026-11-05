@@ -5929,6 +5929,66 @@
    "family": "velocity addition",
    "expr": "sqrt(1 - u**2) + sqrt(1 - v**2) + (1 + u*v)/(sqrt(1 - u**2)*sqrt(1 - v**2))",
    "why": "affine combination of known quantities (composed speed / c, Total relativistic energy / mc\u00b2 [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "c/(c + x)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, Compton wavelength shift / (initial photon wavelength) [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "x**2*c/(1 + x*c)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, electron kinetic energy / (m_e c\u00b2))"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "c/(x + 1) + 1",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, Scattered photon wavelength / initial photon wavelength [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "sqrt(c**2*x**2 + 1)/(x*(c*x + 1))",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, Scattered photon momentum / initial photon momentum [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "1 - (c1 + c2)/2",
+   "why": "affine combination of known quantities (output of firm 1, output of firm 2)"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "1 / (1 + c1 + c2)",
+   "why": "affine combination of known quantities (output of firm 1, 1/(market price))"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "(1 - 2*c1 + c2)**2 / (1 - 2*c2 + c1)**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "(2 - c1 - c2) / (1 + c1 + c2)",
+   "why": "affine combination of known quantities (output of firm 1, 1/(market price))"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "p*(1 - sqrt(1 - L))",
+   "why": "affine combination of known quantities (expected wealth, expected utility)"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "sqrt(p*(1 - p)*(L**2)/(1 - p*L))",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "1/(1 - (p*sqrt(1 - L) + 1 - p)**2) - 1",
+   "why": "affine combination of known quantities (expected wealth, 1/(maximum premium the person would pay for full insurance))"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "p*(sqrt(1 - L) - 1)/sqrt(1 - p*L)",
+   "why": "not positive on the physical domain"
   }
  ],
  "tried": [
@@ -9119,7 +9179,7 @@
    "k": "1/16"
   }
  ],
- "rounds": 308,
+ "rounds": 311,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",
