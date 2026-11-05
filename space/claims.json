@@ -765591,5 +765591,86 @@
   "statement": "In 'Source Data and Supplemental Data for: <b>Renal Dysfunction Is the Dominant Driver of Isch' (Figshare, doi 10.6084/m9.figshare.34918707.v1): 'FDR_Q_VAL' is linear in 'NOM_P_VAL' (R\u00b2 = 0.956 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-d1a1fa4be498",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "L*p/(-p*sqrt(1 - L) + p + sqrt(-L*p + 1) - 1) >= 1*(L*p/(-p*sqrt(1 - L) + p + sqrt(1 - L) + sqrt(-L*p + 1) - 1))",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 495",
+  "statement": "[economics: insurance and risk] Insurance risk sensitivity [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Insurance Risk Sensitivity Ratio [model-proposed; physical meaning unverified]   on p < 1, L < 1 (tight only at the edge of the domain, near (0.72, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-4e74cf13e4f7",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "1/sqrt(1 - L) >= 1*(L*p/(-p*sqrt(1 - L) + p + sqrt(1 - L) + sqrt(-L*p + 1) - 1))",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 495",
+  "statement": "[economics: insurance and risk] Relative Risk Aversion [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Insurance Risk Sensitivity Ratio [model-proposed; physical meaning unverified]   on p < 1, L < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-870ee0134408",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "L*p/(-p*sqrt(1 - L) + p + sqrt(1 - L) + sqrt(-L*p + 1) - 1) >= 1*(L*p)",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 495",
+  "statement": "[economics: insurance and risk] Insurance Risk Sensitivity Ratio [model-proposed; physical meaning unverified] \u2265 1 \u00d7 actuarially fair insurance premium   on p < 1, L < 1 (tight only at the edge of the domain, near (0.583, 2.41e-16))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]
