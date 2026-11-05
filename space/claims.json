@@ -923511,5 +923511,113 @@
   "statement": "Octal game 0.233311 is completely solved: its Grundy values are periodic with pre-period 7 and period 5 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.12784474",
+   "held_out_r2": 0.901,
+   "held_out_rows": 612,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-6bad0ac9bde0",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "cfa38e2f669e48f9.csv",
+   "doi": "10.5281/zenodo.12784474",
+   "form": "linear",
+   "params": [
+    37.01565983675991,
+    -0.10099651070642106
+   ],
+   "seed": 3831196692,
+   "x": "EN_MET_GR",
+   "y": "CV_B_GR"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'How much energy can giant reed and Miscanthus produce in marginal lands across Italy? A mo' (Zenodo, doi 10.5281/zenodo.12784474): 'CV_B_GR' is linear in 'EN_MET_GR' (R\u00b2 = 0.936 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.12784474",
+   "held_out_r2": 0.9014,
+   "held_out_rows": 612,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a5a71aecc261",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "cfa38e2f669e48f9.csv",
+   "doi": "10.5281/zenodo.12784474",
+   "form": "linear",
+   "params": [
+    36.93642832992522,
+    -0.1531685552574778
+   ],
+   "seed": 3831196692,
+   "x": "EN_ETA_GR",
+   "y": "CV_B_GR"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'How much energy can giant reed and Miscanthus produce in marginal lands across Italy? A mo' (Zenodo, doi 10.5281/zenodo.12784474): 'CV_B_GR' is linear in 'EN_ETA_GR' (R\u00b2 = 0.937 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11503086",
+   "held_out_r2": 0.9106,
+   "held_out_rows": 5000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-764524e2e074",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "5c4a401524e33f87.csv",
+   "doi": "10.5281/zenodo.11503086",
+   "form": "linear",
+   "params": [
+    -7.80472986728971e-07,
+    810.1049362973981
+   ],
+   "seed": 2494405232,
+   "x": "# I_R (A)",
+   "y": "V_2 (V)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset for \"Self-heating effects and switching dynamics in graphene multiterminal Josephs' (Zenodo, doi 10.5281/zenodo.11503086): 'V_2 (V)' is linear in '# I_R (A)' (R\u00b2 = 0.912 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11503086",
+   "held_out_r2": 0.9176,
+   "held_out_rows": 5000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ea66fd0b9df0",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "5c4a401524e33f87.csv",
+   "doi": "10.5281/zenodo.11503086",
+   "form": "linear",
+   "params": [
+    -3.433739161426022e-08,
+    552.1941941853732
+   ],
+   "seed": 2494405232,
+   "x": "# I_R (A)",
+   "y": "V_3 (V)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset for \"Self-heating effects and switching dynamics in graphene multiterminal Josephs' (Zenodo, doi 10.5281/zenodo.11503086): 'V_3 (V)' is linear in '# I_R (A)' (R\u00b2 = 0.915 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]

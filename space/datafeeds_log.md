@@ -478,3 +478,6 @@
 - 2026-11-05 21:57 FINDING (confirmed on held-out rows): In 'Literature review on the effect of conspecific density on animal dispersal (2000-2023)' (Zenodo, doi 10.5061/dryad.cz8w9gj6c): 'Zr' is linear in 'r' (R² = 0.988 on the discovery half); held-out R² = 0.990 [emp-e2098caf7a35]
 - 2026-11-05 21:58 data feeds: 3867 datasets analysed so far, 430 confirmed findings
 - 2026-11-05 22:59 data feeds: online
+- 2026-11-05 23:00 FINDING (confirmed on held-out rows): In 'Dataset for "Self-heating effects and switching dynamics in graphene multiterminal Josephs' (Zenodo, doi 10.5281/zenodo.11503086): 'V_2 (V)' is linear in '# I_R (A)' (R² = 0.912 on the discovery half); held-out R² = 0.911 [emp-764524e2e074]
+- 2026-11-05 23:00 FINDING (confirmed on held-out rows): In 'Dataset for "Self-heating effects and switching dynamics in graphene multiterminal Josephs' (Zenodo, doi 10.5281/zenodo.11503086): 'V_3 (V)' is linear in '# I_R (A)' (R² = 0.915 on the discovery half); held-out R² = 0.918 [emp-ea66fd0b9df0]
+- 2026-11-05 23:01 data feeds: 3926 datasets analysed so far, 432 confirmed findings
