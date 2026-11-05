@@ -702,3 +702,8 @@
 - 2026-11-05 21:25 round 631: insurance and risk
 - 2026-11-05 21:27 round 632: auction with a reserve price
 - 2026-11-05 21:29 round 633: two-body decay
+- 2026-11-05 21:31 round 634: collision
+- 2026-11-05 21:32 round 635: driven oscillator
+- 2026-11-05 21:34 round 636: velocity addition
+- 2026-11-05 21:35 round 637: Compton scattering
+- 2026-11-05 21:37 round 638: Cournot duopoly
