@@ -567,3 +567,8 @@
 - 2026-11-05 15:34 round 508: velocity addition
 - 2026-11-05 15:36 round 509: Compton scattering
 - 2026-11-05 15:38 round 510: Cournot duopoly
+- 2026-11-05 15:39 round 511: insurance and risk
+- 2026-11-05 15:41 round 512: auction with a reserve price
+- 2026-11-05 15:43 round 513: two-body decay
+- 2026-11-05 15:45 round 514: collision
+- 2026-11-05 15:46 round 515: driven oscillator
