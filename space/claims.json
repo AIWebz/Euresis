@@ -867997,5 +867997,1625 @@
   "statement": "Octal game 0.210524 is completely solved: its Grundy values are periodic with pre-period 1 and period 2 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20545890",
+   "held_out_r2": 0.8946,
+   "held_out_rows": 270,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-12dee932949e",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "1537b5adfff55469.csv",
+   "doi": "10.5281/zenodo.20545890",
+   "form": "linear",
+   "params": [
+    2822700.6330602383,
+    6.891921724708331
+   ],
+   "seed": 3401699823,
+   "x": "expected_annual_damages",
+   "y": "expected_people_flooded"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'DIVACoast model results: sea-level rise impacts and adaptation response under different ad' (Zenodo, doi 10.5281/zenodo.20545890): 'expected_people_flooded' is linear in 'expected_annual_damages' (R\u00b2 = 0.919 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.21017516",
+   "held_out_r2": 0.9415,
+   "held_out_rows": 30,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c58977699b2f",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "95608db89c7caaf6.csv",
+   "doi": "10.5281/zenodo.21017516",
+   "form": "power law",
+   "params": [
+    0.641667924103789,
+    0.7919813552519118
+   ],
+   "seed": 2927314804,
+   "x": "Rainfed_SSP585",
+   "y": "Irrigated_SSP585"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Processed datasets supporting rice yield simulations under CMIP5 and CMIP6 climate scenari' (Zenodo, doi 10.5281/zenodo.21017516): 'Irrigated_SSP585' follows a power law in 'Rainfed_SSP585' (R\u00b2 = 0.961 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.21017516",
+   "held_out_r2": 0.9581,
+   "held_out_rows": 30,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-8643b91848e0",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "be4b4bf07960e7dc.csv",
+   "doi": "10.5281/zenodo.21017516",
+   "form": "power law",
+   "params": [
+    -0.048624734380710175,
+    1.0858834919225473
+   ],
+   "seed": 3950206727,
+   "x": "tasmin_SSP126_mean",
+   "y": "tasmax_SSP126_mean"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Processed datasets supporting rice yield simulations under CMIP5 and CMIP6 climate scenari' (Zenodo, doi 10.5281/zenodo.21017516): 'tasmax_SSP126_mean' follows a power law in 'tasmin_SSP126_mean' (R\u00b2 = 0.970 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.21017516",
+   "held_out_r2": 0.8243,
+   "held_out_rows": 30,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c1d5e568d69a",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "be4b4bf07960e7dc.csv",
+   "doi": "10.5281/zenodo.21017516",
+   "form": "logarithmic",
+   "params": [
+    -1.543994005724159,
+    12.383128624224756
+   ],
+   "seed": 3950206727,
+   "x": "tasmax_SSP126_mean",
+   "y": "rsds_SSP126_mean"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Processed datasets supporting rice yield simulations under CMIP5 and CMIP6 climate scenari' (Zenodo, doi 10.5281/zenodo.21017516): 'rsds_SSP126_mean' grows logarithmically in 'tasmax_SSP126_mean' (R\u00b2 = 0.906 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.21017516",
+   "held_out_r2": 0.962,
+   "held_out_rows": 30,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f7af85fd9487",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "ac9c134cce46c575.csv",
+   "doi": "10.5281/zenodo.21017516",
+   "form": "linear",
+   "params": [
+    0.10703451320097174,
+    0.9627879147289632
+   ],
+   "seed": 1735599614,
+   "x": "tasmin_RCP45_mean",
+   "y": "tasmax_RCP45_mean"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Processed datasets supporting rice yield simulations under CMIP5 and CMIP6 climate scenari' (Zenodo, doi 10.5281/zenodo.21017516): 'tasmax_RCP45_mean' is linear in 'tasmin_RCP45_mean' (R\u00b2 = 0.959 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.c07s28s",
+   "held_out_r2": 0.9722,
+   "held_out_rows": 4070,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b341c472994b",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "e1b68e5469974aef.csv",
+   "doi": "10.5061/dryad.c07s28s",
+   "form": "power law",
+   "params": [
+    0.07223859338453753,
+    1.1009341545783797
+   ],
+   "seed": 1796417700,
+   "x": "meanSeed",
+   "y": "sdSeed"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Community assembly and climate mismatch in Late-Quaternary eastern North Americ' (Zenodo, doi 10.5061/dryad.c07s28s): 'sdSeed' follows a power law in 'meanSeed' (R\u00b2 = 0.974 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.h9w0vt4hk",
+   "held_out_r2": 0.9406,
+   "held_out_rows": 5040,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-024789c5660a",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "96abedba330c8aa4.csv",
+   "doi": "10.5061/dryad.h9w0vt4hk",
+   "form": "linear",
+   "params": [
+    -1.7070889037424715,
+    1.163804533610578
+   ],
+   "seed": 4183606868,
+   "x": "pvc",
+   "y": "notreatment"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Microclimate sensor data from 3 locations' (Zenodo, doi 10.5061/dryad.h9w0vt4hk): 'notreatment' is linear in 'pvc' (R\u00b2 = 0.946 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.h9w0vt4hk",
+   "held_out_r2": 0.9173,
+   "held_out_rows": 5040,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-7ed94207b76c",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "96abedba330c8aa4.csv",
+   "doi": "10.5061/dryad.h9w0vt4hk",
+   "form": "linear",
+   "params": [
+    1.058239422875691,
+    0.9153655194111406
+   ],
+   "seed": 4183606868,
+   "x": "pvc",
+   "y": "unshielded"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Microclimate sensor data from 3 locations' (Zenodo, doi 10.5061/dryad.h9w0vt4hk): 'unshielded' is linear in 'pvc' (R\u00b2 = 0.914 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.h9w0vt4hk",
+   "held_out_r2": 0.9097,
+   "held_out_rows": 5040,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-0c3404117c97",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "96abedba330c8aa4.csv",
+   "doi": "10.5061/dryad.h9w0vt4hk",
+   "form": "linear",
+   "params": [
+    2.8177470870928882,
+    0.7628141059817937
+   ],
+   "seed": 4183606868,
+   "x": "notreatment",
+   "y": "unshielded"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Microclimate sensor data from 3 locations' (Zenodo, doi 10.5061/dryad.h9w0vt4hk): 'unshielded' is linear in 'notreatment' (R\u00b2 = 0.909 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.1d1t5",
+   "held_out_r2": 0.9405,
+   "held_out_rows": 600,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9d1c7051c5ac",
+  "kind": "empirical",
+  "novelty": "KNOWN: standard atmosphere / hydrostatics (temperature, pressure and altitude, T \u221d P^(R\u00b7\u0393/g)) \u2014 not a discovery",
+  "payload": {
+   "dataset": "55a2f9e742d83d83.csv",
+   "doi": "10.5061/dryad.1d1t5",
+   "form": "linear",
+   "params": [
+    12.881382941605489,
+    0.027648014269303422
+   ],
+   "seed": 1545916005,
+   "x": "temp_seasonality",
+   "y": "temp_annual_range"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Climate and local abundance in freshwater fishes' (Zenodo, doi 10.5061/dryad.1d1t5): 'temp_annual_range' is linear in 'temp_seasonality' (R\u00b2 = 0.944 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.cnp5hqcb2",
+   "held_out_r2": 0.974,
+   "held_out_rows": 283,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b54cab3e047b",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "7cbbb89645bddddd.csv",
+   "doi": "10.5061/dryad.cnp5hqcb2",
+   "form": "power law",
+   "params": [
+    6.330506068895068,
+    -1.0466757126161355
+   ],
+   "seed": 1514299240,
+   "x": "Nmass_mg.g-1",
+   "y": "C_N_unitless"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Predicting plant species climate preferences on the basis of mechanistic traits' (Zenodo, doi 10.5061/dryad.cnp5hqcb2): 'C_N_unitless' follows a power law in 'Nmass_mg.g-1' (R\u00b2 = 0.978 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.cnp5hqcb2",
+   "held_out_r2": 0.982,
+   "held_out_rows": 54,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-791752d29cee",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "e71125d12f78dc9a.csv",
+   "doi": "10.5061/dryad.cnp5hqcb2",
+   "form": "power law",
+   "params": [
+    6.304997605573313,
+    -1.039761118267406
+   ],
+   "seed": 2592156342,
+   "x": "Nmass_mg.g-1",
+   "y": "C_N"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Predicting plant species climate preferences on the basis of mechanistic traits' (Zenodo, doi 10.5061/dryad.cnp5hqcb2): 'C_N' follows a power law in 'Nmass_mg.g-1' (R\u00b2 = 0.967 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.10418701",
+   "held_out_r2": 0.7266,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-cd9dabf30417",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "1d253d08361968e8.csv",
+   "doi": "10.5281/zenodo.10418701",
+   "form": "linear",
+   "params": [
+    0.2059454423573999,
+    1.6133761970203964
+   ],
+   "seed": 4003304022,
+   "x": "Neutral",
+   "y": "n_cdr_tweets"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Tweets on carbon dioxide removal' (Zenodo, doi 10.5281/zenodo.10418701): 'n_cdr_tweets' is linear in 'Neutral' (R\u00b2 = 0.967 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.10418701",
+   "held_out_r2": 0.7266,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c08d38c973d0",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "1d253d08361968e8.csv",
+   "doi": "10.5281/zenodo.10418701",
+   "form": "linear",
+   "params": [
+    0.2059454423573999,
+    1.6133761970203964
+   ],
+   "seed": 4003304022,
+   "x": "Neutral",
+   "y": "n_cdr_tweets_noccs"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Tweets on carbon dioxide removal' (Zenodo, doi 10.5281/zenodo.10418701): 'n_cdr_tweets_noccs' is linear in 'Neutral' (R\u00b2 = 0.967 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.10418701",
+   "held_out_r2": 0.9389,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-de8fd73d55d0",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "1d253d08361968e8.csv",
+   "doi": "10.5281/zenodo.10418701",
+   "form": "power law",
+   "params": [
+    -6.988911531043126,
+    0.9195446668255558
+   ],
+   "seed": 4003304022,
+   "x": "n_tweets",
+   "y": "tpd"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Tweets on carbon dioxide removal' (Zenodo, doi 10.5281/zenodo.10418701): 'tpd' follows a power law in 'n_tweets' (R\u00b2 = 0.942 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7573365",
+   "held_out_r2": 0.9428,
+   "held_out_rows": 159,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3abaa903db51",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "d90010655781e3d0.csv",
+   "doi": "10.5281/zenodo.7573365",
+   "form": "linear",
+   "params": [
+    5.027145317029079,
+    0.5966739078009159
+   ],
+   "seed": 2957008419,
+   "x": "dic_surface",
+   "y": "alk_surface"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Model output from the Bern3D model of 600 kyr weathering step-change experiments' (Zenodo, doi 10.5281/zenodo.7573365): 'alk_surface' is linear in 'dic_surface' (R\u00b2 = 0.920 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7573365",
+   "held_out_r2": 0.9596,
+   "held_out_rows": 159,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-1fe1073e476b",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "d90010655781e3d0.csv",
+   "doi": "10.5281/zenodo.7573365",
+   "form": "linear",
+   "params": [
+    1.799069248637492,
+    0.8427718053892875
+   ],
+   "seed": 2957008419,
+   "x": "co3_deep",
+   "y": "co3_surface"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Model output from the Bern3D model of 600 kyr weathering step-change experiments' (Zenodo, doi 10.5281/zenodo.7573365): 'co3_surface' is linear in 'co3_deep' (R\u00b2 = 0.956 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7573365",
+   "held_out_r2": 0.9462,
+   "held_out_rows": 159,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-488ea1a067d0",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "d90010655781e3d0.csv",
+   "doi": "10.5281/zenodo.7573365",
+   "form": "linear",
+   "params": [
+    -0.009502781225370011,
+    0.0064432511848733255
+   ],
+   "seed": 2957008419,
+   "x": "co3_surface",
+   "y": "PH_global_mean"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Model output from the Bern3D model of 600 kyr weathering step-change experiments' (Zenodo, doi 10.5281/zenodo.7573365): 'PH_global_mean' is linear in 'co3_surface' (R\u00b2 = 0.939 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7573365",
+   "held_out_r2": 0.9771,
+   "held_out_rows": 159,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-aae7520342ad",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "d90010655781e3d0.csv",
+   "doi": "10.5281/zenodo.7573365",
+   "form": "linear",
+   "params": [
+    -0.0022584474556840498,
+    0.0037242512308666514
+   ],
+   "seed": 2957008419,
+   "x": "co3_surface",
+   "y": "PH_surface"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Model output from the Bern3D model of 600 kyr weathering step-change experiments' (Zenodo, doi 10.5281/zenodo.7573365): 'PH_surface' is linear in 'co3_surface' (R\u00b2 = 0.974 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7573365",
+   "held_out_r2": 0.9539,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c9704e87ef7a",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "c53ba835baacbeeb.csv",
+   "doi": "10.5281/zenodo.7573365",
+   "form": "linear",
+   "params": [
+    -0.0003930792892685983,
+    -0.0058393540478759816
+   ],
+   "seed": 2129659083,
+   "x": "co2",
+   "y": "d13_dic"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Model output from the Bern3D model of 600 kyr weathering step-change experiments' (Zenodo, doi 10.5281/zenodo.7573365): 'd13_dic' is linear in 'co2' (R\u00b2 = 0.955 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7573365",
+   "held_out_r2": -Infinity,
+   "held_out_rows": 209,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-22b694dae9bb",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "2a8bf5fd54610ef7.csv",
+   "doi": "10.5281/zenodo.7573365",
+   "form": "power law",
+   "params": [
+    -7.095565882830881,
+    0.9109028343508069
+   ],
+   "seed": 42466524,
+   "x": "dic_surface",
+   "y": "d13gradient_surfthermo_decreaseCaCO3_wea"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Model output from the Bern3D model of 600 kyr weathering step-change experiments' (Zenodo, doi 10.5281/zenodo.7573365): 'd13gradient_surfthermo_decreaseCaCO3_wea' follows a power law in 'dic_surface' (R\u00b2 = 0.930 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7573365",
+   "held_out_r2": 0.928,
+   "held_out_rows": 209,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9a11e31d0970",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "2a8bf5fd54610ef7.csv",
+   "doi": "10.5281/zenodo.7573365",
+   "form": "linear",
+   "params": [
+    0.0050083857491592,
+    -0.0006048847981908494
+   ],
+   "seed": 42466524,
+   "x": "dic_surface",
+   "y": "d13gradient_surfdeep_decreaseCaCO3_wea"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Model output from the Bern3D model of 600 kyr weathering step-change experiments' (Zenodo, doi 10.5281/zenodo.7573365): 'd13gradient_surfdeep_decreaseCaCO3_wea' is linear in 'dic_surface' (R\u00b2 = 0.923 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7573365",
+   "held_out_r2": 0.9414,
+   "held_out_rows": 209,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-91906db9ceaa",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "2a8bf5fd54610ef7.csv",
+   "doi": "10.5281/zenodo.7573365",
+   "form": "linear",
+   "params": [
+    -0.0001673337584524658,
+    0.000340460143284605
+   ],
+   "seed": 42466524,
+   "x": "alk_surface",
+   "y": "d13gradient_surfthermo_decreaseCaCO3_wea"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Model output from the Bern3D model of 600 kyr weathering step-change experiments' (Zenodo, doi 10.5281/zenodo.7573365): 'd13gradient_surfthermo_decreaseCaCO3_wea' is linear in 'alk_surface' (R\u00b2 = 0.933 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7573365",
+   "held_out_r2": 0.9305,
+   "held_out_rows": 209,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-814f8d7db7d7",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "2a8bf5fd54610ef7.csv",
+   "doi": "10.5281/zenodo.7573365",
+   "form": "linear",
+   "params": [
+    0.004476874505559071,
+    -0.00029220230760997875
+   ],
+   "seed": 42466524,
+   "x": "alk_surface",
+   "y": "d13gradient_surfdeep_decreaseCaCO3_wea"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Model output from the Bern3D model of 600 kyr weathering step-change experiments' (Zenodo, doi 10.5281/zenodo.7573365): 'd13gradient_surfdeep_decreaseCaCO3_wea' is linear in 'alk_surface' (R\u00b2 = 0.925 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7573365",
+   "held_out_r2": 0.9525,
+   "held_out_rows": 209,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-79c2b69e0367",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "2a8bf5fd54610ef7.csv",
+   "doi": "10.5281/zenodo.7573365",
+   "form": "linear",
+   "params": [
+    0.0015550207734424046,
+    0.0014277072382345225
+   ],
+   "seed": 42466524,
+   "x": "co3_deep",
+   "y": "d13gradient_surfthermo_decreaseCaCO3_wea"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Model output from the Bern3D model of 600 kyr weathering step-change experiments' (Zenodo, doi 10.5281/zenodo.7573365): 'd13gradient_surfthermo_decreaseCaCO3_wea' is linear in 'co3_deep' (R\u00b2 = 0.945 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7573365",
+   "held_out_r2": 0.9391,
+   "held_out_rows": 209,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-8fea8af846c5",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "2a8bf5fd54610ef7.csv",
+   "doi": "10.5281/zenodo.7573365",
+   "form": "linear",
+   "params": [
+    0.002980584166319853,
+    -0.001223130031906162
+   ],
+   "seed": 42466524,
+   "x": "co3_deep",
+   "y": "d13gradient_surfdeep_decreaseCaCO3_wea"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Model output from the Bern3D model of 600 kyr weathering step-change experiments' (Zenodo, doi 10.5281/zenodo.7573365): 'd13gradient_surfdeep_decreaseCaCO3_wea' is linear in 'co3_deep' (R\u00b2 = 0.934 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7573365",
+   "held_out_r2": 0.93,
+   "held_out_rows": 209,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f4a512f9822d",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "2a8bf5fd54610ef7.csv",
+   "doi": "10.5281/zenodo.7573365",
+   "form": "linear",
+   "params": [
+    -0.004188899192752429,
+    0.0012460756086521373
+   ],
+   "seed": 42466524,
+   "x": "co3_deep",
+   "y": "d13gradient_surfdeep_increaseCaCO3_wea"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Model output from the Bern3D model of 600 kyr weathering step-change experiments' (Zenodo, doi 10.5281/zenodo.7573365): 'd13gradient_surfdeep_increaseCaCO3_wea' is linear in 'co3_deep' (R\u00b2 = 0.910 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7573365",
+   "held_out_r2": 0.9473,
+   "held_out_rows": 209,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-44e021e7ef0e",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "2a8bf5fd54610ef7.csv",
+   "doi": "10.5281/zenodo.7573365",
+   "form": "linear",
+   "params": [
+    0.00034711508236507266,
+    0.0009289259319816828
+   ],
+   "seed": 42466524,
+   "x": "co3_surface",
+   "y": "d13gradient_surfthermo_decreaseCaCO3_wea"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Model output from the Bern3D model of 600 kyr weathering step-change experiments' (Zenodo, doi 10.5281/zenodo.7573365): 'd13gradient_surfthermo_decreaseCaCO3_wea' is linear in 'co3_surface' (R\u00b2 = 0.939 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7573365",
+   "held_out_r2": 0.9317,
+   "held_out_rows": 209,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-8f966ff4bab3",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "2a8bf5fd54610ef7.csv",
+   "doi": "10.5281/zenodo.7573365",
+   "form": "linear",
+   "params": [
+    0.004006179894575859,
+    -0.0007951539714345894
+   ],
+   "seed": 42466524,
+   "x": "co3_surface",
+   "y": "d13gradient_surfdeep_decreaseCaCO3_wea"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Model output from the Bern3D model of 600 kyr weathering step-change experiments' (Zenodo, doi 10.5281/zenodo.7573365): 'd13gradient_surfdeep_decreaseCaCO3_wea' is linear in 'co3_surface' (R\u00b2 = 0.927 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7573365",
+   "held_out_r2": 0.9494,
+   "held_out_rows": 209,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-07b893a87b69",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "2a8bf5fd54610ef7.csv",
+   "doi": "10.5281/zenodo.7573365",
+   "form": "linear",
+   "params": [
+    0.0014522170643950084,
+    0.33319503710038434
+   ],
+   "seed": 42466524,
+   "x": "PH_global_mean",
+   "y": "d13gradient_surfthermo_decreaseCaCO3_wea"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Model output from the Bern3D model of 600 kyr weathering step-change experiments' (Zenodo, doi 10.5281/zenodo.7573365): 'd13gradient_surfthermo_decreaseCaCO3_wea' is linear in 'PH_global_mean' (R\u00b2 = 0.942 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7573365",
+   "held_out_r2": 0.9405,
+   "held_out_rows": 209,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9879d6fd6916",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "2a8bf5fd54610ef7.csv",
+   "doi": "10.5281/zenodo.7573365",
+   "form": "linear",
+   "params": [
+    0.0030961202379540128,
+    -0.2862283182751357
+   ],
+   "seed": 42466524,
+   "x": "PH_global_mean",
+   "y": "d13gradient_surfdeep_decreaseCaCO3_wea"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Model output from the Bern3D model of 600 kyr weathering step-change experiments' (Zenodo, doi 10.5281/zenodo.7573365): 'd13gradient_surfdeep_decreaseCaCO3_wea' is linear in 'PH_global_mean' (R\u00b2 = 0.936 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7573365",
+   "held_out_r2": 0.9269,
+   "held_out_rows": 209,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e53273eb21ce",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "2a8bf5fd54610ef7.csv",
+   "doi": "10.5281/zenodo.7573365",
+   "form": "linear",
+   "params": [
+    -0.004282832531454053,
+    0.2909253314329327
+   ],
+   "seed": 42466524,
+   "x": "PH_global_mean",
+   "y": "d13gradient_surfdeep_increaseCaCO3_wea"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Model output from the Bern3D model of 600 kyr weathering step-change experiments' (Zenodo, doi 10.5281/zenodo.7573365): 'd13gradient_surfdeep_increaseCaCO3_wea' is linear in 'PH_global_mean' (R\u00b2 = 0.907 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7573365",
+   "held_out_r2": 0.9462,
+   "held_out_rows": 209,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-595511d939d8",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "2a8bf5fd54610ef7.csv",
+   "doi": "10.5281/zenodo.7573365",
+   "form": "linear",
+   "params": [
+    0.0005243788057377735,
+    0.44341091575833375
+   ],
+   "seed": 42466524,
+   "x": "PH_surface",
+   "y": "d13gradient_surfthermo_decreaseCaCO3_wea"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Model output from the Bern3D model of 600 kyr weathering step-change experiments' (Zenodo, doi 10.5281/zenodo.7573365): 'd13gradient_surfthermo_decreaseCaCO3_wea' is linear in 'PH_surface' (R\u00b2 = 0.938 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7573365",
+   "held_out_r2": 0.9334,
+   "held_out_rows": 209,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-00f0543ee215",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "2a8bf5fd54610ef7.csv",
+   "doi": "10.5281/zenodo.7573365",
+   "form": "linear",
+   "params": [
+    0.0038725861695999148,
+    -0.38018981903041477
+   ],
+   "seed": 42466524,
+   "x": "PH_surface",
+   "y": "d13gradient_surfdeep_decreaseCaCO3_wea"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Model output from the Bern3D model of 600 kyr weathering step-change experiments' (Zenodo, doi 10.5281/zenodo.7573365): 'd13gradient_surfdeep_decreaseCaCO3_wea' is linear in 'PH_surface' (R\u00b2 = 0.928 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7573365",
+   "held_out_r2": 0.9427,
+   "held_out_rows": 209,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-8c37bc5fc0bd",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "2a8bf5fd54610ef7.csv",
+   "doi": "10.5281/zenodo.7573365",
+   "form": "linear",
+   "params": [
+    -0.0016643280301116676,
+    -1.233547930321949
+   ],
+   "seed": 42466524,
+   "x": "d13gradient_surfthermo_decreaseCaCO3_wea",
+   "y": "d13gradient_surfthermo_increaseCaCO3_wea"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Model output from the Bern3D model of 600 kyr weathering step-change experiments' (Zenodo, doi 10.5281/zenodo.7573365): 'd13gradient_surfthermo_increaseCaCO3_wea' is linear in 'd13gradient_surfthermo_decreaseCaCO3_wea' (R\u00b2 = 0.935 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7573365",
+   "held_out_r2": 0.9252,
+   "held_out_rows": 209,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5fa323f0a0d0",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "2a8bf5fd54610ef7.csv",
+   "doi": "10.5281/zenodo.7573365",
+   "form": "linear",
+   "params": [
+    -0.005185270086155512,
+    0.845504705503638
+   ],
+   "seed": 42466524,
+   "x": "d13gradient_surfthermo_decreaseCaCO3_wea",
+   "y": "d13gradient_surfdeep_increaseCaCO3_wea"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Model output from the Bern3D model of 600 kyr weathering step-change experiments' (Zenodo, doi 10.5281/zenodo.7573365): 'd13gradient_surfdeep_increaseCaCO3_wea' is linear in 'd13gradient_surfthermo_decreaseCaCO3_wea' (R\u00b2 = 0.903 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7573365",
+   "held_out_r2": 0.9285,
+   "held_out_rows": 209,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-61e90e5cc075",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "2a8bf5fd54610ef7.csv",
+   "doi": "10.5281/zenodo.7573365",
+   "form": "linear",
+   "params": [
+    -0.007986713469021155,
+    1.4238357095954233
+   ],
+   "seed": 42466524,
+   "x": "d13gradient_surfdeep_decreaseCaCO3_wea",
+   "y": "d13gradient_surfthermo_increaseCaCO3_wea"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Model output from the Bern3D model of 600 kyr weathering step-change experiments' (Zenodo, doi 10.5281/zenodo.7573365): 'd13gradient_surfthermo_increaseCaCO3_wea' is linear in 'd13gradient_surfdeep_decreaseCaCO3_wea' (R\u00b2 = 0.925 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7573365",
+   "held_out_r2": 0.916,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5202e57acce1",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "f3dea388e28f81c3.csv",
+   "doi": "10.5281/zenodo.7573365",
+   "form": "linear",
+   "params": [
+    0.09643247614411721,
+    21.57612536541678
+   ],
+   "seed": 2530506338,
+   "x": "d13_dic",
+   "y": "co3"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Model output from the Bern3D model of 600 kyr weathering step-change experiments' (Zenodo, doi 10.5281/zenodo.7573365): 'co3' is linear in 'd13_dic' (R\u00b2 = 0.913 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7573365",
+   "held_out_r2": 0.9718,
+   "held_out_rows": 209,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9c4d61cda73e",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "31dfe268e8c3f4cb.csv",
+   "doi": "10.5281/zenodo.7573365",
+   "form": "linear",
+   "params": [
+    0.7646281918811151,
+    -0.6060775459870482
+   ],
+   "seed": 568163088,
+   "x": "dic_surface",
+   "y": "co3_deep"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Model output from the Bern3D model of 600 kyr weathering step-change experiments' (Zenodo, doi 10.5281/zenodo.7573365): 'co3_deep' is linear in 'dic_surface' (R\u00b2 = 0.980 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7573365",
+   "held_out_r2": 0.9753,
+   "held_out_rows": 209,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b4e9475ad022",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "31dfe268e8c3f4cb.csv",
+   "doi": "10.5281/zenodo.7573365",
+   "form": "linear",
+   "params": [
+    0.004293462828408958,
+    -0.0032426682283734774
+   ],
+   "seed": 568163088,
+   "x": "dic_surface",
+   "y": "PH_global_mean"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Model output from the Bern3D model of 600 kyr weathering step-change experiments' (Zenodo, doi 10.5281/zenodo.7573365): 'PH_global_mean' is linear in 'dic_surface' (R\u00b2 = 0.982 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7573365",
+   "held_out_r2": 0.946,
+   "held_out_rows": 209,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3dc09f467a34",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "31dfe268e8c3f4cb.csv",
+   "doi": "10.5281/zenodo.7573365",
+   "form": "linear",
+   "params": [
+    0.005349399631713333,
+    -0.001585109926713894
+   ],
+   "seed": 568163088,
+   "x": "dic_surface",
+   "y": "PH_surface"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Model output from the Bern3D model of 600 kyr weathering step-change experiments' (Zenodo, doi 10.5281/zenodo.7573365): 'PH_surface' is linear in 'dic_surface' (R\u00b2 = 0.961 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7573365",
+   "held_out_r2": 0.9482,
+   "held_out_rows": 209,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a76fd40d3940",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "31dfe268e8c3f4cb.csv",
+   "doi": "10.5281/zenodo.7573365",
+   "form": "linear",
+   "params": [
+    -0.001231034289864182,
+    -0.0021942573449964986
+   ],
+   "seed": 568163088,
+   "x": "dic_surface",
+   "y": "d13gradient_surfthermo_increaseORG_wea"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Model output from the Bern3D model of 600 kyr weathering step-change experiments' (Zenodo, doi 10.5281/zenodo.7573365): 'd13gradient_surfthermo_increaseORG_wea' is linear in 'dic_surface' (R\u00b2 = 0.965 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7573365",
+   "held_out_r2": 0.9497,
+   "held_out_rows": 209,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-2d3c7d055e6c",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "31dfe268e8c3f4cb.csv",
+   "doi": "10.5281/zenodo.7573365",
+   "form": "linear",
+   "params": [
+    -0.011855491784644347,
+    -0.0011481200575908536
+   ],
+   "seed": 568163088,
+   "x": "dic_surface",
+   "y": "d13gradient_surfdeep_increaseORG_wea"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Model output from the Bern3D model of 600 kyr weathering step-change experiments' (Zenodo, doi 10.5281/zenodo.7573365): 'd13gradient_surfdeep_increaseORG_wea' is linear in 'dic_surface' (R\u00b2 = 0.955 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7573365",
+   "held_out_r2": 0.9839,
+   "held_out_rows": 209,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-aa6236262802",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "31dfe268e8c3f4cb.csv",
+   "doi": "10.5281/zenodo.7573365",
+   "form": "linear",
+   "params": [
+    0.0110206541876253,
+    -0.011601221694789735
+   ],
+   "seed": 568163088,
+   "x": "co3_deep",
+   "y": "d13gradient_surfthermo_decreaseORG_wea"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Model output from the Bern3D model of 600 kyr weathering step-change experiments' (Zenodo, doi 10.5281/zenodo.7573365): 'd13gradient_surfthermo_decreaseORG_wea' is linear in 'co3_deep' (R\u00b2 = 0.989 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7573365",
+   "held_out_r2": 0.9652,
+   "held_out_rows": 209,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b3ea32fb0b10",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "31dfe268e8c3f4cb.csv",
+   "doi": "10.5281/zenodo.7573365",
+   "form": "linear",
+   "params": [
+    0.017746386276768854,
+    -0.007494303318699064
+   ],
+   "seed": 568163088,
+   "x": "co3_deep",
+   "y": "d13gradient_surfdeep_decreaseORG_wea"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Model output from the Bern3D model of 600 kyr weathering step-change experiments' (Zenodo, doi 10.5281/zenodo.7573365): 'd13gradient_surfdeep_decreaseORG_wea' is linear in 'co3_deep' (R\u00b2 = 0.976 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7573365",
+   "held_out_r2": 0.9561,
+   "held_out_rows": 209,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-90dc77334171",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "31dfe268e8c3f4cb.csv",
+   "doi": "10.5281/zenodo.7573365",
+   "form": "linear",
+   "params": [
+    -0.01310998853236525,
+    0.0018749493884779303
+   ],
+   "seed": 568163088,
+   "x": "co3_deep",
+   "y": "d13gradient_surfdeep_increaseORG_wea"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Model output from the Bern3D model of 600 kyr weathering step-change experiments' (Zenodo, doi 10.5281/zenodo.7573365): 'd13gradient_surfdeep_increaseORG_wea' is linear in 'co3_deep' (R\u00b2 = 0.955 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7573365",
+   "held_out_r2": 0.9354,
+   "held_out_rows": 209,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d360bd316e62",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "31dfe268e8c3f4cb.csv",
+   "doi": "10.5281/zenodo.7573365",
+   "form": "linear",
+   "params": [
+    0.027128021993922367,
+    -0.014090805460568345
+   ],
+   "seed": 568163088,
+   "x": "co3_surface",
+   "y": "d13gradient_surfthermo_decreaseORG_wea"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Model output from the Bern3D model of 600 kyr weathering step-change experiments' (Zenodo, doi 10.5281/zenodo.7573365): 'd13gradient_surfthermo_decreaseORG_wea' is linear in 'co3_surface' (R\u00b2 = 0.954 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7573365",
+   "held_out_r2": 0.9008,
+   "held_out_rows": 209,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-79a59481cf9b",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "31dfe268e8c3f4cb.csv",
+   "doi": "10.5281/zenodo.7573365",
+   "form": "linear",
+   "params": [
+    0.027530431538274294,
+    -0.009036308971054462
+   ],
+   "seed": 568163088,
+   "x": "co3_surface",
+   "y": "d13gradient_surfdeep_decreaseORG_wea"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Model output from the Bern3D model of 600 kyr weathering step-change experiments' (Zenodo, doi 10.5281/zenodo.7573365): 'd13gradient_surfdeep_decreaseORG_wea' is linear in 'co3_surface' (R\u00b2 = 0.927 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7573365",
+   "held_out_r2": 0.9112,
+   "held_out_rows": 209,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-36a26cbb48f6",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "31dfe268e8c3f4cb.csv",
+   "doi": "10.5281/zenodo.7573365",
+   "form": "linear",
+   "params": [
+    -0.015618298566605146,
+    0.0022671859981230457
+   ],
+   "seed": 568163088,
+   "x": "co3_surface",
+   "y": "d13gradient_surfdeep_increaseORG_wea"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Model output from the Bern3D model of 600 kyr weathering step-change experiments' (Zenodo, doi 10.5281/zenodo.7573365): 'd13gradient_surfdeep_increaseORG_wea' is linear in 'co3_surface' (R\u00b2 = 0.912 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7573365",
+   "held_out_r2": 0.9864,
+   "held_out_rows": 209,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-bc2751167bfe",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "31dfe268e8c3f4cb.csv",
+   "doi": "10.5281/zenodo.7573365",
+   "form": "linear",
+   "params": [
+    0.011687014091573253,
+    -2.172581221427193
+   ],
+   "seed": 568163088,
+   "x": "PH_global_mean",
+   "y": "d13gradient_surfthermo_decreaseORG_wea"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Model output from the Bern3D model of 600 kyr weathering step-change experiments' (Zenodo, doi 10.5281/zenodo.7573365): 'd13gradient_surfthermo_decreaseORG_wea' is linear in 'PH_global_mean' (R\u00b2 = 0.991 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7573365",
+   "held_out_r2": 0.9685,
+   "held_out_rows": 209,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-809f15edd6af",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "31dfe268e8c3f4cb.csv",
+   "doi": "10.5281/zenodo.7573365",
+   "form": "linear",
+   "params": [
+    0.018195066096194985,
+    -1.4038105471366302
+   ],
+   "seed": 568163088,
+   "x": "PH_global_mean",
+   "y": "d13gradient_surfdeep_decreaseORG_wea"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Model output from the Bern3D model of 600 kyr weathering step-change experiments' (Zenodo, doi 10.5281/zenodo.7573365): 'd13gradient_surfdeep_decreaseORG_wea' is linear in 'PH_global_mean' (R\u00b2 = 0.978 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7573365",
+   "held_out_r2": 0.9559,
+   "held_out_rows": 209,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-59a68b5c45db",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "31dfe268e8c3f4cb.csv",
+   "doi": "10.5281/zenodo.7573365",
+   "form": "linear",
+   "params": [
+    -0.013200000872249562,
+    0.35079584939299924
+   ],
+   "seed": 568163088,
+   "x": "PH_global_mean",
+   "y": "d13gradient_surfdeep_increaseORG_wea"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Model output from the Bern3D model of 600 kyr weathering step-change experiments' (Zenodo, doi 10.5281/zenodo.7573365): 'd13gradient_surfdeep_increaseORG_wea' is linear in 'PH_global_mean' (R\u00b2 = 0.954 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7573365",
+   "held_out_r2": 0.9624,
+   "held_out_rows": 209,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-977842f3471e",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "31dfe268e8c3f4cb.csv",
+   "doi": "10.5281/zenodo.7573365",
+   "form": "linear",
+   "params": [
+    0.023551231157566313,
+    -4.35691492801402
+   ],
+   "seed": 568163088,
+   "x": "PH_surface",
+   "y": "d13gradient_surfthermo_decreaseORG_wea"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Model output from the Bern3D model of 600 kyr weathering step-change experiments' (Zenodo, doi 10.5281/zenodo.7573365): 'd13gradient_surfthermo_decreaseORG_wea' is linear in 'PH_surface' (R\u00b2 = 0.973 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7573365",
+   "held_out_r2": 0.9344,
+   "held_out_rows": 209,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-37475b642e69",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "31dfe268e8c3f4cb.csv",
+   "doi": "10.5281/zenodo.7573365",
+   "form": "linear",
+   "params": [
+    0.025487805654443575,
+    -2.802562670586557
+   ],
+   "seed": 568163088,
+   "x": "PH_surface",
+   "y": "d13gradient_surfdeep_decreaseORG_wea"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Model output from the Bern3D model of 600 kyr weathering step-change experiments' (Zenodo, doi 10.5281/zenodo.7573365): 'd13gradient_surfdeep_decreaseORG_wea' is linear in 'PH_surface' (R\u00b2 = 0.952 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7573365",
+   "held_out_r2": 0.933,
+   "held_out_rows": 209,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ce00a9992846",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "31dfe268e8c3f4cb.csv",
+   "doi": "10.5281/zenodo.7573365",
+   "form": "linear",
+   "params": [
+    -0.015049476288614163,
+    0.7012463080373725
+   ],
+   "seed": 568163088,
+   "x": "PH_surface",
+   "y": "d13gradient_surfdeep_increaseORG_wea"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Model output from the Bern3D model of 600 kyr weathering step-change experiments' (Zenodo, doi 10.5281/zenodo.7573365): 'd13gradient_surfdeep_increaseORG_wea' is linear in 'PH_surface' (R\u00b2 = 0.932 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7573365",
+   "held_out_r2": 0.9633,
+   "held_out_rows": 209,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-784e8f7fbe29",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "31dfe268e8c3f4cb.csv",
+   "doi": "10.5281/zenodo.7573365",
+   "form": "linear",
+   "params": [
+    -0.0002497441940419507,
+    -0.30911715825905495
+   ],
+   "seed": 568163088,
+   "x": "d13gradient_surfthermo_decreaseORG_wea",
+   "y": "d13gradient_surfthermo_increaseORG_wea"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Model output from the Bern3D model of 600 kyr weathering step-change experiments' (Zenodo, doi 10.5281/zenodo.7573365): 'd13gradient_surfthermo_increaseORG_wea' is linear in 'd13gradient_surfthermo_decreaseORG_wea' (R\u00b2 = 0.976 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7573365",
+   "held_out_r2": 0.9535,
+   "held_out_rows": 209,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-8cb9e70f4457",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "31dfe268e8c3f4cb.csv",
+   "doi": "10.5281/zenodo.7573365",
+   "form": "linear",
+   "params": [
+    -0.01125696446269324,
+    -0.16093175174543428
+   ],
+   "seed": 568163088,
+   "x": "d13gradient_surfthermo_decreaseORG_wea",
+   "y": "d13gradient_surfdeep_increaseORG_wea"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Model output from the Bern3D model of 600 kyr weathering step-change experiments' (Zenodo, doi 10.5281/zenodo.7573365): 'd13gradient_surfdeep_increaseORG_wea' is linear in 'd13gradient_surfthermo_decreaseORG_wea' (R\u00b2 = 0.957 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7573365",
+   "held_out_r2": 0.9376,
+   "held_out_rows": 209,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-0462fbb29b0c",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "31dfe268e8c3f4cb.csv",
+   "doi": "10.5281/zenodo.7573365",
+   "form": "linear",
+   "params": [
+    0.005289913420953208,
+    -0.47057099602989727
+   ],
+   "seed": 568163088,
+   "x": "d13gradient_surfdeep_decreaseORG_wea",
+   "y": "d13gradient_surfthermo_increaseORG_wea"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Model output from the Bern3D model of 600 kyr weathering step-change experiments' (Zenodo, doi 10.5281/zenodo.7573365): 'd13gradient_surfthermo_increaseORG_wea' is linear in 'd13gradient_surfdeep_decreaseORG_wea' (R\u00b2 = 0.957 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7573365",
+   "held_out_r2": 0.9565,
+   "held_out_rows": 209,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3bd6a96b2d59",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "31dfe268e8c3f4cb.csv",
+   "doi": "10.5281/zenodo.7573365",
+   "form": "linear",
+   "params": [
+    -0.00857727206358987,
+    -0.24855979904291525
+   ],
+   "seed": 568163088,
+   "x": "d13gradient_surfdeep_decreaseORG_wea",
+   "y": "d13gradient_surfdeep_increaseORG_wea"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Model output from the Bern3D model of 600 kyr weathering step-change experiments' (Zenodo, doi 10.5281/zenodo.7573365): 'd13gradient_surfdeep_increaseORG_wea' is linear in 'd13gradient_surfdeep_decreaseORG_wea' (R\u00b2 = 0.966 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7573365",
+   "held_out_r2": 0.9482,
+   "held_out_rows": 209,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5676e44963a1",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "31dfe268e8c3f4cb.csv",
+   "doi": "10.5281/zenodo.7573365",
+   "form": "linear",
+   "params": [
+    -0.010843812094705784,
+    0.5118265696023063
+   ],
+   "seed": 568163088,
+   "x": "d13gradient_surfthermo_increaseORG_wea",
+   "y": "d13gradient_surfdeep_increaseORG_wea"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Model output from the Bern3D model of 600 kyr weathering step-change experiments' (Zenodo, doi 10.5281/zenodo.7573365): 'd13gradient_surfdeep_increaseORG_wea' is linear in 'd13gradient_surfthermo_increaseORG_wea' (R\u00b2 = 0.947 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
