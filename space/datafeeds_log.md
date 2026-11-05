@@ -309,3 +309,6 @@
 - 2026-11-05 15:23 FINDING (confirmed on held-out rows): In 'The data for Radar Circular Polarization Ratio of Near-Earth Asteroids: Links to Spectral ' (Zenodo, doi 10.5281/zenodo.12113065): 'Q' is linear in 'a' (R² = 0.969 on the discovery half); held-out R² = 0.968 [emp-822112832252]
 - 2026-11-05 15:23 data feeds: 1987 datasets analysed so far, 275 confirmed findings
 - 2026-11-05 16:11 data feeds: online
+- 2026-11-05 16:17 FINDING (confirmed on held-out rows): In 'Soil chemistry and ITS sequences of permanent forest plots at the Station de biologie des ' (Zenodo, doi 10.5281/zenodo.3631861): 'orgP' follows a power law in 'totalP' (R² = 0.946 on the discovery half); held-out R² = 0.880 [emp-0328e15f5b69]
+- 2026-11-05 16:18 FINDING (confirmed on held-out rows): In 'Dataset of "CuBi2O4 Electrodes for Visible Light Driven Photoelectrochemical Reduction Rea' (Zenodo, doi 10.5281/zenodo.19111990): 'intensity.3' grows exponentially in 'binding energy' (R² = 0.945 on the discovery half); held-out R² = 0.934 [emp-72784ef065ae]
+- 2026-11-05 16:20 data feeds: 2661 datasets analysed so far, 277 confirmed findings
