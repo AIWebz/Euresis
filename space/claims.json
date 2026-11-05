@@ -938558,5 +938558,59 @@
   "statement": "Octal game 0.241117 is completely solved: its Grundy values are periodic with pre-period 1 and period 12 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.6djh9w13m",
+   "held_out_r2": 0.9102,
+   "held_out_rows": 512,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3d62e98d598f",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "83784ba531b4f8b0.csv",
+   "doi": "10.5061/dryad.6djh9w13m",
+   "form": "linear",
+   "params": [
+    3950.5201082666845,
+    13.29363324804571
+   ],
+   "seed": 676740231,
+   "x": "rel. 1/cm",
+   "y": "Qz-L2-5"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'LIBS and raman spectral data in the qaidam analog' (Zenodo, doi 10.5061/dryad.6djh9w13m): 'Qz-L2-5' is linear in 'rel. 1/cm' (R\u00b2 = 0.911 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.qjq2bvqk0",
+   "held_out_r2": 0.9248,
+   "held_out_rows": 113,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-79cb5a566f7f",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "cc2c5459937f6b9e.csv",
+   "doi": "10.5061/dryad.qjq2bvqk0",
+   "form": "logarithmic",
+   "params": [
+    -43187.5303535567,
+    6247.143192391959
+   ],
+   "seed": 1810600181,
+   "x": "Fan ID #",
+   "y": "radius (meters)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Global catalog of alluvial fans and other fan-shaped features on Mars, with morphology cha' (Zenodo, doi 10.5061/dryad.qjq2bvqk0): 'radius (meters)' grows logarithmically in 'Fan ID #' (R\u00b2 = 0.921 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]

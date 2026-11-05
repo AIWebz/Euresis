@@ -482,3 +482,6 @@
 - 2026-11-05 23:00 FINDING (confirmed on held-out rows): In 'Dataset for "Self-heating effects and switching dynamics in graphene multiterminal Josephs' (Zenodo, doi 10.5281/zenodo.11503086): 'V_3 (V)' is linear in '# I_R (A)' (R² = 0.915 on the discovery half); held-out R² = 0.918 [emp-ea66fd0b9df0]
 - 2026-11-05 23:01 data feeds: 3926 datasets analysed so far, 432 confirmed findings
 - 2026-11-05 23:49 data feeds: online
+- 2026-11-05 23:50 FINDING (confirmed on held-out rows): In 'LIBS and raman spectral data in the qaidam analog' (Zenodo, doi 10.5061/dryad.6djh9w13m): 'Qz-L2-5' is linear in 'rel. 1/cm' (R² = 0.911 on the discovery half); held-out R² = 0.910 [emp-3d62e98d598f]
+- 2026-11-05 23:50 FINDING (confirmed on held-out rows): In 'Global catalog of alluvial fans and other fan-shaped features on Mars, with morphology cha' (Zenodo, doi 10.5061/dryad.qjq2bvqk0): 'radius (meters)' grows logarithmically in 'Fan ID #' (R² = 0.921 on the discovery half); held-out R² = 0.925 [emp-79cb5a566f7f]
+- 2026-11-05 23:51 data feeds: 4008 datasets analysed so far, 434 confirmed findings
