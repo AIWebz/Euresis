@@ -455,3 +455,4 @@
 - 2026-11-05 19:21 FINDING (confirmed on held-out rows): In 'Data on the Swiss energy system and electric vehicles' (Zenodo, doi 10.5281/zenodo.5242901): 'zufluss' is linear in 'speicherzuwachs' (R² = 0.906 on the discovery half); held-out R² = 0.899 [emp-80e262f4fe00]
 - 2026-11-05 19:21 FINDING (confirmed on held-out rows): In 'Data on the Swiss energy system and electric vehicles' (Zenodo, doi 10.5281/zenodo.5242901): 'LC' follows a power law in 'Fossil' (R² = 0.990 on the discovery half); held-out R² = 0.990 [emp-2669b5725a21]
 - 2026-11-05 19:22 data feeds: 3589 datasets analysed so far, 414 confirmed findings
+- 2026-11-05 20:00 data feeds: online
