@@ -265,3 +265,4 @@
 - 2026-11-05 11:33 FINDING (confirmed on held-out rows): In 'River biofilm bacteria as sentinels of national-scale freshwater ecosystems' (Zenodo, doi 10.5281/zenodo.18668846): 'Fisher' grows exponentially in 'se.ACE' (R² = 0.989 on the discovery half); held-out R² = 0.987 [emp-a6fa086113ce]
 - 2026-11-05 11:33 FINDING (confirmed on held-out rows): In 'Disentangling rainfall and water management in surface hydrology' (Zenodo, doi 10.5281/zenodo.22002736): 'Predictions' grows exponentially in 'Observations' (R² = 0.958 on the discovery half); held-out R² = 0.962 [emp-8f9a01184836]
 - 2026-11-05 11:33 FINDING (confirmed on held-out rows): In 'Disentangling rainfall and water management in surface hydrology' (Zenodo, doi 10.5281/zenodo.22002736): 'sumComponents' grows exponentially in 'Observations' (R² = 0.958 on the discovery half); held-out R² = 0.962 [emp-e2fc58aa9b95]
+- 2026-11-05 11:38 data feeds: 1557 datasets analysed so far, 241 confirmed findings
