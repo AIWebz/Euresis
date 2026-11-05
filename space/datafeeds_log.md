@@ -195,3 +195,4 @@
 - 2026-11-05 07:47 FINDING (confirmed on held-out rows): In 'Data from: Designing eco-evolutionary experiments for restoration projects: Opportunities ' (Zenodo, doi 10.5061/dryad.rn8pk0pkx): 'Head length RED ' follows a power law in 'Eye Length GREEN ' (R² = 0.937 on the discovery half); held-out R² = 0.876 [emp-ce49479b1312]
 - 2026-11-05 07:47 FINDING (confirmed on held-out rows): In 'Experimental data for: Medium-density amorphous ice' (Zenodo, doi 10.5061/dryad.7sqv9s4wk): 'MDA' follows a power law in 'LDA' (R² = 0.969 on the discovery half); held-out R² = 0.969 [emp-f2b215978f93]
 - 2026-11-05 07:47 data feeds: 969 datasets analysed so far, 178 confirmed findings
+- 2026-11-05 08:33 data feeds: online
