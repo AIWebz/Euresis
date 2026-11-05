@@ -15,6 +15,26 @@ which you can explore as an infinite canvas.
 > `euresis ask` can also use Claude as its language interface, grounded in Euresis'
 > knowledge (optional).
 
+## Chat (like Claude or ChatGPT)
+
+```bash
+python -m euresis chat          # then open http://127.0.0.1:8765
+```
+
+A chat web app with the Euresis logo, a sidebar of your chats and the latest gate-verified results, light and
+dark themes, and a phone layout. Replies stream in as they are written. Two modes:
+
+* **Ask**: a quick answer grounded in Euresis' knowledge base and its registry of verified results. The
+  related results are shown as cards with their exact gate status (*Proved*, *Numerically verified*,
+  *Confirmed on held-out data*, *Refuted*) and novelty label.
+* **Research**: the full reasoning loop. The model proposes claims, the verification gate decides each one,
+  and the page shows the live research log, a card for every claim decided in the run, and the final report.
+
+It uses Claude when `ANTHROPIC_API_KEY` is set, otherwise the local Qwen3 model, otherwise an offline summary of
+matching results. Chats are kept in the browser. The server binds to 127.0.0.1 and has no login; use
+`--host 0.0.0.0` only on a network you trust. With the local model an Ask reply takes about 1 minute on this
+container's CPU (slower while the discovery daemon is running) and Research takes several minutes.
+
 ## What it knows
 
 | | |

@@ -36,6 +36,7 @@ from fractions import Fraction
 import numpy as np
 import sympy as sp
 
+from .local_llm import info as _llm_info
 from . import gate
 from .registry import ROOT, Registry, atomic_write
 
@@ -423,7 +424,7 @@ def run(minutes: float = 100.0, use_llm: bool | None = None, echo=print) -> dict
         use_llm = local_llm.available()
     st, reg = load_state(), Registry()
     t0 = time.time()
-    log(f"segment start (budget {minutes:.0f} min; model: {'Qwen3-14B' if use_llm else 'none'}; "
+    log(f"segment start (budget {minutes:.0f} min; model: {_llm_info()['name'] if use_llm else 'none'}; "
         f"{len(st['discoveries'])} discoveries so far)", echo)
     while time.time() - t0 < minutes * 60:
         if STOP.exists():

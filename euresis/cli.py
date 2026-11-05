@@ -343,6 +343,13 @@ def cmd_solve(a):
         print(f"  => {f.sym_to_q[target]} = {eng.evaluate(f, f.sym_to_q[target], vals):.6g} (SI)")
 
 
+def cmd_chat(a):
+    from .chat import serve
+    if a.host not in ("127.0.0.1", "localhost"):
+        print("warning: the chat has no login; anyone who can reach this address can use it.")
+    serve(a.host, a.port)
+
+
 def cmd_ask(a):
     from . import llm
     from .model import TextRetriever
@@ -370,7 +377,7 @@ def cmd_ask(a):
     if llm.available() and ReasoningCore._has_credentials():
         answer, via = llm.ask(q, context), "Claude"
     if not answer and local_llm.available():
-        answer, via = local_llm.ask(q, context), "local Qwen3-14B"
+        answer, via = local_llm.ask(q, context), f"local {local_llm.info()['name']}"
     if answer:
         print(f"\nEuresis (via {via}):\n" + answer)
     else:
@@ -604,6 +611,9 @@ def main(argv=None):
     s = sub.add_parser("solve"); s.add_argument("formula"); s.add_argument("target", nargs="?", default="")
     s.add_argument("values", nargs="*"); s.set_defaults(fn=cmd_solve)
     k = sub.add_parser("ask"); k.add_argument("question"); k.set_defaults(fn=cmd_ask)
+    ch = sub.add_parser("chat", help="chat web app (like Claude or ChatGPT) at http://127.0.0.1:8765")
+    ch.add_argument("--host", default="127.0.0.1"); ch.add_argument("--port", type=int, default=8765)
+    ch.set_defaults(fn=cmd_chat)
     a = p.parse_args(argv)
     a.fn(a)
 

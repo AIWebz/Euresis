@@ -32,6 +32,7 @@ from pathlib import Path
 import numpy as np
 import sympy as sp
 
+from .local_llm import info as _llm_info
 from . import gate, theorems
 from .registry import ROOT, Registry, atomic_write
 
@@ -202,7 +203,7 @@ def propose_structural(st: dict, n: int = 6) -> list[str]:
 # ---------------------------------------------------------------- one round
 def run_round(st: dict, reg: Registry, use_llm: bool, echo=print, max_pairs: int = 12) -> list[dict]:
     st["rounds"] += 1
-    log(f"round {st['rounds']}: proposing expressions ({'Qwen3-14B + structural' if use_llm else 'structural'})", echo)
+    log(f"round {st['rounds']}: proposing expressions ({(_llm_info()['name'] + ' + structural') if use_llm else 'structural'})", echo)
     proposals = (propose_llm(st, echo=echo) if use_llm else []) + propose_structural(st, n=3 if use_llm else 6)
     new = {}
     for p in proposals:
@@ -302,7 +303,7 @@ def run(minutes: float = 100.0, use_llm: bool | None = None, echo=print) -> dict
         use_llm = local_llm.available()
     st, reg = load_state(), Registry()
     t0 = time.time()
-    log(f"segment start (budget {minutes:.0f} min; model: {'Qwen3-14B' if use_llm else 'none'}; "
+    log(f"segment start (budget {minutes:.0f} min; model: {_llm_info()['name'] if use_llm else 'none'}; "
         f"{len(st['discoveries'])} discoveries so far)", echo)
     while time.time() - t0 < minutes * 60:
         if STOP.exists():

@@ -26,6 +26,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 MODEL_DIR = ROOT / "data" / "models"
 CACHE_DIR = ROOT / "data" / "llm_cache"
+CHAT_MARK = ROOT / "data" / "chat_active"       # touched by the chat server while people are chatting
 MODELS = {
     "8b": {"file": "Qwen3-8B-Q4_K_M.gguf", "name": "Qwen3-8B", "parameters": "8.2 B", "size_gb": 5.0,
            "url": "https://huggingface.co/Qwen/Qwen3-8B-GGUF/resolve/main/Qwen3-8B-Q4_K_M.gguf",
@@ -84,12 +85,65 @@ def download(which: str | None = None, log=print) -> Path:
     return out
 
 
+def mem_available_gb() -> float:
+    """Free memory as the kernel reports it (MemAvailable), in GB; inf if unknown."""
+    try:
+        for line in Path("/proc/meminfo").read_text().splitlines():
+            if line.startswith("MemAvailable:"):
+                return int(line.split()[1]) / 1e6
+    except OSError:
+        pass
+    return float("inf")
+
+
+def mem_needed_gb() -> float:
+    return MODELS[size()]["size_gb"] + 2.5      # weights + context and compute buffers
+
+
+def touch_chat():
+    try:
+        CHAT_MARK.parent.mkdir(parents=True, exist_ok=True)
+        CHAT_MARK.touch()
+    except OSError:
+        pass
+
+
+def chat_active(minutes: float = 15) -> bool:
+    """True while the chat server has been used recently: discovery then runs without the model, so two copies
+    of it never compete for memory (two copies do not fit in 15 GB and the kernel kills one)."""
+    try:
+        return time.time() - CHAT_MARK.stat().st_mtime < minutes * 60
+    except OSError:
+        return False
+
+
+def loaded() -> bool:
+    return _LLM is not None
+
+
+def unload():
+    """Free the model's memory (it reloads in a few seconds when next needed)."""
+    global _LLM
+    if _LLM is not None:
+        try:
+            _LLM.close()
+        except Exception:
+            pass
+        _LLM = None
+        import gc
+        gc.collect()
+
+
 def load(n_ctx: int = 12288, log=print):
     """Load once per process; later calls reuse it.
     Speed-up: a disk cache of evaluated prompts, so the long system prompt with the tool list is not re-read on
     every run."""
     global _LLM
     if _LLM is None:
+        free, need = mem_available_gb(), mem_needed_gb()
+        if free < need:
+            raise MemoryError(f"not enough free memory to load {info()['name']} ({free:.1f} GB free, {need:.1f} GB "
+                              "needed); another Euresis process is probably using the model")
         from llama_cpp import Llama, LlamaDiskCache
         t0 = time.time()
         # (prompt-lookup decoding was tried: in this llama.cpp version it needs logits for every context position,

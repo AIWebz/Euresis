@@ -28,6 +28,7 @@ import numpy as np
 import sympy as sp
 from scipy.optimize import minimize
 
+from .local_llm import info as _llm_info
 from . import gate
 from .physics_discover import parse_items
 from .registry import ROOT, Registry, atomic_write
@@ -488,15 +489,19 @@ def run_round(st, reg, use_llm, echo=print, max_pairs=24):
 def run(minutes=100.0, use_llm=None, echo=print):
     from . import local_llm
     if use_llm is None:
-        use_llm = local_llm.available()
+        use_llm = local_llm.available() and not local_llm.chat_active()
     st, reg = load_state(), Registry()
     t0 = time.time()
-    log(f"segment start (budget {minutes:.0f} min; model: {'Qwen3-14B' if use_llm else 'none'}; "
+    log(f"segment start (budget {minutes:.0f} min; model: {_llm_info()['name'] if use_llm else 'none'}; "
         f"{len(st['discoveries'])} discoveries so far)", echo)
     while time.time() - t0 < minutes * 60:
         if STOP.exists():
             log("STOP file found — stopping as instructed", echo)
             break
+        if use_llm and local_llm.chat_active():         # the chat needs the model: free it, keep discovering
+            local_llm.unload()
+            use_llm = False
+            log("chat in use: model handed to the chat; continuing without it", echo)
         try:
             run_round(st, reg, use_llm, echo=echo)
         except Exception as e:
@@ -506,6 +511,7 @@ def run(minutes=100.0, use_llm=None, echo=print):
                                for x in st["families"][fam] for y in st["families"][fam] if x != y):
             log("seed library exhausted and no model to propose new quantities", echo)
             break
+    local_llm.unload()                                  # free the memory between segments
     log(f"segment end: {st['rounds']} rounds, {len(st['discoveries'])} discoveries, "
         f"{len(st['rediscoveries'])} known laws rediscovered", echo)
     return st
