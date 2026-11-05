@@ -373,3 +373,7 @@
 - 2026-11-05 04:01 round 339: driven oscillator
 - 2026-11-05 04:01 seed library exhausted and no model to propose new quantities
 - 2026-11-05 04:01 segment end: 339 rounds, 4 discoveries, 2 known laws rediscovered
+- 2026-11-05 04:08 segment start (budget 30 min; model: none; 4 discoveries so far)
+- 2026-11-05 04:08 round 340: velocity addition
+- 2026-11-05 04:08 seed library exhausted and no model to propose new quantities
+- 2026-11-05 04:08 segment end: 340 rounds, 4 discoveries, 2 known laws rediscovered
