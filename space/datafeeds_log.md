@@ -481,3 +481,4 @@
 - 2026-11-05 23:00 FINDING (confirmed on held-out rows): In 'Dataset for "Self-heating effects and switching dynamics in graphene multiterminal Josephs' (Zenodo, doi 10.5281/zenodo.11503086): 'V_2 (V)' is linear in '# I_R (A)' (R² = 0.912 on the discovery half); held-out R² = 0.911 [emp-764524e2e074]
 - 2026-11-05 23:00 FINDING (confirmed on held-out rows): In 'Dataset for "Self-heating effects and switching dynamics in graphene multiterminal Josephs' (Zenodo, doi 10.5281/zenodo.11503086): 'V_3 (V)' is linear in '# I_R (A)' (R² = 0.915 on the discovery half); held-out R² = 0.918 [emp-ea66fd0b9df0]
 - 2026-11-05 23:01 data feeds: 3926 datasets analysed so far, 432 confirmed findings
+- 2026-11-05 23:49 data feeds: online
