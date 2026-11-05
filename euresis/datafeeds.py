@@ -284,6 +284,14 @@ def analyse(path: Path, item: dict, reg: Registry, echo=print) -> list[dict]:
             if re.search(r"includ|total|sum|overall|all\b", a_ + " " + b_) and core(cx) & core(cy) == frozenset() and \
                     re.search(r"includ", a_ + b_):
                 continue                      # one column explicitly includes the other (part vs whole)
+            timecol = re.compile(r"^(day|date|doy|time|year|month|hour|week|t|timestamp|julian)\b|(^|_)(day|doy|date|year)$")
+            coord = re.compile(r"^(x|y|z|lat|lon|long|latitude|longitude|easting|northing|basin|half_basin|site|plot)$")
+            if timecol.search(a_) or timecol.search(b_) or coord.search(a_) or coord.search(b_):
+                continue                      # trends over time and map coordinates/codes are not laws by themselves
+            if re.search(r"cum|gdd|degree.?day", a_ + " " + b_):
+                continue                      # cumulative quantities grow with whatever they accumulate over
+            if {"length", "slope"} <= set(re.findall(r"[a-z]+", a_ + " " + b_)):
+                continue                      # topographic LS factors are computed from slope length and steepness
             ci = re.compile(r"(^ci|_ci|conf|lower|upper|lwr|upr|\blb\b|\bub\b|ci[lu]b|[lu]cl|[lu]ci)")
             if ci.search(a_) or ci.search(b_):
                 continue                      # confidence-interval bounds are computed from the estimate
