@@ -671292,5 +671292,1220 @@
   "statement": "Octal game 0.145466 is completely solved: its Grundy values are periodic with pre-period 3 and period 12 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.21946296",
+   "held_out_r2": 0.8792,
+   "held_out_rows": 267,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a1f3d55c3531",
+  "kind": "empirical",
+  "novelty": "KNOWN: equation of state of a simulated fluid (pressure, density, temperature, chemical potential, kinetic energy) \u2014 not a discovery",
+  "payload": {
+   "dataset": "90c8fb44b56c6749.csv",
+   "doi": "10.5281/zenodo.21946296",
+   "form": "exponential",
+   "params": [
+    8.461326629273694,
+    0.004318816220621897
+   ],
+   "seed": 621073552,
+   "x": "Winkel_Grad",
+   "y": "Distanz_mm"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Measurement data of the Article \"Feasibility of a low-cost and small underwater scanning L' (Zenodo, doi 10.5281/zenodo.21946296): 'Distanz_mm' grows exponentially in 'Winkel_Grad' (R\u00b2 = 0.900 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20849254",
+   "held_out_r2": 0.8753,
+   "held_out_rows": 201,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-1b968dafb90b",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "a552aafd7ef08431.csv",
+   "doi": "10.5281/zenodo.20849254",
+   "form": "linear",
+   "params": [
+    9.27116540118331,
+    -0.2669502800111174
+   ],
+   "seed": 747940385,
+   "x": "abs_sal",
+   "y": "chl"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'CTD data near floating sediment trap deployments on the western Weddell Sea continental sh' (Zenodo, doi 10.5281/zenodo.20849254): 'chl' is linear in 'abs_sal' (R\u00b2 = 0.916 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20849254",
+   "held_out_r2": 0.9049,
+   "held_out_rows": 201,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b6d0d71474a3",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "a552aafd7ef08431.csv",
+   "doi": "10.5281/zenodo.20849254",
+   "form": "exponential",
+   "params": [
+    2.4147069516324136,
+    0.025866824794778063
+   ],
+   "seed": 747940385,
+   "x": "abs_sal",
+   "y": "con"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'CTD data near floating sediment trap deployments on the western Weddell Sea continental sh' (Zenodo, doi 10.5281/zenodo.20849254): 'con' grows exponentially in 'abs_sal' (R\u00b2 = 0.921 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20849254",
+   "held_out_r2": 0.9112,
+   "held_out_rows": 201,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-fa5c31570f82",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "a552aafd7ef08431.csv",
+   "doi": "10.5281/zenodo.20849254",
+   "form": "exponential",
+   "params": [
+    231.06078483728598,
+    -6.8551539902600025
+   ],
+   "seed": 747940385,
+   "x": "abs_sal",
+   "y": "par"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'CTD data near floating sediment trap deployments on the western Weddell Sea continental sh' (Zenodo, doi 10.5281/zenodo.20849254): 'par' grows exponentially in 'abs_sal' (R\u00b2 = 0.935 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20849254",
+   "held_out_r2": 0.9205,
+   "held_out_rows": 201,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c8251e9d58c2",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "a552aafd7ef08431.csv",
+   "doi": "10.5281/zenodo.20849254",
+   "form": "linear",
+   "params": [
+    296.2252466598677,
+    195.88303239103556
+   ],
+   "seed": 747940385,
+   "x": "chl",
+   "y": "oxy"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'CTD data near floating sediment trap deployments on the western Weddell Sea continental sh' (Zenodo, doi 10.5281/zenodo.20849254): 'oxy' is linear in 'chl' (R\u00b2 = 0.945 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20849254",
+   "held_out_r2": 0.8756,
+   "held_out_rows": 201,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ea2f8d57e808",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "a552aafd7ef08431.csv",
+   "doi": "10.5281/zenodo.20849254",
+   "form": "exponential",
+   "params": [
+    -6.9423028663152975,
+    24.306937225744782
+   ],
+   "seed": 747940385,
+   "x": "chl",
+   "y": "par"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'CTD data near floating sediment trap deployments on the western Weddell Sea continental sh' (Zenodo, doi 10.5281/zenodo.20849254): 'par' grows exponentially in 'chl' (R\u00b2 = 0.915 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20849254",
+   "held_out_r2": 0.8707,
+   "held_out_rows": 201,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5c67935d817d",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "a552aafd7ef08431.csv",
+   "doi": "10.5281/zenodo.20849254",
+   "form": "linear",
+   "params": [
+    1027.8120728386507,
+    -2.7935882074549703
+   ],
+   "seed": 747940385,
+   "x": "chl",
+   "y": "pdens"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'CTD data near floating sediment trap deployments on the western Weddell Sea continental sh' (Zenodo, doi 10.5281/zenodo.20849254): 'pdens' is linear in 'chl' (R\u00b2 = 0.918 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20849254",
+   "held_out_r2": 0.8663,
+   "held_out_rows": 201,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f1750703eff7",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "a552aafd7ef08431.csv",
+   "doi": "10.5281/zenodo.20849254",
+   "form": "linear",
+   "params": [
+    34.54293631070214,
+    -3.4077393132314278
+   ],
+   "seed": 747940385,
+   "x": "chl",
+   "y": "sal"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'CTD data near floating sediment trap deployments on the western Weddell Sea continental sh' (Zenodo, doi 10.5281/zenodo.20849254): 'sal' is linear in 'chl' (R\u00b2 = 0.915 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20849254",
+   "held_out_r2": 0.8924,
+   "held_out_rows": 201,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-7fcedc17ba97",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "a552aafd7ef08431.csv",
+   "doi": "10.5281/zenodo.20849254",
+   "form": "linear",
+   "params": [
+    2318.648492049268,
+    -73.62255116334292
+   ],
+   "seed": 747940385,
+   "x": "con",
+   "y": "oxy"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'CTD data near floating sediment trap deployments on the western Weddell Sea continental sh' (Zenodo, doi 10.5281/zenodo.20849254): 'oxy' is linear in 'con' (R\u00b2 = 0.917 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20849254",
+   "held_out_r2": 0.8906,
+   "held_out_rows": 201,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-412478124bce",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "a552aafd7ef08431.csv",
+   "doi": "10.5281/zenodo.20849254",
+   "form": "power law",
+   "params": [
+    832.2252974955766,
+    -253.29474435584768
+   ],
+   "seed": 747940385,
+   "x": "con",
+   "y": "par"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'CTD data near floating sediment trap deployments on the western Weddell Sea continental sh' (Zenodo, doi 10.5281/zenodo.20849254): 'par' follows a power law in 'con' (R\u00b2 = 0.928 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20849254",
+   "held_out_r2": 0.9025,
+   "held_out_rows": 201,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-2914be88267a",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "a552aafd7ef08431.csv",
+   "doi": "10.5281/zenodo.20849254",
+   "form": "logarithmic",
+   "params": [
+    932.0339163825374,
+    28.90940066769163
+   ],
+   "seed": 747940385,
+   "x": "con",
+   "y": "pdens"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'CTD data near floating sediment trap deployments on the western Weddell Sea continental sh' (Zenodo, doi 10.5281/zenodo.20849254): 'pdens' grows logarithmically in 'con' (R\u00b2 = 0.918 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20849254",
+   "held_out_r2": 0.9055,
+   "held_out_rows": 201,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a1fd1a69e3ee",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "a552aafd7ef08431.csv",
+   "doi": "10.5281/zenodo.20849254",
+   "form": "logarithmic",
+   "params": [
+    -82.63412181492153,
+    35.36855025665576
+   ],
+   "seed": 747940385,
+   "x": "con",
+   "y": "sal"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'CTD data near floating sediment trap deployments on the western Weddell Sea continental sh' (Zenodo, doi 10.5281/zenodo.20849254): 'sal' grows logarithmically in 'con' (R\u00b2 = 0.921 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20849254",
+   "held_out_r2": 0.9626,
+   "held_out_rows": 201,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9cb71cbb7f3b",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "a552aafd7ef08431.csv",
+   "doi": "10.5281/zenodo.20849254",
+   "form": "exponential",
+   "params": [
+    -43.60974919580518,
+    0.12379314079892678
+   ],
+   "seed": 747940385,
+   "x": "oxy",
+   "y": "par"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'CTD data near floating sediment trap deployments on the western Weddell Sea continental sh' (Zenodo, doi 10.5281/zenodo.20849254): 'par' grows exponentially in 'oxy' (R\u00b2 = 0.964 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20849254",
+   "held_out_r2": 0.9144,
+   "held_out_rows": 201,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3697afa93198",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "a552aafd7ef08431.csv",
+   "doi": "10.5281/zenodo.20849254",
+   "form": "logarithmic",
+   "params": [
+    1027.036304074887,
+    -0.11097991441061933
+   ],
+   "seed": 747940385,
+   "x": "par",
+   "y": "pdens"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'CTD data near floating sediment trap deployments on the western Weddell Sea continental sh' (Zenodo, doi 10.5281/zenodo.20849254): 'pdens' grows logarithmically in 'par' (R\u00b2 = 0.936 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20849254",
+   "held_out_r2": 0.9424,
+   "held_out_rows": 201,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-8f732ea721e3",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "a552aafd7ef08431.csv",
+   "doi": "10.5281/zenodo.20849254",
+   "form": "power law",
+   "params": [
+    2.392379384009704,
+    -0.4770383346988016
+   ],
+   "seed": 747940385,
+   "x": "par",
+   "y": "pres"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'CTD data near floating sediment trap deployments on the western Weddell Sea continental sh' (Zenodo, doi 10.5281/zenodo.20849254): 'pres' follows a power law in 'par' (R\u00b2 = 0.959 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20849254",
+   "held_out_r2": 0.9133,
+   "held_out_rows": 201,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-67656a2660a3",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "a552aafd7ef08431.csv",
+   "doi": "10.5281/zenodo.20849254",
+   "form": "logarithmic",
+   "params": [
+    33.595587691983425,
+    -0.135562538122168
+   ],
+   "seed": 747940385,
+   "x": "par",
+   "y": "sal"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'CTD data near floating sediment trap deployments on the western Weddell Sea continental sh' (Zenodo, doi 10.5281/zenodo.20849254): 'sal' grows logarithmically in 'par' (R\u00b2 = 0.935 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20849254",
+   "held_out_r2": 0.9291,
+   "held_out_rows": 1965,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a0aeedb8b988",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f63db11d6ae8a24e.csv",
+   "doi": "10.5281/zenodo.20849254",
+   "form": "power law",
+   "params": [
+    6.85032091729037,
+    0.023910757566790737
+   ],
+   "seed": 3147821789,
+   "x": "abs_sal",
+   "y": "pdens"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'CTD data near floating sediment trap deployments on the western Weddell Sea continental sh' (Zenodo, doi 10.5281/zenodo.20849254): 'pdens' follows a power law in 'abs_sal' (R\u00b2 = 0.947 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20849254",
+   "held_out_r2": 0.9283,
+   "held_out_rows": 1965,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4dbd60065b1f",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f63db11d6ae8a24e.csv",
+   "doi": "10.5281/zenodo.20849254",
+   "form": "power law",
+   "params": [
+    -270.31950178082536,
+    39.4890412096077
+   ],
+   "seed": 3147821789,
+   "x": "pdens",
+   "y": "sal"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'CTD data near floating sediment trap deployments on the western Weddell Sea continental sh' (Zenodo, doi 10.5281/zenodo.20849254): 'sal' follows a power law in 'pdens' (R\u00b2 = 0.947 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.c866t1gfj",
+   "held_out_r2": 0.9237,
+   "held_out_rows": 1940,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d610d8ae1c62",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "9f062bff76db175a.csv",
+   "doi": "10.5061/dryad.c866t1gfj",
+   "form": "linear",
+   "params": [
+    -6.885843249295041e-05,
+    -0.0006368353092791018
+   ],
+   "seed": 2333687514,
+   "x": "DOA_1",
+   "y": "TDOA_5"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Where's Whaledo: a software toolkit for array localization of animal vocalizati' (Zenodo, doi 10.5061/dryad.c866t1gfj): 'TDOA_5' is linear in 'DOA_1' (R\u00b2 = 0.920 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.c866t1gfj",
+   "held_out_r2": 0.9307,
+   "held_out_rows": 1940,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-926e88942cf5",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "9f062bff76db175a.csv",
+   "doi": "10.5061/dryad.c866t1gfj",
+   "form": "linear",
+   "params": [
+    -2.626057343323835e-05,
+    0.0006456021378438234
+   ],
+   "seed": 2333687514,
+   "x": "DOA_2",
+   "y": "TDOA_6"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Where's Whaledo: a software toolkit for array localization of animal vocalizati' (Zenodo, doi 10.5061/dryad.c866t1gfj): 'TDOA_6' is linear in 'DOA_2' (R\u00b2 = 0.927 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.c866t1gfj",
+   "held_out_r2": 0.9879,
+   "held_out_rows": 944,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ed5016687b59",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "1f51181c184a618b.csv",
+   "doi": "10.5061/dryad.c866t1gfj",
+   "form": "linear",
+   "params": [
+    -1.354520794665795,
+    0.015164652243291117
+   ],
+   "seed": 3369093094,
+   "x": "Ang_2",
+   "y": "DOA_3"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Where's Whaledo: a software toolkit for array localization of animal vocalizati' (Zenodo, doi 10.5061/dryad.c866t1gfj): 'DOA_3' is linear in 'Ang_2' (R\u00b2 = 0.982 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.c866t1gfj",
+   "held_out_r2": 0.8904,
+   "held_out_rows": 142,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e914579c19e5",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "a6c701020fae92f2.csv",
+   "doi": "10.5061/dryad.c866t1gfj",
+   "form": "linear",
+   "params": [
+    102.98212647275471,
+    -0.015382175844730502
+   ],
+   "seed": 3323763949,
+   "x": "TDet",
+   "y": "TDOA_11"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Where's Whaledo: a software toolkit for array localization of animal vocalizati' (Zenodo, doi 10.5061/dryad.c866t1gfj): 'TDOA_11' is linear in 'TDet' (R\u00b2 = 0.904 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.c866t1gfj",
+   "held_out_r2": 0.7903,
+   "held_out_rows": 142,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ca27a9bb00a3",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "a6c701020fae92f2.csv",
+   "doi": "10.5061/dryad.c866t1gfj",
+   "form": "logarithmic",
+   "params": [
+    218.27569792407397,
+    -24.778498793033414
+   ],
+   "seed": 3323763949,
+   "x": "TDet",
+   "y": "TDOA_12"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Where's Whaledo: a software toolkit for array localization of animal vocalizati' (Zenodo, doi 10.5061/dryad.c866t1gfj): 'TDOA_12' grows logarithmically in 'TDet' (R\u00b2 = 0.942 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.c866t1gfj",
+   "held_out_r2": 0.8936,
+   "held_out_rows": 142,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-15cb4e6d0ad8",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "a6c701020fae92f2.csv",
+   "doi": "10.5061/dryad.c866t1gfj",
+   "form": "linear",
+   "params": [
+    -38398.98249162401,
+    5.7355485977312055
+   ],
+   "seed": 3323763949,
+   "x": "TDet",
+   "y": "TDOA_17"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Where's Whaledo: a software toolkit for array localization of animal vocalizati' (Zenodo, doi 10.5061/dryad.c866t1gfj): 'TDOA_17' is linear in 'TDet' (R\u00b2 = 0.904 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.c866t1gfj",
+   "held_out_r2": 0.943,
+   "held_out_rows": 142,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e5131521f234",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "a6c701020fae92f2.csv",
+   "doi": "10.5061/dryad.c866t1gfj",
+   "form": "logarithmic",
+   "params": [
+    -3914313629.8721724,
+    444348638.8862821
+   ],
+   "seed": 3323763949,
+   "x": "TDet",
+   "y": "wloc_1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Where's Whaledo: a software toolkit for array localization of animal vocalizati' (Zenodo, doi 10.5061/dryad.c866t1gfj): 'wloc_1' grows logarithmically in 'TDet' (R\u00b2 = 0.952 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.c866t1gfj",
+   "held_out_r2": 0.8905,
+   "held_out_rows": 142,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-1c3bb0b18346",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "a6c701020fae92f2.csv",
+   "doi": "10.5061/dryad.c866t1gfj",
+   "form": "linear",
+   "params": [
+    102.9969785546982,
+    -0.01538439426164886
+   ],
+   "seed": 3323763949,
+   "x": "TDetAll_4",
+   "y": "TDOA_11"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Where's Whaledo: a software toolkit for array localization of animal vocalizati' (Zenodo, doi 10.5061/dryad.c866t1gfj): 'TDOA_11' is linear in 'TDetAll_4' (R\u00b2 = 0.904 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.c866t1gfj",
+   "held_out_r2": 0.7903,
+   "held_out_rows": 142,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-2e3f59c5abe2",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "a6c701020fae92f2.csv",
+   "doi": "10.5061/dryad.c866t1gfj",
+   "form": "logarithmic",
+   "params": [
+    218.30430780757416,
+    -24.78174655719277
+   ],
+   "seed": 3323763949,
+   "x": "TDetAll_4",
+   "y": "TDOA_12"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Where's Whaledo: a software toolkit for array localization of animal vocalizati' (Zenodo, doi 10.5061/dryad.c866t1gfj): 'TDOA_12' grows logarithmically in 'TDetAll_4' (R\u00b2 = 0.942 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.c866t1gfj",
+   "held_out_r2": 0.8936,
+   "held_out_rows": 142,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4055090a3da7",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "a6c701020fae92f2.csv",
+   "doi": "10.5061/dryad.c866t1gfj",
+   "form": "linear",
+   "params": [
+    -38404.56677830408,
+    5.73638270812099
+   ],
+   "seed": 3323763949,
+   "x": "TDetAll_4",
+   "y": "TDOA_17"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Where's Whaledo: a software toolkit for array localization of animal vocalizati' (Zenodo, doi 10.5061/dryad.c866t1gfj): 'TDOA_17' is linear in 'TDetAll_4' (R\u00b2 = 0.904 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.c866t1gfj",
+   "held_out_r2": 0.943,
+   "held_out_rows": 142,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-05b7082f27b7",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "a6c701020fae92f2.csv",
+   "doi": "10.5061/dryad.c866t1gfj",
+   "form": "logarithmic",
+   "params": [
+    -3914752614.3988523,
+    444398471.95419484
+   ],
+   "seed": 3323763949,
+   "x": "TDetAll_4",
+   "y": "wloc_1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Where's Whaledo: a software toolkit for array localization of animal vocalizati' (Zenodo, doi 10.5061/dryad.c866t1gfj): 'wloc_1' grows logarithmically in 'TDetAll_4' (R\u00b2 = 0.952 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.c866t1gfj",
+   "held_out_r2": 0.9183,
+   "held_out_rows": 142,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-aaa55b0f07dd",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "a6c701020fae92f2.csv",
+   "doi": "10.5061/dryad.c866t1gfj",
+   "form": "logarithmic",
+   "params": [
+    -18869.920715891923,
+    -4245.529037653153
+   ],
+   "seed": 3323763949,
+   "x": "TDOA_10",
+   "y": "DETind_4"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Where's Whaledo: a software toolkit for array localization of animal vocalizati' (Zenodo, doi 10.5061/dryad.c866t1gfj): 'DETind_4' grows logarithmically in 'TDOA_10' (R\u00b2 = 0.958 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.c866t1gfj",
+   "held_out_r2": 0.9176,
+   "held_out_rows": 142,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-95fb651fc75d",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "a6c701020fae92f2.csv",
+   "doi": "10.5061/dryad.c866t1gfj",
+   "form": "exponential",
+   "params": [
+    9.430682421604256,
+    -526.9535051557167
+   ],
+   "seed": 3323763949,
+   "x": "TDOA_11",
+   "y": "DETind_4"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Where's Whaledo: a software toolkit for array localization of animal vocalizati' (Zenodo, doi 10.5061/dryad.c866t1gfj): 'DETind_4' grows exponentially in 'TDOA_11' (R\u00b2 = 0.940 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.c866t1gfj",
+   "held_out_r2": 0.9601,
+   "held_out_rows": 142,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f1fc88eaeda1",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "a6c701020fae92f2.csv",
+   "doi": "10.5061/dryad.c866t1gfj",
+   "form": "linear",
+   "params": [
+    31161.613293041883,
+    27075.846346844348
+   ],
+   "seed": 3323763949,
+   "x": "TDOA_16",
+   "y": "DETind_4"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Where's Whaledo: a software toolkit for array localization of animal vocalizati' (Zenodo, doi 10.5061/dryad.c866t1gfj): 'DETind_4' is linear in 'TDOA_16' (R\u00b2 = 0.954 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.c866t1gfj",
+   "held_out_r2": 0.9326,
+   "held_out_rows": 142,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-de1950e8c4b9",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "a6c701020fae92f2.csv",
+   "doi": "10.5061/dryad.c866t1gfj",
+   "form": "exponential",
+   "params": [
+    9.514324669605019,
+    1.4106576498875742
+   ],
+   "seed": 3323763949,
+   "x": "TDOA_17",
+   "y": "DETind_4"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Where's Whaledo: a software toolkit for array localization of animal vocalizati' (Zenodo, doi 10.5061/dryad.c866t1gfj): 'DETind_4' grows exponentially in 'TDOA_17' (R\u00b2 = 0.936 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.c866t1gfj",
+   "held_out_r2": 0.9354,
+   "held_out_rows": 722,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c46584849258",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "6c1a5ba894485f8b.csv",
+   "doi": "10.5061/dryad.c866t1gfj",
+   "form": "logarithmic",
+   "params": [
+    -862.4783806515815,
+    97.9076749547592
+   ],
+   "seed": 662919880,
+   "x": "TDetAll_2",
+   "y": "TDOA_3"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Where's Whaledo: a software toolkit for array localization of animal vocalizati' (Zenodo, doi 10.5061/dryad.c866t1gfj): 'TDOA_3' grows logarithmically in 'TDetAll_2' (R\u00b2 = 0.933 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.c866t1gfj",
+   "held_out_r2": 0.9373,
+   "held_out_rows": 722,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e69c2ef19783",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "6c1a5ba894485f8b.csv",
+   "doi": "10.5061/dryad.c866t1gfj",
+   "form": "power law",
+   "params": [
+    -489979.7112287485,
+    55621.180204734395
+   ],
+   "seed": 662919880,
+   "x": "TDetAll_2",
+   "y": "TDOA_4"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Where's Whaledo: a software toolkit for array localization of animal vocalizati' (Zenodo, doi 10.5061/dryad.c866t1gfj): 'TDOA_4' follows a power law in 'TDetAll_2' (R\u00b2 = 0.918 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.c866t1gfj",
+   "held_out_r2": 0.9801,
+   "held_out_rows": 722,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-57ac78f0830e",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "6c1a5ba894485f8b.csv",
+   "doi": "10.5061/dryad.c866t1gfj",
+   "form": "logarithmic",
+   "params": [
+    -954.1543471794465,
+    108.3146739796506
+   ],
+   "seed": 662919880,
+   "x": "TDetAll_2",
+   "y": "TDOA_5"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Where's Whaledo: a software toolkit for array localization of animal vocalizati' (Zenodo, doi 10.5061/dryad.c866t1gfj): 'TDOA_5' grows logarithmically in 'TDetAll_2' (R\u00b2 = 0.979 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.c866t1gfj",
+   "held_out_r2": 0.9604,
+   "held_out_rows": 722,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-0efdddcb7fda",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "6c1a5ba894485f8b.csv",
+   "doi": "10.5061/dryad.c866t1gfj",
+   "form": "logarithmic",
+   "params": [
+    -615.3055147467181,
+    69.848815348072
+   ],
+   "seed": 662919880,
+   "x": "TDetAll_2",
+   "y": "TDOA_6"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Where's Whaledo: a software toolkit for array localization of animal vocalizati' (Zenodo, doi 10.5061/dryad.c866t1gfj): 'TDOA_6' grows logarithmically in 'TDetAll_2' (R\u00b2 = 0.967 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.c866t1gfj",
+   "held_out_r2": 0.9354,
+   "held_out_rows": 722,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-12727068e05e",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "6c1a5ba894485f8b.csv",
+   "doi": "10.5061/dryad.c866t1gfj",
+   "form": "logarithmic",
+   "params": [
+    -862.3625836115183,
+    97.89452978460764
+   ],
+   "seed": 662919880,
+   "x": "TDetAll_4",
+   "y": "TDOA_3"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Where's Whaledo: a software toolkit for array localization of animal vocalizati' (Zenodo, doi 10.5061/dryad.c866t1gfj): 'TDOA_3' grows logarithmically in 'TDetAll_4' (R\u00b2 = 0.933 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.c866t1gfj",
+   "held_out_r2": 0.9373,
+   "held_out_rows": 722,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4efcf0133974",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "6c1a5ba894485f8b.csv",
+   "doi": "10.5061/dryad.c866t1gfj",
+   "form": "power law",
+   "params": [
+    -489914.15958039236,
+    55613.73884378032
+   ],
+   "seed": 662919880,
+   "x": "TDetAll_4",
+   "y": "TDOA_4"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Where's Whaledo: a software toolkit for array localization of animal vocalizati' (Zenodo, doi 10.5061/dryad.c866t1gfj): 'TDOA_4' follows a power law in 'TDetAll_4' (R\u00b2 = 0.918 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.c866t1gfj",
+   "held_out_r2": 0.9801,
+   "held_out_rows": 722,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-1b29d9f53d19",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "6c1a5ba894485f8b.csv",
+   "doi": "10.5061/dryad.c866t1gfj",
+   "form": "logarithmic",
+   "params": [
+    -954.0266586175406,
+    108.30017889520079
+   ],
+   "seed": 662919880,
+   "x": "TDetAll_4",
+   "y": "TDOA_5"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Where's Whaledo: a software toolkit for array localization of animal vocalizati' (Zenodo, doi 10.5061/dryad.c866t1gfj): 'TDOA_5' grows logarithmically in 'TDetAll_4' (R\u00b2 = 0.979 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.c866t1gfj",
+   "held_out_r2": 0.9604,
+   "held_out_rows": 722,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c4542def14f7",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "6c1a5ba894485f8b.csv",
+   "doi": "10.5061/dryad.c866t1gfj",
+   "form": "logarithmic",
+   "params": [
+    -615.2229578368749,
+    69.83944356597154
+   ],
+   "seed": 662919880,
+   "x": "TDetAll_4",
+   "y": "TDOA_6"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Where's Whaledo: a software toolkit for array localization of animal vocalizati' (Zenodo, doi 10.5061/dryad.c866t1gfj): 'TDOA_6' grows logarithmically in 'TDetAll_4' (R\u00b2 = 0.967 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15053910",
+   "held_out_r2": 0.9671,
+   "held_out_rows": 430,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-45beed4b6c39",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "908da1f0e89f7d7e.csv",
+   "doi": "10.5281/zenodo.15053910",
+   "form": "linear",
+   "params": [
+    27.79729895112092,
+    0.4139068902529734
+   ],
+   "seed": 77487907,
+   "x": "decimallatitude",
+   "y": "sst"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'The influence of environmental stability and upwelling variation on copepod diversity in t' (Zenodo, doi 10.5281/zenodo.15053910): 'sst' is linear in 'decimallatitude' (R\u00b2 = 0.965 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15053910",
+   "held_out_r2": 0.9333,
+   "held_out_rows": 430,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f30a79ce9797",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "908da1f0e89f7d7e.csv",
+   "doi": "10.5281/zenodo.15053910",
+   "form": "linear",
+   "params": [
+    210.6973060036479,
+    0.02594516032703771
+   ],
+   "seed": 77487907,
+   "x": "shoredistance",
+   "y": "bathymetry"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'The influence of environmental stability and upwelling variation on copepod diversity in t' (Zenodo, doi 10.5281/zenodo.15053910): 'bathymetry' is linear in 'shoredistance' (R\u00b2 = 0.924 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15053910",
+   "held_out_r2": 0.9778,
+   "held_out_rows": 780,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3d416c2f3ddb",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "41c3461ea4f8bc30.csv",
+   "doi": "10.5281/zenodo.15053910",
+   "form": "linear",
+   "params": [
+    -5.522704396111486,
+    0.5943412942100246
+   ],
+   "seed": 2277056129,
+   "x": "maximumdepthinmeters",
+   "y": "depth"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'The influence of environmental stability and upwelling variation on copepod diversity in t' (Zenodo, doi 10.5281/zenodo.15053910): 'depth' is linear in 'maximumdepthinmeters' (R\u00b2 = 0.979 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.6084/m9.figshare.34841352.v1",
+   "held_out_r2": 0.9439,
+   "held_out_rows": 198,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e160a5b0b1c9",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8e170281db9d9058.csv",
+   "doi": "10.6084/m9.figshare.34841352.v1",
+   "form": "power law",
+   "params": [
+    0.2614130988967839,
+    0.9396657013111595
+   ],
+   "seed": 2708217374,
+   "x": "BAI_low",
+   "y": "BAI_upp"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data & code from: Body condition of gray whales is correlated with multi-scale ocean varia' (Figshare, doi 10.6084/m9.figshare.34841352.v1): 'BAI_upp' follows a power law in 'BAI_low' (R\u00b2 = 0.954 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
