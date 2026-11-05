@@ -219,6 +219,10 @@ def analyse(path: Path, item: dict, reg: Registry, echo=print) -> list[dict]:
             if abs(np.corrcoef(x, y)[0, 1]) > 0.995:
                 continue                      # the same quantity measured twice (e.g. left/right, duplicate sensors)
             a_, b_ = str(cx).strip().lower(), str(cy).strip().lower()
+            ident = {"id", "index", "idx", "no", "no.", "number", "#", "rank", "row", "sample", "sample_id", "obs",
+                     "object_id", "objid", "key", "label"}
+            if a_ in ident or b_ in ident or a_.endswith("_id") or b_.endswith("_id"):
+                continue                      # identifiers / ranks are labels, not quantities
             if a_ != b_ and (a_.startswith(b_) or b_.startswith(a_) or a_.endswith(b_) or b_.endswith(a_)) and \
                     min(len(a_), len(b_)) >= 2:
                 continue                      # derived column: x vs x_mean, x_max, log_x, …

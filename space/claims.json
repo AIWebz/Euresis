@@ -477480,5 +477480,221 @@
   "statement": "Octal game 0.057731 is completely solved: its Grundy values are periodic with pre-period 1192 and period 8 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.19615720",
+   "held_out_r2": 0.9201,
+   "held_out_rows": 193,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-79e8769cd7fc",
+  "kind": "empirical",
+  "novelty": "KNOWN/EXPECTED: diameter \u221d mass^0.332 \u2248 mass^(1/3), as constant bulk density requires (m = \u03c1\u03c0d\u00b3/6); the dataset likely derived one from the other",
+  "payload": {
+   "dataset": "e2e94a9f46debbf9.csv",
+   "doi": "10.5281/zenodo.19615720",
+   "form": "power law",
+   "params": [
+    -2.0281370941306047,
+    0.33180645599880926
+   ],
+   "seed": 75842180,
+   "x": "mass",
+   "y": "diameter"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Combined CAMO/EMCCD Low-Velocity Earth-Impacting Meteoroids' (Zenodo, doi 10.5281/zenodo.19615720): 'diameter' follows a power law in 'mass' (R\u00b2 = 0.910 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.19615720",
+   "held_out_r2": 0.9667,
+   "held_out_rows": 193,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-7d4400e2e7aa",
+  "kind": "empirical",
+  "novelty": "DEFINITIONAL: the Tisserand parameter is computed from the semi-major axis (with e and i), so it is a function of a by construction \u2014 not a discovery",
+  "payload": {
+   "dataset": "e2e94a9f46debbf9.csv",
+   "doi": "10.5281/zenodo.19615720",
+   "form": "power law",
+   "params": [
+    1.7601829814622858,
+    -0.6859334289762875
+   ],
+   "seed": 75842180,
+   "x": "a",
+   "y": "tisserand"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Combined CAMO/EMCCD Low-Velocity Earth-Impacting Meteoroids' (Zenodo, doi 10.5281/zenodo.19615720): 'tisserand' follows a power law in 'a' (R\u00b2 = 0.980 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.1184144",
+   "held_out_r2": 0.9761,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-90663873a2d4",
+  "kind": "empirical",
+  "novelty": "ARTEFACT: 'ID' is an identifier (pores numbered in order of size), not a physical quantity \u2014 excluded by the identifier-name filter added afterwards",
+  "payload": {
+   "dataset": "3cac38a356cc19d4.csv",
+   "doi": "10.5281/zenodo.1184144",
+   "form": "power law",
+   "params": [
+    1.453700889974094,
+    0.7748565777311056
+   ],
+   "seed": 2669133598,
+   "x": "ID",
+   "y": "Volume"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Pore network modeling data for Fontainebleau and Berea Sandstones' (Zenodo, doi 10.5281/zenodo.1184144): 'Volume' follows a power law in 'ID' (R\u00b2 = 0.976 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.1184144",
+   "held_out_r2": 0.9761,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-1ceddc996a36",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3cac38a356cc19d4.csv",
+   "doi": "10.5281/zenodo.1184144",
+   "form": "power law",
+   "params": [
+    -1.051976717821817,
+    0.4200752468165914
+   ],
+   "seed": 2669133598,
+   "x": "Volume",
+   "y": "[\ufffdm^3]"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Pore network modeling data for Fontainebleau and Berea Sandstones' (Zenodo, doi 10.5281/zenodo.1184144): '[\ufffdm^3]' follows a power law in 'Volume' (R\u00b2 = 0.976 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.1184144",
+   "held_out_r2": 0.974,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d101dcec29fe",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "0a25f60768f5d568.csv",
+   "doi": "10.5281/zenodo.1184144",
+   "form": "power law",
+   "params": [
+    1.3706134448352985,
+    0.7957445640494207
+   ],
+   "seed": 812314693,
+   "x": "Volume [\ufffdm^3]",
+   "y": "Area [\ufffdm^2]"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Pore network modeling data for Fontainebleau and Berea Sandstones' (Zenodo, doi 10.5281/zenodo.1184144): 'Area [\ufffdm^2]' follows a power law in 'Volume [\ufffdm^3]' (R\u00b2 = 0.974 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.1184144",
+   "held_out_r2": 0.9973,
+   "held_out_rows": 210,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c7d5811ac14d",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "47e823895013a5df.csv",
+   "doi": "10.5281/zenodo.1184144",
+   "form": "power law",
+   "params": [
+    1.3379953675192429,
+    0.7522698133795459
+   ],
+   "seed": 1886274017,
+   "x": "Volume [\u00b5m^3]",
+   "y": "Area [\u00b5m^2]"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Pore network modeling data for Fontainebleau and Berea Sandstones' (Zenodo, doi 10.5281/zenodo.1184144): 'Area [\u00b5m^2]' follows a power law in 'Volume [\u00b5m^3]' (R\u00b2 = 0.998 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.1184144",
+   "held_out_r2": 0.9973,
+   "held_out_rows": 210,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-28400576f031",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "47e823895013a5df.csv",
+   "doi": "10.5281/zenodo.1184144",
+   "form": "power law",
+   "params": [
+    -1.0645704475778208,
+    0.4420080724111184
+   ],
+   "seed": 1886274017,
+   "x": "Area [\u00b5m^2]",
+   "y": "EqRadius [\u00b5m]"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Pore network modeling data for Fontainebleau and Berea Sandstones' (Zenodo, doi 10.5281/zenodo.1184144): 'EqRadius [\u00b5m]' follows a power law in 'Area [\u00b5m^2]' (R\u00b2 = 0.998 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20634498",
+   "held_out_r2": 0.9976,
+   "held_out_rows": 136,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4e06dcf41030",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "7e6a4f8a6a049271.csv",
+   "doi": "10.5281/zenodo.20634498",
+   "form": "power law",
+   "params": [
+    0.1457554701871084,
+    -1.022225093672009
+   ],
+   "seed": 356500245,
+   "x": "z/z0",
+   "y": "\\sigma_\\phi, approximate, (rad)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data presented in \"A Penning trap single-photon counter for axion detection\"' (Zenodo, doi 10.5281/zenodo.20634498): '\\sigma_\\phi, approximate, (rad)' follows a power law in 'z/z0' (R\u00b2 = 0.998 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
