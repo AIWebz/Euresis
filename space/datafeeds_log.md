@@ -258,3 +258,4 @@
 - 2026-11-05 10:30 FINDING (confirmed on held-out rows): In 'The influence of environmental stability and upwelling variation on copepod diversity in t' (Zenodo, doi 10.5281/zenodo.15053910): 'depth' is linear in 'maximumdepthinmeters' (R² = 0.979 on the discovery half); held-out R² = 0.978 [emp-3d416c2f3ddb]
 - 2026-11-05 10:31 FINDING (confirmed on held-out rows): In 'Data & code from: Body condition of gray whales is correlated with multi-scale ocean varia' (Figshare, doi 10.6084/m9.figshare.34841352.v1): 'BAI_upp' follows a power law in 'BAI_low' (R² = 0.954 on the discovery half); held-out R² = 0.944 [emp-e160a5b0b1c9]
 - 2026-11-05 10:31 data feeds: 1274 datasets analysed so far, 235 confirmed findings
+- 2026-11-05 11:32 data feeds: online
