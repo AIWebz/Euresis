@@ -839864,5 +839864,59 @@
   "statement": "In 'Geochemical data of obsidian from the Oki Islands, Iki Island, and northwestern Kyushu.' (Figshare, doi 10.51087/data.geosoc.33161816.v1): 'Major element compositions (wt%), 100% anhydrous normalization' grows exponentially in 'Major element compositions (wt%), original data' (R\u00b2 = 0.934 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 2",
+    "z < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-6d3852144050",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 2",
+    "z < 1"
+   ],
+   "claim": "2*r**2*z/((r**2 + 1)*(4*r**2*z**2 + (1 - r**2)**2)) + 1 >= 1/2*(2*r**2*z/(4*r**2*z**2 + (1 - r**2)**2))",
+   "symbols": [
+    "r",
+    "z"
+   ]
+  },
+  "source": "physics_discover2 round 571",
+  "statement": "[physics: driven oscillator] Energy Dissipation Ratio [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 mean absorbed power (normalised)   on r < 2, z < 1 (tight only at the edge of the domain, near (1, 3.23e-15))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 2",
+    "z < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-42701b338230",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 2",
+    "z < 1"
+   ],
+   "claim": "2*r**2*z/((r**2 + 1)*(4*r**2*z**2 + (1 - r**2)**2)) + 1 >= 1*(sqrt(-z**2/(z**2 + 1) + 1))",
+   "symbols": [
+    "r",
+    "z"
+   ]
+  },
+  "source": "physics_discover2 round 571",
+  "statement": "[physics: driven oscillator] Energy Dissipation Ratio [model-proposed; physical meaning unverified] \u2265 1 \u00d7 resonance frequency ratio [model-proposed; physical meaning unverified]   on r < 2, z < 1 (tight only at the edge of the domain, near (0.000233, 8.79e-10))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]
