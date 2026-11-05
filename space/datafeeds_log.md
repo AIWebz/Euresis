@@ -207,3 +207,10 @@
 - 2026-11-05 08:44 FINDING (confirmed on held-out rows): In 'Data Sheet 15_Digital inclusive finance and basic medical and health supply capacity in Ch' (Figshare, doi 10.3389/fpubh.2026.1945127.s012): 'CB' follows a power law in 'DFI' (R² = 0.957 on the discovery half); held-out R² = 0.929 [emp-0b705db4b68b]
 - 2026-11-05 08:44 data feeds: 1036 datasets analysed so far, 187 confirmed findings
 - 2026-11-05 09:45 data feeds: online
+- 2026-11-05 09:48 FINDING (confirmed on held-out rows): In 'Lake Levelling Data from Lake Taupō, 1979-2021' (Zenodo, doi 10.5281/zenodo.7387887): 'HI' grows logarithmically in 'RP' (R² = 0.931 on the discovery half); held-out R² = 0.919 [emp-c644c8c8a4d3]
+- 2026-11-05 09:48 FINDING (confirmed on held-out rows): In 'Lake Levelling Data from Lake Taupō, 1979-2021' (Zenodo, doi 10.5281/zenodo.7387887): 'RA' grows logarithmically in 'RP' (R² = 0.967 on the discovery half); held-out R² = 0.962 [emp-4c56d2ffad32]
+- 2026-11-05 09:48 FINDING (confirmed on held-out rows): In 'Lake Levelling Data from Lake Taupō, 1979-2021' (Zenodo, doi 10.5281/zenodo.7387887): 'SB' grows exponentially in 'HI' (R² = 0.969 on the discovery half); held-out R² = 0.936 [emp-86997339c1ce]
+- 2026-11-05 09:48 FINDING (confirmed on held-out rows): In 'Lake Levelling Data from Lake Taupō, 1979-2021' (Zenodo, doi 10.5281/zenodo.7387887): 'RA' grows logarithmically in 'HI' (R² = 0.949 on the discovery half); held-out R² = 0.952 [emp-e607b6dfc791]
+- 2026-11-05 09:48 FINDING (confirmed on held-out rows): In 'Lake Levelling Data from Lake Taupō, 1979-2021' (Zenodo, doi 10.5281/zenodo.7387887): 'RA' grows logarithmically in 'SB' (R² = 0.914 on the discovery half); held-out R² = 0.874 [emp-22e987b698fe]
+- 2026-11-05 09:49 FINDING (confirmed on held-out rows): In 'Dataset for: Pressure-Controlled Differentiation Links Volcanic Liquids and Plutonic Cumul' (Zenodo, doi 10.5281/zenodo.21769940): 'mode_pct_Cpx' is linear in 'CaO_Solid' (R² = 0.949 on the discovery half); held-out R² = 0.952 [emp-de21ffc9c625]
+- 2026-11-05 09:49 data feeds: 1175 datasets analysed so far, 193 confirmed findings
