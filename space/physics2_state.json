@@ -84,7 +84,8 @@
    "Electron recoil angle (sine squared) [model-proposed; physical meaning unverified]": "1 - 1/(2*c**2*x**2 + 1)**2",
    "Electron momentum fraction [model-proposed; physical meaning unverified]": "1 + sqrt(c**2*x**2/(c*x + 1)**2 + c*x**2/(c*x + 1))/(c*x + 1) + 1/(c*x + 1)",
    "Electron kinetic energy fraction [model-proposed; physical meaning unverified]": "c*x**2/(c*x**2 + 1)",
-   "Electron kinetic energy / initial photon energy [model-proposed; physical meaning unverified]": "c*x**2/(x + 1) + c*x"
+   "Electron kinetic energy / initial photon energy [model-proposed; physical meaning unverified]": "c*x**2/(x + 1) + c*x",
+   "Compton scattering factor [model-proposed; physical meaning unverified]": "-c/(c*x + 1) + 1 + 1/(c*x + 1)"
   },
   "Cournot duopoly": {
    "output of firm 1": "(1 - 2*c1 + c2)/3",
@@ -115,7 +116,8 @@
    "Relative Risk Aversion [model-proposed; physical meaning unverified]": "1/sqrt(1 - L)",
    "Expected Utility Deviation [model-proposed; physical meaning unverified]": "sqrt(p)*sqrt((1 - p)*(sqrt(1 - L) - 1)**2)",
    "Insurance Coverage Ratio [model-proposed; physical meaning unverified]": "1 - (p*sqrt(1 - L) - p + 1)**2/(-L*p + 1)",
-   "Insurance Risk Adjustment Factor [model-proposed; physical meaning unverified]": "sqrt(-L*p + 1)/(sqrt(1 - L) - 1 + 1/(p*sqrt(1 - L) - p + 1))"
+   "Insurance Risk Adjustment Factor [model-proposed; physical meaning unverified]": "sqrt(-L*p + 1)/(sqrt(1 - L) - 1 + 1/(p*sqrt(1 - L) - p + 1))",
+   "Insurance Risk Adjustment Index [model-proposed; physical meaning unverified]": "sqrt(-L*p + 1)/(-p + sqrt(1 - L) + 1)"
   },
   "auction with a reserve price": {
    "expected revenue": "1/3 + r**2 - 4*r**3/3",
@@ -8343,6 +8345,156 @@
    "family": "collision",
    "expr": "(1 - e**2) * m / (1 + m) + (1 - e**2) * (1 - m) / (1 + m)",
    "why": "affine combination of known quantities (target speed / initial speed, fraction of kinetic energy lost)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt((1 - r**2)**2 + (2*z*r)**2)",
+   "why": "affine combination of known quantities (amplitude / static deflection, 1/(amplitude / static deflection))"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 + u)/(1 - u)) * sqrt((1 + v)/(1 - v)) / sqrt((1 + (u + v)/(1 + u*v))/(1 - (u + v)/(1 + u*v))",
+   "why": "affine combination of known quantities (composed speed / c)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 - u**2)*(1 - v**2))/sqrt(1 - ((u + v)/(1 + u*v))**2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "c*x**2/(c*x**2 + 1) + c*x",
+   "why": "affine combination of known quantities (Electron kinetic energy fraction [model-proposed; physical meaning unverified], 1/(scattered photon energy / initial energy))"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "c/(x + 1) + 1/(1 + x*c)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, Scattered photon wavelength / initial photon wavelength [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "sqrt(c**2*x**2 + 1)/(x*(c*x + 1))",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, Scattered photon momentum / initial photon momentum [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "((1 - 2*c1 + c2) * (1 - 2*c2 + c1)) / ((1 - c1) * (1 - c2))",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "((1 - 2*c1 + c2)**2 / 9) / ((1 - 2*c2 + c1)**2 / 9)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "(c1 + c2) / (c1/3 + c2/3 + 1/3)",
+   "why": "affine combination of known quantities (output of firm 1, 1/(market price))"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "((-c1 - c2 + 1)**2 / ((-2*c1 + c2 + 1) * (c1 - 2*c2 + 1))) / ((-c1 - c2 + 1)**2 / ((-2*c2 + c1 + 1) ",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "1 / (sqrt(1 - L) - 1 + 1/(p*sqrt(1 - L) - p + 1))",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "(p*sqrt(1 - L) + 1 - p) / (1 - p*L)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "p*(1 - p)*L**2 / (p*sqrt(1 - L) + 1 - p)**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(1/3 - r**2 + 2*r**3/3)/(2*(1 - r**3)/3 + v*r**2)",
+   "why": "affine combination of known quantities (expected revenue, 1/(Welfare Efficiency Ratio [model-proposed; physical meaning unverified]))"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(1/3 + r**2 - 4*r**3/3)/(2*(1 - r**3)/3 + v*r**2)",
+   "why": "affine combination of known quantities (1/(reserve price elasticity of welfare [model-proposed; physical meaning unverified]), 1/(Welfare Efficiency Ratio [model-proposed; physical meaning unverified]))"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(2*(1 - r**3)/3 + v*r**2)/(1/3 + r**2 - 4*r**3/3)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(1/3 + r**2 - 4*r**3/3 + v*r**2)/(1/3 + r**2 - 4*r**3/3)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "(1 - a**2 + b**2)/(2*b)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2 * m**2 / (1 + m)**2",
+   "why": "affine combination of known quantities (target speed / initial speed, Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "1 - e**2 * m**2 / (1 + m)**2",
+   "why": "affine combination of known quantities (target speed / initial speed, Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2 * (1 + m)**2 / (1 + m)**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "collision",
+   "expr": "1 - (1 - e**2) * m / (1 + m) - (1 - e**2) * (1 - m) / (1 + m)",
+   "why": "affine combination of known quantities (target speed / initial speed, fraction of kinetic energy lost)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt((1 - r**2)**2 + (2*z*r)**2)",
+   "why": "affine combination of known quantities (amplitude / static deflection, 1/(amplitude / static deflection))"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 + u)/(1 - u)) * sqrt((1 + v)/(1 - v)) / sqrt((1 + (u + v)/(1 + u*v))/(1 - (u + v)/(1 + u*v))",
+   "why": "affine combination of known quantities (composed speed / c)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "(u + v)/(1 + u*v)",
+   "why": "affine combination of known quantities (composed speed / c)"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "1 - c/(c*x + 1)",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "((1 - 2*c1 + c2)/3) * ((1 - 2*c2 + c1)/3) / ((1 - c1)/4) / ((1 - c2)/4)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "((1 - 2*c1 + c2)**2/9) / ((1 - 2*c2 + c1)**2/9)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "((2 - c1 - c2)**2/18) / (((1 - 2*c1 + c2)**2 + (1 - 2*c2 + c1)**2)/9)",
+   "why": "affine combination of known quantities (output of firm 1, 1/(Hirshleifer Index [model-proposed; physical meaning unverified]))"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "((-c1 - c2 + 1)**2) / ((-2*c1 + c2 + 1) * (c1 - 2*c2 + 1))",
+   "why": "affine combination of known quantities (output of firm 1, Price Elasticity of Demand [model-proposed; physical meaning unverified])"
   }
  ],
  "tried": [
@@ -9923,7 +10075,71 @@
   "velocity addition|Relativistic Energy-Momentum Ratio [model-proposed; physical meaning unverified]|Relativistic momentum ratio [model-proposed; physical meaning unverified]",
   "velocity addition|Relativistic Energy-Momentum Ratio [model-proposed; physical meaning unverified]|Lorentz gamma of the composed motion [model-proposed; physical meaning unverified]",
   "insurance and risk|Insurance Risk Adjustment Factor [model-proposed; physical meaning unverified]|Expected Utility Deviation [model-proposed; physical meaning unverified]",
-  "insurance and risk|Insurance Risk Adjustment Factor [model-proposed; physical meaning unverified]|Insurance Coverage Ratio [model-proposed; physical meaning unverified]"
+  "insurance and risk|Insurance Risk Adjustment Factor [model-proposed; physical meaning unverified]|Insurance Coverage Ratio [model-proposed; physical meaning unverified]",
+  "velocity addition|Relativistic Energy-Momentum Ratio [model-proposed; physical meaning unverified]|Relative velocity in terms of rapidities [model-proposed; physical meaning unverified]",
+  "velocity addition|Relativistic Energy-Momentum Ratio [model-proposed; physical meaning unverified]|Relativistic velocity parameter [model-proposed; physical meaning unverified]",
+  "velocity addition|Relativistic Energy-Momentum Ratio [model-proposed; physical meaning unverified]|Energy-momentum invariant [model-proposed; physical meaning unverified]",
+  "velocity addition|Relativistic Energy-Momentum Ratio [model-proposed; physical meaning unverified]|Energy-momentum ratio [model-proposed; physical meaning unverified]",
+  "velocity addition|Relativistic Energy-Momentum Ratio [model-proposed; physical meaning unverified]|Total relativistic energy / mc\u00b2 [model-proposed; physical meaning unverified]",
+  "velocity addition|Relativistic Energy-Momentum Ratio [model-proposed; physical meaning unverified]|Relativistic momentum magnitude ratio [model-proposed; physical meaning unverified]",
+  "Compton scattering|scattered photon energy / initial energy|Compton scattering factor [model-proposed; physical meaning unverified]",
+  "Compton scattering|electron kinetic energy / photon energy|Compton scattering factor [model-proposed; physical meaning unverified]",
+  "Compton scattering|scattered photon energy / (m_e c\u00b2)|Compton scattering factor [model-proposed; physical meaning unverified]",
+  "Compton scattering|electron kinetic energy / (m_e c\u00b2)|Compton scattering factor [model-proposed; physical meaning unverified]",
+  "Compton scattering|wavelength shift / Compton wavelength|Compton scattering factor [model-proposed; physical meaning unverified]",
+  "Compton scattering|photon energy / (m_e c\u00b2)|Compton scattering factor [model-proposed; physical meaning unverified]",
+  "Compton scattering|Recoil electron momentum / (m_e c) [model-proposed; physical meaning unverified]|Compton scattering factor [model-proposed; physical meaning unverified]",
+  "Compton scattering|Electron recoil angle (cosine) [model-proposed; physical meaning unverified]|Compton scattering factor [model-proposed; physical meaning unverified]",
+  "Compton scattering|Compton wavelength shift / (initial photon wavelength) [model-proposed; physical meaning unverified]|Compton scattering factor [model-proposed; physical meaning unverified]",
+  "Compton scattering|Compton scattering formula (recoil angle cosine) [model-proposed; physical meaning unverified]|Compton scattering factor [model-proposed; physical meaning unverified]",
+  "Compton scattering|Scattered photon wavelength / initial photon wavelength [model-proposed; physical meaning unverified]|Compton scattering factor [model-proposed; physical meaning unverified]",
+  "Compton scattering|Scattered photon momentum / initial photon momentum [model-proposed; physical meaning unverified]|Compton scattering factor [model-proposed; physical meaning unverified]",
+  "Compton scattering|Scattered photon wavelength / Compton wavelength [model-proposed; physical meaning unverified]|Compton scattering factor [model-proposed; physical meaning unverified]",
+  "Compton scattering|Electron recoil angle (sine squared) [model-proposed; physical meaning unverified]|Compton scattering factor [model-proposed; physical meaning unverified]",
+  "Compton scattering|Electron momentum fraction [model-proposed; physical meaning unverified]|Compton scattering factor [model-proposed; physical meaning unverified]",
+  "Compton scattering|Electron kinetic energy fraction [model-proposed; physical meaning unverified]|Compton scattering factor [model-proposed; physical meaning unverified]",
+  "Compton scattering|Electron kinetic energy / initial photon energy [model-proposed; physical meaning unverified]|Compton scattering factor [model-proposed; physical meaning unverified]",
+  "Compton scattering|Compton scattering factor [model-proposed; physical meaning unverified]|scattered photon energy / initial energy",
+  "Compton scattering|Compton scattering factor [model-proposed; physical meaning unverified]|electron kinetic energy / photon energy",
+  "Compton scattering|Compton scattering factor [model-proposed; physical meaning unverified]|scattered photon energy / (m_e c\u00b2)",
+  "Compton scattering|Compton scattering factor [model-proposed; physical meaning unverified]|electron kinetic energy / (m_e c\u00b2)",
+  "Compton scattering|Compton scattering factor [model-proposed; physical meaning unverified]|wavelength shift / Compton wavelength",
+  "Compton scattering|Compton scattering factor [model-proposed; physical meaning unverified]|photon energy / (m_e c\u00b2)",
+  "Compton scattering|Compton scattering factor [model-proposed; physical meaning unverified]|Recoil electron momentum / (m_e c) [model-proposed; physical meaning unverified]",
+  "insurance and risk|expected wealth|Insurance Risk Adjustment Index [model-proposed; physical meaning unverified]",
+  "insurance and risk|expected utility|Insurance Risk Adjustment Index [model-proposed; physical meaning unverified]",
+  "insurance and risk|certainty equivalent|Insurance Risk Adjustment Index [model-proposed; physical meaning unverified]",
+  "insurance and risk|risk premium|Insurance Risk Adjustment Index [model-proposed; physical meaning unverified]",
+  "insurance and risk|actuarially fair insurance premium|Insurance Risk Adjustment Index [model-proposed; physical meaning unverified]",
+  "insurance and risk|maximum premium the person would pay for full insurance|Insurance Risk Adjustment Index [model-proposed; physical meaning unverified]",
+  "insurance and risk|variance of wealth|Insurance Risk Adjustment Index [model-proposed; physical meaning unverified]",
+  "insurance and risk|Risk-adjusted expected utility [model-proposed; physical meaning unverified]|Insurance Risk Adjustment Index [model-proposed; physical meaning unverified]",
+  "insurance and risk|Insurance risk sensitivity [model-proposed; physical meaning unverified]|Insurance Risk Adjustment Index [model-proposed; physical meaning unverified]",
+  "insurance and risk|Coefficient of Risk Aversion [model-proposed; physical meaning unverified]|Insurance Risk Adjustment Index [model-proposed; physical meaning unverified]",
+  "insurance and risk|Relative Risk Aversion [model-proposed; physical meaning unverified]|Insurance Risk Adjustment Index [model-proposed; physical meaning unverified]",
+  "insurance and risk|Expected Utility Deviation [model-proposed; physical meaning unverified]|Insurance Risk Adjustment Index [model-proposed; physical meaning unverified]",
+  "insurance and risk|Insurance Coverage Ratio [model-proposed; physical meaning unverified]|Insurance Risk Adjustment Index [model-proposed; physical meaning unverified]",
+  "insurance and risk|Insurance Risk Adjustment Factor [model-proposed; physical meaning unverified]|Insurance Risk Adjustment Index [model-proposed; physical meaning unverified]",
+  "insurance and risk|Insurance Risk Adjustment Index [model-proposed; physical meaning unverified]|expected wealth",
+  "insurance and risk|Insurance Risk Adjustment Index [model-proposed; physical meaning unverified]|expected utility",
+  "insurance and risk|Insurance Risk Adjustment Index [model-proposed; physical meaning unverified]|certainty equivalent",
+  "insurance and risk|Insurance Risk Adjustment Index [model-proposed; physical meaning unverified]|risk premium",
+  "insurance and risk|Insurance Risk Adjustment Index [model-proposed; physical meaning unverified]|actuarially fair insurance premium",
+  "insurance and risk|Insurance Risk Adjustment Index [model-proposed; physical meaning unverified]|maximum premium the person would pay for full insurance",
+  "insurance and risk|Insurance Risk Adjustment Index [model-proposed; physical meaning unverified]|variance of wealth",
+  "insurance and risk|Insurance Risk Adjustment Index [model-proposed; physical meaning unverified]|Risk-adjusted expected utility [model-proposed; physical meaning unverified]",
+  "insurance and risk|Insurance Risk Adjustment Index [model-proposed; physical meaning unverified]|Insurance risk sensitivity [model-proposed; physical meaning unverified]",
+  "insurance and risk|Insurance Risk Adjustment Index [model-proposed; physical meaning unverified]|Coefficient of Risk Aversion [model-proposed; physical meaning unverified]",
+  "Compton scattering|Compton scattering factor [model-proposed; physical meaning unverified]|Electron recoil angle (cosine) [model-proposed; physical meaning unverified]",
+  "Compton scattering|Compton scattering factor [model-proposed; physical meaning unverified]|Compton wavelength shift / (initial photon wavelength) [model-proposed; physical meaning unverified]",
+  "Compton scattering|Compton scattering factor [model-proposed; physical meaning unverified]|Compton scattering formula (recoil angle cosine) [model-proposed; physical meaning unverified]",
+  "Compton scattering|Compton scattering factor [model-proposed; physical meaning unverified]|Scattered photon wavelength / initial photon wavelength [model-proposed; physical meaning unverified]",
+  "Compton scattering|Compton scattering factor [model-proposed; physical meaning unverified]|Scattered photon momentum / initial photon momentum [model-proposed; physical meaning unverified]",
+  "Compton scattering|Compton scattering factor [model-proposed; physical meaning unverified]|Scattered photon wavelength / Compton wavelength [model-proposed; physical meaning unverified]",
+  "Compton scattering|Compton scattering factor [model-proposed; physical meaning unverified]|Electron recoil angle (sine squared) [model-proposed; physical meaning unverified]",
+  "Compton scattering|Compton scattering factor [model-proposed; physical meaning unverified]|Electron momentum fraction [model-proposed; physical meaning unverified]",
+  "Compton scattering|Compton scattering factor [model-proposed; physical meaning unverified]|Electron kinetic energy fraction [model-proposed; physical meaning unverified]",
+  "Compton scattering|Compton scattering factor [model-proposed; physical meaning unverified]|Electron kinetic energy / initial photon energy [model-proposed; physical meaning unverified]"
  ],
  "edges": [
   {
@@ -12421,9 +12637,111 @@
    "f": "Lorentz gamma of the composed motion [model-proposed; physical meaning unverified]",
    "g": "Relativistic Energy-Momentum Ratio [model-proposed; physical meaning unverified]",
    "k": "1/2"
+  },
+  {
+   "family": "Compton scattering",
+   "f": "scattered photon energy / initial energy",
+   "g": "Compton scattering factor [model-proposed; physical meaning unverified]",
+   "k": "1/4"
+  },
+  {
+   "family": "Compton scattering",
+   "f": "Compton scattering formula (recoil angle cosine) [model-proposed; physical meaning unverified]",
+   "g": "Compton scattering factor [model-proposed; physical meaning unverified]",
+   "k": "5/36"
+  },
+  {
+   "family": "Compton scattering",
+   "f": "Scattered photon wavelength / initial photon wavelength [model-proposed; physical meaning unverified]",
+   "g": "Compton scattering factor [model-proposed; physical meaning unverified]",
+   "k": "1/2"
+  },
+  {
+   "family": "Compton scattering",
+   "f": "Scattered photon wavelength / Compton wavelength [model-proposed; physical meaning unverified]",
+   "g": "Compton scattering factor [model-proposed; physical meaning unverified]",
+   "k": "1/4"
+  },
+  {
+   "family": "Compton scattering",
+   "f": "Electron momentum fraction [model-proposed; physical meaning unverified]",
+   "g": "Compton scattering factor [model-proposed; physical meaning unverified]",
+   "k": "1"
+  },
+  {
+   "family": "Compton scattering",
+   "f": "Compton scattering factor [model-proposed; physical meaning unverified]",
+   "g": "electron kinetic energy / photon energy",
+   "k": "1"
+  },
+  {
+   "family": "Compton scattering",
+   "f": "Compton scattering factor [model-proposed; physical meaning unverified]",
+   "g": "scattered photon energy / (m_e c\u00b2)",
+   "k": "1"
+  },
+  {
+   "family": "Compton scattering",
+   "f": "Compton scattering factor [model-proposed; physical meaning unverified]",
+   "g": "electron kinetic energy / (m_e c\u00b2)",
+   "k": "1/2"
+  },
+  {
+   "family": "Compton scattering",
+   "f": "Compton scattering factor [model-proposed; physical meaning unverified]",
+   "g": "photon energy / (m_e c\u00b2)",
+   "k": "2/5"
+  },
+  {
+   "family": "insurance and risk",
+   "f": "Relative Risk Aversion [model-proposed; physical meaning unverified]",
+   "g": "Insurance Risk Adjustment Index [model-proposed; physical meaning unverified]",
+   "k": "1"
+  },
+  {
+   "family": "insurance and risk",
+   "f": "Insurance Risk Adjustment Index [model-proposed; physical meaning unverified]",
+   "g": "expected wealth",
+   "k": "1/2"
+  },
+  {
+   "family": "insurance and risk",
+   "f": "Insurance Risk Adjustment Index [model-proposed; physical meaning unverified]",
+   "g": "expected utility",
+   "k": "1/2"
+  },
+  {
+   "family": "insurance and risk",
+   "f": "Insurance Risk Adjustment Index [model-proposed; physical meaning unverified]",
+   "g": "certainty equivalent",
+   "k": "1/2"
+  },
+  {
+   "family": "insurance and risk",
+   "f": "Insurance Risk Adjustment Index [model-proposed; physical meaning unverified]",
+   "g": "actuarially fair insurance premium",
+   "k": "1"
+  },
+  {
+   "family": "insurance and risk",
+   "f": "Insurance Risk Adjustment Index [model-proposed; physical meaning unverified]",
+   "g": "maximum premium the person would pay for full insurance",
+   "k": "1"
+  },
+  {
+   "family": "Compton scattering",
+   "f": "Compton scattering factor [model-proposed; physical meaning unverified]",
+   "g": "Electron kinetic energy fraction [model-proposed; physical meaning unverified]",
+   "k": "9/10"
+  },
+  {
+   "family": "Compton scattering",
+   "f": "Compton scattering factor [model-proposed; physical meaning unverified]",
+   "g": "Electron kinetic energy / initial photon energy [model-proposed; physical meaning unverified]",
+   "k": "3/25"
   }
  ],
- "rounds": 466,
+ "rounds": 478,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",
