@@ -724208,5 +724208,113 @@
   "statement": "[economics: insurance and risk] Insurance Risk Adjustment Factor [model-proposed; physical meaning unverified] \u2265 1 \u00d7 certainty equivalent   on p < 1, L < 1 (tight only at the edge of the domain, near (0.883, 3.85e-17))",
   "status": "proved",
   "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "u < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-86c8a0c94631",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "u < 1",
+    "v < 1"
+   ],
+   "claim": "(u*v + 1)/(sqrt(1 - u**2)*sqrt(1 - v**2)) >= 1/2*(sqrt(1 - u**2) + sqrt(1 - v**2)/sqrt(-(u + v)**2/(u*v + 1)**2 + 1))",
+   "symbols": [
+    "u",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 460",
+  "statement": "[physics: velocity addition] Lorentz factor of the composed motion \u2265 1/2 \u00d7 Relativistic Energy-Momentum Ratio [model-proposed; physical meaning unverified]   on u < 1, v < 1 (tight only at the edge of the domain, near (2.12e-08, 2.19e-09))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "u < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-f78626162735",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "u < 1",
+    "v < 1"
+   ],
+   "claim": "1/(sqrt(1 - u**2)*sqrt(1 - v**2)) >= 1/2*(sqrt(1 - u**2) + sqrt(1 - v**2)/sqrt(-(u + v)**2/(u*v + 1)**2 + 1))",
+   "symbols": [
+    "u",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 460",
+  "statement": "[physics: velocity addition] product of the two Lorentz factors \u2265 1/2 \u00d7 Relativistic Energy-Momentum Ratio [model-proposed; physical meaning unverified]   on u < 1, v < 1 (tight only at the edge of the domain, near (2.23e-08, 2.09e-08))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "u < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-9436fba452f2",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'Lorentz factor of the composed motion'",
+  "payload": {
+   "assumptions": [
+    "u < 1",
+    "v < 1"
+   ],
+   "claim": "sqrt(u + 1)*sqrt(v + 1)*sqrt(1/(1 - u))*sqrt(1/(1 - v)) >= 1/2*(sqrt(1 - u**2) + sqrt(1 - v**2)/sqrt(-(u + v)**2/(u*v + 1)**2 + 1))",
+   "symbols": [
+    "u",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 460",
+  "statement": "[physics: velocity addition] Doppler factor of the composed motion \u2265 1/2 \u00d7 Relativistic Energy-Momentum Ratio [model-proposed; physical meaning unverified]   on u < 1, v < 1 (tight only at the edge of the domain, near (5.86e-15, 9.1e-15))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "u < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-e315b9eb4f53",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'Lorentz factor of the composed motion'",
+  "payload": {
+   "assumptions": [
+    "u < 1",
+    "v < 1"
+   ],
+   "claim": "1/sqrt(-(u + v)**2/(u*v + 1)**2 + 1) >= 1/2*(sqrt(1 - u**2) + sqrt(1 - v**2)/sqrt(-(u + v)**2/(u*v + 1)**2 + 1))",
+   "symbols": [
+    "u",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 460",
+  "statement": "[physics: velocity addition] Lorentz gamma of the composed motion [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 Relativistic Energy-Momentum Ratio [model-proposed; physical meaning unverified]   on u < 1, v < 1 (tight only at the edge of the domain, near (2.26e-09, 4.45e-09))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]

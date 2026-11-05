@@ -64,7 +64,8 @@
    "Energy-momentum invariant [model-proposed; physical meaning unverified]": "sqrt(1 - u**2) + sqrt(1 - v**2) - sqrt(-(u + v)**2/(u*v + 1)**2 + 1)",
    "Energy-momentum ratio [model-proposed; physical meaning unverified]": "sqrt(-(u + v)**2/(u*v + 1)**2 + 1)*(1/sqrt(1 - v**2) + 1/sqrt(1 - u**2))",
    "Total relativistic energy / mc\u00b2 [model-proposed; physical meaning unverified]": "sqrt(1 - u**2) + sqrt(1 - v**2) + (u*v + 1)/(sqrt(1 - u**2)*sqrt(1 - v**2))",
-   "Relativistic momentum magnitude ratio [model-proposed; physical meaning unverified]": "sqrt((u**2 + 2*u*v + v**2)/(u*v + 1)**2 + (u*v + 1)**2/((1 - u**2)*(1 - v**2)))"
+   "Relativistic momentum magnitude ratio [model-proposed; physical meaning unverified]": "sqrt((u**2 + 2*u*v + v**2)/(u*v + 1)**2 + (u*v + 1)**2/((1 - u**2)*(1 - v**2)))",
+   "Relativistic Energy-Momentum Ratio [model-proposed; physical meaning unverified]": "sqrt(1 - u**2) + sqrt(1 - v**2)/sqrt(-(u + v)**2/(u*v + 1)**2 + 1)"
   },
   "Compton scattering": {
    "scattered photon energy / initial energy": "1/(1 + x*c)",
@@ -8217,6 +8218,76 @@
    "family": "two-body decay",
    "expr": "sqrt((1 - (a + b)**2)*(1 - (a - b)**2))/sqrt((1 + a**2 - b**2)**2 + (1 - a**2 + b**2)**2)",
    "why": "a power or product of known quantities"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2 * m**2 / (1 + m)**2",
+   "why": "affine combination of known quantities (target speed / initial speed, Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "1 - e**2 * m**2 / (1 + m)**2",
+   "why": "affine combination of known quantities (target speed / initial speed, Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2 * (1 + m)**2 / (1 + m)**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "collision",
+   "expr": "1 - (1 - e**2) * m / (1 + m)",
+   "why": "affine combination of known quantities (speed of the centre of mass / initial speed, Fraction of kinetic energy retained by projectile [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt((1 - r**2)**2 + (2*z*r)**2)",
+   "why": "affine combination of known quantities (amplitude / static deflection, 1/(amplitude / static deflection))"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 - u**2)*(1 - v**2))/sqrt(1 - ((u + v)/(1 + u*v))**2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 + u)/(1 - u)) * sqrt((1 + v)/(1 - v)) / sqrt((1 + (u + v)/(1 + u*v))/(1 - (u + v)/(1 + u*v))",
+   "why": "affine combination of known quantities (composed speed / c)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt(1 - u**2) * sqrt(1 - v**2) / sqrt(1 - ((u + v)/(1 + u*v))**2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "1/(1 + x*c)**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "sqrt(c**2*x**2 + 1)/(x*(c*x + 1))",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, Scattered photon momentum / initial photon momentum [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "c/(x + 1) + 1",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, Scattered photon wavelength / initial photon wavelength [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "x*c/(1 + x*c)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy)"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "((1 - 2*c1 + c2)/3) * ((1 - 2*c2 + c1)/3) / ((1 - c1)/4) / ((1 - c2)/4)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "sqrt(-L*p + 1)/(p*sqrt(1 - L) - p + 1)",
+   "why": "a power or product of known quantities"
   }
  ],
  "tried": [
@@ -9771,7 +9842,33 @@
   "insurance and risk|Insurance Risk Adjustment Factor [model-proposed; physical meaning unverified]|Risk-adjusted expected utility [model-proposed; physical meaning unverified]",
   "insurance and risk|Insurance Risk Adjustment Factor [model-proposed; physical meaning unverified]|Insurance risk sensitivity [model-proposed; physical meaning unverified]",
   "insurance and risk|Insurance Risk Adjustment Factor [model-proposed; physical meaning unverified]|Coefficient of Risk Aversion [model-proposed; physical meaning unverified]",
-  "insurance and risk|Insurance Risk Adjustment Factor [model-proposed; physical meaning unverified]|Relative Risk Aversion [model-proposed; physical meaning unverified]"
+  "insurance and risk|Insurance Risk Adjustment Factor [model-proposed; physical meaning unverified]|Relative Risk Aversion [model-proposed; physical meaning unverified]",
+  "velocity addition|composed speed / c|Relativistic Energy-Momentum Ratio [model-proposed; physical meaning unverified]",
+  "velocity addition|Galilean sum / c|Relativistic Energy-Momentum Ratio [model-proposed; physical meaning unverified]",
+  "velocity addition|Lorentz factor of the composed motion|Relativistic Energy-Momentum Ratio [model-proposed; physical meaning unverified]",
+  "velocity addition|product of the two Lorentz factors|Relativistic Energy-Momentum Ratio [model-proposed; physical meaning unverified]",
+  "velocity addition|Doppler factor of the composed motion|Relativistic Energy-Momentum Ratio [model-proposed; physical meaning unverified]",
+  "velocity addition|kinetic energy of the composed motion / mc\u00b2|Relativistic Energy-Momentum Ratio [model-proposed; physical meaning unverified]",
+  "velocity addition|sum of the two kinetic energies / mc\u00b2|Relativistic Energy-Momentum Ratio [model-proposed; physical meaning unverified]",
+  "velocity addition|Relativistic momentum ratio [model-proposed; physical meaning unverified]|Relativistic Energy-Momentum Ratio [model-proposed; physical meaning unverified]",
+  "velocity addition|Lorentz gamma of the composed motion [model-proposed; physical meaning unverified]|Relativistic Energy-Momentum Ratio [model-proposed; physical meaning unverified]",
+  "velocity addition|Relative velocity in terms of rapidities [model-proposed; physical meaning unverified]|Relativistic Energy-Momentum Ratio [model-proposed; physical meaning unverified]",
+  "velocity addition|Relativistic velocity parameter [model-proposed; physical meaning unverified]|Relativistic Energy-Momentum Ratio [model-proposed; physical meaning unverified]",
+  "velocity addition|Energy-momentum invariant [model-proposed; physical meaning unverified]|Relativistic Energy-Momentum Ratio [model-proposed; physical meaning unverified]",
+  "velocity addition|Energy-momentum ratio [model-proposed; physical meaning unverified]|Relativistic Energy-Momentum Ratio [model-proposed; physical meaning unverified]",
+  "velocity addition|Total relativistic energy / mc\u00b2 [model-proposed; physical meaning unverified]|Relativistic Energy-Momentum Ratio [model-proposed; physical meaning unverified]",
+  "velocity addition|Relativistic momentum magnitude ratio [model-proposed; physical meaning unverified]|Relativistic Energy-Momentum Ratio [model-proposed; physical meaning unverified]",
+  "velocity addition|Relativistic Energy-Momentum Ratio [model-proposed; physical meaning unverified]|composed speed / c",
+  "velocity addition|Relativistic Energy-Momentum Ratio [model-proposed; physical meaning unverified]|Galilean sum / c",
+  "velocity addition|Relativistic Energy-Momentum Ratio [model-proposed; physical meaning unverified]|Lorentz factor of the composed motion",
+  "velocity addition|Relativistic Energy-Momentum Ratio [model-proposed; physical meaning unverified]|product of the two Lorentz factors",
+  "velocity addition|Relativistic Energy-Momentum Ratio [model-proposed; physical meaning unverified]|Doppler factor of the composed motion",
+  "velocity addition|Relativistic Energy-Momentum Ratio [model-proposed; physical meaning unverified]|kinetic energy of the composed motion / mc\u00b2",
+  "velocity addition|Relativistic Energy-Momentum Ratio [model-proposed; physical meaning unverified]|sum of the two kinetic energies / mc\u00b2",
+  "velocity addition|Relativistic Energy-Momentum Ratio [model-proposed; physical meaning unverified]|Relativistic momentum ratio [model-proposed; physical meaning unverified]",
+  "velocity addition|Relativistic Energy-Momentum Ratio [model-proposed; physical meaning unverified]|Lorentz gamma of the composed motion [model-proposed; physical meaning unverified]",
+  "insurance and risk|Insurance Risk Adjustment Factor [model-proposed; physical meaning unverified]|Expected Utility Deviation [model-proposed; physical meaning unverified]",
+  "insurance and risk|Insurance Risk Adjustment Factor [model-proposed; physical meaning unverified]|Insurance Coverage Ratio [model-proposed; physical meaning unverified]"
  ],
  "edges": [
   {
@@ -12245,9 +12342,33 @@
    "f": "Insurance Risk Adjustment Factor [model-proposed; physical meaning unverified]",
    "g": "certainty equivalent",
    "k": "1"
+  },
+  {
+   "family": "velocity addition",
+   "f": "Lorentz factor of the composed motion",
+   "g": "Relativistic Energy-Momentum Ratio [model-proposed; physical meaning unverified]",
+   "k": "1/2"
+  },
+  {
+   "family": "velocity addition",
+   "f": "product of the two Lorentz factors",
+   "g": "Relativistic Energy-Momentum Ratio [model-proposed; physical meaning unverified]",
+   "k": "1/2"
+  },
+  {
+   "family": "velocity addition",
+   "f": "Doppler factor of the composed motion",
+   "g": "Relativistic Energy-Momentum Ratio [model-proposed; physical meaning unverified]",
+   "k": "1/2"
+  },
+  {
+   "family": "velocity addition",
+   "f": "Lorentz gamma of the composed motion [model-proposed; physical meaning unverified]",
+   "g": "Relativistic Energy-Momentum Ratio [model-proposed; physical meaning unverified]",
+   "k": "1/2"
   }
  ],
- "rounds": 457,
+ "rounds": 463,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",

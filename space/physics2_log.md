@@ -509,3 +509,9 @@
 - 2026-11-05 12:34 round 456: auction with a reserve price
 - 2026-11-05 12:35 round 457: two-body decay
 - 2026-11-05 12:37 round 458: collision
+- 2026-11-05 12:38 round 459: driven oscillator
+- 2026-11-05 12:39 round 460: velocity addition
+- 2026-11-05 12:46 round 461: Compton scattering
+- 2026-11-05 12:47 round 462: Cournot duopoly
+- 2026-11-05 12:49 round 463: insurance and risk
+- 2026-11-05 12:50 round 464: auction with a reserve price
