@@ -386,3 +386,7 @@
 - 2026-11-05 07:00 round failed: KeyError: 'ComplexInfinity'
 - 2026-11-05 07:00 round 346: collision
 - 2026-11-05 07:02 round 347: driven oscillator
+- 2026-11-05 07:03 round 348: velocity addition
+- 2026-11-05 07:05 round 349: Compton scattering
+- 2026-11-05 07:06 round 350: Cournot duopoly
+- 2026-11-05 07:08 round 351: insurance and risk
