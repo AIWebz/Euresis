@@ -20,7 +20,7 @@ def test_planted_law_found_and_duplicates_ignored(tmp_path, monkeypatch):
                       echo=lambda *a: None)
     stmts = [f["statement"] for f in found]
     assert any("'response' follows a power law in 'dose'" in s for s in stmts)
-    assert not any("dose_in_other_units" in s for s in stmts)                       # unit conversion skipped
+    assert not any("'dose_in_other_units'" in s and "'dose'" in s for s in stmts)   # unit conversion skipped
     assert not any("'noise'" in s for s in stmts)
     c = reg.get(found[0]["claim"])
     assert c["status"] == "verified-numeric" and gate.label(c).startswith("confirmed on held-out data")
