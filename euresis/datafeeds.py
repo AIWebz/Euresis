@@ -215,6 +215,16 @@ KNOWN_FAMILIES = {
     "thermodynamic temperature conversions": ("temp_c", "temp_k", "temp_f", "celsius", "kelvin", "fahrenheit"),
     "standard atmosphere / hydrostatics (temperature, pressure and altitude, T ∝ P^(R·Γ/g))":
         ("alt", "altitude", "height", "p_hpa", "hpa", "pressure", "t_obs", "t_mod", "temperature", "temp"),
+    "telescope photometry pipeline quantities (flux, background, centroids — instrument systematics)":
+        ("sap_", "pdcsap", "flux", "bkg", "centr", "mom_", "pos_corr", "quality", "cadence"),
+    "coordinate transformations (geographic / geomagnetic / apex latitudes and longitudes)":
+        ("glat", "glon", "mlat", "mlon", "apex", "qd", "latitude", "longitude", "geod", "gse", "gsm"),
+    "astrometric uncertainties (Gaia-type errors all scale with source brightness)":
+        ("ra_error", "dec_error", "parallax_error", "pmra_error", "pmdec_error", "_err", "error"),
+    "sky coordinates and observing geometry (RA/Dec, airmass = sec z, altitude, zenith distance, MJD)":
+        ("ra[", "dec[", "ra_deg", "dec_deg", "airmass", "altitude", "zd", "zenith", "mjd", "elevation"),
+    "stellar structure relations (radius, log g, mass, luminosity, Teff)":
+        ("radius_rsun", "log_g", "logg", "mass_msun", "teff", "luminosity", "lum"),
     "equation of state of a simulated fluid (pressure, density, temperature, chemical potential, kinetic energy)":
         ("rho", "density", "pressure", "mu", "ke", "st", "temperature", "chem"),
 }
@@ -253,6 +263,10 @@ def geometric(cx, cy, exponent) -> bool:
                                                                  for c in (cx, cy)):
         return False
     return any(abs(exponent - p / q) < 0.03 for q in (1, 2, 3) for p in range(1, 10))
+
+
+SIMULATED = re.compile(r"\b(model|models|modelling|modeling|simulation|simulations|simulated|synthetic|example|code and data|"
+                       r"grid|ionization models|emulator|forecast|reanalysis)\b", re.I)
 
 
 def analyse(path: Path, item: dict, reg: Registry, echo=print) -> list[dict]:
@@ -333,6 +347,10 @@ def analyse(path: Path, item: dict, reg: Registry, echo=print) -> list[dict]:
             if gate.check(reg, cid, log=lambda *a: None) != "verified-numeric":
                 continue
             ev = reg.get(cid)["evidence"]
+            if SIMULATED.search(item.get("title", "")):
+                reg.set_novelty(cid, "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the "
+                                     "model's own equations, not new observations of nature")
+                continue
             fam = known_family(cx, cy)
             if fam:
                 reg.set_novelty(cid, f"KNOWN: {fam} — not a discovery")
