@@ -6249,6 +6249,66 @@
    "family": "velocity addition",
    "expr": "sqrt(1 - u**2) + sqrt(1 - v**2) + (u*v + 1)/(sqrt(1 - u**2)*sqrt(1 - v**2))",
    "why": "affine combination of known quantities (composed speed / c, Total relativistic energy / mc\u00b2 [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "c/(1 + x*c)",
+   "why": "affine combination of known quantities (Scattered photon wavelength / Compton wavelength [model-proposed; physical meaning unverified], 1/(scattered photon energy / (m_e c\u00b2)))"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "x**2*c/(1 + x*c)/(x)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy)"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "1/(x*c/(1 + x*c))",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, 1/(electron kinetic energy / photon energy))"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "sqrt(c**2*x**2 + 2*c*x + 1)/(x*(c*x + 1))",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, 1/(photon energy / (m_e c\u00b2)))"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "sqrt((1 - 2*c1 + c2)**2 + (1 - 2*c2 + c1)**2)/3",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "(1 - 2*c1 + c2)**2 / (1 - 2*c2 + c1)**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "abs((1 - 2*c1 + c2) - (1 - 2*c2 + c1))/((1 - 2*c1 + c2) + (1 - 2*c2 + c1))",
+   "why": "only + \u2212 \u00d7 \u00f7, integer powers and square roots (so the prover can decide it)"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "(1 + c1 + c2)/3 - (c1 + c2)/2",
+   "why": "affine combination of known quantities (output of firm 1, output of firm 2)"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "1/(2*(1 - sqrt(1 - L)))",
+   "why": "affine combination of known quantities (expected wealth, Coefficient of Risk Aversion [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "(1 - p*L - (p*sqrt(1 - L) + 1 - p)**2)/(p*L)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "1 - (p*sqrt(1 - L) + 1 - p)",
+   "why": "affine combination of known quantities (expected wealth, expected utility)"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "(1 - p*L - (p*sqrt(1 - L) + 1 - p)**2)/sqrt(p*(1 - p)*L**2)",
+   "why": "a power or product of known quantities"
   }
  ],
  "tried": [
@@ -9439,7 +9499,7 @@
    "k": "1/16"
   }
  ],
- "rounds": 324,
+ "rounds": 327,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",

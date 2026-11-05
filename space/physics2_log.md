@@ -352,3 +352,6 @@
 - 2026-11-05 03:02 round 323: driven oscillator
 - 2026-11-05 03:04 round 324: velocity addition
 - 2026-11-05 03:05 round 325: Compton scattering
+- 2026-11-05 03:07 round 326: Cournot duopoly
+- 2026-11-05 03:08 round 327: insurance and risk
+- 2026-11-05 03:10 round 328: auction with a reserve price
