@@ -292,3 +292,4 @@
 - 2026-11-05 13:28 FINDING (confirmed on held-out rows): In 'Real data from PMUs' (Zenodo, doi 10.5281/zenodo.8343635): 'VA:Magnitude.1' grows logarithmically in 'VB:Magnitude' (R² = 0.998 on the discovery half); held-out R² = 0.936 [emp-af24b7e76e0e]
 - 2026-11-05 13:28 FINDING (confirmed on held-out rows): In 'Real data from PMUs' (Zenodo, doi 10.5281/zenodo.8343635): 'VB:Magnitude.1' grows exponentially in 'VA:Magnitude.1' (R² = 0.998 on the discovery half); held-out R² = 0.954 [emp-8510d6db5bd1]
 - 2026-11-05 13:28 data feeds: 1745 datasets analysed so far, 263 confirmed findings
+- 2026-11-05 14:16 data feeds: online
