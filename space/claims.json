@@ -600880,5 +600880,140 @@
   "statement": "[economics: Cournot duopoly] Mark-up Ratio [model-proposed; physical meaning unverified] \u2265 2/3 \u00d7 Lerner Index for Firm 1 [model-proposed; physical meaning unverified]   on c1 < 1/2, c2 < 1/2 (tight only at the edge of the domain, near (1.06e-08, 0.5))",
   "status": "proved",
   "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-b251d7f83da8",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "(e + 1)/(m + 1) >= 1*(-m*(1 - e**2)*(e + 1)**2/(m + 1)**2 - m*(1 - e**2)/(m + 1) + 1)",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 370",
+  "statement": "[physics: collision] momentum transferred / initial momentum \u2265 1 \u00d7 Fraction of kinetic energy retained by the system [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (2.26e-14, 1.03e-14))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-024521d3e05c",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "-m*(1 - e**2)*(e + 1)**2/(m + 1)**2 - m*(1 - e**2)/(m + 1) + 1 >= 1/4*((-e*m + 1)/(e*m + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 370",
+  "statement": "[physics: collision] Fraction of kinetic energy retained by the system [model-proposed; physical meaning unverified] \u2265 1/4 \u00d7 velocity ratio of projectile to target after collision [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 9.12e-05))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-639d4840982b",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "-m*(1 - e**2)*(e + 1)**2/(m + 1)**2 - m*(1 - e**2)/(m + 1) + 1 >= 1*(e*(1 - m)/(m + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 370",
+  "statement": "[physics: collision] Fraction of kinetic energy retained by the system [model-proposed; physical meaning unverified] \u2265 1 \u00d7 relative velocity after collision divided by initial velocity of projectile [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (3.02e-15, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-29581dea5361",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "-m*(1 - e**2)*(e + 1)**2/(m + 1)**2 - m*(1 - e**2)/(m + 1) + 1 >= 1*(e**2*(m**2 + 1)/(m + 1)**2)",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 370",
+  "statement": "[physics: collision] Fraction of kinetic energy retained by the system [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Fraction of kinetic energy retained by target [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1.16e-14, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-0ce82f6f6277",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "1 + sqrt(c**2*x**2/(c*x + 1)**2 + c*x**2/(c*x + 1))/(c*x + 1) + 1/(c*x + 1) >= 2/3*(c/(x + 1) + 1)",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 373",
+  "statement": "[physics: Compton scattering] Electron momentum fraction [model-proposed; physical meaning unverified] \u2265 2/3 \u00d7 Scattered photon wavelength / initial photon wavelength [model-proposed; physical meaning unverified]   on x < 2, c < 2 (tight only at the edge of the domain, near (2.35e-14, 2))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]
