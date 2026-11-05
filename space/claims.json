@@ -513831,5 +513831,59 @@
   "statement": "Octal game 0.105061 is completely solved: its Grundy values are periodic with pre-period 7 and period 2 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.3539k",
+   "held_out_r2": 0.9561,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-1230fbde0aa9",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "4b5d4b9051d1edb7.csv",
+   "doi": "10.5061/dryad.3539k",
+   "form": "linear",
+   "params": [
+    -2.7985972369819363,
+    0.9730074388947927
+   ],
+   "seed": 474103169,
+   "x": "Invited (includes agree/decline/completed/Invalid Email, excludes Uninvited)",
+   "y": "Declined"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Is it becoming harder to secure reviewers for peer review? A test with data fro' (Zenodo, doi 10.5061/dryad.3539k): 'Declined' is linear in 'Invited (includes agree/decline/completed/Invalid Email, excludes Uninvited)' (R\u00b2 = 0.954 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.1002/ecy.4135",
+   "held_out_r2": 0.9107,
+   "held_out_rows": 538,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-2ef211fcdb66",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "6b9d7ab0f23e539d.csv",
+   "doi": "10.1002/ecy.4135",
+   "form": "power law",
+   "params": [
+    12.691270451356607,
+    0.984335956379703
+   ],
+   "seed": 2645260599,
+   "x": "number_individuals_ATDN_plots",
+   "y": "estimated_ind_Amazon"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'MADERA: A standardized Pan-Amazonian dataset for tropical timber species' (Zenodo, doi 10.1002/ecy.4135): 'estimated_ind_Amazon' follows a power law in 'number_individuals_ATDN_plots' (R\u00b2 = 0.908 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
