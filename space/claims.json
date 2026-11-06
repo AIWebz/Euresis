@@ -1422927,5 +1422927,194 @@
   "statement": "In 'Restoration and replication: a case study on the value of computational reproducibility as' (Zenodo, doi 10.5061/dryad.m905qfv6m): 'Rao' follows a power law in 'FDis' (R\u00b2 = 0.965 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-ab0888c8e7e3",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "1/(2 - 2*sqrt(1 - L)) >= 1/2*(L*p/(-2*sqrt(1 - L) + sqrt(-L*p + 1) + 1))",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 1271",
+  "statement": "[economics: insurance and risk] Coefficient of Risk Aversion [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 Relative Risk Sensitivity Index [model-proposed; physical meaning unverified]   on p < 1, L < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-a70d2a54e1db",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "1/sqrt(1 - L) >= 1/2*(L*p/(-2*sqrt(1 - L) + sqrt(-L*p + 1) + 1))",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 1271",
+  "statement": "[economics: insurance and risk] Relative Risk Aversion [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 Relative Risk Sensitivity Index [model-proposed; physical meaning unverified]   on p < 1, L < 1 (tight only at the edge of the domain, near (1, 1.71e-09))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-0bd59b9f4582",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "sqrt(-L*p + 1)/(-p + sqrt(1 - L) + 1) >= 1/2*(L*p/(-2*sqrt(1 - L) + sqrt(-L*p + 1) + 1))",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 1271",
+  "statement": "[economics: insurance and risk] Insurance Risk Adjustment Index [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 Relative Risk Sensitivity Index [model-proposed; physical meaning unverified]   on p < 1, L < 1 (tight only at the edge of the domain, near (1, 1.59e-08))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-e97825a760b9",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "L*p/(-2*sqrt(1 - L) + sqrt(-L*p + 1) + 1) >= 1/2*(L*p)",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 1279",
+  "statement": "[economics: insurance and risk] Relative Risk Sensitivity Index [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 actuarially fair insurance premium   on p < 1, L < 1 (tight only at the edge of the domain, near (9.12e-05, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-9211038d84cb",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "L*p/(-2*sqrt(1 - L) + sqrt(-L*p + 1) + 1) >= 1/4*(1 - (p*sqrt(1 - L) - p + 1)**2)",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 1279",
+  "statement": "[economics: insurance and risk] Relative Risk Sensitivity Index [model-proposed; physical meaning unverified] \u2265 1/4 \u00d7 maximum premium the person would pay for full insurance   on p < 1, L < 1 (tight only at the edge of the domain, near (9.12e-05, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-c6f83552be9b",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'actuarially fair insurance premium'",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "L*p/(-2*sqrt(1 - L) + sqrt(-L*p + 1) + 1) >= 1/2*(1 - (p*sqrt(1 - L) - p + 1)**2/(-L*p + 1))",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 1279",
+  "statement": "[economics: insurance and risk] Relative Risk Sensitivity Index [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 Insurance Coverage Ratio [model-proposed; physical meaning unverified]   on p < 1, L < 1 (tight only at the edge of the domain, near (9.12e-05, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-de289d286476",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "L*p/(-2*sqrt(1 - L) + sqrt(-L*p + 1) + 1) >= 1*(L*p/(-sqrt(1 - L) + sqrt(-L*p + 1) + 1))",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 1279",
+  "statement": "[economics: insurance and risk] Relative Risk Sensitivity Index [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Relative Risk Sensitivity [model-proposed; physical meaning unverified]   on p < 1, L < 1 (tight only at the edge of the domain, near (9.12e-05, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]

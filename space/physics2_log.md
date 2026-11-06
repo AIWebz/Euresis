@@ -1391,3 +1391,17 @@
 - 2026-11-06 21:39 round 1267: driven oscillator
 - 2026-11-06 21:40 round 1268: velocity addition
 - 2026-11-06 21:41 round 1269: Compton scattering
+- 2026-11-06 21:41 round 1270: Cournot duopoly
+- 2026-11-06 21:43 round 1271: insurance and risk
+- 2026-11-06 21:44 round 1272: auction with a reserve price
+- 2026-11-06 21:46 round 1273: two-body decay
+- 2026-11-06 21:47 round 1274: collision
+- 2026-11-06 21:49 round 1275: driven oscillator
+- 2026-11-06 21:50 round 1276: velocity addition
+- 2026-11-06 21:50 round 1277: Compton scattering
+- 2026-11-06 21:51 round 1278: Cournot duopoly
+- 2026-11-06 21:52 round 1279: insurance and risk
+- 2026-11-06 21:53 round 1280: auction with a reserve price
+- 2026-11-06 21:54 round 1281: two-body decay
+- 2026-11-06 21:55 round 1282: collision
+- 2026-11-06 21:57 segment end: 1282 rounds, 5 discoveries, 2 known laws rediscovered
