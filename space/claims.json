@@ -1313312,5 +1313312,113 @@
   "statement": "Octal game 0.405745 is completely solved: its Grundy values are periodic with pre-period 285 and period 48 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.8931zcrzq",
+   "held_out_r2": 0.9781,
+   "held_out_rows": 7292,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-02ac8194d10a",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "9cc7d43130c61709.csv",
+   "doi": "10.5061/dryad.8931zcrzq",
+   "form": "power law",
+   "params": [
+    0.17437126351454368,
+    0.9801470267840064
+   ],
+   "seed": 2394796593,
+   "x": "PFGBioMMkgha",
+   "y": "PFGBioMAkgha"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'White-tailed deer capture records' (Zenodo, doi 10.5061/dryad.8931zcrzq): 'PFGBioMAkgha' follows a power law in 'PFGBioMMkgha' (R\u00b2 = 0.978 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.8931zcrzq",
+   "held_out_r2": 0.9166,
+   "held_out_rows": 7292,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d297998d74b3",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "9cc7d43130c61709.csv",
+   "doi": "10.5061/dryad.8931zcrzq",
+   "form": "power law",
+   "params": [
+    0.4251581522719015,
+    0.9407761818612183
+   ],
+   "seed": 2394796593,
+   "x": "PFGBioMMkgha",
+   "y": "PFGBioJSkgha"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'White-tailed deer capture records' (Zenodo, doi 10.5061/dryad.8931zcrzq): 'PFGBioJSkgha' follows a power law in 'PFGBioMMkgha' (R\u00b2 = 0.917 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.8931zcrzq",
+   "held_out_r2": 0.9774,
+   "held_out_rows": 7292,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-7b3a8209badc",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "9cc7d43130c61709.csv",
+   "doi": "10.5061/dryad.8931zcrzq",
+   "form": "power law",
+   "params": [
+    0.16643060073099508,
+    0.9801636354219406
+   ],
+   "seed": 2394796593,
+   "x": "PFGBioMAkgha",
+   "y": "PFGBioJSkgha"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'White-tailed deer capture records' (Zenodo, doi 10.5061/dryad.8931zcrzq): 'PFGBioJSkgha' follows a power law in 'PFGBioMAkgha' (R\u00b2 = 0.977 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15178889",
+   "held_out_r2": 0.9521,
+   "held_out_rows": 4409,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-2b6bf3ee2c0f",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "24034d5a566bba60.csv",
+   "doi": "10.5281/zenodo.15178889",
+   "form": "logarithmic",
+   "params": [
+    3781.102973317089,
+    -345.2379592804426
+   ],
+   "seed": 2902646068,
+   "x": "mjd",
+   "y": "mag_err"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Photometric measurements of AU Monocerotis' (Zenodo, doi 10.5281/zenodo.15178889): 'mag_err' grows logarithmically in 'mjd' (R\u00b2 = 0.947 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
