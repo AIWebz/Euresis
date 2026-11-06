@@ -1187,3 +1187,5 @@
 - 2026-11-06 14:03 round 1079: insurance and risk
 - 2026-11-06 14:04 round 1080: auction with a reserve price
 - 2026-11-06 14:05 segment end: 1080 rounds, 5 discoveries, 2 known laws rediscovered
+- 2026-11-06 14:30 segment start (budget 30 min; model: Qwen3-8B; 5 discoveries so far)
+- 2026-11-06 14:30 round 1081: two-body decay
