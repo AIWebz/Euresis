@@ -15950,6 +15950,76 @@
    "family": "Compton scattering",
    "expr": "c*x**2/(1 + x*c)",
    "why": "affine combination of known quantities (scattered photon energy / initial energy, electron kinetic energy / (m_e c\u00b2))"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "((1 - c1 - c2)**2)/((1 - 2*c1 + c2)**2 + (1 - 2*c2 + c1)**2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "(-L*p + 1)**2/(-p*sqrt(1 - L) + p - sqrt(1 - L) + 1)**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "(L*p)**2/(-p*sqrt(1 - L) + p + sqrt(1 - L) + sqrt(-L*p + 1) - 1)**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "(L*p)**2/(-sqrt(1 - L) + sqrt(-L*p + 1) + 1)**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "(-1 + sqrt(-L*p + 1)/sqrt(1 - L))**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(-2*r**3/3 + r**2*v + 2/3)/(2*(1 - r**3)/3 + v*r**2)",
+   "why": "must depend only on r, v"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "sqrt((1 + a**2 - b**2)/(1 - a**2 + b**2))",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "sqrt((1 - a**2 + b**2)/(1 + a**2 - b**2))",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "((1 + a**2 - b**2)/(2*a)) * ((1 - a**2 + b**2)/(2*b))",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "sqrt((a**2 + b**2 - (a - b)**2)/(-a - b + 1)) / sqrt(1 - (a + b)**2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2",
+   "why": "affine combination of known quantities (Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified], Fraction of kinetic energy transferred to the target [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2",
+   "why": "affine combination of known quantities (Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified], Fraction of kinetic energy transferred to the target [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2*m**2/(m + 1)**2 + e**2*m/(m + 1",
+   "why": "does not parse"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2*m**2/(m + 1)**2 + e**2*m/(m + 1)",
+   "why": "affine combination of known quantities (target speed / initial speed, Fraction of kinetic energy retained by the target [model-proposed; physical meaning unverified])"
   }
  ],
  "tried": [
@@ -21482,7 +21552,7 @@
    "k": "1"
   }
  ],
- "rounds": 1021,
+ "rounds": 1026,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",
