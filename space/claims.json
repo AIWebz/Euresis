@@ -1196602,5 +1196602,59 @@
   "statement": "Octal game 0.353571 is completely solved: its Grundy values are periodic with pre-period 1 and period 2 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.9s4mw6mk4",
+   "held_out_r2": 1.0,
+   "held_out_rows": 30,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-dfe222969b21",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "39db59dd0f18016f.csv",
+   "doi": "10.5061/dryad.9s4mw6mk4",
+   "form": "power law",
+   "params": [
+    1.0790769792955242,
+    -1.0034485868238872
+   ],
+   "seed": 388542068,
+   "x": "Aeq",
+   "y": "PPFD95"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Trait coordination in boreal mosses reveals a bryophyte economics spectrum' (Zenodo, doi 10.5061/dryad.9s4mw6mk4): 'PPFD95' follows a power law in 'Aeq' (R\u00b2 = 1.000 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.5535h",
+   "held_out_r2": 0.9635,
+   "held_out_rows": 426,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9b266cfa230d",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "0fe0a56e6155ff9f.csv",
+   "doi": "10.5061/dryad.5535h",
+   "form": "power law",
+   "params": [
+    6.24126830830688,
+    -1.0115043167401148
+   ],
+   "seed": 1344838617,
+   "x": "N",
+   "y": "CN"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Contrasting patterns of leaf trait variation among and within species during tr' (Zenodo, doi 10.5061/dryad.5535h): 'CN' follows a power law in 'N' (R\u00b2 = 0.969 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]

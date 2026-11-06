@@ -749,3 +749,6 @@
 - 2026-11-06 11:41 FINDING (confirmed on held-out rows): In 'Experimental addition of marine-derived nutrients affects wildflower traits in a coastal m' (Zenodo, doi 10.5061/dryad.905qfttnt): 'sample.mg' follows a power law in 'C.ug' (R² = 0.942 on the discovery half); held-out R² = 0.942 [emp-53517c202690]
 - 2026-11-06 11:41 data feeds: 5523 datasets analysed so far, 671 confirmed findings
 - 2026-11-06 12:31 data feeds: online
+- 2026-11-06 12:32 FINDING (confirmed on held-out rows): In 'Trait coordination in boreal mosses reveals a bryophyte economics spectrum' (Zenodo, doi 10.5061/dryad.9s4mw6mk4): 'PPFD95' follows a power law in 'Aeq' (R² = 1.000 on the discovery half); held-out R² = 1.000 [emp-dfe222969b21]
+- 2026-11-06 12:32 FINDING (confirmed on held-out rows): In 'Data from: Contrasting patterns of leaf trait variation among and within species during tr' (Zenodo, doi 10.5061/dryad.5535h): 'CN' follows a power law in 'N' (R² = 0.969 on the discovery half); held-out R² = 0.964 [emp-9b266cfa230d]
+- 2026-11-06 12:32 data feeds: 5578 datasets analysed so far, 673 confirmed findings
