@@ -1422279,5 +1422279,86 @@
   "statement": "Octal game 0.424775 is completely solved: its Grundy values are periodic with pre-period 285 and period 48 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.18790902",
+   "held_out_r2": 0.9681,
+   "held_out_rows": 34,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-25ddef334dc7",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "31da9f6f7ae7db5e.csv",
+   "doi": "10.5281/zenodo.18790902",
+   "form": "linear",
+   "params": [
+    -464.13812423710885,
+    0.6064755314065072
+   ],
+   "seed": 1256737567,
+   "x": "cond",
+   "y": "SO4"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Scripts and data for Microbial ecology of the heterogeneous terrestrial deep biosphere ove' (Zenodo, doi 10.5281/zenodo.18790902): 'SO4' is linear in 'cond' (R\u00b2 = 0.973 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.18790902",
+   "held_out_r2": 0.9684,
+   "held_out_rows": 34,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-0e8569e6e9f7",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "31da9f6f7ae7db5e.csv",
+   "doi": "10.5281/zenodo.18790902",
+   "form": "linear",
+   "params": [
+    -332.5880215114525,
+    0.7175051080114871
+   ],
+   "seed": 1256737567,
+   "x": "TDS",
+   "y": "SO4"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Scripts and data for Microbial ecology of the heterogeneous terrestrial deep biosphere ove' (Zenodo, doi 10.5281/zenodo.18790902): 'SO4' is linear in 'TDS' (R\u00b2 = 0.971 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.18790902",
+   "held_out_r2": 0.9556,
+   "held_out_rows": 305,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ac2f70f1ab75",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "bb99088085664147.csv",
+   "doi": "10.5281/zenodo.18790902",
+   "form": "power law",
+   "params": [
+    0.8465961602503947,
+    0.8230027131410332
+   ],
+   "seed": 1415303331,
+   "x": "degree",
+   "y": "core"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Scripts and data for Microbial ecology of the heterogeneous terrestrial deep biosphere ove' (Zenodo, doi 10.5281/zenodo.18790902): 'core' follows a power law in 'degree' (R\u00b2 = 0.960 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]

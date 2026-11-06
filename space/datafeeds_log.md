@@ -948,3 +948,6 @@
 - 2026-11-06 20:21 FINDING (confirmed on held-out rows): In 'Reviewer Dataset for Co-bpy-AHA Redox-Triggered Urease Inhibition Study' (Figshare, doi 10.6084/m9.figshare.32967920.v1): 'occupancy_fraction' follows a power law in 'occupied_frames' (R² = 0.985 on the discovery half); held-out R² = 0.994 [emp-63881c1072fe]
 - 2026-11-06 20:21 data feeds: 6527 datasets analysed so far, 852 confirmed findings
 - 2026-11-06 21:22 data feeds: online
+- 2026-11-06 21:22 FINDING (confirmed on held-out rows): In 'Scripts and data for Microbial ecology of the heterogeneous terrestrial deep biosphere ove' (Zenodo, doi 10.5281/zenodo.18790902): 'SO4' is linear in 'cond' (R² = 0.973 on the discovery half); held-out R² = 0.968 [emp-25ddef334dc7]
+- 2026-11-06 21:23 FINDING (confirmed on held-out rows): In 'Scripts and data for Microbial ecology of the heterogeneous terrestrial deep biosphere ove' (Zenodo, doi 10.5281/zenodo.18790902): 'SO4' is linear in 'TDS' (R² = 0.971 on the discovery half); held-out R² = 0.968 [emp-0e8569e6e9f7]
+- 2026-11-06 21:23 FINDING (confirmed on held-out rows): In 'Scripts and data for Microbial ecology of the heterogeneous terrestrial deep biosphere ove' (Zenodo, doi 10.5281/zenodo.18790902): 'core' follows a power law in 'degree' (R² = 0.960 on the discovery half); held-out R² = 0.956 [emp-ac2f70f1ab75]
