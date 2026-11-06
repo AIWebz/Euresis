@@ -783,3 +783,5 @@
 - 2026-11-06 00:58 round 704: auction with a reserve price
 - 2026-11-06 01:00 round 705: two-body decay
 - 2026-11-06 01:01 round 706: collision
+- 2026-11-06 01:06 segment start (budget 30 min; model: Qwen3-8B; 4 discoveries so far)
+- 2026-11-06 01:06 round 706: collision
