@@ -1090,3 +1090,6 @@
 - 2026-11-06 11:04 round 989: Compton scattering
 - 2026-11-06 11:05 round 990: Cournot duopoly
 - 2026-11-06 11:06 round 991: insurance and risk
+- 2026-11-06 11:07 round 992: auction with a reserve price
+- 2026-11-06 11:08 round 993: two-body decay
+- 2026-11-06 11:10 segment end: 993 rounds, 4 discoveries, 2 known laws rediscovered
