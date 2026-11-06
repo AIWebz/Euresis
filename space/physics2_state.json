@@ -14193,6 +14193,46 @@
    "family": "driven oscillator",
    "expr": "r/sqrt((1 - r**2)**2 + (2*z*r)**2)",
    "why": "affine combination of known quantities (amplitude / static deflection, velocity amplitude / (\u03c90 \u00d7 static deflection))"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 + u)/(1 - u)) * sqrt((1 + v)/(1 - v)) / sqrt((1 + (u + v)/(1 + u*v))/(1 - (u + v)/(1 + u*v))",
+   "why": "affine combination of known quantities (composed speed / c)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt(1 - ((u + v)/(1 + u*v))**2) / (sqrt(1 - u**2) * sqrt(1 - v**2))",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 - u**2)*(1 - v**2)) / sqrt(1 - ((u + v)/(1 + u*v))**2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "1 - c/(c*x + 1)",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "x**2*c/(1 + x*c)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, electron kinetic energy / (m_e c\u00b2))"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "c/(1 + x)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, Scattered photon wavelength / initial photon wavelength [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "1/(1 + 2*c*x)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, Compton scattering formula (recoil angle cosine) [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "((1 - 2*c1 + c2)**2 + (1 - 2*c2 + c1)**2)/((1 - c1)**2 + (1 - c2)**2)",
+   "why": "affine combination of known quantities (output of firm 1, Hirshleifer Index [model-proposed; physical meaning unverified])"
   }
  ],
  "tried": [
@@ -19591,7 +19631,7 @@
    "k": "64/29"
   }
  ],
- "rounds": 891,
+ "rounds": 894,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",
