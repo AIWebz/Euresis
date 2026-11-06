@@ -1470445,5 +1470445,86 @@
   "statement": "In 'Desiccation amelioration and climate risk on rocky shores' (Zenodo, doi 10.5061/dryad.vdncjsxv2): 'Ds_hab_kPA' grows logarithmically in 'RH_hab_mean' (R\u00b2 = 0.935 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.vdncjsxv2",
+   "held_out_r2": 0.8945,
+   "held_out_rows": 110,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4c251fc6ede6",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "ab9c2b0bc8875e39.csv",
+   "doi": "10.5061/dryad.vdncjsxv2",
+   "form": "logarithmic",
+   "params": [
+    2094.8781339274065,
+    -452.0604087072697
+   ],
+   "seed": 945848057,
+   "x": "RH_hab_mean",
+   "y": "E_calc_hab_mg/h"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Desiccation amelioration and climate risk on rocky shores' (Zenodo, doi 10.5061/dryad.vdncjsxv2): 'E_calc_hab_mg/h' grows logarithmically in 'RH_hab_mean' (R\u00b2 = 0.905 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.vdncjsxv2",
+   "held_out_r2": 0.9995,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f44d45f8b892",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "011688d5f2c60111.csv",
+   "doi": "10.5061/dryad.vdncjsxv2",
+   "form": "exponential",
+   "params": [
+    -0.3960554244902865,
+    0.06178899343048468
+   ],
+   "seed": 1627429067,
+   "x": "Rock_C",
+   "y": "Ps(T)_R"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Desiccation amelioration and climate risk on rocky shores' (Zenodo, doi 10.5061/dryad.vdncjsxv2): 'Ps(T)_R' grows exponentially in 'Rock_C' (R\u00b2 = 1.000 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.vdncjsxv2",
+   "held_out_r2": 0.9996,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3bd9a598014f",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "011688d5f2c60111.csv",
+   "doi": "10.5061/dryad.vdncjsxv2",
+   "form": "exponential",
+   "params": [
+    0.25512660973453904,
+    0.05750825033299442
+   ],
+   "seed": 1627429067,
+   "x": "Rock_C",
+   "y": "Ps(T)_futR"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Desiccation amelioration and climate risk on rocky shores' (Zenodo, doi 10.5061/dryad.vdncjsxv2): 'Ps(T)_futR' grows exponentially in 'Rock_C' (R\u00b2 = 1.000 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
