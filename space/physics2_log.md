@@ -988,3 +988,25 @@
 - 2026-11-06 07:20 segment end: 894 rounds, 4 discoveries, 2 known laws rediscovered
 - 2026-11-06 07:53 segment start (budget 30 min; model: Qwen3-8B; 4 discoveries so far)
 - 2026-11-06 07:53 round 895: insurance and risk
+- 2026-11-06 07:55 round 896: auction with a reserve price
+- 2026-11-06 07:56 round 897: two-body decay
+- 2026-11-06 07:57 round 898: collision
+- 2026-11-06 07:58 round 899: driven oscillator
+- 2026-11-06 07:59 round 900: velocity addition
+- 2026-11-06 08:00 round 901: Compton scattering
+- 2026-11-06 08:01 round 902: Cournot duopoly
+- 2026-11-06 08:02 round 903: insurance and risk
+- 2026-11-06 08:03 round 904: auction with a reserve price
+- 2026-11-06 08:04 round 905: two-body decay
+- 2026-11-06 08:06 round 906: collision
+- 2026-11-06 08:08 round 907: driven oscillator
+- 2026-11-06 08:08 round 908: velocity addition
+- 2026-11-06 08:09 round 909: Compton scattering
+- 2026-11-06 08:10 round 910: Cournot duopoly
+- 2026-11-06 08:11 round 911: insurance and risk
+- 2026-11-06 08:12 round 912: auction with a reserve price
+- 2026-11-06 08:13 round 913: two-body decay
+- 2026-11-06 08:14 round 914: collision
+- 2026-11-06 08:15 round 915: driven oscillator
+- 2026-11-06 08:16 round 916: velocity addition
+- 2026-11-06 08:17 round 917: Compton scattering
