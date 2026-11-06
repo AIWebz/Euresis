@@ -1301,3 +1301,9 @@
 - 2026-11-06 18:34 round 1183: insurance and risk
 - 2026-11-06 18:35 round 1184: auction with a reserve price
 - 2026-11-06 18:36 round 1185: two-body decay
+- 2026-11-06 18:39 round 1186: collision
+- 2026-11-06 18:41 round 1187: driven oscillator
+- 2026-11-06 18:42 round 1188: velocity addition
+- 2026-11-06 18:43 round 1189: Compton scattering
+- 2026-11-06 18:44 round 1190: Cournot duopoly
+- 2026-11-06 18:44 round 1191: insurance and risk
