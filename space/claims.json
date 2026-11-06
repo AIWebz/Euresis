@@ -1132968,5 +1132968,545 @@
   "statement": "Octal game 0.323051 is completely solved: its Grundy values are periodic with pre-period 7 and period 4 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.b2rbnzsh2",
+   "held_out_r2": 0.9835,
+   "held_out_rows": 48,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-033d3128ec34",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "90d895d5ac6b9854.csv",
+   "doi": "10.5061/dryad.b2rbnzsh2",
+   "form": "linear",
+   "params": [
+    2.206262875978573,
+    1.000247218788628
+   ],
+   "seed": 3955567358,
+   "x": "SNP+Indel",
+   "y": "Total_Events"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Population size mediates the contribution of high-rate and large-benefit mutati' (Zenodo, doi 10.5061/dryad.b2rbnzsh2): 'Total_Events' is linear in 'SNP+Indel' (R\u00b2 = 0.925 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3702043",
+   "held_out_r2": 0.9239,
+   "held_out_rows": 134,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-8f7029f79fba",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3cf5ad133e786814.csv",
+   "doi": "10.5281/zenodo.3702043",
+   "form": "power law",
+   "params": [
+    6.842203467414073,
+    1.4445549652045941
+   ],
+   "seed": 3177857382,
+   "x": "ion_Z",
+   "y": "Emax"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Characterization of descriptors in machine learning for data-based sputtering yield predic' (Zenodo, doi 10.5281/zenodo.3702043): 'Emax' follows a power law in 'ion_Z' (R\u00b2 = 0.925 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3702043",
+   "held_out_r2": 0.9361,
+   "held_out_rows": 134,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-bf0580fed895",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3cf5ad133e786814.csv",
+   "doi": "10.5281/zenodo.3702043",
+   "form": "power law",
+   "params": [
+    8.890366912288531,
+    1.5722044139559206
+   ],
+   "seed": 3177857382,
+   "x": "ion_Z",
+   "y": "EE1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Characterization of descriptors in machine learning for data-based sputtering yield predic' (Zenodo, doi 10.5281/zenodo.3702043): 'EE1' follows a power law in 'ion_Z' (R\u00b2 = 0.935 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3702043",
+   "held_out_r2": 0.9073,
+   "held_out_rows": 134,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-2d45ce5ce59b",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3cf5ad133e786814.csv",
+   "doi": "10.5281/zenodo.3702043",
+   "form": "logarithmic",
+   "params": [
+    -1.386862175998971,
+    -0.6529129449419425
+   ],
+   "seed": 3177857382,
+   "x": "ion_Z",
+   "y": "log10escale"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Characterization of descriptors in machine learning for data-based sputtering yield predic' (Zenodo, doi 10.5281/zenodo.3702043): 'log10escale' grows logarithmically in 'ion_Z' (R\u00b2 = 0.917 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3702043",
+   "held_out_r2": 0.9056,
+   "held_out_rows": 134,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-6876f7b813b6",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3cf5ad133e786814.csv",
+   "doi": "10.5281/zenodo.3702043",
+   "form": "power law",
+   "params": [
+    6.435830845640387,
+    1.2567759862869081
+   ],
+   "seed": 3177857382,
+   "x": "ion_mass",
+   "y": "Emax"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Characterization of descriptors in machine learning for data-based sputtering yield predic' (Zenodo, doi 10.5281/zenodo.3702043): 'Emax' follows a power law in 'ion_mass' (R\u00b2 = 0.912 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3702043",
+   "held_out_r2": 0.922,
+   "held_out_rows": 134,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-18cf8c774d72",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3cf5ad133e786814.csv",
+   "doi": "10.5281/zenodo.3702043",
+   "form": "power law",
+   "params": [
+    8.436701805065978,
+    1.3710317568299206
+   ],
+   "seed": 3177857382,
+   "x": "ion_mass",
+   "y": "EE1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Characterization of descriptors in machine learning for data-based sputtering yield predic' (Zenodo, doi 10.5281/zenodo.3702043): 'EE1' follows a power law in 'ion_mass' (R\u00b2 = 0.926 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3702043",
+   "held_out_r2": 0.905,
+   "held_out_rows": 134,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-58f7ab267b3b",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3cf5ad133e786814.csv",
+   "doi": "10.5281/zenodo.3702043",
+   "form": "logarithmic",
+   "params": [
+    -1.19070918764809,
+    -0.5715481106054296
+   ],
+   "seed": 3177857382,
+   "x": "ion_mass",
+   "y": "log10escale"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Characterization of descriptors in machine learning for data-based sputtering yield predic' (Zenodo, doi 10.5281/zenodo.3702043): 'log10escale' grows logarithmically in 'ion_mass' (R\u00b2 = 0.915 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3702043",
+   "held_out_r2": 0.914,
+   "held_out_rows": 134,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3ef54cd137ab",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3cf5ad133e786814.csv",
+   "doi": "10.5281/zenodo.3702043",
+   "form": "logarithmic",
+   "params": [
+    1.515947082257679,
+    -0.4345855206441239
+   ],
+   "seed": 3177857382,
+   "x": "Emax",
+   "y": "log10escale"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Characterization of descriptors in machine learning for data-based sputtering yield predic' (Zenodo, doi 10.5281/zenodo.3702043): 'log10escale' grows logarithmically in 'Emax' (R\u00b2 = 0.916 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3702043",
+   "held_out_r2": 0.9243,
+   "held_out_rows": 134,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-342685321a54",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3cf5ad133e786814.csv",
+   "doi": "10.5281/zenodo.3702043",
+   "form": "logarithmic",
+   "params": [
+    -2.8472970025545,
+    -0.40283668280866836
+   ],
+   "seed": 3177857382,
+   "x": "SYmax",
+   "y": "log10escale"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Characterization of descriptors in machine learning for data-based sputtering yield predic' (Zenodo, doi 10.5281/zenodo.3702043): 'log10escale' grows logarithmically in 'SYmax' (R\u00b2 = 0.939 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3702043",
+   "held_out_r2": 0.9243,
+   "held_out_rows": 134,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-331b177e41c8",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3cf5ad133e786814.csv",
+   "doi": "10.5281/zenodo.3702043",
+   "form": "logarithmic",
+   "params": [
+    -3.126522113469449,
+    -0.40283668280866813
+   ],
+   "seed": 3177857382,
+   "x": "SY_ES1",
+   "y": "log10escale"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Characterization of descriptors in machine learning for data-based sputtering yield predic' (Zenodo, doi 10.5281/zenodo.3702043): 'log10escale' grows logarithmically in 'SY_ES1' (R\u00b2 = 0.939 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3702043",
+   "held_out_r2": 0.9304,
+   "held_out_rows": 134,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-2cafb52e68ee",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3cf5ad133e786814.csv",
+   "doi": "10.5281/zenodo.3702043",
+   "form": "logarithmic",
+   "params": [
+    2.1657298374185836,
+    -0.40481179087451596
+   ],
+   "seed": 3177857382,
+   "x": "EE1",
+   "y": "log10escale"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Characterization of descriptors in machine learning for data-based sputtering yield predic' (Zenodo, doi 10.5281/zenodo.3702043): 'log10escale' grows logarithmically in 'EE1' (R\u00b2 = 0.932 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3702043",
+   "held_out_r2": 0.9243,
+   "held_out_rows": 134,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f3ad713c16be",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3cf5ad133e786814.csv",
+   "doi": "10.5281/zenodo.3702043",
+   "form": "logarithmic",
+   "params": [
+    -3.126522113469449,
+    -0.40283668280866813
+   ],
+   "seed": 3177857382,
+   "x": "SY_EE1",
+   "y": "log10escale"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Characterization of descriptors in machine learning for data-based sputtering yield predic' (Zenodo, doi 10.5281/zenodo.3702043): 'log10escale' grows logarithmically in 'SY_EE1' (R\u00b2 = 0.939 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3702043",
+   "held_out_r2": 0.9324,
+   "held_out_rows": 134,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5edfc104c662",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3cf5ad133e786814.csv",
+   "doi": "10.5281/zenodo.3702043",
+   "form": "power law",
+   "params": [
+    -3.370797103113327,
+    1.1494227265324408
+   ],
+   "seed": 3177857382,
+   "x": "target_boiling_point",
+   "y": "target_evaporation_heat"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Characterization of descriptors in machine learning for data-based sputtering yield predic' (Zenodo, doi 10.5281/zenodo.3702043): 'target_evaporation_heat' follows a power law in 'target_boiling_point' (R\u00b2 = 0.915 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3702043",
+   "held_out_r2": 0.9289,
+   "held_out_rows": 134,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-be5f524f9d9f",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3cf5ad133e786814.csv",
+   "doi": "10.5281/zenodo.3702043",
+   "form": "linear",
+   "params": [
+    -38.24527733815158,
+    0.14284365527098516
+   ],
+   "seed": 3177857382,
+   "x": "target_boiling_point",
+   "y": "target_heat_of_formation"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Characterization of descriptors in machine learning for data-based sputtering yield predic' (Zenodo, doi 10.5281/zenodo.3702043): 'target_heat_of_formation' is linear in 'target_boiling_point' (R\u00b2 = 0.910 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3702043",
+   "held_out_r2": 0.9755,
+   "held_out_rows": 134,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4624c45689b9",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3cf5ad133e786814.csv",
+   "doi": "10.5281/zenodo.3702043",
+   "form": "logarithmic",
+   "params": [
+    -2444.665605771522,
+    487.1826882616719
+   ],
+   "seed": 3177857382,
+   "x": "target_evaporation_heat",
+   "y": "target_heat_of_formation"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Characterization of descriptors in machine learning for data-based sputtering yield predic' (Zenodo, doi 10.5281/zenodo.3702043): 'target_heat_of_formation' grows logarithmically in 'target_evaporation_heat' (R\u00b2 = 0.982 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.10003246",
+   "held_out_r2": 0.9565,
+   "held_out_rows": 181,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-506ff39b138e",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "52545364e19e9fc5.csv",
+   "doi": "10.5281/zenodo.10003246",
+   "form": "linear",
+   "params": [
+    1.0834306346344547,
+    -0.008578355117147805
+   ],
+   "seed": 4251097740,
+   "x": "mis",
+   "y": "N"
+  },
+  "source": "datafeeds.py",
+  "statement": "In '3D grain boundary and 2D slip transfer data of pure Ti after plastic deformation' (Zenodo, doi 10.5281/zenodo.10003246): 'N' is linear in 'mis' (R\u00b2 = 0.960 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.10003246",
+   "held_out_r2": 0.977,
+   "held_out_rows": 181,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-cd1b678f7137",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "52545364e19e9fc5.csv",
+   "doi": "10.5281/zenodo.10003246",
+   "form": "linear",
+   "params": [
+    1.0704948444300193,
+    -0.011537181908831708
+   ],
+   "seed": 4251097740,
+   "x": "kappa",
+   "y": "mprime"
+  },
+  "source": "datafeeds.py",
+  "statement": "In '3D grain boundary and 2D slip transfer data of pure Ti after plastic deformation' (Zenodo, doi 10.5281/zenodo.10003246): 'mprime' is linear in 'kappa' (R\u00b2 = 0.983 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.10003246",
+   "held_out_r2": 0.9708,
+   "held_out_rows": 181,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-6c1c2f4d18ba",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "52545364e19e9fc5.csv",
+   "doi": "10.5281/zenodo.10003246",
+   "form": "linear",
+   "params": [
+    1.4949253155535256,
+    -1.3731973751266056
+   ],
+   "seed": 4251097740,
+   "x": "mprime",
+   "y": "db"
+  },
+  "source": "datafeeds.py",
+  "statement": "In '3D grain boundary and 2D slip transfer data of pure Ti after plastic deformation' (Zenodo, doi 10.5281/zenodo.10003246): 'db' is linear in 'mprime' (R\u00b2 = 0.976 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.10003246",
+   "held_out_r2": 0.9706,
+   "held_out_rows": 294,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4dddc0c2be1c",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f1bd0006ffecfdac.csv",
+   "doi": "10.5281/zenodo.10003246",
+   "form": "power law",
+   "params": [
+    3.0546623325647326,
+    -1.1388993065762274
+   ],
+   "seed": 1994805907,
+   "x": "EquivalentDiameters",
+   "y": "SurfaceAreaVolumeRatio"
+  },
+  "source": "datafeeds.py",
+  "statement": "In '3D grain boundary and 2D slip transfer data of pure Ti after plastic deformation' (Zenodo, doi 10.5281/zenodo.10003246): 'SurfaceAreaVolumeRatio' follows a power law in 'EquivalentDiameters' (R\u00b2 = 0.970 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.10003246",
+   "held_out_r2": 0.9674,
+   "held_out_rows": 294,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3965f2503cf3",
+  "kind": "empirical",
+  "novelty": "KNOWN: stellar structure relations (radius, log g, mass, luminosity, Teff) \u2014 not a discovery",
+  "payload": {
+   "dataset": "f1bd0006ffecfdac.csv",
+   "doi": "10.5281/zenodo.10003246",
+   "form": "power law",
+   "params": [
+    2.852743664253317,
+    -0.3824458577058729
+   ],
+   "seed": 1994805907,
+   "x": "GrainVolumes",
+   "y": "SurfaceAreaVolumeRatio"
+  },
+  "source": "datafeeds.py",
+  "statement": "In '3D grain boundary and 2D slip transfer data of pure Ti after plastic deformation' (Zenodo, doi 10.5281/zenodo.10003246): 'SurfaceAreaVolumeRatio' follows a power law in 'GrainVolumes' (R\u00b2 = 0.967 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
