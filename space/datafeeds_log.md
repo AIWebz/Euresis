@@ -748,3 +748,4 @@
 - 2026-11-06 11:40 FINDING (confirmed on held-out rows): In 'Dark extinction: The problem of unknown historical extinctions' (Zenodo, doi 10.5061/dryad.wstqjq2kb): 'DESCRIPTION DATE' grows exponentially in 'ORDER No' (R² = 0.925 on the discovery half); held-out R² = 0.921 [emp-f92dbadb3c92]
 - 2026-11-06 11:41 FINDING (confirmed on held-out rows): In 'Experimental addition of marine-derived nutrients affects wildflower traits in a coastal m' (Zenodo, doi 10.5061/dryad.905qfttnt): 'sample.mg' follows a power law in 'C.ug' (R² = 0.942 on the discovery half); held-out R² = 0.942 [emp-53517c202690]
 - 2026-11-06 11:41 data feeds: 5523 datasets analysed so far, 671 confirmed findings
+- 2026-11-06 12:31 data feeds: online
