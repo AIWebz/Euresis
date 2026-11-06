@@ -881,3 +881,4 @@
 - 2026-11-06 18:19 FINDING (confirmed on held-out rows): In 'Dataset underlying article: Submolecular modulation of PIEZO1 mechanotransduction with wir' (Zenodo, doi 10.5281/zenodo.19890985): 'CaPINS_3' is linear in 'LooPINS_1' (R² = 0.975 on the discovery half); held-out R² = 0.911 [emp-68e024a16856]
 - 2026-11-06 18:19 data feeds: 6123 datasets analysed so far, 789 confirmed findings
 - 2026-11-06 19:21 data feeds: online
+- 2026-11-06 19:22 data feeds: 6156 datasets analysed so far, 789 confirmed findings
