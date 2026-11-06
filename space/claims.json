@@ -1432681,5 +1432681,256 @@
   "statement": "In 'Untethered Muscle Tracking Supplementary Materials' (Zenodo, doi 10.5281/zenodo.6952783): 'B_x4' grows logarithmically in 'B_y2' (R\u00b2 = 0.934 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "u < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-3528a0d438a5",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "u < 1",
+    "v < 1"
+   ],
+   "claim": "(u*v + 1)/(sqrt(1 - u**2)*sqrt(1 - v**2)) >= 1*(sqrt((1 - u**2)*(1 - v**2) + (u + v)**2/(u*v + 1)**2))",
+   "symbols": [
+    "u",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 1284",
+  "statement": "[physics: velocity addition] Lorentz factor of the composed motion \u2265 1 \u00d7 Relativistic Beta Addition [model-proposed; physical meaning unverified]   on u < 1, v < 1 (tight only at the edge of the domain, near (6.16e-09, 1.53e-09))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "u < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-fafc2999ff7c",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "u < 1",
+    "v < 1"
+   ],
+   "claim": "1/(sqrt(1 - u**2)*sqrt(1 - v**2)) >= 1*(sqrt((1 - u**2)*(1 - v**2) + (u + v)**2/(u*v + 1)**2))",
+   "symbols": [
+    "u",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 1284",
+  "statement": "[physics: velocity addition] product of the two Lorentz factors \u2265 1 \u00d7 Relativistic Beta Addition [model-proposed; physical meaning unverified]   on u < 1, v < 1 (tight only at the edge of the domain, near (0.0001, 0.0001))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "u < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-38debfd69463",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'Lorentz factor of the composed motion'",
+  "payload": {
+   "assumptions": [
+    "u < 1",
+    "v < 1"
+   ],
+   "claim": "sqrt(u + 1)*sqrt(v + 1)*sqrt(1/(1 - u))*sqrt(1/(1 - v)) >= 1*(sqrt((1 - u**2)*(1 - v**2) + (u + v)**2/(u*v + 1)**2))",
+   "symbols": [
+    "u",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 1284",
+  "statement": "[physics: velocity addition] Doppler factor of the composed motion \u2265 1 \u00d7 Relativistic Beta Addition [model-proposed; physical meaning unverified]   on u < 1, v < 1 (tight only at the edge of the domain, near (1.69e-16, 6.42e-15))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "u < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-f0557f993bf4",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'Lorentz factor of the composed motion'",
+  "payload": {
+   "assumptions": [
+    "u < 1",
+    "v < 1"
+   ],
+   "claim": "1/sqrt(-(u + v)**2/(u*v + 1)**2 + 1) >= 1*(sqrt((1 - u**2)*(1 - v**2) + (u + v)**2/(u*v + 1)**2))",
+   "symbols": [
+    "u",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 1284",
+  "statement": "[physics: velocity addition] Lorentz gamma of the composed motion [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Relativistic Beta Addition [model-proposed; physical meaning unverified]   on u < 1, v < 1 (tight only at the edge of the domain, near (4.43e-10, 1.56e-08))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "u < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-8a096ba63ce3",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "u < 1",
+    "v < 1"
+   ],
+   "claim": "sqrt((1 - u**2)*(1 - v**2) + (u + v)**2/(u*v + 1)**2) >= 1*((u + v)/(u*v + 1))",
+   "symbols": [
+    "u",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 1284",
+  "statement": "[physics: velocity addition] Relativistic Beta Addition [model-proposed; physical meaning unverified] \u2265 1 \u00d7 composed speed / c   on u < 1, v < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-b33b63d257bd",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "claim": "(a**2 - b**2 + 1)/(2*a) >= 1*((-b**2 + (1 - a)**2)/(-a**2 + b**2 - (1 - a)**2 + 1))",
+   "symbols": [
+    "a",
+    "b"
+   ]
+  },
+  "source": "physics_discover2 round 1289",
+  "statement": "[physics: two-body decay] Lorentz factor of product 1 \u2265 1 \u00d7 Kinetic Energy Ratio of Products [model-proposed; physical meaning unverified]   on a < 1, b < 1, a + b < 1 (tight only at the edge of the domain, near (8.97e-12, 1.51e-09))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-80904e08648c",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "claim": "(-b**2 + (1 - a)**2)/(-a**2 + 2*b**2 - (1 - a)**2 + 1) >= 1/2*((-b**2 + (1 - a)**2)/(-a**2 + b**2 - (1 - a)**2 + 1))",
+   "symbols": [
+    "a",
+    "b"
+   ]
+  },
+  "source": "physics_discover2 round 1289",
+  "statement": "[physics: two-body decay] Ratio of kinetic energies of product 1 to product 2 [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 Kinetic Energy Ratio of Products [model-proposed; physical meaning unverified]   on a < 1, b < 1, a + b < 1 (tight only at the edge of the domain, near (1.61e-17, 0.966))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-6bdc2aadac10",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "claim": "(-b**2 + (1 - a)**2)/(-a**2 + b**2 - (1 - a)**2 + 1) >= 1/2*(-a - b + 1)",
+   "symbols": [
+    "a",
+    "b"
+   ]
+  },
+  "source": "physics_discover2 round 1289",
+  "statement": "[physics: two-body decay] Kinetic Energy Ratio of Products [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 kinetic energy released Q / (Mc\u00b2)   on a < 1, b < 1, a + b < 1 (tight only at the edge of the domain, near (1, 4.43e-17))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-f632807a27f7",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "claim": "(-b**2 + (1 - a)**2)/(-a**2 + b**2 - (1 - a)**2 + 1) >= 2*(-b**2/2 + (1 - a)**2/2)",
+   "symbols": [
+    "a",
+    "b"
+   ]
+  },
+  "source": "physics_discover2 round 1289",
+  "statement": "[physics: two-body decay] Kinetic Energy Ratio of Products [model-proposed; physical meaning unverified] \u2265 2 \u00d7 kinetic energy of product 1 / (Mc\u00b2)   on a < 1, b < 1, a + b < 1 (tight only at the edge of the domain, near (9.34e-09, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]

@@ -19,7 +19,8 @@
    "Invariant mass of product 2 [model-proposed; physical meaning unverified]": "sqrt(-(1 - (a - b)**2)*(1 - (a + b)**2)/4 + (-a**2 + b**2 + 1)**2)",
    "Gamma factor of product 1 [model-proposed; physical meaning unverified]": "sqrt((1 - (a - b)**2)*(1 - (a + b)**2)/4 + (a**2 - b**2 + 1)**2)/(a**2 - b**2 + 1)",
    "Ratio of kinetic energy of product 1 to product 2 [model-proposed; physical meaning unverified]": "(-b**2/2 + (1 - a)**2/2)/(-a**2/2 - 3*b**2/2 + (1 - a)**2 + 1/2)",
-   "Boost factor of the system [model-proposed; physical meaning unverified]": "sqrt((1 - (a - b)**2)*(1 - (a + b)**2) + (-a**2 + b**2 + 1)**2 + (a**2 - b**2 + 1)**2)"
+   "Boost factor of the system [model-proposed; physical meaning unverified]": "sqrt((1 - (a - b)**2)*(1 - (a + b)**2) + (-a**2 + b**2 + 1)**2 + (a**2 - b**2 + 1)**2)",
+   "Kinetic Energy Ratio of Products [model-proposed; physical meaning unverified]": "(-b**2 + (1 - a)**2)/(-a**2 + b**2 - (1 - a)**2 + 1)"
   },
   "collision": {
    "target speed / initial speed": "(1 + e)*m/(1 + m)",
@@ -78,7 +79,8 @@
    "Total relativistic energy / mc\u00b2 [model-proposed; physical meaning unverified]": "sqrt(1 - u**2) + sqrt(1 - v**2) + (u*v + 1)/(sqrt(1 - u**2)*sqrt(1 - v**2))",
    "Relativistic momentum magnitude ratio [model-proposed; physical meaning unverified]": "sqrt((u**2 + 2*u*v + v**2)/(u*v + 1)**2 + (u*v + 1)**2/((1 - u**2)*(1 - v**2)))",
    "Relativistic Energy-Momentum Ratio [model-proposed; physical meaning unverified]": "sqrt(1 - u**2) + sqrt(1 - v**2)/sqrt(-(u + v)**2/(u*v + 1)**2 + 1)",
-   "Relativistic Energy-Momentum Invariant [model-proposed; physical meaning unverified]": "sqrt(1 - u**2)*sqrt(1 - v**2) + (u + v)*sqrt(-(u + v)**2/(u*v + 1)**2 + 1)/(u*v + 1)"
+   "Relativistic Energy-Momentum Invariant [model-proposed; physical meaning unverified]": "sqrt(1 - u**2)*sqrt(1 - v**2) + (u + v)*sqrt(-(u + v)**2/(u*v + 1)**2 + 1)/(u*v + 1)",
+   "Relativistic Beta Addition [model-proposed; physical meaning unverified]": "sqrt((1 - u**2)*(1 - v**2) + (u + v)**2/(u*v + 1)**2)"
   },
   "Compton scattering": {
    "scattered photon energy / initial energy": "1/(1 + x*c)",
@@ -19362,6 +19364,181 @@
    "family": "collision",
    "expr": "1 - e**2*m**2/(m + 1)**2 - m*(1 - e**2)/(m + 1)",
    "why": "affine combination of known quantities (target speed / initial speed, Fraction of kinetic energy retained by the system relative to initial kinetic en [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "atan(2*z*r/(1 - r**2))",
+   "why": "only + \u2212 \u00d7 \u00f7, integer powers and square roots (so the prover can decide it)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt((1 - r**2)**2 + (2*z*r)**2)/r",
+   "why": "affine combination of known quantities (amplitude / static deflection, 1/(velocity amplitude / (\u03c90 \u00d7 static deflection)))"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt((1 - r**2)**2 + (2*z*r)**2)/sqrt(1 + (2*z*r)**2)",
+   "why": "affine combination of known quantities (amplitude / static deflection, 1/(transmissibility))"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 - u**2)*(1 - v**2)) / (1 - u*v) + sqrt((1 + u)/(1 - u)) * sqrt((1 + v)/(1 - v))",
+   "why": "affine combination of known quantities (Doppler factor of the composed motion, Relativistic velocity parameter [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "1/sqrt(-(u + v)**2/(u*v + 1)**2 + 1) * sqrt((1 + u)/(1 - u)) * sqrt((1 + v)/(1 - v))",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "1 - c/(c*x + 1)",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "((1 - 2*c1 + c2)/3)/((1 - 2*c2 + c1)/3)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "sqrt(-L*p + 1)/(sqrt(1 - L) - 1 + 1/(p*sqrt(1 - L) - p + 1))",
+   "why": "affine combination of known quantities (expected wealth, Insurance Risk Adjustment Factor [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "sqrt(-L*p + 1)/(-p + sqrt(1 - L) + 1)",
+   "why": "affine combination of known quantities (expected wealth, Insurance Risk Adjustment Index [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "sqrt(-L*p + 1)/(p*sqrt(1 - L) - p + 1) - 1",
+   "why": "affine combination of known quantities (expected wealth, Expected Utility Adjustment Factor [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "L*p/(-p*sqrt(1 - L) + p + sqrt(1 - L) - sqrt(-L*p + 1) + 1)",
+   "why": "affine combination of known quantities (expected wealth, Insurance Risk Sensitivity Index [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(-2*r**3/3 + r**2*v + 2/3)/(2*(1 - r**3)/3 + v*r**2 - (1/3 - r**2 + 2*r**3/3))",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(-2*r**3/3 + r**2*v + 2/3)/(r**2*v - r**2 + 1) * (2*r**3/3 - r**2 + 1/3)/(1 - r**2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "sqrt(1 - (a + b)**2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "sqrt((1 - (a - b)**2)*(1 - (a + b)**2))/sqrt((1 + a**2 - b**2)**2 + (1 - a**2 + b**2)**2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "sqrt((1 - (a - b)**2)*(1 - (a + b)**2) + (-a**2 + b**2 + 1)**2 + (a**2 - b**2 + 1)**2)",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), Boost factor of the system [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2",
+   "why": "affine combination of known quantities (Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified], Fraction of kinetic energy transferred to the target [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2",
+   "why": "affine combination of known quantities (Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified], Fraction of kinetic energy transferred to the target [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2",
+   "why": "affine combination of known quantities (Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified], Fraction of kinetic energy transferred to the target [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "1 - e**2*m**2/(m + 1)**2 - m*(1 - e**2)/(m + 1)",
+   "why": "affine combination of known quantities (target speed / initial speed, Fraction of kinetic energy retained by the system relative to initial kinetic en [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "atan(2*z*r/(1 - r**2))",
+   "why": "only + \u2212 \u00d7 \u00f7, integer powers and square roots (so the prover can decide it)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "1/sqrt((1 - r**2)**2 + (2*z*r)**2)",
+   "why": "affine combination of known quantities (amplitude / static deflection)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 + u)/(1 - u)) * sqrt((1 + v)/(1 - v)) / sqrt((1 + (u + v)/(1 + u*v)) / (1 - (u + v)/(1 + u*v",
+   "why": "affine combination of known quantities (composed speed / c)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 - u**2)*(1 - v**2) + (u + v)**2/(u*v + 1)**2) / (1 + u*v)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "1 - c/(c*x + 1)",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "((1 - 2*c1 + c2)/3)/((1 - 2*c2 + c1)/3)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "((1 - 2*c1 + c2)**2/9)/((1 - 2*c2 + c1)**2/9)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "((2 - c1 - c2)**2/18)/(((1 - 2*c1 + c2)**2 + (1 - 2*c2 + c1)**2)/9)",
+   "why": "affine combination of known quantities (output of firm 1, 1/(Hirshleifer Index [model-proposed; physical meaning unverified]))"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "((-c1 - c2 + 1)**2/((-2*c1 + c2 + 1)*(c1 - 2*c2 + 1))) / ((-c2 - c1 + 1)**2/((-2*c2 + c1 + 1)*(c2 - ",
+   "why": "must depend only on c1, c2"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "sqrt(-L*p + 1)/(sqrt(1 - L) - 1 + 1/(p*sqrt(1 - L) - p + 1))",
+   "why": "affine combination of known quantities (expected wealth, Insurance Risk Adjustment Factor [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "sqrt(-L*p + 1)/sqrt(1 - L) - 1",
+   "why": "affine combination of known quantities (expected wealth, Insurance Risk Exposure Index [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "sqrt(-L*p + 1)/(p*sqrt(1 - L) - p + 1) - 1",
+   "why": "affine combination of known quantities (expected wealth, Expected Utility Adjustment Factor [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "L*p/(-p*sqrt(1 - L) + p + sqrt(1 - L) - sqrt(-L*p + 1) + 1)",
+   "why": "affine combination of known quantities (expected wealth, Insurance Risk Sensitivity Index [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(-2*r**3/3 + r**2*v + 2/3)/(2*(1 - r**3)/3 + v*r**2 - (1/3 - r**2 + 2*r**3/3))",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(-2*r**3/3 + r**2*v + 2/3)/(r**2*v - r**2 + 1) * (2*r**3/3 - r**2 + 1/3)/(1 - r**2)",
+   "why": "a power or product of known quantities"
   }
  ],
  "tried": [
@@ -21918,7 +22095,65 @@
   "insurance and risk|Relative Risk Sensitivity Index [model-proposed; physical meaning unverified]|Insurance Risk Exposure Index [model-proposed; physical meaning unverified]",
   "insurance and risk|Relative Risk Sensitivity Index [model-proposed; physical meaning unverified]|Risk Adjustment Ratio [model-proposed; physical meaning unverified]",
   "insurance and risk|Relative Risk Sensitivity Index [model-proposed; physical meaning unverified]|Expected Utility Adjustment Factor [model-proposed; physical meaning unverified]",
-  "insurance and risk|Relative Risk Sensitivity Index [model-proposed; physical meaning unverified]|Insurance Risk Sensitivity Index [model-proposed; physical meaning unverified]"
+  "insurance and risk|Relative Risk Sensitivity Index [model-proposed; physical meaning unverified]|Insurance Risk Sensitivity Index [model-proposed; physical meaning unverified]",
+  "velocity addition|composed speed / c|Relativistic Beta Addition [model-proposed; physical meaning unverified]",
+  "velocity addition|Galilean sum / c|Relativistic Beta Addition [model-proposed; physical meaning unverified]",
+  "velocity addition|Lorentz factor of the composed motion|Relativistic Beta Addition [model-proposed; physical meaning unverified]",
+  "velocity addition|product of the two Lorentz factors|Relativistic Beta Addition [model-proposed; physical meaning unverified]",
+  "velocity addition|Doppler factor of the composed motion|Relativistic Beta Addition [model-proposed; physical meaning unverified]",
+  "velocity addition|kinetic energy of the composed motion / mc\u00b2|Relativistic Beta Addition [model-proposed; physical meaning unverified]",
+  "velocity addition|sum of the two kinetic energies / mc\u00b2|Relativistic Beta Addition [model-proposed; physical meaning unverified]",
+  "velocity addition|Relativistic momentum ratio [model-proposed; physical meaning unverified]|Relativistic Beta Addition [model-proposed; physical meaning unverified]",
+  "velocity addition|Lorentz gamma of the composed motion [model-proposed; physical meaning unverified]|Relativistic Beta Addition [model-proposed; physical meaning unverified]",
+  "velocity addition|Relative velocity in terms of rapidities [model-proposed; physical meaning unverified]|Relativistic Beta Addition [model-proposed; physical meaning unverified]",
+  "velocity addition|Relativistic velocity parameter [model-proposed; physical meaning unverified]|Relativistic Beta Addition [model-proposed; physical meaning unverified]",
+  "velocity addition|Energy-momentum invariant [model-proposed; physical meaning unverified]|Relativistic Beta Addition [model-proposed; physical meaning unverified]",
+  "velocity addition|Energy-momentum ratio [model-proposed; physical meaning unverified]|Relativistic Beta Addition [model-proposed; physical meaning unverified]",
+  "velocity addition|Total relativistic energy / mc\u00b2 [model-proposed; physical meaning unverified]|Relativistic Beta Addition [model-proposed; physical meaning unverified]",
+  "velocity addition|Relativistic momentum magnitude ratio [model-proposed; physical meaning unverified]|Relativistic Beta Addition [model-proposed; physical meaning unverified]",
+  "velocity addition|Relativistic Energy-Momentum Ratio [model-proposed; physical meaning unverified]|Relativistic Beta Addition [model-proposed; physical meaning unverified]",
+  "velocity addition|Relativistic Energy-Momentum Invariant [model-proposed; physical meaning unverified]|Relativistic Beta Addition [model-proposed; physical meaning unverified]",
+  "velocity addition|Relativistic Beta Addition [model-proposed; physical meaning unverified]|composed speed / c",
+  "velocity addition|Relativistic Beta Addition [model-proposed; physical meaning unverified]|Galilean sum / c",
+  "velocity addition|Relativistic Beta Addition [model-proposed; physical meaning unverified]|Lorentz factor of the composed motion",
+  "velocity addition|Relativistic Beta Addition [model-proposed; physical meaning unverified]|product of the two Lorentz factors",
+  "velocity addition|Relativistic Beta Addition [model-proposed; physical meaning unverified]|Doppler factor of the composed motion",
+  "velocity addition|Relativistic Beta Addition [model-proposed; physical meaning unverified]|kinetic energy of the composed motion / mc\u00b2",
+  "velocity addition|Relativistic Beta Addition [model-proposed; physical meaning unverified]|sum of the two kinetic energies / mc\u00b2",
+  "two-body decay|momentum of each product / (Mc)|Kinetic Energy Ratio of Products [model-proposed; physical meaning unverified]",
+  "two-body decay|energy of product 1 / (Mc\u00b2)|Kinetic Energy Ratio of Products [model-proposed; physical meaning unverified]",
+  "two-body decay|energy of product 2 / (Mc\u00b2)|Kinetic Energy Ratio of Products [model-proposed; physical meaning unverified]",
+  "two-body decay|kinetic energy released Q / (Mc\u00b2)|Kinetic Energy Ratio of Products [model-proposed; physical meaning unverified]",
+  "two-body decay|kinetic energy of product 1 / (Mc\u00b2)|Kinetic Energy Ratio of Products [model-proposed; physical meaning unverified]",
+  "two-body decay|speed of product 1 / c|Kinetic Energy Ratio of Products [model-proposed; physical meaning unverified]",
+  "two-body decay|speed of product 2 / c|Kinetic Energy Ratio of Products [model-proposed; physical meaning unverified]",
+  "two-body decay|Lorentz factor of product 1|Kinetic Energy Ratio of Products [model-proposed; physical meaning unverified]",
+  "two-body decay|Invariant mass squared of the two products [model-proposed; physical meaning unverified]|Kinetic Energy Ratio of Products [model-proposed; physical meaning unverified]",
+  "two-body decay|Ratio of kinetic energies of product 1 to product 2 [model-proposed; physical meaning unverified]|Kinetic Energy Ratio of Products [model-proposed; physical meaning unverified]",
+  "two-body decay|Total kinetic energy of the two products / (Mc\u00b2) [model-proposed; physical meaning unverified]|Kinetic Energy Ratio of Products [model-proposed; physical meaning unverified]",
+  "two-body decay|Ratio of kinetic energy of product 1 to total kinetic energy [model-proposed; physical meaning unverified]|Kinetic Energy Ratio of Products [model-proposed; physical meaning unverified]",
+  "two-body decay|Invariant mass squared of the system [model-proposed; physical meaning unverified]|Kinetic Energy Ratio of Products [model-proposed; physical meaning unverified]",
+  "two-body decay|Relative velocity squared of products [model-proposed; physical meaning unverified]|Kinetic Energy Ratio of Products [model-proposed; physical meaning unverified]",
+  "two-body decay|Invariant mass of product 1 [model-proposed; physical meaning unverified]|Kinetic Energy Ratio of Products [model-proposed; physical meaning unverified]",
+  "two-body decay|Invariant mass of product 2 [model-proposed; physical meaning unverified]|Kinetic Energy Ratio of Products [model-proposed; physical meaning unverified]",
+  "two-body decay|Gamma factor of product 1 [model-proposed; physical meaning unverified]|Kinetic Energy Ratio of Products [model-proposed; physical meaning unverified]",
+  "two-body decay|Ratio of kinetic energy of product 1 to product 2 [model-proposed; physical meaning unverified]|Kinetic Energy Ratio of Products [model-proposed; physical meaning unverified]",
+  "two-body decay|Boost factor of the system [model-proposed; physical meaning unverified]|Kinetic Energy Ratio of Products [model-proposed; physical meaning unverified]",
+  "two-body decay|Kinetic Energy Ratio of Products [model-proposed; physical meaning unverified]|momentum of each product / (Mc)",
+  "two-body decay|Kinetic Energy Ratio of Products [model-proposed; physical meaning unverified]|energy of product 1 / (Mc\u00b2)",
+  "two-body decay|Kinetic Energy Ratio of Products [model-proposed; physical meaning unverified]|energy of product 2 / (Mc\u00b2)",
+  "two-body decay|Kinetic Energy Ratio of Products [model-proposed; physical meaning unverified]|kinetic energy released Q / (Mc\u00b2)",
+  "two-body decay|Kinetic Energy Ratio of Products [model-proposed; physical meaning unverified]|kinetic energy of product 1 / (Mc\u00b2)",
+  "velocity addition|Relativistic Beta Addition [model-proposed; physical meaning unverified]|Relativistic momentum ratio [model-proposed; physical meaning unverified]",
+  "velocity addition|Relativistic Beta Addition [model-proposed; physical meaning unverified]|Lorentz gamma of the composed motion [model-proposed; physical meaning unverified]",
+  "velocity addition|Relativistic Beta Addition [model-proposed; physical meaning unverified]|Relative velocity in terms of rapidities [model-proposed; physical meaning unverified]",
+  "velocity addition|Relativistic Beta Addition [model-proposed; physical meaning unverified]|Relativistic velocity parameter [model-proposed; physical meaning unverified]",
+  "velocity addition|Relativistic Beta Addition [model-proposed; physical meaning unverified]|Energy-momentum invariant [model-proposed; physical meaning unverified]",
+  "velocity addition|Relativistic Beta Addition [model-proposed; physical meaning unverified]|Energy-momentum ratio [model-proposed; physical meaning unverified]",
+  "velocity addition|Relativistic Beta Addition [model-proposed; physical meaning unverified]|Total relativistic energy / mc\u00b2 [model-proposed; physical meaning unverified]",
+  "velocity addition|Relativistic Beta Addition [model-proposed; physical meaning unverified]|Relativistic momentum magnitude ratio [model-proposed; physical meaning unverified]",
+  "velocity addition|Relativistic Beta Addition [model-proposed; physical meaning unverified]|Relativistic Energy-Momentum Ratio [model-proposed; physical meaning unverified]",
+  "velocity addition|Relativistic Beta Addition [model-proposed; physical meaning unverified]|Relativistic Energy-Momentum Invariant [model-proposed; physical meaning unverified]"
  ],
  "edges": [
   {
@@ -25490,9 +25725,63 @@
    "f": "Relative Risk Sensitivity Index [model-proposed; physical meaning unverified]",
    "g": "Relative Risk Sensitivity [model-proposed; physical meaning unverified]",
    "k": "1"
+  },
+  {
+   "family": "velocity addition",
+   "f": "Lorentz factor of the composed motion",
+   "g": "Relativistic Beta Addition [model-proposed; physical meaning unverified]",
+   "k": "1"
+  },
+  {
+   "family": "velocity addition",
+   "f": "product of the two Lorentz factors",
+   "g": "Relativistic Beta Addition [model-proposed; physical meaning unverified]",
+   "k": "1"
+  },
+  {
+   "family": "velocity addition",
+   "f": "Doppler factor of the composed motion",
+   "g": "Relativistic Beta Addition [model-proposed; physical meaning unverified]",
+   "k": "1"
+  },
+  {
+   "family": "velocity addition",
+   "f": "Lorentz gamma of the composed motion [model-proposed; physical meaning unverified]",
+   "g": "Relativistic Beta Addition [model-proposed; physical meaning unverified]",
+   "k": "1"
+  },
+  {
+   "family": "velocity addition",
+   "f": "Relativistic Beta Addition [model-proposed; physical meaning unverified]",
+   "g": "composed speed / c",
+   "k": "1"
+  },
+  {
+   "family": "two-body decay",
+   "f": "Lorentz factor of product 1",
+   "g": "Kinetic Energy Ratio of Products [model-proposed; physical meaning unverified]",
+   "k": "1"
+  },
+  {
+   "family": "two-body decay",
+   "f": "Ratio of kinetic energies of product 1 to product 2 [model-proposed; physical meaning unverified]",
+   "g": "Kinetic Energy Ratio of Products [model-proposed; physical meaning unverified]",
+   "k": "1/2"
+  },
+  {
+   "family": "two-body decay",
+   "f": "Kinetic Energy Ratio of Products [model-proposed; physical meaning unverified]",
+   "g": "kinetic energy released Q / (Mc\u00b2)",
+   "k": "1/2"
+  },
+  {
+   "family": "two-body decay",
+   "f": "Kinetic Energy Ratio of Products [model-proposed; physical meaning unverified]",
+   "g": "kinetic energy of product 1 / (Mc\u00b2)",
+   "k": "2"
   }
  ],
- "rounds": 1282,
+ "rounds": 1296,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",
