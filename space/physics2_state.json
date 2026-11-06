@@ -13412,6 +13412,56 @@
    "family": "Compton scattering",
    "expr": "1 - c/(c*x + 1)",
    "why": "not positive on the physical domain"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "((1 - 2*c1 + c2)**2/9)/((1 - 2*c2 + c1)**2/9)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "sqrt(-L*p + 1)/sqrt(1 - L) - 1",
+   "why": "affine combination of known quantities (expected wealth, Insurance Risk Exposure Index [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "L*p/(sqrt(-L*p + 1) - sqrt(1 - L) + 1)",
+   "why": "affine combination of known quantities (expected wealth, Relative Risk Sensitivity [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "(-L*p + 1)**2/(-p*sqrt(1 - L) + p + sqrt(1 - L) + 1)**2",
+   "why": "affine combination of known quantities (expected wealth, Insurance Risk Adjustment Factor Squared [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "(-L*p + 1)**2/(sqrt(1 - L) - 1 + 1/(p*sqrt(1 - L) - p + 1))**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(1/3 + r**2 - 4*r**3/3)/(v)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(1/3 - r**2 + 2*r**3/3)/(1/3 + r**2 - 4*r**3/3)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(2/3 + v**3/3)/(2*(1 - r**3)/3 + v*r**2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "r/v",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "((1 + a**2 - b**2)/2)/((1 - a**2 + b**2)/2)",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), 1/(energy of product 2 / (Mc\u00b2)))"
   }
  ],
  "tried": [
@@ -15576,7 +15626,23 @@
   "insurance and risk|Insurance Risk Exposure Index [model-proposed; physical meaning unverified]|expected wealth",
   "insurance and risk|Insurance Risk Exposure Index [model-proposed; physical meaning unverified]|expected utility",
   "insurance and risk|Insurance Risk Exposure Index [model-proposed; physical meaning unverified]|certainty equivalent",
-  "insurance and risk|Insurance Risk Exposure Index [model-proposed; physical meaning unverified]|risk premium"
+  "insurance and risk|Insurance Risk Exposure Index [model-proposed; physical meaning unverified]|risk premium",
+  "insurance and risk|Insurance Risk Exposure Index [model-proposed; physical meaning unverified]|actuarially fair insurance premium",
+  "insurance and risk|Insurance Risk Exposure Index [model-proposed; physical meaning unverified]|maximum premium the person would pay for full insurance",
+  "insurance and risk|Insurance Risk Exposure Index [model-proposed; physical meaning unverified]|variance of wealth",
+  "insurance and risk|Insurance Risk Exposure Index [model-proposed; physical meaning unverified]|Risk-adjusted expected utility [model-proposed; physical meaning unverified]",
+  "insurance and risk|Insurance Risk Exposure Index [model-proposed; physical meaning unverified]|Insurance risk sensitivity [model-proposed; physical meaning unverified]",
+  "insurance and risk|Insurance Risk Exposure Index [model-proposed; physical meaning unverified]|Coefficient of Risk Aversion [model-proposed; physical meaning unverified]",
+  "insurance and risk|Insurance Risk Exposure Index [model-proposed; physical meaning unverified]|Relative Risk Aversion [model-proposed; physical meaning unverified]",
+  "insurance and risk|Insurance Risk Exposure Index [model-proposed; physical meaning unverified]|Expected Utility Deviation [model-proposed; physical meaning unverified]",
+  "insurance and risk|Insurance Risk Exposure Index [model-proposed; physical meaning unverified]|Insurance Coverage Ratio [model-proposed; physical meaning unverified]",
+  "insurance and risk|Insurance Risk Exposure Index [model-proposed; physical meaning unverified]|Insurance Risk Adjustment Factor [model-proposed; physical meaning unverified]",
+  "insurance and risk|Insurance Risk Exposure Index [model-proposed; physical meaning unverified]|Insurance Risk Adjustment Index [model-proposed; physical meaning unverified]",
+  "insurance and risk|Insurance Risk Exposure Index [model-proposed; physical meaning unverified]|Insurance Risk Sensitivity Ratio [model-proposed; physical meaning unverified]",
+  "insurance and risk|Insurance Risk Exposure Index [model-proposed; physical meaning unverified]|Relative Risk Sensitivity [model-proposed; physical meaning unverified]",
+  "insurance and risk|Insurance Risk Exposure Index [model-proposed; physical meaning unverified]|Insurance Risk Adjustment Ratio [model-proposed; physical meaning unverified]",
+  "insurance and risk|Insurance Risk Exposure Index [model-proposed; physical meaning unverified]|Insurance Risk Adjustment Factor Squared [model-proposed; physical meaning unverified]",
+  "insurance and risk|Insurance Risk Exposure Index [model-proposed; physical meaning unverified]|Relative Risk Aversion Squared [model-proposed; physical meaning unverified]"
  ],
  "edges": [
   {
@@ -18704,9 +18770,21 @@
    "f": "Fraction of kinetic energy retained by projectile relative to initial kinetic en [model-proposed; physical meaning unverified]",
    "g": "Fraction of kinetic energy retained by the target [model-proposed; physical meaning unverified]",
    "k": "7/3"
+  },
+  {
+   "family": "insurance and risk",
+   "f": "Insurance Risk Exposure Index [model-proposed; physical meaning unverified]",
+   "g": "variance of wealth",
+   "k": "2"
+  },
+  {
+   "family": "insurance and risk",
+   "f": "Insurance Risk Exposure Index [model-proposed; physical meaning unverified]",
+   "g": "Insurance Coverage Ratio [model-proposed; physical meaning unverified]",
+   "k": "1/2"
   }
  ],
- "rounds": 837,
+ "rounds": 841,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",

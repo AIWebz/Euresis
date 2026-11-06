@@ -925,3 +925,7 @@
 - 2026-11-06 05:21 round 836: velocity addition
 - 2026-11-06 05:22 round 837: Compton scattering
 - 2026-11-06 05:23 round 838: Cournot duopoly
+- 2026-11-06 05:23 round 839: insurance and risk
+- 2026-11-06 05:25 round 840: auction with a reserve price
+- 2026-11-06 05:26 round 841: two-body decay
+- 2026-11-06 05:27 segment end: 841 rounds, 4 discoveries, 2 known laws rediscovered
