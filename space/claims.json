@@ -1313555,5 +1313555,144 @@
   "statement": "In 'Data from: Evidence for morph-specific substrate choice in a green-brown polymorphic grass' (Zenodo, doi 10.5061/dryad.hqbzkh1hd): 'BFD_RP01_D4' is linear in 'BFL_RP01_L2' (R\u00b2 = 0.924 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-ea75c17115e0",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "L*p/(-p*sqrt(1 - L) + p + sqrt(1 - L) - sqrt(-L*p + 1) + 1) >= 1/2*(L*p)",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 1143",
+  "statement": "[economics: insurance and risk] Insurance Risk Sensitivity Index [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 actuarially fair insurance premium   on p < 1, L < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-1be2b3948e27",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "L*p/(-p*sqrt(1 - L) + p + sqrt(1 - L) - sqrt(-L*p + 1) + 1) >= 1/2*(1 - (p*sqrt(1 - L) - p + 1)**2)",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 1143",
+  "statement": "[economics: insurance and risk] Insurance Risk Sensitivity Index [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 maximum premium the person would pay for full insurance   on p < 1, L < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-0429d7784958",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'actuarially fair insurance premium'",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "L*p/(-p*sqrt(1 - L) + p + sqrt(1 - L) - sqrt(-L*p + 1) + 1) >= 1/2*(L*p/(-sqrt(1 - L) + sqrt(-L*p + 1) + 1))",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 1143",
+  "statement": "[economics: insurance and risk] Insurance Risk Sensitivity Index [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 Relative Risk Sensitivity [model-proposed; physical meaning unverified]   on p < 1, L < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-5eddf0c5447d",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "claim": "(-b**2/2 + (1 - a)**2/2)/(-a**2/2 - 3*b**2/2 + (1 - a)**2 + 1/2) >= 2/3*((-b**2 + (1 - a)**2)/(-a**2 - b**2 + (1 - a)**2 + 1))",
+   "symbols": [
+    "a",
+    "b"
+   ]
+  },
+  "source": "physics_discover2 round 1145",
+  "statement": "[physics: two-body decay] Ratio of kinetic energy of product 1 to product 2 [model-proposed; physical meaning unverified] \u2265 2/3 \u00d7 Ratio of kinetic energy of product 1 to total kinetic energy [model-proposed; physical meaning unverified]   on a < 1, b < 1, a + b < 1 (tight only at the edge of the domain, near (4.94e-16, 1.82e-08))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-f2ce02d272ba",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "claim": "(-b**2/2 + (1 - a)**2/2)/(-a**2/2 - 3*b**2/2 + (1 - a)**2 + 1/2) >= 1/4*(1 - (a + b)**2)",
+   "symbols": [
+    "a",
+    "b"
+   ]
+  },
+  "source": "physics_discover2 round 1145",
+  "statement": "[physics: two-body decay] Ratio of kinetic energy of product 1 to product 2 [model-proposed; physical meaning unverified] \u2265 1/4 \u00d7 Invariant mass squared of the system [model-proposed; physical meaning unverified]   on a < 1, b < 1, a + b < 1 (tight only at the edge of the domain, near (1, 1.71e-17))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]
