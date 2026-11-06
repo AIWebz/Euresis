@@ -592,3 +592,4 @@
 - 2026-11-06 04:05 FINDING (confirmed on held-out rows): In 'Raw data from: "Thermal mismatches explain consumer-resource dynamics in response to envir' (Zenodo, doi 10.5281/zenodo.7974614): 'Av_Controls' is linear in 'Av_Daphnia' (R² = 0.982 on the discovery half); held-out R² = 0.970 [emp-d4ff2ff132d8]
 - 2026-11-06 04:05 FINDING (confirmed on held-out rows): In 'Raw data from: "Thermal mismatches explain consumer-resource dynamics in response to envir' (Zenodo, doi 10.5281/zenodo.7974614): 'IntS_Schaum' is linear in 'ln_N_D' (R² = 0.996 on the discovery half); held-out R² = 0.943 [emp-a3166edd1f1c]
 - 2026-11-06 04:05 data feeds: 4586 datasets analysed so far, 531 confirmed findings
+- 2026-11-06 04:52 data feeds: online
