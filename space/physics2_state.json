@@ -35,7 +35,8 @@
    "Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified]": "-e**2*m**2/(m + 1)**2 + 1",
    "Fraction of kinetic energy transferred to the target [model-proposed; physical meaning unverified]": "e**2*m**2/(m + 1)**2 + e**2",
    "Fraction of kinetic energy retained by the target [model-proposed; physical meaning unverified]": "e**2*m**2/(m + 1)**2 + e**2*m/(m + 1)",
-   "Fraction of kinetic energy retained by the projectile relative to initial kineti [model-proposed; physical meaning unverified]": "-e**2*m/(m + 1) - m*(1 - e**2)/(m + 1) - (1 - e**2)*(1 - m)/(m + 1) + 1"
+   "Fraction of kinetic energy retained by the projectile relative to initial kineti [model-proposed; physical meaning unverified]": "-e**2*m/(m + 1) - m*(1 - e**2)/(m + 1) - (1 - e**2)*(1 - m)/(m + 1) + 1",
+   "Fraction of kinetic energy retained by projectile relative to initial kinetic en [model-proposed; physical meaning unverified]": "e**2*m**2/(m + 1)**2 + e**2*m/(m + 1) - m*(1 - e**2)/(m + 1) - (1 - e**2)/(m + 1) + 1"
   },
   "driven oscillator": {
    "amplitude / static deflection": "1/sqrt((1 - r**2)**2 + (2*z*r)**2)",
@@ -108,7 +109,8 @@
    "Hirshleifer Index [model-proposed; physical meaning unverified]": "((-2*c1 + c2 + 1)**2 + (c1 - 2*c2 + 1)**2)/((1 - c1)**2 + (1 - c2)**2)",
    "Mark-up Ratio [model-proposed; physical meaning unverified]": "(1 - c1)*(c1 - 2*c2 + 1)/((1 - c2)*(-2*c1 + c2 + 1))",
    "Price Elasticity of Demand [model-proposed; physical meaning unverified]": "(-c1 - c2 + 1)**2/((-2*c1 + c2 + 1)*(c1 - 2*c2 + 1))",
-   "Market Price to Marginal Cost Ratio [model-proposed; physical meaning unverified]": "(c1/3 + c2/3 + 1/3)/(c1 + c2)"
+   "Market Price to Marginal Cost Ratio [model-proposed; physical meaning unverified]": "(c1/3 + c2/3 + 1/3)/(c1 + c2)",
+   "Price to Marginal Cost Ratio for Firm 2 [model-proposed; physical meaning unverified]": "(c1/3 + c2/3 + 1/3)/c2"
   },
   "insurance and risk": {
    "expected wealth": "1 - p*L",
@@ -12734,6 +12736,291 @@
    "family": "two-body decay",
    "expr": "sqrt((1 - (a + b)**2)*(1 - (a - b)**2))/sqrt((1 + a**2 - b**2)**2 + (1 - a**2 + b**2)**2)",
    "why": "a power or product of known quantities"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2*m**2/(m + 1)**2 + e**2*m/(m + 1)",
+   "why": "affine combination of known quantities (target speed / initial speed, Fraction of kinetic energy retained by the target [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "z**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "r**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "2*z*r",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "1/sqrt((1 - r**2)**2 + (2*z*r)**2)",
+   "why": "affine combination of known quantities (amplitude / static deflection)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 - u**2)*(1 - v**2)) / sqrt(1 - ((u + v)/(1 + u*v))**2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "1 - c/(c*x + 1)",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "((1 - c1 - c2)**2)/((1 - 2*c1 + c2)**2 + (1 - 2*c2 + c1)**2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "((1 + c1 + c2)/3)/c1",
+   "why": "affine combination of known quantities (output of firm 1, 1/(Lerner Index for Firm 1 [model-proposed; physical meaning unverified]))"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "(((1 - 2*c1 + c2)**2 + (1 - 2*c2 + c1)**2)/9)/(((1 - c1)**2/4) + ((1 - c2)**2/4))",
+   "why": "affine combination of known quantities (output of firm 1, Hirshleifer Index [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "sqrt(-L*p + 1)/(sqrt(1 - L) - 1 + 1/(p*sqrt(1 - L) - p + 1))",
+   "why": "affine combination of known quantities (expected wealth, Insurance Risk Adjustment Factor [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "L*p/(-p*sqrt(1 - L) + p + sqrt(1 - L) + sqrt(-L*p + 1) - 1)",
+   "why": "affine combination of known quantities (expected wealth, Insurance Risk Sensitivity Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "L*p/(-sqrt(1 - L) + sqrt(-L*p + 1) + 1)",
+   "why": "affine combination of known quantities (expected wealth, Relative Risk Sensitivity [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "sqrt(-L*p + 1)/(-p*sqrt(1 - L) + p - sqrt(1 - L) + 1)",
+   "why": "affine combination of known quantities (expected wealth, Insurance Risk Adjustment Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(-2*r**3/3 + r**2*v + 2/3)/(2*(1 - r**3)/3 + v*r**2 - (1/3 + r**2 - 4*r**3/3))",
+   "why": "affine combination of known quantities (1/(expected bidder surplus given reserve and seller's value [model-proposed; physical meaning unverified]), 1/(Bidder Surplus Given Reserve and Seller Value Ratio [model-proposed; physical meaning unverified]))"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(1/3 - r**2 + 2*r**3/3)/(2*(1 - r**3)/3 + v*r**2 - (1/3 + r**2 - 4*r**3/3))",
+   "why": "affine combination of known quantities (1/(expected bidder surplus given reserve and seller's value [model-proposed; physical meaning unverified]), 1/(Bidder Surplus Given Reserve and Seller Value Ratio [model-proposed; physical meaning unverified]))"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(1/3 + r**2 - 4*r**3/3)/(2*(1 - r**3)/3 + v*r**2 - (1/3 + r**2 - 4*r**3/3))",
+   "why": "affine combination of known quantities (1/(expected bidder surplus given reserve and seller's value [model-proposed; physical meaning unverified]), 1/(Bidder Surplus Given Reserve and Seller Value Ratio [model-proposed; physical meaning unverified]))"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(1/3 - r**2 + 2*r**3/3)/(1/3 + r**2 - 4*r**3/3 - (1/3 - r**2 + 2*r**3/3))",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "((1 - a**2 + b**2)/2)/((1 + a**2 - b**2)/2)",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), 1/(energy of product 1 / (Mc\u00b2)))"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2*m**2/(m + 1)**2 + e**2*m/(m + 1)",
+   "why": "affine combination of known quantities (target speed / initial speed, Fraction of kinetic energy retained by the target [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "atan2(2*z*r, 1 - r**2)",
+   "why": "only + \u2212 \u00d7 \u00f7, integer powers and square roots (so the prover can decide it)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "1/sqrt((1 - r**2)**2 + (2*z*r)**2)",
+   "why": "affine combination of known quantities (amplitude / static deflection)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "2*r**2*z/(4*r**2*z**2 + (1 - r**2)**2)",
+   "why": "affine combination of known quantities (amplitude / static deflection, mean absorbed power (normalised))"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(1 - r**2)**2/(4*r**2*z**2 + (1 - r**2)**2)",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 - u**2)*(1 - v**2)) / sqrt(1 - ((u + v)/(1 + u*v))**2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "c/(x + 1) - 1",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "c*x**2/(x + 1) - c*x",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "sqrt(c**2*x**2 + 1)/(x*(c*x + 1)) - 1",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "sqrt(c**2*x**2/(c*x + 1)**2 + c*x**2/(c*x + 1)) - 1",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "((1 - 2*c1 + c2)/3)/((1 - 2*c2 + c1)/3)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "(-L*p + 1)**2/(-p*sqrt(1 - L) + p + sqrt(1 - L) + 1)**2",
+   "why": "affine combination of known quantities (expected wealth, Insurance Risk Adjustment Factor Squared [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "sqrt(1 - L)/(sqrt(1 - L) - 1 + 1/(p*sqrt(1 - L) - p + 1))",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "sqrt(-L*p + 1)/(-p*sqrt(1 - L) + p + sqrt(1 - L) + 1)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(1/3 - r**2 + 2*r**3/3)/(2*(1 - r**3)/3 + v*r**2 - (1/3 + r**2 - 4*r**3/3))",
+   "why": "affine combination of known quantities (1/(expected bidder surplus given reserve and seller's value [model-proposed; physical meaning unverified]), 1/(Bidder Surplus Given Reserve and Seller Value Ratio [model-proposed; physical meaning unverified]))"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(2*(1 - r**3)/3 + v*r**2)/(r**2*v - r**2 + 1/3 - (1/3 - r**2 + 2*r**3/3))",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(1/3 + r**2 - 4*r**3/3)/(2*(1 - r**3)/3 + v*r**2 - (1/3 - r**2 + 2*r**3/3))",
+   "why": "affine combination of known quantities (expected revenue, probability the seller's value is below reserve [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(1/3 - r**2 + 2*r**3/3)/(r**2*v - r**2 + 1/3 - (1/3 + r**2 - 4*r**3/3))",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "sqrt((1 + a**2 - b**2)/(1 - a**2 + b**2))",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "sqrt((a**2 + b**2 - (a - b)**2)/(-a - b + 1)) / sqrt(1 - (a + b)**2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2",
+   "why": "affine combination of known quantities (Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified], Fraction of kinetic energy transferred to the target [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2*m/(1 + m) + e**2*m**2/(1 + m)**2",
+   "why": "affine combination of known quantities (target speed / initial speed, Fraction of kinetic energy retained by the target [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2",
+   "why": "affine combination of known quantities (Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified], Fraction of kinetic energy transferred to the target [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "atan2(2*z*r, 1 - r**2)",
+   "why": "only + \u2212 \u00d7 \u00f7, integer powers and square roots (so the prover can decide it)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "z**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "1/(4*z**2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "1/sqrt((1 - r**2)**2 + (2*z*r)**2)",
+   "why": "affine combination of known quantities (amplitude / static deflection)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 + u)/(1 - u)) * sqrt((1 + v)/(1 - v)) / sqrt((1 + (u + v)/(1 + u*v))/(1 - (u + v)/(1 + u*v))",
+   "why": "affine combination of known quantities (composed speed / c)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 - u**2)*(1 - v**2)) / sqrt(1 - ((u + v)/(1 + u*v))**2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "1/(1 + x*c) + 1/(x + 1) - 1",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "x**2*c/(1 + x*c) - 1/(1 + x*c) + 1",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, electron kinetic energy / (m_e c\u00b2))"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "1 - c/(c*x + 1) - 1/(c*x + 1) + 1",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "sqrt(c**2*x**2 + 1)/(x*(c*x + 1)) - 1/(1 + x*c) + 1",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, Scattered photon momentum / initial photon momentum [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "((1 - 2*c1 + c2)/3)/((1 - 2*c2 + c1)/3)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "(-L*p + 1)**2/(-p*sqrt(1 - L) + p - sqrt(1 - L) + 1)**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "L*p/(-p*sqrt(1 - L) + p + sqrt(1 - L) + sqrt(-L*p + 1) - 1)",
+   "why": "affine combination of known quantities (expected wealth, Insurance Risk Sensitivity Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "sqrt(-L*p + 1)/(-p + sqrt(1 - L) + 1)",
+   "why": "affine combination of known quantities (expected wealth, Insurance Risk Adjustment Index [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "sqrt(p)*sqrt((1 - p)*(sqrt(1 - L) - 1)**2)/sqrt(1 - p*L)",
+   "why": "a power or product of known quantities"
   }
  ],
  "tried": [
@@ -14816,7 +15103,57 @@
   "two-body decay|Gamma factor of product 1 [model-proposed; physical meaning unverified]|Invariant mass squared of the system [model-proposed; physical meaning unverified]",
   "two-body decay|Gamma factor of product 1 [model-proposed; physical meaning unverified]|Relative velocity squared of products [model-proposed; physical meaning unverified]",
   "two-body decay|Gamma factor of product 1 [model-proposed; physical meaning unverified]|Invariant mass of product 1 [model-proposed; physical meaning unverified]",
-  "two-body decay|Gamma factor of product 1 [model-proposed; physical meaning unverified]|Invariant mass of product 2 [model-proposed; physical meaning unverified]"
+  "two-body decay|Gamma factor of product 1 [model-proposed; physical meaning unverified]|Invariant mass of product 2 [model-proposed; physical meaning unverified]",
+  "Cournot duopoly|output of firm 1|Price to Marginal Cost Ratio for Firm 2 [model-proposed; physical meaning unverified]",
+  "Cournot duopoly|output of firm 2|Price to Marginal Cost Ratio for Firm 2 [model-proposed; physical meaning unverified]",
+  "Cournot duopoly|market price|Price to Marginal Cost Ratio for Firm 2 [model-proposed; physical meaning unverified]",
+  "Cournot duopoly|profit of firm 1|Price to Marginal Cost Ratio for Firm 2 [model-proposed; physical meaning unverified]",
+  "Cournot duopoly|profit of firm 2|Price to Marginal Cost Ratio for Firm 2 [model-proposed; physical meaning unverified]",
+  "Cournot duopoly|consumer surplus|Price to Marginal Cost Ratio for Firm 2 [model-proposed; physical meaning unverified]",
+  "Cournot duopoly|total industry profit|Price to Marginal Cost Ratio for Firm 2 [model-proposed; physical meaning unverified]",
+  "Cournot duopoly|firm 1's profit as a monopolist|Price to Marginal Cost Ratio for Firm 2 [model-proposed; physical meaning unverified]",
+  "Cournot duopoly|Lerner Index for Firm 1 [model-proposed; physical meaning unverified]|Price to Marginal Cost Ratio for Firm 2 [model-proposed; physical meaning unverified]",
+  "Cournot duopoly|Hirshleifer Index [model-proposed; physical meaning unverified]|Price to Marginal Cost Ratio for Firm 2 [model-proposed; physical meaning unverified]",
+  "Cournot duopoly|Mark-up Ratio [model-proposed; physical meaning unverified]|Price to Marginal Cost Ratio for Firm 2 [model-proposed; physical meaning unverified]",
+  "Cournot duopoly|Price Elasticity of Demand [model-proposed; physical meaning unverified]|Price to Marginal Cost Ratio for Firm 2 [model-proposed; physical meaning unverified]",
+  "Cournot duopoly|Market Price to Marginal Cost Ratio [model-proposed; physical meaning unverified]|Price to Marginal Cost Ratio for Firm 2 [model-proposed; physical meaning unverified]",
+  "Cournot duopoly|Price to Marginal Cost Ratio for Firm 2 [model-proposed; physical meaning unverified]|output of firm 1",
+  "Cournot duopoly|Price to Marginal Cost Ratio for Firm 2 [model-proposed; physical meaning unverified]|output of firm 2",
+  "Cournot duopoly|Price to Marginal Cost Ratio for Firm 2 [model-proposed; physical meaning unverified]|market price",
+  "Cournot duopoly|Price to Marginal Cost Ratio for Firm 2 [model-proposed; physical meaning unverified]|profit of firm 1",
+  "Cournot duopoly|Price to Marginal Cost Ratio for Firm 2 [model-proposed; physical meaning unverified]|profit of firm 2",
+  "Cournot duopoly|Price to Marginal Cost Ratio for Firm 2 [model-proposed; physical meaning unverified]|consumer surplus",
+  "Cournot duopoly|Price to Marginal Cost Ratio for Firm 2 [model-proposed; physical meaning unverified]|total industry profit",
+  "Cournot duopoly|Price to Marginal Cost Ratio for Firm 2 [model-proposed; physical meaning unverified]|firm 1's profit as a monopolist",
+  "Cournot duopoly|Price to Marginal Cost Ratio for Firm 2 [model-proposed; physical meaning unverified]|Lerner Index for Firm 1 [model-proposed; physical meaning unverified]",
+  "Cournot duopoly|Price to Marginal Cost Ratio for Firm 2 [model-proposed; physical meaning unverified]|Hirshleifer Index [model-proposed; physical meaning unverified]",
+  "Cournot duopoly|Price to Marginal Cost Ratio for Firm 2 [model-proposed; physical meaning unverified]|Mark-up Ratio [model-proposed; physical meaning unverified]",
+  "Cournot duopoly|Price to Marginal Cost Ratio for Firm 2 [model-proposed; physical meaning unverified]|Price Elasticity of Demand [model-proposed; physical meaning unverified]",
+  "Cournot duopoly|Price to Marginal Cost Ratio for Firm 2 [model-proposed; physical meaning unverified]|Market Price to Marginal Cost Ratio [model-proposed; physical meaning unverified]",
+  "collision|target speed / initial speed|Fraction of kinetic energy retained by projectile relative to initial kinetic en [model-proposed; physical meaning unverified]",
+  "collision|momentum transferred / initial momentum|Fraction of kinetic energy retained by projectile relative to initial kinetic en [model-proposed; physical meaning unverified]",
+  "collision|fraction of kinetic energy lost|Fraction of kinetic energy retained by projectile relative to initial kinetic en [model-proposed; physical meaning unverified]",
+  "collision|fraction of kinetic energy given to the target|Fraction of kinetic energy retained by projectile relative to initial kinetic en [model-proposed; physical meaning unverified]",
+  "collision|speed of the centre of mass / initial speed|Fraction of kinetic energy retained by projectile relative to initial kinetic en [model-proposed; physical meaning unverified]",
+  "collision|relative speed after / relative speed before|Fraction of kinetic energy retained by projectile relative to initial kinetic en [model-proposed; physical meaning unverified]",
+  "collision|velocity ratio of target to projectile after collision [model-proposed; physical meaning unverified]|Fraction of kinetic energy retained by projectile relative to initial kinetic en [model-proposed; physical meaning unverified]",
+  "collision|velocity ratio of projectile to target after collision [model-proposed; physical meaning unverified]|Fraction of kinetic energy retained by projectile relative to initial kinetic en [model-proposed; physical meaning unverified]",
+  "collision|relative velocity after collision divided by initial velocity of projectile [model-proposed; physical meaning unverified]|Fraction of kinetic energy retained by projectile relative to initial kinetic en [model-proposed; physical meaning unverified]",
+  "collision|Fraction of kinetic energy retained by projectile [model-proposed; physical meaning unverified]|Fraction of kinetic energy retained by projectile relative to initial kinetic en [model-proposed; physical meaning unverified]",
+  "collision|Fraction of kinetic energy retained by target [model-proposed; physical meaning unverified]|Fraction of kinetic energy retained by projectile relative to initial kinetic en [model-proposed; physical meaning unverified]",
+  "collision|Fraction of kinetic energy retained by the system [model-proposed; physical meaning unverified]|Fraction of kinetic energy retained by projectile relative to initial kinetic en [model-proposed; physical meaning unverified]",
+  "collision|Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified]|Fraction of kinetic energy retained by projectile relative to initial kinetic en [model-proposed; physical meaning unverified]",
+  "collision|Fraction of kinetic energy transferred to the target [model-proposed; physical meaning unverified]|Fraction of kinetic energy retained by projectile relative to initial kinetic en [model-proposed; physical meaning unverified]",
+  "collision|Fraction of kinetic energy retained by the target [model-proposed; physical meaning unverified]|Fraction of kinetic energy retained by projectile relative to initial kinetic en [model-proposed; physical meaning unverified]",
+  "collision|Fraction of kinetic energy retained by the projectile relative to initial kineti [model-proposed; physical meaning unverified]|Fraction of kinetic energy retained by projectile relative to initial kinetic en [model-proposed; physical meaning unverified]",
+  "collision|Fraction of kinetic energy retained by projectile relative to initial kinetic en [model-proposed; physical meaning unverified]|target speed / initial speed",
+  "collision|Fraction of kinetic energy retained by projectile relative to initial kinetic en [model-proposed; physical meaning unverified]|momentum transferred / initial momentum",
+  "collision|Fraction of kinetic energy retained by projectile relative to initial kinetic en [model-proposed; physical meaning unverified]|fraction of kinetic energy lost",
+  "collision|Fraction of kinetic energy retained by projectile relative to initial kinetic en [model-proposed; physical meaning unverified]|fraction of kinetic energy given to the target",
+  "collision|Fraction of kinetic energy retained by projectile relative to initial kinetic en [model-proposed; physical meaning unverified]|speed of the centre of mass / initial speed",
+  "collision|Fraction of kinetic energy retained by projectile relative to initial kinetic en [model-proposed; physical meaning unverified]|relative speed after / relative speed before",
+  "collision|Fraction of kinetic energy retained by projectile relative to initial kinetic en [model-proposed; physical meaning unverified]|velocity ratio of target to projectile after collision [model-proposed; physical meaning unverified]",
+  "collision|Fraction of kinetic energy retained by projectile relative to initial kinetic en [model-proposed; physical meaning unverified]|velocity ratio of projectile to target after collision [model-proposed; physical meaning unverified]"
  ],
  "edges": [
   {
@@ -17812,9 +18149,123 @@
    "f": "Gamma factor of product 1 [model-proposed; physical meaning unverified]",
    "g": "Invariant mass of product 2 [model-proposed; physical meaning unverified]",
    "k": "1/2"
+  },
+  {
+   "family": "Cournot duopoly",
+   "f": "Price to Marginal Cost Ratio for Firm 2 [model-proposed; physical meaning unverified]",
+   "g": "output of firm 1",
+   "k": "2"
+  },
+  {
+   "family": "Cournot duopoly",
+   "f": "Price to Marginal Cost Ratio for Firm 2 [model-proposed; physical meaning unverified]",
+   "g": "market price",
+   "k": "2"
+  },
+  {
+   "family": "Cournot duopoly",
+   "f": "Price to Marginal Cost Ratio for Firm 2 [model-proposed; physical meaning unverified]",
+   "g": "profit of firm 1",
+   "k": "4"
+  },
+  {
+   "family": "Cournot duopoly",
+   "f": "Price to Marginal Cost Ratio for Firm 2 [model-proposed; physical meaning unverified]",
+   "g": "profit of firm 2",
+   "k": "897/43"
+  },
+  {
+   "family": "Cournot duopoly",
+   "f": "Price to Marginal Cost Ratio for Firm 2 [model-proposed; physical meaning unverified]",
+   "g": "consumer surplus",
+   "k": "8"
+  },
+  {
+   "family": "Cournot duopoly",
+   "f": "Price to Marginal Cost Ratio for Firm 2 [model-proposed; physical meaning unverified]",
+   "g": "total industry profit",
+   "k": "4"
+  },
+  {
+   "family": "Cournot duopoly",
+   "f": "Price to Marginal Cost Ratio for Firm 2 [model-proposed; physical meaning unverified]",
+   "g": "firm 1's profit as a monopolist",
+   "k": "4"
+  },
+  {
+   "family": "Cournot duopoly",
+   "f": "Price to Marginal Cost Ratio for Firm 2 [model-proposed; physical meaning unverified]",
+   "g": "Lerner Index for Firm 1 [model-proposed; physical meaning unverified]",
+   "k": "16/9"
+  },
+  {
+   "family": "Cournot duopoly",
+   "f": "Price to Marginal Cost Ratio for Firm 2 [model-proposed; physical meaning unverified]",
+   "g": "Hirshleifer Index [model-proposed; physical meaning unverified]",
+   "k": "5/9"
+  },
+  {
+   "family": "Cournot duopoly",
+   "f": "Price to Marginal Cost Ratio for Firm 2 [model-proposed; physical meaning unverified]",
+   "g": "Mark-up Ratio [model-proposed; physical meaning unverified]",
+   "k": "2/3"
+  },
+  {
+   "family": "Cournot duopoly",
+   "f": "Price to Marginal Cost Ratio for Firm 2 [model-proposed; physical meaning unverified]",
+   "g": "Market Price to Marginal Cost Ratio [model-proposed; physical meaning unverified]",
+   "k": "1"
+  },
+  {
+   "family": "collision",
+   "f": "momentum transferred / initial momentum",
+   "g": "Fraction of kinetic energy retained by projectile relative to initial kinetic en [model-proposed; physical meaning unverified]",
+   "k": "4/7"
+  },
+  {
+   "family": "collision",
+   "f": "relative speed after / relative speed before",
+   "g": "Fraction of kinetic energy retained by projectile relative to initial kinetic en [model-proposed; physical meaning unverified]",
+   "k": "4/7"
+  },
+  {
+   "family": "collision",
+   "f": "velocity ratio of target to projectile after collision [model-proposed; physical meaning unverified]",
+   "g": "Fraction of kinetic energy retained by projectile relative to initial kinetic en [model-proposed; physical meaning unverified]",
+   "k": "4/7"
+  },
+  {
+   "family": "collision",
+   "f": "Fraction of kinetic energy retained by target [model-proposed; physical meaning unverified]",
+   "g": "Fraction of kinetic energy retained by projectile relative to initial kinetic en [model-proposed; physical meaning unverified]",
+   "k": "2/7"
+  },
+  {
+   "family": "collision",
+   "f": "Fraction of kinetic energy retained by the system [model-proposed; physical meaning unverified]",
+   "g": "Fraction of kinetic energy retained by projectile relative to initial kinetic en [model-proposed; physical meaning unverified]",
+   "k": "3/7"
+  },
+  {
+   "family": "collision",
+   "f": "Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified]",
+   "g": "Fraction of kinetic energy retained by projectile relative to initial kinetic en [model-proposed; physical meaning unverified]",
+   "k": "3/7"
+  },
+  {
+   "family": "collision",
+   "f": "Fraction of kinetic energy transferred to the target [model-proposed; physical meaning unverified]",
+   "g": "Fraction of kinetic energy retained by projectile relative to initial kinetic en [model-proposed; physical meaning unverified]",
+   "k": "5/7"
+  },
+  {
+   "family": "collision",
+   "f": "Fraction of kinetic energy retained by the projectile relative to initial kineti [model-proposed; physical meaning unverified]",
+   "g": "Fraction of kinetic energy retained by projectile relative to initial kinetic en [model-proposed; physical meaning unverified]",
+   "k": "2/7"
   }
  ],
- "rounds": 785,
+ "rounds": 807,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",
