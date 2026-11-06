@@ -1183846,5 +1183846,59 @@
   "statement": "In 'Simulated pollinator decline has similar effects on seed production of female and hermaphr' (Zenodo, doi 10.5061/dryad.rjdfn2zfw): 'st.avg.female' is linear in 'st.avg.DDS' (R\u00b2 = 0.938 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-5b1615009c2d",
+  "kind": "physics-relation",
+  "novelty": "not a known result in Euresis' knowledge; not implied by proved bounds; physics literature unchecked (arXiv unreachable from this environment); involves a model-proposed quantity whose physical meaning is unverified",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "1/sqrt(1 - L) >= 27/2*(sqrt(-L*p + 1)/(p*sqrt(1 - L) - p + 1) - 1)",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 999",
+  "statement": "[economics: insurance and risk] Relative Risk Aversion [model-proposed; physical meaning unverified] \u2265 27/2 \u00d7 Expected Utility Adjustment Factor [model-proposed; physical meaning unverified]   on p < 1, L < 1 (equality at (p, L) \u2248 (0.9, 0.987654))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-05bfb8fd890c",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "-1 + sqrt(-L*p + 1)/sqrt(1 - L) >= 1*(sqrt(-L*p + 1)/(p*sqrt(1 - L) - p + 1) - 1)",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 999",
+  "statement": "[economics: insurance and risk] Insurance Risk Exposure Index [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Expected Utility Adjustment Factor [model-proposed; physical meaning unverified]   on p < 1, L < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]

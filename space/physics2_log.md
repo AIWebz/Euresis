@@ -1095,3 +1095,10 @@
 - 2026-11-06 11:10 segment end: 993 rounds, 4 discoveries, 2 known laws rediscovered
 - 2026-11-06 11:41 segment start (budget 30 min; model: Qwen3-8B; 4 discoveries so far)
 - 2026-11-06 11:41 round 994: collision
+- 2026-11-06 11:42 round 995: driven oscillator
+- 2026-11-06 11:43 round 996: velocity addition
+- 2026-11-06 11:44 round 997: Compton scattering
+- 2026-11-06 11:45 round 998: Cournot duopoly
+- 2026-11-06 11:46 round 999: insurance and risk
+- 2026-11-06 11:47 DISCOVERY (proved, sharp to 1e-6, two-variable): [economics: insurance and risk] Relative Risk Aversion [model-proposed; physical meaning unverified] ≥ 27/2 × Expected Utility Adjustment Factor [model-proposed; physical meaning unverified]   on p < 1, L < 1 (equality at (p, L) ≈ (0.9, 0.987654))  [phy-5b1615009c2d]
+- 2026-11-06 11:47 round 1000: auction with a reserve price
