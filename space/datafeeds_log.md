@@ -743,3 +743,4 @@
 - 2026-11-06 10:38 FINDING (confirmed on held-out rows): In 'Male-like ornamentation in female hummingbirds results from social harassment rather than ' (Zenodo, doi 10.5281/zenodo.5035295): 'vR_sd_t' is linear in 'vG_sd_f' (R² = 0.916 on the discovery half); held-out R² = 0.862 [emp-ea9bd0d63edd]
 - 2026-11-06 10:39 FINDING (confirmed on held-out rows): In 'Male-like ornamentation in female hummingbirds results from social harassment rather than ' (Zenodo, doi 10.5281/zenodo.5035295): 'vG_mean_h' is linear in 'vR_mean_h' (R² = 0.913 on the discovery half); held-out R² = 0.891 [emp-6b5df497493e]
 - 2026-11-06 10:39 data feeds: 5481 datasets analysed so far, 668 confirmed findings
+- 2026-11-06 11:40 data feeds: online
