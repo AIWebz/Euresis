@@ -774,3 +774,6 @@
 - 2026-11-06 00:15 round 697: two-body decay
 - 2026-11-06 00:17 round 698: collision
 - 2026-11-06 00:19 round 699: driven oscillator
+- 2026-11-06 00:20 round 700: velocity addition
+- 2026-11-06 00:21 round 701: Compton scattering
+- 2026-11-06 00:22 segment end: 701 rounds, 4 discoveries, 2 known laws rediscovered

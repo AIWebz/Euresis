@@ -11577,6 +11577,21 @@
    "family": "collision",
    "expr": "((1 + e)*m/(1 + m)) / ((1 - e)*m/(1 + m))",
    "why": "a power or product of known quantities"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt((1 - r**2)**2 + (2*z*r)**2)",
+   "why": "affine combination of known quantities (amplitude / static deflection, 1/(amplitude / static deflection))"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 - u**2)*(1 - v**2)) / sqrt(1 - ((u + v)/(1 + u*v))**2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "1 - c/(c*x + 1)",
+   "why": "not positive on the physical domain"
   }
  ],
  "tried": [
@@ -16543,7 +16558,7 @@
    "k": "2/3"
   }
  ],
- "rounds": 698,
+ "rounds": 701,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",
