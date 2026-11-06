@@ -685,3 +685,4 @@
 - 2026-11-06 07:53 FINDING (confirmed on held-out rows): In 'Juno Plasma Wave Observations at Europa' (Zenodo, doi 10.5281/zenodo.10215630): 'N_e (cm!a-3!n)' follows a power law in 'F_L0 (Hz)' (R² = 0.998 on the discovery half); held-out R² = 0.998 [emp-24876e1804d7]
 - 2026-11-06 07:53 FINDING (confirmed on held-out rows): In 'Juno Plasma Wave Observations at Europa' (Zenodo, doi 10.5281/zenodo.10215630): 'N_e (cm!a-3!n)' follows a power law in 'F_R0 (Hz)' (R² = 0.998 on the discovery half); held-out R² = 0.998 [emp-a62b59d581e1]
 - 2026-11-06 07:53 data feeds: 5101 datasets analysed so far, 616 confirmed findings
+- 2026-11-06 08:41 data feeds: online
