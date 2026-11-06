@@ -402,6 +402,48 @@ def research(messages: list[dict], emit) -> None:
         emit({"type": "token", "text": f"No report: {why}. Nothing was claimed."})
 
 
+# ------------------------------------------------------------------ website (GitHub Pages)
+SITE_DIR = ROOT / "site"
+ASSETS = ("logo.png", "logo-dark.png", "mark.png", "mark-dark.png", "favicon.png")
+
+
+def site_data() -> dict:
+    """Everything the published chat needs to answer in the browser: every claim with its gate status and label
+    (solved octal games packed as [code, pre-period, period, id]), the knowledge-base laws, the latest results."""
+    from .games import KNOWN_GAMES
+    rows = claims_index(max_age=0)
+    games, claims, game_novelty = [], [], ""
+    for r in rows:
+        pl = r.get("payload") or {}
+        if r["kind"] == "game" and r["status"] == "proved" and pl.get("code") not in KNOWN_GAMES:
+            games.append([pl["code"], int(pl["preperiod"]), int(pl["period"]), r["id"]])
+            game_novelty = game_novelty or (r.get("novelty") or "")
+        else:
+            claims.append({"id": r["id"], "kind": r["kind"], "status": r["status"], "label": label(r),
+                           "novelty": r.get("novelty") or "", "verifier": r.get("verifier") or "",
+                           "statement": r["statement"][:500]})
+    kb, _ = _kb()
+    laws = [{"name": f.name, "eq": f.pretty()} for f in kb.formulas]
+    return {"updated": time.strftime("%Y-%m-%d %H:%M UTC", time.gmtime()), "stats": Registry().stats(),
+            "games": games, "game_novelty": game_novelty or "unchecked", "claims": claims, "laws": laws,
+            "discoveries": discoveries()}
+
+
+def export_site(log=print) -> Path:
+    """Publish the chat as the website's front page (index.html at the repository root, served by GitHub Pages)
+    with its data in site/. The page answers by searching that data; it has no language model."""
+    from .registry import atomic_write
+    SITE_DIR.mkdir(exist_ok=True)
+    atomic_write(SITE_DIR / "data.json", json.dumps(site_data(), ensure_ascii=False, separators=(",", ":")))
+    html = (WEB / "index.html").read_text()
+    for a in ASSETS:
+        html = html.replace(f'"/{a}"', f'"euresis/web/{a}"')
+    html = html.replace("<script>", '<script>window.EURESIS_SITE = { data: "site/data.json" };</script>\n<script>', 1)
+    atomic_write(ROOT / "index.html", html)
+    log(f"website updated: index.html + site/data.json ({(SITE_DIR / 'data.json').stat().st_size // 1024} KB)")
+    return ROOT / "index.html"
+
+
 # ------------------------------------------------------------------ HTTP
 class Handler(BaseHTTPRequestHandler):
     server_version = "EuresisChat/1.0"
@@ -428,6 +470,8 @@ class Handler(BaseHTTPRequestHandler):
         if path in self.STATIC:
             name, ctype = self.STATIC[path]
             return self._send(200, (WEB / name).read_bytes(), ctype, cache=name.endswith(".png"))
+        if path == "/space/space.html" and (SPACE / "space.html").exists():
+            return self._send(200, (SPACE / "space.html").read_bytes(), "text/html; charset=utf-8")
         if path == "/api/status":
             return self._json(status())
         if path == "/api/discoveries":

@@ -70,5 +70,10 @@ def run(hours: float | None = None, slice_minutes: float = 30, git_push: bool = 
                 step(m)
             except Exception as e:                       # one engine failing must not stop discovery
                 log(f"  {name} failed: {type(e).__name__}: {e}")
+            try:                                         # keep the published chat's results current
+                from .chat import export_site
+                export_site(log=log)
+            except Exception as e:
+                log(f"  website update failed: {type(e).__name__}: {e}")
             if git_push:
                 _git_push(log)

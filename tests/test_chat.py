@@ -115,3 +115,17 @@ def test_status_check_flags_statuses_without_gate_results(monkeypatch):
     evs = []
     chat.ask([{"role": "user", "content": "How hot is a black hole?"}], evs.append)
     assert "Status check" in "".join(e["text"] for e in evs if e["type"] == "token")
+
+
+def test_website_export(tmp_path, monkeypatch):
+    """The published page (GitHub Pages) has no server: it must load its data file and point at real assets."""
+    monkeypatch.setattr(chat, "SITE_DIR", tmp_path / "site")
+    monkeypatch.setattr(chat, "ROOT", tmp_path)
+    page = chat.export_site(log=lambda *a: None)
+    html = page.read_text()
+    assert 'window.EURESIS_SITE = { data: "site/data.json" }' in html and '"/logo.png"' not in html
+    for a in chat.ASSETS:
+        assert f'"euresis/web/{a}"' in html and (chat.WEB / a).exists()
+    d = json.loads((tmp_path / "site" / "data.json").read_text())
+    assert {"games", "claims", "laws", "stats", "discoveries", "updated"} <= set(d)
+    assert all(c["label"] for c in d["claims"])

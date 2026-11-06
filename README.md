@@ -17,6 +17,11 @@ which you can explore as an infinite canvas.
 
 ## Chat (like Claude or ChatGPT)
 
+**On the website** (the repository's GitHub Pages front page, `index.html`): the same chat runs in your browser with
+no server. It has no language model, so it answers by searching Euresis' verified results (`site/data.json`, every
+claim with its exact gate status and label, and the knowledge-base laws) and says so. The discovery daemon refreshes
+it after every slice. For written answers and Research mode, run the chat locally:
+
 ```bash
 python -m euresis chat          # then open http://127.0.0.1:8765
 ```
