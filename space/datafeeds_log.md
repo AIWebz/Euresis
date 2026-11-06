@@ -532,3 +532,5 @@
 - 2026-11-06 00:54 FINDING (confirmed on held-out rows): In 'I-129 and U-236 data from the ODEN expedition SO21 for the Synoptic Arctic Survey' (Zenodo, doi 10.5281/zenodo.15056897): 'Density_kg_m__3_' is linear in 'DepthWater_m_' (R² = 0.916 on the discovery half); held-out R² = 0.910 [emp-032f41d03c2c]
 - 2026-11-06 00:55 FINDING (confirmed on held-out rows): In 'Dynamics of pH, silicate and phytoplankton chlorophyll a at Tatoosh Island' (Figshare, doi 10.6084/m9.figshare.29833601.v1): 'NO3 mmol' follows a power law in 'Total N dissolved mmol' (R² = 0.937 on the discovery half); held-out R² = 0.924 [emp-2d17a611b7a1]
 - 2026-11-06 00:55 data feeds: 4123 datasets analysed so far, 479 confirmed findings
+- 2026-11-06 01:03 data feeds: online
+- 2026-11-06 01:04 FINDING (confirmed on held-out rows): In 'Data from: Extreme climatic events shape adaptive potential by altering genetic variance f' (Zenodo, doi 10.5281/zenodo.22274666): '2013' grows logarithmically in 'IND' (R² = 0.905 on the discovery half); held-out R² = 0.912 [emp-2cdcc258237a]
