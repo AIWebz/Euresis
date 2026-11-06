@@ -607,3 +607,4 @@
 - 2026-11-06 04:54 FINDING (confirmed on held-out rows): In 'Plasma Parameters in Jupiter's Magnetosheath From Nine Years of Juno Observations' (Zenodo, doi 10.5281/zenodo.22758116): ' "S^{3+}" ' grows logarithmically in ' "Na^{+}" ' (R² = 0.918 on the discovery half); held-out R² = 0.936 [emp-6bde45ad413d]
 - 2026-11-06 04:54 FINDING (confirmed on held-out rows): In 'A catalogue of TeV pulsar environments - Catalogue data' (Zenodo, doi 10.5281/zenodo.20705516): 'BSURF' is linear in 'P1' (R² = 0.957 on the discovery half); held-out R² = 0.851 [emp-65228b8308e3]
 - 2026-11-06 04:56 data feeds: 4742 datasets analysed so far, 544 confirmed findings
+- 2026-11-06 05:57 data feeds: online
