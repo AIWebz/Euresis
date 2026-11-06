@@ -1190,3 +1190,4 @@
 - 2026-11-06 14:30 segment start (budget 30 min; model: Qwen3-8B; 5 discoveries so far)
 - 2026-11-06 14:30 round 1081: two-body decay
 - 2026-11-06 14:42 round 1082: collision
+- 2026-11-06 14:53 round 1083: driven oscillator
