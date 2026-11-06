@@ -807,3 +807,6 @@
 - 2026-11-06 01:31 round 726: Cournot duopoly
 - 2026-11-06 01:32 round 727: insurance and risk
 - 2026-11-06 01:33 round 728: auction with a reserve price
+- 2026-11-06 01:34 round 729: two-body decay
+- 2026-11-06 01:35 round 730: collision
+- 2026-11-06 01:36 segment end: 730 rounds, 4 discoveries, 2 known laws rediscovered
