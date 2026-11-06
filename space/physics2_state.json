@@ -13021,6 +13021,56 @@
    "family": "insurance and risk",
    "expr": "sqrt(p)*sqrt((1 - p)*(sqrt(1 - L) - 1)**2)/sqrt(1 - p*L)",
    "why": "a power or product of known quantities"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(1/3 - r**2 + 2*r**3/3)/(2*(1 - r**3)/3 + v*r**2 - (1/3 + r**2 - 4*r**3/3))",
+   "why": "affine combination of known quantities (1/(expected bidder surplus given reserve and seller's value [model-proposed; physical meaning unverified]), 1/(Bidder Surplus Given Reserve and Seller Value Ratio [model-proposed; physical meaning unverified]))"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(-2*r**3/3 + r**2*v + 2/3)/(-2*r**3 + 2*r**2 - 2*r**3/3 + r**2*v)",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "sqrt((1 - (a + b)**2)*(1 - (a - b)**2))/((1 + a**2 - b**2)/2 - (1 - a**2 + b**2)/2)",
+   "why": "not finite on the whole physical domain"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2",
+   "why": "affine combination of known quantities (Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified], Fraction of kinetic energy transferred to the target [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "1 - (1 - e**2)/(1 + m) - (1 - e**2)*m/(1 + m) - (1 - e**2)*(1 - m)/(1 + m) + 1",
+   "why": "affine combination of known quantities (target speed / initial speed, fraction of kinetic energy lost)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt((1 - r**2)**2 + (2*z*r)**2)",
+   "why": "affine combination of known quantities (amplitude / static deflection, 1/(amplitude / static deflection))"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "atan2(2*z*r, 1 - r**2)",
+   "why": "only + \u2212 \u00d7 \u00f7, integer powers and square roots (so the prover can decide it)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "2*r**2*z/(8*r**2*z**2 + (1 - r**2)**2)",
+   "why": "affine combination of known quantities (amplitude / static deflection, Normalized power transmission [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "z**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 - u**2)*(1 - v**2)) / sqrt(1 - ((u + v)/(1 + u*v))**2)",
+   "why": "a power or product of known quantities"
   }
  ],
  "tried": [
@@ -15153,7 +15203,15 @@
   "collision|Fraction of kinetic energy retained by projectile relative to initial kinetic en [model-proposed; physical meaning unverified]|speed of the centre of mass / initial speed",
   "collision|Fraction of kinetic energy retained by projectile relative to initial kinetic en [model-proposed; physical meaning unverified]|relative speed after / relative speed before",
   "collision|Fraction of kinetic energy retained by projectile relative to initial kinetic en [model-proposed; physical meaning unverified]|velocity ratio of target to projectile after collision [model-proposed; physical meaning unverified]",
-  "collision|Fraction of kinetic energy retained by projectile relative to initial kinetic en [model-proposed; physical meaning unverified]|velocity ratio of projectile to target after collision [model-proposed; physical meaning unverified]"
+  "collision|Fraction of kinetic energy retained by projectile relative to initial kinetic en [model-proposed; physical meaning unverified]|velocity ratio of projectile to target after collision [model-proposed; physical meaning unverified]",
+  "collision|Fraction of kinetic energy retained by projectile relative to initial kinetic en [model-proposed; physical meaning unverified]|relative velocity after collision divided by initial velocity of projectile [model-proposed; physical meaning unverified]",
+  "collision|Fraction of kinetic energy retained by projectile relative to initial kinetic en [model-proposed; physical meaning unverified]|Fraction of kinetic energy retained by projectile [model-proposed; physical meaning unverified]",
+  "collision|Fraction of kinetic energy retained by projectile relative to initial kinetic en [model-proposed; physical meaning unverified]|Fraction of kinetic energy retained by target [model-proposed; physical meaning unverified]",
+  "collision|Fraction of kinetic energy retained by projectile relative to initial kinetic en [model-proposed; physical meaning unverified]|Fraction of kinetic energy retained by the system [model-proposed; physical meaning unverified]",
+  "collision|Fraction of kinetic energy retained by projectile relative to initial kinetic en [model-proposed; physical meaning unverified]|Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified]",
+  "collision|Fraction of kinetic energy retained by projectile relative to initial kinetic en [model-proposed; physical meaning unverified]|Fraction of kinetic energy transferred to the target [model-proposed; physical meaning unverified]",
+  "collision|Fraction of kinetic energy retained by projectile relative to initial kinetic en [model-proposed; physical meaning unverified]|Fraction of kinetic energy retained by the target [model-proposed; physical meaning unverified]",
+  "collision|Fraction of kinetic energy retained by projectile relative to initial kinetic en [model-proposed; physical meaning unverified]|Fraction of kinetic energy retained by the projectile relative to initial kineti [model-proposed; physical meaning unverified]"
  ],
  "edges": [
   {
@@ -18263,9 +18321,27 @@
    "f": "Fraction of kinetic energy retained by the projectile relative to initial kineti [model-proposed; physical meaning unverified]",
    "g": "Fraction of kinetic energy retained by projectile relative to initial kinetic en [model-proposed; physical meaning unverified]",
    "k": "2/7"
+  },
+  {
+   "family": "collision",
+   "f": "Fraction of kinetic energy retained by projectile relative to initial kinetic en [model-proposed; physical meaning unverified]",
+   "g": "Fraction of kinetic energy retained by target [model-proposed; physical meaning unverified]",
+   "k": "1"
+  },
+  {
+   "family": "collision",
+   "f": "Fraction of kinetic energy retained by projectile relative to initial kinetic en [model-proposed; physical meaning unverified]",
+   "g": "Fraction of kinetic energy transferred to the target [model-proposed; physical meaning unverified]",
+   "k": "1"
+  },
+  {
+   "family": "collision",
+   "f": "Fraction of kinetic energy retained by projectile relative to initial kinetic en [model-proposed; physical meaning unverified]",
+   "g": "Fraction of kinetic energy retained by the target [model-proposed; physical meaning unverified]",
+   "k": "7/3"
   }
  ],
- "rounds": 807,
+ "rounds": 812,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",

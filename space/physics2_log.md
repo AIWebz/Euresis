@@ -893,3 +893,8 @@
 - 2026-11-06 04:26 round 806: Cournot duopoly
 - 2026-11-06 04:27 round 807: insurance and risk
 - 2026-11-06 04:28 round 808: auction with a reserve price
+- 2026-11-06 04:29 round 809: two-body decay
+- 2026-11-06 04:30 round 810: collision
+- 2026-11-06 04:34 round 811: driven oscillator
+- 2026-11-06 04:34 round 812: velocity addition
+- 2026-11-06 04:35 segment end: 812 rounds, 4 discoveries, 2 known laws rediscovered
