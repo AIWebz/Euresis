@@ -1036654,5 +1036654,545 @@
   "statement": "Octal game 0.270605 is completely solved: its Grundy values are periodic with pre-period 1 and period 6 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.5cm7088",
+   "held_out_r2": 0.9806,
+   "held_out_rows": 54,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-2970665b23b2",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3731e573a2c7d4ad.csv",
+   "doi": "10.5061/dryad.5cm7088",
+   "form": "linear",
+   "params": [
+    0.005510606908939304,
+    0.006930383820294951
+   ],
+   "seed": 3512735625,
+   "x": "bioassy_alive",
+   "y": "prop_res"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: The application of self-limiting transgenic insects in managing resistance in e' (Zenodo, doi 10.5061/dryad.5cm7088): 'prop_res' is linear in 'bioassy_alive' (R\u00b2 = 0.963 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.7vf87",
+   "held_out_r2": 0.9175,
+   "held_out_rows": 1740,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-296182310590",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "0f98b27786091cf8.csv",
+   "doi": "10.5061/dryad.7vf87",
+   "form": "power law",
+   "params": [
+    0.06895128479035388,
+    0.9725713963532514
+   ],
+   "seed": 3038893248,
+   "x": "atm.T",
+   "y": "Temperature"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: High atmospheric temperatures and 'ambient incubation' drive embryonic developm' (Zenodo, doi 10.5061/dryad.7vf87): 'Temperature' follows a power law in 'atm.T' (R\u00b2 = 0.914 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22901026",
+   "held_out_r2": 0.9745,
+   "held_out_rows": 6665,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5fe647d50ecf",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "bbe24e28ecd1cfc9.csv",
+   "doi": "10.5281/zenodo.22901026",
+   "form": "power law",
+   "params": [
+    -0.26426181295435647,
+    1.0151178786461614
+   ],
+   "seed": 562075556,
+   "x": "MaxWS_2m_m_s",
+   "y": "WindSpeed_2m_sca_m_s"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'National Wind Erosion Research Network data 2015-2025' (Zenodo, doi 10.5281/zenodo.22901026): 'WindSpeed_2m_sca_m_s' follows a power law in 'MaxWS_2m_m_s' (R\u00b2 = 0.975 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22901026",
+   "held_out_r2": 0.974,
+   "held_out_rows": 6665,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ccd006f7cd73",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "bbe24e28ecd1cfc9.csv",
+   "doi": "10.5281/zenodo.22901026",
+   "form": "linear",
+   "params": [
+    -0.18960983856036373,
+    0.843025488250077
+   ],
+   "seed": 562075556,
+   "x": "MaxWS_2m_m_s",
+   "y": "WindSpeed_2m_vec_m_s"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'National Wind Erosion Research Network data 2015-2025' (Zenodo, doi 10.5281/zenodo.22901026): 'WindSpeed_2m_vec_m_s' is linear in 'MaxWS_2m_m_s' (R\u00b2 = 0.968 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22901026",
+   "held_out_r2": 0.8782,
+   "held_out_rows": 6665,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-cfe3d2c64376",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "bbe24e28ecd1cfc9.csv",
+   "doi": "10.5281/zenodo.22901026",
+   "form": "linear",
+   "params": [
+    -0.47597361636015856,
+    0.7864164854865319
+   ],
+   "seed": 562075556,
+   "x": "MaxWS_10m_m_s",
+   "y": "WindSpeed_2m_sca_m_s"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'National Wind Erosion Research Network data 2015-2025' (Zenodo, doi 10.5281/zenodo.22901026): 'WindSpeed_2m_sca_m_s' is linear in 'MaxWS_10m_m_s' (R\u00b2 = 0.917 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22901026",
+   "held_out_r2": 0.8765,
+   "held_out_rows": 6665,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-021194675409",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "bbe24e28ecd1cfc9.csv",
+   "doi": "10.5281/zenodo.22901026",
+   "form": "linear",
+   "params": [
+    -0.485445429866574,
+    0.7839637610051415
+   ],
+   "seed": 562075556,
+   "x": "MaxWS_10m_m_s",
+   "y": "WindSpeed_2m_vec_m_s"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'National Wind Erosion Research Network data 2015-2025' (Zenodo, doi 10.5281/zenodo.22901026): 'WindSpeed_2m_vec_m_s' is linear in 'MaxWS_10m_m_s' (R\u00b2 = 0.915 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22901026",
+   "held_out_r2": 0.9759,
+   "held_out_rows": 6665,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a912c4f22081",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "bbe24e28ecd1cfc9.csv",
+   "doi": "10.5281/zenodo.22901026",
+   "form": "power law",
+   "params": [
+    -0.22987564841670854,
+    1.0263895821102742
+   ],
+   "seed": 562075556,
+   "x": "MaxWS_10m_m_s",
+   "y": "WindSpeed_10m_sca_m_s"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'National Wind Erosion Research Network data 2015-2025' (Zenodo, doi 10.5281/zenodo.22901026): 'WindSpeed_10m_sca_m_s' follows a power law in 'MaxWS_10m_m_s' (R\u00b2 = 0.973 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.19202769",
+   "held_out_r2": 0.9845,
+   "held_out_rows": 448,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-562353d07c62",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f01c503048b6a625.csv",
+   "doi": "10.5281/zenodo.19202769",
+   "form": "linear",
+   "params": [
+    0.0002662726190322798,
+    5.333249187047314e-06
+   ],
+   "seed": 3228774034,
+   "x": " Channel A Temperature",
+   "y": " Channel A Current"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Pulse-Heating and Staircase-Step Experimental Data' (Zenodo, doi 10.5281/zenodo.19202769): ' Channel A Current' is linear in ' Channel A Temperature' (R\u00b2 = 0.985 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.19202769",
+   "held_out_r2": 0.9924,
+   "held_out_rows": 448,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-8b1c5d3968f1",
+  "kind": "empirical",
+  "novelty": "KNOWN: equation of state of a simulated fluid (pressure, density, temperature, chemical potential, kinetic energy) \u2014 not a discovery",
+  "payload": {
+   "dataset": "f01c503048b6a625.csv",
+   "doi": "10.5281/zenodo.19202769",
+   "form": "exponential",
+   "params": [
+    9.335499207559522,
+    -0.0014060757536270858
+   ],
+   "seed": 3228774034,
+   "x": " Channel A Temperature",
+   "y": " Channel A Resistance"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Pulse-Heating and Staircase-Step Experimental Data' (Zenodo, doi 10.5281/zenodo.19202769): ' Channel A Resistance' grows exponentially in ' Channel A Temperature' (R\u00b2 = 0.993 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.19202769",
+   "held_out_r2": 0.9509,
+   "held_out_rows": 448,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f293b5350483",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f01c503048b6a625.csv",
+   "doi": "10.5281/zenodo.19202769",
+   "form": "logarithmic",
+   "params": [
+    -16.742301893809962,
+    5.3107050007083885
+   ],
+   "seed": 3228774034,
+   "x": " Channel A Temperature",
+   "y": " Channel A Voltage"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Pulse-Heating and Staircase-Step Experimental Data' (Zenodo, doi 10.5281/zenodo.19202769): ' Channel A Voltage' grows logarithmically in ' Channel A Temperature' (R\u00b2 = 0.957 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.19202769",
+   "held_out_r2": 0.993,
+   "held_out_rows": 448,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c160fa178024",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f01c503048b6a625.csv",
+   "doi": "10.5281/zenodo.19202769",
+   "form": "exponential",
+   "params": [
+    9.401479427442377,
+    -261.84095791101254
+   ],
+   "seed": 3228774034,
+   "x": " Channel A Current",
+   "y": " Channel A Resistance"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Pulse-Heating and Staircase-Step Experimental Data' (Zenodo, doi 10.5281/zenodo.19202769): ' Channel A Resistance' grows exponentially in ' Channel A Current' (R\u00b2 = 0.994 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.19202769",
+   "held_out_r2": 0.9718,
+   "held_out_rows": 448,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-dba5da691fe5",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f01c503048b6a625.csv",
+   "doi": "10.5281/zenodo.19202769",
+   "form": "logarithmic",
+   "params": [
+    47.01334340733979,
+    5.313468781940418
+   ],
+   "seed": 3228774034,
+   "x": " Channel A Current",
+   "y": " Channel A Voltage"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Pulse-Heating and Staircase-Step Experimental Data' (Zenodo, doi 10.5281/zenodo.19202769): ' Channel A Voltage' grows logarithmically in ' Channel A Current' (R\u00b2 = 0.972 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.19202769",
+   "held_out_r2": 0.9984,
+   "held_out_rows": 448,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-559f808faa4c",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f01c503048b6a625.csv",
+   "doi": "10.5281/zenodo.19202769",
+   "form": "logarithmic",
+   "params": [
+    0.6635025074661192,
+    -0.0713410961327004
+   ],
+   "seed": 3228774034,
+   "x": " Channel A Resistance",
+   "y": " Channel A Power"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Pulse-Heating and Staircase-Step Experimental Data' (Zenodo, doi 10.5281/zenodo.19202769): ' Channel A Power' grows logarithmically in ' Channel A Resistance' (R\u00b2 = 0.999 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.19202769",
+   "held_out_r2": 0.9755,
+   "held_out_rows": 448,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-0f45a6d4ed0a",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f01c503048b6a625.csv",
+   "doi": "10.5281/zenodo.19202769",
+   "form": "power law",
+   "params": [
+    -9.813397174873696,
+    2.4080686726618934
+   ],
+   "seed": 3228774034,
+   "x": " Channel A Voltage",
+   "y": " Channel A Power"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Pulse-Heating and Staircase-Step Experimental Data' (Zenodo, doi 10.5281/zenodo.19202769): ' Channel A Power' follows a power law in ' Channel A Voltage' (R\u00b2 = 0.979 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7974614",
+   "held_out_r2": 0.9453,
+   "held_out_rows": 48,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-1e1cc97487c5",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "577dd63e53804026.csv",
+   "doi": "10.5281/zenodo.7974614",
+   "form": "linear",
+   "params": [
+    -0.010386155447339581,
+    0.918030458544602
+   ],
+   "seed": 1151064078,
+   "x": "rate",
+   "y": "Photosynthesis_control_corrected"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Raw data from: \"Thermal mismatches explain consumer-resource dynamics in response to envir' (Zenodo, doi 10.5281/zenodo.7974614): 'Photosynthesis_control_corrected' is linear in 'rate' (R\u00b2 = 0.941 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7974614",
+   "held_out_r2": 0.9484,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9a2bf61c88dd",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "d6cebd682014a566.csv",
+   "doi": "10.5281/zenodo.7974614",
+   "form": "power law",
+   "params": [
+    -5.549028634576758,
+    2.0904678826621512
+   ],
+   "seed": 1743464041,
+   "x": "Test_temp",
+   "y": "E_balance"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Raw data from: \"Thermal mismatches explain consumer-resource dynamics in response to envir' (Zenodo, doi 10.5281/zenodo.7974614): 'E_balance' follows a power law in 'Test_temp' (R\u00b2 = 0.944 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7974614",
+   "held_out_r2": 0.9198,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b20e7a1f3b56",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "d6cebd682014a566.csv",
+   "doi": "10.5281/zenodo.7974614",
+   "form": "power law",
+   "params": [
+    19.875346814315154,
+    1.1921658864215183
+   ],
+   "seed": 1743464041,
+   "x": "Resp_pred",
+   "y": "E_balance"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Raw data from: \"Thermal mismatches explain consumer-resource dynamics in response to envir' (Zenodo, doi 10.5281/zenodo.7974614): 'E_balance' follows a power law in 'Resp_pred' (R\u00b2 = 0.914 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7974614",
+   "held_out_r2": 0.984,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-2762a7f7da51",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "d6cebd682014a566.csv",
+   "doi": "10.5281/zenodo.7974614",
+   "form": "power law",
+   "params": [
+    9.248407720011718,
+    0.5561334972259568
+   ],
+   "seed": 1743464041,
+   "x": "Photo_pred",
+   "y": "E_balance"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Raw data from: \"Thermal mismatches explain consumer-resource dynamics in response to envir' (Zenodo, doi 10.5281/zenodo.7974614): 'E_balance' follows a power law in 'Photo_pred' (R\u00b2 = 0.983 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7974614",
+   "held_out_r2": 0.9699,
+   "held_out_rows": 48,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d4ff2ff132d8",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "1041c3437cdf9771.csv",
+   "doi": "10.5281/zenodo.7974614",
+   "form": "linear",
+   "params": [
+    -20946.423631399284,
+    1.1435804601932436
+   ],
+   "seed": 3204274945,
+   "x": "Av_Daphnia",
+   "y": "Av_Controls"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Raw data from: \"Thermal mismatches explain consumer-resource dynamics in response to envir' (Zenodo, doi 10.5281/zenodo.7974614): 'Av_Controls' is linear in 'Av_Daphnia' (R\u00b2 = 0.982 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7974614",
+   "held_out_r2": 0.943,
+   "held_out_rows": 48,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a3166edd1f1c",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "1041c3437cdf9771.csv",
+   "doi": "10.5281/zenodo.7974614",
+   "form": "linear",
+   "params": [
+    3.6071265615441914e-05,
+    0.08079886670533698
+   ],
+   "seed": 3204274945,
+   "x": "ln_N_D",
+   "y": "IntS_Schaum"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Raw data from: \"Thermal mismatches explain consumer-resource dynamics in response to envir' (Zenodo, doi 10.5281/zenodo.7974614): 'IntS_Schaum' is linear in 'ln_N_D' (R\u00b2 = 0.996 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
