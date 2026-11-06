@@ -12679,6 +12679,61 @@
    "family": "velocity addition",
    "expr": "sqrt(1 - u**2) + sqrt(1 - v**2) / sqrt(1 - ((u + v)/(1 + u*v))**2)",
    "why": "affine combination of known quantities (composed speed / c, Relativistic Energy-Momentum Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "(-c/(c*x + 1) + 1 + 1/(c*x + 1))**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "(c*x**2/(c*x**2 + 1))**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "c/(c*x + 1) + 1",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, Compton scattering factor [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "(sqrt(c**2*x**2/(c*x + 1)**2 + c*x**2/(c*x + 1)))**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "((1 - 2*c1 + c2)**2 + (1 - 2*c2 + c1)**2)/((1 - c1)**2 + (1 - c2)**2)",
+   "why": "affine combination of known quantities (output of firm 1, Hirshleifer Index [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "(-L*p + 1)**2/(-p*sqrt(1 - L) + p - sqrt(1 - L) + 1)**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "(L*p)**2/(-sqrt(1 - L) + sqrt(-L*p + 1) + 1)**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "(L*p)**2/(-p*sqrt(1 - L) + p + sqrt(1 - L) + sqrt(-L*p + 1) - 1)**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "(-L*p + 1)**2/(-p + sqrt(1 - L) + 1)**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(-2*r**3/3 + r**2*v + 2/3)/(2*(1 - r**3)/3 + v*r**2)",
+   "why": "must depend only on r, v"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "sqrt((1 - (a + b)**2)*(1 - (a - b)**2))/sqrt((1 + a**2 - b**2)**2 + (1 - a**2 + b**2)**2)",
+   "why": "a power or product of known quantities"
   }
  ],
  "tried": [
@@ -17759,7 +17814,7 @@
    "k": "1/2"
   }
  ],
- "rounds": 780,
+ "rounds": 785,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",
