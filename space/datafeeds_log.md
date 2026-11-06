@@ -824,3 +824,6 @@
 - 2026-11-06 15:46 FINDING (confirmed on held-out rows): In 'Soil pH shapes average microbial genome size through lineage turnover' (Zenodo, doi 10.5281/zenodo.23696577): 'catabolism_rpk' is linear in 'anabolism_rpk' (R² = 0.958 on the discovery half); held-out R² = 0.918 [emp-839919a99c4b]
 - 2026-11-06 15:46 FINDING (confirmed on held-out rows): In 'Data and code for the manuscript "Meta-analysis reveals negative but highly variable impac' (Zenodo, doi 10.5281/zenodo.15611484): 'Control_N' is linear in 'Treatment_N' (R² = 0.964 on the discovery half); held-out R² = 0.980 [emp-adb23bcc45f1]
 - 2026-11-06 15:46 data feeds: 5870 datasets analysed so far, 739 confirmed findings
+- 2026-11-06 16:20 data feeds: online
+- 2026-11-06 16:21 FINDING (confirmed on held-out rows): In 'Impacts of invasive Australian acacias on soil bacterial community composition, microbial ' (Zenodo, doi 10.5061/dryad.gxd2547hk): 'N' is linear in 'NH4' (R² = 0.922 on the discovery half); held-out R² = 0.898 [emp-f3f3e2564bc4]
+- 2026-11-06 16:21 data feeds: 5919 datasets analysed so far, 740 confirmed findings
