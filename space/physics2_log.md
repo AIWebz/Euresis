@@ -1388,3 +1388,6 @@
 - 2026-11-06 21:35 round 1264: auction with a reserve price
 - 2026-11-06 21:36 round 1265: two-body decay
 - 2026-11-06 21:37 round 1266: collision
+- 2026-11-06 21:39 round 1267: driven oscillator
+- 2026-11-06 21:40 round 1268: velocity addition
+- 2026-11-06 21:41 round 1269: Compton scattering

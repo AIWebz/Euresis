@@ -19126,6 +19126,56 @@
    "family": "two-body decay",
    "expr": "sqrt((1 - (a - b)**2)*(1 - (a + b)**2) + (-a**2 + b**2 + 1)**2 + (a**2 - b**2 + 1)**2)",
    "why": "affine combination of known quantities (momentum of each product / (Mc), Boost factor of the system [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2",
+   "why": "affine combination of known quantities (Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified], Fraction of kinetic energy transferred to the target [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "e/(1 + m) + e",
+   "why": "affine combination of known quantities (relative speed after / relative speed before, relative velocity after collision divided by initial velocity of projectile [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "1 - (1 - e**2)*(1 - m)/(1 + m) - (1 - e**2)/(1 + m) - e**2*m/(1 + m) + e**2*m**2/(1 + m)**2",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2*m**2/(1 + m)**2 + e**2*m/(1 + m) - 2*m*(1 - e**2)/(1 + m) + 1",
+   "why": "affine combination of known quantities (target speed / initial speed, Fraction of kinetic energy transferred to the target relative to initial kinetic [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "atan(2*z*r/(1 - r**2))",
+   "why": "only + \u2212 \u00d7 \u00f7, integer powers and square roots (so the prover can decide it)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "1/sqrt((1 - r**2)**2 + (2*z*r)**2)",
+   "why": "affine combination of known quantities (amplitude / static deflection)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "1/(2*z)",
+   "why": "affine combination of known quantities (amplitude / static deflection, quality factor)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(1 - z**2)/sqrt(4*r**2*z**2 - z**2 + 1)",
+   "why": "affine combination of known quantities (amplitude / static deflection, Resonance frequency ratio (corrected) [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 + u)/(1 - u)) * sqrt((1 + v)/(1 - v)) / sqrt((1 + (u + v)/(1 + u*v)) / (1 - (u + v)/(1 + u*v",
+   "why": "affine combination of known quantities (composed speed / c)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 - u**2)*(1 - v**2)) / (1 - u*v)",
+   "why": "affine combination of known quantities (composed speed / c, Relativistic velocity parameter [model-proposed; physical meaning unverified])"
   }
  ],
  "tried": [
@@ -25166,7 +25216,7 @@
    "k": "5/3"
   }
  ],
- "rounds": 1265,
+ "rounds": 1268,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",
