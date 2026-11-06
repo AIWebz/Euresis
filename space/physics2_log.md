@@ -1010,3 +1010,8 @@
 - 2026-11-06 08:15 round 915: driven oscillator
 - 2026-11-06 08:16 round 916: velocity addition
 - 2026-11-06 08:17 round 917: Compton scattering
+- 2026-11-06 08:18 round 918: Cournot duopoly
+- 2026-11-06 08:19 round 919: insurance and risk
+- 2026-11-06 08:20 round 920: auction with a reserve price
+- 2026-11-06 08:22 round 921: two-body decay
+- 2026-11-06 08:24 segment end: 921 rounds, 4 discoveries, 2 known laws rediscovered
