@@ -827,3 +827,4 @@
 - 2026-11-06 16:20 data feeds: online
 - 2026-11-06 16:21 FINDING (confirmed on held-out rows): In 'Impacts of invasive Australian acacias on soil bacterial community composition, microbial ' (Zenodo, doi 10.5061/dryad.gxd2547hk): 'N' is linear in 'NH4' (R² = 0.922 on the discovery half); held-out R² = 0.898 [emp-f3f3e2564bc4]
 - 2026-11-06 16:21 data feeds: 5919 datasets analysed so far, 740 confirmed findings
+- 2026-11-06 17:22 data feeds: online
