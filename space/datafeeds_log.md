@@ -633,3 +633,4 @@
 - 2026-11-06 05:59 FINDING (confirmed on held-out rows): In 'Measurement report: Atmospheric nitrate radical chemistry in the South China Sea influence' (Zenodo, doi 10.5281/zenodo.8089100): 'NO2(ppbv)' follows a power law in 'NOX(ppbv)' (R² = 0.985 on the discovery half); held-out R² = 0.982 [emp-6e45d1dfbbd5]
 - 2026-11-06 05:59 FINDING (confirmed on held-out rows): In 'NAPRORE-CR (NAtural PROducts REpository - Costa Rica)' (Zenodo, doi 10.5281/zenodo.14910594): 'TPSA' is linear in 'HBA_COUNT' (R² = 0.942 on the discovery half); held-out R² = 0.948 [emp-de89eebb45aa]
 - 2026-11-06 06:00 data feeds: 4923 datasets analysed so far, 568 confirmed findings
+- 2026-11-06 06:47 data feeds: online
