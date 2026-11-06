@@ -761,3 +761,4 @@
 - 2026-11-06 13:34 FINDING (confirmed on held-out rows): In 'Data from: Predicting combined effects of land use and climate change on river and stream ' (Zenodo, doi 10.5061/dryad.jt1kt04): 'PrdEC10' is linear in 'PrObRfEC10' (R² = 0.977 on the discovery half); held-out R² = 0.970 [emp-b07e9f0e3e5c]
 - 2026-11-06 13:34 FINDING (confirmed on held-out rows): In 'Data from: Predicting combined effects of land use and climate change on river and stream ' (Zenodo, doi 10.5061/dryad.jt1kt04): 'PrdEC21' is linear in 'PrObRfEC21' (R² = 0.977 on the discovery half); held-out R² = 0.979 [emp-1869dedaa81b]
 - 2026-11-06 13:34 data feeds: 5631 datasets analysed so far, 680 confirmed findings
+- 2026-11-06 14:26 data feeds: online
