@@ -1119192,5 +1119192,815 @@
   "statement": "Octal game 0.316072 is completely solved: its Grundy values are periodic with pre-period 4 and period 14 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22151440",
+   "held_out_r2": 0.9529,
+   "held_out_rows": 3635,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-55bc5ab150c7",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "ee050328822b3046.csv",
+   "doi": "10.5281/zenodo.22151440",
+   "form": "linear",
+   "params": [
+    0.013297666454322331,
+    0.9132414212657528
+   ],
+   "seed": 3044154931,
+   "x": "A_bump_NUV",
+   "y": "A_bump_UOIR"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data products for Mapping Dust Attenuation at Kiloparsec Scales. III. The 2175 Angstrom Bu' (Zenodo, doi 10.5281/zenodo.22151440): 'A_bump_UOIR' is linear in 'A_bump_NUV' (R\u00b2 = 0.950 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22151440",
+   "held_out_r2": 0.9377,
+   "held_out_rows": 3635,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9adbb8359403",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "ee050328822b3046.csv",
+   "doi": "10.5281/zenodo.22151440",
+   "form": "linear",
+   "params": [
+    -0.0074395454310478585,
+    0.8926533279057629
+   ],
+   "seed": 3044154931,
+   "x": "A_bump_NUV",
+   "y": "A_bump_UOIR_uncorrected"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data products for Mapping Dust Attenuation at Kiloparsec Scales. III. The 2175 Angstrom Bu' (Zenodo, doi 10.5281/zenodo.22151440): 'A_bump_UOIR_uncorrected' is linear in 'A_bump_NUV' (R\u00b2 = 0.933 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22151440",
+   "held_out_r2": 0.9596,
+   "held_out_rows": 3635,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-fcae416ce62c",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "ee050328822b3046.csv",
+   "doi": "10.5281/zenodo.22151440",
+   "form": "linear",
+   "params": [
+    -0.027415366430821212,
+    1.019545279048866
+   ],
+   "seed": 3044154931,
+   "x": "A_bump_UOIR",
+   "y": "A_bump_NUV_uncorrected"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data products for Mapping Dust Attenuation at Kiloparsec Scales. III. The 2175 Angstrom Bu' (Zenodo, doi 10.5281/zenodo.22151440): 'A_bump_NUV_uncorrected' is linear in 'A_bump_UOIR' (R\u00b2 = 0.957 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22151440",
+   "held_out_r2": 0.9535,
+   "held_out_rows": 3635,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-577a011d35b2",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "ee050328822b3046.csv",
+   "doi": "10.5281/zenodo.22151440",
+   "form": "linear",
+   "params": [
+    0.010545632735919868,
+    0.9229202200323192
+   ],
+   "seed": 3044154931,
+   "x": "A_bump_NUV_uncorrected",
+   "y": "A_bump_UOIR_uncorrected"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data products for Mapping Dust Attenuation at Kiloparsec Scales. III. The 2175 Angstrom Bu' (Zenodo, doi 10.5281/zenodo.22151440): 'A_bump_UOIR_uncorrected' is linear in 'A_bump_NUV_uncorrected' (R\u00b2 = 0.951 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22151440",
+   "held_out_r2": 0.937,
+   "held_out_rows": 50,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-6b9037fdc869",
+  "kind": "empirical",
+  "novelty": "KNOWN: equation of state of a simulated fluid (pressure, density, temperature, chemical potential, kinetic energy) \u2014 not a discovery",
+  "payload": {
+   "dataset": "f847fab26eeb1060.csv",
+   "doi": "10.5281/zenodo.22151440",
+   "form": "linear",
+   "params": [
+    0.1456658578966028,
+    1.0066443452131315
+   ],
+   "seed": 1235216063,
+   "x": "rho_lo",
+   "y": "rho_hi"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data products for Mapping Dust Attenuation at Kiloparsec Scales. III. The 2175 Angstrom Bu' (Zenodo, doi 10.5281/zenodo.22151440): 'rho_hi' is linear in 'rho_lo' (R\u00b2 = 0.958 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14589318",
+   "held_out_r2": 0.9108,
+   "held_out_rows": 1666,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b75fa0fc907a",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "a793693b2ef7d389.csv",
+   "doi": "10.5281/zenodo.14589318",
+   "form": "linear",
+   "params": [
+    0.0397538406414849,
+    1.2153129870603545
+   ],
+   "seed": 121356000,
+   "x": "CSC_hard_ms",
+   "y": "CSC_hard_hs"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Representation learning for time-domain high-energy astrophysics: Transient candidates cat' (Zenodo, doi 10.5281/zenodo.14589318): 'CSC_hard_hs' is linear in 'CSC_hard_ms' (R\u00b2 = 0.903 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7244988",
+   "held_out_r2": 0.9918,
+   "held_out_rows": 2294,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-dcf3ccb7274a",
+  "kind": "empirical",
+  "novelty": "KNOWN: astrometric uncertainties (Gaia-type errors all scale with source brightness) \u2014 not a discovery",
+  "payload": {
+   "dataset": "e71458874ebe9c72.csv",
+   "doi": "10.5281/zenodo.7244988",
+   "form": "power law",
+   "params": [
+    0.14739335576975063,
+    1.0175874438703003
+   ],
+   "seed": 1157477738,
+   "x": "ra_error",
+   "y": "dec_error"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Gaia DR3 in nearby galaxies' (Zenodo, doi 10.5281/zenodo.7244988): 'dec_error' follows a power law in 'ra_error' (R\u00b2 = 0.991 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15195056",
+   "held_out_r2": 0.9355,
+   "held_out_rows": 1073,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d4626b7fb6df",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f76e3b3aafa3e14f.csv",
+   "doi": "10.5281/zenodo.15195056",
+   "form": "power law",
+   "params": [
+    0.30264950234755145,
+    0.48263566188923696
+   ],
+   "seed": 576619421,
+   "x": "model",
+   "y": "flux_err"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'PIPE reduced CHEOPS light curves of HIP 67522' (Zenodo, doi 10.5281/zenodo.15195056): 'flux_err' follows a power law in 'model' (R\u00b2 = 0.945 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15195056",
+   "held_out_r2": 0.9495,
+   "held_out_rows": 1073,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ffeee6ef537e",
+  "kind": "empirical",
+  "novelty": "KNOWN: telescope photometry pipeline quantities (flux, background, centroids \u2014 instrument systematics) \u2014 not a discovery",
+  "payload": {
+   "dataset": "f76e3b3aafa3e14f.csv",
+   "doi": "10.5281/zenodo.15195056",
+   "form": "logarithmic",
+   "params": [
+    -33978494.20279742,
+    4920864.757366046
+   ],
+   "seed": 576619421,
+   "x": "flux_err",
+   "y": "masked_raw_flux"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'PIPE reduced CHEOPS light curves of HIP 67522' (Zenodo, doi 10.5281/zenodo.15195056): 'masked_raw_flux' grows logarithmically in 'flux_err' (R\u00b2 = 0.959 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15195056",
+   "held_out_r2": 0.9504,
+   "held_out_rows": 1285,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-26bd94cefce0",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "18045e775dffac79.csv",
+   "doi": "10.5281/zenodo.15195056",
+   "form": "logarithmic",
+   "params": [
+    -33697742.27881459,
+    2457091.9618247515
+   ],
+   "seed": 48862197,
+   "x": "model",
+   "y": "masked_raw_flux"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'PIPE reduced CHEOPS light curves of HIP 67522' (Zenodo, doi 10.5281/zenodo.15195056): 'masked_raw_flux' grows logarithmically in 'model' (R\u00b2 = 0.955 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14959596",
+   "held_out_r2": 0.9521,
+   "held_out_rows": 289,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-81ffb95a8151",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "5d5010faecca8f33.csv",
+   "doi": "10.5281/zenodo.14959596",
+   "form": "power law",
+   "params": [
+    -2.12773799808429,
+    1.3499221351358344
+   ],
+   "seed": 3586637484,
+   "x": "M_ini/Msun",
+   "y": " M_He/Msun"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Pre-supernova evolution and final fates of binary-stripped stars' (Zenodo, doi 10.5281/zenodo.14959596): ' M_He/Msun' follows a power law in 'M_ini/Msun' (R\u00b2 = 0.956 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14959596",
+   "held_out_r2": 0.9416,
+   "held_out_rows": 289,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-1a32d1b7a93c",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "5d5010faecca8f33.csv",
+   "doi": "10.5281/zenodo.14959596",
+   "form": "power law",
+   "params": [
+    5.705779745599132,
+    -1.6485852401198315
+   ],
+   "seed": 3586637484,
+   "x": " t_cc/Myr",
+   "y": " M_He/Msun"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Pre-supernova evolution and final fates of binary-stripped stars' (Zenodo, doi 10.5281/zenodo.14959596): ' M_He/Msun' follows a power law in ' t_cc/Myr' (R\u00b2 = 0.953 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14959596",
+   "held_out_r2": 0.9897,
+   "held_out_rows": 289,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-abf4c6c0d84f",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "5d5010faecca8f33.csv",
+   "doi": "10.5281/zenodo.14959596",
+   "form": "power law",
+   "params": [
+    -0.6056618567985261,
+    1.1396759734548965
+   ],
+   "seed": 3586637484,
+   "x": " M_He/Msun",
+   "y": " M_CO/Msun"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Pre-supernova evolution and final fates of binary-stripped stars' (Zenodo, doi 10.5281/zenodo.14959596): ' M_CO/Msun' follows a power law in ' M_He/Msun' (R\u00b2 = 0.992 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14959596",
+   "held_out_r2": 0.948,
+   "held_out_rows": 289,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c0d2537d4eef",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "5d5010faecca8f33.csv",
+   "doi": "10.5281/zenodo.14959596",
+   "form": "logarithmic",
+   "params": [
+    0.4478788594775173,
+    -0.0925265023614709
+   ],
+   "seed": 3586637484,
+   "x": " M_He/Msun",
+   "y": " X_C"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Pre-supernova evolution and final fates of binary-stripped stars' (Zenodo, doi 10.5281/zenodo.14959596): ' X_C' grows logarithmically in ' M_He/Msun' (R\u00b2 = 0.957 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14959596",
+   "held_out_r2": 0.935,
+   "held_out_rows": 289,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-132689d2f6e6",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "5d5010faecca8f33.csv",
+   "doi": "10.5281/zenodo.14959596",
+   "form": "logarithmic",
+   "params": [
+    0.3968199200303622,
+    -0.08037547001139168
+   ],
+   "seed": 3586637484,
+   "x": " M_CO/Msun",
+   "y": " X_C"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Pre-supernova evolution and final fates of binary-stripped stars' (Zenodo, doi 10.5281/zenodo.14959596): ' X_C' grows logarithmically in ' M_CO/Msun' (R\u00b2 = 0.946 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14959596",
+   "held_out_r2": 0.9488,
+   "held_out_rows": 289,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-31fce9e52669",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "5d5010faecca8f33.csv",
+   "doi": "10.5281/zenodo.14959596",
+   "form": "exponential",
+   "params": [
+    -0.1973467084571056,
+    0.5958813751900963
+   ],
+   "seed": 3586637484,
+   "x": " compactness",
+   "y": " s_c/N_A/k_B"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Pre-supernova evolution and final fates of binary-stripped stars' (Zenodo, doi 10.5281/zenodo.14959596): ' s_c/N_A/k_B' grows exponentially in ' compactness' (R\u00b2 = 0.940 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20932855",
+   "held_out_r2": 0.9592,
+   "held_out_rows": 3925,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ab470729c1ce",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "146374553312918b.csv",
+   "doi": "10.5281/zenodo.20932855",
+   "form": "linear",
+   "params": [
+    0.03446359496715082,
+    0.9230024860237085
+   ],
+   "seed": 1448793397,
+   "x": "n_classified",
+   "y": "agreement_count"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Classification of CSC2.1.1 unknown X-ray sources from \"Self-Organizing Maps for the Explor' (Zenodo, doi 10.5281/zenodo.20932855): 'agreement_count' is linear in 'n_classified' (R\u00b2 = 0.976 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22962479",
+   "held_out_r2": 0.8958,
+   "held_out_rows": 235,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e80a5d4d166f",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "362c2e6ca86febcd.csv",
+   "doi": "10.5281/zenodo.22962479",
+   "form": "linear",
+   "params": [
+    -6.146909184309337,
+    0.2639911379650432
+   ],
+   "seed": 3229675214,
+   "x": "RAcen",
+   "y": "DEcen"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data and Analysis code for Satellite Streaks in HETDEX: Spectra, Orbital Identification, a' (Zenodo, doi 10.5281/zenodo.22962479): 'DEcen' is linear in 'RAcen' (R\u00b2 = 0.909 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22962479",
+   "held_out_r2": 0.8959,
+   "held_out_rows": 235,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-8e04489192dc",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "362c2e6ca86febcd.csv",
+   "doi": "10.5281/zenodo.22962479",
+   "form": "linear",
+   "params": [
+    -6.155315416423892,
+    0.26399215411689175
+   ],
+   "seed": 3229675214,
+   "x": "RAcen",
+   "y": "DEsta"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data and Analysis code for Satellite Streaks in HETDEX: Spectra, Orbital Identification, a' (Zenodo, doi 10.5281/zenodo.22962479): 'DEsta' is linear in 'RAcen' (R\u00b2 = 0.909 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22962479",
+   "held_out_r2": 0.8957,
+   "held_out_rows": 235,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-35a052412cc1",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "362c2e6ca86febcd.csv",
+   "doi": "10.5281/zenodo.22962479",
+   "form": "linear",
+   "params": [
+    -6.138727284070896,
+    0.2639935266212677
+   ],
+   "seed": 3229675214,
+   "x": "RAcen",
+   "y": "DEend"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data and Analysis code for Satellite Streaks in HETDEX: Spectra, Orbital Identification, a' (Zenodo, doi 10.5281/zenodo.22962479): 'DEend' is linear in 'RAcen' (R\u00b2 = 0.909 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22962479",
+   "held_out_r2": 0.8953,
+   "held_out_rows": 235,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a8a8b7caff09",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "362c2e6ca86febcd.csv",
+   "doi": "10.5281/zenodo.22962479",
+   "form": "linear",
+   "params": [
+    33.5641419701615,
+    3.4442164801270803
+   ],
+   "seed": 3229675214,
+   "x": "DEcen",
+   "y": "RAsta"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data and Analysis code for Satellite Streaks in HETDEX: Spectra, Orbital Identification, a' (Zenodo, doi 10.5281/zenodo.22962479): 'RAsta' is linear in 'DEcen' (R\u00b2 = 0.909 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22962479",
+   "held_out_r2": 0.8953,
+   "held_out_rows": 235,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e2f3e91f356f",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "362c2e6ca86febcd.csv",
+   "doi": "10.5281/zenodo.22962479",
+   "form": "linear",
+   "params": [
+    33.70601750665177,
+    3.444377804750363
+   ],
+   "seed": 3229675214,
+   "x": "DEcen",
+   "y": "RAend"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data and Analysis code for Satellite Streaks in HETDEX: Spectra, Orbital Identification, a' (Zenodo, doi 10.5281/zenodo.22962479): 'RAend' is linear in 'DEcen' (R\u00b2 = 0.909 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22962479",
+   "held_out_r2": 0.8959,
+   "held_out_rows": 235,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b2eb44ac93b2",
+  "kind": "empirical",
+  "novelty": "KNOWN: equation of state of a simulated fluid (pressure, density, temperature, chemical potential, kinetic energy) \u2014 not a discovery",
+  "payload": {
+   "dataset": "362c2e6ca86febcd.csv",
+   "doi": "10.5281/zenodo.22962479",
+   "form": "linear",
+   "params": [
+    -6.136715592940588,
+    0.26399683666899065
+   ],
+   "seed": 3229675214,
+   "x": "RAsta",
+   "y": "DEsta"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data and Analysis code for Satellite Streaks in HETDEX: Spectra, Orbital Identification, a' (Zenodo, doi 10.5281/zenodo.22962479): 'DEsta' is linear in 'RAsta' (R\u00b2 = 0.909 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22962479",
+   "held_out_r2": 0.8957,
+   "held_out_rows": 235,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-86b4320f6141",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "362c2e6ca86febcd.csv",
+   "doi": "10.5281/zenodo.22962479",
+   "form": "linear",
+   "params": [
+    -6.120124730351714,
+    0.26399819001397534
+   ],
+   "seed": 3229675214,
+   "x": "RAsta",
+   "y": "DEend"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data and Analysis code for Satellite Streaks in HETDEX: Spectra, Orbital Identification, a' (Zenodo, doi 10.5281/zenodo.22962479): 'DEend' is linear in 'RAsta' (R\u00b2 = 0.909 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22962479",
+   "held_out_r2": 0.8954,
+   "held_out_rows": 235,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-cc1ad8935b30",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "362c2e6ca86febcd.csv",
+   "doi": "10.5281/zenodo.22962479",
+   "form": "linear",
+   "params": [
+    33.716869732510325,
+    3.444963138805839
+   ],
+   "seed": 3229675214,
+   "x": "DEsta",
+   "y": "RAend"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data and Analysis code for Satellite Streaks in HETDEX: Spectra, Orbital Identification, a' (Zenodo, doi 10.5281/zenodo.22962479): 'RAend' is linear in 'DEsta' (R\u00b2 = 0.909 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22962479",
+   "held_out_r2": 0.8957,
+   "held_out_rows": 235,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-be297bf7afc6",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "362c2e6ca86febcd.csv",
+   "doi": "10.5281/zenodo.22962479",
+   "form": "linear",
+   "params": [
+    -6.156929646142532,
+    0.2639841282176806
+   ],
+   "seed": 3229675214,
+   "x": "RAend",
+   "y": "DEend"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data and Analysis code for Satellite Streaks in HETDEX: Spectra, Orbital Identification, a' (Zenodo, doi 10.5281/zenodo.22962479): 'DEend' is linear in 'RAend' (R\u00b2 = 0.909 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.10215630",
+   "held_out_r2": 0.9998,
+   "held_out_rows": 624,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b552f6bdf251",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "0cd14305af8b3928.csv",
+   "doi": "10.5281/zenodo.10215630",
+   "form": "power law",
+   "params": [
+    -18.3136566326838,
+    2.0080787299208476
+   ],
+   "seed": 125512429,
+   "x": "y (Hz)",
+   "y": "N_e (cm!a-3!n)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Juno Plasma Wave Observations at Europa' (Zenodo, doi 10.5281/zenodo.10215630): 'N_e (cm!a-3!n)' follows a power law in 'y (Hz)' (R\u00b2 = 1.000 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.10215630",
+   "held_out_r2": 0.9998,
+   "held_out_rows": 624,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-69a6cc1c8b06",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "0cd14305af8b3928.csv",
+   "doi": "10.5281/zenodo.10215630",
+   "form": "power law",
+   "params": [
+    -18.3136566326838,
+    2.0080787299208476
+   ],
+   "seed": 125512429,
+   "x": "Fuhr (Hz)",
+   "y": "N_e (cm!a-3!n)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Juno Plasma Wave Observations at Europa' (Zenodo, doi 10.5281/zenodo.10215630): 'N_e (cm!a-3!n)' follows a power law in 'Fuhr (Hz)' (R\u00b2 = 1.000 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.10215630",
+   "held_out_r2": 0.9979,
+   "held_out_rows": 624,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-24876e1804d7",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "0cd14305af8b3928.csv",
+   "doi": "10.5281/zenodo.10215630",
+   "form": "power law",
+   "params": [
+    -17.619702574691967,
+    1.9593708423293252
+   ],
+   "seed": 125512429,
+   "x": "F_L0 (Hz)",
+   "y": "N_e (cm!a-3!n)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Juno Plasma Wave Observations at Europa' (Zenodo, doi 10.5281/zenodo.10215630): 'N_e (cm!a-3!n)' follows a power law in 'F_L0 (Hz)' (R\u00b2 = 0.998 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.10215630",
+   "held_out_r2": 0.9976,
+   "held_out_rows": 624,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a62b59d581e1",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "0cd14305af8b3928.csv",
+   "doi": "10.5281/zenodo.10215630",
+   "form": "power law",
+   "params": [
+    -18.72204715194154,
+    2.034050229851216
+   ],
+   "seed": 125512429,
+   "x": "F_R0 (Hz)",
+   "y": "N_e (cm!a-3!n)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Juno Plasma Wave Observations at Europa' (Zenodo, doi 10.5281/zenodo.10215630): 'N_e (cm!a-3!n)' follows a power law in 'F_R0 (Hz)' (R\u00b2 = 0.998 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
