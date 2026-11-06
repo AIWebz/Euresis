@@ -773,3 +773,4 @@
 - 2026-11-06 14:29 FINDING (confirmed on held-out rows): In 'Millennial-scale change in Caribbean coral reef ecosystem structure and the role of human ' (Zenodo, doi 10.5061/dryad.08kprr4xq): 'PropLytTrip' grows logarithmically in 'PropEchin' (R² = 0.921 on the discovery half); held-out R² = 0.913 [emp-38598612dc7a]
 - 2026-11-06 14:29 FINDING (confirmed on held-out rows): In 'BGC-Argo Satellite matchup to compute variability in the Chl:C ratio of phytoplankton.' (Zenodo, doi 10.5281/zenodo.14680801): 'Chl_cor' is linear in 'chla' (R² = 0.951 on the discovery half); held-out R² = 0.947 [emp-edf0cf476811]
 - 2026-11-06 14:29 data feeds: 5708 datasets analysed so far, 690 confirmed findings
+- 2026-11-06 15:31 data feeds: online
