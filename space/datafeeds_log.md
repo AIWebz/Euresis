@@ -571,3 +571,4 @@
 - 2026-11-06 02:59 FINDING (confirmed on held-out rows): In 'Transferability of TDR moisture calibrations between compacted tropical subgrade soils: da' (Zenodo, doi 10.5281/zenodo.23838040): 'theta_v_ref_cm3cm3' grows logarithmically in 'epsilon_r_a' (R² = 0.983 on the discovery half); held-out R² = 0.980 [emp-03bca160dbdb]
 - 2026-11-06 02:59 FINDING (confirmed on held-out rows): In 'Data from: Selection on floral design in Polemonium brandegeei (Polemoniaceae): female and' (Zenodo, doi 10.5061/dryad.6cp7c2j1): 'TL' is linear in 'FL' (R² = 0.949 on the discovery half); held-out R² = 0.904 [emp-a9b325070007]
 - 2026-11-06 03:01 data feeds: 4396 datasets analysed so far, 512 confirmed findings
+- 2026-11-06 04:02 data feeds: online
