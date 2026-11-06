@@ -971,3 +971,4 @@
 - 2026-11-06 21:24 FINDING (confirmed on held-out rows): In 'Effect sizes in ecological meta-analyses: 35 years of progress?' (Zenodo, doi 10.5281/zenodo.21908081): 'W_mean' follows a power law in 'C_mean' (R² = 0.955 on the discovery half); held-out R² = 0.898 [emp-057a0c0920c0]
 - 2026-11-06 21:24 FINDING (confirmed on held-out rows): In 'Restoration and replication: a case study on the value of computational reproducibility as' (Zenodo, doi 10.5061/dryad.m905qfv6m): 'Rao' follows a power law in 'FDis' (R² = 0.965 on the discovery half); held-out R² = 0.962 [emp-727a0cb027fa]
 - 2026-11-06 21:25 data feeds: 6615 datasets analysed so far, 874 confirmed findings
+- 2026-11-06 22:05 data feeds: online
