@@ -993662,5 +993662,167 @@
   "statement": "Octal game 0.253716 is completely solved: its Grundy values are periodic with pre-period 1 and period 10 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.21357691",
+   "held_out_r2": 0.9661,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-6a1ba9897e24",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "5459c4072b8a93bb.csv",
+   "doi": "10.5281/zenodo.21357691",
+   "form": "power law",
+   "params": [
+    1.2705803904373973,
+    0.9032843915159833
+   ],
+   "seed": 2293659854,
+   "x": "optimalMin",
+   "y": "optimalMax"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'URBANE - WP5 - Database for soil health data' (Zenodo, doi 10.5281/zenodo.21357691): 'optimalMax' follows a power law in 'optimalMin' (R\u00b2 = 0.966 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.21833678",
+   "held_out_r2": 0.9784,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-30a6ce5757d6",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "928ed0dd0b2ccdfb.csv",
+   "doi": "10.5281/zenodo.21833678",
+   "form": "linear",
+   "params": [
+    2.009159671522298,
+    0.9103470072414859
+   ],
+   "seed": 1272513148,
+   "x": "average_T_STD",
+   "y": "average_T_burial"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Interactive effects of landscape position and soil diversity drive the spatial variability' (Zenodo, doi 10.5281/zenodo.21833678): 'average_T_burial' is linear in 'average_T_STD' (R\u00b2 = 0.979 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.21833678",
+   "held_out_r2": 0.9873,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a1d28a3d839b",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "928ed0dd0b2ccdfb.csv",
+   "doi": "10.5281/zenodo.21833678",
+   "form": "linear",
+   "params": [
+    -0.9323294785021622,
+    1.0578992047420996
+   ],
+   "seed": 1272513148,
+   "x": "average_T_STD",
+   "y": "air T 2cm"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Interactive effects of landscape position and soil diversity drive the spatial variability' (Zenodo, doi 10.5281/zenodo.21833678): 'air T 2cm' is linear in 'average_T_STD' (R\u00b2 = 0.988 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.21833678",
+   "held_out_r2": 0.9553,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-db2eb074ca28",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "928ed0dd0b2ccdfb.csv",
+   "doi": "10.5281/zenodo.21833678",
+   "form": "linear",
+   "params": [
+    -2.8488121408073988,
+    1.1314566456017259
+   ],
+   "seed": 1272513148,
+   "x": "average_T_burial",
+   "y": "air T 2cm"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Interactive effects of landscape position and soil diversity drive the spatial variability' (Zenodo, doi 10.5281/zenodo.21833678): 'air T 2cm' is linear in 'average_T_burial' (R\u00b2 = 0.957 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3689685",
+   "held_out_r2": 0.9142,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-16abc53ad437",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "e9ec85c693c01325.csv",
+   "doi": "10.5281/zenodo.3689685",
+   "form": "logarithmic",
+   "params": [
+    -0.1797716179672527,
+    0.0937786668742723
+   ],
+   "seed": 3750993559,
+   "x": "SWCs",
+   "y": "SWC_R2"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Simultaneous measurements of soil and ecosystem respiration: advantages, lessons, and ques' (Zenodo, doi 10.5281/zenodo.3689685): 'SWC_R2' grows logarithmically in 'SWCs' (R\u00b2 = 0.913 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.z08kprrk8",
+   "held_out_r2": 0.9188,
+   "held_out_rows": 113,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-0233799b10ba",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "496e52578b415b38.csv",
+   "doi": "10.5061/dryad.z08kprrk8",
+   "form": "power law",
+   "params": [
+    3.4431275558199537,
+    0.7775647157870058
+   ],
+   "seed": 4169408891,
+   "x": "TOC",
+   "y": "Cpratio"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Biocrust environmental data across Chinese deserts' (Zenodo, doi 10.5061/dryad.z08kprrk8): 'Cpratio' follows a power law in 'TOC' (R\u00b2 = 0.953 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
