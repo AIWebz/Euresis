@@ -1252,3 +1252,5 @@
 - 2026-11-06 16:48 round 1138: collision
 - 2026-11-06 16:50 round 1139: driven oscillator
 - 2026-11-06 16:50 round 1140: velocity addition
+- 2026-11-06 16:51 round 1141: Compton scattering
+- 2026-11-06 16:52 segment end: 1141 rounds, 5 discoveries, 2 known laws rediscovered

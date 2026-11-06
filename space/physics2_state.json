@@ -17512,6 +17512,16 @@
    "family": "driven oscillator",
    "expr": "1/(2*z)",
    "why": "affine combination of known quantities (amplitude / static deflection, quality factor)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 - u**2)*(1 - v**2)) / (1 - u*v)",
+   "why": "affine combination of known quantities (composed speed / c, Relativistic velocity parameter [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "1 - c/(c*x + 1)",
+   "why": "not positive on the physical domain"
   }
  ],
  "tried": [
@@ -23122,7 +23132,7 @@
    "k": "2/3"
   }
  ],
- "rounds": 1139,
+ "rounds": 1141,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",
