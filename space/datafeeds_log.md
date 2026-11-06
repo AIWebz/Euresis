@@ -555,3 +555,4 @@
 - 2026-11-06 01:05 FINDING (confirmed on held-out rows): In 'Shullcas_Hydro_Modelling' (Zenodo, doi 10.5281/zenodo.3465975): 'Grav_S' grows logarithmically in 'StreamOut_Q' (R² = 0.936 on the discovery half); held-out R² = 0.939 [emp-b7d7793d2780]
 - 2026-11-06 01:05 FINDING (confirmed on held-out rows): In 'Shullcas_Hydro_Modelling' (Zenodo, doi 10.5281/zenodo.3465975): 'Grav_S' follows a power law in 'Interflow2Stream_Q' (R² = 0.969 on the discovery half); held-out R² = 0.969 [emp-aaccffcd939c]
 - 2026-11-06 01:06 data feeds: 4206 datasets analysed so far, 500 confirmed findings
+- 2026-11-06 02:07 data feeds: online
