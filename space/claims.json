@@ -1013070,5 +1013070,329 @@
   "statement": "Octal game 0.261135 is completely solved: its Grundy values are periodic with pre-period 6 and period 4 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.8027450",
+   "held_out_r2": 0.9628,
+   "held_out_rows": 801,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-083133135dcb",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "ccba7b0b814dbd99.csv",
+   "doi": "10.5281/zenodo.8027450",
+   "form": "power law",
+   "params": [
+    -0.004340081885962699,
+    1.0016219033824103
+   ],
+   "seed": 2878212167,
+   "x": "loopT.means",
+   "y": "ftT.means"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for Radiation and temperature drive diurnal variation of aerobic methane emissions fr' (Zenodo, doi 10.5281/zenodo.8027450): 'ftT.means' follows a power law in 'loopT.means' (R\u00b2 = 0.966 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.9071",
+   "held_out_r2": 0.9131,
+   "held_out_rows": 58,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-690d28520b96",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "c6ba68accbc4f704.csv",
+   "doi": "10.5061/dryad.9071",
+   "form": "linear",
+   "params": [
+    -1.2454136584968916,
+    0.43798718994845937
+   ],
+   "seed": 605606042,
+   "x": "SVL",
+   "y": "HdWd"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: New species of Arthroleptis (Anura: Arthroleptidae) from Ngozi Crater in the Po' (Zenodo, doi 10.5061/dryad.9071): 'HdWd' is linear in 'SVL' (R\u00b2 = 0.916 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.9071",
+   "held_out_r2": 0.9052,
+   "held_out_rows": 58,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a74d4cc9aff1",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "c6ba68accbc4f704.csv",
+   "doi": "10.5061/dryad.9071",
+   "form": "linear",
+   "params": [
+    -0.29829095984397125,
+    1.083052977347457
+   ],
+   "seed": 605606042,
+   "x": "Femur",
+   "y": "TibFib"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: New species of Arthroleptis (Anura: Arthroleptidae) from Ngozi Crater in the Po' (Zenodo, doi 10.5061/dryad.9071): 'TibFib' is linear in 'Femur' (R\u00b2 = 0.914 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.9071",
+   "held_out_r2": 0.8288,
+   "held_out_rows": 58,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-7a77db09edd1",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "c6ba68accbc4f704.csv",
+   "doi": "10.5061/dryad.9071",
+   "form": "linear",
+   "params": [
+    -0.06665859005999801,
+    0.33664818349749215
+   ],
+   "seed": 605606042,
+   "x": "TibFib",
+   "y": "PDIII"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: New species of Arthroleptis (Anura: Arthroleptidae) from Ngozi Crater in the Po' (Zenodo, doi 10.5061/dryad.9071): 'PDIII' is linear in 'TibFib' (R\u00b2 = 0.908 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7409361",
+   "held_out_r2": -Infinity,
+   "held_out_rows": 1460,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-689d099bc9bd",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "a5d2324f480d81e5.csv",
+   "doi": "10.5281/zenodo.7409361",
+   "form": "power law",
+   "params": [
+    -0.8589867590732079,
+    0.6916164729552854
+   ],
+   "seed": 554172426,
+   "x": "co2.fuel.coal",
+   "y": "co2.fuel.bio"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Sources and sinks of carbonyl sulfide inferred from tower and mobile atmospheric observati' (Zenodo, doi 10.5281/zenodo.7409361): 'co2.fuel.bio' follows a power law in 'co2.fuel.coal' (R\u00b2 = 0.904 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7409361",
+   "held_out_r2": 0.9859,
+   "held_out_rows": 1460,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-2af5b3883106",
+  "kind": "empirical",
+  "novelty": "KNOWN: seawater carbonate chemistry (CO2SYS-type calculations) \u2014 not a discovery",
+  "payload": {
+   "dataset": "a5d2324f480d81e5.csv",
+   "doi": "10.5281/zenodo.7409361",
+   "form": "power law",
+   "params": [
+    -0.341302859222568,
+    0.9332211231789694
+   ],
+   "seed": 554172426,
+   "x": "co2.fuel.oil",
+   "y": "co2.transport"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Sources and sinks of carbonyl sulfide inferred from tower and mobile atmospheric observati' (Zenodo, doi 10.5281/zenodo.7409361): 'co2.transport' follows a power law in 'co2.fuel.oil' (R\u00b2 = 0.988 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7409361",
+   "held_out_r2": 0.9313,
+   "held_out_rows": 1460,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-fbcbc3fd5def",
+  "kind": "empirical",
+  "novelty": "KNOWN: seawater carbonate chemistry (CO2SYS-type calculations) \u2014 not a discovery",
+  "payload": {
+   "dataset": "a5d2324f480d81e5.csv",
+   "doi": "10.5281/zenodo.7409361",
+   "form": "power law",
+   "params": [
+    -0.04877800444074937,
+    1.1454814148105192
+   ],
+   "seed": 554172426,
+   "x": "co2.fuel.gas",
+   "y": "co2.energy"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Sources and sinks of carbonyl sulfide inferred from tower and mobile atmospheric observati' (Zenodo, doi 10.5281/zenodo.7409361): 'co2.energy' follows a power law in 'co2.fuel.gas' (R\u00b2 = 0.930 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7409361",
+   "held_out_r2": 0.9629,
+   "held_out_rows": 1460,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d91814697ce9",
+  "kind": "empirical",
+  "novelty": "KNOWN: seawater carbonate chemistry (CO2SYS-type calculations) \u2014 not a discovery",
+  "payload": {
+   "dataset": "a5d2324f480d81e5.csv",
+   "doi": "10.5281/zenodo.7409361",
+   "form": "linear",
+   "params": [
+    0.008905971815888859,
+    0.30162808890435766
+   ],
+   "seed": 554172426,
+   "x": "co2.industry",
+   "y": "co2.cement"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Sources and sinks of carbonyl sulfide inferred from tower and mobile atmospheric observati' (Zenodo, doi 10.5281/zenodo.7409361): 'co2.cement' is linear in 'co2.industry' (R\u00b2 = 0.950 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.dg82p",
+   "held_out_r2": 0.9986,
+   "held_out_rows": 121,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-bec8d63d8aa0",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "fd9589f79c094bfa.csv",
+   "doi": "10.5061/dryad.dg82p",
+   "form": "exponential",
+   "params": [
+    0.0008445969706998971,
+    0.9998532748229139
+   ],
+   "seed": 3071815738,
+   "x": "adj.logplates",
+   "y": "adj.plates"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Discriminating selection on lateral plate phenotype and its underlying gene, Ec' (Zenodo, doi 10.5061/dryad.dg82p): 'adj.plates' grows exponentially in 'adj.logplates' (R\u00b2 = 0.999 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23838040",
+   "held_out_r2": 0.9801,
+   "held_out_rows": 129,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-03bca160dbdb",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "e2c4c944fb5622a1.csv",
+   "doi": "10.5281/zenodo.23838040",
+   "form": "logarithmic",
+   "params": [
+    -0.2623428983131575,
+    0.19279846930082248
+   ],
+   "seed": 2203925687,
+   "x": "epsilon_r_a",
+   "y": "theta_v_ref_cm3cm3"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Transferability of TDR moisture calibrations between compacted tropical subgrade soils: da' (Zenodo, doi 10.5281/zenodo.23838040): 'theta_v_ref_cm3cm3' grows logarithmically in 'epsilon_r_a' (R\u00b2 = 0.983 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.6cp7c2j1",
+   "held_out_r2": 0.9036,
+   "held_out_rows": 47,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a9b325070007",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "53cfe3fd44b8a269.csv",
+   "doi": "10.5061/dryad.6cp7c2j1",
+   "form": "linear",
+   "params": [
+    -0.21889873320436862,
+    0.7570230934123455
+   ],
+   "seed": 581351438,
+   "x": "FL",
+   "y": "TL"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Selection on floral design in Polemonium brandegeei (Polemoniaceae): female and' (Zenodo, doi 10.5061/dryad.6cp7c2j1): 'TL' is linear in 'FL' (R\u00b2 = 0.949 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.6cp7c2j1",
+   "held_out_r2": 0.7341,
+   "held_out_rows": 47,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-7dd2dbf531ff",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "53cfe3fd44b8a269.csv",
+   "doi": "10.5061/dryad.6cp7c2j1",
+   "form": "linear",
+   "params": [
+    -3.05912040284343,
+    1.2676632162716537
+   ],
+   "seed": 581351438,
+   "x": "TL",
+   "y": "ANTHER"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Selection on floral design in Polemonium brandegeei (Polemoniaceae): female and' (Zenodo, doi 10.5061/dryad.6cp7c2j1): 'ANTHER' is linear in 'TL' (R\u00b2 = 0.926 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
  }
 ]
