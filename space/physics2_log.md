@@ -1182,3 +1182,8 @@
 - 2026-11-06 13:58 round 1074: collision
 - 2026-11-06 14:00 round 1075: driven oscillator
 - 2026-11-06 14:01 round 1076: velocity addition
+- 2026-11-06 14:02 round 1077: Compton scattering
+- 2026-11-06 14:02 round 1078: Cournot duopoly
+- 2026-11-06 14:03 round 1079: insurance and risk
+- 2026-11-06 14:04 round 1080: auction with a reserve price
+- 2026-11-06 14:05 segment end: 1080 rounds, 5 discoveries, 2 known laws rediscovered
