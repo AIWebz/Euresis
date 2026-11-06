@@ -838,3 +838,4 @@
 - 2026-11-06 17:26 FINDING (confirmed on held-out rows): In 'Data from: Evidence for morph-specific substrate choice in a green-brown polymorphic grass' (Zenodo, doi 10.5061/dryad.hqbzkh1hd): 'BFD_RP01_D2' is linear in 'BFL_RP01_L2' (R² = 0.916 on the discovery half); held-out R² = 0.875 [emp-c11eda7f631a]
 - 2026-11-06 17:26 FINDING (confirmed on held-out rows): In 'Data from: Evidence for morph-specific substrate choice in a green-brown polymorphic grass' (Zenodo, doi 10.5061/dryad.hqbzkh1hd): 'BFD_RP01_D4' is linear in 'BFL_RP01_L2' (R² = 0.924 on the discovery half); held-out R² = 0.895 [emp-5a9867270e0a]
 - 2026-11-06 17:26 data feeds: 5986 datasets analysed so far, 749 confirmed findings
+- 2026-11-06 18:15 data feeds: online

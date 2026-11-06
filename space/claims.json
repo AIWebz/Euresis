@@ -1334910,5 +1334910,59 @@
   "statement": "Octal game 0.407125 is completely solved: its Grundy values are periodic with pre-period 285 and period 48 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22081365",
+   "held_out_r2": 0.8081,
+   "held_out_rows": 90,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-7c479a59aff3",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "18652dd09b651a29.csv",
+   "doi": "10.5281/zenodo.22081365",
+   "form": "linear",
+   "params": [
+    -0.2906711179580144,
+    0.28116972060112944
+   ],
+   "seed": 2743354855,
+   "x": "Fitness",
+   "y": "b"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data supporting TDEBKA for benchmark and engineering optimization' (Zenodo, doi 10.5281/zenodo.22081365): 'b' is linear in 'Fitness' (R\u00b2 = 0.917 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22081365",
+   "held_out_r2": 0.8082,
+   "held_out_rows": 90,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-af75dd30b272",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "18652dd09b651a29.csv",
+   "doi": "10.5281/zenodo.22081365",
+   "form": "linear",
+   "params": [
+    -0.2906712686510401,
+    0.28116983753206437
+   ],
+   "seed": 2743354855,
+   "x": "Objective_Cost",
+   "y": "b"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data supporting TDEBKA for benchmark and engineering optimization' (Zenodo, doi 10.5281/zenodo.22081365): 'b' is linear in 'Objective_Cost' (R\u00b2 = 0.917 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
  }
 ]
