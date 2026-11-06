@@ -1039,3 +1039,7 @@
 - 2026-11-06 09:35 round 942: Cournot duopoly
 - 2026-11-06 09:36 round 943: insurance and risk
 - 2026-11-06 09:37 round 944: auction with a reserve price
+- 2026-11-06 09:39 round 945: two-body decay
+- 2026-11-06 09:40 round 946: collision
+- 2026-11-06 09:41 round 947: driven oscillator
+- 2026-11-06 09:42 segment end: 947 rounds, 4 discoveries, 2 known laws rediscovered
