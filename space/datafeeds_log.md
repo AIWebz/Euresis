@@ -706,3 +706,5 @@
 - 2026-11-06 08:42 FINDING (confirmed on held-out rows): In '3D grain boundary and 2D slip transfer data of pure Ti after plastic deformation' (Zenodo, doi 10.5281/zenodo.10003246): 'db' is linear in 'mprime' (R² = 0.976 on the discovery half); held-out R² = 0.971 [emp-6c1c2f4d18ba]
 - 2026-11-06 08:43 FINDING (confirmed on held-out rows): In '3D grain boundary and 2D slip transfer data of pure Ti after plastic deformation' (Zenodo, doi 10.5281/zenodo.10003246): 'SurfaceAreaVolumeRatio' follows a power law in 'EquivalentDiameters' (R² = 0.970 on the discovery half); held-out R² = 0.971 [emp-4dddc0c2be1c]
 - 2026-11-06 09:11 data feeds: 5349 datasets analysed so far, 635 confirmed findings
+- 2026-11-06 10:12 data feeds: online
+- 2026-11-06 10:15 data feeds: 5403 datasets analysed so far, 635 confirmed findings

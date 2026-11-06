@@ -1155651,5 +1155651,32 @@
   "statement": "Octal game 0.335023 is completely solved: its Grundy values are periodic with pre-period 0 and period 4 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.5qfttdzbz",
+   "held_out_r2": 0.9951,
+   "held_out_rows": 70,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ab7403fb414b",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "73010fca8809cf79.csv",
+   "doi": "10.5061/dryad.5qfttdzbz",
+   "form": "power law",
+   "params": [
+    2.162347575446214,
+    0.8855124203491759
+   ],
+   "seed": 805069019,
+   "x": "Predicted population size (bottom of 95% CI)",
+   "y": "Predicted population size (top of 95% CI)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Is my model fit for purpose? Validating a population model for predicting freshwater fish ' (Zenodo, doi 10.5061/dryad.5qfttdzbz): 'Predicted population size (top of 95% CI)' follows a power law in 'Predicted population size (bottom of 95% CI)' (R\u00b2 = 0.993 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
