@@ -1102,3 +1102,21 @@
 - 2026-11-06 11:46 round 999: insurance and risk
 - 2026-11-06 11:47 DISCOVERY (proved, sharp to 1e-6, two-variable): [economics: insurance and risk] Relative Risk Aversion [model-proposed; physical meaning unverified] ≥ 27/2 × Expected Utility Adjustment Factor [model-proposed; physical meaning unverified]   on p < 1, L < 1 (equality at (p, L) ≈ (0.9, 0.987654))  [phy-5b1615009c2d]
 - 2026-11-06 11:47 round 1000: auction with a reserve price
+- 2026-11-06 11:48 round 1001: two-body decay
+- 2026-11-06 11:50 round 1002: collision
+- 2026-11-06 11:51 round 1003: driven oscillator
+- 2026-11-06 11:52 round 1004: velocity addition
+- 2026-11-06 11:53 round 1005: Compton scattering
+- 2026-11-06 11:53 round 1006: Cournot duopoly
+- 2026-11-06 11:54 round 1007: insurance and risk
+- 2026-11-06 11:56 round 1008: auction with a reserve price
+- 2026-11-06 11:56 round 1009: two-body decay
+- 2026-11-06 11:58 round 1010: collision
+- 2026-11-06 11:59 round 1011: driven oscillator
+- 2026-11-06 12:00 round 1012: velocity addition
+- 2026-11-06 12:01 round 1013: Compton scattering
+- 2026-11-06 12:02 round 1014: Cournot duopoly
+- 2026-11-06 12:03 round 1015: insurance and risk
+- 2026-11-06 12:04 round 1016: auction with a reserve price
+- 2026-11-06 12:06 round 1017: two-body decay
+- 2026-11-06 12:07 round 1018: collision
