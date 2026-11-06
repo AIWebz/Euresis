@@ -16785,6 +16785,26 @@
    "family": "driven oscillator",
    "expr": "2*z*r**2/((1 - r**2)**2 + (2*z*r)**2)",
    "why": "affine combination of known quantities (amplitude / static deflection, mean absorbed power (normalised))"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 + u)/(1 - u)) * sqrt((1 + v)/(1 - v)) / sqrt((1 + (u + v)/(1 + u*v)) / (1 - (u + v)/(1 + u*v",
+   "why": "affine combination of known quantities (composed speed / c)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt(1 - ((u + v)/(1 + u*v))**2) / (sqrt(1 - u**2) * sqrt(1 - v**2))",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt(1 - u**2) + sqrt(1 - v**2) / sqrt(1 - ((u + v)/(1 + u*v))**2)",
+   "why": "affine combination of known quantities (composed speed / c, Relativistic Energy-Momentum Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "(1 + u*v)/(sqrt(1 - u**2)*sqrt(1 - v**2)) - 1 / (1/sqrt(1 - u**2) + 1/sqrt(1 - v**2) - 2)",
+   "why": "not positive on the physical domain"
   }
  ],
  "tried": [
@@ -22317,7 +22337,7 @@
    "k": "1"
   }
  ],
- "rounds": 1083,
+ "rounds": 1084,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",
