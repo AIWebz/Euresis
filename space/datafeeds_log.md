@@ -563,3 +563,4 @@
 - 2026-11-06 02:09 FINDING (confirmed on held-out rows): In 'Simultaneous measurements of soil and ecosystem respiration: advantages, lessons, and ques' (Zenodo, doi 10.5281/zenodo.3689685): 'SWC_R2' grows logarithmically in 'SWCs' (R² = 0.913 on the discovery half); held-out R² = 0.914 [emp-16abc53ad437]
 - 2026-11-06 02:09 FINDING (confirmed on held-out rows): In 'Biocrust environmental data across Chinese deserts' (Zenodo, doi 10.5061/dryad.z08kprrk8): 'Cpratio' follows a power law in 'TOC' (R² = 0.953 on the discovery half); held-out R² = 0.919 [emp-0233799b10ba]
 - 2026-11-06 02:09 data feeds: 4300 datasets analysed so far, 506 confirmed findings
+- 2026-11-06 02:58 data feeds: online
