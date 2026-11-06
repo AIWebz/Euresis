@@ -999,3 +999,4 @@
 - 2026-11-06 22:09 FINDING (confirmed on held-out rows): In 'Data from: The characteristics of tides and their effects on the general circulation of th' (Zenodo, doi 10.5281/zenodo.10911630): 'Energy density' grows exponentially in 'Frequency' (R² = 0.906 on the discovery half); held-out R² = 0.905 [emp-dc7ac757e1bb]
 - 2026-11-06 22:09 FINDING (confirmed on held-out rows): In 'Magnetic profiles and XPS depth profiles for Reduction formed EuO films.' (Figshare, doi 10.17035/cardiff.31843156.v1): 'Si 2p El %.1' is linear in 'O 1s %.1' (R² = 0.966 on the discovery half); held-out R² = 0.922 [emp-29be7def03d7]
 - 2026-11-06 22:09 data feeds: 6694 datasets analysed so far, 900 confirmed findings
+- 2026-11-06 22:12 data feeds: online
