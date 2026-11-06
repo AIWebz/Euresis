@@ -657,3 +657,4 @@
 - 2026-11-06 06:49 FINDING (confirmed on held-out rows): In 'Insight into the ecology of vaginal bacteria through integrative analyses of metagenomic a' (Zenodo, doi 10.5281/zenodo.5932449): 'Total_pos' follows a power law in 'Gardnerella_vaginalis' (R² = 0.958 on the discovery half); held-out R² = 0.909 [emp-15f7e01582ef]
 - 2026-11-06 06:49 FINDING (confirmed on held-out rows): In 'Insight into the ecology of vaginal bacteria through integrative analyses of metagenomic a' (Zenodo, doi 10.5281/zenodo.5932449): 'adjP' follows a power law in 'P' (R² = 1.000 on the discovery half); held-out R² = 1.000 [emp-3a64b7afe42a]
 - 2026-11-06 06:50 data feeds: 5021 datasets analysed so far, 590 confirmed findings
+- 2026-11-06 07:50 data feeds: online
