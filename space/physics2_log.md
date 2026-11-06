@@ -1131,3 +1131,26 @@
 - 2026-11-06 12:36 round 1025: two-body decay
 - 2026-11-06 12:37 round 1026: collision
 - 2026-11-06 12:38 round 1027: driven oscillator
+- 2026-11-06 12:39 round 1028: velocity addition
+- 2026-11-06 12:40 round 1029: Compton scattering
+- 2026-11-06 12:41 round 1030: Cournot duopoly
+- 2026-11-06 12:42 round 1031: insurance and risk
+- 2026-11-06 12:43 round 1032: auction with a reserve price
+- 2026-11-06 12:44 round 1033: two-body decay
+- 2026-11-06 12:45 round 1034: collision
+- 2026-11-06 12:46 round 1035: driven oscillator
+- 2026-11-06 12:47 round 1036: velocity addition
+- 2026-11-06 12:48 round 1037: Compton scattering
+- 2026-11-06 12:49 round 1038: Cournot duopoly
+- 2026-11-06 12:49 round 1039: insurance and risk
+- 2026-11-06 12:51 round 1040: auction with a reserve price
+- 2026-11-06 12:51 round 1041: two-body decay
+- 2026-11-06 12:52 round 1042: collision
+- 2026-11-06 12:53 round 1043: driven oscillator
+- 2026-11-06 12:54 round 1044: velocity addition
+- 2026-11-06 12:55 round 1045: Compton scattering
+- 2026-11-06 12:56 round 1046: Cournot duopoly
+- 2026-11-06 12:57 round 1047: insurance and risk
+- 2026-11-06 12:58 round 1048: auction with a reserve price
+- 2026-11-06 12:59 round 1049: two-body decay
+- 2026-11-06 13:01 round 1050: collision
