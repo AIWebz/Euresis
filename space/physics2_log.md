@@ -1120,3 +1120,7 @@
 - 2026-11-06 12:04 round 1016: auction with a reserve price
 - 2026-11-06 12:06 round 1017: two-body decay
 - 2026-11-06 12:07 round 1018: collision
+- 2026-11-06 12:08 round 1019: driven oscillator
+- 2026-11-06 12:09 round 1020: velocity addition
+- 2026-11-06 12:11 round 1021: Compton scattering
+- 2026-11-06 12:12 segment end: 1021 rounds, 5 discoveries, 2 known laws rediscovered
