@@ -1471201,5 +1471201,61 @@
   "statement": "In 'Data from: Geographic distance predicts population synchrony in a widespread farmland pred' (Figshare, doi 10.6084/m9.figshare.32594592.v2): 'total_fledgling_first_brood' follows a power law in 'number_first_brood' (R\u00b2 = 0.942 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-12661572266b",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "claim": "sqrt((1 - (a - b)**2)*(1 - (a + b)**2)/4 + (a**2 - b**2 + 1)**2)/sqrt((1 - (a - b)**2)*(1 - (a + b)**2)/4 + (-a**2 + b**2 + 1)**2) >= 1*(a**2/2 - b**2/2 + 1/2)",
+   "symbols": [
+    "a",
+    "b"
+   ]
+  },
+  "source": "physics_discover2 round 1305",
+  "statement": "[physics: two-body decay] Lorentz Factor Ratio of Products [model-proposed; physical meaning unverified] \u2265 1 \u00d7 energy of product 1 / (Mc\u00b2)   on a < 1, b < 1, a + b < 1 (tight only at the edge of the domain, near (5.27e-09, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-28980f43f91c",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "claim": "((1 - c1)**2/4 - (-2*c1 + c2 + 1)**2/9)/((1 - c2)**2/4 - (c1 - 2*c2 + 1)**2/9) >= 1/2*((1 - c1)*(c1 - 2*c2 + 1)/((1 - c2)*(-2*c1 + c2 + 1)))",
+   "symbols": [
+    "c1",
+    "c2"
+   ]
+  },
+  "source": "physics_discover2 round 1310",
+  "statement": "[economics: Cournot duopoly] Price Deviation from Monopoly Price [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 Mark-up Ratio [model-proposed; physical meaning unverified]   on c1 < 1/2, c2 < 1/2 (tight only at the edge of the domain, near (0.5, 8.36e-09))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]
