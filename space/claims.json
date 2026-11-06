@@ -1183711,5 +1183711,140 @@
   "statement": "Octal game 0.352025 is completely solved: its Grundy values are periodic with pre-period 2 and period 2 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.7d7wm383b",
+   "held_out_r2": 0.9807,
+   "held_out_rows": 242,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b2d65fcec9af",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "a5bb04bd72624c67.csv",
+   "doi": "10.5061/dryad.7d7wm383b",
+   "form": "linear",
+   "params": [
+    -5.565803589120388,
+    0.03536532612060863
+   ],
+   "seed": 2586651439,
+   "x": "Territory_Perimeter (m)",
+   "y": "Territory Size (PC1 from 3-variable PCA)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Effects of age, breeding strategy, population density, and number of neighbors ' (Zenodo, doi 10.5061/dryad.7d7wm383b): 'Territory Size (PC1 from 3-variable PCA)' is linear in 'Territory_Perimeter (m)' (R\u00b2 = 0.986 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.wstqjq2kb",
+   "held_out_r2": 0.9207,
+   "held_out_rows": 5574,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f92dbadb3c92",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "608c68af032847a7.csv",
+   "doi": "10.5061/dryad.wstqjq2kb",
+   "form": "exponential",
+   "params": [
+    7.47936940312067,
+    7.899832126214058e-06
+   ],
+   "seed": 4236854337,
+   "x": "ORDER No",
+   "y": "DESCRIPTION DATE"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dark extinction: The problem of unknown historical extinctions' (Zenodo, doi 10.5061/dryad.wstqjq2kb): 'DESCRIPTION DATE' grows exponentially in 'ORDER No' (R\u00b2 = 0.925 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.905qfttnt",
+   "held_out_r2": 0.9419,
+   "held_out_rows": 315,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-53517c202690",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "4bd9a17f1d64887d.csv",
+   "doi": "10.5061/dryad.905qfttnt",
+   "form": "power law",
+   "params": [
+    -5.231342718525052,
+    0.8879448357226565
+   ],
+   "seed": 4246336748,
+   "x": "C.ug",
+   "y": "sample.mg"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Experimental addition of marine-derived nutrients affects wildflower traits in a coastal m' (Zenodo, doi 10.5061/dryad.905qfttnt): 'sample.mg' follows a power law in 'C.ug' (R\u00b2 = 0.942 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rjdfn2zfw",
+   "held_out_r2": 0.8705,
+   "held_out_rows": 139,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-7faa59f9bf49",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "ade51d9e95df6551.csv",
+   "doi": "10.5061/dryad.rjdfn2zfw",
+   "form": "linear",
+   "params": [
+    -1.8649770852948995,
+    0.19951393043600382
+   ],
+   "seed": 3830032539,
+   "x": "avg.DDS",
+   "y": "st.avg.female"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Simulated pollinator decline has similar effects on seed production of female and hermaphr' (Zenodo, doi 10.5061/dryad.rjdfn2zfw): 'st.avg.female' is linear in 'avg.DDS' (R\u00b2 = 0.903 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rjdfn2zfw",
+   "held_out_r2": 0.8886,
+   "held_out_rows": 139,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4a25e380c304",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "ade51d9e95df6551.csv",
+   "doi": "10.5061/dryad.rjdfn2zfw",
+   "form": "linear",
+   "params": [
+    0.03621547822391569,
+    0.9646993695985245
+   ],
+   "seed": 3830032539,
+   "x": "st.avg.DDS",
+   "y": "st.avg.female"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Simulated pollinator decline has similar effects on seed production of female and hermaphr' (Zenodo, doi 10.5061/dryad.rjdfn2zfw): 'st.avg.female' is linear in 'st.avg.DDS' (R\u00b2 = 0.938 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]

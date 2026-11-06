@@ -744,3 +744,7 @@
 - 2026-11-06 10:39 FINDING (confirmed on held-out rows): In 'Male-like ornamentation in female hummingbirds results from social harassment rather than ' (Zenodo, doi 10.5281/zenodo.5035295): 'vG_mean_h' is linear in 'vR_mean_h' (R² = 0.913 on the discovery half); held-out R² = 0.891 [emp-6b5df497493e]
 - 2026-11-06 10:39 data feeds: 5481 datasets analysed so far, 668 confirmed findings
 - 2026-11-06 11:40 data feeds: online
+- 2026-11-06 11:40 FINDING (confirmed on held-out rows): In 'Data from: Effects of age, breeding strategy, population density, and number of neighbors ' (Zenodo, doi 10.5061/dryad.7d7wm383b): 'Territory Size (PC1 from 3-variable PCA)' is linear in 'Territory_Perimeter (m)' (R² = 0.986 on the discovery half); held-out R² = 0.981 [emp-b2d65fcec9af]
+- 2026-11-06 11:40 FINDING (confirmed on held-out rows): In 'Dark extinction: The problem of unknown historical extinctions' (Zenodo, doi 10.5061/dryad.wstqjq2kb): 'DESCRIPTION DATE' grows exponentially in 'ORDER No' (R² = 0.925 on the discovery half); held-out R² = 0.921 [emp-f92dbadb3c92]
+- 2026-11-06 11:41 FINDING (confirmed on held-out rows): In 'Experimental addition of marine-derived nutrients affects wildflower traits in a coastal m' (Zenodo, doi 10.5061/dryad.905qfttnt): 'sample.mg' follows a power law in 'C.ug' (R² = 0.942 on the discovery half); held-out R² = 0.942 [emp-53517c202690]
+- 2026-11-06 11:41 data feeds: 5523 datasets analysed so far, 671 confirmed findings
