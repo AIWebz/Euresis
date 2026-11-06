@@ -1191,3 +1191,4 @@
 - 2026-11-06 14:30 round 1081: two-body decay
 - 2026-11-06 14:42 round 1082: collision
 - 2026-11-06 14:53 round 1083: driven oscillator
+- 2026-11-06 14:59 round 1084: velocity addition
