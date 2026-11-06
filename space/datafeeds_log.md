@@ -947,3 +947,4 @@
 - 2026-11-06 20:21 FINDING (confirmed on held-out rows): In 'Reviewer Dataset for Co-bpy-AHA Redox-Triggered Urease Inhibition Study' (Figshare, doi 10.6084/m9.figshare.32967920.v1): 'occupancy_fraction' follows a power law in 'contact_frames' (R² = 0.933 on the discovery half); held-out R² = 0.939 [emp-0457a9dd62d6]
 - 2026-11-06 20:21 FINDING (confirmed on held-out rows): In 'Reviewer Dataset for Co-bpy-AHA Redox-Triggered Urease Inhibition Study' (Figshare, doi 10.6084/m9.figshare.32967920.v1): 'occupancy_fraction' follows a power law in 'occupied_frames' (R² = 0.985 on the discovery half); held-out R² = 0.994 [emp-63881c1072fe]
 - 2026-11-06 20:21 data feeds: 6527 datasets analysed so far, 852 confirmed findings
+- 2026-11-06 21:22 data feeds: online
