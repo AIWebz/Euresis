@@ -1470337,5 +1470337,113 @@
   "statement": "Octal game 0.427467 is completely solved: its Grundy values are periodic with pre-period 285 and period 48 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.vdncjsxv2",
+   "held_out_r2": 0.9823,
+   "held_out_rows": 110,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-fd5b8639ae22",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "ab9c2b0bc8875e39.csv",
+   "doi": "10.5061/dryad.vdncjsxv2",
+   "form": "linear",
+   "params": [
+    -4.538780853602991e-08,
+    9.821172898987155e-05
+   ],
+   "seed": 945848057,
+   "x": "g_lost",
+   "y": "E_act_hab_g/s"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Desiccation amelioration and climate risk on rocky shores' (Zenodo, doi 10.5061/dryad.vdncjsxv2): 'E_act_hab_g/s' is linear in 'g_lost' (R\u00b2 = 0.988 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.vdncjsxv2",
+   "held_out_r2": 0.9822,
+   "held_out_rows": 110,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f0075658f270",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "ab9c2b0bc8875e39.csv",
+   "doi": "10.5061/dryad.vdncjsxv2",
+   "form": "linear",
+   "params": [
+    -0.1635842281874885,
+    353.62987024866214
+   ],
+   "seed": 945848057,
+   "x": "g_lost",
+   "y": "E_act_hab_mg/h"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Desiccation amelioration and climate risk on rocky shores' (Zenodo, doi 10.5061/dryad.vdncjsxv2): 'E_act_hab_mg/h' is linear in 'g_lost' (R\u00b2 = 0.988 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.vdncjsxv2",
+   "held_out_r2": 0.9997,
+   "held_out_rows": 110,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-888c29a3fc11",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "ab9c2b0bc8875e39.csv",
+   "doi": "10.5061/dryad.vdncjsxv2",
+   "form": "exponential",
+   "params": [
+    -0.4042514450031731,
+    0.06228909601643832
+   ],
+   "seed": 945848057,
+   "x": "Temp_hab_av",
+   "y": "Ps(T)_hab"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Desiccation amelioration and climate risk on rocky shores' (Zenodo, doi 10.5061/dryad.vdncjsxv2): 'Ps(T)_hab' grows exponentially in 'Temp_hab_av' (R\u00b2 = 1.000 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.vdncjsxv2",
+   "held_out_r2": 0.8973,
+   "held_out_rows": 110,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f1dc86919f73",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "ab9c2b0bc8875e39.csv",
+   "doi": "10.5061/dryad.vdncjsxv2",
+   "form": "logarithmic",
+   "params": [
+    11.066239079503031,
+    -2.4190016281016744
+   ],
+   "seed": 945848057,
+   "x": "RH_hab_mean",
+   "y": "Ds_hab_kPA"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Desiccation amelioration and climate risk on rocky shores' (Zenodo, doi 10.5061/dryad.vdncjsxv2): 'Ds_hab_kPA' grows logarithmically in 'RH_hab_mean' (R\u00b2 = 0.935 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]

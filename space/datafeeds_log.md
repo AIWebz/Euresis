@@ -1013,3 +1013,8 @@
 - 2026-11-06 22:16 FINDING (confirmed on held-out rows): In 'Untethered Muscle Tracking Supplementary Materials' (Zenodo, doi 10.5281/zenodo.6952783): 'B_y4' is linear in 'B_x2' (R² = 0.923 on the discovery half); held-out R² = 0.920 [emp-dfa685f0a6f0]
 - 2026-11-06 22:16 FINDING (confirmed on held-out rows): In 'Untethered Muscle Tracking Supplementary Materials' (Zenodo, doi 10.5281/zenodo.6952783): 'B_x4' grows logarithmically in 'B_y2' (R² = 0.934 on the discovery half); held-out R² = 0.931 [emp-db9249d0de98]
 - 2026-11-06 22:18 data feeds: 6915 datasets analysed so far, 912 confirmed findings
+- 2026-11-06 23:19 data feeds: online
+- 2026-11-06 23:19 FINDING (confirmed on held-out rows): In 'Desiccation amelioration and climate risk on rocky shores' (Zenodo, doi 10.5061/dryad.vdncjsxv2): 'E_act_hab_g/s' is linear in 'g_lost' (R² = 0.988 on the discovery half); held-out R² = 0.982 [emp-fd5b8639ae22]
+- 2026-11-06 23:19 FINDING (confirmed on held-out rows): In 'Desiccation amelioration and climate risk on rocky shores' (Zenodo, doi 10.5061/dryad.vdncjsxv2): 'E_act_hab_mg/h' is linear in 'g_lost' (R² = 0.988 on the discovery half); held-out R² = 0.982 [emp-f0075658f270]
+- 2026-11-06 23:20 FINDING (confirmed on held-out rows): In 'Desiccation amelioration and climate risk on rocky shores' (Zenodo, doi 10.5061/dryad.vdncjsxv2): 'Ps(T)_hab' grows exponentially in 'Temp_hab_av' (R² = 1.000 on the discovery half); held-out R² = 1.000 [emp-888c29a3fc11]
+- 2026-11-06 23:20 FINDING (confirmed on held-out rows): In 'Desiccation amelioration and climate risk on rocky shores' (Zenodo, doi 10.5061/dryad.vdncjsxv2): 'Ds_hab_kPA' grows logarithmically in 'RH_hab_mean' (R² = 0.935 on the discovery half); held-out R² = 0.897 [emp-f1dc86919f73]
