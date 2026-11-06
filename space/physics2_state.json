@@ -16310,6 +16310,26 @@
    "family": "two-body decay",
    "expr": "((-b**2 + (1 - a)**2))/(-a**2 + 2*b**2 - (1 - a)**2 + 1)",
    "why": "affine combination of known quantities (momentum of each product / (Mc), Ratio of kinetic energies of product 1 to product 2 [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2*m**2/(m + 1)**2 + e**2*m/(m + 1) + e**2",
+   "why": "affine combination of known quantities (target speed / initial speed, Fraction of kinetic energy retained by projectile relative to initial kinetic en [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "1 - (e**2*m**2/(m + 1)**2 + e**2*m/(m + 1) + e**2) - (1 - e**2)*m/(1 + m) - (1 - e**2)/(1 + m) - (1 ",
+   "why": "affine combination of known quantities (fraction of kinetic energy lost, Fraction of kinetic energy retained by projectile relative to initial kinetic en [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2*m**2/(m + 1)**2 + e**2*m/(m + 1) - (1 - e**2)*m/(1 + m) - (1 - e**2)/(1 + m) - (1 - e**2)*(1 - ",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "collision",
+   "expr": "1 - e**2*m**2/(m + 1)**2 - e**2*m/(m + 1) - (1 - e**2)*m/(1 + m) - (1 - e**2)/(1 + m) - (1 - e**2)*(",
+   "why": "affine combination of known quantities (fraction of kinetic energy lost, Fraction of kinetic energy retained by the target [model-proposed; physical meaning unverified])"
   }
  ],
  "tried": [
@@ -21842,7 +21862,7 @@
    "k": "1"
   }
  ],
- "rounds": 1049,
+ "rounds": 1050,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",
