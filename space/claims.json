@@ -1336374,5 +1336374,63 @@
   "statement": "[physics: two-body decay] Boost factor of the system [model-proposed; physical meaning unverified] \u2265 2 \u00d7 energy of product 2 / (Mc\u00b2)   on a < 1, b < 1, a + b < 1 (tight only at the edge of the domain, near (1.84e-08, 1))",
   "status": "proved",
   "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-c950b4e78d7d",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'energy of product 1 / (Mc\u00b2)'",
+  "payload": {
+   "assumptions": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "claim": "sqrt((1 - (a - b)**2)*(1 - (a + b)**2) + (-a**2 + b**2 + 1)**2 + (a**2 - b**2 + 1)**2) >= 1*(sqrt((1 - (a + b)**2)*((a - b)**2 - 1)/4 + (a**2 - b**2 + 1)**2))",
+   "symbols": [
+    "a",
+    "b"
+   ]
+  },
+  "source": "physics_discover2 round 1193",
+  "statement": "[physics: two-body decay] Boost factor of the system [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Invariant mass of product 1 [model-proposed; physical meaning unverified]   on a < 1, b < 1, a + b < 1 (tight only at the edge of the domain, near (1, 2.12e-09))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-46af33260b39",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'energy of product 2 / (Mc\u00b2)'",
+  "payload": {
+   "assumptions": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "claim": "sqrt((1 - (a - b)**2)*(1 - (a + b)**2) + (-a**2 + b**2 + 1)**2 + (a**2 - b**2 + 1)**2) >= 1*(sqrt((1 - (a + b)**2)*((a - b)**2 - 1)/4 + (-a**2 + b**2 + 1)**2))",
+   "symbols": [
+    "a",
+    "b"
+   ]
+  },
+  "source": "physics_discover2 round 1193",
+  "statement": "[physics: two-body decay] Boost factor of the system [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Invariant mass of product 2 [model-proposed; physical meaning unverified]   on a < 1, b < 1, a + b < 1 (tight only at the edge of the domain, near (4.17e-09, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]
