@@ -1236275,5 +1236275,302 @@
   "statement": "Octal game 0.376415 is completely solved: its Grundy values are periodic with pre-period 122 and period 62 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.19697400",
+   "held_out_r2": 0.9765,
+   "held_out_rows": 4960,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-6b79a7ff1edd",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "27df995d6c61c60b.csv",
+   "doi": "10.5281/zenodo.19697400",
+   "form": "linear",
+   "params": [
+    26.416916907586636,
+    0.005086491496164628
+   ],
+   "seed": 2551681478,
+   "x": "WOD_depth",
+   "y": "Sigma"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Mapping the global distribution of lead and its isotopes in seawater with explai' (Zenodo, doi 10.5281/zenodo.19697400): 'Sigma' is linear in 'WOD_depth' (R\u00b2 = 0.977 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.19697400",
+   "held_out_r2": 0.9596,
+   "held_out_rows": 4960,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-fec68687e607",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "27df995d6c61c60b.csv",
+   "doi": "10.5281/zenodo.19697400",
+   "form": "linear",
+   "params": [
+    0.1711376186909352,
+    0.06430979159664893
+   ],
+   "seed": 2551681478,
+   "x": "Nitrate",
+   "y": "Phosphate"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Mapping the global distribution of lead and its isotopes in seawater with explai' (Zenodo, doi 10.5281/zenodo.19697400): 'Phosphate' is linear in 'Nitrate' (R\u00b2 = 0.956 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.10892686",
+   "held_out_r2": 0.9861,
+   "held_out_rows": 424,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-1b68bb502faa",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "e2429cb7cde44f39.csv",
+   "doi": "10.5281/zenodo.10892686",
+   "form": "linear",
+   "params": [
+    0.46174413761451005,
+    0.579473953353146
+   ],
+   "seed": 2778265494,
+   "x": "Cond",
+   "y": "Sal"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data files for manuscript \"Coral growth along a natural gradient of seawater temperature, ' (Zenodo, doi 10.5281/zenodo.10892686): 'Sal' is linear in 'Cond' (R\u00b2 = 0.969 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.10892686",
+   "held_out_r2": -Infinity,
+   "held_out_rows": 424,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-7c606816b22c",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "e2429cb7cde44f39.csv",
+   "doi": "10.5281/zenodo.10892686",
+   "form": "power law",
+   "params": [
+    -2.7292877822966863,
+    0.9868685720674021
+   ],
+   "seed": 2778265494,
+   "x": "O2_percent",
+   "y": "O2ppm"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data files for manuscript \"Coral growth along a natural gradient of seawater temperature, ' (Zenodo, doi 10.5281/zenodo.10892686): 'O2ppm' follows a power law in 'O2_percent' (R\u00b2 = 0.998 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20397192",
+   "held_out_r2": 0.9342,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-bdaa48fb64aa",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "2cbd864a98d7a516.csv",
+   "doi": "10.5281/zenodo.20397192",
+   "form": "power law",
+   "params": [
+    0.6863969912174309,
+    0.6334836851285183
+   ],
+   "seed": 929367005,
+   "x": "Area(pxl)",
+   "y": "Perimeter(pxl)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'GelCam datasets from EXPORTS NP & NA' (Zenodo, doi 10.5281/zenodo.20397192): 'Perimeter(pxl)' follows a power law in 'Area(pxl)' (R\u00b2 = 0.932 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20397192",
+   "held_out_r2": 0.948,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-1db927159c31",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "2cbd864a98d7a516.csv",
+   "doi": "10.5281/zenodo.20397192",
+   "form": "power law",
+   "params": [
+    1.035448057551811,
+    0.9671592757426933
+   ],
+   "seed": 929367005,
+   "x": "MajorAxisLength(pxl)",
+   "y": "Perimeter(pxl)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'GelCam datasets from EXPORTS NP & NA' (Zenodo, doi 10.5281/zenodo.20397192): 'Perimeter(pxl)' follows a power law in 'MajorAxisLength(pxl)' (R\u00b2 = 0.948 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.21222346",
+   "held_out_r2": 0.9782,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5fddafcd2f9c",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "ec760b24f463689f.csv",
+   "doi": "10.5281/zenodo.21222346",
+   "form": "power law",
+   "params": [
+    -0.04527455177262218,
+    0.9647409726963309
+   ],
+   "seed": 2101938238,
+   "x": "measured",
+   "y": "modelled"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Basin-scale changes in net primary production from the biogeochemical-Argo array' (Zenodo, doi 10.5281/zenodo.21222346): 'modelled' follows a power law in 'measured' (R\u00b2 = 0.978 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.21222346",
+   "held_out_r2": 0.9612,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-6c3dd0d3fc27",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "46b02d7a0712fa59.csv",
+   "doi": "10.5281/zenodo.21222346",
+   "form": "exponential",
+   "params": [
+    6.802289990183183,
+    -0.038923264534143215
+   ],
+   "seed": 2422718133,
+   "x": "PRES",
+   "y": "measured"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Basin-scale changes in net primary production from the biogeochemical-Argo array' (Zenodo, doi 10.5281/zenodo.21222346): 'measured' grows exponentially in 'PRES' (R\u00b2 = 0.962 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.21222346",
+   "held_out_r2": 0.9696,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b59cd7463119",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "46b02d7a0712fa59.csv",
+   "doi": "10.5281/zenodo.21222346",
+   "form": "exponential",
+   "params": [
+    6.680805385136538,
+    -0.03964841192190515
+   ],
+   "seed": 2422718133,
+   "x": "PRES",
+   "y": "modelled"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Basin-scale changes in net primary production from the biogeochemical-Argo array' (Zenodo, doi 10.5281/zenodo.21222346): 'modelled' grows exponentially in 'PRES' (R\u00b2 = 0.969 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.08kprr4xq",
+   "held_out_r2": 0.9131,
+   "held_out_rows": 72,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-38598612dc7a",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "395c9edb25c8be29.csv",
+   "doi": "10.5061/dryad.08kprr4xq",
+   "form": "logarithmic",
+   "params": [
+    0.018268001969584963,
+    -0.579025891295136
+   ],
+   "seed": 3475706974,
+   "x": "PropEchin",
+   "y": "PropLytTrip"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Millennial-scale change in Caribbean coral reef ecosystem structure and the role of human ' (Zenodo, doi 10.5061/dryad.08kprr4xq): 'PropLytTrip' grows logarithmically in 'PropEchin' (R\u00b2 = 0.921 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14680801",
+   "held_out_r2": 0.947,
+   "held_out_rows": 7934,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-edf0cf476811",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "d24adfbdb583e89d.csv",
+   "doi": "10.5281/zenodo.14680801",
+   "form": "linear",
+   "params": [
+    -0.02777858572096881,
+    0.601401155115276
+   ],
+   "seed": 1694632942,
+   "x": "chla",
+   "y": "Chl_cor"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'BGC-Argo Satellite matchup to compute variability in the Chl:C ratio of phytoplankton.' (Zenodo, doi 10.5281/zenodo.14680801): 'Chl_cor' is linear in 'chla' (R\u00b2 = 0.951 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
