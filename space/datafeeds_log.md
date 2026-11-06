@@ -1000,3 +1000,5 @@
 - 2026-11-06 22:09 FINDING (confirmed on held-out rows): In 'Magnetic profiles and XPS depth profiles for Reduction formed EuO films.' (Figshare, doi 10.17035/cardiff.31843156.v1): 'Si 2p El %.1' is linear in 'O 1s %.1' (R² = 0.966 on the discovery half); held-out R² = 0.922 [emp-29be7def03d7]
 - 2026-11-06 22:09 data feeds: 6694 datasets analysed so far, 900 confirmed findings
 - 2026-11-06 22:12 data feeds: online
+- 2026-11-06 22:12 FINDING (confirmed on held-out rows): In 'Benchmark data for Accuracy-Cost Trade-offs for Reference VQE Calculations of H₂ on IBM Qu' (Zenodo, doi 10.5281/zenodo.22018002): 'absolute_energy_error_hartree' is linear in 'final_energy_hartree' (R² = 0.990 on the discovery half); held-out R² = 0.984 [emp-5b254df84f3f]
+- 2026-11-06 22:13 FINDING (confirmed on held-out rows): In 'Data for "The winner's curse in hardware VQE: drift-differenced remeasurement of finite-sh' (Zenodo, doi 10.5281/zenodo.23082359): 'best_so_far_hartree' is linear in 'energy_hartree' (R² = 0.974 on the discovery half); held-out R² = 0.982 [emp-78ea9933a072]
