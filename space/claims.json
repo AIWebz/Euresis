@@ -1864336,10 +1864336,15 @@
   "verifier": "guy-smith-periodicity"
  },
  {
-  "evidence": null,
+  "evidence": {
+   "doi": "10.5061/dryad.cp8pj",
+   "held_out_r2": 0.9742,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
   "id": "emp-2661a58e86e5",
   "kind": "empirical",
-  "novelty": "not checked",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
   "payload": {
    "dataset": "7ea8dbcdb11b13f7.csv",
    "doi": "10.5061/dryad.cp8pj",
@@ -1864354,6 +1864359,163 @@
   },
   "source": "datafeeds.py",
   "statement": "In 'Data from: The potential for spatial distribution indices to signal thresholds in marine f' (Zenodo, doi 10.5061/dryad.cp8pj): 'dmax' follows a power law in 'dmin' (R\u00b2 = 0.974 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14608739",
+   "held_out_r2": 0.9573,
+   "held_out_rows": 132,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b88820deb4e2",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "866aa60e80206c3c.csv",
+   "doi": "10.5281/zenodo.14608739",
+   "form": "linear",
+   "params": [
+    37.264789315526826,
+    1.0367946092164002
+   ],
+   "seed": 3868157940,
+   "x": "DfCO2_mn",
+   "y": "sal_mn"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A data repository for: Seasonal variability of surface ocean carbon uptake and chlorophyll' (Zenodo, doi 10.5281/zenodo.14608739): 'sal_mn' is linear in 'DfCO2_mn' (R\u00b2 = 0.999 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14608739",
+   "held_out_r2": 0.9573,
+   "held_out_rows": 132,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d7034fb2b211",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "866aa60e80206c3c.csv",
+   "doi": "10.5281/zenodo.14608739",
+   "form": "linear",
+   "params": [
+    3.502368802280483,
+    1.003014714769669
+   ],
+   "seed": 3868157940,
+   "x": "DfCO2_mn",
+   "y": "sal_std"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A data repository for: Seasonal variability of surface ocean carbon uptake and chlorophyll' (Zenodo, doi 10.5281/zenodo.14608739): 'sal_std' is linear in 'DfCO2_mn' (R\u00b2 = 0.999 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14608739",
+   "held_out_r2": 0.9584,
+   "held_out_rows": 132,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a40ce58d2a34",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "866aa60e80206c3c.csv",
+   "doi": "10.5281/zenodo.14608739",
+   "form": "linear",
+   "params": [
+    21.57119359515204,
+    1.0214856332604736
+   ],
+   "seed": 3868157940,
+   "x": "DfCO2_std",
+   "y": "sal_mn"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A data repository for: Seasonal variability of surface ocean carbon uptake and chlorophyll' (Zenodo, doi 10.5281/zenodo.14608739): 'sal_mn' is linear in 'DfCO2_std' (R\u00b2 = 1.000 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14608739",
+   "held_out_r2": 0.9584,
+   "held_out_rows": 132,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-30ec1c668aa7",
+  "kind": "empirical",
+  "novelty": "KNOWN: equation of state of a simulated fluid (pressure, density, temperature, chemical potential, kinetic energy) \u2014 not a discovery",
+  "payload": {
+   "dataset": "866aa60e80206c3c.csv",
+   "doi": "10.5281/zenodo.14608739",
+   "form": "linear",
+   "params": [
+    -11.680021680828627,
+    0.9882039387324207
+   ],
+   "seed": 3868157940,
+   "x": "DfCO2_std",
+   "y": "sal_std"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A data repository for: Seasonal variability of surface ocean carbon uptake and chlorophyll' (Zenodo, doi 10.5281/zenodo.14608739): 'sal_std' is linear in 'DfCO2_std' (R\u00b2 = 1.000 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14608739",
+   "held_out_r2": 0.9579,
+   "held_out_rows": 132,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-450d5b02f1a6",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "866aa60e80206c3c.csv",
+   "doi": "10.5281/zenodo.14608739",
+   "form": "linear",
+   "params": [
+    -246.1686620730933,
+    0.753328500720593
+   ],
+   "seed": 3868157940,
+   "x": "fCO2corr_mn",
+   "y": "sal_mn"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A data repository for: Seasonal variability of surface ocean carbon uptake and chlorophyll' (Zenodo, doi 10.5281/zenodo.14608739): 'sal_mn' is linear in 'fCO2corr_mn' (R\u00b2 = 1.000 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": null,
+  "id": "emp-0236c433662a",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "866aa60e80206c3c.csv",
+   "doi": "10.5281/zenodo.14608739",
+   "form": "linear",
+   "params": [
+    -270.6964962978711,
+    0.7287840765594997
+   ],
+   "seed": 3868157940,
+   "x": "fCO2corr_mn",
+   "y": "sal_std"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A data repository for: Seasonal variability of surface ocean carbon uptake and chlorophyll' (Zenodo, doi 10.5281/zenodo.14608739): 'sal_std' is linear in 'fCO2corr_mn' (R\u00b2 = 1.000 on the discovery half)",
   "status": "candidate",
   "verifier": null
  }
