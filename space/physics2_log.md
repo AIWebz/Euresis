@@ -2141,3 +2141,4 @@
 - 2026-11-07 22:40 segment start (budget 30 min; model: Qwen3-8B; 5 discoveries so far)
 - 2026-11-07 22:40 round 1962: collision
 - 2026-11-07 22:42 round 1963: driven oscillator
+- 2026-11-07 22:43 round 1964: velocity addition
