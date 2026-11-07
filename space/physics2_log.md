@@ -1997,3 +1997,5 @@
 - 2026-11-07 17:20 round 1829: Compton scattering
 - 2026-11-07 17:21 round 1830: Cournot duopoly
 - 2026-11-07 17:21 round 1831: insurance and risk
+- 2026-11-07 17:23 round 1832: auction with a reserve price
+- 2026-11-07 17:25 segment end: 1832 rounds, 5 discoveries, 2 known laws rediscovered
