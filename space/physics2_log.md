@@ -1853,3 +1853,9 @@
 - 2026-11-07 12:36 round 1695: insurance and risk
 - 2026-11-07 12:37 round 1696: auction with a reserve price
 - 2026-11-07 12:38 round 1697: two-body decay
+- 2026-11-07 12:39 round 1698: collision
+- 2026-11-07 12:40 round 1699: driven oscillator
+- 2026-11-07 12:41 round 1700: velocity addition
+- 2026-11-07 12:42 round 1701: Compton scattering
+- 2026-11-07 12:43 round 1702: Cournot duopoly
+- 2026-11-07 12:45 segment end: 1702 rounds, 5 discoveries, 2 known laws rediscovered
