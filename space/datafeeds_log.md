@@ -1150,3 +1150,4 @@
 - 2026-11-07 04:56 data feeds: online
 - 2026-11-07 04:58 FINDING (confirmed on held-out rows): In 'Data for CMIP AR7 REF fire controls assessment' (Zenodo, doi 10.5281/zenodo.14917245): '4.863592364100023' is linear in '-6.028382953791627' (R² = 0.948 on the discovery half); held-out R² = 0.951 [emp-7c7cb21074e8]
 - 2026-11-07 05:00 data feeds: 7625 datasets analysed so far, 1035 confirmed findings
+- 2026-11-07 05:22 data feeds: online
