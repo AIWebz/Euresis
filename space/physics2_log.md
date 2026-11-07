@@ -2131,3 +2131,10 @@
 - 2026-11-07 22:09 round 1953: two-body decay
 - 2026-11-07 22:11 round 1954: collision
 - 2026-11-07 22:12 round 1955: driven oscillator
+- 2026-11-07 22:13 round 1956: velocity addition
+- 2026-11-07 22:14 round 1957: Compton scattering
+- 2026-11-07 22:15 round 1958: Cournot duopoly
+- 2026-11-07 22:16 round 1959: insurance and risk
+- 2026-11-07 22:17 round 1960: auction with a reserve price
+- 2026-11-07 22:18 round 1961: two-body decay
+- 2026-11-07 22:20 segment end: 1961 rounds, 5 discoveries, 2 known laws rediscovered
