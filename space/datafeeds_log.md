@@ -1298,3 +1298,4 @@
 - 2026-11-07 14:59 FINDING (confirmed on held-out rows): In 'Vocal performance increases rapidly during the dawn chorus in Adelaide's warbler' (Zenodo, doi 10.5061/dryad.5x69p8d7z): 'VoicedFM.scaled' is linear in 'Length.ave.05' (R² = 0.957 on the discovery half); held-out R² = 0.951 [emp-c25ed9215b2a]
 - 2026-11-07 14:59 FINDING (confirmed on held-out rows): In 'Vocal performance increases rapidly during the dawn chorus in Adelaide's warbler' (Zenodo, doi 10.5061/dryad.5x69p8d7z): 'Recovery_time.scaled' is linear in 'Gap_after.ave.05' (R² = 0.907 on the discovery half); held-out R² = 0.910 [emp-24004ece21d0]
 - 2026-11-07 14:59 data feeds: 9027 datasets analysed so far, 1161 confirmed findings
+- 2026-11-07 16:01 data feeds: online
