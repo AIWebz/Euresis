@@ -1346,3 +1346,4 @@
 - 2026-11-07 17:58 FINDING (confirmed on held-out rows): In 'The Impact of Gulf Stream Frontal Eddies on Ecology and Biogeochemistry near Cape Hatteras' (Zenodo, doi 10.5281/zenodo.7680135): 'Unknown' grows logarithmically in 'Temp' (R² = 0.969 on the discovery half); held-out R² = 0.970 [emp-75365bb281b7]
 - 2026-11-07 17:59 FINDING (confirmed on held-out rows): In 'Zooplankton Chile upwelling' (Zenodo, doi 10.5281/zenodo.15397049): 'Temperature [C]' grows logarithmically in 'Deph [m]' (R² = 0.942 on the discovery half); held-out R² = 0.924 [emp-89264a79336c]
 - 2026-11-07 17:59 data feeds: 9196 datasets analysed so far, 1203 confirmed findings
+- 2026-11-07 18:47 data feeds: online
