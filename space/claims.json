@@ -1566350,5 +1566350,113 @@
   "statement": "In 'Data publication for \"Different earthquake nucleation conditions revealed by stress drop a' (Zenodo, doi 10.5281/zenodo.11208068): 'b' is linear in 'a' (R\u00b2 = 0.942 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14779451",
+   "held_out_r2": 0.8806,
+   "held_out_rows": 109,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-cba2cc6007b2",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "66f562a1146e68d7.csv",
+   "doi": "10.5281/zenodo.14779451",
+   "form": "linear",
+   "params": [
+    -4.489687464575731e-05,
+    0.11238409143637428
+   ],
+   "seed": 4010785762,
+   "x": "lit_fra_Arkose",
+   "y": "lit_fra_Conglomerate"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from \"How do geological map details influence the identification of geology- streamfl' (Zenodo, doi 10.5281/zenodo.14779451): 'lit_fra_Conglomerate' is linear in 'lit_fra_Arkose' (R\u00b2 = 0.999 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3250980",
+   "held_out_r2": 0.8957,
+   "held_out_rows": 33,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-6d648b6838a5",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "6f893a29383e0bd2.csv",
+   "doi": "10.5281/zenodo.3250980",
+   "form": "power law",
+   "params": [
+    1.0975846294096898,
+    -0.8965782808586011
+   ],
+   "seed": 293741965,
+   "x": "chromium_concentration [nmol/kg]",
+   "y": "d53Cr [\u2030]"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Seawater chromium concentrations and isotope compositions in the Southern Ocean during the' (Zenodo, doi 10.5281/zenodo.3250980): 'd53Cr [\u2030]' follows a power law in 'chromium_concentration [nmol/kg]' (R\u00b2 = 0.936 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.6jc55mn",
+   "held_out_r2": 0.7903,
+   "held_out_rows": 30,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-18fef30fd7dd",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "f86db8e60962ed6e.csv",
+   "doi": "10.5061/dryad.6jc55mn",
+   "form": "logarithmic",
+   "params": [
+    2250246665.1906676,
+    -353422599.87406224
+   ],
+   "seed": 3659812197,
+   "x": "Elevation..m.",
+   "y": "Watershed.size..m.2."
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Applying ecological site concepts and state-and-transition models to a grazed r' (Zenodo, doi 10.5061/dryad.6jc55mn): 'Watershed.size..m.2.' grows logarithmically in 'Elevation..m.' (R\u00b2 = 0.916 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.6jc55mn",
+   "held_out_r2": 0.9519,
+   "held_out_rows": 30,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d867aac40260",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "f86db8e60962ed6e.csv",
+   "doi": "10.5061/dryad.6jc55mn",
+   "form": "logarithmic",
+   "params": [
+    307.00089238013004,
+    -66.83865818410023
+   ],
+   "seed": 3659812197,
+   "x": "Sand",
+   "y": "Silt"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Applying ecological site concepts and state-and-transition models to a grazed r' (Zenodo, doi 10.5061/dryad.6jc55mn): 'Silt' grows logarithmically in 'Sand' (R\u00b2 = 0.917 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]

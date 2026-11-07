@@ -1110,3 +1110,5 @@
 - 2026-11-07 02:05 data feeds: 7308 datasets analysed so far, 999 confirmed findings
 - 2026-11-07 03:07 data feeds: online
 - 2026-11-07 03:07 FINDING (confirmed on held-out rows): In 'Data publication for "Different earthquake nucleation conditions revealed by stress drop a' (Zenodo, doi 10.5281/zenodo.11208068): 'b' is linear in 'a' (R² = 0.942 on the discovery half); held-out R² = 0.941 [emp-3de689503a2e]
+- 2026-11-07 03:07 FINDING (confirmed on held-out rows): In 'Data from "How do geological map details influence the identification of geology- streamfl' (Zenodo, doi 10.5281/zenodo.14779451): 'lit_fra_Conglomerate' is linear in 'lit_fra_Arkose' (R² = 0.999 on the discovery half); held-out R² = 0.881 [emp-cba2cc6007b2]
+- 2026-11-07 03:07 FINDING (confirmed on held-out rows): In 'Seawater chromium concentrations and isotope compositions in the Southern Ocean during the' (Zenodo, doi 10.5281/zenodo.3250980): 'd53Cr [‰]' follows a power law in 'chromium_concentration [nmol/kg]' (R² = 0.936 on the discovery half); held-out R² = 0.896 [emp-6d648b6838a5]
