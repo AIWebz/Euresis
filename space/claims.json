@@ -1757419,5 +1757419,437 @@
   "statement": "In 'The data for SpecDis: Value added distance catalog for 4 million stars from DESI Year-1 da' (Zenodo, doi 10.5281/zenodo.15853626): 'N after error cut' is linear in 'N of full sample' (R\u00b2 = 0.955 on the discovery half)",
   "status": "refuted",
   "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15853626",
+   "held_out_r2": 0.9298,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-664dfdf6ba6d",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "09577ef9db6f52e2.csv",
+   "doi": "10.5281/zenodo.15853626",
+   "form": "power law",
+   "params": [
+    -0.02062275202351865,
+    1.008004198366964
+   ],
+   "seed": 2557969496,
+   "x": "$M_{G,\\mathrm{geo}}$",
+   "y": "$M_{G,\\mathrm{NN}}$"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'The data for SpecDis: Value added distance catalog for 4 million stars from DESI Year-1 da' (Zenodo, doi 10.5281/zenodo.15853626): '$M_{G,\\mathrm{NN}}$' follows a power law in '$M_{G,\\mathrm{geo}}$' (R\u00b2 = 0.930 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.48550/arXiv.2210.14760",
+   "held_out_r2": 0.9358,
+   "held_out_rows": 107,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-8b698be53a18",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "601ece8c54a002fb.csv",
+   "doi": "10.48550/arXiv.2210.14760",
+   "form": "linear",
+   "params": [
+    4.0114791702944474,
+    0.9599185326988361
+   ],
+   "seed": 744761199,
+   "x": "shap_mean_ranking",
+   "y": "importance_weighted_ranking"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Radio Galaxy Zoo EMU: Towards a Semantic Radio Galaxy Morphology Taxonomy' (Zenodo, doi 10.48550/arXiv.2210.14760): 'importance_weighted_ranking' is linear in 'shap_mean_ranking' (R\u00b2 = 0.922 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.48550/arXiv.2210.14760",
+   "held_out_r2": 0.9645,
+   "held_out_rows": 44,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-46809779fc61",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3e86a81d2fccd025.csv",
+   "doi": "10.48550/arXiv.2210.14760",
+   "form": "logarithmic",
+   "params": [
+    268.40168024883604,
+    237.47860579324103
+   ],
+   "seed": 80795633,
+   "x": "similarity_threshold",
+   "y": "tag_count"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Radio Galaxy Zoo EMU: Towards a Semantic Radio Galaxy Morphology Taxonomy' (Zenodo, doi 10.48550/arXiv.2210.14760): 'tag_count' grows logarithmically in 'similarity_threshold' (R\u00b2 = 0.960 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.48550/arXiv.2210.14760",
+   "held_out_r2": 0.942,
+   "held_out_rows": 44,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-520c67bd5bf7",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3e86a81d2fccd025.csv",
+   "doi": "10.48550/arXiv.2210.14760",
+   "form": "logarithmic",
+   "params": [
+    0.714774607253631,
+    0.2671033263374619
+   ],
+   "seed": 80795633,
+   "x": "weighted_f1",
+   "y": "macro_f1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Radio Galaxy Zoo EMU: Towards a Semantic Radio Galaxy Morphology Taxonomy' (Zenodo, doi 10.48550/arXiv.2210.14760): 'macro_f1' grows logarithmically in 'weighted_f1' (R\u00b2 = 0.971 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17688656",
+   "held_out_r2": 0.9212,
+   "held_out_rows": 3000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-0f905cf74e35",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "72d4bccd3e1f0c21.csv",
+   "doi": "10.5281/zenodo.17688656",
+   "form": "logarithmic",
+   "params": [
+    -1823.0032361954275,
+    630.8980747528924
+   ],
+   "seed": 3008206108,
+   "x": "slice_center",
+   "y": "n_extended"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'DES_DR2_star_galaxy_samples_updated' (Zenodo, doi 10.5281/zenodo.17688656): 'n_extended' grows logarithmically in 'slice_center' (R\u00b2 = 0.916 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17688656",
+   "held_out_r2": 0.9081,
+   "held_out_rows": 3000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-bb5b170c56df",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "72d4bccd3e1f0c21.csv",
+   "doi": "10.5281/zenodo.17688656",
+   "form": "logarithmic",
+   "params": [
+    -6.36192097832422,
+    2.319107446253502
+   ],
+   "seed": 3008206108,
+   "x": "slice_center",
+   "y": "frac_extended"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'DES_DR2_star_galaxy_samples_updated' (Zenodo, doi 10.5281/zenodo.17688656): 'frac_extended' grows logarithmically in 'slice_center' (R\u00b2 = 0.905 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17688656",
+   "held_out_r2": 0.9212,
+   "held_out_rows": 3000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-893c6c2c2b9a",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "72d4bccd3e1f0c21.csv",
+   "doi": "10.5281/zenodo.17688656",
+   "form": "logarithmic",
+   "params": [
+    -1822.942325846338,
+    630.8830188037703
+   ],
+   "seed": 3008206108,
+   "x": "mag_lo",
+   "y": "n_extended"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'DES_DR2_star_galaxy_samples_updated' (Zenodo, doi 10.5281/zenodo.17688656): 'n_extended' grows logarithmically in 'mag_lo' (R\u00b2 = 0.916 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17688656",
+   "held_out_r2": 0.9081,
+   "held_out_rows": 3000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-6b4163a7fccb",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "72d4bccd3e1f0c21.csv",
+   "doi": "10.5281/zenodo.17688656",
+   "form": "logarithmic",
+   "params": [
+    -6.361697187058687,
+    2.319052137856124
+   ],
+   "seed": 3008206108,
+   "x": "mag_lo",
+   "y": "frac_extended"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'DES_DR2_star_galaxy_samples_updated' (Zenodo, doi 10.5281/zenodo.17688656): 'frac_extended' grows logarithmically in 'mag_lo' (R\u00b2 = 0.905 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17688656",
+   "held_out_r2": 0.9212,
+   "held_out_rows": 3000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-0f004b3faf4d",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "72d4bccd3e1f0c21.csv",
+   "doi": "10.5281/zenodo.17688656",
+   "form": "logarithmic",
+   "params": [
+    -1823.0641468884635,
+    630.9131306977782
+   ],
+   "seed": 3008206108,
+   "x": "mag_hi",
+   "y": "n_extended"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'DES_DR2_star_galaxy_samples_updated' (Zenodo, doi 10.5281/zenodo.17688656): 'n_extended' grows logarithmically in 'mag_hi' (R\u00b2 = 0.916 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17688656",
+   "held_out_r2": 0.9081,
+   "held_out_rows": 3000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c04e322f2feb",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "72d4bccd3e1f0c21.csv",
+   "doi": "10.5281/zenodo.17688656",
+   "form": "logarithmic",
+   "params": [
+    -6.362144770854343,
+    2.3191627546359608
+   ],
+   "seed": 3008206108,
+   "x": "mag_hi",
+   "y": "frac_extended"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'DES_DR2_star_galaxy_samples_updated' (Zenodo, doi 10.5281/zenodo.17688656): 'frac_extended' grows logarithmically in 'mag_hi' (R\u00b2 = 0.905 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17688656",
+   "held_out_r2": 0.977,
+   "held_out_rows": 3000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4947ba0bbc04",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "72d4bccd3e1f0c21.csv",
+   "doi": "10.5281/zenodo.17688656",
+   "form": "power law",
+   "params": [
+    1.9824680762596976,
+    0.633514727084337
+   ],
+   "seed": 3008206108,
+   "x": "n_extended",
+   "y": "total"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'DES_DR2_star_galaxy_samples_updated' (Zenodo, doi 10.5281/zenodo.17688656): 'total' follows a power law in 'n_extended' (R\u00b2 = 0.978 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17688656",
+   "held_out_r2": 0.9755,
+   "held_out_rows": 90,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-7e44089015ed",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "134cb070d085c219.csv",
+   "doi": "10.5281/zenodo.17688656",
+   "form": "linear",
+   "params": [
+    16.424800012014423,
+    7.190999732356638
+   ],
+   "seed": 770953288,
+   "x": "pi",
+   "y": "mag_lo"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'DES_DR2_star_galaxy_samples_updated' (Zenodo, doi 10.5281/zenodo.17688656): 'mag_lo' is linear in 'pi' (R\u00b2 = 0.976 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17688656",
+   "held_out_r2": 0.9755,
+   "held_out_rows": 90,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-8b517171c570",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "134cb070d085c219.csv",
+   "doi": "10.5281/zenodo.17688656",
+   "form": "linear",
+   "params": [
+    16.549800012014423,
+    7.190999732356631
+   ],
+   "seed": 770953288,
+   "x": "pi",
+   "y": "mag_hi"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'DES_DR2_star_galaxy_samples_updated' (Zenodo, doi 10.5281/zenodo.17688656): 'mag_hi' is linear in 'pi' (R\u00b2 = 0.976 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17688656",
+   "held_out_r2": 0.9755,
+   "held_out_rows": 90,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9060fd7e56a4",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "134cb070d085c219.csv",
+   "doi": "10.5281/zenodo.17688656",
+   "form": "linear",
+   "params": [
+    16.487300012014423,
+    7.190999732356631
+   ],
+   "seed": 770953288,
+   "x": "pi",
+   "y": "center"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'DES_DR2_star_galaxy_samples_updated' (Zenodo, doi 10.5281/zenodo.17688656): 'center' is linear in 'pi' (R\u00b2 = 0.976 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17688656",
+   "held_out_r2": 0.9584,
+   "held_out_rows": 90,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3bd0b5eb6e8d",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "134cb070d085c219.csv",
+   "doi": "10.5281/zenodo.17688656",
+   "form": "linear",
+   "params": [
+    -0.027478549552515805,
+    1.0301958946027987
+   ],
+   "seed": 770953288,
+   "x": "f1_macro",
+   "y": "bal_acc"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'DES_DR2_star_galaxy_samples_updated' (Zenodo, doi 10.5281/zenodo.17688656): 'bal_acc' is linear in 'f1_macro' (R\u00b2 = 0.990 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17425610",
+   "held_out_r2": 0.9809,
+   "held_out_rows": 49,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-03a23196099d",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "9a4481c8a693b70e.csv",
+   "doi": "10.5281/zenodo.17425610",
+   "form": "linear",
+   "params": [
+    -71.49060209756776,
+    0.5082699711461093
+   ],
+   "seed": 1027289278,
+   "x": "ra",
+   "y": "dec"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'The Strong Lensing Discovery Engine - Q1 missed targets' (Zenodo, doi 10.5281/zenodo.17425610): 'dec' is linear in 'ra' (R\u00b2 = 0.963 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
