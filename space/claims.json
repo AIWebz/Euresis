@@ -1661006,5 +1661006,329 @@
   "statement": "Octal game 0.462517 is completely solved: its Grundy values are periodic with pre-period 285 and period 48 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.f7m0cfxxs",
+   "held_out_r2": 0.7457,
+   "held_out_rows": 32,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-feea5acb3da4",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "2fca8a7e96b61531.csv",
+   "doi": "10.5061/dryad.f7m0cfxxs",
+   "form": "linear",
+   "params": [
+    0.08092319774192279,
+    0.981375435012765
+   ],
+   "seed": 4293910209,
+   "x": "video_date_STD",
+   "y": "hatching_date_STD"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Moonlight influence on quality of nestlings of scops owls depends on paternal coloration' (Zenodo, doi 10.5061/dryad.f7m0cfxxs): 'hatching_date_STD' is linear in 'video_date_STD' (R\u00b2 = 0.981 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14468499",
+   "held_out_r2": 0.8111,
+   "held_out_rows": 60,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-fb636989bf5f",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "f0721557a09e8ed0.csv",
+   "doi": "10.5281/zenodo.14468499",
+   "form": "linear",
+   "params": [
+    11.19036697218324,
+    0.9803750138901608
+   ],
+   "seed": 314430589,
+   "x": "emptysamplebottle",
+   "y": "drysamplebottle"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Rainfall-induced lateral and vertical microplastics transport of varying sizes in agricult' (Zenodo, doi 10.5281/zenodo.14468499): 'drysamplebottle' is linear in 'emptysamplebottle' (R\u00b2 = 0.976 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14468499",
+   "held_out_r2": 0.9261,
+   "held_out_rows": 60,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b0f9b80be699",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f0721557a09e8ed0.csv",
+   "doi": "10.5281/zenodo.14468499",
+   "form": "power law",
+   "params": [
+    -3.6768071438797367,
+    1.4764017508330003
+   ],
+   "seed": 314430589,
+   "x": "fullsamplebottle",
+   "y": "runoffwater_g"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Rainfall-induced lateral and vertical microplastics transport of varying sizes in agricult' (Zenodo, doi 10.5281/zenodo.14468499): 'runoffwater_g' follows a power law in 'fullsamplebottle' (R\u00b2 = 0.958 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14468499",
+   "held_out_r2": 0.9261,
+   "held_out_rows": 60,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-1374262a338a",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f0721557a09e8ed0.csv",
+   "doi": "10.5281/zenodo.14468499",
+   "form": "power law",
+   "params": [
+    -10.584562422861877,
+    1.4764017508330005
+   ],
+   "seed": 314430589,
+   "x": "fullsamplebottle",
+   "y": "runoffwater_L"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Rainfall-induced lateral and vertical microplastics transport of varying sizes in agricult' (Zenodo, doi 10.5281/zenodo.14468499): 'runoffwater_L' follows a power law in 'fullsamplebottle' (R\u00b2 = 0.958 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14468499",
+   "held_out_r2": 0.9587,
+   "held_out_rows": 101,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-7af55d771185",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f5fbec052507fee8.csv",
+   "doi": "10.5281/zenodo.14468499",
+   "form": "linear",
+   "params": [
+    -1680.0130009980899,
+    0.7917560604846663
+   ],
+   "seed": 848274091,
+   "x": "p2dry_red",
+   "y": "p2dry_green"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Rainfall-induced lateral and vertical microplastics transport of varying sizes in agricult' (Zenodo, doi 10.5281/zenodo.14468499): 'p2dry_green' is linear in 'p2dry_red' (R\u00b2 = 0.963 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14468499",
+   "held_out_r2": 0.8955,
+   "held_out_rows": 101,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4ecb75019099",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f5fbec052507fee8.csv",
+   "doi": "10.5281/zenodo.14468499",
+   "form": "linear",
+   "params": [
+    -1908.889050256297,
+    0.7584194472482659
+   ],
+   "seed": 848274091,
+   "x": "p3dry_red",
+   "y": "p3dry_green"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Rainfall-induced lateral and vertical microplastics transport of varying sizes in agricult' (Zenodo, doi 10.5281/zenodo.14468499): 'p3dry_green' is linear in 'p3dry_red' (R\u00b2 = 0.951 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.s07cg",
+   "held_out_r2": 0.9906,
+   "held_out_rows": 53,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-8a23d965e1bc",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "bfd52f619beb08c2.csv",
+   "doi": "10.5061/dryad.s07cg",
+   "form": "power law",
+   "params": [
+    -0.45256219206680554,
+    1.092712298872135
+   ],
+   "seed": 2443091027,
+   "x": "SDN-anc",
+   "y": "SDC-anc"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Ploidy tug-of-war: evolutionary and genetic environments influence the rate of ' (Zenodo, doi 10.5061/dryad.s07cg): 'SDC-anc' follows a power law in 'SDN-anc' (R\u00b2 = 0.985 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.55c84q7",
+   "held_out_r2": 0.9561,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a1992b1db4d6",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "de0ab6c2e9a2e111.csv",
+   "doi": "10.5061/dryad.55c84q7",
+   "form": "linear",
+   "params": [
+    3.035725126416239,
+    1.5836273556996006
+   ],
+   "seed": 840566666,
+   "x": "acc",
+   "y": "mswim"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Life at the top: lake ecotype influences the foraging patterns, metabolic costs' (Zenodo, doi 10.5061/dryad.55c84q7): 'mswim' is linear in 'acc' (R\u00b2 = 0.954 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.55c84q7",
+   "held_out_r2": 0.9439,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3e92631bc0c1",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "de0ab6c2e9a2e111.csv",
+   "doi": "10.5061/dryad.55c84q7",
+   "form": "linear",
+   "params": [
+    38.22986256175816,
+    1.5758841776171
+   ],
+   "seed": 840566666,
+   "x": "acc",
+   "y": "mtot"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Life at the top: lake ecotype influences the foraging patterns, metabolic costs' (Zenodo, doi 10.5061/dryad.55c84q7): 'mtot' is linear in 'acc' (R\u00b2 = 0.942 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.55c84q7",
+   "held_out_r2": 0.9455,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-7aed3d154474",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "de0ab6c2e9a2e111.csv",
+   "doi": "10.5061/dryad.55c84q7",
+   "form": "linear",
+   "params": [
+    0.11544829778717708,
+    0.0451693377782106
+   ],
+   "seed": 840566666,
+   "x": "acc",
+   "y": "aci"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Life at the top: lake ecotype influences the foraging patterns, metabolic costs' (Zenodo, doi 10.5061/dryad.55c84q7): 'aci' is linear in 'acc' (R\u00b2 = 0.947 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.55c84q7",
+   "held_out_r2": 0.9744,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-97c9ccb1b787",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "de0ab6c2e9a2e111.csv",
+   "doi": "10.5061/dryad.55c84q7",
+   "form": "linear",
+   "params": [
+    0.043026279067910914,
+    0.028271813731487315
+   ],
+   "seed": 840566666,
+   "x": "mswim",
+   "y": "aci"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Life at the top: lake ecotype influences the foraging patterns, metabolic costs' (Zenodo, doi 10.5061/dryad.55c84q7): 'aci' is linear in 'mswim' (R\u00b2 = 0.975 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.55c84q7",
+   "held_out_r2": 0.9513,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-cd86e7c6d7b2",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "de0ab6c2e9a2e111.csv",
+   "doi": "10.5061/dryad.55c84q7",
+   "form": "linear",
+   "params": [
+    -0.9096585292076657,
+    0.027889587229746757
+   ],
+   "seed": 840566666,
+   "x": "mtot",
+   "y": "aci"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Life at the top: lake ecotype influences the foraging patterns, metabolic costs' (Zenodo, doi 10.5061/dryad.55c84q7): 'aci' is linear in 'mtot' (R\u00b2 = 0.952 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
