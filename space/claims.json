@@ -1819241,5 +1819241,59 @@
   "statement": "Octal game 0.505442 is completely solved: its Grundy values are periodic with pre-period 31 and period 38 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.n8pk0p2s3",
+   "held_out_r2": 0.9909,
+   "held_out_rows": 116,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b5d39cd23f20",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "db597fc895a45f2d.csv",
+   "doi": "10.5061/dryad.n8pk0p2s3",
+   "form": "power law",
+   "params": [
+    0.4461931498622106,
+    0.9465913718329063
+   ],
+   "seed": 2413346658,
+   "x": "MATING_LATENCY_SEC",
+   "y": "STANDARDIZED_LATENCY"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Nutritional developmental history and its consequences for reproductive success in Drosoph' (Zenodo, doi 10.5061/dryad.n8pk0p2s3): 'STANDARDIZED_LATENCY' follows a power law in 'MATING_LATENCY_SEC' (R\u00b2 = 0.987 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.n8pk0p2s3",
+   "held_out_r2": 0.9888,
+   "held_out_rows": 116,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-800feeb2e972",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "1caf6cb60c3add02.csv",
+   "doi": "10.5061/dryad.n8pk0p2s3",
+   "form": "power law",
+   "params": [
+    0.37251246664935656,
+    0.9549899732094504
+   ],
+   "seed": 1999769913,
+   "x": "MATING_LATENCY_SEC",
+   "y": "STANDARDIZED_LATECNY"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Nutritional developmental history and its consequences for reproductive success in Drosoph' (Zenodo, doi 10.5061/dryad.n8pk0p2s3): 'STANDARDIZED_LATECNY' follows a power law in 'MATING_LATENCY_SEC' (R\u00b2 = 0.990 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
