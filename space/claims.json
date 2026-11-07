@@ -1531369,5 +1531369,1139 @@
   "statement": "Octal game 0.442777 is completely solved: its Grundy values are periodic with pre-period 285 and period 48 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14010807",
+   "held_out_r2": 0.9776,
+   "held_out_rows": 1987,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ebe81922d5d9",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "d1596a6a7ff823b1.csv",
+   "doi": "10.5281/zenodo.14010807",
+   "form": "power law",
+   "params": [
+    0.29988057414685276,
+    0.9465954059404645
+   ],
+   "seed": 2178953079,
+   "x": "Total_HouseHold",
+   "y": "Owned"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Population and Economic Data of Nepal 2011 - Municipal-Level Data from different sources, ' (Zenodo, doi 10.5281/zenodo.14010807): 'Owned' follows a power law in 'Total_HouseHold' (R\u00b2 = 0.972 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14010807",
+   "held_out_r2": 0.7943,
+   "held_out_rows": 1987,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-31f9617205f6",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "d1596a6a7ff823b1.csv",
+   "doi": "10.5281/zenodo.14010807",
+   "form": "linear",
+   "params": [
+    -405.8833262869293,
+    0.4007227734709101
+   ],
+   "seed": 2178953079,
+   "x": "Total_HouseHold",
+   "y": "RCC with pillar"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Population and Economic Data of Nepal 2011 - Municipal-Level Data from different sources, ' (Zenodo, doi 10.5281/zenodo.14010807): 'RCC with pillar' is linear in 'Total_HouseHold' (R\u00b2 = 0.966 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14010807",
+   "held_out_r2": 0.914,
+   "held_out_rows": 1987,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-8a3552d86c0c",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "d1596a6a7ff823b1.csv",
+   "doi": "10.5281/zenodo.14010807",
+   "form": "linear",
+   "params": [
+    -712.194828780256,
+    0.8168604219421922
+   ],
+   "seed": 2178953079,
+   "x": "Total_HouseHold",
+   "y": "Cement bonded bricks/stone"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Population and Economic Data of Nepal 2011 - Municipal-Level Data from different sources, ' (Zenodo, doi 10.5281/zenodo.14010807): 'Cement bonded bricks/stone' is linear in 'Total_HouseHold' (R\u00b2 = 0.988 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14010807",
+   "held_out_r2": 0.8067,
+   "held_out_rows": 1987,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-8bff200975b1",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "d1596a6a7ff823b1.csv",
+   "doi": "10.5281/zenodo.14010807",
+   "form": "linear",
+   "params": [
+    -737.1370674186284,
+    0.777227512745354
+   ],
+   "seed": 2178953079,
+   "x": "Total_HouseHold",
+   "y": "RCC"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Population and Economic Data of Nepal 2011 - Municipal-Level Data from different sources, ' (Zenodo, doi 10.5281/zenodo.14010807): 'RCC' is linear in 'Total_HouseHold' (R\u00b2 = 0.978 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14010807",
+   "held_out_r2": 0.7748,
+   "held_out_rows": 1987,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b6c743874170",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "d1596a6a7ff823b1.csv",
+   "doi": "10.5281/zenodo.14010807",
+   "form": "linear",
+   "params": [
+    -191.1276689266687,
+    0.6227990024031294
+   ],
+   "seed": 2178953079,
+   "x": "Total_HouseHold",
+   "y": "Tap/piped water"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Population and Economic Data of Nepal 2011 - Municipal-Level Data from different sources, ' (Zenodo, doi 10.5281/zenodo.14010807): 'Tap/piped water' is linear in 'Total_HouseHold' (R\u00b2 = 0.959 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14010807",
+   "held_out_r2": 0.8225,
+   "held_out_rows": 1987,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ff3948866961",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "d1596a6a7ff823b1.csv",
+   "doi": "10.5281/zenodo.14010807",
+   "form": "linear",
+   "params": [
+    -926.9673248045547,
+    0.9065711829916817
+   ],
+   "seed": 2178953079,
+   "x": "Total_HouseHold",
+   "y": "LP gas + Electricity"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Population and Economic Data of Nepal 2011 - Municipal-Level Data from different sources, ' (Zenodo, doi 10.5281/zenodo.14010807): 'LP gas + Electricity' is linear in 'Total_HouseHold' (R\u00b2 = 0.974 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14010807",
+   "held_out_r2": 0.9472,
+   "held_out_rows": 1987,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ca44bff63982",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "d1596a6a7ff823b1.csv",
+   "doi": "10.5281/zenodo.14010807",
+   "form": "linear",
+   "params": [
+    -86.23380637649477,
+    0.5731730007989705
+   ],
+   "seed": 2178953079,
+   "x": "Total_HouseHold",
+   "y": "Radio"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Population and Economic Data of Nepal 2011 - Municipal-Level Data from different sources, ' (Zenodo, doi 10.5281/zenodo.14010807): 'Radio' is linear in 'Total_HouseHold' (R\u00b2 = 0.993 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14010807",
+   "held_out_r2": 0.906,
+   "held_out_rows": 1987,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ffea9bf050e3",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "d1596a6a7ff823b1.csv",
+   "doi": "10.5281/zenodo.14010807",
+   "form": "linear",
+   "params": [
+    -502.4111984746289,
+    0.7410739219564765
+   ],
+   "seed": 2178953079,
+   "x": "Total_HouseHold",
+   "y": "Television"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Population and Economic Data of Nepal 2011 - Municipal-Level Data from different sources, ' (Zenodo, doi 10.5281/zenodo.14010807): 'Television' is linear in 'Total_HouseHold' (R\u00b2 = 0.981 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14010807",
+   "held_out_r2": 0.9531,
+   "held_out_rows": 1987,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-58a14399ed6d",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "d1596a6a7ff823b1.csv",
+   "doi": "10.5281/zenodo.14010807",
+   "form": "power law",
+   "params": [
+    -0.9696380883192028,
+    0.9165534950169185
+   ],
+   "seed": 2178953079,
+   "x": "Total_Population",
+   "y": "Owned"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Population and Economic Data of Nepal 2011 - Municipal-Level Data from different sources, ' (Zenodo, doi 10.5281/zenodo.14010807): 'Owned' follows a power law in 'Total_Population' (R\u00b2 = 0.949 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14010807",
+   "held_out_r2": 0.6435,
+   "held_out_rows": 1987,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3b5056170537",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "d1596a6a7ff823b1.csv",
+   "doi": "10.5281/zenodo.14010807",
+   "form": "linear",
+   "params": [
+    -526.0862146228638,
+    0.10138204025774657
+   ],
+   "seed": 2178953079,
+   "x": "Total_Population",
+   "y": "RCC with pillar"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Population and Economic Data of Nepal 2011 - Municipal-Level Data from different sources, ' (Zenodo, doi 10.5281/zenodo.14010807): 'RCC with pillar' is linear in 'Total_Population' (R\u00b2 = 0.942 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14010807",
+   "held_out_r2": 0.8431,
+   "held_out_rows": 1987,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-04d0b73a2551",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "d1596a6a7ff823b1.csv",
+   "doi": "10.5281/zenodo.14010807",
+   "form": "linear",
+   "params": [
+    -964.8380016443604,
+    0.20780161813639364
+   ],
+   "seed": 2178953079,
+   "x": "Total_Population",
+   "y": "Cement bonded bricks/stone"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Population and Economic Data of Nepal 2011 - Municipal-Level Data from different sources, ' (Zenodo, doi 10.5281/zenodo.14010807): 'Cement bonded bricks/stone' is linear in 'Total_Population' (R\u00b2 = 0.974 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14010807",
+   "held_out_r2": 0.7144,
+   "held_out_rows": 1987,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-8fc2ae2a903d",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "d1596a6a7ff823b1.csv",
+   "doi": "10.5281/zenodo.14010807",
+   "form": "linear",
+   "params": [
+    -975.1619654202203,
+    0.19736668903639487
+   ],
+   "seed": 2178953079,
+   "x": "Total_Population",
+   "y": "RCC"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Population and Economic Data of Nepal 2011 - Municipal-Level Data from different sources, ' (Zenodo, doi 10.5281/zenodo.14010807): 'RCC' is linear in 'Total_Population' (R\u00b2 = 0.961 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14010807",
+   "held_out_r2": 0.6723,
+   "held_out_rows": 1987,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9dcf96a322cd",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "d1596a6a7ff823b1.csv",
+   "doi": "10.5281/zenodo.14010807",
+   "form": "linear",
+   "params": [
+    -377.800798528087,
+    0.15754521997541115
+   ],
+   "seed": 2178953079,
+   "x": "Total_Population",
+   "y": "Tap/piped water"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Population and Economic Data of Nepal 2011 - Municipal-Level Data from different sources, ' (Zenodo, doi 10.5281/zenodo.14010807): 'Tap/piped water' is linear in 'Total_Population' (R\u00b2 = 0.935 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14010807",
+   "held_out_r2": 0.684,
+   "held_out_rows": 1987,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ed0b6089a735",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "d1596a6a7ff823b1.csv",
+   "doi": "10.5281/zenodo.14010807",
+   "form": "linear",
+   "params": [
+    -1201.200479319719,
+    0.22970332290017753
+   ],
+   "seed": 2178953079,
+   "x": "Total_Population",
+   "y": "LP gas + Electricity"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Population and Economic Data of Nepal 2011 - Municipal-Level Data from different sources, ' (Zenodo, doi 10.5281/zenodo.14010807): 'LP gas + Electricity' is linear in 'Total_Population' (R\u00b2 = 0.953 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14010807",
+   "held_out_r2": 0.9165,
+   "held_out_rows": 1987,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4553d2da6d6e",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "d1596a6a7ff823b1.csv",
+   "doi": "10.5281/zenodo.14010807",
+   "form": "linear",
+   "params": [
+    -715.378582211214,
+    0.24975366472642205
+   ],
+   "seed": 2178953079,
+   "x": "Total_Population",
+   "y": "Electricity"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Population and Economic Data of Nepal 2011 - Municipal-Level Data from different sources, ' (Zenodo, doi 10.5281/zenodo.14010807): 'Electricity' is linear in 'Total_Population' (R\u00b2 = 0.987 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14010807",
+   "held_out_r2": 0.8579,
+   "held_out_rows": 1987,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-88d419828355",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "d1596a6a7ff823b1.csv",
+   "doi": "10.5281/zenodo.14010807",
+   "form": "linear",
+   "params": [
+    -263.8879288900804,
+    0.14586660126907064
+   ],
+   "seed": 2178953079,
+   "x": "Total_Population",
+   "y": "Radio"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Population and Economic Data of Nepal 2011 - Municipal-Level Data from different sources, ' (Zenodo, doi 10.5281/zenodo.14010807): 'Radio' is linear in 'Total_Population' (R\u00b2 = 0.980 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14010807",
+   "held_out_r2": 0.8142,
+   "held_out_rows": 1987,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-087602d7ce9d",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "d1596a6a7ff823b1.csv",
+   "doi": "10.5281/zenodo.14010807",
+   "form": "linear",
+   "params": [
+    -729.6866023111011,
+    0.18823414816142836
+   ],
+   "seed": 2178953079,
+   "x": "Total_Population",
+   "y": "Television"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Population and Economic Data of Nepal 2011 - Municipal-Level Data from different sources, ' (Zenodo, doi 10.5281/zenodo.14010807): 'Television' is linear in 'Total_Population' (R\u00b2 = 0.964 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14010807",
+   "held_out_r2": 0.9206,
+   "held_out_rows": 1987,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b5ccffb446d2",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "d1596a6a7ff823b1.csv",
+   "doi": "10.5281/zenodo.14010807",
+   "form": "linear",
+   "params": [
+    120.75707891568973,
+    2.0019109391260006
+   ],
+   "seed": 2178953079,
+   "x": "RCC with pillar",
+   "y": "Cement bonded bricks/stone"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Population and Economic Data of Nepal 2011 - Municipal-Level Data from different sources, ' (Zenodo, doi 10.5281/zenodo.14010807): 'Cement bonded bricks/stone' is linear in 'RCC with pillar' (R\u00b2 = 0.986 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14010807",
+   "held_out_r2": 0.7925,
+   "held_out_rows": 1987,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-14e355d96398",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "d1596a6a7ff823b1.csv",
+   "doi": "10.5281/zenodo.14010807",
+   "form": "linear",
+   "params": [
+    442.5298435786818,
+    1.5355689813437012
+   ],
+   "seed": 2178953079,
+   "x": "RCC with pillar",
+   "y": "Tap/piped water"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Population and Economic Data of Nepal 2011 - Municipal-Level Data from different sources, ' (Zenodo, doi 10.5281/zenodo.14010807): 'Tap/piped water' is linear in 'RCC with pillar' (R\u00b2 = 0.969 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14010807",
+   "held_out_r2": 0.8574,
+   "held_out_rows": 1987,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5fb530eee68e",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "d1596a6a7ff823b1.csv",
+   "doi": "10.5281/zenodo.14010807",
+   "form": "linear",
+   "params": [
+    594.6720333226914,
+    2.3713589092207994
+   ],
+   "seed": 2178953079,
+   "x": "RCC with pillar",
+   "y": "Electricity"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Population and Economic Data of Nepal 2011 - Municipal-Level Data from different sources, ' (Zenodo, doi 10.5281/zenodo.14010807): 'Electricity' is linear in 'RCC with pillar' (R\u00b2 = 0.971 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14010807",
+   "held_out_r2": 0.8592,
+   "held_out_rows": 1987,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e2a65e988bba",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "d1596a6a7ff823b1.csv",
+   "doi": "10.5281/zenodo.14010807",
+   "form": "linear",
+   "params": [
+    499.97333992250583,
+    1.393260478737706
+   ],
+   "seed": 2178953079,
+   "x": "RCC with pillar",
+   "y": "Radio"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Population and Economic Data of Nepal 2011 - Municipal-Level Data from different sources, ' (Zenodo, doi 10.5281/zenodo.14010807): 'Radio' is linear in 'RCC with pillar' (R\u00b2 = 0.975 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14010807",
+   "held_out_r2": 0.8812,
+   "held_out_rows": 1987,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c5fc86405c28",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "d1596a6a7ff823b1.csv",
+   "doi": "10.5281/zenodo.14010807",
+   "form": "linear",
+   "params": [
+    252.6564711368164,
+    1.820146178798422
+   ],
+   "seed": 2178953079,
+   "x": "RCC with pillar",
+   "y": "Television"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Population and Economic Data of Nepal 2011 - Municipal-Level Data from different sources, ' (Zenodo, doi 10.5281/zenodo.14010807): 'Television' is linear in 'RCC with pillar' (R\u00b2 = 0.984 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14010807",
+   "held_out_r2": 0.8231,
+   "held_out_rows": 1987,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-629ad9ec29a2",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "d1596a6a7ff823b1.csv",
+   "doi": "10.5281/zenodo.14010807",
+   "form": "linear",
+   "params": [
+    352.8474873706843,
+    0.7601375854890646
+   ],
+   "seed": 2178953079,
+   "x": "Cement bonded bricks/stone",
+   "y": "Tap/piped water"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Population and Economic Data of Nepal 2011 - Municipal-Level Data from different sources, ' (Zenodo, doi 10.5281/zenodo.14010807): 'Tap/piped water' is linear in 'Cement bonded bricks/stone' (R\u00b2 = 0.965 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14010807",
+   "held_out_r2": 0.9452,
+   "held_out_rows": 1987,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f6428822341a",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "d1596a6a7ff823b1.csv",
+   "doi": "10.5281/zenodo.14010807",
+   "form": "linear",
+   "params": [
+    -138.23183996195237,
+    1.11375763377769
+   ],
+   "seed": 2178953079,
+   "x": "Cement bonded bricks/stone",
+   "y": "LP gas + Electricity"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Population and Economic Data of Nepal 2011 - Municipal-Level Data from different sources, ' (Zenodo, doi 10.5281/zenodo.14010807): 'LP gas + Electricity' is linear in 'Cement bonded bricks/stone' (R\u00b2 = 0.993 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14010807",
+   "held_out_r2": 0.9342,
+   "held_out_rows": 1987,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-82c76b044152",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "d1596a6a7ff823b1.csv",
+   "doi": "10.5281/zenodo.14010807",
+   "form": "linear",
+   "params": [
+    450.1397417645319,
+    1.1880457516719516
+   ],
+   "seed": 2178953079,
+   "x": "Cement bonded bricks/stone",
+   "y": "Electricity"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Population and Economic Data of Nepal 2011 - Municipal-Level Data from different sources, ' (Zenodo, doi 10.5281/zenodo.14010807): 'Electricity' is linear in 'Cement bonded bricks/stone' (R\u00b2 = 0.990 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14010807",
+   "held_out_r2": 0.8938,
+   "held_out_rows": 1987,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d09ebc1537ea",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "d1596a6a7ff823b1.csv",
+   "doi": "10.5281/zenodo.14010807",
+   "form": "linear",
+   "params": [
+    416.0559706300049,
+    0.6956709044537733
+   ],
+   "seed": 2178953079,
+   "x": "Cement bonded bricks/stone",
+   "y": "Radio"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Population and Economic Data of Nepal 2011 - Municipal-Level Data from different sources, ' (Zenodo, doi 10.5281/zenodo.14010807): 'Radio' is linear in 'Cement bonded bricks/stone' (R\u00b2 = 0.988 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14010807",
+   "held_out_r2": 0.8994,
+   "held_out_rows": 1987,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-6e8245ce0e66",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "d1596a6a7ff823b1.csv",
+   "doi": "10.5281/zenodo.14010807",
+   "form": "linear",
+   "params": [
+    144.78663333184605,
+    0.9046889770926934
+   ],
+   "seed": 2178953079,
+   "x": "Cement bonded bricks/stone",
+   "y": "Television"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Population and Economic Data of Nepal 2011 - Municipal-Level Data from different sources, ' (Zenodo, doi 10.5281/zenodo.14010807): 'Television' is linear in 'Cement bonded bricks/stone' (R\u00b2 = 0.987 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14010807",
+   "held_out_r2": 0.7398,
+   "held_out_rows": 1987,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-107220d923be",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "d1596a6a7ff823b1.csv",
+   "doi": "10.5281/zenodo.14010807",
+   "form": "linear",
+   "params": [
+    401.831796201297,
+    0.7946983308343988
+   ],
+   "seed": 2178953079,
+   "x": "RCC",
+   "y": "Tap/piped water"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Population and Economic Data of Nepal 2011 - Municipal-Level Data from different sources, ' (Zenodo, doi 10.5281/zenodo.14010807): 'Tap/piped water' is linear in 'RCC' (R\u00b2 = 0.965 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14010807",
+   "held_out_r2": 0.8812,
+   "held_out_rows": 1987,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9d5479568792",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "d1596a6a7ff823b1.csv",
+   "doi": "10.5281/zenodo.14010807",
+   "form": "linear",
+   "params": [
+    528.5265715015222,
+    1.2367758256549264
+   ],
+   "seed": 2178953079,
+   "x": "RCC",
+   "y": "Electricity"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Population and Economic Data of Nepal 2011 - Municipal-Level Data from different sources, ' (Zenodo, doi 10.5281/zenodo.14010807): 'Electricity' is linear in 'RCC' (R\u00b2 = 0.981 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14010807",
+   "held_out_r2": 0.8269,
+   "held_out_rows": 1987,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e11ffa35c542",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "d1596a6a7ff823b1.csv",
+   "doi": "10.5281/zenodo.14010807",
+   "form": "linear",
+   "params": [
+    461.42100452657155,
+    0.7257529595082868
+   ],
+   "seed": 2178953079,
+   "x": "RCC",
+   "y": "Radio"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Population and Economic Data of Nepal 2011 - Municipal-Level Data from different sources, ' (Zenodo, doi 10.5281/zenodo.14010807): 'Radio' is linear in 'RCC' (R\u00b2 = 0.983 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14010807",
+   "held_out_r2": 0.8903,
+   "held_out_rows": 1987,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-36c18da66fc1",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "d1596a6a7ff823b1.csv",
+   "doi": "10.5281/zenodo.14010807",
+   "form": "linear",
+   "params": [
+    203.091675830339,
+    0.9458056343990797
+   ],
+   "seed": 2178953079,
+   "x": "RCC",
+   "y": "Television"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Population and Economic Data of Nepal 2011 - Municipal-Level Data from different sources, ' (Zenodo, doi 10.5281/zenodo.14010807): 'Television' is linear in 'RCC' (R\u00b2 = 0.987 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14010807",
+   "held_out_r2": 0.6685,
+   "held_out_rows": 1987,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9427cffc7b01",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "d1596a6a7ff823b1.csv",
+   "doi": "10.5281/zenodo.14010807",
+   "form": "linear",
+   "params": [
+    -628.4022303260756,
+    1.4255592134052548
+   ],
+   "seed": 2178953079,
+   "x": "Tap/piped water",
+   "y": "LP gas + Electricity"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Population and Economic Data of Nepal 2011 - Municipal-Level Data from different sources, ' (Zenodo, doi 10.5281/zenodo.14010807): 'LP gas + Electricity' is linear in 'Tap/piped water' (R\u00b2 = 0.974 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14010807",
+   "held_out_r2": 0.7008,
+   "held_out_rows": 1987,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d77bd95badd8",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "d1596a6a7ff823b1.csv",
+   "doi": "10.5281/zenodo.14010807",
+   "form": "linear",
+   "params": [
+    -68.74443217680792,
+    1.5147609010644196
+   ],
+   "seed": 2178953079,
+   "x": "Tap/piped water",
+   "y": "Electricity"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Population and Economic Data of Nepal 2011 - Municipal-Level Data from different sources, ' (Zenodo, doi 10.5281/zenodo.14010807): 'Electricity' is linear in 'Tap/piped water' (R\u00b2 = 0.964 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14010807",
+   "held_out_r2": 0.7653,
+   "held_out_rows": 1987,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-733106ea5cf0",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "d1596a6a7ff823b1.csv",
+   "doi": "10.5281/zenodo.14010807",
+   "form": "linear",
+   "params": [
+    109.78052204402441,
+    0.8905855506035789
+   ],
+   "seed": 2178953079,
+   "x": "Tap/piped water",
+   "y": "Radio"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Population and Economic Data of Nepal 2011 - Municipal-Level Data from different sources, ' (Zenodo, doi 10.5281/zenodo.14010807): 'Radio' is linear in 'Tap/piped water' (R\u00b2 = 0.969 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14010807",
+   "held_out_r2": 0.5117,
+   "held_out_rows": 1987,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d47c85646799",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "d1596a6a7ff823b1.csv",
+   "doi": "10.5281/zenodo.14010807",
+   "form": "linear",
+   "params": [
+    -252.03532497552294,
+    1.1559857997555885
+   ],
+   "seed": 2178953079,
+   "x": "Tap/piped water",
+   "y": "Television"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Population and Economic Data of Nepal 2011 - Municipal-Level Data from different sources, ' (Zenodo, doi 10.5281/zenodo.14010807): 'Television' is linear in 'Tap/piped water' (R\u00b2 = 0.965 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14010807",
+   "held_out_r2": 0.8763,
+   "held_out_rows": 1987,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-87cff0bc0376",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "d1596a6a7ff823b1.csv",
+   "doi": "10.5281/zenodo.14010807",
+   "form": "linear",
+   "params": [
+    503.6867204029859,
+    0.6207810952668508
+   ],
+   "seed": 2178953079,
+   "x": "LP gas + Electricity",
+   "y": "Radio"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Population and Economic Data of Nepal 2011 - Municipal-Level Data from different sources, ' (Zenodo, doi 10.5281/zenodo.14010807): 'Radio' is linear in 'LP gas + Electricity' (R\u00b2 = 0.982 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14010807",
+   "held_out_r2": 0.8996,
+   "held_out_rows": 1987,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-960552ed5ae0",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "d1596a6a7ff823b1.csv",
+   "doi": "10.5281/zenodo.14010807",
+   "form": "linear",
+   "params": [
+    258.24005110063615,
+    0.8088050135794355
+   ],
+   "seed": 2178953079,
+   "x": "LP gas + Electricity",
+   "y": "Television"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Population and Economic Data of Nepal 2011 - Municipal-Level Data from different sources, ' (Zenodo, doi 10.5281/zenodo.14010807): 'Television' is linear in 'LP gas + Electricity' (R\u00b2 = 0.986 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14010807",
+   "held_out_r2": 0.9336,
+   "held_out_rows": 1987,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c7cad88792ce",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "d1596a6a7ff823b1.csv",
+   "doi": "10.5281/zenodo.14010807",
+   "form": "linear",
+   "params": [
+    154.25276409452667,
+    0.583697115700398
+   ],
+   "seed": 2178953079,
+   "x": "Electricity",
+   "y": "Radio"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Population and Economic Data of Nepal 2011 - Municipal-Level Data from different sources, ' (Zenodo, doi 10.5281/zenodo.14010807): 'Radio' is linear in 'Electricity' (R\u00b2 = 0.991 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14010807",
+   "held_out_r2": 0.9336,
+   "held_out_rows": 1987,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ef9a107b5816",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "d1596a6a7ff823b1.csv",
+   "doi": "10.5281/zenodo.14010807",
+   "form": "linear",
+   "params": [
+    -193.62242890772092,
+    0.7569234216513094
+   ],
+   "seed": 2178953079,
+   "x": "Electricity",
+   "y": "Television"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Population and Economic Data of Nepal 2011 - Municipal-Level Data from different sources, ' (Zenodo, doi 10.5281/zenodo.14010807): 'Television' is linear in 'Electricity' (R\u00b2 = 0.985 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14010807",
+   "held_out_r2": 0.8877,
+   "held_out_rows": 1987,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e8fb169d5ec3",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "d1596a6a7ff823b1.csv",
+   "doi": "10.5281/zenodo.14010807",
+   "form": "linear",
+   "params": [
+    -389.83650914431934,
+    1.291415915436148
+   ],
+   "seed": 2178953079,
+   "x": "Radio",
+   "y": "Television"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Population and Economic Data of Nepal 2011 - Municipal-Level Data from different sources, ' (Zenodo, doi 10.5281/zenodo.14010807): 'Television' is linear in 'Radio' (R\u00b2 = 0.986 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.6426889",
+   "held_out_r2": 0.9441,
+   "held_out_rows": 5554,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-7b41b495b5a6",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "da5cb85d789116c1.csv",
+   "doi": "10.5281/zenodo.6426889",
+   "form": "power law",
+   "params": [
+    -4.777450501173834,
+    1.0085570870990126
+   ],
+   "seed": 2353628204,
+   "x": "Poblaci\u00f3n",
+   "y": "Muertes"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'S\u00e8ries hist\u00f2riques d'indicadors socio-econ\u00f2mics per pa\u00efsos.' (Zenodo, doi 10.5281/zenodo.6426889): 'Muertes' follows a power law in 'Poblaci\u00f3n' (R\u00b2 = 0.945 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22940411",
+   "held_out_r2": 0.9929,
+   "held_out_rows": 99,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ac9c15af0906",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "af719344fc87fb67.csv",
+   "doi": "10.5281/zenodo.22940411",
+   "form": "linear",
+   "params": [
+    1206.3481334680746,
+    -0.9430215242466402
+   ],
+   "seed": 429558085,
+   "x": "released",
+   "y": "suppressed_thin"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Gridded FADN Standard Results for the EU (2008\u20132020): a multi-resolution, disclosure-contr' (Zenodo, doi 10.5281/zenodo.22940411): 'suppressed_thin' is linear in 'released' (R\u00b2 = 0.920 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
