@@ -1108,3 +1108,5 @@
 - 2026-11-07 02:04 FINDING (confirmed on held-out rows): In 'Sèries històriques d'indicadors socio-econòmics per països.' (Zenodo, doi 10.5281/zenodo.6426889): 'Muertes' follows a power law in 'Población' (R² = 0.945 on the discovery half); held-out R² = 0.944 [emp-7b41b495b5a6]
 - 2026-11-07 02:04 FINDING (confirmed on held-out rows): In 'Gridded FADN Standard Results for the EU (2008–2020): a multi-resolution, disclosure-contr' (Zenodo, doi 10.5281/zenodo.22940411): 'suppressed_thin' is linear in 'released' (R² = 0.920 on the discovery half); held-out R² = 0.993 [emp-ac9c15af0906]
 - 2026-11-07 02:05 data feeds: 7308 datasets analysed so far, 999 confirmed findings
+- 2026-11-07 03:07 data feeds: online
+- 2026-11-07 03:07 FINDING (confirmed on held-out rows): In 'Data publication for "Different earthquake nucleation conditions revealed by stress drop a' (Zenodo, doi 10.5281/zenodo.11208068): 'b' is linear in 'a' (R² = 0.942 on the discovery half); held-out R² = 0.941 [emp-3de689503a2e]

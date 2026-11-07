@@ -1566323,5 +1566323,32 @@
   "statement": "Octal game 0.445076 is completely solved: its Grundy values are periodic with pre-period 285 and period 48 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11208068",
+   "held_out_r2": 0.9414,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3de689503a2e",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "ef42e5786ab6b95e.csv",
+   "doi": "10.5281/zenodo.11208068",
+   "form": "linear",
+   "params": [
+    -0.9027500519280595,
+    0.4000352543602967
+   ],
+   "seed": 317051656,
+   "x": "a",
+   "y": "b"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data publication for \"Different earthquake nucleation conditions revealed by stress drop a' (Zenodo, doi 10.5281/zenodo.11208068): 'b' is linear in 'a' (R\u00b2 = 0.942 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
