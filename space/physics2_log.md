@@ -1569,3 +1569,7 @@
 - 2026-11-07 03:29 round 1431: insurance and risk
 - 2026-11-07 03:31 round 1432: auction with a reserve price
 - 2026-11-07 03:33 round 1433: two-body decay
+- 2026-11-07 03:34 round 1434: collision
+- 2026-11-07 03:35 round 1435: driven oscillator
+- 2026-11-07 03:36 round 1436: velocity addition
+- 2026-11-07 03:37 round 1437: Compton scattering
