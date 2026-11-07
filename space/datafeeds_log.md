@@ -1178,3 +1178,4 @@
 - 2026-11-07 05:25 FINDING (confirmed on held-out rows): In 'Data from: Validating a practical methodology for thatch - mat - soil distinction in turfg' (Zenodo, doi 10.5281/zenodo.14242344): '?d' follows a power law in 'TOM' (R² = 0.949 on the discovery half); held-out R² = 0.952 [emp-d33e79ba3625]
 - 2026-11-07 05:25 FINDING (confirmed on held-out rows): In 'Frequent burning causes large losses of carbon from deep soil layers in a temperate savann' (Zenodo, doi 10.5061/dryad.02v6wwq07): 'K.Err' follows a power law in 'K' (R² = 0.973 on the discovery half); held-out R² = 0.969 [emp-b3244c94fcae]
 - 2026-11-07 05:25 data feeds: 7713 datasets analysed so far, 1061 confirmed findings
+- 2026-11-07 06:26 data feeds: online
