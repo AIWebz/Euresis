@@ -1058,3 +1058,4 @@
 - 2026-11-07 00:10 FINDING (confirmed on held-out rows): In 'Data from: Field-realistic antidepressant exposure disrupts group foraging dynamics in mos' (Zenodo, doi 10.5061/dryad.0ck07n7): 'length.z' grows logarithmically in 'weight' (R² = 0.921 on the discovery half); held-out R² = 0.872 [emp-9a8b120e4520]
 - 2026-11-07 00:10 FINDING (confirmed on held-out rows): In 'Data from: Field-realistic antidepressant exposure disrupts group foraging dynamics in mos' (Zenodo, doi 10.5061/dryad.0ck07n7): 'length.z' is linear in 'weight.z' (R² = 0.915 on the discovery half); held-out R² = 0.872 [emp-5ea1a5fc697e]
 - 2026-11-07 00:10 data feeds: 7135 datasets analysed so far, 953 confirmed findings
+- 2026-11-07 01:11 data feeds: online
