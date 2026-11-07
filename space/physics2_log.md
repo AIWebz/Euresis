@@ -1759,3 +1759,5 @@
 - 2026-11-07 09:36 round 1607: insurance and risk
 - 2026-11-07 09:37 round 1608: auction with a reserve price
 - 2026-11-07 09:38 round 1609: two-body decay
+- 2026-11-07 09:40 round 1610: collision
+- 2026-11-07 09:41 round 1611: driven oscillator
