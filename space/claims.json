@@ -1482889,5 +1482889,27 @@
   "statement": "In 'Data from: Field-realistic antidepressant exposure disrupts group foraging dynamics in mos' (Zenodo, doi 10.5061/dryad.0ck07n7): 'length.z' is linear in 'weight.z' (R\u00b2 = 0.915 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
+ },
+ {
+  "evidence": null,
+  "id": "phy-08dedda679d2",
+  "kind": "physics-relation",
+  "novelty": "not checked",
+  "payload": {
+   "assumptions": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "claim": "sqrt(-b**2/4 + (1 - a)**2/4 + (a**2 - b**2 + 1)**2)/sqrt(-b**2/4 + (1 - a)**2/4 + (-a**2 + b**2 + 1)**2) >= 1*(a**2/2 - b**2/2 + 1/2)",
+   "symbols": [
+    "a",
+    "b"
+   ]
+  },
+  "source": "physics_discover2 round 1353",
+  "statement": "[physics: two-body decay] Invariant Mass Ratio of Products [model-proposed; physical meaning unverified] \u2265 1 \u00d7 energy of product 1 / (Mc\u00b2)   on a < 1, b < 1, a + b < 1 (tight only at the edge of the domain, near (2.41e-06, 1))",
+  "status": "candidate",
+  "verifier": null
  }
 ]
