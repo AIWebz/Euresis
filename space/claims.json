@@ -1482891,10 +1482891,17 @@
   "verifier": "held-out-replication"
  },
  {
-  "evidence": null,
+  "evidence": {
+   "domain": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "z3": "proved"
+  },
   "id": "phy-08dedda679d2",
   "kind": "physics-relation",
-  "novelty": "not checked",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
   "payload": {
    "assumptions": [
     "a < 1",
@@ -1482909,7 +1482916,7 @@
   },
   "source": "physics_discover2 round 1353",
   "statement": "[physics: two-body decay] Invariant Mass Ratio of Products [model-proposed; physical meaning unverified] \u2265 1 \u00d7 energy of product 1 / (Mc\u00b2)   on a < 1, b < 1, a + b < 1 (tight only at the edge of the domain, near (2.41e-06, 1))",
-  "status": "candidate",
-  "verifier": null
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]
