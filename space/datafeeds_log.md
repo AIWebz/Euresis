@@ -1495,3 +1495,4 @@
 - 2026-11-07 22:39 FINDING (confirmed on held-out rows): In 'Experimental data for "Fragmentation of ice particles: laboratory experiments on graupel-g' (Zenodo, doi 10.5281/zenodo.8348271): 'area(mm^2)' follows a power law in 'minor_length(micrometer)' (R² = 0.946 on the discovery half); held-out R² = 0.944 [emp-35467aba32c2]
 - 2026-11-07 22:40 data feeds: 9613 datasets analysed so far, 1341 confirmed findings
 - 2026-11-07 23:41 data feeds: online
+- 2026-11-07 23:43 FINDING (confirmed on held-out rows): In 'Dataset of "Activity-stability relationship in magnetron co-sputtered bimetallic catalysts' (Zenodo, doi 10.5281/zenodo.14795354): 'P' follows a power law in 'I' (R² = 0.997 on the discovery half); held-out R² = 0.996 [emp-63223a604b8c]
