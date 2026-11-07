@@ -1626,3 +1626,5 @@
 - 2026-11-07 05:19 round 1484: velocity addition
 - 2026-11-07 05:19 round 1485: Compton scattering
 - 2026-11-07 05:20 round 1486: Cournot duopoly
+- 2026-11-07 05:26 segment start (budget 30 min; model: Qwen3-8B; 5 discoveries so far)
+- 2026-11-07 05:26 round 1486: Cournot duopoly
