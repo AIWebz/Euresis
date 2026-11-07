@@ -1779586,5 +1779586,59 @@
   "statement": "In 'On the nature of mixed-type features in materials datasets' (Zenodo, doi 10.5281/zenodo.4474848): 'B_melting_point' follows a power law in 'B_boiling_point' (R\u00b2 = 0.965 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.5841595",
+   "held_out_r2": 0.9322,
+   "held_out_rows": 3593,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-fda40c3bc2e4",
+  "kind": "empirical",
+  "novelty": "KNOWN: equation of state of a simulated fluid (pressure, density, temperature, chemical potential, kinetic energy) \u2014 not a discovery",
+  "payload": {
+   "dataset": "35eaf5f06b29d405.csv",
+   "doi": "10.5281/zenodo.5841595",
+   "form": "linear",
+   "params": [
+    3.0874434493220004,
+    0.03292600515729834
+   ],
+   "seed": 1117363654,
+   "x": "Strain (%)",
+   "y": "Stress (Mpa)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Piezoresistive sensor fiber composites based on silicone elastomers for the monitoring of ' (Zenodo, doi 10.5281/zenodo.5841595): 'Stress (Mpa)' is linear in 'Strain (%)' (R\u00b2 = 0.933 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3974934",
+   "held_out_r2": 0.8974,
+   "held_out_rows": 95,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5b1508cfbe1f",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "5765caab61083ff4.csv",
+   "doi": "10.5281/zenodo.3974934",
+   "form": "power law",
+   "params": [
+    2.4895064140307337,
+    0.9912372931394684
+   ],
+   "seed": 2976064915,
+   "x": "sub_authors",
+   "y": "sub_posts"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Intersectionality of Class Discourse - Supporting Materials' (Zenodo, doi 10.5281/zenodo.3974934): 'sub_posts' follows a power law in 'sub_authors' (R\u00b2 = 0.903 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
