@@ -1187,3 +1187,4 @@
 - 2026-11-07 06:27 FINDING (confirmed on held-out rows): In 'COS profiles and LISA samples - Balloon-borne Stratospheric Vertical Profiling of Carbonyl' (Zenodo, doi 10.5281/zenodo.15749915): 'CH4_sd' is linear in 'N2O_sd' (R² = 0.967 on the discovery half); held-out R² = 0.962 [emp-0c2ee6360805]
 - 2026-11-07 06:29 FINDING (confirmed on held-out rows): In 'Data from: Evidence of rapid adaptive trait change to local salinity in the sperm of an in' (Zenodo, doi 10.5061/dryad.77hm40j): 'VSL (_m/s)' follows a power law in 'VAP (_m/s)' (R² = 0.935 on the discovery half); held-out R² = 0.927 [emp-f77d05fa219d]
 - 2026-11-07 06:30 data feeds: 7830 datasets analysed so far, 1068 confirmed findings
+- 2026-11-07 07:17 data feeds: online
