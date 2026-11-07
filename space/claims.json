@@ -1757338,5 +1757338,86 @@
   "statement": "Octal game 0.472231 is completely solved: its Grundy values are periodic with pre-period 14 and period 20 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15853626",
+   "held_out_r2": 0.9506,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a1397f358edc",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3568f05e6b121ff1.csv",
+   "doi": "10.5281/zenodo.15853626",
+   "form": "power law",
+   "params": [
+    0.08948394476266104,
+    0.9610223970206806
+   ],
+   "seed": 1733476379,
+   "x": "(m-M)Li",
+   "y": "(m-M)Anders"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'The data for SpecDis: Value added distance catalog for 4 million stars from DESI Year-1 da' (Zenodo, doi 10.5281/zenodo.15853626): '(m-M)Anders' follows a power law in '(m-M)Li' (R\u00b2 = 0.951 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15853626",
+   "held_out_r2": 0.9709,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d202c837647f",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "d874a566fdff8471.csv",
+   "doi": "10.5281/zenodo.15853626",
+   "form": "power law",
+   "params": [
+    0.03699387135533427,
+    0.9871443331202137
+   ],
+   "seed": 189169628,
+   "x": "(m-M)Li",
+   "y": "(m-M)Zhang2023"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'The data for SpecDis: Value added distance catalog for 4 million stars from DESI Year-1 da' (Zenodo, doi 10.5281/zenodo.15853626): '(m-M)Zhang2023' follows a power law in '(m-M)Li' (R\u00b2 = 0.971 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15853626",
+   "held_out_r2": 0.8359,
+   "held_out_rows": 125,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-8f43cb2c0107",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "e71ed97505586a45.csv",
+   "doi": "10.5281/zenodo.15853626",
+   "form": "linear",
+   "params": [
+    -3812.3158779698433,
+    0.8504143551693191
+   ],
+   "seed": 2639932923,
+   "x": "N of full sample",
+   "y": "N after error cut"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'The data for SpecDis: Value added distance catalog for 4 million stars from DESI Year-1 da' (Zenodo, doi 10.5281/zenodo.15853626): 'N after error cut' is linear in 'N of full sample' (R\u00b2 = 0.955 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
  }
 ]

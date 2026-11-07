@@ -1226,3 +1226,6 @@
 - 2026-11-07 10:22 FINDING (confirmed on held-out rows): In 'Response and resilience of karst subterranean estuary communities to precipitation impacts' (Zenodo, doi 10.5281/zenodo.7523431): 'TEMP' follows a power law in 'PH' (R² = 0.985 on the discovery half); held-out R² = 0.984 [emp-b51a6383755d]
 - 2026-11-07 10:23 FINDING (confirmed on held-out rows): In 'Data from: Fencing amplifies individual differences in movement with implications on survi' (Zenodo, doi 10.6078/D1Q71K): 'rel_str' follows a power law in 'max_displacement' (R² = 0.922 on the discovery half); held-out R² = 0.876 [emp-7e2a27bb7d97]
 - 2026-11-07 10:23 data feeds: 8368 datasets analysed so far, 1099 confirmed findings
+- 2026-11-07 11:07 data feeds: online
+- 2026-11-07 11:07 FINDING (confirmed on held-out rows): In 'The data for SpecDis: Value added distance catalog for 4 million stars from DESI Year-1 da' (Zenodo, doi 10.5281/zenodo.15853626): '(m-M)Anders' follows a power law in '(m-M)Li' (R² = 0.951 on the discovery half); held-out R² = 0.951 [emp-a1397f358edc]
+- 2026-11-07 11:07 FINDING (confirmed on held-out rows): In 'The data for SpecDis: Value added distance catalog for 4 million stars from DESI Year-1 da' (Zenodo, doi 10.5281/zenodo.15853626): '(m-M)Zhang2023' follows a power law in '(m-M)Li' (R² = 0.971 on the discovery half); held-out R² = 0.971 [emp-d202c837647f]
