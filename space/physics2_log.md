@@ -2142,3 +2142,29 @@
 - 2026-11-07 22:40 round 1962: collision
 - 2026-11-07 22:42 round 1963: driven oscillator
 - 2026-11-07 22:43 round 1964: velocity addition
+- 2026-11-07 22:44 round 1965: Compton scattering
+- 2026-11-07 22:45 round 1966: Cournot duopoly
+- 2026-11-07 22:46 round 1967: insurance and risk
+- 2026-11-07 22:47 round 1968: auction with a reserve price
+- 2026-11-07 22:48 round 1969: two-body decay
+- 2026-11-07 22:50 round 1970: collision
+- 2026-11-07 22:51 round 1971: driven oscillator
+- 2026-11-07 22:52 round 1972: velocity addition
+- 2026-11-07 22:53 round 1973: Compton scattering
+- 2026-11-07 22:53 round 1974: Cournot duopoly
+- 2026-11-07 22:54 round 1975: insurance and risk
+- 2026-11-07 22:55 round 1976: auction with a reserve price
+- 2026-11-07 22:56 round 1977: two-body decay
+- 2026-11-07 22:58 round 1978: collision
+- 2026-11-07 22:59 round 1979: driven oscillator
+- 2026-11-07 23:00 round 1980: velocity addition
+- 2026-11-07 23:02 round 1981: Compton scattering
+- 2026-11-07 23:02 round 1982: Cournot duopoly
+- 2026-11-07 23:03 round 1983: insurance and risk
+- 2026-11-07 23:04 round 1984: auction with a reserve price
+- 2026-11-07 23:05 round 1985: two-body decay
+- 2026-11-07 23:06 round 1986: collision
+- 2026-11-07 23:07 round 1987: driven oscillator
+- 2026-11-07 23:09 round 1988: velocity addition
+- 2026-11-07 23:10 round 1989: Compton scattering
+- 2026-11-07 23:11 segment end: 1989 rounds, 5 discoveries, 2 known laws rediscovered
