@@ -1494,3 +1494,4 @@
 - 2026-11-07 22:39 FINDING (confirmed on held-out rows): In 'Experimental data for "Fragmentation of ice particles: laboratory experiments on graupel-g' (Zenodo, doi 10.5281/zenodo.8348271): 'area(mm^2)' follows a power law in 'major_length(micrometer)' (R² = 0.929 on the discovery half); held-out R² = 0.944 [emp-f070eee71f79]
 - 2026-11-07 22:39 FINDING (confirmed on held-out rows): In 'Experimental data for "Fragmentation of ice particles: laboratory experiments on graupel-g' (Zenodo, doi 10.5281/zenodo.8348271): 'area(mm^2)' follows a power law in 'minor_length(micrometer)' (R² = 0.946 on the discovery half); held-out R² = 0.944 [emp-35467aba32c2]
 - 2026-11-07 22:40 data feeds: 9613 datasets analysed so far, 1341 confirmed findings
+- 2026-11-07 23:41 data feeds: online
