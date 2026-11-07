@@ -2073,3 +2073,11 @@
 - 2026-11-07 20:15 round 1899: driven oscillator
 - 2026-11-07 20:16 round 1900: velocity addition
 - 2026-11-07 20:17 round 1901: Compton scattering
+- 2026-11-07 20:18 round 1902: Cournot duopoly
+- 2026-11-07 20:20 round 1903: insurance and risk
+- 2026-11-07 20:21 round 1904: auction with a reserve price
+- 2026-11-07 20:22 round 1905: two-body decay
+- 2026-11-07 20:23 round 1906: collision
+- 2026-11-07 20:24 round 1907: driven oscillator
+- 2026-11-07 20:25 round 1908: velocity addition
+- 2026-11-07 20:27 segment end: 1908 rounds, 5 discoveries, 2 known laws rediscovered
