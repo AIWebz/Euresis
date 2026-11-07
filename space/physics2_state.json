@@ -22364,6 +22364,66 @@
    "family": "collision",
    "expr": "e**2*m**2/(m + 1)**2 + e**2*m/(m + 1)",
    "why": "affine combination of known quantities (target speed / initial speed, Fraction of kinetic energy retained by the target [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt((1 - r**2)**2 + (2*z*r)**2)",
+   "why": "affine combination of known quantities (amplitude / static deflection, 1/(amplitude / static deflection))"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "1 + sqrt(4*r**2*z**2 + 1)/(2*r*z*sqrt(4*r**2*z**2 + (1 - r**2)**2))",
+   "why": "affine combination of known quantities (amplitude / static deflection, Power Amplification Factor [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt((1 + (2*z*r)**2)/((1 - r**2)**2 + (2*z*r)**2))",
+   "why": "affine combination of known quantities (amplitude / static deflection, transmissibility)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "2*r**2*z/((1 - r**2)**2 + (2*z*r)**2)",
+   "why": "affine combination of known quantities (amplitude / static deflection, mean absorbed power (normalised))"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 + u)/(1 - u)) * sqrt((1 + v)/(1 - v)) / sqrt((1 + (u + v)/(1 + u*v)) / (1 - (u + v)/(1 + u*v",
+   "why": "affine combination of known quantities (composed speed / c)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt(1 - u**2) * sqrt(1 - v**2) + (u + v) * sqrt(-(u + v)**2/(u*v + 1)**2 + 1)/(u*v + 1)",
+   "why": "affine combination of known quantities (composed speed / c, Relativistic Energy-Momentum Invariant [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "1 - c/(c*x + 1)",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "((1 - 2*c1 + c2)/3 - (1 - 2*c2 + c1)/3)**2 / ((1 - c1)**2 + (1 - c2)**2)",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "(-L*p + 1)**2/(-p*sqrt(1 - L) + p + 1)**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "sqrt(-L*p + 1)/sqrt(1 - L) - 1",
+   "why": "affine combination of known quantities (expected wealth, Insurance Risk Exposure Index [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "sqrt(-L*p + 1)/(p*sqrt(1 - L) - p + 1) - 1",
+   "why": "affine combination of known quantities (expected wealth, Expected Utility Adjustment Factor [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "1/sqrt(1 - L) - 1",
+   "why": "affine combination of known quantities (expected wealth, Relative Risk Aversion [model-proposed; physical meaning unverified])"
   }
  ],
  "tried": [
@@ -25158,7 +25218,17 @@
   "driven oscillator|Power Amplification Factor [model-proposed; physical meaning unverified]|acceleration amplitude / (\u03c90\u00b2 \u00d7 static deflection)",
   "driven oscillator|Power Amplification Factor [model-proposed; physical meaning unverified]|mean absorbed power (normalised)",
   "driven oscillator|Power Amplification Factor [model-proposed; physical meaning unverified]|quality factor",
-  "driven oscillator|Power Amplification Factor [model-proposed; physical meaning unverified]|log decrement [model-proposed; physical meaning unverified]"
+  "driven oscillator|Power Amplification Factor [model-proposed; physical meaning unverified]|log decrement [model-proposed; physical meaning unverified]",
+  "driven oscillator|Power Amplification Factor [model-proposed; physical meaning unverified]|resonance frequency ratio [model-proposed; physical meaning unverified]",
+  "driven oscillator|Power Amplification Factor [model-proposed; physical meaning unverified]|resonance amplitude ratio [model-proposed; physical meaning unverified]",
+  "driven oscillator|Power Amplification Factor [model-proposed; physical meaning unverified]|Resonance frequency shift [model-proposed; physical meaning unverified]",
+  "driven oscillator|Power Amplification Factor [model-proposed; physical meaning unverified]|Peak amplitude ratio [model-proposed; physical meaning unverified]",
+  "driven oscillator|Power Amplification Factor [model-proposed; physical meaning unverified]|Resonance frequency ratio (corrected) [model-proposed; physical meaning unverified]",
+  "driven oscillator|Power Amplification Factor [model-proposed; physical meaning unverified]|Relative energy loss per cycle [model-proposed; physical meaning unverified]",
+  "driven oscillator|Power Amplification Factor [model-proposed; physical meaning unverified]|Normalized power transmission [model-proposed; physical meaning unverified]",
+  "driven oscillator|Power Amplification Factor [model-proposed; physical meaning unverified]|Velocity transmissibility [model-proposed; physical meaning unverified]",
+  "driven oscillator|Power Amplification Factor [model-proposed; physical meaning unverified]|Acceleration transmissibility [model-proposed; physical meaning unverified]",
+  "driven oscillator|Power Amplification Factor [model-proposed; physical meaning unverified]|Energy Dissipation Ratio [model-proposed; physical meaning unverified]"
  ],
  "edges": [
   {
@@ -28924,7 +28994,7 @@
    "k": "1/6"
   }
  ],
- "rounds": 1506,
+ "rounds": 1511,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",

@@ -1649,3 +1649,8 @@
 - 2026-11-07 05:50 round 1505: two-body decay
 - 2026-11-07 05:51 round 1506: collision
 - 2026-11-07 05:52 round 1507: driven oscillator
+- 2026-11-07 05:53 round 1508: velocity addition
+- 2026-11-07 05:54 round 1509: Compton scattering
+- 2026-11-07 05:54 round 1510: Cournot duopoly
+- 2026-11-07 05:55 round 1511: insurance and risk
+- 2026-11-07 05:56 segment end: 1511 rounds, 5 discoveries, 2 known laws rediscovered
