@@ -1851678,5 +1851678,491 @@
   "statement": "Octal game 0.510174 is completely solved: its Grundy values are periodic with pre-period 1 and period 10 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23344781",
+   "held_out_r2": 0.9086,
+   "held_out_rows": 7124,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f1b268a1fba6",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "1099d58c36e7edb8.csv",
+   "doi": "10.5281/zenodo.23344781",
+   "form": "linear",
+   "params": [
+    0.36307733390538804,
+    1.4524267444558119
+   ],
+   "seed": 2121589151,
+   "x": "visible_crevasse_area_km2_low",
+   "y": "visible_crevasse_area_km2_high"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Annual visible crevasse extent of Svalbard glaciers, 2017\u20132025' (Zenodo, doi 10.5281/zenodo.23344781): 'visible_crevasse_area_km2_high' is linear in 'visible_crevasse_area_km2_low' (R\u00b2 = 0.931 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11353065",
+   "held_out_r2": 0.9119,
+   "held_out_rows": 424,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-628d9531778d",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "7b0571721d17d5c4.csv",
+   "doi": "10.5281/zenodo.11353065",
+   "form": "linear",
+   "params": [
+    -2.6084873211238038,
+    -0.9466066289811594
+   ],
+   "seed": 884413587,
+   "x": "PPc_ssp370",
+   "y": "PPc_spread"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Glacier runoff projections and their multiple sources of uncertainty in the Patagonian And' (Zenodo, doi 10.5281/zenodo.11353065): 'PPc_spread' is linear in 'PPc_ssp370' (R\u00b2 = 0.911 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11353065",
+   "held_out_r2": 0.9104,
+   "held_out_rows": 424,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-990750934659",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "7b0571721d17d5c4.csv",
+   "doi": "10.5281/zenodo.11353065",
+   "form": "linear",
+   "params": [
+    -1.939658830717013,
+    -0.7639840733097591
+   ],
+   "seed": 884413587,
+   "x": "PPc_ssp585",
+   "y": "PPc_spread"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Glacier runoff projections and their multiple sources of uncertainty in the Patagonian And' (Zenodo, doi 10.5281/zenodo.11353065): 'PPc_spread' is linear in 'PPc_ssp585' (R\u00b2 = 0.911 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11353065",
+   "held_out_r2": 0.9056,
+   "held_out_rows": 424,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c0d32dda9f38",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "7b0571721d17d5c4.csv",
+   "doi": "10.5281/zenodo.11353065",
+   "form": "exponential",
+   "params": [
+    0.3599405493074674,
+    0.012020048920932593
+   ],
+   "seed": 884413587,
+   "x": "PPc_spread",
+   "y": "T2Mc_ssp245"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Glacier runoff projections and their multiple sources of uncertainty in the Patagonian And' (Zenodo, doi 10.5281/zenodo.11353065): 'T2Mc_ssp245' grows exponentially in 'PPc_spread' (R\u00b2 = 0.907 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11353065",
+   "held_out_r2": 0.9051,
+   "held_out_rows": 424,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-437357593d29",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "7b0571721d17d5c4.csv",
+   "doi": "10.5281/zenodo.11353065",
+   "form": "exponential",
+   "params": [
+    0.7080425581761254,
+    0.012929042135598232
+   ],
+   "seed": 884413587,
+   "x": "PPc_spread",
+   "y": "T2Mc_ssp370"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Glacier runoff projections and their multiple sources of uncertainty in the Patagonian And' (Zenodo, doi 10.5281/zenodo.11353065): 'T2Mc_ssp370' grows exponentially in 'PPc_spread' (R\u00b2 = 0.907 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11353065",
+   "held_out_r2": 0.9144,
+   "held_out_rows": 424,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-400fd8be28da",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "7b0571721d17d5c4.csv",
+   "doi": "10.5281/zenodo.11353065",
+   "form": "exponential",
+   "params": [
+    0.8965823941925102,
+    0.014227035980129478
+   ],
+   "seed": 884413587,
+   "x": "PPc_spread",
+   "y": "T2Mc_ssp585"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Glacier runoff projections and their multiple sources of uncertainty in the Patagonian And' (Zenodo, doi 10.5281/zenodo.11353065): 'T2Mc_ssp585' grows exponentially in 'PPc_spread' (R\u00b2 = 0.915 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11353065",
+   "held_out_r2": 0.9778,
+   "held_out_rows": 227,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4d4428ab59af",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "38c2d0d33b51f621.csv",
+   "doi": "10.5281/zenodo.11353065",
+   "form": "power law",
+   "params": [
+    2.758082779838991,
+    0.9392335736465827
+   ],
+   "seed": 514470132,
+   "x": "GM_interannual_var",
+   "y": "GM_peak_water_magnitude"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Glacier runoff projections and their multiple sources of uncertainty in the Patagonian And' (Zenodo, doi 10.5281/zenodo.11353065): 'GM_peak_water_magnitude' follows a power law in 'GM_interannual_var' (R\u00b2 = 0.973 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11353065",
+   "held_out_r2": 0.9623,
+   "held_out_rows": 227,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-bfa79ce750d1",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "38c2d0d33b51f621.csv",
+   "doi": "10.5281/zenodo.11353065",
+   "form": "power law",
+   "params": [
+    2.6503059813622634,
+    0.9182143131733645
+   ],
+   "seed": 514470132,
+   "x": "GM_interannual_var",
+   "y": "GM_ref_magnitude"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Glacier runoff projections and their multiple sources of uncertainty in the Patagonian And' (Zenodo, doi 10.5281/zenodo.11353065): 'GM_ref_magnitude' follows a power law in 'GM_interannual_var' (R\u00b2 = 0.960 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11353065",
+   "held_out_r2": 0.9524,
+   "held_out_rows": 227,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a21a4806b046",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "38c2d0d33b51f621.csv",
+   "doi": "10.5281/zenodo.11353065",
+   "form": "power law",
+   "params": [
+    1.1009822586207885,
+    0.9015524943867946
+   ],
+   "seed": 514470132,
+   "x": "GM_interannual_var",
+   "y": "GR_interannual_var"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Glacier runoff projections and their multiple sources of uncertainty in the Patagonian And' (Zenodo, doi 10.5281/zenodo.11353065): 'GR_interannual_var' follows a power law in 'GM_interannual_var' (R\u00b2 = 0.946 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11353065",
+   "held_out_r2": 0.9693,
+   "held_out_rows": 227,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b52dfd57fce0",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "38c2d0d33b51f621.csv",
+   "doi": "10.5281/zenodo.11353065",
+   "form": "power law",
+   "params": [
+    -1.5225347966938243,
+    0.9558209095224812
+   ],
+   "seed": 514470132,
+   "x": "GM_peak_water_magnitude",
+   "y": "GR_interannual_var"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Glacier runoff projections and their multiple sources of uncertainty in the Patagonian And' (Zenodo, doi 10.5281/zenodo.11353065): 'GR_interannual_var' follows a power law in 'GM_peak_water_magnitude' (R\u00b2 = 0.964 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11353065",
+   "held_out_r2": 0.9552,
+   "held_out_rows": 227,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-13eeb28669c0",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "38c2d0d33b51f621.csv",
+   "doi": "10.5281/zenodo.11353065",
+   "form": "power law",
+   "params": [
+    -1.4037535628206805,
+    0.9647891464693868
+   ],
+   "seed": 514470132,
+   "x": "GM_ref_magnitude",
+   "y": "GR_interannual_var"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Glacier runoff projections and their multiple sources of uncertainty in the Patagonian And' (Zenodo, doi 10.5281/zenodo.11353065): 'GR_interannual_var' follows a power law in 'GM_ref_magnitude' (R\u00b2 = 0.951 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11353065",
+   "held_out_r2": 0.7274,
+   "held_out_rows": 424,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5984487c6cf3",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "5f853428f081f660.csv",
+   "doi": "10.5281/zenodo.11353065",
+   "form": "linear",
+   "params": [
+    2.02828695436676,
+    0.1119415687359607
+   ],
+   "seed": 3297444221,
+   "x": "basin_area",
+   "y": "n_RGI7"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Glacier runoff projections and their multiple sources of uncertainty in the Patagonian And' (Zenodo, doi 10.5281/zenodo.11353065): 'n_RGI7' is linear in 'basin_area' (R\u00b2 = 0.904 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11353065",
+   "held_out_r2": 0.7611,
+   "held_out_rows": 424,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-91869230d428",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "5f853428f081f660.csv",
+   "doi": "10.5281/zenodo.11353065",
+   "form": "linear",
+   "params": [
+    -2.1417370674070173,
+    0.2931777929401862
+   ],
+   "seed": 3297444221,
+   "x": "area_RGI6",
+   "y": "vol_F19"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Glacier runoff projections and their multiple sources of uncertainty in the Patagonian And' (Zenodo, doi 10.5281/zenodo.11353065): 'vol_F19' is linear in 'area_RGI6' (R\u00b2 = 0.912 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11353065",
+   "held_out_r2": 0.7958,
+   "held_out_rows": 424,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-66d33a509f31",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "5f853428f081f660.csv",
+   "doi": "10.5281/zenodo.11353065",
+   "form": "linear",
+   "params": [
+    -2.414206439224546,
+    0.3191326162694334
+   ],
+   "seed": 3297444221,
+   "x": "area_RGI6",
+   "y": "vol_M22"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Glacier runoff projections and their multiple sources of uncertainty in the Patagonian And' (Zenodo, doi 10.5281/zenodo.11353065): 'vol_M22' is linear in 'area_RGI6' (R\u00b2 = 0.902 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11353065",
+   "held_out_r2": 0.9508,
+   "held_out_rows": 424,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f768152378d8",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "5f853428f081f660.csv",
+   "doi": "10.5281/zenodo.11353065",
+   "form": "power law",
+   "params": [
+    1.9097932581305395,
+    0.7503555371565227
+   ],
+   "seed": 3297444221,
+   "x": "PP_PMET",
+   "y": "PP_ERA5"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Glacier runoff projections and their multiple sources of uncertainty in the Patagonian And' (Zenodo, doi 10.5281/zenodo.11353065): 'PP_ERA5' follows a power law in 'PP_PMET' (R\u00b2 = 0.952 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3376679",
+   "held_out_r2": 0.9007,
+   "held_out_rows": 99,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-2ff7c9dce675",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "573959fa76e676f6.csv",
+   "doi": "10.5281/zenodo.3376679",
+   "form": "linear",
+   "params": [
+    0.16104727104772432,
+    0.3083280095310446
+   ],
+   "seed": 1614023971,
+   "x": "d",
+   "y": "ust_th"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for Aeolian Ripple Migration and Associated Creep Transport Rates' (Zenodo, doi 10.5281/zenodo.3376679): 'ust_th' is linear in 'd' (R\u00b2 = 0.908 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.6084/m9.figshare.28120049.v4",
+   "held_out_r2": 0.972,
+   "held_out_rows": 306,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-075813c33cc7",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "c9084775dd669aef.csv",
+   "doi": "10.6084/m9.figshare.28120049.v4",
+   "form": "power law",
+   "params": [
+    4.858876811118735,
+    -2.527068244435923
+   ],
+   "seed": 3023962755,
+   "x": "Na2O",
+   "y": "MgO"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Amphibole Fabric and Seismic Anisotropy under Plastic Deformation: Insights into the Compo' (Figshare, doi 10.6084/m9.figshare.28120049.v4): 'MgO' follows a power law in 'Na2O' (R\u00b2 = 0.965 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.6084/m9.figshare.28120049.v4",
+   "held_out_r2": 0.9478,
+   "held_out_rows": 306,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-2cfc040cb7aa",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "c9084775dd669aef.csv",
+   "doi": "10.6084/m9.figshare.28120049.v4",
+   "form": "logarithmic",
+   "params": [
+    -4.4612320686248825,
+    4.944107398474678
+   ],
+   "seed": 3023962755,
+   "x": "Na2O",
+   "y": "K2O"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Amphibole Fabric and Seismic Anisotropy under Plastic Deformation: Insights into the Compo' (Figshare, doi 10.6084/m9.figshare.28120049.v4): 'K2O' grows logarithmically in 'Na2O' (R\u00b2 = 0.935 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
