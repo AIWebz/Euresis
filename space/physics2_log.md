@@ -1510,3 +1510,9 @@
 - 2026-11-07 01:34 round 1376: auction with a reserve price
 - 2026-11-07 01:35 round 1377: two-body decay
 - 2026-11-07 01:37 round 1378: collision
+- 2026-11-07 01:38 round 1379: driven oscillator
+- 2026-11-07 01:39 round 1380: velocity addition
+- 2026-11-07 01:40 round 1381: Compton scattering
+- 2026-11-07 01:41 round 1382: Cournot duopoly
+- 2026-11-07 01:42 round 1383: insurance and risk
+- 2026-11-07 01:43 segment end: 1383 rounds, 5 discoveries, 2 known laws rediscovered
