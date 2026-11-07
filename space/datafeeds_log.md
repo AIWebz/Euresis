@@ -1046,3 +1046,4 @@
 - 2026-11-06 23:22 FINDING (confirmed on held-out rows): In 'Daily Temperature Attribution' (Zenodo, doi 10.5281/zenodo.10228242): 'tmax' is linear in 'tavg' (R² = 0.977 on the discovery half); held-out R² = 0.977 [emp-cbf825eee7dc]
 - 2026-11-06 23:23 FINDING (confirmed on held-out rows): In 'Daily Temperature Attribution' (Zenodo, doi 10.5281/zenodo.10228242): 'tmax' is linear in 'tmin' (R² = 0.906 on the discovery half); held-out R² = 0.906 [emp-d2e71be588f8]
 - 2026-11-06 23:23 data feeds: 7025 datasets analysed so far, 943 confirmed findings
+- 2026-11-07 00:07 data feeds: online
