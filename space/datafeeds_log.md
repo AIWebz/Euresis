@@ -1320,3 +1320,4 @@
 - 2026-11-07 16:54 FINDING (confirmed on held-out rows): In 'Amphibole Fabric and Seismic Anisotropy under Plastic Deformation: Insights into the Compo' (Figshare, doi 10.6084/m9.figshare.28120049.v4): 'MgO' follows a power law in 'Na2O' (R² = 0.965 on the discovery half); held-out R² = 0.972 [emp-075813c33cc7]
 - 2026-11-07 16:54 FINDING (confirmed on held-out rows): In 'Amphibole Fabric and Seismic Anisotropy under Plastic Deformation: Insights into the Compo' (Figshare, doi 10.6084/m9.figshare.28120049.v4): 'K2O' grows logarithmically in 'Na2O' (R² = 0.935 on the discovery half); held-out R² = 0.948 [emp-2cfc040cb7aa]
 - 2026-11-07 16:54 data feeds: 9124 datasets analysed so far, 1179 confirmed findings
+- 2026-11-07 17:55 data feeds: online
