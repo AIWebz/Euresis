@@ -1407,3 +1407,4 @@
 - 2026-11-07 18:51 FINDING (confirmed on held-out rows): In 'Meteorological, hydrological, and glaciological data in western Mongolia' (Zenodo, doi 10.5281/zenodo.14729735): 'KhM' is linear in 'BuK' (R² = 0.951 on the discovery half); held-out R² = 0.967 [emp-6e2621853274]
 - 2026-11-07 18:52 FINDING (confirmed on held-out rows): In 'A 20-Year Hydro-Ecological Monitoring Dataset (2005–2024) for Three Stations in the Cross ' (Zenodo, doi 10.5281/zenodo.23893336): 'Biomass_g' follows a power law in 'Abundance_Count' (R² = 0.950 on the discovery half); held-out R² = 0.938 [emp-cbf727a1a212]
 - 2026-11-07 18:52 data feeds: 9280 datasets analysed so far, 1262 confirmed findings
+- 2026-11-07 19:54 data feeds: online
