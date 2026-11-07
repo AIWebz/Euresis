@@ -14885,3 +14885,10 @@
 - 2026-11-07 03:56 SOLVED (proved): 0.446167 — pre-period 285, period 48  [gam-7609b8215d5a]
 - 2026-11-07 03:56 SOLVED (proved): 0.446174 — pre-period 285, period 48  [gam-ffe64edab2e1]
 - 2026-11-07 03:56 games: 38122 octal games solved, 126466 unresolved up to n = 3000
+- 2026-11-07 04:33 SOLVED (proved): 0.446175 — pre-period 285, period 48  [gam-ecd8b830628d]
+- 2026-11-07 04:33 SOLVED (proved): 0.446176 — pre-period 285, period 48  [gam-d230b40f41c1]
+- 2026-11-07 04:33 SOLVED (proved): 0.446177 — pre-period 285, period 48  [gam-3deebf4b416e]
+- 2026-11-07 04:33 SOLVED (proved): 0.446204 — pre-period 285, period 48  [gam-1bd945d07daa]
+- 2026-11-07 04:33 SOLVED (proved): 0.446205 — pre-period 285, period 48  [gam-7d4cad5d602f]
+- 2026-11-07 04:33 SOLVED (proved): 0.446206 — pre-period 285, period 48  [gam-a7b90e00ddcb]
+- 2026-11-07 04:33 SOLVED (proved): 0.446207 — pre-period 285, period 48  [gam-ee3049078c1e]
