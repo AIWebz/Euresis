@@ -1255,3 +1255,4 @@
 - 2026-11-07 12:13 FINDING (confirmed on held-out rows): In 'On the nature of mixed-type features in materials datasets' (Zenodo, doi 10.5281/zenodo.4474848): 'B_melting_point' follows a power law in 'B_boiling_point' (R² = 0.965 on the discovery half); held-out R² = 0.964 [emp-ab477e050be1]
 - 2026-11-07 12:14 FINDING (confirmed on held-out rows): In 'Intersectionality of Class Discourse - Supporting Materials' (Zenodo, doi 10.5281/zenodo.3974934): 'sub_posts' follows a power law in 'sub_authors' (R² = 0.903 on the discovery half); held-out R² = 0.897 [emp-5b1508cfbe1f]
 - 2026-11-07 12:14 data feeds: 8649 datasets analysed so far, 1124 confirmed findings
+- 2026-11-07 13:02 data feeds: online
