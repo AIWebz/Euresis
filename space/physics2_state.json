@@ -21413,6 +21413,46 @@
    "family": "velocity addition",
    "expr": "sqrt((1 - u**2)*(1 - v**2) + (u + v)**2/(u*v + 1)**2) / (1 + u*v)",
    "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "1 - c/(c*x + 1)",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "x/(1 + x*c)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, scattered photon energy / (m_e c\u00b2))"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "x**2*c/(1 + x*c)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, electron kinetic energy / (m_e c\u00b2))"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "c/(x + 1) + 1",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, Scattered photon wavelength / initial photon wavelength [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "((1 - 2*c1 + c2)/3)/((1 - 2*c2 + c1)/3)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "((1 + c1 + c2)/3 - (1 - c1 - c2)/2)/((1 + c1 + c2)/3 - (1 - c2)/2)",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "((1 - 2*c1 + c2)**2/9)/((1 - 2*c2 + c1)**2/9)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "((2 - c1 - c2)**2/18)/(((1 - 2*c1 + c2)**2 + (1 - 2*c2 + c1)**2)/9)",
+   "why": "affine combination of known quantities (output of firm 1, 1/(Hirshleifer Index [model-proposed; physical meaning unverified]))"
   }
  ],
  "tried": [
@@ -27937,7 +27977,7 @@
    "k": "1"
   }
  ],
- "rounds": 1436,
+ "rounds": 1438,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",

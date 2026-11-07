@@ -1573,3 +1573,5 @@
 - 2026-11-07 03:35 round 1435: driven oscillator
 - 2026-11-07 03:36 round 1436: velocity addition
 - 2026-11-07 03:37 round 1437: Compton scattering
+- 2026-11-07 03:38 round 1438: Cournot duopoly
+- 2026-11-07 03:39 segment end: 1438 rounds, 5 discoveries, 2 known laws rediscovered
