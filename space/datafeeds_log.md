@@ -1469,3 +1469,4 @@
 - 2026-11-07 20:45 FINDING (confirmed on held-out rows): In 'Tracking wildlife energy dynamics with unoccupied aircraft systems and 3-dimensional photo' (Zenodo, doi 10.5061/dryad.gtht76hn6): 'diameter (m)' follows a power law in 'average point density per m3' (R² = 0.904 on the discovery half); held-out R² = 0.873 [emp-5b139a6c72bd]
 - 2026-11-07 20:45 FINDING (confirmed on held-out rows): In 'Tracking wildlife energy dynamics with unoccupied aircraft systems and 3-dimensional photo' (Zenodo, doi 10.5061/dryad.gtht76hn6): 'average point density per m3' follows a power law in 'GSD' (R² = 0.921 on the discovery half); held-out R² = 0.958 [emp-ef050d87cafc]
 - 2026-11-07 20:45 data feeds: 9426 datasets analysed so far, 1320 confirmed findings
+- 2026-11-07 21:47 data feeds: online
