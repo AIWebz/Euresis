@@ -2108,3 +2108,7 @@
 - 2026-11-07 21:11 round 1932: velocity addition
 - 2026-11-07 21:11 round 1933: Compton scattering
 - 2026-11-07 21:12 round 1934: Cournot duopoly
+- 2026-11-07 21:13 round 1935: insurance and risk
+- 2026-11-07 21:14 round 1936: auction with a reserve price
+- 2026-11-07 21:15 round 1937: two-body decay
+- 2026-11-07 21:17 segment end: 1937 rounds, 5 discoveries, 2 known laws rediscovered
