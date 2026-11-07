@@ -1873546,5 +1873546,248 @@
   "statement": "In 'A 20-Year Hydro-Ecological Monitoring Dataset (2005\u20132024) for Three Stations in the Cross ' (Zenodo, doi 10.5281/zenodo.23893336): 'Biomass_g' follows a power law in 'Abundance_Count' (R\u00b2 = 0.950 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-46845177534d",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "(e + 1)/(m + 1) >= 1/2*((-e**2*m + 1)/(e**2*m + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 1866",
+  "statement": "[physics: collision] momentum transferred / initial momentum \u2265 1/2 \u00d7 Fraction of kinetic energy retained by projectile relative to target [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 3.97e-15))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-1224d16e2455",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "(-e*m + 1)/(e*m + 1) >= 1/2*((-e**2*m + 1)/(e**2*m + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 1866",
+  "statement": "[physics: collision] velocity ratio of projectile to target after collision [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 Fraction of kinetic energy retained by projectile relative to target [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-9ec4229996a7",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "(-e**2*m + 1)/(m + 1) >= 1/2*((-e**2*m + 1)/(e**2*m + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 1866",
+  "statement": "[physics: collision] Fraction of kinetic energy retained by projectile [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 Fraction of kinetic energy retained by projectile relative to target [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 9.12e-05))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-347bbf894528",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "-e**2*m**2/(m + 1)**2 + 1 >= 1*((-e**2*m + 1)/(e**2*m + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 1866",
+  "statement": "[physics: collision] Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Fraction of kinetic energy retained by projectile relative to target [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (0.000116, 6.25e-07))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-1576bbafb2e6",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'Fraction of kinetic energy retained by projectile [model-proposed; physical meaning unverified]'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "-e**2*m**2/(m + 1)**2 - m*(1 - e**2)/(m + 1) + 1 >= 1/2*((-e**2*m + 1)/(e**2*m + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 1866",
+  "statement": "[physics: collision] Fraction of kinetic energy retained by the system relative to initial kinetic en [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 Fraction of kinetic energy retained by projectile relative to target [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 9.12e-05))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-a50337789260",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "(-e**2*m + 1)/(e**2*m + 1) >= 1*((1 - e**2)/(m + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 1866",
+  "statement": "[physics: collision] Fraction of kinetic energy retained by projectile relative to target [model-proposed; physical meaning unverified] \u2265 1 \u00d7 fraction of kinetic energy lost   on m < 1, e < 1 (tight only at the edge of the domain, near (4.97e-17, 3.85e-09))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-9514d0300fc4",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "(-e**2*m + 1)/(e**2*m + 1) >= 1*((-e*m + 1)/(e*m + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 1874",
+  "statement": "[physics: collision] Fraction of kinetic energy retained by projectile relative to target [model-proposed; physical meaning unverified] \u2265 1 \u00d7 velocity ratio of projectile to target after collision [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (4.23e-13, 0.000113))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-278e6a87bc78",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'velocity ratio of projectile to target after collision [model-proposed; physical meaning unverified]'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "(-e**2*m + 1)/(e**2*m + 1) >= 1*(e*(1 - m)/(m + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 1874",
+  "statement": "[physics: collision] Fraction of kinetic energy retained by projectile relative to target [model-proposed; physical meaning unverified] \u2265 1 \u00d7 relative velocity after collision divided by initial velocity of projectile [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (9.12e-05, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-13dad160f55c",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "(-e**2*m + 1)/(e**2*m + 1) >= 1*((-e**2*m + 1)/(m + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 1874",
+  "statement": "[physics: collision] Fraction of kinetic energy retained by projectile relative to target [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Fraction of kinetic energy retained by projectile [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (9.12e-05, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]
