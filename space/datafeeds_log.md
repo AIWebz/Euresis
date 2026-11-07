@@ -1114,3 +1114,4 @@
 - 2026-11-07 03:07 FINDING (confirmed on held-out rows): In 'Seawater chromium concentrations and isotope compositions in the Southern Ocean during the' (Zenodo, doi 10.5281/zenodo.3250980): 'd53Cr [‰]' follows a power law in 'chromium_concentration [nmol/kg]' (R² = 0.936 on the discovery half); held-out R² = 0.896 [emp-6d648b6838a5]
 - 2026-11-07 03:08 FINDING (confirmed on held-out rows): In 'The GNSS velocity field of central Greece and the Peloponnese' (Zenodo, doi 10.5281/zenodo.19076097): 'mN' is linear in 'v-N' (R² = 0.923 on the discovery half); held-out R² = 0.907 [emp-9bf7cb0c3420]
 - 2026-11-07 03:08 data feeds: 7362 datasets analysed so far, 1003 confirmed findings
+- 2026-11-07 03:57 data feeds: online
