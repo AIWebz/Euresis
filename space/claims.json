@@ -1841157,5 +1841157,86 @@
   "statement": "Octal game 0.507344 is completely solved: its Grundy values are periodic with pre-period 605 and period 11 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22550976",
+   "held_out_r2": 0.9834,
+   "held_out_rows": 389,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a9ae35680886",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f2e5aa76080bc430.csv",
+   "doi": "10.5281/zenodo.22550976",
+   "form": "linear",
+   "params": [
+    -0.5349844001097065,
+    1.5410685250730627
+   ],
+   "seed": 2937810733,
+   "x": "PPP_EU27_2020",
+   "y": "EXR_NAC_EUR"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'European National Transfer Accounts' (Zenodo, doi 10.5281/zenodo.22550976): 'EXR_NAC_EUR' is linear in 'PPP_EU27_2020' (R\u00b2 = 0.989 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22550976",
+   "held_out_r2": 0.9913,
+   "held_out_rows": 389,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-91d9f2707eba",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f2e5aa76080bc430.csv",
+   "doi": "10.5281/zenodo.22550976",
+   "form": "linear",
+   "params": [
+    -2567.1045748346373,
+    0.3613841953650298
+   ],
+   "seed": 2937810733,
+   "x": "GDP",
+   "y": "CHXesa"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'European National Transfer Accounts' (Zenodo, doi 10.5281/zenodo.22550976): 'CHXesa' is linear in 'GDP' (R\u00b2 = 0.987 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.21984339",
+   "held_out_r2": 0.9518,
+   "held_out_rows": 1214,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-6a9a68d06181",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "4670ad9732ff2c87.csv",
+   "doi": "10.5281/zenodo.21984339",
+   "form": "linear",
+   "params": [
+    5.451762582273666,
+    2.005513089712483
+   ],
+   "seed": 2547833365,
+   "x": "birth_rate_per_1000",
+   "y": "dependency_ratio_young"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Economic Failure Panel: 60 Countries, 1970-2024' (Zenodo, doi 10.5281/zenodo.21984339): 'dependency_ratio_young' is linear in 'birth_rate_per_1000' (R\u00b2 = 0.949 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
