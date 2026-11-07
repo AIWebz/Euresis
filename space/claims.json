@@ -1892157,5 +1892157,86 @@
   "statement": "Octal game 0.513211 is completely solved: its Grundy values are periodic with pre-period 13 and period 6 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20132103",
+   "held_out_r2": 0.9331,
+   "held_out_rows": 106,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-80edf5fd7a98",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "9b04d8a4aa9bc669.csv",
+   "doi": "10.5281/zenodo.20132103",
+   "form": "linear",
+   "params": [
+    229.12405569454293,
+    -0.002056328275238549
+   ],
+   "seed": 497045257,
+   "x": "Pc1",
+   "y": "Vc1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'MLab Dataset \u2014 Experimental Power Event Measurements' (Zenodo, doi 10.5281/zenodo.20132103): 'Vc1' is linear in 'Pc1' (R\u00b2 = 0.913 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20132103",
+   "held_out_r2": 0.9214,
+   "held_out_rows": 106,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-bff70093fe6f",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "9b04d8a4aa9bc669.csv",
+   "doi": "10.5281/zenodo.20132103",
+   "form": "linear",
+   "params": [
+    229.12603902263058,
+    -0.0020658921853663787
+   ],
+   "seed": 497045257,
+   "x": "Pc2",
+   "y": "Vc2"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'MLab Dataset \u2014 Experimental Power Event Measurements' (Zenodo, doi 10.5281/zenodo.20132103): 'Vc2' is linear in 'Pc2' (R\u00b2 = 0.928 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20132103",
+   "held_out_r2": 0.9349,
+   "held_out_rows": 106,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3c29dfb94dfb",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "9b04d8a4aa9bc669.csv",
+   "doi": "10.5281/zenodo.20132103",
+   "form": "linear",
+   "params": [
+    229.11016250186785,
+    -0.45980304872407474
+   ],
+   "seed": 497045257,
+   "x": "Ic1",
+   "y": "Vc1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'MLab Dataset \u2014 Experimental Power Event Measurements' (Zenodo, doi 10.5281/zenodo.20132103): 'Vc1' is linear in 'Ic1' (R\u00b2 = 0.915 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]

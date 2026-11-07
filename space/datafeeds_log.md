@@ -1417,3 +1417,7 @@
 - 2026-11-07 19:55 FINDING (confirmed on held-out rows): In 'Native plant diversity creates microbial legacies that either promote or suppress non-nati' (Zenodo, doi 10.5061/dryad.905qfttt0): 'R1_A03_watered_ab' is linear in 'R1_A02_watered_cd' (R² = 0.930 on the discovery half); held-out R² = 0.934 [emp-028608090e67]
 - 2026-11-07 19:56 FINDING (confirmed on held-out rows): In 'Soil microbial relative resource limitation exhibited contrasting seasonal patterns along ' (Zenodo, doi 10.5061/dryad.cz8w9gj78): 'sand' is linear in 'silt' (R² = 0.977 on the discovery half); held-out R² = 0.974 [emp-46abf53a7645]
 - 2026-11-07 19:56 data feeds: 9358 datasets analysed so far, 1270 confirmed findings
+- 2026-11-07 20:42 data feeds: online
+- 2026-11-07 20:42 FINDING (confirmed on held-out rows): In 'MLab Dataset — Experimental Power Event Measurements' (Zenodo, doi 10.5281/zenodo.20132103): 'Vc1' is linear in 'Pc1' (R² = 0.913 on the discovery half); held-out R² = 0.933 [emp-80edf5fd7a98]
+- 2026-11-07 20:42 FINDING (confirmed on held-out rows): In 'MLab Dataset — Experimental Power Event Measurements' (Zenodo, doi 10.5281/zenodo.20132103): 'Vc2' is linear in 'Pc2' (R² = 0.928 on the discovery half); held-out R² = 0.921 [emp-bff70093fe6f]
+- 2026-11-07 20:42 FINDING (confirmed on held-out rows): In 'MLab Dataset — Experimental Power Event Measurements' (Zenodo, doi 10.5281/zenodo.20132103): 'Vc1' is linear in 'Ic1' (R² = 0.915 on the discovery half); held-out R² = 0.935 [emp-3c29dfb94dfb]
