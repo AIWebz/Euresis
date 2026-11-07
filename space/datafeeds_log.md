@@ -1246,3 +1246,6 @@
 - 2026-11-07 11:09 FINDING (confirmed on held-out rows): In 'DES_DR2_star_galaxy_samples_updated' (Zenodo, doi 10.5281/zenodo.17688656): 'bal_acc' is linear in 'f1_macro' (R² = 0.990 on the discovery half); held-out R² = 0.958 [emp-3bd0b5eb6e8d]
 - 2026-11-07 11:09 FINDING (confirmed on held-out rows): In 'The Strong Lensing Discovery Engine - Q1 missed targets' (Zenodo, doi 10.5281/zenodo.17425610): 'dec' is linear in 'ra' (R² = 0.963 on the discovery half); held-out R² = 0.981 [emp-03a23196099d]
 - 2026-11-07 11:11 data feeds: 8579 datasets analysed so far, 1117 confirmed findings
+- 2026-11-07 12:12 data feeds: online
+- 2026-11-07 12:12 FINDING (confirmed on held-out rows): In 'On the nature of mixed-type features in materials datasets' (Zenodo, doi 10.5281/zenodo.4474848): 'density_A' is linear in 'Atomic_Number_A' (R² = 0.955 on the discovery half); held-out R² = 0.950 [emp-0b47d75c4591]
+- 2026-11-07 12:12 FINDING (confirmed on held-out rows): In 'On the nature of mixed-type features in materials datasets' (Zenodo, doi 10.5281/zenodo.4474848): 'density_A' is linear in 'mass_A' (R² = 0.950 on the discovery half); held-out R² = 0.944 [emp-8cd4c553341d]

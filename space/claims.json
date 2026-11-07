@@ -1779397,5 +1779397,81 @@
   "statement": "Octal game 0.501754 is completely solved: its Grundy values are periodic with pre-period 747 and period 10 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.4474848",
+   "held_out_r2": 0.95,
+   "held_out_rows": 769,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-0b47d75c4591",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "ede7b9ead86f2533.csv",
+   "doi": "10.5281/zenodo.4474848",
+   "form": "linear",
+   "params": [
+    -0.7838079463396649,
+    0.27900055827658005
+   ],
+   "seed": 132533106,
+   "x": "Atomic_Number_A",
+   "y": "density_A"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'On the nature of mixed-type features in materials datasets' (Zenodo, doi 10.5281/zenodo.4474848): 'density_A' is linear in 'Atomic_Number_A' (R\u00b2 = 0.955 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.4474848",
+   "held_out_r2": 0.9439,
+   "held_out_rows": 769,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-8cd4c553341d",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "ede7b9ead86f2533.csv",
+   "doi": "10.5281/zenodo.4474848",
+   "form": "linear",
+   "params": [
+    0.19805917583754473,
+    0.1081295835396888
+   ],
+   "seed": 132533106,
+   "x": "mass_A",
+   "y": "density_A"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'On the nature of mixed-type features in materials datasets' (Zenodo, doi 10.5281/zenodo.4474848): 'density_A' is linear in 'mass_A' (R\u00b2 = 0.950 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": null,
+  "id": "emp-fd812ffa2017",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "07b0099425ee9eac.csv",
+   "doi": "10.5281/zenodo.4474848",
+   "form": "linear",
+   "params": [
+    2.831815694509881,
+    7.691404392131497
+   ],
+   "seed": 3182179102,
+   "x": "delta-E",
+   "y": "d1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'On the nature of mixed-type features in materials datasets' (Zenodo, doi 10.5281/zenodo.4474848): 'd1' is linear in 'delta-E' (R\u00b2 = 0.937 on the discovery half)",
+  "status": "candidate",
+  "verifier": null
  }
 ]
