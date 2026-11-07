@@ -1202,3 +1202,7 @@
 - 2026-11-07 08:19 data feeds: online
 - 2026-11-07 08:20 data feeds: 7896 datasets analysed so far, 1078 confirmed findings
 - 2026-11-07 09:12 data feeds: online
+- 2026-11-07 09:19 FINDING (confirmed on held-out rows): In 'Luminescent properties of Pr3+ doped LiBaF3 crystallites.' (Zenodo, doi 10.5281/zenodo.11468655): 'Slow_component' follows a power law in '12_LiBaF3-0,5Pr_X-ray_sh_4_4_FEU-100_2.2kV__RT_TimeResol_Int' (R² = 0.935 on the discovery half); held-out R² = 0.938 [emp-7649f8ec6b7a]
+- 2026-11-07 09:19 FINDING (confirmed on held-out rows): In 'Luminescent properties of Pr3+ doped LiBaF3 crystallites.' (Zenodo, doi 10.5281/zenodo.11468655): '0.5' grows logarithmically in 'curve translate: A is moved horizontally by -1.7574031413221E-5' (R² = 0.931 on the discovery half); held-out R² = 0.934 [emp-127d13ecd515]
+- 2026-11-07 09:19 FINDING (confirmed on held-out rows): In 'Luminescent properties of Pr3+ doped LiBaF3 crystallites.' (Zenodo, doi 10.5281/zenodo.11468655): '1.5' is linear in '1D2_1' (R² = 0.932 on the discovery half); held-out R² = 0.928 [emp-f679f9bda95d]
+- 2026-11-07 09:20 data feeds: 8270 datasets analysed so far, 1081 confirmed findings

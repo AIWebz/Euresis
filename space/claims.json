@@ -1712462,5 +1712462,1976 @@
   "statement": "Octal game 0.465607 is completely solved: its Grundy values are periodic with pre-period 285 and period 48 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15475331",
+   "held_out_r2": 0.9894,
+   "held_out_rows": 614,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-15c1753c10c9",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "4b74ca828ace9576.csv",
+   "doi": "10.5281/zenodo.15475331",
+   "form": "linear",
+   "params": [
+    -0.0678412456892383,
+    1.0376739026133819
+   ],
+   "seed": 4166048075,
+   "x": "post_belave_fl1",
+   "y": "post_incldave_fl1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Processed model output in support of Pope and Igel 2025' (Zenodo, doi 10.5281/zenodo.15475331): 'post_incldave_fl1' is linear in 'post_belave_fl1' (R\u00b2 = 0.989 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15475331",
+   "held_out_r2": 0.9806,
+   "held_out_rows": 614,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-57107b9917c2",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "55155ce88fa735a3.csv",
+   "doi": "10.5281/zenodo.15475331",
+   "form": "exponential",
+   "params": [
+    4.776164217145582,
+    0.0030565856083552027
+   ],
+   "seed": 3800043907,
+   "x": "post_belave_t",
+   "y": "post_incldave_t"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Processed model output in support of Pope and Igel 2025' (Zenodo, doi 10.5281/zenodo.15475331): 'post_incldave_t' grows exponentially in 'post_belave_t' (R\u00b2 = 0.979 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15475331",
+   "held_out_r2": 0.918,
+   "held_out_rows": 614,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-6dfea336ec26",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "55155ce88fa735a3.csv",
+   "doi": "10.5281/zenodo.15475331",
+   "form": "power law",
+   "params": [
+    0.24296525749508227,
+    0.9573630895706364
+   ],
+   "seed": 3800043907,
+   "x": "post_belave_t",
+   "y": "post_incldave_theta"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Processed model output in support of Pope and Igel 2025' (Zenodo, doi 10.5281/zenodo.15475331): 'post_incldave_theta' follows a power law in 'post_belave_t' (R\u00b2 = 0.918 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15475331",
+   "held_out_r2": 0.9883,
+   "held_out_rows": 614,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-6f0e98394792",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "55155ce88fa735a3.csv",
+   "doi": "10.5281/zenodo.15475331",
+   "form": "exponential",
+   "params": [
+    -21.734446287757102,
+    0.059308677079407
+   ],
+   "seed": 3800043907,
+   "x": "post_belave_t",
+   "y": "post_incldave_xm1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Processed model output in support of Pope and Igel 2025' (Zenodo, doi 10.5281/zenodo.15475331): 'post_incldave_xm1' grows exponentially in 'post_belave_t' (R\u00b2 = 0.988 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15475331",
+   "held_out_r2": 0.9214,
+   "held_out_rows": 614,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-26b17a00f428",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "55155ce88fa735a3.csv",
+   "doi": "10.5281/zenodo.15475331",
+   "form": "power law",
+   "params": [
+    -99.01112253223998,
+    16.66292575683143
+   ],
+   "seed": 3800043907,
+   "x": "post_belave_theta",
+   "y": "post_belave_xm1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Processed model output in support of Pope and Igel 2025' (Zenodo, doi 10.5281/zenodo.15475331): 'post_belave_xm1' follows a power law in 'post_belave_theta' (R\u00b2 = 0.918 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15475331",
+   "held_out_r2": 0.9883,
+   "held_out_rows": 614,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-06ceb95007e7",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "55155ce88fa735a3.csv",
+   "doi": "10.5281/zenodo.15475331",
+   "form": "exponential",
+   "params": [
+    4.727478931867052,
+    0.0032444514501726797
+   ],
+   "seed": 3800043907,
+   "x": "post_belave_theta",
+   "y": "post_incldave_theta"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Processed model output in support of Pope and Igel 2025' (Zenodo, doi 10.5281/zenodo.15475331): 'post_incldave_theta' grows exponentially in 'post_belave_theta' (R\u00b2 = 0.989 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15475331",
+   "held_out_r2": 0.9792,
+   "held_out_rows": 614,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9ccfdff80cf4",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "55155ce88fa735a3.csv",
+   "doi": "10.5281/zenodo.15475331",
+   "form": "exponential",
+   "params": [
+    4.704640151981701,
+    0.003320981165282038
+   ],
+   "seed": 3800043907,
+   "x": "post_belave_theta",
+   "y": "post_incldave_thetl"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Processed model output in support of Pope and Igel 2025' (Zenodo, doi 10.5281/zenodo.15475331): 'post_incldave_thetl' grows exponentially in 'post_belave_theta' (R\u00b2 = 0.980 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15475331",
+   "held_out_r2": 0.9335,
+   "held_out_rows": 614,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f23d278a0611",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "55155ce88fa735a3.csv",
+   "doi": "10.5281/zenodo.15475331",
+   "form": "power law",
+   "params": [
+    -91.09643359581203,
+    15.254476058595666
+   ],
+   "seed": 3800043907,
+   "x": "post_belave_theta",
+   "y": "post_incldave_xm1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Processed model output in support of Pope and Igel 2025' (Zenodo, doi 10.5281/zenodo.15475331): 'post_incldave_xm1' follows a power law in 'post_belave_theta' (R\u00b2 = 0.930 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15475331",
+   "held_out_r2": 0.9206,
+   "held_out_rows": 614,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-393f8add5976",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "55155ce88fa735a3.csv",
+   "doi": "10.5281/zenodo.15475331",
+   "form": "power law",
+   "params": [
+    -98.94571266002049,
+    16.651399641829908
+   ],
+   "seed": 3800043907,
+   "x": "post_belave_thetl",
+   "y": "post_belave_xm1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Processed model output in support of Pope and Igel 2025' (Zenodo, doi 10.5281/zenodo.15475331): 'post_belave_xm1' follows a power law in 'post_belave_thetl' (R\u00b2 = 0.917 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15475331",
+   "held_out_r2": 0.9884,
+   "held_out_rows": 614,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-394dbcc0f1d4",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "55155ce88fa735a3.csv",
+   "doi": "10.5281/zenodo.15475331",
+   "form": "exponential",
+   "params": [
+    4.727686218066109,
+    0.0032437726919820747
+   ],
+   "seed": 3800043907,
+   "x": "post_belave_thetl",
+   "y": "post_incldave_theta"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Processed model output in support of Pope and Igel 2025' (Zenodo, doi 10.5281/zenodo.15475331): 'post_incldave_theta' grows exponentially in 'post_belave_thetl' (R\u00b2 = 0.989 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15475331",
+   "held_out_r2": 0.9793,
+   "held_out_rows": 614,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-702d09484dfb",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "55155ce88fa735a3.csv",
+   "doi": "10.5281/zenodo.15475331",
+   "form": "exponential",
+   "params": [
+    4.7048024490752995,
+    0.003320461201613735
+   ],
+   "seed": 3800043907,
+   "x": "post_belave_thetl",
+   "y": "post_incldave_thetl"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Processed model output in support of Pope and Igel 2025' (Zenodo, doi 10.5281/zenodo.15475331): 'post_incldave_thetl' grows exponentially in 'post_belave_thetl' (R\u00b2 = 0.981 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15475331",
+   "held_out_r2": 0.9328,
+   "held_out_rows": 614,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d9dcc1e62c9e",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "55155ce88fa735a3.csv",
+   "doi": "10.5281/zenodo.15475331",
+   "form": "power law",
+   "params": [
+    -91.04425430811378,
+    15.245286456487058
+   ],
+   "seed": 3800043907,
+   "x": "post_belave_thetl",
+   "y": "post_incldave_xm1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Processed model output in support of Pope and Igel 2025' (Zenodo, doi 10.5281/zenodo.15475331): 'post_incldave_xm1' follows a power law in 'post_belave_thetl' (R\u00b2 = 0.929 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15475331",
+   "held_out_r2": 0.9058,
+   "held_out_rows": 614,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-86474669724c",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "55155ce88fa735a3.csv",
+   "doi": "10.5281/zenodo.15475331",
+   "form": "power law",
+   "params": [
+    5.897669528442511,
+    0.05087461941594322
+   ],
+   "seed": 3800043907,
+   "x": "post_belave_xm1",
+   "y": "post_incldave_theta"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Processed model output in support of Pope and Igel 2025' (Zenodo, doi 10.5281/zenodo.15475331): 'post_incldave_theta' follows a power law in 'post_belave_xm1' (R\u00b2 = 0.903 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15475331",
+   "held_out_r2": 0.9179,
+   "held_out_rows": 614,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a8b2e95cbe5a",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "55155ce88fa735a3.csv",
+   "doi": "10.5281/zenodo.15475331",
+   "form": "power law",
+   "params": [
+    -96.79172795255127,
+    16.26306346506843
+   ],
+   "seed": 3800043907,
+   "x": "post_incldave_theta",
+   "y": "post_incldave_xm1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Processed model output in support of Pope and Igel 2025' (Zenodo, doi 10.5281/zenodo.15475331): 'post_incldave_xm1' follows a power law in 'post_incldave_theta' (R\u00b2 = 0.915 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15475331",
+   "held_out_r2": 0.9146,
+   "held_out_rows": 614,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-659ea0f7512c",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "5a8351b933a99646.csv",
+   "doi": "10.5281/zenodo.15475331",
+   "form": "linear",
+   "params": [
+    -8.822600645537471e-12,
+    2.255080711507801
+   ],
+   "seed": 2132218613,
+   "x": "post_belave_tent_xm3",
+   "y": "post_incldave_tent_xm3"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Processed model output in support of Pope and Igel 2025' (Zenodo, doi 10.5281/zenodo.15475331): 'post_incldave_tent_xm3' is linear in 'post_belave_tent_xm3' (R\u00b2 = 0.911 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15475331",
+   "held_out_r2": 0.8684,
+   "held_out_rows": 614,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-410053de9f35",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "5a8351b933a99646.csv",
+   "doi": "10.5281/zenodo.15475331",
+   "form": "linear",
+   "params": [
+    -2.5578875572149537e-11,
+    0.376140857447838
+   ],
+   "seed": 2132218613,
+   "x": "post_belave_ten_xm3_4",
+   "y": "post_incldave_ten_xm3_4"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Processed model output in support of Pope and Igel 2025' (Zenodo, doi 10.5281/zenodo.15475331): 'post_incldave_ten_xm3_4' is linear in 'post_belave_ten_xm3_4' (R\u00b2 = 0.912 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15475331",
+   "held_out_r2": 0.9311,
+   "held_out_rows": 614,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-7b0be103f4ac",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "3a45f8648b9701de.csv",
+   "doi": "10.5281/zenodo.15475331",
+   "form": "power law",
+   "params": [
+    3.7621369341401705,
+    1.1482961226316541
+   ],
+   "seed": 3878061185,
+   "x": "post_belave_f_xm1",
+   "y": "post_belsum_f_xm1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Processed model output in support of Pope and Igel 2025' (Zenodo, doi 10.5281/zenodo.15475331): 'post_belsum_f_xm1' follows a power law in 'post_belave_f_xm1' (R\u00b2 = 0.930 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15475331",
+   "held_out_r2": 0.9201,
+   "held_out_rows": 614,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c1631b0ec904",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "3a45f8648b9701de.csv",
+   "doi": "10.5281/zenodo.15475331",
+   "form": "power law",
+   "params": [
+    5.076856707619325,
+    0.9514824677118204
+   ],
+   "seed": 3878061185,
+   "x": "post_belave_f_xm1",
+   "y": "post_incldsum_f_xm1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Processed model output in support of Pope and Igel 2025' (Zenodo, doi 10.5281/zenodo.15475331): 'post_incldsum_f_xm1' follows a power law in 'post_belave_f_xm1' (R\u00b2 = 0.908 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15475331",
+   "held_out_r2": 0.912,
+   "held_out_rows": 614,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ebe07d0242a6",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "3a45f8648b9701de.csv",
+   "doi": "10.5281/zenodo.15475331",
+   "form": "power law",
+   "params": [
+    4.589573401346263,
+    1.0738346480331815
+   ],
+   "seed": 3878061185,
+   "x": "post_incldave_f_xm1",
+   "y": "post_belsum_f_xm1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Processed model output in support of Pope and Igel 2025' (Zenodo, doi 10.5281/zenodo.15475331): 'post_belsum_f_xm1' follows a power law in 'post_incldave_f_xm1' (R\u00b2 = 0.910 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15475331",
+   "held_out_r2": 0.9306,
+   "held_out_rows": 614,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-cee4cd3f363d",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "3a45f8648b9701de.csv",
+   "doi": "10.5281/zenodo.15475331",
+   "form": "power law",
+   "params": [
+    5.6673579383745505,
+    0.9058224728940983
+   ],
+   "seed": 3878061185,
+   "x": "post_incldave_f_xm1",
+   "y": "post_incldsum_f_xm1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Processed model output in support of Pope and Igel 2025' (Zenodo, doi 10.5281/zenodo.15475331): 'post_incldsum_f_xm1' follows a power law in 'post_incldave_f_xm1' (R\u00b2 = 0.920 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15475331",
+   "held_out_r2": 0.9105,
+   "held_out_rows": 614,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-920467bc62f2",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "3a45f8648b9701de.csv",
+   "doi": "10.5281/zenodo.15475331",
+   "form": "power law",
+   "params": [
+    -4.120144368024813,
+    0.8952281848197967
+   ],
+   "seed": 3878061185,
+   "x": "post_belsum_f_xm1",
+   "y": "post_top_f_xm1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Processed model output in support of Pope and Igel 2025' (Zenodo, doi 10.5281/zenodo.15475331): 'post_top_f_xm1' follows a power law in 'post_belsum_f_xm1' (R\u00b2 = 0.913 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15475331",
+   "held_out_r2": 0.9209,
+   "held_out_rows": 614,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e44eb7669cc8",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "3a45f8648b9701de.csv",
+   "doi": "10.5281/zenodo.15475331",
+   "form": "power law",
+   "params": [
+    -2.7207895971445883,
+    0.8143770717005249
+   ],
+   "seed": 3878061185,
+   "x": "post_belsum_f_xm1",
+   "y": "post_bot_f_xm1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Processed model output in support of Pope and Igel 2025' (Zenodo, doi 10.5281/zenodo.15475331): 'post_bot_f_xm1' follows a power law in 'post_belsum_f_xm1' (R\u00b2 = 0.919 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15475331",
+   "held_out_r2": 0.9144,
+   "held_out_rows": 614,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-64a7fe2fb0e6",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "3a45f8648b9701de.csv",
+   "doi": "10.5281/zenodo.15475331",
+   "form": "power law",
+   "params": [
+    -6.027695093118519,
+    1.0614238036230381
+   ],
+   "seed": 3878061185,
+   "x": "post_incldsum_f_xm1",
+   "y": "post_top_f_xm1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Processed model output in support of Pope and Igel 2025' (Zenodo, doi 10.5281/zenodo.15475331): 'post_top_f_xm1' follows a power law in 'post_incldsum_f_xm1' (R\u00b2 = 0.903 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15475331",
+   "held_out_r2": 0.9334,
+   "held_out_rows": 614,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c3004087aa69",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "3a45f8648b9701de.csv",
+   "doi": "10.5281/zenodo.15475331",
+   "form": "power law",
+   "params": [
+    -4.532204865096264,
+    0.9724604658093907
+   ],
+   "seed": 3878061185,
+   "x": "post_incldsum_f_xm1",
+   "y": "post_bot_f_xm1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Processed model output in support of Pope and Igel 2025' (Zenodo, doi 10.5281/zenodo.15475331): 'post_bot_f_xm1' follows a power law in 'post_incldsum_f_xm1' (R\u00b2 = 0.922 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15475331",
+   "held_out_r2": 0.994,
+   "held_out_rows": 614,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-335357c15b62",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "3a45f8648b9701de.csv",
+   "doi": "10.5281/zenodo.15475331",
+   "form": "power law",
+   "params": [
+    1.0587475925432375,
+    0.904150563497638
+   ],
+   "seed": 3878061185,
+   "x": "post_top_f_xm1",
+   "y": "post_bot_f_xm1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Processed model output in support of Pope and Igel 2025' (Zenodo, doi 10.5281/zenodo.15475331): 'post_bot_f_xm1' follows a power law in 'post_top_f_xm1' (R\u00b2 = 0.995 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15475331",
+   "held_out_r2": 0.9896,
+   "held_out_rows": 614,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4bc3454623a4",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "3a45f8648b9701de.csv",
+   "doi": "10.5281/zenodo.15475331",
+   "form": "power law",
+   "params": [
+    -1.2106646521760223,
+    0.9023080962730086
+   ],
+   "seed": 3878061185,
+   "x": "sedt_f",
+   "y": "sedc_f"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Processed model output in support of Pope and Igel 2025' (Zenodo, doi 10.5281/zenodo.15475331): 'sedc_f' follows a power law in 'sedt_f' (R\u00b2 = 0.991 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15475331",
+   "held_out_r2": 0.9627,
+   "held_out_rows": 614,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3fcc0a2a5bb9",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "3a45f8648b9701de.csv",
+   "doi": "10.5281/zenodo.15475331",
+   "form": "linear",
+   "params": [
+    -0.004402272683536545,
+    0.6903245008906437
+   ],
+   "seed": 3878061185,
+   "x": "sedt_f",
+   "y": "sedd_f"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Processed model output in support of Pope and Igel 2025' (Zenodo, doi 10.5281/zenodo.15475331): 'sedd_f' is linear in 'sedt_f' (R\u00b2 = 0.970 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15475331",
+   "held_out_r2": 0.9946,
+   "held_out_rows": 614,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-251bf67127b7",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "3a45f8648b9701de.csv",
+   "doi": "10.5281/zenodo.15475331",
+   "form": "power law",
+   "params": [
+    -1.2264547080134567,
+    0.9061245883157797
+   ],
+   "seed": 3878061185,
+   "x": "sedt_h",
+   "y": "sedc_h"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Processed model output in support of Pope and Igel 2025' (Zenodo, doi 10.5281/zenodo.15475331): 'sedc_h' follows a power law in 'sedt_h' (R\u00b2 = 0.995 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15475331",
+   "held_out_r2": 0.9719,
+   "held_out_rows": 614,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-7b5b17740baf",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "3a45f8648b9701de.csv",
+   "doi": "10.5281/zenodo.15475331",
+   "form": "linear",
+   "params": [
+    -0.001566048493979337,
+    0.670745507243878
+   ],
+   "seed": 3878061185,
+   "x": "sedt_h",
+   "y": "sedd_h"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Processed model output in support of Pope and Igel 2025' (Zenodo, doi 10.5281/zenodo.15475331): 'sedd_h' is linear in 'sedt_h' (R\u00b2 = 0.978 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15475331",
+   "held_out_r2": 0.9489,
+   "held_out_rows": 614,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e424d3f3999e",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "14309c377028279b.csv",
+   "doi": "10.5281/zenodo.15475331",
+   "form": "linear",
+   "params": [
+    -1.8537123141188387e-09,
+    6.500456771095513
+   ],
+   "seed": 4062284540,
+   "x": "post_belsum_tent_xm3",
+   "y": "post_incldsum_tent_xm3"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Processed model output in support of Pope and Igel 2025' (Zenodo, doi 10.5281/zenodo.15475331): 'post_incldsum_tent_xm3' is linear in 'post_belsum_tent_xm3' (R\u00b2 = 0.938 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15475331",
+   "held_out_r2": 0.9025,
+   "held_out_rows": 614,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-99263f76c615",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "14309c377028279b.csv",
+   "doi": "10.5281/zenodo.15475331",
+   "form": "linear",
+   "params": [
+    2.542712979209131e-08,
+    6.698612240124432
+   ],
+   "seed": 4062284540,
+   "x": "post_belsum_ten_xm3_2",
+   "y": "post_incldsum_ten_xm3_1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Processed model output in support of Pope and Igel 2025' (Zenodo, doi 10.5281/zenodo.15475331): 'post_incldsum_ten_xm3_1' is linear in 'post_belsum_ten_xm3_2' (R\u00b2 = 0.929 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15475331",
+   "held_out_r2": 0.9384,
+   "held_out_rows": 614,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-070780a1e6e2",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "14309c377028279b.csv",
+   "doi": "10.5281/zenodo.15475331",
+   "form": "linear",
+   "params": [
+    2.7349496523612254e-09,
+    -2.5809657271576185
+   ],
+   "seed": 4062284540,
+   "x": "post_belsum_ten_xm3_2",
+   "y": "post_incldsum_ten_xm3_4"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Processed model output in support of Pope and Igel 2025' (Zenodo, doi 10.5281/zenodo.15475331): 'post_incldsum_ten_xm3_4' is linear in 'post_belsum_ten_xm3_2' (R\u00b2 = 0.928 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15475331",
+   "held_out_r2": 0.8725,
+   "held_out_rows": 614,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3b873ce1f29a",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "14309c377028279b.csv",
+   "doi": "10.5281/zenodo.15475331",
+   "form": "linear",
+   "params": [
+    3.14511436274103e-08,
+    12.525694885609205
+   ],
+   "seed": 4062284540,
+   "x": "post_belsum_ten_xm3_3",
+   "y": "post_incldsum_ten_xm3_1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Processed model output in support of Pope and Igel 2025' (Zenodo, doi 10.5281/zenodo.15475331): 'post_incldsum_ten_xm3_1' is linear in 'post_belsum_ten_xm3_3' (R\u00b2 = 0.910 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15475331",
+   "held_out_r2": 0.9151,
+   "held_out_rows": 614,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-53e490736ff4",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "14309c377028279b.csv",
+   "doi": "10.5281/zenodo.15475331",
+   "form": "linear",
+   "params": [
+    -4.80991268596952e-09,
+    -2.8757923346792214
+   ],
+   "seed": 4062284540,
+   "x": "post_belsum_ten_xm3_3",
+   "y": "post_incldsum_ten_xm3_3"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Processed model output in support of Pope and Igel 2025' (Zenodo, doi 10.5281/zenodo.15475331): 'post_incldsum_ten_xm3_3' is linear in 'post_belsum_ten_xm3_3' (R\u00b2 = 0.942 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15475331",
+   "held_out_r2": 0.9647,
+   "held_out_rows": 614,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a4ecdff8412d",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "14309c377028279b.csv",
+   "doi": "10.5281/zenodo.15475331",
+   "form": "linear",
+   "params": [
+    1.4133729007657787e-09,
+    -4.942004750774306
+   ],
+   "seed": 4062284540,
+   "x": "post_belsum_ten_xm3_3",
+   "y": "post_incldsum_ten_xm3_4"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Processed model output in support of Pope and Igel 2025' (Zenodo, doi 10.5281/zenodo.15475331): 'post_incldsum_ten_xm3_4' is linear in 'post_belsum_ten_xm3_3' (R\u00b2 = 0.953 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15475331",
+   "held_out_r2": 0.9136,
+   "held_out_rows": 614,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3f35815513bb",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "14309c377028279b.csv",
+   "doi": "10.5281/zenodo.15475331",
+   "form": "linear",
+   "params": [
+    2.1543053211159e-08,
+    -4.266765795071122
+   ],
+   "seed": 4062284540,
+   "x": "post_belsum_ten_xm3_4",
+   "y": "post_incldsum_ten_xm3_1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Processed model output in support of Pope and Igel 2025' (Zenodo, doi 10.5281/zenodo.15475331): 'post_incldsum_ten_xm3_1' is linear in 'post_belsum_ten_xm3_4' (R\u00b2 = 0.941 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15475331",
+   "held_out_r2": 0.903,
+   "held_out_rows": 614,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f50f1e3d52aa",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "14309c377028279b.csv",
+   "doi": "10.5281/zenodo.15475331",
+   "form": "linear",
+   "params": [
+    -3.296432211840777e-09,
+    0.9520720871495161
+   ],
+   "seed": 4062284540,
+   "x": "post_belsum_ten_xm3_4",
+   "y": "post_incldsum_ten_xm3_3"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Processed model output in support of Pope and Igel 2025' (Zenodo, doi 10.5281/zenodo.15475331): 'post_incldsum_ten_xm3_3' is linear in 'post_belsum_ten_xm3_4' (R\u00b2 = 0.920 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15475331",
+   "held_out_r2": 0.9559,
+   "held_out_rows": 614,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-541ae86825cc",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "14309c377028279b.csv",
+   "doi": "10.5281/zenodo.15475331",
+   "form": "linear",
+   "params": [
+    4.347017692064658e-09,
+    1.6481583277014311
+   ],
+   "seed": 4062284540,
+   "x": "post_belsum_ten_xm3_4",
+   "y": "post_incldsum_ten_xm3_4"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Processed model output in support of Pope and Igel 2025' (Zenodo, doi 10.5281/zenodo.15475331): 'post_incldsum_ten_xm3_4' is linear in 'post_belsum_ten_xm3_4' (R\u00b2 = 0.944 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15475331",
+   "held_out_r2": 0.9921,
+   "held_out_rows": 614,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-645003830737",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "8af455b51fac1206.csv",
+   "doi": "10.5281/zenodo.15475331",
+   "form": "power law",
+   "params": [
+    -0.1858092190090133,
+    1.0554948024609552
+   ],
+   "seed": 3656485794,
+   "x": "post_belsum_fs1",
+   "y": "post_belsum_fl1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Processed model output in support of Pope and Igel 2025' (Zenodo, doi 10.5281/zenodo.15475331): 'post_belsum_fl1' follows a power law in 'post_belsum_fs1' (R\u00b2 = 0.992 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15475331",
+   "held_out_r2": 0.9921,
+   "held_out_rows": 614,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ec58c5e336c9",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "8af455b51fac1206.csv",
+   "doi": "10.5281/zenodo.15475331",
+   "form": "power law",
+   "params": [
+    -0.1858092190090133,
+    1.0554948024609552
+   ],
+   "seed": 3656485794,
+   "x": "post_belsum_fs2",
+   "y": "post_belsum_fl1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Processed model output in support of Pope and Igel 2025' (Zenodo, doi 10.5281/zenodo.15475331): 'post_belsum_fl1' follows a power law in 'post_belsum_fs2' (R\u00b2 = 0.992 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15475331",
+   "held_out_r2": 0.9921,
+   "held_out_rows": 614,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3ebbd21afa14",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "8af455b51fac1206.csv",
+   "doi": "10.5281/zenodo.15475331",
+   "form": "power law",
+   "params": [
+    0.21093664696326575,
+    0.9400540267079459
+   ],
+   "seed": 3656485794,
+   "x": "post_belsum_fl1",
+   "y": "post_belsum_dtdts"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Processed model output in support of Pope and Igel 2025' (Zenodo, doi 10.5281/zenodo.15475331): 'post_belsum_dtdts' follows a power law in 'post_belsum_fl1' (R\u00b2 = 0.992 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15475331",
+   "held_out_r2": 0.9182,
+   "held_out_rows": 614,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a697f15f2d80",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "33e07b5896a755bd.csv",
+   "doi": "10.5281/zenodo.15475331",
+   "form": "logarithmic",
+   "params": [
+    0.14541958522054615,
+    0.01367879024299329
+   ],
+   "seed": 2446519765,
+   "x": "post_belave_seddd",
+   "y": "post_belsum_seddd"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Processed model output in support of Pope and Igel 2025' (Zenodo, doi 10.5281/zenodo.15475331): 'post_belsum_seddd' grows logarithmically in 'post_belave_seddd' (R\u00b2 = 0.906 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15475331",
+   "held_out_r2": 0.9859,
+   "held_out_rows": 614,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f53ee4d8ac0d",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "49e4818549ef24ff.csv",
+   "doi": "10.5281/zenodo.15475331",
+   "form": "linear",
+   "params": [
+    -0.04012805398246968,
+    3.009071636107613e-05
+   ],
+   "seed": 3127784059,
+   "x": "dur_belsum_xm1",
+   "y": "post_belsum_tke"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Processed model output in support of Pope and Igel 2025' (Zenodo, doi 10.5281/zenodo.15475331): 'post_belsum_tke' is linear in 'dur_belsum_xm1' (R\u00b2 = 0.982 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15475331",
+   "held_out_r2": 0.9859,
+   "held_out_rows": 614,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-79fa7d08129f",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "49e4818549ef24ff.csv",
+   "doi": "10.5281/zenodo.15475331",
+   "form": "linear",
+   "params": [
+    -0.03812960448357115,
+    2.9947732772270647e-05
+   ],
+   "seed": 3127784059,
+   "x": "post_belsum_theta",
+   "y": "post_belsum_tke"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Processed model output in support of Pope and Igel 2025' (Zenodo, doi 10.5281/zenodo.15475331): 'post_belsum_tke' is linear in 'post_belsum_theta' (R\u00b2 = 0.982 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15475331",
+   "held_out_r2": 0.9785,
+   "held_out_rows": 614,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-310a858ae354",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "49e4818549ef24ff.csv",
+   "doi": "10.5281/zenodo.15475331",
+   "form": "power law",
+   "params": [
+    -10.270084763823206,
+    0.9787615385687937
+   ],
+   "seed": 3127784059,
+   "x": "dur_incldsum_xm1",
+   "y": "post_incldsum_tke"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Processed model output in support of Pope and Igel 2025' (Zenodo, doi 10.5281/zenodo.15475331): 'post_incldsum_tke' follows a power law in 'dur_incldsum_xm1' (R\u00b2 = 0.979 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15475331",
+   "held_out_r2": 0.9787,
+   "held_out_rows": 614,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-2ee4e044709f",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "49e4818549ef24ff.csv",
+   "doi": "10.5281/zenodo.15475331",
+   "form": "power law",
+   "params": [
+    -10.293811958480381,
+    0.9804609363685769
+   ],
+   "seed": 3127784059,
+   "x": "post_incldsum_theta",
+   "y": "post_incldsum_tke"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Processed model output in support of Pope and Igel 2025' (Zenodo, doi 10.5281/zenodo.15475331): 'post_incldsum_tke' follows a power law in 'post_incldsum_theta' (R\u00b2 = 0.979 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15475331",
+   "held_out_r2": 0.9497,
+   "held_out_rows": 614,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4cd5b31fb831",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "ac35589fa1c4d830.csv",
+   "doi": "10.5281/zenodo.15475331",
+   "form": "linear",
+   "params": [
+    2.557290391697069e-06,
+    12.472965745760394
+   ],
+   "seed": 3004251700,
+   "x": "post_belsum_xm3",
+   "y": "post_incldsum_xm3"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Processed model output in support of Pope and Igel 2025' (Zenodo, doi 10.5281/zenodo.15475331): 'post_incldsum_xm3' is linear in 'post_belsum_xm3' (R\u00b2 = 0.950 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15475331",
+   "held_out_r2": 0.95,
+   "held_out_rows": 614,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3464ff14b75e",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "ac35589fa1c4d830.csv",
+   "doi": "10.5281/zenodo.15475331",
+   "form": "linear",
+   "params": [
+    3.2610645045276935e-06,
+    15.15729485817019
+   ],
+   "seed": 3004251700,
+   "x": "post_belsum_xm3",
+   "y": "post_incldsum_xm3_m3"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Processed model output in support of Pope and Igel 2025' (Zenodo, doi 10.5281/zenodo.15475331): 'post_incldsum_xm3_m3' is linear in 'post_belsum_xm3' (R\u00b2 = 0.950 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15475331",
+   "held_out_r2": 0.9492,
+   "held_out_rows": 614,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a37075ee42db",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "ac35589fa1c4d830.csv",
+   "doi": "10.5281/zenodo.15475331",
+   "form": "linear",
+   "params": [
+    2.4913881973270075e-06,
+    10.156252096087016
+   ],
+   "seed": 3004251700,
+   "x": "post_belsum_xm3_m3",
+   "y": "post_incldsum_xm3"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Processed model output in support of Pope and Igel 2025' (Zenodo, doi 10.5281/zenodo.15475331): 'post_incldsum_xm3' is linear in 'post_belsum_xm3_m3' (R\u00b2 = 0.950 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15475331",
+   "held_out_r2": 0.9495,
+   "held_out_rows": 614,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b179aa104005",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "ac35589fa1c4d830.csv",
+   "doi": "10.5281/zenodo.15475331",
+   "form": "linear",
+   "params": [
+    3.18004917243216e-06,
+    12.342129744856596
+   ],
+   "seed": 3004251700,
+   "x": "post_belsum_xm3_m3",
+   "y": "post_incldsum_xm3_m3"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Processed model output in support of Pope and Igel 2025' (Zenodo, doi 10.5281/zenodo.15475331): 'post_incldsum_xm3_m3' is linear in 'post_belsum_xm3_m3' (R\u00b2 = 0.950 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15475331",
+   "held_out_r2": 0.908,
+   "held_out_rows": 614,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b3e2a5ab2087",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "ac35589fa1c4d830.csv",
+   "doi": "10.5281/zenodo.15475331",
+   "form": "linear",
+   "params": [
+    3.0180523505819964e-06,
+    0.00406173804171418
+   ],
+   "seed": 3004251700,
+   "x": "post_belsum_f_xm3",
+   "y": "post_incldsum_xm3"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Processed model output in support of Pope and Igel 2025' (Zenodo, doi 10.5281/zenodo.15475331): 'post_incldsum_xm3' is linear in 'post_belsum_f_xm3' (R\u00b2 = 0.939 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15475331",
+   "held_out_r2": 0.9091,
+   "held_out_rows": 614,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-37c4049e7e3e",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "ac35589fa1c4d830.csv",
+   "doi": "10.5281/zenodo.15475331",
+   "form": "linear",
+   "params": [
+    3.800132184734871e-06,
+    0.004937069671536215
+   ],
+   "seed": 3004251700,
+   "x": "post_belsum_f_xm3",
+   "y": "post_incldsum_xm3_m3"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Processed model output in support of Pope and Igel 2025' (Zenodo, doi 10.5281/zenodo.15475331): 'post_incldsum_xm3_m3' is linear in 'post_belsum_f_xm3' (R\u00b2 = 0.939 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15475331",
+   "held_out_r2": 0.9512,
+   "held_out_rows": 614,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a3193b85ad18",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "ac35589fa1c4d830.csv",
+   "doi": "10.5281/zenodo.15475331",
+   "form": "linear",
+   "params": [
+    -0.00673031714514557,
+    15.04775174478811
+   ],
+   "seed": 3004251700,
+   "x": "post_belsum_f_xm3",
+   "y": "post_incldsum_f_xm3"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Processed model output in support of Pope and Igel 2025' (Zenodo, doi 10.5281/zenodo.15475331): 'post_incldsum_f_xm3' is linear in 'post_belsum_f_xm3' (R\u00b2 = 0.950 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15475331",
+   "held_out_r2": 0.9125,
+   "held_out_rows": 614,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-2b6738184cf8",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "60d227b10ee2f309.csv",
+   "doi": "10.5281/zenodo.15475331",
+   "form": "power law",
+   "params": [
+    -0.30738751632561123,
+    1.0559990228108855
+   ],
+   "seed": 962187656,
+   "x": "post_top_t",
+   "y": "post_bot_theta"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Processed model output in support of Pope and Igel 2025' (Zenodo, doi 10.5281/zenodo.15475331): 'post_bot_theta' follows a power law in 'post_top_t' (R\u00b2 = 0.915 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15475331",
+   "held_out_r2": 0.9125,
+   "held_out_rows": 614,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-97e180cd0273",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "60d227b10ee2f309.csv",
+   "doi": "10.5281/zenodo.15475331",
+   "form": "power law",
+   "params": [
+    -0.3076521488436369,
+    1.0560284035654124
+   ],
+   "seed": 962187656,
+   "x": "post_top_t",
+   "y": "post_bot_thetl"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Processed model output in support of Pope and Igel 2025' (Zenodo, doi 10.5281/zenodo.15475331): 'post_bot_thetl' follows a power law in 'post_top_t' (R\u00b2 = 0.915 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15475331",
+   "held_out_r2": 0.9277,
+   "held_out_rows": 614,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d699c5465f29",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "60d227b10ee2f309.csv",
+   "doi": "10.5281/zenodo.15475331",
+   "form": "power law",
+   "params": [
+    -106.98507183612173,
+    18.100680675454658
+   ],
+   "seed": 962187656,
+   "x": "post_top_t",
+   "y": "post_bot_xm1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Processed model output in support of Pope and Igel 2025' (Zenodo, doi 10.5281/zenodo.15475331): 'post_bot_xm1' follows a power law in 'post_top_t' (R\u00b2 = 0.925 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15475331",
+   "held_out_r2": 0.9673,
+   "held_out_rows": 614,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b29712216c8f",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "60d227b10ee2f309.csv",
+   "doi": "10.5281/zenodo.15475331",
+   "form": "exponential",
+   "params": [
+    4.632496985054993,
+    0.003572610644539502
+   ],
+   "seed": 962187656,
+   "x": "post_top_theta",
+   "y": "post_top_thetl"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Processed model output in support of Pope and Igel 2025' (Zenodo, doi 10.5281/zenodo.15475331): 'post_top_thetl' grows exponentially in 'post_top_theta' (R\u00b2 = 0.966 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15475331",
+   "held_out_r2": 0.9263,
+   "held_out_rows": 614,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ff689c657d8e",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "60d227b10ee2f309.csv",
+   "doi": "10.5281/zenodo.15475331",
+   "form": "power law",
+   "params": [
+    -104.4914512667297,
+    17.617121164185537
+   ],
+   "seed": 962187656,
+   "x": "post_top_theta",
+   "y": "post_top_xm1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Processed model output in support of Pope and Igel 2025' (Zenodo, doi 10.5281/zenodo.15475331): 'post_top_xm1' follows a power law in 'post_top_theta' (R\u00b2 = 0.928 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15475331",
+   "held_out_r2": 0.9896,
+   "held_out_rows": 614,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e4b7dd953c69",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "60d227b10ee2f309.csv",
+   "doi": "10.5281/zenodo.15475331",
+   "form": "exponential",
+   "params": [
+    4.612728670791301,
+    0.0036431120207987997
+   ],
+   "seed": 962187656,
+   "x": "post_top_theta",
+   "y": "post_bot_theta"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Processed model output in support of Pope and Igel 2025' (Zenodo, doi 10.5281/zenodo.15475331): 'post_bot_theta' grows exponentially in 'post_top_theta' (R\u00b2 = 0.988 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15475331",
+   "held_out_r2": 0.9895,
+   "held_out_rows": 614,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b65a57eb779f",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "60d227b10ee2f309.csv",
+   "doi": "10.5281/zenodo.15475331",
+   "form": "exponential",
+   "params": [
+    4.612624624631373,
+    0.0036431303737722936
+   ],
+   "seed": 962187656,
+   "x": "post_top_theta",
+   "y": "post_bot_thetl"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Processed model output in support of Pope and Igel 2025' (Zenodo, doi 10.5281/zenodo.15475331): 'post_bot_thetl' grows exponentially in 'post_top_theta' (R\u00b2 = 0.988 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15475331",
+   "held_out_r2": 0.9074,
+   "held_out_rows": 614,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-be58db89e326",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "60d227b10ee2f309.csv",
+   "doi": "10.5281/zenodo.15475331",
+   "form": "power law",
+   "params": [
+    -99.90936302237212,
+    16.811964169336953
+   ],
+   "seed": 962187656,
+   "x": "post_top_thetl",
+   "y": "post_top_xm1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Processed model output in support of Pope and Igel 2025' (Zenodo, doi 10.5281/zenodo.15475331): 'post_top_xm1' follows a power law in 'post_top_thetl' (R\u00b2 = 0.909 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15475331",
+   "held_out_r2": 0.9872,
+   "held_out_rows": 614,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e77c806c8622",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "60d227b10ee2f309.csv",
+   "doi": "10.5281/zenodo.15475331",
+   "form": "logarithmic",
+   "params": [
+    -1329.3752563106943,
+    285.6225189347752
+   ],
+   "seed": 962187656,
+   "x": "post_top_thetl",
+   "y": "post_bot_theta"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Processed model output in support of Pope and Igel 2025' (Zenodo, doi 10.5281/zenodo.15475331): 'post_bot_theta' grows logarithmically in 'post_top_thetl' (R\u00b2 = 0.988 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15475331",
+   "held_out_r2": 0.9872,
+   "held_out_rows": 614,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e252cb6a72d0",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "60d227b10ee2f309.csv",
+   "doi": "10.5281/zenodo.15475331",
+   "form": "logarithmic",
+   "params": [
+    -1329.2838527433903,
+    285.6013652186452
+   ],
+   "seed": 962187656,
+   "x": "post_top_thetl",
+   "y": "post_bot_thetl"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Processed model output in support of Pope and Igel 2025' (Zenodo, doi 10.5281/zenodo.15475331): 'post_bot_thetl' grows logarithmically in 'post_top_thetl' (R\u00b2 = 0.988 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15475331",
+   "held_out_r2": 0.9413,
+   "held_out_rows": 614,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9a077b84e8c1",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "60d227b10ee2f309.csv",
+   "doi": "10.5281/zenodo.15475331",
+   "form": "power law",
+   "params": [
+    5.923705786125194,
+    0.05550718805587818
+   ],
+   "seed": 962187656,
+   "x": "post_top_xm1",
+   "y": "post_bot_theta"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Processed model output in support of Pope and Igel 2025' (Zenodo, doi 10.5281/zenodo.15475331): 'post_bot_theta' follows a power law in 'post_top_xm1' (R\u00b2 = 0.942 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15475331",
+   "held_out_r2": 0.9413,
+   "held_out_rows": 614,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-bb78780f10b4",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "60d227b10ee2f309.csv",
+   "doi": "10.5281/zenodo.15475331",
+   "form": "power law",
+   "params": [
+    5.923612695456676,
+    0.055508358836253706
+   ],
+   "seed": 962187656,
+   "x": "post_top_xm1",
+   "y": "post_bot_thetl"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Processed model output in support of Pope and Igel 2025' (Zenodo, doi 10.5281/zenodo.15475331): 'post_bot_thetl' follows a power law in 'post_top_xm1' (R\u00b2 = 0.942 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15475331",
+   "held_out_r2": 0.9385,
+   "held_out_rows": 614,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-228d54e23989",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "60d227b10ee2f309.csv",
+   "doi": "10.5281/zenodo.15475331",
+   "form": "power law",
+   "params": [
+    -0.2184325050889381,
+    0.9433771942616731
+   ],
+   "seed": 962187656,
+   "x": "post_top_xm1",
+   "y": "post_bot_xm1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Processed model output in support of Pope and Igel 2025' (Zenodo, doi 10.5281/zenodo.15475331): 'post_bot_xm1' follows a power law in 'post_top_xm1' (R\u00b2 = 0.937 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15475331",
+   "held_out_r2": 0.9833,
+   "held_out_rows": 614,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c813e2497a0a",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "7e061e69e3d517ff.csv",
+   "doi": "10.5281/zenodo.15475331",
+   "form": "linear",
+   "params": [
+    0.20079867220622136,
+    0.8397567992768238
+   ],
+   "seed": 3627158021,
+   "x": "post_top_fl1",
+   "y": "post_bot_fl1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Processed model output in support of Pope and Igel 2025' (Zenodo, doi 10.5281/zenodo.15475331): 'post_bot_fl1' is linear in 'post_top_fl1' (R\u00b2 = 0.985 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15475331",
+   "held_out_r2": 0.8731,
+   "held_out_rows": 614,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-41908727b1bd",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "773dccb1c9b3ed98.csv",
+   "doi": "10.5281/zenodo.15475331",
+   "form": "linear",
+   "params": [
+    1.0812052580187609e-11,
+    -0.1733457816072873
+   ],
+   "seed": 3100744801,
+   "x": "post_top_ten_xm3_3",
+   "y": "post_bot_ten_xm3_4"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Processed model output in support of Pope and Igel 2025' (Zenodo, doi 10.5281/zenodo.15475331): 'post_bot_ten_xm3_4' is linear in 'post_top_ten_xm3_3' (R\u00b2 = 0.900 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15475331",
+   "held_out_r2": 0.9266,
+   "held_out_rows": 614,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-751cf739370e",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "913d1cf19d3c73d3.csv",
+   "doi": "10.5281/zenodo.15475331",
+   "form": "power law",
+   "params": [
+    -2.609443769830629,
+    1.184985100545217
+   ],
+   "seed": 52498223,
+   "x": "post_top_f_xm2",
+   "y": "post_bot_f_xm2"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Processed model output in support of Pope and Igel 2025' (Zenodo, doi 10.5281/zenodo.15475331): 'post_bot_f_xm2' follows a power law in 'post_top_f_xm2' (R\u00b2 = 0.928 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11468655",
+   "held_out_r2": 0.9378,
+   "held_out_rows": 149,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-7649f8ec6b7a",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "82e2a9708d9f4d4c.csv",
+   "doi": "10.5281/zenodo.11468655",
+   "form": "power law",
+   "params": [
+    -5.899564149092032,
+    1.352665786515662
+   ],
+   "seed": 4280135180,
+   "x": "12_LiBaF3-0,5Pr_X-ray_sh_4_4_FEU-100_2.2kV__RT_TimeResol_Int",
+   "y": "Slow_component"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Luminescent properties of Pr3+ doped LiBaF3 crystallites.' (Zenodo, doi 10.5281/zenodo.11468655): 'Slow_component' follows a power law in '12_LiBaF3-0,5Pr_X-ray_sh_4_4_FEU-100_2.2kV__RT_TimeResol_Int' (R\u00b2 = 0.935 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11468655",
+   "held_out_r2": 0.9339,
+   "held_out_rows": 406,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-127d13ecd515",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "9f5403718bfde346.csv",
+   "doi": "10.5281/zenodo.11468655",
+   "form": "logarithmic",
+   "params": [
+    -388.6549861366095,
+    -62.081938029848395
+   ],
+   "seed": 2365950079,
+   "x": "curve translate: A is moved horizontally by -1.7574031413221E-5",
+   "y": "0.5"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Luminescent properties of Pr3+ doped LiBaF3 crystallites.' (Zenodo, doi 10.5281/zenodo.11468655): '0.5' grows logarithmically in 'curve translate: A is moved horizontally by -1.7574031413221E-5' (R\u00b2 = 0.931 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11468655",
+   "held_out_r2": 0.928,
+   "held_out_rows": 406,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f679f9bda95d",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "9f5403718bfde346.csv",
+   "doi": "10.5281/zenodo.11468655",
+   "form": "linear",
+   "params": [
+    2.2992733103464826,
+    0.9017485833600105
+   ],
+   "seed": 2365950079,
+   "x": "1D2_1",
+   "y": "1.5"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Luminescent properties of Pr3+ doped LiBaF3 crystallites.' (Zenodo, doi 10.5281/zenodo.11468655): '1.5' is linear in '1D2_1' (R\u00b2 = 0.932 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3843263",
+   "held_out_r2": 0.748,
+   "held_out_rows": 41,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-dca56a2164d4",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "642dc668a6ed0680.csv",
+   "doi": "10.5281/zenodo.3843263",
+   "form": "power law",
+   "params": [
+    27.755229112390975,
+    0.8961043812498205
+   ],
+   "seed": 3010718592,
+   "x": "bro_mixing_ratio_unc (pptv)",
+   "y": "bro_vcd_unc (molec/cm^2)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Bromine monoxide (BrO) measurements made using a MAX-DOAS (Multi-AXis Differential Optical' (Zenodo, doi 10.5281/zenodo.3843263): 'bro_vcd_unc (molec/cm^2)' follows a power law in 'bro_mixing_ratio_unc (pptv)' (R\u00b2 = 0.940 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
  }
 ]
