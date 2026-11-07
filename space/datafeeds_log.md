@@ -1147,3 +1147,4 @@
 - 2026-11-07 04:00 FINDING (confirmed on held-out rows): In 'Gastropod morphometrics from the Cosman Shell Collection, with a focus on the region of Wa' (Zenodo, doi 10.5281/zenodo.17401407): 'weight_to_length_mgmm' follows a power law in 'dry_weight_mg' (R² = 0.981 on the discovery half); held-out R² = 0.979 [emp-07237cf2127e]
 - 2026-11-07 04:00 FINDING (confirmed on held-out rows): In 'Gastropod morphometrics from the Cosman Shell Collection, with a focus on the region of Wa' (Zenodo, doi 10.5281/zenodo.17401407): 'logWL' grows logarithmically in 'dry_weight_mg' (R² = 0.981 on the discovery half); held-out R² = 0.979 [emp-1515d1e5c8cc]
 - 2026-11-07 04:01 data feeds: 7459 datasets analysed so far, 1034 confirmed findings
+- 2026-11-07 04:56 data feeds: online
