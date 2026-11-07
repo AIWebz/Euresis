@@ -1303,3 +1303,4 @@
 - 2026-11-07 16:02 FINDING (confirmed on held-out rows): In 'European National Transfer Accounts' (Zenodo, doi 10.5281/zenodo.22550976): 'CHXesa' is linear in 'GDP' (R² = 0.987 on the discovery half); held-out R² = 0.991 [emp-91d9f2707eba]
 - 2026-11-07 16:03 FINDING (confirmed on held-out rows): In 'Economic Failure Panel: 60 Countries, 1970-2024' (Zenodo, doi 10.5281/zenodo.21984339): 'dependency_ratio_young' is linear in 'birth_rate_per_1000' (R² = 0.949 on the discovery half); held-out R² = 0.952 [emp-6a9a68d06181]
 - 2026-11-07 16:03 data feeds: 9070 datasets analysed so far, 1164 confirmed findings
+- 2026-11-07 16:52 data feeds: online
