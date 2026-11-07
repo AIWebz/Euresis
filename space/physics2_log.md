@@ -2020,3 +2020,8 @@
 - 2026-11-07 18:21 round 1850: collision
 - 2026-11-07 18:22 round 1851: driven oscillator
 - 2026-11-07 18:24 round 1852: velocity addition
+- 2026-11-07 18:25 round 1853: Compton scattering
+- 2026-11-07 18:26 round 1854: Cournot duopoly
+- 2026-11-07 18:27 round 1855: insurance and risk
+- 2026-11-07 18:29 round 1856: auction with a reserve price
+- 2026-11-07 18:30 segment end: 1856 rounds, 5 discoveries, 2 known laws rediscovered
