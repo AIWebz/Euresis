@@ -1200,3 +1200,4 @@
 - 2026-11-07 07:19 FINDING (confirmed on held-out rows): In 'Data from: Life at the top: lake ecotype influences the foraging patterns, metabolic costs' (Zenodo, doi 10.5061/dryad.55c84q7): 'aci' is linear in 'mtot' (R² = 0.952 on the discovery half); held-out R² = 0.951 [emp-cd86e7c6d7b2]
 - 2026-11-07 07:19 data feeds: 7877 datasets analysed so far, 1078 confirmed findings
 - 2026-11-07 08:19 data feeds: online
+- 2026-11-07 08:20 data feeds: 7896 datasets analysed so far, 1078 confirmed findings
