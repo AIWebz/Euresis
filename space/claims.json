@@ -1864498,10 +1864498,15 @@
   "verifier": "held-out-replication"
  },
  {
-  "evidence": null,
+  "evidence": {
+   "doi": "10.5281/zenodo.14608739",
+   "held_out_r2": 0.9579,
+   "held_out_rows": 132,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
   "id": "emp-0236c433662a",
   "kind": "empirical",
-  "novelty": "not checked",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
   "payload": {
    "dataset": "866aa60e80206c3c.csv",
    "doi": "10.5281/zenodo.14608739",
@@ -1864516,7 +1864521,790 @@
   },
   "source": "datafeeds.py",
   "statement": "In 'A data repository for: Seasonal variability of surface ocean carbon uptake and chlorophyll' (Zenodo, doi 10.5281/zenodo.14608739): 'sal_std' is linear in 'fCO2corr_mn' (R\u00b2 = 1.000 on the discovery half)",
-  "status": "candidate",
-  "verifier": null
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14608739",
+   "held_out_r2": 0.9585,
+   "held_out_rows": 132,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-1991eceab240",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "866aa60e80206c3c.csv",
+   "doi": "10.5281/zenodo.14608739",
+   "form": "linear",
+   "params": [
+    21.95606203873615,
+    1.0218646941098797
+   ],
+   "seed": 3868157940,
+   "x": "fCO2corr_std",
+   "y": "sal_mn"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A data repository for: Seasonal variability of surface ocean carbon uptake and chlorophyll' (Zenodo, doi 10.5281/zenodo.14608739): 'sal_mn' is linear in 'fCO2corr_std' (R\u00b2 = 1.000 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14608739",
+   "held_out_r2": 0.9585,
+   "held_out_rows": 132,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f54214c364e3",
+  "kind": "empirical",
+  "novelty": "KNOWN: equation of state of a simulated fluid (pressure, density, temperature, chemical potential, kinetic energy) \u2014 not a discovery",
+  "payload": {
+   "dataset": "866aa60e80206c3c.csv",
+   "doi": "10.5281/zenodo.14608739",
+   "form": "linear",
+   "params": [
+    -11.307667359915179,
+    0.9885707853109135
+   ],
+   "seed": 3868157940,
+   "x": "fCO2corr_std",
+   "y": "sal_std"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A data repository for: Seasonal variability of surface ocean carbon uptake and chlorophyll' (Zenodo, doi 10.5281/zenodo.14608739): 'sal_std' is linear in 'fCO2corr_std' (R\u00b2 = 1.000 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14608739",
+   "held_out_r2": 0.9581,
+   "held_out_rows": 132,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-eee9278f3bd4",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "866aa60e80206c3c.csv",
+   "doi": "10.5281/zenodo.14608739",
+   "form": "linear",
+   "params": [
+    -245.9040902841358,
+    0.753421022234042
+   ],
+   "seed": 3868157940,
+   "x": "fCO2rec_mn",
+   "y": "sal_mn"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A data repository for: Seasonal variability of surface ocean carbon uptake and chlorophyll' (Zenodo, doi 10.5281/zenodo.14608739): 'sal_mn' is linear in 'fCO2rec_mn' (R\u00b2 = 0.999 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14608739",
+   "held_out_r2": 0.9581,
+   "held_out_rows": 132,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-2826a7f01ba3",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "866aa60e80206c3c.csv",
+   "doi": "10.5281/zenodo.14608739",
+   "form": "linear",
+   "params": [
+    -270.44033449084435,
+    0.7288715079909283
+   ],
+   "seed": 3868157940,
+   "x": "fCO2rec_mn",
+   "y": "sal_std"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A data repository for: Seasonal variability of surface ocean carbon uptake and chlorophyll' (Zenodo, doi 10.5281/zenodo.14608739): 'sal_std' is linear in 'fCO2rec_mn' (R\u00b2 = 0.999 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14608739",
+   "held_out_r2": 0.9585,
+   "held_out_rows": 132,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-abed446c7514",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "866aa60e80206c3c.csv",
+   "doi": "10.5281/zenodo.14608739",
+   "form": "linear",
+   "params": [
+    21.95606203873615,
+    1.0218646941098797
+   ],
+   "seed": 3868157940,
+   "x": "fCO2rec_std",
+   "y": "sal_mn"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A data repository for: Seasonal variability of surface ocean carbon uptake and chlorophyll' (Zenodo, doi 10.5281/zenodo.14608739): 'sal_mn' is linear in 'fCO2rec_std' (R\u00b2 = 1.000 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14608739",
+   "held_out_r2": 0.9585,
+   "held_out_rows": 132,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-46f51efdb528",
+  "kind": "empirical",
+  "novelty": "KNOWN: equation of state of a simulated fluid (pressure, density, temperature, chemical potential, kinetic energy) \u2014 not a discovery",
+  "payload": {
+   "dataset": "866aa60e80206c3c.csv",
+   "doi": "10.5281/zenodo.14608739",
+   "form": "linear",
+   "params": [
+    -11.307667359915179,
+    0.9885707853109135
+   ],
+   "seed": 3868157940,
+   "x": "fCO2rec_std",
+   "y": "sal_std"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A data repository for: Seasonal variability of surface ocean carbon uptake and chlorophyll' (Zenodo, doi 10.5281/zenodo.14608739): 'sal_std' is linear in 'fCO2rec_std' (R\u00b2 = 1.000 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14608739",
+   "held_out_r2": 0.9598,
+   "held_out_rows": 132,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4aa0b15461a4",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "866aa60e80206c3c.csv",
+   "doi": "10.5281/zenodo.14608739",
+   "form": "linear",
+   "params": [
+    32.17741295814084,
+    1.0322011734379788
+   ],
+   "seed": 3868157940,
+   "x": "sst_mn",
+   "y": "sal_mn"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A data repository for: Seasonal variability of surface ocean carbon uptake and chlorophyll' (Zenodo, doi 10.5281/zenodo.14608739): 'sal_mn' is linear in 'sst_mn' (R\u00b2 = 1.000 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14608739",
+   "held_out_r2": 0.9598,
+   "held_out_rows": 132,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-18b3d0bf13b0",
+  "kind": "empirical",
+  "novelty": "KNOWN: equation of state of a simulated fluid (pressure, density, temperature, chemical potential, kinetic energy) \u2014 not a discovery",
+  "payload": {
+   "dataset": "866aa60e80206c3c.csv",
+   "doi": "10.5281/zenodo.14608739",
+   "form": "linear",
+   "params": [
+    -1.4192071086662204,
+    0.9985711846390706
+   ],
+   "seed": 3868157940,
+   "x": "sst_mn",
+   "y": "sal_std"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A data repository for: Seasonal variability of surface ocean carbon uptake and chlorophyll' (Zenodo, doi 10.5281/zenodo.14608739): 'sal_std' is linear in 'sst_mn' (R\u00b2 = 1.000 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14608739",
+   "held_out_r2": 0.9864,
+   "held_out_rows": 132,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-40438a4f43eb",
+  "kind": "empirical",
+  "novelty": "KNOWN: seawater carbonate chemistry (CO2SYS-type calculations) \u2014 not a discovery",
+  "payload": {
+   "dataset": "8a1e9a0bd7d4dd0f.csv",
+   "doi": "10.5281/zenodo.14608739",
+   "form": "linear",
+   "params": [
+    112.92266850754218,
+    1.1104039739979032
+   ],
+   "seed": 1944509322,
+   "x": "DfCO2_mn",
+   "y": "fCO2corr_std"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A data repository for: Seasonal variability of surface ocean carbon uptake and chlorophyll' (Zenodo, doi 10.5281/zenodo.14608739): 'fCO2corr_std' is linear in 'DfCO2_mn' (R\u00b2 = 0.986 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14608739",
+   "held_out_r2": 0.9864,
+   "held_out_rows": 132,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4c8965cbfca4",
+  "kind": "empirical",
+  "novelty": "KNOWN: seawater carbonate chemistry (CO2SYS-type calculations) \u2014 not a discovery",
+  "payload": {
+   "dataset": "8a1e9a0bd7d4dd0f.csv",
+   "doi": "10.5281/zenodo.14608739",
+   "form": "linear",
+   "params": [
+    112.92266850754218,
+    1.1104039739979032
+   ],
+   "seed": 1944509322,
+   "x": "DfCO2_mn",
+   "y": "fCO2rec_std"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A data repository for: Seasonal variability of surface ocean carbon uptake and chlorophyll' (Zenodo, doi 10.5281/zenodo.14608739): 'fCO2rec_std' is linear in 'DfCO2_mn' (R\u00b2 = 0.986 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14608739",
+   "held_out_r2": 0.8812,
+   "held_out_rows": 132,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-0710b5d30497",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8a1e9a0bd7d4dd0f.csv",
+   "doi": "10.5281/zenodo.14608739",
+   "form": "linear",
+   "params": [
+    71.77528737086601,
+    1.069700117348202
+   ],
+   "seed": 1944509322,
+   "x": "DfCO2_mn",
+   "y": "sst_mn"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A data repository for: Seasonal variability of surface ocean carbon uptake and chlorophyll' (Zenodo, doi 10.5281/zenodo.14608739): 'sst_mn' is linear in 'DfCO2_mn' (R\u00b2 = 0.990 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14608739",
+   "held_out_r2": 0.8897,
+   "held_out_rows": 132,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-93f968a17013",
+  "kind": "empirical",
+  "novelty": "KNOWN: equation of state of a simulated fluid (pressure, density, temperature, chemical potential, kinetic energy) \u2014 not a discovery",
+  "payload": {
+   "dataset": "8a1e9a0bd7d4dd0f.csv",
+   "doi": "10.5281/zenodo.14608739",
+   "form": "linear",
+   "params": [
+    -38.995479274893505,
+    0.9608109649145807
+   ],
+   "seed": 1944509322,
+   "x": "DfCO2_std",
+   "y": "sst_mn"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A data repository for: Seasonal variability of surface ocean carbon uptake and chlorophyll' (Zenodo, doi 10.5281/zenodo.14608739): 'sst_mn' is linear in 'DfCO2_std' (R\u00b2 = 0.999 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14608739",
+   "held_out_r2": 0.8863,
+   "held_out_rows": 132,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-0ee367f375b0",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8a1e9a0bd7d4dd0f.csv",
+   "doi": "10.5281/zenodo.14608739",
+   "form": "linear",
+   "params": [
+    -232.6481232958387,
+    0.7659922933631959
+   ],
+   "seed": 1944509322,
+   "x": "fCO2corr_mn",
+   "y": "sst_mn"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A data repository for: Seasonal variability of surface ocean carbon uptake and chlorophyll' (Zenodo, doi 10.5281/zenodo.14608739): 'sst_mn' is linear in 'fCO2corr_mn' (R\u00b2 = 0.995 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14608739",
+   "held_out_r2": 0.8896,
+   "held_out_rows": 132,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9dc3143e9c2f",
+  "kind": "empirical",
+  "novelty": "KNOWN: equation of state of a simulated fluid (pressure, density, temperature, chemical potential, kinetic energy) \u2014 not a discovery",
+  "payload": {
+   "dataset": "8a1e9a0bd7d4dd0f.csv",
+   "doi": "10.5281/zenodo.14608739",
+   "form": "linear",
+   "params": [
+    -38.76294583631269,
+    0.9610431297124017
+   ],
+   "seed": 1944509322,
+   "x": "fCO2corr_std",
+   "y": "sst_mn"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A data repository for: Seasonal variability of surface ocean carbon uptake and chlorophyll' (Zenodo, doi 10.5281/zenodo.14608739): 'sst_mn' is linear in 'fCO2corr_std' (R\u00b2 = 0.999 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14608739",
+   "held_out_r2": 0.8858,
+   "held_out_rows": 132,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e22fd8fccf23",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8a1e9a0bd7d4dd0f.csv",
+   "doi": "10.5281/zenodo.14608739",
+   "form": "linear",
+   "params": [
+    -232.98233613880916,
+    0.7657977921195753
+   ],
+   "seed": 1944509322,
+   "x": "fCO2rec_mn",
+   "y": "sst_mn"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A data repository for: Seasonal variability of surface ocean carbon uptake and chlorophyll' (Zenodo, doi 10.5281/zenodo.14608739): 'sst_mn' is linear in 'fCO2rec_mn' (R\u00b2 = 0.996 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14608739",
+   "held_out_r2": 0.8896,
+   "held_out_rows": 132,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5bf5311166aa",
+  "kind": "empirical",
+  "novelty": "KNOWN: equation of state of a simulated fluid (pressure, density, temperature, chemical potential, kinetic energy) \u2014 not a discovery",
+  "payload": {
+   "dataset": "8a1e9a0bd7d4dd0f.csv",
+   "doi": "10.5281/zenodo.14608739",
+   "form": "linear",
+   "params": [
+    -38.76294583631269,
+    0.9610431297124017
+   ],
+   "seed": 1944509322,
+   "x": "fCO2rec_std",
+   "y": "sst_mn"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A data repository for: Seasonal variability of surface ocean carbon uptake and chlorophyll' (Zenodo, doi 10.5281/zenodo.14608739): 'sst_mn' is linear in 'fCO2rec_std' (R\u00b2 = 0.999 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14608739",
+   "held_out_r2": 0.9875,
+   "held_out_rows": 132,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-919e17ef6e82",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f829d904a6c267af.csv",
+   "doi": "10.5281/zenodo.14608739",
+   "form": "linear",
+   "params": [
+    -2.843623912687034,
+    0.9902381937550903
+   ],
+   "seed": 1344242029,
+   "x": "DfCO2_mn",
+   "y": "sst_std"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A data repository for: Seasonal variability of surface ocean carbon uptake and chlorophyll' (Zenodo, doi 10.5281/zenodo.14608739): 'sst_std' is linear in 'DfCO2_mn' (R\u00b2 = 0.989 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14608739",
+   "held_out_r2": 0.9869,
+   "held_out_rows": 132,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c51a24ac5d75",
+  "kind": "empirical",
+  "novelty": "KNOWN: seawater carbonate chemistry (CO2SYS-type calculations) \u2014 not a discovery",
+  "payload": {
+   "dataset": "f829d904a6c267af.csv",
+   "doi": "10.5281/zenodo.14608739",
+   "form": "linear",
+   "params": [
+    336.31566228194026,
+    1.3341931254804067
+   ],
+   "seed": 1344242029,
+   "x": "DfCO2_std",
+   "y": "fCO2corr_mn"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A data repository for: Seasonal variability of surface ocean carbon uptake and chlorophyll' (Zenodo, doi 10.5281/zenodo.14608739): 'fCO2corr_mn' is linear in 'DfCO2_std' (R\u00b2 = 0.990 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14608739",
+   "held_out_r2": 0.9873,
+   "held_out_rows": 132,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9108ec3be407",
+  "kind": "empirical",
+  "novelty": "KNOWN: seawater carbonate chemistry (CO2SYS-type calculations) \u2014 not a discovery",
+  "payload": {
+   "dataset": "f829d904a6c267af.csv",
+   "doi": "10.5281/zenodo.14608739",
+   "form": "linear",
+   "params": [
+    335.41475792830937,
+    1.3333732041661028
+   ],
+   "seed": 1344242029,
+   "x": "DfCO2_std",
+   "y": "fCO2rec_mn"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A data repository for: Seasonal variability of surface ocean carbon uptake and chlorophyll' (Zenodo, doi 10.5281/zenodo.14608739): 'fCO2rec_mn' is linear in 'DfCO2_std' (R\u00b2 = 0.990 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14608739",
+   "held_out_r2": 0.9869,
+   "held_out_rows": 132,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-66de0c7120c0",
+  "kind": "empirical",
+  "novelty": "KNOWN: seawater carbonate chemistry (CO2SYS-type calculations) \u2014 not a discovery",
+  "payload": {
+   "dataset": "f829d904a6c267af.csv",
+   "doi": "10.5281/zenodo.14608739",
+   "form": "linear",
+   "params": [
+    -252.9853597076983,
+    0.7417049356473656
+   ],
+   "seed": 1344242029,
+   "x": "fCO2corr_mn",
+   "y": "fCO2rec_std"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A data repository for: Seasonal variability of surface ocean carbon uptake and chlorophyll' (Zenodo, doi 10.5281/zenodo.14608739): 'fCO2rec_std' is linear in 'fCO2corr_mn' (R\u00b2 = 0.990 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.1494924",
+   "held_out_r2": 0.9996,
+   "held_out_rows": 164,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c6d844fb8c29",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3c8335a787cc4b76.csv",
+   "doi": "10.5281/zenodo.1494924",
+   "form": "linear",
+   "params": [
+    22.902811036955985,
+    1.0226955586200577
+   ],
+   "seed": 1763499517,
+   "x": "CTDTMP [ITS-90]",
+   "y": "CTDSAL [PSS-78]"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Seawater salinity sample measurements from the Antarctic Circumnavigation Expedition (ACE)' (Zenodo, doi 10.5281/zenodo.1494924): 'CTDSAL [PSS-78]' is linear in 'CTDTMP [ITS-90]' (R\u00b2 = 0.954 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7680135",
+   "held_out_r2": 0.9722,
+   "held_out_rows": 43,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-1131b2a97e09",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "56d22c5ff48c822b.csv",
+   "doi": "10.5281/zenodo.7680135",
+   "form": "linear",
+   "params": [
+    565.9060399837479,
+    0.9528539519994035
+   ],
+   "seed": 648006503,
+   "x": "SynA",
+   "y": "SynB"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'The Impact of Gulf Stream Frontal Eddies on Ecology and Biogeochemistry near Cape Hatteras' (Zenodo, doi 10.5281/zenodo.7680135): 'SynB' is linear in 'SynA' (R\u00b2 = 0.936 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7680135",
+   "held_out_r2": 0.993,
+   "held_out_rows": 43,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-02dd6e99ca2e",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "56d22c5ff48c822b.csv",
+   "doi": "10.5281/zenodo.7680135",
+   "form": "linear",
+   "params": [
+    282.9530227907354,
+    0.9764269759064864
+   ],
+   "seed": 648006503,
+   "x": "SynA",
+   "y": "Syn_Avg"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'The Impact of Gulf Stream Frontal Eddies on Ecology and Biogeochemistry near Cape Hatteras' (Zenodo, doi 10.5281/zenodo.7680135): 'Syn_Avg' is linear in 'SynA' (R\u00b2 = 0.984 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7680135",
+   "held_out_r2": 0.9931,
+   "held_out_rows": 43,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-04006b1d58cb",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "56d22c5ff48c822b.csv",
+   "doi": "10.5281/zenodo.7680135",
+   "form": "linear",
+   "params": [
+    1139.0591068167137,
+    0.9910002361490893
+   ],
+   "seed": 648006503,
+   "x": "SynB",
+   "y": "Syn_Avg"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'The Impact of Gulf Stream Frontal Eddies on Ecology and Biogeochemistry near Cape Hatteras' (Zenodo, doi 10.5281/zenodo.7680135): 'Syn_Avg' is linear in 'SynB' (R\u00b2 = 0.983 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7680135",
+   "held_out_r2": 0.9585,
+   "held_out_rows": 43,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-1f1a4e92bcd4",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "56d22c5ff48c822b.csv",
+   "doi": "10.5281/zenodo.7680135",
+   "form": "linear",
+   "params": [
+    28.41301064363713,
+    0.9392457537945622
+   ],
+   "seed": 648006503,
+   "x": "PeuksA",
+   "y": "Peuks_Avg"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'The Impact of Gulf Stream Frontal Eddies on Ecology and Biogeochemistry near Cape Hatteras' (Zenodo, doi 10.5281/zenodo.7680135): 'Peuks_Avg' is linear in 'PeuksA' (R\u00b2 = 0.958 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7680135",
+   "held_out_r2": 0.9606,
+   "held_out_rows": 43,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-29ae347b2872",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "56d22c5ff48c822b.csv",
+   "doi": "10.5281/zenodo.7680135",
+   "form": "linear",
+   "params": [
+    111.14099074166695,
+    0.9749600328701846
+   ],
+   "seed": 648006503,
+   "x": "PeaksB",
+   "y": "Peuks_Avg"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'The Impact of Gulf Stream Frontal Eddies on Ecology and Biogeochemistry near Cape Hatteras' (Zenodo, doi 10.5281/zenodo.7680135): 'Peuks_Avg' is linear in 'PeaksB' (R\u00b2 = 0.955 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7680135",
+   "held_out_r2": 0.9333,
+   "held_out_rows": 43,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d4ad5657ac76",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "56d22c5ff48c822b.csv",
+   "doi": "10.5281/zenodo.7680135",
+   "form": "linear",
+   "params": [
+    10615.3470719285,
+    0.8645098722447021
+   ],
+   "seed": 648006503,
+   "x": "PicoCyanoA",
+   "y": "PicoCyano_Avg"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'The Impact of Gulf Stream Frontal Eddies on Ecology and Biogeochemistry near Cape Hatteras' (Zenodo, doi 10.5281/zenodo.7680135): 'PicoCyano_Avg' is linear in 'PicoCyanoA' (R\u00b2 = 0.906 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7680135",
+   "held_out_r2": 0.9695,
+   "held_out_rows": 4440,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-75365bb281b7",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f1f5e219b5556f9f.csv",
+   "doi": "10.5281/zenodo.7680135",
+   "form": "logarithmic",
+   "params": [
+    1266.9577228155536,
+    82.57918817280152
+   ],
+   "seed": 715795112,
+   "x": "Temp",
+   "y": "Unknown"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'The Impact of Gulf Stream Frontal Eddies on Ecology and Biogeochemistry near Cape Hatteras' (Zenodo, doi 10.5281/zenodo.7680135): 'Unknown' grows logarithmically in 'Temp' (R\u00b2 = 0.969 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15397049",
+   "held_out_r2": 0.9245,
+   "held_out_rows": 2864,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-89264a79336c",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "b4a99dfb6196aa06.csv",
+   "doi": "10.5281/zenodo.15397049",
+   "form": "logarithmic",
+   "params": [
+    28.353885941722616,
+    -3.4165073910704056
+   ],
+   "seed": 622966244,
+   "x": "Deph [m]",
+   "y": "Temperature [C]"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Zooplankton Chile upwelling' (Zenodo, doi 10.5281/zenodo.15397049): 'Temperature [C]' grows logarithmically in 'Deph [m]' (R\u00b2 = 0.942 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
