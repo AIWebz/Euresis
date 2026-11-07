@@ -1714433,5 +1714433,248 @@
   "statement": "In 'Bromine monoxide (BrO) measurements made using a MAX-DOAS (Multi-AXis Differential Optical' (Zenodo, doi 10.5281/zenodo.3843263): 'bro_vcd_unc (molec/cm^2)' follows a power law in 'bro_mixing_ratio_unc (pptv)' (R\u00b2 = 0.940 on the discovery half)",
   "status": "refuted",
   "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-11768cead9d7",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "-4*r**3/3 + r**2*v + r**2 + 1/3 >= 1/6*((-2*r**3/3 + r**2*v + 2/3)/(4*r**3/3 - r**2 + 1/3))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 1600",
+  "statement": "[economics: auction with a reserve price] seller's expected payoff \u2265 1/6 \u00d7 Welfare Reserve Efficiency Ratio [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (3.12e-07, 0.000119))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-ded65649c259",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "-2*r**3/3 + r**2*v + 2/3 >= 1/4*((-2*r**3/3 + r**2*v + 2/3)/(4*r**3/3 - r**2 + 1/3))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 1600",
+  "statement": "[economics: auction with a reserve price] expected total welfare \u2265 1/4 \u00d7 Welfare Reserve Efficiency Ratio [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (0.5, 0.00044))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-6d9691d63f93",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'expected total welfare'",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "v**3/3 + 2/3 >= 1/4*((-2*r**3/3 + r**2*v + 2/3)/(4*r**3/3 - r**2 + 1/3))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 1600",
+  "statement": "[economics: auction with a reserve price] welfare with the efficient reserve (r = v) \u2265 1/4 \u00d7 Welfare Reserve Efficiency Ratio [model-proposed; physical meaning unverified]   on r < 1, v < 1 (equality at (r, v) \u2248 (0.5, 0.5))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-bc4baef66565",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "(-2*r**3/3 + r**2*v + 2/3)/(4*r**3/3 - r**2 + 1/3) >= 3/2*(-4*r**3/3 + r**2*v + r**2 + 1/3)",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 1600",
+  "statement": "[economics: auction with a reserve price] Welfare Reserve Efficiency Ratio [model-proposed; physical meaning unverified] \u2265 3/2 \u00d7 seller's expected payoff   on r < 1, v < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-c80c657578d9",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "(-2*r**3/3 + r**2*v + 2/3)/(4*r**3/3 - r**2 + 1/3) >= 6*(2*r**3/3 - r**2 + 1/3)",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 1600",
+  "statement": "[economics: auction with a reserve price] Welfare Reserve Efficiency Ratio [model-proposed; physical meaning unverified] \u2265 6 \u00d7 expected total bidder surplus   on r < 1, v < 1 (tight only at the edge of the domain, near (4.88e-09, 0.000119))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-0c1407134097",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "(-2*r**3/3 + r**2*v + 2/3)/(4*r**3/3 - r**2 + 1/3) >= 3/2*(-2*r**3/3 + r**2*v + 2/3)",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 1600",
+  "statement": "[economics: auction with a reserve price] Welfare Reserve Efficiency Ratio [model-proposed; physical meaning unverified] \u2265 3/2 \u00d7 expected total welfare   on r < 1, v < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-b3da49cf6bc0",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "(-2*r**3/3 + r**2*v + 2/3)/(4*r**3/3 - r**2 + 1/3) >= 4*((2*r**3/3 - r**2 + 1/3)/(2/3 - 2*r**3/3))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 1600",
+  "statement": "[economics: auction with a reserve price] Welfare Reserve Efficiency Ratio [model-proposed; physical meaning unverified] \u2265 4 \u00d7 expected bidder surplus ratio [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (4.88e-09, 0.000119))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-2e5dbf4b3e41",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "(-2*r**3/3 + r**2*v + 2/3)/(4*r**3/3 - r**2 + 1/3) >= 6*((2*r**3/3 - r**2 + 1/3)/(1 - r**2))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 1608",
+  "statement": "[economics: auction with a reserve price] Welfare Reserve Efficiency Ratio [model-proposed; physical meaning unverified] \u2265 6 \u00d7 expected bidder surplus given reserve [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (4.88e-09, 0.000119))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-1b7963a958a6",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'expected bidder surplus given reserve [model-proposed; physical meaning unverified]'",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "(-2*r**3/3 + r**2*v + 2/3)/(4*r**3/3 - r**2 + 1/3) >= 6*((2*r**3/3 - r**2 + 1/3)/(-r**2*v + 1))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 1608",
+  "statement": "[economics: auction with a reserve price] Welfare Reserve Efficiency Ratio [model-proposed; physical meaning unverified] \u2265 6 \u00d7 Bidder Surplus Reserve Ratio [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (4.88e-09, 0.000119))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]
