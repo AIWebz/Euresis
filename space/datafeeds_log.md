@@ -1082,3 +1082,4 @@
 - 2026-11-07 01:13 FINDING (confirmed on held-out rows): In 'Data from: Climate change increases predation risk for a keystone species of the boreal fo' (Zenodo, doi 10.5061/dryad.bzkh1896b): 'Min_T' is linear in 'Avg_T' (R² = 0.907 on the discovery half); held-out R² = 0.903 [emp-94d8aa9343c1]
 - 2026-11-07 01:13 FINDING (confirmed on held-out rows): In 'On male harm: How it is measured and how it evolves in different environments' (Zenodo, doi 10.5061/dryad.9cnp5hqht): 'Mean_fitness' follows a power law in 'Mean_fecundity' (R² = 0.957 on the discovery half); held-out R² = 0.940 [emp-a1866bcd2c69]
 - 2026-11-07 01:13 data feeds: 7210 datasets analysed so far, 975 confirmed findings
+- 2026-11-07 02:02 data feeds: online
