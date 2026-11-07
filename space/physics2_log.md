@@ -1628,3 +1628,24 @@
 - 2026-11-07 05:20 round 1486: Cournot duopoly
 - 2026-11-07 05:26 segment start (budget 30 min; model: Qwen3-8B; 5 discoveries so far)
 - 2026-11-07 05:26 round 1486: Cournot duopoly
+- 2026-11-07 05:28 round 1487: insurance and risk
+- 2026-11-07 05:29 round 1488: auction with a reserve price
+- 2026-11-07 05:30 round 1489: two-body decay
+- 2026-11-07 05:31 round 1490: collision
+- 2026-11-07 05:33 round 1491: driven oscillator
+- 2026-11-07 05:34 round 1492: velocity addition
+- 2026-11-07 05:35 round 1493: Compton scattering
+- 2026-11-07 05:35 round 1494: Cournot duopoly
+- 2026-11-07 05:37 round 1495: insurance and risk
+- 2026-11-07 05:37 round 1496: auction with a reserve price
+- 2026-11-07 05:38 round 1497: two-body decay
+- 2026-11-07 05:40 round 1498: collision
+- 2026-11-07 05:41 round 1499: driven oscillator
+- 2026-11-07 05:45 round 1500: velocity addition
+- 2026-11-07 05:46 round 1501: Compton scattering
+- 2026-11-07 05:47 round 1502: Cournot duopoly
+- 2026-11-07 05:48 round 1503: insurance and risk
+- 2026-11-07 05:49 round 1504: auction with a reserve price
+- 2026-11-07 05:50 round 1505: two-body decay
+- 2026-11-07 05:51 round 1506: collision
+- 2026-11-07 05:52 round 1507: driven oscillator

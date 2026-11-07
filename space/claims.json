@@ -1616309,5 +1616309,32 @@
   "statement": "In 'Frequent burning causes large losses of carbon from deep soil layers in a temperate savann' (Zenodo, doi 10.5061/dryad.02v6wwq07): 'K.Err' follows a power law in 'K' (R\u00b2 = 0.973 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 2",
+    "z < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-81a19efa4b3a",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 2",
+    "z < 1"
+   ],
+   "claim": "1 + sqrt(4*r**2*z**2 + 1)/(2*r*z*sqrt(4*r**2*z**2 + (1 - r**2)**2)) >= 1/6*(1/(2*z))",
+   "symbols": [
+    "r",
+    "z"
+   ]
+  },
+  "source": "physics_discover2 round 1499",
+  "statement": "[physics: driven oscillator] Power Amplification Factor [model-proposed; physical meaning unverified] \u2265 1/6 \u00d7 quality factor   on r < 2, z < 1 (tight only at the edge of the domain, near (2, 2.11e-15))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]
