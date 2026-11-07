@@ -1275,3 +1275,4 @@
 - 2026-11-07 13:05 FINDING (confirmed on held-out rows): In 'Wildfires and climate change push low-elevation forests across a critical climate threshol' (Zenodo, doi 10.5061/dryad.pc3f9d8): 'transect_areaPIPO' is linear in 'transect_areaPSME' (R² = 0.901 on the discovery half); held-out R² = 0.904 [emp-3631f858bb82]
 - 2026-11-07 13:09 FINDING (confirmed on held-out rows): In 'Data from: Projecting consequences of global warming for the functional diversity of flesh' (Zenodo, doi 10.5061/dryad.c0n737b): 'NorESM VD [m]' grows logarithmically in 'MRI-CGCM VD [m]' (R² = 0.944 on the discovery half); held-out R² = 0.944 [emp-2ad54619bd29]
 - 2026-11-07 13:09 data feeds: 8815 datasets analysed so far, 1142 confirmed findings
+- 2026-11-07 14:10 data feeds: online
