@@ -28618,6 +28618,26 @@
    "family": "two-body decay",
    "expr": "sqrt((1 - (a - b)**2)*(1 - (a + b)**2) + (-a**2 + b**2 + 1)**2 + (a**2 - b**2 + 1)**2)/sqrt((1 - (a ",
    "why": "a power or product of known quantities"
+  },
+  {
+   "family": "collision",
+   "expr": "(-e**2*m + 1)/(e**2*m + 1)",
+   "why": "affine combination of known quantities (target speed / initial speed, Fraction of kinetic energy retained by projectile relative to target [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "(-e*m + 1)/(e*m + 1)",
+   "why": "affine combination of known quantities (target speed / initial speed, velocity ratio of projectile to target after collision [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "(e**2*m**2 + e**2*m)/(1 + m)**2",
+   "why": "affine combination of known quantities (fraction of kinetic energy lost, Fraction of kinetic energy retained by the projectile relative to initial kineti [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "1 - (1 - e**2)*(1 - m)/(1 + m)",
+   "why": "affine combination of known quantities (speed of the centre of mass / initial speed, Fraction of kinetic energy retained by the projectile relative to initial kineti [model-proposed; physical meaning unverified])"
   }
  ],
  "tried": [
@@ -35870,7 +35890,7 @@
    "k": "1"
   }
  ],
- "rounds": 1961,
+ "rounds": 1962,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",
