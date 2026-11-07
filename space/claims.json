@@ -1482619,5 +1482619,275 @@
   "statement": "Octal game 0.432072 is completely solved: its Grundy values are periodic with pre-period 19 and period 4 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.10801800",
+   "held_out_r2": 0.9824,
+   "held_out_rows": 588,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-1ae83307be48",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "112cd863cda0838a.csv",
+   "doi": "10.5281/zenodo.10801800",
+   "form": "linear",
+   "params": [
+    -1.1102315923938118,
+    -33.45457859526505
+   ],
+   "seed": 1058057156,
+   "x": "W_.Intercept.",
+   "y": "W_treatment.L"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Probiotics reshape the coral microbiome in situ without detectable off-targeted effects in' (Zenodo, doi 10.5281/zenodo.10801800): 'W_treatment.L' is linear in 'W_.Intercept.' (R\u00b2 = 0.979 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.13144427",
+   "held_out_r2": 0.9252,
+   "held_out_rows": 230,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3f811db556c3",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "99826d3d6fe71ead.csv",
+   "doi": "10.5281/zenodo.13144427",
+   "form": "power law",
+   "params": [
+    -0.10871290358606306,
+    0.9523146127752906
+   ],
+   "seed": 3491863865,
+   "x": "EFstart_Fig2_Drydowns_Site_US_SRG",
+   "y": "EFend_Fig2_Drydowns_Site_US_SRG"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Processed Data for Short Gianotti et al., \"Two Sub-Annual Time-Scales and Coupling Modes f' (Zenodo, doi 10.5281/zenodo.13144427): 'EFend_Fig2_Drydowns_Site_US_SRG' follows a power law in 'EFstart_Fig2_Drydowns_Site_US_SRG' (R\u00b2 = 0.950 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.13144427",
+   "held_out_r2": 0.9739,
+   "held_out_rows": 230,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3a4a1f040f92",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "99826d3d6fe71ead.csv",
+   "doi": "10.5281/zenodo.13144427",
+   "form": "linear",
+   "params": [
+    0.04838691538473503,
+    0.9430284647862659
+   ],
+   "seed": 3491863865,
+   "x": "GPPstart_gCperm2perDay_Fig2_Drydowns_Site_US_SRG",
+   "y": "GPPend_gCperm2perDay_Fig2_Drydowns_Site_US_SRG"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Processed Data for Short Gianotti et al., \"Two Sub-Annual Time-Scales and Coupling Modes f' (Zenodo, doi 10.5281/zenodo.13144427): 'GPPend_gCperm2perDay_Fig2_Drydowns_Site_US_SRG' is linear in 'GPPstart_gCperm2perDay_Fig2_Drydowns_Site_US_SRG' (R\u00b2 = 0.965 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.13144427",
+   "held_out_r2": 0.9914,
+   "held_out_rows": 230,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c9ca1b4ab058",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "99826d3d6fe71ead.csv",
+   "doi": "10.5281/zenodo.13144427",
+   "form": "power law",
+   "params": [
+    -0.40722473942993315,
+    0.890640797693395
+   ],
+   "seed": 3491863865,
+   "x": "SMstart_mm3permm3_Fig2_Drydowns_Site_US_SRG",
+   "y": "SMend_mm3permm3_Fig2_Drydowns_Site_US_SRG"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Processed Data for Short Gianotti et al., \"Two Sub-Annual Time-Scales and Coupling Modes f' (Zenodo, doi 10.5281/zenodo.13144427): 'SMend_mm3permm3_Fig2_Drydowns_Site_US_SRG' follows a power law in 'SMstart_mm3permm3_Fig2_Drydowns_Site_US_SRG' (R\u00b2 = 0.992 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.0ck07n7",
+   "held_out_r2": 0.9185,
+   "held_out_rows": 223,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9fa3614fad50",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f2f0a876bf3fbc4c.csv",
+   "doi": "10.5061/dryad.0ck07n7",
+   "form": "linear",
+   "params": [
+    -0.3478586983004702,
+    0.01911323882089478
+   ],
+   "seed": 3187344830,
+   "x": "total.length",
+   "y": "weight"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Field-realistic antidepressant exposure disrupts group foraging dynamics in mos' (Zenodo, doi 10.5061/dryad.0ck07n7): 'weight' is linear in 'total.length' (R\u00b2 = 0.916 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.0ck07n7",
+   "held_out_r2": 0.9103,
+   "held_out_rows": 223,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e8451494f53a",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f2f0a876bf3fbc4c.csv",
+   "doi": "10.5061/dryad.0ck07n7",
+   "form": "linear",
+   "params": [
+    -0.3330167945751356,
+    0.023005849185447826
+   ],
+   "seed": 3187344830,
+   "x": "std.length",
+   "y": "weight"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Field-realistic antidepressant exposure disrupts group foraging dynamics in mos' (Zenodo, doi 10.5061/dryad.0ck07n7): 'weight' is linear in 'std.length' (R\u00b2 = 0.905 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.0ck07n7",
+   "held_out_r2": 0.8927,
+   "held_out_rows": 57,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9037d035a0c1",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3462bab5833ea33f.csv",
+   "doi": "10.5061/dryad.0ck07n7",
+   "form": "linear",
+   "params": [
+    -6.855218386578599,
+    0.2726111176677617
+   ],
+   "seed": 1280412098,
+   "x": "total.length",
+   "y": "weight.z"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Field-realistic antidepressant exposure disrupts group foraging dynamics in mos' (Zenodo, doi 10.5061/dryad.0ck07n7): 'weight.z' is linear in 'total.length' (R\u00b2 = 0.930 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.0ck07n7",
+   "held_out_r2": 0.8755,
+   "held_out_rows": 57,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-8ef4514251d9",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3462bab5833ea33f.csv",
+   "doi": "10.5061/dryad.0ck07n7",
+   "form": "linear",
+   "params": [
+    -6.942466123332289,
+    0.34193438353987465
+   ],
+   "seed": 1280412098,
+   "x": "std.length",
+   "y": "weight.z"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Field-realistic antidepressant exposure disrupts group foraging dynamics in mos' (Zenodo, doi 10.5061/dryad.0ck07n7): 'weight.z' is linear in 'std.length' (R\u00b2 = 0.915 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.0ck07n7",
+   "held_out_r2": 0.8717,
+   "held_out_rows": 57,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9a8b120e4520",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3462bab5833ea33f.csv",
+   "doi": "10.5061/dryad.0ck07n7",
+   "form": "logarithmic",
+   "params": [
+    4.4173222874136195,
+    2.1063828212835682
+   ],
+   "seed": 1280412098,
+   "x": "weight",
+   "y": "length.z"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Field-realistic antidepressant exposure disrupts group foraging dynamics in mos' (Zenodo, doi 10.5061/dryad.0ck07n7): 'length.z' grows logarithmically in 'weight' (R\u00b2 = 0.921 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.0ck07n7",
+   "held_out_r2": 0.8722,
+   "held_out_rows": 57,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5ea1a5fc697e",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3462bab5833ea33f.csv",
+   "doi": "10.5061/dryad.0ck07n7",
+   "form": "linear",
+   "params": [
+    -0.05140083943419538,
+    0.9879735830652072
+   ],
+   "seed": 1280412098,
+   "x": "weight.z",
+   "y": "length.z"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Field-realistic antidepressant exposure disrupts group foraging dynamics in mos' (Zenodo, doi 10.5061/dryad.0ck07n7): 'length.z' is linear in 'weight.z' (R\u00b2 = 0.915 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
