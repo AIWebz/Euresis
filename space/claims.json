@@ -1644663,5 +1644663,140 @@
   "statement": "In 'COS profiles and LISA samples - Balloon-borne Stratospheric Vertical Profiling of Carbonyl' (Zenodo, doi 10.5281/zenodo.15749915): 'lon.amb.' grows logarithmically in 'lat.amb.' (R\u00b2 = 0.986 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15749915",
+   "held_out_r2": 0.8458,
+   "held_out_rows": 467,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-2f4beca84e39",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "759631f2d7ffde7a.csv",
+   "doi": "10.5281/zenodo.15749915",
+   "form": "power law",
+   "params": [
+    2.858642451521973,
+    0.48253667220455027
+   ],
+   "seed": 3368872082,
+   "x": "COS_ppt",
+   "y": "N2O_ppb"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'COS profiles and LISA samples - Balloon-borne Stratospheric Vertical Profiling of Carbonyl' (Zenodo, doi 10.5281/zenodo.15749915): 'N2O_ppb' follows a power law in 'COS_ppt' (R\u00b2 = 0.901 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15749915",
+   "held_out_r2": 0.9615,
+   "held_out_rows": 467,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-0c2ee6360805",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "759631f2d7ffde7a.csv",
+   "doi": "10.5281/zenodo.15749915",
+   "form": "linear",
+   "params": [
+    0.14771661914611042,
+    3.8529098403392896
+   ],
+   "seed": 3368872082,
+   "x": "N2O_sd",
+   "y": "CH4_sd"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'COS profiles and LISA samples - Balloon-borne Stratospheric Vertical Profiling of Carbonyl' (Zenodo, doi 10.5281/zenodo.15749915): 'CH4_sd' is linear in 'N2O_sd' (R\u00b2 = 0.967 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.q8k52",
+   "held_out_r2": 0.7498,
+   "held_out_rows": 45,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-1a49cdb60450",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "dace1db7dd2bc68b.csv",
+   "doi": "10.5061/dryad.q8k52",
+   "form": "linear",
+   "params": [
+    1.1898665842518055,
+    0.7342006006804963
+   ],
+   "seed": 1130193894,
+   "x": "activity day 1",
+   "y": "Mean first 2 days"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: You eat what you are: personality-dependent filial cannibalism in a fish with p' (Zenodo, doi 10.5061/dryad.q8k52): 'Mean first 2 days' is linear in 'activity day 1' (R\u00b2 = 0.906 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.77hm40j",
+   "held_out_r2": 0.9275,
+   "held_out_rows": 673,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f77d05fa219d",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "7047b245d1a87be1.csv",
+   "doi": "10.5061/dryad.77hm40j",
+   "form": "power law",
+   "params": [
+    -0.421635283959324,
+    1.0509368248384856
+   ],
+   "seed": 91814793,
+   "x": "VAP (_m/s)",
+   "y": "VSL (_m/s)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Evidence of rapid adaptive trait change to local salinity in the sperm of an in' (Zenodo, doi 10.5061/dryad.77hm40j): 'VSL (_m/s)' follows a power law in 'VAP (_m/s)' (R\u00b2 = 0.935 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.97q0th1",
+   "held_out_r2": 0.9854,
+   "held_out_rows": 161,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-911cf591b7dd",
+  "kind": "empirical",
+  "novelty": "KNOWN: stellar structure relations (radius, log g, mass, luminosity, Teff) \u2014 not a discovery",
+  "payload": {
+   "dataset": "a849614e5ebbb3dc.csv",
+   "doi": "10.5061/dryad.97q0th1",
+   "form": "exponential",
+   "params": [
+    2.052010020715309,
+    0.05105455071532928
+   ],
+   "seed": 2430624094,
+   "x": "Luminance contrast of red forewing area to plant - UVS system (JNDs)",
+   "y": "Luminance contrast of red forewing area to plant - VS system (JNDs)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Sex differences but no evidence of quantitative honesty in the warning signals ' (Zenodo, doi 10.5061/dryad.97q0th1): 'Luminance contrast of red forewing area to plant - VS system (JNDs)' grows exponentially in 'Luminance contrast of red forewing area to plant - UVS system (JNDs)' (R\u00b2 = 0.986 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
