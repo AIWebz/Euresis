@@ -1886191,5 +1886191,113 @@
   "statement": "Octal game 0.512627 is completely solved: its Grundy values are periodic with pre-period 1 and period 9 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11650269",
+   "held_out_r2": 0.9658,
+   "held_out_rows": 37,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3964bf5226cf",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "a70a522da53a67b6.csv",
+   "doi": "10.5281/zenodo.11650269",
+   "form": "linear",
+   "params": [
+    -0.003191596196673203,
+    0.7360424924407029
+   ],
+   "seed": 684030004,
+   "x": "GeneralPCoA1Bacteria",
+   "y": "GeneralPCoA1Fungi"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset for: Conventional and organic farms with more intensive management have lower soil' (Zenodo, doi 10.5281/zenodo.11650269): 'GeneralPCoA1Fungi' is linear in 'GeneralPCoA1Bacteria' (R\u00b2 = 0.981 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11650269",
+   "held_out_r2": 0.9438,
+   "held_out_rows": 37,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ace7963d9b6a",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "a70a522da53a67b6.csv",
+   "doi": "10.5281/zenodo.11650269",
+   "form": "linear",
+   "params": [
+    -0.004936380968261959,
+    0.6382853341713799
+   ],
+   "seed": 684030004,
+   "x": "GeneralPCoA1Bacteria",
+   "y": "GeneralPCoA1Protists"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset for: Conventional and organic farms with more intensive management have lower soil' (Zenodo, doi 10.5281/zenodo.11650269): 'GeneralPCoA1Protists' is linear in 'GeneralPCoA1Bacteria' (R\u00b2 = 0.975 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11650269",
+   "held_out_r2": 0.9655,
+   "held_out_rows": 37,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b5a4cdb90aeb",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "a70a522da53a67b6.csv",
+   "doi": "10.5281/zenodo.11650269",
+   "form": "linear",
+   "params": [
+    -0.002326711961481742,
+    0.8577365405471975
+   ],
+   "seed": 684030004,
+   "x": "GeneralPCoA1Fungi",
+   "y": "GeneralPCoA1Protists"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset for: Conventional and organic farms with more intensive management have lower soil' (Zenodo, doi 10.5281/zenodo.11650269): 'GeneralPCoA1Protists' is linear in 'GeneralPCoA1Fungi' (R\u00b2 = 0.973 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.6djh9w0xs",
+   "held_out_r2": 0.9999,
+   "held_out_rows": 59,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-6aea2434472c",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "6885f37f0eb0da38.csv",
+   "doi": "10.5061/dryad.6djh9w0xs",
+   "form": "logarithmic",
+   "params": [
+    0.01291347945409661,
+    0.9982968331141456
+   ],
+   "seed": 72429514,
+   "x": "Abundance_ind_m2",
+   "y": "ln_A_ind_m2"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Multiple environmental controls explain global patterns in soil animal communit' (Zenodo, doi 10.5061/dryad.6djh9w0xs): 'ln_A_ind_m2' grows logarithmically in 'Abundance_ind_m2' (R\u00b2 = 1.000 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
