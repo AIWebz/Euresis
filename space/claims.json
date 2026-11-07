@@ -1779453,7 +1779453,12 @@
   "verifier": "held-out-replication"
  },
  {
-  "evidence": null,
+  "evidence": {
+   "doi": "10.5281/zenodo.4474848",
+   "held_out_r2": 0.8349,
+   "held_out_rows": 41,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
   "id": "emp-fd812ffa2017",
   "kind": "empirical",
   "novelty": "not checked",
@@ -1779471,7 +1779476,115 @@
   },
   "source": "datafeeds.py",
   "statement": "In 'On the nature of mixed-type features in materials datasets' (Zenodo, doi 10.5281/zenodo.4474848): 'd1' is linear in 'delta-E' (R\u00b2 = 0.937 on the discovery half)",
-  "status": "candidate",
-  "verifier": null
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.4474848",
+   "held_out_r2": 0.9191,
+   "held_out_rows": 41,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-69e4029ff659",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "07b0099425ee9eac.csv",
+   "doi": "10.5281/zenodo.4474848",
+   "form": "linear",
+   "params": [
+    2.917035528492101,
+    7.838207871521717
+   ],
+   "seed": 3182179102,
+   "x": "delta-E2D",
+   "y": "d1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'On the nature of mixed-type features in materials datasets' (Zenodo, doi 10.5281/zenodo.4474848): 'd1' is linear in 'delta-E2D' (R\u00b2 = 0.961 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.4474848",
+   "held_out_r2": 0.8867,
+   "held_out_rows": 41,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-107c92563055",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "07b0099425ee9eac.csv",
+   "doi": "10.5281/zenodo.4474848",
+   "form": "linear",
+   "params": [
+    2.8931642147040932,
+    7.6727441979047555
+   ],
+   "seed": 3182179102,
+   "x": "delta-E3D",
+   "y": "d1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'On the nature of mixed-type features in materials datasets' (Zenodo, doi 10.5281/zenodo.4474848): 'd1' is linear in 'delta-E3D' (R\u00b2 = 0.949 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.4474848",
+   "held_out_r2": 0.9813,
+   "held_out_rows": 51,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-560f6a83c371",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "91d98c8e920ab08a.csv",
+   "doi": "10.5281/zenodo.4474848",
+   "form": "logarithmic",
+   "params": [
+    557.2040080701564,
+    -86.9535155374389
+   ],
+   "seed": 2940090670,
+   "x": "Z_R",
+   "y": "cov_r_R"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'On the nature of mixed-type features in materials datasets' (Zenodo, doi 10.5281/zenodo.4474848): 'cov_r_R' grows logarithmically in 'Z_R' (R\u00b2 = 0.978 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.4474848",
+   "held_out_r2": 0.9637,
+   "held_out_rows": 120,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ab477e050be1",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "0fac75c2f8796579.csv",
+   "doi": "10.5281/zenodo.4474848",
+   "form": "power law",
+   "params": [
+    -0.35504592244991034,
+    0.9997314707752313
+   ],
+   "seed": 4105686458,
+   "x": "B_boiling_point",
+   "y": "B_melting_point"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'On the nature of mixed-type features in materials datasets' (Zenodo, doi 10.5281/zenodo.4474848): 'B_melting_point' follows a power law in 'B_boiling_point' (R\u00b2 = 0.965 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
