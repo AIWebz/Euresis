@@ -1276,3 +1276,9 @@
 - 2026-11-07 13:09 FINDING (confirmed on held-out rows): In 'Data from: Projecting consequences of global warming for the functional diversity of flesh' (Zenodo, doi 10.5061/dryad.c0n737b): 'NorESM VD [m]' grows logarithmically in 'MRI-CGCM VD [m]' (R² = 0.944 on the discovery half); held-out R² = 0.944 [emp-2ad54619bd29]
 - 2026-11-07 13:09 data feeds: 8815 datasets analysed so far, 1142 confirmed findings
 - 2026-11-07 14:10 data feeds: online
+- 2026-11-07 14:11 FINDING (confirmed on held-out rows): In 'Environmental controls on light use efficiency' (Zenodo, doi 10.5281/zenodo.7270055): 'GPP_UNCSTD' is linear in 'PCT_FILLED' (R² = 0.985 on the discovery half); held-out R² = 0.984 [emp-e96019958912]
+- 2026-11-07 14:11 FINDING (confirmed on held-out rows): In 'Data from:Geographical and environmental factors differentially shape planktonic microbial' (Zenodo, doi 10.5281/zenodo.15226139): 'DIN' is linear in 'DTN' (R² = 0.926 on the discovery half); held-out R² = 0.988 [emp-e56a8154fe90]
+- 2026-11-07 14:11 FINDING (confirmed on held-out rows): In 'Data from:Geographical and environmental factors differentially shape planktonic microbial' (Zenodo, doi 10.5281/zenodo.15226139): 'DTP' is linear in 'DRP' (R² = 0.989 on the discovery half); held-out R² = 0.957 [emp-b849c3593469]
+- 2026-11-07 14:11 FINDING (confirmed on held-out rows): In 'Mapping the intertidal microphytobenthos Gross Primary Production' (Zenodo, doi 10.5281/zenodo.3862068): 'median' is linear in 'ndvimean' (R² = 0.979 on the discovery half); held-out R² = 0.987 [emp-6e1dcfc82089]
+- 2026-11-07 14:13 FINDING (confirmed on held-out rows): In 'Data from: Turning up the heat: more persistent precipitation regimes weaken the micro-cli' (Zenodo, doi 10.5281/zenodo.14725611): 'Relhummean' grows exponentially in 'VPDmean' (R² = 0.919 on the discovery half); held-out R² = 0.922 [emp-8ca3988cd0f9]
+- 2026-11-07 14:13 data feeds: 8939 datasets analysed so far, 1147 confirmed findings

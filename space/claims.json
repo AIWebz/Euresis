@@ -1811734,10 +1811734,15 @@
   "verifier": "guy-smith-periodicity"
  },
  {
-  "evidence": null,
+  "evidence": {
+   "doi": "10.5281/zenodo.7270055",
+   "held_out_r2": 0.9835,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
   "id": "emp-e96019958912",
   "kind": "empirical",
-  "novelty": "not checked",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
   "payload": {
    "dataset": "ba67c0b8b9c8c99a.csv",
    "doi": "10.5281/zenodo.7270055",
@@ -1811752,7 +1811757,169 @@
   },
   "source": "datafeeds.py",
   "statement": "In 'Environmental controls on light use efficiency' (Zenodo, doi 10.5281/zenodo.7270055): 'GPP_UNCSTD' is linear in 'PCT_FILLED' (R\u00b2 = 0.985 on the discovery half)",
-  "status": "candidate",
-  "verifier": null
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15226139",
+   "held_out_r2": 0.988,
+   "held_out_rows": 73,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e56a8154fe90",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "dcde31c7c4fccee5.csv",
+   "doi": "10.5281/zenodo.15226139",
+   "form": "linear",
+   "params": [
+    -0.44068120732170485,
+    0.9141280246548619
+   ],
+   "seed": 2715973259,
+   "x": "DTN",
+   "y": "DIN"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from:Geographical and environmental factors differentially shape planktonic microbial' (Zenodo, doi 10.5281/zenodo.15226139): 'DIN' is linear in 'DTN' (R\u00b2 = 0.926 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15226139",
+   "held_out_r2": 0.9574,
+   "held_out_rows": 73,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b849c3593469",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "dcde31c7c4fccee5.csv",
+   "doi": "10.5281/zenodo.15226139",
+   "form": "linear",
+   "params": [
+    0.03646588715277341,
+    1.0368509809208168
+   ],
+   "seed": 2715973259,
+   "x": "DRP",
+   "y": "DTP"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from:Geographical and environmental factors differentially shape planktonic microbial' (Zenodo, doi 10.5281/zenodo.15226139): 'DTP' is linear in 'DRP' (R\u00b2 = 0.989 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3862068",
+   "held_out_r2": 0.9868,
+   "held_out_rows": 171,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-6e1dcfc82089",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f56363c443bfe1a4.csv",
+   "doi": "10.5281/zenodo.3862068",
+   "form": "linear",
+   "params": [
+    -0.005067139228043544,
+    1.0497858119953656
+   ],
+   "seed": 3003528027,
+   "x": "ndvimean",
+   "y": "median"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Mapping the intertidal microphytobenthos Gross Primary Production' (Zenodo, doi 10.5281/zenodo.3862068): 'median' is linear in 'ndvimean' (R\u00b2 = 0.979 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3862068",
+   "held_out_r2": -Infinity,
+   "held_out_rows": 45,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-195a788669c3",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "acbabef5494c49d9.csv",
+   "doi": "10.5281/zenodo.3862068",
+   "form": "power law",
+   "params": [
+    -1.1050497936637589,
+    0.6009456485644126
+   ],
+   "seed": 1337759784,
+   "x": "PARmean",
+   "y": "MSTmean"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Mapping the intertidal microphytobenthos Gross Primary Production' (Zenodo, doi 10.5281/zenodo.3862068): 'MSTmean' follows a power law in 'PARmean' (R\u00b2 = 0.953 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14725611",
+   "held_out_r2": 0.9219,
+   "held_out_rows": 59,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-8ca3988cd0f9",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "e875226d50e91084.csv",
+   "doi": "10.5281/zenodo.14725611",
+   "form": "exponential",
+   "params": [
+    4.510461088393701,
+    -0.39241183707021016
+   ],
+   "seed": 1724583837,
+   "x": "VPDmean",
+   "y": "Relhummean"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Turning up the heat: more persistent precipitation regimes weaken the micro-cli' (Zenodo, doi 10.5281/zenodo.14725611): 'Relhummean' grows exponentially in 'VPDmean' (R\u00b2 = 0.919 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.6425715",
+   "held_out_r2": 0.3457,
+   "held_out_rows": 38,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d139245e8658",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "2d55aa95bda7e333.csv",
+   "doi": "10.5281/zenodo.6425715",
+   "form": "linear",
+   "params": [
+    -2636.054220448449,
+    3.587543764615171
+   ],
+   "seed": 3878934093,
+   "x": "samples",
+   "y": "running_total"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Public human microbiome data are dominated by highly developed countries' (Zenodo, doi 10.5281/zenodo.6425715): 'running_total' is linear in 'samples' (R\u00b2 = 0.924 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
  }
 ]
