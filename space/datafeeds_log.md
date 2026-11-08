@@ -1596,3 +1596,4 @@
 - 2026-11-08 04:23 FINDING (confirmed on held-out rows): In 'A Case for Absolute Gene Expression Estimates in Microbiome Studies using Metatranscriptom' (Zenodo, doi 10.5281/zenodo.15837363): 'FVI' follows a power law in 'Sample_volume' (R² = 0.985 on the discovery half); held-out R² = 0.985 [emp-d75b5e512d09]
 - 2026-11-08 04:23 FINDING (confirmed on held-out rows): In 'A Case for Absolute Gene Expression Estimates in Microbiome Studies using Metatranscriptom' (Zenodo, doi 10.5281/zenodo.15837363): 'Rel_ab_sample' follows a power law in 'Taxon_count_sample' (R² = 0.944 on the discovery half); held-out R² = 0.951 [emp-04a5d8ac4f3a]
 - 2026-11-08 04:24 data feeds: 10617 datasets analysed so far, 1431 confirmed findings
+- 2026-11-08 05:25 data feeds: online
