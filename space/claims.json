@@ -2125570,5 +2125570,599 @@
   "statement": "In 'Dataset for \"The origin and influence of non-cavity modes in a micropillar Bragg microcavi' (Figshare, doi 10.17035/cardiff.30238336.v1): '-5.932272727273E-6' is linear in '-6E-6' (R\u00b2 = 0.918 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-e65aa7dab292",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "m*(e + 1)/(m + 1) >= 9/4*(e**2*m**2/(e**2*m**2 + e**2*m**2/(m + 1)**2 + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 2434",
+  "statement": "[physics: collision] target speed / initial speed \u2265 9/4 \u00d7 Kinetic energy ratio of the target to the system after collision [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-9025b0604f83",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'target speed / initial speed'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "(e + 1)/(m + 1) >= 9/4*(e**2*m**2/(e**2*m**2 + e**2*m**2/(m + 1)**2 + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 2434",
+  "statement": "[physics: collision] momentum transferred / initial momentum \u2265 9/4 \u00d7 Kinetic energy ratio of the target to the system after collision [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-22e7233bfb97",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'target speed / initial speed'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "m/(m + 1) >= 9/8*(e**2*m**2/(e**2*m**2 + e**2*m**2/(m + 1)**2 + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 2434",
+  "statement": "[physics: collision] speed of the centre of mass / initial speed \u2265 9/8 \u00d7 Kinetic energy ratio of the target to the system after collision [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-260754df24e9",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "e*(m + 1)/(e*m + 1) >= 9/4*(e**2*m**2/(e**2*m**2 + e**2*m**2/(m + 1)**2 + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 2434",
+  "statement": "[physics: collision] velocity ratio of target to projectile after collision [model-proposed; physical meaning unverified] \u2265 9/4 \u00d7 Kinetic energy ratio of the target to the system after collision [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-69467b9ef675",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "e**2*(m**2 + 1)/(m + 1)**2 >= 1/2*(e**2*m**2/(e**2*m**2 + e**2*m**2/(m + 1)**2 + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 2434",
+  "statement": "[physics: collision] Fraction of kinetic energy retained by target [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 Kinetic energy ratio of the target to the system after collision [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 9.12e-05))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-f1e0b5e28838",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'target speed / initial speed'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "-e**2*m**2/(m + 1)**2 + 1 >= 27/16*(e**2*m**2/(e**2*m**2 + e**2*m**2/(m + 1)**2 + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 2434",
+  "statement": "[physics: collision] Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified] \u2265 27/16 \u00d7 Kinetic energy ratio of the target to the system after collision [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-9e6b68032d77",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "e**2*m**2/(m + 1)**2 + e**2 >= 5/4*(e**2*m**2/(e**2*m**2 + e**2*m**2/(m + 1)**2 + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 2434",
+  "statement": "[physics: collision] Fraction of kinetic energy transferred to the target [model-proposed; physical meaning unverified] \u2265 5/4 \u00d7 Kinetic energy ratio of the target to the system after collision [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 9.12e-05))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-790c3f447d63",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "e**2*m**2/(m + 1)**2 + e**2*m/(m + 1) >= 3/4*(e**2*m**2/(e**2*m**2 + e**2*m**2/(m + 1)**2 + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 2434",
+  "statement": "[physics: collision] Fraction of kinetic energy retained by the target [model-proposed; physical meaning unverified] \u2265 3/4 \u00d7 Kinetic energy ratio of the target to the system after collision [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 9.12e-05))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-627816a5cd77",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'Fraction of kinetic energy retained by the target [model-proposed; physical meaning unverified]'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "e**2*m**2/(m + 1)**2 + e**2*m/(m + 1) - m*(1 - e**2)/(m + 1) - (1 - e**2)/(m + 1) + 1 >= 7/4*(e**2*m**2/(e**2*m**2 + e**2*m**2/(m + 1)**2 + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 2434",
+  "statement": "[physics: collision] Fraction of kinetic energy retained by projectile relative to initial kinetic en [model-proposed; physical meaning unverified] \u2265 7/4 \u00d7 Kinetic energy ratio of the target to the system after collision [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 9.75e-05))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-1a22b498b20e",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'Fraction of kinetic energy retained by the target [model-proposed; physical meaning unverified]'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "e**2*m**2/(m + 1)**2 + e**2*m/(m + 1) - 2*m*(1 - e**2)/(m + 1) + 1 >= 7/4*(e**2*m**2/(e**2*m**2 + e**2*m**2/(m + 1)**2 + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 2434",
+  "statement": "[physics: collision] Fraction of kinetic energy transferred to the target relative to initial kinetic [model-proposed; physical meaning unverified] \u2265 7/4 \u00d7 Kinetic energy ratio of the target to the system after collision [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 9.95e-05))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-b5562e22d002",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "-e**2*m**2/(m + 1)**2 - m*(1 - e**2)/(m + 1) + 1 >= 27/16*(e**2*m**2/(e**2*m**2 + e**2*m**2/(m + 1)**2 + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 2434",
+  "statement": "[physics: collision] Fraction of kinetic energy retained by the system relative to initial kinetic en [model-proposed; physical meaning unverified] \u2265 27/16 \u00d7 Kinetic energy ratio of the target to the system after collision [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-3e9a7cf771b0",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "m**2*(e + 1)**2/((e**2 + 1)*(m + 1)**2) >= 9/8*(e**2*m**2/(e**2*m**2 + e**2*m**2/(m + 1)**2 + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 2434",
+  "statement": "[physics: collision] Kinetic energy ratio after collision [model-proposed; physical meaning unverified] \u2265 9/8 \u00d7 Kinetic energy ratio of the target to the system after collision [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-1c8a9ae9f84e",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "e**2*m/((m + 1)*((e**2 - 1)/(m + 1) + 1)) >= 1*(e**2*m**2/(e**2*m**2 + e**2*m**2/(m + 1)**2 + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 2434",
+  "statement": "[physics: collision] Ratio of kinetic energy transferred to the target over initial kinetic energy [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Kinetic energy ratio of the target to the system after collision [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 9.12e-05))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-b57de058ad0f",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "e**2*m**2/(e**2*m**2 + 1) >= 1*(e**2*m**2/(e**2*m**2 + e**2*m**2/(m + 1)**2 + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 2434",
+  "statement": "[physics: collision] Kinetic energy ratio of the target to the projectile after collision [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Kinetic energy ratio of the target to the system after collision [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (0.0001, 0.000113))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 2",
+    "z < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-270aaf345fb1",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 2",
+    "z < 1"
+   ],
+   "claim": "1/sqrt(4*r**2*z**2 + (1 - r**2)**2) >= 21/20*(2*r**2*z/(8*r**2*z**2 + (1 - r**2)**2 + 1))",
+   "symbols": [
+    "r",
+    "z"
+   ]
+  },
+  "source": "physics_discover2 round 2435",
+  "statement": "[physics: driven oscillator] amplitude / static deflection \u2265 21/20 \u00d7 Normalized Power Transmission (Corrected) [model-proposed; physical meaning unverified]   on r < 2, z < 1 (tight only at the edge of the domain, near (2, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 2",
+    "z < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-aac76ebb100a",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 2",
+    "z < 1"
+   ],
+   "claim": "r**2/sqrt(4*r**2*z**2 + (1 - r**2)**2) >= 1*(2*r**2*z/(8*r**2*z**2 + (1 - r**2)**2 + 1))",
+   "symbols": [
+    "r",
+    "z"
+   ]
+  },
+  "source": "physics_discover2 round 2435",
+  "statement": "[physics: driven oscillator] acceleration amplitude / (\u03c90\u00b2 \u00d7 static deflection) \u2265 1 \u00d7 Normalized Power Transmission (Corrected) [model-proposed; physical meaning unverified]   on r < 2, z < 1 (tight only at the edge of the domain, near (0.000182, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 2",
+    "z < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-c7aa17794bb6",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 2",
+    "z < 1"
+   ],
+   "claim": "2*r**2*z/(4*r**2*z**2 + (1 - r**2)**2) >= 10/9*(2*r**2*z/(8*r**2*z**2 + (1 - r**2)**2 + 1))",
+   "symbols": [
+    "r",
+    "z"
+   ]
+  },
+  "source": "physics_discover2 round 2435",
+  "statement": "[physics: driven oscillator] mean absorbed power (normalised) \u2265 10/9 \u00d7 Normalized Power Transmission (Corrected) [model-proposed; physical meaning unverified]   on r < 2, z < 1 (tight only at the edge of the domain, near (2, 9.12e-05))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 2",
+    "z < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-83e1022d2dec",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 2",
+    "z < 1"
+   ],
+   "claim": "1/sqrt(4*r**4*z**4 - 4*r**2*z**2 + 1) >= 3/4*(2*r**2*z/(8*r**2*z**2 + (1 - r**2)**2 + 1))",
+   "symbols": [
+    "r",
+    "z"
+   ]
+  },
+  "source": "physics_discover2 round 2435",
+  "statement": "[physics: driven oscillator] Peak amplitude ratio [model-proposed; physical meaning unverified] \u2265 3/4 \u00d7 Normalized Power Transmission (Corrected) [model-proposed; physical meaning unverified]   on r < 2, z < 1 (tight only at the edge of the domain, near (2, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 2",
+    "z < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-2ab9d0d50915",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 2",
+    "z < 1"
+   ],
+   "claim": "2*r**2*z/(4*r**2*z**2 + (1 - r**2)**2 + 1) >= 1*(2*r**2*z/(8*r**2*z**2 + (1 - r**2)**2 + 1))",
+   "symbols": [
+    "r",
+    "z"
+   ]
+  },
+  "source": "physics_discover2 round 2435",
+  "statement": "[physics: driven oscillator] Relative energy loss per cycle [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Normalized Power Transmission (Corrected) [model-proposed; physical meaning unverified]   on r < 2, z < 1 (tight only at the edge of the domain, near (0.0002, 0.0001))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 2",
+    "z < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-3616f6dcc344",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 2",
+    "z < 1"
+   ],
+   "claim": "2*r**2*z/(8*r**2*z**2 + (1 - r**2)**2) >= 42/41*(2*r**2*z/(8*r**2*z**2 + (1 - r**2)**2 + 1))",
+   "symbols": [
+    "r",
+    "z"
+   ]
+  },
+  "source": "physics_discover2 round 2435",
+  "statement": "[physics: driven oscillator] Normalized power transmission [model-proposed; physical meaning unverified] \u2265 42/41 \u00d7 Normalized Power Transmission (Corrected) [model-proposed; physical meaning unverified]   on r < 2, z < 1 (tight only at the edge of the domain, near (2, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 2",
+    "z < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-a19134bd81e5",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'Relative energy loss per cycle [model-proposed; physical meaning unverified]'",
+  "payload": {
+   "assumptions": [
+    "r < 2",
+    "z < 1"
+   ],
+   "claim": "sqrt(4*r**2*z**2 + (1 - r**2)**2)/sqrt(4*z**2 + 1) >= 1*(2*r**2*z/(8*r**2*z**2 + (1 - r**2)**2 + 1))",
+   "symbols": [
+    "r",
+    "z"
+   ]
+  },
+  "source": "physics_discover2 round 2435",
+  "statement": "[physics: driven oscillator] Mechanical Impedance Ratio [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Normalized Power Transmission (Corrected) [model-proposed; physical meaning unverified]   on r < 2, z < 1 (tight only at the edge of the domain, near (1, 3.68e-09))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-679255e605e8",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "e**2*m**2/(e**2*m**2 + e**2*m**2/(m + 1)**2 + 1) >= 8/9*(e**2*m**2/(e**2*m**2 + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 2442",
+  "statement": "[physics: collision] Kinetic energy ratio of the target to the system after collision [model-proposed; physical meaning unverified] \u2265 8/9 \u00d7 Kinetic energy ratio of the target to the projectile after collision [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]
