@@ -35799,6 +35799,26 @@
    "family": "insurance and risk",
    "expr": "L**2*p**2/(-p*sqrt(1 - L) + sqrt(1 - L) - sqrt(-L*p + 1) + 1)**2",
    "why": "a power or product of known quantities"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(1/3 + r**2 - 4*r**3/3)/(2*(1 - r**3)/3 + v*r**2)",
+   "why": "affine combination of known quantities (Welfare Reserve Ratio [model-proposed; physical meaning unverified], 1/(Welfare Reserve Efficiency with Seller Value [model-proposed; physical meaning unverified]))"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(1/3 - r**2 + 2*r**3/3)/(1/3 + r**2 - 4*r**3/3 + v*r**2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(2*(1 - r**3)/3 + v*r**2)/(2/3 + v**3/3)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(1/3 - r**2 + 2*r**3/3)/(2*r**3/3 - r**2 + 1/3)",
+   "why": "must depend only on r, v"
   }
  ],
  "tried": [
@@ -44653,7 +44673,7 @@
    "k": "1"
   }
  ],
- "rounds": 2495,
+ "rounds": 2496,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",
