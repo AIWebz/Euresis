@@ -1675,3 +1675,4 @@
 - 2026-11-08 09:18 FINDING (confirmed on held-out rows): In 'The Application of a Snowpack Runoff Decision Support System for Rain-on-Snow Events Datas' (Zenodo, doi 10.5281/zenodo.13891670): 'sh_snowdepth_cm' is linear in 'sh_SWE_mm' (R² = 0.903 on the discovery half); held-out R² = 0.903 [emp-3b9698d2639e]
 - 2026-11-08 09:20 FINDING (confirmed on held-out rows): In 'Data and code for “Rising microplastic loads increasingly exceed retention thresholds in C' (Figshare, doi 10.6084/m9.figshare.34560030.v2): 'ratio_hinge' is linear in 'ratio_slope' (R² = 0.976 on the discovery half); held-out R² = 0.978 [emp-f73b40501be5]
 - 2026-11-08 09:20 data feeds: 11327 datasets analysed so far, 1500 confirmed findings
+- 2026-11-08 10:04 data feeds: online
