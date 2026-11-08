@@ -1610,3 +1610,4 @@
 - 2026-11-08 05:27 FINDING (confirmed on held-out rows): In 'Anisotropic Node Distortions in Amorphous MOFs: Low Valent Zr Sites as Catalytic Hotspots' (Zenodo, doi 10.5281/zenodo.15221524): 'Sigma ap/m^2 g^-1' is linear in 'dVp/d(W)' (R² = 0.909 on the discovery half); held-out R² = 0.930 [emp-abc81aff1a63]
 - 2026-11-08 05:27 FINDING (confirmed on held-out rows): In 'Anisotropic Node Distortions in Amorphous MOFs: Low Valent Zr Sites as Catalytic Hotspots' (Zenodo, doi 10.5281/zenodo.15221524): 'Sigma ap/m^2 g^-1' is linear in 'dap/dlog(W)' (R² = 0.909 on the discovery half); held-out R² = 0.930 [emp-7c71e16fc759]
 - 2026-11-08 05:28 data feeds: 10721 datasets analysed so far, 1443 confirmed findings
+- 2026-11-08 06:15 data feeds: online
