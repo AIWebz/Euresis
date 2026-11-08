@@ -1521,3 +1521,4 @@
 - 2026-11-08 01:38 FINDING (confirmed on held-out rows): In 'Photometric data for 2022 & 2023 perihelion JFCs' (Zenodo, doi 10.5281/zenodo.15641211): 'err' follows a power law in 'skyback' (R² = 0.954 on the discovery half); held-out R² = 0.943 [emp-a235ef46d3ad]
 - 2026-11-08 01:39 FINDING (confirmed on held-out rows): In 'Spacekit Data Archive' (Zenodo, doi 10.5281/zenodo.18271832): 'total_mb' grows exponentially in 'x_size' (R² = 0.999 on the discovery half); held-out R² = 0.999 [emp-488fc4d870e9]
 - 2026-11-08 01:39 data feeds: 10246 datasets analysed so far, 1362 confirmed findings
+- 2026-11-08 02:26 data feeds: online
