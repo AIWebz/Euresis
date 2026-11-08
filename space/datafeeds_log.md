@@ -1828,3 +1828,4 @@
 - 2026-11-08 12:01 FINDING (confirmed on held-out rows): In 'Table 8_An integrative analysis of transcriptome and single-cell RNA sequencing data ident' (Figshare, doi 10.3389/fimmu.2026.1875379.s008): 'NES' is linear in 'enrichmentScore' (R² = 0.955 on the discovery half); held-out R² = 0.953 [emp-5c010960f2e9]
 - 2026-11-08 12:01 FINDING (confirmed on held-out rows): In 'Table 7_An integrative analysis of transcriptome and single-cell RNA sequencing data ident' (Figshare, doi 10.3389/fimmu.2026.1875379.s007): 'NES' is linear in 'enrichmentScore' (R² = 0.907 on the discovery half); held-out R² = 0.978 [emp-5809fb5b2207]
 - 2026-11-08 12:01 data feeds: 11554 datasets analysed so far, 1647 confirmed findings
+- 2026-11-08 13:05 data feeds: online
