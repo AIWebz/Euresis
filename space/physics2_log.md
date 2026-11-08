@@ -2205,3 +2205,8 @@
 - 2026-11-08 00:36 round 2021: Compton scattering
 - 2026-11-08 00:36 round 2022: Cournot duopoly
 - 2026-11-08 00:37 round 2023: insurance and risk
+- 2026-11-08 00:38 round 2024: auction with a reserve price
+- 2026-11-08 00:40 round 2025: two-body decay
+- 2026-11-08 00:41 round 2026: collision
+- 2026-11-08 00:42 round 2027: driven oscillator
+- 2026-11-08 00:43 round 2028: velocity addition
