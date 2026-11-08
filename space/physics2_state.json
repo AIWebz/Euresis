@@ -29364,6 +29364,41 @@
    "family": "collision",
    "expr": "1 - m*(1 - e**2)/(m + 1) - e**2*m**2/(m + 1)**2 - e**2*m/(m + 1)",
    "why": "affine combination of known quantities (speed of the centre of mass / initial speed, Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt((1 - r**2)**2 + (2*z*r)**2)",
+   "why": "affine combination of known quantities (amplitude / static deflection, 1/(amplitude / static deflection))"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "atan(2*z*r/(1 - r**2))",
+   "why": "only + \u2212 \u00d7 \u00f7, integer powers and square roots (so the prover can decide it)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(4*r**2*z**2 + 1)*sqrt(4*r**2*z**2 + (1 - r**2)**2)/(2*r*z*(sqrt(4*r**2*z**2 + 1) + sqrt(4*r**2*",
+   "why": "affine combination of known quantities (quality factor, Power Amplification Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(4*z**2 + 1) - 1",
+   "why": "affine combination of known quantities (amplitude / static deflection, Resonance Width [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 - u**2)*(1 - v**2) + (u + v)**2/(u*v + 1)**2) / sqrt(1 - ((u + v)/(1 + u*v))**2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "1 - c/(1 + x*c)",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "((1 - 2*c1 + c2)**2 + (1 - 2*c2 + c1)**2)/((1 - c1)**2 + (1 - c2)**2)",
+   "why": "affine combination of known quantities (output of firm 1, Hirshleifer Index [model-proposed; physical meaning unverified])"
   }
  ],
  "tried": [
@@ -32532,7 +32567,21 @@
   "driven oscillator|Resonance Width [model-proposed; physical meaning unverified]|transmissibility",
   "driven oscillator|Resonance Width [model-proposed; physical meaning unverified]|velocity amplitude / (\u03c90 \u00d7 static deflection)",
   "driven oscillator|Resonance Width [model-proposed; physical meaning unverified]|acceleration amplitude / (\u03c90\u00b2 \u00d7 static deflection)",
-  "driven oscillator|Resonance Width [model-proposed; physical meaning unverified]|mean absorbed power (normalised)"
+  "driven oscillator|Resonance Width [model-proposed; physical meaning unverified]|mean absorbed power (normalised)",
+  "driven oscillator|Resonance Width [model-proposed; physical meaning unverified]|quality factor",
+  "driven oscillator|Resonance Width [model-proposed; physical meaning unverified]|log decrement [model-proposed; physical meaning unverified]",
+  "driven oscillator|Resonance Width [model-proposed; physical meaning unverified]|resonance frequency ratio [model-proposed; physical meaning unverified]",
+  "driven oscillator|Resonance Width [model-proposed; physical meaning unverified]|resonance amplitude ratio [model-proposed; physical meaning unverified]",
+  "driven oscillator|Resonance Width [model-proposed; physical meaning unverified]|Resonance frequency shift [model-proposed; physical meaning unverified]",
+  "driven oscillator|Resonance Width [model-proposed; physical meaning unverified]|Peak amplitude ratio [model-proposed; physical meaning unverified]",
+  "driven oscillator|Resonance Width [model-proposed; physical meaning unverified]|Resonance frequency ratio (corrected) [model-proposed; physical meaning unverified]",
+  "driven oscillator|Resonance Width [model-proposed; physical meaning unverified]|Relative energy loss per cycle [model-proposed; physical meaning unverified]",
+  "driven oscillator|Resonance Width [model-proposed; physical meaning unverified]|Normalized power transmission [model-proposed; physical meaning unverified]",
+  "driven oscillator|Resonance Width [model-proposed; physical meaning unverified]|Velocity transmissibility [model-proposed; physical meaning unverified]",
+  "driven oscillator|Resonance Width [model-proposed; physical meaning unverified]|Acceleration transmissibility [model-proposed; physical meaning unverified]",
+  "driven oscillator|Resonance Width [model-proposed; physical meaning unverified]|Energy Dissipation Ratio [model-proposed; physical meaning unverified]",
+  "driven oscillator|Resonance Width [model-proposed; physical meaning unverified]|Power Amplification Factor [model-proposed; physical meaning unverified]",
+  "driven oscillator|Resonance Width [model-proposed; physical meaning unverified]|Power Amplification Ratio [model-proposed; physical meaning unverified]"
  ],
  "edges": [
   {
@@ -36640,7 +36689,7 @@
    "k": "1"
   }
  ],
- "rounds": 2018,
+ "rounds": 2022,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",
