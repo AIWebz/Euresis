@@ -2173578,5 +2173578,275 @@
   "statement": "Octal game 0.543644 is completely solved: its Grundy values are periodic with pre-period 699 and period 10 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.g1jwstqqg",
+   "held_out_r2": 0.9059,
+   "held_out_rows": 31,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-0cf91fe746cf",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "48272d1790635b5e.csv",
+   "doi": "10.5061/dryad.g1jwstqqg",
+   "form": "power law",
+   "params": [
+    2.0202806127248696,
+    1.043476431918082
+   ],
+   "seed": 3554598775,
+   "x": "invplantsfreq",
+   "y": "invspeciesfreq"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Botany is the root and the future of invasion biology' (Zenodo, doi 10.5061/dryad.g1jwstqqg): 'invspeciesfreq' follows a power law in 'invplantsfreq' (R\u00b2 = 0.954 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.g1jwstqqg",
+   "held_out_r2": 0.7689,
+   "held_out_rows": 31,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-6aee50335bcc",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "48272d1790635b5e.csv",
+   "doi": "10.5061/dryad.g1jwstqqg",
+   "form": "linear",
+   "params": [
+    6.645902074769601e-11,
+    0.006597625275224547
+   ],
+   "seed": 3554598775,
+   "x": "invspeciesfreq",
+   "y": "invinsectsfreq"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Botany is the root and the future of invasion biology' (Zenodo, doi 10.5061/dryad.g1jwstqqg): 'invinsectsfreq' is linear in 'invspeciesfreq' (R\u00b2 = 0.937 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.g1jwstqqg",
+   "held_out_r2": 0.769,
+   "held_out_rows": 31,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-afedf786ad07",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "48272d1790635b5e.csv",
+   "doi": "10.5061/dryad.g1jwstqqg",
+   "form": "linear",
+   "params": [
+    2.6383592394657684e-10,
+    2.6471741800950936
+   ],
+   "seed": 3554598775,
+   "x": "invinsectsfreq",
+   "y": "invanimalfreq"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Botany is the root and the future of invasion biology' (Zenodo, doi 10.5061/dryad.g1jwstqqg): 'invanimalfreq' is linear in 'invinsectsfreq' (R\u00b2 = 0.935 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.6502355",
+   "held_out_r2": 0.7823,
+   "held_out_rows": 275,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b88a34f9760c",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "e078776e0e0990df.csv",
+   "doi": "10.5281/zenodo.6502355",
+   "form": "power law",
+   "params": [
+    0.14194190466861886,
+    0.9627053239226365
+   ],
+   "seed": 1659373269,
+   "x": "id_trend",
+   "y": "id_ecosystem"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data on global trends and drivers of submerged aquatic vegetation quantities in lakes' (Zenodo, doi 10.5281/zenodo.6502355): 'id_ecosystem' follows a power law in 'id_trend' (R\u00b2 = 0.940 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17860412",
+   "held_out_r2": 0.9884,
+   "held_out_rows": 80,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9a91f331e9cc",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "a6bb0e0d7c3dcbe5.csv",
+   "doi": "10.5281/zenodo.17860412",
+   "form": "power law",
+   "params": [
+    0.5823539989607698,
+    1.0559194500602673
+   ],
+   "seed": 1153069482,
+   "x": "pom.c.pct",
+   "y": "pom.c.g.kg"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Combined legacy effects of drought and diverse plant residues: Fate and priming' (Zenodo, doi 10.5281/zenodo.17860412): 'pom.c.g.kg' follows a power law in 'pom.c.pct' (R\u00b2 = 0.988 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.f1vhhmgxf",
+   "held_out_r2": 0.9636,
+   "held_out_rows": 688,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-6dfd878d2aed",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "ba643e1611c5a4b1.csv",
+   "doi": "10.5061/dryad.f1vhhmgxf",
+   "form": "linear",
+   "params": [
+    87.44016863480647,
+    -9.695990429223587
+   ],
+   "seed": 3499287277,
+   "x": "Infection_load",
+   "y": "DOD"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Male reproductive effort might be evolving in the face of devastating disease in a threate' (Zenodo, doi 10.5061/dryad.f1vhhmgxf): 'DOD' is linear in 'Infection_load' (R\u00b2 = 0.961 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.f1vhhmgxf",
+   "held_out_r2": 0.9608,
+   "held_out_rows": 688,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ebd75281d7cd",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "ba643e1611c5a4b1.csv",
+   "doi": "10.5061/dryad.f1vhhmgxf",
+   "form": "power law",
+   "params": [
+    -0.249022044966415,
+    1.9443351225211691
+   ],
+   "seed": 3499287277,
+   "x": "Oviduct_width",
+   "y": "Oviduct_area"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Male reproductive effort might be evolving in the face of devastating disease in a threate' (Zenodo, doi 10.5061/dryad.f1vhhmgxf): 'Oviduct_area' follows a power law in 'Oviduct_width' (R\u00b2 = 0.963 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.f1vhhmgxf",
+   "held_out_r2": 0.9637,
+   "held_out_rows": 688,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-8780272dd650",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "ba643e1611c5a4b1.csv",
+   "doi": "10.5061/dryad.f1vhhmgxf",
+   "form": "power law",
+   "params": [
+    -0.6417179338903087,
+    1.9091690020868755
+   ],
+   "seed": 3499287277,
+   "x": "Oviduct_height",
+   "y": "Oviduct_area"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Male reproductive effort might be evolving in the face of devastating disease in a threate' (Zenodo, doi 10.5061/dryad.f1vhhmgxf): 'Oviduct_area' follows a power law in 'Oviduct_height' (R\u00b2 = 0.964 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.f1vhhmgxf",
+   "held_out_r2": 0.939,
+   "held_out_rows": 534,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c057c5bd7405",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "5a42cfd335662b49.csv",
+   "doi": "10.5061/dryad.f1vhhmgxf",
+   "form": "exponential",
+   "params": [
+    4.409288193324482,
+    -2.995447687564052
+   ],
+   "seed": 1926904541,
+   "x": "Egg_width",
+   "y": "Eggs_per_area"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Male reproductive effort might be evolving in the face of devastating disease in a threate' (Zenodo, doi 10.5061/dryad.f1vhhmgxf): 'Eggs_per_area' grows exponentially in 'Egg_width' (R\u00b2 = 0.931 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.f1vhhmgxf",
+   "held_out_r2": 0.915,
+   "held_out_rows": 534,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-2c5418e0a185",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "5a42cfd335662b49.csv",
+   "doi": "10.5061/dryad.f1vhhmgxf",
+   "form": "logarithmic",
+   "params": [
+    0.2905165720080607,
+    -0.22025970973345718
+   ],
+   "seed": 1926904541,
+   "x": "Eggs_per_area",
+   "y": "Log_egg_width"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Male reproductive effort might be evolving in the face of devastating disease in a threate' (Zenodo, doi 10.5061/dryad.f1vhhmgxf): 'Log_egg_width' grows logarithmically in 'Eggs_per_area' (R\u00b2 = 0.906 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
