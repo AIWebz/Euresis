@@ -1802,3 +1802,4 @@
 - 2026-11-08 11:17 FINDING (confirmed on held-out rows): In 'Data from: Genetic constraints predict evolutionary divergence in Dalechampia blossoms' (Zenodo, doi 10.5061/dryad.4ff1t): 'SWl' is linear in 'SWc' (R² = 0.909 on the discovery half); held-out R² = 0.860 [emp-1d3b0e19c15e]
 - 2026-11-08 11:17 FINDING (confirmed on held-out rows): In 'Data from: Genetic constraints predict evolutionary divergence in Dalechampia blossoms' (Zenodo, doi 10.5061/dryad.4ff1t): 'UBLl' is linear in 'UBLc' (R² = 0.906 on the discovery half); held-out R² = 0.901 [emp-441991787c02]
 - 2026-11-08 11:17 data feeds: 11493 datasets analysed so far, 1623 confirmed findings
+- 2026-11-08 11:59 data feeds: online
