@@ -1967086,5 +1967086,113 @@
   "statement": "In 'Data: The magnitude and pace of photosynthetic recovery after wildfire in California ecosy' (Zenodo, doi 10.5061/dryad.9w0vt4bkr): 'fitted' is linear in 'NIRv_monthly_gf' (R\u00b2 = 0.968 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 2",
+    "z < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-68c39b2dde57",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 2",
+    "z < 1"
+   ],
+   "claim": "sqrt(4*r**2*z**2 + 1)/sqrt(4*r**2*z**2 + (1 - r**2)**2) >= 1/9*(sqrt(4*r**2*z**2 + (1 - r**2)**2)/sqrt(4*z**2 + 1))",
+   "symbols": [
+    "r",
+    "z"
+   ]
+  },
+  "source": "physics_discover2 round 2107",
+  "statement": "[physics: driven oscillator] transmissibility \u2265 1/9 \u00d7 Mechanical Impedance Ratio [model-proposed; physical meaning unverified]   on r < 2, z < 1 (tight only at the edge of the domain, near (2, 9.12e-05))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 2",
+    "z < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-9226670f3a74",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'transmissibility'",
+  "payload": {
+   "assumptions": [
+    "r < 2",
+    "z < 1"
+   ],
+   "claim": "sqrt(8*r**2*z**2 + 1)/sqrt(4*r**2*z**2 + (1 - r**2)**2) >= 1/9*(sqrt(4*r**2*z**2 + (1 - r**2)**2)/sqrt(4*z**2 + 1))",
+   "symbols": [
+    "r",
+    "z"
+   ]
+  },
+  "source": "physics_discover2 round 2107",
+  "statement": "[physics: driven oscillator] Velocity transmissibility [model-proposed; physical meaning unverified] \u2265 1/9 \u00d7 Mechanical Impedance Ratio [model-proposed; physical meaning unverified]   on r < 2, z < 1 (tight only at the edge of the domain, near (2, 9.12e-05))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 2",
+    "z < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-b44334dcd869",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'transmissibility'",
+  "payload": {
+   "assumptions": [
+    "r < 2",
+    "z < 1"
+   ],
+   "claim": "sqrt(16*r**4*z**4 + 4*r**2*z**2 + 1)/sqrt(4*r**2*z**2 + (1 - r**2)**2) >= 1/9*(sqrt(4*r**2*z**2 + (1 - r**2)**2)/sqrt(4*z**2 + 1))",
+   "symbols": [
+    "r",
+    "z"
+   ]
+  },
+  "source": "physics_discover2 round 2107",
+  "statement": "[physics: driven oscillator] Acceleration transmissibility [model-proposed; physical meaning unverified] \u2265 1/9 \u00d7 Mechanical Impedance Ratio [model-proposed; physical meaning unverified]   on r < 2, z < 1 (tight only at the edge of the domain, near (2, 9.12e-05))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 2",
+    "z < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-539870509d27",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 2",
+    "z < 1"
+   ],
+   "claim": "2*r**2*z/((r**2 + 1)*(4*r**2*z**2 + (1 - r**2)**2)) + 1 >= 1/3*(sqrt(4*r**2*z**2 + (1 - r**2)**2)/sqrt(4*z**2 + 1))",
+   "symbols": [
+    "r",
+    "z"
+   ]
+  },
+  "source": "physics_discover2 round 2107",
+  "statement": "[physics: driven oscillator] Energy Dissipation Ratio [model-proposed; physical meaning unverified] \u2265 1/3 \u00d7 Mechanical Impedance Ratio [model-proposed; physical meaning unverified]   on r < 2, z < 1 (tight only at the edge of the domain, near (2, 1.99e-15))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]

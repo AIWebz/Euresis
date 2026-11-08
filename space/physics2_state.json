@@ -68,7 +68,8 @@
    "Energy Dissipation Ratio [model-proposed; physical meaning unverified]": "2*r**2*z/((r**2 + 1)*(4*r**2*z**2 + (1 - r**2)**2)) + 1",
    "Power Amplification Factor [model-proposed; physical meaning unverified]": "1 + sqrt(4*r**2*z**2 + 1)/(2*r*z*sqrt(4*r**2*z**2 + (1 - r**2)**2))",
    "Power Amplification Ratio [model-proposed; physical meaning unverified]": "sqrt(4*r**2*z**2 + 1)*sqrt(4*r**2*z**2 + (1 - r**2)**2)/(2*r*z*(sqrt(4*r**2*z**2 + 1) + sqrt(4*r**2*z**2 + (1 - r**2)**2)))",
-   "Resonance Width [model-proposed; physical meaning unverified]": "sqrt(4*z**2 + 1) - 1"
+   "Resonance Width [model-proposed; physical meaning unverified]": "sqrt(4*z**2 + 1) - 1",
+   "Mechanical Impedance Ratio [model-proposed; physical meaning unverified]": "sqrt(4*r**2*z**2 + (1 - r**2)**2)/sqrt(4*z**2 + 1)"
   },
   "velocity addition": {
    "composed speed / c": "(u + v)/(1 + u*v)",
@@ -30484,6 +30485,46 @@
    "family": "collision",
    "expr": "e*(m + 1)/(e*m + 1)",
    "why": "affine combination of known quantities (target speed / initial speed, velocity ratio of target to projectile after collision [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 + u)/(1 - u)) * sqrt((1 + v)/(1 - v)) / sqrt((1 + (u + v)/(1 + u*v)) / (1 - (u + v)/(1 + u*v",
+   "why": "affine combination of known quantities (composed speed / c)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 - u**2)*(1 - v**2) + (u + v)**2/(u*v + 1)**2) / (u*v + 1)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 + u)/(1 - u)) * sqrt((1 + v)/(1 - v)) / sqrt((1 + (u + v)/(1 + u*v)) / (1 - (u + v)/(1 + u*v",
+   "why": "affine combination of known quantities (composed speed / c)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "u/sqrt(1 - u**2) + v/sqrt(1 - v**2)",
+   "why": "affine combination of known quantities (composed speed / c, Relativistic momentum ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "1 - c/(c*x + 1)",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "c*x**2/(1 + x*c)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, electron kinetic energy / (m_e c\u00b2))"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "sqrt(c**2*x**2 + 1)/(x*(c*x + 1))",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, Scattered photon momentum / initial photon momentum [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "1/(2*c*x + 1)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, Compton scattering formula (recoil angle cosine) [model-proposed; physical meaning unverified])"
   }
  ],
  "tried": [
@@ -33666,7 +33707,31 @@
   "driven oscillator|Resonance Width [model-proposed; physical meaning unverified]|Acceleration transmissibility [model-proposed; physical meaning unverified]",
   "driven oscillator|Resonance Width [model-proposed; physical meaning unverified]|Energy Dissipation Ratio [model-proposed; physical meaning unverified]",
   "driven oscillator|Resonance Width [model-proposed; physical meaning unverified]|Power Amplification Factor [model-proposed; physical meaning unverified]",
-  "driven oscillator|Resonance Width [model-proposed; physical meaning unverified]|Power Amplification Ratio [model-proposed; physical meaning unverified]"
+  "driven oscillator|Resonance Width [model-proposed; physical meaning unverified]|Power Amplification Ratio [model-proposed; physical meaning unverified]",
+  "driven oscillator|amplitude / static deflection|Mechanical Impedance Ratio [model-proposed; physical meaning unverified]",
+  "driven oscillator|transmissibility|Mechanical Impedance Ratio [model-proposed; physical meaning unverified]",
+  "driven oscillator|velocity amplitude / (\u03c90 \u00d7 static deflection)|Mechanical Impedance Ratio [model-proposed; physical meaning unverified]",
+  "driven oscillator|acceleration amplitude / (\u03c90\u00b2 \u00d7 static deflection)|Mechanical Impedance Ratio [model-proposed; physical meaning unverified]",
+  "driven oscillator|mean absorbed power (normalised)|Mechanical Impedance Ratio [model-proposed; physical meaning unverified]",
+  "driven oscillator|quality factor|Mechanical Impedance Ratio [model-proposed; physical meaning unverified]",
+  "driven oscillator|log decrement [model-proposed; physical meaning unverified]|Mechanical Impedance Ratio [model-proposed; physical meaning unverified]",
+  "driven oscillator|resonance frequency ratio [model-proposed; physical meaning unverified]|Mechanical Impedance Ratio [model-proposed; physical meaning unverified]",
+  "driven oscillator|resonance amplitude ratio [model-proposed; physical meaning unverified]|Mechanical Impedance Ratio [model-proposed; physical meaning unverified]",
+  "driven oscillator|Resonance frequency shift [model-proposed; physical meaning unverified]|Mechanical Impedance Ratio [model-proposed; physical meaning unverified]",
+  "driven oscillator|Peak amplitude ratio [model-proposed; physical meaning unverified]|Mechanical Impedance Ratio [model-proposed; physical meaning unverified]",
+  "driven oscillator|Resonance frequency ratio (corrected) [model-proposed; physical meaning unverified]|Mechanical Impedance Ratio [model-proposed; physical meaning unverified]",
+  "driven oscillator|Relative energy loss per cycle [model-proposed; physical meaning unverified]|Mechanical Impedance Ratio [model-proposed; physical meaning unverified]",
+  "driven oscillator|Normalized power transmission [model-proposed; physical meaning unverified]|Mechanical Impedance Ratio [model-proposed; physical meaning unverified]",
+  "driven oscillator|Velocity transmissibility [model-proposed; physical meaning unverified]|Mechanical Impedance Ratio [model-proposed; physical meaning unverified]",
+  "driven oscillator|Acceleration transmissibility [model-proposed; physical meaning unverified]|Mechanical Impedance Ratio [model-proposed; physical meaning unverified]",
+  "driven oscillator|Energy Dissipation Ratio [model-proposed; physical meaning unverified]|Mechanical Impedance Ratio [model-proposed; physical meaning unverified]",
+  "driven oscillator|Power Amplification Factor [model-proposed; physical meaning unverified]|Mechanical Impedance Ratio [model-proposed; physical meaning unverified]",
+  "driven oscillator|Power Amplification Ratio [model-proposed; physical meaning unverified]|Mechanical Impedance Ratio [model-proposed; physical meaning unverified]",
+  "driven oscillator|Resonance Width [model-proposed; physical meaning unverified]|Mechanical Impedance Ratio [model-proposed; physical meaning unverified]",
+  "driven oscillator|Mechanical Impedance Ratio [model-proposed; physical meaning unverified]|amplitude / static deflection",
+  "driven oscillator|Mechanical Impedance Ratio [model-proposed; physical meaning unverified]|transmissibility",
+  "driven oscillator|Mechanical Impedance Ratio [model-proposed; physical meaning unverified]|velocity amplitude / (\u03c90 \u00d7 static deflection)",
+  "driven oscillator|Mechanical Impedance Ratio [model-proposed; physical meaning unverified]|acceleration amplitude / (\u03c90\u00b2 \u00d7 static deflection)"
  ],
  "edges": [
   {
@@ -37772,9 +37837,33 @@
    "f": "Fraction of kinetic energy retained by projectile relative to target [model-proposed; physical meaning unverified]",
    "g": "Fraction of kinetic energy retained by projectile [model-proposed; physical meaning unverified]",
    "k": "1"
+  },
+  {
+   "family": "driven oscillator",
+   "f": "transmissibility",
+   "g": "Mechanical Impedance Ratio [model-proposed; physical meaning unverified]",
+   "k": "1/9"
+  },
+  {
+   "family": "driven oscillator",
+   "f": "Velocity transmissibility [model-proposed; physical meaning unverified]",
+   "g": "Mechanical Impedance Ratio [model-proposed; physical meaning unverified]",
+   "k": "1/9"
+  },
+  {
+   "family": "driven oscillator",
+   "f": "Acceleration transmissibility [model-proposed; physical meaning unverified]",
+   "g": "Mechanical Impedance Ratio [model-proposed; physical meaning unverified]",
+   "k": "1/9"
+  },
+  {
+   "family": "driven oscillator",
+   "f": "Energy Dissipation Ratio [model-proposed; physical meaning unverified]",
+   "g": "Mechanical Impedance Ratio [model-proposed; physical meaning unverified]",
+   "k": "1/3"
   }
  ],
- "rounds": 2106,
+ "rounds": 2109,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",
