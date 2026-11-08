@@ -2075859,5 +2075859,815 @@
   "statement": "Octal game 0.535402 is completely solved: its Grundy values are periodic with pre-period 1 and period 4 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15055758",
+   "held_out_r2": 0.9512,
+   "held_out_rows": 50,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3e8be5f66abc",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "6d4f5b50dbcd265e.csv",
+   "doi": "10.5281/zenodo.15055758",
+   "form": "power law",
+   "params": [
+    -0.564418310349565,
+    -1.5095421669781481
+   ],
+   "seed": 2951034889,
+   "x": "Density (g/cm3)",
+   "y": "PV (cm3/g)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Computation-Ready Experimental Metal-Organic Framework (CoRE MOF) 2024 Dataset' (Zenodo, doi 10.5281/zenodo.15055758): 'PV (cm3/g)' follows a power law in 'Density (g/cm3)' (R\u00b2 = 0.945 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.10580194",
+   "held_out_r2": 0.6789,
+   "held_out_rows": 221,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-82bf0bd6d254",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "d29d67a69c98cd1b.csv",
+   "doi": "10.5281/zenodo.10580194",
+   "form": "linear",
+   "params": [
+    7.478874680938001,
+    0.8047325937855054
+   ],
+   "seed": 2754655693,
+   "x": "January_kWh",
+   "y": "February_kWh"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'ENCHANT Data Italy Energia Positiva' (Zenodo, doi 10.5281/zenodo.10580194): 'February_kWh' is linear in 'January_kWh' (R\u00b2 = 0.944 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.10580194",
+   "held_out_r2": 0.8528,
+   "held_out_rows": 221,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-64e73232125c",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "d29d67a69c98cd1b.csv",
+   "doi": "10.5281/zenodo.10580194",
+   "form": "linear",
+   "params": [
+    6.105064567279266,
+    0.9814161223570849
+   ],
+   "seed": 2754655693,
+   "x": "February_kWh",
+   "y": "March_kWh"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'ENCHANT Data Italy Energia Positiva' (Zenodo, doi 10.5281/zenodo.10580194): 'March_kWh' is linear in 'February_kWh' (R\u00b2 = 0.929 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.10580194",
+   "held_out_r2": 0.7977,
+   "held_out_rows": 221,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d8ea5e155920",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "d29d67a69c98cd1b.csv",
+   "doi": "10.5281/zenodo.10580194",
+   "form": "linear",
+   "params": [
+    -6.759312240466515,
+    1.0449577430545836
+   ],
+   "seed": 2754655693,
+   "x": "April_kWh",
+   "y": "May_kWh"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'ENCHANT Data Italy Energia Positiva' (Zenodo, doi 10.5281/zenodo.10580194): 'May_kWh' is linear in 'April_kWh' (R\u00b2 = 0.915 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.10580194",
+   "held_out_r2": 0.6262,
+   "held_out_rows": 221,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-59a88ef5a250",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "d29d67a69c98cd1b.csv",
+   "doi": "10.5281/zenodo.10580194",
+   "form": "linear",
+   "params": [
+    13.981345115475062,
+    0.974557732175856
+   ],
+   "seed": 2754655693,
+   "x": "May_kWh",
+   "y": "June_kWh"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'ENCHANT Data Italy Energia Positiva' (Zenodo, doi 10.5281/zenodo.10580194): 'June_kWh' is linear in 'May_kWh' (R\u00b2 = 0.927 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.10580194",
+   "held_out_r2": 0.7804,
+   "held_out_rows": 221,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-69ba94b309b6",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "d29d67a69c98cd1b.csv",
+   "doi": "10.5281/zenodo.10580194",
+   "form": "linear",
+   "params": [
+    -24.479187381673388,
+    1.0014375849526669
+   ],
+   "seed": 2754655693,
+   "x": "July_kWh",
+   "y": "August_kWh"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'ENCHANT Data Italy Energia Positiva' (Zenodo, doi 10.5281/zenodo.10580194): 'August_kWh' is linear in 'July_kWh' (R\u00b2 = 0.927 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.10580194",
+   "held_out_r2": 0.8832,
+   "held_out_rows": 221,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-20e4cb32b2be",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "d29d67a69c98cd1b.csv",
+   "doi": "10.5281/zenodo.10580194",
+   "form": "linear",
+   "params": [
+    10.657750267814066,
+    0.9925235268435554
+   ],
+   "seed": 2754655693,
+   "x": "September_kWh",
+   "y": "October_kWh"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'ENCHANT Data Italy Energia Positiva' (Zenodo, doi 10.5281/zenodo.10580194): 'October_kWh' is linear in 'September_kWh' (R\u00b2 = 0.944 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.10580194",
+   "held_out_r2": 0.7713,
+   "held_out_rows": 221,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a19d5dd618e2",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "d29d67a69c98cd1b.csv",
+   "doi": "10.5281/zenodo.10580194",
+   "form": "linear",
+   "params": [
+    -14.148863156931299,
+    1.3066536769826593
+   ],
+   "seed": 2754655693,
+   "x": "November_kWh",
+   "y": "December_kWh"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'ENCHANT Data Italy Energia Positiva' (Zenodo, doi 10.5281/zenodo.10580194): 'December_kWh' is linear in 'November_kWh' (R\u00b2 = 0.923 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7503995",
+   "held_out_r2": 0.9067,
+   "held_out_rows": 83,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5348f76e14af",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8704269a038fcdcb.csv",
+   "doi": "10.5281/zenodo.7503995",
+   "form": "linear",
+   "params": [
+    56.17882394323142,
+    -0.9631722720949393
+   ],
+   "seed": 2552285599,
+   "x": "earlylive",
+   "y": "earlydead"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Selecting for infectivity across metapopulations can increase virulence in the social micr' (Zenodo, doi 10.5281/zenodo.7503995): 'earlydead' is linear in 'earlylive' (R\u00b2 = 0.954 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7503995",
+   "held_out_r2": 0.9664,
+   "held_out_rows": 83,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5ccc926c127b",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8704269a038fcdcb.csv",
+   "doi": "10.5281/zenodo.7503995",
+   "form": "linear",
+   "params": [
+    57.14365746298518,
+    -0.9801973420947324
+   ],
+   "seed": 2552285599,
+   "x": "latelive",
+   "y": "latedead"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Selecting for infectivity across metapopulations can increase virulence in the social micr' (Zenodo, doi 10.5281/zenodo.7503995): 'latedead' is linear in 'latelive' (R\u00b2 = 0.978 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7520706",
+   "held_out_r2": 0.9887,
+   "held_out_rows": 56,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5a66d03189d1",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f1fc21f05e40c113.csv",
+   "doi": "10.5281/zenodo.7520706",
+   "form": "power law",
+   "params": [
+    -0.13101411869954138,
+    1.0187698686093365
+   ],
+   "seed": 762912226,
+   "x": "S",
+   "y": "Srare"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Experimental erosion of microbial diversity decreases soil CH4 consumption rates' (Zenodo, doi 10.5281/zenodo.7520706): 'Srare' follows a power law in 'S' (R\u00b2 = 0.990 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7520706",
+   "held_out_r2": 0.9188,
+   "held_out_rows": 56,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-dbef3adc5ae4",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f1fc21f05e40c113.csv",
+   "doi": "10.5281/zenodo.7520706",
+   "form": "logarithmic",
+   "params": [
+    -3.2502654070301227,
+    3.224277337431701
+   ],
+   "seed": 762912226,
+   "x": "S",
+   "y": "PD"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Experimental erosion of microbial diversity decreases soil CH4 consumption rates' (Zenodo, doi 10.5281/zenodo.7520706): 'PD' grows logarithmically in 'S' (R\u00b2 = 0.900 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7520706",
+   "held_out_r2": 0.9137,
+   "held_out_rows": 56,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-11686e2d899f",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f1fc21f05e40c113.csv",
+   "doi": "10.5281/zenodo.7520706",
+   "form": "logarithmic",
+   "params": [
+    -3.2079959768932156,
+    3.1399700460363773
+   ],
+   "seed": 762912226,
+   "x": "S",
+   "y": "PDrare"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Experimental erosion of microbial diversity decreases soil CH4 consumption rates' (Zenodo, doi 10.5281/zenodo.7520706): 'PDrare' grows logarithmically in 'S' (R\u00b2 = 0.908 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7520706",
+   "held_out_r2": 0.9281,
+   "held_out_rows": 56,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c2736bbd2730",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f1fc21f05e40c113.csv",
+   "doi": "10.5281/zenodo.7520706",
+   "form": "logarithmic",
+   "params": [
+    -2.7891645892453014,
+    3.0773069267595283
+   ],
+   "seed": 762912226,
+   "x": "Srare",
+   "y": "PDrare"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Experimental erosion of microbial diversity decreases soil CH4 consumption rates' (Zenodo, doi 10.5281/zenodo.7520706): 'PDrare' grows logarithmically in 'Srare' (R\u00b2 = 0.914 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.sb295",
+   "held_out_r2": 0.919,
+   "held_out_rows": 204,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-42768f626649",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "2a451861964da4d1.csv",
+   "doi": "10.5061/dryad.sb295",
+   "form": "power law",
+   "params": [
+    -3.4183334366454594,
+    3.2088994496910557
+   ],
+   "seed": 2697479584,
+   "x": "SVL",
+   "y": "Mass"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Non-additive effects of intra- and interspecific competition between two larval' (Zenodo, doi 10.5061/dryad.sb295): 'Mass' follows a power law in 'SVL' (R\u00b2 = 0.948 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.r5nj3",
+   "held_out_r2": 0.8792,
+   "held_out_rows": 402,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-82a2d1189d32",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "e3d0128effa907f4.csv",
+   "doi": "10.5061/dryad.r5nj3",
+   "form": "exponential",
+   "params": [
+    2.9286205215170296,
+    0.06816703370886268
+   ],
+   "seed": 2365070292,
+   "x": "TarsEst",
+   "y": "TarsAv"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Characterizing selection in black-throated blue warblers using a sexual network' (Zenodo, doi 10.5061/dryad.r5nj3): 'TarsAv' grows exponentially in 'TarsEst' (R\u00b2 = 0.903 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.6q573n60m",
+   "held_out_r2": 0.9003,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a7864f6f5949",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "9f4fafd7b3b58ca4.csv",
+   "doi": "10.5061/dryad.6q573n60m",
+   "form": "power law",
+   "params": [
+    1.5276904665178352,
+    0.9578397902929296
+   ],
+   "seed": 453997332,
+   "x": "DiameterESD",
+   "y": "Perimeter"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Loss-of-heterozygosity facilitates a fitness valley crossing in experimentally ' (Zenodo, doi 10.5061/dryad.6q573n60m): 'Perimeter' follows a power law in 'DiameterESD' (R\u00b2 = 0.903 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.6q573n60m",
+   "held_out_r2": 0.9003,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a4286472857c",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "9f4fafd7b3b58ca4.csv",
+   "doi": "10.5061/dryad.6q573n60m",
+   "form": "power law",
+   "params": [
+    -4.322555369422181,
+    2.8297135667949185
+   ],
+   "seed": 453997332,
+   "x": "Perimeter",
+   "y": "VolumeESD"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Loss-of-heterozygosity facilitates a fitness valley crossing in experimentally ' (Zenodo, doi 10.5061/dryad.6q573n60m): 'VolumeESD' follows a power law in 'Perimeter' (R\u00b2 = 0.903 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.780hc",
+   "held_out_r2": 0.9313,
+   "held_out_rows": 113,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-8481c0ba07da",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "e8568d66289b9c82.csv",
+   "doi": "10.5061/dryad.780hc",
+   "form": "power law",
+   "params": [
+    -1.1712875384506647,
+    0.8448763277544674
+   ],
+   "seed": 891970496,
+   "x": "BOER_mass",
+   "y": "mass_indiv"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Plant\u2013soil feedbacks promote negative frequency dependence in the coexistence o' (Zenodo, doi 10.5061/dryad.780hc): 'mass_indiv' follows a power law in 'BOER_mass' (R\u00b2 = 0.919 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.780hc",
+   "held_out_r2": 0.9334,
+   "held_out_rows": 146,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-8b6821e52120",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "4f538fdc69ce6bcb.csv",
+   "doi": "10.5061/dryad.780hc",
+   "form": "linear",
+   "params": [
+    0.019694339900843762,
+    0.9873600594420645
+   ],
+   "seed": 2719908777,
+   "x": "BOGR_mass",
+   "y": "all_mass"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Plant\u2013soil feedbacks promote negative frequency dependence in the coexistence o' (Zenodo, doi 10.5061/dryad.780hc): 'all_mass' is linear in 'BOGR_mass' (R\u00b2 = 0.990 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.j35k0",
+   "held_out_r2": 0.9413,
+   "held_out_rows": 113,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5c2bcde6c867",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "39616a6858ea4479.csv",
+   "doi": "10.5061/dryad.j35k0",
+   "form": "linear",
+   "params": [
+    -0.11742554294741266,
+    1.0696901228233786
+   ],
+   "seed": 199481357,
+   "x": "rmf_LS",
+   "y": "rmf_SS"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Sexual selection on spontaneous mutations strengthens the between-sex genetic c' (Zenodo, doi 10.5061/dryad.j35k0): 'rmf_SS' is linear in 'rmf_LS' (R\u00b2 = 0.953 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.j35k0",
+   "held_out_r2": 0.9836,
+   "held_out_rows": 113,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-7cdca20617df",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "39616a6858ea4479.csv",
+   "doi": "10.5061/dryad.j35k0",
+   "form": "linear",
+   "params": [
+    0.11742554310089277,
+    -2.0696901229664317
+   ],
+   "seed": 199481357,
+   "x": "rmf_LS",
+   "y": "diff_Wf"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Sexual selection on spontaneous mutations strengthens the between-sex genetic c' (Zenodo, doi 10.5061/dryad.j35k0): 'diff_Wf' is linear in 'rmf_LS' (R\u00b2 = 0.987 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.j35k0",
+   "held_out_r2": 0.9258,
+   "held_out_rows": 113,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5a6f41911bfe",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "39616a6858ea4479.csv",
+   "doi": "10.5061/dryad.j35k0",
+   "form": "logarithmic",
+   "params": [
+    -0.03589083686542527,
+    -1.0803835347479978
+   ],
+   "seed": 199481357,
+   "x": "Wf_SS",
+   "y": "diff_sex_SS"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Sexual selection on spontaneous mutations strengthens the between-sex genetic c' (Zenodo, doi 10.5061/dryad.j35k0): 'diff_sex_SS' grows logarithmically in 'Wf_SS' (R\u00b2 = 0.936 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.j35k0",
+   "held_out_r2": 0.9865,
+   "held_out_rows": 113,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-8816adba6e3d",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "39616a6858ea4479.csv",
+   "doi": "10.5061/dryad.j35k0",
+   "form": "linear",
+   "params": [
+    -0.13475847241942246,
+    -1.8904657605764208
+   ],
+   "seed": 199481357,
+   "x": "rmf_SS",
+   "y": "diff_Wf"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Sexual selection on spontaneous mutations strengthens the between-sex genetic c' (Zenodo, doi 10.5061/dryad.j35k0): 'diff_Wf' is linear in 'rmf_SS' (R\u00b2 = 0.989 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7054827",
+   "held_out_r2": 0.1976,
+   "held_out_rows": 99,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-04929eb492cc",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "2fa7d9c9524c6360.csv",
+   "doi": "10.5281/zenodo.7054827",
+   "form": "exponential",
+   "params": [
+    0.04539309358848841,
+    -0.00045914954367923244
+   ],
+   "seed": 4261807599,
+   "x": "purity shadows lin-inv",
+   "y": "renyi lin-inv 12"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Experimental single-setting quantum state tomography' (Zenodo, doi 10.5281/zenodo.7054827): 'renyi lin-inv 12' grows exponentially in 'purity shadows lin-inv' (R\u00b2 = 0.900 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.3389/fimmu.2026.1875379.s004",
+   "held_out_r2": 0.9984,
+   "held_out_rows": 333,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-abb49481c670",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "600063a8a65b4e25.csv",
+   "doi": "10.3389/fimmu.2026.1875379.s004",
+   "form": "power law",
+   "params": [
+    1.9250172693936627,
+    0.9491546088379264
+   ],
+   "seed": 1933133184,
+   "x": "pvalue",
+   "y": "p.adjust"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Table 4_An integrative analysis of transcriptome and single-cell RNA sequencing data ident' (Figshare, doi 10.3389/fimmu.2026.1875379.s004): 'p.adjust' follows a power law in 'pvalue' (R\u00b2 = 0.998 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.3389/fimmu.2026.1875379.s004",
+   "held_out_r2": 0.9982,
+   "held_out_rows": 333,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-56d67e70359d",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "600063a8a65b4e25.csv",
+   "doi": "10.3389/fimmu.2026.1875379.s004",
+   "form": "power law",
+   "params": [
+    1.6001577108897302,
+    0.9495395683795828
+   ],
+   "seed": 1933133184,
+   "x": "pvalue",
+   "y": "qvalue"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Table 4_An integrative analysis of transcriptome and single-cell RNA sequencing data ident' (Figshare, doi 10.3389/fimmu.2026.1875379.s004): 'qvalue' follows a power law in 'pvalue' (R\u00b2 = 0.997 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.3389/fimmu.2026.1875379.s006",
+   "held_out_r2": 0.9321,
+   "held_out_rows": 58,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-da68091ecb05",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "91415f6fb83fbc17.csv",
+   "doi": "10.3389/fimmu.2026.1875379.s006",
+   "form": "linear",
+   "params": [
+    -0.39703947835483755,
+    4.6529754308889855
+   ],
+   "seed": 1225236360,
+   "x": "enrichmentScore",
+   "y": "NES"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Table 6_An integrative analysis of transcriptome and single-cell RNA sequencing data ident' (Figshare, doi 10.3389/fimmu.2026.1875379.s006): 'NES' is linear in 'enrichmentScore' (R\u00b2 = 0.945 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.3389/fimmu.2026.1875379.s008",
+   "held_out_r2": 0.9529,
+   "held_out_rows": 54,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5c010960f2e9",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "0ba99c10b4b585d2.csv",
+   "doi": "10.3389/fimmu.2026.1875379.s008",
+   "form": "linear",
+   "params": [
+    0.12085553724759611,
+    4.150029911828672
+   ],
+   "seed": 2041887286,
+   "x": "enrichmentScore",
+   "y": "NES"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Table 8_An integrative analysis of transcriptome and single-cell RNA sequencing data ident' (Figshare, doi 10.3389/fimmu.2026.1875379.s008): 'NES' is linear in 'enrichmentScore' (R\u00b2 = 0.955 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.3389/fimmu.2026.1875379.s007",
+   "held_out_r2": 0.9775,
+   "held_out_rows": 46,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5809fb5b2207",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "b1ecba0f14825573.csv",
+   "doi": "10.3389/fimmu.2026.1875379.s007",
+   "form": "linear",
+   "params": [
+    0.32800424377523146,
+    4.1757742659715245
+   ],
+   "seed": 2004177556,
+   "x": "enrichmentScore",
+   "y": "NES"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Table 7_An integrative analysis of transcriptome and single-cell RNA sequencing data ident' (Figshare, doi 10.3389/fimmu.2026.1875379.s007): 'NES' is linear in 'enrichmentScore' (R\u00b2 = 0.907 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
