@@ -2044912,5 +2044912,32 @@
   "statement": "Octal game 0.533644 is completely solved: its Grundy values are periodic with pre-period 1 and period 6 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.4580292",
+   "held_out_r2": 0.9387,
+   "held_out_rows": 66,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-bd0cafd9cba2",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "801c3fef130d04d5.csv",
+   "doi": "10.5281/zenodo.4580292",
+   "form": "power law",
+   "params": [
+    7.647759972650944,
+    -1.126086740968839
+   ],
+   "seed": 1276147128,
+   "x": "ET_estimate",
+   "y": "relative_error_ET"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Error estimates of Amazon catchment-balance evapotranspiration' (Zenodo, doi 10.5281/zenodo.4580292): 'relative_error_ET' follows a power law in 'ET_estimate' (R\u00b2 = 0.967 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]

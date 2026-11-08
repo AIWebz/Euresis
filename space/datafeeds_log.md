@@ -1637,3 +1637,5 @@
 - 2026-11-08 08:11 FINDING (confirmed on held-out rows): In 'Amino acid d13C dataset for nearshore marine primary producers' (Zenodo, doi 10.5061/dryad.zw3r22897): 'Phe13C' is linear in 'Leu13C' (R² = 0.913 on the discovery half); held-out R² = 0.850 [emp-bf3553c34cad]
 - 2026-11-08 08:11 FINDING (confirmed on held-out rows): In 'OC_ResUNet_Supporting_Data' (Figshare, doi 10.6084/m9.figshare.33456037.v1): 'MAE' is linear in 'RMSE' (R² = 0.948 on the discovery half); held-out R² = 0.941 [emp-4da077a08973]
 - 2026-11-08 08:12 data feeds: 11153 datasets analysed so far, 1464 confirmed findings
+- 2026-11-08 09:13 data feeds: online
+- 2026-11-08 09:13 FINDING (confirmed on held-out rows): In 'Error estimates of Amazon catchment-balance evapotranspiration' (Zenodo, doi 10.5281/zenodo.4580292): 'relative_error_ET' follows a power law in 'ET_estimate' (R² = 0.967 on the discovery half); held-out R² = 0.939 [emp-bd0cafd9cba2]
