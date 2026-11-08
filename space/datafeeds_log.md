@@ -1630,3 +1630,4 @@
 - 2026-11-08 07:28 FINDING (confirmed on held-out rows): In 'Supplementary material 1 from: UImer JM, Janšta P, Azar D, Krogmann L (2023) At the dawn o' (Zenodo, doi 10.3897/jhr.96.105494.suppl1): 'min_ma' grows logarithmically in 'stg' (R² = 0.991 on the discovery half); held-out R² = 0.989 [emp-9b7f37d6dd0a]
 - 2026-11-08 07:28 FINDING (confirmed on held-out rows): In 'Data for Aeolian Ripple Migration and Associated Creep Transport Rates' (Zenodo, doi 10.5281/zenodo.3378825): 'ust_th' is linear in 'd' (R² = 0.922 on the discovery half); held-out R² = 0.875 [emp-0c1e7b2a77f2]
 - 2026-11-08 07:29 data feeds: 11094 datasets analysed so far, 1459 confirmed findings
+- 2026-11-08 08:09 data feeds: online
