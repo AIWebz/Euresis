@@ -1898,3 +1898,5 @@
 - 2026-11-08 13:59 FINDING (confirmed on held-out rows): In 'First-principles investigation of phase stability in substoichiometric zirconium carbide u' (Zenodo, doi 10.5281/zenodo.6908605): 'pred' is linear in 'unit_mixing_enthalpy' (R² = 0.985 on the discovery half); held-out R² = 0.980 [emp-08889673a39e]
 - 2026-11-08 13:59 data feeds: 11794 datasets analysed so far, 1712 confirmed findings
 - 2026-11-08 15:00 data feeds: online
+- 2026-11-08 15:01 FINDING (confirmed on held-out rows): In 'Data from: Simulating effects of fitness and dispersal on the use of Trojan sex chromosome' (Zenodo, doi 10.5061/dryad.qv9s4mwb9): 'Skip_20' is linear in 'All_years' (R² = 0.960 on the discovery half); held-out R² = 0.951 [emp-621846b3e333]
+- 2026-11-08 15:01 data feeds: 11832 datasets analysed so far, 1713 confirmed findings

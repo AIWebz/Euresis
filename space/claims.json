@@ -2114359,5 +2114359,59 @@
   "statement": "Octal game 0.537731 is completely solved: its Grundy values are periodic with pre-period 63 and period 48 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.qv9s4mwb9",
+   "held_out_r2": 0.9505,
+   "held_out_rows": 76,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-621846b3e333",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "5438cb331fedc139.csv",
+   "doi": "10.5061/dryad.qv9s4mwb9",
+   "form": "linear",
+   "params": [
+    -0.20873160917777225,
+    1.0444013285900056
+   ],
+   "seed": 1416258026,
+   "x": "All_years",
+   "y": "Skip_20"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Simulating effects of fitness and dispersal on the use of Trojan sex chromosome' (Zenodo, doi 10.5061/dryad.qv9s4mwb9): 'Skip_20' is linear in 'All_years' (R\u00b2 = 0.960 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.6084/m9.figshare.30193924.v3",
+   "held_out_r2": 0.7936,
+   "held_out_rows": 40,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d41b3ca7724e",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "c84397a390ff87e3.csv",
+   "doi": "10.6084/m9.figshare.30193924.v3",
+   "form": "exponential",
+   "params": [
+    1.1432289676075067,
+    0.5455315385614251
+   ],
+   "seed": 1692856228,
+   "x": "incorporated_str",
+   "y": "mean_wood_biomass"
+  },
+  "source": "datafeeds.py",
+  "statement": "In '<b>Structural diversity as a key determinant of biomass stability during long-term evergre' (Figshare, doi 10.6084/m9.figshare.30193924.v3): 'mean_wood_biomass' grows exponentially in 'incorporated_str' (R\u00b2 = 0.903 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
  }
 ]
