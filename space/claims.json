@@ -1967248,5 +1967248,44 @@
   "statement": "[economics: insurance and risk] Relative Risk Aversion [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 Risk Sensitivity Ratio [model-proposed; physical meaning unverified]   on p < 1, L < 1 (tight only at the edge of the domain, near (1, 2.82e-08))",
   "status": "proved",
   "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "checked_up_to": 38,
+   "method": "Grundy values recomputed; Guy\u2013Smith periodicity theorem condition checked",
+   "values_of_one_period": [
+    6,
+    1,
+    4,
+    3
+   ]
+  },
+  "id": "gam-69005fd239ad",
+  "kind": "game",
+  "novelty": "novelty unchecked: octal games of up to three digits are tabulated in Winning Ways and Flammenkamp's tables, which cannot be searched from here",
+  "payload": {
+   "code": "522532",
+   "period": 4,
+   "preperiod": 12
+  },
+  "source": "games.py",
+  "statement": "Octal game 0.522532 is completely solved: its Grundy values are periodic with pre-period 12 and period 4 (Guy\u2013Smith periodicity theorem)",
+  "status": "proved",
+  "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": null,
+  "id": "gam-30e4d85d5f37",
+  "kind": "game",
+  "novelty": "not checked",
+  "payload": {
+   "code": "522533",
+   "period": 4,
+   "preperiod": 12
+  },
+  "source": "games.py",
+  "statement": "Octal game 0.522533 is completely solved: its Grundy values are periodic with pre-period 12 and period 4 (Guy\u2013Smith periodicity theorem)",
+  "status": "candidate",
+  "verifier": null
  }
 ]
