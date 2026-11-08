@@ -2197,3 +2197,5 @@
 - 2026-11-08 00:11 round 2015: insurance and risk
 - 2026-11-08 00:12 round 2016: auction with a reserve price
 - 2026-11-08 00:13 round 2017: two-body decay
+- 2026-11-08 00:14 round 2018: collision
+- 2026-11-08 00:15 segment end: 2018 rounds, 5 discoveries, 2 known laws rediscovered
