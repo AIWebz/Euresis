@@ -1973,3 +1973,4 @@
 - 2026-11-08 17:47 FINDING (confirmed on held-out rows): In 'Crop-specific salinity and irrigation data for river sub-basin water scarcity analyses in ' (Zenodo, doi 10.5281/zenodo.6620860): 'Q_MMF' is linear in 'EFR' (R² = 0.975 on the discovery half); held-out R² = 0.976 [emp-595360c7b39c]
 - 2026-11-08 17:47 FINDING (confirmed on held-out rows): In 'Crop-specific salinity and irrigation data for river sub-basin water scarcity analyses in ' (Zenodo, doi 10.5281/zenodo.6620860): 'perc' follows a power law in 'av_irr_crop_area' (R² = 0.943 on the discovery half); held-out R² = 0.955 [emp-0b06c78f79ca]
 - 2026-11-08 17:47 data feeds: 12351 datasets analysed so far, 1780 confirmed findings
+- 2026-11-08 18:48 data feeds: online
