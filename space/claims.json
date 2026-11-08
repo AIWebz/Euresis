@@ -2145186,5 +2145186,167 @@
   "statement": "[economics: Cournot duopoly] Welfare Efficiency Ratio [model-proposed; physical meaning unverified] \u2265 36/13 \u00d7 profit of firm 2   on c1 < 1/2, c2 < 1/2 (tight only at the edge of the domain, near (0.5, 2.01e-14))",
   "status": "proved",
   "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 2",
+    "z < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-8be57d10b005",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 2",
+    "z < 1"
+   ],
+   "claim": "sqrt(4*z**2 + 1)/(2*r*z + sqrt(4*r**2*z**2 + (1 - r**2)**2)) >= 1/2*(2*r**2*z/(4*r**2*z**2 + (1 - r**2)**2))",
+   "symbols": [
+    "r",
+    "z"
+   ]
+  },
+  "source": "physics_discover2 round 2467",
+  "statement": "[physics: driven oscillator] Damping factor ratio [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 mean absorbed power (normalised)   on r < 2, z < 1 (tight only at the edge of the domain, near (1, 5.05e-09))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 2",
+    "z < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-36275b3a7ea1",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 2",
+    "z < 1"
+   ],
+   "claim": "sqrt(4*z**2 + 1)/(2*r*z + sqrt(4*r**2*z**2 + (1 - r**2)**2)) >= 1*(sqrt(1 - z**2)/(r**2 + 1))",
+   "symbols": [
+    "r",
+    "z"
+   ]
+  },
+  "source": "physics_discover2 round 2467",
+  "statement": "[physics: driven oscillator] Damping factor ratio [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Resonance frequency shift [model-proposed; physical meaning unverified]   on r < 2, z < 1 (tight only at the edge of the domain, near (3.48e-09, 6.61e-09))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-b706e099549e",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "claim": "(-c1 - c2 + 2)**2/(2*sqrt((-2*c1 + c2 + 1)**2 + (c1 - 2*c2 + 1)**2) + (-c1 - c2 + 1)**2) >= 36/13*((-2*c1 + c2 + 1)**2/9 + (c1 - 2*c2 + 1)**2/9)",
+   "symbols": [
+    "c1",
+    "c2"
+   ]
+  },
+  "source": "physics_discover2 round 2470",
+  "statement": "[economics: Cournot duopoly] Welfare Efficiency Ratio [model-proposed; physical meaning unverified] \u2265 36/13 \u00d7 total industry profit   on c1 < 1/2, c2 < 1/2 (tight only at the edge of the domain, near (2.01e-14, 0.5))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-632d279100a3",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "claim": "(-c1 - c2 + 2)**2/(2*sqrt((-2*c1 + c2 + 1)**2 + (c1 - 2*c2 + 1)**2) + (-c1 - c2 + 1)**2) >= 36/13*((1 - c1)**2/4)",
+   "symbols": [
+    "c1",
+    "c2"
+   ]
+  },
+  "source": "physics_discover2 round 2470",
+  "statement": "[economics: Cournot duopoly] Welfare Efficiency Ratio [model-proposed; physical meaning unverified] \u2265 36/13 \u00d7 firm 1's profit as a monopolist   on c1 < 1/2, c2 < 1/2 (tight only at the edge of the domain, near (6.58e-16, 0.5))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-b2b6cf5f564b",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "claim": "(-c1 - c2 + 2)**2/(2*sqrt((-2*c1 + c2 + 1)**2 + (c1 - 2*c2 + 1)**2) + (-c1 - c2 + 1)**2) >= 9/13*(c1/(c1/3 + c2/3 + 1/3))",
+   "symbols": [
+    "c1",
+    "c2"
+   ]
+  },
+  "source": "physics_discover2 round 2470",
+  "statement": "[economics: Cournot duopoly] Welfare Efficiency Ratio [model-proposed; physical meaning unverified] \u2265 9/13 \u00d7 Lerner Index for Firm 1 [model-proposed; physical meaning unverified]   on c1 < 1/2, c2 < 1/2 (tight only at the edge of the domain, near (0.5, 7.65e-16))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-c8d2093a3726",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "claim": "(-c1 - c2 + 2)**2/(2*sqrt((-2*c1 + c2 + 1)**2 + (c1 - 2*c2 + 1)**2) + (-c1 - c2 + 1)**2) >= 5/13*(((-2*c1 + c2 + 1)**2 + (c1 - 2*c2 + 1)**2)/((1 - c1)**2 + (1 - c2)**2))",
+   "symbols": [
+    "c1",
+    "c2"
+   ]
+  },
+  "source": "physics_discover2 round 2470",
+  "statement": "[economics: Cournot duopoly] Welfare Efficiency Ratio [model-proposed; physical meaning unverified] \u2265 5/13 \u00d7 Hirshleifer Index [model-proposed; physical meaning unverified]   on c1 < 1/2, c2 < 1/2 (tight only at the edge of the domain, near (0.5, 1.07e-14))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]
