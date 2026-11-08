@@ -1537,3 +1537,4 @@
 - 2026-11-08 02:31 FINDING (confirmed on held-out rows): In 'Supplementary data and code for “Do Carbon Claims and Biodiversity Signals Align Across Sc' (Figshare, doi 10.6084/m9.figshare.34930593.v1): 'speciesid' is linear in 'taxonID' (R² = 0.993 on the discovery half); held-out R² = 0.984 [emp-b3081dd9c1e5]
 - 2026-11-08 02:31 FINDING (confirmed on held-out rows): In 'Supplementary data and code for “Do Carbon Claims and Biodiversity Signals Align Across Sc' (Figshare, doi 10.6084/m9.figshare.34930593.v1): 'speciesid' is linear in 'acceptedNameUsageID' (R² = 0.993 on the discovery half); held-out R² = 0.984 [emp-77f42f21fe97]
 - 2026-11-08 02:32 data feeds: 10467 datasets analysed so far, 1376 confirmed findings
+- 2026-11-08 03:33 data feeds: online
