@@ -1681,3 +1681,4 @@
 - 2026-11-08 10:05 FINDING (confirmed on held-out rows): In 'ReESH_US-Cwt: Coweeta' (Zenodo, doi 10.5281/zenodo.17195851): 'Vol_Water' follows a power law in 'MPa_Abs' (R² = 0.944 on the discovery half); held-out R² = 0.954 [emp-f33c676c3893]
 - 2026-11-08 10:06 FINDING (confirmed on held-out rows): In '<b>Data and code from: The role of canopy soils in forest carbon and nutrient cycles: a da' (Figshare, doi 10.6084/m9.figshare.28570751.v4): 'MinTempColdestMo_worldclim' grows logarithmically in 'MAT_worldclim' (R² = 0.975 on the discovery half); held-out R² = 0.965 [emp-6a167986630f]
 - 2026-11-08 10:06 data feeds: 11429 datasets analysed so far, 1504 confirmed findings
+- 2026-11-08 11:07 data feeds: online
