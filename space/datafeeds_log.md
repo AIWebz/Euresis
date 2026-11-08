@@ -1897,3 +1897,4 @@
 - 2026-11-08 13:58 FINDING (confirmed on held-out rows): In 'Climate mitigation potential and soil microbial response of cyanobacteria-fertilized bioen' (Zenodo, doi 10.5061/dryad.8cz8w9gv6): 'N(%)' follows a power law in 'SOC(%)' (R² = 0.937 on the discovery half); held-out R² = 0.909 [emp-115e817b366c]
 - 2026-11-08 13:59 FINDING (confirmed on held-out rows): In 'First-principles investigation of phase stability in substoichiometric zirconium carbide u' (Zenodo, doi 10.5281/zenodo.6908605): 'pred' is linear in 'unit_mixing_enthalpy' (R² = 0.985 on the discovery half); held-out R² = 0.980 [emp-08889673a39e]
 - 2026-11-08 13:59 data feeds: 11794 datasets analysed so far, 1712 confirmed findings
+- 2026-11-08 15:00 data feeds: online
