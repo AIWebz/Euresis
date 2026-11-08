@@ -2005344,5 +2005344,2111 @@
   "statement": "Octal game 0.530571 is completely solved: its Grundy values are periodic with pre-period 1 and period 7 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.6618340",
+   "held_out_r2": 0.9935,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-35db4f9d4540",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "b5c135b7fbc0eeae.csv",
+   "doi": "10.5281/zenodo.6618340",
+   "form": "power law",
+   "params": [
+    0.014122821824543285,
+    0.9917083779614063
+   ],
+   "seed": 2731361987,
+   "x": "value_ore",
+   "y": "tailings"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Intermediate data files from the compilation of Economy-wide Material Flow Accounts for th' (Zenodo, doi 10.5281/zenodo.6618340): 'tailings' follows a power law in 'value_ore' (R\u00b2 = 0.993 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23070647",
+   "held_out_r2": 0.9322,
+   "held_out_rows": 128,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-86130b0be93d",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "56c4fe766142ad27.csv",
+   "doi": "10.5281/zenodo.23070647",
+   "form": "logarithmic",
+   "params": [
+    0.9220024823876716,
+    0.17589061851164106
+   ],
+   "seed": 1173484259,
+   "x": "p_all_found_hi",
+   "y": "mean_frac_found"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Borehole design charts for buried waste bodies: simulation data and code' (Zenodo, doi 10.5281/zenodo.23070647): 'mean_frac_found' grows logarithmically in 'p_all_found_hi' (R\u00b2 = 0.938 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23070647",
+   "held_out_r2": 0.9656,
+   "held_out_rows": 128,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-86e724a6308f",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "56c4fe766142ad27.csv",
+   "doi": "10.5281/zenodo.23070647",
+   "form": "logarithmic",
+   "params": [
+    0.0008321821395288789,
+    -0.17784736645020205
+   ],
+   "seed": 1173484259,
+   "x": "p_all_found_hi",
+   "y": "frac_v_undisc"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Borehole design charts for buried waste bodies: simulation data and code' (Zenodo, doi 10.5281/zenodo.23070647): 'frac_v_undisc' grows logarithmically in 'p_all_found_hi' (R\u00b2 = 0.964 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23070647",
+   "held_out_r2": 0.9656,
+   "held_out_rows": 128,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-70e5d1a91e88",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "56c4fe766142ad27.csv",
+   "doi": "10.5281/zenodo.23070647",
+   "form": "exponential",
+   "params": [
+    -3.4913386898132406,
+    3.4029858650918836
+   ],
+   "seed": 1173484259,
+   "x": "p_any_found",
+   "y": "mean_frac_found"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Borehole design charts for buried waste bodies: simulation data and code' (Zenodo, doi 10.5281/zenodo.23070647): 'mean_frac_found' grows exponentially in 'p_any_found' (R\u00b2 = 0.969 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23070647",
+   "held_out_r2": 0.9258,
+   "held_out_rows": 128,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-99a43c7bb650",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "56c4fe766142ad27.csv",
+   "doi": "10.5281/zenodo.23070647",
+   "form": "linear",
+   "params": [
+    1.1664300299502652,
+    -1.074967488292368
+   ],
+   "seed": 1173484259,
+   "x": "p_any_found",
+   "y": "frac_v_undisc"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Borehole design charts for buried waste bodies: simulation data and code' (Zenodo, doi 10.5281/zenodo.23070647): 'frac_v_undisc' is linear in 'p_any_found' (R\u00b2 = 0.929 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23070647",
+   "held_out_r2": 0.9639,
+   "held_out_rows": 128,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5559c1e08d6d",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "56c4fe766142ad27.csv",
+   "doi": "10.5281/zenodo.23070647",
+   "form": "exponential",
+   "params": [
+    -3.440911477662877,
+    3.3674717890236447
+   ],
+   "seed": 1173484259,
+   "x": "p_any_found_lo",
+   "y": "mean_frac_found"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Borehole design charts for buried waste bodies: simulation data and code' (Zenodo, doi 10.5281/zenodo.23070647): 'mean_frac_found' grows exponentially in 'p_any_found_lo' (R\u00b2 = 0.968 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23070647",
+   "held_out_r2": 0.9306,
+   "held_out_rows": 128,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b45d056be44c",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "56c4fe766142ad27.csv",
+   "doi": "10.5281/zenodo.23070647",
+   "form": "linear",
+   "params": [
+    1.1528248071350227,
+    -1.0670318118228055
+   ],
+   "seed": 1173484259,
+   "x": "p_any_found_lo",
+   "y": "frac_v_undisc"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Borehole design charts for buried waste bodies: simulation data and code' (Zenodo, doi 10.5281/zenodo.23070647): 'frac_v_undisc' is linear in 'p_any_found_lo' (R\u00b2 = 0.933 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23070647",
+   "held_out_r2": 0.9672,
+   "held_out_rows": 128,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-85f495143fed",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "56c4fe766142ad27.csv",
+   "doi": "10.5281/zenodo.23070647",
+   "form": "exponential",
+   "params": [
+    -3.544929822922686,
+    3.4437226349385104
+   ],
+   "seed": 1173484259,
+   "x": "p_any_found_hi",
+   "y": "mean_frac_found"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Borehole design charts for buried waste bodies: simulation data and code' (Zenodo, doi 10.5281/zenodo.23070647): 'mean_frac_found' grows exponentially in 'p_any_found_hi' (R\u00b2 = 0.970 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23070647",
+   "held_out_r2": 0.9206,
+   "held_out_rows": 128,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-46c43cb0e9aa",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "56c4fe766142ad27.csv",
+   "doi": "10.5281/zenodo.23070647",
+   "form": "linear",
+   "params": [
+    1.1808830139295414,
+    -1.0844090284240078
+   ],
+   "seed": 1173484259,
+   "x": "p_any_found_hi",
+   "y": "frac_v_undisc"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Borehole design charts for buried waste bodies: simulation data and code' (Zenodo, doi 10.5281/zenodo.23070647): 'frac_v_undisc' is linear in 'p_any_found_hi' (R\u00b2 = 0.923 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23070647",
+   "held_out_r2": 0.9749,
+   "held_out_rows": 128,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-73a611e3012f",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "56c4fe766142ad27.csv",
+   "doi": "10.5281/zenodo.23070647",
+   "form": "linear",
+   "params": [
+    0.9189469499326752,
+    -0.9844271395174145
+   ],
+   "seed": 1173484259,
+   "x": "mean_frac_found",
+   "y": "frac_v_undisc"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Borehole design charts for buried waste bodies: simulation data and code' (Zenodo, doi 10.5281/zenodo.23070647): 'frac_v_undisc' is linear in 'mean_frac_found' (R\u00b2 = 0.974 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23070647",
+   "held_out_r2": 0.968,
+   "held_out_rows": 34,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9ec68cc2dd14",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "0c249f305292cd95.csv",
+   "doi": "10.5281/zenodo.23070647",
+   "form": "power law",
+   "params": [
+    1.598620707585651,
+    1.0503754121558342
+   ],
+   "seed": 989014954,
+   "x": "D3-NN IoU0.3 first",
+   "y": "D3-AS IoU0.3 first"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Borehole design charts for buried waste bodies: simulation data and code' (Zenodo, doi 10.5281/zenodo.23070647): 'D3-AS IoU0.3 first' follows a power law in 'D3-NN IoU0.3 first' (R\u00b2 = 0.975 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23070647",
+   "held_out_r2": 0.9154,
+   "held_out_rows": 34,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c13e7c53d20f",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "0c249f305292cd95.csv",
+   "doi": "10.5281/zenodo.23070647",
+   "form": "power law",
+   "params": [
+    0.7957510990831295,
+    1.0456104369776595
+   ],
+   "seed": 989014954,
+   "x": "D3-NN IoU0.5 first",
+   "y": "D3-AS IoU0.3 first"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Borehole design charts for buried waste bodies: simulation data and code' (Zenodo, doi 10.5281/zenodo.23070647): 'D3-AS IoU0.3 first' follows a power law in 'D3-NN IoU0.5 first' (R\u00b2 = 0.960 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23070647",
+   "held_out_r2": 0.941,
+   "held_out_rows": 1651,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b7a6be5bd8d3",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "5027586130ffec72.csv",
+   "doi": "10.5281/zenodo.23070647",
+   "form": "logarithmic",
+   "params": [
+    0.18650258418326257,
+    -2.8932396895505117
+   ],
+   "seed": 1644976296,
+   "x": "p_d1",
+   "y": "over_nn_cond"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Borehole design charts for buried waste bodies: simulation data and code' (Zenodo, doi 10.5281/zenodo.23070647): 'over_nn_cond' grows logarithmically in 'p_d1' (R\u00b2 = 0.930 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23070647",
+   "held_out_r2": 0.9535,
+   "held_out_rows": 1651,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-607e86d26ecb",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "5027586130ffec72.csv",
+   "doi": "10.5281/zenodo.23070647",
+   "form": "linear",
+   "params": [
+    0.9632460229487745,
+    -0.9680608185798923
+   ],
+   "seed": 1644976296,
+   "x": "recall_nn",
+   "y": "over_nn"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Borehole design charts for buried waste bodies: simulation data and code' (Zenodo, doi 10.5281/zenodo.23070647): 'over_nn' is linear in 'recall_nn' (R\u00b2 = 0.958 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23070647",
+   "held_out_r2": 0.9081,
+   "held_out_rows": 1651,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b2334d905905",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "5027586130ffec72.csv",
+   "doi": "10.5281/zenodo.23070647",
+   "form": "exponential",
+   "params": [
+    1.5066730322377653,
+    -4.130796005991876
+   ],
+   "seed": 1644976296,
+   "x": "recall_nn",
+   "y": "over_nn_cond"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Borehole design charts for buried waste bodies: simulation data and code' (Zenodo, doi 10.5281/zenodo.23070647): 'over_nn_cond' grows exponentially in 'recall_nn' (R\u00b2 = 0.912 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23070647",
+   "held_out_r2": 0.984,
+   "held_out_rows": 1651,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f3c7a1394908",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "5027586130ffec72.csv",
+   "doi": "10.5281/zenodo.23070647",
+   "form": "linear",
+   "params": [
+    -0.038343470107555275,
+    1.0342930650016513
+   ],
+   "seed": 1644976296,
+   "x": "p_recall_nn_ge08",
+   "y": "p_rec80_over50_nn"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Borehole design charts for buried waste bodies: simulation data and code' (Zenodo, doi 10.5281/zenodo.23070647): 'p_rec80_over50_nn' is linear in 'p_recall_nn_ge08' (R\u00b2 = 0.984 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23070647",
+   "held_out_r2": 0.917,
+   "held_out_rows": 90,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5a4d76a4852d",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "a525e1d86611e2e9.csv",
+   "doi": "10.5281/zenodo.23070647",
+   "form": "linear",
+   "params": [
+    -0.19391099806721324,
+    1.189489746358536
+   ],
+   "seed": 1571390311,
+   "x": "P(D1)",
+   "y": "P(D2a)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Borehole design charts for buried waste bodies: simulation data and code' (Zenodo, doi 10.5281/zenodo.23070647): 'P(D2a)' is linear in 'P(D1)' (R\u00b2 = 0.915 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23070647",
+   "held_out_r2": 0.9224,
+   "held_out_rows": 90,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f2ae3a2bcca1",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "a525e1d86611e2e9.csv",
+   "doi": "10.5281/zenodo.23070647",
+   "form": "linear",
+   "params": [
+    -0.06652838322617448,
+    1.0071988696720062
+   ],
+   "seed": 1571390311,
+   "x": "P(NN IoU \u2265 0.5 | det)",
+   "y": "P(buffer IoU \u2265 0.5 | det)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Borehole design charts for buried waste bodies: simulation data and code' (Zenodo, doi 10.5281/zenodo.23070647): 'P(buffer IoU \u2265 0.5 | det)' is linear in 'P(NN IoU \u2265 0.5 | det)' (R\u00b2 = 0.951 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23070647",
+   "held_out_r2": 0.8661,
+   "held_out_rows": 90,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-2d6f2e018f38",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "a525e1d86611e2e9.csv",
+   "doi": "10.5281/zenodo.23070647",
+   "form": "linear",
+   "params": [
+    -0.006659424074778122,
+    0.94928658866692
+   ],
+   "seed": 1571390311,
+   "x": "P(CH IoU \u2265 0.5 | det)",
+   "y": "P(AS IoU \u2265 0.5 | det)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Borehole design charts for buried waste bodies: simulation data and code' (Zenodo, doi 10.5281/zenodo.23070647): 'P(AS IoU \u2265 0.5 | det)' is linear in 'P(CH IoU \u2265 0.5 | det)' (R\u00b2 = 0.938 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23070647",
+   "held_out_r2": 0.8944,
+   "held_out_rows": 90,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d76a8ee12550",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "dd58afb2928529bd.csv",
+   "doi": "10.5281/zenodo.23070647",
+   "form": "linear",
+   "params": [
+    -0.052615905936406526,
+    1.0152047073126664
+   ],
+   "seed": 1612126267,
+   "x": "p_d2a",
+   "y": "p_d2b_050"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Borehole design charts for buried waste bodies: simulation data and code' (Zenodo, doi 10.5281/zenodo.23070647): 'p_d2b_050' is linear in 'p_d2a' (R\u00b2 = 0.905 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23070647",
+   "held_out_r2": 0.8944,
+   "held_out_rows": 90,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-032bf2fcd813",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "dd58afb2928529bd.csv",
+   "doi": "10.5281/zenodo.23070647",
+   "form": "linear",
+   "params": [
+    -263.07952968203267,
+    5076.023536563333
+   ],
+   "seed": 1612126267,
+   "x": "p_d2a",
+   "y": "k_d2b_050"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Borehole design charts for buried waste bodies: simulation data and code' (Zenodo, doi 10.5281/zenodo.23070647): 'k_d2b_050' is linear in 'p_d2a' (R\u00b2 = 0.905 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23070647",
+   "held_out_r2": 0.8926,
+   "held_out_rows": 90,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5422c3a91201",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "dd58afb2928529bd.csv",
+   "doi": "10.5281/zenodo.23070647",
+   "form": "linear",
+   "params": [
+    -0.06979757121232809,
+    1.0273038082879347
+   ],
+   "seed": 1612126267,
+   "x": "p_d2a",
+   "y": "lo_d2b_050"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Borehole design charts for buried waste bodies: simulation data and code' (Zenodo, doi 10.5281/zenodo.23070647): 'lo_d2b_050' is linear in 'p_d2a' (R\u00b2 = 0.903 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23070647",
+   "held_out_r2": 0.8959,
+   "held_out_rows": 90,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-895ded80ae5c",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "dd58afb2928529bd.csv",
+   "doi": "10.5281/zenodo.23070647",
+   "form": "linear",
+   "params": [
+    -0.034585752048771255,
+    1.0015468570805286
+   ],
+   "seed": 1612126267,
+   "x": "p_d2a",
+   "y": "hi_d2b_050"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Borehole design charts for buried waste bodies: simulation data and code' (Zenodo, doi 10.5281/zenodo.23070647): 'hi_d2b_050' is linear in 'p_d2a' (R\u00b2 = 0.907 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23070647",
+   "held_out_r2": 0.8944,
+   "held_out_rows": 90,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-8a7c3cc85787",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "dd58afb2928529bd.csv",
+   "doi": "10.5281/zenodo.23070647",
+   "form": "linear",
+   "params": [
+    -0.052615905936406374,
+    0.00020304094146253332
+   ],
+   "seed": 1612126267,
+   "x": "k_d2a",
+   "y": "p_d2b_050"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Borehole design charts for buried waste bodies: simulation data and code' (Zenodo, doi 10.5281/zenodo.23070647): 'p_d2b_050' is linear in 'k_d2a' (R\u00b2 = 0.905 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23070647",
+   "held_out_r2": 0.8944,
+   "held_out_rows": 90,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-57f564eba51a",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "dd58afb2928529bd.csv",
+   "doi": "10.5281/zenodo.23070647",
+   "form": "linear",
+   "params": [
+    -263.07952968203267,
+    1.0152047073126669
+   ],
+   "seed": 1612126267,
+   "x": "k_d2a",
+   "y": "k_d2b_050"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Borehole design charts for buried waste bodies: simulation data and code' (Zenodo, doi 10.5281/zenodo.23070647): 'k_d2b_050' is linear in 'k_d2a' (R\u00b2 = 0.905 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23070647",
+   "held_out_r2": 0.8926,
+   "held_out_rows": 90,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4ab075773ddf",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "dd58afb2928529bd.csv",
+   "doi": "10.5281/zenodo.23070647",
+   "form": "linear",
+   "params": [
+    -0.06979757121232809,
+    0.00020546076165758696
+   ],
+   "seed": 1612126267,
+   "x": "k_d2a",
+   "y": "lo_d2b_050"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Borehole design charts for buried waste bodies: simulation data and code' (Zenodo, doi 10.5281/zenodo.23070647): 'lo_d2b_050' is linear in 'k_d2a' (R\u00b2 = 0.903 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23070647",
+   "held_out_r2": 0.8959,
+   "held_out_rows": 90,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-8a390f19d986",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "dd58afb2928529bd.csv",
+   "doi": "10.5281/zenodo.23070647",
+   "form": "linear",
+   "params": [
+    -0.034585752048771255,
+    0.00020030937141610574
+   ],
+   "seed": 1612126267,
+   "x": "k_d2a",
+   "y": "hi_d2b_050"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Borehole design charts for buried waste bodies: simulation data and code' (Zenodo, doi 10.5281/zenodo.23070647): 'hi_d2b_050' is linear in 'k_d2a' (R\u00b2 = 0.907 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23070647",
+   "held_out_r2": 0.8972,
+   "held_out_rows": 90,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-30c97f1d7a24",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "dd58afb2928529bd.csv",
+   "doi": "10.5281/zenodo.23070647",
+   "form": "linear",
+   "params": [
+    -0.0358865278743326,
+    1.0030300357777946
+   ],
+   "seed": 1612126267,
+   "x": "lo_d2a",
+   "y": "p_d2b_050"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Borehole design charts for buried waste bodies: simulation data and code' (Zenodo, doi 10.5281/zenodo.23070647): 'p_d2b_050' is linear in 'lo_d2a' (R\u00b2 = 0.908 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23070647",
+   "held_out_r2": 0.8972,
+   "held_out_rows": 90,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3b07f261ed09",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "dd58afb2928529bd.csv",
+   "doi": "10.5281/zenodo.23070647",
+   "form": "linear",
+   "params": [
+    -179.43263937166304,
+    5015.150178888973
+   ],
+   "seed": 1612126267,
+   "x": "lo_d2a",
+   "y": "k_d2b_050"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Borehole design charts for buried waste bodies: simulation data and code' (Zenodo, doi 10.5281/zenodo.23070647): 'k_d2b_050' is linear in 'lo_d2a' (R\u00b2 = 0.908 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23070647",
+   "held_out_r2": 0.8986,
+   "held_out_rows": 90,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-6d6a26cad208",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "dd58afb2928529bd.csv",
+   "doi": "10.5281/zenodo.23070647",
+   "form": "linear",
+   "params": [
+    -0.01797099279308132,
+    0.9893950599540161
+   ],
+   "seed": 1612126267,
+   "x": "lo_d2a",
+   "y": "hi_d2b_050"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Borehole design charts for buried waste bodies: simulation data and code' (Zenodo, doi 10.5281/zenodo.23070647): 'hi_d2b_050' is linear in 'lo_d2a' (R\u00b2 = 0.910 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23070647",
+   "held_out_r2": 0.8911,
+   "held_out_rows": 90,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5f5723c18565",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "dd58afb2928529bd.csv",
+   "doi": "10.5281/zenodo.23070647",
+   "form": "linear",
+   "params": [
+    -0.07031691760490019,
+    1.0289569078165077
+   ],
+   "seed": 1612126267,
+   "x": "hi_d2a",
+   "y": "p_d2b_050"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Borehole design charts for buried waste bodies: simulation data and code' (Zenodo, doi 10.5281/zenodo.23070647): 'p_d2b_050' is linear in 'hi_d2a' (R\u00b2 = 0.902 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23070647",
+   "held_out_r2": 0.8911,
+   "held_out_rows": 90,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-decf3a3c2ff6",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "dd58afb2928529bd.csv",
+   "doi": "10.5281/zenodo.23070647",
+   "form": "linear",
+   "params": [
+    -351.5845880244999,
+    5144.784539082539
+   ],
+   "seed": 1612126267,
+   "x": "hi_d2a",
+   "y": "k_d2b_050"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Borehole design charts for buried waste bodies: simulation data and code' (Zenodo, doi 10.5281/zenodo.23070647): 'k_d2b_050' is linear in 'hi_d2a' (R\u00b2 = 0.902 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23070647",
+   "held_out_r2": 0.8715,
+   "held_out_rows": 90,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-96b9ec6cb7e5",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "dd58afb2928529bd.csv",
+   "doi": "10.5281/zenodo.23070647",
+   "form": "power law",
+   "params": [
+    -0.06993112072047762,
+    1.1118358904838224
+   ],
+   "seed": 1612126267,
+   "x": "hi_d2a",
+   "y": "lo_d2b_050"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Borehole design charts for buried waste bodies: simulation data and code' (Zenodo, doi 10.5281/zenodo.23070647): 'lo_d2b_050' follows a power law in 'hi_d2a' (R\u00b2 = 0.900 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23070647",
+   "held_out_r2": 0.9594,
+   "held_out_rows": 77,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-bdedb56eb47f",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "551a95a094830777.csv",
+   "doi": "10.5281/zenodo.23070647",
+   "form": "linear",
+   "params": [
+    0.02308383397264129,
+    0.570631157082256
+   ],
+   "seed": 3250407110,
+   "x": "NN P(recall\u22650.8 & over\u22640.5)",
+   "y": "AS recall"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Borehole design charts for buried waste bodies: simulation data and code' (Zenodo, doi 10.5281/zenodo.23070647): 'AS recall' is linear in 'NN P(recall\u22650.8 & over\u22640.5)' (R\u00b2 = 0.955 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7361513",
+   "held_out_r2": 0.9638,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-6f4bda6d2fa0",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "e3b606047a5ab29b.csv",
+   "doi": "10.5281/zenodo.7361513",
+   "form": "linear",
+   "params": [
+    -184.26927347709378,
+    0.11236240639846125
+   ],
+   "seed": 2553512555,
+   "x": "disamenity_cost",
+   "y": "2"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Result data related to \"Cost-potential curves of onshore wind energy: the role of disameni' (Zenodo, doi 10.5281/zenodo.7361513): '2' is linear in 'disamenity_cost' (R\u00b2 = 0.968 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7361513",
+   "held_out_r2": 0.9043,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e0380d699b8f",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "e3b606047a5ab29b.csv",
+   "doi": "10.5281/zenodo.7361513",
+   "form": "linear",
+   "params": [
+    125.17150237106578,
+    0.19047268498152103
+   ],
+   "seed": 2553512555,
+   "x": "disamenity_cost",
+   "y": "3"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Result data related to \"Cost-potential curves of onshore wind energy: the role of disameni' (Zenodo, doi 10.5281/zenodo.7361513): '3' is linear in 'disamenity_cost' (R\u00b2 = 0.919 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7361513",
+   "held_out_r2": 0.9598,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-158e487bd9dc",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "e3b606047a5ab29b.csv",
+   "doi": "10.5281/zenodo.7361513",
+   "form": "linear",
+   "params": [
+    -129.76147404833677,
+    580.9277469371954
+   ],
+   "seed": 2553512555,
+   "x": "disamenity_cost_eur_per_mwh",
+   "y": "2"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Result data related to \"Cost-potential curves of onshore wind energy: the role of disameni' (Zenodo, doi 10.5281/zenodo.7361513): '2' is linear in 'disamenity_cost_eur_per_mwh' (R\u00b2 = 0.965 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7361513",
+   "held_out_r2": 0.896,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-8bb6dd094695",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "e3b606047a5ab29b.csv",
+   "doi": "10.5281/zenodo.7361513",
+   "form": "linear",
+   "params": [
+    225.72539736539755,
+    983.004159347742
+   ],
+   "seed": 2553512555,
+   "x": "disamenity_cost_eur_per_mwh",
+   "y": "3"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Result data related to \"Cost-potential curves of onshore wind energy: the role of disameni' (Zenodo, doi 10.5281/zenodo.7361513): '3' is linear in 'disamenity_cost_eur_per_mwh' (R\u00b2 = 0.913 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17776019",
+   "held_out_r2": 0.9503,
+   "held_out_rows": 6270,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d642e36c2e2e",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "21cefdff7b75159f.csv",
+   "doi": "10.5281/zenodo.17776019",
+   "form": "linear",
+   "params": [
+    232.38284313885646,
+    437.73525478982515
+   ],
+   "seed": 363072362,
+   "x": "destination_code",
+   "y": "hei_code"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Original data on Italian public Universities 2012-2020' (Zenodo, doi 10.5281/zenodo.17776019): 'hei_code' is linear in 'destination_code' (R\u00b2 = 0.951 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17776019",
+   "held_out_r2": 0.9503,
+   "held_out_rows": 6270,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5d760ae70bd4",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "21cefdff7b75159f.csv",
+   "doi": "10.5281/zenodo.17776019",
+   "form": "linear",
+   "params": [
+    232.38284313885646,
+    437.73525478982515
+   ],
+   "seed": 363072362,
+   "x": "destination_code",
+   "y": "hei_code.f"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Original data on Italian public Universities 2012-2020' (Zenodo, doi 10.5281/zenodo.17776019): 'hei_code.f' is linear in 'destination_code' (R\u00b2 = 0.951 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22153608",
+   "held_out_r2": 0.982,
+   "held_out_rows": 1658,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-2b8d733ef335",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "ecd20048d8198514.csv",
+   "doi": "10.5281/zenodo.22153608",
+   "form": "exponential",
+   "params": [
+    -0.47602043719026454,
+    1.00038856508347
+   ],
+   "seed": 1077555993,
+   "x": "log_total_employment",
+   "y": "medium_skill_employment"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Industrial robot exposure and urban employment in China' (Zenodo, doi 10.5281/zenodo.22153608): 'medium_skill_employment' grows exponentially in 'log_total_employment' (R\u00b2 = 0.981 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23995100",
+   "held_out_r2": 0.9987,
+   "held_out_rows": 279,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-dc3567975ccd",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "f3b786c3ef2f7eea.csv",
+   "doi": "10.5281/zenodo.23995100",
+   "form": "power law",
+   "params": [
+    -0.1807979140103818,
+    1.0140171353151661
+   ],
+   "seed": 1999347459,
+   "x": "idx1",
+   "y": "twin_group"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Random-field parameters of a project site from off-site sources: synthetic test, two CPT d' (Zenodo, doi 10.5281/zenodo.23995100): 'twin_group' follows a power law in 'idx1' (R\u00b2 = 0.987 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23995100",
+   "held_out_r2": 0.8984,
+   "held_out_rows": 788,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-7826bf608d42",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "64f642547da2984c.csv",
+   "doi": "10.5281/zenodo.23995100",
+   "form": "linear",
+   "params": [
+    0.3911283434097677,
+    0.8543173790098918
+   ],
+   "seed": 3768737295,
+   "x": "v",
+   "y": "v_sens3m"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Random-field parameters of a project site from off-site sources: synthetic test, two CPT d' (Zenodo, doi 10.5281/zenodo.23995100): 'v_sens3m' is linear in 'v' (R\u00b2 = 0.910 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23995100",
+   "held_out_r2": 0.8984,
+   "held_out_rows": 788,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5676e2b55934",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "64f642547da2984c.csv",
+   "doi": "10.5281/zenodo.23995100",
+   "form": "linear",
+   "params": [
+    0.3911283434097677,
+    0.8543173790098918
+   ],
+   "seed": 3768737295,
+   "x": "v_centre",
+   "y": "v_sens3m"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Random-field parameters of a project site from off-site sources: synthetic test, two CPT d' (Zenodo, doi 10.5281/zenodo.23995100): 'v_sens3m' is linear in 'v_centre' (R\u00b2 = 0.910 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23995100",
+   "held_out_r2": 0.9554,
+   "held_out_rows": 788,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f4c8f24f52d5",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "64f642547da2984c.csv",
+   "doi": "10.5281/zenodo.23995100",
+   "form": "logarithmic",
+   "params": [
+    -1042.7603651299023,
+    281.7736491513182
+   ],
+   "seed": 3768737295,
+   "x": "n_valid",
+   "y": "min_pairs_300"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Random-field parameters of a project site from off-site sources: synthetic test, two CPT d' (Zenodo, doi 10.5281/zenodo.23995100): 'min_pairs_300' grows logarithmically in 'n_valid' (R\u00b2 = 0.945 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23995100",
+   "held_out_r2": 0.9332,
+   "held_out_rows": 84,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a32bed7ba50b",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "0eafb16d6c93691c.csv",
+   "doi": "10.5281/zenodo.23995100",
+   "form": "power law",
+   "params": [
+    -0.7081148736829954,
+    0.9064047625350408
+   ],
+   "seed": 2242380041,
+   "x": "rmse",
+   "y": "crps"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Random-field parameters of a project site from off-site sources: synthetic test, two CPT d' (Zenodo, doi 10.5281/zenodo.23995100): 'crps' follows a power law in 'rmse' (R\u00b2 = 0.964 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23995100",
+   "held_out_r2": 0.9401,
+   "held_out_rows": 50,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-bb03d4d86dd7",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "aaa0f14137b00163.csv",
+   "doi": "10.5281/zenodo.23995100",
+   "form": "exponential",
+   "params": [
+    0.7544218990464198,
+    -2.2618376944572387
+   ],
+   "seed": 83189340,
+   "x": "theta_wls_within_x2",
+   "y": "theta_wls_med_abs_log"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Random-field parameters of a project site from off-site sources: synthetic test, two CPT d' (Zenodo, doi 10.5281/zenodo.23995100): 'theta_wls_med_abs_log' grows exponentially in 'theta_wls_within_x2' (R\u00b2 = 0.939 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23995100",
+   "held_out_r2": 0.9575,
+   "held_out_rows": 158,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-0d8963ee41f0",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "d9e4c0b6eccbad81.csv",
+   "doi": "10.5281/zenodo.23995100",
+   "form": "power law",
+   "params": [
+    -1.6798478746205763,
+    1.0754086514152523
+   ],
+   "seed": 3102245546,
+   "x": "rmse_med",
+   "y": "bias_q75"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Random-field parameters of a project site from off-site sources: synthetic test, two CPT d' (Zenodo, doi 10.5281/zenodo.23995100): 'bias_q75' follows a power law in 'rmse_med' (R\u00b2 = 0.952 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23995100",
+   "held_out_r2": 0.9951,
+   "held_out_rows": 158,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-0e12e0b0ce2c",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "d9e4c0b6eccbad81.csv",
+   "doi": "10.5281/zenodo.23995100",
+   "form": "power law",
+   "params": [
+    -0.5637044585651807,
+    1.0000989911009446
+   ],
+   "seed": 3102245546,
+   "x": "rmse_med",
+   "y": "crps_med"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Random-field parameters of a project site from off-site sources: synthetic test, two CPT d' (Zenodo, doi 10.5281/zenodo.23995100): 'crps_med' follows a power law in 'rmse_med' (R\u00b2 = 0.995 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23995100",
+   "held_out_r2": 0.9929,
+   "held_out_rows": 158,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b2c706c7cb9a",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "d9e4c0b6eccbad81.csv",
+   "doi": "10.5281/zenodo.23995100",
+   "form": "power law",
+   "params": [
+    -0.6939654005275623,
+    0.989906425693954
+   ],
+   "seed": 3102245546,
+   "x": "rmse_med",
+   "y": "crps_q25"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Random-field parameters of a project site from off-site sources: synthetic test, two CPT d' (Zenodo, doi 10.5281/zenodo.23995100): 'crps_q25' follows a power law in 'rmse_med' (R\u00b2 = 0.993 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23995100",
+   "held_out_r2": 0.9924,
+   "held_out_rows": 158,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-40b9f545b146",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "d9e4c0b6eccbad81.csv",
+   "doi": "10.5281/zenodo.23995100",
+   "form": "power law",
+   "params": [
+    -0.43311323125843537,
+    1.0022150209479446
+   ],
+   "seed": 3102245546,
+   "x": "rmse_med",
+   "y": "crps_q75"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Random-field parameters of a project site from off-site sources: synthetic test, two CPT d' (Zenodo, doi 10.5281/zenodo.23995100): 'crps_q75' follows a power law in 'rmse_med' (R\u00b2 = 0.992 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23995100",
+   "held_out_r2": 0.9468,
+   "held_out_rows": 158,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5f94ba5de12c",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "d9e4c0b6eccbad81.csv",
+   "doi": "10.5281/zenodo.23995100",
+   "form": "power law",
+   "params": [
+    -1.5481372892020933,
+    1.0589291003317434
+   ],
+   "seed": 3102245546,
+   "x": "rmse_q25",
+   "y": "bias_q75"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Random-field parameters of a project site from off-site sources: synthetic test, two CPT d' (Zenodo, doi 10.5281/zenodo.23995100): 'bias_q75' follows a power law in 'rmse_q25' (R\u00b2 = 0.942 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23995100",
+   "held_out_r2": 0.9947,
+   "held_out_rows": 158,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-50b609dd9bc4",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "d9e4c0b6eccbad81.csv",
+   "doi": "10.5281/zenodo.23995100",
+   "form": "power law",
+   "params": [
+    -0.4375810054887487,
+    0.9898596135319321
+   ],
+   "seed": 3102245546,
+   "x": "rmse_q25",
+   "y": "crps_med"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Random-field parameters of a project site from off-site sources: synthetic test, two CPT d' (Zenodo, doi 10.5281/zenodo.23995100): 'crps_med' follows a power law in 'rmse_q25' (R\u00b2 = 0.994 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23995100",
+   "held_out_r2": 0.9879,
+   "held_out_rows": 158,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c3a4f2905b29",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "d9e4c0b6eccbad81.csv",
+   "doi": "10.5281/zenodo.23995100",
+   "form": "power law",
+   "params": [
+    -0.3082893087184504,
+    0.9897631277421867
+   ],
+   "seed": 3102245546,
+   "x": "rmse_q25",
+   "y": "crps_q75"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Random-field parameters of a project site from off-site sources: synthetic test, two CPT d' (Zenodo, doi 10.5281/zenodo.23995100): 'crps_q75' follows a power law in 'rmse_q25' (R\u00b2 = 0.987 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23995100",
+   "held_out_r2": 0.9644,
+   "held_out_rows": 158,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-36d00072732d",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "d9e4c0b6eccbad81.csv",
+   "doi": "10.5281/zenodo.23995100",
+   "form": "power law",
+   "params": [
+    -1.813963765131281,
+    1.0990464022456592
+   ],
+   "seed": 3102245546,
+   "x": "rmse_q75",
+   "y": "bias_q75"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Random-field parameters of a project site from off-site sources: synthetic test, two CPT d' (Zenodo, doi 10.5281/zenodo.23995100): 'bias_q75' follows a power law in 'rmse_q75' (R\u00b2 = 0.959 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23995100",
+   "held_out_r2": 0.991,
+   "held_out_rows": 158,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-59f486fdce22",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "d9e4c0b6eccbad81.csv",
+   "doi": "10.5281/zenodo.23995100",
+   "form": "power law",
+   "params": [
+    -0.6909697607523205,
+    1.0163959494997592
+   ],
+   "seed": 3102245546,
+   "x": "rmse_q75",
+   "y": "crps_med"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Random-field parameters of a project site from off-site sources: synthetic test, two CPT d' (Zenodo, doi 10.5281/zenodo.23995100): 'crps_med' follows a power law in 'rmse_q75' (R\u00b2 = 0.991 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23995100",
+   "held_out_r2": 0.9848,
+   "held_out_rows": 158,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-42fe00bd9aad",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "d9e4c0b6eccbad81.csv",
+   "doi": "10.5281/zenodo.23995100",
+   "form": "power law",
+   "params": [
+    -0.8208970332600145,
+    1.0038821143894359
+   ],
+   "seed": 3102245546,
+   "x": "rmse_q75",
+   "y": "crps_q25"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Random-field parameters of a project site from off-site sources: synthetic test, two CPT d' (Zenodo, doi 10.5281/zenodo.23995100): 'crps_q25' follows a power law in 'rmse_q75' (R\u00b2 = 0.984 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23995100",
+   "held_out_r2": 0.9932,
+   "held_out_rows": 158,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-78f4bac8a554",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "d9e4c0b6eccbad81.csv",
+   "doi": "10.5281/zenodo.23995100",
+   "form": "power law",
+   "params": [
+    -0.5595039908472467,
+    1.0211053338553326
+   ],
+   "seed": 3102245546,
+   "x": "rmse_q75",
+   "y": "crps_q75"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Random-field parameters of a project site from off-site sources: synthetic test, two CPT d' (Zenodo, doi 10.5281/zenodo.23995100): 'crps_q75' follows a power law in 'rmse_q75' (R\u00b2 = 0.993 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23995100",
+   "held_out_r2": 0.9495,
+   "held_out_rows": 158,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c63801c43e01",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "d9e4c0b6eccbad81.csv",
+   "doi": "10.5281/zenodo.23995100",
+   "form": "power law",
+   "params": [
+    0.8973342203817224,
+    0.8860834999291982
+   ],
+   "seed": 3102245546,
+   "x": "bias_q75",
+   "y": "crps_med"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Random-field parameters of a project site from off-site sources: synthetic test, two CPT d' (Zenodo, doi 10.5281/zenodo.23995100): 'crps_med' follows a power law in 'bias_q75' (R\u00b2 = 0.948 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23995100",
+   "held_out_r2": 0.9389,
+   "held_out_rows": 158,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-06a4a6dc22b7",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "d9e4c0b6eccbad81.csv",
+   "doi": "10.5281/zenodo.23995100",
+   "form": "power law",
+   "params": [
+    0.7436620823216806,
+    0.8733565893319529
+   ],
+   "seed": 3102245546,
+   "x": "bias_q75",
+   "y": "crps_q25"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Random-field parameters of a project site from off-site sources: synthetic test, two CPT d' (Zenodo, doi 10.5281/zenodo.23995100): 'crps_q25' follows a power law in 'bias_q75' (R\u00b2 = 0.938 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23995100",
+   "held_out_r2": 0.9577,
+   "held_out_rows": 158,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-7271080bfb47",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "d9e4c0b6eccbad81.csv",
+   "doi": "10.5281/zenodo.23995100",
+   "form": "power law",
+   "params": [
+    1.040876714039278,
+    0.8922354999016135
+   ],
+   "seed": 3102245546,
+   "x": "bias_q75",
+   "y": "crps_q75"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Random-field parameters of a project site from off-site sources: synthetic test, two CPT d' (Zenodo, doi 10.5281/zenodo.23995100): 'crps_q75' follows a power law in 'bias_q75' (R\u00b2 = 0.955 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23995100",
+   "held_out_r2": 0.9889,
+   "held_out_rows": 315,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-2ebf25e4d5b2",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "a19abf335934d78c.csv",
+   "doi": "10.5281/zenodo.23995100",
+   "form": "power law",
+   "params": [
+    -0.5478969703442695,
+    1.0140298745712772
+   ],
+   "seed": 2204020036,
+   "x": "rmse_q25",
+   "y": "crps_q25"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Random-field parameters of a project site from off-site sources: synthetic test, two CPT d' (Zenodo, doi 10.5281/zenodo.23995100): 'crps_q25' follows a power law in 'rmse_q25' (R\u00b2 = 0.990 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23995100",
+   "held_out_r2": 0.9846,
+   "held_out_rows": 40,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d5dec00609e3",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "5246a6a375affbca.csv",
+   "doi": "10.5281/zenodo.23995100",
+   "form": "power law",
+   "params": [
+    -0.008497321860684805,
+    0.9879820701948345
+   ],
+   "seed": 764762571,
+   "x": "calib_fixed",
+   "y": "calib_refit"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Random-field parameters of a project site from off-site sources: synthetic test, two CPT d' (Zenodo, doi 10.5281/zenodo.23995100): 'calib_refit' follows a power law in 'calib_fixed' (R\u00b2 = 0.992 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23995100",
+   "held_out_r2": 0.9314,
+   "held_out_rows": 40,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ea43911f589c",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "5246a6a375affbca.csv",
+   "doi": "10.5281/zenodo.23995100",
+   "form": "exponential",
+   "params": [
+    -1.1485724802222514,
+    1.14841415470558
+   ],
+   "seed": 764762571,
+   "x": "cov90_fixed",
+   "y": "cov90_refit"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Random-field parameters of a project site from off-site sources: synthetic test, two CPT d' (Zenodo, doi 10.5281/zenodo.23995100): 'cov90_refit' grows exponentially in 'cov90_fixed' (R\u00b2 = 0.921 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23995100",
+   "held_out_r2": 0.9597,
+   "held_out_rows": 40,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-122e472d1a2d",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "5246a6a375affbca.csv",
+   "doi": "10.5281/zenodo.23995100",
+   "form": "linear",
+   "params": [
+    0.01758407573640719,
+    1.8164826612867286
+   ],
+   "seed": 764762571,
+   "x": "crps_fixed",
+   "y": "rmse_fixed"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Random-field parameters of a project site from off-site sources: synthetic test, two CPT d' (Zenodo, doi 10.5281/zenodo.23995100): 'rmse_fixed' is linear in 'crps_fixed' (R\u00b2 = 0.980 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23995100",
+   "held_out_r2": 0.9585,
+   "held_out_rows": 40,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-906ba997818d",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "5246a6a375affbca.csv",
+   "doi": "10.5281/zenodo.23995100",
+   "form": "linear",
+   "params": [
+    0.02248139186558761,
+    1.8081518341087834
+   ],
+   "seed": 764762571,
+   "x": "crps_fixed",
+   "y": "rmse_refit"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Random-field parameters of a project site from off-site sources: synthetic test, two CPT d' (Zenodo, doi 10.5281/zenodo.23995100): 'rmse_refit' is linear in 'crps_fixed' (R\u00b2 = 0.980 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23995100",
+   "held_out_r2": 0.9545,
+   "held_out_rows": 40,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3a6c92a34b95",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "5246a6a375affbca.csv",
+   "doi": "10.5281/zenodo.23995100",
+   "form": "linear",
+   "params": [
+    0.01289758795855812,
+    1.8083401494039726
+   ],
+   "seed": 764762571,
+   "x": "crps_refit",
+   "y": "rmse_fixed"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Random-field parameters of a project site from off-site sources: synthetic test, two CPT d' (Zenodo, doi 10.5281/zenodo.23995100): 'rmse_fixed' is linear in 'crps_refit' (R\u00b2 = 0.979 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23995100",
+   "held_out_r2": 0.9612,
+   "held_out_rows": 40,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-751ceb9d5980",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "5246a6a375affbca.csv",
+   "doi": "10.5281/zenodo.23995100",
+   "form": "linear",
+   "params": [
+    0.01740932567651107,
+    1.801750286508277
+   ],
+   "seed": 764762571,
+   "x": "crps_refit",
+   "y": "rmse_refit"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Random-field parameters of a project site from off-site sources: synthetic test, two CPT d' (Zenodo, doi 10.5281/zenodo.23995100): 'rmse_refit' is linear in 'crps_refit' (R\u00b2 = 0.980 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23995100",
+   "held_out_r2": 0.6186,
+   "held_out_rows": 40,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-cd6bd5aacb07",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "5246a6a375affbca.csv",
+   "doi": "10.5281/zenodo.23995100",
+   "form": "power law",
+   "params": [
+    0.00011675269618891129,
+    -0.9580334010741924
+   ],
+   "seed": 764762571,
+   "x": "rmse_ratio",
+   "y": "calib_ratio"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Random-field parameters of a project site from off-site sources: synthetic test, two CPT d' (Zenodo, doi 10.5281/zenodo.23995100): 'calib_ratio' follows a power law in 'rmse_ratio' (R\u00b2 = 0.953 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23995100",
+   "held_out_r2": 0.9627,
+   "held_out_rows": 328,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-0b24df2e1a27",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "cf947a5ab3a67bd1.csv",
+   "doi": "10.5281/zenodo.23995100",
+   "form": "linear",
+   "params": [
+    1.424094451776639,
+    0.8551932520128349
+   ],
+   "seed": 3606576875,
+   "x": "n_pop",
+   "y": "n_valid"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Random-field parameters of a project site from off-site sources: synthetic test, two CPT d' (Zenodo, doi 10.5281/zenodo.23995100): 'n_valid' is linear in 'n_pop' (R\u00b2 = 0.939 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23995100",
+   "held_out_r2": 0.9118,
+   "held_out_rows": 50,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5cf7e73e0e68",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "d5a41b870a79d57d.csv",
+   "doi": "10.5281/zenodo.23995100",
+   "form": "exponential",
+   "params": [
+    0.4202753426110027,
+    -1.890640523140623
+   ],
+   "seed": 4057425877,
+   "x": "theta_np_within_x2",
+   "y": "theta_np_med_abs_log"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Random-field parameters of a project site from off-site sources: synthetic test, two CPT d' (Zenodo, doi 10.5281/zenodo.23995100): 'theta_np_med_abs_log' grows exponentially in 'theta_np_within_x2' (R\u00b2 = 0.915 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23995100",
+   "held_out_r2": 0.5851,
+   "held_out_rows": 50,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-898a27d84876",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "d5a41b870a79d57d.csv",
+   "doi": "10.5281/zenodo.23995100",
+   "form": "exponential",
+   "params": [
+    -0.08275716297471693,
+    -3.3757325260988793
+   ],
+   "seed": 4057425877,
+   "x": "frac_railed",
+   "y": "s2_med"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Random-field parameters of a project site from off-site sources: synthetic test, two CPT d' (Zenodo, doi 10.5281/zenodo.23995100): 's2_med' grows exponentially in 'frac_railed' (R\u00b2 = 0.917 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23995100",
+   "held_out_r2": 0.9574,
+   "held_out_rows": 50,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-1f571b243702",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "d5a41b870a79d57d.csv",
+   "doi": "10.5281/zenodo.23995100",
+   "form": "linear",
+   "params": [
+    1.1857832417809329,
+    -1.017043959350675
+   ],
+   "seed": 4057425877,
+   "x": "s2_med",
+   "y": "zbar_sd"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Random-field parameters of a project site from off-site sources: synthetic test, two CPT d' (Zenodo, doi 10.5281/zenodo.23995100): 'zbar_sd' is linear in 's2_med' (R\u00b2 = 0.948 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23995100",
+   "held_out_r2": 0.671,
+   "held_out_rows": 43,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9c89beff2889",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "deee282da002f3c5.csv",
+   "doi": "10.5281/zenodo.23995100",
+   "form": "linear",
+   "params": [
+    -1.4757109633394114,
+    0.9944268347904839
+   ],
+   "seed": 2121165027,
+   "x": "n_members",
+   "y": "n_keep_main"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Random-field parameters of a project site from off-site sources: synthetic test, two CPT d' (Zenodo, doi 10.5281/zenodo.23995100): 'n_keep_main' is linear in 'n_members' (R\u00b2 = 0.997 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23995100",
+   "held_out_r2": 0.671,
+   "held_out_rows": 43,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-201c75bfb014",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "deee282da002f3c5.csv",
+   "doi": "10.5281/zenodo.23995100",
+   "form": "linear",
+   "params": [
+    -1.4757109633394114,
+    0.9944268347904839
+   ],
+   "seed": 2121165027,
+   "x": "n_downloaded",
+   "y": "n_keep_main"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Random-field parameters of a project site from off-site sources: synthetic test, two CPT d' (Zenodo, doi 10.5281/zenodo.23995100): 'n_keep_main' is linear in 'n_downloaded' (R\u00b2 = 0.997 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22059862",
+   "held_out_r2": 0.9708,
+   "held_out_rows": 91,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-6bfccc36d599",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "1158a3ce1aad656b.csv",
+   "doi": "10.5281/zenodo.22059862",
+   "form": "exponential",
+   "params": [
+    -0.012416372287527387,
+    -1.8284100630852436e-05
+   ],
+   "seed": 2671613547,
+   "x": "suction_kPa",
+   "y": "degree_of_saturation"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Water retention, saturated conductivity and pressurized water penetration of 24 mature > c' (Zenodo, doi 10.5281/zenodo.22059862): 'degree_of_saturation' grows exponentially in 'suction_kPa' (R\u00b2 = 0.986 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.21630140",
+   "held_out_r2": 0.9483,
+   "held_out_rows": 60,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-422070c5708d",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8add42d5fe57f856.csv",
+   "doi": "10.5281/zenodo.21630140",
+   "form": "logarithmic",
+   "params": [
+    0.7914851412298368,
+    0.1297078268473084
+   ],
+   "seed": 2117778701,
+   "x": "d_avg_m",
+   "y": "xi_mean_adj"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Investigation density, ground heterogeneity and the reliability of driven tension piles at' (Zenodo, doi 10.5281/zenodo.21630140): 'xi_mean_adj' grows logarithmically in 'd_avg_m' (R\u00b2 = 0.954 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.21630140",
+   "held_out_r2": 0.9889,
+   "held_out_rows": 60,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3b45696ea109",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8add42d5fe57f856.csv",
+   "doi": "10.5281/zenodo.21630140",
+   "form": "exponential",
+   "params": [
+    0.04815119409032603,
+    0.005434343424796069
+   ],
+   "seed": 2117778701,
+   "x": "d_avg_m",
+   "y": "xi_mean_uncapped"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Investigation density, ground heterogeneity and the reliability of driven tension piles at' (Zenodo, doi 10.5281/zenodo.21630140): 'xi_mean_uncapped' grows exponentially in 'd_avg_m' (R\u00b2 = 0.991 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
