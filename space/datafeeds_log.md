@@ -1560,3 +1560,4 @@
 - 2026-11-08 03:35 FINDING (confirmed on held-out rows): In 'Data: The magnitude and pace of photosynthetic recovery after wildfire in California ecosy' (Zenodo, doi 10.5061/dryad.9w0vt4bkr): 'fitted' is linear in 'GPP_CAsites_raw_gf' (R² = 0.968 on the discovery half); held-out R² = 0.959 [emp-202cbb7687b0]
 - 2026-11-08 03:35 FINDING (confirmed on held-out rows): In 'Data: The magnitude and pace of photosynthetic recovery after wildfire in California ecosy' (Zenodo, doi 10.5061/dryad.9w0vt4bkr): 'fitted' is linear in 'NIRv_monthly_gf' (R² = 0.968 on the discovery half); held-out R² = 0.959 [emp-c9347a718b17]
 - 2026-11-08 03:36 data feeds: 10525 datasets analysed so far, 1397 confirmed findings
+- 2026-11-08 04:20 data feeds: online
