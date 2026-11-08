@@ -2053226,5 +2053226,113 @@
   "statement": "In '<b>Data and code from: The role of canopy soils in forest carbon and nutrient cycles: a da' (Figshare, doi 10.6084/m9.figshare.28570751.v4): 'MinTempColdestMo_worldclim' grows logarithmically in 'MAT_worldclim' (R\u00b2 = 0.975 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-f6c95da5d395",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "c*x**2/(c*x + 1)**2 + c*x/(c*x + 1) >= 7/10*(c*x**2/(c*x + 1))",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 2277",
+  "statement": "[physics: Compton scattering] Electron kinetic energy to scattered photon energy ratio [model-proposed; physical meaning unverified] \u2265 7/10 \u00d7 electron kinetic energy / (m_e c\u00b2)   on x < 2, c < 2 (tight only at the edge of the domain, near (2, 2))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-edd39b90a900",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "c/(x + 1) + c/(x + 1)**2 >= 2/9*(c*x/(c*x + 1))",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 2277",
+  "statement": "[physics: Compton scattering] Scattered photon wavelength shift factor [model-proposed; physical meaning unverified] \u2265 2/9 \u00d7 electron kinetic energy / photon energy   on x < 2, c < 2 (tight only at the edge of the domain, near (2, 9.3e-15))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-3e97cdca6c65",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'electron kinetic energy / photon energy'",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "c/(x + 1) + c/(x + 1)**2 >= 1/9*(c*x**2/(c*x + 1))",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 2277",
+  "statement": "[physics: Compton scattering] Scattered photon wavelength shift factor [model-proposed; physical meaning unverified] \u2265 1/9 \u00d7 electron kinetic energy / (m_e c\u00b2)   on x < 2, c < 2 (tight only at the edge of the domain, near (2, 4.39e-14))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-0b6f7f95533f",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "c/(x + 1) + c/(x + 1)**2 >= 4/9*(c)",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 2277",
+  "statement": "[physics: Compton scattering] Scattered photon wavelength shift factor [model-proposed; physical meaning unverified] \u2265 4/9 \u00d7 wavelength shift / Compton wavelength   on x < 2, c < 2 (tight only at the edge of the domain, near (2, 2))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]

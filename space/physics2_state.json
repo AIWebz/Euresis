@@ -32937,6 +32937,86 @@
    "family": "velocity addition",
    "expr": "sqrt((1 - u**2)*(1 - v**2) + (u + v)**2/(u*v + 1)**2)",
    "why": "affine combination of known quantities (composed speed / c, Relativistic Beta Addition [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "1 - c/(c*x + 1)",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "((1 - c1 - c2)**2 / 18) / ((1 - 2*c1 + c2)**2 / 9 + (1 - 2*c2 + c1)**2 / 9)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "sqrt(-L*p + 1)/(-p*sqrt(1 - L) + sqrt(1 - L) + 1)",
+   "why": "affine combination of known quantities (expected wealth, Insurance Risk Exposure Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "sqrt(-L*p + 1)/(-p*sqrt(1 - L) + p + 1)",
+   "why": "affine combination of known quantities (expected wealth, Risk Adjustment Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "L*p/(-p*sqrt(1 - L) + p + sqrt(1 - L) - sqrt(-L*p + 1) + 1)",
+   "why": "affine combination of known quantities (expected wealth, Insurance Risk Sensitivity Index [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "L*p/(-2*sqrt(1 - L) + sqrt(-L*p + 1) + 1)",
+   "why": "affine combination of known quantities (expected wealth, Relative Risk Sensitivity Index [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(1/3 + r**2 - 4*r**3/3)/(1/3 + r**2 - 4*r**3/3 + v*r**2)",
+   "why": "affine combination of known quantities (expected revenue, probability the seller's value is below reserve [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(2/3 + v**3/3)/(2*(1 - r**3)/3 + v*r**2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(1/3 - r**2 + 2*r**3/3)/(2*(1 - r**3)/3 + v*r**2)",
+   "why": "affine combination of known quantities (expected revenue, 1/(Welfare Efficiency Ratio [model-proposed; physical meaning unverified]))"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "r/v",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "sqrt((a**2 + b**2 - (a - b)**2)/(-a - b + 1)) / sqrt((a**2 + b**2 - (a - b)**2)/(-a - b + 1))",
+   "why": "must depend only on a, b"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "((-b**2 + (1 - a)**2)/2) / ((-a**2 + b**2 - (1 - a)**2 + 1)/2)",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), Kinetic Energy Ratio of Products [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2",
+   "why": "affine combination of known quantities (Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified], Fraction of kinetic energy transferred to the target [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2",
+   "why": "affine combination of known quantities (Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified], Fraction of kinetic energy transferred to the target [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "1/(1 + m) * (1 + e)",
+   "why": "affine combination of known quantities (target speed / initial speed, momentum transferred / initial momentum)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "2*z*r*sqrt(4*r**2*z**2 + (1 - r**2)**2)",
+   "why": "a power or product of known quantities"
   }
  ],
  "tried": [
@@ -36385,7 +36465,31 @@
   "Compton scattering|Compton scattering cross-section factor [model-proposed; physical meaning unverified]|Recoil electron momentum to initial photon momentum ratio [model-proposed; physical meaning unverified]",
   "Compton scattering|Electron kinetic energy to scattered photon energy ratio [model-proposed; physical meaning unverified]|scattered photon energy / initial energy",
   "Compton scattering|Electron kinetic energy to scattered photon energy ratio [model-proposed; physical meaning unverified]|electron kinetic energy / photon energy",
-  "Compton scattering|Electron kinetic energy to scattered photon energy ratio [model-proposed; physical meaning unverified]|scattered photon energy / (m_e c\u00b2)"
+  "Compton scattering|Electron kinetic energy to scattered photon energy ratio [model-proposed; physical meaning unverified]|scattered photon energy / (m_e c\u00b2)",
+  "Compton scattering|Electron kinetic energy to scattered photon energy ratio [model-proposed; physical meaning unverified]|electron kinetic energy / (m_e c\u00b2)",
+  "Compton scattering|Electron kinetic energy to scattered photon energy ratio [model-proposed; physical meaning unverified]|wavelength shift / Compton wavelength",
+  "Compton scattering|Electron kinetic energy to scattered photon energy ratio [model-proposed; physical meaning unverified]|photon energy / (m_e c\u00b2)",
+  "Compton scattering|Electron kinetic energy to scattered photon energy ratio [model-proposed; physical meaning unverified]|Recoil electron momentum / (m_e c) [model-proposed; physical meaning unverified]",
+  "Compton scattering|Electron kinetic energy to scattered photon energy ratio [model-proposed; physical meaning unverified]|Electron recoil angle (cosine) [model-proposed; physical meaning unverified]",
+  "Compton scattering|Electron kinetic energy to scattered photon energy ratio [model-proposed; physical meaning unverified]|Compton wavelength shift / (initial photon wavelength) [model-proposed; physical meaning unverified]",
+  "Compton scattering|Electron kinetic energy to scattered photon energy ratio [model-proposed; physical meaning unverified]|Compton scattering formula (recoil angle cosine) [model-proposed; physical meaning unverified]",
+  "Compton scattering|Electron kinetic energy to scattered photon energy ratio [model-proposed; physical meaning unverified]|Scattered photon wavelength / initial photon wavelength [model-proposed; physical meaning unverified]",
+  "Compton scattering|Electron kinetic energy to scattered photon energy ratio [model-proposed; physical meaning unverified]|Scattered photon momentum / initial photon momentum [model-proposed; physical meaning unverified]",
+  "Compton scattering|Electron kinetic energy to scattered photon energy ratio [model-proposed; physical meaning unverified]|Scattered photon wavelength / Compton wavelength [model-proposed; physical meaning unverified]",
+  "Compton scattering|Electron kinetic energy to scattered photon energy ratio [model-proposed; physical meaning unverified]|Electron recoil angle (sine squared) [model-proposed; physical meaning unverified]",
+  "Compton scattering|Electron kinetic energy to scattered photon energy ratio [model-proposed; physical meaning unverified]|Electron momentum fraction [model-proposed; physical meaning unverified]",
+  "Compton scattering|Electron kinetic energy to scattered photon energy ratio [model-proposed; physical meaning unverified]|Electron kinetic energy fraction [model-proposed; physical meaning unverified]",
+  "Compton scattering|Electron kinetic energy to scattered photon energy ratio [model-proposed; physical meaning unverified]|Electron kinetic energy / initial photon energy [model-proposed; physical meaning unverified]",
+  "Compton scattering|Electron kinetic energy to scattered photon energy ratio [model-proposed; physical meaning unverified]|Compton scattering factor [model-proposed; physical meaning unverified]",
+  "Compton scattering|Electron kinetic energy to scattered photon energy ratio [model-proposed; physical meaning unverified]|Compton scattering cross-section factor [model-proposed; physical meaning unverified]",
+  "Compton scattering|Electron kinetic energy to scattered photon energy ratio [model-proposed; physical meaning unverified]|Scattered photon wavelength shift factor [model-proposed; physical meaning unverified]",
+  "Compton scattering|Electron kinetic energy to scattered photon energy ratio [model-proposed; physical meaning unverified]|Recoil electron momentum to initial photon momentum ratio [model-proposed; physical meaning unverified]",
+  "Compton scattering|Scattered photon wavelength shift factor [model-proposed; physical meaning unverified]|scattered photon energy / initial energy",
+  "Compton scattering|Scattered photon wavelength shift factor [model-proposed; physical meaning unverified]|electron kinetic energy / photon energy",
+  "Compton scattering|Scattered photon wavelength shift factor [model-proposed; physical meaning unverified]|scattered photon energy / (m_e c\u00b2)",
+  "Compton scattering|Scattered photon wavelength shift factor [model-proposed; physical meaning unverified]|electron kinetic energy / (m_e c\u00b2)",
+  "Compton scattering|Scattered photon wavelength shift factor [model-proposed; physical meaning unverified]|wavelength shift / Compton wavelength",
+  "Compton scattering|Scattered photon wavelength shift factor [model-proposed; physical meaning unverified]|photon energy / (m_e c\u00b2)"
  ],
  "edges": [
   {
@@ -40905,9 +41009,33 @@
    "f": "Electron kinetic energy to scattered photon energy ratio [model-proposed; physical meaning unverified]",
    "g": "electron kinetic energy / photon energy",
    "k": "1"
+  },
+  {
+   "family": "Compton scattering",
+   "f": "Electron kinetic energy to scattered photon energy ratio [model-proposed; physical meaning unverified]",
+   "g": "electron kinetic energy / (m_e c\u00b2)",
+   "k": "7/10"
+  },
+  {
+   "family": "Compton scattering",
+   "f": "Scattered photon wavelength shift factor [model-proposed; physical meaning unverified]",
+   "g": "electron kinetic energy / photon energy",
+   "k": "2/9"
+  },
+  {
+   "family": "Compton scattering",
+   "f": "Scattered photon wavelength shift factor [model-proposed; physical meaning unverified]",
+   "g": "electron kinetic energy / (m_e c\u00b2)",
+   "k": "1/9"
+  },
+  {
+   "family": "Compton scattering",
+   "f": "Scattered photon wavelength shift factor [model-proposed; physical meaning unverified]",
+   "g": "wavelength shift / Compton wavelength",
+   "k": "4/9"
   }
  ],
- "rounds": 2276,
+ "rounds": 2283,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",
