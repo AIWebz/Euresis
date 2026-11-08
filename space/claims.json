@@ -2154194,5 +2154194,32 @@
   "statement": "In 'Crop-specific salinity and irrigation data for river sub-basin water scarcity analyses in ' (Zenodo, doi 10.5281/zenodo.6620860): 'Q_MMF' is linear in 'EFR' (R\u00b2 = 0.975 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.6620860",
+   "held_out_r2": 0.9546,
+   "held_out_rows": 75,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-0b06c78f79ca",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "531c2ccf173f2add.csv",
+   "doi": "10.5281/zenodo.6620860",
+   "form": "power law",
+   "params": [
+    -2.694611369582889,
+    0.9282821702756611
+   ],
+   "seed": 1486088169,
+   "x": "av_irr_crop_area",
+   "y": "perc"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Crop-specific salinity and irrigation data for river sub-basin water scarcity analyses in ' (Zenodo, doi 10.5281/zenodo.6620860): 'perc' follows a power law in 'av_irr_crop_area' (R\u00b2 = 0.943 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
