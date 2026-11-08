@@ -1835,3 +1835,4 @@
 - 2026-11-08 13:07 FINDING (confirmed on held-out rows): In 'Wearable microneedle graphene field effect transistor sensors (supporting data)' (Zenodo, doi 10.5281/zenodo.13381456): ' ncycles=2' is linear in ' delay=0.05' (R² = 0.984 on the discovery half); held-out R² = 0.984 [emp-b70886d575ab]
 - 2026-11-08 13:07 FINDING (confirmed on held-out rows): In 'Macroscopic theory of multipartite correlations in permutation-invariant open quantum syst' (Zenodo, doi 10.5281/zenodo.16679908): 'local_entropy' follows a power law in 'mutual_information' (R² = 0.983 on the discovery half); held-out R² = 0.979 [emp-823e8ac01ce4]
 - 2026-11-08 13:08 data feeds: 11712 datasets analysed so far, 1652 confirmed findings
+- 2026-11-08 13:53 data feeds: online
