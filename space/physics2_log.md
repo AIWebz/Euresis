@@ -2384,3 +2384,8 @@
 - 2026-11-08 06:35 round 2188: velocity addition
 - 2026-11-08 06:36 round 2189: Compton scattering
 - 2026-11-08 06:37 round 2190: Cournot duopoly
+- 2026-11-08 06:38 round 2191: insurance and risk
+- 2026-11-08 06:40 round 2192: auction with a reserve price
+- 2026-11-08 06:41 round 2193: two-body decay
+- 2026-11-08 06:42 round 2194: collision
+- 2026-11-08 06:43 round 2195: driven oscillator
