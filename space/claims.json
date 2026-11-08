@@ -2046799,5 +2046799,331 @@
   "statement": "[economics: Cournot duopoly] Total Welfare Index [model-proposed; physical meaning unverified] \u2265 1/18 \u00d7 Hirshleifer Index [model-proposed; physical meaning unverified]   on c1 < 1/2, c2 < 1/2 (tight only at the edge of the domain, near (0.5, 0.5))",
   "status": "proved",
   "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-36374e40648a",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "claim": "(-b**2/2 + (1 - a)**2/2)/(-a**2 - b**2 + 3/2) >= 2/3*(-b**2/2 + (1 - a)**2/2)",
+   "symbols": [
+    "a",
+    "b"
+   ]
+  },
+  "source": "physics_discover2 round 2265",
+  "statement": "[physics: two-body decay] Relative Kinetic Energy Ratio [model-proposed; physical meaning unverified] \u2265 2/3 \u00d7 kinetic energy of product 1 / (Mc\u00b2)   on a < 1, b < 1, a + b < 1 (tight only at the edge of the domain, near (1.23e-10, 8.01e-09))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-8983e2ce6cea",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "1/(c*x + 1) + (c*x + 1)**(-2) >= 6/5*(1/(c*x + 1))",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 2269",
+  "statement": "[physics: Compton scattering] Compton scattering cross-section factor [model-proposed; physical meaning unverified] \u2265 6/5 \u00d7 scattered photon energy / initial energy   on x < 2, c < 2 (tight only at the edge of the domain, near (2, 2))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-20c953fef7e6",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'scattered photon energy / initial energy'",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "1/(c*x + 1) + (c*x + 1)**(-2) >= 3/10*(c*x/(c*x + 1))",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 2269",
+  "statement": "[physics: Compton scattering] Compton scattering cross-section factor [model-proposed; physical meaning unverified] \u2265 3/10 \u00d7 electron kinetic energy / photon energy   on x < 2, c < 2 (tight only at the edge of the domain, near (2, 2))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-c7752a5babcc",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'scattered photon energy / initial energy'",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "1/(c*x + 1) + (c*x + 1)**(-2) >= 3/5*(x/(c*x + 1))",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 2269",
+  "statement": "[physics: Compton scattering] Compton scattering cross-section factor [model-proposed; physical meaning unverified] \u2265 3/5 \u00d7 scattered photon energy / (m_e c\u00b2)   on x < 2, c < 2 (tight only at the edge of the domain, near (2, 2))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-2f4efbdf961e",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'scattered photon energy / initial energy'",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "1/(c*x + 1) + (c*x + 1)**(-2) >= 3/20*(c*x**2/(c*x + 1))",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 2269",
+  "statement": "[physics: Compton scattering] Compton scattering cross-section factor [model-proposed; physical meaning unverified] \u2265 3/20 \u00d7 electron kinetic energy / (m_e c\u00b2)   on x < 2, c < 2 (tight only at the edge of the domain, near (2, 2))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-336294d50c49",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'scattered photon energy / initial energy'",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "1/(c*x + 1) + (c*x + 1)**(-2) >= 3/25*(c)",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 2269",
+  "statement": "[physics: Compton scattering] Compton scattering cross-section factor [model-proposed; physical meaning unverified] \u2265 3/25 \u00d7 wavelength shift / Compton wavelength   on x < 2, c < 2 (tight only at the edge of the domain, near (2, 2))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-288a267e8357",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'scattered photon energy / initial energy'",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "1/(c*x + 1) + (c*x + 1)**(-2) >= 3/25*(x)",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 2269",
+  "statement": "[physics: Compton scattering] Compton scattering cross-section factor [model-proposed; physical meaning unverified] \u2265 3/25 \u00d7 photon energy / (m_e c\u00b2)   on x < 2, c < 2 (tight only at the edge of the domain, near (2, 2))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-e2986e57a2f6",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'scattered photon energy / initial energy'",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "1/(c*x + 1) + (c*x + 1)**(-2) >= 12/25*(c/(c + x))",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 2269",
+  "statement": "[physics: Compton scattering] Compton scattering cross-section factor [model-proposed; physical meaning unverified] \u2265 12/25 \u00d7 Compton wavelength shift / (initial photon wavelength) [model-proposed; physical meaning unverified]   on x < 2, c < 2 (tight only at the edge of the domain, near (2, 2))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-c2c8ed1d4de4",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "1/(c*x + 1) + (c*x + 1)**(-2) >= 2*(1/(2*c*x + 1))",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 2269",
+  "statement": "[physics: Compton scattering] Compton scattering cross-section factor [model-proposed; physical meaning unverified] \u2265 2 \u00d7 Compton scattering formula (recoil angle cosine) [model-proposed; physical meaning unverified]   on x < 2, c < 2 (tight only at the edge of the domain, near (0.000226, 6.12e-13))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-e6530bed8b21",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'scattered photon energy / initial energy'",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "1/(c*x + 1) + (c*x + 1)**(-2) >= 3/10*(-c/(c*x + 1) + 1 + 1/(c*x + 1))",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 2269",
+  "statement": "[physics: Compton scattering] Compton scattering cross-section factor [model-proposed; physical meaning unverified] \u2265 3/10 \u00d7 Compton scattering factor [model-proposed; physical meaning unverified]   on x < 2, c < 2 (tight only at the edge of the domain, near (2, 2))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-b90e9ebb13d3",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'scattered photon energy / initial energy'",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "1/(c*x + 1) + (c*x + 1)**(-2) >= 3/14*(c*x**2/(c*x + 1)**2 + c*x/(c*x + 1))",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 2269",
+  "statement": "[physics: Compton scattering] Compton scattering cross-section factor [model-proposed; physical meaning unverified] \u2265 3/14 \u00d7 Electron kinetic energy to scattered photon energy ratio [model-proposed; physical meaning unverified]   on x < 2, c < 2 (tight only at the edge of the domain, near (2, 2))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-65ded37e1efd",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "c*x**2/(c*x + 1)**2 + c*x/(c*x + 1) >= 1*(c*x/(c*x + 1))",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 2269",
+  "statement": "[physics: Compton scattering] Electron kinetic energy to scattered photon energy ratio [model-proposed; physical meaning unverified] \u2265 1 \u00d7 electron kinetic energy / photon energy   on x < 2, c < 2 (tight only at the edge of the domain, near (7.7e-17, 1.77))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]

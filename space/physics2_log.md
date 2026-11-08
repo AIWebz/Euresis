@@ -2465,3 +2465,9 @@
 - 2026-11-08 09:34 round 2263: insurance and risk
 - 2026-11-08 09:35 round 2264: auction with a reserve price
 - 2026-11-08 09:37 round 2265: two-body decay
+- 2026-11-08 09:38 round 2266: collision
+- 2026-11-08 09:40 round 2267: driven oscillator
+- 2026-11-08 09:40 round 2268: velocity addition
+- 2026-11-08 09:41 round 2269: Compton scattering
+- 2026-11-08 09:43 round 2270: Cournot duopoly
+- 2026-11-08 09:44 round 2271: insurance and risk
