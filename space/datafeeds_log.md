@@ -2042,3 +2042,4 @@
 - 2026-11-08 21:33 FINDING (confirmed on held-out rows): In 'LegacyClimate 1.0: a dataset of pollen-based climate reconstructions from 2594 Northern He' (Zenodo, doi 10.5281/zenodo.7887565): 'TDJF' is linear in 'TANN' (R² = 0.906 on the discovery half); held-out R² = 0.906 [emp-a4576e073e19]
 - 2026-11-08 21:33 FINDING (confirmed on held-out rows): In 'Data from: Central Mongolian lake sediments reveal new insights on climate change and eque' (Zenodo, doi 10.5281/zenodo.5964115): 'Sand' is linear in 'Silt' (R² = 0.926 on the discovery half); held-out R² = 0.894 [emp-3366a5d0383b]
 - 2026-11-08 21:34 data feeds: 12710 datasets analysed so far, 1841 confirmed findings
+- 2026-11-08 22:35 data feeds: online
