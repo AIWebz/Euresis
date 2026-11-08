@@ -156,7 +156,8 @@
    "Expected Utility Adjustment Factor [model-proposed; physical meaning unverified]": "sqrt(-L*p + 1)/(p*sqrt(1 - L) - p + 1) - 1",
    "Insurance Risk Sensitivity Index [model-proposed; physical meaning unverified]": "L*p/(-p*sqrt(1 - L) + p + sqrt(1 - L) - sqrt(-L*p + 1) + 1)",
    "Relative Risk Sensitivity Index [model-proposed; physical meaning unverified]": "L*p/(-2*sqrt(1 - L) + sqrt(-L*p + 1) + 1)",
-   "Insurance Risk Exposure Ratio [model-proposed; physical meaning unverified]": "sqrt(-L*p + 1)/(-p*sqrt(1 - L) + sqrt(1 - L) + 1)"
+   "Insurance Risk Exposure Ratio [model-proposed; physical meaning unverified]": "sqrt(-L*p + 1)/(-p*sqrt(1 - L) + sqrt(1 - L) + 1)",
+   "Risk Sensitivity Ratio [model-proposed; physical meaning unverified]": "L*p/(-p*sqrt(1 - L) + sqrt(1 - L) - sqrt(-L*p + 1) + 1)"
   },
   "auction with a reserve price": {
    "expected revenue": "1/3 + r**2 - 4*r**3/3",
@@ -30525,6 +30526,291 @@
    "family": "Compton scattering",
    "expr": "1/(2*c*x + 1)",
    "why": "affine combination of known quantities (scattered photon energy / initial energy, Compton scattering formula (recoil angle cosine) [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "((1 - 2*c1 + c2)**2 + (1 - 2*c2 + c1)**2)/((1 - c1)**2 + (1 - c2)**2)",
+   "why": "affine combination of known quantities (output of firm 1, Hirshleifer Index [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "(-L*p + 1)**2/(-p*sqrt(1 - L) + sqrt(1 - L) + 1)**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "1/sqrt(1 - L) - 1",
+   "why": "affine combination of known quantities (expected wealth, Relative Risk Aversion [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "sqrt(-L*p + 1)/(p*sqrt(1 - L) - p + 1) - 1",
+   "why": "affine combination of known quantities (expected wealth, Expected Utility Adjustment Factor [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "(-L*p + 1)**2/(-p*sqrt(1 - L) + sqrt(1 - L) + 1)**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(1/3 + r**2 - 4*r**3/3)/(1/3 + r**2 - 4*r**3/3 + v*r**2)",
+   "why": "affine combination of known quantities (expected revenue, probability the seller's value is below reserve [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "sqrt(-(1 - (a - b)**2)*(1 - (a + b)**2)/4 + (a**2 - b**2 + 1)**2)/sqrt(-(1 - (a - b)**2)*(1 - (a + b",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "sqrt((1 - (a - b)**2)*(1 - (a + b)**2))/sqrt((1 + a**2 - b**2)**2 + (1 - a**2 + b**2)**2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "sqrt((1 - (a - b)**2)*(1 - (a + b)**2) + (-a**2 + b**2 + 1)**2 + (a**2 - b**2 + 1)**2)",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), Boost factor of the system [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "((1 + a**2 - b**2)/2)/((1 - a**2 + b**2)/2)",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), 1/(energy of product 2 / (Mc\u00b2)))"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2",
+   "why": "affine combination of known quantities (Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified], Fraction of kinetic energy transferred to the target [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2",
+   "why": "affine combination of known quantities (Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified], Fraction of kinetic energy transferred to the target [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "((e*(m + 1)/(e*m + 1)))**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "collision",
+   "expr": "((-e*m + 1)/(e*m + 1))**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt((1 - r**2)**2 + (2*z*r)**2)",
+   "why": "affine combination of known quantities (amplitude / static deflection, 1/(amplitude / static deflection))"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(4*r**2*z**2 + 1)*sqrt(4*r**2*z**2 + (1 - r**2)**2)/(2*r*z*(sqrt(4*r**2*z**2 + 1) + sqrt(4*r**2*",
+   "why": "affine combination of known quantities (quality factor, Power Amplification Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(4*r**2*z**2 + (1 - r**2)**2)/sqrt(4*z**2 + 1)",
+   "why": "affine combination of known quantities (amplitude / static deflection, Mechanical Impedance Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(4*z**2 + 1) - 1",
+   "why": "affine combination of known quantities (amplitude / static deflection, Resonance Width [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 + u)/(1 - u)) * sqrt((1 + v)/(1 - v)) / sqrt((1 + (u + v)/(1 + u*v)) / (1 - (u + v)/(1 + u*v",
+   "why": "affine combination of known quantities (composed speed / c)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt(1 - u**2) * sqrt(1 - v**2) + (u + v) * sqrt((1 - u**2) * (1 - v**2)) / (u*v + 1) / sqrt(1 - ((u",
+   "why": "affine combination of known quantities (Galilean sum / c, 1/(product of the two Lorentz factors))"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "1 - c/(c*x + 1)",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "c/(c*x + 1)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, Compton scattering factor [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "x**2*c/(1 + x*c)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, electron kinetic energy / (m_e c\u00b2))"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "x/(1 + x*c)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, scattered photon energy / (m_e c\u00b2))"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "((1 - 2*c1 + c2)**2 + (1 - 2*c2 + c1)**2)/((1 - c1)**2 + (1 - c2)**2)",
+   "why": "affine combination of known quantities (output of firm 1, Hirshleifer Index [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "sqrt(-L*p + 1)/(-p*sqrt(1 - L) + sqrt(1 - L) + 1)",
+   "why": "affine combination of known quantities (expected wealth, Insurance Risk Exposure Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "-1 + sqrt(-L*p + 1)/sqrt(1 - L)",
+   "why": "affine combination of known quantities (expected wealth, Insurance Risk Exposure Index [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "sqrt(-L*p + 1)/(-p*sqrt(1 - L) + p + 1)",
+   "why": "affine combination of known quantities (expected wealth, Risk Adjustment Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "L*p/(-p*sqrt(1 - L) + p + sqrt(1 - L) - sqrt(-L*p + 1) + 1)",
+   "why": "affine combination of known quantities (expected wealth, Insurance Risk Sensitivity Index [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(1/3 + r**2 - 4*r**3/3)/(2*(1 - r**3)/3 + v*r**2)",
+   "why": "affine combination of known quantities (Welfare Reserve Ratio [model-proposed; physical meaning unverified], 1/(Welfare Reserve Efficiency with Seller Value [model-proposed; physical meaning unverified]))"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(1/3 - r**2 + 2*r**3/3)/(2*(1 - r**3)/3 + v*r**2)",
+   "why": "affine combination of known quantities (expected revenue, 1/(Welfare Efficiency Ratio [model-proposed; physical meaning unverified]))"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(-2*r**3/3 + r**2*v + 2/3)/(4*r**3/3 - r**2 + 1/3)",
+   "why": "affine combination of known quantities (expected revenue, Welfare Reserve Efficiency Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(1/3 + r**2 - 4*r**3/3 + v*r**2)/(2*(1 - r**3)/3 + v*r**2)",
+   "why": "affine combination of known quantities (expected revenue, 1/(Welfare Efficiency Ratio [model-proposed; physical meaning unverified]))"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "sqrt((1 - (a - b)**2)*(1 - (a + b)**2))/sqrt((1 + a**2 - b**2)**2 + (1 - a**2 + b**2)**2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "collision",
+   "expr": "(-e**2*m**2/(m + 1)**2 - e**2*m/(m + 1) + 1)",
+   "why": "affine combination of known quantities (target speed / initial speed, Fraction of kinetic energy retained by the target [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "z**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "r**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "(1/(sqrt((1 - r**2)**2 + (2*z*r)**2)))**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "(sqrt((1 + (2*z*r)**2)/((1 - r**2)**2 + (2*z*r)**2)))**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 + u)/(1 - u)) * sqrt((1 + v)/(1 - v)) / sqrt((1 + (u + v)/(1 + u*v)) / (1 - (u + v)/(1 + u*v",
+   "why": "affine combination of known quantities (composed speed / c)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt(1 - u**2) * sqrt(1 - v**2) + (u + v) * sqrt((1 - u**2) * (1 - v**2)) / (u*v + 1) / sqrt(1 - ((u",
+   "why": "affine combination of known quantities (Galilean sum / c, 1/(product of the two Lorentz factors))"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "c/(x + 1) - 1",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "x**2*c/(1 + x*c) - 1",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "sqrt(c**2*x**2 + 1)/(x*(c*x + 1)) - 1",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "1 - c/(c*x + 1)",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "((1 - c1 - c2)**2)/((1 - 2*c1 + c2)**2 + (1 - 2*c2 + c1)**2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "1 - (p*sqrt(1 - L) + 1 - p)**2 / (1 - p*L)",
+   "why": "affine combination of known quantities (expected wealth, Insurance Coverage Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "(1 - p*L) / (p*sqrt(1 - L) + 1 - p)**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "sqrt(-L*p + 1) / (sqrt(1 - L) + 1 - p*sqrt(1 - L))",
+   "why": "affine combination of known quantities (expected wealth, Insurance Risk Exposure Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(1/3 + r**2 - 4*r**3/3)/(2*(1 - r**3)/3 + v*r**2)",
+   "why": "affine combination of known quantities (Welfare Reserve Ratio [model-proposed; physical meaning unverified], 1/(Welfare Reserve Efficiency with Seller Value [model-proposed; physical meaning unverified]))"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(1/3 - r**2 + 2*r**3/3)/(2*(1 - r**3)/3 + v*r**2)",
+   "why": "affine combination of known quantities (expected revenue, 1/(Welfare Efficiency Ratio [model-proposed; physical meaning unverified]))"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(-2*r**3/3 + r**2*v + 2/3)/(4*r**3/3 - r**2 + 1/3)",
+   "why": "affine combination of known quantities (expected revenue, Welfare Reserve Efficiency Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(2*r**3/3 - r**2 + 1/3)/(2*r**3/3 - r**2*(2*r**3/3 - r**2 + 1/3) - r**2 + 1/3)",
+   "why": "affine combination of known quantities (expected revenue, reserve price elasticity of bidder surplus [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "sqrt((1 - (a - b)**2)*(1 - (a + b)**2))/((1 + a**2 - b**2)*(1 - a**2 + b**2))",
+   "why": "affine combination of known quantities (speed of product 1 / c, speed of product 2 / c)"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "((-b**2 + (1 - a)**2)/2)/(-a**2/2 - b**2 + (1 - a)**2/2 + 1/2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "sqrt((1 - (a - b)**2)*(1 - (a + b)**2)/4 + (a**2 - b**2 + 1)**2)/sqrt((1 - (a - b)**2)*(1 - (a + b)*",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), Lorentz Factor Ratio of Products [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "sqrt(-b**2/4 + (1 - a)**2/4 + (a**2 - b**2 + 1)**2)/sqrt(-b**2/4 + (1 - a)**2/4 + (-a**2 + b**2 + 1)",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), Invariant Mass Ratio of Products [model-proposed; physical meaning unverified])"
   }
  ],
  "tried": [
@@ -33731,7 +34017,47 @@
   "driven oscillator|Mechanical Impedance Ratio [model-proposed; physical meaning unverified]|amplitude / static deflection",
   "driven oscillator|Mechanical Impedance Ratio [model-proposed; physical meaning unverified]|transmissibility",
   "driven oscillator|Mechanical Impedance Ratio [model-proposed; physical meaning unverified]|velocity amplitude / (\u03c90 \u00d7 static deflection)",
-  "driven oscillator|Mechanical Impedance Ratio [model-proposed; physical meaning unverified]|acceleration amplitude / (\u03c90\u00b2 \u00d7 static deflection)"
+  "driven oscillator|Mechanical Impedance Ratio [model-proposed; physical meaning unverified]|acceleration amplitude / (\u03c90\u00b2 \u00d7 static deflection)",
+  "driven oscillator|Mechanical Impedance Ratio [model-proposed; physical meaning unverified]|mean absorbed power (normalised)",
+  "driven oscillator|Mechanical Impedance Ratio [model-proposed; physical meaning unverified]|quality factor",
+  "driven oscillator|Mechanical Impedance Ratio [model-proposed; physical meaning unverified]|log decrement [model-proposed; physical meaning unverified]",
+  "driven oscillator|Mechanical Impedance Ratio [model-proposed; physical meaning unverified]|resonance frequency ratio [model-proposed; physical meaning unverified]",
+  "driven oscillator|Mechanical Impedance Ratio [model-proposed; physical meaning unverified]|resonance amplitude ratio [model-proposed; physical meaning unverified]",
+  "driven oscillator|Mechanical Impedance Ratio [model-proposed; physical meaning unverified]|Resonance frequency shift [model-proposed; physical meaning unverified]",
+  "driven oscillator|Mechanical Impedance Ratio [model-proposed; physical meaning unverified]|Peak amplitude ratio [model-proposed; physical meaning unverified]",
+  "driven oscillator|Mechanical Impedance Ratio [model-proposed; physical meaning unverified]|Resonance frequency ratio (corrected) [model-proposed; physical meaning unverified]",
+  "driven oscillator|Mechanical Impedance Ratio [model-proposed; physical meaning unverified]|Relative energy loss per cycle [model-proposed; physical meaning unverified]",
+  "driven oscillator|Mechanical Impedance Ratio [model-proposed; physical meaning unverified]|Normalized power transmission [model-proposed; physical meaning unverified]",
+  "driven oscillator|Mechanical Impedance Ratio [model-proposed; physical meaning unverified]|Velocity transmissibility [model-proposed; physical meaning unverified]",
+  "driven oscillator|Mechanical Impedance Ratio [model-proposed; physical meaning unverified]|Acceleration transmissibility [model-proposed; physical meaning unverified]",
+  "driven oscillator|Mechanical Impedance Ratio [model-proposed; physical meaning unverified]|Energy Dissipation Ratio [model-proposed; physical meaning unverified]",
+  "driven oscillator|Mechanical Impedance Ratio [model-proposed; physical meaning unverified]|Power Amplification Factor [model-proposed; physical meaning unverified]",
+  "driven oscillator|Mechanical Impedance Ratio [model-proposed; physical meaning unverified]|Power Amplification Ratio [model-proposed; physical meaning unverified]",
+  "driven oscillator|Mechanical Impedance Ratio [model-proposed; physical meaning unverified]|Resonance Width [model-proposed; physical meaning unverified]",
+  "insurance and risk|expected wealth|Risk Sensitivity Ratio [model-proposed; physical meaning unverified]",
+  "insurance and risk|expected utility|Risk Sensitivity Ratio [model-proposed; physical meaning unverified]",
+  "insurance and risk|certainty equivalent|Risk Sensitivity Ratio [model-proposed; physical meaning unverified]",
+  "insurance and risk|risk premium|Risk Sensitivity Ratio [model-proposed; physical meaning unverified]",
+  "insurance and risk|actuarially fair insurance premium|Risk Sensitivity Ratio [model-proposed; physical meaning unverified]",
+  "insurance and risk|maximum premium the person would pay for full insurance|Risk Sensitivity Ratio [model-proposed; physical meaning unverified]",
+  "insurance and risk|variance of wealth|Risk Sensitivity Ratio [model-proposed; physical meaning unverified]",
+  "insurance and risk|Risk-adjusted expected utility [model-proposed; physical meaning unverified]|Risk Sensitivity Ratio [model-proposed; physical meaning unverified]",
+  "insurance and risk|Insurance risk sensitivity [model-proposed; physical meaning unverified]|Risk Sensitivity Ratio [model-proposed; physical meaning unverified]",
+  "insurance and risk|Coefficient of Risk Aversion [model-proposed; physical meaning unverified]|Risk Sensitivity Ratio [model-proposed; physical meaning unverified]",
+  "insurance and risk|Relative Risk Aversion [model-proposed; physical meaning unverified]|Risk Sensitivity Ratio [model-proposed; physical meaning unverified]",
+  "insurance and risk|Expected Utility Deviation [model-proposed; physical meaning unverified]|Risk Sensitivity Ratio [model-proposed; physical meaning unverified]",
+  "insurance and risk|Insurance Coverage Ratio [model-proposed; physical meaning unverified]|Risk Sensitivity Ratio [model-proposed; physical meaning unverified]",
+  "insurance and risk|Insurance Risk Adjustment Factor [model-proposed; physical meaning unverified]|Risk Sensitivity Ratio [model-proposed; physical meaning unverified]",
+  "insurance and risk|Insurance Risk Adjustment Index [model-proposed; physical meaning unverified]|Risk Sensitivity Ratio [model-proposed; physical meaning unverified]",
+  "insurance and risk|Insurance Risk Sensitivity Ratio [model-proposed; physical meaning unverified]|Risk Sensitivity Ratio [model-proposed; physical meaning unverified]",
+  "insurance and risk|Relative Risk Sensitivity [model-proposed; physical meaning unverified]|Risk Sensitivity Ratio [model-proposed; physical meaning unverified]",
+  "insurance and risk|Insurance Risk Adjustment Ratio [model-proposed; physical meaning unverified]|Risk Sensitivity Ratio [model-proposed; physical meaning unverified]",
+  "insurance and risk|Insurance Risk Adjustment Factor Squared [model-proposed; physical meaning unverified]|Risk Sensitivity Ratio [model-proposed; physical meaning unverified]",
+  "insurance and risk|Relative Risk Aversion Squared [model-proposed; physical meaning unverified]|Risk Sensitivity Ratio [model-proposed; physical meaning unverified]",
+  "insurance and risk|Insurance Risk Exposure Index [model-proposed; physical meaning unverified]|Risk Sensitivity Ratio [model-proposed; physical meaning unverified]",
+  "insurance and risk|Risk Adjustment Ratio [model-proposed; physical meaning unverified]|Risk Sensitivity Ratio [model-proposed; physical meaning unverified]",
+  "insurance and risk|Expected Utility Adjustment Factor [model-proposed; physical meaning unverified]|Risk Sensitivity Ratio [model-proposed; physical meaning unverified]",
+  "insurance and risk|Insurance Risk Sensitivity Index [model-proposed; physical meaning unverified]|Risk Sensitivity Ratio [model-proposed; physical meaning unverified]"
  ],
  "edges": [
   {
@@ -37861,9 +38187,21 @@
    "f": "Energy Dissipation Ratio [model-proposed; physical meaning unverified]",
    "g": "Mechanical Impedance Ratio [model-proposed; physical meaning unverified]",
    "k": "1/3"
+  },
+  {
+   "family": "driven oscillator",
+   "f": "Mechanical Impedance Ratio [model-proposed; physical meaning unverified]",
+   "g": "Relative energy loss per cycle [model-proposed; physical meaning unverified]",
+   "k": "1"
+  },
+  {
+   "family": "insurance and risk",
+   "f": "Relative Risk Aversion [model-proposed; physical meaning unverified]",
+   "g": "Risk Sensitivity Ratio [model-proposed; physical meaning unverified]",
+   "k": "1/2"
   }
  ],
- "rounds": 2109,
+ "rounds": 2129,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",

@@ -1967194,5 +1967194,59 @@
   "statement": "[physics: driven oscillator] Energy Dissipation Ratio [model-proposed; physical meaning unverified] \u2265 1/3 \u00d7 Mechanical Impedance Ratio [model-proposed; physical meaning unverified]   on r < 2, z < 1 (tight only at the edge of the domain, near (2, 1.99e-15))",
   "status": "proved",
   "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 2",
+    "z < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-882aa7cc87ac",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 2",
+    "z < 1"
+   ],
+   "claim": "sqrt(4*r**2*z**2 + (1 - r**2)**2)/sqrt(4*z**2 + 1) >= 1*(2*r**2*z/(4*r**2*z**2 + (1 - r**2)**2 + 1))",
+   "symbols": [
+    "r",
+    "z"
+   ]
+  },
+  "source": "physics_discover2 round 2115",
+  "statement": "[physics: driven oscillator] Mechanical Impedance Ratio [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Relative energy loss per cycle [model-proposed; physical meaning unverified]   on r < 2, z < 1 (tight only at the edge of the domain, near (1, 1.02e-08))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-2b8e2f8f0226",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "1/sqrt(1 - L) >= 1/2*(L*p/(-p*sqrt(1 - L) + sqrt(1 - L) - sqrt(-L*p + 1) + 1))",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 2127",
+  "statement": "[economics: insurance and risk] Relative Risk Aversion [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 Risk Sensitivity Ratio [model-proposed; physical meaning unverified]   on p < 1, L < 1 (tight only at the edge of the domain, near (1, 2.82e-08))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]
