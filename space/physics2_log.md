@@ -2659,3 +2659,9 @@
 - 2026-11-08 16:14 round 2443: driven oscillator
 - 2026-11-08 16:15 round 2444: velocity addition
 - 2026-11-08 16:16 round 2445: Compton scattering
+- 2026-11-08 16:17 round 2446: Cournot duopoly
+- 2026-11-08 16:18 round 2447: insurance and risk
+- 2026-11-08 16:19 round 2448: auction with a reserve price
+- 2026-11-08 16:20 round 2449: two-body decay
+- 2026-11-08 16:21 round 2450: collision
+- 2026-11-08 16:22 segment end: 2450 rounds, 5 discoveries, 2 known laws rediscovered
