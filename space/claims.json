@@ -2091025,5 +2091025,59 @@
   "statement": "In 'Macroscopic theory of multipartite correlations in permutation-invariant open quantum syst' (Zenodo, doi 10.5281/zenodo.16679908): 'local_entropy' follows a power law in 'mutual_information' (R\u00b2 = 0.983 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-fbbd5fb565c5",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "sqrt(-L*p + 1)/(-p*sqrt(1 - L) + 1) >= 1*(sqrt(-L*p + 1)/(-p*sqrt(1 - L) + p + 1))",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 2359",
+  "statement": "[economics: insurance and risk] Relative Risk Adjustment Index [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Risk Adjustment Ratio [model-proposed; physical meaning unverified]   on p < 1, L < 1 (tight only at the edge of the domain, near (3.85e-17, 0.883))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-3fca9467fb8f",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "sqrt(-L*p + 1)/(-p*sqrt(1 - L) + 1) >= 1*(sqrt(-L*p + 1)/(-p*sqrt(1 - L) + sqrt(1 - L) + 1))",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 2359",
+  "statement": "[economics: insurance and risk] Relative Risk Adjustment Index [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Insurance Risk Exposure Ratio [model-proposed; physical meaning unverified]   on p < 1, L < 1 (tight only at the edge of the domain, near (9.12e-05, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]
