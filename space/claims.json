@@ -1966519,5 +1966519,572 @@
   "statement": "Octal game 0.522531 is completely solved: its Grundy values are periodic with pre-period 12 and period 4 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.6386979",
+   "held_out_r2": 0.9209,
+   "held_out_rows": 1120,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-782980d1b475",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "a66262c431052679.csv",
+   "doi": "10.5281/zenodo.6386979",
+   "form": "power law",
+   "params": [
+    1.3847214204844847,
+    -0.9750742990073055
+   ],
+   "seed": 1676057105,
+   "x": "alpha (W / m^2 / K)",
+   "y": "ecs (K)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'AR6 WG1 Plots and Processing' (Zenodo, doi 10.5281/zenodo.6386979): 'ecs (K)' follows a power law in 'alpha (W / m^2 / K)' (R\u00b2 = 0.931 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.6386979",
+   "held_out_r2": 0.8552,
+   "held_out_rows": 166,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-33a9fa042d24",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "36868a16b65ceca6.csv",
+   "doi": "10.5281/zenodo.6386979",
+   "form": "linear",
+   "params": [
+    0.08569629212110598,
+    0.9248319525741496
+   ],
+   "seed": 1375459555,
+   "x": "assessed_range_value",
+   "y": "climate_model_value"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'AR6 WG1 Plots and Processing' (Zenodo, doi 10.5281/zenodo.6386979): 'climate_model_value' is linear in 'assessed_range_value' (R\u00b2 = 0.981 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.ghx3ffbmj",
+   "held_out_r2": 0.9539,
+   "held_out_rows": 270,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b24f26b766c9",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "6b4326d464b426f4.csv",
+   "doi": "10.5061/dryad.ghx3ffbmj",
+   "form": "linear",
+   "params": [
+    -8721.552325569546,
+    0.8709262623252376
+   ],
+   "seed": 577154576,
+   "x": "Total.count",
+   "y": "WESA"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Counts of shorebirds and environmental correlates at Roberts Bank, British Columbia (1991 ' (Zenodo, doi 10.5061/dryad.ghx3ffbmj): 'WESA' is linear in 'Total.count' (R\u00b2 = 0.951 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.21sj8",
+   "held_out_r2": 0.9371,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-be2ae9ac20b5",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "fa27a6d69ce41487.csv",
+   "doi": "10.5061/dryad.21sj8",
+   "form": "power law",
+   "params": [
+    1.580863181743525,
+    0.9679852738941437
+   ],
+   "seed": 1892110937,
+   "x": "BA_SP",
+   "y": "C_above"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Future ecosystem services from European mountain forests under climate change' (Zenodo, doi 10.5061/dryad.21sj8): 'C_above' follows a power law in 'BA_SP' (R\u00b2 = 0.938 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.21sj8",
+   "held_out_r2": 0.9371,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-8fd4e1f07b99",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "fa27a6d69ce41487.csv",
+   "doi": "10.5061/dryad.21sj8",
+   "form": "power law",
+   "params": [
+    0.3863759156202588,
+    0.9679830282633586
+   ],
+   "seed": 1892110937,
+   "x": "BA_SP",
+   "y": "C_below"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Future ecosystem services from European mountain forests under climate change' (Zenodo, doi 10.5061/dryad.21sj8): 'C_below' follows a power law in 'BA_SP' (R\u00b2 = 0.938 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.21sj8",
+   "held_out_r2": 0.9371,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-25738a5d54ba",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "fa27a6d69ce41487.csv",
+   "doi": "10.5061/dryad.21sj8",
+   "form": "power law",
+   "params": [
+    -0.8818681978207528,
+    0.9679905353946896
+   ],
+   "seed": 1892110937,
+   "x": "V",
+   "y": "C_above"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Future ecosystem services from European mountain forests under climate change' (Zenodo, doi 10.5061/dryad.21sj8): 'C_above' follows a power law in 'V' (R\u00b2 = 0.938 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.21sj8",
+   "held_out_r2": 0.9371,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-85f807d521e5",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "fa27a6d69ce41487.csv",
+   "doi": "10.5061/dryad.21sj8",
+   "form": "power law",
+   "params": [
+    -2.0763497644251037,
+    0.9679882920483761
+   ],
+   "seed": 1892110937,
+   "x": "V",
+   "y": "C_below"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Future ecosystem services from European mountain forests under climate change' (Zenodo, doi 10.5061/dryad.21sj8): 'C_below' follows a power law in 'V' (R\u00b2 = 0.938 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.21sj8",
+   "held_out_r2": 0.9384,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-606e646d0278",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "fa27a6d69ce41487.csv",
+   "doi": "10.5061/dryad.21sj8",
+   "form": "linear",
+   "params": [
+    0.1967822281977798,
+    0.2694710323339811
+   ],
+   "seed": 1892110937,
+   "x": "DWV",
+   "y": "LSDTN"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Future ecosystem services from European mountain forests under climate change' (Zenodo, doi 10.5061/dryad.21sj8): 'LSDTN' is linear in 'DWV' (R\u00b2 = 0.938 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.21sj8",
+   "held_out_r2": 0.9033,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-0cb9a0bacac7",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "fa27a6d69ce41487.csv",
+   "doi": "10.5061/dryad.21sj8",
+   "form": "linear",
+   "params": [
+    3.420296504502062,
+    0.7162484319928497
+   ],
+   "seed": 1892110937,
+   "x": "DWV",
+   "y": "LSDTV"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Future ecosystem services from European mountain forests under climate change' (Zenodo, doi 10.5061/dryad.21sj8): 'LSDTV' is linear in 'DWV' (R\u00b2 = 0.901 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.0s9j3",
+   "held_out_r2": 0.9584,
+   "held_out_rows": 7260,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-57596977edd8",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "1d3c94b8e5aac500.csv",
+   "doi": "10.5061/dryad.0s9j3",
+   "form": "linear",
+   "params": [
+    6.697308076408216,
+    1.0911164265030524
+   ],
+   "seed": 4105115770,
+   "x": "tmn",
+   "y": "tmean"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: The seasonal climate niche predicts phenology and distribution of an ephemeral ' (Zenodo, doi 10.5061/dryad.0s9j3): 'tmean' is linear in 'tmn' (R\u00b2 = 0.960 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.0s9j3",
+   "held_out_r2": 0.9739,
+   "held_out_rows": 7260,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a7a7aac0ebc8",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "1d3c94b8e5aac500.csv",
+   "doi": "10.5061/dryad.0s9j3",
+   "form": "linear",
+   "params": [
+    -4.559211029482013,
+    0.8704930313404631
+   ],
+   "seed": 4105115770,
+   "x": "tmx",
+   "y": "tmean"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: The seasonal climate niche predicts phenology and distribution of an ephemeral ' (Zenodo, doi 10.5061/dryad.0s9j3): 'tmean' is linear in 'tmx' (R\u00b2 = 0.975 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.kwh70rz2s",
+   "held_out_r2": 0.9123,
+   "held_out_rows": 224,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c09741b4e6b4",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "15baf551d8292678.csv",
+   "doi": "10.5061/dryad.kwh70rz2s",
+   "form": "linear",
+   "params": [
+    1.2984102186571378,
+    0.34795908717129725
+   ],
+   "seed": 1427829422,
+   "x": "m",
+   "y": "richness"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Wild bees as winners and losers: relative impacts of landscape composition, qua' (Zenodo, doi 10.5061/dryad.kwh70rz2s): 'richness' is linear in 'm' (R\u00b2 = 0.910 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.kwh70rz2s",
+   "held_out_r2": 0.9742,
+   "held_out_rows": 231,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-adc2fd14c0d4",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "9427cca9f60055f5.csv",
+   "doi": "10.5061/dryad.kwh70rz2s",
+   "form": "linear",
+   "params": [
+    5.732300586218677,
+    0.9677818274825456
+   ],
+   "seed": 1069751575,
+   "x": "AbundDay",
+   "y": "Abundance"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Wild bees as winners and losers: relative impacts of landscape composition, qua' (Zenodo, doi 10.5061/dryad.kwh70rz2s): 'Abundance' is linear in 'AbundDay' (R\u00b2 = 0.964 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.nk98sf7r5",
+   "held_out_r2": 0.9049,
+   "held_out_rows": 3318,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e6e3bdc9e8bd",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "21b855d166eaae5e.csv",
+   "doi": "10.5061/dryad.nk98sf7r5",
+   "form": "logarithmic",
+   "params": [
+    -44.963335476556466,
+    20.302484657196416
+   ],
+   "seed": 3323706448,
+   "x": "current_bio1",
+   "y": "paleo_bio1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Climate-diversity relationships underlying cross-taxon diversity of the Africa fauna and t' (Zenodo, doi 10.5061/dryad.nk98sf7r5): 'paleo_bio1' grows logarithmically in 'current_bio1' (R\u00b2 = 0.905 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.nk98sf7r5",
+   "held_out_r2": 0.9585,
+   "held_out_rows": 3318,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-20fc0fd8f58c",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "21b855d166eaae5e.csv",
+   "doi": "10.5061/dryad.nk98sf7r5",
+   "form": "linear",
+   "params": [
+    -42.659694886323514,
+    0.945278899701668
+   ],
+   "seed": 3323706448,
+   "x": "current_bio12",
+   "y": "paleo_bio12"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Climate-diversity relationships underlying cross-taxon diversity of the Africa fauna and t' (Zenodo, doi 10.5061/dryad.nk98sf7r5): 'paleo_bio12' is linear in 'current_bio12' (R\u00b2 = 0.959 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.nk98sf7r5",
+   "held_out_r2": 0.9198,
+   "held_out_rows": 3318,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c0316466f092",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "21b855d166eaae5e.csv",
+   "doi": "10.5061/dryad.nk98sf7r5",
+   "form": "power law",
+   "params": [
+    0.3747072925186473,
+    0.9220612535769321
+   ],
+   "seed": 3323706448,
+   "x": "current_bio15",
+   "y": "paleo_bio15"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Climate-diversity relationships underlying cross-taxon diversity of the Africa fauna and t' (Zenodo, doi 10.5061/dryad.nk98sf7r5): 'paleo_bio15' follows a power law in 'current_bio15' (R\u00b2 = 0.921 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.63xsj3v69",
+   "held_out_r2": 0.9831,
+   "held_out_rows": 1895,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-85ebf64ee817",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "ac82eaaf884f2b8f.csv",
+   "doi": "10.5061/dryad.63xsj3v69",
+   "form": "linear",
+   "params": [
+    0.8006790858407803,
+    -0.0009861133763866216
+   ],
+   "seed": 4145202415,
+   "x": "ap_site",
+   "y": "ap_meandiff"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Traits help explain species' performance away from their climate niche centre' (Zenodo, doi 10.5061/dryad.63xsj3v69): 'ap_meandiff' is linear in 'ap_site' (R\u00b2 = 0.982 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.63xsj3v69",
+   "held_out_r2": 0.9785,
+   "held_out_rows": 1895,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-eaf6c650b548",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "ac82eaaf884f2b8f.csv",
+   "doi": "10.5061/dryad.63xsj3v69",
+   "form": "linear",
+   "params": [
+    9.679254291987656,
+    0.8004886826103128
+   ],
+   "seed": 4145202415,
+   "x": "mean_mat_sub",
+   "y": "mean_sum_sub"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Traits help explain species' performance away from their climate niche centre' (Zenodo, doi 10.5061/dryad.63xsj3v69): 'mean_sum_sub' is linear in 'mean_mat_sub' (R\u00b2 = 0.979 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.9w0vt4bkr",
+   "held_out_r2": 0.9452,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ca1f417ae157",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "bfaecbf847511a5e.csv",
+   "doi": "10.5061/dryad.9w0vt4bkr",
+   "form": "linear",
+   "params": [
+    0.011636673724994866,
+    0.03401766557678781
+   ],
+   "seed": 1319265209,
+   "x": "GPP_CAsites",
+   "y": "NIRv_monthly"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data: The magnitude and pace of photosynthetic recovery after wildfire in California ecosy' (Zenodo, doi 10.5061/dryad.9w0vt4bkr): 'NIRv_monthly' is linear in 'GPP_CAsites' (R\u00b2 = 0.947 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.9w0vt4bkr",
+   "held_out_r2": 0.9591,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-202cbb7687b0",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "bfaecbf847511a5e.csv",
+   "doi": "10.5061/dryad.9w0vt4bkr",
+   "form": "linear",
+   "params": [
+    0.017011751354327552,
+    0.026949250152756468
+   ],
+   "seed": 1319265209,
+   "x": "GPP_CAsites_raw_gf",
+   "y": "fitted"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data: The magnitude and pace of photosynthetic recovery after wildfire in California ecosy' (Zenodo, doi 10.5061/dryad.9w0vt4bkr): 'fitted' is linear in 'GPP_CAsites_raw_gf' (R\u00b2 = 0.968 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.9w0vt4bkr",
+   "held_out_r2": 0.9591,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c9347a718b17",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "bfaecbf847511a5e.csv",
+   "doi": "10.5061/dryad.9w0vt4bkr",
+   "form": "linear",
+   "params": [
+    0.002444054791536228,
+    0.9663943368799108
+   ],
+   "seed": 1319265209,
+   "x": "NIRv_monthly_gf",
+   "y": "fitted"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data: The magnitude and pace of photosynthetic recovery after wildfire in California ecosy' (Zenodo, doi 10.5061/dryad.9w0vt4bkr): 'fitted' is linear in 'NIRv_monthly_gf' (R\u00b2 = 0.968 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
