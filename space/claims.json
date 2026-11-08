@@ -2076669,5 +2076669,167 @@
   "statement": "In 'Table 7_An integrative analysis of transcriptome and single-cell RNA sequencing data ident' (Figshare, doi 10.3389/fimmu.2026.1875379.s007): 'NES' is linear in 'enrichmentScore' (R\u00b2 = 0.907 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-df93d01f10ff",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "sqrt(-L*p + 1)/(-p*sqrt(1 - L) + p - sqrt(1 - L) + 1) >= 1/2*(sqrt(-L*p + 1)/(-p*sqrt(1 - L) + 1))",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 2343",
+  "statement": "[economics: insurance and risk] Insurance Risk Adjustment Ratio [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 Relative Risk Adjustment Index [model-proposed; physical meaning unverified]   on p < 1, L < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-2b4a83120304",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "sqrt(-L*p + 1)/(-p*sqrt(1 - L) + 1) >= 1*(-L*p + 1)",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 2351",
+  "statement": "[economics: insurance and risk] Relative Risk Adjustment Index [model-proposed; physical meaning unverified] \u2265 1 \u00d7 expected wealth   on p < 1, L < 1 (tight only at the edge of the domain, near (2.74e-16, 0.999))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-b27c6d43a82d",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "sqrt(-L*p + 1)/(-p*sqrt(1 - L) + 1) >= 1*(p*sqrt(1 - L) - p + 1)",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 2351",
+  "statement": "[economics: insurance and risk] Relative Risk Adjustment Index [model-proposed; physical meaning unverified] \u2265 1 \u00d7 expected utility   on p < 1, L < 1 (tight only at the edge of the domain, near (1.97e-16, 0.944))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-f171c5bddee7",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'expected wealth'",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "sqrt(-L*p + 1)/(-p*sqrt(1 - L) + 1) >= 1*((p*sqrt(1 - L) - p + 1)**2)",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 2351",
+  "statement": "[economics: insurance and risk] Relative Risk Adjustment Index [model-proposed; physical meaning unverified] \u2265 1 \u00d7 certainty equivalent   on p < 1, L < 1 (tight only at the edge of the domain, near (3.45e-17, 0.000245))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-b0627cdf8d92",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "sqrt(-L*p + 1)/(-p*sqrt(1 - L) + 1) >= 1*((p*sqrt(1 - L) - p + 1)/sqrt(-p*(1 - L) + 1))",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 2351",
+  "statement": "[economics: insurance and risk] Relative Risk Adjustment Index [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Risk-adjusted expected utility [model-proposed; physical meaning unverified]   on p < 1, L < 1 (tight only at the edge of the domain, near (7.89e-17, 0.887))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-80b1af6a22e9",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "sqrt(-L*p + 1)/(-p*sqrt(1 - L) + 1) >= 1*(sqrt(p)*sqrt((1 - p)*(sqrt(1 - L) - 1)**2))",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 2351",
+  "statement": "[economics: insurance and risk] Relative Risk Adjustment Index [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Expected Utility Deviation [model-proposed; physical meaning unverified]   on p < 1, L < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]
