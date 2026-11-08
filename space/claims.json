@@ -2225182,5 +2225182,599 @@
   "statement": "Octal game 0.546452 is completely solved: its Grundy values are periodic with pre-period 52 and period 67 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3923586",
+   "held_out_r2": 0.9599,
+   "held_out_rows": 314,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5087858d146e",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "a9c8cd6f1897656a.csv",
+   "doi": "10.5281/zenodo.3923586",
+   "form": "linear",
+   "params": [
+    -34.73717596001101,
+    28.605825208197945
+   ],
+   "seed": 1005141751,
+   "x": "ACE station number",
+   "y": "ACE event number"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Nutrient concentration in seawater samples, collected from the underway supply, CTD and tr' (Zenodo, doi 10.5281/zenodo.3923586): 'ACE event number' is linear in 'ACE station number' (R\u00b2 = 0.955 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3923586",
+   "held_out_r2": 0.9939,
+   "held_out_rows": 314,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-7c0493277d75",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "a9c8cd6f1897656a.csv",
+   "doi": "10.5281/zenodo.3923586",
+   "form": "linear",
+   "params": [
+    -2.333565184514086,
+    1.0793404948128307
+   ],
+   "seed": 1005141751,
+   "x": "nitrous oxide \u00b5mol/L",
+   "y": "nitrate \u00b5mol/L"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Nutrient concentration in seawater samples, collected from the underway supply, CTD and tr' (Zenodo, doi 10.5281/zenodo.3923586): 'nitrate \u00b5mol/L' is linear in 'nitrous oxide \u00b5mol/L' (R\u00b2 = 0.915 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3923586",
+   "held_out_r2": -7.4371,
+   "held_out_rows": 314,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f06c82395f10",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "a9c8cd6f1897656a.csv",
+   "doi": "10.5281/zenodo.3923586",
+   "form": "linear",
+   "params": [
+    -0.9153889480538769,
+    0.581553063684841
+   ],
+   "seed": 1005141751,
+   "x": "phosphate \u00b5mol/L",
+   "y": "nitrite \u00b5mol/L"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Nutrient concentration in seawater samples, collected from the underway supply, CTD and tr' (Zenodo, doi 10.5281/zenodo.3923586): 'nitrite \u00b5mol/L' is linear in 'phosphate \u00b5mol/L' (R\u00b2 = 0.980 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.16085479",
+   "held_out_r2": 0.9886,
+   "held_out_rows": 4259,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-fb5e2a8f961d",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "069e0b2e0397f905.csv",
+   "doi": "10.5281/zenodo.16085479",
+   "form": "linear",
+   "params": [
+    -994.4564721013776,
+    1115.0613665804317
+   ],
+   "seed": 220423321,
+   "x": "NASC",
+   "y": "ntk_male"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Raw data for euphausiid species distribution model' (Zenodo, doi 10.5281/zenodo.16085479): 'ntk_male' is linear in 'NASC' (R\u00b2 = 0.980 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.16085479",
+   "held_out_r2": 0.9773,
+   "held_out_rows": 4259,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5a8bd075ada7",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "069e0b2e0397f905.csv",
+   "doi": "10.5281/zenodo.16085479",
+   "form": "linear",
+   "params": [
+    4.281480444787128,
+    243.02795225196158
+   ],
+   "seed": 220423321,
+   "x": "NASC",
+   "y": "wgt_female"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Raw data for euphausiid species distribution model' (Zenodo, doi 10.5281/zenodo.16085479): 'wgt_female' is linear in 'NASC' (R\u00b2 = 0.958 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.16085479",
+   "held_out_r2": 0.9912,
+   "held_out_rows": 4259,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d1b77c7fa042",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "069e0b2e0397f905.csv",
+   "doi": "10.5281/zenodo.16085479",
+   "form": "linear",
+   "params": [
+    -761.2378210529242,
+    583.0104938660105
+   ],
+   "seed": 220423321,
+   "x": "NASC",
+   "y": "wgt_total"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Raw data for euphausiid species distribution model' (Zenodo, doi 10.5281/zenodo.16085479): 'wgt_total' is linear in 'NASC' (R\u00b2 = 0.986 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.16085479",
+   "held_out_r2": 0.9887,
+   "held_out_rows": 4259,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3900b0e1a88b",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "069e0b2e0397f905.csv",
+   "doi": "10.5281/zenodo.16085479",
+   "form": "linear",
+   "params": [
+    298.0400360760619,
+    230.6159037497785
+   ],
+   "seed": 220423321,
+   "x": "NASC",
+   "y": "nntk_male"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Raw data for euphausiid species distribution model' (Zenodo, doi 10.5281/zenodo.16085479): 'nntk_male' is linear in 'NASC' (R\u00b2 = 0.971 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.16085479",
+   "held_out_r2": 0.9769,
+   "held_out_rows": 4259,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-604be32442fa",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "069e0b2e0397f905.csv",
+   "doi": "10.5281/zenodo.16085479",
+   "form": "linear",
+   "params": [
+    600.5527359102355,
+    0.29742939312369837
+   ],
+   "seed": 220423321,
+   "x": "ntk_male",
+   "y": "wgt_male"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Raw data for euphausiid species distribution model' (Zenodo, doi 10.5281/zenodo.16085479): 'wgt_male' is linear in 'ntk_male' (R\u00b2 = 0.961 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.16085479",
+   "held_out_r2": 0.9652,
+   "held_out_rows": 4259,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a883b74456a9",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "069e0b2e0397f905.csv",
+   "doi": "10.5281/zenodo.16085479",
+   "form": "linear",
+   "params": [
+    2303.911590724669,
+    0.5049602865295594
+   ],
+   "seed": 220423321,
+   "x": "ntk_male",
+   "y": "wgt_total"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Raw data for euphausiid species distribution model' (Zenodo, doi 10.5281/zenodo.16085479): 'wgt_total' is linear in 'ntk_male' (R\u00b2 = 0.939 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.16085479",
+   "held_out_r2": 0.9857,
+   "held_out_rows": 4259,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-1efab920a794",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "069e0b2e0397f905.csv",
+   "doi": "10.5281/zenodo.16085479",
+   "form": "linear",
+   "params": [
+    -362.6435190755692,
+    0.44424919923368567
+   ],
+   "seed": 220423321,
+   "x": "ntk_female",
+   "y": "wgt_male"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Raw data for euphausiid species distribution model' (Zenodo, doi 10.5281/zenodo.16085479): 'wgt_male' is linear in 'ntk_female' (R\u00b2 = 0.975 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.16085479",
+   "held_out_r2": 0.9608,
+   "held_out_rows": 4259,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4284d0856a85",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "069e0b2e0397f905.csv",
+   "doi": "10.5281/zenodo.16085479",
+   "form": "linear",
+   "params": [
+    572.5315745448814,
+    0.314683395914395
+   ],
+   "seed": 220423321,
+   "x": "ntk_female",
+   "y": "wgt_female"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Raw data for euphausiid species distribution model' (Zenodo, doi 10.5281/zenodo.16085479): 'wgt_female' is linear in 'ntk_female' (R\u00b2 = 0.926 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.16085479",
+   "held_out_r2": 0.979,
+   "held_out_rows": 4259,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-6415ecaf4fa1",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "069e0b2e0397f905.csv",
+   "doi": "10.5281/zenodo.16085479",
+   "form": "linear",
+   "params": [
+    209.8880566707661,
+    0.7589325951443978
+   ],
+   "seed": 220423321,
+   "x": "ntk_female",
+   "y": "wgt_total"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Raw data for euphausiid species distribution model' (Zenodo, doi 10.5281/zenodo.16085479): 'wgt_total' is linear in 'ntk_female' (R\u00b2 = 0.964 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.16085479",
+   "held_out_r2": 0.9812,
+   "held_out_rows": 4259,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-2692544d2deb",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "069e0b2e0397f905.csv",
+   "doi": "10.5281/zenodo.16085479",
+   "form": "linear",
+   "params": [
+    148.6408420233798,
+    0.17842757704620146
+   ],
+   "seed": 220423321,
+   "x": "ntk_total",
+   "y": "wgt_male"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Raw data for euphausiid species distribution model' (Zenodo, doi 10.5281/zenodo.16085479): 'wgt_male' is linear in 'ntk_total' (R\u00b2 = 0.968 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.16085479",
+   "held_out_r2": 0.9492,
+   "held_out_rows": 4259,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-8c5d96ea6bb8",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "069e0b2e0397f905.csv",
+   "doi": "10.5281/zenodo.16085479",
+   "form": "linear",
+   "params": [
+    1204.7265094465777,
+    0.12526236720030604
+   ],
+   "seed": 220423321,
+   "x": "ntk_total",
+   "y": "wgt_female"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Raw data for euphausiid species distribution model' (Zenodo, doi 10.5281/zenodo.16085479): 'wgt_female' is linear in 'ntk_total' (R\u00b2 = 0.904 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.16085479",
+   "held_out_r2": 0.9714,
+   "held_out_rows": 4259,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e7c5536c7825",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "069e0b2e0397f905.csv",
+   "doi": "10.5281/zenodo.16085479",
+   "form": "linear",
+   "params": [
+    1353.367352752475,
+    0.3036899442446723
+   ],
+   "seed": 220423321,
+   "x": "ntk_total",
+   "y": "wgt_total"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Raw data for euphausiid species distribution model' (Zenodo, doi 10.5281/zenodo.16085479): 'wgt_total' is linear in 'ntk_total' (R\u00b2 = 0.950 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.16085479",
+   "held_out_r2": 0.9856,
+   "held_out_rows": 4259,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-7fe152e39206",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "069e0b2e0397f905.csv",
+   "doi": "10.5281/zenodo.16085479",
+   "form": "linear",
+   "params": [
+    673.9279554153185,
+    0.7119718442800947
+   ],
+   "seed": 220423321,
+   "x": "wgt_male",
+   "y": "wgt_female"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Raw data for euphausiid species distribution model' (Zenodo, doi 10.5281/zenodo.16085479): 'wgt_female' is linear in 'wgt_male' (R\u00b2 = 0.960 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.16085479",
+   "held_out_r2": 0.9732,
+   "held_out_rows": 4259,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-65e76ff9415e",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "069e0b2e0397f905.csv",
+   "doi": "10.5281/zenodo.16085479",
+   "form": "linear",
+   "params": [
+    1451.3226021837831,
+    0.6635430586752926
+   ],
+   "seed": 220423321,
+   "x": "wgt_male",
+   "y": "nntk_male"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Raw data for euphausiid species distribution model' (Zenodo, doi 10.5281/zenodo.16085479): 'nntk_male' is linear in 'wgt_male' (R\u00b2 = 0.939 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.16085479",
+   "held_out_r2": 0.9624,
+   "held_out_rows": 4259,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-420584184ca7",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "069e0b2e0397f905.csv",
+   "doi": "10.5281/zenodo.16085479",
+   "form": "linear",
+   "params": [
+    1514.4387020152426,
+    0.3832156370905259
+   ],
+   "seed": 220423321,
+   "x": "wgt_total",
+   "y": "nntk_male"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Raw data for euphausiid species distribution model' (Zenodo, doi 10.5281/zenodo.16085479): 'nntk_male' is linear in 'wgt_total' (R\u00b2 = 0.925 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.16085479",
+   "held_out_r2": 0.9365,
+   "held_out_rows": 5153,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-1e969856848c",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "c322b85e501e70a0.csv",
+   "doi": "10.5281/zenodo.16085479",
+   "form": "linear",
+   "params": [
+    7415.47415341622,
+    688.7375271045537
+   ],
+   "seed": 2184986503,
+   "x": "NASC",
+   "y": "ntk_female"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Raw data for euphausiid species distribution model' (Zenodo, doi 10.5281/zenodo.16085479): 'ntk_female' is linear in 'NASC' (R\u00b2 = 0.902 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.16085479",
+   "held_out_r2": 0.9206,
+   "held_out_rows": 5153,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-03a99c0bbe5a",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "c322b85e501e70a0.csv",
+   "doi": "10.5281/zenodo.16085479",
+   "form": "linear",
+   "params": [
+    7384.803025948026,
+    0.8555042258995849
+   ],
+   "seed": 2184986503,
+   "x": "ntk_male",
+   "y": "ntk_female"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Raw data for euphausiid species distribution model' (Zenodo, doi 10.5281/zenodo.16085479): 'ntk_female' is linear in 'ntk_male' (R\u00b2 = 0.944 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.16085479",
+   "held_out_r2": 0.9783,
+   "held_out_rows": 5446,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e4f5bae67058",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "407d4d505184e7ff.csv",
+   "doi": "10.5281/zenodo.16085479",
+   "form": "linear",
+   "params": [
+    119.11182272996055,
+    218.07119658527014
+   ],
+   "seed": 3471829344,
+   "x": "Interval",
+   "y": "Ping_S"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Raw data for euphausiid species distribution model' (Zenodo, doi 10.5281/zenodo.16085479): 'Ping_S' is linear in 'Interval' (R\u00b2 = 0.978 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.16085479",
+   "held_out_r2": 0.9782,
+   "held_out_rows": 5446,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-569a6e896aec",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "407d4d505184e7ff.csv",
+   "doi": "10.5281/zenodo.16085479",
+   "form": "linear",
+   "params": [
+    325.06533602403556,
+    218.16108596892536
+   ],
+   "seed": 3471829344,
+   "x": "Interval",
+   "y": "Ping_E"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Raw data for euphausiid species distribution model' (Zenodo, doi 10.5281/zenodo.16085479): 'Ping_E' is linear in 'Interval' (R\u00b2 = 0.978 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]

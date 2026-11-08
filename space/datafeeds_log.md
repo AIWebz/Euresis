@@ -2043,3 +2043,5 @@
 - 2026-11-08 21:33 FINDING (confirmed on held-out rows): In 'Data from: Central Mongolian lake sediments reveal new insights on climate change and eque' (Zenodo, doi 10.5281/zenodo.5964115): 'Sand' is linear in 'Silt' (R² = 0.926 on the discovery half); held-out R² = 0.894 [emp-3366a5d0383b]
 - 2026-11-08 21:34 data feeds: 12710 datasets analysed so far, 1841 confirmed findings
 - 2026-11-08 22:35 data feeds: online
+- 2026-11-08 22:36 FINDING (confirmed on held-out rows): In 'Nutrient concentration in seawater samples, collected from the underway supply, CTD and tr' (Zenodo, doi 10.5281/zenodo.3923586): 'ACE event number' is linear in 'ACE station number' (R² = 0.955 on the discovery half); held-out R² = 0.960 [emp-5087858d146e]
+- 2026-11-08 22:36 FINDING (confirmed on held-out rows): In 'Nutrient concentration in seawater samples, collected from the underway supply, CTD and tr' (Zenodo, doi 10.5281/zenodo.3923586): 'nitrate µmol/L' is linear in 'nitrous oxide µmol/L' (R² = 0.915 on the discovery half); held-out R² = 0.994 [emp-7c0493277d75]
