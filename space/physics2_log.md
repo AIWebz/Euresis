@@ -2800,3 +2800,13 @@
 - 2026-11-08 21:34 round 2572: velocity addition
 - 2026-11-08 21:36 round 2573: Compton scattering
 - 2026-11-08 21:37 round 2574: Cournot duopoly
+- 2026-11-08 21:37 round 2575: insurance and risk
+- 2026-11-08 21:39 round 2576: auction with a reserve price
+- 2026-11-08 21:40 round 2577: two-body decay
+- 2026-11-08 21:42 round 2578: collision
+- 2026-11-08 21:43 round 2579: driven oscillator
+- 2026-11-08 21:44 round 2580: velocity addition
+- 2026-11-08 21:45 round 2581: Compton scattering
+- 2026-11-08 21:46 round 2582: Cournot duopoly
+- 2026-11-08 21:46 round 2583: insurance and risk
+- 2026-11-08 21:48 round 2584: auction with a reserve price
