@@ -2471,3 +2471,9 @@
 - 2026-11-08 09:41 round 2269: Compton scattering
 - 2026-11-08 09:43 round 2270: Cournot duopoly
 - 2026-11-08 09:44 round 2271: insurance and risk
+- 2026-11-08 09:45 round 2272: auction with a reserve price
+- 2026-11-08 09:46 round 2273: two-body decay
+- 2026-11-08 09:47 round 2274: collision
+- 2026-11-08 09:48 round 2275: driven oscillator
+- 2026-11-08 09:49 round 2276: velocity addition
+- 2026-11-08 09:51 segment end: 2276 rounds, 5 discoveries, 2 known laws rediscovered
