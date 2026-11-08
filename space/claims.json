@@ -2090836,5 +2090836,194 @@
   "statement": "Octal game 0.536401 is completely solved: its Grundy values are periodic with pre-period 1 and period 5 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23300456",
+   "held_out_r2": 0.9316,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-2425efc4bd20",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "a380bce9038ba04d.csv",
+   "doi": "10.5281/zenodo.23300456",
+   "form": "power law",
+   "params": [
+    0.3052287777862431,
+    0.9471769266304577
+   ],
+   "seed": 2623446904,
+   "x": "width_norm",
+   "y": "iscore"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data and code for: Learned quadrotor force models under flight-regime shift: calibrated un' (Zenodo, doi 10.5281/zenodo.23300456): 'iscore' follows a power law in 'width_norm' (R\u00b2 = 0.939 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22101617",
+   "held_out_r2": 0.9601,
+   "held_out_rows": 34,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-8eacd9b03ba3",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "6d3577cc890e3520.csv",
+   "doi": "10.5281/zenodo.22101617",
+   "form": "logarithmic",
+   "params": [
+    296309.3186147023,
+    -27013.937406658926
+   ],
+   "seed": 1454166608,
+   "x": "mjd",
+   "y": "raoff"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'VLTI/GRAVITY differential astrometry of binary star GJ 65 AB between 2017 and 2023' (Zenodo, doi 10.5281/zenodo.22101617): 'raoff' grows logarithmically in 'mjd' (R\u00b2 = 0.943 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.xksn02vg4",
+   "held_out_r2": 0.9695,
+   "held_out_rows": 80,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d1f628b28385",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "aebd9170ab6a3cb2.csv",
+   "doi": "10.5061/dryad.xksn02vg4",
+   "form": "logarithmic",
+   "params": [
+    4.129153481406628,
+    1.4899094696904147
+   ],
+   "seed": 523014757,
+   "x": "OD",
+   "y": "Doubling"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Antibiotic phase transition curves' (Zenodo, doi 10.5061/dryad.xksn02vg4): 'Doubling' grows logarithmically in 'OD' (R\u00b2 = 0.965 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15182042",
+   "held_out_r2": 0.8913,
+   "held_out_rows": 1905,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ea950c8135ce",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "b7fafc20b5751d64.csv",
+   "doi": "10.5281/zenodo.15182042",
+   "form": "linear",
+   "params": [
+    -0.005639480049951533,
+    0.9013992571591026
+   ],
+   "seed": 462220702,
+   "x": "0.0217",
+   "y": "4.66E-06"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Energy distribution of positively and negatively charged plasma ions of a pulsed magnetron' (Zenodo, doi 10.5281/zenodo.15182042): '4.66E-06' is linear in '0.0217' (R\u00b2 = 0.927 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.13381456",
+   "held_out_r2": 0.9837,
+   "held_out_rows": 321,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b70886d575ab",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "29a40c11c84d61ab.csv",
+   "doi": "10.5281/zenodo.13381456",
+   "form": "linear",
+   "params": [
+    298.6889328890159,
+    0.49420272929065895
+   ],
+   "seed": 4029380862,
+   "x": " delay=0.05",
+   "y": " ncycles=2"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Wearable microneedle graphene field effect transistor sensors (supporting data)' (Zenodo, doi 10.5281/zenodo.13381456): ' ncycles=2' is linear in ' delay=0.05' (R\u00b2 = 0.984 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.16679908",
+   "held_out_r2": 0.9073,
+   "held_out_rows": 1000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-1ac753f72514",
+  "kind": "empirical",
+  "novelty": "KNOWN: equation of state of a simulated fluid (pressure, density, temperature, chemical potential, kinetic energy) \u2014 not a discovery",
+  "payload": {
+   "dataset": "88e39b7a45ca6f2e.csv",
+   "doi": "10.5281/zenodo.16679908",
+   "form": "power law",
+   "params": [
+    -0.5697166777357792,
+    0.4306042314167949
+   ],
+   "seed": 1211676440,
+   "x": "mutual_information",
+   "y": "total_system_entropy"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Macroscopic theory of multipartite correlations in permutation-invariant open quantum syst' (Zenodo, doi 10.5281/zenodo.16679908): 'total_system_entropy' follows a power law in 'mutual_information' (R\u00b2 = 0.919 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.16679908",
+   "held_out_r2": 0.9793,
+   "held_out_rows": 1000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-823e8ac01ce4",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "88e39b7a45ca6f2e.csv",
+   "doi": "10.5281/zenodo.16679908",
+   "form": "power law",
+   "params": [
+    0.10975370410078383,
+    0.472246954554567
+   ],
+   "seed": 1211676440,
+   "x": "mutual_information",
+   "y": "local_entropy"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Macroscopic theory of multipartite correlations in permutation-invariant open quantum syst' (Zenodo, doi 10.5281/zenodo.16679908): 'local_entropy' follows a power law in 'mutual_information' (R\u00b2 = 0.983 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
