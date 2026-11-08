@@ -2046,3 +2046,4 @@
 - 2026-11-08 22:36 FINDING (confirmed on held-out rows): In 'Nutrient concentration in seawater samples, collected from the underway supply, CTD and tr' (Zenodo, doi 10.5281/zenodo.3923586): 'ACE event number' is linear in 'ACE station number' (R² = 0.955 on the discovery half); held-out R² = 0.960 [emp-5087858d146e]
 - 2026-11-08 22:36 FINDING (confirmed on held-out rows): In 'Nutrient concentration in seawater samples, collected from the underway supply, CTD and tr' (Zenodo, doi 10.5281/zenodo.3923586): 'nitrate µmol/L' is linear in 'nitrous oxide µmol/L' (R² = 0.915 on the discovery half); held-out R² = 0.994 [emp-7c0493277d75]
 - 2026-11-08 23:26 data feeds: online
+- 2026-11-08 23:26 FINDING (confirmed on held-out rows): In 'Dataset of Floods in Germany 1950-2010' (Zenodo, doi 10.5281/zenodo.3538207): 'Qmax' follows a power law in 'Qmean' (R² = 0.931 on the discovery half); held-out R² = 0.930 [emp-7dacceba48ff]

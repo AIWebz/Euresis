@@ -2232298,5 +2232298,59 @@
   "statement": "Octal game 0.546632 is completely solved: its Grundy values are periodic with pre-period 3 and period 9 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.18199630",
+   "held_out_r2": 0.6209,
+   "held_out_rows": 752,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-992a65ebfaf6",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "adc9cfff1e270bd2.csv",
+   "doi": "10.5281/zenodo.18199630",
+   "form": "exponential",
+   "params": [
+    12.428997151578747,
+    -4.810227590044174e-06
+   ],
+   "seed": 274466286,
+   "x": "true_positive_pixels",
+   "y": "true_negative_pixels"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Model weights and training, validation, and test set images and masks for \"Mapping one mil' (Zenodo, doi 10.5281/zenodo.18199630): 'true_negative_pixels' grows exponentially in 'true_positive_pixels' (R\u00b2 = 0.920 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3538207",
+   "held_out_r2": 0.9301,
+   "held_out_rows": 953,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-7dacceba48ff",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "33f23e561a6a0f60.csv",
+   "doi": "10.5281/zenodo.3538207",
+   "form": "power law",
+   "params": [
+    0.014263584480518211,
+    1.0721641722955488
+   ],
+   "seed": 392551168,
+   "x": "Qmean",
+   "y": "Qmax"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset of Floods in Germany 1950-2010' (Zenodo, doi 10.5281/zenodo.3538207): 'Qmax' follows a power law in 'Qmean' (R\u00b2 = 0.931 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
