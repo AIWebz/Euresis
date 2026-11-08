@@ -1510,3 +1510,4 @@
 - 2026-11-08 00:33 FINDING (confirmed on held-out rows): In 'Clumpy coexistence in phytoplankton: The role of functional similarity in community assemb' (Zenodo, doi 10.5281/zenodo.4778444): 'Volume' grows exponentially in 'Log2_Body_size' (R² = 0.989 on the discovery half); held-out R² = 0.987 [emp-7da4568f7640]
 - 2026-11-08 00:33 FINDING (confirmed on held-out rows): In 'Data and code for: "Effects of climate and water limitation on reproductive traits and tra' (Zenodo, doi 10.5281/zenodo.19952980): 'numdaysfrombud' is linear in 'numdaysinfl' (R² = 0.960 on the discovery half); held-out R² = 0.967 [emp-856c59948e2e]
 - 2026-11-08 00:33 data feeds: 10023 datasets analysed so far, 1353 confirmed findings
+- 2026-11-08 01:34 data feeds: online
