@@ -1623,3 +1623,4 @@
 - 2026-11-08 06:24 FINDING (confirmed on held-out rows): In 'Investigation density, ground heterogeneity and the reliability of driven tension piles at' (Zenodo, doi 10.5281/zenodo.21630140): 'xi_mean_adj' grows logarithmically in 'd_avg_m' (R² = 0.954 on the discovery half); held-out R² = 0.948 [emp-422070c5708d]
 - 2026-11-08 06:24 FINDING (confirmed on held-out rows): In 'Investigation density, ground heterogeneity and the reliability of driven tension piles at' (Zenodo, doi 10.5281/zenodo.21630140): 'xi_mean_uncapped' grows exponentially in 'd_avg_m' (R² = 0.991 on the discovery half); held-out R² = 0.989 [emp-3b45696ea109]
 - 2026-11-08 06:25 data feeds: 11028 datasets analysed so far, 1454 confirmed findings
+- 2026-11-08 07:27 data feeds: online
