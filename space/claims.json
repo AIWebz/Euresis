@@ -2046262,5 +2046262,542 @@
   "statement": "In 'Data and code for \u201cRising microplastic loads increasingly exceed retention thresholds in C' (Figshare, doi 10.6084/m9.figshare.34560030.v2): 'ratio_hinge' is linear in 'ratio_slope' (R\u00b2 = 0.976 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-68b88feace76",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "claim": "sqrt((1 - (a - b)**2)*(1 - (a + b)**2))/2 >= 1/2*((-b**2/2 + (1 - a)**2/2)/(-a**2 - b**2 + 3/2))",
+   "symbols": [
+    "a",
+    "b"
+   ]
+  },
+  "source": "physics_discover2 round 2257",
+  "statement": "[physics: two-body decay] momentum of each product / (Mc) \u2265 1/2 \u00d7 Relative Kinetic Energy Ratio [model-proposed; physical meaning unverified]   on a < 1, b < 1, a + b < 1 (tight only at the edge of the domain, near (3.83e-17, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-ab7a026c81f1",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'momentum of each product / (Mc)'",
+  "payload": {
+   "assumptions": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "claim": "a**2/2 - b**2/2 + 1/2 >= 1/2*((-b**2/2 + (1 - a)**2/2)/(-a**2 - b**2 + 3/2))",
+   "symbols": [
+    "a",
+    "b"
+   ]
+  },
+  "source": "physics_discover2 round 2257",
+  "statement": "[physics: two-body decay] energy of product 1 / (Mc\u00b2) \u2265 1/2 \u00d7 Relative Kinetic Energy Ratio [model-proposed; physical meaning unverified]   on a < 1, b < 1, a + b < 1 (tight only at the edge of the domain, near (4.8e-17, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-c4843b5e760f",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "claim": "-a**2/2 + b**2/2 + 1/2 >= 3/2*((-b**2/2 + (1 - a)**2/2)/(-a**2 - b**2 + 3/2))",
+   "symbols": [
+    "a",
+    "b"
+   ]
+  },
+  "source": "physics_discover2 round 2257",
+  "statement": "[physics: two-body decay] energy of product 2 / (Mc\u00b2) \u2265 3/2 \u00d7 Relative Kinetic Energy Ratio [model-proposed; physical meaning unverified]   on a < 1, b < 1, a + b < 1 (tight only at the edge of the domain, near (3.55e-17, 4.91e-09))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-c083b65e55e6",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "claim": "-a - b + 1 >= 1/2*((-b**2/2 + (1 - a)**2/2)/(-a**2 - b**2 + 3/2))",
+   "symbols": [
+    "a",
+    "b"
+   ]
+  },
+  "source": "physics_discover2 round 2257",
+  "statement": "[physics: two-body decay] kinetic energy released Q / (Mc\u00b2) \u2265 1/2 \u00d7 Relative Kinetic Energy Ratio [model-proposed; physical meaning unverified]   on a < 1, b < 1, a + b < 1 (tight only at the edge of the domain, near (4.8e-15, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-ec390ac1e764",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "claim": "-b**2/2 + (1 - a)**2/2 >= 1/2*((-b**2/2 + (1 - a)**2/2)/(-a**2 - b**2 + 3/2))",
+   "symbols": [
+    "a",
+    "b"
+   ]
+  },
+  "source": "physics_discover2 round 2257",
+  "statement": "[physics: two-body decay] kinetic energy of product 1 / (Mc\u00b2) \u2265 1/2 \u00d7 Relative Kinetic Energy Ratio [model-proposed; physical meaning unverified]   on a < 1, b < 1, a + b < 1 (tight only at the edge of the domain, near (1, 9.59e-16))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-2efe18aada1b",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'momentum of each product / (Mc)'",
+  "payload": {
+   "assumptions": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "claim": "sqrt((1 - (a - b)**2)*(1 - (a + b)**2))/(-a**2 + b**2 + 1) >= 1/2*((-b**2/2 + (1 - a)**2/2)/(-a**2 - b**2 + 3/2))",
+   "symbols": [
+    "a",
+    "b"
+   ]
+  },
+  "source": "physics_discover2 round 2257",
+  "statement": "[physics: two-body decay] speed of product 2 / c \u2265 1/2 \u00d7 Relative Kinetic Energy Ratio [model-proposed; physical meaning unverified]   on a < 1, b < 1, a + b < 1 (tight only at the edge of the domain, near (3.17e-17, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-e4991a0e89e4",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'kinetic energy of product 1 / (Mc\u00b2)'",
+  "payload": {
+   "assumptions": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "claim": "(-b**2 + (1 - a)**2)/(-a**2 + 2*b**2 - (1 - a)**2 + 1) >= 1/2*((-b**2/2 + (1 - a)**2/2)/(-a**2 - b**2 + 3/2))",
+   "symbols": [
+    "a",
+    "b"
+   ]
+  },
+  "source": "physics_discover2 round 2257",
+  "statement": "[physics: two-body decay] Ratio of kinetic energies of product 1 to product 2 [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 Relative Kinetic Energy Ratio [model-proposed; physical meaning unverified]   on a < 1, b < 1, a + b < 1 (tight only at the edge of the domain, near (6.92e-16, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-0ccbdc7fb5e5",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'kinetic energy of product 1 / (Mc\u00b2)'",
+  "payload": {
+   "assumptions": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "claim": "-a**2/2 - b**2 + (1 - a)**2/2 + 1/2 >= 1*((-b**2/2 + (1 - a)**2/2)/(-a**2 - b**2 + 3/2))",
+   "symbols": [
+    "a",
+    "b"
+   ]
+  },
+  "source": "physics_discover2 round 2257",
+  "statement": "[physics: two-body decay] Total kinetic energy of the two products / (Mc\u00b2) [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Relative Kinetic Energy Ratio [model-proposed; physical meaning unverified]   on a < 1, b < 1, a + b < 1 (tight only at the edge of the domain, near (1.8e-17, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-830132104e88",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "claim": "(-b**2 + (1 - a)**2)/(-a**2 - b**2 + (1 - a)**2 + 1) >= 1*((-b**2/2 + (1 - a)**2/2)/(-a**2 - b**2 + 3/2))",
+   "symbols": [
+    "a",
+    "b"
+   ]
+  },
+  "source": "physics_discover2 round 2257",
+  "statement": "[physics: two-body decay] Ratio of kinetic energy of product 1 to total kinetic energy [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Relative Kinetic Energy Ratio [model-proposed; physical meaning unverified]   on a < 1, b < 1, a + b < 1 (tight only at the edge of the domain, near (2.54e-16, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-c42153c175b1",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'kinetic energy of product 1 / (Mc\u00b2)'",
+  "payload": {
+   "assumptions": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "claim": "1 - (a + b)**2 >= 1*((-b**2/2 + (1 - a)**2/2)/(-a**2 - b**2 + 3/2))",
+   "symbols": [
+    "a",
+    "b"
+   ]
+  },
+  "source": "physics_discover2 round 2257",
+  "statement": "[physics: two-body decay] Invariant mass squared of the system [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Relative Kinetic Energy Ratio [model-proposed; physical meaning unverified]   on a < 1, b < 1, a + b < 1 (tight only at the edge of the domain, near (6.65e-16, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-419e2c503386",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "claim": "(-b**2/2 + (1 - a)**2/2)/(-a**2/2 - 3*b**2/2 + (1 - a)**2 + 1/2) >= 1*((-b**2/2 + (1 - a)**2/2)/(-a**2 - b**2 + 3/2))",
+   "symbols": [
+    "a",
+    "b"
+   ]
+  },
+  "source": "physics_discover2 round 2257",
+  "statement": "[physics: two-body decay] Ratio of kinetic energy of product 1 to product 2 [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Relative Kinetic Energy Ratio [model-proposed; physical meaning unverified]   on a < 1, b < 1, a + b < 1 (tight only at the edge of the domain, near (9.33e-19, 1.89e-08))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-7bdf0d3aee0c",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'kinetic energy of product 1 / (Mc\u00b2)'",
+  "payload": {
+   "assumptions": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "claim": "(-b**2 + (1 - a)**2)/(-a**2 + b**2 - (1 - a)**2 + 1) >= 1*((-b**2/2 + (1 - a)**2/2)/(-a**2 - b**2 + 3/2))",
+   "symbols": [
+    "a",
+    "b"
+   ]
+  },
+  "source": "physics_discover2 round 2257",
+  "statement": "[physics: two-body decay] Kinetic Energy Ratio of Products [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Relative Kinetic Energy Ratio [model-proposed; physical meaning unverified]   on a < 1, b < 1, a + b < 1 (tight only at the edge of the domain, near (8.83e-16, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-3c5fe00905fd",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'scattered photon energy / initial energy'",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "c/(c*x + 1) + (c*x + 1)/x >= 1/4*(1/(c*x + 1) + (c*x + 1)**(-2))",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 2261",
+  "statement": "[physics: Compton scattering] Scattered photon wavelength / Compton wavelength [model-proposed; physical meaning unverified] \u2265 1/4 \u00d7 Compton scattering cross-section factor [model-proposed; physical meaning unverified]   on x < 2, c < 2 (tight only at the edge of the domain, near (2, 1.41e-16))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-ede3c8e77895",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'scattered photon energy / initial energy'",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "1 + sqrt(c**2*x**2/(c*x + 1)**2 + c*x**2/(c*x + 1))/(c*x + 1) + 1/(c*x + 1) >= 1*(1/(c*x + 1) + (c*x + 1)**(-2))",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 2261",
+  "statement": "[physics: Compton scattering] Electron momentum fraction [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Compton scattering cross-section factor [model-proposed; physical meaning unverified]   on x < 2, c < 2 (tight only at the edge of the domain, near (4.62e-15, 0.000233))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-62f2ccdc0d85",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'Compton wavelength shift / (initial photon wavelength) [model-proposed; physical meaning unverified]'",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "1 + sqrt(c**2*x**2/(c*x + 1)**2 + c*x**2/(c*x + 1))/(c*x + 1) + 1/(c*x + 1) >= 1/2*(c/(x + 1) + c/(x + 1)**2)",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 2261",
+  "statement": "[physics: Compton scattering] Electron momentum fraction [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 Scattered photon wavelength shift factor [model-proposed; physical meaning unverified]   on x < 2, c < 2 (tight only at the edge of the domain, near (6.52e-15, 2))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-026e3d0a2dd3",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "c*x**2/(x + 1) + c*x >= 5/9*(c*x**2/(c*x + 1)**2 + c*x/(c*x + 1))",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 2261",
+  "statement": "[physics: Compton scattering] Electron kinetic energy / initial photon energy [model-proposed; physical meaning unverified] \u2265 5/9 \u00d7 Electron kinetic energy to scattered photon energy ratio [model-proposed; physical meaning unverified]   on x < 2, c < 2 (tight only at the edge of the domain, near (2, 3.45e-15))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-11948e88a1fb",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "-c/(c*x + 1) + 1 + 1/(c*x + 1) >= 5/7*(c*x**2/(c*x + 1)**2 + c*x/(c*x + 1))",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 2261",
+  "statement": "[physics: Compton scattering] Compton scattering factor [model-proposed; physical meaning unverified] \u2265 5/7 \u00d7 Electron kinetic energy to scattered photon energy ratio [model-proposed; physical meaning unverified]   on x < 2, c < 2 (tight only at the edge of the domain, near (2, 2))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-9e7ca1e8d241",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'consumer surplus'",
+  "payload": {
+   "assumptions": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "claim": "(-2*c1 + c2 + 1)**2/9 + (-c1 - c2 + 1)**2/18 + (c1 - 2*c2 + 1)**2/9 >= 2/27*(c1/(c1/3 + c2/3 + 1/3))",
+   "symbols": [
+    "c1",
+    "c2"
+   ]
+  },
+  "source": "physics_discover2 round 2262",
+  "statement": "[economics: Cournot duopoly] Total Welfare Index [model-proposed; physical meaning unverified] \u2265 2/27 \u00d7 Lerner Index for Firm 1 [model-proposed; physical meaning unverified]   on c1 < 1/2, c2 < 1/2 (tight only at the edge of the domain, near (0.5, 0.5))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-3a77a64d25d2",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'consumer surplus'",
+  "payload": {
+   "assumptions": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "claim": "(-2*c1 + c2 + 1)**2/9 + (-c1 - c2 + 1)**2/18 + (c1 - 2*c2 + 1)**2/9 >= 1/18*(((-2*c1 + c2 + 1)**2 + (c1 - 2*c2 + 1)**2)/((1 - c1)**2 + (1 - c2)**2))",
+   "symbols": [
+    "c1",
+    "c2"
+   ]
+  },
+  "source": "physics_discover2 round 2262",
+  "statement": "[economics: Cournot duopoly] Total Welfare Index [model-proposed; physical meaning unverified] \u2265 1/18 \u00d7 Hirshleifer Index [model-proposed; physical meaning unverified]   on c1 < 1/2, c2 < 1/2 (tight only at the edge of the domain, near (0.5, 0.5))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]
