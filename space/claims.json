@@ -2124517,5 +2124517,1058 @@
   "statement": "Octal game 0.540502 is completely solved: its Grundy values are periodic with pre-period 246 and period 36 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.18299075",
+   "held_out_r2": 0.971,
+   "held_out_rows": 2790,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ff6d54ad0a6a",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8378b1f409512305.csv",
+   "doi": "10.5281/zenodo.18299075",
+   "form": "logarithmic",
+   "params": [
+    0.004767400782363298,
+    -0.18395958603618948
+   ],
+   "seed": 3205999112,
+   "x": "P(Strong bar)",
+   "y": "P(Unbar. disc)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Catalogue of disc galaxy morphological classification in the KiDS-NW2 field' (Zenodo, doi 10.5281/zenodo.18299075): 'P(Unbar. disc)' grows logarithmically in 'P(Strong bar)' (R\u00b2 = 0.968 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.18299075",
+   "held_out_r2": 0.9215,
+   "held_out_rows": 2790,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4efe34103d35",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8378b1f409512305.csv",
+   "doi": "10.5281/zenodo.18299075",
+   "form": "linear",
+   "params": [
+    0.9743830716829369,
+    -1.1827951804967287
+   ],
+   "seed": 3205999112,
+   "x": "P(Unbar. disc)",
+   "y": "P(Bar)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Catalogue of disc galaxy morphological classification in the KiDS-NW2 field' (Zenodo, doi 10.5281/zenodo.18299075): 'P(Bar)' is linear in 'P(Unbar. disc)' (R\u00b2 = 0.916 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22365934",
+   "held_out_r2": 0.9997,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-be7dfdd490b5",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "d8c5375e26fd898f.csv",
+   "doi": "10.5281/zenodo.22365934",
+   "form": "power law",
+   "params": [
+    0.08359112219538949,
+    -0.9995026752780516
+   ],
+   "seed": 3915082996,
+   "x": "mag_err",
+   "y": "signal"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'M101 Variable Star Catalog and Light Curves from HST/ACS' (Zenodo, doi 10.5281/zenodo.22365934): 'signal' follows a power law in 'mag_err' (R\u00b2 = 1.000 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.21980866",
+   "held_out_r2": 0.9343,
+   "held_out_rows": 95,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-011e0f443915",
+  "kind": "empirical",
+  "novelty": "KNOWN: astrometric uncertainties (Gaia-type errors all scale with source brightness) \u2014 not a discovery",
+  "payload": {
+   "dataset": "957f8a955577b191.csv",
+   "doi": "10.5281/zenodo.21980866",
+   "form": "power law",
+   "params": [
+    -0.16532369978615818,
+    0.9541283896388933
+   ],
+   "seed": 3482382646,
+   "x": "ra_error",
+   "y": "dec_error"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data behind: A Systematic Gaia-ZTF Search for Short-Period Blue Compact-Binary Candidates' (Zenodo, doi 10.5281/zenodo.21980866): 'dec_error' follows a power law in 'ra_error' (R\u00b2 = 0.916 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.21980866",
+   "held_out_r2": 0.9629,
+   "held_out_rows": 95,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-fdb97c103395",
+  "kind": "empirical",
+  "novelty": "KNOWN: astrometric uncertainties (Gaia-type errors all scale with source brightness) \u2014 not a discovery",
+  "payload": {
+   "dataset": "957f8a955577b191.csv",
+   "doi": "10.5281/zenodo.21980866",
+   "form": "power law",
+   "params": [
+    0.18034324360516804,
+    0.9729637965803212
+   ],
+   "seed": 3482382646,
+   "x": "ra_error",
+   "y": "parallax_error"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data behind: A Systematic Gaia-ZTF Search for Short-Period Blue Compact-Binary Candidates' (Zenodo, doi 10.5281/zenodo.21980866): 'parallax_error' follows a power law in 'ra_error' (R\u00b2 = 0.965 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.21980866",
+   "held_out_r2": 0.9414,
+   "held_out_rows": 95,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-124b41c9b712",
+  "kind": "empirical",
+  "novelty": "KNOWN: astrometric uncertainties (Gaia-type errors all scale with source brightness) \u2014 not a discovery",
+  "payload": {
+   "dataset": "957f8a955577b191.csv",
+   "doi": "10.5281/zenodo.21980866",
+   "form": "power law",
+   "params": [
+    0.2313433421409381,
+    0.9685611141014621
+   ],
+   "seed": 3482382646,
+   "x": "dec_error",
+   "y": "parallax_error"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data behind: A Systematic Gaia-ZTF Search for Short-Period Blue Compact-Binary Candidates' (Zenodo, doi 10.5281/zenodo.21980866): 'parallax_error' follows a power law in 'dec_error' (R\u00b2 = 0.950 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.21980866",
+   "held_out_r2": 0.7303,
+   "held_out_rows": 74,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-1ba76c710cb1",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "d97f90e85528b396.csv",
+   "doi": "10.5281/zenodo.21980866",
+   "form": "linear",
+   "params": [
+    -8.221046587044743,
+    16.756088031419335
+   ],
+   "seed": 2114527998,
+   "x": "gaia_parallax_mas",
+   "y": "parallax_over_error"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data behind: A Systematic Gaia-ZTF Search for Short-Period Blue Compact-Binary Candidates' (Zenodo, doi 10.5281/zenodo.21980866): 'parallax_over_error' is linear in 'gaia_parallax_mas' (R\u00b2 = 0.928 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.21980866",
+   "held_out_r2": 0.9967,
+   "held_out_rows": 74,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-0fe1784176fd",
+  "kind": "empirical",
+  "novelty": "KNOWN: astrometric uncertainties (Gaia-type errors all scale with source brightness) \u2014 not a discovery",
+  "payload": {
+   "dataset": "d97f90e85528b396.csv",
+   "doi": "10.5281/zenodo.21980866",
+   "form": "power law",
+   "params": [
+    0.4401437757177837,
+    0.9729278053567721
+   ],
+   "seed": 2114527998,
+   "x": "p_ref_err_minus_min",
+   "y": "p_orb_err_plus_min"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data behind: A Systematic Gaia-ZTF Search for Short-Period Blue Compact-Binary Candidates' (Zenodo, doi 10.5281/zenodo.21980866): 'p_orb_err_plus_min' follows a power law in 'p_ref_err_minus_min' (R\u00b2 = 0.997 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.21980866",
+   "held_out_r2": 0.9967,
+   "held_out_rows": 74,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-021b2c643c52",
+  "kind": "empirical",
+  "novelty": "KNOWN: astrometric uncertainties (Gaia-type errors all scale with source brightness) \u2014 not a discovery",
+  "payload": {
+   "dataset": "d97f90e85528b396.csv",
+   "doi": "10.5281/zenodo.21980866",
+   "form": "power law",
+   "params": [
+    0.4401437757177837,
+    0.9729278053567721
+   ],
+   "seed": 2114527998,
+   "x": "p_ref_err_plus_min",
+   "y": "p_orb_err_minus_min"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data behind: A Systematic Gaia-ZTF Search for Short-Period Blue Compact-Binary Candidates' (Zenodo, doi 10.5281/zenodo.21980866): 'p_orb_err_minus_min' follows a power law in 'p_ref_err_plus_min' (R\u00b2 = 0.997 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.21980866",
+   "held_out_r2": 0.9345,
+   "held_out_rows": 74,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-be23acc7c510",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "cfeca491ef2633e5.csv",
+   "doi": "10.5281/zenodo.21980866",
+   "form": "power law",
+   "params": [
+    57.33739698148842,
+    1.2655264806276323
+   ],
+   "seed": 3308171452,
+   "x": "hc_4yr",
+   "y": "snr_lisa"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data behind: A Systematic Gaia-ZTF Search for Short-Period Blue Compact-Binary Candidates' (Zenodo, doi 10.5281/zenodo.21980866): 'snr_lisa' follows a power law in 'hc_4yr' (R\u00b2 = 0.932 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.21980866",
+   "held_out_r2": 0.9345,
+   "held_out_rows": 74,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3c36d1dc076e",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "cfeca491ef2633e5.csv",
+   "doi": "10.5281/zenodo.21980866",
+   "form": "power law",
+   "params": [
+    57.555439801888355,
+    1.2933325037636996
+   ],
+   "seed": 3308171452,
+   "x": "hc_4yr",
+   "y": "snr_tianqin"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data behind: A Systematic Gaia-ZTF Search for Short-Period Blue Compact-Binary Candidates' (Zenodo, doi 10.5281/zenodo.21980866): 'snr_tianqin' follows a power law in 'hc_4yr' (R\u00b2 = 0.925 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.21980866",
+   "held_out_r2": 0.9418,
+   "held_out_rows": 74,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-0e44cb3d8752",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "2b614f72eecd743f.csv",
+   "doi": "10.5281/zenodo.21980866",
+   "form": "power law",
+   "params": [
+    -5.632131356922615,
+    0.9562108853680706
+   ],
+   "seed": 905371078,
+   "x": "p_ref_err_plus_min",
+   "y": "p_chance_twoband"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data behind: A Systematic Gaia-ZTF Search for Short-Period Blue Compact-Binary Candidates' (Zenodo, doi 10.5281/zenodo.21980866): 'p_chance_twoband' follows a power law in 'p_ref_err_plus_min' (R\u00b2 = 0.920 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17064808",
+   "held_out_r2": 0.9831,
+   "held_out_rows": 9212,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ec3626d01ec3",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "1718ef80af199a18.csv",
+   "doi": "10.5281/zenodo.17064808",
+   "form": "linear",
+   "params": [
+    1.4428434507002093,
+    0.9929430140527613
+   ],
+   "seed": 359623167,
+   "x": "Start Time",
+   "y": "End Time"
+  },
+  "source": "datafeeds.py",
+  "statement": "In '\"Heliophysics Audified: Resonances in Plasmas\" Datasets and Audio Files' (Zenodo, doi 10.5281/zenodo.17064808): 'End Time' is linear in 'Start Time' (R\u00b2 = 0.983 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7304517",
+   "held_out_r2": 0.9274,
+   "held_out_rows": 38,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4cf48ffcbb5c",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "5ac7bb74dcd252e1.csv",
+   "doi": "10.5281/zenodo.7304517",
+   "form": "exponential",
+   "params": [
+    3.626619080580461,
+    -0.009897972355449772
+   ],
+   "seed": 347992163,
+   "x": "y (JSS)",
+   "y": "r (IAU)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Lists of magnetopause and bow shock crossings, as measured by Juno/Waves and Juno/MAG.' (Zenodo, doi 10.5281/zenodo.7304517): 'r (IAU)' grows exponentially in 'y (JSS)' (R\u00b2 = 0.953 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7304517",
+   "held_out_r2": 0.9945,
+   "held_out_rows": 38,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-78041a2e9b39",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "5ac7bb74dcd252e1.csv",
+   "doi": "10.5281/zenodo.7304517",
+   "form": "exponential",
+   "params": [
+    0.4507085452821472,
+    -0.005821584676014654
+   ],
+   "seed": 347992163,
+   "x": "z (JSS)",
+   "y": "theta (IAU)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Lists of magnetopause and bow shock crossings, as measured by Juno/Waves and Juno/MAG.' (Zenodo, doi 10.5281/zenodo.7304517): 'theta (IAU)' grows exponentially in 'z (JSS)' (R\u00b2 = 0.981 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.17035/cardiff.30238336.v1",
+   "held_out_r2": 0.9748,
+   "held_out_rows": 50,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4a44a1d0974d",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "0a8ce9f1c5035cea.csv",
+   "doi": "10.17035/cardiff.30238336.v1",
+   "form": "linear",
+   "params": [
+    -0.005375991086153831,
+    0.9221286255715269
+   ],
+   "seed": 3398297523,
+   "x": "3.63636",
+   "y": "40"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset for \"The origin and influence of non-cavity modes in a micropillar Bragg microcavi' (Figshare, doi 10.17035/cardiff.30238336.v1): '40' is linear in '3.63636' (R\u00b2 = 0.987 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.17035/cardiff.30238336.v1",
+   "held_out_r2": 0.9775,
+   "held_out_rows": 50,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-2e4906670a9e",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "0a8ce9f1c5035cea.csv",
+   "doi": "10.17035/cardiff.30238336.v1",
+   "form": "linear",
+   "params": [
+    -0.005083167660301331,
+    0.928774486023341
+   ],
+   "seed": 3398297523,
+   "x": "7.27273",
+   "y": "40"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset for \"The origin and influence of non-cavity modes in a micropillar Bragg microcavi' (Figshare, doi 10.17035/cardiff.30238336.v1): '40' is linear in '7.27273' (R\u00b2 = 0.989 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.17035/cardiff.30238336.v1",
+   "held_out_r2": 0.9888,
+   "held_out_rows": 208,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5b8f7dd09701",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "0167577db7ad759d.csv",
+   "doi": "10.17035/cardiff.30238336.v1",
+   "form": "linear",
+   "params": [
+    0.0013737603304710907,
+    1.0010700496220108
+   ],
+   "seed": 688061343,
+   "x": "-6E-6",
+   "y": "-5.92E-6"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset for \"The origin and influence of non-cavity modes in a micropillar Bragg microcavi' (Figshare, doi 10.17035/cardiff.30238336.v1): '-5.92E-6' is linear in '-6E-6' (R\u00b2 = 0.990 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.17035/cardiff.30238336.v1",
+   "held_out_r2": 0.9859,
+   "held_out_rows": 208,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-6a57206ac4f3",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "0167577db7ad759d.csv",
+   "doi": "10.17035/cardiff.30238336.v1",
+   "form": "linear",
+   "params": [
+    0.0016291453589977582,
+    1.000068651389887
+   ],
+   "seed": 688061343,
+   "x": "-6E-6",
+   "y": "-5.91E-6"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset for \"The origin and influence of non-cavity modes in a micropillar Bragg microcavi' (Figshare, doi 10.17035/cardiff.30238336.v1): '-5.91E-6' is linear in '-6E-6' (R\u00b2 = 0.987 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.17035/cardiff.30238336.v1",
+   "held_out_r2": 0.9828,
+   "held_out_rows": 208,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-258b4aa2d925",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "0167577db7ad759d.csv",
+   "doi": "10.17035/cardiff.30238336.v1",
+   "form": "linear",
+   "params": [
+    0.0019025056864247242,
+    0.9988507712902436
+   ],
+   "seed": 688061343,
+   "x": "-6E-6",
+   "y": "-5.9E-6"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset for \"The origin and influence of non-cavity modes in a micropillar Bragg microcavi' (Figshare, doi 10.17035/cardiff.30238336.v1): '-5.9E-6' is linear in '-6E-6' (R\u00b2 = 0.984 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.17035/cardiff.30238336.v1",
+   "held_out_r2": 0.9794,
+   "held_out_rows": 208,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-cc41103f6ca0",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "0167577db7ad759d.csv",
+   "doi": "10.17035/cardiff.30238336.v1",
+   "form": "linear",
+   "params": [
+    0.002192922496450692,
+    0.9974451316353422
+   ],
+   "seed": 688061343,
+   "x": "-6E-6",
+   "y": "-5.89E-6"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset for \"The origin and influence of non-cavity modes in a micropillar Bragg microcavi' (Figshare, doi 10.17035/cardiff.30238336.v1): '-5.89E-6' is linear in '-6E-6' (R\u00b2 = 0.981 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.17035/cardiff.30238336.v1",
+   "held_out_r2": 0.9757,
+   "held_out_rows": 208,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-61784655c359",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "0167577db7ad759d.csv",
+   "doi": "10.17035/cardiff.30238336.v1",
+   "form": "linear",
+   "params": [
+    0.0024996319541630064,
+    0.9958707387647048
+   ],
+   "seed": 688061343,
+   "x": "-6E-6",
+   "y": "-5.88E-6"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset for \"The origin and influence of non-cavity modes in a micropillar Bragg microcavi' (Figshare, doi 10.17035/cardiff.30238336.v1): '-5.88E-6' is linear in '-6E-6' (R\u00b2 = 0.977 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.17035/cardiff.30238336.v1",
+   "held_out_r2": 0.9717,
+   "held_out_rows": 208,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-39ab971a2391",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "0167577db7ad759d.csv",
+   "doi": "10.17035/cardiff.30238336.v1",
+   "form": "linear",
+   "params": [
+    0.0028217994663810053,
+    0.9941436119707588
+   ],
+   "seed": 688061343,
+   "x": "-6E-6",
+   "y": "-5.87E-6"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset for \"The origin and influence of non-cavity modes in a micropillar Bragg microcavi' (Figshare, doi 10.17035/cardiff.30238336.v1): '-5.87E-6' is linear in '-6E-6' (R\u00b2 = 0.973 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.17035/cardiff.30238336.v1",
+   "held_out_r2": 0.9802,
+   "held_out_rows": 208,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-bfdd56195ebb",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "0453407fda936602.csv",
+   "doi": "10.17035/cardiff.30238336.v1",
+   "form": "linear",
+   "params": [
+    0.00024235941208122167,
+    0.9985407664026148
+   ],
+   "seed": 4017971441,
+   "x": "-6E-6",
+   "y": "-5.96E-6"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset for \"The origin and influence of non-cavity modes in a micropillar Bragg microcavi' (Figshare, doi 10.17035/cardiff.30238336.v1): '-5.96E-6' is linear in '-6E-6' (R\u00b2 = 0.985 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.17035/cardiff.30238336.v1",
+   "held_out_r2": 0.969,
+   "held_out_rows": 208,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-379b52599a15",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "0453407fda936602.csv",
+   "doi": "10.17035/cardiff.30238336.v1",
+   "form": "linear",
+   "params": [
+    0.00048538352393906996,
+    0.9957885194285703
+   ],
+   "seed": 4017971441,
+   "x": "-6E-6",
+   "y": "-5.95E-6"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset for \"The origin and influence of non-cavity modes in a micropillar Bragg microcavi' (Figshare, doi 10.17035/cardiff.30238336.v1): '-5.95E-6' is linear in '-6E-6' (R\u00b2 = 0.976 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.17035/cardiff.30238336.v1",
+   "held_out_r2": 0.9554,
+   "held_out_rows": 208,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-0986e527acc8",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "0453407fda936602.csv",
+   "doi": "10.17035/cardiff.30238336.v1",
+   "form": "linear",
+   "params": [
+    0.0008089178854547005,
+    0.9919755832061673
+   ],
+   "seed": 4017971441,
+   "x": "-6E-6",
+   "y": "-5.94E-6"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset for \"The origin and influence of non-cavity modes in a micropillar Bragg microcavi' (Figshare, doi 10.17035/cardiff.30238336.v1): '-5.94E-6' is linear in '-6E-6' (R\u00b2 = 0.966 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.17035/cardiff.30238336.v1",
+   "held_out_r2": 0.9394,
+   "held_out_rows": 208,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-abfca23f019f",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "0453407fda936602.csv",
+   "doi": "10.17035/cardiff.30238336.v1",
+   "form": "linear",
+   "params": [
+    0.001205381242469741,
+    0.9871784969696421
+   ],
+   "seed": 4017971441,
+   "x": "-6E-6",
+   "y": "-5.93E-6"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset for \"The origin and influence of non-cavity modes in a micropillar Bragg microcavi' (Figshare, doi 10.17035/cardiff.30238336.v1): '-5.93E-6' is linear in '-6E-6' (R\u00b2 = 0.954 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.17035/cardiff.30238336.v1",
+   "held_out_r2": 0.9901,
+   "held_out_rows": 210,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-efee791f4f6f",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "9b65b2acc705d093.csv",
+   "doi": "10.17035/cardiff.30238336.v1",
+   "form": "linear",
+   "params": [
+    0.0009807529901734136,
+    1.0065802573804918
+   ],
+   "seed": 2180303801,
+   "x": "-6E-6",
+   "y": "-5.909696969697E-6"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset for \"The origin and influence of non-cavity modes in a micropillar Bragg microcavi' (Figshare, doi 10.17035/cardiff.30238336.v1): '-5.909696969697E-6' is linear in '-6E-6' (R\u00b2 = 0.990 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.17035/cardiff.30238336.v1",
+   "held_out_r2": 0.9844,
+   "held_out_rows": 210,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-fe7bb8807c8a",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "9b65b2acc705d093.csv",
+   "doi": "10.17035/cardiff.30238336.v1",
+   "form": "linear",
+   "params": [
+    0.0014927305684429768,
+    1.0029581765379507
+   ],
+   "seed": 2180303801,
+   "x": "-6E-6",
+   "y": "-5.887121212121E-6"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset for \"The origin and influence of non-cavity modes in a micropillar Bragg microcavi' (Figshare, doi 10.17035/cardiff.30238336.v1): '-5.887121212121E-6' is linear in '-6E-6' (R\u00b2 = 0.983 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.17035/cardiff.30238336.v1",
+   "held_out_r2": 0.9776,
+   "held_out_rows": 210,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-02a7465dfe51",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "9b65b2acc705d093.csv",
+   "doi": "10.17035/cardiff.30238336.v1",
+   "form": "linear",
+   "params": [
+    0.0019464186256207413,
+    1.0037859609090256
+   ],
+   "seed": 2180303801,
+   "x": "-6E-6",
+   "y": "-5.864545454545E-6"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset for \"The origin and influence of non-cavity modes in a micropillar Bragg microcavi' (Figshare, doi 10.17035/cardiff.30238336.v1): '-5.864545454545E-6' is linear in '-6E-6' (R\u00b2 = 0.976 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.17035/cardiff.30238336.v1",
+   "held_out_r2": 0.9701,
+   "held_out_rows": 210,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f88a70fefafd",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "9b65b2acc705d093.csv",
+   "doi": "10.17035/cardiff.30238336.v1",
+   "form": "linear",
+   "params": [
+    0.0023352316728589475,
+    1.0074175669150218
+   ],
+   "seed": 2180303801,
+   "x": "-6E-6",
+   "y": "-5.84196969697E-6"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset for \"The origin and influence of non-cavity modes in a micropillar Bragg microcavi' (Figshare, doi 10.17035/cardiff.30238336.v1): '-5.84196969697E-6' is linear in '-6E-6' (R\u00b2 = 0.967 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.17035/cardiff.30238336.v1",
+   "held_out_r2": 0.9618,
+   "held_out_rows": 210,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-84c5800f8538",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "9b65b2acc705d093.csv",
+   "doi": "10.17035/cardiff.30238336.v1",
+   "form": "linear",
+   "params": [
+    0.002770149705750816,
+    1.0088392226788683
+   ],
+   "seed": 2180303801,
+   "x": "-6E-6",
+   "y": "-5.819393939394E-6"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset for \"The origin and influence of non-cavity modes in a micropillar Bragg microcavi' (Figshare, doi 10.17035/cardiff.30238336.v1): '-5.819393939394E-6' is linear in '-6E-6' (R\u00b2 = 0.958 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.17035/cardiff.30238336.v1",
+   "held_out_r2": 0.9521,
+   "held_out_rows": 210,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e4caa74d1876",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "9b65b2acc705d093.csv",
+   "doi": "10.17035/cardiff.30238336.v1",
+   "form": "linear",
+   "params": [
+    0.003373488050870149,
+    1.0047907418876167
+   ],
+   "seed": 2180303801,
+   "x": "-6E-6",
+   "y": "-5.796818181818E-6"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset for \"The origin and influence of non-cavity modes in a micropillar Bragg microcavi' (Figshare, doi 10.17035/cardiff.30238336.v1): '-5.796818181818E-6' is linear in '-6E-6' (R\u00b2 = 0.947 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.17035/cardiff.30238336.v1",
+   "held_out_r2": 0.941,
+   "held_out_rows": 210,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-458a1d30c497",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "9b65b2acc705d093.csv",
+   "doi": "10.17035/cardiff.30238336.v1",
+   "form": "linear",
+   "params": [
+    0.00415559736504685,
+    0.9970284570806385
+   ],
+   "seed": 2180303801,
+   "x": "-6E-6",
+   "y": "-5.774242424242E-6"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset for \"The origin and influence of non-cavity modes in a micropillar Bragg microcavi' (Figshare, doi 10.17035/cardiff.30238336.v1): '-5.774242424242E-6' is linear in '-6E-6' (R\u00b2 = 0.934 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.17035/cardiff.30238336.v1",
+   "held_out_r2": 0.929,
+   "held_out_rows": 210,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5905755237a7",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "9b65b2acc705d093.csv",
+   "doi": "10.17035/cardiff.30238336.v1",
+   "form": "linear",
+   "params": [
+    0.004989858041085826,
+    0.9906331753164911
+   ],
+   "seed": 2180303801,
+   "x": "-6E-6",
+   "y": "-5.751666666667E-6"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset for \"The origin and influence of non-cavity modes in a micropillar Bragg microcavi' (Figshare, doi 10.17035/cardiff.30238336.v1): '-5.751666666667E-6' is linear in '-6E-6' (R\u00b2 = 0.920 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.17035/cardiff.30238336.v1",
+   "held_out_r2": 0.917,
+   "held_out_rows": 210,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ab7a039fa20b",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "9b65b2acc705d093.csv",
+   "doi": "10.17035/cardiff.30238336.v1",
+   "form": "linear",
+   "params": [
+    0.00572042711509523,
+    0.9889793488140526
+   ],
+   "seed": 2180303801,
+   "x": "-6E-6",
+   "y": "-5.729090909091E-6"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset for \"The origin and influence of non-cavity modes in a micropillar Bragg microcavi' (Figshare, doi 10.17035/cardiff.30238336.v1): '-5.729090909091E-6' is linear in '-6E-6' (R\u00b2 = 0.907 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.17035/cardiff.30238336.v1",
+   "held_out_r2": 0.9896,
+   "held_out_rows": 210,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-6837602824a0",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "891b1866c7d9b040.csv",
+   "doi": "10.17035/cardiff.30238336.v1",
+   "form": "linear",
+   "params": [
+    7.824701577026839e-05,
+    1.0049003608095861
+   ],
+   "seed": 3035472780,
+   "x": "-6E-6",
+   "y": "-5.977424242424E-6"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset for \"The origin and influence of non-cavity modes in a micropillar Bragg microcavi' (Figshare, doi 10.17035/cardiff.30238336.v1): '-5.977424242424E-6' is linear in '-6E-6' (R\u00b2 = 0.990 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.17035/cardiff.30238336.v1",
+   "held_out_r2": 0.9597,
+   "held_out_rows": 210,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-cb7c6a88a48b",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "891b1866c7d9b040.csv",
+   "doi": "10.17035/cardiff.30238336.v1",
+   "form": "linear",
+   "params": [
+    0.001226259578277292,
+    1.0004668621109358
+   ],
+   "seed": 3035472780,
+   "x": "-6E-6",
+   "y": "-5.954848484848E-6"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset for \"The origin and influence of non-cavity modes in a micropillar Bragg microcavi' (Figshare, doi 10.17035/cardiff.30238336.v1): '-5.954848484848E-6' is linear in '-6E-6' (R\u00b2 = 0.963 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.17035/cardiff.30238336.v1",
+   "held_out_r2": 0.9116,
+   "held_out_rows": 210,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5ccd8c860745",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "891b1866c7d9b040.csv",
+   "doi": "10.17035/cardiff.30238336.v1",
+   "form": "linear",
+   "params": [
+    0.003477235527528449,
+    0.9842602733617065
+   ],
+   "seed": 3035472780,
+   "x": "-6E-6",
+   "y": "-5.932272727273E-6"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset for \"The origin and influence of non-cavity modes in a micropillar Bragg microcavi' (Figshare, doi 10.17035/cardiff.30238336.v1): '-5.932272727273E-6' is linear in '-6E-6' (R\u00b2 = 0.918 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
