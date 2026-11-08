@@ -2528,3 +2528,7 @@
 - 2026-11-08 11:42 round 2322: collision
 - 2026-11-08 11:43 round 2323: driven oscillator
 - 2026-11-08 11:44 round 2324: velocity addition
+- 2026-11-08 11:45 round 2325: Compton scattering
+- 2026-11-08 11:46 round 2326: Cournot duopoly
+- 2026-11-08 11:47 round 2327: insurance and risk
+- 2026-11-08 11:48 segment end: 2327 rounds, 5 discoveries, 2 known laws rediscovered
