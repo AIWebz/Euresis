@@ -1982,3 +1982,4 @@
 - 2026-11-08 18:50 FINDING (confirmed on held-out rows): In 'Male reproductive effort might be evolving in the face of devastating disease in a threate' (Zenodo, doi 10.5061/dryad.f1vhhmgxf): 'Eggs_per_area' grows exponentially in 'Egg_width' (R² = 0.931 on the discovery half); held-out R² = 0.939 [emp-c057c5bd7405]
 - 2026-11-08 18:50 FINDING (confirmed on held-out rows): In 'Male reproductive effort might be evolving in the face of devastating disease in a threate' (Zenodo, doi 10.5061/dryad.f1vhhmgxf): 'Log_egg_width' grows logarithmically in 'Eggs_per_area' (R² = 0.906 on the discovery half); held-out R² = 0.915 [emp-2c5418e0a185]
 - 2026-11-08 18:50 data feeds: 12428 datasets analysed so far, 1787 confirmed findings
+- 2026-11-08 19:37 data feeds: online
