@@ -2225776,5 +2225776,302 @@
   "statement": "In 'Raw data for euphausiid species distribution model' (Zenodo, doi 10.5281/zenodo.16085479): 'Ping_E' is linear in 'Interval' (R\u00b2 = 0.978 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-9e0971c5ad33",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "(2*r**3/3 + r**2*v - r**2 + 1/3)/(2*r**3/3 + r**2*v - 2*r**2 + 4/3) >= 3/4*((2*r**3/3 + r**2*v - r**2 + 1/3)/(r**2*v - r**2 + 1))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 2600",
+  "statement": "[economics: auction with a reserve price] Bidder Surplus Reserve Ratio with Seller Value [model-proposed; physical meaning unverified] \u2265 3/4 \u00d7 Bidder Surplus Given Reserve and Seller Value Ratio [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (4.88e-09, 0.000119))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-f1967a02a91c",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'expected bidder surplus given reserve [model-proposed; physical meaning unverified]'",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "(2*r**3/3 + r**2*v - r**2 + 1/3)/(2*r**3/3 + r**2*v - 2*r**2 + 4/3) >= 3/4*((2*r**3/3 - r**2 + 1/3)/(-r**2*v + 1))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 2600",
+  "statement": "[economics: auction with a reserve price] Bidder Surplus Reserve Ratio with Seller Value [model-proposed; physical meaning unverified] \u2265 3/4 \u00d7 Bidder Surplus Reserve Ratio [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (4.88e-09, 0.000119))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-75ea1bbe1e4b",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "(r**2*v + 2/3)/(4*r**3/3 + 2*r**2*v - r**2 + 1) >= 1/2*(-4*r**3/3 + r**2*v + r**2 + 1/3)",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 2600",
+  "statement": "[economics: auction with a reserve price] Welfare Reserve Efficiency with Seller Value and Reserve [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 seller's expected payoff   on r < 1, v < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-b6cbc61e1dfa",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "(r**2*v + 2/3)/(4*r**3/3 + 2*r**2*v - r**2 + 1) >= 1/2*(r**2)",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 2600",
+  "statement": "[economics: auction with a reserve price] Welfare Reserve Efficiency with Seller Value and Reserve [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 probability the item is not sold   on r < 1, v < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-268947aa18ec",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "(r**2*v + 2/3)/(4*r**3/3 + 2*r**2*v - r**2 + 1) >= 2*(2*r**3/3 - r**2 + 1/3)",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 2600",
+  "statement": "[economics: auction with a reserve price] Welfare Reserve Efficiency with Seller Value and Reserve [model-proposed; physical meaning unverified] \u2265 2 \u00d7 expected total bidder surplus   on r < 1, v < 1 (tight only at the edge of the domain, near (7.8e-11, 0.883))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-f4c73bef4aa5",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "(r**2*v + 2/3)/(4*r**3/3 + 2*r**2*v - r**2 + 1) >= 1/2*(-2*r**3/3 + r**2*v + 2/3)",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 2600",
+  "statement": "[economics: auction with a reserve price] Welfare Reserve Efficiency with Seller Value and Reserve [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 expected total welfare   on r < 1, v < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-992aa1e59c92",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "(r**2*v + 2/3)/(4*r**3/3 + 2*r**2*v - r**2 + 1) >= 1/2*(v**3/3 + 2/3)",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 2600",
+  "statement": "[economics: auction with a reserve price] Welfare Reserve Efficiency with Seller Value and Reserve [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 welfare with the efficient reserve (r = v)   on r < 1, v < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-09db0843b704",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "(r**2*v + 2/3)/(4*r**3/3 + 2*r**2*v - r**2 + 1) >= 1/2*(r**2*v/(-4*r**3/3 + r**2*v + r**2 + 1/3))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 2600",
+  "statement": "[economics: auction with a reserve price] Welfare Reserve Efficiency with Seller Value and Reserve [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 probability the seller's value is below reserve [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-1e1fca65fa8c",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "(r**2*v + 2/3)/(4*r**3/3 + 2*r**2*v - r**2 + 1) >= 4/3*((2*r**3/3 - r**2 + 1/3)/(2/3 - 2*r**3/3))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 2600",
+  "statement": "[economics: auction with a reserve price] Welfare Reserve Efficiency with Seller Value and Reserve [model-proposed; physical meaning unverified] \u2265 4/3 \u00d7 expected bidder surplus ratio [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (7.8e-11, 0.883))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-458d03c6eeda",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "(r**2*v + 2/3)/(4*r**3/3 + 2*r**2*v - r**2 + 1) >= 2*((2*r**3/3 - r**2 + 1/3)/(1 - r**2))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 2600",
+  "statement": "[economics: auction with a reserve price] Welfare Reserve Efficiency with Seller Value and Reserve [model-proposed; physical meaning unverified] \u2265 2 \u00d7 expected bidder surplus given reserve [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (7.8e-11, 0.883))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-e7c7da5c6a0e",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "(r**2*v + 2/3)/(4*r**3/3 + 2*r**2*v - r**2 + 1) >= 1/2*((2*r**3/3 + r**2*v - r**2 + 1/3)/(r**2*v - r**2 + 1))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 2600",
+  "statement": "[economics: auction with a reserve price] Welfare Reserve Efficiency with Seller Value and Reserve [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 Bidder Surplus Given Reserve and Seller Value Ratio [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]

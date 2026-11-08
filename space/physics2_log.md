@@ -2825,3 +2825,7 @@
 - 2026-11-08 22:39 round 2595: driven oscillator
 - 2026-11-08 22:41 round 2596: velocity addition
 - 2026-11-08 22:42 round 2597: Compton scattering
+- 2026-11-08 22:43 round 2598: Cournot duopoly
+- 2026-11-08 22:43 round 2599: insurance and risk
+- 2026-11-08 22:45 round 2600: auction with a reserve price
+- 2026-11-08 22:47 round 2601: two-body decay
