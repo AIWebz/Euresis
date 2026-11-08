@@ -2153276,5 +2153276,86 @@
   "statement": "Octal game 0.542361 is completely solved: its Grundy values are periodic with pre-period 150 and period 48 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22804865",
+   "held_out_r2": 0.9538,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9c4ae00507af",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "f37ec1bfe71c4543.csv",
+   "doi": "10.5281/zenodo.22804865",
+   "form": "linear",
+   "params": [
+    0.44957394760442004,
+    1.0022664181736687
+   ],
+   "seed": 1638706600,
+   "x": "multiyear_Sydney_mould_index",
+   "y": "multiyear_Hobart_mould_index"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A Comparison of Observed and Representative Climate Data Selection on Transient Hygrotherm' (Zenodo, doi 10.5281/zenodo.22804865): 'multiyear_Hobart_mould_index' is linear in 'multiyear_Sydney_mould_index' (R\u00b2 = 0.952 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22804865",
+   "held_out_r2": 0.9473,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3c5cb9114883",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "f37ec1bfe71c4543.csv",
+   "doi": "10.5281/zenodo.22804865",
+   "form": "linear",
+   "params": [
+    -1.0428494844295018,
+    1.4289497748120326
+   ],
+   "seed": 1638706600,
+   "x": "representative_Brisbane_mould_index",
+   "y": "representative_Sydney_mould_index"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A Comparison of Observed and Representative Climate Data Selection on Transient Hygrotherm' (Zenodo, doi 10.5281/zenodo.22804865): 'representative_Sydney_mould_index' is linear in 'representative_Brisbane_mould_index' (R\u00b2 = 0.947 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.8cz8w9gmz",
+   "held_out_r2": 0.5135,
+   "held_out_rows": 34,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5f33d4854132",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "29fa9568b801008b.csv",
+   "doi": "10.5061/dryad.8cz8w9gmz",
+   "form": "exponential",
+   "params": [
+    2.5993871087752933,
+    -0.00048301389913477696
+   ],
+   "seed": 1953774912,
+   "x": "Depth",
+   "y": "Dec_Av_NBT"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Projected impacts of warming seas on commercially fished species at a biogeogra' (Zenodo, doi 10.5061/dryad.8cz8w9gmz): 'Dec_Av_NBT' grows exponentially in 'Depth' (R\u00b2 = 0.950 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
  }
 ]
