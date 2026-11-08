@@ -1631,3 +1631,9 @@
 - 2026-11-08 07:28 FINDING (confirmed on held-out rows): In 'Data for Aeolian Ripple Migration and Associated Creep Transport Rates' (Zenodo, doi 10.5281/zenodo.3378825): 'ust_th' is linear in 'd' (R² = 0.922 on the discovery half); held-out R² = 0.875 [emp-0c1e7b2a77f2]
 - 2026-11-08 07:29 data feeds: 11094 datasets analysed so far, 1459 confirmed findings
 - 2026-11-08 08:09 data feeds: online
+- 2026-11-08 08:10 FINDING (confirmed on held-out rows): In 'Airborne radar observation dataset of sea surface height on 8 December 2016' (Zenodo, doi 10.5281/zenodo.1409374): 'geoid_height[m]' is linear in 'ssh[m]' (R² = 0.928 on the discovery half); held-out R² = 0.929 [emp-7764b6ab6fe8]
+- 2026-11-08 08:10 FINDING (confirmed on held-out rows): In 'Airborne radar observation dataset of sea surface height on 8 December 2016' (Zenodo, doi 10.5281/zenodo.1409374): 'geoid_height[m]' is linear in 'average_ssh[m]' (R² = 0.958 on the discovery half); held-out R² = 0.959 [emp-1198504aa54f]
+- 2026-11-08 08:10 FINDING (confirmed on held-out rows): In 'Airborne radar observation dataset of sea surface height on 8 December 2016' (Zenodo, doi 10.5281/zenodo.1409374): 'average_ssh[m]' is linear in 'lonitude' (R² = 0.903 on the discovery half); held-out R² = 0.905 [emp-fbe6affc1210]
+- 2026-11-08 08:11 FINDING (confirmed on held-out rows): In 'Amino acid d13C dataset for nearshore marine primary producers' (Zenodo, doi 10.5061/dryad.zw3r22897): 'Phe13C' is linear in 'Leu13C' (R² = 0.913 on the discovery half); held-out R² = 0.850 [emp-bf3553c34cad]
+- 2026-11-08 08:11 FINDING (confirmed on held-out rows): In 'OC_ResUNet_Supporting_Data' (Figshare, doi 10.6084/m9.figshare.33456037.v1): 'MAE' is linear in 'RMSE' (R² = 0.948 on the discovery half); held-out R² = 0.941 [emp-4da077a08973]
+- 2026-11-08 08:12 data feeds: 11153 datasets analysed so far, 1464 confirmed findings

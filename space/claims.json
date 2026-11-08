@@ -2026996,5 +2026996,221 @@
   "statement": "Octal game 0.532321 is completely solved: its Grundy values are periodic with pre-period 6 and period 7 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.1409374",
+   "held_out_r2": 0.9292,
+   "held_out_rows": 9577,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-7764b6ab6fe8",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "fac59a0d951674e4.csv",
+   "doi": "10.5281/zenodo.1409374",
+   "form": "linear",
+   "params": [
+    6.932367240603509,
+    0.8226673947496311
+   ],
+   "seed": 3465902687,
+   "x": "ssh[m]",
+   "y": "geoid_height[m]"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Airborne radar observation dataset of sea surface height on 8 December 2016' (Zenodo, doi 10.5281/zenodo.1409374): 'geoid_height[m]' is linear in 'ssh[m]' (R\u00b2 = 0.928 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.1409374",
+   "held_out_r2": 0.9586,
+   "held_out_rows": 9577,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-1198504aa54f",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "fac59a0d951674e4.csv",
+   "doi": "10.5281/zenodo.1409374",
+   "form": "linear",
+   "params": [
+    6.005200788147629,
+    0.8505703583615967
+   ],
+   "seed": 3465902687,
+   "x": "average_ssh[m]",
+   "y": "geoid_height[m]"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Airborne radar observation dataset of sea surface height on 8 December 2016' (Zenodo, doi 10.5281/zenodo.1409374): 'geoid_height[m]' is linear in 'average_ssh[m]' (R\u00b2 = 0.958 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.1409374",
+   "held_out_r2": 0.9053,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-fbe6affc1210",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "439b64d519a62cdb.csv",
+   "doi": "10.5281/zenodo.1409374",
+   "form": "linear",
+   "params": [
+    -685.7387738603377,
+    5.284935955834546
+   ],
+   "seed": 555968387,
+   "x": "lonitude",
+   "y": "average_ssh[m]"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Airborne radar observation dataset of sea surface height on 8 December 2016' (Zenodo, doi 10.5281/zenodo.1409374): 'average_ssh[m]' is linear in 'lonitude' (R\u00b2 = 0.903 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.zw3r22897",
+   "held_out_r2": 0.7903,
+   "held_out_rows": 57,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-1576afee3631",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "bd430bd7025ab49f.csv",
+   "doi": "10.5061/dryad.zw3r22897",
+   "form": "linear",
+   "params": [
+    8.626838454434003,
+    0.9738648032934497
+   ],
+   "seed": 129370445,
+   "x": "Val13C",
+   "y": "Asp13C"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Amino acid d13C dataset for nearshore marine primary producers' (Zenodo, doi 10.5061/dryad.zw3r22897): 'Asp13C' is linear in 'Val13C' (R\u00b2 = 0.904 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.zw3r22897",
+   "held_out_r2": 0.7408,
+   "held_out_rows": 57,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-1382b2abdd88",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "bd430bd7025ab49f.csv",
+   "doi": "10.5061/dryad.zw3r22897",
+   "form": "linear",
+   "params": [
+    10.135175711724333,
+    1.1323604342466225
+   ],
+   "seed": 129370445,
+   "x": "Leu13C",
+   "y": "Ile13C"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Amino acid d13C dataset for nearshore marine primary producers' (Zenodo, doi 10.5061/dryad.zw3r22897): 'Ile13C' is linear in 'Leu13C' (R\u00b2 = 0.904 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.zw3r22897",
+   "held_out_r2": 0.8504,
+   "held_out_rows": 57,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-bf3553c34cad",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "bd430bd7025ab49f.csv",
+   "doi": "10.5061/dryad.zw3r22897",
+   "form": "linear",
+   "params": [
+    -0.8007881682178712,
+    0.9366440280607683
+   ],
+   "seed": 129370445,
+   "x": "Leu13C",
+   "y": "Phe13C"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Amino acid d13C dataset for nearshore marine primary producers' (Zenodo, doi 10.5061/dryad.zw3r22897): 'Phe13C' is linear in 'Leu13C' (R\u00b2 = 0.913 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.zw3r22897",
+   "held_out_r2": 0.7922,
+   "held_out_rows": 57,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4ebc3dac58d9",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "bd430bd7025ab49f.csv",
+   "doi": "10.5061/dryad.zw3r22897",
+   "form": "linear",
+   "params": [
+    -3.047433080261269,
+    0.8670934478349306
+   ],
+   "seed": 129370445,
+   "x": "Ile13C",
+   "y": "Bulk d13C"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Amino acid d13C dataset for nearshore marine primary producers' (Zenodo, doi 10.5061/dryad.zw3r22897): 'Bulk d13C' is linear in 'Ile13C' (R\u00b2 = 0.901 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.6084/m9.figshare.33456037.v1",
+   "held_out_r2": 0.9412,
+   "held_out_rows": 3040,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4da077a08973",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "26f88b7f18790efe.csv",
+   "doi": "10.6084/m9.figshare.33456037.v1",
+   "form": "linear",
+   "params": [
+    -0.00019531570696140792,
+    0.6425454455992268
+   ],
+   "seed": 551835589,
+   "x": "RMSE",
+   "y": "MAE"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'OC_ResUNet_Supporting_Data' (Figshare, doi 10.6084/m9.figshare.33456037.v1): 'MAE' is linear in 'RMSE' (R\u00b2 = 0.948 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
