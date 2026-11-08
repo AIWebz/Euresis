@@ -1935,3 +1935,4 @@
 - 2026-11-08 15:52 FINDING (confirmed on held-out rows): In 'Dataset for "The origin and influence of non-cavity modes in a micropillar Bragg microcavi' (Figshare, doi 10.17035/cardiff.30238336.v1): '-5.954848484848E-6' is linear in '-6E-6' (R² = 0.963 on the discovery half); held-out R² = 0.960 [emp-cb7c6a88a48b]
 - 2026-11-08 15:52 FINDING (confirmed on held-out rows): In 'Dataset for "The origin and influence of non-cavity modes in a micropillar Bragg microcavi' (Figshare, doi 10.17035/cardiff.30238336.v1): '-5.932272727273E-6' is linear in '-6E-6' (R² = 0.918 on the discovery half); held-out R² = 0.912 [emp-5ccd8c860745]
 - 2026-11-08 15:52 data feeds: 11954 datasets analysed so far, 1746 confirmed findings
+- 2026-11-08 16:53 data feeds: online
