@@ -1676,3 +1676,8 @@
 - 2026-11-08 09:20 FINDING (confirmed on held-out rows): In 'Data and code for “Rising microplastic loads increasingly exceed retention thresholds in C' (Figshare, doi 10.6084/m9.figshare.34560030.v2): 'ratio_hinge' is linear in 'ratio_slope' (R² = 0.976 on the discovery half); held-out R² = 0.978 [emp-f73b40501be5]
 - 2026-11-08 09:20 data feeds: 11327 datasets analysed so far, 1500 confirmed findings
 - 2026-11-08 10:04 data feeds: online
+- 2026-11-08 10:04 FINDING (confirmed on held-out rows): In 'Data from: Photodegradation modifies microplastic effects on soil properties and plant per' (Zenodo, doi 10.5061/dryad.wwpzgmsqn): 'SRL' follows a power law in 'SRSA' (R² = 0.913 on the discovery half); held-out R² = 0.860 [emp-ea5f32c06da7]
+- 2026-11-08 10:05 FINDING (confirmed on held-out rows): In 'Data from: Soil microbial communities alter conspecific and congeneric competition consist' (Zenodo, doi 10.5061/dryad.8gg5mk2): 'focal_root_weight' follows a power law in 'focal_shoot_weight' (R² = 0.929 on the discovery half); held-out R² = 0.914 [emp-e0100a5d5bc6]
+- 2026-11-08 10:05 FINDING (confirmed on held-out rows): In 'ReESH_US-Cwt: Coweeta' (Zenodo, doi 10.5281/zenodo.17195851): 'Vol_Water' follows a power law in 'MPa_Abs' (R² = 0.944 on the discovery half); held-out R² = 0.954 [emp-f33c676c3893]
+- 2026-11-08 10:06 FINDING (confirmed on held-out rows): In '<b>Data and code from: The role of canopy soils in forest carbon and nutrient cycles: a da' (Figshare, doi 10.6084/m9.figshare.28570751.v4): 'MinTempColdestMo_worldclim' grows logarithmically in 'MAT_worldclim' (R² = 0.975 on the discovery half); held-out R² = 0.965 [emp-6a167986630f]
+- 2026-11-08 10:06 data feeds: 11429 datasets analysed so far, 1504 confirmed findings
