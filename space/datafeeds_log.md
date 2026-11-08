@@ -2028,3 +2028,4 @@
 - 2026-11-08 20:44 FINDING (confirmed on held-out rows): In 'Horizontal correlation length of cone resistance in the Canterbury CPT database: survey-ex' (Zenodo, doi 10.5281/zenodo.23580889): 'n_edge' is linear in 'n_all' (R² = 0.979 on the discovery half); held-out R² = 0.982 [emp-bc9c2388d3ac]
 - 2026-11-08 20:44 FINDING (confirmed on held-out rows): In 'Recurrence as a Governance Signal:  Diagnostic Network Metrics for Public Procurement Over' (Zenodo, doi 10.5281/zenodo.20175804): 'precision' is linear in 'f1' (R² = 0.920 on the discovery half); held-out R² = 0.942 [emp-116c37448820]
 - 2026-11-08 20:45 data feeds: 12608 datasets analysed so far, 1829 confirmed findings
+- 2026-11-08 21:31 data feeds: online
