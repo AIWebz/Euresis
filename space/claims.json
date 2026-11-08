@@ -2023002,5 +2023002,194 @@
   "statement": "Octal game 0.531771 is completely solved: its Grundy values are periodic with pre-period 258 and period 95 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17601131",
+   "held_out_r2": 0.9952,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-8724e918c772",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "4f0b7344462f73a7.csv",
+   "doi": "10.5281/zenodo.17601131",
+   "form": "power law",
+   "params": [
+    -7.803064375360592,
+    2.4558723180559268
+   ],
+   "seed": 3126726931,
+   "x": "dbh",
+   "y": "agb"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Initial tree census for the Paint Rock Forest Dynamics Plot, Alabama, USA' (Zenodo, doi 10.5281/zenodo.17601131): 'agb' follows a power law in 'dbh' (R\u00b2 = 0.995 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.18806749",
+   "held_out_r2": 0.9951,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-7a8842e7494d",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "1bbc224f52591de1.csv",
+   "doi": "10.5281/zenodo.18806749",
+   "form": "power law",
+   "params": [
+    -7.8045077459709695,
+    2.4568721293796174
+   ],
+   "seed": 1925348896,
+   "x": "dbh",
+   "y": "agb"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Initial tree census for the Paint Rock Forest Dynamics Plot, Alabama, USA' (Zenodo, doi 10.5281/zenodo.18806749): 'agb' follows a power law in 'dbh' (R\u00b2 = 0.995 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14036322",
+   "held_out_r2": 0.8459,
+   "held_out_rows": 391,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d0b27c772fc0",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "5b2988bb4b6e8d22.csv",
+   "doi": "10.5281/zenodo.14036322",
+   "form": "linear",
+   "params": [
+    -1196.6689341592612,
+    116.0241059182674
+   ],
+   "seed": 2825204079,
+   "x": "Sr_mg kg-1",
+   "y": "Ca_mg kg-1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Geochemistry of soils and eroded suspended sediments from two large rural catchments in so' (Zenodo, doi 10.5281/zenodo.14036322): 'Ca_mg kg-1' is linear in 'Sr_mg kg-1' (R\u00b2 = 0.911 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.3897/jhr.96.105494.suppl1",
+   "held_out_r2": 0.9885,
+   "held_out_rows": 77,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-234d4f30e2f3",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "c4ab05c36e0a9c92.csv",
+   "doi": "10.3897/jhr.96.105494.suppl1",
+   "form": "logarithmic",
+   "params": [
+    2106.750242876718,
+    -462.8581794703805
+   ],
+   "seed": 2083312642,
+   "x": "stg",
+   "y": "max_ma"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Supplementary material 1 from: UImer JM, Jan\u0161ta P, Azar D, Krogmann L (2023) At the dawn o' (Zenodo, doi 10.3897/jhr.96.105494.suppl1): 'max_ma' grows logarithmically in 'stg' (R\u00b2 = 0.988 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.3897/jhr.96.105494.suppl1",
+   "held_out_r2": 0.9892,
+   "held_out_rows": 77,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9b7f37d6dd0a",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "c4ab05c36e0a9c92.csv",
+   "doi": "10.3897/jhr.96.105494.suppl1",
+   "form": "logarithmic",
+   "params": [
+    1956.9018733510493,
+    -430.4882667928536
+   ],
+   "seed": 2083312642,
+   "x": "stg",
+   "y": "min_ma"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Supplementary material 1 from: UImer JM, Jan\u0161ta P, Azar D, Krogmann L (2023) At the dawn o' (Zenodo, doi 10.3897/jhr.96.105494.suppl1): 'min_ma' grows logarithmically in 'stg' (R\u00b2 = 0.991 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3378825",
+   "held_out_r2": 0.8753,
+   "held_out_rows": 99,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-0c1e7b2a77f2",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "18c65b3d8d4b46e1.csv",
+   "doi": "10.5281/zenodo.3378825",
+   "form": "linear",
+   "params": [
+    0.16811272366482516,
+    0.2873967174660662
+   ],
+   "seed": 2006595938,
+   "x": "d",
+   "y": "ust_th"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for Aeolian Ripple Migration and Associated Creep Transport Rates' (Zenodo, doi 10.5281/zenodo.3378825): 'ust_th' is linear in 'd' (R\u00b2 = 0.922 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7516327",
+   "held_out_r2": 0.9511,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a0e3708cf671",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "4404acac58ef3e71.csv",
+   "doi": "10.5281/zenodo.7516327",
+   "form": "power law",
+   "params": [
+    0.9129472243975113,
+    0.8065032483777262
+   ],
+   "seed": 4217514993,
+   "x": "PREC",
+   "y": "EVAP"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Monthly climate variables of isotope-enabled climate model simulations over the last mille' (Zenodo, doi 10.5281/zenodo.7516327): 'EVAP' follows a power law in 'PREC' (R\u00b2 = 0.951 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
