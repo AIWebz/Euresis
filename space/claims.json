@@ -2199508,5 +2199508,32 @@
   "statement": "Octal game 0.545175 is completely solved: its Grundy values are periodic with pre-period 522 and period 11 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23580889",
+   "held_out_r2": 0.9854,
+   "held_out_rows": 2070,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5fd269c6aa2f",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "34b7b7fe21fb12ab.csv",
+   "doi": "10.5281/zenodo.23580889",
+   "form": "linear",
+   "params": [
+    -0.0009175153475328627,
+    1.092112787169054
+   ],
+   "seed": 4248659799,
+   "x": "S1_Z1s",
+   "y": "S1_Z1edge"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Horizontal correlation length of cone resistance in the Canterbury CPT database: survey-ex' (Zenodo, doi 10.5281/zenodo.23580889): 'S1_Z1edge' is linear in 'S1_Z1s' (R\u00b2 = 0.988 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]

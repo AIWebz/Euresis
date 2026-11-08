@@ -2012,3 +2012,4 @@
 - 2026-11-08 19:40 FINDING (confirmed on held-out rows): In 'Evolution of reproductive isolation in a long-term evolution experiment with Drosophila me' (Zenodo, doi 10.5061/dryad.2547d7wwf): 'larvae2adult.viability' follows a power law in 'Egg2Adult.Viability' (R² = 0.970 on the discovery half); held-out R² = 0.949 [emp-081f2e92a0fb]
 - 2026-11-08 19:40 FINDING (confirmed on held-out rows): In 'Evolution of reproductive isolation in a long-term evolution experiment with Drosophila me' (Zenodo, doi 10.5061/dryad.2547d7wwf): 'LarvaetoAdultCorrected' follows a power law in 'Egg2Adult.Viability' (R² = 0.964 on the discovery half); held-out R² = 0.950 [emp-e72b9ba049fa]
 - 2026-11-08 19:40 data feeds: 12514 datasets analysed so far, 1815 confirmed findings
+- 2026-11-08 20:42 data feeds: online
