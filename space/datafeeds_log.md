@@ -1497,3 +1497,4 @@
 - 2026-11-07 23:41 data feeds: online
 - 2026-11-07 23:43 FINDING (confirmed on held-out rows): In 'Dataset of "Activity-stability relationship in magnetron co-sputtered bimetallic catalysts' (Zenodo, doi 10.5281/zenodo.14795354): 'P' follows a power law in 'I' (R² = 0.997 on the discovery half); held-out R² = 0.996 [emp-63223a604b8c]
 - 2026-11-07 23:45 data feeds: 9908 datasets analysed so far, 1342 confirmed findings
+- 2026-11-08 00:31 data feeds: online
