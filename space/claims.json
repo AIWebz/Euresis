@@ -1997952,5 +1997952,437 @@
   "statement": "Octal game 0.527531 is completely solved: its Grundy values are periodic with pre-period 53 and period 4 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.0cfxpnw35",
+   "held_out_r2": 0.9483,
+   "held_out_rows": 53,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a1e384005109",
+  "kind": "empirical",
+  "novelty": "KNOWN: seawater carbonate chemistry (CO2SYS-type calculations) \u2014 not a discovery",
+  "payload": {
+   "dataset": "7ad7c17363404c9d.csv",
+   "doi": "10.5061/dryad.0cfxpnw35",
+   "form": "logarithmic",
+   "params": [
+    1.3322763924141647,
+    0.21765893044225262
+   ],
+   "seed": 3762973104,
+   "x": "predicted_mean_depth_se",
+   "y": "predicted_mean_dist2shore_se"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Seasonal variation of behavior and brain size in a freshwater fish' (Zenodo, doi 10.5061/dryad.0cfxpnw35): 'predicted_mean_dist2shore_se' grows logarithmically in 'predicted_mean_depth_se' (R\u00b2 = 0.939 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.0cfxpnw35",
+   "held_out_r2": 0.7676,
+   "held_out_rows": 53,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-115ba02af639",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "7ad7c17363404c9d.csv",
+   "doi": "10.5061/dryad.0cfxpnw35",
+   "form": "logarithmic",
+   "params": [
+    0.336700161861997,
+    0.1223835408229996
+   ],
+   "seed": 3762973104,
+   "x": "predicted_mean_depth_se",
+   "y": "predicted_mean_speed_se"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Seasonal variation of behavior and brain size in a freshwater fish' (Zenodo, doi 10.5061/dryad.0cfxpnw35): 'predicted_mean_speed_se' grows logarithmically in 'predicted_mean_depth_se' (R\u00b2 = 0.926 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.0cfxpnw35",
+   "held_out_r2": 0.8684,
+   "held_out_rows": 53,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a51c4776cb3d",
+  "kind": "empirical",
+  "novelty": "KNOWN: seawater carbonate chemistry (CO2SYS-type calculations) \u2014 not a discovery",
+  "payload": {
+   "dataset": "7ad7c17363404c9d.csv",
+   "doi": "10.5061/dryad.0cfxpnw35",
+   "form": "linear",
+   "params": [
+    -0.3936739529791009,
+    0.5413458722438136
+   ],
+   "seed": 3762973104,
+   "x": "predicted_mean_dist2shore_se",
+   "y": "predicted_mean_speed_se"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Seasonal variation of behavior and brain size in a freshwater fish' (Zenodo, doi 10.5061/dryad.0cfxpnw35): 'predicted_mean_speed_se' is linear in 'predicted_mean_dist2shore_se' (R\u00b2 = 0.914 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.0cfxpnw35",
+   "held_out_r2": 0.9384,
+   "held_out_rows": 88,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-582853839298",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "e82862f151796616.csv",
+   "doi": "10.5061/dryad.0cfxpnw35",
+   "form": "power law",
+   "params": [
+    -10.865789953604732,
+    2.9097489730502595
+   ],
+   "seed": 292389503,
+   "x": "fork_length",
+   "y": "round_weight"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Seasonal variation of behavior and brain size in a freshwater fish' (Zenodo, doi 10.5061/dryad.0cfxpnw35): 'round_weight' follows a power law in 'fork_length' (R\u00b2 = 0.939 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.0cfxpnw35",
+   "held_out_r2": 0.9391,
+   "held_out_rows": 88,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5342a7ade347",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "e82862f151796616.csv",
+   "doi": "10.5061/dryad.0cfxpnw35",
+   "form": "power law",
+   "params": [
+    -10.720372217987583,
+    2.8814061126521247
+   ],
+   "seed": 292389503,
+   "x": "fork_length",
+   "y": "standard_mass"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Seasonal variation of behavior and brain size in a freshwater fish' (Zenodo, doi 10.5061/dryad.0cfxpnw35): 'standard_mass' follows a power law in 'fork_length' (R\u00b2 = 0.942 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.f77k3",
+   "held_out_r2": 0.8608,
+   "held_out_rows": 43,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e834b130ad02",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "978bce60d4595cc5.csv",
+   "doi": "10.5061/dryad.f77k3",
+   "form": "linear",
+   "params": [
+    -1.687944556963348,
+    0.7922166482415931
+   ],
+   "seed": 3291870668,
+   "x": "Unilateral molar biting",
+   "y": "Bilateral molar biting"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Selection for mechanical advantage underlies multiple cranial optima in new wor' (Zenodo, doi 10.5061/dryad.f77k3): 'Bilateral molar biting' is linear in 'Unilateral molar biting' (R\u00b2 = 0.924 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.166716",
+   "held_out_r2": 0.9294,
+   "held_out_rows": 2097,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-37464feac71d",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "5c394161a9f945b1.csv",
+   "doi": "10.5281/zenodo.166716",
+   "form": "logarithmic",
+   "params": [
+    2.5391682450115254,
+    0.34812076127060415
+   ],
+   "seed": 3185798859,
+   "x": "\u201dFilm height [m]\u201d",
+   "y": "\u201dStreamwise interface velocity [m/s]\u201d"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Artificial viscosity model to mitigate numerical artefacts at fluid interfaces with surfac' (Zenodo, doi 10.5281/zenodo.166716): '\u201dStreamwise interface velocity [m/s]\u201d' grows logarithmically in '\u201dFilm height [m]\u201d' (R\u00b2 = 0.930 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15221524",
+   "held_out_r2": 0.9295,
+   "held_out_rows": 69,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a9456bd5e7ca",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "e84c319e8453b35b.csv",
+   "doi": "10.5281/zenodo.15221524",
+   "form": "logarithmic",
+   "params": [
+    -0.0009831004973322583,
+    -0.0027740196241164035
+   ],
+   "seed": 3150010334,
+   "x": "p/p0",
+   "y": "dVp/d(W)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Anisotropic Node Distortions in Amorphous MOFs: Low Valent Zr Sites as Catalytic Hotspots' (Zenodo, doi 10.5281/zenodo.15221524): 'dVp/d(W)' grows logarithmically in 'p/p0' (R\u00b2 = 0.910 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15221524",
+   "held_out_r2": 0.9295,
+   "held_out_rows": 69,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a112b53fc0bf",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "e84c319e8453b35b.csv",
+   "doi": "10.5281/zenodo.15221524",
+   "form": "logarithmic",
+   "params": [
+    -4.525147098258028,
+    -12.773353770553484
+   ],
+   "seed": 3150010334,
+   "x": "p/p0",
+   "y": "dap/dlog(W)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Anisotropic Node Distortions in Amorphous MOFs: Low Valent Zr Sites as Catalytic Hotspots' (Zenodo, doi 10.5281/zenodo.15221524): 'dap/dlog(W)' grows logarithmically in 'p/p0' (R\u00b2 = 0.910 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15221524",
+   "held_out_r2": 0.926,
+   "held_out_rows": 69,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-52c31b3598d4",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "e84c319e8453b35b.csv",
+   "doi": "10.5281/zenodo.15221524",
+   "form": "power law",
+   "params": [
+    -4.527662974339879,
+    -1.4904958196329832
+   ],
+   "seed": 3150010334,
+   "x": "W/nm",
+   "y": "dVp/d(W)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Anisotropic Node Distortions in Amorphous MOFs: Low Valent Zr Sites as Catalytic Hotspots' (Zenodo, doi 10.5281/zenodo.15221524): 'dVp/d(W)' follows a power law in 'W/nm' (R\u00b2 = 0.916 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15221524",
+   "held_out_r2": 0.926,
+   "held_out_rows": 69,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-6b736965f333",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "e84c319e8453b35b.csv",
+   "doi": "10.5281/zenodo.15221524",
+   "form": "power law",
+   "params": [
+    3.9072109933453936,
+    -1.4904418040141147
+   ],
+   "seed": 3150010334,
+   "x": "W/nm",
+   "y": "dap/dlog(W)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Anisotropic Node Distortions in Amorphous MOFs: Low Valent Zr Sites as Catalytic Hotspots' (Zenodo, doi 10.5281/zenodo.15221524): 'dap/dlog(W)' follows a power law in 'W/nm' (R\u00b2 = 0.916 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15221524",
+   "held_out_r2": 0.9074,
+   "held_out_rows": 69,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d673721ac294",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "e84c319e8453b35b.csv",
+   "doi": "10.5281/zenodo.15221524",
+   "form": "exponential",
+   "params": [
+    -3.372322094203847,
+    -163.915529218207
+   ],
+   "seed": 3150010334,
+   "x": "Sigma Vp",
+   "y": "dVp/d(W)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Anisotropic Node Distortions in Amorphous MOFs: Low Valent Zr Sites as Catalytic Hotspots' (Zenodo, doi 10.5281/zenodo.15221524): 'dVp/d(W)' grows exponentially in 'Sigma Vp' (R\u00b2 = 0.907 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15221524",
+   "held_out_r2": 0.9074,
+   "held_out_rows": 69,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-1ff4f9a28915",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "e84c319e8453b35b.csv",
+   "doi": "10.5281/zenodo.15221524",
+   "form": "exponential",
+   "params": [
+    5.062504896704453,
+    -163.90919214490913
+   ],
+   "seed": 3150010334,
+   "x": "Sigma Vp",
+   "y": "dap/dlog(W)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Anisotropic Node Distortions in Amorphous MOFs: Low Valent Zr Sites as Catalytic Hotspots' (Zenodo, doi 10.5281/zenodo.15221524): 'dap/dlog(W)' grows exponentially in 'Sigma Vp' (R\u00b2 = 0.907 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15221524",
+   "held_out_r2": 0.9882,
+   "held_out_rows": 69,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d133ec16c74e",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "e84c319e8453b35b.csv",
+   "doi": "10.5281/zenodo.15221524",
+   "form": "power law",
+   "params": [
+    10.330254887432222,
+    1.6146749353816123
+   ],
+   "seed": 3150010334,
+   "x": "dVp/d(W)",
+   "y": "dap/d(W)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Anisotropic Node Distortions in Amorphous MOFs: Low Valent Zr Sites as Catalytic Hotspots' (Zenodo, doi 10.5281/zenodo.15221524): 'dap/d(W)' follows a power law in 'dVp/d(W)' (R\u00b2 = 0.987 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15221524",
+   "held_out_r2": 0.9302,
+   "held_out_rows": 69,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-abc81aff1a63",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "e84c319e8453b35b.csv",
+   "doi": "10.5281/zenodo.15221524",
+   "form": "linear",
+   "params": [
+    33.83491941733702,
+    -1246.7557497867701
+   ],
+   "seed": 3150010334,
+   "x": "dVp/d(W)",
+   "y": "Sigma ap/m^2 g^-1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Anisotropic Node Distortions in Amorphous MOFs: Low Valent Zr Sites as Catalytic Hotspots' (Zenodo, doi 10.5281/zenodo.15221524): 'Sigma ap/m^2 g^-1' is linear in 'dVp/d(W)' (R\u00b2 = 0.909 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15221524",
+   "held_out_r2": 0.9302,
+   "held_out_rows": 69,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-7c71e16fc759",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "e84c319e8453b35b.csv",
+   "doi": "10.5281/zenodo.15221524",
+   "form": "linear",
+   "params": [
+    33.83527665164052,
+    -0.2707572859748676
+   ],
+   "seed": 3150010334,
+   "x": "dap/dlog(W)",
+   "y": "Sigma ap/m^2 g^-1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Anisotropic Node Distortions in Amorphous MOFs: Low Valent Zr Sites as Catalytic Hotspots' (Zenodo, doi 10.5281/zenodo.15221524): 'Sigma ap/m^2 g^-1' is linear in 'dap/dlog(W)' (R\u00b2 = 0.909 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
