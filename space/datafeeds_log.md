@@ -1948,3 +1948,4 @@
 - 2026-11-08 16:56 FINDING (confirmed on held-out rows): In 'ResponseVerdict overturns computationally validated immunotherapy signatures, recovers the' (Zenodo, doi 10.5281/zenodo.23555638): 'slots' follows a power law in 'n_patients' (R² = 0.937 on the discovery half); held-out R² = 0.938 [emp-1597a4e977fb]
 - 2026-11-08 16:56 FINDING (confirmed on held-out rows): In 'ResponseVerdict overturns computationally validated immunotherapy signatures, recovers the' (Zenodo, doi 10.5281/zenodo.23555638): 'hi' follows a power law in 'point' (R² = 0.989 on the discovery half); held-out R² = 0.989 [emp-45058fc12f03]
 - 2026-11-08 16:57 data feeds: 12121 datasets analysed so far, 1757 confirmed findings
+- 2026-11-08 17:42 data feeds: online
