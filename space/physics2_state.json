@@ -39358,6 +39358,96 @@
    "family": "velocity addition",
    "expr": "sqrt((1 - u**2)*(1 - v**2) + (u + v)**2/(u*v + 1)**2) / (u*v + 1)",
    "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "1 - c/(c*x + 1)",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "((1 - 2*c1 + c2)**2 + (1 - 2*c2 + c1)**2)/((1 - c1)**2 + (1 - c2)**2)",
+   "why": "affine combination of known quantities (output of firm 1, Hirshleifer Index [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "(-L*p + 1)**2/(-p*sqrt(1 - L) + sqrt(1 - L) - 1 + 1/(p*sqrt(1 - L) - p + 1))**2",
+   "why": "affine combination of known quantities (expected wealth, Insurance Risk Adjustment Ratio Squared [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "L*p/(-p*sqrt(1 - L) + p + sqrt(1 - L) - sqrt(-L*p + 1) + 1 + 1/(p*sqrt(1 - L) - p + 1))",
+   "why": "affine combination of known quantities (expected wealth, Insurance Risk Sensitivity Ratio Adjusted [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "L*p/(-2*sqrt(1 - L) + sqrt(-L*p + 1) + 1)",
+   "why": "affine combination of known quantities (expected wealth, Relative Risk Sensitivity Index [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "-(p*sqrt(1 - L) - p + 1)**2/(-L*p + p*sqrt(1 - L) - p + 2) + 1",
+   "why": "affine combination of known quantities (expected wealth, Insurance Coverage Ratio Adjusted [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(1/3 + r**2 - 4*r**3/3)/(2*(1 - r**3)/3 + v*r**2)",
+   "why": "affine combination of known quantities (Welfare Reserve Ratio [model-proposed; physical meaning unverified], 1/(Welfare Reserve Efficiency with Seller Value [model-proposed; physical meaning unverified]))"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(1/3 - r**2 + 2*r**3/3)/(2*(1 - r**3)/3 + v*r**2)",
+   "why": "affine combination of known quantities (expected revenue, 1/(Welfare Efficiency Ratio [model-proposed; physical meaning unverified]))"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(r**2*v + 2/3)/(4*r**3/3 + r**2*v - r**2 + 1/3)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(2*r**3/3 + r**2*v - r**2 + 1/3)/(2*r**3/3 - r**2 + 1/3 + v*r**2)",
+   "why": "must depend only on r, v"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "(-b**2/2 + (1 - a)**2/2)/(-a**2/2 - b**2 + (1 - a)**2/2 + 1/2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "sqrt(-b**2/4 + (1 - a)**2/4 + (a**2 - b**2 + 1)**2)/sqrt(-b**2/4 + (1 - a)**2/4 + (-a**2 + b**2 + 1)",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), Invariant Mass Ratio of Products [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "sqrt((1 - (a - b)**2)*(1 - (a + b)**2)/4 + (a**2 - b**2 + 1)**2)/sqrt((1 - (a - b)**2)*(1 - (a + b)*",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), Lorentz Factor Ratio of Products [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "sqrt((1 - (a - b)**2)*(1 - (a + b)**2) + (-a**2 + b**2 + 1)**2 + (a**2 - b**2 + 1)**2)",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), Boost factor of the system [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2",
+   "why": "affine combination of known quantities (Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified], Fraction of kinetic energy transferred to the target [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2",
+   "why": "affine combination of known quantities (Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified], Fraction of kinetic energy transferred to the target [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2*m**2/(m + 1)**2 + e**2*m/(m + 1) - 2*m*(1 - e**2)/(m + 1) + 1",
+   "why": "affine combination of known quantities (target speed / initial speed, Fraction of kinetic energy transferred to the target relative to initial kinetic [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "1 - e**2*m**2/(m + 1)**2 - m*(1 - e**2)/(m + 1)",
+   "why": "affine combination of known quantities (target speed / initial speed, Fraction of kinetic energy retained by the system relative to initial kinetic en [model-proposed; physical meaning unverified])"
   }
  ],
  "tried": [
@@ -43846,7 +43936,21 @@
   "insurance and risk|Insurance Risk Sensitivity Ratio Adjusted [model-proposed; physical meaning unverified]|Insurance Risk Adjustment Factor [model-proposed; physical meaning unverified]",
   "insurance and risk|Insurance Risk Sensitivity Ratio Adjusted [model-proposed; physical meaning unverified]|Insurance Risk Adjustment Index [model-proposed; physical meaning unverified]",
   "insurance and risk|Insurance Risk Sensitivity Ratio Adjusted [model-proposed; physical meaning unverified]|Insurance Risk Sensitivity Ratio [model-proposed; physical meaning unverified]",
-  "insurance and risk|Insurance Risk Sensitivity Ratio Adjusted [model-proposed; physical meaning unverified]|Relative Risk Sensitivity [model-proposed; physical meaning unverified]"
+  "insurance and risk|Insurance Risk Sensitivity Ratio Adjusted [model-proposed; physical meaning unverified]|Relative Risk Sensitivity [model-proposed; physical meaning unverified]",
+  "insurance and risk|Insurance Risk Sensitivity Ratio Adjusted [model-proposed; physical meaning unverified]|Insurance Risk Adjustment Ratio [model-proposed; physical meaning unverified]",
+  "insurance and risk|Insurance Risk Sensitivity Ratio Adjusted [model-proposed; physical meaning unverified]|Insurance Risk Adjustment Factor Squared [model-proposed; physical meaning unverified]",
+  "insurance and risk|Insurance Risk Sensitivity Ratio Adjusted [model-proposed; physical meaning unverified]|Relative Risk Aversion Squared [model-proposed; physical meaning unverified]",
+  "insurance and risk|Insurance Risk Sensitivity Ratio Adjusted [model-proposed; physical meaning unverified]|Insurance Risk Exposure Index [model-proposed; physical meaning unverified]",
+  "insurance and risk|Insurance Risk Sensitivity Ratio Adjusted [model-proposed; physical meaning unverified]|Risk Adjustment Ratio [model-proposed; physical meaning unverified]",
+  "insurance and risk|Insurance Risk Sensitivity Ratio Adjusted [model-proposed; physical meaning unverified]|Expected Utility Adjustment Factor [model-proposed; physical meaning unverified]",
+  "insurance and risk|Insurance Risk Sensitivity Ratio Adjusted [model-proposed; physical meaning unverified]|Insurance Risk Sensitivity Index [model-proposed; physical meaning unverified]",
+  "insurance and risk|Insurance Risk Sensitivity Ratio Adjusted [model-proposed; physical meaning unverified]|Relative Risk Sensitivity Index [model-proposed; physical meaning unverified]",
+  "insurance and risk|Insurance Risk Sensitivity Ratio Adjusted [model-proposed; physical meaning unverified]|Insurance Risk Exposure Ratio [model-proposed; physical meaning unverified]",
+  "insurance and risk|Insurance Risk Sensitivity Ratio Adjusted [model-proposed; physical meaning unverified]|Risk Sensitivity Ratio [model-proposed; physical meaning unverified]",
+  "insurance and risk|Insurance Risk Sensitivity Ratio Adjusted [model-proposed; physical meaning unverified]|Relative Risk Adjustment Index [model-proposed; physical meaning unverified]",
+  "insurance and risk|Insurance Risk Sensitivity Ratio Adjusted [model-proposed; physical meaning unverified]|Insurance Risk Adjustment Ratio Squared [model-proposed; physical meaning unverified]",
+  "insurance and risk|Insurance Risk Sensitivity Ratio Adjusted [model-proposed; physical meaning unverified]|Insurance Coverage Ratio Adjusted [model-proposed; physical meaning unverified]",
+  "insurance and risk|Insurance Risk Sensitivity Ratio Adjusted [model-proposed; physical meaning unverified]|Insurance Coverage Ratio Adjusted Squared [model-proposed; physical meaning unverified]"
  ],
  "edges": [
   {
@@ -49802,7 +49906,7 @@
    "k": "2"
   }
  ],
- "rounds": 2748,
+ "rounds": 2754,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",
