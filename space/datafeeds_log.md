@@ -2355,3 +2355,4 @@
 - 2026-11-09 19:38 FINDING (confirmed on held-out rows): In 'Data from: Seasonal shifts in the importance of bottom-up and top-down factors on stream p' (Zenodo, doi 10.5061/dryad.q436v45): 'Chla_ug_cm2' follows a power law in 'Fb' (R² = 0.969 on the discovery half); held-out R² = 0.958 [emp-f68386cf7151]
 - 2026-11-09 19:38 FINDING (confirmed on held-out rows): In 'Data from: Seasonal shifts in the importance of bottom-up and top-down factors on stream p' (Zenodo, doi 10.5061/dryad.q436v45): 'Chla_ug_cm2' follows a power law in 'Fa' (R² = 0.929 on the discovery half); held-out R² = 0.910 [emp-499561f48e10]
 - 2026-11-09 19:38 data feeds: 15095 datasets analysed so far, 2109 confirmed findings
+- 2026-11-09 20:27 data feeds: online
