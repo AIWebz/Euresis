@@ -2193,3 +2193,4 @@
 - 2026-11-09 07:05 FINDING (confirmed on held-out rows): In 'Data and analysis code for: Long-term sport participation is associated with a selective a' (Zenodo, doi 10.5281/zenodo.23134827): 'p_holm' follows a power law in 'p' (R² = 0.993 on the discovery half); held-out R² = 0.992 [emp-a002fe02241f]
 - 2026-11-09 07:05 FINDING (confirmed on held-out rows): In 'Dataset: Meta Materials Inc. (MMAT) Stock Performance' (Zenodo, doi 10.5281/zenodo.12560003): 'Low' follows a power law in 'High' (R² = 0.996 on the discovery half); held-out R² = 0.996 [emp-954d7b3c22dc]
 - 2026-11-09 07:07 data feeds: 13886 datasets analysed so far, 1973 confirmed findings
+- 2026-11-09 08:09 data feeds: online
