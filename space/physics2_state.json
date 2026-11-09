@@ -39343,6 +39343,21 @@
    "family": "collision",
    "expr": "e**2*m**2/(m + 1)**2 + e**2*m/(m + 1)",
    "why": "affine combination of known quantities (target speed / initial speed, Fraction of kinetic energy retained by the target [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt((1 - r**2)**2 + (2*z*r)**2)",
+   "why": "affine combination of known quantities (amplitude / static deflection, 1/(amplitude / static deflection))"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 + u)/(1 - u)) * sqrt((1 + v)/(1 - v)) / sqrt((1 + (u + v)/(1 + u*v)) / (1 - (u + v)/(1 + u*v",
+   "why": "affine combination of known quantities (composed speed / c)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 - u**2)*(1 - v**2) + (u + v)**2/(u*v + 1)**2) / (u*v + 1)",
+   "why": "a power or product of known quantities"
   }
  ],
  "tried": [
@@ -49787,7 +49802,7 @@
    "k": "2"
   }
  ],
- "rounds": 2746,
+ "rounds": 2748,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",

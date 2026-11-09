@@ -2987,3 +2987,5 @@
 - 2026-11-09 04:50 round 2745: two-body decay
 - 2026-11-09 04:51 round 2746: collision
 - 2026-11-09 04:52 round 2747: driven oscillator
+- 2026-11-09 04:53 round 2748: velocity addition
+- 2026-11-09 04:54 segment end: 2748 rounds, 5 discoveries, 2 known laws rediscovered
