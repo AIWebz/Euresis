@@ -2331266,5 +2331266,86 @@
   "statement": "In 'Data from: Long term persistence of experimental populations beyond a species' natural ran' (Zenodo, doi 10.5061/dryad.7pvmcvdqz): 'eFFP ' grows exponentially in 'NFFD ' (R\u00b2 = 0.902 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-29f0ed8fc7da",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "sqrt(-L*p + 1)/(-p*sqrt(1 - L) + sqrt(1 - L) + 1) >= 3/2*(sqrt(-L*p + 1)/(-p*sqrt(1 - L) + sqrt(1 - L) + 1 + 1/(p*sqrt(1 - L) - p + 1)))",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 2863",
+  "statement": "[economics: insurance and risk] Insurance Risk Exposure Ratio [model-proposed; physical meaning unverified] \u2265 3/2 \u00d7 Insurance Risk Exposure Ratio Adjusted [model-proposed; physical meaning unverified]   on p < 1, L < 1 (tight only at the edge of the domain, near (1.04e-14, 2.95e-14))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-e86cc2c7f7a4",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'expected utility'",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "sqrt(-L*p + 1)/(-p*sqrt(1 - L) + 1) >= 1*(L*p/(-2*sqrt(1 - L) + sqrt(-L*p + 1) + 1 + 1/(p*sqrt(1 - L) - p + 1)))",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 2863",
+  "statement": "[economics: insurance and risk] Relative Risk Adjustment Index [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Relative Risk Sensitivity Index Adjusted [model-proposed; physical meaning unverified]   on p < 1, L < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "unknown"
+  },
+  "id": "phy-1172de111db6",
+  "kind": "physics-relation",
+  "novelty": "not checked",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "sqrt(-L*p + 1)/(-p*sqrt(1 - L) + sqrt(1 - L) + 1 + 1/(p*sqrt(1 - L) - p + 1)) >= 1/3*((p*sqrt(1 - L) - p + 1)**2)",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 2863",
+  "statement": "[economics: insurance and risk] Insurance Risk Exposure Ratio Adjusted [model-proposed; physical meaning unverified] \u2265 1/3 \u00d7 certainty equivalent   on p < 1, L < 1 (tight only at the edge of the domain, near (2.33e-14, 1.53e-13))",
+  "status": "unverified",
+  "verifier": "z3-sqrt"
  }
 ]
