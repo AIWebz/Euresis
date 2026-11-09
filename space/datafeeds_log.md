@@ -2175,3 +2175,4 @@
 - 2026-11-09 05:12 FINDING (confirmed on held-out rows): In 'Robust retrieval of forest canopy structural attributes using multi-platform airborne LiDA' (Zenodo, doi 10.5281/zenodo.10885630): 'chm_rms' is linear in 'z_rms_pc.plot' (R² = 0.945 on the discovery half); held-out R² = 0.955 [emp-b4058e40967d]
 - 2026-11-09 05:13 FINDING (confirmed on held-out rows): In 'Robust retrieval of forest canopy structural attributes using multi-platform airborne LiDA' (Zenodo, doi 10.5281/zenodo.10885630): 'z_kurt_pc.plot' follows a power law in 'z_skew_pc.plot' (R² = 0.964 on the discovery half); held-out R² = 0.956 [emp-ad2bfbf002fc]
 - 2026-11-09 05:13 data feeds: 13625 datasets analysed so far, 1959 confirmed findings
+- 2026-11-09 06:15 data feeds: online
