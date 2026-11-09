@@ -2350,3 +2350,4 @@
 - 2026-11-09 18:34 FINDING (confirmed on held-out rows): In 'Microstructure and ecotoxicological response of Portland cement composites incorporating c' (Zenodo, doi 10.5281/zenodo.16985242): 'SA PC-FA10' is linear in 'EC FA 1 g/l' (R² = 0.945 on the discovery half); held-out R² = 0.958 [emp-0eb6f6e09a9d]
 - 2026-11-09 18:34 FINDING (confirmed on held-out rows): In 'Microstructure and ecotoxicological response of Portland cement composites incorporating c' (Zenodo, doi 10.5281/zenodo.16985242): 'SA PC-FA20' is linear in 'EC FA 1 g/l' (R² = 0.933 on the discovery half); held-out R² = 0.942 [emp-caa8271cf03d]
 - 2026-11-09 18:35 data feeds: 15029 datasets analysed so far, 2106 confirmed findings
+- 2026-11-09 19:36 data feeds: online
