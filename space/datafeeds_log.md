@@ -2314,3 +2314,4 @@
 - 2026-11-09 14:47 FINDING (confirmed on held-out rows): In 'Absorptive roots drive a larger microbial carbon pump efficacy than transport roots in alp' (Zenodo, doi 10.5061/dryad.7wm37pvvz): 'Mean' follows a power law in 'July' (R² = 0.998 on the discovery half); held-out R² = 0.998 [emp-93382de00355]
 - 2026-11-09 14:47 FINDING (confirmed on held-out rows): In 'Absorptive roots drive a larger microbial carbon pump efficacy than transport roots in alp' (Zenodo, doi 10.5061/dryad.7wm37pvvz): 'Mean' follows a power law in 'October' (R² = 0.998 on the discovery half); held-out R² = 0.997 [emp-6ba7f99f55db]
 - 2026-11-09 14:48 data feeds: 14701 datasets analysed so far, 2078 confirmed findings
+- 2026-11-09 15:49 data feeds: online
