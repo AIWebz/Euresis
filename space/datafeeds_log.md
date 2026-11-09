@@ -2243,3 +2243,4 @@
 - 2026-11-09 09:01 FINDING (confirmed on held-out rows): In 'Tradeoffs and benefits explain scaling, sex differences, and seasonal oscillations in the ' (Zenodo, doi 10.5061/dryad.qz612jmkf): 'cl_mm_cal_scale' is linear in 'log_rt' (R² = 0.927 on the discovery half); held-out R² = 0.934 [emp-bc430e357112]
 - 2026-11-09 09:01 FINDING (confirmed on held-out rows): In 'Tradeoffs and benefits explain scaling, sex differences, and seasonal oscillations in the ' (Zenodo, doi 10.5061/dryad.qz612jmkf): 'cl_mm_cal_scale' is linear in 'log_cl' (R² = 0.979 on the discovery half); held-out R² = 0.974 [emp-f3865c08ffab]
 - 2026-11-09 09:01 data feeds: 14138 datasets analysed so far, 2019 confirmed findings
+- 2026-11-09 10:03 data feeds: online
