@@ -2959,3 +2959,4 @@
 - 2026-11-09 03:34 round 2719: insurance and risk
 - 2026-11-09 03:36 round 2720: auction with a reserve price
 - 2026-11-09 03:37 round 2721: two-body decay
+- 2026-11-09 03:39 round 2722: collision
