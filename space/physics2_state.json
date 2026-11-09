@@ -42188,6 +42188,31 @@
    "family": "Compton scattering",
    "expr": "1 - c/(c*x + 1)",
    "why": "not positive on the physical domain"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "((1 - 2*c1 + c2)/3 - (1 - 2*c2 + c1)/3)**2 / ((1 - c1)**2 + (1 - c2)**2)",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "(-L*p + 1)**2/(-p*sqrt(1 - L) + p + 1)**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "(-L*p + 1)**2/(-p*sqrt(1 - L) + sqrt(1 - L) + 1)**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "(-L*p + 1)**2/(-p*sqrt(1 - L) + 1)**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "(p*sqrt(1 - L) - p + 1)**4/(-L*p + p*sqrt(1 - L) - p + 2)**2",
+   "why": "affine combination of known quantities (expected wealth, Insurance Coverage Ratio Adjusted Squared [model-proposed; physical meaning unverified])"
   }
  ],
  "tried": [
@@ -53264,7 +53289,7 @@
    "k": "1"
   }
  ],
- "rounds": 2965,
+ "rounds": 2967,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",

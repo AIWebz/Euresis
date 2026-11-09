@@ -3226,3 +3226,5 @@
 - 2026-11-09 14:23 round 2964: velocity addition
 - 2026-11-09 14:25 round 2965: Compton scattering
 - 2026-11-09 14:25 round 2966: Cournot duopoly
+- 2026-11-09 14:27 round 2967: insurance and risk
+- 2026-11-09 14:28 segment end: 2967 rounds, 5 discoveries, 2 known laws rediscovered
