@@ -2330618,5 +2330618,653 @@
   "statement": "Octal game 0.554776 is completely solved: its Grundy values are periodic with pre-period 1 and period 10 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.qv9s4mwhf",
+   "held_out_r2": 0.9796,
+   "held_out_rows": 221,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d98bbd659571",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "7a1b22e574cbfc1d.csv",
+   "doi": "10.5061/dryad.qv9s4mwhf",
+   "form": "power law",
+   "params": [
+    1.4005045042960704,
+    0.4954466286640144
+   ],
+   "seed": 1804518871,
+   "x": "s_area",
+   "y": "perim"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Pace and shape of senescence in three species of duckweed' (Zenodo, doi 10.5061/dryad.qv9s4mwhf): 'perim' follows a power law in 's_area' (R\u00b2 = 0.950 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.t76hdr84d",
+   "held_out_r2": 0.8258,
+   "held_out_rows": 30,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-1577e5a07b22",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "6f91ad89729fbf53.csv",
+   "doi": "10.5061/dryad.t76hdr84d",
+   "form": "logarithmic",
+   "params": [
+    0.4454974394529193,
+    0.46662495368492807
+   ],
+   "seed": 3215003909,
+   "x": "pdivshan",
+   "y": "pdivsimp"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Plant and herbivorous insect communities respond in complex ways to rainfall man' (Zenodo, doi 10.5061/dryad.t76hdr84d): 'pdivsimp' grows logarithmically in 'pdivshan' (R\u00b2 = 0.906 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.t76hdr84d",
+   "held_out_r2": 0.8295,
+   "held_out_rows": 30,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3e5e9c0545da",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "6f91ad89729fbf53.csv",
+   "doi": "10.5061/dryad.t76hdr84d",
+   "form": "exponential",
+   "params": [
+    -1.2345189930850469,
+    1.3389594914219762
+   ],
+   "seed": 3215003909,
+   "x": "pdivshan",
+   "y": "pdivsimp_eff"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Plant and herbivorous insect communities respond in complex ways to rainfall man' (Zenodo, doi 10.5061/dryad.t76hdr84d): 'pdivsimp_eff' grows exponentially in 'pdivshan' (R\u00b2 = 0.921 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.t76hdr84d",
+   "held_out_r2": 0.8209,
+   "held_out_rows": 30,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f813e05ddc75",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "6f91ad89729fbf53.csv",
+   "doi": "10.5061/dryad.t76hdr84d",
+   "form": "linear",
+   "params": [
+    -2.874781905246454,
+    0.9335913934315042
+   ],
+   "seed": 3215003909,
+   "x": "pdivshan_eff",
+   "y": "pdivsimp_eff"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Plant and herbivorous insect communities respond in complex ways to rainfall man' (Zenodo, doi 10.5061/dryad.t76hdr84d): 'pdivsimp_eff' is linear in 'pdivshan_eff' (R\u00b2 = 0.922 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.0p2ngf1xc",
+   "held_out_r2": 0.9382,
+   "held_out_rows": 2646,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9f45c3f48cbc",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "11fa627c7b666356.csv",
+   "doi": "10.5061/dryad.0p2ngf1xc",
+   "form": "linear",
+   "params": [
+    85.74691260693412,
+    1.0621948936391203
+   ],
+   "seed": 3449494102,
+   "x": "log10mass",
+   "y": "ref"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: A comparative test for divergent adaptation: inferring speciation drivers from ' (Zenodo, doi 10.5061/dryad.0p2ngf1xc): 'ref' is linear in 'log10mass' (R\u00b2 = 0.928 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.7pvmcvdqz",
+   "held_out_r2": 0.9852,
+   "held_out_rows": 182,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5ca69cdbe001",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "cf494b3f0b3cca89.csv",
+   "doi": "10.5061/dryad.7pvmcvdqz",
+   "form": "linear",
+   "params": [
+    45.361499322898844,
+    0.9917808733113129
+   ],
+   "seed": 1394872179,
+   "x": "order1",
+   "y": "plant_num"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Long term persistence of experimental populations beyond a species' natural ran' (Zenodo, doi 10.5061/dryad.7pvmcvdqz): 'plant_num' is linear in 'order1' (R\u00b2 = 0.979 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.7pvmcvdqz",
+   "held_out_r2": 0.9851,
+   "held_out_rows": 182,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e70fface0b10",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "cf494b3f0b3cca89.csv",
+   "doi": "10.5061/dryad.7pvmcvdqz",
+   "form": "linear",
+   "params": [
+    -4.01035170553274,
+    0.9870265873007278
+   ],
+   "seed": 1394872179,
+   "x": "plant_num",
+   "y": "order2"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Long term persistence of experimental populations beyond a species' natural ran' (Zenodo, doi 10.5061/dryad.7pvmcvdqz): 'order2' is linear in 'plant_num' (R\u00b2 = 0.979 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.7pvmcvdqz",
+   "held_out_r2": 0.9487,
+   "held_out_rows": 260,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-7d8374064a28",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "df1006ee7a1cc91f.csv",
+   "doi": "10.5061/dryad.7pvmcvdqz",
+   "form": "power law",
+   "params": [
+    0.6480700663697622,
+    1.7687736874277198
+   ],
+   "seed": 1791660456,
+   "x": "pl",
+   "y": "pa"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Long term persistence of experimental populations beyond a species' natural ran' (Zenodo, doi 10.5061/dryad.7pvmcvdqz): 'pa' follows a power law in 'pl' (R\u00b2 = 0.937 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.7pvmcvdqz",
+   "held_out_r2": 0.9487,
+   "held_out_rows": 260,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-1d52818a7829",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "df1006ee7a1cc91f.csv",
+   "doi": "10.5061/dryad.7pvmcvdqz",
+   "form": "logarithmic",
+   "params": [
+    0.28145325371106006,
+    0.7681686521855265
+   ],
+   "seed": 1791660456,
+   "x": "pl",
+   "y": "logpa"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Long term persistence of experimental populations beyond a species' natural ran' (Zenodo, doi 10.5061/dryad.7pvmcvdqz): 'logpa' grows logarithmically in 'pl' (R\u00b2 = 0.937 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.7pvmcvdqz",
+   "held_out_r2": 0.9367,
+   "held_out_rows": 260,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f5a056ee1fb3",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "df1006ee7a1cc91f.csv",
+   "doi": "10.5061/dryad.7pvmcvdqz",
+   "form": "power law",
+   "params": [
+    0.45500253265699464,
+    1.958857003980948
+   ],
+   "seed": 1791660456,
+   "x": "pw",
+   "y": "pa"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Long term persistence of experimental populations beyond a species' natural ran' (Zenodo, doi 10.5061/dryad.7pvmcvdqz): 'pa' follows a power law in 'pw' (R\u00b2 = 0.921 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.7pvmcvdqz",
+   "held_out_r2": 0.9367,
+   "held_out_rows": 260,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3db632f8b8de",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "df1006ee7a1cc91f.csv",
+   "doi": "10.5061/dryad.7pvmcvdqz",
+   "form": "logarithmic",
+   "params": [
+    0.1976050891849343,
+    0.8507207876664628
+   ],
+   "seed": 1791660456,
+   "x": "pw",
+   "y": "logpa"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Long term persistence of experimental populations beyond a species' natural ran' (Zenodo, doi 10.5061/dryad.7pvmcvdqz): 'logpa' grows logarithmically in 'pw' (R\u00b2 = 0.921 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.7pvmcvdqz",
+   "held_out_r2": 0.9586,
+   "held_out_rows": 520,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-80f1cb38f52b",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "201b207d2fbffa87.csv",
+   "doi": "10.5061/dryad.7pvmcvdqz",
+   "form": "linear",
+   "params": [
+    -0.44660721093190753,
+    1.1213982952984605
+   ],
+   "seed": 1013227984,
+   "x": "mfr",
+   "y": "reproOutput"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Long term persistence of experimental populations beyond a species' natural ran' (Zenodo, doi 10.5061/dryad.7pvmcvdqz): 'reproOutput' is linear in 'mfr' (R\u00b2 = 0.912 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.7pvmcvdqz",
+   "held_out_r2": 0.9802,
+   "held_out_rows": 32,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3431a85d046e",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "ca6d73b3184fb815.csv",
+   "doi": "10.5061/dryad.7pvmcvdqz",
+   "form": "linear",
+   "params": [
+    6289.617519514299,
+    -336.5264527320026
+   ],
+   "seed": 131524391,
+   "x": "MAT ",
+   "y": "DD<18 "
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Long term persistence of experimental populations beyond a species' natural ran' (Zenodo, doi 10.5061/dryad.7pvmcvdqz): 'DD<18 ' is linear in 'MAT ' (R\u00b2 = 0.991 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.7pvmcvdqz",
+   "held_out_r2": 0.9221,
+   "held_out_rows": 32,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-29476a4c2d7d",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "ca6d73b3184fb815.csv",
+   "doi": "10.5061/dryad.7pvmcvdqz",
+   "form": "linear",
+   "params": [
+    94.61382157991964,
+    -7.851787460610679
+   ],
+   "seed": 131524391,
+   "x": "MCMT ",
+   "y": "DD<0 "
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Long term persistence of experimental populations beyond a species' natural ran' (Zenodo, doi 10.5061/dryad.7pvmcvdqz): 'DD<0 ' is linear in 'MCMT ' (R\u00b2 = 0.965 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.7pvmcvdqz",
+   "held_out_r2": 0.7285,
+   "held_out_rows": 32,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c557cf29536a",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "ca6d73b3184fb815.csv",
+   "doi": "10.5061/dryad.7pvmcvdqz",
+   "form": "power law",
+   "params": [
+    5.45606130238261,
+    0.18280242419532863
+   ],
+   "seed": 131524391,
+   "x": "MCMT ",
+   "y": "NFFD "
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Long term persistence of experimental populations beyond a species' natural ran' (Zenodo, doi 10.5061/dryad.7pvmcvdqz): 'NFFD ' follows a power law in 'MCMT ' (R\u00b2 = 0.929 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.7pvmcvdqz",
+   "held_out_r2": 0.8914,
+   "held_out_rows": 32,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3c8bcf441ba4",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "ca6d73b3184fb815.csv",
+   "doi": "10.5061/dryad.7pvmcvdqz",
+   "form": "power law",
+   "params": [
+    -8.968599685087508,
+    1.9252760794480601
+   ],
+   "seed": 131524391,
+   "x": "MAP ",
+   "y": "MSP "
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Long term persistence of experimental populations beyond a species' natural ran' (Zenodo, doi 10.5061/dryad.7pvmcvdqz): 'MSP ' follows a power law in 'MAP ' (R\u00b2 = 0.940 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.7pvmcvdqz",
+   "held_out_r2": 0.9902,
+   "held_out_rows": 32,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e0a954bcdb4c",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "ca6d73b3184fb815.csv",
+   "doi": "10.5061/dryad.7pvmcvdqz",
+   "form": "power law",
+   "params": [
+    10.199778757325811,
+    -1.031918550686581
+   ],
+   "seed": 131524391,
+   "x": "MAP ",
+   "y": "AHM "
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Long term persistence of experimental populations beyond a species' natural ran' (Zenodo, doi 10.5061/dryad.7pvmcvdqz): 'AHM ' follows a power law in 'MAP ' (R\u00b2 = 0.997 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.7pvmcvdqz",
+   "held_out_r2": 0.8408,
+   "held_out_rows": 32,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9b8734c850a8",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "ca6d73b3184fb815.csv",
+   "doi": "10.5061/dryad.7pvmcvdqz",
+   "form": "power law",
+   "params": [
+    17.72756254949213,
+    -1.8080042704815584
+   ],
+   "seed": 131524391,
+   "x": "MAP ",
+   "y": "SHM "
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Long term persistence of experimental populations beyond a species' natural ran' (Zenodo, doi 10.5061/dryad.7pvmcvdqz): 'SHM ' follows a power law in 'MAP ' (R\u00b2 = 0.916 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.7pvmcvdqz",
+   "held_out_r2": 0.9181,
+   "held_out_rows": 32,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5b330ea8b6a7",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "ca6d73b3184fb815.csv",
+   "doi": "10.5061/dryad.7pvmcvdqz",
+   "form": "logarithmic",
+   "params": [
+    65.58547320852952,
+    -9.934905287505407
+   ],
+   "seed": 131524391,
+   "x": "MSP ",
+   "y": "AHM "
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Long term persistence of experimental populations beyond a species' natural ran' (Zenodo, doi 10.5061/dryad.7pvmcvdqz): 'AHM ' grows logarithmically in 'MSP ' (R\u00b2 = 0.966 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.7pvmcvdqz",
+   "held_out_r2": 0.9911,
+   "held_out_rows": 32,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-bead782d637c",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "ca6d73b3184fb815.csv",
+   "doi": "10.5061/dryad.7pvmcvdqz",
+   "form": "power law",
+   "params": [
+    9.352614641002802,
+    -0.9489054495454161
+   ],
+   "seed": 131524391,
+   "x": "MSP ",
+   "y": "SHM "
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Long term persistence of experimental populations beyond a species' natural ran' (Zenodo, doi 10.5061/dryad.7pvmcvdqz): 'SHM ' follows a power law in 'MSP ' (R\u00b2 = 0.995 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.7pvmcvdqz",
+   "held_out_r2": 0.914,
+   "held_out_rows": 32,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3f1061da779e",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "ca6d73b3184fb815.csv",
+   "doi": "10.5061/dryad.7pvmcvdqz",
+   "form": "exponential",
+   "params": [
+    3.152074797838697,
+    0.09190609719182605
+   ],
+   "seed": 131524391,
+   "x": "AHM ",
+   "y": "SHM "
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Long term persistence of experimental populations beyond a species' natural ran' (Zenodo, doi 10.5061/dryad.7pvmcvdqz): 'SHM ' grows exponentially in 'AHM ' (R\u00b2 = 0.953 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.7pvmcvdqz",
+   "held_out_r2": 0.8508,
+   "held_out_rows": 32,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-8ce565c61912",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "ca6d73b3184fb815.csv",
+   "doi": "10.5061/dryad.7pvmcvdqz",
+   "form": "exponential",
+   "params": [
+    5.926547870121938,
+    -0.002876243184725679
+   ],
+   "seed": 131524391,
+   "x": "DD<0 ",
+   "y": "NFFD "
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Long term persistence of experimental populations beyond a species' natural ran' (Zenodo, doi 10.5061/dryad.7pvmcvdqz): 'NFFD ' grows exponentially in 'DD<0 ' (R\u00b2 = 0.924 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.7pvmcvdqz",
+   "held_out_r2": 0.9153,
+   "held_out_rows": 32,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a9bf7af80c7e",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "ca6d73b3184fb815.csv",
+   "doi": "10.5061/dryad.7pvmcvdqz",
+   "form": "linear",
+   "params": [
+    753.5648678279931,
+    -2.0775368497990003
+   ],
+   "seed": 131524391,
+   "x": "NFFD ",
+   "y": "bFFP "
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Long term persistence of experimental populations beyond a species' natural ran' (Zenodo, doi 10.5061/dryad.7pvmcvdqz): 'bFFP ' is linear in 'NFFD ' (R\u00b2 = 0.955 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.7pvmcvdqz",
+   "held_out_r2": 0.8941,
+   "held_out_rows": 32,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-08d728fbcd2d",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "ca6d73b3184fb815.csv",
+   "doi": "10.5061/dryad.7pvmcvdqz",
+   "form": "exponential",
+   "params": [
+    4.910546158614641,
+    0.0026615620583971935
+   ],
+   "seed": 131524391,
+   "x": "NFFD ",
+   "y": "eFFP "
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Long term persistence of experimental populations beyond a species' natural ran' (Zenodo, doi 10.5061/dryad.7pvmcvdqz): 'eFFP ' grows exponentially in 'NFFD ' (R\u00b2 = 0.902 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
