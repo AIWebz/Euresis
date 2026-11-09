@@ -2093,3 +2093,6 @@
 - 2026-11-09 00:35 FINDING (confirmed on held-out rows): In 'ReESH_US-HB2: Hobcaw Barony Mature Longleaf Pine' (Zenodo, doi 10.5281/zenodo.15993829): 'Vol_Water' follows a power law in 'MPa_Abs' (R² = 0.942 on the discovery half); held-out R² = 0.917 [emp-d357f85a3949]
 - 2026-11-09 00:35 FINDING (confirmed on held-out rows): In 'ReESH_US-UTM: UFLUX Matheson' (Zenodo, doi 10.5281/zenodo.17344543): 'Vol_Water' grows logarithmically in 'MPa_Abs' (R² = 0.970 on the discovery half); held-out R² = 0.973 [emp-e166fd68d36b]
 - 2026-11-09 00:35 data feeds: 12998 datasets analysed so far, 1887 confirmed findings
+- 2026-11-09 01:21 data feeds: online
+- 2026-11-09 01:21 FINDING (confirmed on held-out rows): In 'Data from: Molecular investigation of genetic assimilation during the rapid adaptive radia' (Zenodo, doi 10.5061/dryad.84b09): 'CentroidSize' follows a power law in 'Area' (R² = 0.931 on the discovery half); held-out R² = 0.957 [emp-3ee6eeb8c9b6]
+- 2026-11-09 01:21 FINDING (confirmed on held-out rows): In 'Data from: Molecular investigation of genetic assimilation during the rapid adaptive radia' (Zenodo, doi 10.5061/dryad.84b09): 'JawLength' is linear in 'CentroidSize' (R² = 0.949 on the discovery half); held-out R² = 0.962 [emp-c68e7179d67c]

@@ -2258920,5 +2258920,59 @@
   "statement": "Octal game 0.550035 is completely solved: its Grundy values are periodic with pre-period 1 and period 10 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.84b09",
+   "held_out_r2": 0.9567,
+   "held_out_rows": 43,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3ee6eeb8c9b6",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "2bb169461bf715df.csv",
+   "doi": "10.5061/dryad.84b09",
+   "form": "power law",
+   "params": [
+    1.3126585778596456,
+    0.38046762690886027
+   ],
+   "seed": 3595073393,
+   "x": "Area",
+   "y": "CentroidSize"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Molecular investigation of genetic assimilation during the rapid adaptive radia' (Zenodo, doi 10.5061/dryad.84b09): 'CentroidSize' follows a power law in 'Area' (R\u00b2 = 0.931 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.84b09",
+   "held_out_r2": 0.9622,
+   "held_out_rows": 43,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c68e7179d67c",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "2bb169461bf715df.csv",
+   "doi": "10.5061/dryad.84b09",
+   "form": "linear",
+   "params": [
+    0.02606538526264501,
+    0.6168810107942576
+   ],
+   "seed": 3595073393,
+   "x": "CentroidSize",
+   "y": "JawLength"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Molecular investigation of genetic assimilation during the rapid adaptive radia' (Zenodo, doi 10.5061/dryad.84b09): 'JawLength' is linear in 'CentroidSize' (R\u00b2 = 0.949 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
