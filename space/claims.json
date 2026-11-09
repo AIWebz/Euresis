@@ -2357024,5 +2357024,194 @@
   "statement": "Octal game 0.556737 is completely solved: its Grundy values are periodic with pre-period 1 and period 9 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.8408515",
+   "held_out_r2": 0.9379,
+   "held_out_rows": 360,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-db9b3168d777",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "00433a5e214ad9fd.csv",
+   "doi": "10.5281/zenodo.8408515",
+   "form": "linear",
+   "params": [
+    0.03514722897005203,
+    1.3428654269986842
+   ],
+   "seed": 369105714,
+   "x": "diff_nn_gro",
+   "y": "diff_nn_lance"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Simulated hydrological effects of grooming and snowmaking in a ski resort on the local wat' (Zenodo, doi 10.5281/zenodo.8408515): 'diff_nn_lance' is linear in 'diff_nn_gro' (R\u00b2 = 0.901 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.8065170",
+   "held_out_r2": 0.9203,
+   "held_out_rows": 192,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e7863067ddb2",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "5ccb5dc2c4697dfb.csv",
+   "doi": "10.5281/zenodo.8065170",
+   "form": "power law",
+   "params": [
+    18395.371185245353,
+    -1182.6461001809232
+   ],
+   "seed": 758518253,
+   "x": "y_smmp",
+   "y": "z_surface"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Soil moisture sensor network, design, location attributes and soil properties, Hainich, Ge' (Zenodo, doi 10.5281/zenodo.8065170): 'z_surface' follows a power law in 'y_smmp' (R\u00b2 = 0.949 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.13984317",
+   "held_out_r2": 0.9437,
+   "held_out_rows": 80,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f9cb1d84b1e1",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "dc5170370a9ad663.csv",
+   "doi": "10.5281/zenodo.13984317",
+   "form": "linear",
+   "params": [
+    -2.45538311285846,
+    0.8909800761244651
+   ],
+   "seed": 1534774292,
+   "x": "DOC (mg L  \u0304\u00b9)",
+   "y": "Color (m  \u0304\u00b9)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Mercury, DOC and hydrology data of James Bay rivers from summer 2018 to summer 2019' (Zenodo, doi 10.5281/zenodo.13984317): 'Color (m  \u0304\u00b9)' is linear in 'DOC (mg L  \u0304\u00b9)' (R\u00b2 = 0.919 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.13984317",
+   "held_out_r2": 0.9641,
+   "held_out_rows": 80,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-7e7645f9cc9d",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "dc5170370a9ad663.csv",
+   "doi": "10.5281/zenodo.13984317",
+   "form": "power law",
+   "params": [
+    -5.9780298059929216,
+    1.0496976688326118
+   ],
+   "seed": 1534774292,
+   "x": "Area (km\u00b2)",
+   "y": "Seasonal discharge (m\u00b3 s \u0304\u00b9)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Mercury, DOC and hydrology data of James Bay rivers from summer 2018 to summer 2019' (Zenodo, doi 10.5281/zenodo.13984317): 'Seasonal discharge (m\u00b3 s \u0304\u00b9)' follows a power law in 'Area (km\u00b2)' (R\u00b2 = 0.951 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.13984317",
+   "held_out_r2": 0.9681,
+   "held_out_rows": 80,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4fdb23721613",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "dc5170370a9ad663.csv",
+   "doi": "10.5281/zenodo.13984317",
+   "form": "power law",
+   "params": [
+    -1.4272464597142491,
+    0.997125927990618
+   ],
+   "seed": 1534774292,
+   "x": "Annual discharge (m\u00b3 s \u0304\u00b9)",
+   "y": "Seasonal discharge (m\u00b3 s \u0304\u00b9)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Mercury, DOC and hydrology data of James Bay rivers from summer 2018 to summer 2019' (Zenodo, doi 10.5281/zenodo.13984317): 'Seasonal discharge (m\u00b3 s \u0304\u00b9)' follows a power law in 'Annual discharge (m\u00b3 s \u0304\u00b9)' (R\u00b2 = 0.962 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.6084/m9.figshare.34336635.v1",
+   "held_out_r2": 0.9293,
+   "held_out_rows": 286,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d8eb6fb3805a",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "9a9e958cba1bfa1a.csv",
+   "doi": "10.6084/m9.figshare.34336635.v1",
+   "form": "linear",
+   "params": [
+    -22.972025829472223,
+    4.962488577322139
+   ],
+   "seed": 531199653,
+   "x": "d18O",
+   "y": "d2H"
+  },
+  "source": "datafeeds.py",
+  "statement": "In '<b>Hydrological partitioning and subsurface transit times dictate the divergent export reg' (Figshare, doi 10.6084/m9.figshare.34336635.v1): 'd2H' is linear in 'd18O' (R\u00b2 = 0.937 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.6084/m9.figshare.34336635.v1",
+   "held_out_r2": 0.9475,
+   "held_out_rows": 286,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c020b2857d86",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "9a9e958cba1bfa1a.csv",
+   "doi": "10.6084/m9.figshare.34336635.v1",
+   "form": "linear",
+   "params": [
+    -17.37991164721299,
+    1.354651888494289
+   ],
+   "seed": 531199653,
+   "x": "Na_mgL",
+   "y": "Cl_mgL"
+  },
+  "source": "datafeeds.py",
+  "statement": "In '<b>Hydrological partitioning and subsurface transit times dictate the divergent export reg' (Figshare, doi 10.6084/m9.figshare.34336635.v1): 'Cl_mgL' is linear in 'Na_mgL' (R\u00b2 = 0.947 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
