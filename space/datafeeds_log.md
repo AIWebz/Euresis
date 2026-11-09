@@ -2215,3 +2215,4 @@
 - 2026-11-09 08:12 FINDING (confirmed on held-out rows): In 'Reversing the great degradation of nature through economic development' (Zenodo, doi 10.5061/dryad.59zw3r2df): 'tencropkcals50' is linear in 'allcropkcals18' (R² = 0.947 on the discovery half); held-out R² = 0.947 [emp-d7ad10dea7d9]
 - 2026-11-09 08:12 FINDING (confirmed on held-out rows): In 'Reversing the great degradation of nature through economic development' (Zenodo, doi 10.5061/dryad.59zw3r2df): 'tencropkcals00' is linear in 'allcropkcals18' (R² = 0.912 on the discovery half); held-out R² = 0.948 [emp-e44faa8f1957]
 - 2026-11-09 08:14 data feeds: 14093 datasets analysed so far, 1993 confirmed findings
+- 2026-11-09 08:59 data feeds: online
