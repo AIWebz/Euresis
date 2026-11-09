@@ -2315,3 +2315,8 @@
 - 2026-11-09 14:47 FINDING (confirmed on held-out rows): In 'Absorptive roots drive a larger microbial carbon pump efficacy than transport roots in alp' (Zenodo, doi 10.5061/dryad.7wm37pvvz): 'Mean' follows a power law in 'October' (R² = 0.998 on the discovery half); held-out R² = 0.997 [emp-6ba7f99f55db]
 - 2026-11-09 14:48 data feeds: 14701 datasets analysed so far, 2078 confirmed findings
 - 2026-11-09 15:49 data feeds: online
+- 2026-11-09 15:50 FINDING (confirmed on held-out rows): In 'Measuring avian bill size: Comparing and evaluating 3D surface scanning with traditional s' (Zenodo, doi 10.5061/dryad.sxksn038q): 'billSA_measurer1' follows a power law in 'Length' (R² = 0.919 on the discovery half); held-out R² = 0.883 [emp-56ac1de1d5d3]
+- 2026-11-09 15:50 FINDING (confirmed on held-out rows): In 'Measuring avian bill size: Comparing and evaluating 3D surface scanning with traditional s' (Zenodo, doi 10.5061/dryad.sxksn038q): 'billSA_measurer2' follows a power law in 'Length' (R² = 0.919 on the discovery half); held-out R² = 0.881 [emp-19c3c0ff387c]
+- 2026-11-09 15:50 FINDING (confirmed on held-out rows): In 'Data from: Intraspecific trait variation and trade-offs within and across populations of a' (Zenodo, doi 10.5061/dryad.6502mg2): 'C' follows a power law in 'N' (R² = 0.959 on the discovery half); held-out R² = 0.975 [emp-5334a604c1a8]
+- 2026-11-09 15:50 FINDING (confirmed on held-out rows): In 'Data from: Intraspecific trait variation and trade-offs within and across populations of a' (Zenodo, doi 10.5061/dryad.6502mg2): 'CP' is linear in 'NP' (R² = 0.950 on the discovery half); held-out R² = 0.903 [emp-a4bdd28b74ec]
+- 2026-11-09 15:50 data feeds: 14745 datasets analysed so far, 2082 confirmed findings
