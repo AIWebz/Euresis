@@ -2271157,5 +2271157,64 @@
   "statement": "[physics: two-body decay] Relativistic Doppler Shift Factor Ratio [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 Invariant mass of product 1 [model-proposed; physical meaning unverified]   on a < 1, b < 1, a + b < 1 (tight only at the edge of the domain, near (0.5, 0.5))",
   "status": "proved",
   "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "checked_up_to": 28,
+   "method": "Grundy values recomputed; Guy\u2013Smith periodicity theorem condition checked",
+   "values_of_one_period": [
+    1,
+    1,
+    1,
+    1,
+    2,
+    2,
+    2,
+    2,
+    4,
+    4
+   ]
+  },
+  "id": "gam-2e976b557a22",
+  "kind": "game",
+  "novelty": "novelty unchecked: octal games of up to three digits are tabulated in Winning Ways and Flammenkamp's tables, which cannot be searched from here",
+  "payload": {
+   "code": "550617",
+   "period": 10,
+   "preperiod": 1
+  },
+  "source": "games.py",
+  "statement": "Octal game 0.550617 is completely solved: its Grundy values are periodic with pre-period 1 and period 10 (Guy\u2013Smith periodicity theorem)",
+  "status": "proved",
+  "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "checked_up_to": 26,
+   "method": "Grundy values recomputed; Guy\u2013Smith periodicity theorem condition checked",
+   "values_of_one_period": [
+    1,
+    1,
+    1,
+    1,
+    2,
+    2,
+    2,
+    2,
+    4
+   ]
+  },
+  "id": "gam-b23c773dca5f",
+  "kind": "game",
+  "novelty": "novelty unchecked: octal games of up to three digits are tabulated in Winning Ways and Flammenkamp's tables, which cannot be searched from here",
+  "payload": {
+   "code": "550621",
+   "period": 9,
+   "preperiod": 1
+  },
+  "source": "games.py",
+  "statement": "Octal game 0.550621 is completely solved: its Grundy values are periodic with pre-period 1 and period 9 (Guy\u2013Smith periodicity theorem)",
+  "status": "proved",
+  "verifier": "guy-smith-periodicity"
  }
 ]
