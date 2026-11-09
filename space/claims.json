@@ -2388596,5 +2388596,86 @@
   "statement": "In 'Generation of Ammonia in a Pulsed Hollow Cathode Discharge' (Zenodo, doi 10.5281/zenodo.14165349): '14.472' is linear in '218802' (R\u00b2 = 0.979 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 2",
+    "z < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-ba0c61cf1df9",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 2",
+    "z < 1"
+   ],
+   "claim": "sqrt(4*r**2*z**2 + 1)/sqrt(4*r**2*z**2 + (1 - r**2)**2) >= 1/9*(sqrt(4*r**2*z**2 + (1 - r**2)**2)/sqrt(4*z**4 - 2*z**2 + 1))",
+   "symbols": [
+    "r",
+    "z"
+   ]
+  },
+  "source": "physics_discover2 round 3027",
+  "statement": "[physics: driven oscillator] transmissibility \u2265 1/9 \u00d7 Dynamic Magnification Factor [model-proposed; physical meaning unverified]   on r < 2, z < 1 (tight only at the edge of the domain, near (2, 9.12e-05))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 2",
+    "z < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-d5a3f107f404",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'transmissibility'",
+  "payload": {
+   "assumptions": [
+    "r < 2",
+    "z < 1"
+   ],
+   "claim": "sqrt(8*r**2*z**2 + 1)/sqrt(4*r**2*z**2 + (1 - r**2)**2) >= 1/9*(sqrt(4*r**2*z**2 + (1 - r**2)**2)/sqrt(4*z**4 - 2*z**2 + 1))",
+   "symbols": [
+    "r",
+    "z"
+   ]
+  },
+  "source": "physics_discover2 round 3027",
+  "statement": "[physics: driven oscillator] Velocity transmissibility [model-proposed; physical meaning unverified] \u2265 1/9 \u00d7 Dynamic Magnification Factor [model-proposed; physical meaning unverified]   on r < 2, z < 1 (tight only at the edge of the domain, near (2, 9.12e-05))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 2",
+    "z < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-319003871e05",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'transmissibility'",
+  "payload": {
+   "assumptions": [
+    "r < 2",
+    "z < 1"
+   ],
+   "claim": "sqrt(16*r**4*z**4 + 4*r**2*z**2 + 1)/sqrt(4*r**2*z**2 + (1 - r**2)**2) >= 1/9*(sqrt(4*r**2*z**2 + (1 - r**2)**2)/sqrt(4*z**4 - 2*z**2 + 1))",
+   "symbols": [
+    "r",
+    "z"
+   ]
+  },
+  "source": "physics_discover2 round 3027",
+  "statement": "[physics: driven oscillator] Acceleration transmissibility [model-proposed; physical meaning unverified] \u2265 1/9 \u00d7 Dynamic Magnification Factor [model-proposed; physical meaning unverified]   on r < 2, z < 1 (tight only at the edge of the domain, near (2, 9.12e-05))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]
