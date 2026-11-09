@@ -38766,6 +38766,16 @@
    "family": "velocity addition",
    "expr": "sqrt((1 - u**2)*(1 - v**2) + (u + v)**2/(u*v + 1)**2) / (u*v + 1)",
    "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "1 - c/(c*x + 1) + 1/(c*x + 1)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, Compton scattering factor [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "((1 - 2*c1 + c2)**2 + (1 - 2*c2 + c1)**2)/((1 - c1)**2 + (1 - c2)**2)",
+   "why": "affine combination of known quantities (output of firm 1, Hirshleifer Index [model-proposed; physical meaning unverified])"
   }
  ],
  "tried": [
@@ -49000,7 +49010,7 @@
    "k": "1/2"
   }
  ],
- "rounds": 2708,
+ "rounds": 2710,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",
