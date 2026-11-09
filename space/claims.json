@@ -2416055,5 +2416055,113 @@
   "statement": "In 'The data for Prediction of Large Solar Flares Based on SHARP and HED Magnetic Field Parame' (Zenodo, doi 10.5281/zenodo.13734431): 'AREA_ACR' is linear in 'TOTUSJZ' (R\u00b2 = 0.910 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-406f16dc339b",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'Insurance Risk Sensitivity Index [model-proposed; physical meaning unverified]'",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "L*p/(-p*sqrt(1 - L) + sqrt(1 - L) - sqrt(-L*p + 1) + 1) >= 1*(L*p/(-p*sqrt(1 - L) + p + sqrt(1 - L) - 1 + 1/(p*sqrt(1 - L) - p + 1)))",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 3095",
+  "statement": "[economics: insurance and risk] Risk Sensitivity Ratio [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Insurance Coverage Sensitivity [model-proposed; physical meaning unverified]   on p < 1, L < 1 (tight only at the edge of the domain, near (3.45e-17, 0.000117))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-e21c50390bd6",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "L*p/(-p*sqrt(1 - L) + p + sqrt(1 - L) - 1 + 1/(p*sqrt(1 - L) - p + 1)) >= 1*(-L*p - (p*sqrt(1 - L) - p + 1)**2 + 1)",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 3095",
+  "statement": "[economics: insurance and risk] Insurance Coverage Sensitivity [model-proposed; physical meaning unverified] \u2265 1 \u00d7 risk premium   on p < 1, L < 1 (tight only at the edge of the domain, near (0.997, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-7bb92bc691ca",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "L*p/(-p*sqrt(1 - L) + p + sqrt(1 - L) - 1 + 1/(p*sqrt(1 - L) - p + 1)) >= 1*(L**2*p*(1 - p))",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 3095",
+  "statement": "[economics: insurance and risk] Insurance Coverage Sensitivity [model-proposed; physical meaning unverified] \u2265 1 \u00d7 variance of wealth   on p < 1, L < 1 (tight only at the edge of the domain, near (0.998, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-c295e38a14af",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "L*p/(-p*sqrt(1 - L) + p + sqrt(1 - L) - 1 + 1/(p*sqrt(1 - L) - p + 1)) >= 1*(L*p/(-2*sqrt(1 - L) + sqrt(-L*p + 1) + 1 + 1/(p*sqrt(1 - L) - p + 1)))",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 3103",
+  "statement": "[economics: insurance and risk] Insurance Coverage Sensitivity [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Relative Risk Sensitivity Index Adjusted [model-proposed; physical meaning unverified]   on p < 1, L < 1 (tight only at the edge of the domain, near (0.966, 1.61e-17))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]
