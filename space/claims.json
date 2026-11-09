@@ -2307084,5 +2307084,77 @@
   "statement": "[physics: collision] Fraction of Kinetic Energy Retained by the Target Relative to the Projectile [model-proposed; physical meaning unverified] \u2265 8/5 \u00d7 Ratio of Kinetic Energy of Target to Kinetic Energy of System [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
   "status": "proved",
   "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "checked_up_to": 24,
+   "method": "Grundy values recomputed; Guy\u2013Smith periodicity theorem condition checked",
+   "values_of_one_period": [
+    1,
+    1,
+    1,
+    2,
+    2,
+    2,
+    4,
+    4
+   ]
+  },
+  "id": "gam-5f1643ad109a",
+  "kind": "game",
+  "novelty": "novelty unchecked: octal games of up to three digits are tabulated in Winning Ways and Flammenkamp's tables, which cannot be searched from here",
+  "payload": {
+   "code": "553225",
+   "period": 8,
+   "preperiod": 1
+  },
+  "source": "games.py",
+  "statement": "Octal game 0.553225 is completely solved: its Grundy values are periodic with pre-period 1 and period 8 (Guy\u2013Smith periodicity theorem)",
+  "status": "proved",
+  "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "checked_up_to": 26,
+   "method": "Grundy values recomputed; Guy\u2013Smith periodicity theorem condition checked",
+   "values_of_one_period": [
+    1,
+    1,
+    1,
+    2,
+    2,
+    2,
+    4,
+    4,
+    4
+   ]
+  },
+  "id": "gam-420b1080c823",
+  "kind": "game",
+  "novelty": "novelty unchecked: octal games of up to three digits are tabulated in Winning Ways and Flammenkamp's tables, which cannot be searched from here",
+  "payload": {
+   "code": "553226",
+   "period": 9,
+   "preperiod": 1
+  },
+  "source": "games.py",
+  "statement": "Octal game 0.553226 is completely solved: its Grundy values are periodic with pre-period 1 and period 9 (Guy\u2013Smith periodicity theorem)",
+  "status": "proved",
+  "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": null,
+  "id": "gam-36913ce69968",
+  "kind": "game",
+  "novelty": "not checked",
+  "payload": {
+   "code": "553227",
+   "period": 9,
+   "preperiod": 1
+  },
+  "source": "games.py",
+  "statement": "Octal game 0.553227 is completely solved: its Grundy values are periodic with pre-period 1 and period 9 (Guy\u2013Smith periodicity theorem)",
+  "status": "candidate",
+  "verifier": null
  }
 ]
