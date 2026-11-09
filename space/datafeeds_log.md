@@ -2084,3 +2084,4 @@
 - 2026-11-08 23:31 FINDING (confirmed on held-out rows): In 'Dataset: Water level data RC25-4887 - Quantifying Large Unaccounted Coastal Wetland Organi' (Figshare, doi 10.25573/serc.34440381.v1): 'water_level_relative_sensor_m' is linear in 'abs_pres_kpa' (R² = 0.941 on the discovery half); held-out R² = 0.939 [emp-57e15848ef2c]
 - 2026-11-08 23:31 FINDING (confirmed on held-out rows): In 'Dataset: Water level data RC25-4887 - Quantifying Large Unaccounted Coastal Wetland Organi' (Figshare, doi 10.25573/serc.34440381.v1): 'water_level_m' is linear in 'abs_pres_kpa' (R² = 0.941 on the discovery half); held-out R² = 0.939 [emp-6629155b8ebd]
 - 2026-11-08 23:31 data feeds: 12927 datasets analysed so far, 1880 confirmed findings
+- 2026-11-09 00:33 data feeds: online
