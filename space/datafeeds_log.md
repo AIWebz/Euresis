@@ -2329,3 +2329,4 @@
 - 2026-11-09 16:40 FINDING (confirmed on held-out rows): In 'Data from: Experimental manipulation of population-level MHC diversity controls pathogen v' (Zenodo, doi 10.5061/dryad.3h0q8): 'Log Transformed' grows logarithmically in 'Spleen Corrected Load x1000000' (R² = 0.930 on the discovery half); held-out R² = 0.996 [emp-2cf01de0057c]
 - 2026-11-09 16:40 FINDING (confirmed on held-out rows): In 'Digital image correlation measurement of linear elastic steel specimen' (Zenodo, doi 10.5281/zenodo.11257192): 'x-displacement [mm]' is linear in 'x-coordinate [mm]' (R² = 0.948 on the discovery half); held-out R² = 0.947 [emp-41720dc5de5e]
 - 2026-11-09 16:40 data feeds: 14799 datasets analysed so far, 2089 confirmed findings
+- 2026-11-09 17:43 data feeds: online
