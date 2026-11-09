@@ -2403,3 +2403,4 @@
 - 2026-11-09 20:39 FINDING (confirmed on held-out rows): In 'The data for Prediction of Large Solar Flares Based on SHARP and HED Magnetic Field Parame' (Zenodo, doi 10.5281/zenodo.13734431): 'USFLUX' follows a power law in 'TOTUSJZ' (R² = 0.938 on the discovery half); held-out R² = 0.942 [emp-bd4fdc9a8181]
 - 2026-11-09 20:39 FINDING (confirmed on held-out rows): In 'The data for Prediction of Large Solar Flares Based on SHARP and HED Magnetic Field Parame' (Zenodo, doi 10.5281/zenodo.13734431): 'AREA_ACR' is linear in 'TOTUSJZ' (R² = 0.910 on the discovery half); held-out R² = 0.907 [emp-dab5079ceb01]
 - 2026-11-09 20:39 data feeds: 15286 datasets analysed so far, 2155 confirmed findings
+- 2026-11-09 21:41 data feeds: online
