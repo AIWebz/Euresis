@@ -2335847,5 +2335847,32 @@
   "statement": "Octal game 0.555257 is completely solved: its Grundy values are periodic with pre-period 1 and period 10 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.6084/m9.figshare.32194077.v3",
+   "held_out_r2": 0.9931,
+   "held_out_rows": 273,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-22d9fd39f23e",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "a1e8f67d69751114.csv",
+   "doi": "10.6084/m9.figshare.32194077.v3",
+   "form": "power law",
+   "params": [
+    6.337530722846344,
+    0.9666041374515758
+   ],
+   "seed": 3796211274,
+   "x": "OPERATIONS",
+   "y": "VALUE_USD"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Remittances in Mexico \u2013 Inflows and Outflows Dataset (1995-2026)' (Figshare, doi 10.6084/m9.figshare.32194077.v3): 'VALUE_USD' follows a power law in 'OPERATIONS' (R\u00b2 = 0.994 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
