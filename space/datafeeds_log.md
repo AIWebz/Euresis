@@ -2351,3 +2351,7 @@
 - 2026-11-09 18:34 FINDING (confirmed on held-out rows): In 'Microstructure and ecotoxicological response of Portland cement composites incorporating c' (Zenodo, doi 10.5281/zenodo.16985242): 'SA PC-FA20' is linear in 'EC FA 1 g/l' (R² = 0.933 on the discovery half); held-out R² = 0.942 [emp-caa8271cf03d]
 - 2026-11-09 18:35 data feeds: 15029 datasets analysed so far, 2106 confirmed findings
 - 2026-11-09 19:36 data feeds: online
+- 2026-11-09 19:37 FINDING (confirmed on held-out rows): In 'Data from: Consistent trait-environment relationships within and across tundra plant commu' (Zenodo, doi 10.5281/zenodo.4362216): 'temp' grows logarithmically in 'mois' (R² = 0.940 on the discovery half); held-out R² = 0.940 [emp-3e0118dc9bde]
+- 2026-11-09 19:38 FINDING (confirmed on held-out rows): In 'Data from: Seasonal shifts in the importance of bottom-up and top-down factors on stream p' (Zenodo, doi 10.5061/dryad.q436v45): 'Chla_ug_cm2' follows a power law in 'Fb' (R² = 0.969 on the discovery half); held-out R² = 0.958 [emp-f68386cf7151]
+- 2026-11-09 19:38 FINDING (confirmed on held-out rows): In 'Data from: Seasonal shifts in the importance of bottom-up and top-down factors on stream p' (Zenodo, doi 10.5061/dryad.q436v45): 'Chla_ug_cm2' follows a power law in 'Fa' (R² = 0.929 on the discovery half); held-out R² = 0.910 [emp-499561f48e10]
+- 2026-11-09 19:38 data feeds: 15095 datasets analysed so far, 2109 confirmed findings
