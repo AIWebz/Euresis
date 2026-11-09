@@ -2304,3 +2304,4 @@
 - 2026-11-09 13:56 FINDING (confirmed on held-out rows): In '<b>Hydrological partitioning and subsurface transit times dictate the divergent export reg' (Figshare, doi 10.6084/m9.figshare.34336635.v1): 'd2H' is linear in 'd18O' (R² = 0.937 on the discovery half); held-out R² = 0.929 [emp-d8eb6fb3805a]
 - 2026-11-09 13:56 FINDING (confirmed on held-out rows): In '<b>Hydrological partitioning and subsurface transit times dictate the divergent export reg' (Figshare, doi 10.6084/m9.figshare.34336635.v1): 'Cl_mgL' is linear in 'Na_mgL' (R² = 0.947 on the discovery half); held-out R² = 0.948 [emp-c020b2857d86]
 - 2026-11-09 13:57 data feeds: 14545 datasets analysed so far, 2070 confirmed findings
+- 2026-11-09 14:43 data feeds: online
