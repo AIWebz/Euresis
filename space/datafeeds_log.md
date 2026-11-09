@@ -2148,3 +2148,4 @@
 - 2026-11-09 02:33 FINDING (confirmed on held-out rows): In 'Data from: Evolution of a cross-feeding interaction following a key innovation in a long-t' (Zenodo, doi 10.5061/dryad.sj3tx969q): '0.013888889' is linear in '0' (R² = 0.909 on the discovery half); held-out R² = 0.889 [emp-df5ebd849450]
 - 2026-11-09 02:33 FINDING (confirmed on held-out rows): In 'Data from: Evolution of a cross-feeding interaction following a key innovation in a long-t' (Zenodo, doi 10.5061/dryad.sj3tx969q): '0.020833333' is linear in '0' (R² = 0.907 on the discovery half); held-out R² = 0.899 [emp-5efab1ea3709]
 - 2026-11-09 02:33 data feeds: 13261 datasets analysed so far, 1938 confirmed findings
+- 2026-11-09 03:15 data feeds: online
