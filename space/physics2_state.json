@@ -38967,6 +38967,116 @@
    "family": "two-body decay",
    "expr": "(-b**2 + (1 - a)**2)/(-a**2 + b**2 - (1 - a)**2 + 1)",
    "why": "affine combination of known quantities (momentum of each product / (Mc), Kinetic Energy Ratio of Products [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2",
+   "why": "affine combination of known quantities (Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified], Fraction of kinetic energy transferred to the target [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2",
+   "why": "affine combination of known quantities (Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified], Fraction of kinetic energy transferred to the target [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "(-e**2*m + 1)/(e**2*m + 1)",
+   "why": "affine combination of known quantities (target speed / initial speed, Fraction of kinetic energy retained by projectile relative to target [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt((1 - r**2)**2 + (2*z*r)**2) / (1 - r**2)**2",
+   "why": "not finite on the whole physical domain"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "atan(2*z*r/(1 - r**2))",
+   "why": "only + \u2212 \u00d7 \u00f7, integer powers and square roots (so the prover can decide it)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(4*r**2*z**2 + (1 - r**2)**2)/sqrt(4*z**2 + 1)",
+   "why": "affine combination of known quantities (amplitude / static deflection, Mechanical Impedance Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 + u)/(1 - u)) * sqrt((1 + v)/(1 - v)) / sqrt((1 + (u + v)/(1 + u*v)) / (1 - (u + v)/(1 + u*v",
+   "why": "affine combination of known quantities (composed speed / c)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 - u**2)*(1 - v**2) + (u + v)**2/(u*v + 1)**2) / (u*v + 1)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "1 - c/(c*x + 1)",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "((1 - 2*c1 + c2)**2 + (1 - 2*c2 + c1)**2)/((1 - c1)**2 + (1 - c2)**2)",
+   "why": "affine combination of known quantities (output of firm 1, Hirshleifer Index [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "(-L*p + 1)**2/(-p*sqrt(1 - L) + p + 1)**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "(-L*p + 1)**2/(-p*sqrt(1 - L) + sqrt(1 - L) + 1)**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "(-L*p + 1)**2/(-p*sqrt(1 - L) + 1)**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "(L*p)**2/(-p*sqrt(1 - L) + p + sqrt(1 - L) - sqrt(-L*p + 1) + 1)**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(-2*r**3/3 + r**2*v + 2/3)/(4*r**3/3 + r**2*v - r**2 + 1/3)",
+   "why": "affine combination of known quantities (expected revenue, Welfare Reserve Efficiency with Seller Value [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(2*r**3/3 + r**2*v - r**2 + 1/3)/(2*r**3/3 + r**2*v - 2*r**2 + 4/3)",
+   "why": "affine combination of known quantities (expected revenue, Bidder Surplus Reserve Ratio with Seller Value [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(1/3 + r**2 - 4*r**3/3)/(2*(1 - r**3)/3 + v*r**2)",
+   "why": "affine combination of known quantities (Welfare Reserve Ratio [model-proposed; physical meaning unverified], 1/(Welfare Reserve Efficiency with Seller Value [model-proposed; physical meaning unverified]))"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(1/3 + r**2 - 4*r**3/3 + v*r**2)/(2*(1 - r**3)/3 + v*r**2)",
+   "why": "affine combination of known quantities (expected revenue, 1/(Welfare Efficiency Ratio [model-proposed; physical meaning unverified]))"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "sqrt((1 - (a - b)**2)*(1 - (a + b)**2))/((1 + a**2 - b**2) + (1 - a**2 + b**2))",
+   "why": "affine combination of known quantities (momentum of each product / (Mc))"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "sqrt((a**2 - b**2 + 1)**2 - (1 - (a - b)**2)*(1 - (a + b)**2)/4)/sqrt((-a**2 + b**2 + 1)**2 - (1 - (",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "sqrt((a**2 - b**2 + 1)**2 - (1 - (a - b)**2)*(1 - (a + b)**2)/4)/sqrt((a**2 - b**2 + 1)**2 - (1 - (a",
+   "why": "must depend only on a, b"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "sqrt((-a**2 + b**2 + 1)**2 - (1 - (a - b)**2)*(1 - (a + b)**2)/4)/sqrt((-a**2 + b**2 + 1)**2 - (1 - ",
+   "why": "must depend only on a, b"
   }
  ],
  "tried": [
@@ -43395,7 +43505,19 @@
   "insurance and risk|Insurance Coverage Ratio Adjusted Squared [model-proposed; physical meaning unverified]|Insurance Risk Adjustment Index [model-proposed; physical meaning unverified]",
   "insurance and risk|Insurance Coverage Ratio Adjusted Squared [model-proposed; physical meaning unverified]|Insurance Risk Sensitivity Ratio [model-proposed; physical meaning unverified]",
   "insurance and risk|Insurance Coverage Ratio Adjusted Squared [model-proposed; physical meaning unverified]|Relative Risk Sensitivity [model-proposed; physical meaning unverified]",
-  "insurance and risk|Insurance Coverage Ratio Adjusted Squared [model-proposed; physical meaning unverified]|Insurance Risk Adjustment Ratio [model-proposed; physical meaning unverified]"
+  "insurance and risk|Insurance Coverage Ratio Adjusted Squared [model-proposed; physical meaning unverified]|Insurance Risk Adjustment Ratio [model-proposed; physical meaning unverified]",
+  "insurance and risk|Insurance Coverage Ratio Adjusted Squared [model-proposed; physical meaning unverified]|Insurance Risk Adjustment Factor Squared [model-proposed; physical meaning unverified]",
+  "insurance and risk|Insurance Coverage Ratio Adjusted Squared [model-proposed; physical meaning unverified]|Relative Risk Aversion Squared [model-proposed; physical meaning unverified]",
+  "insurance and risk|Insurance Coverage Ratio Adjusted Squared [model-proposed; physical meaning unverified]|Insurance Risk Exposure Index [model-proposed; physical meaning unverified]",
+  "insurance and risk|Insurance Coverage Ratio Adjusted Squared [model-proposed; physical meaning unverified]|Risk Adjustment Ratio [model-proposed; physical meaning unverified]",
+  "insurance and risk|Insurance Coverage Ratio Adjusted Squared [model-proposed; physical meaning unverified]|Expected Utility Adjustment Factor [model-proposed; physical meaning unverified]",
+  "insurance and risk|Insurance Coverage Ratio Adjusted Squared [model-proposed; physical meaning unverified]|Insurance Risk Sensitivity Index [model-proposed; physical meaning unverified]",
+  "insurance and risk|Insurance Coverage Ratio Adjusted Squared [model-proposed; physical meaning unverified]|Relative Risk Sensitivity Index [model-proposed; physical meaning unverified]",
+  "insurance and risk|Insurance Coverage Ratio Adjusted Squared [model-proposed; physical meaning unverified]|Insurance Risk Exposure Ratio [model-proposed; physical meaning unverified]",
+  "insurance and risk|Insurance Coverage Ratio Adjusted Squared [model-proposed; physical meaning unverified]|Risk Sensitivity Ratio [model-proposed; physical meaning unverified]",
+  "insurance and risk|Insurance Coverage Ratio Adjusted Squared [model-proposed; physical meaning unverified]|Relative Risk Adjustment Index [model-proposed; physical meaning unverified]",
+  "insurance and risk|Insurance Coverage Ratio Adjusted Squared [model-proposed; physical meaning unverified]|Insurance Risk Adjustment Ratio Squared [model-proposed; physical meaning unverified]",
+  "insurance and risk|Insurance Coverage Ratio Adjusted Squared [model-proposed; physical meaning unverified]|Insurance Coverage Ratio Adjusted [model-proposed; physical meaning unverified]"
  ],
  "edges": [
   {
@@ -49309,7 +49431,7 @@
    "k": "1/4"
   }
  ],
- "rounds": 2721,
+ "rounds": 2729,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",
