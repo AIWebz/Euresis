@@ -2296,3 +2296,4 @@
 - 2026-11-09 12:51 FINDING (confirmed on held-out rows): In 'Data release for manuscript "Water-mass variability synchronizes predator–prey dynamics fr' (Zenodo, doi 10.5281/zenodo.24044208): 'filteredIntegratedNASC' is linear in 'integNASCFilled' (R² = 0.948 on the discovery half); held-out R² = 0.852 [emp-0b72a6691899]
 - 2026-11-09 12:51 FINDING (confirmed on held-out rows): In 'Data release for manuscript "Water-mass variability synchronizes predator–prey dynamics fr' (Zenodo, doi 10.5281/zenodo.24044208): 'pctPresent' follows a power law in 'nHoursPresent' (R² = 0.945 on the discovery half); held-out R² = 0.931 [emp-89bfcc3bde98]
 - 2026-11-09 12:51 data feeds: 14406 datasets analysed so far, 2064 confirmed findings
+- 2026-11-09 13:52 data feeds: online
