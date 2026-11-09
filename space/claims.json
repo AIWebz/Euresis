@@ -2413841,5 +2413841,140 @@
   "statement": "Octal game 0.571723 is completely solved: its Grundy values are periodic with pre-period 7 and period 8 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.8010818",
+   "held_out_r2": 0.0012,
+   "held_out_rows": 5235,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-6dfc147a2e4c",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "7321d81e2026a3bc.csv",
+   "doi": "10.5281/zenodo.8010818",
+   "form": "linear",
+   "params": [
+    -48.72801903855945,
+    1.0875904316226164
+   ],
+   "seed": 3299902154,
+   "x": "EFFTIME_SPEC",
+   "y": "LYA_EFFTIME_DARK"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data and software: 'Survey Operations for the Dark Energy Spectroscopic Instrument'' (Zenodo, doi 10.5281/zenodo.8010818): 'LYA_EFFTIME_DARK' is linear in 'EFFTIME_SPEC' (R\u00b2 = 0.930 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.8010818",
+   "held_out_r2": 0.0006,
+   "held_out_rows": 5235,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-22dacd586bed",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "7321d81e2026a3bc.csv",
+   "doi": "10.5281/zenodo.8010818",
+   "form": "linear",
+   "params": [
+    -62.21738354895278,
+    1.1203197661614306
+   ],
+   "seed": 3299902154,
+   "x": "LRG_EFFTIME_DARK",
+   "y": "LYA_EFFTIME_DARK"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data and software: 'Survey Operations for the Dark Energy Spectroscopic Instrument'' (Zenodo, doi 10.5281/zenodo.8010818): 'LYA_EFFTIME_DARK' is linear in 'LRG_EFFTIME_DARK' (R\u00b2 = 0.932 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.8010818",
+   "held_out_r2": 0.0011,
+   "held_out_rows": 5235,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-8462d31b6d72",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "7321d81e2026a3bc.csv",
+   "doi": "10.5281/zenodo.8010818",
+   "form": "linear",
+   "params": [
+    -69.51120012216502,
+    1.0627081221192984
+   ],
+   "seed": 3299902154,
+   "x": "ELG_EFFTIME_DARK",
+   "y": "LYA_EFFTIME_DARK"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data and software: 'Survey Operations for the Dark Energy Spectroscopic Instrument'' (Zenodo, doi 10.5281/zenodo.8010818): 'LYA_EFFTIME_DARK' is linear in 'ELG_EFFTIME_DARK' (R\u00b2 = 0.919 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.8010818",
+   "held_out_r2": 0.0012,
+   "held_out_rows": 5235,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-1c3d86548674",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "7321d81e2026a3bc.csv",
+   "doi": "10.5281/zenodo.8010818",
+   "form": "linear",
+   "params": [
+    -28.529768674170324,
+    1.071197240201705
+   ],
+   "seed": 3299902154,
+   "x": "BGS_EFFTIME_BRIGHT",
+   "y": "LYA_EFFTIME_DARK"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data and software: 'Survey Operations for the Dark Energy Spectroscopic Instrument'' (Zenodo, doi 10.5281/zenodo.8010818): 'LYA_EFFTIME_DARK' is linear in 'BGS_EFFTIME_BRIGHT' (R\u00b2 = 0.935 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22308547",
+   "held_out_r2": 0.9887,
+   "held_out_rows": 195,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-de422d8f9534",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "778bcb13cdf007a4.csv",
+   "doi": "10.5281/zenodo.22308547",
+   "form": "logarithmic",
+   "params": [
+    -1.2409191912118327,
+    0.9120438444473226
+   ],
+   "seed": 3055973304,
+   "x": "beta",
+   "y": "plaq"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Symplectic lattice gauge theories in the Grid framework: domain wall fermions and continuu' (Zenodo, doi 10.5281/zenodo.22308547): 'plaq' grows logarithmically in 'beta' (R\u00b2 = 0.987 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
