@@ -2428164,5 +2428164,59 @@
   "statement": "Octal game 0.572715 is completely solved: its Grundy values are periodic with pre-period 1 and period 6 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23034945",
+   "held_out_r2": 0.9677,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-2eae14b81c89",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "a776beae7c862a11.csv",
+   "doi": "10.5281/zenodo.23034945",
+   "form": "linear",
+   "params": [
+    -0.006345667646265,
+    0.97233619309373
+   ],
+   "seed": 2203194327,
+   "x": "gap_pbe_2018",
+   "y": "band_gap_current"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data and Code for \"Reproducibility of Thermodynamic Stability and Band-Gap Screening for I' (Zenodo, doi 10.5281/zenodo.23034945): 'band_gap_current' is linear in 'gap_pbe_2018' (R\u00b2 = 0.967 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14184621",
+   "held_out_r2": 0.984,
+   "held_out_rows": 6010,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-2ba0a9fd0757",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "e3e230e076033a63.csv",
+   "doi": "10.5281/zenodo.14184621",
+   "form": "linear",
+   "params": [
+    0.024408630875611487,
+    0.9849809549206356
+   ],
+   "seed": 1305364990,
+   "x": "LCD",
+   "y": "LFPD"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Computation-Ready Experimental Metal-Organic Framework (CoRE MOF) 2019 Dataset' (Zenodo, doi 10.5281/zenodo.14184621): 'LFPD' is linear in 'LCD' (R\u00b2 = 0.989 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]

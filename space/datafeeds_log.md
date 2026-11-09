@@ -2404,3 +2404,6 @@
 - 2026-11-09 20:39 FINDING (confirmed on held-out rows): In 'The data for Prediction of Large Solar Flares Based on SHARP and HED Magnetic Field Parame' (Zenodo, doi 10.5281/zenodo.13734431): 'AREA_ACR' is linear in 'TOTUSJZ' (R² = 0.910 on the discovery half); held-out R² = 0.907 [emp-dab5079ceb01]
 - 2026-11-09 20:39 data feeds: 15286 datasets analysed so far, 2155 confirmed findings
 - 2026-11-09 21:41 data feeds: online
+- 2026-11-09 21:42 FINDING (confirmed on held-out rows): In 'Data and Code for "Reproducibility of Thermodynamic Stability and Band-Gap Screening for I' (Zenodo, doi 10.5281/zenodo.23034945): 'band_gap_current' is linear in 'gap_pbe_2018' (R² = 0.967 on the discovery half); held-out R² = 0.968 [emp-2eae14b81c89]
+- 2026-11-09 21:42 FINDING (confirmed on held-out rows): In 'Computation-Ready Experimental Metal-Organic Framework (CoRE MOF) 2019 Dataset' (Zenodo, doi 10.5281/zenodo.14184621): 'LFPD' is linear in 'LCD' (R² = 0.989 on the discovery half); held-out R² = 0.984 [emp-2ba0a9fd0757]
+- 2026-11-09 21:43 data feeds: 15347 datasets analysed so far, 2157 confirmed findings
