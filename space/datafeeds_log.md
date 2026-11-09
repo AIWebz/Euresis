@@ -2264,3 +2264,4 @@
 - 2026-11-09 10:05 FINDING (confirmed on held-out rows): In 'Data from: Long term persistence of experimental populations beyond a species' natural ran' (Zenodo, doi 10.5061/dryad.7pvmcvdqz): 'bFFP ' is linear in 'NFFD ' (R² = 0.955 on the discovery half); held-out R² = 0.915 [emp-a9bf7af80c7e]
 - 2026-11-09 10:06 FINDING (confirmed on held-out rows): In 'Data from: Long term persistence of experimental populations beyond a species' natural ran' (Zenodo, doi 10.5061/dryad.7pvmcvdqz): 'eFFP ' grows exponentially in 'NFFD ' (R² = 0.902 on the discovery half); held-out R² = 0.894 [emp-08d728fbcd2d]
 - 2026-11-09 10:07 data feeds: 14216 datasets analysed so far, 2038 confirmed findings
+- 2026-11-09 10:54 data feeds: online
