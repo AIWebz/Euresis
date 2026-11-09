@@ -2301473,5 +2301473,356 @@
   "statement": "Octal game 0.552744 is completely solved: its Grundy values are periodic with pre-period 1 and period 7 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23808620",
+   "held_out_r2": 0.9155,
+   "held_out_rows": 734,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-868e58ff9b48",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "e5cc98c0f98d8d13.csv",
+   "doi": "10.5281/zenodo.23808620",
+   "form": "linear",
+   "params": [
+    22.14693455204582,
+    0.7045038806332226
+   ],
+   "seed": 2298330507,
+   "x": "n_spectra",
+   "y": "n_echelle_orders"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'BESS-Bench v1.0: Be-star H-alpha spectra from the BeSS database for spectral representatio' (Zenodo, doi 10.5281/zenodo.23808620): 'n_echelle_orders' is linear in 'n_spectra' (R\u00b2 = 0.929 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23808620",
+   "held_out_r2": -7.2846,
+   "held_out_rows": 1156,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ac21b5a0eaa0",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "ae38aa93491bf566.csv",
+   "doi": "10.5281/zenodo.23808620",
+   "form": "exponential",
+   "params": [
+    7.616997973767703,
+    0.0018297672905290344
+   ],
+   "seed": 992665846,
+   "x": "wavelength_array_min",
+   "y": "lambda_max"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'BESS-Bench v1.0: Be-star H-alpha spectra from the BeSS database for spectral representatio' (Zenodo, doi 10.5281/zenodo.23808620): 'lambda_max' grows exponentially in 'wavelength_array_min' (R\u00b2 = 0.981 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23808620",
+   "held_out_r2": 0.6111,
+   "held_out_rows": 1156,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-38e3ac8858ff",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "ae38aa93491bf566.csv",
+   "doi": "10.5281/zenodo.23808620",
+   "form": "logarithmic",
+   "params": [
+    -28403.93223237617,
+    5363.578302755055
+   ],
+   "seed": 992665846,
+   "x": "wavelength_array_max",
+   "y": "lambda_min"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'BESS-Bench v1.0: Be-star H-alpha spectra from the BeSS database for spectral representatio' (Zenodo, doi 10.5281/zenodo.23808620): 'lambda_min' grows logarithmically in 'wavelength_array_max' (R\u00b2 = 0.981 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.16326635",
+   "held_out_r2": 0.9252,
+   "held_out_rows": 1942,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-871398dd8db4",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "2ba74445fa24dc39.csv",
+   "doi": "10.5281/zenodo.16326635",
+   "form": "logarithmic",
+   "params": [
+    -26.33817814998251,
+    9.586234405387428
+   ],
+   "seed": 3822183030,
+   "x": "phot_g_mean_mag",
+   "y": "logg_magic"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'The DECam MAGIC Survey: A Wide-field Photometric Metallicity Study of the Sculptor Dwarf S' (Zenodo, doi 10.5281/zenodo.16326635): 'logg_magic' grows logarithmically in 'phot_g_mean_mag' (R\u00b2 = 0.922 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.16326635",
+   "held_out_r2": 0.9507,
+   "held_out_rows": 1942,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5a68cd5de371",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "2ba74445fa24dc39.csv",
+   "doi": "10.5281/zenodo.16326635",
+   "form": "logarithmic",
+   "params": [
+    -23.89449254483508,
+    8.858445361952182
+   ],
+   "seed": 3822183030,
+   "x": "phot_rp_mean_mag",
+   "y": "logg_magic"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'The DECam MAGIC Survey: A Wide-field Photometric Metallicity Study of the Sculptor Dwarf S' (Zenodo, doi 10.5281/zenodo.16326635): 'logg_magic' grows logarithmically in 'phot_rp_mean_mag' (R\u00b2 = 0.949 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.16326635",
+   "held_out_r2": 0.9227,
+   "held_out_rows": 1942,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-381efeaae56d",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "2ba74445fa24dc39.csv",
+   "doi": "10.5281/zenodo.16326635",
+   "form": "logarithmic",
+   "params": [
+    -30.800304518886694,
+    10.994046568767805
+   ],
+   "seed": 3822183030,
+   "x": "g_dered",
+   "y": "logg_magic"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'The DECam MAGIC Survey: A Wide-field Photometric Metallicity Study of the Sculptor Dwarf S' (Zenodo, doi 10.5281/zenodo.16326635): 'logg_magic' grows logarithmically in 'g_dered' (R\u00b2 = 0.918 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.16326635",
+   "held_out_r2": 0.929,
+   "held_out_rows": 1942,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-cba643eadab7",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "2ba74445fa24dc39.csv",
+   "doi": "10.5281/zenodo.16326635",
+   "form": "logarithmic",
+   "params": [
+    -25.954909567527974,
+    9.475754815468022
+   ],
+   "seed": 3822183030,
+   "x": "r_dered",
+   "y": "logg_magic"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'The DECam MAGIC Survey: A Wide-field Photometric Metallicity Study of the Sculptor Dwarf S' (Zenodo, doi 10.5281/zenodo.16326635): 'logg_magic' grows logarithmically in 'r_dered' (R\u00b2 = 0.926 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.16326635",
+   "held_out_r2": 0.9289,
+   "held_out_rows": 1942,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c8bcd902d2e3",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "2ba74445fa24dc39.csv",
+   "doi": "10.5281/zenodo.16326635",
+   "form": "logarithmic",
+   "params": [
+    -24.324394296091885,
+    8.960081905232972
+   ],
+   "seed": 3822183030,
+   "x": "i_dered",
+   "y": "logg_magic"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'The DECam MAGIC Survey: A Wide-field Photometric Metallicity Study of the Sculptor Dwarf S' (Zenodo, doi 10.5281/zenodo.16326635): 'logg_magic' grows logarithmically in 'i_dered' (R\u00b2 = 0.927 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17957748",
+   "held_out_r2": 0.9625,
+   "held_out_rows": 1144,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-40f1c04ef8f9",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "2abf3de83ea145a6.csv",
+   "doi": "10.5281/zenodo.17957748",
+   "form": "linear",
+   "params": [
+    0.6705277246570673,
+    1.0785812767372152
+   ],
+   "seed": 567145111,
+   "x": "crossing_trails",
+   "y": "ntrails"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'SPHEREx confirms predictions for artificial satellite trail pollution in Low Earth Orbit' (Zenodo, doi 10.5281/zenodo.17957748): 'ntrails' is linear in 'crossing_trails' (R\u00b2 = 0.953 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.16965300",
+   "held_out_r2": 0.9533,
+   "held_out_rows": 1500,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-084c541f769b",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "60a991663d7e9a42.csv",
+   "doi": "10.5281/zenodo.16965300",
+   "form": "logarithmic",
+   "params": [
+    2.063042646319545,
+    -0.2822100403602723
+   ],
+   "seed": 1186887307,
+   "x": "normalized_times",
+   "y": "mean_normalized_intensity"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Supplementary data to \"Superposed epoch analysis of solar energetic particle events observ' (Zenodo, doi 10.5281/zenodo.16965300): 'mean_normalized_intensity' grows logarithmically in 'normalized_times' (R\u00b2 = 0.962 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.16965300",
+   "held_out_r2": 0.9418,
+   "held_out_rows": 1500,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3c5e6be3657b",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "ea4b47ce08bded68.csv",
+   "doi": "10.5281/zenodo.16965300",
+   "form": "power law",
+   "params": [
+    5.455092374174085,
+    -1.1352739868236221
+   ],
+   "seed": 486033408,
+   "x": "normalized_times",
+   "y": "median_normalized_intensity"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Supplementary data to \"Superposed epoch analysis of solar energetic particle events observ' (Zenodo, doi 10.5281/zenodo.16965300): 'median_normalized_intensity' follows a power law in 'normalized_times' (R\u00b2 = 0.940 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15680676",
+   "held_out_r2": -Infinity,
+   "held_out_rows": 4546,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-896ac43d281d",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "c617e6bace0a8cee.csv",
+   "doi": "10.5281/zenodo.15680676",
+   "form": "power law",
+   "params": [
+    6.876160749716105,
+    -0.9947101101627308
+   ],
+   "seed": 829013777,
+   "x": "Dist_GaiaDR3",
+   "y": "parallax"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'MESA (r11701) models with convective turnover times' (Zenodo, doi 10.5281/zenodo.15680676): 'parallax' follows a power law in 'Dist_GaiaDR3' (R\u00b2 = 0.988 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15680676",
+   "held_out_r2": 0.9636,
+   "held_out_rows": 4546,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-24cdb739edbd",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "c617e6bace0a8cee.csv",
+   "doi": "10.5281/zenodo.15680676",
+   "form": "linear",
+   "params": [
+    -0.0009097334725716548,
+    1.0930225774305309
+   ],
+   "seed": 829013777,
+   "x": "parallax_error",
+   "y": "pmra_error"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'MESA (r11701) models with convective turnover times' (Zenodo, doi 10.5281/zenodo.15680676): 'pmra_error' is linear in 'parallax_error' (R\u00b2 = 0.970 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
