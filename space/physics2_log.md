@@ -3268,3 +3268,5 @@
 - 2026-11-09 16:18 round 3002: collision
 - 2026-11-09 16:20 round 3003: driven oscillator
 - 2026-11-09 16:21 segment end: 3003 rounds, 5 discoveries, 2 known laws rediscovered
+- 2026-11-09 16:41 segment start (budget 30 min; model: Qwen3-8B; 5 discoveries so far)
+- 2026-11-09 16:41 round 3004: velocity addition
