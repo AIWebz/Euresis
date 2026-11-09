@@ -2408,3 +2408,4 @@
 - 2026-11-09 21:42 FINDING (confirmed on held-out rows): In 'Computation-Ready Experimental Metal-Organic Framework (CoRE MOF) 2019 Dataset' (Zenodo, doi 10.5281/zenodo.14184621): 'LFPD' is linear in 'LCD' (R² = 0.989 on the discovery half); held-out R² = 0.984 [emp-2ba0a9fd0757]
 - 2026-11-09 21:43 data feeds: 15347 datasets analysed so far, 2157 confirmed findings
 - 2026-11-09 22:22 data feeds: online
+- 2026-11-09 22:22 FINDING (confirmed on held-out rows): In 'Data from: Divergent temporal trends of net biomass change in western Canadian boreal fore' (Zenodo, doi 10.5061/dryad.8bg44b0): 'SurvN' is linear in 'IniN' (R² = 0.975 on the discovery half); held-out R² = 0.978 [emp-9a757e25b165]

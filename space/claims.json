@@ -2431267,5 +2431267,32 @@
   "statement": "Octal game 0.573106 is completely solved: its Grundy values are periodic with pre-period 9 and period 24 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.8bg44b0",
+   "held_out_r2": 0.9783,
+   "held_out_rows": 1272,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9a757e25b165",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "0b6e51d25dc4b650.csv",
+   "doi": "10.5061/dryad.8bg44b0",
+   "form": "linear",
+   "params": [
+    -3.1501873813115964,
+    0.8943661576308901
+   ],
+   "seed": 936528250,
+   "x": "IniN",
+   "y": "SurvN"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Divergent temporal trends of net biomass change in western Canadian boreal fore' (Zenodo, doi 10.5061/dryad.8bg44b0): 'SurvN' is linear in 'IniN' (R\u00b2 = 0.975 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
