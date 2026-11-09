@@ -2949,3 +2949,13 @@
 - 2026-11-09 03:18 round 2709: Compton scattering
 - 2026-11-09 03:19 round 2710: Cournot duopoly
 - 2026-11-09 03:20 round 2711: insurance and risk
+- 2026-11-09 03:25 round 2712: auction with a reserve price
+- 2026-11-09 03:26 round 2713: two-body decay
+- 2026-11-09 03:28 round 2714: collision
+- 2026-11-09 03:29 round 2715: driven oscillator
+- 2026-11-09 03:30 round 2716: velocity addition
+- 2026-11-09 03:32 round 2717: Compton scattering
+- 2026-11-09 03:33 round 2718: Cournot duopoly
+- 2026-11-09 03:34 round 2719: insurance and risk
+- 2026-11-09 03:36 round 2720: auction with a reserve price
+- 2026-11-09 03:37 round 2721: two-body decay

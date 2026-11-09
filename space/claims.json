@@ -2275174,5 +2275174,194 @@
   "statement": "[economics: insurance and risk] certainty equivalent \u2265 1 \u00d7 Insurance Coverage Ratio Adjusted Squared [model-proposed; physical meaning unverified]   on p < 1, L < 1 (tight only at the edge of the domain, near (1, 1))",
   "status": "proved",
   "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-6501156e9949",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'expected utility'",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "1/sqrt(1 - L) >= 4*((p*sqrt(1 - L) - p + 1)**4/(-L*p + p*sqrt(1 - L) - p + 2)**2)",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 2711",
+  "statement": "[economics: insurance and risk] Relative Risk Aversion [model-proposed; physical meaning unverified] \u2265 4 \u00d7 Insurance Coverage Ratio Adjusted Squared [model-proposed; physical meaning unverified]   on p < 1, L < 1 (tight only at the edge of the domain, near (0.000117, 2.41e-16))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-44f3a367bb37",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'expected utility'",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "sqrt(-L*p + 1)/(-p + sqrt(1 - L) + 1) >= 2*((p*sqrt(1 - L) - p + 1)**4/(-L*p + p*sqrt(1 - L) - p + 2)**2)",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 2711",
+  "statement": "[economics: insurance and risk] Insurance Risk Adjustment Index [model-proposed; physical meaning unverified] \u2265 2 \u00d7 Insurance Coverage Ratio Adjusted Squared [model-proposed; physical meaning unverified]   on p < 1, L < 1 (tight only at the edge of the domain, near (3.8e-15, 7.55e-15))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-82ccc6894ad1",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "sqrt(-L*p + 1)/(-p*sqrt(1 - L) + p + 1) >= 3*((p*sqrt(1 - L) - p + 1)**4/(-L*p + p*sqrt(1 - L) - p + 2)**2)",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 2711",
+  "statement": "[economics: insurance and risk] Risk Adjustment Ratio [model-proposed; physical meaning unverified] \u2265 3 \u00d7 Insurance Coverage Ratio Adjusted Squared [model-proposed; physical meaning unverified]   on p < 1, L < 1 (tight only at the edge of the domain, near (1, 0.75))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-90970680d8ff",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'expected utility'",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "sqrt(-L*p + 1)/(-p*sqrt(1 - L) + sqrt(1 - L) + 1) >= 2*((p*sqrt(1 - L) - p + 1)**4/(-L*p + p*sqrt(1 - L) - p + 2)**2)",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 2719",
+  "statement": "[economics: insurance and risk] Insurance Risk Exposure Ratio [model-proposed; physical meaning unverified] \u2265 2 \u00d7 Insurance Coverage Ratio Adjusted Squared [model-proposed; physical meaning unverified]   on p < 1, L < 1 (tight only at the edge of the domain, near (3.8e-15, 7.55e-15))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-6a269ed2c10c",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'expected utility'",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "sqrt(-L*p + 1)/(-p*sqrt(1 - L) + 1) >= 4*((p*sqrt(1 - L) - p + 1)**4/(-L*p + p*sqrt(1 - L) - p + 2)**2)",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 2719",
+  "statement": "[economics: insurance and risk] Relative Risk Adjustment Index [model-proposed; physical meaning unverified] \u2265 4 \u00d7 Insurance Coverage Ratio Adjusted Squared [model-proposed; physical meaning unverified]   on p < 1, L < 1 (tight only at the edge of the domain, near (1.01e-16, 0.711))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-887fa8b3a445",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'expected utility'",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "-(p*sqrt(1 - L) - p + 1)**2/(-L*p + p*sqrt(1 - L) - p + 2) + 1 >= 2*((p*sqrt(1 - L) - p + 1)**4/(-L*p + p*sqrt(1 - L) - p + 2)**2)",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 2719",
+  "statement": "[economics: insurance and risk] Insurance Coverage Ratio Adjusted [model-proposed; physical meaning unverified] \u2265 2 \u00d7 Insurance Coverage Ratio Adjusted Squared [model-proposed; physical meaning unverified]   on p < 1, L < 1 (tight only at the edge of the domain, near (0.000128, 6.69e-13))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-37c0e774487c",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "(p*sqrt(1 - L) - p + 1)**4/(-L*p + p*sqrt(1 - L) - p + 2)**2 >= 1/4*((p*sqrt(1 - L) - p + 1)**2)",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 2719",
+  "statement": "[economics: insurance and risk] Insurance Coverage Ratio Adjusted Squared [model-proposed; physical meaning unverified] \u2265 1/4 \u00d7 certainty equivalent   on p < 1, L < 1 (tight only at the edge of the domain, near (4.23e-13, 0.000113))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]
