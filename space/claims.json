@@ -2250397,5 +2250397,194 @@
   "statement": "Octal game 0.547552 is completely solved: its Grundy values are periodic with pre-period 52 and period 67 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7219753",
+   "held_out_r2": 0.8822,
+   "held_out_rows": 37,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9e917bb9629a",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "85882b8a76225c59.csv",
+   "doi": "10.5281/zenodo.7219753",
+   "form": "power law",
+   "params": [
+    0.8841893802090298,
+    0.9132006542561241
+   ],
+   "seed": 1844833345,
+   "x": "mean_above_0",
+   "y": "max_temperature"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset to: Deforestation for agriculture leads to soil warming and enhanced litter decomp' (Zenodo, doi 10.5281/zenodo.7219753): 'max_temperature' follows a power law in 'mean_above_0' (R\u00b2 = 0.956 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.sc38s",
+   "held_out_r2": 0.8896,
+   "held_out_rows": 35,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-2d4981826df6",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "06af032b194ffac0.csv",
+   "doi": "10.5061/dryad.sc38s",
+   "form": "power law",
+   "params": [
+    -16.12727913714589,
+    13.529075663155702
+   ],
+   "seed": 3997516370,
+   "x": "ph_water",
+   "y": "ca"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: The role of soil chemistry and plant neighbourhoods in structuring fungal commu' (Zenodo, doi 10.5061/dryad.sc38s): 'ca' follows a power law in 'ph_water' (R\u00b2 = 0.907 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.s87008d",
+   "held_out_r2": 0.9059,
+   "held_out_rows": 109,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d3ea35d3bd29",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "a8afbc556620ef60.csv",
+   "doi": "10.5061/dryad.s87008d",
+   "form": "logarithmic",
+   "params": [
+    14238.969553053543,
+    -3496.0573579571414
+   ],
+   "seed": 86214336,
+   "x": "LatN",
+   "y": "MAP2"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Cross-biome patterns in soil microbial respiration predictable from evolutionar' (Zenodo, doi 10.5061/dryad.s87008d): 'MAP2' grows logarithmically in 'LatN' (R\u00b2 = 0.903 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.s87008d",
+   "held_out_r2": 0.9247,
+   "held_out_rows": 109,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d85add8d3b92",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "a8afbc556620ef60.csv",
+   "doi": "10.5061/dryad.s87008d",
+   "form": "power law",
+   "params": [
+    -2.4405094476946316,
+    0.892914689044217
+   ],
+   "seed": 86214336,
+   "x": "Cper",
+   "y": "Nper"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Cross-biome patterns in soil microbial respiration predictable from evolutionar' (Zenodo, doi 10.5061/dryad.s87008d): 'Nper' follows a power law in 'Cper' (R\u00b2 = 0.951 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.s87008d",
+   "held_out_r2": 0.9993,
+   "held_out_rows": 109,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-374800882e3b",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "a8afbc556620ef60.csv",
+   "doi": "10.5061/dryad.s87008d",
+   "form": "exponential",
+   "params": [
+    13.98090388310355,
+    -2.3359217897548037
+   ],
+   "seed": 86214336,
+   "x": "ipH",
+   "y": "iHion"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Cross-biome patterns in soil microbial respiration predictable from evolutionar' (Zenodo, doi 10.5061/dryad.s87008d): 'iHion' grows exponentially in 'ipH' (R\u00b2 = 0.999 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15993829",
+   "held_out_r2": 0.9166,
+   "held_out_rows": 429,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d357f85a3949",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "9a42b4f7f3444167.csv",
+   "doi": "10.5281/zenodo.15993829",
+   "form": "power law",
+   "params": [
+    1.1331693108867533,
+    -0.39307677556021214
+   ],
+   "seed": 4003967083,
+   "x": "MPa_Abs",
+   "y": "Vol_Water"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'ReESH_US-HB2: Hobcaw Barony Mature Longleaf Pine' (Zenodo, doi 10.5281/zenodo.15993829): 'Vol_Water' follows a power law in 'MPa_Abs' (R\u00b2 = 0.942 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17344543",
+   "held_out_r2": 0.9728,
+   "held_out_rows": 663,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e166fd68d36b",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "62f44f71b7c61b6d.csv",
+   "doi": "10.5281/zenodo.17344543",
+   "form": "logarithmic",
+   "params": [
+    18.556479607944087,
+    -5.418765746997058
+   ],
+   "seed": 18211794,
+   "x": "MPa_Abs",
+   "y": "Vol_Water"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'ReESH_US-UTM: UFLUX Matheson' (Zenodo, doi 10.5281/zenodo.17344543): 'Vol_Water' grows logarithmically in 'MPa_Abs' (R\u00b2 = 0.970 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
