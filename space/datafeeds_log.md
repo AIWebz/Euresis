@@ -2123,3 +2123,4 @@
 - 2026-11-09 01:25 FINDING (confirmed on held-out rows): In 'Hybrid Solar Panel Real Measurements in Switzerland' (Zenodo, doi 10.5281/zenodo.16737001): 'T_OutHE' follows a power law in 'T_InHE' (R² = 0.991 on the discovery half); held-out R² = 0.991 [emp-94e077a0fc2b]
 - 2026-11-09 01:27 FINDING (confirmed on held-out rows): In 'Thermal XR measurements from the RESTART project' (Zenodo, doi 10.5281/zenodo.19336260): 'slice_headroom_mean_microseconds' follows a power law in 'icfl_mean_microseconds' (R² = 0.975 on the discovery half); held-out R² = 0.913 [emp-bef250a6420c]
 - 2026-11-09 01:27 data feeds: 13172 datasets analysed so far, 1915 confirmed findings
+- 2026-11-09 02:30 data feeds: online
