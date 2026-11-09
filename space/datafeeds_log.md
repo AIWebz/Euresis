@@ -2284,3 +2284,4 @@
 - 2026-11-09 11:59 FINDING (confirmed on held-out rows): In 'Raw Ménard pressuremeter, oedometer and index-test records of tropical residual and alluvi' (Zenodo, doi 10.5281/zenodo.23501596): 'm_tare_dry_g' follows a power law in 'm_tare_wet_g' (R² = 0.975 on the discovery half); held-out R² = 0.971 [emp-3a42809f20d5]
 - 2026-11-09 11:59 FINDING (confirmed on held-out rows): In 'Global terrain-corrected continental heat flow: per-site corrections, transfer-factor fiel' (Zenodo, doi 10.5281/zenodo.23311169): 'B_D' is linear in 'B_s' (R² = 0.989 on the discovery half); held-out R² = 0.987 [emp-79ea592e7a13]
 - 2026-11-09 11:59 data feeds: 14350 datasets analysed so far, 2054 confirmed findings
+- 2026-11-09 12:49 data feeds: online
