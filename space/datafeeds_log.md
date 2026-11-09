@@ -2157,3 +2157,4 @@
 - 2026-11-09 03:17 FINDING (confirmed on held-out rows): In 'Plasma diagnostics and deposition of functional zirconia thin films by reactive magnetron ' (Zenodo, doi 10.5281/zenodo.19607340): '0.2' is linear in '0' (R² = 0.964 on the discovery half); held-out R² = 0.967 [emp-49c21b489d80]
 - 2026-11-09 03:17 data feeds: 13383 datasets analysed so far, 1944 confirmed findings
 - 2026-11-09 04:20 data feeds: online
+- 2026-11-09 04:21 FINDING (confirmed on held-out rows): In 'Dataset to "Local thermodynamic description of isothermal single-phase flow in simple poro' (Zenodo, doi 10.5281/zenodo.6472317): 'Pe' is linear in 'mu' (R² = 0.928 on the discovery half); held-out R² = 0.888 [emp-d295733c138f]

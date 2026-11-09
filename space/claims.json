@@ -2285435,5 +2285435,464 @@
   "statement": "Octal game 0.551653 is completely solved: its Grundy values are periodic with pre-period 1 and period 10 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.5vg70",
+   "held_out_r2": 0.9988,
+   "held_out_rows": 156,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-527ba6ea2b3e",
+  "kind": "empirical",
+  "novelty": "KNOWN: seawater carbonate chemistry (CO2SYS-type calculations) \u2014 not a discovery",
+  "payload": {
+   "dataset": "bda0dcaf1e7641ce.csv",
+   "doi": "10.5061/dryad.5vg70",
+   "form": "exponential",
+   "params": [
+    27.23361982865668,
+    -2.646325982319607
+   ],
+   "seed": 2090049196,
+   "x": "pHT",
+   "y": "pCO2"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Elevated pCO2 affects tissue biomass composition, but not calcification, in a r' (Zenodo, doi 10.5061/dryad.5vg70): 'pCO2' grows exponentially in 'pHT' (R\u00b2 = 0.998 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.5vg70",
+   "held_out_r2": 0.9438,
+   "held_out_rows": 156,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-049e2220e3a0",
+  "kind": "empirical",
+  "novelty": "KNOWN: seawater carbonate chemistry (CO2SYS-type calculations) \u2014 not a discovery",
+  "payload": {
+   "dataset": "bda0dcaf1e7641ce.csv",
+   "doi": "10.5061/dryad.5vg70",
+   "form": "linear",
+   "params": [
+    6948.525638579419,
+    -653.5230528317479
+   ],
+   "seed": 2090049196,
+   "x": "pHT",
+   "y": "HCO3"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Elevated pCO2 affects tissue biomass composition, but not calcification, in a r' (Zenodo, doi 10.5061/dryad.5vg70): 'HCO3' is linear in 'pHT' (R\u00b2 = 0.937 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.5vg70",
+   "held_out_r2": 0.9902,
+   "held_out_rows": 156,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-be4335eb1146",
+  "kind": "empirical",
+  "novelty": "KNOWN: seawater carbonate chemistry (CO2SYS-type calculations) \u2014 not a discovery",
+  "payload": {
+   "dataset": "bda0dcaf1e7641ce.csv",
+   "doi": "10.5061/dryad.5vg70",
+   "form": "power law",
+   "params": [
+    -26.978264445819903,
+    15.481422062251891
+   ],
+   "seed": 2090049196,
+   "x": "pHT",
+   "y": "CO3"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Elevated pCO2 affects tissue biomass composition, but not calcification, in a r' (Zenodo, doi 10.5061/dryad.5vg70): 'CO3' follows a power law in 'pHT' (R\u00b2 = 0.984 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.5vg70",
+   "held_out_r2": 0.9876,
+   "held_out_rows": 156,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3045704a213f",
+  "kind": "empirical",
+  "novelty": "KNOWN: seawater carbonate chemistry (CO2SYS-type calculations) \u2014 not a discovery",
+  "payload": {
+   "dataset": "bda0dcaf1e7641ce.csv",
+   "doi": "10.5061/dryad.5vg70",
+   "form": "power law",
+   "params": [
+    -31.396381170752854,
+    15.617463232470532
+   ],
+   "seed": 2090049196,
+   "x": "pHT",
+   "y": "OmegaAragonite"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Elevated pCO2 affects tissue biomass composition, but not calcification, in a r' (Zenodo, doi 10.5061/dryad.5vg70): 'OmegaAragonite' follows a power law in 'pHT' (R\u00b2 = 0.981 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.5vg70",
+   "held_out_r2": 0.9572,
+   "held_out_rows": 156,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-1e2a7da4802b",
+  "kind": "empirical",
+  "novelty": "KNOWN: seawater carbonate chemistry (CO2SYS-type calculations) \u2014 not a discovery",
+  "payload": {
+   "dataset": "bda0dcaf1e7641ce.csv",
+   "doi": "10.5061/dryad.5vg70",
+   "form": "logarithmic",
+   "params": [
+    211.74327981711014,
+    248.72864906789775
+   ],
+   "seed": 2090049196,
+   "x": "pCO2",
+   "y": "HCO3"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Elevated pCO2 affects tissue biomass composition, but not calcification, in a r' (Zenodo, doi 10.5061/dryad.5vg70): 'HCO3' grows logarithmically in 'pCO2' (R\u00b2 = 0.952 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.5vg70",
+   "held_out_r2": 0.9876,
+   "held_out_rows": 156,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-50ccb09fff9e",
+  "kind": "empirical",
+  "novelty": "KNOWN: seawater carbonate chemistry (CO2SYS-type calculations) \u2014 not a discovery",
+  "payload": {
+   "dataset": "bda0dcaf1e7641ce.csv",
+   "doi": "10.5061/dryad.5vg70",
+   "form": "power law",
+   "params": [
+    9.732521107212849,
+    -0.7452864484318261
+   ],
+   "seed": 2090049196,
+   "x": "pCO2",
+   "y": "CO3"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Elevated pCO2 affects tissue biomass composition, but not calcification, in a r' (Zenodo, doi 10.5061/dryad.5vg70): 'CO3' follows a power law in 'pCO2' (R\u00b2 = 0.981 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.5vg70",
+   "held_out_r2": 0.9233,
+   "held_out_rows": 156,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-61729e543ecd",
+  "kind": "empirical",
+  "novelty": "KNOWN: seawater carbonate chemistry (CO2SYS-type calculations) \u2014 not a discovery",
+  "payload": {
+   "dataset": "bda0dcaf1e7641ce.csv",
+   "doi": "10.5061/dryad.5vg70",
+   "form": "logarithmic",
+   "params": [
+    904.7032584157402,
+    166.8902175667686
+   ],
+   "seed": 2090049196,
+   "x": "pCO2",
+   "y": "DIC"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Elevated pCO2 affects tissue biomass composition, but not calcification, in a r' (Zenodo, doi 10.5061/dryad.5vg70): 'DIC' grows logarithmically in 'pCO2' (R\u00b2 = 0.912 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.5vg70",
+   "held_out_r2": 0.9847,
+   "held_out_rows": 156,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3256a329e274",
+  "kind": "empirical",
+  "novelty": "KNOWN: seawater carbonate chemistry (CO2SYS-type calculations) \u2014 not a discovery",
+  "payload": {
+   "dataset": "bda0dcaf1e7641ce.csv",
+   "doi": "10.5061/dryad.5vg70",
+   "form": "power law",
+   "params": [
+    5.635166542033352,
+    -0.7515485726795298
+   ],
+   "seed": 2090049196,
+   "x": "pCO2",
+   "y": "OmegaAragonite"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Elevated pCO2 affects tissue biomass composition, but not calcification, in a r' (Zenodo, doi 10.5061/dryad.5vg70): 'OmegaAragonite' follows a power law in 'pCO2' (R\u00b2 = 0.977 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.5vg70",
+   "held_out_r2": 0.9887,
+   "held_out_rows": 156,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-6c8204dde6e3",
+  "kind": "empirical",
+  "novelty": "KNOWN: seawater carbonate chemistry (CO2SYS-type calculations) \u2014 not a discovery",
+  "payload": {
+   "dataset": "bda0dcaf1e7641ce.csv",
+   "doi": "10.5061/dryad.5vg70",
+   "form": "exponential",
+   "params": [
+    6.966602987567653,
+    0.0003437059670827441
+   ],
+   "seed": 2090049196,
+   "x": "HCO3",
+   "y": "DIC"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Elevated pCO2 affects tissue biomass composition, but not calcification, in a r' (Zenodo, doi 10.5061/dryad.5vg70): 'DIC' grows exponentially in 'HCO3' (R\u00b2 = 0.986 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.5vg70",
+   "held_out_r2": 0.959,
+   "held_out_rows": 156,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a0fdd983e254",
+  "kind": "empirical",
+  "novelty": "KNOWN: seawater carbonate chemistry (CO2SYS-type calculations) \u2014 not a discovery",
+  "payload": {
+   "dataset": "bda0dcaf1e7641ce.csv",
+   "doi": "10.5061/dryad.5vg70",
+   "form": "logarithmic",
+   "params": [
+    88.74858715674509,
+    -11.519354480447674
+   ],
+   "seed": 2090049196,
+   "x": "HCO3",
+   "y": "OmegaAragonite"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Elevated pCO2 affects tissue biomass composition, but not calcification, in a r' (Zenodo, doi 10.5061/dryad.5vg70): 'OmegaAragonite' grows logarithmically in 'HCO3' (R\u00b2 = 0.949 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.6472317",
+   "held_out_r2": 0.1429,
+   "held_out_rows": 185,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-79cde2b5c845",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "3dec9a7cbf92f7f8.csv",
+   "doi": "10.5281/zenodo.6472317",
+   "form": "linear",
+   "params": [
+    3.0772953405685817,
+    -1.948975198632918
+   ],
+   "seed": 2193037020,
+   "x": "sT",
+   "y": "Ke"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset to \"Local thermodynamic description of isothermal single-phase flow in simple poro' (Zenodo, doi 10.5281/zenodo.6472317): 'Ke' is linear in 'sT' (R\u00b2 = 0.960 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.6472317",
+   "held_out_r2": 0.9785,
+   "held_out_rows": 185,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-1c0e378a472f",
+  "kind": "empirical",
+  "novelty": "KNOWN: equation of state of a simulated fluid (pressure, density, temperature, chemical potential, kinetic energy) \u2014 not a discovery",
+  "payload": {
+   "dataset": "3dec9a7cbf92f7f8.csv",
+   "doi": "10.5281/zenodo.6472317",
+   "form": "power law",
+   "params": [
+    0.2676184711389855,
+    0.963668772515419
+   ],
+   "seed": 2193037020,
+   "x": "sT",
+   "y": "sKe"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset to \"Local thermodynamic description of isothermal single-phase flow in simple poro' (Zenodo, doi 10.5281/zenodo.6472317): 'sKe' follows a power law in 'sT' (R\u00b2 = 0.990 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.6472317",
+   "held_out_r2": 0.8877,
+   "held_out_rows": 185,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d295733c138f",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3dec9a7cbf92f7f8.csv",
+   "doi": "10.5281/zenodo.6472317",
+   "form": "linear",
+   "params": [
+    -1.7241096088502164,
+    -0.17307215426119693
+   ],
+   "seed": 2193037020,
+   "x": "mu",
+   "y": "Pe"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset to \"Local thermodynamic description of isothermal single-phase flow in simple poro' (Zenodo, doi 10.5281/zenodo.6472317): 'Pe' is linear in 'mu' (R\u00b2 = 0.928 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.10818633",
+   "held_out_r2": 0.9302,
+   "held_out_rows": 1488,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e24012ab845f",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "fbb77413d56e54d5.csv",
+   "doi": "10.5281/zenodo.10818633",
+   "form": "linear",
+   "params": [
+    4.840429931707974,
+    0.51630576383884
+   ],
+   "seed": 2412546486,
+   "x": "Gm W/m2",
+   "y": "Gglob W/m2"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset for Accuracy of Grid-Connected Photovoltaic Power Plant: A Novel Approach Using Hy' (Zenodo, doi 10.5281/zenodo.10818633): 'Gglob W/m2' is linear in 'Gm W/m2' (R\u00b2 = 0.927 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.10818633",
+   "held_out_r2": 0.9154,
+   "held_out_rows": 1488,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c697dc9f0d7e",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "fbb77413d56e54d5.csv",
+   "doi": "10.5281/zenodo.10818633",
+   "form": "linear",
+   "params": [
+    -5.73011231069698,
+    0.5068487635658757
+   ],
+   "seed": 2412546486,
+   "x": "Gm W/m2",
+   "y": "Gdir W/m2"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset for Accuracy of Grid-Connected Photovoltaic Power Plant: A Novel Approach Using Hy' (Zenodo, doi 10.5281/zenodo.10818633): 'Gdir W/m2' is linear in 'Gm W/m2' (R\u00b2 = 0.907 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.10818633",
+   "held_out_r2": 0.9597,
+   "held_out_rows": 1488,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c1e8e949ca54",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "fbb77413d56e54d5.csv",
+   "doi": "10.5281/zenodo.10818633",
+   "form": "linear",
+   "params": [
+    -11.638039169057308,
+    8.259718480895577
+   ],
+   "seed": 2412546486,
+   "x": "Gm W/m2",
+   "y": "Tot_power kW"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset for Accuracy of Grid-Connected Photovoltaic Power Plant: A Novel Approach Using Hy' (Zenodo, doi 10.5281/zenodo.10818633): 'Tot_power kW' is linear in 'Gm W/m2' (R\u00b2 = 0.962 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.10818633",
+   "held_out_r2": 0.9279,
+   "held_out_rows": 1488,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a2a99e726c4b",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "fbb77413d56e54d5.csv",
+   "doi": "10.5281/zenodo.10818633",
+   "form": "linear",
+   "params": [
+    29.092253664206105,
+    15.092729862366925
+   ],
+   "seed": 2412546486,
+   "x": "Gglob W/m2",
+   "y": "Tot_power kW"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset for Accuracy of Grid-Connected Photovoltaic Power Plant: A Novel Approach Using Hy' (Zenodo, doi 10.5281/zenodo.10818633): 'Tot_power kW' is linear in 'Gglob W/m2' (R\u00b2 = 0.924 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
