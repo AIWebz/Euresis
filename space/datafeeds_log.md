@@ -2339,3 +2339,4 @@
 - 2026-11-09 17:46 FINDING (confirmed on held-out rows): In 'Generation of Ammonia in a Pulsed Hollow Cathode Discharge' (Zenodo, doi 10.5281/zenodo.14165349): '49472' is linear in '35.179' (R² = 0.964 on the discovery half); held-out R² = 0.949 [emp-2e055fec768b]
 - 2026-11-09 17:46 FINDING (confirmed on held-out rows): In 'Generation of Ammonia in a Pulsed Hollow Cathode Discharge' (Zenodo, doi 10.5281/zenodo.14165349): '14.472' is linear in '218802' (R² = 0.979 on the discovery half); held-out R² = 0.976 [emp-7999afd114e3]
 - 2026-11-09 17:46 data feeds: 14947 datasets analysed so far, 2097 confirmed findings
+- 2026-11-09 18:32 data feeds: online
