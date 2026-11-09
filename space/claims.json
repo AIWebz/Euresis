@@ -2316271,5 +2316271,599 @@
   "statement": "Octal game 0.554007 is completely solved: its Grundy values are periodic with pre-period 1 and period 12 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.6s288fd",
+   "held_out_r2": 0.511,
+   "held_out_rows": 50,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-550442e4fe40",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "b5b08ce80474c91e.csv",
+   "doi": "10.5061/dryad.6s288fd",
+   "form": "linear",
+   "params": [
+    0.17540536870250092,
+    0.22362111254929576
+   ],
+   "seed": 2919488179,
+   "x": "Richness",
+   "y": "ShannonWiener"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Plant community stability results from shifts in species assemblages following ' (Zenodo, doi 10.5061/dryad.6s288fd): 'ShannonWiener' is linear in 'Richness' (R\u00b2 = 0.909 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.6s288fd",
+   "held_out_r2": 0.8992,
+   "held_out_rows": 40,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-91ce2b45ca15",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "76e332c5ddf28858.csv",
+   "doi": "10.5061/dryad.6s288fd",
+   "form": "power law",
+   "params": [
+    0.2444719231939458,
+    1.2438229960397498
+   ],
+   "seed": 3745836915,
+   "x": "SpRI",
+   "y": "TotDens"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Plant community stability results from shifts in species assemblages following ' (Zenodo, doi 10.5061/dryad.6s288fd): 'TotDens' follows a power law in 'SpRI' (R\u00b2 = 0.906 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17751201",
+   "held_out_r2": 0.8765,
+   "held_out_rows": 270,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3c7f9b045cfe",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "0b35b3f3729596b2.csv",
+   "doi": "10.5281/zenodo.17751201",
+   "form": "linear",
+   "params": [
+    2935937.853340464,
+    6.992627625832586
+   ],
+   "seed": 1362020404,
+   "x": "expected_annual_damages",
+   "y": "expected_people_flooded"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'D6.3 DIVA Model Datasets' (Zenodo, doi 10.5281/zenodo.17751201): 'expected_people_flooded' is linear in 'expected_annual_damages' (R\u00b2 = 0.919 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.4hc42",
+   "held_out_r2": 0.9162,
+   "held_out_rows": 67,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-308777474594",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "bdbbafec5633dfc0.csv",
+   "doi": "10.5061/dryad.4hc42",
+   "form": "linear",
+   "params": [
+    -8.25411512578398,
+    1.003487951795969
+   ],
+   "seed": 748485610,
+   "x": "Center_Lat",
+   "y": "MIN_Lat_POINT"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Macroecological patterns of sexual size dimorphism in turtles of the world' (Zenodo, doi 10.5061/dryad.4hc42): 'MIN_Lat_POINT' is linear in 'Center_Lat' (R\u00b2 = 0.933 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.4hc42",
+   "held_out_r2": 0.9172,
+   "held_out_rows": 67,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e34fdcbf6439",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "bdbbafec5633dfc0.csv",
+   "doi": "10.5061/dryad.4hc42",
+   "form": "linear",
+   "params": [
+    -8.577217916300278,
+    1.0775821335095055
+   ],
+   "seed": 748485610,
+   "x": "Center_Lat",
+   "y": "*Min_Bin"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Macroecological patterns of sexual size dimorphism in turtles of the world' (Zenodo, doi 10.5061/dryad.4hc42): '*Min_Bin' is linear in 'Center_Lat' (R\u00b2 = 0.929 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.4hc42",
+   "held_out_r2": 0.9149,
+   "held_out_rows": 67,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-daa9d0835aa9",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "bdbbafec5633dfc0.csv",
+   "doi": "10.5061/dryad.4hc42",
+   "form": "linear",
+   "params": [
+    9.288925104816856,
+    1.0198928438300778
+   ],
+   "seed": 748485610,
+   "x": "MIN_Lat_POINT",
+   "y": "*Center_Bin_5"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Macroecological patterns of sexual size dimorphism in turtles of the world' (Zenodo, doi 10.5061/dryad.4hc42): '*Center_Bin_5' is linear in 'MIN_Lat_POINT' (R\u00b2 = 0.938 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.4hc42",
+   "held_out_r2": 0.9157,
+   "held_out_rows": 67,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-2069d80746e0",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "bdbbafec5633dfc0.csv",
+   "doi": "10.5061/dryad.4hc42",
+   "form": "linear",
+   "params": [
+    8.737334191898467,
+    0.927900234892554
+   ],
+   "seed": 748485610,
+   "x": "MIN_Lat_POINT",
+   "y": "Round_Center_Bin_Lat"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Macroecological patterns of sexual size dimorphism in turtles of the world' (Zenodo, doi 10.5061/dryad.4hc42): 'Round_Center_Bin_Lat' is linear in 'MIN_Lat_POINT' (R\u00b2 = 0.933 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.59zw3r2df",
+   "held_out_r2": 0.9571,
+   "held_out_rows": 78,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-687fda1d4384",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f3330d09e44dd576.csv",
+   "doi": "10.5061/dryad.59zw3r2df",
+   "form": "linear",
+   "params": [
+    8354331.332095194,
+    1.911143477911576e-07
+   ],
+   "seed": 4111563679,
+   "x": "kcals",
+   "y": "pop"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Reversing the great degradation of nature through economic development' (Zenodo, doi 10.5061/dryad.59zw3r2df): 'pop' is linear in 'kcals' (R\u00b2 = 0.950 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.59zw3r2df",
+   "held_out_r2": 0.9597,
+   "held_out_rows": 78,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ecf21742a13a",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f3330d09e44dd576.csv",
+   "doi": "10.5061/dryad.59zw3r2df",
+   "form": "linear",
+   "params": [
+    115067.41652909346,
+    3.454201579515238e-09
+   ],
+   "seed": 4111563679,
+   "x": "kcals",
+   "y": "kcalpc"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Reversing the great degradation of nature through economic development' (Zenodo, doi 10.5061/dryad.59zw3r2df): 'kcalpc' is linear in 'kcals' (R\u00b2 = 0.969 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.59zw3r2df",
+   "held_out_r2": 0.9781,
+   "held_out_rows": 78,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-dd5a5595c92b",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f3330d09e44dd576.csv",
+   "doi": "10.5061/dryad.59zw3r2df",
+   "form": "linear",
+   "params": [
+    -5507.488758447061,
+    0.017754768005106992
+   ],
+   "seed": 4111563679,
+   "x": "pop",
+   "y": "kcalpc"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Reversing the great degradation of nature through economic development' (Zenodo, doi 10.5061/dryad.59zw3r2df): 'kcalpc' is linear in 'pop' (R\u00b2 = 0.985 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.59zw3r2df",
+   "held_out_r2": 0.9767,
+   "held_out_rows": 78,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ea43ad6fbcff",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "03af0d25c19a6e2b.csv",
+   "doi": "10.5061/dryad.59zw3r2df",
+   "form": "linear",
+   "params": [
+    11900664.582218917,
+    1.0186851066825455
+   ],
+   "seed": 3447203849,
+   "x": "PopSD2018",
+   "y": "PopRef2050"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Reversing the great degradation of nature through economic development' (Zenodo, doi 10.5061/dryad.59zw3r2df): 'PopRef2050' is linear in 'PopSD2018' (R\u00b2 = 0.969 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.59zw3r2df",
+   "held_out_r2": 0.9733,
+   "held_out_rows": 78,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9d2eac6fc232",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "03af0d25c19a6e2b.csv",
+   "doi": "10.5061/dryad.59zw3r2df",
+   "form": "power law",
+   "params": [
+    0.6778867356794593,
+    0.9505626276347103
+   ],
+   "seed": 3447203849,
+   "x": "PopSD2050",
+   "y": "PopRef2018"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Reversing the great degradation of nature through economic development' (Zenodo, doi 10.5061/dryad.59zw3r2df): 'PopRef2018' follows a power law in 'PopSD2050' (R\u00b2 = 0.978 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.59zw3r2df",
+   "held_out_r2": 0.9167,
+   "held_out_rows": 78,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e26d4f6abbdf",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "03af0d25c19a6e2b.csv",
+   "doi": "10.5061/dryad.59zw3r2df",
+   "form": "power law",
+   "params": [
+    -1.0368026608410554,
+    1.0704860578978594
+   ],
+   "seed": 3447203849,
+   "x": "PopSD2050",
+   "y": "PopRef2100"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Reversing the great degradation of nature through economic development' (Zenodo, doi 10.5061/dryad.59zw3r2df): 'PopRef2100' follows a power law in 'PopSD2050' (R\u00b2 = 0.945 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.59zw3r2df",
+   "held_out_r2": 0.8964,
+   "held_out_rows": 78,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-af24fe55cf19",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "03af0d25c19a6e2b.csv",
+   "doi": "10.5061/dryad.59zw3r2df",
+   "form": "power law",
+   "params": [
+    2.643566623530652,
+    0.8519279245721751
+   ],
+   "seed": 3447203849,
+   "x": "PopSD2100",
+   "y": "PopRef2018"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Reversing the great degradation of nature through economic development' (Zenodo, doi 10.5061/dryad.59zw3r2df): 'PopRef2018' follows a power law in 'PopSD2100' (R\u00b2 = 0.906 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.59zw3r2df",
+   "held_out_r2": 0.9551,
+   "held_out_rows": 78,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-96ef55126b96",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "03af0d25c19a6e2b.csv",
+   "doi": "10.5061/dryad.59zw3r2df",
+   "form": "power law",
+   "params": [
+    1.6990587041861296,
+    0.9245722751928519
+   ],
+   "seed": 3447203849,
+   "x": "PopSD2100",
+   "y": "PopRef2050"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Reversing the great degradation of nature through economic development' (Zenodo, doi 10.5061/dryad.59zw3r2df): 'PopRef2050' follows a power law in 'PopSD2100' (R\u00b2 = 0.952 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.59zw3r2df",
+   "held_out_r2": 0.9771,
+   "held_out_rows": 78,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-cad07e5f495f",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "03af0d25c19a6e2b.csv",
+   "doi": "10.5061/dryad.59zw3r2df",
+   "form": "linear",
+   "params": [
+    5390672.929615566,
+    1.6061173081372693
+   ],
+   "seed": 3447203849,
+   "x": "PopSD2100",
+   "y": "PopRef2100"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Reversing the great degradation of nature through economic development' (Zenodo, doi 10.5061/dryad.59zw3r2df): 'PopRef2100' is linear in 'PopSD2100' (R\u00b2 = 0.954 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.59zw3r2df",
+   "held_out_r2": 0.9775,
+   "held_out_rows": 78,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-477e052f6703",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "03af0d25c19a6e2b.csv",
+   "doi": "10.5061/dryad.59zw3r2df",
+   "form": "linear",
+   "params": [
+    1971.9980888106124,
+    0.951712507140135
+   ],
+   "seed": 3447203849,
+   "x": "kconscapdayPopRef50",
+   "y": "kconscapdaySD00"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Reversing the great degradation of nature through economic development' (Zenodo, doi 10.5061/dryad.59zw3r2df): 'kconscapdaySD00' is linear in 'kconscapdayPopRef50' (R\u00b2 = 0.981 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.59zw3r2df",
+   "held_out_r2": 0.9863,
+   "held_out_rows": 78,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-82fa4d6f55f2",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "03af0d25c19a6e2b.csv",
+   "doi": "10.5061/dryad.59zw3r2df",
+   "form": "linear",
+   "params": [
+    -550.4562831367369,
+    0.9568218966998124
+   ],
+   "seed": 3447203849,
+   "x": "kconscapdayPopRef00",
+   "y": "kconscapdaySD50"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Reversing the great degradation of nature through economic development' (Zenodo, doi 10.5061/dryad.59zw3r2df): 'kconscapdaySD50' is linear in 'kconscapdayPopRef00' (R\u00b2 = 0.985 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.59zw3r2df",
+   "held_out_r2": 0.9807,
+   "held_out_rows": 78,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-6a5552a825ba",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "03af0d25c19a6e2b.csv",
+   "doi": "10.5061/dryad.59zw3r2df",
+   "form": "linear",
+   "params": [
+    915.1109389057546,
+    0.9428867668919279
+   ],
+   "seed": 3447203849,
+   "x": "kconscapdayPopRef00",
+   "y": "kconscapdaySD00"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Reversing the great degradation of nature through economic development' (Zenodo, doi 10.5061/dryad.59zw3r2df): 'kconscapdaySD00' is linear in 'kconscapdayPopRef00' (R\u00b2 = 0.981 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.59zw3r2df",
+   "held_out_r2": 0.9569,
+   "held_out_rows": 78,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-124eb7acede2",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "03af0d25c19a6e2b.csv",
+   "doi": "10.5061/dryad.59zw3r2df",
+   "form": "linear",
+   "params": [
+    2213979677651.4526,
+    0.7505210817269988
+   ],
+   "seed": 3447203849,
+   "x": "allcropkcals18",
+   "y": "tencropkcals18smooth"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Reversing the great degradation of nature through economic development' (Zenodo, doi 10.5061/dryad.59zw3r2df): 'tencropkcals18smooth' is linear in 'allcropkcals18' (R\u00b2 = 0.988 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.59zw3r2df",
+   "held_out_r2": 0.9473,
+   "held_out_rows": 78,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d7ad10dea7d9",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "03af0d25c19a6e2b.csv",
+   "doi": "10.5061/dryad.59zw3r2df",
+   "form": "linear",
+   "params": [
+    7339838197099.473,
+    0.9712679160554545
+   ],
+   "seed": 3447203849,
+   "x": "allcropkcals18",
+   "y": "tencropkcals50"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Reversing the great degradation of nature through economic development' (Zenodo, doi 10.5061/dryad.59zw3r2df): 'tencropkcals50' is linear in 'allcropkcals18' (R\u00b2 = 0.947 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.59zw3r2df",
+   "held_out_r2": 0.9483,
+   "held_out_rows": 78,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e44faa8f1957",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "03af0d25c19a6e2b.csv",
+   "doi": "10.5061/dryad.59zw3r2df",
+   "form": "linear",
+   "params": [
+    3245556344420.093,
+    1.2019788779379816
+   ],
+   "seed": 3447203849,
+   "x": "allcropkcals18",
+   "y": "tencropkcals00"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Reversing the great degradation of nature through economic development' (Zenodo, doi 10.5061/dryad.59zw3r2df): 'tencropkcals00' is linear in 'allcropkcals18' (R\u00b2 = 0.912 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
