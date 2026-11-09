@@ -2419,3 +2419,4 @@
 - 2026-11-09 22:24 FINDING (confirmed on held-out rows): In 'Past and future effects of climate on the metapopulation dynamics of a NorthEast Atlantic ' (Zenodo, doi 10.5281/zenodo.12513978): 'totYoung' follows a power law in 'totAON' (R² = 0.955 on the discovery half); held-out R² = 0.969 [emp-4cd127bc34a2]
 - 2026-11-09 22:24 FINDING (confirmed on held-out rows): In 'Data from: Climate and local environment structure asynchrony and the stability of primary' (Zenodo, doi 10.5061/dryad.vx0k6djnb): 'transformed.richness' grows logarithmically in 'species.richness' (R² = 0.951 on the discovery half); held-out R² = 0.940 [emp-6c6d2b74cebc]
 - 2026-11-09 22:24 data feeds: 15407 datasets analysed so far, 2167 confirmed findings
+- 2026-11-09 23:25 data feeds: online
