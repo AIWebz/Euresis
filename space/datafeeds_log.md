@@ -2158,3 +2158,5 @@
 - 2026-11-09 03:17 data feeds: 13383 datasets analysed so far, 1944 confirmed findings
 - 2026-11-09 04:20 data feeds: online
 - 2026-11-09 04:21 FINDING (confirmed on held-out rows): In 'Dataset to "Local thermodynamic description of isothermal single-phase flow in simple poro' (Zenodo, doi 10.5281/zenodo.6472317): 'Pe' is linear in 'mu' (R² = 0.928 on the discovery half); held-out R² = 0.888 [emp-d295733c138f]
+- 2026-11-09 04:23 FINDING (confirmed on held-out rows): In 'UV-Vis chromatograms for the determination of the bioaccessible content of polyphenols in ' (Zenodo, doi 10.5281/zenodo.15126158): 'Spiked eggplant sample (uv2)' is linear in 'Incurred eggplant sample (uv2)' (R² = 0.974 on the discovery half); held-out R² = 0.978 [emp-b7729c28701b]
+- 2026-11-09 04:23 data feeds: 13545 datasets analysed so far, 1946 confirmed findings
