@@ -2360782,5 +2360782,295 @@
   "statement": "In 'Dataset: Effect of soil organic matter content and nutrient loading on productivity of Spa' (Zenodo, doi 10.5061/dryad.mcvdnck4m): 'Chromium (mg/L)' is linear in 'Cobalt (mg/L)' (R\u00b2 = 0.914 on the discovery half)",
   "status": "refuted",
   "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-abc57e43b1bd",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "claim": "(-a**2/2 - b**2 + (1 - a)**2/2 + 1/2)/(-a**2/2 - b**2 + (1 - a)**2 + 1/2) >= 4/3*(sqrt((1 - (a - b)**2)*(1 - (a + b)**2))/2)",
+   "symbols": [
+    "a",
+    "b"
+   ]
+  },
+  "source": "physics_discover2 round 2969",
+  "statement": "[physics: two-body decay] Total Kinetic Energy Ratio [model-proposed; physical meaning unverified] \u2265 4/3 \u00d7 momentum of each product / (Mc)   on a < 1, b < 1, a + b < 1 (tight only at the edge of the domain, near (1.55e-16, 6.02e-09))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-694f9c1e3bb3",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "claim": "(-a**2/2 - b**2 + (1 - a)**2/2 + 1/2)/(-a**2/2 - b**2 + (1 - a)**2 + 1/2) >= 1*(a**2/2 - b**2/2 + 1/2)",
+   "symbols": [
+    "a",
+    "b"
+   ]
+  },
+  "source": "physics_discover2 round 2969",
+  "statement": "[physics: two-body decay] Total Kinetic Energy Ratio [model-proposed; physical meaning unverified] \u2265 1 \u00d7 energy of product 1 / (Mc\u00b2)   on a < 1, b < 1, a + b < 1 (tight only at the edge of the domain, near (1, 4.47e-09))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-039e7683c51e",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'momentum of each product / (Mc)'",
+  "payload": {
+   "assumptions": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "claim": "(-a**2/2 - b**2 + (1 - a)**2/2 + 1/2)/(-a**2/2 - b**2 + (1 - a)**2 + 1/2) >= 2/3*(-a - b + 1)",
+   "symbols": [
+    "a",
+    "b"
+   ]
+  },
+  "source": "physics_discover2 round 2969",
+  "statement": "[physics: two-body decay] Total Kinetic Energy Ratio [model-proposed; physical meaning unverified] \u2265 2/3 \u00d7 kinetic energy released Q / (Mc\u00b2)   on a < 1, b < 1, a + b < 1 (tight only at the edge of the domain, near (7.73e-15, 5.45e-16))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-d18b1756fbc0",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'momentum of each product / (Mc)'",
+  "payload": {
+   "assumptions": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "claim": "(-a**2/2 - b**2 + (1 - a)**2/2 + 1/2)/(-a**2/2 - b**2 + (1 - a)**2 + 1/2) >= 4/3*(-b**2/2 + (1 - a)**2/2)",
+   "symbols": [
+    "a",
+    "b"
+   ]
+  },
+  "source": "physics_discover2 round 2969",
+  "statement": "[physics: two-body decay] Total Kinetic Energy Ratio [model-proposed; physical meaning unverified] \u2265 4/3 \u00d7 kinetic energy of product 1 / (Mc\u00b2)   on a < 1, b < 1, a + b < 1 (tight only at the edge of the domain, near (4.18e-17, 1.24e-08))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-be507c241c67",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "claim": "(-a**2/2 - b**2 + (1 - a)**2/2 + 1/2)/(-a**2/2 - b**2 + (1 - a)**2 + 1/2) >= 2/3*(sqrt((1 - (a - b)**2)*(1 - (a + b)**2))/(-a**2 + b**2 + 1))",
+   "symbols": [
+    "a",
+    "b"
+   ]
+  },
+  "source": "physics_discover2 round 2969",
+  "statement": "[physics: two-body decay] Total Kinetic Energy Ratio [model-proposed; physical meaning unverified] \u2265 2/3 \u00d7 speed of product 2 / c   on a < 1, b < 1, a + b < 1 (tight only at the edge of the domain, near (8.77e-18, 5.57e-09))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-3ff4d272d0b2",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "claim": "(-a**2/2 - b**2 + (1 - a)**2/2 + 1/2)/(-a**2/2 - b**2 + (1 - a)**2 + 1/2) >= 2/3*(-a**2/2 - b**2 + (1 - a)**2/2 + 1/2)",
+   "symbols": [
+    "a",
+    "b"
+   ]
+  },
+  "source": "physics_discover2 round 2969",
+  "statement": "[physics: two-body decay] Total Kinetic Energy Ratio [model-proposed; physical meaning unverified] \u2265 2/3 \u00d7 Total kinetic energy of the two products / (Mc\u00b2) [model-proposed; physical meaning unverified]   on a < 1, b < 1, a + b < 1 (tight only at the edge of the domain, near (2.61e-17, 9.86e-09))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-bf66133c79d8",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "claim": "(-a**2/2 - b**2 + (1 - a)**2/2 + 1/2)/(-a**2/2 - b**2 + (1 - a)**2 + 1/2) >= 4/3*((-b**2 + (1 - a)**2)/(-a**2 - b**2 + (1 - a)**2 + 1))",
+   "symbols": [
+    "a",
+    "b"
+   ]
+  },
+  "source": "physics_discover2 round 2969",
+  "statement": "[physics: two-body decay] Total Kinetic Energy Ratio [model-proposed; physical meaning unverified] \u2265 4/3 \u00d7 Ratio of kinetic energy of product 1 to total kinetic energy [model-proposed; physical meaning unverified]   on a < 1, b < 1, a + b < 1 (tight only at the edge of the domain, near (3.18e-17, 1.28e-08))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-f6004f90ef65",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'momentum of each product / (Mc)'",
+  "payload": {
+   "assumptions": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "claim": "(-a**2/2 - b**2 + (1 - a)**2/2 + 1/2)/(-a**2/2 - b**2 + (1 - a)**2 + 1/2) >= 2/3*(1 - (a + b)**2)",
+   "symbols": [
+    "a",
+    "b"
+   ]
+  },
+  "source": "physics_discover2 round 2969",
+  "statement": "[physics: two-body decay] Total Kinetic Energy Ratio [model-proposed; physical meaning unverified] \u2265 2/3 \u00d7 Invariant mass squared of the system [model-proposed; physical meaning unverified]   on a < 1, b < 1, a + b < 1 (tight only at the edge of the domain, near (1.55e-16, 6.02e-09))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-dd2e92515465",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'energy of product 1 / (Mc\u00b2)'",
+  "payload": {
+   "assumptions": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "claim": "(-a**2/2 - b**2 + (1 - a)**2/2 + 1/2)/(-a**2/2 - b**2 + (1 - a)**2 + 1/2) >= 1/2*(sqrt((1 - (a + b)**2)*((a - b)**2 - 1)/4 + (a**2 - b**2 + 1)**2))",
+   "symbols": [
+    "a",
+    "b"
+   ]
+  },
+  "source": "physics_discover2 round 2969",
+  "statement": "[physics: two-body decay] Total Kinetic Energy Ratio [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 Invariant mass of product 1 [model-proposed; physical meaning unverified]   on a < 1, b < 1, a + b < 1 (tight only at the edge of the domain, near (1, 2.2e-09))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-c7d72ae53733",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "claim": "(-a**2/2 - b**2 + (1 - a)**2/2 + 1/2)/(-a**2/2 - b**2 + (1 - a)**2 + 1/2) >= 2*((-b**2/2 + (1 - a)**2/2)/(-a**2 - b**2 + 3/2))",
+   "symbols": [
+    "a",
+    "b"
+   ]
+  },
+  "source": "physics_discover2 round 2969",
+  "statement": "[physics: two-body decay] Total Kinetic Energy Ratio [model-proposed; physical meaning unverified] \u2265 2 \u00d7 Relative Kinetic Energy Ratio [model-proposed; physical meaning unverified]   on a < 1, b < 1, a + b < 1 (tight only at the edge of the domain, near (1.06e-17, 0.000117))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]

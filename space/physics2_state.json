@@ -42213,6 +42213,31 @@
    "family": "insurance and risk",
    "expr": "(p*sqrt(1 - L) - p + 1)**4/(-L*p + p*sqrt(1 - L) - p + 2)**2",
    "why": "affine combination of known quantities (expected wealth, Insurance Coverage Ratio Adjusted Squared [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(1/3 - r**2 + 2*r**3/3)/(2*(1 - r**3)/3 + v*r**2)",
+   "why": "affine combination of known quantities (expected revenue, 1/(Welfare Efficiency Ratio [model-proposed; physical meaning unverified]))"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "sqrt((1 - (a + b)**2)*(1 - (a - b)**2))/((1 + a**2 - b**2)*(1 - a**2 + b**2))",
+   "why": "affine combination of known quantities (speed of product 1 / c, speed of product 2 / c)"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "sqrt((a**2 + b**2 - (a - b)**2)/(-a - b + 1))",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "(-a**2/2 - b**2 + (1 - a)**2/2 + 1/2)/(-a**2/2 - b**2 + (1 - a)**2 + 1/2)",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), Total Kinetic Energy Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "(-b**2/2 + (1 - a)**2/2)/(-a**2/2 - b**2 + (1 - a)**2 + 1/2)",
+   "why": "a power or product of known quantities"
   }
  ],
  "tried": [
@@ -46979,7 +47004,31 @@
   "two-body decay|Lorentz Factor Ratio of Products [model-proposed; physical meaning unverified]|Total Kinetic Energy Ratio [model-proposed; physical meaning unverified]",
   "two-body decay|Invariant Mass Ratio of Products [model-proposed; physical meaning unverified]|Total Kinetic Energy Ratio [model-proposed; physical meaning unverified]",
   "two-body decay|Relative Kinetic Energy Ratio [model-proposed; physical meaning unverified]|Total Kinetic Energy Ratio [model-proposed; physical meaning unverified]",
-  "two-body decay|Relativistic Doppler Shift Factor for Product 1 [model-proposed; physical meaning unverified]|Total Kinetic Energy Ratio [model-proposed; physical meaning unverified]"
+  "two-body decay|Relativistic Doppler Shift Factor for Product 1 [model-proposed; physical meaning unverified]|Total Kinetic Energy Ratio [model-proposed; physical meaning unverified]",
+  "two-body decay|Relativistic Doppler Shift Factor Ratio [model-proposed; physical meaning unverified]|Total Kinetic Energy Ratio [model-proposed; physical meaning unverified]",
+  "two-body decay|Total Kinetic Energy Ratio [model-proposed; physical meaning unverified]|momentum of each product / (Mc)",
+  "two-body decay|Total Kinetic Energy Ratio [model-proposed; physical meaning unverified]|energy of product 1 / (Mc\u00b2)",
+  "two-body decay|Total Kinetic Energy Ratio [model-proposed; physical meaning unverified]|energy of product 2 / (Mc\u00b2)",
+  "two-body decay|Total Kinetic Energy Ratio [model-proposed; physical meaning unverified]|kinetic energy released Q / (Mc\u00b2)",
+  "two-body decay|Total Kinetic Energy Ratio [model-proposed; physical meaning unverified]|kinetic energy of product 1 / (Mc\u00b2)",
+  "two-body decay|Total Kinetic Energy Ratio [model-proposed; physical meaning unverified]|speed of product 1 / c",
+  "two-body decay|Total Kinetic Energy Ratio [model-proposed; physical meaning unverified]|speed of product 2 / c",
+  "two-body decay|Total Kinetic Energy Ratio [model-proposed; physical meaning unverified]|Lorentz factor of product 1",
+  "two-body decay|Total Kinetic Energy Ratio [model-proposed; physical meaning unverified]|Invariant mass squared of the two products [model-proposed; physical meaning unverified]",
+  "two-body decay|Total Kinetic Energy Ratio [model-proposed; physical meaning unverified]|Ratio of kinetic energies of product 1 to product 2 [model-proposed; physical meaning unverified]",
+  "two-body decay|Total Kinetic Energy Ratio [model-proposed; physical meaning unverified]|Total kinetic energy of the two products / (Mc\u00b2) [model-proposed; physical meaning unverified]",
+  "two-body decay|Total Kinetic Energy Ratio [model-proposed; physical meaning unverified]|Ratio of kinetic energy of product 1 to total kinetic energy [model-proposed; physical meaning unverified]",
+  "two-body decay|Total Kinetic Energy Ratio [model-proposed; physical meaning unverified]|Invariant mass squared of the system [model-proposed; physical meaning unverified]",
+  "two-body decay|Total Kinetic Energy Ratio [model-proposed; physical meaning unverified]|Relative velocity squared of products [model-proposed; physical meaning unverified]",
+  "two-body decay|Total Kinetic Energy Ratio [model-proposed; physical meaning unverified]|Invariant mass of product 1 [model-proposed; physical meaning unverified]",
+  "two-body decay|Total Kinetic Energy Ratio [model-proposed; physical meaning unverified]|Invariant mass of product 2 [model-proposed; physical meaning unverified]",
+  "two-body decay|Total Kinetic Energy Ratio [model-proposed; physical meaning unverified]|Gamma factor of product 1 [model-proposed; physical meaning unverified]",
+  "two-body decay|Total Kinetic Energy Ratio [model-proposed; physical meaning unverified]|Ratio of kinetic energy of product 1 to product 2 [model-proposed; physical meaning unverified]",
+  "two-body decay|Total Kinetic Energy Ratio [model-proposed; physical meaning unverified]|Boost factor of the system [model-proposed; physical meaning unverified]",
+  "two-body decay|Total Kinetic Energy Ratio [model-proposed; physical meaning unverified]|Kinetic Energy Ratio of Products [model-proposed; physical meaning unverified]",
+  "two-body decay|Total Kinetic Energy Ratio [model-proposed; physical meaning unverified]|Lorentz Factor Ratio of Products [model-proposed; physical meaning unverified]",
+  "two-body decay|Total Kinetic Energy Ratio [model-proposed; physical meaning unverified]|Invariant Mass Ratio of Products [model-proposed; physical meaning unverified]",
+  "two-body decay|Total Kinetic Energy Ratio [model-proposed; physical meaning unverified]|Relative Kinetic Energy Ratio [model-proposed; physical meaning unverified]"
  ],
  "edges": [
   {
@@ -53287,9 +53336,69 @@
    "f": "Lorentz factor of product 1",
    "g": "Total Kinetic Energy Ratio [model-proposed; physical meaning unverified]",
    "k": "1"
+  },
+  {
+   "family": "two-body decay",
+   "f": "Total Kinetic Energy Ratio [model-proposed; physical meaning unverified]",
+   "g": "momentum of each product / (Mc)",
+   "k": "4/3"
+  },
+  {
+   "family": "two-body decay",
+   "f": "Total Kinetic Energy Ratio [model-proposed; physical meaning unverified]",
+   "g": "energy of product 1 / (Mc\u00b2)",
+   "k": "1"
+  },
+  {
+   "family": "two-body decay",
+   "f": "Total Kinetic Energy Ratio [model-proposed; physical meaning unverified]",
+   "g": "kinetic energy released Q / (Mc\u00b2)",
+   "k": "2/3"
+  },
+  {
+   "family": "two-body decay",
+   "f": "Total Kinetic Energy Ratio [model-proposed; physical meaning unverified]",
+   "g": "kinetic energy of product 1 / (Mc\u00b2)",
+   "k": "4/3"
+  },
+  {
+   "family": "two-body decay",
+   "f": "Total Kinetic Energy Ratio [model-proposed; physical meaning unverified]",
+   "g": "speed of product 2 / c",
+   "k": "2/3"
+  },
+  {
+   "family": "two-body decay",
+   "f": "Total Kinetic Energy Ratio [model-proposed; physical meaning unverified]",
+   "g": "Total kinetic energy of the two products / (Mc\u00b2) [model-proposed; physical meaning unverified]",
+   "k": "2/3"
+  },
+  {
+   "family": "two-body decay",
+   "f": "Total Kinetic Energy Ratio [model-proposed; physical meaning unverified]",
+   "g": "Ratio of kinetic energy of product 1 to total kinetic energy [model-proposed; physical meaning unverified]",
+   "k": "4/3"
+  },
+  {
+   "family": "two-body decay",
+   "f": "Total Kinetic Energy Ratio [model-proposed; physical meaning unverified]",
+   "g": "Invariant mass squared of the system [model-proposed; physical meaning unverified]",
+   "k": "2/3"
+  },
+  {
+   "family": "two-body decay",
+   "f": "Total Kinetic Energy Ratio [model-proposed; physical meaning unverified]",
+   "g": "Invariant mass of product 1 [model-proposed; physical meaning unverified]",
+   "k": "1/2"
+  },
+  {
+   "family": "two-body decay",
+   "f": "Total Kinetic Energy Ratio [model-proposed; physical meaning unverified]",
+   "g": "Relative Kinetic Energy Ratio [model-proposed; physical meaning unverified]",
+   "k": "2"
   }
  ],
- "rounds": 2967,
+ "rounds": 2969,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",

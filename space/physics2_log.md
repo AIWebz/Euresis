@@ -3230,3 +3230,5 @@
 - 2026-11-09 14:28 segment end: 2967 rounds, 5 discoveries, 2 known laws rediscovered
 - 2026-11-09 14:48 segment start (budget 30 min; model: Qwen3-8B; 5 discoveries so far)
 - 2026-11-09 14:48 round 2968: auction with a reserve price
+- 2026-11-09 14:50 round 2969: two-body decay
+- 2026-11-09 14:55 round 2970: collision
