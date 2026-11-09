@@ -2395334,5 +2395334,53 @@
   "statement": "[economics: auction with a reserve price] Welfare Reserve Elasticity Ratio [model-proposed; physical meaning unverified] \u2265 1/3 \u00d7 Bidder Surplus Reserve Efficiency with Seller Value and Reserve [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (1, 1))",
   "status": "proved",
   "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "checked_up_to": 16,
+   "method": "Grundy values recomputed; Guy\u2013Smith periodicity theorem condition checked",
+   "values_of_one_period": [
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  "id": "gam-ae05104d4139",
+  "kind": "game",
+  "novelty": "novelty unchecked: octal games of up to three digits are tabulated in Winning Ways and Flammenkamp's tables, which cannot be searched from here",
+  "payload": {
+   "code": "570505",
+   "period": 4,
+   "preperiod": 1
+  },
+  "source": "games.py",
+  "statement": "Octal game 0.570505 is completely solved: its Grundy values are periodic with pre-period 1 and period 4 (Guy\u2013Smith periodicity theorem)",
+  "status": "proved",
+  "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "checked_up_to": 16,
+   "method": "Grundy values recomputed; Guy\u2013Smith periodicity theorem condition checked",
+   "values_of_one_period": [
+    1,
+    1,
+    2,
+    2
+   ]
+  },
+  "id": "gam-dd36f5d379be",
+  "kind": "game",
+  "novelty": "not checked",
+  "payload": {
+   "code": "570506",
+   "period": 4,
+   "preperiod": 1
+  },
+  "source": "games.py",
+  "statement": "Octal game 0.570506 is completely solved: its Grundy values are periodic with pre-period 1 and period 4 (Guy\u2013Smith periodicity theorem)",
+  "status": "proved",
+  "verifier": "guy-smith-periodicity"
  }
 ]
