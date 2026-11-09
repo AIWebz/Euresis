@@ -2357271,5 +2357271,32 @@
   "statement": "[physics: two-body decay] Lorentz factor of product 1 \u2265 1 \u00d7 Total Kinetic Energy Ratio [model-proposed; physical meaning unverified]   on a < 1, b < 1, a + b < 1 (tight only at the edge of the domain, near (1, 3.92e-09))",
   "status": "proved",
   "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "checked_up_to": 22,
+   "method": "Grundy values recomputed; Guy\u2013Smith periodicity theorem condition checked",
+   "values_of_one_period": [
+    1,
+    1,
+    1,
+    2,
+    2,
+    2,
+    4
+   ]
+  },
+  "id": "gam-6d8249a96387",
+  "kind": "game",
+  "novelty": "novelty unchecked: octal games of up to three digits are tabulated in Winning Ways and Flammenkamp's tables, which cannot be searched from here",
+  "payload": {
+   "code": "556741",
+   "period": 7,
+   "preperiod": 1
+  },
+  "source": "games.py",
+  "statement": "Octal game 0.556741 is completely solved: its Grundy values are periodic with pre-period 1 and period 7 (Guy\u2013Smith periodicity theorem)",
+  "status": "proved",
+  "verifier": "guy-smith-periodicity"
  }
 ]
