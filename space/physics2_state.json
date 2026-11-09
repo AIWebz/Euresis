@@ -38420,6 +38420,86 @@
    "family": "two-body decay",
    "expr": "((1 + a**2 - b**2)/(2*a)) * ((1 - a**2 + b**2)/(2*b))",
    "why": "a power or product of known quantities"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2",
+   "why": "affine combination of known quantities (Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified], Fraction of kinetic energy transferred to the target [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2",
+   "why": "affine combination of known quantities (Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified], Fraction of kinetic energy transferred to the target [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "e*(m + 1)/(e*m + 1)",
+   "why": "affine combination of known quantities (target speed / initial speed, velocity ratio of target to projectile after collision [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "(-e*m + 1)/(e*m + 1)",
+   "why": "affine combination of known quantities (target speed / initial speed, velocity ratio of projectile to target after collision [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt((1 - r**2)**2 + (2*z*r)**2)",
+   "why": "affine combination of known quantities (amplitude / static deflection, 1/(amplitude / static deflection))"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt((1 + (2*z*r)**2)/((1 - r**2)**2 + (2*z*r)**2))",
+   "why": "affine combination of known quantities (amplitude / static deflection, transmissibility)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(4*r**2*z**2 + 1)*sqrt(4*r**2*z**2 + (1 - r**2)**2)/(2*r*z*(sqrt(4*r**2*z**2 + 1) + sqrt(4*r**2*",
+   "why": "affine combination of known quantities (quality factor, Power Amplification Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(4*r**2*z**2 + (1 - r**2)**2)/sqrt(4*z**2 + 1)",
+   "why": "affine combination of known quantities (amplitude / static deflection, Mechanical Impedance Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 + u)/(1 - u)) * sqrt((1 + v)/(1 - v)) / sqrt((1 + (u + v)/(1 + u*v)) / (1 - (u + v)/(1 + u*v",
+   "why": "affine combination of known quantities (composed speed / c)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 - u**2)*(1 - v**2) + (u + v)**2/(u*v + 1)**2) / (u*v + 1)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "1 - c/(c*x + 1)",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "((1 - 2*c1 + c2)**2 + (1 - 2*c2 + c1)**2)/((1 - c1)**2 + (1 - c2)**2)",
+   "why": "affine combination of known quantities (output of firm 1, Hirshleifer Index [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "(-L*p + 1)**2/(-p*sqrt(1 - L) + sqrt(1 - L) - 1 + 1/(p*sqrt(1 - L) - p + 1))**2",
+   "why": "affine combination of known quantities (expected wealth, Insurance Risk Adjustment Ratio Squared [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "sqrt(-L*p + 1)/(-p*sqrt(1 - L) + sqrt(1 - L) + 1)",
+   "why": "affine combination of known quantities (expected wealth, Insurance Risk Exposure Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "L*p/(-2*sqrt(1 - L) + sqrt(-L*p + 1) + 1)",
+   "why": "affine combination of known quantities (expected wealth, Relative Risk Sensitivity Index [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "-(p*sqrt(1 - L) - p + 1)**2/(-L*p + p*sqrt(1 - L) - p + 2) + 1",
+   "why": "affine combination of known quantities (expected wealth, Insurance Coverage Ratio Adjusted [model-proposed; physical meaning unverified])"
   }
  ],
  "tried": [
@@ -42690,7 +42770,55 @@
   "auction with a reserve price|Expected Revenue to Seller's Value Ratio [model-proposed; physical meaning unverified]|Bidder Surplus Reserve Ratio with Seller Value [model-proposed; physical meaning unverified]",
   "auction with a reserve price|Expected Revenue to Seller's Value Ratio [model-proposed; physical meaning unverified]|Welfare Reserve Efficiency with Seller Value and Reserve [model-proposed; physical meaning unverified]",
   "auction with a reserve price|Expected Revenue to Seller's Value Ratio [model-proposed; physical meaning unverified]|Bidder Surplus Reserve Efficiency with Seller Value [model-proposed; physical meaning unverified]",
-  "auction with a reserve price|Expected Revenue to Seller's Value Ratio [model-proposed; physical meaning unverified]|Bidder Surplus Reserve Efficiency with Seller Value and Reserve Ratio [model-proposed; physical meaning unverified]"
+  "auction with a reserve price|Expected Revenue to Seller's Value Ratio [model-proposed; physical meaning unverified]|Bidder Surplus Reserve Efficiency with Seller Value and Reserve Ratio [model-proposed; physical meaning unverified]",
+  "collision|Fraction of kinetic energy retained by the target relative to the projectile [model-proposed; physical meaning unverified]|Fraction of Kinetic Energy Retained by the Target Relative to the System [model-proposed; physical meaning unverified]",
+  "collision|Impulse ratio of target to projectile [model-proposed; physical meaning unverified]|Fraction of Kinetic Energy Retained by the Target Relative to the System [model-proposed; physical meaning unverified]",
+  "collision|Fraction of Kinetic Energy Retained by the Target Relative to the System [model-proposed; physical meaning unverified]|target speed / initial speed",
+  "collision|Fraction of Kinetic Energy Retained by the Target Relative to the System [model-proposed; physical meaning unverified]|momentum transferred / initial momentum",
+  "collision|Fraction of Kinetic Energy Retained by the Target Relative to the System [model-proposed; physical meaning unverified]|fraction of kinetic energy lost",
+  "collision|Fraction of Kinetic Energy Retained by the Target Relative to the System [model-proposed; physical meaning unverified]|fraction of kinetic energy given to the target",
+  "collision|Fraction of Kinetic Energy Retained by the Target Relative to the System [model-proposed; physical meaning unverified]|speed of the centre of mass / initial speed",
+  "collision|Fraction of Kinetic Energy Retained by the Target Relative to the System [model-proposed; physical meaning unverified]|relative speed after / relative speed before",
+  "collision|Fraction of Kinetic Energy Retained by the Target Relative to the System [model-proposed; physical meaning unverified]|velocity ratio of target to projectile after collision [model-proposed; physical meaning unverified]",
+  "collision|Fraction of Kinetic Energy Retained by the Target Relative to the System [model-proposed; physical meaning unverified]|velocity ratio of projectile to target after collision [model-proposed; physical meaning unverified]",
+  "collision|Fraction of Kinetic Energy Retained by the Target Relative to the System [model-proposed; physical meaning unverified]|relative velocity after collision divided by initial velocity of projectile [model-proposed; physical meaning unverified]",
+  "collision|Fraction of Kinetic Energy Retained by the Target Relative to the System [model-proposed; physical meaning unverified]|Fraction of kinetic energy retained by projectile [model-proposed; physical meaning unverified]",
+  "collision|Fraction of Kinetic Energy Retained by the Target Relative to the System [model-proposed; physical meaning unverified]|Fraction of kinetic energy retained by target [model-proposed; physical meaning unverified]",
+  "collision|Fraction of Kinetic Energy Retained by the Target Relative to the System [model-proposed; physical meaning unverified]|Fraction of kinetic energy retained by the system [model-proposed; physical meaning unverified]",
+  "collision|Fraction of Kinetic Energy Retained by the Target Relative to the System [model-proposed; physical meaning unverified]|Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified]",
+  "collision|Fraction of Kinetic Energy Retained by the Target Relative to the System [model-proposed; physical meaning unverified]|Fraction of kinetic energy transferred to the target [model-proposed; physical meaning unverified]",
+  "collision|Fraction of Kinetic Energy Retained by the Target Relative to the System [model-proposed; physical meaning unverified]|Fraction of kinetic energy retained by the target [model-proposed; physical meaning unverified]",
+  "collision|Fraction of Kinetic Energy Retained by the Target Relative to the System [model-proposed; physical meaning unverified]|Fraction of kinetic energy retained by the projectile relative to initial kineti [model-proposed; physical meaning unverified]",
+  "collision|Fraction of Kinetic Energy Retained by the Target Relative to the System [model-proposed; physical meaning unverified]|Fraction of kinetic energy retained by projectile relative to initial kinetic en [model-proposed; physical meaning unverified]",
+  "collision|Fraction of Kinetic Energy Retained by the Target Relative to the System [model-proposed; physical meaning unverified]|Fraction of kinetic energy transferred to the target relative to initial kinetic [model-proposed; physical meaning unverified]",
+  "collision|Fraction of Kinetic Energy Retained by the Target Relative to the System [model-proposed; physical meaning unverified]|Fraction of kinetic energy retained by the system relative to initial kinetic en [model-proposed; physical meaning unverified]",
+  "collision|Fraction of Kinetic Energy Retained by the Target Relative to the System [model-proposed; physical meaning unverified]|Kinetic energy ratio after collision [model-proposed; physical meaning unverified]",
+  "collision|Fraction of Kinetic Energy Retained by the Target Relative to the System [model-proposed; physical meaning unverified]|Ratio of kinetic energy transferred to the target over initial kinetic energy [model-proposed; physical meaning unverified]",
+  "collision|Fraction of Kinetic Energy Retained by the Target Relative to the System [model-proposed; physical meaning unverified]|Fraction of kinetic energy retained by projectile relative to target [model-proposed; physical meaning unverified]",
+  "insurance and risk|Relative Risk Sensitivity Index [model-proposed; physical meaning unverified]|Insurance Coverage Ratio Adjusted [model-proposed; physical meaning unverified]",
+  "insurance and risk|Insurance Risk Exposure Ratio [model-proposed; physical meaning unverified]|Insurance Coverage Ratio Adjusted [model-proposed; physical meaning unverified]",
+  "insurance and risk|Risk Sensitivity Ratio [model-proposed; physical meaning unverified]|Insurance Coverage Ratio Adjusted [model-proposed; physical meaning unverified]",
+  "insurance and risk|Relative Risk Adjustment Index [model-proposed; physical meaning unverified]|Insurance Coverage Ratio Adjusted [model-proposed; physical meaning unverified]",
+  "insurance and risk|Insurance Risk Adjustment Ratio Squared [model-proposed; physical meaning unverified]|Insurance Coverage Ratio Adjusted [model-proposed; physical meaning unverified]",
+  "insurance and risk|Insurance Coverage Ratio Adjusted [model-proposed; physical meaning unverified]|expected wealth",
+  "insurance and risk|Insurance Coverage Ratio Adjusted [model-proposed; physical meaning unverified]|expected utility",
+  "insurance and risk|Insurance Coverage Ratio Adjusted [model-proposed; physical meaning unverified]|certainty equivalent",
+  "insurance and risk|Insurance Coverage Ratio Adjusted [model-proposed; physical meaning unverified]|risk premium",
+  "insurance and risk|Insurance Coverage Ratio Adjusted [model-proposed; physical meaning unverified]|actuarially fair insurance premium",
+  "insurance and risk|Insurance Coverage Ratio Adjusted [model-proposed; physical meaning unverified]|maximum premium the person would pay for full insurance",
+  "insurance and risk|Insurance Coverage Ratio Adjusted [model-proposed; physical meaning unverified]|variance of wealth",
+  "insurance and risk|Insurance Coverage Ratio Adjusted [model-proposed; physical meaning unverified]|Risk-adjusted expected utility [model-proposed; physical meaning unverified]",
+  "insurance and risk|Insurance Coverage Ratio Adjusted [model-proposed; physical meaning unverified]|Insurance risk sensitivity [model-proposed; physical meaning unverified]",
+  "insurance and risk|Insurance Coverage Ratio Adjusted [model-proposed; physical meaning unverified]|Coefficient of Risk Aversion [model-proposed; physical meaning unverified]",
+  "insurance and risk|Insurance Coverage Ratio Adjusted [model-proposed; physical meaning unverified]|Relative Risk Aversion [model-proposed; physical meaning unverified]",
+  "insurance and risk|Insurance Coverage Ratio Adjusted [model-proposed; physical meaning unverified]|Expected Utility Deviation [model-proposed; physical meaning unverified]",
+  "insurance and risk|Insurance Coverage Ratio Adjusted [model-proposed; physical meaning unverified]|Insurance Coverage Ratio [model-proposed; physical meaning unverified]",
+  "insurance and risk|Insurance Coverage Ratio Adjusted [model-proposed; physical meaning unverified]|Insurance Risk Adjustment Factor [model-proposed; physical meaning unverified]",
+  "insurance and risk|Insurance Coverage Ratio Adjusted [model-proposed; physical meaning unverified]|Insurance Risk Adjustment Index [model-proposed; physical meaning unverified]",
+  "insurance and risk|Insurance Coverage Ratio Adjusted [model-proposed; physical meaning unverified]|Insurance Risk Sensitivity Ratio [model-proposed; physical meaning unverified]",
+  "insurance and risk|Insurance Coverage Ratio Adjusted [model-proposed; physical meaning unverified]|Relative Risk Sensitivity [model-proposed; physical meaning unverified]",
+  "insurance and risk|Insurance Coverage Ratio Adjusted [model-proposed; physical meaning unverified]|Insurance Risk Adjustment Ratio [model-proposed; physical meaning unverified]",
+  "insurance and risk|Insurance Coverage Ratio Adjusted [model-proposed; physical meaning unverified]|Insurance Risk Adjustment Factor Squared [model-proposed; physical meaning unverified]"
  ],
  "edges": [
   {
@@ -48458,9 +48586,57 @@
    "f": "Expected Revenue to Seller's Value Ratio [model-proposed; physical meaning unverified]",
    "g": "Bidder Surplus Reserve Efficiency with Seller Value and Reserve Ratio [model-proposed; physical meaning unverified]",
    "k": "4/9"
+  },
+  {
+   "family": "collision",
+   "f": "Impulse ratio of target to projectile [model-proposed; physical meaning unverified]",
+   "g": "Fraction of Kinetic Energy Retained by the Target Relative to the System [model-proposed; physical meaning unverified]",
+   "k": "2/3"
+  },
+  {
+   "family": "insurance and risk",
+   "f": "Insurance Coverage Ratio Adjusted [model-proposed; physical meaning unverified]",
+   "g": "expected wealth",
+   "k": "1/2"
+  },
+  {
+   "family": "insurance and risk",
+   "f": "Insurance Coverage Ratio Adjusted [model-proposed; physical meaning unverified]",
+   "g": "expected utility",
+   "k": "1/2"
+  },
+  {
+   "family": "insurance and risk",
+   "f": "Insurance Coverage Ratio Adjusted [model-proposed; physical meaning unverified]",
+   "g": "certainty equivalent",
+   "k": "1/2"
+  },
+  {
+   "family": "insurance and risk",
+   "f": "Insurance Coverage Ratio Adjusted [model-proposed; physical meaning unverified]",
+   "g": "actuarially fair insurance premium",
+   "k": "27/32"
+  },
+  {
+   "family": "insurance and risk",
+   "f": "Insurance Coverage Ratio Adjusted [model-proposed; physical meaning unverified]",
+   "g": "maximum premium the person would pay for full insurance",
+   "k": "27/32"
+  },
+  {
+   "family": "insurance and risk",
+   "f": "Insurance Coverage Ratio Adjusted [model-proposed; physical meaning unverified]",
+   "g": "Insurance Coverage Ratio [model-proposed; physical meaning unverified]",
+   "k": "1"
+  },
+  {
+   "family": "insurance and risk",
+   "f": "Insurance Coverage Ratio Adjusted [model-proposed; physical meaning unverified]",
+   "g": "Relative Risk Sensitivity [model-proposed; physical meaning unverified]",
+   "k": "27/32"
   }
  ],
- "rounds": 2681,
+ "rounds": 2687,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",

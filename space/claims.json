@@ -2260756,5 +2260756,221 @@
   "statement": "[economics: auction with a reserve price] Expected Revenue to Seller's Value Ratio [model-proposed; physical meaning unverified] \u2265 4/9 \u00d7 Bidder Surplus Reserve Efficiency with Seller Value and Reserve Ratio [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (1, 1))",
   "status": "proved",
   "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-b06e0c16d666",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'target speed / initial speed'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "(e + 1)/((m + 1)*(e*m/(m + 1) + 1)) >= 2/3*(e**2*m**2/((m + 1)**2*(-e**2*m**2/(m + 1)**2 - e**2*m/(m + 1) - (1 - e**2)/(m + 1) + 1)))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 2682",
+  "statement": "[physics: collision] Impulse ratio of target to projectile [model-proposed; physical meaning unverified] \u2265 2/3 \u00d7 Fraction of Kinetic Energy Retained by the Target Relative to the System [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-8cf94b406b42",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "-(p*sqrt(1 - L) - p + 1)**2/(-L*p + p*sqrt(1 - L) - p + 2) + 1 >= 1/2*(-L*p + 1)",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 2687",
+  "statement": "[economics: insurance and risk] Insurance Coverage Ratio Adjusted [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 expected wealth   on p < 1, L < 1 (tight only at the edge of the domain, near (0.000113, 9.4e-13))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-0688de5c44cd",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "-(p*sqrt(1 - L) - p + 1)**2/(-L*p + p*sqrt(1 - L) - p + 2) + 1 >= 1/2*(p*sqrt(1 - L) - p + 1)",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 2687",
+  "statement": "[economics: insurance and risk] Insurance Coverage Ratio Adjusted [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 expected utility   on p < 1, L < 1 (tight only at the edge of the domain, near (0.000113, 9.76e-13))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-f0bcd1d949c6",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'expected wealth'",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "-(p*sqrt(1 - L) - p + 1)**2/(-L*p + p*sqrt(1 - L) - p + 2) + 1 >= 1/2*((p*sqrt(1 - L) - p + 1)**2)",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 2687",
+  "statement": "[economics: insurance and risk] Insurance Coverage Ratio Adjusted [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 certainty equivalent   on p < 1, L < 1 (tight only at the edge of the domain, near (0.000113, 9.76e-13))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-3120e8120a72",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "-(p*sqrt(1 - L) - p + 1)**2/(-L*p + p*sqrt(1 - L) - p + 2) + 1 >= 27/32*(L*p)",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 2687",
+  "statement": "[economics: insurance and risk] Insurance Coverage Ratio Adjusted [model-proposed; physical meaning unverified] \u2265 27/32 \u00d7 actuarially fair insurance premium   on p < 1, L < 1 (tight only at the edge of the domain, near (1, 0.889))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-495c68085d45",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "-(p*sqrt(1 - L) - p + 1)**2/(-L*p + p*sqrt(1 - L) - p + 2) + 1 >= 27/32*(1 - (p*sqrt(1 - L) - p + 1)**2)",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 2687",
+  "statement": "[economics: insurance and risk] Insurance Coverage Ratio Adjusted [model-proposed; physical meaning unverified] \u2265 27/32 \u00d7 maximum premium the person would pay for full insurance   on p < 1, L < 1 (tight only at the edge of the domain, near (1, 0.889))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-944ebb34882d",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "-(p*sqrt(1 - L) - p + 1)**2/(-L*p + p*sqrt(1 - L) - p + 2) + 1 >= 1*(1 - (p*sqrt(1 - L) - p + 1)**2/(-L*p + 1))",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 2687",
+  "statement": "[economics: insurance and risk] Insurance Coverage Ratio Adjusted [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Insurance Coverage Ratio [model-proposed; physical meaning unverified]   on p < 1, L < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-dff1fa0f8cb9",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'actuarially fair insurance premium'",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "-(p*sqrt(1 - L) - p + 1)**2/(-L*p + p*sqrt(1 - L) - p + 2) + 1 >= 27/32*(L*p/(-sqrt(1 - L) + sqrt(-L*p + 1) + 1))",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 2687",
+  "statement": "[economics: insurance and risk] Insurance Coverage Ratio Adjusted [model-proposed; physical meaning unverified] \u2265 27/32 \u00d7 Relative Risk Sensitivity [model-proposed; physical meaning unverified]   on p < 1, L < 1 (tight only at the edge of the domain, near (1, 0.889))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]
