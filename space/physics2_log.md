@@ -3793,3 +3793,4 @@
 - 2026-11-10 12:36 round 3485: Compton scattering
 - 2026-11-10 12:36 round 3486: Cournot duopoly
 - 2026-11-10 12:37 round 3487: insurance and risk
+- 2026-11-10 12:38 round 3488: auction with a reserve price

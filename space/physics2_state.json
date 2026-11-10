@@ -49460,6 +49460,11 @@
    "family": "Cournot duopoly",
    "expr": "((1 - 2*c1 + c2)/3 - (1 - 2*c2 + c1)/3)**2 / ((1 - c1)**2 + (1 - c2)**2)",
    "why": "not positive on the physical domain"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "sqrt(-L*p + 1)/(-p*sqrt(1 - L) + p + 1)",
+   "why": "affine combination of known quantities (expected wealth, Risk Adjustment Ratio [model-proposed; physical meaning unverified])"
   }
  ],
  "tried": [
@@ -61616,7 +61621,7 @@
    "k": "1/2"
   }
  ],
- "rounds": 3486,
+ "rounds": 3487,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",
