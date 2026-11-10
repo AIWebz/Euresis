@@ -2657,3 +2657,5 @@
 - 2026-11-10 06:44 FINDING (confirmed on held-out rows): In 'Eye morphology contributes to the ecology and evolution of the avian tree of life' (Zenodo, doi 10.5061/dryad.3xsj3txq7): 'TD2' follows a power law in 'AD' (R² = 0.974 on the discovery half); held-out R² = 0.976 [emp-170bc409e3c1]
 - 2026-11-10 06:44 data feeds: 16532 datasets analysed so far, 2388 confirmed findings
 - 2026-11-10 07:08 data feeds: online
+- 2026-11-10 07:08 FINDING (confirmed on held-out rows): In 'An experimental test of parasite adaptation to common vs. rare host genotypes' (Zenodo, doi 10.5061/dryad.zw3r22869): 'PropChange' is linear in 'DiffAnc' (R² = 0.989 on the discovery half); held-out R² = 0.991 [emp-4523db8ceb58]
+- 2026-11-10 07:08 FINDING (confirmed on held-out rows): In 'Is there a latitudinal diversity gradient for symbiotic microbes? A case study with sensit' (Zenodo, doi 10.5061/dryad.x3ffbg7rm): 'Aboveground_g' grows exponentially in 'Nodule_no' (R² = 0.914 on the discovery half); held-out R² = 0.858 [emp-4ce20fc7fb85]

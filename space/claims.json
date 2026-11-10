@@ -2512066,5 +2512066,86 @@
   "statement": "In 'Eye morphology contributes to the ecology and evolution of the avian tree of life' (Zenodo, doi 10.5061/dryad.3xsj3txq7): 'TD2' follows a power law in 'AD' (R\u00b2 = 0.974 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.zw3r22869",
+   "held_out_r2": 0.9909,
+   "held_out_rows": 259,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4523db8ceb58",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f1be4acdd1663ce8.csv",
+   "doi": "10.5061/dryad.zw3r22869",
+   "form": "linear",
+   "params": [
+    -0.0020366181129084153,
+    1.377580246705994
+   ],
+   "seed": 2081861642,
+   "x": "DiffAnc",
+   "y": "PropChange"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'An experimental test of parasite adaptation to common vs. rare host genotypes' (Zenodo, doi 10.5061/dryad.zw3r22869): 'PropChange' is linear in 'DiffAnc' (R\u00b2 = 0.989 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.x3ffbg7rm",
+   "held_out_r2": 0.8581,
+   "held_out_rows": 42,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4ce20fc7fb85",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "4a778398ac9d3c50.csv",
+   "doi": "10.5061/dryad.x3ffbg7rm",
+   "form": "exponential",
+   "params": [
+    -5.4572666828208085,
+    0.07248136188389478
+   ],
+   "seed": 3477429287,
+   "x": "Nodule_no",
+   "y": "Aboveground_g"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Is there a latitudinal diversity gradient for symbiotic microbes? A case study with sensit' (Zenodo, doi 10.5061/dryad.x3ffbg7rm): 'Aboveground_g' grows exponentially in 'Nodule_no' (R\u00b2 = 0.914 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.x3ffbg7rm",
+   "held_out_r2": 0.9823,
+   "held_out_rows": 42,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ad071c2578ea",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "4a778398ac9d3c50.csv",
+   "doi": "10.5061/dryad.x3ffbg7rm",
+   "form": "linear",
+   "params": [
+    0.009748723959980481,
+    0.3882166916750253
+   ],
+   "seed": 3477429287,
+   "x": "Aboveground_g",
+   "y": "Belowground_g"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Is there a latitudinal diversity gradient for symbiotic microbes? A case study with sensit' (Zenodo, doi 10.5061/dryad.x3ffbg7rm): 'Belowground_g' is linear in 'Aboveground_g' (R\u00b2 = 0.932 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
