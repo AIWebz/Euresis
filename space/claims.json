@@ -2535542,5 +2535542,599 @@
   "statement": "Octal game 0.633115 is completely solved: its Grundy values are periodic with pre-period 153 and period 276 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22757682",
+   "held_out_r2": -0.0038,
+   "held_out_rows": 42,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3139c33aada1",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "7d2d3b3eb3564fd7.csv",
+   "doi": "10.5281/zenodo.22757682",
+   "form": "linear",
+   "params": [
+    1.756324398531467e-06,
+    0.1748950890303807
+   ],
+   "seed": 1126382228,
+   "x": "50 kGy replicate 1 (\u00b5g)",
+   "y": "Standard deviation (SD) 50 kGy"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Survival of lipid-like organics under simulated cosmic radiation on Mars' (Zenodo, doi 10.5281/zenodo.22757682): 'Standard deviation (SD) 50 kGy' is linear in '50 kGy replicate 1 (\u00b5g)' (R\u00b2 = 0.925 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22757682",
+   "held_out_r2": 0.5953,
+   "held_out_rows": 42,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a7e0cefa781a",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "7d2d3b3eb3564fd7.csv",
+   "doi": "10.5281/zenodo.22757682",
+   "form": "linear",
+   "params": [
+    2.8457863850713254e-05,
+    0.16209314408938702
+   ],
+   "seed": 1126382228,
+   "x": "50 kGy replicate 2 (\u00b5g)",
+   "y": "Standard deviation (SD) 50 kGy"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Survival of lipid-like organics under simulated cosmic radiation on Mars' (Zenodo, doi 10.5281/zenodo.22757682): 'Standard deviation (SD) 50 kGy' is linear in '50 kGy replicate 2 (\u00b5g)' (R\u00b2 = 0.903 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.13332270",
+   "held_out_r2": 0.8999,
+   "held_out_rows": 830,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-7b0c2e0702a6",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "e937a63ed49461a4.csv",
+   "doi": "10.5281/zenodo.13332270",
+   "form": "linear",
+   "params": [
+    -15231.264172871066,
+    -16.313619690212384
+   ],
+   "seed": 1049509811,
+   "x": "sensor_Pitch",
+   "y": "sensor_Acceleration (X)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset of \"Anomaly Detection in Industrial Networks: Current State, Classification, and K' (Zenodo, doi 10.5281/zenodo.13332270): 'sensor_Acceleration (X)' is linear in 'sensor_Pitch' (R\u00b2 = 0.907 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.4321623",
+   "held_out_r2": 0.9841,
+   "held_out_rows": 33,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-6efc8d8f404a",
+  "kind": "empirical",
+  "novelty": "KNOWN: seawater carbonate chemistry (CO2SYS-type calculations) \u2014 not a discovery",
+  "payload": {
+   "dataset": "d4e72d5c9eb6f234.csv",
+   "doi": "10.5281/zenodo.4321623",
+   "form": "power law",
+   "params": [
+    0.19722987430811884,
+    0.9835284398574238
+   ],
+   "seed": 834318220,
+   "x": "pco2.day",
+   "y": "pco2.night"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Global carbon dioxide efflux from rivers enhanced by high nocturnal emissions' (Zenodo, doi 10.5281/zenodo.4321623): 'pco2.night' follows a power law in 'pco2.day' (R\u00b2 = 0.989 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.16783118",
+   "held_out_r2": 0.9867,
+   "held_out_rows": 382,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9e87f60f9b98",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "0e1cce66bbe15b0c.csv",
+   "doi": "10.5281/zenodo.16783118",
+   "form": "linear",
+   "params": [
+    0.13778963149828752,
+    7.69494249034341e-06
+   ],
+   "seed": 1813700525,
+   "x": "red.area",
+   "y": "red.percent"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Plant Phenology and Soil Leachate Data from Plant Microbe Asynchronies in the Northern For' (Zenodo, doi 10.5281/zenodo.16783118): 'red.percent' is linear in 'red.area' (R\u00b2 = 0.991 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.16783118",
+   "held_out_r2": 0.9443,
+   "held_out_rows": 382,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ae5d43eaeb22",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "0e1cce66bbe15b0c.csv",
+   "doi": "10.5281/zenodo.16783118",
+   "form": "linear",
+   "params": [
+    -55911.63993359773,
+    0.871448946341118
+   ],
+   "seed": 1813700525,
+   "x": "veg.area",
+   "y": "green.yellow.area"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Plant Phenology and Soil Leachate Data from Plant Microbe Asynchronies in the Northern For' (Zenodo, doi 10.5281/zenodo.16783118): 'green.yellow.area' is linear in 'veg.area' (R\u00b2 = 0.938 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.16783118",
+   "held_out_r2": 0.9434,
+   "held_out_rows": 382,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-22b17cc2cd92",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "0e1cce66bbe15b0c.csv",
+   "doi": "10.5281/zenodo.16783118",
+   "form": "linear",
+   "params": [
+    -1.8397318886926028,
+    0.9275086712087341
+   ],
+   "seed": 1813700525,
+   "x": "veg.percent",
+   "y": "green.yellow.percent"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Plant Phenology and Soil Leachate Data from Plant Microbe Asynchronies in the Northern For' (Zenodo, doi 10.5281/zenodo.16783118): 'green.yellow.percent' is linear in 'veg.percent' (R\u00b2 = 0.940 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.8216333",
+   "held_out_r2": 0.2279,
+   "held_out_rows": 88,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e2e4c1a28d90",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "8bd4e0f7642508a9.csv",
+   "doi": "10.5281/zenodo.8216333",
+   "form": "linear",
+   "params": [
+    7.090757892708021,
+    0.10502960527443801
+   ],
+   "seed": 4070795572,
+   "x": "65Cu:43Ca (\u00b5mol/mol)",
+   "y": "7Li:43Ca (\u00b5mol/mol)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Raw data containing microsatellite genotypes and otolith microchemistry data for Lutjanus ' (Zenodo, doi 10.5281/zenodo.8216333): '7Li:43Ca (\u00b5mol/mol)' is linear in '65Cu:43Ca (\u00b5mol/mol)' (R\u00b2 = 0.952 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.8216333",
+   "held_out_r2": -0.3988,
+   "held_out_rows": 88,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-10f6398f2577",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "8bd4e0f7642508a9.csv",
+   "doi": "10.5281/zenodo.8216333",
+   "form": "linear",
+   "params": [
+    0.22655176548366723,
+    0.007715900426739326
+   ],
+   "seed": 4070795572,
+   "x": "65Cu:43Ca (\u00b5mol/mol)",
+   "y": "24Mg:43Ca (mmol/mol)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Raw data containing microsatellite genotypes and otolith microchemistry data for Lutjanus ' (Zenodo, doi 10.5281/zenodo.8216333): '24Mg:43Ca (mmol/mol)' is linear in '65Cu:43Ca (\u00b5mol/mol)' (R\u00b2 = 0.962 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.8216333",
+   "held_out_r2": -0.3226,
+   "held_out_rows": 88,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-cc2f93608ea0",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "8bd4e0f7642508a9.csv",
+   "doi": "10.5281/zenodo.8216333",
+   "form": "linear",
+   "params": [
+    0.16928864238207358,
+    0.008346270959662064
+   ],
+   "seed": 4070795572,
+   "x": "65Cu:43Ca (\u00b5mol/mol)",
+   "y": "25Mg:43Ca (mmol/mol)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Raw data containing microsatellite genotypes and otolith microchemistry data for Lutjanus ' (Zenodo, doi 10.5281/zenodo.8216333): '25Mg:43Ca (mmol/mol)' is linear in '65Cu:43Ca (\u00b5mol/mol)' (R\u00b2 = 0.968 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.8216333",
+   "held_out_r2": -1.11,
+   "held_out_rows": 88,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a272c51845ae",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "8bd4e0f7642508a9.csv",
+   "doi": "10.5281/zenodo.8216333",
+   "form": "linear",
+   "params": [
+    0.014079705108053049,
+    0.0006611544460491105
+   ],
+   "seed": 4070795572,
+   "x": "65Cu:43Ca (\u00b5mol/mol)",
+   "y": "55Mn:43Ca (mmol/mol)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Raw data containing microsatellite genotypes and otolith microchemistry data for Lutjanus ' (Zenodo, doi 10.5281/zenodo.8216333): '55Mn:43Ca (mmol/mol)' is linear in '65Cu:43Ca (\u00b5mol/mol)' (R\u00b2 = 0.967 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.8216333",
+   "held_out_r2": -0.4956,
+   "held_out_rows": 88,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-2cb738404b4d",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "8bd4e0f7642508a9.csv",
+   "doi": "10.5281/zenodo.8216333",
+   "form": "linear",
+   "params": [
+    0.04633451334013117,
+    0.02370657780154624
+   ],
+   "seed": 4070795572,
+   "x": "65Cu:43Ca (\u00b5mol/mol)",
+   "y": "208Pb:43Ca (\u00b5mol/mol)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Raw data containing microsatellite genotypes and otolith microchemistry data for Lutjanus ' (Zenodo, doi 10.5281/zenodo.8216333): '208Pb:43Ca (\u00b5mol/mol)' is linear in '65Cu:43Ca (\u00b5mol/mol)' (R\u00b2 = 0.918 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.8216333",
+   "held_out_r2": 0.4469,
+   "held_out_rows": 88,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9a6af55dfc58",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "8bd4e0f7642508a9.csv",
+   "doi": "10.5281/zenodo.8216333",
+   "form": "linear",
+   "params": [
+    0.32804855237932723,
+    0.010448081997521676
+   ],
+   "seed": 4070795572,
+   "x": "65Cu:43Ca (\u00b5mol/mol)",
+   "y": "85Rb:43Ca (\u00b5mol/mol)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Raw data containing microsatellite genotypes and otolith microchemistry data for Lutjanus ' (Zenodo, doi 10.5281/zenodo.8216333): '85Rb:43Ca (\u00b5mol/mol)' is linear in '65Cu:43Ca (\u00b5mol/mol)' (R\u00b2 = 0.960 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.8216333",
+   "held_out_r2": -0.9173,
+   "held_out_rows": 88,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-857a0ce389b2",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "8bd4e0f7642508a9.csv",
+   "doi": "10.5281/zenodo.8216333",
+   "form": "linear",
+   "params": [
+    -0.2635843905896904,
+    0.07007273326665872
+   ],
+   "seed": 4070795572,
+   "x": "7Li:43Ca (\u00b5mol/mol)",
+   "y": "24Mg:43Ca (mmol/mol)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Raw data containing microsatellite genotypes and otolith microchemistry data for Lutjanus ' (Zenodo, doi 10.5281/zenodo.8216333): '24Mg:43Ca (mmol/mol)' is linear in '7Li:43Ca (\u00b5mol/mol)' (R\u00b2 = 0.919 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.8216333",
+   "held_out_r2": -0.7832,
+   "held_out_rows": 88,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4f405139443d",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "8bd4e0f7642508a9.csv",
+   "doi": "10.5281/zenodo.8216333",
+   "form": "linear",
+   "params": [
+    -0.3604456904788271,
+    0.07574850227577705
+   ],
+   "seed": 4070795572,
+   "x": "7Li:43Ca (\u00b5mol/mol)",
+   "y": "25Mg:43Ca (mmol/mol)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Raw data containing microsatellite genotypes and otolith microchemistry data for Lutjanus ' (Zenodo, doi 10.5281/zenodo.8216333): '25Mg:43Ca (mmol/mol)' is linear in '7Li:43Ca (\u00b5mol/mol)' (R\u00b2 = 0.924 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.8216333",
+   "held_out_r2": -3.5676,
+   "held_out_rows": 88,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e717a0693e90",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "8bd4e0f7642508a9.csv",
+   "doi": "10.5281/zenodo.8216333",
+   "form": "linear",
+   "params": [
+    -0.02762959622762842,
+    0.005972484960282324
+   ],
+   "seed": 4070795572,
+   "x": "7Li:43Ca (\u00b5mol/mol)",
+   "y": "55Mn:43Ca (mmol/mol)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Raw data containing microsatellite genotypes and otolith microchemistry data for Lutjanus ' (Zenodo, doi 10.5281/zenodo.8216333): '55Mn:43Ca (mmol/mol)' is linear in '7Li:43Ca (\u00b5mol/mol)' (R\u00b2 = 0.914 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.8216333",
+   "held_out_r2": 0.29,
+   "held_out_rows": 88,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9835c250d664",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "8bd4e0f7642508a9.csv",
+   "doi": "10.5281/zenodo.8216333",
+   "form": "linear",
+   "params": [
+    -0.34894970577078277,
+    0.09635138903826214
+   ],
+   "seed": 4070795572,
+   "x": "7Li:43Ca (\u00b5mol/mol)",
+   "y": "85Rb:43Ca (\u00b5mol/mol)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Raw data containing microsatellite genotypes and otolith microchemistry data for Lutjanus ' (Zenodo, doi 10.5281/zenodo.8216333): '85Rb:43Ca (\u00b5mol/mol)' is linear in '7Li:43Ca (\u00b5mol/mol)' (R\u00b2 = 0.946 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.8216333",
+   "held_out_r2": -1.1247,
+   "held_out_rows": 88,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-24fe5f3bc16e",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "8bd4e0f7642508a9.csv",
+   "doi": "10.5281/zenodo.8216333",
+   "form": "linear",
+   "params": [
+    -0.004921526477681958,
+    0.08458261254762675
+   ],
+   "seed": 4070795572,
+   "x": "24Mg:43Ca (mmol/mol)",
+   "y": "55Mn:43Ca (mmol/mol)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Raw data containing microsatellite genotypes and otolith microchemistry data for Lutjanus ' (Zenodo, doi 10.5281/zenodo.8216333): '55Mn:43Ca (mmol/mol)' is linear in '24Mg:43Ca (mmol/mol)' (R\u00b2 = 0.979 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.8216333",
+   "held_out_r2": -1.3273,
+   "held_out_rows": 88,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-1653387c566e",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "8bd4e0f7642508a9.csv",
+   "doi": "10.5281/zenodo.8216333",
+   "form": "linear",
+   "params": [
+    -0.6285570024670034,
+    3.015574850717549
+   ],
+   "seed": 4070795572,
+   "x": "24Mg:43Ca (mmol/mol)",
+   "y": "208Pb:43Ca (\u00b5mol/mol)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Raw data containing microsatellite genotypes and otolith microchemistry data for Lutjanus ' (Zenodo, doi 10.5281/zenodo.8216333): '208Pb:43Ca (\u00b5mol/mol)' is linear in '24Mg:43Ca (mmol/mol)' (R\u00b2 = 0.919 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.8216333",
+   "held_out_r2": -1.4818,
+   "held_out_rows": 88,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b9758dca5a6c",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "8bd4e0f7642508a9.csv",
+   "doi": "10.5281/zenodo.8216333",
+   "form": "linear",
+   "params": [
+    0.0009263933670306343,
+    0.07842979178878429
+   ],
+   "seed": 4070795572,
+   "x": "25Mg:43Ca (mmol/mol)",
+   "y": "55Mn:43Ca (mmol/mol)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Raw data containing microsatellite genotypes and otolith microchemistry data for Lutjanus ' (Zenodo, doi 10.5281/zenodo.8216333): '55Mn:43Ca (mmol/mol)' is linear in '25Mg:43Ca (mmol/mol)' (R\u00b2 = 0.979 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.8216333",
+   "held_out_r2": -1.5899,
+   "held_out_rows": 88,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-eb090f511f68",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "8bd4e0f7642508a9.csv",
+   "doi": "10.5281/zenodo.8216333",
+   "form": "linear",
+   "params": [
+    -0.41930131756705924,
+    2.7938783353085017
+   ],
+   "seed": 4070795572,
+   "x": "25Mg:43Ca (mmol/mol)",
+   "y": "208Pb:43Ca (\u00b5mol/mol)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Raw data containing microsatellite genotypes and otolith microchemistry data for Lutjanus ' (Zenodo, doi 10.5281/zenodo.8216333): '208Pb:43Ca (\u00b5mol/mol)' is linear in '25Mg:43Ca (mmol/mol)' (R\u00b2 = 0.917 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.8216333",
+   "held_out_r2": -0.3809,
+   "held_out_rows": 88,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-44dc8600c2e0",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "8bd4e0f7642508a9.csv",
+   "doi": "10.5281/zenodo.8216333",
+   "form": "linear",
+   "params": [
+    -0.44401878221414004,
+    35.31099816448375
+   ],
+   "seed": 4070795572,
+   "x": "55Mn:43Ca (mmol/mol)",
+   "y": "208Pb:43Ca (\u00b5mol/mol)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Raw data containing microsatellite genotypes and otolith microchemistry data for Lutjanus ' (Zenodo, doi 10.5281/zenodo.8216333): '208Pb:43Ca (\u00b5mol/mol)' is linear in '55Mn:43Ca (mmol/mol)' (R\u00b2 = 0.921 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
  }
 ]

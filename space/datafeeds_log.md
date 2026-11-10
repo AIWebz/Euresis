@@ -2701,3 +2701,8 @@
 - 2026-11-10 08:16 FINDING (confirmed on held-out rows): In 'Edelstein effect in an anisotropic KTaO3 two-dimensional electron gas' (Zenodo, doi 10.5281/zenodo.7058806): 'chi_xy^l_band3' is linear in 'E_F(eV)' (R² = 0.923 on the discovery half); held-out R² = 0.869 [emp-ce3327635e3a]
 - 2026-11-10 08:16 data feeds: 16709 datasets analysed so far, 2428 confirmed findings
 - 2026-11-10 09:03 data feeds: online
+- 2026-11-10 09:05 FINDING (confirmed on held-out rows): In 'Dataset of "Anomaly Detection in Industrial Networks: Current State, Classification, and K' (Zenodo, doi 10.5281/zenodo.13332270): 'sensor_Acceleration (X)' is linear in 'sensor_Pitch' (R² = 0.907 on the discovery half); held-out R² = 0.900 [emp-7b0c2e0702a6]
+- 2026-11-10 09:05 FINDING (confirmed on held-out rows): In 'Plant Phenology and Soil Leachate Data from Plant Microbe Asynchronies in the Northern For' (Zenodo, doi 10.5281/zenodo.16783118): 'red.percent' is linear in 'red.area' (R² = 0.991 on the discovery half); held-out R² = 0.987 [emp-9e87f60f9b98]
+- 2026-11-10 09:05 FINDING (confirmed on held-out rows): In 'Plant Phenology and Soil Leachate Data from Plant Microbe Asynchronies in the Northern For' (Zenodo, doi 10.5281/zenodo.16783118): 'green.yellow.area' is linear in 'veg.area' (R² = 0.938 on the discovery half); held-out R² = 0.944 [emp-ae5d43eaeb22]
+- 2026-11-10 09:05 FINDING (confirmed on held-out rows): In 'Plant Phenology and Soil Leachate Data from Plant Microbe Asynchronies in the Northern For' (Zenodo, doi 10.5281/zenodo.16783118): 'green.yellow.percent' is linear in 'veg.percent' (R² = 0.940 on the discovery half); held-out R² = 0.943 [emp-22b17cc2cd92]
+- 2026-11-10 09:06 data feeds: 16807 datasets analysed so far, 2432 confirmed findings
