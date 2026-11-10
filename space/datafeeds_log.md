@@ -2656,3 +2656,4 @@
 - 2026-11-10 06:44 FINDING (confirmed on held-out rows): In 'Eye morphology contributes to the ecology and evolution of the avian tree of life' (Zenodo, doi 10.5061/dryad.3xsj3txq7): 'TD1' follows a power law in 'AD' (R² = 0.980 on the discovery half); held-out R² = 0.981 [emp-121779c1ad18]
 - 2026-11-10 06:44 FINDING (confirmed on held-out rows): In 'Eye morphology contributes to the ecology and evolution of the avian tree of life' (Zenodo, doi 10.5061/dryad.3xsj3txq7): 'TD2' follows a power law in 'AD' (R² = 0.974 on the discovery half); held-out R² = 0.976 [emp-170bc409e3c1]
 - 2026-11-10 06:44 data feeds: 16532 datasets analysed so far, 2388 confirmed findings
+- 2026-11-10 07:08 data feeds: online
