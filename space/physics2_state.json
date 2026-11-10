@@ -47384,6 +47384,136 @@
    "family": "two-body decay",
    "expr": "((1 - (a - b)**2)*(1 - (a + b)**2))/((1 + a**2 - b**2)**2 + (1 - a**2 + b**2)**2)",
    "why": "affine combination of known quantities (momentum of each product / (Mc), Relative velocity squared of products [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2",
+   "why": "affine combination of known quantities (Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified], Fraction of kinetic energy transferred to the target [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2",
+   "why": "affine combination of known quantities (Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified], Fraction of kinetic energy transferred to the target [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "e*(m + 1)/(e*m + 1)",
+   "why": "affine combination of known quantities (target speed / initial speed, velocity ratio of target to projectile after collision [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2*m**2/(m + 1)**2 + e**2*m/(m + 1)",
+   "why": "affine combination of known quantities (target speed / initial speed, Fraction of kinetic energy retained by the target [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt((1 - r**2)**2 + (2*z*r)**2)/sqrt(4*z**2 + 1)",
+   "why": "affine combination of known quantities (amplitude / static deflection, Mechanical Impedance Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(1 + (2*z*r)**2)/sqrt((1 - r**2)**2 + (2*z*r)**2)",
+   "why": "affine combination of known quantities (amplitude / static deflection, transmissibility)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(16*r**4*z**4 + 4*r**2*z**2 + 1)/sqrt((1 - r**2)**2 + (2*z*r)**2)",
+   "why": "affine combination of known quantities (amplitude / static deflection, Acceleration transmissibility [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(4*r**2*z**2 + 1)*sqrt(4*r**2*z**2 + (1 - r**2)**2)/(2*r*z*(sqrt(4*r**2*z**2 + 1) + sqrt(4*r**2*",
+   "why": "affine combination of known quantities (quality factor, Power Amplification Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 + u)/(1 - u)) * sqrt((1 + v)/(1 - v)) / sqrt((1 + (u + v)/(1 + u*v)) / (1 - (u + v)/(1 + u*v",
+   "why": "affine combination of known quantities (composed speed / c)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt(1 - u**2) * sqrt(1 - v**2) + (u + v) * sqrt(-(u + v)**2/(u*v + 1)**2 + 1)/(u*v + 1)",
+   "why": "affine combination of known quantities (composed speed / c, Relativistic Energy-Momentum Invariant [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "x/(1 + x*c)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, scattered photon energy / (m_e c\u00b2))"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "((1 - 2*c1 + c2)**2 + (1 - 2*c2 + c1)**2)/((1 - c1)**2 + (1 - c2)**2)",
+   "why": "affine combination of known quantities (output of firm 1, Hirshleifer Index [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "sqrt(-L*p + 1)/(-p*sqrt(1 - L) + sqrt(1 - L) + 1)",
+   "why": "affine combination of known quantities (expected wealth, Insurance Risk Exposure Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "L*p/(-2*sqrt(1 - L) + sqrt(-L*p + 1) + 1)",
+   "why": "affine combination of known quantities (expected wealth, Relative Risk Sensitivity Index [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "sqrt(-L*p + 1)/(sqrt(1 - L) - 1 + 1/(p*sqrt(1 - L) - p + 1))",
+   "why": "affine combination of known quantities (expected wealth, Insurance Risk Adjustment Factor [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "-(p*sqrt(1 - L) - p + 1)**2/(-L*p + p*sqrt(1 - L) - p + 2) + 1",
+   "why": "affine combination of known quantities (expected wealth, Insurance Coverage Ratio Adjusted [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(-2*r**3/3 + r**2 + 1/3)/(2*(1 - r**3)/3 + v*r**2)",
+   "why": "affine combination of known quantities (Welfare Reserve Ratio [model-proposed; physical meaning unverified], 1/(Welfare Reserve Efficiency with Seller Value [model-proposed; physical meaning unverified]))"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "sqrt((1 - (a + b)**2)*(1 - (a - b)**2))/(1 + a**2 - b**2)",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), speed of product 1 / c)"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2",
+   "why": "affine combination of known quantities (Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified], Fraction of kinetic energy transferred to the target [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2*m**2/(m + 1)**2 + e**2*m/(m + 1) - 2*m*(1 - e**2)/(m + 1) + 1",
+   "why": "affine combination of known quantities (target speed / initial speed, Fraction of kinetic energy transferred to the target relative to initial kinetic [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "1 - e**2*m**2/(m + 1)**2 - e**2*m/(m + 1) - (1 - e**2)*(1 - m)/(m + 1) + 1",
+   "why": "affine combination of known quantities (fraction of kinetic energy lost, Fraction of kinetic energy retained by projectile relative to initial kinetic en [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2*m**2/(m + 1)**2 + e**2*m/(m + 1) - m*(1 - e**2)/(m + 1) - (1 - e**2)/(m + 1) + 1",
+   "why": "affine combination of known quantities (target speed / initial speed, Fraction of kinetic energy retained by projectile relative to initial kinetic en [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt((1 - r**2)**2 + (2*z*r)**2)/sqrt(4*z**2 + 1)",
+   "why": "affine combination of known quantities (amplitude / static deflection, Mechanical Impedance Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(1 - z**2)/sqrt(1 + 4*r**2*z**2 - z**2)",
+   "why": "affine combination of known quantities (amplitude / static deflection, Resonance frequency ratio (corrected) [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt((1 - r**2)**2 + (2*z*r)**2)/sqrt(4*z**2 + 1)",
+   "why": "affine combination of known quantities (amplitude / static deflection, Mechanical Impedance Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt((1 - r**2)**2 + (2*z*r)**2)/sqrt(4*z**2 + 1)",
+   "why": "affine combination of known quantities (amplitude / static deflection, Mechanical Impedance Ratio [model-proposed; physical meaning unverified])"
   }
  ],
  "tried": [
@@ -59336,7 +59466,7 @@
    "k": "4/25"
   }
  ],
- "rounds": 3337,
+ "rounds": 3347,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",
