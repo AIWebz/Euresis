@@ -2774,3 +2774,5 @@
 - 2026-11-10 12:54 FINDING (confirmed on held-out rows): In 'Disentangling thermal from alternative drivers of reflectance in jewel beetles: a macroeco' (Zenodo, doi 10.5061/dryad.8w9ghx3pr): 'Julodimorpha bakewelli_yellow_Splice17_003' grows logarithmically in 'Calodema regalis_yellow_Splice17_003' (R² = 0.982 on the discovery half); held-out R² = 0.984 [emp-680a56ee2421]
 - 2026-11-10 12:54 FINDING (confirmed on held-out rows): In 'Data From: Conservation planning in an uncertain climate: identifying projects that remain' (Zenodo, doi 10.5061/dryad.4b8gthtb9): 'Gvals' is linear in 'Rvals' (R² = 0.921 on the discovery half); held-out R² = 0.923 [emp-d94dd9392579]
 - 2026-11-10 12:55 data feeds: 17804 datasets analysed so far, 2492 confirmed findings
+- 2026-11-10 13:56 data feeds: online
+- 2026-11-10 13:56 FINDING (confirmed on held-out rows): In 'Data from: Does the cost of development scale allometrically with offspring size?' (Zenodo, doi 10.5061/dryad.p570g): 'Area (um2)' grows logarithmically in 'Diameter (um)' (R² = 0.975 on the discovery half); held-out R² = 0.972 [emp-d9b0d48c0f04]
