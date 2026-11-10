@@ -2647,3 +2647,4 @@
 - 2026-11-10 05:14 FINDING (confirmed on held-out rows): In 'DEFINING THE MULTISCALAR INDEX TIMESCALE - SOIL WATER DEPTH CONTINUUM FOR THE SOUTHWESTERN' (Zenodo, doi 10.5281/zenodo.7983357): 'Tmax' follows a power law in 'Transp' (R² = 0.907 on the discovery half); held-out R² = 0.906 [emp-0725f5abcecb]
 - 2026-11-10 05:36 FINDING (confirmed on held-out rows): In 'DEFINING THE MULTISCALAR INDEX TIMESCALE - SOIL WATER DEPTH CONTINUUM FOR THE SOUTHWESTERN' (Zenodo, doi 10.5281/zenodo.7983357): 'hzn_bot' is linear in 'hzn_top' (R² = 0.902 on the discovery half); held-out R² = 0.851 [emp-a4a116969e8a]
 - 2026-11-10 05:40 data feeds: 16499 datasets analysed so far, 2381 confirmed findings
+- 2026-11-10 06:42 data feeds: online
