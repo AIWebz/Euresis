@@ -2633,3 +2633,5 @@
 - 2026-11-10 04:31 FINDING (confirmed on held-out rows): In 'Data from: Reimagining alfalfa as a flexible crop for water security in the Southwestern U' (Figshare, doi 10.15482/USDA.ADC/33826744.v1): 'period_Annual' grows logarithmically in 'period_Jan_June' (R² = 0.909 on the discovery half); held-out R² = 0.885 [emp-4e65b0016843]
 - 2026-11-10 04:31 FINDING (confirmed on held-out rows): In 'Data: Human land modification shifts riverine alkalinity from silicate to carbonate source' (Figshare, doi 10.6084/m9.figshare.33769963.v2): 'Ca_mol_l' follows a power law in 'HCO3_mol_l' (R² = 0.928 on the discovery half); held-out R² = 0.932 [emp-fa6709b684a8]
 - 2026-11-10 04:31 data feeds: 15988 datasets analysed so far, 2369 confirmed findings
+- 2026-11-10 05:12 data feeds: online
+- 2026-11-10 05:13 FINDING (confirmed on held-out rows): In 'ReESH_US-Wjs: Willard Juniper Savannah' (Zenodo, doi 10.5281/zenodo.16032863): 'Vol_Water' follows a power law in 'MPa_Abs' (R² = 0.930 on the discovery half); held-out R² = 0.919 [emp-006a6ab2a47a]

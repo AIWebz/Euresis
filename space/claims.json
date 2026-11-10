@@ -2498737,5 +2498737,32 @@
   "statement": "Octal game 0.577203 is completely solved: its Grundy values are periodic with pre-period 7 and period 8 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.16032863",
+   "held_out_r2": 0.9193,
+   "held_out_rows": 493,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-006a6ab2a47a",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "5fccb639043c0d41.csv",
+   "doi": "10.5281/zenodo.16032863",
+   "form": "power law",
+   "params": [
+    2.0989155992908666,
+    -0.2786506607358391
+   ],
+   "seed": 1406619265,
+   "x": "MPa_Abs",
+   "y": "Vol_Water"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'ReESH_US-Wjs: Willard Juniper Savannah' (Zenodo, doi 10.5281/zenodo.16032863): 'Vol_Water' follows a power law in 'MPa_Abs' (R\u00b2 = 0.930 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
