@@ -2549759,5 +2549759,329 @@
   "statement": "Octal game 0.660505 is completely solved: its Grundy values are periodic with pre-period 1270 and period 4 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.p7t9289",
+   "held_out_r2": 0.9321,
+   "held_out_rows": 398,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ee72182c9d0a",
+  "kind": "empirical",
+  "novelty": "KNOWN: equation of state of a simulated fluid (pressure, density, temperature, chemical potential, kinetic energy) \u2014 not a discovery",
+  "payload": {
+   "dataset": "65b95ec5d6cc44aa.csv",
+   "doi": "10.5061/dryad.p7t9289",
+   "form": "linear",
+   "params": [
+    -1.5017552536536543,
+    0.000474508357234216
+   ],
+   "seed": 2280864785,
+   "x": "AgStatDistrict",
+   "y": "StateYrGroup"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Missing the people for the trees: identifying coupled natural-human system feed' (Zenodo, doi 10.5061/dryad.p7t9289): 'StateYrGroup' is linear in 'AgStatDistrict' (R\u00b2 = 0.930 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.p7t9289",
+   "held_out_r2": 0.9323,
+   "held_out_rows": 398,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c5f569665d7f",
+  "kind": "empirical",
+  "novelty": "KNOWN: equation of state of a simulated fluid (pressure, density, temperature, chemical potential, kinetic energy) \u2014 not a discovery",
+  "payload": {
+   "dataset": "65b95ec5d6cc44aa.csv",
+   "doi": "10.5061/dryad.p7t9289",
+   "form": "linear",
+   "params": [
+    -1.5074854951176127,
+    0.0004744688694682669
+   ],
+   "seed": 2280864785,
+   "x": "StCntyFips",
+   "y": "StateYrGroup"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Missing the people for the trees: identifying coupled natural-human system feed' (Zenodo, doi 10.5061/dryad.p7t9289): 'StateYrGroup' is linear in 'StCntyFips' (R\u00b2 = 0.930 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.p7t9289",
+   "held_out_r2": 0.9286,
+   "held_out_rows": 398,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b504edfbf782",
+  "kind": "empirical",
+  "novelty": "KNOWN: equation of state of a simulated fluid (pressure, density, temperature, chemical potential, kinetic energy) \u2014 not a discovery",
+  "payload": {
+   "dataset": "65b95ec5d6cc44aa.csv",
+   "doi": "10.5061/dryad.p7t9289",
+   "form": "power law",
+   "params": [
+    1.926120913044788,
+    0.6566085641128622
+   ],
+   "seed": 2280864785,
+   "x": "PercLandForest",
+   "y": "EdgeDensity"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Missing the people for the trees: identifying coupled natural-human system feed' (Zenodo, doi 10.5061/dryad.p7t9289): 'EdgeDensity' follows a power law in 'PercLandForest' (R\u00b2 = 0.922 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.p7t9289",
+   "held_out_r2": 0.9151,
+   "held_out_rows": 398,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-80ff77226d38",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "65b95ec5d6cc44aa.csv",
+   "doi": "10.5061/dryad.p7t9289",
+   "form": "exponential",
+   "params": [
+    0.6267622867585475,
+    0.05259457436584552
+   ],
+   "seed": 2280864785,
+   "x": "PercLandForest",
+   "y": "MeanPatchArea"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Missing the people for the trees: identifying coupled natural-human system feed' (Zenodo, doi 10.5061/dryad.p7t9289): 'MeanPatchArea' grows exponentially in 'PercLandForest' (R\u00b2 = 0.914 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.p7t9289",
+   "held_out_r2": 0.9318,
+   "held_out_rows": 398,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e502eb03c8a4",
+  "kind": "empirical",
+  "novelty": "KNOWN: equation of state of a simulated fluid (pressure, density, temperature, chemical potential, kinetic energy) \u2014 not a discovery",
+  "payload": {
+   "dataset": "65b95ec5d6cc44aa.csv",
+   "doi": "10.5061/dryad.p7t9289",
+   "form": "linear",
+   "params": [
+    -1.4781933547243733,
+    0.4744798713011702
+   ],
+   "seed": 2280864785,
+   "x": "StateFips",
+   "y": "StateYrGroup"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Missing the people for the trees: identifying coupled natural-human system feed' (Zenodo, doi 10.5061/dryad.p7t9289): 'StateYrGroup' is linear in 'StateFips' (R\u00b2 = 0.930 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.8b83gn8",
+   "held_out_r2": 0.9175,
+   "held_out_rows": 740,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-2120d7e3dfcb",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "ed76414556a328db.csv",
+   "doi": "10.5061/dryad.8b83gn8",
+   "form": "power law",
+   "params": [
+    3.1081377932774066,
+    0.3006111810173631
+   ],
+   "seed": 25721220,
+   "x": "frog_weight",
+   "y": "frog_svl"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Reduced skin bacterial diversity correlates with increased pathogen infection i' (Zenodo, doi 10.5061/dryad.8b83gn8): 'frog_svl' follows a power law in 'frog_weight' (R\u00b2 = 0.905 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.3j9kd51h6",
+   "held_out_r2": 0.9482,
+   "held_out_rows": 72,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e2bc250eec80",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "acc7137a5082f19b.csv",
+   "doi": "10.5061/dryad.3j9kd51h6",
+   "form": "linear",
+   "params": [
+    -0.0018788043331925317,
+    0.5522570611200123
+   ],
+   "seed": 2063230364,
+   "x": "Shannon",
+   "y": "Simpson"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Plant and microbial impacts of an invasive species vary across an environmental gradient' (Zenodo, doi 10.5061/dryad.3j9kd51h6): 'Simpson' is linear in 'Shannon' (R\u00b2 = 0.957 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.3j9kd51h6",
+   "held_out_r2": 0.9384,
+   "held_out_rows": 72,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-0d72b8a58245",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "acc7137a5082f19b.csv",
+   "doi": "10.5061/dryad.3j9kd51h6",
+   "form": "exponential",
+   "params": [
+    -0.05154029102241214,
+    0.8342024460030949
+   ],
+   "seed": 2063230364,
+   "x": "Shannon",
+   "y": "InvSimpson"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Plant and microbial impacts of an invasive species vary across an environmental gradient' (Zenodo, doi 10.5061/dryad.3j9kd51h6): 'InvSimpson' grows exponentially in 'Shannon' (R\u00b2 = 0.936 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.3j9kd51h6",
+   "held_out_r2": 0.962,
+   "held_out_rows": 72,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c6b95273a070",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "acc7137a5082f19b.csv",
+   "doi": "10.5061/dryad.3j9kd51h6",
+   "form": "power law",
+   "params": [
+    -0.2803608303574814,
+    1.0744637835087938
+   ],
+   "seed": 2063230364,
+   "x": "RichnessITS",
+   "y": "Chao1ITS"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Plant and microbial impacts of an invasive species vary across an environmental gradient' (Zenodo, doi 10.5061/dryad.3j9kd51h6): 'Chao1ITS' follows a power law in 'RichnessITS' (R\u00b2 = 0.976 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.m63xsj45n",
+   "held_out_r2": 0.9726,
+   "held_out_rows": 783,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5b4f2b91d82e",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "7c2dda53ec9b543d.csv",
+   "doi": "10.5061/dryad.m63xsj45n",
+   "form": "linear",
+   "params": [
+    -0.03463990213763946,
+    0.0010892733810272414
+   ],
+   "seed": 530586096,
+   "x": "BA",
+   "y": "TimVol"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Environmental heterogeneity on landslide slopes affects the long-term recoveries of forest' (Zenodo, doi 10.5061/dryad.m63xsj45n): 'TimVol' is linear in 'BA' (R\u00b2 = 0.974 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.m63xsj45n",
+   "held_out_r2": 0.9655,
+   "held_out_rows": 783,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9cbe9f361b1d",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "7c2dda53ec9b543d.csv",
+   "doi": "10.5061/dryad.m63xsj45n",
+   "form": "linear",
+   "params": [
+    -0.014054445154137216,
+    0.0006266460648806844
+   ],
+   "seed": 530586096,
+   "x": "BA",
+   "y": "AGBiomass_mg"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Environmental heterogeneity on landslide slopes affects the long-term recoveries of forest' (Zenodo, doi 10.5061/dryad.m63xsj45n): 'AGBiomass_mg' is linear in 'BA' (R\u00b2 = 0.967 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.m63xsj45n",
+   "held_out_r2": 0.9596,
+   "held_out_rows": 783,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-018dc44e7eaa",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "7c2dda53ec9b543d.csv",
+   "doi": "10.5061/dryad.m63xsj45n",
+   "form": "linear",
+   "params": [
+    0.006451314505414568,
+    0.5700288437005449
+   ],
+   "seed": 530586096,
+   "x": "TimVol",
+   "y": "AGBiomass_mg"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Environmental heterogeneity on landslide slopes affects the long-term recoveries of forest' (Zenodo, doi 10.5061/dryad.m63xsj45n): 'AGBiomass_mg' is linear in 'TimVol' (R\u00b2 = 0.975 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
