@@ -2449936,5 +2449936,113 @@
   "statement": "Octal game 0.574233 is completely solved: its Grundy values are periodic with pre-period 7 and period 8 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.ffbg79csr",
+   "held_out_r2": 0.9161,
+   "held_out_rows": 45,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-0be4322fc5e4",
+  "kind": "empirical",
+  "novelty": "KNOWN: equation of state of a simulated fluid (pressure, density, temperature, chemical potential, kinetic energy) \u2014 not a discovery",
+  "payload": {
+   "dataset": "4c7319e76cd53a0f.csv",
+   "doi": "10.5061/dryad.ffbg79csr",
+   "form": "logarithmic",
+   "params": [
+    0.0446972730614722,
+    0.28617578803979826
+   ],
+   "seed": 3330925291,
+   "x": "Mass_mum_midlac",
+   "y": "Cond_mum_midlac"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Determinants of offspring sex in kangaroos: a test of multiple hypotheses' (Zenodo, doi 10.5061/dryad.ffbg79csr): 'Cond_mum_midlac' grows logarithmically in 'Mass_mum_midlac' (R\u00b2 = 0.929 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.ffbg79csr",
+   "held_out_r2": 0.9698,
+   "held_out_rows": 117,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-57baa7fcbf80",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "6cf354618eefa4fc.csv",
+   "doi": "10.5061/dryad.ffbg79csr",
+   "form": "linear",
+   "params": [
+    -3.0982729508178815,
+    0.003263131750451921
+   ],
+   "seed": 2611450743,
+   "x": "Forage_12mo",
+   "y": "Forage_4moZ"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Determinants of offspring sex in kangaroos: a test of multiple hypotheses' (Zenodo, doi 10.5061/dryad.ffbg79csr): 'Forage_4moZ' is linear in 'Forage_12mo' (R\u00b2 = 0.953 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.ffbg79csr",
+   "held_out_r2": 0.9619,
+   "held_out_rows": 117,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-868febd91495",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "6cf354618eefa4fc.csv",
+   "doi": "10.5061/dryad.ffbg79csr",
+   "form": "linear",
+   "params": [
+    -2.9402355428184785,
+    0.0037284841162723154
+   ],
+   "seed": 2611450743,
+   "x": "Forage_10mo",
+   "y": "Forage_6moZ"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Determinants of offspring sex in kangaroos: a test of multiple hypotheses' (Zenodo, doi 10.5061/dryad.ffbg79csr): 'Forage_6moZ' is linear in 'Forage_10mo' (R\u00b2 = 0.954 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.ffbg79csr",
+   "held_out_r2": 0.9789,
+   "held_out_rows": 117,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-2fb3c218bc1a",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "6cf354618eefa4fc.csv",
+   "doi": "10.5061/dryad.ffbg79csr",
+   "form": "logarithmic",
+   "params": [
+    -19.621887141607672,
+    2.970866259057828
+   ],
+   "seed": 2611450743,
+   "x": "Forage_10mo",
+   "y": "Forage_2moZ"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Determinants of offspring sex in kangaroos: a test of multiple hypotheses' (Zenodo, doi 10.5061/dryad.ffbg79csr): 'Forage_2moZ' grows logarithmically in 'Forage_10mo' (R\u00b2 = 0.969 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]

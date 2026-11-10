@@ -2513,3 +2513,6 @@
 - 2026-11-09 23:34 FINDING (confirmed on held-out rows): In 'High-quality RNA residues: RNA2023' (Zenodo, doi 10.5281/zenodo.8103014): 'fragments' is linear in 'initial_residues' (R² = 0.978 on the discovery half); held-out R² = 0.866 [emp-d8333eb91644]
 - 2026-11-09 23:34 data feeds: 15478 datasets analysed so far, 2258 confirmed findings
 - 2026-11-10 00:16 data feeds: online
+- 2026-11-10 00:17 FINDING (confirmed on held-out rows): In 'Determinants of offspring sex in kangaroos: a test of multiple hypotheses' (Zenodo, doi 10.5061/dryad.ffbg79csr): 'Forage_4moZ' is linear in 'Forage_12mo' (R² = 0.953 on the discovery half); held-out R² = 0.970 [emp-57baa7fcbf80]
+- 2026-11-10 00:17 FINDING (confirmed on held-out rows): In 'Determinants of offspring sex in kangaroos: a test of multiple hypotheses' (Zenodo, doi 10.5061/dryad.ffbg79csr): 'Forage_6moZ' is linear in 'Forage_10mo' (R² = 0.954 on the discovery half); held-out R² = 0.962 [emp-868febd91495]
+- 2026-11-10 00:17 FINDING (confirmed on held-out rows): In 'Determinants of offspring sex in kangaroos: a test of multiple hypotheses' (Zenodo, doi 10.5061/dryad.ffbg79csr): 'Forage_2moZ' grows logarithmically in 'Forage_10mo' (R² = 0.969 on the discovery half); held-out R² = 0.979 [emp-2fb3c218bc1a]
