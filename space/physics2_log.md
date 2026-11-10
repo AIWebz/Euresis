@@ -3534,3 +3534,7 @@
 - 2026-11-10 02:51 round 3246: Cournot duopoly
 - 2026-11-10 02:52 round 3247: insurance and risk
 - 2026-11-10 02:54 round 3248: auction with a reserve price
+- 2026-11-10 02:56 round 3249: two-body decay
+- 2026-11-10 02:57 round 3250: collision
+- 2026-11-10 02:59 round 3251: driven oscillator
+- 2026-11-10 03:00 segment end: 3251 rounds, 5 discoveries, 2 known laws rediscovered
