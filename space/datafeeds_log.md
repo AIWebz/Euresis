@@ -2751,3 +2751,4 @@
 - 2026-11-10 12:14 FINDING (confirmed on held-out rows): In 'Data and code for: Does good governance reduce poverty? Within and between countries, hard' (Figshare, doi 10.6084/m9.figshare.34942468.v1): 'pv_sr' follows a power law in 'pv_se' (R² = 0.931 on the discovery half); held-out R² = 0.923 [emp-779eabd2e540]
 - 2026-11-10 12:14 FINDING (confirmed on held-out rows): In 'Data and code for: Does good governance reduce poverty? Within and between countries, hard' (Figshare, doi 10.6084/m9.figshare.34942468.v1): 'rq_sr' follows a power law in 'rq_se' (R² = 0.910 on the discovery half); held-out R² = 0.911 [emp-415b691f9401]
 - 2026-11-10 12:14 data feeds: 17755 datasets analysed so far, 2471 confirmed findings
+- 2026-11-10 12:51 data feeds: online
