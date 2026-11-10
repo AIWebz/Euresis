@@ -2512,3 +2512,4 @@
 - 2026-11-09 23:34 FINDING (confirmed on held-out rows): In 'High-quality RNA residues: RNA2023' (Zenodo, doi 10.5281/zenodo.8103014): 'passing_residues' follows a power law in 'initial_residues' (R² = 0.907 on the discovery half); held-out R² = 0.896 [emp-85d6528d5b7a]
 - 2026-11-09 23:34 FINDING (confirmed on held-out rows): In 'High-quality RNA residues: RNA2023' (Zenodo, doi 10.5281/zenodo.8103014): 'fragments' is linear in 'initial_residues' (R² = 0.978 on the discovery half); held-out R² = 0.866 [emp-d8333eb91644]
 - 2026-11-09 23:34 data feeds: 15478 datasets analysed so far, 2258 confirmed findings
+- 2026-11-10 00:16 data feeds: online
