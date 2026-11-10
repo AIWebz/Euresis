@@ -2474116,5 +2474116,221 @@
   "statement": "Octal game 0.575652 is completely solved: its Grundy values are periodic with pre-period 937 and period 192 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17106560",
+   "held_out_r2": 0.9122,
+   "held_out_rows": 138,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-2f1aaf1bbaa8",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "515cae8d879ea98c.csv",
+   "doi": "10.5281/zenodo.17106560",
+   "form": "linear",
+   "params": [
+    -0.016503464506001694,
+    0.9614845075523277
+   ],
+   "seed": 2648126059,
+   "x": "acc_i",
+   "y": "bkg_trend"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Holocene land-use and climate forcing of ombrotrophic peatland dynamics in north' (Zenodo, doi 10.5281/zenodo.17106560): 'bkg_trend' is linear in 'acc_i' (R\u00b2 = 0.982 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22815063",
+   "held_out_r2": 0.9726,
+   "held_out_rows": 4416,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f9da3c141526",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "b4ae9c84ee8a31ce.csv",
+   "doi": "10.5281/zenodo.22815063",
+   "form": "power law",
+   "params": [
+    -7.157291770095956,
+    1.277841579221099
+   ],
+   "seed": 635722114,
+   "x": "SSC_mg_l",
+   "y": "SSL_tons"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'High-frequency hydrology and suspended sediment dataset for the Nakkhu River catchment, Ne' (Zenodo, doi 10.5281/zenodo.22815063): 'SSL_tons' follows a power law in 'SSC_mg_l' (R\u00b2 = 0.973 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15120774",
+   "held_out_r2": 0.9661,
+   "held_out_rows": 138,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-0130a7b8435c",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "f64250998bea6ea6.csv",
+   "doi": "10.5281/zenodo.15120774",
+   "form": "linear",
+   "params": [
+    -61461423.41364584,
+    1.0782672911385087
+   ],
+   "seed": 4258859273,
+   "x": "Soil_Storage",
+   "y": "PM_Storage"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Investigating terrestrial water storage change in a western Canadian river basin with GRAC' (Zenodo, doi 10.5281/zenodo.15120774): 'PM_Storage' is linear in 'Soil_Storage' (R\u00b2 = 0.957 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15120774",
+   "held_out_r2": 0.9236,
+   "held_out_rows": 138,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ddcf06a08e7a",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "f64250998bea6ea6.csv",
+   "doi": "10.5281/zenodo.15120774",
+   "form": "linear",
+   "params": [
+    2535382.8108447026,
+    0.3559270466065529
+   ],
+   "seed": 4258859273,
+   "x": "Soil_Storage",
+   "y": "S11"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Investigating terrestrial water storage change in a western Canadian river basin with GRAC' (Zenodo, doi 10.5281/zenodo.15120774): 'S11' is linear in 'Soil_Storage' (R\u00b2 = 0.905 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15120774",
+   "held_out_r2": 0.9244,
+   "held_out_rows": 138,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-1d61579f20aa",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "f64250998bea6ea6.csv",
+   "doi": "10.5281/zenodo.15120774",
+   "form": "linear",
+   "params": [
+    -7360872.385383062,
+    0.33232298435625324
+   ],
+   "seed": 4258859273,
+   "x": "Soil_Storage",
+   "y": "S09"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Investigating terrestrial water storage change in a western Canadian river basin with GRAC' (Zenodo, doi 10.5281/zenodo.15120774): 'S09' is linear in 'Soil_Storage' (R\u00b2 = 0.903 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15120774",
+   "held_out_r2": 0.9507,
+   "held_out_rows": 138,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ac501537bc71",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "f64250998bea6ea6.csv",
+   "doi": "10.5281/zenodo.15120774",
+   "form": "linear",
+   "params": [
+    37830.290535730055,
+    0.7567125967162462
+   ],
+   "seed": 4258859273,
+   "x": "Bedrock_Storage",
+   "y": "S06"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Investigating terrestrial water storage change in a western Canadian river basin with GRAC' (Zenodo, doi 10.5281/zenodo.15120774): 'S06' is linear in 'Bedrock_Storage' (R\u00b2 = 0.947 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15120774",
+   "held_out_r2": 0.9512,
+   "held_out_rows": 138,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-27d3c1e9ea3e",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "f64250998bea6ea6.csv",
+   "doi": "10.5281/zenodo.15120774",
+   "form": "linear",
+   "params": [
+    22613736.538298488,
+    0.2754818961257475
+   ],
+   "seed": 4258859273,
+   "x": "PM_Storage",
+   "y": "S10"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Investigating terrestrial water storage change in a western Canadian river basin with GRAC' (Zenodo, doi 10.5281/zenodo.15120774): 'S10' is linear in 'PM_Storage' (R\u00b2 = 0.941 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15120774",
+   "held_out_r2": 0.9384,
+   "held_out_rows": 138,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-70a4742ffb25",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "f64250998bea6ea6.csv",
+   "doi": "10.5281/zenodo.15120774",
+   "form": "linear",
+   "params": [
+    11578019.838697461,
+    0.31084515301012866
+   ],
+   "seed": 4258859273,
+   "x": "PM_Storage",
+   "y": "S09"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Investigating terrestrial water storage change in a western Canadian river basin with GRAC' (Zenodo, doi 10.5281/zenodo.15120774): 'S09' is linear in 'PM_Storage' (R\u00b2 = 0.959 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]

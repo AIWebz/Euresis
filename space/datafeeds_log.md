@@ -2553,3 +2553,6 @@
 - 2026-11-10 01:25 FINDING (confirmed on held-out rows): In 'Occupation-level scores of exposure to generative AI for Britain, from the Generative AI S' (Figshare, doi 10.5522/04/34857396.v1): 'rank_gpt55' is linear in 'rank_glm52' (R² = 0.962 on the discovery half); held-out R² = 0.968 [emp-671cc07bdfa0]
 - 2026-11-10 01:25 data feeds: 15598 datasets analysed so far, 2294 confirmed findings
 - 2026-11-10 02:27 data feeds: online
+- 2026-11-10 02:27 FINDING (confirmed on held-out rows): In 'Data for: Holocene land-use and climate forcing of ombrotrophic peatland dynamics in north' (Zenodo, doi 10.5281/zenodo.17106560): 'bkg_trend' is linear in 'acc_i' (R² = 0.982 on the discovery half); held-out R² = 0.912 [emp-2f1aaf1bbaa8]
+- 2026-11-10 02:27 FINDING (confirmed on held-out rows): In 'High-frequency hydrology and suspended sediment dataset for the Nakkhu River catchment, Ne' (Zenodo, doi 10.5281/zenodo.22815063): 'SSL_tons' follows a power law in 'SSC_mg_l' (R² = 0.973 on the discovery half); held-out R² = 0.973 [emp-f9da3c141526]
+- 2026-11-10 02:29 data feeds: 15773 datasets analysed so far, 2296 confirmed findings
