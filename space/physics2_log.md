@@ -3737,3 +3737,11 @@
 - 2026-11-10 10:25 round 3433: two-body decay
 - 2026-11-10 10:26 round 3434: collision
 - 2026-11-10 10:28 round 3435: driven oscillator
+- 2026-11-10 10:29 round 3436: velocity addition
+- 2026-11-10 10:30 round 3437: Compton scattering
+- 2026-11-10 10:31 round 3438: Cournot duopoly
+- 2026-11-10 10:33 round 3439: insurance and risk
+- 2026-11-10 10:34 round 3440: auction with a reserve price
+- 2026-11-10 10:35 round 3441: two-body decay
+- 2026-11-10 10:37 round 3442: collision
+- 2026-11-10 10:41 segment end: 3442 rounds, 5 discoveries, 2 known laws rediscovered
