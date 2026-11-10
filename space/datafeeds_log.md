@@ -2669,3 +2669,5 @@
 - 2026-11-10 07:10 FINDING (confirmed on held-out rows): In 'Data from: A rapid and cost-effective quantitative microsatellite genotyping protocol to e' (Zenodo, doi 10.5061/dryad.dc7s2): 'aB' follows a power law in 'hB' (R² = 0.988 on the discovery half); held-out R² = 0.986 [emp-2bf44924e1dc]
 - 2026-11-10 07:10 FINDING (confirmed on held-out rows): In 'Data from: A rapid and cost-effective quantitative microsatellite genotyping protocol to e' (Zenodo, doi 10.5061/dryad.dc7s2): 'aR' follows a power law in 'hR' (R² = 0.995 on the discovery half); held-out R² = 0.996 [emp-015efa64ad9d]
 - 2026-11-10 07:10 data feeds: 16627 datasets analysed so far, 2399 confirmed findings
+- 2026-11-10 08:11 data feeds: online
+- 2026-11-10 08:12 FINDING (confirmed on held-out rows): In 'Data products associated with: Cramer, Withers, and Pawlowski (2025), Time-Dependent Chang' (Zenodo, doi 10.5281/zenodo.17444014): 'ne_M2alt' grows exponentially in 'ne_155km' (R² = 0.987 on the discovery half); held-out R² = 0.965 [emp-a135b4324d56]

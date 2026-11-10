@@ -2527261,5 +2527261,59 @@
   "statement": "Octal game 0.623013 is completely solved: its Grundy values are periodic with pre-period 58 and period 70 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17444014",
+   "held_out_r2": 0.9652,
+   "held_out_rows": 83,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a135b4324d56",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "ae37f14515415388.csv",
+   "doi": "10.5281/zenodo.17444014",
+   "form": "exponential",
+   "params": [
+    -0.8046324538559315,
+    0.804465989043923
+   ],
+   "seed": 4105340852,
+   "x": "ne_155km",
+   "y": "ne_M2alt"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data products associated with: Cramer, Withers, and Pawlowski (2025), Time-Dependent Chang' (Zenodo, doi 10.5281/zenodo.17444014): 'ne_M2alt' grows exponentially in 'ne_155km' (R\u00b2 = 0.987 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17444014",
+   "held_out_r2": 0.8862,
+   "held_out_rows": 83,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a032512ea335",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "ae37f14515415388.csv",
+   "doi": "10.5281/zenodo.17444014",
+   "form": "exponential",
+   "params": [
+    -0.7373755143869988,
+    0.7363864261660197
+   ],
+   "seed": 4105340852,
+   "x": "ne_170km",
+   "y": "ne_M2alt"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data products associated with: Cramer, Withers, and Pawlowski (2025), Time-Dependent Chang' (Zenodo, doi 10.5281/zenodo.17444014): 'ne_M2alt' grows exponentially in 'ne_170km' (R\u00b2 = 0.952 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
