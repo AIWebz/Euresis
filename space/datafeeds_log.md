@@ -2578,3 +2578,4 @@
 - 2026-11-10 03:22 FINDING (confirmed on held-out rows): In 'STGNN-TSS Dataset for Long-Term Total Suspended Solids Reconstruction in China's Coastal W' (Figshare, doi 10.6084/m9.figshare.33174731.v1): 'B8A' follows a power law in 'B6' (R² = 0.945 on the discovery half); held-out R² = 0.936 [emp-d7744642489c]
 - 2026-11-10 03:22 FINDING (confirmed on held-out rows): In 'STGNN-TSS Dataset for Long-Term Total Suspended Solids Reconstruction in China's Coastal W' (Figshare, doi 10.6084/m9.figshare.33174731.v1): 'B8A' follows a power law in 'B7' (R² = 0.947 on the discovery half); held-out R² = 0.948 [emp-c40827ff5269]
 - 2026-11-10 03:22 data feeds: 15881 datasets analysed so far, 2316 confirmed findings
+- 2026-11-10 04:23 data feeds: online
