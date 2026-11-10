@@ -2533,3 +2533,4 @@
 - 2026-11-10 00:18 FINDING (confirmed on held-out rows): In 'Beyond Substrates: Strain Engineering of Ferroelectric Membranes' (Zenodo, doi 10.5281/zenodo.6091688): 'f=100Hz' is linear in 'f=1kHz' (R² = 0.979 on the discovery half); held-out R² = 0.977 [emp-d41645a86cc6]
 - 2026-11-10 00:19 FINDING (confirmed on held-out rows): In 'Beyond Substrates: Strain Engineering of Ferroelectric Membranes' (Zenodo, doi 10.5281/zenodo.6091688): 'f=10Hz' is linear in 'f=1kHz' (R² = 0.956 on the discovery half); held-out R² = 0.949 [emp-64448bee409c]
 - 2026-11-10 00:19 data feeds: 15568 datasets analysed so far, 2277 confirmed findings
+- 2026-11-10 01:24 data feeds: online
