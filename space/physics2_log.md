@@ -3482,3 +3482,13 @@
 - 2026-11-10 00:34 round 3198: Cournot duopoly
 - 2026-11-10 00:35 round 3199: insurance and risk
 - 2026-11-10 00:37 round 3200: auction with a reserve price
+- 2026-11-10 00:38 round 3201: two-body decay
+- 2026-11-10 00:40 round 3202: collision
+- 2026-11-10 00:41 round 3203: driven oscillator
+- 2026-11-10 00:43 round 3204: velocity addition
+- 2026-11-10 00:44 round 3205: Compton scattering
+- 2026-11-10 00:45 round 3206: Cournot duopoly
+- 2026-11-10 00:46 round 3207: insurance and risk
+- 2026-11-10 00:48 round 3208: auction with a reserve price
+- 2026-11-10 00:49 round 3209: two-body decay
+- 2026-11-10 00:51 segment end: 3209 rounds, 5 discoveries, 2 known laws rediscovered
