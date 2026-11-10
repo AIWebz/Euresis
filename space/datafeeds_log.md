@@ -2716,3 +2716,4 @@
 - 2026-11-10 10:09 FINDING (confirmed on held-out rows): In 'Environmental heterogeneity on landslide slopes affects the long-term recoveries of forest' (Zenodo, doi 10.5061/dryad.m63xsj45n): 'AGBiomass_mg' is linear in 'BA' (R² = 0.967 on the discovery half); held-out R² = 0.966 [emp-9cbe9f361b1d]
 - 2026-11-10 10:09 FINDING (confirmed on held-out rows): In 'Environmental heterogeneity on landslide slopes affects the long-term recoveries of forest' (Zenodo, doi 10.5061/dryad.m63xsj45n): 'AGBiomass_mg' is linear in 'TimVol' (R² = 0.975 on the discovery half); held-out R² = 0.960 [emp-018dc44e7eaa]
 - 2026-11-10 10:10 data feeds: 16854 datasets analysed so far, 2440 confirmed findings
+- 2026-11-10 10:57 data feeds: online
