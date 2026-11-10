@@ -3476,3 +3476,9 @@
 - 2026-11-10 00:25 round 3192: auction with a reserve price
 - 2026-11-10 00:26 round 3193: two-body decay
 - 2026-11-10 00:28 round 3194: collision
+- 2026-11-10 00:31 round 3195: driven oscillator
+- 2026-11-10 00:32 round 3196: velocity addition
+- 2026-11-10 00:33 round 3197: Compton scattering
+- 2026-11-10 00:34 round 3198: Cournot duopoly
+- 2026-11-10 00:35 round 3199: insurance and risk
+- 2026-11-10 00:37 round 3200: auction with a reserve price
