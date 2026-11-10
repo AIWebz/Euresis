@@ -2480593,5 +2480593,599 @@
   "statement": "Octal game 0.576143 is completely solved: its Grundy values are periodic with pre-period 17 and period 22 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17341008",
+   "held_out_r2": 0.8789,
+   "held_out_rows": 664,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-52ab26ea0905",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "25466efbbefeee31.csv",
+   "doi": "10.5281/zenodo.17341008",
+   "form": "linear",
+   "params": [
+    0.8854018576243804,
+    0.9931238548218454
+   ],
+   "seed": 169246743,
+   "x": "Peak_Intensity",
+   "y": "Params_amplitude"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data - A method for high-resolution bioluminescent signal analysis using a novel instrumen' (Zenodo, doi 10.5281/zenodo.17341008): 'Params_amplitude' is linear in 'Peak_Intensity' (R\u00b2 = 0.972 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15910095",
+   "held_out_r2": 0.6318,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-98784e9322ce",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "d0b56e475d69b48b.csv",
+   "doi": "10.5281/zenodo.15910095",
+   "form": "linear",
+   "params": [
+    0.05655338740434789,
+    26.803863342082295
+   ],
+   "seed": 413017575,
+   "x": "PGA_NS",
+   "y": "PGV_NS"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data Set of selected strong motion parameters and Fourier Amplitude Spectra for the East A' (Zenodo, doi 10.5281/zenodo.15910095): 'PGV_NS' is linear in 'PGA_NS' (R\u00b2 = 0.918 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.2z34tmps9",
+   "held_out_r2": 0.9854,
+   "held_out_rows": 84,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-cd8139a59010",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "5d04ffbc120ce5ff.csv",
+   "doi": "10.5061/dryad.2z34tmps9",
+   "form": "linear",
+   "params": [
+    -3.8424912592455356,
+    0.9551598138319053
+   ],
+   "seed": 2816505745,
+   "x": "Cover",
+   "y": "Q2.5"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Functional changes across marine habitats due to ocean acidification' (Zenodo, doi 10.5061/dryad.2z34tmps9): 'Q2.5' is linear in 'Cover' (R\u00b2 = 0.987 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.2z34tmps9",
+   "held_out_r2": 0.9791,
+   "held_out_rows": 84,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-63ef67adda78",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "5d04ffbc120ce5ff.csv",
+   "doi": "10.5061/dryad.2z34tmps9",
+   "form": "linear",
+   "params": [
+    7.348765330115017,
+    0.9865573924282269
+   ],
+   "seed": 2816505745,
+   "x": "Cover",
+   "y": "Q97.5"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Functional changes across marine habitats due to ocean acidification' (Zenodo, doi 10.5061/dryad.2z34tmps9): 'Q97.5' is linear in 'Cover' (R\u00b2 = 0.957 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.19942496",
+   "held_out_r2": 0.9366,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-07bce4619789",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "83ab63626f8c0c52.csv",
+   "doi": "10.5281/zenodo.19942496",
+   "form": "linear",
+   "params": [
+    112.34374756992018,
+    -1.4274407109733133e-07
+   ],
+   "seed": 3920802412,
+   "x": "Segment ID",
+   "y": "Longitude (deg)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Bathymetry Dataset for Coral Reef Derived from ICESat-2 and Sentinel-2 Imagery' (Zenodo, doi 10.5281/zenodo.19942496): 'Longitude (deg)' is linear in 'Segment ID' (R\u00b2 = 0.939 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.19942496",
+   "held_out_r2": 0.9371,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-47dc7be25842",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "83ab63626f8c0c52.csv",
+   "doi": "10.5281/zenodo.19942496",
+   "form": "linear",
+   "params": [
+    643085.4016514792,
+    -0.015224662451512792
+   ],
+   "seed": 3920802412,
+   "x": "Segment ID",
+   "y": "UTM Easting (m)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Bathymetry Dataset for Coral Reef Derived from ICESat-2 and Sentinel-2 Imagery' (Zenodo, doi 10.5281/zenodo.19942496): 'UTM Easting (m)' is linear in 'Segment ID' (R\u00b2 = 0.939 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.19942496",
+   "held_out_r2": 0.9074,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-7b56cb6e751c",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "83ab63626f8c0c52.csv",
+   "doi": "10.5281/zenodo.19942496",
+   "form": "linear",
+   "params": [
+    16.176874873851744,
+    -2.0570971323943347e-05
+   ],
+   "seed": 3920802412,
+   "x": "Segment ID",
+   "y": "Cross-Track (m)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Bathymetry Dataset for Coral Reef Derived from ICESat-2 and Sentinel-2 Imagery' (Zenodo, doi 10.5281/zenodo.19942496): 'Cross-Track (m)' is linear in 'Segment ID' (R\u00b2 = 0.910 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.19942496",
+   "held_out_r2": 0.9099,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-2e957b78e000",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "83ab63626f8c0c52.csv",
+   "doi": "10.5281/zenodo.19942496",
+   "form": "linear",
+   "params": [
+    -21.965288103278716,
+    7.232205862214178
+   ],
+   "seed": 3920802412,
+   "x": "Cross-Track (m)",
+   "y": "Solar Elevation (deg)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Bathymetry Dataset for Coral Reef Derived from ICESat-2 and Sentinel-2 Imagery' (Zenodo, doi 10.5281/zenodo.19942496): 'Solar Elevation (deg)' is linear in 'Cross-Track (m)' (R\u00b2 = 0.909 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.19942496",
+   "held_out_r2": 0.9886,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-0d6c76779892",
+  "kind": "empirical",
+  "novelty": "KNOWN: standard atmosphere / hydrostatics (temperature, pressure and altitude, T \u221d P^(R\u00b7\u0393/g)) \u2014 not a discovery",
+  "payload": {
+   "dataset": "83ab63626f8c0c52.csv",
+   "doi": "10.5281/zenodo.19942496",
+   "form": "linear",
+   "params": [
+    -2.1414826380601344,
+    1.0334186532612641
+   ],
+   "seed": 3920802412,
+   "x": "Height (m HAE)",
+   "y": "Height (m MSL)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Bathymetry Dataset for Coral Reef Derived from ICESat-2 and Sentinel-2 Imagery' (Zenodo, doi 10.5281/zenodo.19942496): 'Height (m MSL)' is linear in 'Height (m HAE)' (R\u00b2 = 0.988 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.19942496",
+   "held_out_r2": 0.9794,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-19f9e983ec2f",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "83ab63626f8c0c52.csv",
+   "doi": "10.5281/zenodo.19942496",
+   "form": "linear",
+   "params": [
+    -2.1117373634716365,
+    1.0227940393640957
+   ],
+   "seed": 3920802412,
+   "x": "Height (m HAE)",
+   "y": "Residual"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Bathymetry Dataset for Coral Reef Derived from ICESat-2 and Sentinel-2 Imagery' (Zenodo, doi 10.5281/zenodo.19942496): 'Residual' is linear in 'Height (m HAE)' (R\u00b2 = 0.978 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.18759764",
+   "held_out_r2": 0.8851,
+   "held_out_rows": 1080,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c490a376eb30",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "1b0a6804bb97d466.csv",
+   "doi": "10.5281/zenodo.18759764",
+   "form": "linear",
+   "params": [
+    0.5850598703353629,
+    0.14757992748222706
+   ],
+   "seed": 3175617338,
+   "x": "RMSE_AN",
+   "y": "RMSE_SWM"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Supplementary Material for \"Performance of TRMM 3B42 and GPM IMERG for precipitation estim' (Zenodo, doi 10.5281/zenodo.18759764): 'RMSE_SWM' is linear in 'RMSE_AN' (R\u00b2 = 0.908 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.18759764",
+   "held_out_r2": 0.8981,
+   "held_out_rows": 1080,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a630cf30d968",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "1b0a6804bb97d466.csv",
+   "doi": "10.5281/zenodo.18759764",
+   "form": "linear",
+   "params": [
+    0.0042046183780307085,
+    0.9694727332073566
+   ],
+   "seed": 3175617338,
+   "x": "CC_AN",
+   "y": "CC_NEM"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Supplementary Material for \"Performance of TRMM 3B42 and GPM IMERG for precipitation estim' (Zenodo, doi 10.5281/zenodo.18759764): 'CC_NEM' is linear in 'CC_AN' (R\u00b2 = 0.918 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.18759764",
+   "held_out_r2": 0.9041,
+   "held_out_rows": 1080,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-fbfea9c95f3d",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "1b0a6804bb97d466.csv",
+   "doi": "10.5281/zenodo.18759764",
+   "form": "linear",
+   "params": [
+    0.0030138728277904338,
+    0.7925497160984146
+   ],
+   "seed": 3175617338,
+   "x": "CC_AN",
+   "y": "CC_SWM"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Supplementary Material for \"Performance of TRMM 3B42 and GPM IMERG for precipitation estim' (Zenodo, doi 10.5281/zenodo.18759764): 'CC_SWM' is linear in 'CC_AN' (R\u00b2 = 0.913 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.18759764",
+   "held_out_r2": 0.9183,
+   "held_out_rows": 1080,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d69a1c71a117",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "1b0a6804bb97d466.csv",
+   "doi": "10.5281/zenodo.18759764",
+   "form": "linear",
+   "params": [
+    0.002078299424180079,
+    0.787055523744906
+   ],
+   "seed": 3175617338,
+   "x": "CC_NEM",
+   "y": "CC_SWM"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Supplementary Material for \"Performance of TRMM 3B42 and GPM IMERG for precipitation estim' (Zenodo, doi 10.5281/zenodo.18759764): 'CC_SWM' is linear in 'CC_NEM' (R\u00b2 = 0.921 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.18759764",
+   "held_out_r2": 0.9489,
+   "held_out_rows": 1080,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a56be29aa7a2",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "1b0a6804bb97d466.csv",
+   "doi": "10.5281/zenodo.18759764",
+   "form": "linear",
+   "params": [
+    0.0011869152285325492,
+    0.8491843970831154
+   ],
+   "seed": 3175617338,
+   "x": "CC_NEM",
+   "y": "CC_IM"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Supplementary Material for \"Performance of TRMM 3B42 and GPM IMERG for precipitation estim' (Zenodo, doi 10.5281/zenodo.18759764): 'CC_IM' is linear in 'CC_NEM' (R\u00b2 = 0.915 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17530624",
+   "held_out_r2": 0.912,
+   "held_out_rows": 6238,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9efb4b07cf97",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "99a7893c3a86a639.csv",
+   "doi": "10.5281/zenodo.17530624",
+   "form": "logarithmic",
+   "params": [
+    10.263672303186425,
+    -2.9381355903781428
+   ],
+   "seed": 2291026164,
+   "x": "S1",
+   "y": "FLUOR"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Conductivity Temperature Depth (CTD) Data from Canada-Sweden Arctic Ocean 2025 Expedition ' (Zenodo, doi 10.5281/zenodo.17530624): 'FLUOR' grows logarithmically in 'S1' (R\u00b2 = 0.909 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17530624",
+   "held_out_r2": 0.9149,
+   "held_out_rows": 6238,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-305791efe6d7",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "99a7893c3a86a639.csv",
+   "doi": "10.5281/zenodo.17530624",
+   "form": "logarithmic",
+   "params": [
+    10.233083770337263,
+    -2.9295525251970247
+   ],
+   "seed": 2291026164,
+   "x": "S2",
+   "y": "FLUOR"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Conductivity Temperature Depth (CTD) Data from Canada-Sweden Arctic Ocean 2025 Expedition ' (Zenodo, doi 10.5281/zenodo.17530624): 'FLUOR' grows logarithmically in 'S2' (R\u00b2 = 0.912 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17530624",
+   "held_out_r2": 0.9293,
+   "held_out_rows": 6238,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-331c638cdd34",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "99a7893c3a86a639.csv",
+   "doi": "10.5281/zenodo.17530624",
+   "form": "linear",
+   "params": [
+    -0.15124839496283224,
+    0.0822316180489403
+   ],
+   "seed": 2291026164,
+   "x": "OXY1_SAT",
+   "y": "OXY1_ML"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Conductivity Temperature Depth (CTD) Data from Canada-Sweden Arctic Ocean 2025 Expedition ' (Zenodo, doi 10.5281/zenodo.17530624): 'OXY1_ML' is linear in 'OXY1_SAT' (R\u00b2 = 0.931 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17530624",
+   "held_out_r2": 0.9077,
+   "held_out_rows": 6238,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ea2d056c6db4",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "99a7893c3a86a639.csv",
+   "doi": "10.5281/zenodo.17530624",
+   "form": "exponential",
+   "params": [
+    0.9055073347698523,
+    0.01193386313331745
+   ],
+   "seed": 2291026164,
+   "x": "OXY2_SAT",
+   "y": "OXY2_ML"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Conductivity Temperature Depth (CTD) Data from Canada-Sweden Arctic Ocean 2025 Expedition ' (Zenodo, doi 10.5281/zenodo.17530624): 'OXY2_ML' grows exponentially in 'OXY2_SAT' (R\u00b2 = 0.907 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.6809070",
+   "held_out_r2": 0.9599,
+   "held_out_rows": 1706,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-7826bc05d322",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "7d8bd47a59797d1b.csv",
+   "doi": "10.5281/zenodo.6809070",
+   "form": "power law",
+   "params": [
+    -5.533170127659522,
+    0.7882663079217056
+   ],
+   "seed": 3716977311,
+   "x": "volumeFiltered",
+   "y": "netSurfaceArea"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Myctobase' (Zenodo, doi 10.5281/zenodo.6809070): 'netSurfaceArea' follows a power law in 'volumeFiltered' (R\u00b2 = 0.957 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.6084/m9.figshare.33174731.v1",
+   "held_out_r2": 0.9365,
+   "held_out_rows": 3894,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d7744642489c",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "0903fae5388721f5.csv",
+   "doi": "10.6084/m9.figshare.33174731.v1",
+   "form": "power law",
+   "params": [
+    -0.530626967096858,
+    1.0579574586207965
+   ],
+   "seed": 4213583546,
+   "x": "B6",
+   "y": "B8A"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'STGNN-TSS Dataset for Long-Term Total Suspended Solids Reconstruction in China's Coastal W' (Figshare, doi 10.6084/m9.figshare.33174731.v1): 'B8A' follows a power law in 'B6' (R\u00b2 = 0.945 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.6084/m9.figshare.33174731.v1",
+   "held_out_r2": 0.9484,
+   "held_out_rows": 3894,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c40827ff5269",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "0903fae5388721f5.csv",
+   "doi": "10.6084/m9.figshare.33174731.v1",
+   "form": "power law",
+   "params": [
+    -0.43238587257535926,
+    1.0456651339173182
+   ],
+   "seed": 4213583546,
+   "x": "B7",
+   "y": "B8A"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'STGNN-TSS Dataset for Long-Term Total Suspended Solids Reconstruction in China's Coastal W' (Figshare, doi 10.6084/m9.figshare.33174731.v1): 'B8A' follows a power law in 'B7' (R\u00b2 = 0.947 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
