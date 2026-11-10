@@ -2635,3 +2635,7 @@
 - 2026-11-10 04:31 data feeds: 15988 datasets analysed so far, 2369 confirmed findings
 - 2026-11-10 05:12 data feeds: online
 - 2026-11-10 05:13 FINDING (confirmed on held-out rows): In 'ReESH_US-Wjs: Willard Juniper Savannah' (Zenodo, doi 10.5281/zenodo.16032863): 'Vol_Water' follows a power law in 'MPa_Abs' (R² = 0.930 on the discovery half); held-out R² = 0.919 [emp-006a6ab2a47a]
+- 2026-11-10 05:13 FINDING (confirmed on held-out rows): In 'ReESH_US-UiC: University of Illinois Maize-Soy' (Zenodo, doi 10.5281/zenodo.17641844): 'Vol_Water' grows logarithmically in 'MPa_Abs' (R² = 0.918 on the discovery half); held-out R² = 0.897 [emp-1ed4a9cfb999]
+- 2026-11-10 05:13 FINDING (confirmed on held-out rows): In 'ReESH_NM-jerSHU: Jornada Experimental Range - Shrubland' (Zenodo, doi 10.5281/zenodo.17297524): 'Vol_Water' follows a power law in 'MPa_Abs' (R² = 0.932 on the discovery half); held-out R² = 0.929 [emp-893181774fcb]
+- 2026-11-10 05:13 FINDING (confirmed on held-out rows): In 'ReESH_US-Me6: Metolius Young Pine Burn' (Zenodo, doi 10.5281/zenodo.15994479): 'Vol_Water' follows a power law in 'MPa_Abs' (R² = 0.918 on the discovery half); held-out R² = 0.914 [emp-47f118b2be02]
+- 2026-11-10 05:13 FINDING (confirmed on held-out rows): In 'Greenhouse plant-soil feedback experiment at Cedar Creek Ecosystem Science Reserve' (Zenodo, doi 10.5061/dryad.9cnp5hqkv): 'FinalNO3.NO2' is linear in 'N.min' (R² = 0.982 on the discovery half); held-out R² = 0.980 [emp-9a77b02ade7a]
