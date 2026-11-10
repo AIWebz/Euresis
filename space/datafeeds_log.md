@@ -2808,3 +2808,4 @@
 - 2026-11-10 16:43 FINDING (confirmed on held-out rows): In 'The influence of Western Australian Shelf organic carbon burial on CO2 drawdown since 210 ' (Zenodo, doi 10.5281/zenodo.23191173): 'Tristimulus Y' follows a power law in 'Reflectance L*' (R² = 0.999 on the discovery half); held-out R² = 0.999 [emp-5b33284d964c]
 - 2026-11-10 16:43 FINDING (confirmed on held-out rows): In 'The influence of Western Australian Shelf organic carbon burial on CO2 drawdown since 210 ' (Zenodo, doi 10.5281/zenodo.23191173): 'Tristimulus Z' grows exponentially in 'Reflectance L*' (R² = 0.960 on the discovery half); held-out R² = 0.959 [emp-288cc4c336dc]
 - 2026-11-10 16:44 data feeds: 17999 datasets analysed so far, 2518 confirmed findings
+- 2026-11-10 17:45 data feeds: online
