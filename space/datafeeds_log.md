@@ -2706,3 +2706,4 @@
 - 2026-11-10 09:05 FINDING (confirmed on held-out rows): In 'Plant Phenology and Soil Leachate Data from Plant Microbe Asynchronies in the Northern For' (Zenodo, doi 10.5281/zenodo.16783118): 'green.yellow.area' is linear in 'veg.area' (R² = 0.938 on the discovery half); held-out R² = 0.944 [emp-ae5d43eaeb22]
 - 2026-11-10 09:05 FINDING (confirmed on held-out rows): In 'Plant Phenology and Soil Leachate Data from Plant Microbe Asynchronies in the Northern For' (Zenodo, doi 10.5281/zenodo.16783118): 'green.yellow.percent' is linear in 'veg.percent' (R² = 0.940 on the discovery half); held-out R² = 0.943 [emp-22b17cc2cd92]
 - 2026-11-10 09:06 data feeds: 16807 datasets analysed so far, 2432 confirmed findings
+- 2026-11-10 10:08 data feeds: online
