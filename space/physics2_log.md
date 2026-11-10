@@ -3716,3 +3716,8 @@
 - 2026-11-10 09:26 round 3414: Cournot duopoly
 - 2026-11-10 09:27 round 3415: insurance and risk
 - 2026-11-10 09:28 round 3416: auction with a reserve price
+- 2026-11-10 09:29 round 3417: two-body decay
+- 2026-11-10 09:31 round 3418: collision
+- 2026-11-10 09:35 round 3419: driven oscillator
+- 2026-11-10 09:36 round 3420: velocity addition
+- 2026-11-10 09:37 segment end: 3420 rounds, 5 discoveries, 2 known laws rediscovered
