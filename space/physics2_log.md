@@ -3609,3 +3609,14 @@
 - 2026-11-10 05:54 round 3315: driven oscillator
 - 2026-11-10 05:55 round 3316: velocity addition
 - 2026-11-10 05:56 round 3317: Compton scattering
+- 2026-11-10 05:58 round 3318: Cournot duopoly
+- 2026-11-10 05:58 round 3319: insurance and risk
+- 2026-11-10 06:00 round 3320: auction with a reserve price
+- 2026-11-10 06:01 round 3321: two-body decay
+- 2026-11-10 06:03 round 3322: collision
+- 2026-11-10 06:05 round 3323: driven oscillator
+- 2026-11-10 06:06 round 3324: velocity addition
+- 2026-11-10 06:08 round 3325: Compton scattering
+- 2026-11-10 06:08 round 3326: Cournot duopoly
+- 2026-11-10 06:10 round 3327: insurance and risk
+- 2026-11-10 06:12 segment end: 3327 rounds, 5 discoveries, 2 known laws rediscovered
