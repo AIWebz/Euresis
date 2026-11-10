@@ -2567943,5 +2567943,32 @@
   "statement": "Octal game 0.702032 is completely solved: its Grundy values are periodic with pre-period 1 and period 12 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.45672js4",
+   "held_out_r2": 0.9298,
+   "held_out_rows": 4567,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-bae41954afeb",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "6211eb613dcf0cb5.csv",
+   "doi": "10.5061/dryad.45672js4",
+   "form": "linear",
+   "params": [
+    4.802168458852997,
+    0.331672818214479
+   ],
+   "seed": 1728147725,
+   "x": "Birds_ResidentSR",
+   "y": "Mammals_ResidentSR"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Global gradients in vertebrate diversity predicted by historical area-productiv' (Zenodo, doi 10.5061/dryad.45672js4): 'Mammals_ResidentSR' is linear in 'Birds_ResidentSR' (R\u00b2 = 0.935 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]

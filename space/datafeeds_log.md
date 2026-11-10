@@ -2729,3 +2729,5 @@
 - 2026-11-10 11:00 FINDING (confirmed on held-out rows): In 'KADET MIRI Point-Source Asteroid Observation Data' (Zenodo, doi 10.5281/zenodo.23875206): 'JPL Sun-Asteroid Dist (AU)' follows a power law in 'JPL Phase Angle (Deg)' (R² = 0.930 on the discovery half); held-out R² = 0.938 [emp-8c50f9a9989c]
 - 2026-11-10 11:00 FINDING (confirmed on held-out rows): In 'Augments of local HST galaxy images at different noise and resolution levels' (Zenodo, doi 10.5281/zenodo.17585609): 'pc_px' follows a power law in 'dist' (R² = 0.999 on the discovery half); held-out R² = 0.996 [emp-ba87315b0917]
 - 2026-11-10 11:00 data feeds: 16909 datasets analysed so far, 2451 confirmed findings
+- 2026-11-10 12:02 data feeds: online
+- 2026-11-10 12:02 FINDING (confirmed on held-out rows): In 'Data from: Global gradients in vertebrate diversity predicted by historical area-productiv' (Zenodo, doi 10.5061/dryad.45672js4): 'Mammals_ResidentSR' is linear in 'Birds_ResidentSR' (R² = 0.935 on the discovery half); held-out R² = 0.930 [emp-bae41954afeb]
