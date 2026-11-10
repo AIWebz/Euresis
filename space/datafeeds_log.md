@@ -2780,3 +2780,8 @@
 - 2026-11-10 13:56 FINDING (confirmed on held-out rows): In 'Data from: Does the cost of development scale allometrically with offspring size?' (Zenodo, doi 10.5061/dryad.p570g): 'Volume (ul)' grows exponentially in 'Area (um2)' (R² = 0.975 on the discovery half); held-out R² = 0.972 [emp-7bafb7f7439f]
 - 2026-11-10 13:57 data feeds: 17833 datasets analysed so far, 2495 confirmed findings
 - 2026-11-10 14:46 data feeds: online
+- 2026-11-10 14:47 FINDING (confirmed on held-out rows): In 'Current Flow in Low-Energy Coral Forereef Spurs and Grooves - Supporting Data and Notebook' (Zenodo, doi 10.5281/zenodo.17332298): 'Hz' follows a power law in 'Hs' (R² = 0.917 on the discovery half); held-out R² = 0.913 [emp-0c571b111e21]
+- 2026-11-10 14:47 FINDING (confirmed on held-out rows): In 'S. neglecta parasitism in O. nigricornis: 2018 collection' (Zenodo, doi 10.5061/dryad.3ffbg79fp): 'Femur' follows a power law in 'Head' (R² = 0.928 on the discovery half); held-out R² = 0.921 [emp-13e24c5a4f44]
+- 2026-11-10 14:47 FINDING (confirmed on held-out rows): In 'S. neglecta parasitism in O. nigricornis: 2018 collection' (Zenodo, doi 10.5061/dryad.3ffbg79fp): 'Pronotum' is linear in 'Head' (R² = 0.921 on the discovery half); held-out R² = 0.897 [emp-5ab956b33e4d]
+- 2026-11-10 14:48 FINDING (confirmed on held-out rows): In 'S. neglecta parasitism in O. nigricornis: 2018 collection' (Zenodo, doi 10.5061/dryad.3ffbg79fp): 'Pronotum' follows a power law in 'Femur' (R² = 0.947 on the discovery half); held-out R² = 0.922 [emp-a20ec4724046]
+- 2026-11-10 14:48 data feeds: 17916 datasets analysed so far, 2499 confirmed findings
