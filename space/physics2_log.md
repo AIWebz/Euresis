@@ -3786,3 +3786,10 @@
 - 2026-11-10 12:25 round 3478: Cournot duopoly
 - 2026-11-10 12:27 round 3479: insurance and risk
 - 2026-11-10 12:29 round 3480: auction with a reserve price
+- 2026-11-10 12:30 round 3481: two-body decay
+- 2026-11-10 12:32 round 3482: collision
+- 2026-11-10 12:34 round 3483: driven oscillator
+- 2026-11-10 12:35 round 3484: velocity addition
+- 2026-11-10 12:36 round 3485: Compton scattering
+- 2026-11-10 12:36 round 3486: Cournot duopoly
+- 2026-11-10 12:37 round 3487: insurance and risk
