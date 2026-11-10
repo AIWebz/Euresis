@@ -2620078,5 +2620078,59 @@
   "statement": "Octal game 0.714132 is completely solved: its Grundy values are periodic with pre-period 1 and period 12 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.sf7m0cg8z",
+   "held_out_r2": 0.9432,
+   "held_out_rows": 283,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e3fd1444cd2d",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "64de105d23b0604b.csv",
+   "doi": "10.5061/dryad.sf7m0cg8z",
+   "form": "linear",
+   "params": [
+    -232.70330409924392,
+    0.9767122218046824
+   ],
+   "seed": 169925323,
+   "x": "NO3-  (mg kg-1)",
+   "y": "NH4+ (mg kg-1)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Global soil moisture\u2013atmosphere feedback and N2O emission dataset' (Zenodo, doi 10.5061/dryad.sf7m0cg8z): 'NH4+ (mg kg-1)' is linear in 'NO3-  (mg kg-1)' (R\u00b2 = 0.959 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17210567",
+   "held_out_r2": 0.9648,
+   "held_out_rows": 535,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-6b2f50ceddb3",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "db0f7564d45aa269.csv",
+   "doi": "10.5281/zenodo.17210567",
+   "form": "logarithmic",
+   "params": [
+    16.444285151434745,
+    -3.4393395078507685
+   ],
+   "seed": 3521526192,
+   "x": "MPa_Abs",
+   "y": "Vol_Water"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'ReESH_US-VT1: Vermillion Tributary Paired Cropland \u2013 Site 1 (Corn/Soy; No Cover Crops)' (Zenodo, doi 10.5281/zenodo.17210567): 'Vol_Water' grows logarithmically in 'MPa_Abs' (R\u00b2 = 0.962 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]

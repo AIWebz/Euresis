@@ -2826,3 +2826,7 @@
 - 2026-11-10 17:51 FINDING (confirmed on held-out rows): In '<b>A Mechanical Analysis Framework for Drag in Complex Aquatic Vegetation</b>' (Figshare, doi 10.6084/m9.figshare.28246448.v2): 'mean_speed_xz_m_s' is linear in 'mean_ux_m_s' (R² = 0.902 on the discovery half); held-out R² = 0.895 [emp-dc8e069898d0]
 - 2026-11-10 17:51 FINDING (confirmed on held-out rows): In '<b>A Mechanical Analysis Framework for Drag in Complex Aquatic Vegetation</b>' (Figshare, doi 10.6084/m9.figshare.28246448.v2): 'mean_ux_over_U' is linear in 'mean_speed_xz_m_s' (R² = 0.902 on the discovery half); held-out R² = 0.895 [emp-368391cbf242]
 - 2026-11-10 17:52 data feeds: 18147 datasets analysed so far, 2534 confirmed findings
+- 2026-11-10 18:35 data feeds: online
+- 2026-11-10 18:36 FINDING (confirmed on held-out rows): In 'Global soil moisture–atmosphere feedback and N2O emission dataset' (Zenodo, doi 10.5061/dryad.sf7m0cg8z): 'NH4+ (mg kg-1)' is linear in 'NO3-  (mg kg-1)' (R² = 0.959 on the discovery half); held-out R² = 0.943 [emp-e3fd1444cd2d]
+- 2026-11-10 18:36 FINDING (confirmed on held-out rows): In 'ReESH_US-VT1: Vermillion Tributary Paired Cropland – Site 1 (Corn/Soy; No Cover Crops)' (Zenodo, doi 10.5281/zenodo.17210567): 'Vol_Water' grows logarithmically in 'MPa_Abs' (R² = 0.962 on the discovery half); held-out R² = 0.965 [emp-6b2f50ceddb3]
+- 2026-11-10 18:37 data feeds: 18203 datasets analysed so far, 2536 confirmed findings
