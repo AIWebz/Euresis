@@ -2463545,5 +2463545,491 @@
   "statement": "Octal game 0.575107 is completely solved: its Grundy values are periodic with pre-period 1 and period 4 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5522/04/34857396.v1",
+   "held_out_r2": 0.9827,
+   "held_out_rows": 45,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-71f593200dec",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "d73588699073b3bf.csv",
+   "doi": "10.5522/04/34857396.v1",
+   "form": "power law",
+   "params": [
+    0.03965432725291277,
+    0.9893698820539206
+   ],
+   "seed": 2434843093,
+   "x": "n_resp",
+   "y": "n_weighted"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Occupation-level scores of exposure to generative AI for Britain, from the Generative AI S' (Figshare, doi 10.5522/04/34857396.v1): 'n_weighted' follows a power law in 'n_resp' (R\u00b2 = 0.982 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5522/04/34857396.v1",
+   "held_out_r2": 0.9366,
+   "held_out_rows": 45,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e59e05d03827",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "d73588699073b3bf.csv",
+   "doi": "10.5522/04/34857396.v1",
+   "form": "linear",
+   "params": [
+    3.946626208281407,
+    0.9180614241175281
+   ],
+   "seed": 2434843093,
+   "x": "rank_gem15",
+   "y": "rank_glm52"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Occupation-level scores of exposure to generative AI for Britain, from the Generative AI S' (Figshare, doi 10.5522/04/34857396.v1): 'rank_glm52' is linear in 'rank_gem15' (R\u00b2 = 0.930 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5522/04/34857396.v1",
+   "held_out_r2": 0.7902,
+   "held_out_rows": 45,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9f7b076d3fb4",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "d73588699073b3bf.csv",
+   "doi": "10.5522/04/34857396.v1",
+   "form": "power law",
+   "params": [
+    0.08027945128816992,
+    0.9828703533909359
+   ],
+   "seed": 2434843093,
+   "x": "rank_gem15",
+   "y": "rank_gpt4o"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Occupation-level scores of exposure to generative AI for Britain, from the Generative AI S' (Figshare, doi 10.5522/04/34857396.v1): 'rank_gpt4o' follows a power law in 'rank_gem15' (R\u00b2 = 0.953 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5522/04/34857396.v1",
+   "held_out_r2": 0.9505,
+   "held_out_rows": 45,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c89d62dc7bc8",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "d73588699073b3bf.csv",
+   "doi": "10.5522/04/34857396.v1",
+   "form": "linear",
+   "params": [
+    4.1902105135137795,
+    0.9339145152463898
+   ],
+   "seed": 2434843093,
+   "x": "rank_gem15",
+   "y": "rank_gpt51"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Occupation-level scores of exposure to generative AI for Britain, from the Generative AI S' (Figshare, doi 10.5522/04/34857396.v1): 'rank_gpt51' is linear in 'rank_gem15' (R\u00b2 = 0.936 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5522/04/34857396.v1",
+   "held_out_r2": 0.9483,
+   "held_out_rows": 45,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-1a89de502c2b",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "d73588699073b3bf.csv",
+   "doi": "10.5522/04/34857396.v1",
+   "form": "linear",
+   "params": [
+    1.7171319200217194,
+    0.9792435710488839
+   ],
+   "seed": 2434843093,
+   "x": "rank_gem15",
+   "y": "rank_gpt55"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Occupation-level scores of exposure to generative AI for Britain, from the Generative AI S' (Figshare, doi 10.5522/04/34857396.v1): 'rank_gpt55' is linear in 'rank_gem15' (R\u00b2 = 0.948 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5522/04/34857396.v1",
+   "held_out_r2": 0.9614,
+   "held_out_rows": 45,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c353dbbefb47",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "d73588699073b3bf.csv",
+   "doi": "10.5522/04/34857396.v1",
+   "form": "power law",
+   "params": [
+    0.25359493307935466,
+    0.9279433655578857
+   ],
+   "seed": 2434843093,
+   "x": "rank_gem25",
+   "y": "rank_glm52"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Occupation-level scores of exposure to generative AI for Britain, from the Generative AI S' (Figshare, doi 10.5522/04/34857396.v1): 'rank_glm52' follows a power law in 'rank_gem25' (R\u00b2 = 0.954 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5522/04/34857396.v1",
+   "held_out_r2": 0.9087,
+   "held_out_rows": 45,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-fca879ed16f8",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "d73588699073b3bf.csv",
+   "doi": "10.5522/04/34857396.v1",
+   "form": "power law",
+   "params": [
+    -0.16044227773046757,
+    1.0380040471056373
+   ],
+   "seed": 2434843093,
+   "x": "rank_gem25",
+   "y": "rank_gpt4o"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Occupation-level scores of exposure to generative AI for Britain, from the Generative AI S' (Figshare, doi 10.5522/04/34857396.v1): 'rank_gpt4o' follows a power law in 'rank_gem25' (R\u00b2 = 0.943 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5522/04/34857396.v1",
+   "held_out_r2": 0.9052,
+   "held_out_rows": 45,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-fad927959a6e",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "d73588699073b3bf.csv",
+   "doi": "10.5522/04/34857396.v1",
+   "form": "power law",
+   "params": [
+    0.3647327230958617,
+    0.9056195826780559
+   ],
+   "seed": 2434843093,
+   "x": "rank_gem25",
+   "y": "rank_gpt51"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Occupation-level scores of exposure to generative AI for Britain, from the Generative AI S' (Figshare, doi 10.5522/04/34857396.v1): 'rank_gpt51' follows a power law in 'rank_gem25' (R\u00b2 = 0.946 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5522/04/34857396.v1",
+   "held_out_r2": 0.9452,
+   "held_out_rows": 45,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c7ac087af493",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "d73588699073b3bf.csv",
+   "doi": "10.5522/04/34857396.v1",
+   "form": "power law",
+   "params": [
+    0.28844186316870163,
+    0.9254962601706783
+   ],
+   "seed": 2434843093,
+   "x": "rank_gem25",
+   "y": "rank_gpt54"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Occupation-level scores of exposure to generative AI for Britain, from the Generative AI S' (Figshare, doi 10.5522/04/34857396.v1): 'rank_gpt54' follows a power law in 'rank_gem25' (R\u00b2 = 0.963 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5522/04/34857396.v1",
+   "held_out_r2": 0.9442,
+   "held_out_rows": 45,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-be6d640ebcd7",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "d73588699073b3bf.csv",
+   "doi": "10.5522/04/34857396.v1",
+   "form": "power law",
+   "params": [
+    0.32512027098721036,
+    0.912883809294487
+   ],
+   "seed": 2434843093,
+   "x": "rank_gem25",
+   "y": "rank_gpt55"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Occupation-level scores of exposure to generative AI for Britain, from the Generative AI S' (Figshare, doi 10.5522/04/34857396.v1): 'rank_gpt55' follows a power law in 'rank_gem25' (R\u00b2 = 0.959 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5522/04/34857396.v1",
+   "held_out_r2": 0.9413,
+   "held_out_rows": 45,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-0c4a6a68c233",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "d73588699073b3bf.csv",
+   "doi": "10.5522/04/34857396.v1",
+   "form": "linear",
+   "params": [
+    2.9862666784075236,
+    0.9309901303793506
+   ],
+   "seed": 2434843093,
+   "x": "rank_gem31",
+   "y": "rank_glm52"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Occupation-level scores of exposure to generative AI for Britain, from the Generative AI S' (Figshare, doi 10.5522/04/34857396.v1): 'rank_glm52' is linear in 'rank_gem31' (R\u00b2 = 0.941 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5522/04/34857396.v1",
+   "held_out_r2": 0.9074,
+   "held_out_rows": 45,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ce462b491722",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "d73588699073b3bf.csv",
+   "doi": "10.5522/04/34857396.v1",
+   "form": "power law",
+   "params": [
+    -0.27158143972318827,
+    1.0712424679001937
+   ],
+   "seed": 2434843093,
+   "x": "rank_gem31",
+   "y": "rank_gpt4o"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Occupation-level scores of exposure to generative AI for Britain, from the Generative AI S' (Figshare, doi 10.5522/04/34857396.v1): 'rank_gpt4o' follows a power law in 'rank_gem31' (R\u00b2 = 0.904 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5522/04/34857396.v1",
+   "held_out_r2": 0.9705,
+   "held_out_rows": 45,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-dde4b74ce49f",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "d73588699073b3bf.csv",
+   "doi": "10.5522/04/34857396.v1",
+   "form": "linear",
+   "params": [
+    2.7291375980157757,
+    0.9566217671451008
+   ],
+   "seed": 2434843093,
+   "x": "rank_gem31",
+   "y": "rank_gpt51"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Occupation-level scores of exposure to generative AI for Britain, from the Generative AI S' (Figshare, doi 10.5522/04/34857396.v1): 'rank_gpt51' is linear in 'rank_gem31' (R\u00b2 = 0.966 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5522/04/34857396.v1",
+   "held_out_r2": 0.9538,
+   "held_out_rows": 45,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-1e644f22a9b1",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "d73588699073b3bf.csv",
+   "doi": "10.5522/04/34857396.v1",
+   "form": "power law",
+   "params": [
+    0.1250275383385238,
+    0.972602710695208
+   ],
+   "seed": 2434843093,
+   "x": "rank_gem31",
+   "y": "rank_gpt54"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Occupation-level scores of exposure to generative AI for Britain, from the Generative AI S' (Figshare, doi 10.5522/04/34857396.v1): 'rank_gpt54' follows a power law in 'rank_gem31' (R\u00b2 = 0.958 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5522/04/34857396.v1",
+   "held_out_r2": 0.9706,
+   "held_out_rows": 45,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-65f21077e09f",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "d73588699073b3bf.csv",
+   "doi": "10.5522/04/34857396.v1",
+   "form": "power law",
+   "params": [
+    0.13949715029032725,
+    0.965985441848833
+   ],
+   "seed": 2434843093,
+   "x": "rank_gem31",
+   "y": "rank_gpt55"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Occupation-level scores of exposure to generative AI for Britain, from the Generative AI S' (Figshare, doi 10.5522/04/34857396.v1): 'rank_gpt55' follows a power law in 'rank_gem31' (R\u00b2 = 0.968 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5522/04/34857396.v1",
+   "held_out_r2": 0.9274,
+   "held_out_rows": 45,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-584bde8a3bc1",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "d73588699073b3bf.csv",
+   "doi": "10.5522/04/34857396.v1",
+   "form": "linear",
+   "params": [
+    2.208934488702553,
+    0.9767244531690392
+   ],
+   "seed": 2434843093,
+   "x": "rank_glm52",
+   "y": "rank_gpt51"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Occupation-level scores of exposure to generative AI for Britain, from the Generative AI S' (Figshare, doi 10.5522/04/34857396.v1): 'rank_gpt51' is linear in 'rank_glm52' (R\u00b2 = 0.927 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5522/04/34857396.v1",
+   "held_out_r2": 0.9267,
+   "held_out_rows": 45,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4005280b502c",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "d73588699073b3bf.csv",
+   "doi": "10.5522/04/34857396.v1",
+   "form": "power law",
+   "params": [
+    0.15304590509622584,
+    0.9654254988698978
+   ],
+   "seed": 2434843093,
+   "x": "rank_glm52",
+   "y": "rank_gpt54"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Occupation-level scores of exposure to generative AI for Britain, from the Generative AI S' (Figshare, doi 10.5522/04/34857396.v1): 'rank_gpt54' follows a power law in 'rank_glm52' (R\u00b2 = 0.946 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5522/04/34857396.v1",
+   "held_out_r2": 0.9675,
+   "held_out_rows": 45,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-671cc07bdfa0",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "d73588699073b3bf.csv",
+   "doi": "10.5522/04/34857396.v1",
+   "form": "linear",
+   "params": [
+    -0.9749341613004814,
+    1.0363856492774741
+   ],
+   "seed": 2434843093,
+   "x": "rank_glm52",
+   "y": "rank_gpt55"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Occupation-level scores of exposure to generative AI for Britain, from the Generative AI S' (Figshare, doi 10.5522/04/34857396.v1): 'rank_gpt55' is linear in 'rank_glm52' (R\u00b2 = 0.962 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
