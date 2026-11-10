@@ -2511715,5 +2511715,356 @@
   "statement": "Octal game 0.601631 is completely solved: its Grundy values are periodic with pre-period 25 and period 40 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.6341957",
+   "held_out_r2": 0.9844,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-12a637a3e18a",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "256f70d9a3e5d2c5.csv",
+   "doi": "10.5281/zenodo.6341957",
+   "form": "linear",
+   "params": [
+    0.14762096070092898,
+    0.41780663429939613
+   ],
+   "seed": 3261448590,
+   "x": "Ratio_NO_CO2_corrected",
+   "y": "gNOx_kgfuel"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Using snapshot measurements to identify high-emitting vehicles' (Zenodo, doi 10.5281/zenodo.6341957): 'gNOx_kgfuel' is linear in 'Ratio_NO_CO2_corrected' (R\u00b2 = 0.986 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.6341957",
+   "held_out_r2": 0.9844,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-367d1ce0e4ff",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "256f70d9a3e5d2c5.csv",
+   "doi": "10.5281/zenodo.6341957",
+   "form": "linear",
+   "params": [
+    0.1476209607268319,
+    1.2768213310707417
+   ],
+   "seed": 3261448590,
+   "x": "gNO_kgfuel",
+   "y": "gNOx_kgfuel"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Using snapshot measurements to identify high-emitting vehicles' (Zenodo, doi 10.5281/zenodo.6341957): 'gNOx_kgfuel' is linear in 'gNO_kgfuel' (R\u00b2 = 0.986 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.6341957",
+   "held_out_r2": 0.8994,
+   "held_out_rows": 9492,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d2c0792d7c9b",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "be8897357a109f7a.csv",
+   "doi": "10.5281/zenodo.6341957",
+   "form": "linear",
+   "params": [
+    5.107073484488051e-05,
+    0.0002960104400039917
+   ],
+   "seed": 3988342080,
+   "x": "CO2",
+   "y": "fuel_ma3"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Using snapshot measurements to identify high-emitting vehicles' (Zenodo, doi 10.5281/zenodo.6341957): 'fuel_ma3' is linear in 'CO2' (R\u00b2 = 0.911 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.6341957",
+   "held_out_r2": 0.8997,
+   "held_out_rows": 9492,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-409ebe22aa37",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "be8897357a109f7a.csv",
+   "doi": "10.5281/zenodo.6341957",
+   "form": "linear",
+   "params": [
+    1.0634954011417589e-05,
+    0.0003140789497422223
+   ],
+   "seed": 3988342080,
+   "x": "co2_ma3",
+   "y": "fuel"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Using snapshot measurements to identify high-emitting vehicles' (Zenodo, doi 10.5281/zenodo.6341957): 'fuel' is linear in 'co2_ma3' (R\u00b2 = 0.911 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.3xsj3txq7",
+   "held_out_r2": 0.919,
+   "held_out_rows": 2152,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-1787784e317c",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8e4aae8be89c39d6.csv",
+   "doi": "10.5061/dryad.3xsj3txq7",
+   "form": "power law",
+   "params": [
+    -7.920764894558222,
+    2.493210036278551
+   ],
+   "seed": 2973280586,
+   "x": "HBL",
+   "y": "WEIGHT"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Eye morphology contributes to the ecology and evolution of the avian tree of life' (Zenodo, doi 10.5061/dryad.3xsj3txq7): 'WEIGHT' follows a power law in 'HBL' (R\u00b2 = 0.921 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.3xsj3txq7",
+   "held_out_r2": -Infinity,
+   "held_out_rows": 2152,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ccd0672a4763",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "8e4aae8be89c39d6.csv",
+   "doi": "10.5061/dryad.3xsj3txq7",
+   "form": "power law",
+   "params": [
+    0.6099690932706846,
+    0.9587022060965988
+   ],
+   "seed": 2973280586,
+   "x": "CD1",
+   "y": "AD"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Eye morphology contributes to the ecology and evolution of the avian tree of life' (Zenodo, doi 10.5061/dryad.3xsj3txq7): 'AD' follows a power law in 'CD1' (R\u00b2 = 0.925 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.3xsj3txq7",
+   "held_out_r2": -Infinity,
+   "held_out_rows": 2152,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f9c79afbc0fe",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "8e4aae8be89c39d6.csv",
+   "doi": "10.5061/dryad.3xsj3txq7",
+   "form": "power law",
+   "params": [
+    0.8682070457757151,
+    0.9308069499485275
+   ],
+   "seed": 2973280586,
+   "x": "CD1",
+   "y": "TD1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Eye morphology contributes to the ecology and evolution of the avian tree of life' (Zenodo, doi 10.5061/dryad.3xsj3txq7): 'TD1' follows a power law in 'CD1' (R\u00b2 = 0.930 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.3xsj3txq7",
+   "held_out_r2": -Infinity,
+   "held_out_rows": 2152,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e1ab734413f9",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "8e4aae8be89c39d6.csv",
+   "doi": "10.5061/dryad.3xsj3txq7",
+   "form": "power law",
+   "params": [
+    0.8183684655768486,
+    0.9329260100974688
+   ],
+   "seed": 2973280586,
+   "x": "CD1",
+   "y": "TD2"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Eye morphology contributes to the ecology and evolution of the avian tree of life' (Zenodo, doi 10.5061/dryad.3xsj3txq7): 'TD2' follows a power law in 'CD1' (R\u00b2 = 0.924 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.3xsj3txq7",
+   "held_out_r2": -Infinity,
+   "held_out_rows": 2152,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5d74a2d4a02f",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "8e4aae8be89c39d6.csv",
+   "doi": "10.5061/dryad.3xsj3txq7",
+   "form": "power law",
+   "params": [
+    0.5887691627412395,
+    0.9728304400528169
+   ],
+   "seed": 2973280586,
+   "x": "CD2",
+   "y": "AD"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Eye morphology contributes to the ecology and evolution of the avian tree of life' (Zenodo, doi 10.5061/dryad.3xsj3txq7): 'AD' follows a power law in 'CD2' (R\u00b2 = 0.939 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.3xsj3txq7",
+   "held_out_r2": -Infinity,
+   "held_out_rows": 2152,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-fb9117d7ea71",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "8e4aae8be89c39d6.csv",
+   "doi": "10.5061/dryad.3xsj3txq7",
+   "form": "power law",
+   "params": [
+    0.8478757868877733,
+    0.9443769276840742
+   ],
+   "seed": 2973280586,
+   "x": "CD2",
+   "y": "TD1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Eye morphology contributes to the ecology and evolution of the avian tree of life' (Zenodo, doi 10.5061/dryad.3xsj3txq7): 'TD1' follows a power law in 'CD2' (R\u00b2 = 0.943 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.3xsj3txq7",
+   "held_out_r2": -Infinity,
+   "held_out_rows": 2152,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-1debc8dfe2c1",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "8e4aae8be89c39d6.csv",
+   "doi": "10.5061/dryad.3xsj3txq7",
+   "form": "power law",
+   "params": [
+    0.7972457917885797,
+    0.9469623497713793
+   ],
+   "seed": 2973280586,
+   "x": "CD2",
+   "y": "TD2"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Eye morphology contributes to the ecology and evolution of the avian tree of life' (Zenodo, doi 10.5061/dryad.3xsj3txq7): 'TD2' follows a power law in 'CD2' (R\u00b2 = 0.938 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.3xsj3txq7",
+   "held_out_r2": 0.9811,
+   "held_out_rows": 2152,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-121779c1ad18",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8e4aae8be89c39d6.csv",
+   "doi": "10.5061/dryad.3xsj3txq7",
+   "form": "power law",
+   "params": [
+    0.3036501575813598,
+    0.9586264160976129
+   ],
+   "seed": 2973280586,
+   "x": "AD",
+   "y": "TD1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Eye morphology contributes to the ecology and evolution of the avian tree of life' (Zenodo, doi 10.5061/dryad.3xsj3txq7): 'TD1' follows a power law in 'AD' (R\u00b2 = 0.980 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.3xsj3txq7",
+   "held_out_r2": 0.9755,
+   "held_out_rows": 2152,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-170bc409e3c1",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8e4aae8be89c39d6.csv",
+   "doi": "10.5061/dryad.3xsj3txq7",
+   "form": "power law",
+   "params": [
+    0.25253318731368135,
+    0.9608057603611331
+   ],
+   "seed": 2973280586,
+   "x": "AD",
+   "y": "TD2"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Eye morphology contributes to the ecology and evolution of the avian tree of life' (Zenodo, doi 10.5061/dryad.3xsj3txq7): 'TD2' follows a power law in 'AD' (R\u00b2 = 0.974 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
