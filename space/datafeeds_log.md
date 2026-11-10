@@ -2786,3 +2786,4 @@
 - 2026-11-10 14:48 FINDING (confirmed on held-out rows): In 'S. neglecta parasitism in O. nigricornis: 2018 collection' (Zenodo, doi 10.5061/dryad.3ffbg79fp): 'Pronotum' follows a power law in 'Femur' (R² = 0.947 on the discovery half); held-out R² = 0.922 [emp-a20ec4724046]
 - 2026-11-10 14:48 data feeds: 17916 datasets analysed so far, 2499 confirmed findings
 - 2026-11-10 15:49 data feeds: online
+- 2026-11-10 15:49 data feeds: 17929 datasets analysed so far, 2499 confirmed findings
