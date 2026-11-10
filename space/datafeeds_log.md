@@ -2779,3 +2779,4 @@
 - 2026-11-10 13:56 FINDING (confirmed on held-out rows): In 'Data from: Does the cost of development scale allometrically with offspring size?' (Zenodo, doi 10.5061/dryad.p570g): 'Volume (um3)' grows exponentially in 'Area (um2)' (R² = 0.975 on the discovery half); held-out R² = 0.972 [emp-2a31d63894fd]
 - 2026-11-10 13:56 FINDING (confirmed on held-out rows): In 'Data from: Does the cost of development scale allometrically with offspring size?' (Zenodo, doi 10.5061/dryad.p570g): 'Volume (ul)' grows exponentially in 'Area (um2)' (R² = 0.975 on the discovery half); held-out R² = 0.972 [emp-7bafb7f7439f]
 - 2026-11-10 13:57 data feeds: 17833 datasets analysed so far, 2495 confirmed findings
+- 2026-11-10 14:46 data feeds: online
