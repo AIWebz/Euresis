@@ -2700,3 +2700,4 @@
 - 2026-11-10 08:16 FINDING (confirmed on held-out rows): In 'Edelstein effect in KTaO3 (001) two-dimensional electron gases' (Zenodo, doi 10.5281/zenodo.7058758): 'chi_xy^l_band3' is linear in 'E_F(eV)' (R² = 0.917 on the discovery half); held-out R² = 0.910 [emp-ff25ff0b3016]
 - 2026-11-10 08:16 FINDING (confirmed on held-out rows): In 'Edelstein effect in an anisotropic KTaO3 two-dimensional electron gas' (Zenodo, doi 10.5281/zenodo.7058806): 'chi_xy^l_band3' is linear in 'E_F(eV)' (R² = 0.923 on the discovery half); held-out R² = 0.869 [emp-ce3327635e3a]
 - 2026-11-10 08:16 data feeds: 16709 datasets analysed so far, 2428 confirmed findings
+- 2026-11-10 09:03 data feeds: online
