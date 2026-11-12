@@ -2848,3 +2848,5 @@
 - 2026-11-12 22:45 FINDING (confirmed on held-out rows): In 'Data for paper:  https://doi.org/10.5281/zenodo.10850785' (Zenodo, doi 10.5281/zenodo.11124790): 'USV position (latitude)' is linear in 'y position in NE' (R² = 0.962 on the discovery half); held-out R² = 0.962 [emp-d71938195798]
 - 2026-11-12 22:46 data feeds: 18323 datasets analysed so far, 2549 confirmed findings
 - 2026-11-12 23:33 data feeds: online
+- 2026-11-12 23:34 FINDING (confirmed on held-out rows): In 'Non-Markovian Electron Tunneling in SARS-CoV-2 virus infection in Structured Environments' (Zenodo, doi 10.5281/zenodo.18873662): 'DeltaPavg' is linear in 'DeltaPmax' (R² = 0.906 on the discovery half); held-out R² = 0.896 [emp-743d60009c40]
+- 2026-11-12 23:34 FINDING (confirmed on held-out rows): In 'Non-Markovian Electron Tunneling in SARS-CoV-2 virus infection in Structured Environments' (Zenodo, doi 10.5281/zenodo.18873662): 'DeltaPavg_max' is linear in 'DeltaPmax_max' (R² = 0.930 on the discovery half); held-out R² = 0.922 [emp-ddf45822ee3d]

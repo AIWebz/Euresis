@@ -2634184,5 +2634184,59 @@
   "statement": "Octal game 0.716471 is completely solved: its Grundy values are periodic with pre-period 72 and period 44 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.18873662",
+   "held_out_r2": 0.8963,
+   "held_out_rows": 32,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-743d60009c40",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "415c4cb17e68df2a.csv",
+   "doi": "10.5281/zenodo.18873662",
+   "form": "linear",
+   "params": [
+    -0.03407833700994159,
+    0.7433277006668402
+   ],
+   "seed": 3837310064,
+   "x": "DeltaPmax",
+   "y": "DeltaPavg"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Non-Markovian Electron Tunneling in SARS-CoV-2 virus infection in Structured Environments' (Zenodo, doi 10.5281/zenodo.18873662): 'DeltaPavg' is linear in 'DeltaPmax' (R\u00b2 = 0.906 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.18873662",
+   "held_out_r2": 0.9219,
+   "held_out_rows": 32,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ddf45822ee3d",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "415c4cb17e68df2a.csv",
+   "doi": "10.5281/zenodo.18873662",
+   "form": "linear",
+   "params": [
+    -0.03959476534075063,
+    0.8260682647242954
+   ],
+   "seed": 3837310064,
+   "x": "DeltaPmax_max",
+   "y": "DeltaPavg_max"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Non-Markovian Electron Tunneling in SARS-CoV-2 virus infection in Structured Environments' (Zenodo, doi 10.5281/zenodo.18873662): 'DeltaPavg_max' is linear in 'DeltaPmax_max' (R\u00b2 = 0.930 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
