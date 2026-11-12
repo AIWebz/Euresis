@@ -2847,3 +2847,4 @@
 - 2026-11-12 22:45 FINDING (confirmed on held-out rows): In 'Data for paper:  https://doi.org/10.5281/zenodo.10850785' (Zenodo, doi 10.5281/zenodo.11124790): 'USV position (longitude)' is linear in 'x position in NE' (R² = 0.962 on the discovery half); held-out R² = 0.962 [emp-3600c5cc32b0]
 - 2026-11-12 22:45 FINDING (confirmed on held-out rows): In 'Data for paper:  https://doi.org/10.5281/zenodo.10850785' (Zenodo, doi 10.5281/zenodo.11124790): 'USV position (latitude)' is linear in 'y position in NE' (R² = 0.962 on the discovery half); held-out R² = 0.962 [emp-d71938195798]
 - 2026-11-12 22:46 data feeds: 18323 datasets analysed so far, 2549 confirmed findings
+- 2026-11-12 23:33 data feeds: online
