@@ -3988,3 +3988,4 @@
 - 2026-11-12 22:03 round 3664: auction with a reserve price
 - 2026-11-12 22:04 round 3665: two-body decay
 - 2026-11-12 22:06 round 3666: collision
+- 2026-11-12 22:07 round 3667: driven oscillator
