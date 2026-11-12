@@ -2839,3 +2839,4 @@
 - 2026-11-12 21:41 FINDING (confirmed on held-out rows): In 'Intact hollow stems of invasive Reynoutria bohemica as a minimally processed biosorbent fo' (Zenodo, doi 10.5281/zenodo.23880829): '2026_10_15-CV+RE-tube-1-BC.jws' is linear in '2026_10_08-CV+RE-tube2-base-corr.jws' (R² = 0.937 on the discovery half); held-out R² = 0.942 [emp-b3f04940d4b4]
 - 2026-11-12 21:41 FINDING (confirmed on held-out rows): In 'Coastal stormwater wet pond water quality and sediment nitrogen cycling across a range of ' (Zenodo, doi 10.5281/zenodo.4479508): 'inflow_nox' is linear in 'core_nox' (R² = 0.904 on the discovery half); held-out R² = 0.876 [emp-ffe07f81fbc8]
 - 2026-11-12 21:41 data feeds: 18263 datasets analysed so far, 2543 confirmed findings
+- 2026-11-12 22:44 data feeds: online
