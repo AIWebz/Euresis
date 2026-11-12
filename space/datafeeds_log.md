@@ -2830,3 +2830,4 @@
 - 2026-11-10 18:36 FINDING (confirmed on held-out rows): In 'Global soil moisture–atmosphere feedback and N2O emission dataset' (Zenodo, doi 10.5061/dryad.sf7m0cg8z): 'NH4+ (mg kg-1)' is linear in 'NO3-  (mg kg-1)' (R² = 0.959 on the discovery half); held-out R² = 0.943 [emp-e3fd1444cd2d]
 - 2026-11-10 18:36 FINDING (confirmed on held-out rows): In 'ReESH_US-VT1: Vermillion Tributary Paired Cropland – Site 1 (Corn/Soy; No Cover Crops)' (Zenodo, doi 10.5281/zenodo.17210567): 'Vol_Water' grows logarithmically in 'MPa_Abs' (R² = 0.962 on the discovery half); held-out R² = 0.965 [emp-6b2f50ceddb3]
 - 2026-11-10 18:37 data feeds: 18203 datasets analysed so far, 2536 confirmed findings
+- 2026-11-12 21:39 data feeds: online
