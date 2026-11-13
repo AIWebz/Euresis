@@ -3289,3 +3289,4 @@
 - 2026-11-13 20:28 FINDING (confirmed on held-out rows): In 'Data for: Climate warming and projected loss of thermal habitat volume in lake populations' (Zenodo, doi 10.5061/dryad.rv15dv4db): 'Tann' is linear in 'Tnov' (R² = 0.980 on the discovery half); held-out R² = 0.980 [emp-a90e40864a9b]
 - 2026-11-13 20:28 FINDING (confirmed on held-out rows): In 'Climate change alters sexual signaling in a desert-adapted frog' (Zenodo, doi 10.5061/dryad.0k6djhb1z): 'cv.ici' follows a power law in 'cv.duration' (R² = 0.916 on the discovery half); held-out R² = 0.916 [emp-2b698c1cf1cd]
 - 2026-11-13 20:28 data feeds: 20571 datasets analysed so far, 2949 confirmed findings
+- 2026-11-13 21:29 data feeds: online
