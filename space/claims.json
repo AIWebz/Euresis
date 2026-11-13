@@ -2689596,5 +2689596,572 @@
   "statement": "In 'Data for \"Highly-Automated, High-Throughput Replication of Yeast-based Logic Circuit Desig' (Zenodo, doi 10.5281/zenodo.6620957): 'mean_correct_low_classifier' is linear in 'mean_correct_high_classifier_live' (R\u00b2 = 0.933 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-4331e0cd4295",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "p*sqrt(1 - L) - p + 1 >= 1*(sqrt(-L*p + 1)/(-p*sqrt(1 - L) + 1 + 1/(p*sqrt(1 - L) - p + 1)))",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 3855",
+  "statement": "[economics: insurance and risk] expected utility \u2265 1 \u00d7 Relative Risk Adjustment Index Adjusted [model-proposed; physical meaning unverified]   on p < 1, L < 1 (tight only at the edge of the domain, near (1, 6.33e-15))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-7a0fbadcf31c",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "(p*sqrt(1 - L) - p + 1)/sqrt(-p*(1 - L) + 1) >= 2*(sqrt(-L*p + 1)/(-p*sqrt(1 - L) + 1 + 1/(p*sqrt(1 - L) - p + 1)))",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 3855",
+  "statement": "[economics: insurance and risk] Risk-adjusted expected utility [model-proposed; physical meaning unverified] \u2265 2 \u00d7 Relative Risk Adjustment Index Adjusted [model-proposed; physical meaning unverified]   on p < 1, L < 1 (tight only at the edge of the domain, near (2.53e-08, 0.477))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-7510e29d57b1",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "sqrt(-L*p + 1)/(sqrt(1 - L) - 1 + 1/(p*sqrt(1 - L) - p + 1)) >= 1*(sqrt(-L*p + 1)/(-p*sqrt(1 - L) + 1 + 1/(p*sqrt(1 - L) - p + 1)))",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 3855",
+  "statement": "[economics: insurance and risk] Insurance Risk Adjustment Factor [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Relative Risk Adjustment Index Adjusted [model-proposed; physical meaning unverified]   on p < 1, L < 1 (tight only at the edge of the domain, near (1, 6.33e-15))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-e61fbe3c49b6",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "sqrt(-L*p + 1)/(-p + sqrt(1 - L) + 1) >= 1*(sqrt(-L*p + 1)/(-p*sqrt(1 - L) + 1 + 1/(p*sqrt(1 - L) - p + 1)))",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 3855",
+  "statement": "[economics: insurance and risk] Insurance Risk Adjustment Index [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Relative Risk Adjustment Index Adjusted [model-proposed; physical meaning unverified]   on p < 1, L < 1 (tight only at the edge of the domain, near (0.000117, 2.41e-16))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-187b215f32f6",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "sqrt(-L*p + 1)/(-p*sqrt(1 - L) + p + 1) >= 1*(sqrt(-L*p + 1)/(-p*sqrt(1 - L) + 1 + 1/(p*sqrt(1 - L) - p + 1)))",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 3855",
+  "statement": "[economics: insurance and risk] Risk Adjustment Ratio [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Relative Risk Adjustment Index Adjusted [model-proposed; physical meaning unverified]   on p < 1, L < 1 (tight only at the edge of the domain, near (1, 1.25e-14))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-ef125d858e8c",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "(-e**2*m**2/(m + 1)**2 - e**2*m/(m + 1) + 2)/(e**2*m**2/(m + 1)**2 + e**2*m/(m + 1)) >= 5/3*(m*(e + 1)/(m + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 3858",
+  "statement": "[physics: collision] Fraction of Kinetic Energy Retained by the Projectile Relative to the Target [model-proposed; physical meaning unverified] \u2265 5/3 \u00d7 target speed / initial speed   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-1cbc04d31749",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "(-e**2*m**2/(m + 1)**2 - e**2*m/(m + 1) + 2)/(e**2*m**2/(m + 1)**2 + e**2*m/(m + 1)) >= 5/3*((e + 1)/(m + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 3858",
+  "statement": "[physics: collision] Fraction of Kinetic Energy Retained by the Projectile Relative to the Target [model-proposed; physical meaning unverified] \u2265 5/3 \u00d7 momentum transferred / initial momentum   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-4b1b3168c804",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'momentum transferred / initial momentum'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "(-e**2*m**2/(m + 1)**2 - e**2*m/(m + 1) + 2)/(e**2*m**2/(m + 1)**2 + e**2*m/(m + 1)) >= 5/3*(m*(e + 1)**2/(m + 1)**2)",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 3858",
+  "statement": "[physics: collision] Fraction of Kinetic Energy Retained by the Projectile Relative to the Target [model-proposed; physical meaning unverified] \u2265 5/3 \u00d7 fraction of kinetic energy given to the target   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-58538aabb00a",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "(-e**2*m**2/(m + 1)**2 - e**2*m/(m + 1) + 2)/(e**2*m**2/(m + 1)**2 + e**2*m/(m + 1)) >= 10/3*(m/(m + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 3858",
+  "statement": "[physics: collision] Fraction of Kinetic Energy Retained by the Projectile Relative to the Target [model-proposed; physical meaning unverified] \u2265 10/3 \u00d7 speed of the centre of mass / initial speed   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-d94ebacfadd7",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'momentum transferred / initial momentum'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "(-e**2*m**2/(m + 1)**2 - e**2*m/(m + 1) + 2)/(e**2*m**2/(m + 1)**2 + e**2*m/(m + 1)) >= 5/3*(e)",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 3858",
+  "statement": "[physics: collision] Fraction of Kinetic Energy Retained by the Projectile Relative to the Target [model-proposed; physical meaning unverified] \u2265 5/3 \u00d7 relative speed after / relative speed before   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-6f265c316777",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'momentum transferred / initial momentum'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "(-e**2*m**2/(m + 1)**2 - e**2*m/(m + 1) + 2)/(e**2*m**2/(m + 1)**2 + e**2*m/(m + 1)) >= 5/3*(e*(m + 1)/(e*m + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 3858",
+  "statement": "[physics: collision] Fraction of Kinetic Energy Retained by the Projectile Relative to the Target [model-proposed; physical meaning unverified] \u2265 5/3 \u00d7 velocity ratio of target to projectile after collision [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-969fa7ccd50e",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'momentum transferred / initial momentum'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "(-e**2*m**2/(m + 1)**2 - e**2*m/(m + 1) + 2)/(e**2*m**2/(m + 1)**2 + e**2*m/(m + 1)) >= 10/3*(e**2*(m**2 + 1)/(m + 1)**2)",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 3858",
+  "statement": "[physics: collision] Fraction of Kinetic Energy Retained by the Projectile Relative to the Target [model-proposed; physical meaning unverified] \u2265 10/3 \u00d7 Fraction of kinetic energy retained by target [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-c4c71945a592",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'momentum transferred / initial momentum'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "(-e**2*m**2/(m + 1)**2 - e**2*m/(m + 1) + 2)/(e**2*m**2/(m + 1)**2 + e**2*m/(m + 1)) >= 5/3*(-m*(1 - e**2)*(e + 1)**2/(m + 1)**2 - m*(1 - e**2)/(m + 1) + 1)",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 3858",
+  "statement": "[physics: collision] Fraction of Kinetic Energy Retained by the Projectile Relative to the Target [model-proposed; physical meaning unverified] \u2265 5/3 \u00d7 Fraction of kinetic energy retained by the system [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-0042ed9feb74",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "(-e**2*m**2/(m + 1)**2 - e**2*m/(m + 1) + 2)/(e**2*m**2/(m + 1)**2 + e**2*m/(m + 1)) >= 20/9*(-e**2*m**2/(m + 1)**2 + 1)",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 3858",
+  "statement": "[physics: collision] Fraction of Kinetic Energy Retained by the Projectile Relative to the Target [model-proposed; physical meaning unverified] \u2265 20/9 \u00d7 Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-0384da35886a",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'momentum transferred / initial momentum'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "(-e**2*m**2/(m + 1)**2 - e**2*m/(m + 1) + 2)/(e**2*m**2/(m + 1)**2 + e**2*m/(m + 1)) >= 4/3*(e**2*m**2/(m + 1)**2 + e**2)",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 3858",
+  "statement": "[physics: collision] Fraction of Kinetic Energy Retained by the Projectile Relative to the Target [model-proposed; physical meaning unverified] \u2265 4/3 \u00d7 Fraction of kinetic energy transferred to the target [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-834b49044c71",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'target speed / initial speed'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "(-e**2*m**2/(m + 1)**2 - e**2*m/(m + 1) + 2)/(e**2*m**2/(m + 1)**2 + e**2*m/(m + 1)) >= 20/9*(e**2*m**2/(m + 1)**2 + e**2*m/(m + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 3858",
+  "statement": "[physics: collision] Fraction of Kinetic Energy Retained by the Projectile Relative to the Target [model-proposed; physical meaning unverified] \u2265 20/9 \u00d7 Fraction of kinetic energy retained by the target [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-6e59c3a25d20",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "(-e**2*m**2/(m + 1)**2 - e**2*m/(m + 1) + 2)/(e**2*m**2/(m + 1)**2 + e**2*m/(m + 1)) >= 10/3*(-e**2*m/(m + 1) - m*(1 - e**2)/(m + 1) - (1 - e**2)*(1 - m)/(m + 1) + 1)",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 3858",
+  "statement": "[physics: collision] Fraction of Kinetic Energy Retained by the Projectile Relative to the Target [model-proposed; physical meaning unverified] \u2265 10/3 \u00d7 Fraction of kinetic energy retained by the projectile relative to initial kineti [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-91a66ba14c6d",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "sqrt(-L*p + 1)/(-p*sqrt(1 - L) + sqrt(1 - L) + 1) >= 1*(sqrt(-L*p + 1)/(-p*sqrt(1 - L) + 1 + 1/(p*sqrt(1 - L) - p + 1)))",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 3863",
+  "statement": "[economics: insurance and risk] Insurance Risk Exposure Ratio [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Relative Risk Adjustment Index Adjusted [model-proposed; physical meaning unverified]   on p < 1, L < 1 (tight only at the edge of the domain, near (0.000117, 2.41e-16))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-106747bc5340",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'Risk-adjusted expected utility [model-proposed; physical meaning unverified]'",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "sqrt(-L*p + 1)/(-p*sqrt(1 - L) + 1) >= 2*(sqrt(-L*p + 1)/(-p*sqrt(1 - L) + 1 + 1/(p*sqrt(1 - L) - p + 1)))",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 3863",
+  "statement": "[economics: insurance and risk] Relative Risk Adjustment Index [model-proposed; physical meaning unverified] \u2265 2 \u00d7 Relative Risk Adjustment Index Adjusted [model-proposed; physical meaning unverified]   on p < 1, L < 1 (tight only at the edge of the domain, near (5.18e-17, 0.888))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-a1ff61d456bd",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "sqrt(-L*p + 1)/(-p*sqrt(1 - L) + sqrt(1 - L) + 1 + 1/(p*sqrt(1 - L) - p + 1)) >= 1/2*(sqrt(-L*p + 1)/(-p*sqrt(1 - L) + 1 + 1/(p*sqrt(1 - L) - p + 1)))",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 3863",
+  "statement": "[economics: insurance and risk] Insurance Risk Exposure Ratio Adjusted [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 Relative Risk Adjustment Index Adjusted [model-proposed; physical meaning unverified]   on p < 1, L < 1 (tight only at the edge of the domain, near (1, 1.14e-14))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-c25816782899",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "sqrt(-L*p + 1)/(-p*sqrt(1 - L) + 1 + 1/(p*sqrt(1 - L) - p + 1)) >= 1/2*((p*sqrt(1 - L) - p + 1)**2)",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 3863",
+  "statement": "[economics: insurance and risk] Relative Risk Adjustment Index Adjusted [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 certainty equivalent   on p < 1, L < 1 (tight only at the edge of the domain, near (1.44e-16, 0.000117))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]
