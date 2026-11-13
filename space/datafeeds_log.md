@@ -3005,3 +3005,4 @@
 - 2026-11-13 05:56 FINDING (confirmed on held-out rows): In 'On the de novo emergence of ecological interactions during evolutionary diversification: A' (Zenodo, doi 10.5061/dryad.m905qfv4f): '6.2.isolate2.cntr' follows a power law in 'PA14.RV.minus' (R² = 0.975 on the discovery half); held-out R² = 0.973 [emp-cdf67112181a]
 - 2026-11-13 05:59 FINDING (confirmed on held-out rows): In 'Data Sheet 2_A high-throughput functional 3D droplet microfluidic platform for function-to' (Figshare, doi 10.3389/fimmu.2026.1967143.s003): 'FDR' is linear in 'pval' (R² = 0.963 on the discovery half); held-out R² = 0.967 [emp-6ac5c9c7ff26]
 - 2026-11-13 05:59 data feeds: 19447 datasets analysed so far, 2691 confirmed findings
+- 2026-11-13 06:39 data feeds: online
