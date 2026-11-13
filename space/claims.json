@@ -2772377,5 +2772377,88 @@
   "statement": "[physics: collision] Kinetic energy ratio of the target to the system after collision [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Fraction of kinetic energy retained by the target relative to the system [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (6.11e-15, 1))",
   "status": "proved",
   "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "checked_up_to": 112,
+   "method": "Grundy values recomputed; Guy\u2013Smith periodicity theorem condition checked",
+   "values_of_one_period": [
+    1,
+    2,
+    4,
+    7,
+    4,
+    7,
+    11,
+    1,
+    2,
+    8,
+    13,
+    8,
+    4,
+    7,
+    1,
+    2,
+    1,
+    2,
+    11,
+    4,
+    7,
+    11,
+    8,
+    13
+   ]
+  },
+  "id": "gam-3f467c36141e",
+  "kind": "game",
+  "novelty": "novelty unchecked: octal games of up to three digits are tabulated in Winning Ways and Flammenkamp's tables, which cannot be searched from here",
+  "payload": {
+   "code": "754363",
+   "period": 24,
+   "preperiod": 29
+  },
+  "source": "games.py",
+  "statement": "Octal game 0.754363 is completely solved: its Grundy values are periodic with pre-period 29 and period 24 (Guy\u2013Smith periodicity theorem)",
+  "status": "proved",
+  "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "checked_up_to": 58,
+   "method": "Grundy values recomputed; Guy\u2013Smith periodicity theorem condition checked",
+   "values_of_one_period": [
+    4,
+    7,
+    8,
+    1,
+    2,
+    8,
+    2,
+    11,
+    13,
+    4,
+    7,
+    14,
+    8,
+    1,
+    2,
+    1,
+    2,
+    4,
+    13
+   ]
+  },
+  "id": "gam-03410e54cfc2",
+  "kind": "game",
+  "novelty": "not checked",
+  "payload": {
+   "code": "754366",
+   "period": 19,
+   "preperiod": 7
+  },
+  "source": "games.py",
+  "statement": "Octal game 0.754366 is completely solved: its Grundy values are periodic with pre-period 7 and period 19 (Guy\u2013Smith periodicity theorem)",
+  "status": "proved",
+  "verifier": "guy-smith-periodicity"
  }
 ]
