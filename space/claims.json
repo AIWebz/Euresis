@@ -2814119,7 +2814119,7 @@
   },
   "id": "emp-b8997fb83fe6",
   "kind": "empirical",
-  "novelty": "not checked",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
   "payload": {
    "dataset": "fcf3f0dc544a4ef4.csv",
    "doi": "10.5281/zenodo.7971396",
@@ -2814134,6 +2814134,87 @@
   },
   "source": "datafeeds.py",
   "statement": "In 'Resources from: Disparate patterns of genetic divergence in three widespread corals across' (Zenodo, doi 10.5281/zenodo.7971396): 'seasonal_mean_DegC' is linear in 'SST_mean_DegC' (R\u00b2 = 0.962 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7971396",
+   "held_out_r2": 0.9744,
+   "held_out_rows": 57,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b5ad06a5ef4d",
+  "kind": "empirical",
+  "novelty": "KNOWN: equation of state of a simulated fluid (pressure, density, temperature, chemical potential, kinetic energy) \u2014 not a discovery",
+  "payload": {
+   "dataset": "fcf3f0dc544a4ef4.csv",
+   "doi": "10.5281/zenodo.7971396",
+   "form": "linear",
+   "params": [
+    -0.4608327351752823,
+    1.1103465271317605
+   ],
+   "seed": 2971443703,
+   "x": "SST_std_DegC",
+   "y": "seasonal_std_DegC"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Resources from: Disparate patterns of genetic divergence in three widespread corals across' (Zenodo, doi 10.5281/zenodo.7971396): 'seasonal_std_DegC' is linear in 'SST_std_DegC' (R\u00b2 = 0.972 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.k98sf7m4g",
+   "held_out_r2": 0.9358,
+   "held_out_rows": 337,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-fa489ef8492d",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "a1571b0c8e8284a7.csv",
+   "doi": "10.5061/dryad.k98sf7m4g",
+   "form": "linear",
+   "params": [
+    0.026259865709988006,
+    0.0475027451836354
+   ],
+   "seed": 323181286,
+   "x": "Infected",
+   "y": "prop"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Resource quality determines the evolution of resistance and its genetic basis' (Zenodo, doi 10.5061/dryad.k98sf7m4g): 'prop' is linear in 'Infected' (R\u00b2 = 0.921 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.k98sf7m4g",
+   "held_out_r2": 0.9138,
+   "held_out_rows": 337,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-48ff79437760",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "a1571b0c8e8284a7.csv",
+   "doi": "10.5061/dryad.k98sf7m4g",
+   "form": "linear",
+   "params": [
+    0.9568619290166732,
+    -0.04418235642676461
+   ],
+   "seed": 323181286,
+   "x": "Non.infected",
+   "y": "prop"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Resource quality determines the evolution of resistance and its genetic basis' (Zenodo, doi 10.5061/dryad.k98sf7m4g): 'prop' is linear in 'Non.infected' (R\u00b2 = 0.935 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
  }

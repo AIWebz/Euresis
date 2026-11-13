@@ -3291,3 +3291,7 @@
 - 2026-11-13 20:28 data feeds: 20571 datasets analysed so far, 2949 confirmed findings
 - 2026-11-13 21:29 data feeds: online
 - 2026-11-13 21:30 FINDING (confirmed on held-out rows): In 'Resources from: Disparate patterns of genetic divergence in three widespread corals across' (Zenodo, doi 10.5281/zenodo.7971396): 'seasonal_min_DegC' grows exponentially in 'SST_min_DegC' (R² = 0.941 on the discovery half); held-out R² = 0.939 [emp-c2c04d0936a9]
+- 2026-11-13 21:30 FINDING (confirmed on held-out rows): In 'Resources from: Disparate patterns of genetic divergence in three widespread corals across' (Zenodo, doi 10.5281/zenodo.7971396): 'seasonal_mean_DegC' is linear in 'SST_mean_DegC' (R² = 0.962 on the discovery half); held-out R² = 0.984 [emp-b8997fb83fe6]
+- 2026-11-13 21:30 FINDING (confirmed on held-out rows): In 'Resource quality determines the evolution of resistance and its genetic basis' (Zenodo, doi 10.5061/dryad.k98sf7m4g): 'prop' is linear in 'Infected' (R² = 0.921 on the discovery half); held-out R² = 0.936 [emp-fa489ef8492d]
+- 2026-11-13 21:30 FINDING (confirmed on held-out rows): In 'Resource quality determines the evolution of resistance and its genetic basis' (Zenodo, doi 10.5061/dryad.k98sf7m4g): 'prop' is linear in 'Non.infected' (R² = 0.935 on the discovery half); held-out R² = 0.914 [emp-48ff79437760]
+- 2026-11-13 21:31 data feeds: 20629 datasets analysed so far, 2953 confirmed findings
