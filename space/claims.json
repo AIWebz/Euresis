@@ -2781127,10 +2781127,22 @@
   "verifier": "guy-smith-periodicity"
  },
  {
-  "evidence": null,
+  "evidence": {
+   "checked_up_to": 22,
+   "method": "Grundy values recomputed; Guy\u2013Smith periodicity theorem condition checked",
+   "values_of_one_period": [
+    1,
+    2,
+    1,
+    2,
+    1,
+    2,
+    4
+   ]
+  },
   "id": "gam-2c882ce1fe32",
   "kind": "game",
-  "novelty": "not checked",
+  "novelty": "novelty unchecked: octal games of up to three digits are tabulated in Winning Ways and Flammenkamp's tables, which cannot be searched from here",
   "payload": {
    "code": "755112",
    "period": 7,
@@ -2781138,7 +2781150,7 @@
   },
   "source": "games.py",
   "statement": "Octal game 0.755112 is completely solved: its Grundy values are periodic with pre-period 1 and period 7 (Guy\u2013Smith periodicity theorem)",
-  "status": "candidate",
-  "verifier": null
+  "status": "proved",
+  "verifier": "guy-smith-periodicity"
  }
 ]
