@@ -2966,3 +2966,4 @@
 - 2026-11-13 04:48 FINDING (confirmed on held-out rows): In 'Data for "Highly-Automated, High-Throughput Replication of Yeast-based Logic Circuit Desig' (Zenodo, doi 10.5281/zenodo.6620957): 'mean_correct_low_classifier_live' is linear in 'mean_correct_high_classifier' (R² = 0.933 on the discovery half); held-out R² = 0.934 [emp-5690390c9bac]
 - 2026-11-13 04:48 FINDING (confirmed on held-out rows): In 'Data for "Highly-Automated, High-Throughput Replication of Yeast-based Logic Circuit Desig' (Zenodo, doi 10.5281/zenodo.6620957): 'mean_correct_low_classifier' is linear in 'mean_correct_high_classifier_live' (R² = 0.933 on the discovery half); held-out R² = 0.934 [emp-b1afa62bf4df]
 - 2026-11-13 04:49 data feeds: 19157 datasets analysed so far, 2654 confirmed findings
+- 2026-11-13 05:52 data feeds: online
