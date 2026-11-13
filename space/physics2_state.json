@@ -222,7 +222,8 @@
    "Expected Revenue to Seller's Value Ratio [model-proposed; physical meaning unverified]": "(-2*r**3/3 + r**2 + 1/3)/v",
    "Bidder Surplus Reserve Efficiency with Seller Value and Reserve [model-proposed; physical meaning unverified]": "(2*r**3/3 + r**2*v - r**2 + 1/3)/(8*r**3/3 - 3*r**2 + 1)",
    "Welfare Reserve Elasticity Ratio [model-proposed; physical meaning unverified]": "(-2*r**3/3 + r**2*v + 2/3)/(-2*r**3/3 + r**2*v + r**2 + 2/3)",
-   "Welfare Reserve Elasticity with Seller Value [model-proposed; physical meaning unverified]": "(-2*r**3/3 + r**2*v + 2/3)/(2*r**3/3 + r**2*v)"
+   "Welfare Reserve Elasticity with Seller Value [model-proposed; physical meaning unverified]": "(-2*r**3/3 + r**2*v + 2/3)/(2*r**3/3 + r**2*v)",
+   "Welfare Reserve Efficiency with Seller Value Ratio [model-proposed; physical meaning unverified]": "r**2*v/(-2*r**3/3 + r**2*v + 2/3) + (r**2*v + 2/3)/(4*r**3/3 + r**2*v - r**2 + 1/3)"
   }
  },
  "rejected": [
@@ -55390,6 +55391,151 @@
    "family": "Compton scattering",
    "expr": "1 - c/(c*x + 1)",
    "why": "not positive on the physical domain"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "((1 - 2*c1 + c2)**2 + (1 - 2*c2 + c1)**2)/((1 - c1)**2 + (1 - c2)**2)",
+   "why": "affine combination of known quantities (output of firm 1, Hirshleifer Index [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "sqrt(-L*p + 1)/(-p*sqrt(1 - L) + sqrt(1 - L) + 1)",
+   "why": "affine combination of known quantities (expected wealth, Insurance Risk Exposure Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "sqrt(-L*p + 1)/(-p*sqrt(1 - L) + 1)",
+   "why": "affine combination of known quantities (expected wealth, Relative Risk Adjustment Index [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "L*p/(-p*sqrt(1 - L) + p + sqrt(1 - L) - sqrt(-L*p + 1) + 1)",
+   "why": "affine combination of known quantities (expected wealth, Insurance Risk Sensitivity Index [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "sqrt(-L*p + 1)/(-p*sqrt(1 - L) + p + 1)",
+   "why": "affine combination of known quantities (expected wealth, Risk Adjustment Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(2*r**3/3 - r**2 + 1/3)/(2*(1 - r**3)/3 + v*r**2 - (2*r**3/3 - r**2 + 1/3))",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "sqrt((1 - (a - b)**2)*(1 - (a + b)**2))/((1 + a**2 - b**2)*(1 - a**2 + b**2))",
+   "why": "affine combination of known quantities (speed of product 1 / c, speed of product 2 / c)"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "sqrt((a**2 + b**2 - (a - b)**2)/(-a - b + 1))",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "sqrt((1 - (a - b)**2)*(1 - (a + b)**2))/sqrt((-a**2 + b**2 + 1)**2 + (a**2 - b**2 + 1)**2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "collision",
+   "expr": "(-e**2*m**2/(m + 1)**2 - e**2*m/(m + 1) - (1 - e**2)/(m + 1) + 1)/(-e**2*m**2/(m + 1)**2 - (1 - e**2",
+   "why": "affine combination of known quantities (target speed / initial speed, Fraction of Kinetic Energy Retained by the Projectile Relative to the System [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2*m**2/(e**2*m**2 + 1)",
+   "why": "affine combination of known quantities (target speed / initial speed, Kinetic energy ratio of the target to the projectile after collision [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2*m**2/(m + 1)**2 + e**2*m/(m + 1) - 2*m*(1 - e**2)/(m + 1) + 1",
+   "why": "affine combination of known quantities (target speed / initial speed, Fraction of kinetic energy transferred to the target relative to initial kinetic [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "-e**2*m**2/(m + 1)**2 - m*(1 - e**2)/(m + 1) + 1",
+   "why": "affine combination of known quantities (target speed / initial speed, Fraction of kinetic energy retained by the system relative to initial kinetic en [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt((1 - r**2)**2 + (2*z*r)**2)/sqrt(4*z**4 - 2*z**2 + 1)",
+   "why": "affine combination of known quantities (amplitude / static deflection, Dynamic Magnification Factor [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt((1 + (2*z*r)**2)/((1 - r**2)**2 + (2*z*r)**2))",
+   "why": "affine combination of known quantities (amplitude / static deflection, transmissibility)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "1 + sqrt(4*r**2*z**2 + 1)/(2*r*z*sqrt(4*r**2*z**2 + (1 - r**2)**2))",
+   "why": "affine combination of known quantities (amplitude / static deflection, Power Amplification Factor [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(4*r**2*z**2 + (1 - r**2)**2)/sqrt(4*z**2 + 1)",
+   "why": "affine combination of known quantities (amplitude / static deflection, Mechanical Impedance Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 + u)/(1 - u)) * sqrt((1 + v)/(1 - v)) / sqrt((1 + (u + v)/(1 + u*v)) / (1 - (u + v)/(1 + u*v",
+   "why": "affine combination of known quantities (composed speed / c)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 - u**2)*(1 - v**2) + (u + v)**2/(u*v + 1)**2) / (u*v + 1) * (1 + u*v) / (sqrt(1 - u**2)*sqrt",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt(1 - u**2)*sqrt(1 - v**2) + (u + v)*sqrt(-(u + v)**2/(u*v + 1)**2 + 1)/(u*v + 1)",
+   "why": "affine combination of known quantities (composed speed / c, Relativistic Energy-Momentum Invariant [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "x/(1 + x*c)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, scattered photon energy / (m_e c\u00b2))"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "x**2*c/(1 + x*c)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, electron kinetic energy / (m_e c\u00b2))"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "1 - c/(1 + x*c)",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "c/(x + 1)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, Scattered photon wavelength / initial photon wavelength [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "((1 - 2*c1 + c2)**2 + (1 - 2*c2 + c1)**2)/((1 - c1)**2 + (1 - c2)**2)",
+   "why": "affine combination of known quantities (output of firm 1, Hirshleifer Index [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "sqrt(-L*p + 1)/(-p*sqrt(1 - L) + sqrt(1 - L) + 1)",
+   "why": "affine combination of known quantities (expected wealth, Insurance Risk Exposure Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "L*p/(-p*sqrt(1 - L) + p + sqrt(1 - L) - sqrt(-L*p + 1) + 1)",
+   "why": "affine combination of known quantities (expected wealth, Insurance Risk Sensitivity Index [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "sqrt(-L*p + 1)/(-p*sqrt(1 - L) + p + 1)",
+   "why": "affine combination of known quantities (expected wealth, Risk Adjustment Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "1 - (p*sqrt(1 - L) - p + 1)**2/(-L*p + 1)",
+   "why": "affine combination of known quantities (expected wealth, Insurance Coverage Ratio [model-proposed; physical meaning unverified])"
   }
  ],
  "tried": [
@@ -60852,7 +60998,31 @@
   "insurance and risk|Relative Risk Adjustment Index Adjusted [model-proposed; physical meaning unverified]|Insurance Risk Sensitivity Ratio Adjusted [model-proposed; physical meaning unverified]",
   "insurance and risk|Relative Risk Adjustment Index Adjusted [model-proposed; physical meaning unverified]|Insurance Risk Exposure Ratio Adjusted [model-proposed; physical meaning unverified]",
   "insurance and risk|Relative Risk Adjustment Index Adjusted [model-proposed; physical meaning unverified]|Relative Risk Sensitivity Index Adjusted [model-proposed; physical meaning unverified]",
-  "insurance and risk|Relative Risk Adjustment Index Adjusted [model-proposed; physical meaning unverified]|Insurance Coverage Sensitivity [model-proposed; physical meaning unverified]"
+  "insurance and risk|Relative Risk Adjustment Index Adjusted [model-proposed; physical meaning unverified]|Insurance Coverage Sensitivity [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|expected revenue|Welfare Reserve Efficiency with Seller Value Ratio [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|seller's expected payoff|Welfare Reserve Efficiency with Seller Value Ratio [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|probability the item is not sold|Welfare Reserve Efficiency with Seller Value Ratio [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|expected total bidder surplus|Welfare Reserve Efficiency with Seller Value Ratio [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|expected total welfare|Welfare Reserve Efficiency with Seller Value Ratio [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|welfare with the efficient reserve (r = v)|Welfare Reserve Efficiency with Seller Value Ratio [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|probability the seller's value is below reserve [model-proposed; physical meaning unverified]|Welfare Reserve Efficiency with Seller Value Ratio [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|expected bidder surplus ratio [model-proposed; physical meaning unverified]|Welfare Reserve Efficiency with Seller Value Ratio [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|reserve price elasticity of welfare [model-proposed; physical meaning unverified]|Welfare Reserve Efficiency with Seller Value Ratio [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|expected bidder surplus given reserve [model-proposed; physical meaning unverified]|Welfare Reserve Efficiency with Seller Value Ratio [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|reserve price elasticity of bidder surplus [model-proposed; physical meaning unverified]|Welfare Reserve Efficiency with Seller Value Ratio [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|expected bidder surplus given reserve and seller's value [model-proposed; physical meaning unverified]|Welfare Reserve Efficiency with Seller Value Ratio [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|Welfare Efficiency Ratio [model-proposed; physical meaning unverified]|Welfare Reserve Efficiency with Seller Value Ratio [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|Bidder Surplus Given Reserve and Seller Value Ratio [model-proposed; physical meaning unverified]|Welfare Reserve Efficiency with Seller Value Ratio [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|Welfare Reserve Ratio [model-proposed; physical meaning unverified]|Welfare Reserve Efficiency with Seller Value Ratio [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|Bidder Surplus Reserve Ratio [model-proposed; physical meaning unverified]|Welfare Reserve Efficiency with Seller Value Ratio [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|Welfare Reserve Efficiency Ratio [model-proposed; physical meaning unverified]|Welfare Reserve Efficiency with Seller Value Ratio [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|Bidder Surplus Reserve Efficiency Ratio [model-proposed; physical meaning unverified]|Welfare Reserve Efficiency with Seller Value Ratio [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|Welfare Reserve Efficiency with Seller Value [model-proposed; physical meaning unverified]|Welfare Reserve Efficiency with Seller Value Ratio [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|Bidder Surplus Reserve Ratio with Seller Value [model-proposed; physical meaning unverified]|Welfare Reserve Efficiency with Seller Value Ratio [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|Welfare Reserve Efficiency with Seller Value and Reserve [model-proposed; physical meaning unverified]|Welfare Reserve Efficiency with Seller Value Ratio [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|Bidder Surplus Reserve Efficiency with Seller Value [model-proposed; physical meaning unverified]|Welfare Reserve Efficiency with Seller Value Ratio [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|Bidder Surplus Reserve Efficiency with Seller Value and Reserve Ratio [model-proposed; physical meaning unverified]|Welfare Reserve Efficiency with Seller Value Ratio [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|Expected Revenue to Seller's Value Ratio [model-proposed; physical meaning unverified]|Welfare Reserve Efficiency with Seller Value Ratio [model-proposed; physical meaning unverified]"
  ],
  "edges": [
   {
@@ -68240,9 +68410,27 @@
    "f": "Relative Risk Adjustment Index Adjusted [model-proposed; physical meaning unverified]",
    "g": "Insurance Risk Exposure Ratio Adjusted [model-proposed; physical meaning unverified]",
    "k": "1"
+  },
+  {
+   "family": "auction with a reserve price",
+   "f": "welfare with the efficient reserve (r = v)",
+   "g": "Welfare Reserve Efficiency with Seller Value Ratio [model-proposed; physical meaning unverified]",
+   "k": "1/4"
+  },
+  {
+   "family": "auction with a reserve price",
+   "f": "Welfare Efficiency Ratio [model-proposed; physical meaning unverified]",
+   "g": "Welfare Reserve Efficiency with Seller Value Ratio [model-proposed; physical meaning unverified]",
+   "k": "1/2"
+  },
+  {
+   "family": "auction with a reserve price",
+   "f": "Welfare Reserve Efficiency with Seller Value and Reserve [model-proposed; physical meaning unverified]",
+   "g": "Welfare Reserve Efficiency with Seller Value Ratio [model-proposed; physical meaning unverified]",
+   "k": "1/4"
   }
  ],
- "rounds": 3933,
+ "rounds": 3943,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",
