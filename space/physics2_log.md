@@ -4393,3 +4393,4 @@
 - 2026-11-13 16:06 round 4035: driven oscillator
 - 2026-11-13 16:08 round 4036: velocity addition
 - 2026-11-13 16:09 round 4037: Compton scattering
+- 2026-11-13 16:10 round 4038: Cournot duopoly
