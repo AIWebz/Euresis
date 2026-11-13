@@ -2784120,5 +2784120,518 @@
   "statement": "Octal game 0.755204 is completely solved: its Grundy values are periodic with pre-period 1 and period 5 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24120243",
+   "held_out_r2": 0.952,
+   "held_out_rows": 5000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-547f7c2fdc8b",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "280602f79588be1a.csv",
+   "doi": "10.5281/zenodo.24120243",
+   "form": "linear",
+   "params": [
+    0.004264802698417772,
+    0.9965973044302946
+   ],
+   "seed": 735674485,
+   "x": "z_spec",
+   "y": "z_photo_sdss"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Three-dimensional spherical conformal prediction catalog of stellar and extragalactic dist' (Zenodo, doi 10.5281/zenodo.24120243): 'z_photo_sdss' is linear in 'z_spec' (R\u00b2 = 0.955 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24120243",
+   "held_out_r2": 0.964,
+   "held_out_rows": 1500,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-18575f4256c4",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "4d31b7304fff2ed2.csv",
+   "doi": "10.5281/zenodo.24120243",
+   "form": "linear",
+   "params": [
+    0.06086614901714787,
+    0.017773991183498133
+   ],
+   "seed": 1306232257,
+   "x": "b",
+   "y": "aitoff_y"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Three-dimensional spherical conformal prediction catalog of stellar and extragalactic dist' (Zenodo, doi 10.5281/zenodo.24120243): 'aitoff_y' is linear in 'b' (R\u00b2 = 0.969 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24120243",
+   "held_out_r2": 0.9865,
+   "held_out_rows": 1500,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-8c3ebc914890",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "4d31b7304fff2ed2.csv",
+   "doi": "10.5281/zenodo.24120243",
+   "form": "linear",
+   "params": [
+    0.03706381271168652,
+    0.014428202478417305
+   ],
+   "seed": 1306232257,
+   "x": "b",
+   "y": "uz"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Three-dimensional spherical conformal prediction catalog of stellar and extragalactic dist' (Zenodo, doi 10.5281/zenodo.24120243): 'uz' is linear in 'b' (R\u00b2 = 0.988 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24120243",
+   "held_out_r2": 0.9777,
+   "held_out_rows": 1500,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-730de565321e",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "4d31b7304fff2ed2.csv",
+   "doi": "10.5281/zenodo.24120243",
+   "form": "linear",
+   "params": [
+    0.0003712185491814593,
+    0.7960233675614345
+   ],
+   "seed": 1306232257,
+   "x": "aitoff_y",
+   "y": "uz"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Three-dimensional spherical conformal prediction catalog of stellar and extragalactic dist' (Zenodo, doi 10.5281/zenodo.24120243): 'uz' is linear in 'aitoff_y' (R\u00b2 = 0.980 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23850832",
+   "held_out_r2": 0.9432,
+   "held_out_rows": 46,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-409fb3fb5d20",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "cfacae26c3582ffc.csv",
+   "doi": "10.5281/zenodo.23850832",
+   "form": "linear",
+   "params": [
+    -152963.8153896997,
+    0.0014998330535249493
+   ],
+   "seed": 3720872335,
+   "x": "tile",
+   "y": "ra_center"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Catalog and Image Atlas of 94 Polar-Structure Galaxy Candidates from Euclid Quick Data Rel' (Zenodo, doi 10.5281/zenodo.23850832): 'ra_center' is linear in 'tile' (R\u00b2 = 0.906 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23850832",
+   "held_out_r2": 0.9542,
+   "held_out_rows": 46,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-839f9744d38f",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "cfacae26c3582ffc.csv",
+   "doi": "10.5281/zenodo.23850832",
+   "form": "power law",
+   "params": [
+    2.010241307860187,
+    2.2633003222537753
+   ],
+   "seed": 3720872335,
+   "x": "smb_arcsec",
+   "y": "flux_detection_total"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Catalog and Image Atlas of 94 Polar-Structure Galaxy Candidates from Euclid Quick Data Rel' (Zenodo, doi 10.5281/zenodo.23850832): 'flux_detection_total' follows a power law in 'smb_arcsec' (R\u00b2 = 0.931 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23850832",
+   "held_out_r2": 0.9569,
+   "held_out_rows": 46,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3a174867356f",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "cfacae26c3582ffc.csv",
+   "doi": "10.5281/zenodo.23850832",
+   "form": "power law",
+   "params": [
+    3.08106827674275,
+    -0.12546747367192845
+   ],
+   "seed": 3720872335,
+   "x": "smb_arcsec",
+   "y": "KRON_VIS_MAG"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Catalog and Image Atlas of 94 Polar-Structure Galaxy Candidates from Euclid Quick Data Rel' (Zenodo, doi 10.5281/zenodo.23850832): 'KRON_VIS_MAG' follows a power law in 'smb_arcsec' (R\u00b2 = 0.936 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23850832",
+   "held_out_r2": 0.9311,
+   "held_out_rows": 46,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-8ef3ec491626",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "cfacae26c3582ffc.csv",
+   "doi": "10.5281/zenodo.23850832",
+   "form": "power law",
+   "params": [
+    -0.13253447792215967,
+    0.9031441780380082
+   ],
+   "seed": 3720872335,
+   "x": "sma_kpc",
+   "y": "smb_kpc"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Catalog and Image Atlas of 94 Polar-Structure Galaxy Candidates from Euclid Quick Data Rel' (Zenodo, doi 10.5281/zenodo.23850832): 'smb_kpc' follows a power law in 'sma_kpc' (R\u00b2 = 0.907 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23850832",
+   "held_out_r2": 0.8604,
+   "held_out_rows": 46,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b860500f35f7",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "cfacae26c3582ffc.csv",
+   "doi": "10.5281/zenodo.23850832",
+   "form": "exponential",
+   "params": [
+    -2.848842083928558,
+    0.35774521238561546
+   ],
+   "seed": 3720872335,
+   "x": "kpc_per_arcsec",
+   "y": "phz_median"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Catalog and Image Atlas of 94 Polar-Structure Galaxy Candidates from Euclid Quick Data Rel' (Zenodo, doi 10.5281/zenodo.23850832): 'phz_median' grows exponentially in 'kpc_per_arcsec' (R\u00b2 = 0.989 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22304630",
+   "held_out_r2": 0.9198,
+   "held_out_rows": 37,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e4cf638ffef7",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "9d822128f18ec338.csv",
+   "doi": "10.5281/zenodo.22304630",
+   "form": "logarithmic",
+   "params": [
+    8.091548927456907,
+    0.40633800646695895
+   ],
+   "seed": 50356918,
+   "x": "Sint",
+   "y": "logMHI"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Virgo Filaments VII: MeerKAT HI-imaging of the VirgoIII filament' (Zenodo, doi 10.5281/zenodo.22304630): 'logMHI' grows logarithmically in 'Sint' (R\u00b2 = 0.944 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22304630",
+   "held_out_r2": -Infinity,
+   "held_out_rows": 37,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-95cca07b97df",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "9d822128f18ec338.csv",
+   "doi": "10.5281/zenodo.22304630",
+   "form": "logarithmic",
+   "params": [
+    9.021994748415498,
+    0.4387061168906072
+   ],
+   "seed": 50356918,
+   "x": "e_Sint",
+   "y": "logMHI"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Virgo Filaments VII: MeerKAT HI-imaging of the VirgoIII filament' (Zenodo, doi 10.5281/zenodo.22304630): 'logMHI' grows logarithmically in 'e_Sint' (R\u00b2 = 0.927 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23980645",
+   "held_out_r2": 0.8943,
+   "held_out_rows": 4028,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-1b01118931f2",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "e467912a01075aa2.csv",
+   "doi": "10.5281/zenodo.23980645",
+   "form": "linear",
+   "params": [
+    1.0752891243503317,
+    1.8703876638642192
+   ],
+   "seed": 247046930,
+   "x": "skew",
+   "y": "max_over_mean"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Training Dataset for, 'Advance Warning of \u03b3-ray Blazar Flares from Fermi-LAT Light Curves'' (Zenodo, doi 10.5281/zenodo.23980645): 'max_over_mean' is linear in 'skew' (R\u00b2 = 0.906 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.18848131",
+   "held_out_r2": 0.9997,
+   "held_out_rows": 5221,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f9bde5c08ca0",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "1ee26494b0fcbfed.csv",
+   "doi": "10.5281/zenodo.18848131",
+   "form": "logarithmic",
+   "params": [
+    0.6437227689320969,
+    -0.24301405563795853
+   ],
+   "seed": 2970912588,
+   "x": "R_predicted",
+   "y": "A_predicted"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'ECOTICC eRASS1 Synthetic Catalogue v1.0: A Four-Parameter Scaling Law for Baryon Asymmetry' (Zenodo, doi 10.5281/zenodo.18848131): 'A_predicted' grows logarithmically in 'R_predicted' (R\u00b2 = 1.000 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.18848131",
+   "held_out_r2": 0.9928,
+   "held_out_rows": 5221,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-6e54c7020c4c",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "1ee26494b0fcbfed.csv",
+   "doi": "10.5281/zenodo.18848131",
+   "form": "exponential",
+   "params": [
+    -0.18006086771065657,
+    -0.2990564521168825
+   ],
+   "seed": 2970912588,
+   "x": "R_predicted",
+   "y": "A_empirical_opt"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'ECOTICC eRASS1 Synthetic Catalogue v1.0: A Four-Parameter Scaling Law for Baryon Asymmetry' (Zenodo, doi 10.5281/zenodo.18848131): 'A_empirical_opt' grows exponentially in 'R_predicted' (R\u00b2 = 0.993 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.18848131",
+   "held_out_r2": 0.9925,
+   "held_out_rows": 5221,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-afe4a53c519c",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "1ee26494b0fcbfed.csv",
+   "doi": "10.5281/zenodo.18848131",
+   "form": "power law",
+   "params": [
+    -0.9047264405973434,
+    -2.136957428487956
+   ],
+   "seed": 2970912588,
+   "x": "A_predicted",
+   "y": "R_empirical_opt"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'ECOTICC eRASS1 Synthetic Catalogue v1.0: A Four-Parameter Scaling Law for Baryon Asymmetry' (Zenodo, doi 10.5281/zenodo.18848131): 'R_empirical_opt' follows a power law in 'A_predicted' (R\u00b2 = 0.992 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22960778",
+   "held_out_r2": 0.8659,
+   "held_out_rows": 6453,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a069570d4cee",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "eb5d787a86d06618.csv",
+   "doi": "10.5281/zenodo.22960778",
+   "form": "linear",
+   "params": [
+    -0.6478019637964851,
+    5.234755080876638
+   ],
+   "seed": 3787372735,
+   "x": "excess_ratio",
+   "y": "amplitude_over_mad"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'An anomaly-ranked catalogue of TESS sector 1 two-minute cadence light curves' (Zenodo, doi 10.5281/zenodo.22960778): 'amplitude_over_mad' is linear in 'excess_ratio' (R\u00b2 = 0.919 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23718586",
+   "held_out_r2": 0.9181,
+   "held_out_rows": 1152,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-caeea81b483a",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8ec0c39e1c615a39.csv",
+   "doi": "10.5281/zenodo.23718586",
+   "form": "linear",
+   "params": [
+    21.767748184627333,
+    1.122889805589889
+   ],
+   "seed": 1079608143,
+   "x": "sector_query",
+   "y": "data_rel_full"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A record-level TESS stellar-flare injection-recovery selection-function dataset' (Zenodo, doi 10.5281/zenodo.23718586): 'data_rel_full' is linear in 'sector_query' (R\u00b2 = 0.916 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23718586",
+   "held_out_r2": 0.9181,
+   "held_out_rows": 1152,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-df99d42b5a7d",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8ec0c39e1c615a39.csv",
+   "doi": "10.5281/zenodo.23718586",
+   "form": "linear",
+   "params": [
+    21.767748184627333,
+    1.122889805589889
+   ],
+   "seed": 1079608143,
+   "x": "sector_query",
+   "y": "data_rel"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A record-level TESS stellar-flare injection-recovery selection-function dataset' (Zenodo, doi 10.5281/zenodo.23718586): 'data_rel' is linear in 'sector_query' (R\u00b2 = 0.916 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23718586",
+   "held_out_r2": 0.9355,
+   "held_out_rows": 1152,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-2773f733a3be",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8ec0c39e1c615a39.csv",
+   "doi": "10.5281/zenodo.23718586",
+   "form": "linear",
+   "params": [
+    1.0055628880999121,
+    -0.9957879995842623
+   ],
+   "seed": 1079608143,
+   "x": "gap_burden",
+   "y": "finite_pdcsap_fraction"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A record-level TESS stellar-flare injection-recovery selection-function dataset' (Zenodo, doi 10.5281/zenodo.23718586): 'finite_pdcsap_fraction' is linear in 'gap_burden' (R\u00b2 = 0.945 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
