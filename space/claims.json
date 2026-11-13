@@ -2814082,5 +2814082,59 @@
   "statement": "Octal game 0.757057 is completely solved: its Grundy values are periodic with pre-period 97 and period 87 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7971396",
+   "held_out_r2": 0.9385,
+   "held_out_rows": 57,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c2c04d0936a9",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "fcf3f0dc544a4ef4.csv",
+   "doi": "10.5281/zenodo.7971396",
+   "form": "exponential",
+   "params": [
+    2.2897923792921016,
+    0.041050763103706506
+   ],
+   "seed": 2971443703,
+   "x": "SST_min_DegC",
+   "y": "seasonal_min_DegC"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Resources from: Disparate patterns of genetic divergence in three widespread corals across' (Zenodo, doi 10.5281/zenodo.7971396): 'seasonal_min_DegC' grows exponentially in 'SST_min_DegC' (R\u00b2 = 0.941 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7971396",
+   "held_out_r2": 0.9838,
+   "held_out_rows": 57,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b8997fb83fe6",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "fcf3f0dc544a4ef4.csv",
+   "doi": "10.5281/zenodo.7971396",
+   "form": "linear",
+   "params": [
+    -1.951425805545524,
+    1.0671535934852354
+   ],
+   "seed": 2971443703,
+   "x": "SST_mean_DegC",
+   "y": "seasonal_mean_DegC"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Resources from: Disparate patterns of genetic divergence in three widespread corals across' (Zenodo, doi 10.5281/zenodo.7971396): 'seasonal_mean_DegC' is linear in 'SST_mean_DegC' (R\u00b2 = 0.962 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
