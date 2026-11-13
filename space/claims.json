@@ -2728516,5 +2728516,72 @@
   "statement": "[economics: auction with a reserve price] Welfare Reserve Efficiency with Seller Value Ratio [model-proposed; physical meaning unverified] \u2265 2 \u00d7 Welfare Reserve Efficiency with Seller Value and Reserve [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (1, 1.09e-28))",
   "status": "proved",
   "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "checked_up_to": 120,
+   "method": "Grundy values recomputed; Guy\u2013Smith periodicity theorem condition checked",
+   "values_of_one_period": [
+    4,
+    1,
+    2,
+    1,
+    2,
+    7,
+    8,
+    4,
+    7,
+    8,
+    1,
+    2,
+    11,
+    1,
+    2,
+    11,
+    4,
+    7,
+    8
+   ]
+  },
+  "id": "gam-1eaf7554030c",
+  "kind": "game",
+  "novelty": "novelty unchecked: octal games of up to three digits are tabulated in Winning Ways and Flammenkamp's tables, which cannot be searched from here",
+  "payload": {
+   "code": "751267",
+   "period": 19,
+   "preperiod": 38
+  },
+  "source": "games.py",
+  "statement": "Octal game 0.751267 is completely solved: its Grundy values are periodic with pre-period 38 and period 19 (Guy\u2013Smith periodicity theorem)",
+  "status": "proved",
+  "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "checked_up_to": 36,
+   "method": "Grundy values recomputed; Guy\u2013Smith periodicity theorem condition checked",
+   "values_of_one_period": [
+    4,
+    7,
+    1,
+    2,
+    1,
+    2,
+    4,
+    7
+   ]
+  },
+  "id": "gam-76bf921db7ee",
+  "kind": "game",
+  "novelty": "novelty unchecked: octal games of up to three digits are tabulated in Winning Ways and Flammenkamp's tables, which cannot be searched from here",
+  "payload": {
+   "code": "751271",
+   "period": 8,
+   "preperiod": 7
+  },
+  "source": "games.py",
+  "statement": "Octal game 0.751271 is completely solved: its Grundy values are periodic with pre-period 7 and period 8 (Guy\u2013Smith periodicity theorem)",
+  "status": "proved",
+  "verifier": "guy-smith-periodicity"
  }
 ]
