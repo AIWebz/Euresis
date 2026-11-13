@@ -3072,3 +3072,4 @@
 - 2026-11-13 09:46 FINDING (confirmed on held-out rows): In 'Data from: Impact of ground-level ozone on tropical forests' (Zenodo, doi 10.5061/dryad.4b8gthtmz): 'TPC' is linear in 'TAC' (R² = 0.919 on the discovery half); held-out R² = 0.911 [emp-2f5361a36557]
 - 2026-11-13 09:48 FINDING (confirmed on held-out rows): In 'Data from: Trait-environment relationships could alter the spatial and temporal characteri' (Zenodo, doi 10.5061/dryad.h44j0zpj1): 'MINELEVSMO' is linear in 'MAXELEVSMO' (R² = 0.989 on the discovery half); held-out R² = 0.986 [emp-0df43a7f918f]
 - 2026-11-13 09:48 data feeds: 19698 datasets analysed so far, 2750 confirmed findings
+- 2026-11-13 12:39 data feeds: online
