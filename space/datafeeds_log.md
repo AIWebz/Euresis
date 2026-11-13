@@ -3295,3 +3295,4 @@
 - 2026-11-13 21:30 FINDING (confirmed on held-out rows): In 'Resource quality determines the evolution of resistance and its genetic basis' (Zenodo, doi 10.5061/dryad.k98sf7m4g): 'prop' is linear in 'Infected' (R² = 0.921 on the discovery half); held-out R² = 0.936 [emp-fa489ef8492d]
 - 2026-11-13 21:30 FINDING (confirmed on held-out rows): In 'Resource quality determines the evolution of resistance and its genetic basis' (Zenodo, doi 10.5061/dryad.k98sf7m4g): 'prop' is linear in 'Non.infected' (R² = 0.935 on the discovery half); held-out R² = 0.914 [emp-48ff79437760]
 - 2026-11-13 21:31 data feeds: 20629 datasets analysed so far, 2953 confirmed findings
+- 2026-11-13 22:13 data feeds: online
