@@ -2861,3 +2861,4 @@
 - 2026-11-13 00:42 FINDING (confirmed on held-out rows): In 'Data from: Establishing detection thresholds for environmental DNA using receiver operator' (Zenodo, doi 10.5061/dryad.2h023): 'AVGCopyNumber (B-D)' is linear in 'qPCRrep2' (R² = 0.986 on the discovery half); held-out R² = 0.984 [emp-a8e4f689dde9]
 - 2026-11-13 00:42 FINDING (confirmed on held-out rows): In 'Data from: Establishing detection thresholds for environmental DNA using receiver operator' (Zenodo, doi 10.5061/dryad.2h023): 'AVGCopyNumber (B-D)' is linear in 'qPCRrep3' (R² = 0.972 on the discovery half); held-out R² = 0.982 [emp-dd7e8de9bcb1]
 - 2026-11-13 00:42 data feeds: 18715 datasets analysed so far, 2559 confirmed findings
+- 2026-11-13 00:55 data feeds: online
