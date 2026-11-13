@@ -4383,3 +4383,4 @@
 - 2026-11-13 15:50 round 4025: two-body decay
 - 2026-11-13 15:52 round 4026: collision
 - 2026-11-13 15:54 round 4027: driven oscillator
+- 2026-11-13 15:55 round 4028: velocity addition
