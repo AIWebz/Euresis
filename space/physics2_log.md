@@ -4568,3 +4568,7 @@
 - 2026-11-13 23:38 round 4194: collision
 - 2026-11-13 23:40 round 4195: driven oscillator
 - 2026-11-13 23:41 round 4196: velocity addition
+- 2026-11-13 23:42 round 4197: Compton scattering
+- 2026-11-13 23:43 round 4198: Cournot duopoly
+- 2026-11-13 23:44 round 4199: insurance and risk
+- 2026-11-13 23:46 segment end: 4199 rounds, 5 discoveries, 2 known laws rediscovered
