@@ -3008,3 +3008,4 @@
 - 2026-11-13 06:39 data feeds: online
 - 2026-11-13 06:39 FINDING (confirmed on held-out rows): In 'Data from: The role of habitat filtering in the leaf economics spectrum and plant suscepti' (Zenodo, doi 10.5061/dryad.356v3): 'C:N' follows a power law in '%N' (R² = 0.992 on the discovery half); held-out R² = 0.993 [emp-4134205f2dda]
 - 2026-11-13 06:39 data feeds: 19462 datasets analysed so far, 2692 confirmed findings
+- 2026-11-13 07:42 data feeds: online
