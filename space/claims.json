@@ -2767363,5 +2767363,167 @@
   "statement": "Octal game 0.754106 is completely solved: its Grundy values are periodic with pre-period 1 and period 7 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.19472800",
+   "held_out_r2": 0.9881,
+   "held_out_rows": 5295,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-fe25b943022b",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "e3bb4551595c8fb3.csv",
+   "doi": "10.5281/zenodo.19472800",
+   "form": "linear",
+   "params": [
+    -0.07780696612675121,
+    1.053808412485555
+   ],
+   "seed": 571789003,
+   "x": "dTbol_median_K",
+   "y": "dTcor_median_K"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: New Lunar Crater Reveals Extensive Distal Regolith Modification' (Zenodo, doi 10.5281/zenodo.19472800): 'dTcor_median_K' is linear in 'dTbol_median_K' (R\u00b2 = 0.988 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.19472800",
+   "held_out_r2": 0.9689,
+   "held_out_rows": 5295,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-6d62e6a412f8",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "e3bb4551595c8fb3.csv",
+   "doi": "10.5281/zenodo.19472800",
+   "form": "exponential",
+   "params": [
+    -2.953425347319704,
+    -0.21441622725982093
+   ],
+   "seed": 571789003,
+   "x": "dTbol_median_K",
+   "y": "Hcor_median_m"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: New Lunar Crater Reveals Extensive Distal Regolith Modification' (Zenodo, doi 10.5281/zenodo.19472800): 'Hcor_median_m' grows exponentially in 'dTbol_median_K' (R\u00b2 = 0.962 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.19472800",
+   "held_out_r2": 0.9715,
+   "held_out_rows": 5295,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-0cf46669ce27",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "e3bb4551595c8fb3.csv",
+   "doi": "10.5281/zenodo.19472800",
+   "form": "linear",
+   "params": [
+    0.006016995877569406,
+    -0.003258911522726705
+   ],
+   "seed": 571789003,
+   "x": "dTbol_median_K",
+   "y": "deltacor_median_m"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: New Lunar Crater Reveals Extensive Distal Regolith Modification' (Zenodo, doi 10.5281/zenodo.19472800): 'deltacor_median_m' is linear in 'dTbol_median_K' (R\u00b2 = 0.971 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.19472800",
+   "held_out_r2": 0.9681,
+   "held_out_rows": 5295,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-bee65cdc70b2",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "e3bb4551595c8fb3.csv",
+   "doi": "10.5281/zenodo.19472800",
+   "form": "exponential",
+   "params": [
+    -2.9648198952764315,
+    -0.20204908505447922
+   ],
+   "seed": 571789003,
+   "x": "dTcor_median_K",
+   "y": "Hcor_median_m"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: New Lunar Crater Reveals Extensive Distal Regolith Modification' (Zenodo, doi 10.5281/zenodo.19472800): 'Hcor_median_m' grows exponentially in 'dTcor_median_K' (R\u00b2 = 0.960 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.19472800",
+   "held_out_r2": 0.986,
+   "held_out_rows": 5295,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d8da1c96547f",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "e3bb4551595c8fb3.csv",
+   "doi": "10.5281/zenodo.19472800",
+   "form": "linear",
+   "params": [
+    0.00576058200489767,
+    -0.0030975598644879332
+   ],
+   "seed": 571789003,
+   "x": "dTcor_median_K",
+   "y": "deltacor_median_m"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: New Lunar Crater Reveals Extensive Distal Regolith Modification' (Zenodo, doi 10.5281/zenodo.19472800): 'deltacor_median_m' is linear in 'dTcor_median_K' (R\u00b2 = 0.986 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.19472800",
+   "held_out_r2": 0.9401,
+   "held_out_rows": 5295,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-860ef8567360",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "e3bb4551595c8fb3.csv",
+   "doi": "10.5281/zenodo.19472800",
+   "form": "logarithmic",
+   "params": [
+    0.049552159808385336,
+    0.014618660698435716
+   ],
+   "seed": 571789003,
+   "x": "Hcor_median_m",
+   "y": "deltacor_median_m"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: New Lunar Crater Reveals Extensive Distal Regolith Modification' (Zenodo, doi 10.5281/zenodo.19472800): 'deltacor_median_m' grows logarithmically in 'Hcor_median_m' (R\u00b2 = 0.934 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
