@@ -2658443,5 +2658443,86 @@
   "statement": "Octal game 0.725272 is completely solved: its Grundy values are periodic with pre-period 1145 and period 54 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22738712",
+   "held_out_r2": 0.9638,
+   "held_out_rows": 1447,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-511bf6a46561",
+  "kind": "empirical",
+  "novelty": "KNOWN: standard atmosphere / hydrostatics (temperature, pressure and altitude, T \u221d P^(R\u00b7\u0393/g)) \u2014 not a discovery",
+  "payload": {
+   "dataset": "26405373e7f1bc27.csv",
+   "doi": "10.5281/zenodo.22738712",
+   "form": "power law",
+   "params": [
+    0.2488575074261473,
+    0.935818292663341
+   ],
+   "seed": 3900860690,
+   "x": "altc(d)",
+   "y": "alt-raw"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Reconstructing Tycho Brahe's Star Catalog: Observational Data, Website Archive, and Suppor' (Zenodo, doi 10.5281/zenodo.22738712): 'alt-raw' follows a power law in 'altc(d)' (R\u00b2 = 0.945 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22738712",
+   "held_out_r2": 0.964,
+   "held_out_rows": 1447,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-24e9fde60881",
+  "kind": "empirical",
+  "novelty": "KNOWN: standard atmosphere / hydrostatics (temperature, pressure and altitude, T \u221d P^(R\u00b7\u0393/g)) \u2014 not a discovery",
+  "payload": {
+   "dataset": "26405373e7f1bc27.csv",
+   "doi": "10.5281/zenodo.22738712",
+   "form": "power law",
+   "params": [
+    0.2462128515744536,
+    0.9364308723160171
+   ],
+   "seed": 3900860690,
+   "x": "altc(d)",
+   "y": "alt1_exo"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Reconstructing Tycho Brahe's Star Catalog: Observational Data, Website Archive, and Suppor' (Zenodo, doi 10.5281/zenodo.22738712): 'alt1_exo' follows a power law in 'altc(d)' (R\u00b2 = 0.945 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23326653",
+   "held_out_r2": 0.9735,
+   "held_out_rows": 38,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-623d75b5ccc5",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "04ea3fb4c4a5e9f5.csv",
+   "doi": "10.5281/zenodo.23326653",
+   "form": "power law",
+   "params": [
+    1.6967285339248808,
+    0.9443581892254553
+   ],
+   "seed": 3519708609,
+   "x": "LAS",
+   "y": "Physical_Size"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Evidence for strong shocks in the ISM of small radio sources' (Zenodo, doi 10.5281/zenodo.23326653): 'Physical_Size' follows a power law in 'LAS' (R\u00b2 = 0.965 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
