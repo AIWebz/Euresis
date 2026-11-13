@@ -3053,3 +3053,5 @@
 - 2026-11-13 08:42 FINDING (confirmed on held-out rows): In 'Data for paper titled: "Ocean weather, biological rates, and unexplained global ecological' (Figshare, doi 10.6084/m9.figshare.21386430.v7): 'duration_in_years' follows a power law in 'duration_in_days' (R² = 0.924 on the discovery half); held-out R² = 0.922 [emp-b834a5e6441c]
 - 2026-11-13 08:42 data feeds: 19618 datasets analysed so far, 2732 confirmed findings
 - 2026-11-13 09:44 data feeds: online
+- 2026-11-13 09:44 FINDING (confirmed on held-out rows): In 'Data from: Location, but not defensive genotype, determines ectomycorrhizal community comp' (Zenodo, doi 10.5061/dryad.ncjsxksth): 'unknown' is linear in 'myrcene' (R² = 0.916 on the discovery half); held-out R² = 0.905 [emp-cc34699c2304]
+- 2026-11-13 09:44 FINDING (confirmed on held-out rows): In 'Data from: Location, but not defensive genotype, determines ectomycorrhizal community comp' (Zenodo, doi 10.5061/dryad.ncjsxksth): 'Gamma.terpinene' is linear in 'myrcene' (R² = 0.929 on the discovery half); held-out R² = 0.900 [emp-bab2583bdbf8]

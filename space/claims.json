@@ -2741229,5 +2741229,81 @@
   "statement": "Octal game 0.752154 is completely solved: its Grundy values are periodic with pre-period 1 and period 2 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.ncjsxksth",
+   "held_out_r2": 0.9055,
+   "held_out_rows": 172,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-cc34699c2304",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "5ad76a15278d3c11.csv",
+   "doi": "10.5061/dryad.ncjsxksth",
+   "form": "linear",
+   "params": [
+    -0.016401232523109755,
+    1.4999710243340245
+   ],
+   "seed": 1162011829,
+   "x": "myrcene",
+   "y": "unknown"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Location, but not defensive genotype, determines ectomycorrhizal community comp' (Zenodo, doi 10.5061/dryad.ncjsxksth): 'unknown' is linear in 'myrcene' (R\u00b2 = 0.916 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.ncjsxksth",
+   "held_out_r2": 0.9004,
+   "held_out_rows": 172,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-bab2583bdbf8",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "5ad76a15278d3c11.csv",
+   "doi": "10.5061/dryad.ncjsxksth",
+   "form": "linear",
+   "params": [
+    -0.004244779746366153,
+    0.3921279221065856
+   ],
+   "seed": 1162011829,
+   "x": "myrcene",
+   "y": "Gamma.terpinene"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Location, but not defensive genotype, determines ectomycorrhizal community comp' (Zenodo, doi 10.5061/dryad.ncjsxksth): 'Gamma.terpinene' is linear in 'myrcene' (R\u00b2 = 0.929 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": null,
+  "id": "emp-afc0071e0e84",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "5ad76a15278d3c11.csv",
+   "doi": "10.5061/dryad.ncjsxksth",
+   "form": "linear",
+   "params": [
+    9.997364613948684e-05,
+    0.2568743946622727
+   ],
+   "seed": 1162011829,
+   "x": "unknown",
+   "y": "Gamma.terpinene"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Location, but not defensive genotype, determines ectomycorrhizal community comp' (Zenodo, doi 10.5061/dryad.ncjsxksth): 'Gamma.terpinene' is linear in 'unknown' (R\u00b2 = 0.979 on the discovery half)",
+  "status": "candidate",
+  "verifier": null
  }
 ]
