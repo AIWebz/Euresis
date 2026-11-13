@@ -4446,3 +4446,5 @@
 - 2026-11-13 18:34 round 4082: collision
 - 2026-11-13 18:36 round 4083: driven oscillator
 - 2026-11-13 18:37 round 4084: velocity addition
+- 2026-11-13 18:39 round 4085: Compton scattering
+- 2026-11-13 18:40 round 4086: Cournot duopoly
