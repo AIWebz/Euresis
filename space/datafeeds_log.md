@@ -2938,3 +2938,4 @@
 - 2026-11-13 02:56 FINDING (confirmed on held-out rows): In 'Supplemental Materials to "Interrogatives as relativization markers in Indo-European"' (Zenodo, doi 10.1075/dia.19030.aud): 'AvTimeBP' is linear in 'EarlyTimeBP' (R² = 0.987 on the discovery half); held-out R² = 0.975 [emp-c6c38689c621]
 - 2026-11-13 02:56 FINDING (confirmed on held-out rows): In 'Supplemental Materials to "Interrogatives as relativization markers in Indo-European"' (Zenodo, doi 10.1075/dia.19030.aud): 'AvTimeBP' is linear in 'LateTimeBP' (R² = 0.979 on the discovery half); held-out R² = 0.955 [emp-07ce6e0a65d0]
 - 2026-11-13 02:56 data feeds: 18898 datasets analysed so far, 2630 confirmed findings
+- 2026-11-13 03:58 data feeds: online
