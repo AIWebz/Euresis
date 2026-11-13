@@ -3186,3 +3186,4 @@
 - 2026-11-13 18:26 FINDING (confirmed on held-out rows): In 'A record-level TESS stellar-flare injection-recovery selection-function dataset' (Zenodo, doi 10.5281/zenodo.23718586): 'data_rel' is linear in 'sector_query' (R² = 0.916 on the discovery half); held-out R² = 0.918 [emp-df99d42b5a7d]
 - 2026-11-13 18:26 FINDING (confirmed on held-out rows): In 'A record-level TESS stellar-flare injection-recovery selection-function dataset' (Zenodo, doi 10.5281/zenodo.23718586): 'finite_pdcsap_fraction' is linear in 'gap_burden' (R² = 0.945 on the discovery half); held-out R² = 0.935 [emp-2773f733a3be]
 - 2026-11-13 18:26 data feeds: 20245 datasets analysed so far, 2850 confirmed findings
+- 2026-11-13 19:28 data feeds: online
