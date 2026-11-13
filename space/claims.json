@@ -2708058,5 +2708058,32 @@
   "statement": "Octal game 0.750037 is completely solved: its Grundy values are periodic with pre-period 9 and period 30 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.356v3",
+   "held_out_r2": 0.9932,
+   "held_out_rows": 137,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4134205f2dda",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "e172ff058c03f39c.csv",
+   "doi": "10.5061/dryad.356v3",
+   "form": "power law",
+   "params": [
+    3.727874757012734,
+    -0.9803995644679399
+   ],
+   "seed": 2741296649,
+   "x": "%N",
+   "y": "C:N"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: The role of habitat filtering in the leaf economics spectrum and plant suscepti' (Zenodo, doi 10.5061/dryad.356v3): 'C:N' follows a power law in '%N' (R\u00b2 = 0.992 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
