@@ -55265,6 +55265,11 @@
    "family": "two-body decay",
    "expr": "sqrt((1 - (a - b)**2)*(1 - (a + b)**2))/(1 + a**2 - b**2)",
    "why": "affine combination of known quantities (momentum of each product / (Mc), speed of product 1 / c)"
+  },
+  {
+   "family": "collision",
+   "expr": "e*m/(1 + m)",
+   "why": "affine combination of known quantities (target speed / initial speed, speed of the centre of mass / initial speed)"
   }
  ],
  "tried": [
@@ -68117,7 +68122,7 @@
    "k": "1"
   }
  ],
- "rounds": 3921,
+ "rounds": 3922,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",
