@@ -3112,3 +3112,4 @@
 - 2026-11-13 13:51 FINDING (confirmed on held-out rows): In 'Microclimate, human heat stress, and skin burn risks in residential backyards' (Zenodo, doi 10.5281/zenodo.19245907): 'C_AirTemperature_DegC' follows a power law in 'B_UTCI_DegC' (R² = 0.932 on the discovery half); held-out R² = 0.914 [emp-cd8bcb9490c4]
 - 2026-11-13 13:51 FINDING (confirmed on held-out rows): In 'Microclimate, human heat stress, and skin burn risks in residential backyards' (Zenodo, doi 10.5281/zenodo.19245907): 'C_BlackGlobeTemperature_DegC' is linear in 'B_UTCI_DegC' (R² = 0.955 on the discovery half); held-out R² = 0.958 [emp-07a18fce539b]
 - 2026-11-13 13:51 data feeds: 19898 datasets analysed so far, 2786 confirmed findings
+- 2026-11-13 14:34 data feeds: online
