@@ -4065,3 +4065,5 @@
 - 2026-11-13 00:51 round 3735: insurance and risk
 - 2026-11-13 00:52 round 3736: auction with a reserve price
 - 2026-11-13 00:54 round 3737: two-body decay
+- 2026-11-13 00:57 segment start (budget 30 min; model: Qwen3-8B; 5 discoveries so far)
+- 2026-11-13 00:57 round 3737: two-body decay
