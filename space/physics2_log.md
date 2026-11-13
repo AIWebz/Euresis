@@ -4434,3 +4434,7 @@
 - 2026-11-13 18:04 round 4072: auction with a reserve price
 - 2026-11-13 18:06 round 4073: two-body decay
 - 2026-11-13 18:09 round 4074: collision
+- 2026-11-13 18:12 round 4075: driven oscillator
+- 2026-11-13 18:14 round 4076: velocity addition
+- 2026-11-13 18:15 round 4077: Compton scattering
+- 2026-11-13 18:16 segment end: 4077 rounds, 5 discoveries, 2 known laws rediscovered
