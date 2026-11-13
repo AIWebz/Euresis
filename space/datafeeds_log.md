@@ -2868,3 +2868,4 @@
 - 2026-11-13 01:58 data feeds: online
 - 2026-11-13 01:59 FINDING (confirmed on held-out rows): In 'Data for: Evidence for strong shocks in the ISM of small radio sources' (Zenodo, doi 10.5281/zenodo.23326653): 'Physical_Size' follows a power law in 'LAS' (R² = 0.965 on the discovery half); held-out R² = 0.974 [emp-623d75b5ccc5]
 - 2026-11-13 02:00 data feeds: 18786 datasets analysed so far, 2562 confirmed findings
+- 2026-11-13 02:50 data feeds: online
