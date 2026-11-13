@@ -4172,3 +4172,8 @@
 - 2026-11-13 04:26 round 3834: collision
 - 2026-11-13 04:27 round 3835: driven oscillator
 - 2026-11-13 04:28 round 3836: velocity addition
+- 2026-11-13 04:30 round 3837: Compton scattering
+- 2026-11-13 04:31 round 3838: Cournot duopoly
+- 2026-11-13 04:32 round 3839: insurance and risk
+- 2026-11-13 04:33 round 3840: auction with a reserve price
+- 2026-11-13 04:34 segment end: 3840 rounds, 5 discoveries, 2 known laws rediscovered
