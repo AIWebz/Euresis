@@ -3084,3 +3084,4 @@
 - 2026-11-13 12:42 FINDING (confirmed on held-out rows): In 'Dataset - Spatially explicit linkages between redox potential cycles and soil moisture flu' (Zenodo, doi 10.5281/zenodo.6407290): 'tension  (kPa)' grows logarithmically in 'moisture 1  (%)' (R² = 0.908 on the discovery half); held-out R² = 0.914 [emp-4dec62ca3004]
 - 2026-11-13 12:42 FINDING (confirmed on held-out rows): In 'ReESH_US-Jo2: Jornada Experimental Range Mixed Shrubland' (Zenodo, doi 10.5281/zenodo.17055458): 'Vol_Water' follows a power law in 'MPa_Abs' (R² = 0.953 on the discovery half); held-out R² = 0.948 [emp-ee6d49ad602a]
 - 2026-11-13 12:42 data feeds: 19745 datasets analysed so far, 2760 confirmed findings
+- 2026-11-13 13:44 data feeds: online
