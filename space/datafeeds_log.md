@@ -2865,3 +2865,4 @@
 - 2026-11-13 00:56 FINDING (confirmed on held-out rows): In 'Reciprocal Transplant Study: Tundra Moss Microbiomes and Nitrogen Fixation' (Zenodo, doi 10.5281/zenodo.19100844): 'Gust_sp' is linear in 'wind_sp' (R² = 0.981 on the discovery half); held-out R² = 0.982 [emp-9898835f0f24]
 - 2026-11-13 00:56 FINDING (confirmed on held-out rows): In 'Developmental change in predators drives different community configurations' (Zenodo, doi 10.5061/dryad.d7wm37q0v): 'total' is linear in 'nauplii' (R² = 0.961 on the discovery half); held-out R² = 0.986 [emp-307ea49eaf51]
 - 2026-11-13 00:56 data feeds: 18736 datasets analysed so far, 2561 confirmed findings
+- 2026-11-13 01:58 data feeds: online
