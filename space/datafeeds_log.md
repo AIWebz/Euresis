@@ -3133,3 +3133,8 @@
 - 2026-11-13 15:40 FINDING (confirmed on held-out rows): In 'Data for: New Lunar Crater Reveals Extensive Distal Regolith Modification' (Zenodo, doi 10.5281/zenodo.19472800): 'deltacor_median_m' grows logarithmically in 'Hcor_median_m' (R² = 0.934 on the discovery half); held-out R² = 0.940 [emp-860ef8567360]
 - 2026-11-13 15:40 data feeds: 19980 datasets analysed so far, 2802 confirmed findings
 - 2026-11-13 16:29 data feeds: online
+- 2026-11-13 16:32 FINDING (confirmed on held-out rows): In 'Influence of the physical properties of electrolytes on the behavior of all-vanadium redox' (Zenodo, doi 10.5281/zenodo.18051812): 'Neg. T (oC)' follows a power law in 'Pos. T (oC)' (R² = 0.908 on the discovery half); held-out R² = 0.909 [emp-16d41e3ba10e]
+- 2026-11-13 16:32 FINDING (confirmed on held-out rows): In 'COVID Laboratory values' (Zenodo, doi 10.5281/zenodo.4461478): 'HT' follows a power law in 'HB' (R² = 0.946 on the discovery half); held-out R² = 0.919 [emp-0f36c8bdeab2]
+- 2026-11-13 16:32 FINDING (confirmed on held-out rows): In 'Data from: Seasonal changes in plankton food web structure and carbon dioxide flux from So' (Zenodo, doi 10.5061/dryad.6tn4h): 'dissolved_oxygen_mgL' follows a power law in 'dissolved_oxygen_percent_per_liter' (R² = 0.992 on the discovery half); held-out R² = 0.935 [emp-ebd5454153bd]
+- 2026-11-13 16:32 FINDING (confirmed on held-out rows): In 'Glacial meltwater impacts marine carbonate chemistry on Iceland's continental shelf' (Zenodo, doi 10.5281/zenodo.18269158): 'aou' grows logarithmically in 'o2' (R² = 0.923 on the discovery half); held-out R² = 0.932 [emp-14f04cc3d3b9]
+- 2026-11-13 16:33 data feeds: 20122 datasets analysed so far, 2806 confirmed findings

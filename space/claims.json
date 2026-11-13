@@ -2771702,5 +2771702,221 @@
   "statement": "Octal game 0.754362 is completely solved: its Grundy values are periodic with pre-period 29 and period 24 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11916418",
+   "held_out_r2": 0.9919,
+   "held_out_rows": 120,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-edd0b1bd2c3a",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "35d4a047b0f98c4a.csv",
+   "doi": "10.5281/zenodo.11916418",
+   "form": "power law",
+   "params": [
+    1.8861146441991103,
+    0.9843694089877438
+   ],
+   "seed": 4209629619,
+   "x": "inflevergreen",
+   "y": "respevergreen"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Atmospheric CO2 simulations over Indian sites using STILT driven by WRF meteorology.' (Zenodo, doi 10.5281/zenodo.11916418): 'respevergreen' follows a power law in 'inflevergreen' (R\u00b2 = 0.985 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11916418",
+   "held_out_r2": 0.9936,
+   "held_out_rows": 120,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-710f6c6605e9",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "ba3f2bdb2c7dbdf6.csv",
+   "doi": "10.5281/zenodo.11916418",
+   "form": "power law",
+   "params": [
+    1.8538470091405272,
+    0.9761716939615518
+   ],
+   "seed": 2527118491,
+   "x": "infldecid",
+   "y": "respdecid"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Atmospheric CO2 simulations over Indian sites using STILT driven by WRF meteorology.' (Zenodo, doi 10.5281/zenodo.11916418): 'respdecid' follows a power law in 'infldecid' (R\u00b2 = 0.995 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.18051812",
+   "held_out_r2": 0.909,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-16d41e3ba10e",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "9c0d220e478ea032.csv",
+   "doi": "10.5281/zenodo.18051812",
+   "form": "power law",
+   "params": [
+    0.7051193369128648,
+    0.7803780080714714
+   ],
+   "seed": 4188416147,
+   "x": "Pos. T (oC)",
+   "y": "Neg. T (oC)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Influence of the physical properties of electrolytes on the behavior of all-vanadium redox' (Zenodo, doi 10.5281/zenodo.18051812): 'Neg. T (oC)' follows a power law in 'Pos. T (oC)' (R\u00b2 = 0.908 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.4461478",
+   "held_out_r2": 0.9195,
+   "held_out_rows": 218,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-0f36c8bdeab2",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "e916c4e181b7128f.csv",
+   "doi": "10.5281/zenodo.4461478",
+   "form": "power law",
+   "params": [
+    -2.7478406109585762,
+    0.8639168894210852
+   ],
+   "seed": 3414901844,
+   "x": "HB",
+   "y": "HT"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'COVID Laboratory values' (Zenodo, doi 10.5281/zenodo.4461478): 'HT' follows a power law in 'HB' (R\u00b2 = 0.946 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.6tn4h",
+   "held_out_r2": 0.9352,
+   "held_out_rows": 289,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ebd5454153bd",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3e365c52f3e9756d.csv",
+   "doi": "10.5061/dryad.6tn4h",
+   "form": "power law",
+   "params": [
+    -2.3737569619316043,
+    0.987129184352518
+   ],
+   "seed": 2998426622,
+   "x": "dissolved_oxygen_percent_per_liter",
+   "y": "dissolved_oxygen_mgL"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Seasonal changes in plankton food web structure and carbon dioxide flux from So' (Zenodo, doi 10.5061/dryad.6tn4h): 'dissolved_oxygen_mgL' follows a power law in 'dissolved_oxygen_percent_per_liter' (R\u00b2 = 0.992 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.6tn4h",
+   "held_out_r2": 0.8275,
+   "held_out_rows": 67,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3253d8add56b",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "0e1e0ca49b367cff.csv",
+   "doi": "10.5061/dryad.6tn4h",
+   "form": "power law",
+   "params": [
+    50.22343966665228,
+    -21.02282542831101
+   ],
+   "seed": 3964574846,
+   "x": "ph",
+   "y": "pco2_water_ppm"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Seasonal changes in plankton food web structure and carbon dioxide flux from So' (Zenodo, doi 10.5061/dryad.6tn4h): 'pco2_water_ppm' follows a power law in 'ph' (R\u00b2 = 0.918 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.18269158",
+   "held_out_r2": 0.9318,
+   "held_out_rows": 231,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-14f04cc3d3b9",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "6c127e387f8e6bdd.csv",
+   "doi": "10.5281/zenodo.18269158",
+   "form": "logarithmic",
+   "params": [
+    1779.1284801468705,
+    -314.2562969458979
+   ],
+   "seed": 2708249400,
+   "x": "o2",
+   "y": "aou"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Glacial meltwater impacts marine carbonate chemistry on Iceland's continental shelf' (Zenodo, doi 10.5281/zenodo.18269158): 'aou' grows logarithmically in 'o2' (R\u00b2 = 0.923 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.18269158",
+   "held_out_r2": 0.8458,
+   "held_out_rows": 231,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f7a428be4b34",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "6c127e387f8e6bdd.csv",
+   "doi": "10.5281/zenodo.18269158",
+   "form": "logarithmic",
+   "params": [
+    82.96239811459654,
+    159.53290903803625
+   ],
+   "seed": 2708249400,
+   "x": "saturation_aragonite_insitu",
+   "y": "tamindic"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Glacial meltwater impacts marine carbonate chemistry on Iceland's continental shelf' (Zenodo, doi 10.5281/zenodo.18269158): 'tamindic' grows logarithmically in 'saturation_aragonite_insitu' (R\u00b2 = 0.970 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
  }
 ]
