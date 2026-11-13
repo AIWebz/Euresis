@@ -2950,3 +2950,4 @@
 - 2026-11-13 04:00 FINDING (confirmed on held-out rows): In 'Bias-corrected NA-CORDEX projections for Trail Valley Creek, NWT, Canada' (Zenodo, doi 10.5281/zenodo.17112930): 'ta' is linear in 'tn' (R² = 0.987 on the discovery half); held-out R² = 0.988 [emp-39477194d268]
 - 2026-11-13 04:00 FINDING (confirmed on held-out rows): In 'Bias-corrected NA-CORDEX projections for Trail Valley Creek, NWT, Canada' (Zenodo, doi 10.5281/zenodo.17112930): 'ta' is linear in 'tx' (R² = 0.989 on the discovery half); held-out R² = 0.989 [emp-f8dbe74aec67]
 - 2026-11-13 04:03 data feeds: 18975 datasets analysed so far, 2640 confirmed findings
+- 2026-11-13 04:45 data feeds: online
