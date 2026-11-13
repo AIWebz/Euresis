@@ -3052,3 +3052,4 @@
 - 2026-11-13 08:41 FINDING (confirmed on held-out rows): In 'ECCOv5 dataset – Dynamic Loss of the Arctic's Oldest Ice Triggered a Sea Ice Tipping Point' (Zenodo, doi 10.5281/zenodo.18988014): 'Baffin and Labrador Seas' is linear in 'Arctic Ocean' (R² = 0.936 on the discovery half); held-out R² = 0.934 [emp-fb41b4f09928]
 - 2026-11-13 08:42 FINDING (confirmed on held-out rows): In 'Data for paper titled: "Ocean weather, biological rates, and unexplained global ecological' (Figshare, doi 10.6084/m9.figshare.21386430.v7): 'duration_in_years' follows a power law in 'duration_in_days' (R² = 0.924 on the discovery half); held-out R² = 0.922 [emp-b834a5e6441c]
 - 2026-11-13 08:42 data feeds: 19618 datasets analysed so far, 2732 confirmed findings
+- 2026-11-13 09:44 data feeds: online
