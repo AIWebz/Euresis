@@ -3206,3 +3206,4 @@
 - 2026-11-13 19:32 FINDING (confirmed on held-out rows): In 'Dataset: iShares Energy Storage & Materials ETF (IBAT) Stock Performance' (Zenodo, doi 10.5281/zenodo.12558116): 'Adj Close' grows logarithmically in 'High' (R² = 0.980 on the discovery half); held-out R² = 0.961 [emp-7ea2faf4b005]
 - 2026-11-13 19:32 FINDING (confirmed on held-out rows): In 'Dataset: iShares Energy Storage & Materials ETF (IBAT) Stock Performance' (Zenodo, doi 10.5281/zenodo.12558116): 'Adj Close' grows logarithmically in 'Low' (R² = 0.982 on the discovery half); held-out R² = 0.980 [emp-57417eae12d4]
 - 2026-11-13 19:33 data feeds: 20391 datasets analysed so far, 2868 confirmed findings
+- 2026-11-13 20:18 data feeds: online
