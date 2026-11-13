@@ -4202,3 +4202,5 @@
 - 2026-11-13 05:18 round 3862: Cournot duopoly
 - 2026-11-13 05:19 round 3863: insurance and risk
 - 2026-11-13 05:22 segment end: 3863 rounds, 5 discoveries, 2 known laws rediscovered
+- 2026-11-13 06:00 segment start (budget 30 min; model: Qwen3-8B; 5 discoveries so far)
+- 2026-11-13 06:00 round 3864: auction with a reserve price
