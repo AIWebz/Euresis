@@ -3006,3 +3006,5 @@
 - 2026-11-13 05:59 FINDING (confirmed on held-out rows): In 'Data Sheet 2_A high-throughput functional 3D droplet microfluidic platform for function-to' (Figshare, doi 10.3389/fimmu.2026.1967143.s003): 'FDR' is linear in 'pval' (R² = 0.963 on the discovery half); held-out R² = 0.967 [emp-6ac5c9c7ff26]
 - 2026-11-13 05:59 data feeds: 19447 datasets analysed so far, 2691 confirmed findings
 - 2026-11-13 06:39 data feeds: online
+- 2026-11-13 06:39 FINDING (confirmed on held-out rows): In 'Data from: The role of habitat filtering in the leaf economics spectrum and plant suscepti' (Zenodo, doi 10.5061/dryad.356v3): 'C:N' follows a power law in '%N' (R² = 0.992 on the discovery half); held-out R² = 0.993 [emp-4134205f2dda]
+- 2026-11-13 06:39 data feeds: 19462 datasets analysed so far, 2692 confirmed findings
