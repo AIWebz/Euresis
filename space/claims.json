@@ -2781935,5 +2781935,221 @@
   "statement": "In 'Data and code for: Century-long butterfly redistribution reshapes assemblage trait\u2013tempera' (Figshare, doi 10.6084/m9.figshare.32780085.v1): 'CENTROID_Y' is linear in 'av_temp' (R\u00b2 = 0.945 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-3ab5e67e76c5",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'Kinetic energy ratio of the target to the projectile after collision [model-proposed; physical meaning unverified]'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "e**2*m**2/(e**2*m**2 - e**2*m**2/(m + 1)**2 + 1) >= 1*(e**2*m**2/(e**2*m**2 + e**2*m/(m + 1) + (1 - e**2)/(m + 1) + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 4066",
+  "statement": "[physics: collision] Fraction of kinetic energy retained by the target relative to the projectile [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Fraction of kinetic energy retained by the target relative to the system [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (6.11e-15, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-75cae048f7ac",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'target speed / initial speed'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "(e + 1)/((m + 1)*(e*m/(m + 1) + 1)) >= 5/3*(e**2*m**2/(e**2*m**2 + e**2*m/(m + 1) + (1 - e**2)/(m + 1) + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 4066",
+  "statement": "[physics: collision] Impulse ratio of target to projectile [model-proposed; physical meaning unverified] \u2265 5/3 \u00d7 Fraction of kinetic energy retained by the target relative to the system [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-efc22b740322",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "e**2*m**2/((m + 1)**2*(-e**2*m**2/(m + 1)**2 - e**2*m/(m + 1) - (1 - e**2)/(m + 1) + 1)) >= 3/4*(e**2*m**2/(e**2*m**2 + e**2*m/(m + 1) + (1 - e**2)/(m + 1) + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 4066",
+  "statement": "[physics: collision] Fraction of Kinetic Energy Retained by the Target Relative to the System [model-proposed; physical meaning unverified] \u2265 3/4 \u00d7 Fraction of kinetic energy retained by the target relative to the system [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 9.12e-05))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-9195ce3b2f13",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "e**2*m**2/((m + 1)**2*(-2*e**2*m**2/(m + 1)**2 - 2*e**2*m/(m + 1) + 2)) >= 3/16*(e**2*m**2/(e**2*m**2 + e**2*m/(m + 1) + (1 - e**2)/(m + 1) + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 4066",
+  "statement": "[physics: collision] Ratio of Kinetic Energy of Target to Kinetic Energy of System [model-proposed; physical meaning unverified] \u2265 3/16 \u00d7 Fraction of kinetic energy retained by the target relative to the system [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 9.12e-05))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-95b39386603d",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'Kinetic energy ratio of the target to the projectile after collision [model-proposed; physical meaning unverified]'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "e**2*m**2/(e**2*m**2 - e**2*m**2/(m + 1)**2 - e**2*m/(m + 1) + 1) >= 1*(e**2*m**2/(e**2*m**2 + e**2*m/(m + 1) + (1 - e**2)/(m + 1) + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 4066",
+  "statement": "[physics: collision] Fraction of Kinetic Energy Retained by the Target Relative to the Projectile [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Fraction of kinetic energy retained by the target relative to the system [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (9.37e-15, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-c06ad01524f7",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'target speed / initial speed'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "(-e**2*m**2/(m + 1)**2 - e**2*m/(m + 1) - (1 - e**2)/(m + 1) + 1)/(-e**2*m**2/(m + 1)**2 - (1 - e**2)/(m + 1) + 1) >= 5/6*(e**2*m**2/(e**2*m**2 + e**2*m/(m + 1) + (1 - e**2)/(m + 1) + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 4066",
+  "statement": "[physics: collision] Fraction of Kinetic Energy Retained by the Projectile Relative to the System [model-proposed; physical meaning unverified] \u2265 5/6 \u00d7 Fraction of kinetic energy retained by the target relative to the system [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-5eaa38154c5a",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "(e**2*m**2/(m + 1)**2 + e**2*m/(m + 1))/(-e**2*m**2/(m + 1)**2 - e**2*m/(m + 1) - (1 - e**2)/(m + 1) + 2) >= 3/4*(e**2*m**2/(e**2*m**2 + e**2*m/(m + 1) + (1 - e**2)/(m + 1) + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 4066",
+  "statement": "[physics: collision] Kinetic Energy Ratio of the Target to the System After Collision [model-proposed; physical meaning unverified] \u2265 3/4 \u00d7 Fraction of kinetic energy retained by the target relative to the system [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 9.12e-05))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-8b52c7d06619",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'target speed / initial speed'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "(-e**2*m**2/(m + 1)**2 - e**2*m/(m + 1) + 2)/(e**2*m**2/(m + 1)**2 + e**2*m/(m + 1)) >= 25/6*(e**2*m**2/(e**2*m**2 + e**2*m/(m + 1) + (1 - e**2)/(m + 1) + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 4066",
+  "statement": "[physics: collision] Fraction of Kinetic Energy Retained by the Projectile Relative to the Target [model-proposed; physical meaning unverified] \u2265 25/6 \u00d7 Fraction of kinetic energy retained by the target relative to the system [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]
