@@ -2793325,5 +2793325,32 @@
   "statement": "Octal game 0.755772 is completely solved: its Grundy values are periodic with pre-period 18 and period 18 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.16992344",
+   "held_out_r2": 0.8797,
+   "held_out_rows": 30,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-680cded9dc42",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "018bb148afd528bf.csv",
+   "doi": "10.5281/zenodo.16992344",
+   "form": "linear",
+   "params": [
+    0.06995762610450068,
+    1.034821051590571
+   ],
+   "seed": 778992435,
+   "x": "MAE",
+   "y": "RMSE"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Raw dataset for: Manipulating Evaluation Bias in Reasoning LLMs for Idea Evaluation: Appro' (Zenodo, doi 10.5281/zenodo.16992344): 'RMSE' is linear in 'MAE' (R\u00b2 = 0.968 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
