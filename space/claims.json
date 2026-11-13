@@ -2742692,5 +2742692,47 @@
   "statement": "Octal game 0.752173 is completely solved: its Grundy values are periodic with pre-period 37 and period 41 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": null,
+  "id": "gam-9f680adcff22",
+  "kind": "game",
+  "novelty": "not checked",
+  "payload": {
+   "code": "752174",
+   "period": 2,
+   "preperiod": 1
+  },
+  "source": "games.py",
+  "statement": "Octal game 0.752174 is completely solved: its Grundy values are periodic with pre-period 1 and period 2 (Guy\u2013Smith periodicity theorem)",
+  "status": "candidate",
+  "verifier": null
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3735751",
+   "held_out_r2": 0.9767,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-fecc0f65edd4",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "39d3180110bf69e1.csv",
+   "doi": "10.5281/zenodo.3735751",
+   "form": "power law",
+   "params": [
+    0.07359146820788932,
+    0.9961775341068869
+   ],
+   "seed": 957511970,
+   "x": "temp",
+   "y": "Tsoil"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for \"Soil CO2 efflux errors are lognormally distributed - Implications and  guidance.' (Zenodo, doi 10.5281/zenodo.3735751): 'Tsoil' follows a power law in 'temp' (R\u00b2 = 0.977 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
