@@ -58213,6 +58213,56 @@
    "family": "driven oscillator",
    "expr": "sqrt(16*r**4*z**4 + 4*r**2*z**2 + 1)/sqrt((1 - r**2)**2 + (2*z*r)**2)",
    "why": "affine combination of known quantities (amplitude / static deflection, Acceleration transmissibility [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 + u)/(1 - u)) * sqrt((1 + v)/(1 - v)) / sqrt((1 + (u + v)/(1 + u*v)) / (1 - (u + v)/(1 + u*v",
+   "why": "affine combination of known quantities (composed speed / c)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 - u**2)*(1 - v**2) + ((u + v)/(1 + u*v))**2) / (u*v + 1)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt(1 - u**2) * sqrt(1 - v**2) + (u + v) * sqrt(1 - ((u + v)/(1 + u*v))**2) / (u*v + 1)",
+   "why": "affine combination of known quantities (composed speed / c, Relativistic Energy-Momentum Invariant [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 - u**2)*(1 - v**2) + (u + v)**2/(u*v + 1)**2) / (u*v + 1)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "1 - c/(c*x + 1) - 1/(c*x + 1)",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "((1 - 2*c1 + c2)**2 + (1 - 2*c2 + c1)**2)/((1 - c1)**2 + (1 - c2)**2)",
+   "why": "affine combination of known quantities (output of firm 1, Hirshleifer Index [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "sqrt(-L*p + 1)/(-p*sqrt(1 - L) + sqrt(1 - L) + 1)",
+   "why": "affine combination of known quantities (expected wealth, Insurance Risk Exposure Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "sqrt(-L*p + 1)/(sqrt(1 - L) - 1 + 1/(p*sqrt(1 - L) - p + 1))",
+   "why": "affine combination of known quantities (expected wealth, Insurance Risk Adjustment Factor [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "L*p/(-p*sqrt(1 - L) + p + sqrt(1 - L) - sqrt(-L*p + 1) + 1)",
+   "why": "affine combination of known quantities (expected wealth, Insurance Risk Sensitivity Index [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "L*p/(-2*sqrt(1 - L) + sqrt(-L*p + 1) + 1)",
+   "why": "affine combination of known quantities (expected wealth, Relative Risk Sensitivity Index [model-proposed; physical meaning unverified])"
   }
  ],
  "tried": [
@@ -71583,7 +71633,7 @@
    "k": "4/5"
   }
  ],
- "rounds": 4139,
+ "rounds": 4143,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",

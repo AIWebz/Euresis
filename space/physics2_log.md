@@ -4508,3 +4508,7 @@
 - 2026-11-13 21:33 round 4138: collision
 - 2026-11-13 21:35 round 4139: driven oscillator
 - 2026-11-13 21:36 round 4140: velocity addition
+- 2026-11-13 21:38 round 4141: Compton scattering
+- 2026-11-13 21:38 round 4142: Cournot duopoly
+- 2026-11-13 21:40 round 4143: insurance and risk
+- 2026-11-13 21:41 round 4144: auction with a reserve price
