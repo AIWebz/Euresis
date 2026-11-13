@@ -2854,3 +2854,4 @@
 - 2026-11-12 23:35 FINDING (confirmed on held-out rows): In 'Physics-based parametrization of the surface impedance for radio frequency sheaths' (Zenodo, doi 10.5281/zenodo.494983): 'niwdata' is linear in 'niwfit' (R² = 0.978 on the discovery half); held-out R² = 0.982 [emp-c8f533e22a69]
 - 2026-11-12 23:35 FINDING (confirmed on held-out rows): In 'Physics-based parametrization of the surface impedance for radio frequency sheaths' (Zenodo, doi 10.5281/zenodo.494983): 'yedata' is linear in 'yefit' (R² = 0.988 on the discovery half); held-out R² = 0.986 [emp-0e6eb0e350d2]
 - 2026-11-12 23:39 data feeds: 18635 datasets analysed so far, 2554 confirmed findings
+- 2026-11-13 00:40 data feeds: online
