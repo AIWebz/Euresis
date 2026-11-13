@@ -3300,3 +3300,4 @@
 - 2026-11-13 22:13 FINDING (confirmed on held-out rows): In 'Replication package of "Higher Fault Detection Through Novel Density Estimators in Unit Te' (Zenodo, doi 10.5281/zenodo.11209899): 'Coverage' is linear in 'MutationScore' (R² = 0.918 on the discovery half); held-out R² = 0.916 [emp-a771e6ca66a4]
 - 2026-11-13 22:14 data feeds: 20706 datasets analysed so far, 2955 confirmed findings
 - 2026-11-13 23:15 data feeds: online
+- 2026-11-13 23:16 data feeds: 20720 datasets analysed so far, 2955 confirmed findings
