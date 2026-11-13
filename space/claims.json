@@ -2741742,5 +2741742,59 @@
   "statement": "In 'Supplemental data for \"Investigating the Impact of Irrigation on Malaria Vector Larval Hab' (Zenodo, doi 10.5281/zenodo.7991865): 'MDENSITY' is linear in 'MOSQUITO' (R\u00b2 = 0.987 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.h44j0zpj1",
+   "held_out_r2": 0.9864,
+   "held_out_rows": 926,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-0df43a7f918f",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "14981c381b278143.csv",
+   "doi": "10.5061/dryad.h44j0zpj1",
+   "form": "linear",
+   "params": [
+    327.00016060088575,
+    0.9444182648118294
+   ],
+   "seed": 2406493477,
+   "x": "MAXELEVSMO",
+   "y": "MINELEVSMO"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Trait-environment relationships could alter the spatial and temporal characteri' (Zenodo, doi 10.5061/dryad.h44j0zpj1): 'MINELEVSMO' is linear in 'MAXELEVSMO' (R\u00b2 = 0.989 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.1044471",
+   "held_out_r2": 0.8014,
+   "held_out_rows": 135,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-7bafb0220dde",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "5ed8ff2ff98fe230.csv",
+   "doi": "10.5281/zenodo.1044471",
+   "form": "linear",
+   "params": [
+    -17.04503214314091,
+    0.9978080495918598
+   ],
+   "seed": 2651972327,
+   "x": "GIMP_DEM__",
+   "y": "setsm_25m_"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Widespread moulin formation during supraglacial lake drainages in Greenland' (Zenodo, doi 10.5281/zenodo.1044471): 'setsm_25m_' is linear in 'GIMP_DEM__' (R\u00b2 = 0.999 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
  }
 ]
