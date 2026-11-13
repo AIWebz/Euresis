@@ -2817783,5 +2817783,121 @@
   "statement": "In 'Replication package of \"Higher Fault Detection Through Novel Density Estimators in Unit Te' (Zenodo, doi 10.5281/zenodo.11209899): 'Coverage' is linear in 'MutationScore' (R\u00b2 = 0.918 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-04b0a94c1060",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "claim": "sqrt((1 - (a + b)**2)**2 + (a**2 - b**2 + 1)**2)/sqrt((1 - (a + b)**2)**2 + (-a**2 + b**2 + 1)**2) >= 1*(a**2/2 - b**2/2 + 1/2)",
+   "symbols": [
+    "a",
+    "b"
+   ]
+  },
+  "source": "physics_discover2 round 4161",
+  "statement": "[physics: two-body decay] Invariant Mass Ratio of the Two Products [model-proposed; physical meaning unverified] \u2265 1 \u00d7 energy of product 1 / (Mc\u00b2)   on a < 1, b < 1, a + b < 1 (tight only at the edge of the domain, near (2.31e-11, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-05b16a98c72e",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "claim": "sqrt((1 - (a + b)**2)**2 + (a**2 - b**2 + 1)**2)/sqrt((1 - (a + b)**2)**2 + (-a**2 + b**2 + 1)**2) >= 1*(-a - b + 1)",
+   "symbols": [
+    "a",
+    "b"
+   ]
+  },
+  "source": "physics_discover2 round 4161",
+  "statement": "[physics: two-body decay] Invariant Mass Ratio of the Two Products [model-proposed; physical meaning unverified] \u2265 1 \u00d7 kinetic energy released Q / (Mc\u00b2)   on a < 1, b < 1, a + b < 1 (tight only at the edge of the domain, near (2.26e-14, 1.03e-14))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-b9ffb2ab16bb",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "claim": "sqrt((1 - (a + b)**2)**2 + (a**2 - b**2 + 1)**2)/sqrt((1 - (a + b)**2)**2 + (-a**2 + b**2 + 1)**2) >= 1*(sqrt((1 - (a - b)**2)*(1 - (a + b)**2))/(-a**2 + b**2 + 1))",
+   "symbols": [
+    "a",
+    "b"
+   ]
+  },
+  "source": "physics_discover2 round 4161",
+  "statement": "[physics: two-body decay] Invariant Mass Ratio of the Two Products [model-proposed; physical meaning unverified] \u2265 1 \u00d7 speed of product 2 / c   on a < 1, b < 1, a + b < 1 (tight only at the edge of the domain, near (1.32e-08, 8.59e-09))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-ea027a5b393e",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'speed of product 2 / c'",
+  "payload": {
+   "assumptions": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "claim": "sqrt((1 - (a + b)**2)**2 + (a**2 - b**2 + 1)**2)/sqrt((1 - (a + b)**2)**2 + (-a**2 + b**2 + 1)**2) >= 1*(sqrt((1 - (a - b)**2)*(1 - (a + b)**2))/sqrt((-a**2 + b**2 + 1)**2 + (b**2 - (1 - a)**2 + 1)**2))",
+   "symbols": [
+    "a",
+    "b"
+   ]
+  },
+  "source": "physics_discover2 round 4169",
+  "statement": "[physics: two-body decay] Invariant Mass Ratio of the Two Products [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Relative Velocity Magnitude [model-proposed; physical meaning unverified]   on a < 1, b < 1, a + b < 1 (tight only at the edge of the domain, near (2.24e-09, 1.33e-08))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]
