@@ -4546,3 +4546,5 @@
 - 2026-11-13 22:39 round 4174: Cournot duopoly
 - 2026-11-13 22:39 round 4175: insurance and risk
 - 2026-11-13 22:41 round 4176: auction with a reserve price
+- 2026-11-13 22:43 round 4177: two-body decay
+- 2026-11-13 22:45 segment end: 4177 rounds, 5 discoveries, 2 known laws rediscovered
