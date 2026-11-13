@@ -3124,3 +3124,4 @@
 - 2026-11-13 14:36 FINDING (confirmed on held-out rows): In 'Data from: Adaptation to a novel family environment involves both apparent and cryptic phe' (Zenodo, doi 10.5061/dryad.3kh41): 'Larvae_per_gram' follows a power law in 'Brood_size' (R² = 0.966 on the discovery half); held-out R² = 0.965 [emp-74f80d76eebb]
 - 2026-11-13 14:36 FINDING (confirmed on held-out rows): In 'Data from: Adaptation to a novel family environment involves both apparent and cryptic phe' (Zenodo, doi 10.5061/dryad.3kh41): 'Brood_mass_in_grams' follows a power law in 'Brood_size' (R² = 0.924 on the discovery half); held-out R² = 0.930 [emp-2884bae427ac]
 - 2026-11-13 14:36 data feeds: 19953 datasets analysed so far, 2796 confirmed findings
+- 2026-11-13 15:39 data feeds: online
