@@ -2869,3 +2869,5 @@
 - 2026-11-13 01:59 FINDING (confirmed on held-out rows): In 'Data for: Evidence for strong shocks in the ISM of small radio sources' (Zenodo, doi 10.5281/zenodo.23326653): 'Physical_Size' follows a power law in 'LAS' (R² = 0.965 on the discovery half); held-out R² = 0.974 [emp-623d75b5ccc5]
 - 2026-11-13 02:00 data feeds: 18786 datasets analysed so far, 2562 confirmed findings
 - 2026-11-13 02:50 data feeds: online
+- 2026-11-13 02:50 FINDING (confirmed on held-out rows): In 'Inverse design of metal-organic frameworks for direct air capture of CO2 via deep reinforc' (Zenodo, doi 10.5281/zenodo.7853157): 'co2_h2o_selectivity' follows a power law in 'kh_h2o (mol/kgPa)' (R² = 0.921 on the discovery half); held-out R² = 0.927 [emp-44ea132f5b0b]
+- 2026-11-13 02:51 FINDING (confirmed on held-out rows): In 'Inverse design of metal-organic frameworks for direct air capture of CO2 via deep reinforc' (Zenodo, doi 10.5281/zenodo.7853157): 'co2_h2o_selectivity' grows exponentially in 'log_kh_h2o' (R² = 0.921 on the discovery half); held-out R² = 0.927 [emp-970a8d0cbe0f]

@@ -2668024,5 +2668024,59 @@
   "statement": "Octal game 0.727152 is completely solved: its Grundy values are periodic with pre-period 1 and period 4 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7853157",
+   "held_out_r2": 0.927,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-44ea132f5b0b",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "a866d5d0f99c0f34.csv",
+   "doi": "10.5281/zenodo.7853157",
+   "form": "power law",
+   "params": [
+    -10.180717396373716,
+    -0.9274571384519199
+   ],
+   "seed": 1046374130,
+   "x": "kh_h2o (mol/kgPa)",
+   "y": "co2_h2o_selectivity"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Inverse design of metal-organic frameworks for direct air capture of CO2 via deep reinforc' (Zenodo, doi 10.5281/zenodo.7853157): 'co2_h2o_selectivity' follows a power law in 'kh_h2o (mol/kgPa)' (R\u00b2 = 0.921 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7853157",
+   "held_out_r2": 0.927,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-970a8d0cbe0f",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "a866d5d0f99c0f34.csv",
+   "doi": "10.5281/zenodo.7853157",
+   "form": "exponential",
+   "params": [
+    -10.18070585734082,
+    -2.135547466907902
+   ],
+   "seed": 1046374130,
+   "x": "log_kh_h2o",
+   "y": "co2_h2o_selectivity"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Inverse design of metal-organic frameworks for direct air capture of CO2 via deep reinforc' (Zenodo, doi 10.5281/zenodo.7853157): 'co2_h2o_selectivity' grows exponentially in 'log_kh_h2o' (R\u00b2 = 0.921 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
