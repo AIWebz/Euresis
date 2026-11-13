@@ -4384,3 +4384,12 @@
 - 2026-11-13 15:52 round 4026: collision
 - 2026-11-13 15:54 round 4027: driven oscillator
 - 2026-11-13 15:55 round 4028: velocity addition
+- 2026-11-13 15:57 round 4029: Compton scattering
+- 2026-11-13 15:58 round 4030: Cournot duopoly
+- 2026-11-13 15:59 round 4031: insurance and risk
+- 2026-11-13 16:01 round 4032: auction with a reserve price
+- 2026-11-13 16:03 round 4033: two-body decay
+- 2026-11-13 16:04 round 4034: collision
+- 2026-11-13 16:06 round 4035: driven oscillator
+- 2026-11-13 16:08 round 4036: velocity addition
+- 2026-11-13 16:09 round 4037: Compton scattering
