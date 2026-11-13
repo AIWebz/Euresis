@@ -2658877,10 +2658877,16 @@
   "verifier": "z3-sqrt"
  },
  {
-  "evidence": null,
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
   "id": "phy-b1b506b70063",
   "kind": "physics-relation",
-  "novelty": "not checked",
+  "novelty": "follows from proved bounds: follows from bounds through 'Fraction of kinetic energy transferred to the target [model-proposed; physical meaning unverified]'",
   "payload": {
    "assumptions": [
     "m < 1",
@@ -2658894,7 +2658900,7 @@
   },
   "source": "physics_discover2 round 3786",
   "statement": "[physics: collision] Fraction of kinetic energy retained by projectile relative to initial [model-proposed; physical meaning unverified] \u2265 5/3 \u00d7 Kinetic Energy Ratio of the Target to the System After Collision [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
-  "status": "candidate",
-  "verifier": null
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]
