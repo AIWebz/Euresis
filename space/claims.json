@@ -2798565,5 +2798565,2408 @@
   "statement": "Octal game 0.756173 is completely solved: its Grundy values are periodic with pre-period 37 and period 41 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.12754898",
+   "held_out_r2": 0.9298,
+   "held_out_rows": 287,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a64eb4ce0d38",
+  "kind": "empirical",
+  "novelty": "KNOWN: equation of state of a simulated fluid (pressure, density, temperature, chemical potential, kinetic energy) \u2014 not a discovery",
+  "payload": {
+   "dataset": "bbc05c1624c35c96.csv",
+   "doi": "10.5281/zenodo.12754898",
+   "form": "power law",
+   "params": [
+    1.0550246825890217,
+    0.6665129145383611
+   ],
+   "seed": 1222560677,
+   "x": "activity_activist",
+   "y": "users_activist"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Extinction Rebellion Finland (Elokapina) Post-Repression Twitter Activity and Network Patt' (Zenodo, doi 10.5281/zenodo.12754898): 'users_activist' follows a power law in 'activity_activist' (R\u00b2 = 0.934 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.12754898",
+   "held_out_r2": 0.9606,
+   "held_out_rows": 287,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4d17410232ac",
+  "kind": "empirical",
+  "novelty": "KNOWN: equation of state of a simulated fluid (pressure, density, temperature, chemical potential, kinetic energy) \u2014 not a discovery",
+  "payload": {
+   "dataset": "bbc05c1624c35c96.csv",
+   "doi": "10.5281/zenodo.12754898",
+   "form": "power law",
+   "params": [
+    0.9868027919514097,
+    0.7797194847989415
+   ],
+   "seed": 1222560677,
+   "x": "activity_nonactivist",
+   "y": "users_nonactivist"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Extinction Rebellion Finland (Elokapina) Post-Repression Twitter Activity and Network Patt' (Zenodo, doi 10.5281/zenodo.12754898): 'users_nonactivist' follows a power law in 'activity_nonactivist' (R\u00b2 = 0.964 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.5682128",
+   "held_out_r2": 0.6244,
+   "held_out_rows": 92,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9f280714b753",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "f4aa0e3794ca6cee.csv",
+   "doi": "10.5281/zenodo.5682128",
+   "form": "linear",
+   "params": [
+    -621302.6593523101,
+    0.8215207696347925
+   ],
+   "seed": 1036393393,
+   "x": "export_to_US",
+   "y": "absolute_difference"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Wave-like global economic ripple response to Hurricane Sandy - Data supplement' (Zenodo, doi 10.5281/zenodo.5682128): 'absolute_difference' is linear in 'export_to_US' (R\u00b2 = 0.904 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14869355",
+   "held_out_r2": 0.5821,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a02534bf734d",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "da46eca001611b1b.csv",
+   "doi": "10.5281/zenodo.14869355",
+   "form": "linear",
+   "params": [
+    -4.450371512713258,
+    4.889275097616142
+   ],
+   "seed": 768048889,
+   "x": "retweets_count",
+   "y": "favorites_count"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'FFF Strikes 2019' (Zenodo, doi 10.5281/zenodo.14869355): 'favorites_count' is linear in 'retweets_count' (R\u00b2 = 0.903 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.k9c31",
+   "held_out_r2": 0.9453,
+   "held_out_rows": 865,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b6859e9f44d0",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "0e344ada6535de59.csv",
+   "doi": "10.5061/dryad.k9c31",
+   "form": "linear",
+   "params": [
+    0.16142256135756175,
+    0.7502866411174248
+   ],
+   "seed": 3718743094,
+   "x": "l2",
+   "y": "l3d"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: A collection of Australian Drosophila datasets on climate adaptation and specie' (Zenodo, doi 10.5061/dryad.k9c31): 'l3d' is linear in 'l2' (R\u00b2 = 0.948 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.k9c31",
+   "held_out_r2": 0.9781,
+   "held_out_rows": 865,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-650b32a5c122",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "0e344ada6535de59.csv",
+   "doi": "10.5061/dryad.k9c31",
+   "form": "linear",
+   "params": [
+    0.2048756716268768,
+    1.06475548491848
+   ],
+   "seed": 3718743094,
+   "x": "l2",
+   "y": "lpd"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: A collection of Australian Drosophila datasets on climate adaptation and specie' (Zenodo, doi 10.5061/dryad.k9c31): 'lpd' is linear in 'l2' (R\u00b2 = 0.979 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.k9c31",
+   "held_out_r2": 0.8171,
+   "held_out_rows": 865,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b9a0f3e5e42b",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "0e344ada6535de59.csv",
+   "doi": "10.5061/dryad.k9c31",
+   "form": "linear",
+   "params": [
+    0.11953898609002185,
+    0.6569643447213459
+   ],
+   "seed": 3718743094,
+   "x": "l2",
+   "y": "w2"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: A collection of Australian Drosophila datasets on climate adaptation and specie' (Zenodo, doi 10.5061/dryad.k9c31): 'w2' is linear in 'l2' (R\u00b2 = 0.958 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.k9c31",
+   "held_out_r2": 0.9772,
+   "held_out_rows": 865,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d897d04145dc",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "0e344ada6535de59.csv",
+   "doi": "10.5061/dryad.k9c31",
+   "form": "linear",
+   "params": [
+    0.03463002622576834,
+    1.3787377636170848
+   ],
+   "seed": 3718743094,
+   "x": "l3d",
+   "y": "lpd"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: A collection of Australian Drosophila datasets on climate adaptation and specie' (Zenodo, doi 10.5061/dryad.k9c31): 'lpd' is linear in 'l3d' (R\u00b2 = 0.974 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.k9c31",
+   "held_out_r2": 0.768,
+   "held_out_rows": 865,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b03f89695803",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "0e344ada6535de59.csv",
+   "doi": "10.5061/dryad.k9c31",
+   "form": "linear",
+   "params": [
+    0.024833432096394704,
+    0.8435969006985711
+   ],
+   "seed": 3718743094,
+   "x": "l3d",
+   "y": "w2"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: A collection of Australian Drosophila datasets on climate adaptation and specie' (Zenodo, doi 10.5061/dryad.k9c31): 'w2' is linear in 'l3d' (R\u00b2 = 0.938 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.k9c31",
+   "held_out_r2": 0.9134,
+   "held_out_rows": 865,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-de8156bfa02f",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "0e344ada6535de59.csv",
+   "doi": "10.5061/dryad.k9c31",
+   "form": "linear",
+   "params": [
+    0.10337530130348209,
+    0.3974216071549775
+   ],
+   "seed": 3718743094,
+   "x": "lpd",
+   "y": "w1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: A collection of Australian Drosophila datasets on climate adaptation and specie' (Zenodo, doi 10.5061/dryad.k9c31): 'w1' is linear in 'lpd' (R\u00b2 = 0.905 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.k9c31",
+   "held_out_r2": 0.7914,
+   "held_out_rows": 865,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-961ea12eafb0",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "0e344ada6535de59.csv",
+   "doi": "10.5061/dryad.k9c31",
+   "form": "linear",
+   "params": [
+    0.0024498673549963814,
+    0.6124466270844179
+   ],
+   "seed": 3718743094,
+   "x": "lpd",
+   "y": "w2"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: A collection of Australian Drosophila datasets on climate adaptation and specie' (Zenodo, doi 10.5061/dryad.k9c31): 'w2' is linear in 'lpd' (R\u00b2 = 0.965 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.k9c31",
+   "held_out_r2": 0.92,
+   "held_out_rows": 865,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-63e5b66d3ea0",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "0e344ada6535de59.csv",
+   "doi": "10.5061/dryad.k9c31",
+   "form": "linear",
+   "params": [
+    0.053027160421856304,
+    0.4828809331915651
+   ],
+   "seed": 3718743094,
+   "x": "lpd",
+   "y": "w3"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: A collection of Australian Drosophila datasets on climate adaptation and specie' (Zenodo, doi 10.5061/dryad.k9c31): 'w3' is linear in 'lpd' (R\u00b2 = 0.917 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.k9c31",
+   "held_out_r2": 0.9132,
+   "held_out_rows": 865,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-40bef3732c93",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "0e344ada6535de59.csv",
+   "doi": "10.5061/dryad.k9c31",
+   "form": "linear",
+   "params": [
+    0.10452741379645661,
+    0.3970295033724533
+   ],
+   "seed": 3718743094,
+   "x": "l3",
+   "y": "w1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: A collection of Australian Drosophila datasets on climate adaptation and specie' (Zenodo, doi 10.5061/dryad.k9c31): 'w1' is linear in 'l3' (R\u00b2 = 0.904 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.k9c31",
+   "held_out_r2": 0.792,
+   "held_out_rows": 865,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-41636aab7214",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "0e344ada6535de59.csv",
+   "doi": "10.5061/dryad.k9c31",
+   "form": "linear",
+   "params": [
+    0.004036314997405516,
+    0.6119349440576027
+   ],
+   "seed": 3718743094,
+   "x": "l3",
+   "y": "w2"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: A collection of Australian Drosophila datasets on climate adaptation and specie' (Zenodo, doi 10.5061/dryad.k9c31): 'w2' is linear in 'l3' (R\u00b2 = 0.965 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.k9c31",
+   "held_out_r2": 0.9199,
+   "held_out_rows": 865,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ccf31dfa7757",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "0e344ada6535de59.csv",
+   "doi": "10.5061/dryad.k9c31",
+   "form": "linear",
+   "params": [
+    0.05433136414890882,
+    0.48245135856952376
+   ],
+   "seed": 3718743094,
+   "x": "l3",
+   "y": "w3"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: A collection of Australian Drosophila datasets on climate adaptation and specie' (Zenodo, doi 10.5061/dryad.k9c31): 'w3' is linear in 'l3' (R\u00b2 = 0.917 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rv15dv4db",
+   "held_out_r2": 0.9788,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-40d76a61fb98",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f0bf28397abc8a51.csv",
+   "doi": "10.5061/dryad.rv15dv4db",
+   "form": "linear",
+   "params": [
+    -1.171372293616642,
+    0.8254148607440469
+   ],
+   "seed": 2473957822,
+   "x": "Tjan",
+   "y": "Tfeb"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Climate warming and projected loss of thermal habitat volume in lake populations' (Zenodo, doi 10.5061/dryad.rv15dv4db): 'Tfeb' is linear in 'Tjan' (R\u00b2 = 0.986 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rv15dv4db",
+   "held_out_r2": 0.9682,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-480e15e8bc48",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f0bf28397abc8a51.csv",
+   "doi": "10.5061/dryad.rv15dv4db",
+   "form": "linear",
+   "params": [
+    0.5928892815232374,
+    0.5284372919888503
+   ],
+   "seed": 2473957822,
+   "x": "Tjan",
+   "y": "Tmar"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Climate warming and projected loss of thermal habitat volume in lake populations' (Zenodo, doi 10.5061/dryad.rv15dv4db): 'Tmar' is linear in 'Tjan' (R\u00b2 = 0.977 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rv15dv4db",
+   "held_out_r2": 0.9347,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-47e6bc51b915",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f0bf28397abc8a51.csv",
+   "doi": "10.5061/dryad.rv15dv4db",
+   "form": "exponential",
+   "params": [
+    1.929841859375545,
+    0.08799633487831057
+   ],
+   "seed": 2473957822,
+   "x": "Tjan",
+   "y": "Tapr"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Climate warming and projected loss of thermal habitat volume in lake populations' (Zenodo, doi 10.5061/dryad.rv15dv4db): 'Tapr' grows exponentially in 'Tjan' (R\u00b2 = 0.955 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rv15dv4db",
+   "held_out_r2": 0.9221,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-95ab36866507",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f0bf28397abc8a51.csv",
+   "doi": "10.5061/dryad.rv15dv4db",
+   "form": "exponential",
+   "params": [
+    2.6486857228147387,
+    0.0324372824129332
+   ],
+   "seed": 2473957822,
+   "x": "Tjan",
+   "y": "Tmay"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Climate warming and projected loss of thermal habitat volume in lake populations' (Zenodo, doi 10.5061/dryad.rv15dv4db): 'Tmay' grows exponentially in 'Tjan' (R\u00b2 = 0.942 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rv15dv4db",
+   "held_out_r2": 0.962,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f3e5ff5b5e4c",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f0bf28397abc8a51.csv",
+   "doi": "10.5061/dryad.rv15dv4db",
+   "form": "exponential",
+   "params": [
+    3.0146918515544097,
+    0.02524169366562592
+   ],
+   "seed": 2473957822,
+   "x": "Tjan",
+   "y": "Tjun"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Climate warming and projected loss of thermal habitat volume in lake populations' (Zenodo, doi 10.5061/dryad.rv15dv4db): 'Tjun' grows exponentially in 'Tjan' (R\u00b2 = 0.973 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rv15dv4db",
+   "held_out_r2": 0.9647,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a33005e304c8",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f0bf28397abc8a51.csv",
+   "doi": "10.5061/dryad.rv15dv4db",
+   "form": "exponential",
+   "params": [
+    3.2064653726783567,
+    0.02606322053630044
+   ],
+   "seed": 2473957822,
+   "x": "Tjan",
+   "y": "Tjul"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Climate warming and projected loss of thermal habitat volume in lake populations' (Zenodo, doi 10.5061/dryad.rv15dv4db): 'Tjul' grows exponentially in 'Tjan' (R\u00b2 = 0.976 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rv15dv4db",
+   "held_out_r2": 0.975,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-89c318c3468c",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f0bf28397abc8a51.csv",
+   "doi": "10.5061/dryad.rv15dv4db",
+   "form": "linear",
+   "params": [
+    25.658140996457373,
+    0.6866148720584561
+   ],
+   "seed": 2473957822,
+   "x": "Tjan",
+   "y": "Taug"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Climate warming and projected loss of thermal habitat volume in lake populations' (Zenodo, doi 10.5061/dryad.rv15dv4db): 'Taug' is linear in 'Tjan' (R\u00b2 = 0.983 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rv15dv4db",
+   "held_out_r2": 0.985,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c9aedee6592e",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f0bf28397abc8a51.csv",
+   "doi": "10.5061/dryad.rv15dv4db",
+   "form": "linear",
+   "params": [
+    23.16559348642847,
+    0.8193183628223174
+   ],
+   "seed": 2473957822,
+   "x": "Tjan",
+   "y": "Tsep"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Climate warming and projected loss of thermal habitat volume in lake populations' (Zenodo, doi 10.5061/dryad.rv15dv4db): 'Tsep' is linear in 'Tjan' (R\u00b2 = 0.990 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rv15dv4db",
+   "held_out_r2": 0.9649,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a3dd6c32703d",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f0bf28397abc8a51.csv",
+   "doi": "10.5061/dryad.rv15dv4db",
+   "form": "exponential",
+   "params": [
+    2.058142975392839,
+    0.10705068621033571
+   ],
+   "seed": 2473957822,
+   "x": "Tfeb",
+   "y": "Tapr"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Climate warming and projected loss of thermal habitat volume in lake populations' (Zenodo, doi 10.5061/dryad.rv15dv4db): 'Tapr' grows exponentially in 'Tfeb' (R\u00b2 = 0.976 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rv15dv4db",
+   "held_out_r2": 0.9461,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-94a5afe9da40",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f0bf28397abc8a51.csv",
+   "doi": "10.5061/dryad.rv15dv4db",
+   "form": "exponential",
+   "params": [
+    2.6958691360595677,
+    0.03944677023366997
+   ],
+   "seed": 2473957822,
+   "x": "Tfeb",
+   "y": "Tmay"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Climate warming and projected loss of thermal habitat volume in lake populations' (Zenodo, doi 10.5061/dryad.rv15dv4db): 'Tmay' grows exponentially in 'Tfeb' (R\u00b2 = 0.963 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rv15dv4db",
+   "held_out_r2": 0.9541,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-0337e09f7c0f",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f0bf28397abc8a51.csv",
+   "doi": "10.5061/dryad.rv15dv4db",
+   "form": "linear",
+   "params": [
+    20.642400780575876,
+    0.5062190223540041
+   ],
+   "seed": 2473957822,
+   "x": "Tfeb",
+   "y": "Tjun"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Climate warming and projected loss of thermal habitat volume in lake populations' (Zenodo, doi 10.5061/dryad.rv15dv4db): 'Tjun' is linear in 'Tfeb' (R\u00b2 = 0.968 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rv15dv4db",
+   "held_out_r2": 0.9545,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f273114b5eb0",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f0bf28397abc8a51.csv",
+   "doi": "10.5061/dryad.rv15dv4db",
+   "form": "linear",
+   "params": [
+    24.996129378700896,
+    0.6284958835906866
+   ],
+   "seed": 2473957822,
+   "x": "Tfeb",
+   "y": "Tjul"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Climate warming and projected loss of thermal habitat volume in lake populations' (Zenodo, doi 10.5061/dryad.rv15dv4db): 'Tjul' is linear in 'Tfeb' (R\u00b2 = 0.968 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rv15dv4db",
+   "held_out_r2": 0.954,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f14ad0cff1e4",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f0bf28397abc8a51.csv",
+   "doi": "10.5061/dryad.rv15dv4db",
+   "form": "linear",
+   "params": [
+    26.540813997445422,
+    0.8199953500090947
+   ],
+   "seed": 2473957822,
+   "x": "Tfeb",
+   "y": "Taug"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Climate warming and projected loss of thermal habitat volume in lake populations' (Zenodo, doi 10.5061/dryad.rv15dv4db): 'Taug' is linear in 'Tfeb' (R\u00b2 = 0.969 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rv15dv4db",
+   "held_out_r2": 0.9577,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-949891790652",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f0bf28397abc8a51.csv",
+   "doi": "10.5061/dryad.rv15dv4db",
+   "form": "linear",
+   "params": [
+    24.20284653765374,
+    0.9764089812920552
+   ],
+   "seed": 2473957822,
+   "x": "Tfeb",
+   "y": "Tsep"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Climate warming and projected loss of thermal habitat volume in lake populations' (Zenodo, doi 10.5061/dryad.rv15dv4db): 'Tsep' is linear in 'Tfeb' (R\u00b2 = 0.972 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rv15dv4db",
+   "held_out_r2": 0.971,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-da4b0f948c2f",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f0bf28397abc8a51.csv",
+   "doi": "10.5061/dryad.rv15dv4db",
+   "form": "linear",
+   "params": [
+    18.969412157488765,
+    1.0429980184034573
+   ],
+   "seed": 2473957822,
+   "x": "Tfeb",
+   "y": "Toct"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Climate warming and projected loss of thermal habitat volume in lake populations' (Zenodo, doi 10.5061/dryad.rv15dv4db): 'Toct' is linear in 'Tfeb' (R\u00b2 = 0.981 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rv15dv4db",
+   "held_out_r2": 0.9764,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-62d77ad85b4d",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f0bf28397abc8a51.csv",
+   "doi": "10.5061/dryad.rv15dv4db",
+   "form": "linear",
+   "params": [
+    11.363465566233673,
+    0.9723559013540425
+   ],
+   "seed": 2473957822,
+   "x": "Tfeb",
+   "y": "Tnov"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Climate warming and projected loss of thermal habitat volume in lake populations' (Zenodo, doi 10.5061/dryad.rv15dv4db): 'Tnov' is linear in 'Tfeb' (R\u00b2 = 0.984 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rv15dv4db",
+   "held_out_r2": 0.9701,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4233e1827192",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f0bf28397abc8a51.csv",
+   "doi": "10.5061/dryad.rv15dv4db",
+   "form": "linear",
+   "params": [
+    4.560995479391689,
+    1.0522435233311838
+   ],
+   "seed": 2473957822,
+   "x": "Tfeb",
+   "y": "Tdec"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Climate warming and projected loss of thermal habitat volume in lake populations' (Zenodo, doi 10.5061/dryad.rv15dv4db): 'Tdec' is linear in 'Tfeb' (R\u00b2 = 0.978 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rv15dv4db",
+   "held_out_r2": 0.9828,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3347c45e5563",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f0bf28397abc8a51.csv",
+   "doi": "10.5061/dryad.rv15dv4db",
+   "form": "linear",
+   "params": [
+    12.904631550480126,
+    0.8051832806561351
+   ],
+   "seed": 2473957822,
+   "x": "Tfeb",
+   "y": "Tann"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Climate warming and projected loss of thermal habitat volume in lake populations' (Zenodo, doi 10.5061/dryad.rv15dv4db): 'Tann' is linear in 'Tfeb' (R\u00b2 = 0.989 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rv15dv4db",
+   "held_out_r2": 0.9829,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5c3da313ca67",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f0bf28397abc8a51.csv",
+   "doi": "10.5061/dryad.rv15dv4db",
+   "form": "exponential",
+   "params": [
+    1.8349124957575191,
+    0.16757317607863953
+   ],
+   "seed": 2473957822,
+   "x": "Tmar",
+   "y": "Tapr"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Climate warming and projected loss of thermal habitat volume in lake populations' (Zenodo, doi 10.5061/dryad.rv15dv4db): 'Tapr' grows exponentially in 'Tmar' (R\u00b2 = 0.989 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rv15dv4db",
+   "held_out_r2": 0.9678,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d434106fa61b",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f0bf28397abc8a51.csv",
+   "doi": "10.5061/dryad.rv15dv4db",
+   "form": "exponential",
+   "params": [
+    2.6139672962771083,
+    0.06184692273152451
+   ],
+   "seed": 2473957822,
+   "x": "Tmar",
+   "y": "Tmay"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Climate warming and projected loss of thermal habitat volume in lake populations' (Zenodo, doi 10.5061/dryad.rv15dv4db): 'Tmay' grows exponentially in 'Tmar' (R\u00b2 = 0.978 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rv15dv4db",
+   "held_out_r2": 0.9577,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9fb33b124cde",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f0bf28397abc8a51.csv",
+   "doi": "10.5061/dryad.rv15dv4db",
+   "form": "linear",
+   "params": [
+    19.571254296515654,
+    0.7881168501703506
+   ],
+   "seed": 2473957822,
+   "x": "Tmar",
+   "y": "Tjun"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Climate warming and projected loss of thermal habitat volume in lake populations' (Zenodo, doi 10.5061/dryad.rv15dv4db): 'Tjun' is linear in 'Tmar' (R\u00b2 = 0.970 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rv15dv4db",
+   "held_out_r2": 0.9582,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-8df3252a6157",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f0bf28397abc8a51.csv",
+   "doi": "10.5061/dryad.rv15dv4db",
+   "form": "linear",
+   "params": [
+    23.666349719437328,
+    0.9785140341553181
+   ],
+   "seed": 2473957822,
+   "x": "Tmar",
+   "y": "Tjul"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Climate warming and projected loss of thermal habitat volume in lake populations' (Zenodo, doi 10.5061/dryad.rv15dv4db): 'Tjul' is linear in 'Tmar' (R\u00b2 = 0.971 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rv15dv4db",
+   "held_out_r2": 0.953,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-2251b8c09f24",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f0bf28397abc8a51.csv",
+   "doi": "10.5061/dryad.rv15dv4db",
+   "form": "linear",
+   "params": [
+    24.7962628029768,
+    1.274007416429661
+   ],
+   "seed": 2473957822,
+   "x": "Tmar",
+   "y": "Taug"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Climate warming and projected loss of thermal habitat volume in lake populations' (Zenodo, doi 10.5061/dryad.rv15dv4db): 'Taug' is linear in 'Tmar' (R\u00b2 = 0.967 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rv15dv4db",
+   "held_out_r2": 0.9529,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ad624b526133",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f0bf28397abc8a51.csv",
+   "doi": "10.5061/dryad.rv15dv4db",
+   "form": "linear",
+   "params": [
+    22.11745360214754,
+    1.5147907034165815
+   ],
+   "seed": 2473957822,
+   "x": "Tmar",
+   "y": "Tsep"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Climate warming and projected loss of thermal habitat volume in lake populations' (Zenodo, doi 10.5061/dryad.rv15dv4db): 'Tsep' is linear in 'Tmar' (R\u00b2 = 0.967 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rv15dv4db",
+   "held_out_r2": 0.9661,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-cb22c79fd4c3",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f0bf28397abc8a51.csv",
+   "doi": "10.5061/dryad.rv15dv4db",
+   "form": "linear",
+   "params": [
+    16.741665738232847,
+    1.6180591417357053
+   ],
+   "seed": 2473957822,
+   "x": "Tmar",
+   "y": "Toct"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Climate warming and projected loss of thermal habitat volume in lake populations' (Zenodo, doi 10.5061/dryad.rv15dv4db): 'Toct' is linear in 'Tmar' (R\u00b2 = 0.976 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rv15dv4db",
+   "held_out_r2": 0.9698,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-90ae0b78a339",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f0bf28397abc8a51.csv",
+   "doi": "10.5061/dryad.rv15dv4db",
+   "form": "linear",
+   "params": [
+    9.282231658790032,
+    1.5072583449889396
+   ],
+   "seed": 2473957822,
+   "x": "Tmar",
+   "y": "Tnov"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Climate warming and projected loss of thermal habitat volume in lake populations' (Zenodo, doi 10.5061/dryad.rv15dv4db): 'Tnov' is linear in 'Tmar' (R\u00b2 = 0.978 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rv15dv4db",
+   "held_out_r2": 0.956,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-7ac99c8a6eb9",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f0bf28397abc8a51.csv",
+   "doi": "10.5061/dryad.rv15dv4db",
+   "form": "linear",
+   "params": [
+    2.2893882649980934,
+    1.6257300124510499
+   ],
+   "seed": 2473957822,
+   "x": "Tmar",
+   "y": "Tdec"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Climate warming and projected loss of thermal habitat volume in lake populations' (Zenodo, doi 10.5061/dryad.rv15dv4db): 'Tdec' is linear in 'Tmar' (R\u00b2 = 0.965 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rv15dv4db",
+   "held_out_r2": 0.9805,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-eac428028ef0",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f0bf28397abc8a51.csv",
+   "doi": "10.5061/dryad.rv15dv4db",
+   "form": "linear",
+   "params": [
+    11.189743880241064,
+    1.2504825346544168
+   ],
+   "seed": 2473957822,
+   "x": "Tmar",
+   "y": "Tann"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Climate warming and projected loss of thermal habitat volume in lake populations' (Zenodo, doi 10.5061/dryad.rv15dv4db): 'Tann' is linear in 'Tmar' (R\u00b2 = 0.986 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rv15dv4db",
+   "held_out_r2": 0.9614,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d517a812f35a",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f0bf28397abc8a51.csv",
+   "doi": "10.5061/dryad.rv15dv4db",
+   "form": "logarithmic",
+   "params": [
+    10.965249254067439,
+    4.683752151191853
+   ],
+   "seed": 2473957822,
+   "x": "Tapr",
+   "y": "Tjun"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Climate warming and projected loss of thermal habitat volume in lake populations' (Zenodo, doi 10.5061/dryad.rv15dv4db): 'Tjun' grows logarithmically in 'Tapr' (R\u00b2 = 0.973 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rv15dv4db",
+   "held_out_r2": 0.9609,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ed090680fe5c",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f0bf28397abc8a51.csv",
+   "doi": "10.5061/dryad.rv15dv4db",
+   "form": "logarithmic",
+   "params": [
+    12.984735722587509,
+    5.812451494849249
+   ],
+   "seed": 2473957822,
+   "x": "Tapr",
+   "y": "Tjul"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Climate warming and projected loss of thermal habitat volume in lake populations' (Zenodo, doi 10.5061/dryad.rv15dv4db): 'Tjul' grows logarithmically in 'Tapr' (R\u00b2 = 0.972 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rv15dv4db",
+   "held_out_r2": 0.9478,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-36a7d84c6206",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f0bf28397abc8a51.csv",
+   "doi": "10.5061/dryad.rv15dv4db",
+   "form": "logarithmic",
+   "params": [
+    10.918296244549184,
+    7.543871180042481
+   ],
+   "seed": 2473957822,
+   "x": "Tapr",
+   "y": "Taug"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Climate warming and projected loss of thermal habitat volume in lake populations' (Zenodo, doi 10.5061/dryad.rv15dv4db): 'Taug' grows logarithmically in 'Tapr' (R\u00b2 = 0.963 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rv15dv4db",
+   "held_out_r2": 0.9397,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9eb4430ce578",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f0bf28397abc8a51.csv",
+   "doi": "10.5061/dryad.rv15dv4db",
+   "form": "logarithmic",
+   "params": [
+    5.6478700382393034,
+    8.944198157138128
+   ],
+   "seed": 2473957822,
+   "x": "Tapr",
+   "y": "Tsep"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Climate warming and projected loss of thermal habitat volume in lake populations' (Zenodo, doi 10.5061/dryad.rv15dv4db): 'Tsep' grows logarithmically in 'Tapr' (R\u00b2 = 0.957 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rv15dv4db",
+   "held_out_r2": 0.9497,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-7ca87b855ef3",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f0bf28397abc8a51.csv",
+   "doi": "10.5061/dryad.rv15dv4db",
+   "form": "logarithmic",
+   "params": [
+    -0.8409415204159358,
+    9.546011978581499
+   ],
+   "seed": 2473957822,
+   "x": "Tapr",
+   "y": "Toct"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Climate warming and projected loss of thermal habitat volume in lake populations' (Zenodo, doi 10.5061/dryad.rv15dv4db): 'Toct' grows logarithmically in 'Tapr' (R\u00b2 = 0.964 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rv15dv4db",
+   "held_out_r2": 0.9508,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f448fec17c35",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f0bf28397abc8a51.csv",
+   "doi": "10.5061/dryad.rv15dv4db",
+   "form": "logarithmic",
+   "params": [
+    -7.08318927938278,
+    8.88160929171072
+   ],
+   "seed": 2473957822,
+   "x": "Tapr",
+   "y": "Tnov"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Climate warming and projected loss of thermal habitat volume in lake populations' (Zenodo, doi 10.5061/dryad.rv15dv4db): 'Tnov' grows logarithmically in 'Tapr' (R\u00b2 = 0.964 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rv15dv4db",
+   "held_out_r2": 0.9271,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4bdac9d1f35c",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f0bf28397abc8a51.csv",
+   "doi": "10.5061/dryad.rv15dv4db",
+   "form": "logarithmic",
+   "params": [
+    -15.312357720654763,
+    9.539029322962865
+   ],
+   "seed": 2473957822,
+   "x": "Tapr",
+   "y": "Tdec"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Climate warming and projected loss of thermal habitat volume in lake populations' (Zenodo, doi 10.5061/dryad.rv15dv4db): 'Tdec' grows logarithmically in 'Tapr' (R\u00b2 = 0.943 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rv15dv4db",
+   "held_out_r2": 0.9651,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-6bce0e83054b",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f0bf28397abc8a51.csv",
+   "doi": "10.5061/dryad.rv15dv4db",
+   "form": "logarithmic",
+   "params": [
+    -2.4008586122593063,
+    7.3792696643593025
+   ],
+   "seed": 2473957822,
+   "x": "Tapr",
+   "y": "Tann"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Climate warming and projected loss of thermal habitat volume in lake populations' (Zenodo, doi 10.5061/dryad.rv15dv4db): 'Tann' grows logarithmically in 'Tapr' (R\u00b2 = 0.975 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rv15dv4db",
+   "held_out_r2": 0.9558,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-690f9f161397",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f0bf28397abc8a51.csv",
+   "doi": "10.5061/dryad.rv15dv4db",
+   "form": "logarithmic",
+   "params": [
+    -13.355955583939407,
+    12.582954634496346
+   ],
+   "seed": 2473957822,
+   "x": "Tmay",
+   "y": "Tjun"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Climate warming and projected loss of thermal habitat volume in lake populations' (Zenodo, doi 10.5061/dryad.rv15dv4db): 'Tjun' grows logarithmically in 'Tmay' (R\u00b2 = 0.967 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rv15dv4db",
+   "held_out_r2": 0.9596,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e302229df0b2",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f0bf28397abc8a51.csv",
+   "doi": "10.5061/dryad.rv15dv4db",
+   "form": "logarithmic",
+   "params": [
+    -17.21089860224374,
+    15.620849328101043
+   ],
+   "seed": 2473957822,
+   "x": "Tmay",
+   "y": "Tjul"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Climate warming and projected loss of thermal habitat volume in lake populations' (Zenodo, doi 10.5061/dryad.rv15dv4db): 'Tjul' grows logarithmically in 'Tmay' (R\u00b2 = 0.967 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rv15dv4db",
+   "held_out_r2": 0.947,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d43d03d2bae2",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f0bf28397abc8a51.csv",
+   "doi": "10.5061/dryad.rv15dv4db",
+   "form": "logarithmic",
+   "params": [
+    -28.25471939516094,
+    20.266756624521246
+   ],
+   "seed": 2473957822,
+   "x": "Tmay",
+   "y": "Taug"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Climate warming and projected loss of thermal habitat volume in lake populations' (Zenodo, doi 10.5061/dryad.rv15dv4db): 'Taug' grows logarithmically in 'Tmay' (R\u00b2 = 0.957 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rv15dv4db",
+   "held_out_r2": 0.9372,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-de2a2ef22ff2",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f0bf28397abc8a51.csv",
+   "doi": "10.5061/dryad.rv15dv4db",
+   "form": "logarithmic",
+   "params": [
+    -40.737344619281714,
+    24.00396753275922
+   ],
+   "seed": 2473957822,
+   "x": "Tmay",
+   "y": "Tsep"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Climate warming and projected loss of thermal habitat volume in lake populations' (Zenodo, doi 10.5061/dryad.rv15dv4db): 'Tsep' grows logarithmically in 'Tmay' (R\u00b2 = 0.949 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rv15dv4db",
+   "held_out_r2": 0.9467,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-6906f85eb720",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f0bf28397abc8a51.csv",
+   "doi": "10.5061/dryad.rv15dv4db",
+   "form": "logarithmic",
+   "params": [
+    -50.35136655473728,
+    25.620825390055913
+   ],
+   "seed": 2473957822,
+   "x": "Tmay",
+   "y": "Toct"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Climate warming and projected loss of thermal habitat volume in lake populations' (Zenodo, doi 10.5061/dryad.rv15dv4db): 'Toct' grows logarithmically in 'Tmay' (R\u00b2 = 0.957 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rv15dv4db",
+   "held_out_r2": 0.9406,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-46694b40a018",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f0bf28397abc8a51.csv",
+   "doi": "10.5061/dryad.rv15dv4db",
+   "form": "logarithmic",
+   "params": [
+    -53.04563710575567,
+    23.794924470886002
+   ],
+   "seed": 2473957822,
+   "x": "Tmay",
+   "y": "Tnov"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Climate warming and projected loss of thermal habitat volume in lake populations' (Zenodo, doi 10.5061/dryad.rv15dv4db): 'Tnov' grows logarithmically in 'Tmay' (R\u00b2 = 0.953 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rv15dv4db",
+   "held_out_r2": 0.9062,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ee577630b621",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f0bf28397abc8a51.csv",
+   "doi": "10.5061/dryad.rv15dv4db",
+   "form": "logarithmic",
+   "params": [
+    -64.43353123262958,
+    25.454398607180696
+   ],
+   "seed": 2473957822,
+   "x": "Tmay",
+   "y": "Tdec"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Climate warming and projected loss of thermal habitat volume in lake populations' (Zenodo, doi 10.5061/dryad.rv15dv4db): 'Tdec' grows logarithmically in 'Tmay' (R\u00b2 = 0.925 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rv15dv4db",
+   "held_out_r2": 0.9571,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-816a35a1941b",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f0bf28397abc8a51.csv",
+   "doi": "10.5061/dryad.rv15dv4db",
+   "form": "logarithmic",
+   "params": [
+    -40.63407591774439,
+    19.788962788817322
+   ],
+   "seed": 2473957822,
+   "x": "Tmay",
+   "y": "Tann"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Climate warming and projected loss of thermal habitat volume in lake populations' (Zenodo, doi 10.5061/dryad.rv15dv4db): 'Tann' grows logarithmically in 'Tmay' (R\u00b2 = 0.966 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rv15dv4db",
+   "held_out_r2": 0.9868,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-246ae0836ea5",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f0bf28397abc8a51.csv",
+   "doi": "10.5061/dryad.rv15dv4db",
+   "form": "logarithmic",
+   "params": [
+    -85.33414644942953,
+    31.69058263683635
+   ],
+   "seed": 2473957822,
+   "x": "Tjun",
+   "y": "Tnov"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Climate warming and projected loss of thermal habitat volume in lake populations' (Zenodo, doi 10.5061/dryad.rv15dv4db): 'Tnov' grows logarithmically in 'Tjun' (R\u00b2 = 0.990 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rv15dv4db",
+   "held_out_r2": 0.9749,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-6b360d329a90",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f0bf28397abc8a51.csv",
+   "doi": "10.5061/dryad.rv15dv4db",
+   "form": "logarithmic",
+   "params": [
+    -99.91228170111604,
+    34.234217909438385
+   ],
+   "seed": 2473957822,
+   "x": "Tjun",
+   "y": "Tdec"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Climate warming and projected loss of thermal habitat volume in lake populations' (Zenodo, doi 10.5061/dryad.rv15dv4db): 'Tdec' grows logarithmically in 'Tjun' (R\u00b2 = 0.980 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rv15dv4db",
+   "held_out_r2": 0.9884,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e362802bd3f7",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f0bf28397abc8a51.csv",
+   "doi": "10.5061/dryad.rv15dv4db",
+   "form": "linear",
+   "params": [
+    -19.52356420959446,
+    1.5663495909582283
+   ],
+   "seed": 2473957822,
+   "x": "Tjun",
+   "y": "Tann"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Climate warming and projected loss of thermal habitat volume in lake populations' (Zenodo, doi 10.5061/dryad.rv15dv4db): 'Tann' is linear in 'Tjun' (R\u00b2 = 0.991 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rv15dv4db",
+   "held_out_r2": 0.988,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e5fee2f94498",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f0bf28397abc8a51.csv",
+   "doi": "10.5061/dryad.rv15dv4db",
+   "form": "logarithmic",
+   "params": [
+    -88.37286675639751,
+    30.74644961530284
+   ],
+   "seed": 2473957822,
+   "x": "Tjul",
+   "y": "Tnov"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Climate warming and projected loss of thermal habitat volume in lake populations' (Zenodo, doi 10.5061/dryad.rv15dv4db): 'Tnov' grows logarithmically in 'Tjul' (R\u00b2 = 0.991 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rv15dv4db",
+   "held_out_r2": 0.9739,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-6485e8e77c87",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f0bf28397abc8a51.csv",
+   "doi": "10.5061/dryad.rv15dv4db",
+   "form": "logarithmic",
+   "params": [
+    -103.16435287955161,
+    33.20411714625809
+   ],
+   "seed": 2473957822,
+   "x": "Tjul",
+   "y": "Tdec"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Climate warming and projected loss of thermal habitat volume in lake populations' (Zenodo, doi 10.5061/dryad.rv15dv4db): 'Tdec' grows logarithmically in 'Tjul' (R\u00b2 = 0.981 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rv15dv4db",
+   "held_out_r2": 0.9809,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ba9c9b651e53",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f0bf28397abc8a51.csv",
+   "doi": "10.5061/dryad.rv15dv4db",
+   "form": "logarithmic",
+   "params": [
+    -80.05373998755844,
+    25.491104705795777
+   ],
+   "seed": 2473957822,
+   "x": "Taug",
+   "y": "Tdec"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Climate warming and projected loss of thermal habitat volume in lake populations' (Zenodo, doi 10.5061/dryad.rv15dv4db): 'Tdec' grows logarithmically in 'Taug' (R\u00b2 = 0.987 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rv15dv4db",
+   "held_out_r2": 0.9912,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ef33d4c0d741",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f0bf28397abc8a51.csv",
+   "doi": "10.5061/dryad.rv15dv4db",
+   "form": "exponential",
+   "params": [
+    2.2722817752417273,
+    0.11837998390069047
+   ],
+   "seed": 2473957822,
+   "x": "Tdec",
+   "y": "Tann"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Climate warming and projected loss of thermal habitat volume in lake populations' (Zenodo, doi 10.5061/dryad.rv15dv4db): 'Tann' grows exponentially in 'Tdec' (R\u00b2 = 0.993 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rv15dv4db",
+   "held_out_r2": 0.9289,
+   "held_out_rows": 50,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-92913607f312",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "cdd0b16c90ee0236.csv",
+   "doi": "10.5061/dryad.rv15dv4db",
+   "form": "power law",
+   "params": [
+    -1.0639941252228668,
+    0.6900029450580488
+   ],
+   "seed": 1527608844,
+   "x": "Area",
+   "y": "Shoreline"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Climate warming and projected loss of thermal habitat volume in lake populations' (Zenodo, doi 10.5061/dryad.rv15dv4db): 'Shoreline' follows a power law in 'Area' (R\u00b2 = 0.913 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rv15dv4db",
+   "held_out_r2": 0.9522,
+   "held_out_rows": 50,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a52a85e4f546",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "cdd0b16c90ee0236.csv",
+   "doi": "10.5061/dryad.rv15dv4db",
+   "form": "power law",
+   "params": [
+    -0.6880262278743794,
+    1.0798990615016206
+   ],
+   "seed": 1527608844,
+   "x": "Depth_Max",
+   "y": "dif_max_mean"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Climate warming and projected loss of thermal habitat volume in lake populations' (Zenodo, doi 10.5061/dryad.rv15dv4db): 'dif_max_mean' follows a power law in 'Depth_Max' (R\u00b2 = 0.963 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rv15dv4db",
+   "held_out_r2": 0.9715,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ae05a9ce823e",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8aac536748559a47.csv",
+   "doi": "10.5061/dryad.rv15dv4db",
+   "form": "exponential",
+   "params": [
+    3.049812082707446,
+    0.08661964000328912
+   ],
+   "seed": 1913053610,
+   "x": "Tjan",
+   "y": "Toct"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Climate warming and projected loss of thermal habitat volume in lake populations' (Zenodo, doi 10.5061/dryad.rv15dv4db): 'Toct' grows exponentially in 'Tjan' (R\u00b2 = 0.972 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rv15dv4db",
+   "held_out_r2": 0.9713,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-630c752e17a1",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8aac536748559a47.csv",
+   "doi": "10.5061/dryad.rv15dv4db",
+   "form": "linear",
+   "params": [
+    10.44845244076361,
+    0.8210015464432423
+   ],
+   "seed": 1913053610,
+   "x": "Tjan",
+   "y": "Tnov"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Climate warming and projected loss of thermal habitat volume in lake populations' (Zenodo, doi 10.5061/dryad.rv15dv4db): 'Tnov' is linear in 'Tjan' (R\u00b2 = 0.972 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rv15dv4db",
+   "held_out_r2": 0.9844,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f4df1d04ebb7",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8aac536748559a47.csv",
+   "doi": "10.5061/dryad.rv15dv4db",
+   "form": "linear",
+   "params": [
+    10.64936857867287,
+    0.5488496728126111
+   ],
+   "seed": 1913053610,
+   "x": "Tjan",
+   "y": "Tann"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Climate warming and projected loss of thermal habitat volume in lake populations' (Zenodo, doi 10.5061/dryad.rv15dv4db): 'Tann' is linear in 'Tjan' (R\u00b2 = 0.986 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rv15dv4db",
+   "held_out_r2": 0.9054,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9a1dcec00d37",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8aac536748559a47.csv",
+   "doi": "10.5061/dryad.rv15dv4db",
+   "form": "linear",
+   "params": [
+    0.3285355519672488,
+    0.5436948245897064
+   ],
+   "seed": 1913053610,
+   "x": "Tfeb",
+   "y": "Tmar"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Climate warming and projected loss of thermal habitat volume in lake populations' (Zenodo, doi 10.5061/dryad.rv15dv4db): 'Tmar' is linear in 'Tfeb' (R\u00b2 = 0.906 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rv15dv4db",
+   "held_out_r2": 0.8929,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-dee140f2dbe0",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8aac536748559a47.csv",
+   "doi": "10.5061/dryad.rv15dv4db",
+   "form": "power law",
+   "params": [
+    -0.8042680199941107,
+    1.3615555645332313
+   ],
+   "seed": 1913053610,
+   "x": "Tjun",
+   "y": "Tjul"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Climate warming and projected loss of thermal habitat volume in lake populations' (Zenodo, doi 10.5061/dryad.rv15dv4db): 'Tjul' follows a power law in 'Tjun' (R\u00b2 = 0.906 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rv15dv4db",
+   "held_out_r2": 0.9769,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-03d499da488a",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8aac536748559a47.csv",
+   "doi": "10.5061/dryad.rv15dv4db",
+   "form": "power law",
+   "params": [
+    -1.3918285869308908,
+    1.4690300177899775
+   ],
+   "seed": 1913053610,
+   "x": "Tjul",
+   "y": "Taug"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Climate warming and projected loss of thermal habitat volume in lake populations' (Zenodo, doi 10.5061/dryad.rv15dv4db): 'Taug' follows a power law in 'Tjul' (R\u00b2 = 0.980 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rv15dv4db",
+   "held_out_r2": 0.9502,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-74394c5c3348",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8aac536748559a47.csv",
+   "doi": "10.5061/dryad.rv15dv4db",
+   "form": "exponential",
+   "params": [
+    0.05997964816094246,
+    0.1400553834436167
+   ],
+   "seed": 1913053610,
+   "x": "Tjul",
+   "y": "Tsep"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Climate warming and projected loss of thermal habitat volume in lake populations' (Zenodo, doi 10.5061/dryad.rv15dv4db): 'Tsep' grows exponentially in 'Tjul' (R\u00b2 = 0.958 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rv15dv4db",
+   "held_out_r2": 0.9178,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c1d03c6ee17e",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8aac536748559a47.csv",
+   "doi": "10.5061/dryad.rv15dv4db",
+   "form": "power law",
+   "params": [
+    -11.393743185950248,
+    4.630901882309505
+   ],
+   "seed": 1913053610,
+   "x": "Tjul",
+   "y": "Toct"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Climate warming and projected loss of thermal habitat volume in lake populations' (Zenodo, doi 10.5061/dryad.rv15dv4db): 'Toct' follows a power law in 'Tjul' (R\u00b2 = 0.931 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rv15dv4db",
+   "held_out_r2": 0.9419,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4b9c9fadbccf",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8aac536748559a47.csv",
+   "doi": "10.5061/dryad.rv15dv4db",
+   "form": "power law",
+   "params": [
+    -14.686167106200111,
+    5.56162778766604
+   ],
+   "seed": 1913053610,
+   "x": "Tjul",
+   "y": "Tann"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Climate warming and projected loss of thermal habitat volume in lake populations' (Zenodo, doi 10.5061/dryad.rv15dv4db): 'Tann' follows a power law in 'Tjul' (R\u00b2 = 0.952 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rv15dv4db",
+   "held_out_r2": 0.9866,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-85193c88ac5a",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8aac536748559a47.csv",
+   "doi": "10.5061/dryad.rv15dv4db",
+   "form": "exponential",
+   "params": [
+    0.8955065218847066,
+    0.09707703567446277
+   ],
+   "seed": 1913053610,
+   "x": "Taug",
+   "y": "Tsep"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Climate warming and projected loss of thermal habitat volume in lake populations' (Zenodo, doi 10.5061/dryad.rv15dv4db): 'Tsep' grows exponentially in 'Taug' (R\u00b2 = 0.988 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rv15dv4db",
+   "held_out_r2": 0.9799,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-cd358409294a",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8aac536748559a47.csv",
+   "doi": "10.5061/dryad.rv15dv4db",
+   "form": "exponential",
+   "params": [
+    -0.996107165302176,
+    0.17201450062118706
+   ],
+   "seed": 1913053610,
+   "x": "Taug",
+   "y": "Toct"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Climate warming and projected loss of thermal habitat volume in lake populations' (Zenodo, doi 10.5061/dryad.rv15dv4db): 'Toct' grows exponentially in 'Taug' (R\u00b2 = 0.983 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rv15dv4db",
+   "held_out_r2": 0.9586,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d34064a588e6",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8aac536748559a47.csv",
+   "doi": "10.5061/dryad.rv15dv4db",
+   "form": "linear",
+   "params": [
+    -27.59002546641214,
+    1.6139582213364603
+   ],
+   "seed": 1913053610,
+   "x": "Taug",
+   "y": "Tnov"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Climate warming and projected loss of thermal habitat volume in lake populations' (Zenodo, doi 10.5061/dryad.rv15dv4db): 'Tnov' is linear in 'Taug' (R\u00b2 = 0.964 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rv15dv4db",
+   "held_out_r2": 0.9753,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-08773a73ca7c",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8aac536748559a47.csv",
+   "doi": "10.5061/dryad.rv15dv4db",
+   "form": "power law",
+   "params": [
+    -9.450412170180767,
+    3.797365548763227
+   ],
+   "seed": 1913053610,
+   "x": "Taug",
+   "y": "Tann"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Climate warming and projected loss of thermal habitat volume in lake populations' (Zenodo, doi 10.5061/dryad.rv15dv4db): 'Tann' follows a power law in 'Taug' (R\u00b2 = 0.977 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rv15dv4db",
+   "held_out_r2": 0.9903,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c8fbf193f2cb",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8aac536748559a47.csv",
+   "doi": "10.5061/dryad.rv15dv4db",
+   "form": "power law",
+   "params": [
+    -2.5748919035073627,
+    1.7690030110545725
+   ],
+   "seed": 1913053610,
+   "x": "Tsep",
+   "y": "Toct"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Climate warming and projected loss of thermal habitat volume in lake populations' (Zenodo, doi 10.5061/dryad.rv15dv4db): 'Toct' follows a power law in 'Tsep' (R\u00b2 = 0.992 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rv15dv4db",
+   "held_out_r2": 0.9817,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-47aac51b2197",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8aac536748559a47.csv",
+   "doi": "10.5061/dryad.rv15dv4db",
+   "form": "linear",
+   "params": [
+    -14.141261163458372,
+    1.1070619121615177
+   ],
+   "seed": 1913053610,
+   "x": "Tsep",
+   "y": "Tnov"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Climate warming and projected loss of thermal habitat volume in lake populations' (Zenodo, doi 10.5061/dryad.rv15dv4db): 'Tnov' is linear in 'Tsep' (R\u00b2 = 0.985 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rv15dv4db",
+   "held_out_r2": 0.9837,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-0a91f289ceca",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8aac536748559a47.csv",
+   "doi": "10.5061/dryad.rv15dv4db",
+   "form": "linear",
+   "params": [
+    -24.26321708730702,
+    1.2831677732435554
+   ],
+   "seed": 1913053610,
+   "x": "Tsep",
+   "y": "Tdec"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Climate warming and projected loss of thermal habitat volume in lake populations' (Zenodo, doi 10.5061/dryad.rv15dv4db): 'Tdec' is linear in 'Tsep' (R\u00b2 = 0.986 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rv15dv4db",
+   "held_out_r2": 0.9837,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-1ebf953f7ff2",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8aac536748559a47.csv",
+   "doi": "10.5061/dryad.rv15dv4db",
+   "form": "logarithmic",
+   "params": [
+    -29.04706219082924,
+    10.887985689315267
+   ],
+   "seed": 1913053610,
+   "x": "Toct",
+   "y": "Tdec"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Climate warming and projected loss of thermal habitat volume in lake populations' (Zenodo, doi 10.5061/dryad.rv15dv4db): 'Tdec' grows logarithmically in 'Toct' (R\u00b2 = 0.984 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rv15dv4db",
+   "held_out_r2": 0.9861,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-1dc1d848106c",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8aac536748559a47.csv",
+   "doi": "10.5061/dryad.rv15dv4db",
+   "form": "logarithmic",
+   "params": [
+    -8.462393952493887,
+    6.241529088141852
+   ],
+   "seed": 1913053610,
+   "x": "Toct",
+   "y": "Tann"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Climate warming and projected loss of thermal habitat volume in lake populations' (Zenodo, doi 10.5061/dryad.rv15dv4db): 'Tann' grows logarithmically in 'Toct' (R\u00b2 = 0.985 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rv15dv4db",
+   "held_out_r2": 0.9867,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-27a090cae3e4",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8aac536748559a47.csv",
+   "doi": "10.5061/dryad.rv15dv4db",
+   "form": "linear",
+   "params": [
+    -7.850689107309401,
+    1.1513688568672582
+   ],
+   "seed": 1913053610,
+   "x": "Tnov",
+   "y": "Tdec"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Climate warming and projected loss of thermal habitat volume in lake populations' (Zenodo, doi 10.5061/dryad.rv15dv4db): 'Tdec' is linear in 'Tnov' (R\u00b2 = 0.988 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rv15dv4db",
+   "held_out_r2": 0.9798,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a90e40864a9b",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8aac536748559a47.csv",
+   "doi": "10.5061/dryad.rv15dv4db",
+   "form": "linear",
+   "params": [
+    3.6964805483535965,
+    0.6571612842541317
+   ],
+   "seed": 1913053610,
+   "x": "Tnov",
+   "y": "Tann"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Climate warming and projected loss of thermal habitat volume in lake populations' (Zenodo, doi 10.5061/dryad.rv15dv4db): 'Tann' is linear in 'Tnov' (R\u00b2 = 0.980 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.0k6djhb1z",
+   "held_out_r2": 0.9156,
+   "held_out_rows": 228,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-2b698c1cf1cd",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "fc046a2b3d89eda1.csv",
+   "doi": "10.5061/dryad.0k6djhb1z",
+   "form": "power law",
+   "params": [
+    1.0602532924620287,
+    0.968668355457378
+   ],
+   "seed": 2197133620,
+   "x": "cv.duration",
+   "y": "cv.ici"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Climate change alters sexual signaling in a desert-adapted frog' (Zenodo, doi 10.5061/dryad.0k6djhb1z): 'cv.ici' follows a power law in 'cv.duration' (R\u00b2 = 0.916 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
