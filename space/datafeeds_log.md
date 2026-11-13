@@ -3169,3 +3169,4 @@
 - 2026-11-13 17:45 FINDING (confirmed on held-out rows): In 'Data and analysis code from the cultured phage inoculation trials (CPT experiment)' (Figshare, doi 10.6084/m9.figshare.34987912.v1): 'combopred' is linear in 'phylopred' (R² = 0.940 on the discovery half); held-out R² = 0.941 [emp-8ce0d3ab4ff4]
 - 2026-11-13 17:45 FINDING (confirmed on held-out rows): In 'Data and code for: Century-long butterfly redistribution reshapes assemblage trait–tempera' (Figshare, doi 10.6084/m9.figshare.32780085.v1): 'CENTROID_Y' is linear in 'av_temp' (R² = 0.945 on the discovery half); held-out R² = 0.901 [emp-2fc673ddfc37]
 - 2026-11-13 17:45 data feeds: 20176 datasets analysed so far, 2835 confirmed findings
+- 2026-11-13 18:23 data feeds: online
