@@ -2742734,5 +2742734,356 @@
   "statement": "In 'Data for \"Soil CO2 efflux errors are lognormally distributed - Implications and  guidance.' (Zenodo, doi 10.5281/zenodo.3735751): 'Tsoil' follows a power law in 'temp' (R\u00b2 = 0.977 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23784504",
+   "held_out_r2": -0.0002,
+   "held_out_rows": 5122,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-7cc5ab99d807",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "388b7788cc2dc4be.csv",
+   "doi": "10.5281/zenodo.23784504",
+   "form": "linear",
+   "params": [
+    0.1889080712883872,
+    0.0007350834715743233
+   ],
+   "seed": 1771886231,
+   "x": "earthworms_count",
+   "y": "contamination_debris"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'ECHOREPO Soil Dataset: soil observations, parameters, images and biodiversity' (Zenodo, doi 10.5281/zenodo.23784504): 'contamination_debris' is linear in 'earthworms_count' (R\u00b2 = 0.941 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23784504",
+   "held_out_r2": -0.0364,
+   "held_out_rows": 5122,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-244274b85ad4",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "388b7788cc2dc4be.csv",
+   "doi": "10.5281/zenodo.23784504",
+   "form": "linear",
+   "params": [
+    0.37939339849527,
+    2.018311462438619
+   ],
+   "seed": 1771886231,
+   "x": "contamination_debris",
+   "y": "pollutants_count"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'ECHOREPO Soil Dataset: soil observations, parameters, images and biodiversity' (Zenodo, doi 10.5281/zenodo.23784504): 'pollutants_count' is linear in 'contamination_debris' (R\u00b2 = 0.955 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23784504",
+   "held_out_r2": 0.0032,
+   "held_out_rows": 5122,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-517c17ddd72c",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "388b7788cc2dc4be.csv",
+   "doi": "10.5281/zenodo.23784504",
+   "form": "linear",
+   "params": [
+    -0.2683540279650669,
+    1.8298377465666051
+   ],
+   "seed": 1771886231,
+   "x": "contamination_plastic",
+   "y": "pollutants_count"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'ECHOREPO Soil Dataset: soil observations, parameters, images and biodiversity' (Zenodo, doi 10.5281/zenodo.23784504): 'pollutants_count' is linear in 'contamination_plastic' (R\u00b2 = 0.964 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22860901",
+   "held_out_r2": 0.8805,
+   "held_out_rows": 60,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-1193386c1c84",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "36eb7173cd85b122.csv",
+   "doi": "10.5281/zenodo.22860901",
+   "form": "power law",
+   "params": [
+    4.670664984613586,
+    1.137594284698138
+   ],
+   "seed": 2977572212,
+   "x": "N_gkg",
+   "y": "DOC_mgkg"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Soil chemical data and root biomass for soil profile study of permanent grassland, organic' (Zenodo, doi 10.5281/zenodo.22860901): 'DOC_mgkg' follows a power law in 'N_gkg' (R\u00b2 = 0.904 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22860901",
+   "held_out_r2": 0.9513,
+   "held_out_rows": 60,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-1a453cdefc15",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "36eb7173cd85b122.csv",
+   "doi": "10.5281/zenodo.22860901",
+   "form": "exponential",
+   "params": [
+    4.221005146603912,
+    0.009258639041588088
+   ],
+   "seed": 2977572212,
+   "x": "Feox_mmolkg",
+   "y": "oxides_mmolkg"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Soil chemical data and root biomass for soil profile study of permanent grassland, organic' (Zenodo, doi 10.5281/zenodo.22860901): 'oxides_mmolkg' grows exponentially in 'Feox_mmolkg' (R\u00b2 = 0.935 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.k53b7",
+   "held_out_r2": 0.9735,
+   "held_out_rows": 31,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-2ac24f6cc583",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "c41a53846ef51004.csv",
+   "doi": "10.5061/dryad.k53b7",
+   "form": "linear",
+   "params": [
+    0.07475083257625138,
+    0.08119211415612375
+   ],
+   "seed": 1252091852,
+   "x": "SOC",
+   "y": "TN"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Tropical forest restoration: fast resilience of plant biomass contrasts with sl' (Zenodo, doi 10.5061/dryad.k53b7): 'TN' is linear in 'SOC' (R\u00b2 = 0.988 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.5736535",
+   "held_out_r2": 0.9476,
+   "held_out_rows": 1001,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f334f21f95c9",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "a2ae191d9022bce9.csv",
+   "doi": "10.5281/zenodo.5736535",
+   "form": "logarithmic",
+   "params": [
+    -12997.889911823384,
+    1973.1319792680724
+   ],
+   "seed": 470208874,
+   "x": "frc_obs_date_y",
+   "y": "lyr_obs_date_y"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Supporting data for manuscript: Beyond Bulk' (Zenodo, doi 10.5281/zenodo.5736535): 'lyr_obs_date_y' grows logarithmically in 'frc_obs_date_y' (R\u00b2 = 0.976 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.5736535",
+   "held_out_r2": 0.9443,
+   "held_out_rows": 1001,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d227657cae58",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "a2ae191d9022bce9.csv",
+   "doi": "10.5281/zenodo.5736535",
+   "form": "linear",
+   "params": [
+    5.259003092426251,
+    0.9611469620768284
+   ],
+   "seed": 470208874,
+   "x": "frc_graven_atm",
+   "y": "lyr_graven_atm"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Supporting data for manuscript: Beyond Bulk' (Zenodo, doi 10.5281/zenodo.5736535): 'lyr_graven_atm' is linear in 'frc_graven_atm' (R\u00b2 = 0.904 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.dd602",
+   "held_out_r2": 0.9675,
+   "held_out_rows": 404,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-dad82feea428",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "c5a06647f1c03f29.csv",
+   "doi": "10.5061/dryad.dd602",
+   "form": "linear",
+   "params": [
+    -0.309619593957739,
+    0.977615792998987
+   ],
+   "seed": 4028524196,
+   "x": "Nt",
+   "y": "Nc"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Intensive forest harvesting increases susceptibility of northern forest soils t' (Zenodo, doi 10.5061/dryad.dd602): 'Nc' is linear in 'Nt' (R\u00b2 = 0.946 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.dd602",
+   "held_out_r2": 0.989,
+   "held_out_rows": 404,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-848edc63f02e",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "c5a06647f1c03f29.csv",
+   "doi": "10.5061/dryad.dd602",
+   "form": "power law",
+   "params": [
+    0.030745935415454506,
+    0.998902996724031
+   ],
+   "seed": 4028524196,
+   "x": "Xt",
+   "y": "Xc"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Intensive forest harvesting increases susceptibility of northern forest soils t' (Zenodo, doi 10.5061/dryad.dd602): 'Xc' follows a power law in 'Xt' (R\u00b2 = 0.988 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.ns7bv",
+   "held_out_r2": 0.9077,
+   "held_out_rows": 576,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-fbbf673d3d33",
+  "kind": "empirical",
+  "novelty": "KNOWN: seawater carbonate chemistry (CO2SYS-type calculations) \u2014 not a discovery",
+  "payload": {
+   "dataset": "245f8358f563c4d5.csv",
+   "doi": "10.5061/dryad.ns7bv",
+   "form": "linear",
+   "params": [
+    0.2383151920223052,
+    1.5601224032110246
+   ],
+   "seed": 1494373891,
+   "x": "BelowPhaseII Biomass (g)",
+   "y": "TotalPhase II biomass (g)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Plant-soil feedbacks shift from negative to positive with decreasing light in f' (Zenodo, doi 10.5061/dryad.ns7bv): 'TotalPhase II biomass (g)' is linear in 'BelowPhaseII Biomass (g)' (R\u00b2 = 0.902 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.6407290",
+   "held_out_r2": 0.9143,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4dec62ca3004",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "da554917f703ffc3.csv",
+   "doi": "10.5281/zenodo.6407290",
+   "form": "logarithmic",
+   "params": [
+    61.531964721595706,
+    -17.114851684498067
+   ],
+   "seed": 3236736676,
+   "x": "moisture 1  (%)",
+   "y": "tension  (kPa)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset - Spatially explicit linkages between redox potential cycles and soil moisture flu' (Zenodo, doi 10.5281/zenodo.6407290): 'tension  (kPa)' grows logarithmically in 'moisture 1  (%)' (R\u00b2 = 0.908 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17055458",
+   "held_out_r2": 0.9483,
+   "held_out_rows": 544,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ee6d49ad602a",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "b3b920883deb2af9.csv",
+   "doi": "10.5281/zenodo.17055458",
+   "form": "power law",
+   "params": [
+    2.103576101477642,
+    -0.30406157517224613
+   ],
+   "seed": 3958446565,
+   "x": "MPa_Abs",
+   "y": "Vol_Water"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'ReESH_US-Jo2: Jornada Experimental Range Mixed Shrubland' (Zenodo, doi 10.5281/zenodo.17055458): 'Vol_Water' follows a power law in 'MPa_Abs' (R\u00b2 = 0.953 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
