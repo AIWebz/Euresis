@@ -2689218,5 +2689218,383 @@
   "statement": "Octal game 0.734212 is completely solved: its Grundy values are periodic with pre-period 1 and period 8 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.7291/D1W101",
+   "held_out_r2": 0.9634,
+   "held_out_rows": 130,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-70ef3ff63f53",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "a4cc6cafc600e827.csv",
+   "doi": "10.7291/D1W101",
+   "form": "linear",
+   "params": [
+    -2.923229722852969,
+    6.802193033681747
+   ],
+   "seed": 1855506784,
+   "x": "DepartDaysOnShore",
+   "y": "DepartMassCorrection"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data From: Effects of disease on foraging behaviour and success in an individual free-rang' (Zenodo, doi 10.7291/D1W101): 'DepartMassCorrection' is linear in 'DepartDaysOnShore' (R\u00b2 = 0.973 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.7291/D1W101",
+   "held_out_r2": 0.9638,
+   "held_out_rows": 130,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3e0becc566d9",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "a4cc6cafc600e827.csv",
+   "doi": "10.7291/D1W101",
+   "form": "linear",
+   "params": [
+    8.630405905406695,
+    0.9915251918981601
+   ],
+   "seed": 1855506784,
+   "x": "RecoverMass",
+   "y": "ArrivalCalcMass"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data From: Effects of disease on foraging behaviour and success in an individual free-rang' (Zenodo, doi 10.7291/D1W101): 'ArrivalCalcMass' is linear in 'RecoverMass' (R\u00b2 = 0.976 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.7291/D1W101",
+   "held_out_r2": 0.9786,
+   "held_out_rows": 130,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9bc1cf679e28",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "a4cc6cafc600e827.csv",
+   "doi": "10.7291/D1W101",
+   "form": "linear",
+   "params": [
+    0.30041237499159684,
+    3.304959435743117
+   ],
+   "seed": 1855506784,
+   "x": "ArrivalDaysOnShore",
+   "y": "ArrivalMassCorrection"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data From: Effects of disease on foraging behaviour and success in an individual free-rang' (Zenodo, doi 10.7291/D1W101): 'ArrivalMassCorrection' is linear in 'ArrivalDaysOnShore' (R\u00b2 = 0.985 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.xksn02vc2",
+   "held_out_r2": 0.901,
+   "held_out_rows": 79,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b747fcfb54f1",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8b6e3133b001e83a.csv",
+   "doi": "10.5061/dryad.xksn02vc2",
+   "form": "logarithmic",
+   "params": [
+    32413.85481286195,
+    -7774.678417239308
+   ],
+   "seed": 3598785897,
+   "x": "Probability",
+   "y": "Min. gray value"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Three-dimensional characterization of osteocyte volumes at multiple scales, and ' (Zenodo, doi 10.5061/dryad.xksn02vc2): 'Min. gray value' grows logarithmically in 'Probability' (R\u00b2 = 0.909 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.xksn02vc2",
+   "held_out_r2": 0.9876,
+   "held_out_rows": 79,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9a61eed636a1",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8b6e3133b001e83a.csv",
+   "doi": "10.5061/dryad.xksn02vc2",
+   "form": "linear",
+   "params": [
+    0.002601221776782677,
+    0.9867149129657591
+   ],
+   "seed": 3598785897,
+   "x": "Center x [mm]",
+   "y": "Pos. x [mm]"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Three-dimensional characterization of osteocyte volumes at multiple scales, and ' (Zenodo, doi 10.5061/dryad.xksn02vc2): 'Pos. x [mm]' is linear in 'Center x [mm]' (R\u00b2 = 0.985 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.xksn02vc2",
+   "held_out_r2": 0.9778,
+   "held_out_rows": 79,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-cf2caccf5511",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8b6e3133b001e83a.csv",
+   "doi": "10.5061/dryad.xksn02vc2",
+   "form": "power law",
+   "params": [
+    1.8097547518727821,
+    0.7980046144802466
+   ],
+   "seed": 3598785897,
+   "x": "Volume [\u00b5m\u00b3]",
+   "y": "Surface [\u00b5m\u00b2]"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Three-dimensional characterization of osteocyte volumes at multiple scales, and ' (Zenodo, doi 10.5061/dryad.xksn02vc2): 'Surface [\u00b5m\u00b2]' follows a power law in 'Volume [\u00b5m\u00b3]' (R\u00b2 = 0.984 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.xksn02vc2",
+   "held_out_r2": 0.9778,
+   "held_out_rows": 79,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e4960ca1a5e3",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8b6e3133b001e83a.csv",
+   "doi": "10.5061/dryad.xksn02vc2",
+   "form": "power law",
+   "params": [
+    1.0234536303146917,
+    0.7979825300522932
+   ],
+   "seed": 3598785897,
+   "x": "Voxel",
+   "y": "Surface [\u00b5m\u00b2]"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Three-dimensional characterization of osteocyte volumes at multiple scales, and ' (Zenodo, doi 10.5061/dryad.xksn02vc2): 'Surface [\u00b5m\u00b2]' follows a power law in 'Voxel' (R\u00b2 = 0.984 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.xksn02vc2",
+   "held_out_r2": 0.8732,
+   "held_out_rows": 79,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-06daff6b2178",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8b6e3133b001e83a.csv",
+   "doi": "10.5061/dryad.xksn02vc2",
+   "form": "linear",
+   "params": [
+    3.55952890614169,
+    63.36234576459168
+   ],
+   "seed": 3598785897,
+   "x": "Compactness",
+   "y": "PCA min. deviation ratio [%]"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Three-dimensional characterization of osteocyte volumes at multiple scales, and ' (Zenodo, doi 10.5061/dryad.xksn02vc2): 'PCA min. deviation ratio [%]' is linear in 'Compactness' (R\u00b2 = 0.915 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.xksn02vc2",
+   "held_out_r2": 0.9759,
+   "held_out_rows": 236,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f634cb6c85da",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "577116e8233f16a1.csv",
+   "doi": "10.5061/dryad.xksn02vc2",
+   "form": "linear",
+   "params": [
+    0.0003153379301579208,
+    0.9870007308315596
+   ],
+   "seed": 2186525310,
+   "x": "Center z [mm]",
+   "y": "Pos. z [mm]"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Three-dimensional characterization of osteocyte volumes at multiple scales, and ' (Zenodo, doi 10.5061/dryad.xksn02vc2): 'Pos. z [mm]' is linear in 'Center z [mm]' (R\u00b2 = 0.975 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.xksn02vc2",
+   "held_out_r2": 0.9861,
+   "held_out_rows": 223,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-2c371b1a353c",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "9a513746a983a6dc.csv",
+   "doi": "10.5061/dryad.xksn02vc2",
+   "form": "linear",
+   "params": [
+    -6.691160739812198,
+    1.0073892505115856
+   ],
+   "seed": 680392398,
+   "x": "Center z [vox]",
+   "y": "Pos. z [vox]"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Three-dimensional characterization of osteocyte volumes at multiple scales, and ' (Zenodo, doi 10.5061/dryad.xksn02vc2): 'Pos. z [vox]' is linear in 'Center z [vox]' (R\u00b2 = 0.989 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.xksn02vc2",
+   "held_out_r2": 0.9774,
+   "held_out_rows": 54,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9165600a23bf",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8a44c5819c8f25d5.csv",
+   "doi": "10.5061/dryad.xksn02vc2",
+   "form": "exponential",
+   "params": [
+    -1.4805016806175813,
+    1.6155739375198443
+   ],
+   "seed": 1182856150,
+   "x": "Center y [mm]",
+   "y": "Pos. y [mm]"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Three-dimensional characterization of osteocyte volumes at multiple scales, and ' (Zenodo, doi 10.5061/dryad.xksn02vc2): 'Pos. y [mm]' grows exponentially in 'Center y [mm]' (R\u00b2 = 0.960 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11238552",
+   "held_out_r2": 0.9477,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-269e56be5011",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "2aa6b033dffb4229.csv",
+   "doi": "10.5281/zenodo.11238552",
+   "form": "power law",
+   "params": [
+    -4.897195549953055,
+    0.9515812630300062
+   ],
+   "seed": 60869591,
+   "x": "n_cell_sub",
+   "y": "prop_cells"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Evaluation of transcription factor knockout impact on paclitaxel response for Triple Negat' (Zenodo, doi 10.5281/zenodo.11238552): 'prop_cells' follows a power law in 'n_cell_sub' (R\u00b2 = 0.945 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.6620957",
+   "held_out_r2": 0.9344,
+   "held_out_rows": 4226,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5690390c9bac",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "0c240e01015f5fe5.csv",
+   "doi": "10.5281/zenodo.6620957",
+   "form": "linear",
+   "params": [
+    1.011696361451785,
+    -0.9491366712685804
+   ],
+   "seed": 886986041,
+   "x": "mean_correct_high_classifier",
+   "y": "mean_correct_low_classifier_live"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for \"Highly-Automated, High-Throughput Replication of Yeast-based Logic Circuit Desig' (Zenodo, doi 10.5281/zenodo.6620957): 'mean_correct_low_classifier_live' is linear in 'mean_correct_high_classifier' (R\u00b2 = 0.933 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.6620957",
+   "held_out_r2": 0.9344,
+   "held_out_rows": 4226,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b1afa62bf4df",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "0c240e01015f5fe5.csv",
+   "doi": "10.5281/zenodo.6620957",
+   "form": "linear",
+   "params": [
+    0.9593396427052643,
+    -0.9833573345590922
+   ],
+   "seed": 886986041,
+   "x": "mean_correct_high_classifier_live",
+   "y": "mean_correct_low_classifier"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for \"Highly-Automated, High-Throughput Replication of Yeast-based Logic Circuit Desig' (Zenodo, doi 10.5281/zenodo.6620957): 'mean_correct_low_classifier' is linear in 'mean_correct_high_classifier_live' (R\u00b2 = 0.933 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
