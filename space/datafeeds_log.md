@@ -3296,3 +3296,6 @@
 - 2026-11-13 21:30 FINDING (confirmed on held-out rows): In 'Resource quality determines the evolution of resistance and its genetic basis' (Zenodo, doi 10.5061/dryad.k98sf7m4g): 'prop' is linear in 'Non.infected' (R² = 0.935 on the discovery half); held-out R² = 0.914 [emp-48ff79437760]
 - 2026-11-13 21:31 data feeds: 20629 datasets analysed so far, 2953 confirmed findings
 - 2026-11-13 22:13 data feeds: online
+- 2026-11-13 22:13 FINDING (confirmed on held-out rows): In 'Acclimation capacity of critical thermal maximum varies among populations: Consequences fo' (Zenodo, doi 10.5061/dryad.fn2z34v1w): 'End_Time' follows a power law in 'Start_Time' (R² = 0.962 on the discovery half); held-out R² = 0.917 [emp-dfebc2fc6ae6]
+- 2026-11-13 22:13 FINDING (confirmed on held-out rows): In 'Replication package of "Higher Fault Detection Through Novel Density Estimators in Unit Te' (Zenodo, doi 10.5281/zenodo.11209899): 'Coverage' is linear in 'MutationScore' (R² = 0.918 on the discovery half); held-out R² = 0.916 [emp-a771e6ca66a4]
+- 2026-11-13 22:14 data feeds: 20706 datasets analysed so far, 2955 confirmed findings

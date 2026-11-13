@@ -2817729,5 +2817729,59 @@
   "statement": "Octal game 0.757215 is completely solved: its Grundy values are periodic with pre-period 777 and period 20 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.fn2z34v1w",
+   "held_out_r2": 0.9168,
+   "held_out_rows": 290,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-dfebc2fc6ae6",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "85f4798a69773469.csv",
+   "doi": "10.5061/dryad.fn2z34v1w",
+   "form": "power law",
+   "params": [
+    0.7966681284995438,
+    0.9009414675834286
+   ],
+   "seed": 2041238519,
+   "x": "Start_Time",
+   "y": "End_Time"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Acclimation capacity of critical thermal maximum varies among populations: Consequences fo' (Zenodo, doi 10.5061/dryad.fn2z34v1w): 'End_Time' follows a power law in 'Start_Time' (R\u00b2 = 0.962 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11209899",
+   "held_out_r2": 0.9159,
+   "held_out_rows": 6276,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a771e6ca66a4",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "22d4c3ea442ec7fa.csv",
+   "doi": "10.5281/zenodo.11209899",
+   "form": "linear",
+   "params": [
+    0.07802880911160397,
+    0.926458982441177
+   ],
+   "seed": 557391465,
+   "x": "MutationScore",
+   "y": "Coverage"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Replication package of \"Higher Fault Detection Through Novel Density Estimators in Unit Te' (Zenodo, doi 10.5281/zenodo.11209899): 'Coverage' is linear in 'MutationScore' (R\u00b2 = 0.918 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
