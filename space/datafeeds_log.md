@@ -3716,3 +3716,9 @@
 - 2026-11-14 18:26 FINDING (confirmed on held-out rows): In 'Multi-level in vivo selection of the biocontrol agent Akanthomyces muscarius, virulence, g' (Zenodo, doi 10.5061/dryad.9s4mw6mpz): 'dia_c' is linear in 'd2' (R² = 0.991 on the discovery half); held-out R² = 0.982 [emp-5ec8385763b4]
 - 2026-11-14 18:28 data feeds: 22715 datasets analysed so far, 3327 confirmed findings
 - 2026-11-14 19:31 data feeds: online
+- 2026-11-14 19:32 FINDING (confirmed on held-out rows): In 'UNR Sonic Anemometer Data Mosquito Fire Smoke Density Current' (Zenodo, doi 10.5281/zenodo.17372252): 'FrictionSpeec_cm/s' is linear in 'Ustd_cm/s' (R² = 0.915 on the discovery half); held-out R² = 0.915 [emp-a4a356c8fbd1]
+- 2026-11-14 19:32 FINDING (confirmed on held-out rows): In 'UNR Sonic Anemometer Data Mosquito Fire Smoke Density Current' (Zenodo, doi 10.5281/zenodo.17372252): 'FrictionSpeec_cm/s' is linear in 'Wstd_cm/s' (R² = 0.930 on the discovery half); held-out R² = 0.930 [emp-4aef731e2e80]
+- 2026-11-14 19:32 FINDING (confirmed on held-out rows): In 'UNR Sonic Anemometer Data Mosquito Fire Smoke Density Current' (Zenodo, doi 10.5281/zenodo.17372252): 'TurbulentKE_(m/s)^2' is linear in 'Uvar_(cm/s)^2' (R² = 0.972 on the discovery half); held-out R² = 0.971 [emp-5dc2ede09c73]
+- 2026-11-14 19:32 FINDING (confirmed on held-out rows): In 'UNR Sonic Anemometer Data Mosquito Fire Smoke Density Current' (Zenodo, doi 10.5281/zenodo.17372252): 'TurbulentKE_(m/s)^2' follows a power law in 'Vvar_(cm/s)^2' (R² = 0.946 on the discovery half); held-out R² = 0.947 [emp-4ce14c85b3e6]
+- 2026-11-14 19:32 FINDING (confirmed on held-out rows): In 'UNR Sonic Anemometer Data Mosquito Fire Smoke Density Current' (Zenodo, doi 10.5281/zenodo.17372252): 'TurbulentKE_(m/s)^2' follows a power law in 'Wvar_(cm/s)^2' (R² = 0.950 on the discovery half); held-out R² = 0.950 [emp-c0ac7791c0df]
+- 2026-11-14 19:33 data feeds: 22788 datasets analysed so far, 3332 confirmed findings

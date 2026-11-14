@@ -2987752,7 +2987752,7 @@
   },
   "id": "emp-b014e6c45d84",
   "kind": "empirical",
-  "novelty": "not checked",
+  "novelty": "KNOWN: equation of state of a simulated fluid (pressure, density, temperature, chemical potential, kinetic energy) \u2014 not a discovery",
   "payload": {
    "dataset": "56b4e46d73749178.csv",
    "doi": "10.5281/zenodo.17372252",
@@ -2987767,6 +2987767,222 @@
   },
   "source": "datafeeds.py",
   "statement": "In 'UNR Sonic Anemometer Data Mosquito Fire Smoke Density Current' (Zenodo, doi 10.5281/zenodo.17372252): 'TurbulentKE_(m/s)^2' follows a power law in 'Ustd_cm/s' (R\u00b2 = 0.967 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17372252",
+   "held_out_r2": 0.9153,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a4a356c8fbd1",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "56b4e46d73749178.csv",
+   "doi": "10.5281/zenodo.17372252",
+   "form": "linear",
+   "params": [
+    2.1955899295782597,
+    0.4051363519715146
+   ],
+   "seed": 743821806,
+   "x": "Ustd_cm/s",
+   "y": "FrictionSpeec_cm/s"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'UNR Sonic Anemometer Data Mosquito Fire Smoke Density Current' (Zenodo, doi 10.5281/zenodo.17372252): 'FrictionSpeec_cm/s' is linear in 'Ustd_cm/s' (R\u00b2 = 0.915 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17372252",
+   "held_out_r2": 0.9024,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f434d7c48e71",
+  "kind": "empirical",
+  "novelty": "KNOWN: equation of state of a simulated fluid (pressure, density, temperature, chemical potential, kinetic energy) \u2014 not a discovery",
+  "payload": {
+   "dataset": "56b4e46d73749178.csv",
+   "doi": "10.5281/zenodo.17372252",
+   "form": "linear",
+   "params": [
+    4.546753733834904,
+    0.5700026010448319
+   ],
+   "seed": 743821806,
+   "x": "Vstd_cm/s",
+   "y": "Wstd_cm/s"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'UNR Sonic Anemometer Data Mosquito Fire Smoke Density Current' (Zenodo, doi 10.5281/zenodo.17372252): 'Wstd_cm/s' is linear in 'Vstd_cm/s' (R\u00b2 = 0.903 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17372252",
+   "held_out_r2": 0.9473,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-8be833db4564",
+  "kind": "empirical",
+  "novelty": "KNOWN: equation of state of a simulated fluid (pressure, density, temperature, chemical potential, kinetic energy) \u2014 not a discovery",
+  "payload": {
+   "dataset": "56b4e46d73749178.csv",
+   "doi": "10.5281/zenodo.17372252",
+   "form": "power law",
+   "params": [
+    -8.532582064648329,
+    1.9317118192419018
+   ],
+   "seed": 743821806,
+   "x": "Vstd_cm/s",
+   "y": "TurbulentKE_(m/s)^2"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'UNR Sonic Anemometer Data Mosquito Fire Smoke Density Current' (Zenodo, doi 10.5281/zenodo.17372252): 'TurbulentKE_(m/s)^2' follows a power law in 'Vstd_cm/s' (R\u00b2 = 0.946 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17372252",
+   "held_out_r2": 0.9504,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d46f52ee0449",
+  "kind": "empirical",
+  "novelty": "KNOWN: equation of state of a simulated fluid (pressure, density, temperature, chemical potential, kinetic energy) \u2014 not a discovery",
+  "payload": {
+   "dataset": "56b4e46d73749178.csv",
+   "doi": "10.5281/zenodo.17372252",
+   "form": "power law",
+   "params": [
+    -8.714784239166923,
+    2.1982703171943054
+   ],
+   "seed": 743821806,
+   "x": "Wstd_cm/s",
+   "y": "TurbulentKE_(m/s)^2"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'UNR Sonic Anemometer Data Mosquito Fire Smoke Density Current' (Zenodo, doi 10.5281/zenodo.17372252): 'TurbulentKE_(m/s)^2' follows a power law in 'Wstd_cm/s' (R\u00b2 = 0.950 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17372252",
+   "held_out_r2": 0.9301,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4aef731e2e80",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "56b4e46d73749178.csv",
+   "doi": "10.5281/zenodo.17372252",
+   "form": "linear",
+   "params": [
+    -5.479834862392672,
+    0.9980688437394869
+   ],
+   "seed": 743821806,
+   "x": "Wstd_cm/s",
+   "y": "FrictionSpeec_cm/s"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'UNR Sonic Anemometer Data Mosquito Fire Smoke Density Current' (Zenodo, doi 10.5281/zenodo.17372252): 'FrictionSpeec_cm/s' is linear in 'Wstd_cm/s' (R\u00b2 = 0.930 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17372252",
+   "held_out_r2": 0.9708,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5dc2ede09c73",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "56b4e46d73749178.csv",
+   "doi": "10.5281/zenodo.17372252",
+   "form": "linear",
+   "params": [
+    0.09315196810777804,
+    7.85220259342501e-05
+   ],
+   "seed": 743821806,
+   "x": "Uvar_(cm/s)^2",
+   "y": "TurbulentKE_(m/s)^2"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'UNR Sonic Anemometer Data Mosquito Fire Smoke Density Current' (Zenodo, doi 10.5281/zenodo.17372252): 'TurbulentKE_(m/s)^2' is linear in 'Uvar_(cm/s)^2' (R\u00b2 = 0.972 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17372252",
+   "held_out_r2": 0.9473,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4ce14c85b3e6",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "56b4e46d73749178.csv",
+   "doi": "10.5281/zenodo.17372252",
+   "form": "power law",
+   "params": [
+    -8.532582847989858,
+    0.9658559944400383
+   ],
+   "seed": 743821806,
+   "x": "Vvar_(cm/s)^2",
+   "y": "TurbulentKE_(m/s)^2"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'UNR Sonic Anemometer Data Mosquito Fire Smoke Density Current' (Zenodo, doi 10.5281/zenodo.17372252): 'TurbulentKE_(m/s)^2' follows a power law in 'Vvar_(cm/s)^2' (R\u00b2 = 0.946 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17372252",
+   "held_out_r2": 0.9504,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c0ac7791c0df",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "56b4e46d73749178.csv",
+   "doi": "10.5281/zenodo.17372252",
+   "form": "power law",
+   "params": [
+    -8.714789170833681,
+    1.0991358423978568
+   ],
+   "seed": 743821806,
+   "x": "Wvar_(cm/s)^2",
+   "y": "TurbulentKE_(m/s)^2"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'UNR Sonic Anemometer Data Mosquito Fire Smoke Density Current' (Zenodo, doi 10.5281/zenodo.17372252): 'TurbulentKE_(m/s)^2' follows a power law in 'Wvar_(cm/s)^2' (R\u00b2 = 0.950 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
  }
