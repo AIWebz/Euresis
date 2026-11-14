@@ -2950964,5 +2950964,815 @@
   "statement": "In 'Metagenomic profiles of <i>Porites lutea </i>associated bacterial communities from interti' (Figshare, doi 10.6084/m9.figshare.30511487.v4): 'Num genes' is linear in 'Length' (R\u00b2 = 0.917 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-c1df82605c94",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "-4*r**3/3 + r**2*v + r**2 + 1/3 >= 1/3*((-2*r**3/3 + r**2*v + 2/3)/(-2*r**3/3 + r**2*v + 2*r**2 + 2/3))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 4528",
+  "statement": "[economics: auction with a reserve price] seller's expected payoff \u2265 1/3 \u00d7 Welfare Efficiency with Seller Value Ratio [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (4.88e-09, 0.000119))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-36e606dd4a47",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "-2*r**3/3 + r**2*v + 2/3 >= 2/3*((-2*r**3/3 + r**2*v + 2/3)/(-2*r**3/3 + r**2*v + 2*r**2 + 2/3))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 4528",
+  "statement": "[economics: auction with a reserve price] expected total welfare \u2265 2/3 \u00d7 Welfare Efficiency with Seller Value Ratio [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (4.88e-09, 0.000119))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-68a0ccc1c332",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'expected total welfare'",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "v**3/3 + 2/3 >= 2/3*((-2*r**3/3 + r**2*v + 2/3)/(-2*r**3/3 + r**2*v + 2*r**2 + 2/3))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 4528",
+  "statement": "[economics: auction with a reserve price] welfare with the efficient reserve (r = v) \u2265 2/3 \u00d7 Welfare Efficiency with Seller Value Ratio [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (4.47e-09, 3.82e-06))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-db5d487eeeae",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "(2*r**3/3 - r**2 + 1/3)/(2*r**3/3 - r**2*(2*r**3/3 - r**2 + 1/3) - r**2 + 1/3) >= 1*((-2*r**3/3 + r**2*v + 2/3)/(-2*r**3/3 + r**2*v + 2*r**2 + 2/3))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 4528",
+  "statement": "[economics: auction with a reserve price] reserve price elasticity of bidder surplus [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Welfare Efficiency with Seller Value Ratio [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (7.8e-11, 0.883))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-f85aff781b17",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "(2*r**3/3 + r**2*v - r**2 + 1/3)/(1 - r**2) >= 1/3*((-2*r**3/3 + r**2*v + 2/3)/(-2*r**3/3 + r**2*v + 2*r**2 + 2/3))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 4528",
+  "statement": "[economics: auction with a reserve price] expected bidder surplus given reserve and seller's value [model-proposed; physical meaning unverified] \u2265 1/3 \u00d7 Welfare Efficiency with Seller Value Ratio [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (4.88e-09, 0.000119))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-d0347b3eaa14",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "(2*r**3/3 + r**2*v - r**2 + 1/3)/(r**2*v - r**2 + 1) >= 1/3*((-2*r**3/3 + r**2*v + 2/3)/(-2*r**3/3 + r**2*v + 2*r**2 + 2/3))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 4528",
+  "statement": "[economics: auction with a reserve price] Bidder Surplus Given Reserve and Seller Value Ratio [model-proposed; physical meaning unverified] \u2265 1/3 \u00d7 Welfare Efficiency with Seller Value Ratio [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (4.88e-09, 0.000119))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-6ce3f4345ed7",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "(r**2*v + 2/3)/(-2*r**3/3 + r**2*v + 2/3) >= 1*((-2*r**3/3 + r**2*v + 2/3)/(-2*r**3/3 + r**2*v + 2*r**2 + 2/3))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 4528",
+  "statement": "[economics: auction with a reserve price] Welfare Reserve Ratio [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Welfare Efficiency with Seller Value Ratio [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (3.93e-09, 0.863))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-8312fb2cafb8",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "(-2*r**3/3 + r**2*v + 2/3)/(4*r**3/3 - r**2 + 1/3) >= 2*((-2*r**3/3 + r**2*v + 2/3)/(-2*r**3/3 + r**2*v + 2*r**2 + 2/3))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 4528",
+  "statement": "[economics: auction with a reserve price] Welfare Reserve Efficiency Ratio [model-proposed; physical meaning unverified] \u2265 2 \u00d7 Welfare Efficiency with Seller Value Ratio [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (4.88e-09, 0.000119))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-ee296b3676d3",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "(-2*r**3/3 + r**2*v + 2/3)/(4*r**3/3 + r**2*v - r**2 + 1/3) >= 9/5*((-2*r**3/3 + r**2*v + 2/3)/(-2*r**3/3 + r**2*v + 2*r**2 + 2/3))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 4528",
+  "statement": "[economics: auction with a reserve price] Welfare Reserve Efficiency with Seller Value [model-proposed; physical meaning unverified] \u2265 9/5 \u00d7 Welfare Efficiency with Seller Value Ratio [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-70f4f9e91904",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'Bidder Surplus Given Reserve and Seller Value Ratio [model-proposed; physical meaning unverified]'",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "(2*r**3/3 + r**2*v - r**2 + 1/3)/(2*r**3/3 + r**2*v - 2*r**2 + 4/3) >= 1/4*((-2*r**3/3 + r**2*v + 2/3)/(-2*r**3/3 + r**2*v + 2*r**2 + 2/3))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 4528",
+  "statement": "[economics: auction with a reserve price] Bidder Surplus Reserve Ratio with Seller Value [model-proposed; physical meaning unverified] \u2265 1/4 \u00d7 Welfare Efficiency with Seller Value Ratio [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (4.88e-09, 0.000118))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-abb7cb7d4a5e",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "(r**2*v + 2/3)/(4*r**3/3 + 2*r**2*v - r**2 + 1) >= 2/3*((-2*r**3/3 + r**2*v + 2/3)/(-2*r**3/3 + r**2*v + 2*r**2 + 2/3))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 4528",
+  "statement": "[economics: auction with a reserve price] Welfare Reserve Efficiency with Seller Value and Reserve [model-proposed; physical meaning unverified] \u2265 2/3 \u00d7 Welfare Efficiency with Seller Value Ratio [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (7.8e-11, 0.883))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-ce7826fd173d",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'expected total welfare'",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "(-2*r**3/3 + r**2 + 1/3)/v >= 1/3*((-2*r**3/3 + r**2*v + 2/3)/(-2*r**3/3 + r**2*v + 2*r**2 + 2/3))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 4528",
+  "statement": "[economics: auction with a reserve price] Expected Revenue to Seller's Value Ratio [model-proposed; physical meaning unverified] \u2265 1/3 \u00d7 Welfare Efficiency with Seller Value Ratio [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (9.12e-05, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-bca43d25dfc5",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "e + m >= 1*(e**2*m**2/(m + 1)**2 + e**2)",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 4530",
+  "statement": "[physics: collision] Sum of Mass Ratio and Coefficient of Restitution [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Fraction of kinetic energy transferred to the target [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1.01e-13, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-169c1ff5c5c7",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "e + m >= 8/3*(e**2*m**2/(m + 1)**2 + e**2*m/(m + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 4530",
+  "statement": "[physics: collision] Sum of Mass Ratio and Coefficient of Restitution [model-proposed; physical meaning unverified] \u2265 8/3 \u00d7 Fraction of kinetic energy retained by the target [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-bbb0f135356a",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "e + m >= 1*(-e**2*m/(m + 1) - m*(1 - e**2)/(m + 1) - (1 - e**2)*(1 - m)/(m + 1) + 1)",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 4530",
+  "statement": "[physics: collision] Sum of Mass Ratio and Coefficient of Restitution [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Fraction of kinetic energy retained by the projectile relative to initial kineti [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (3.02e-15, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-61b57126e2d1",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "e + m >= 1*(e**2*m**2/(m + 1)**2 + e**2*m/(m + 1) - m*(1 - e**2)/(m + 1) - (1 - e**2)/(m + 1) + 1)",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 4530",
+  "statement": "[physics: collision] Sum of Mass Ratio and Coefficient of Restitution [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Fraction of kinetic energy retained by projectile relative to initial kinetic en [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (9.12e-05, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-06309eb95f25",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "e + m >= 4*(e**2*m/((m + 1)*((e**2 - 1)/(m + 1) + 1)))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 4530",
+  "statement": "[physics: collision] Sum of Mass Ratio and Coefficient of Restitution [model-proposed; physical meaning unverified] \u2265 4 \u00d7 Ratio of kinetic energy transferred to the target over initial kinetic energy [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-9545ed787e50",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'Ratio of kinetic energy transferred to the target over initial kinetic energy [model-proposed; physical meaning unverified]'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "e + m >= 4*(e**2*m**2/(e**2*m**2 + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 4530",
+  "statement": "[physics: collision] Sum of Mass Ratio and Coefficient of Restitution [model-proposed; physical meaning unverified] \u2265 4 \u00d7 Kinetic energy ratio of the target to the projectile after collision [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-e2141ace3f96",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'Fraction of kinetic energy retained by the target [model-proposed; physical meaning unverified]'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "e + m >= 2*(e**2*m**2/((m + 1)**2*(-e**2*m**2/(m + 1)**2 - e**2*m/(m + 1) - (1 - e**2)/(m + 1) + 1)))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 4530",
+  "statement": "[physics: collision] Sum of Mass Ratio and Coefficient of Restitution [model-proposed; physical meaning unverified] \u2265 2 \u00d7 Fraction of Kinetic Energy Retained by the Target Relative to the System [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-399f8bf98b72",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'Fraction of kinetic energy retained by the target [model-proposed; physical meaning unverified]'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "e + m >= 4*(e**2*m**2/((m + 1)**2*(-2*e**2*m**2/(m + 1)**2 - 2*e**2*m/(m + 1) + 2)))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 4530",
+  "statement": "[physics: collision] Sum of Mass Ratio and Coefficient of Restitution [model-proposed; physical meaning unverified] \u2265 4 \u00d7 Ratio of Kinetic Energy of Target to Kinetic Energy of System [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-6bc26154d7cc",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'Ratio of kinetic energy transferred to the target over initial kinetic energy [model-proposed; physical meaning unverified]'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "e + m >= 5/2*(e**2*m**2/(e**2*m**2 - e**2*m**2/(m + 1)**2 - e**2*m/(m + 1) + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 4530",
+  "statement": "[physics: collision] Sum of Mass Ratio and Coefficient of Restitution [model-proposed; physical meaning unverified] \u2265 5/2 \u00d7 Fraction of Kinetic Energy Retained by the Target Relative to the Projectile [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-955f08b6ec56",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'Ratio of kinetic energy transferred to the target over initial kinetic energy [model-proposed; physical meaning unverified]'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "e + m >= 10/3*((e**2*m**2/(m + 1)**2 + e**2*m/(m + 1))/(-e**2*m**2/(m + 1)**2 - e**2*m/(m + 1) - (1 - e**2)/(m + 1) + 2))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 4530",
+  "statement": "[physics: collision] Sum of Mass Ratio and Coefficient of Restitution [model-proposed; physical meaning unverified] \u2265 10/3 \u00d7 Kinetic Energy Ratio of the Target to the System After Collision [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-896b908a8e2e",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "e + m >= 1*(m**2*(1 - e**2)/(m + 1)**2 - m*(1 - e**2)/(m + 1) - (1 - e**2)/(m + 1) + 1)",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 4530",
+  "statement": "[physics: collision] Sum of Mass Ratio and Coefficient of Restitution [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Fraction of kinetic energy retained by projectile relative to initial [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1.01e-13, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-a2c30921a81c",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'Ratio of kinetic energy transferred to the target over initial kinetic energy [model-proposed; physical meaning unverified]'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "e + m >= 5*(e**2*m**2/(e**2*m**2 + e**2*m/(m + 1) + (1 - e**2)/(m + 1) + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 4530",
+  "statement": "[physics: collision] Sum of Mass Ratio and Coefficient of Restitution [model-proposed; physical meaning unverified] \u2265 5 \u00d7 Fraction of kinetic energy retained by the target relative to the system [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-962928d4b916",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "(-2*r**3/3 + r**2*v + 2/3)/(-2*r**3/3 + r**2*v + r**2 + 2/3) >= 1*((-2*r**3/3 + r**2*v + 2/3)/(-2*r**3/3 + r**2*v + 2*r**2 + 2/3))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 4536",
+  "statement": "[economics: auction with a reserve price] Welfare Reserve Elasticity Ratio [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Welfare Efficiency with Seller Value Ratio [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (7.8e-11, 0.883))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-1f1e09a138dc",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'Welfare Reserve Efficiency with Seller Value [model-proposed; physical meaning unverified]'",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "(-2*r**3/3 + r**2*v + 2/3)/(2*r**3/3 + r**2*v) >= 9/5*((-2*r**3/3 + r**2*v + 2/3)/(-2*r**3/3 + r**2*v + 2*r**2 + 2/3))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 4536",
+  "statement": "[economics: auction with a reserve price] Welfare Reserve Elasticity with Seller Value [model-proposed; physical meaning unverified] \u2265 9/5 \u00d7 Welfare Efficiency with Seller Value Ratio [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-e2d479954782",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "(-2*r**3/3 + r**2*v/3 + 2/3)/(-2*r**3/3 + 4*r**2*v/3 + 2/3) >= 3/4*((-2*r**3/3 + r**2*v + 2/3)/(-2*r**3/3 + r**2*v + 2*r**2 + 2/3))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 4536",
+  "statement": "[economics: auction with a reserve price] Welfare Efficiency with Seller Value [model-proposed; physical meaning unverified] \u2265 3/4 \u00d7 Welfare Efficiency with Seller Value Ratio [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-aae1e3bf7afd",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "(-2*r**3/3 + r**2*v + 2/3)/(-2*r**3/3 + r**2*v + 2*r**2 + 2/3) >= 1/2*(-4*r**3/3 + r**2 + 1/3)",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 4536",
+  "statement": "[economics: auction with a reserve price] Welfare Efficiency with Seller Value Ratio [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 expected revenue   on r < 1, v < 1 (tight only at the edge of the domain, near (1, 3.5e-17))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-0c18b18913fb",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "(-2*r**3/3 + r**2*v + 2/3)/(-2*r**3/3 + r**2*v + 2*r**2 + 2/3) >= 1/3*(-4*r**3/3 + r**2*v + r**2 + 1/3)",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 4536",
+  "statement": "[economics: auction with a reserve price] Welfare Efficiency with Seller Value Ratio [model-proposed; physical meaning unverified] \u2265 1/3 \u00d7 seller's expected payoff   on r < 1, v < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-fc34772b744d",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "(-2*r**3/3 + r**2*v + 2/3)/(-2*r**3/3 + r**2*v + 2*r**2 + 2/3) >= 1/3*(-2*r**3/3 + r**2*v + 2/3)",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 4536",
+  "statement": "[economics: auction with a reserve price] Welfare Efficiency with Seller Value Ratio [model-proposed; physical meaning unverified] \u2265 1/3 \u00d7 expected total welfare   on r < 1, v < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]
