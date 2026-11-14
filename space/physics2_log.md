@@ -4714,3 +4714,5 @@
 - 2026-11-14 04:56 round 4328: auction with a reserve price
 - 2026-11-14 04:57 round 4329: two-body decay
 - 2026-11-14 04:59 round 4330: collision
+- 2026-11-14 05:10 segment start (budget 30 min; model: Qwen3-8B; 5 discoveries so far)
+- 2026-11-14 05:10 round 4330: collision
