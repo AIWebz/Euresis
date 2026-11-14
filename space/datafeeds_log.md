@@ -3569,3 +3569,6 @@
 - 2026-11-14 10:01 FINDING (confirmed on held-out rows): In 'High-resolution tropical rain-forest canopy climate data' (Zenodo, doi 10.5061/dryad.pc866t1qd): 'PAR_Tot_Tot' is linear in 'PAR_Den_Avg' (R² = 0.975 on the discovery half); held-out R² = 0.979 [emp-5eca637d61a3]
 - 2026-11-14 10:07 data feeds: 21909 datasets analysed so far, 3198 confirmed findings
 - 2026-11-14 10:44 data feeds: online
+- 2026-11-14 10:46 FINDING (confirmed on held-out rows): In 'Overlooked costs of coloniality: Mislaid eggs and the double Incubation of separate nests' (Zenodo, doi 10.5061/dryad.8sf7m0cr5): 'Breeding_Females' is linear in 'Total_Birds_Captured' (R² = 0.999 on the discovery half); held-out R² = 0.975 [emp-8b5f2cbd3ecb]
+- 2026-11-14 10:46 FINDING (confirmed on held-out rows): In 'Data from: Size-related scaling of tree form and function in a mixed-age forest' (Zenodo, doi 10.5061/dryad.6nc8c): 'sapwood.area.cm2' follows a power law in 'DBH.mm.2008' (R² = 0.962 on the discovery half); held-out R² = 0.920 [emp-41161bde963a]
+- 2026-11-14 10:47 data feeds: 21953 datasets analysed so far, 3200 confirmed findings

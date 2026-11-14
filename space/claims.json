@@ -2921312,5 +2921312,194 @@
   "statement": "Octal game 0.0032021 is completely solved: its Grundy values are periodic with pre-period 0 and period 9 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.8sf7m0cr5",
+   "held_out_r2": 0.8456,
+   "held_out_rows": 56,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-0c6259e25c6a",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "43e5d4df42dcd162.csv",
+   "doi": "10.5061/dryad.8sf7m0cr5",
+   "form": "power law",
+   "params": [
+    -0.2721031100167063,
+    0.9276363691905687
+   ],
+   "seed": 1036920481,
+   "x": "Total_Nests",
+   "y": "Total_Birds_Captured"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Overlooked costs of coloniality: Mislaid eggs and the double Incubation of separate nests' (Zenodo, doi 10.5061/dryad.8sf7m0cr5): 'Total_Birds_Captured' follows a power law in 'Total_Nests' (R\u00b2 = 0.931 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.8sf7m0cr5",
+   "held_out_r2": 0.8449,
+   "held_out_rows": 56,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5ae1447727ee",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "43e5d4df42dcd162.csv",
+   "doi": "10.5061/dryad.8sf7m0cr5",
+   "form": "power law",
+   "params": [
+    -0.9270067018268642,
+    0.9169111120245061
+   ],
+   "seed": 1036920481,
+   "x": "Total_Nests",
+   "y": "Breeding_Females"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Overlooked costs of coloniality: Mislaid eggs and the double Incubation of separate nests' (Zenodo, doi 10.5061/dryad.8sf7m0cr5): 'Breeding_Females' follows a power law in 'Total_Nests' (R\u00b2 = 0.929 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.8sf7m0cr5",
+   "held_out_r2": 0.9746,
+   "held_out_rows": 56,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-8b5f2cbd3ecb",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "43e5d4df42dcd162.csv",
+   "doi": "10.5061/dryad.8sf7m0cr5",
+   "form": "linear",
+   "params": [
+    0.051446432445230346,
+    0.4955550010137717
+   ],
+   "seed": 1036920481,
+   "x": "Total_Birds_Captured",
+   "y": "Breeding_Females"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Overlooked costs of coloniality: Mislaid eggs and the double Incubation of separate nests' (Zenodo, doi 10.5061/dryad.8sf7m0cr5): 'Breeding_Females' is linear in 'Total_Birds_Captured' (R\u00b2 = 0.999 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.6nc8c",
+   "held_out_r2": 0.9202,
+   "held_out_rows": 33,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-41161bde963a",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "a59adafd23c5d284.csv",
+   "doi": "10.5061/dryad.6nc8c",
+   "form": "power law",
+   "params": [
+    -3.3912513681276217,
+    1.6246249138608975
+   ],
+   "seed": 1963023841,
+   "x": "DBH.mm.2008",
+   "y": "sapwood.area.cm2"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Size-related scaling of tree form and function in a mixed-age forest' (Zenodo, doi 10.5061/dryad.6nc8c): 'sapwood.area.cm2' follows a power law in 'DBH.mm.2008' (R\u00b2 = 0.962 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.prr4xgxp2",
+   "held_out_r2": 0.9175,
+   "held_out_rows": 146,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a234e1ba08e6",
+  "kind": "empirical",
+  "novelty": "KNOWN: seawater carbonate chemistry (CO2SYS-type calculations) \u2014 not a discovery",
+  "payload": {
+   "dataset": "bf03c7dcdb0d252f.csv",
+   "doi": "10.5061/dryad.prr4xgxp2",
+   "form": "exponential",
+   "params": [
+    4.291529726946892,
+    0.06803536440265692
+   ],
+   "seed": 2021961199,
+   "x": "Photo",
+   "y": "CO2R"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Investigating gas-exchange performance between wheat landraces and commercial varieties' (Zenodo, doi 10.5061/dryad.prr4xgxp2): 'CO2R' grows exponentially in 'Photo' (R\u00b2 = 0.923 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.prr4xgxp2",
+   "held_out_r2": 0.9188,
+   "held_out_rows": 146,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-1bc7f056a40e",
+  "kind": "empirical",
+  "novelty": "KNOWN: seawater carbonate chemistry (CO2SYS-type calculations) \u2014 not a discovery",
+  "payload": {
+   "dataset": "bf03c7dcdb0d252f.csv",
+   "doi": "10.5061/dryad.prr4xgxp2",
+   "form": "exponential",
+   "params": [
+    4.249693012115637,
+    0.0677312436658901
+   ],
+   "seed": 2021961199,
+   "x": "Photo",
+   "y": "CO2S"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Investigating gas-exchange performance between wheat landraces and commercial varieties' (Zenodo, doi 10.5061/dryad.prr4xgxp2): 'CO2S' grows exponentially in 'Photo' (R\u00b2 = 0.924 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3992553",
+   "held_out_r2": 0.9705,
+   "held_out_rows": 50,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5f5b2da7478c",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "3b9ec9e82474e4e6.csv",
+   "doi": "10.5281/zenodo.3992553",
+   "form": "exponential",
+   "params": [
+    4.808300744129944,
+    -0.08301470084851473
+   ],
+   "seed": 3929865518,
+   "x": "Delta_L",
+   "y": "active_tension"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'PLOS Comput. Biol. \"Biophysically detailed mathematical models of multiscale cardiac activ' (Zenodo, doi 10.5281/zenodo.3992553): 'active_tension' grows exponentially in 'Delta_L' (R\u00b2 = 0.983 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
