@@ -2908893,5 +2908893,32 @@
   "statement": "Octal game 0.0020332 is completely solved: its Grundy values are periodic with pre-period 1 and period 10 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22918207",
+   "held_out_r2": 0.9668,
+   "held_out_rows": 750,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-23f567e40cce",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "0637fae13a549af8.csv",
+   "doi": "10.5281/zenodo.22918207",
+   "form": "linear",
+   "params": [
+    0.0003531570542890488,
+    2.3281755905633994
+   ],
+   "seed": 3976518972,
+   "x": "knockons_He_per_A_ion",
+   "y": "vacancies_C_per_A_ion"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'SRIM Monte Carlo vacancy profiles for helium-implanted NV layers in diamond (g-layers)' (Zenodo, doi 10.5281/zenodo.22918207): 'vacancies_C_per_A_ion' is linear in 'knockons_He_per_A_ion' (R\u00b2 = 0.970 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
