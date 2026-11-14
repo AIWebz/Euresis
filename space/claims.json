@@ -2961694,5 +2961694,177 @@
   "statement": "[economics: auction with a reserve price] Welfare Efficiency with Seller Value Ratio [model-proposed; physical meaning unverified] \u2265 2 \u00d7 Bidder Surplus Efficiency Ratio [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (1.39e-19, 0.0018))",
   "status": "proved",
   "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-b39d2779a12b",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "claim": "sqrt(-(a + b)**2 + (-a**2 + b**2 + 1)**2 + (a**2 - b**2 + 1)**2 + 1) >= 2*(a**2/2 - b**2/2 + 1/2)",
+   "symbols": [
+    "a",
+    "b"
+   ]
+  },
+  "source": "physics_discover2 round 4553",
+  "statement": "[physics: two-body decay] Center of Mass Energy [model-proposed; physical meaning unverified] \u2265 2 \u00d7 energy of product 1 / (Mc\u00b2)   on a < 1, b < 1, a + b < 1 (tight only at the edge of the domain, near (1, 1.1e-08))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-d1c82619a644",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "claim": "sqrt(-(a + b)**2 + (-a**2 + b**2 + 1)**2 + (a**2 - b**2 + 1)**2 + 1) >= 2*(-a**2/2 + b**2/2 + 1/2)",
+   "symbols": [
+    "a",
+    "b"
+   ]
+  },
+  "source": "physics_discover2 round 4553",
+  "statement": "[physics: two-body decay] Center of Mass Energy [model-proposed; physical meaning unverified] \u2265 2 \u00d7 energy of product 2 / (Mc\u00b2)   on a < 1, b < 1, a + b < 1 (tight only at the edge of the domain, near (1.21e-08, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-83610bb7ad0d",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'energy of product 1 / (Mc\u00b2)'",
+  "payload": {
+   "assumptions": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "claim": "sqrt(-(a + b)**2 + (-a**2 + b**2 + 1)**2 + (a**2 - b**2 + 1)**2 + 1) >= 1*(sqrt((1 - (a + b)**2)*((a - b)**2 - 1)/4 + (a**2 - b**2 + 1)**2))",
+   "symbols": [
+    "a",
+    "b"
+   ]
+  },
+  "source": "physics_discover2 round 4553",
+  "statement": "[physics: two-body decay] Center of Mass Energy [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Invariant mass of product 1 [model-proposed; physical meaning unverified]   on a < 1, b < 1, a + b < 1 (tight only at the edge of the domain, near (1, 1.1e-08))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-74ef8755a065",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'energy of product 2 / (Mc\u00b2)'",
+  "payload": {
+   "assumptions": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "claim": "sqrt(-(a + b)**2 + (-a**2 + b**2 + 1)**2 + (a**2 - b**2 + 1)**2 + 1) >= 1*(sqrt((1 - (a + b)**2)*((a - b)**2 - 1)/4 + (-a**2 + b**2 + 1)**2))",
+   "symbols": [
+    "a",
+    "b"
+   ]
+  },
+  "source": "physics_discover2 round 4553",
+  "statement": "[physics: two-body decay] Center of Mass Energy [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Invariant mass of product 2 [model-proposed; physical meaning unverified]   on a < 1, b < 1, a + b < 1 (tight only at the edge of the domain, near (1.21e-08, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-2964daeb27ae",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "claim": "sqrt(-(a + b)**2 + (-a**2 + b**2 + 1)**2 + (a**2 - b**2 + 1)**2 + 1) >= 1*(sqrt((1 - (a - b)**2)*(1 - (a + b)**2) + (-a**2 + b**2 + 1)**2 + (a**2 - b**2 + 1)**2))",
+   "symbols": [
+    "a",
+    "b"
+   ]
+  },
+  "source": "physics_discover2 round 4553",
+  "statement": "[physics: two-body decay] Center of Mass Energy [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Boost factor of the system [model-proposed; physical meaning unverified]   on a < 1, b < 1, a + b < 1 (tight only at the edge of the domain, near (0.0001, 0.0001))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-1089d5a57efa",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "L*p/(-p*sqrt(1 - L) + p + sqrt(1 - L) + sqrt(-L*p + 1) - 1) >= 1*(L*p/(sqrt(1 - L) - sqrt(-L*p + 1) + 1))",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 4559",
+  "statement": "[economics: insurance and risk] Insurance Risk Sensitivity Ratio [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Risk Sensitivity Index [model-proposed; physical meaning unverified]   on p < 1, L < 1 (tight only at the edge of the domain, near (0.000113, 4.79e-13))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]
