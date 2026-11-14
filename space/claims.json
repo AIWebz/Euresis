@@ -2991846,5 +2991846,248 @@
   "statement": "[economics: Cournot duopoly] Price Deviation Ratio [model-proposed; physical meaning unverified] \u2265 8/7 \u00d7 output of firm 1   on c1 < 1/2, c2 < 1/2 (tight only at the edge of the domain, near (2.48e-15, 0.5))",
   "status": "proved",
   "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-e5b8abaca9ef",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "claim": "(c1/3 + c2/3 - (1 - c1)**2/4 + 1/3)/(c1/3 + c2/3 - (1 - c2)**2/4 + 1/3) >= 8/7*(c1/3 + c2/3 + 1/3)",
+   "symbols": [
+    "c1",
+    "c2"
+   ]
+  },
+  "source": "physics_discover2 round 4646",
+  "statement": "[economics: Cournot duopoly] Price Deviation Ratio [model-proposed; physical meaning unverified] \u2265 8/7 \u00d7 market price   on c1 < 1/2, c2 < 1/2 (tight only at the edge of the domain, near (5.62e-16, 0.5))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-1930cc6c54f3",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'output of firm 1'",
+  "payload": {
+   "assumptions": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "claim": "(c1/3 + c2/3 - (1 - c1)**2/4 + 1/3)/(c1/3 + c2/3 - (1 - c2)**2/4 + 1/3) >= 16/7*((-2*c1 + c2 + 1)**2/9)",
+   "symbols": [
+    "c1",
+    "c2"
+   ]
+  },
+  "source": "physics_discover2 round 4646",
+  "statement": "[economics: Cournot duopoly] Price Deviation Ratio [model-proposed; physical meaning unverified] \u2265 16/7 \u00d7 profit of firm 1   on c1 < 1/2, c2 < 1/2 (tight only at the edge of the domain, near (7.49e-16, 0.5))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-19c3425ab5ca",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "claim": "(c1/3 + c2/3 - (1 - c1)**2/4 + 1/3)/(c1/3 + c2/3 - (1 - c2)**2/4 + 1/3) >= 7*((c1 - 2*c2 + 1)**2/9)",
+   "symbols": [
+    "c1",
+    "c2"
+   ]
+  },
+  "source": "physics_discover2 round 4646",
+  "statement": "[economics: Cournot duopoly] Price Deviation Ratio [model-proposed; physical meaning unverified] \u2265 7 \u00d7 profit of firm 2   on c1 < 1/2, c2 < 1/2 (tight only at the edge of the domain, near (0.5, 1.53e-14))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-8f887c48dcc8",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "claim": "(c1/3 + c2/3 - (1 - c1)**2/4 + 1/3)/(c1/3 + c2/3 - (1 - c2)**2/4 + 1/3) >= 16/7*((-2*c1 + c2 + 1)**2/9 + (c1 - 2*c2 + 1)**2/9)",
+   "symbols": [
+    "c1",
+    "c2"
+   ]
+  },
+  "source": "physics_discover2 round 4646",
+  "statement": "[economics: Cournot duopoly] Price Deviation Ratio [model-proposed; physical meaning unverified] \u2265 16/7 \u00d7 total industry profit   on c1 < 1/2, c2 < 1/2 (tight only at the edge of the domain, near (7.49e-16, 0.5))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-f6678ebd6f51",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "claim": "(c1/3 + c2/3 - (1 - c1)**2/4 + 1/3)/(c1/3 + c2/3 - (1 - c2)**2/4 + 1/3) >= 16/7*((1 - c1)**2/4)",
+   "symbols": [
+    "c1",
+    "c2"
+   ]
+  },
+  "source": "physics_discover2 round 4646",
+  "statement": "[economics: Cournot duopoly] Price Deviation Ratio [model-proposed; physical meaning unverified] \u2265 16/7 \u00d7 firm 1's profit as a monopolist   on c1 < 1/2, c2 < 1/2 (tight only at the edge of the domain, near (3.25e-17, 0.5))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-d81ac0560033",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'market price'",
+  "payload": {
+   "assumptions": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "claim": "(c1/3 + c2/3 - (1 - c1)**2/4 + 1/3)/(c1/3 + c2/3 - (1 - c2)**2/4 + 1/3) >= 20/63*(((-2*c1 + c2 + 1)**2 + (c1 - 2*c2 + 1)**2)/((1 - c1)**2 + (1 - c2)**2))",
+   "symbols": [
+    "c1",
+    "c2"
+   ]
+  },
+  "source": "physics_discover2 round 4646",
+  "statement": "[economics: Cournot duopoly] Price Deviation Ratio [model-proposed; physical meaning unverified] \u2265 20/63 \u00d7 Hirshleifer Index [model-proposed; physical meaning unverified]   on c1 < 1/2, c2 < 1/2 (tight only at the edge of the domain, near (2.25e-15, 0.5))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-968a0fe4bce6",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "claim": "(c1/3 + c2/3 - (1 - c1)**2/4 + 1/3)/(c1/3 + c2/3 - (1 - c2)**2/4 + 1/3) >= 1/12*((c1/3 + c2/3 - (1 - c1)**2/4 + 1/3)/(c1/3 + c2/3 - (1 - c2)**2/4 + 1/3)**2)",
+   "symbols": [
+    "c1",
+    "c2"
+   ]
+  },
+  "source": "physics_discover2 round 4646",
+  "statement": "[economics: Cournot duopoly] Price Deviation Ratio [model-proposed; physical meaning unverified] \u2265 1/12 \u00d7 Price Deviation Index [model-proposed; physical meaning unverified]   on c1 < 1/2, c2 < 1/2 (tight only at the edge of the domain, near (2.25e-14, 1.35e-15))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-48897301a731",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "claim": "(c1/3 + c2/3 - (1 - c1)**2/4 + 1/3)/(c1/3 + c2/3 - (1 - c2)**2/4 + 1/3) >= 72/25*((c1/3 + 5*c2/6 - 1/6)**2 + (5*c1/6 + c2/3 - 1/6)**2)",
+   "symbols": [
+    "c1",
+    "c2"
+   ]
+  },
+  "source": "physics_discover2 round 4646",
+  "statement": "[economics: Cournot duopoly] Price Deviation Ratio [model-proposed; physical meaning unverified] \u2265 72/25 \u00d7 Market Price Variance [model-proposed; physical meaning unverified]   on c1 < 1/2, c2 < 1/2 (tight only at the edge of the domain, near (0.5, 0.5))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-e953b9bedd0a",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "claim": "(c1/3 + c2/3 - (1 - c1)**2/4 + 1/3)/(c1/3 + c2/3 - (1 - c2)**2/4 + 1/3) >= 4/7*(sqrt((-2*c1 + c2 + 1)**2 + (c1 - 2*c2 + 1)**2)/((1 - c1)**2 + (1 - c2)**2 + (-c1 - c2 + 1)**2))",
+   "symbols": [
+    "c1",
+    "c2"
+   ]
+  },
+  "source": "physics_discover2 round 4646",
+  "statement": "[economics: Cournot duopoly] Price Deviation Ratio [model-proposed; physical meaning unverified] \u2265 4/7 \u00d7 Total Welfare Efficiency Index [model-proposed; physical meaning unverified]   on c1 < 1/2, c2 < 1/2 (tight only at the edge of the domain, near (1.36e-14, 0.5))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]
