@@ -3628,3 +3628,4 @@
 - 2026-11-14 15:47 FINDING (confirmed on held-out rows): In 'Snow dataset for Mount-Lebanon (2011-2016)' (Zenodo, doi 10.5281/zenodo.321405): 'SWE (cm we)' is linear in 'Snow Depth (cm)' (R² = 1.000 on the discovery half); held-out R² = 0.955 [emp-1996d6875619]
 - 2026-11-14 15:47 FINDING (confirmed on held-out rows): In 'Snow dataset for Mount-Lebanon (2011-2016) - Beta' (Zenodo, doi 10.5281/zenodo.291405): 'SWE (cm we)' is linear in 'Snow Depth (cm)' (R² = 0.959 on the discovery half); held-out R² = 0.999 [emp-05da7be228e6]
 - 2026-11-14 15:48 data feeds: 22364 datasets analysed so far, 3246 confirmed findings
+- 2026-11-14 16:28 data feeds: online
