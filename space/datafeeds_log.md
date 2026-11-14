@@ -3357,3 +3357,4 @@
 - 2026-11-14 02:51 FINDING (confirmed on held-out rows): In 'Data from the paper "Productive restoration planning in the irrigated drylands: Soil salin' (Zenodo, doi 10.5281/zenodo.18354038): 'CRSI_B8' follows a power law in 'B2' (R² = 0.940 on the discovery half); held-out R² = 0.932 [emp-c993cf91f6df]
 - 2026-11-14 02:51 FINDING (confirmed on held-out rows): In 'Data from the paper "Productive restoration planning in the irrigated drylands: Soil salin' (Zenodo, doi 10.5281/zenodo.18354038): 'CRSI_B8' follows a power law in 'B3' (R² = 0.916 on the discovery half); held-out R² = 0.902 [emp-22e280395efa]
 - 2026-11-14 02:51 data feeds: 21028 datasets analysed so far, 3003 confirmed findings
+- 2026-11-14 03:53 data feeds: online
