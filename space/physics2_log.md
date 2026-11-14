@@ -4925,3 +4925,9 @@
 - 2026-11-14 13:59 round 4519: insurance and risk
 - 2026-11-14 14:01 round 4520: auction with a reserve price
 - 2026-11-14 14:02 round 4521: two-body decay
+- 2026-11-14 14:04 round 4522: collision
+- 2026-11-14 14:07 round 4523: driven oscillator
+- 2026-11-14 14:09 round 4524: velocity addition
+- 2026-11-14 14:10 round 4525: Compton scattering
+- 2026-11-14 14:11 round 4526: Cournot duopoly
+- 2026-11-14 14:12 segment end: 4526 rounds, 5 discoveries, 2 known laws rediscovered
