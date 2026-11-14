@@ -3738,3 +3738,4 @@
 - 2026-11-14 21:24 FINDING (confirmed on held-out rows): In 'Data from: Lake water depth and nutrient gradients mediate aquatic plant distribution via ' (Zenodo, doi 10.5281/zenodo.19325678): 'Phylogenetic_diversity' follows a power law in 'nbsp' (R² = 0.909 on the discovery half); held-out R² = 0.892 [emp-e509f2301dab]
 - 2026-11-14 21:24 FINDING (confirmed on held-out rows): In 'Data and R code for: Temperature-induced multispecies cohort effects in sympatric snakes' (Zenodo, doi 10.5061/dryad.tmpg4f50h): 'Mass' follows a power law in 'SVL' (R² = 0.956 on the discovery half); held-out R² = 0.955 [emp-cf0e3dfc2be6]
 - 2026-11-14 21:24 data feeds: 22991 datasets analysed so far, 3344 confirmed findings
+- 2026-11-14 22:12 data feeds: online
