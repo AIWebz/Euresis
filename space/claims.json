@@ -2950723,10 +2950723,15 @@
   "verifier": "guy-smith-periodicity"
  },
  {
-  "evidence": null,
+  "evidence": {
+   "doi": "10.5061/dryad.b5mkkwhj9",
+   "held_out_r2": 0.9731,
+   "held_out_rows": 359,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
   "id": "emp-b50a1259e323",
   "kind": "empirical",
-  "novelty": "not checked",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
   "payload": {
    "dataset": "b229428e5c33080e.csv",
    "doi": "10.5061/dryad.b5mkkwhj9",
@@ -2950741,7 +2950746,223 @@
   },
   "source": "datafeeds.py",
   "statement": "In 'Functional traits\u2014not nativeness\u2014shape the effects of large mammalian herbivores on plant ' (Zenodo, doi 10.5061/dryad.b5mkkwhj9): 'measure_area_m2' follows a power law in 'max_measure_length_m' (R\u00b2 = 0.977 on the discovery half)",
-  "status": "candidate",
-  "verifier": null
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.b5mkkwhj9",
+   "held_out_r2": 0.9754,
+   "held_out_rows": 1452,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-efa121d45424",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "5f56c48e6b672611.csv",
+   "doi": "10.5061/dryad.b5mkkwhj9",
+   "form": "power law",
+   "params": [
+    0.013435623053939874,
+    0.8916175238586729
+   ],
+   "seed": 286479725,
+   "x": "total_no_species",
+   "y": "total_no_fg"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Functional traits\u2014not nativeness\u2014shape the effects of large mammalian herbivores on plant ' (Zenodo, doi 10.5061/dryad.b5mkkwhj9): 'total_no_fg' follows a power law in 'total_no_species' (R\u00b2 = 0.977 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.19504820",
+   "held_out_r2": 0.9698,
+   "held_out_rows": 166,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-8819872b38bf",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "cd67423a12711a6d.csv",
+   "doi": "10.5281/zenodo.19504820",
+   "form": "power law",
+   "params": [
+    -29.357260788987247,
+    14.705288663228135
+   ],
+   "seed": 272168954,
+   "x": "pHT",
+   "y": "Ar in situ"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data files for manuscript \"Present and future seawater CO2 chemistry across multiple coral' (Zenodo, doi 10.5281/zenodo.19504820): 'Ar in situ' follows a power law in 'pHT' (R\u00b2 = 0.976 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.19504820",
+   "held_out_r2": 0.9877,
+   "held_out_rows": 166,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-0eb9562b7044",
+  "kind": "empirical",
+  "novelty": "KNOWN: seawater carbonate chemistry (CO2SYS-type calculations) \u2014 not a discovery",
+  "payload": {
+   "dataset": "cd67423a12711a6d.csv",
+   "doi": "10.5281/zenodo.19504820",
+   "form": "exponential",
+   "params": [
+    29.865216111888532,
+    -2.9773137229021
+   ],
+   "seed": 272168954,
+   "x": "pHT",
+   "y": "pCO2"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data files for manuscript \"Present and future seawater CO2 chemistry across multiple coral' (Zenodo, doi 10.5281/zenodo.19504820): 'pCO2' grows exponentially in 'pHT' (R\u00b2 = 0.992 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.19504820",
+   "held_out_r2": 0.9285,
+   "held_out_rows": 166,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a5ca215a54df",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "cd67423a12711a6d.csv",
+   "doi": "10.5281/zenodo.19504820",
+   "form": "exponential",
+   "params": [
+    7.036792263945994,
+    -0.28263825094912265
+   ],
+   "seed": 272168954,
+   "x": "Ar in situ",
+   "y": "pCO2"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data files for manuscript \"Present and future seawater CO2 chemistry across multiple coral' (Zenodo, doi 10.5281/zenodo.19504820): 'pCO2' grows exponentially in 'Ar in situ' (R\u00b2 = 0.947 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.6084/m9.figshare.32725416.v1",
+   "held_out_r2": 0.9132,
+   "held_out_rows": 1400,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d9310e5f66d6",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "4a6e5cd55bde6200.csv",
+   "doi": "10.6084/m9.figshare.32725416.v1",
+   "form": "linear",
+   "params": [
+    -20.508957587069844,
+    0.8430019508325054
+   ],
+   "seed": 2552876035,
+   "x": "MI",
+   "y": "OM"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from \"'Uphill' spatial subsidies at ocean-reef boundaries globally\"' (Figshare, doi 10.6084/m9.figshare.32725416.v1): 'OM' is linear in 'MI' (R\u00b2 = 0.923 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.6084/m9.figshare.32725416.v1",
+   "held_out_r2": 0.949,
+   "held_out_rows": 1400,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-7c4f9076ba91",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "4a6e5cd55bde6200.csv",
+   "doi": "10.6084/m9.figshare.32725416.v1",
+   "form": "linear",
+   "params": [
+    -22.228313735775913,
+    1.2048008476671035
+   ],
+   "seed": 2552876035,
+   "x": "MI",
+   "y": "PK"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from \"'Uphill' spatial subsidies at ocean-reef boundaries globally\"' (Figshare, doi 10.6084/m9.figshare.32725416.v1): 'PK' is linear in 'MI' (R\u00b2 = 0.952 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.6084/m9.figshare.32725416.v1",
+   "held_out_r2": 0.9798,
+   "held_out_rows": 1400,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-dae4c9ba13c8",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "4a6e5cd55bde6200.csv",
+   "doi": "10.6084/m9.figshare.32725416.v1",
+   "form": "linear",
+   "params": [
+    9.06760669241314,
+    1.3938791792820606
+   ],
+   "seed": 2552876035,
+   "x": "OM",
+   "y": "PK"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from \"'Uphill' spatial subsidies at ocean-reef boundaries globally\"' (Figshare, doi 10.6084/m9.figshare.32725416.v1): 'PK' is linear in 'OM' (R\u00b2 = 0.981 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.6084/m9.figshare.30511487.v4",
+   "held_out_r2": 0.8964,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d6c8159896e1",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "ffd195a3e20102de.csv",
+   "doi": "10.6084/m9.figshare.30511487.v4",
+   "form": "linear",
+   "params": [
+    0.6125560155511589,
+    0.0008604200047959349
+   ],
+   "seed": 2160180247,
+   "x": "Length",
+   "y": "Num genes"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Metagenomic profiles of <i>Porites lutea </i>associated bacterial communities from interti' (Figshare, doi 10.6084/m9.figshare.30511487.v4): 'Num genes' is linear in 'Length' (R\u00b2 = 0.917 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
