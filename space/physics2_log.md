@@ -4730,3 +4730,11 @@
 - 2026-11-14 05:27 round 4342: Cournot duopoly
 - 2026-11-14 05:28 round 4343: insurance and risk
 - 2026-11-14 05:30 round 4344: auction with a reserve price
+- 2026-11-14 05:32 round 4345: two-body decay
+- 2026-11-14 05:34 round 4346: collision
+- 2026-11-14 05:35 round 4347: driven oscillator
+- 2026-11-14 05:36 round 4348: velocity addition
+- 2026-11-14 05:37 round 4349: Compton scattering
+- 2026-11-14 05:38 round 4350: Cournot duopoly
+- 2026-11-14 05:39 round 4351: insurance and risk
+- 2026-11-14 05:40 segment end: 4351 rounds, 5 discoveries, 2 known laws rediscovered
