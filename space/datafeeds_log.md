@@ -3567,3 +3567,4 @@
 - 2026-11-14 10:00 FINDING (confirmed on held-out rows): In 'High-resolution tropical rain-forest canopy climate data' (Zenodo, doi 10.5061/dryad.pc866t1qd): 'AirTC_Max' is linear in 'BoxTC_AVG' (R² = 0.956 on the discovery half); held-out R² = 0.953 [emp-c851fc5337b6]
 - 2026-11-14 10:00 FINDING (confirmed on held-out rows): In 'High-resolution tropical rain-forest canopy climate data' (Zenodo, doi 10.5061/dryad.pc866t1qd): 'AirTC_Min' follows a power law in 'BoxTC_AVG' (R² = 0.955 on the discovery half); held-out R² = 0.952 [emp-29dd4ee33793]
 - 2026-11-14 10:01 FINDING (confirmed on held-out rows): In 'High-resolution tropical rain-forest canopy climate data' (Zenodo, doi 10.5061/dryad.pc866t1qd): 'PAR_Tot_Tot' is linear in 'PAR_Den_Avg' (R² = 0.975 on the discovery half); held-out R² = 0.979 [emp-5eca637d61a3]
+- 2026-11-14 10:07 data feeds: 21909 datasets analysed so far, 3198 confirmed findings
