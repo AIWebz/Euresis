@@ -3616,3 +3616,5 @@
 - 2026-11-14 14:36 FINDING (confirmed on held-out rows): In 'Data from "'Uphill' spatial subsidies at ocean-reef boundaries globally"' (Figshare, doi 10.6084/m9.figshare.32725416.v1): 'PK' is linear in 'OM' (R² = 0.981 on the discovery half); held-out R² = 0.980 [emp-dae4c9ba13c8]
 - 2026-11-14 14:36 FINDING (confirmed on held-out rows): In 'Metagenomic profiles of <i>Porites lutea </i>associated bacterial communities from interti' (Figshare, doi 10.6084/m9.figshare.30511487.v4): 'Num genes' is linear in 'Length' (R² = 0.917 on the discovery half); held-out R² = 0.896 [emp-d6c8159896e1]
 - 2026-11-14 14:36 data feeds: 22166 datasets analysed so far, 3236 confirmed findings
+- 2026-11-14 15:38 data feeds: online
+- 2026-11-14 15:38 FINDING (confirmed on held-out rows): In 'Wet surface evaporation with FLUXNET data' (Zenodo, doi 10.5281/zenodo.8172604): 'TA_ERA_DAY_SD' follows a power law in 'TA_ERA_NIGHT_SD' (R² = 0.953 on the discovery half); held-out R² = 0.898 [emp-8167d8f75673]

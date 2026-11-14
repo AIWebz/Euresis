@@ -2961262,5 +2961262,32 @@
   "statement": "Octal game 0.0110133 is completely solved: its Grundy values are periodic with pre-period 0 and period 13 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.8172604",
+   "held_out_r2": 0.8985,
+   "held_out_rows": 30,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-8167d8f75673",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "94be2685cef364a3.csv",
+   "doi": "10.5281/zenodo.8172604",
+   "form": "power law",
+   "params": [
+    0.221600231146107,
+    1.0821001071846057
+   ],
+   "seed": 3650603971,
+   "x": "TA_ERA_NIGHT_SD",
+   "y": "TA_ERA_DAY_SD"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Wet surface evaporation with FLUXNET data' (Zenodo, doi 10.5281/zenodo.8172604): 'TA_ERA_DAY_SD' follows a power law in 'TA_ERA_NIGHT_SD' (R\u00b2 = 0.953 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
