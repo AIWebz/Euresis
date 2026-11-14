@@ -4749,3 +4749,7 @@
 - 2026-11-14 06:28 round 4359: insurance and risk
 - 2026-11-14 06:29 round 4360: auction with a reserve price
 - 2026-11-14 06:30 round 4361: two-body decay
+- 2026-11-14 06:32 round 4362: collision
+- 2026-11-14 06:34 round 4363: driven oscillator
+- 2026-11-14 06:35 round 4364: velocity addition
+- 2026-11-14 06:37 round 4365: Compton scattering
