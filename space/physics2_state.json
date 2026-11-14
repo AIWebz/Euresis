@@ -61666,6 +61666,36 @@
    "family": "driven oscillator",
    "expr": "2*r**2*z/(8*r**2*z**2 + (1 - r**2)**2 + 1)",
    "why": "affine combination of known quantities (amplitude / static deflection, Normalized Power Transmission (Corrected) [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 + u)/(1 - u)) * sqrt((1 + v)/(1 - v)) / sqrt((1 + (u + v)/(1 + u*v)) / (1 - (u + v)/(1 + u*v",
+   "why": "affine combination of known quantities (composed speed / c)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt(1 - u**2) * sqrt(1 - v**2) + (u + v) * sqrt(1 - ((u + v)/(1 + u*v))**2) / (1 + u*v)",
+   "why": "affine combination of known quantities (composed speed / c, Relativistic Energy-Momentum Invariant [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "1 - c/(c*x + 1)",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "c/(x + 1) + c/(x + 1)**2",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, Scattered photon wavelength shift factor [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "1/(2*c*x + 1)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, Compton scattering formula (recoil angle cosine) [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "1 + sqrt(c**2*x**2/(c*x + 1)**2 + c*x**2/(c*x + 1))/(c*x + 1) + 1/(c*x + 1)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, Electron momentum fraction [model-proposed; physical meaning unverified])"
   }
  ],
  "tried": [
@@ -75368,7 +75398,7 @@
    "k": "1/2"
   }
  ],
- "rounds": 4395,
+ "rounds": 4397,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",
