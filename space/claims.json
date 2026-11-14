@@ -2918695,5 +2918695,59 @@
   "statement": "Octal game 0.0031113 is completely solved: its Grundy values are periodic with pre-period 7 and period 10 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.pc866t1qd",
+   "held_out_r2": 0.9825,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-074e2ee0cd12",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "4974af4ad475582d.csv",
+   "doi": "10.5061/dryad.pc866t1qd",
+   "form": "linear",
+   "params": [
+    -2.732847515812378,
+    1.007095554266065
+   ],
+   "seed": 3084312071,
+   "x": "LogTC_AVG",
+   "y": "BoxTC_AVG"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'High-resolution tropical rain-forest canopy climate data' (Zenodo, doi 10.5061/dryad.pc866t1qd): 'BoxTC_AVG' is linear in 'LogTC_AVG' (R\u00b2 = 0.985 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.pc866t1qd",
+   "held_out_r2": 0.8947,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-7a1f2e7dfdcf",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "4974af4ad475582d.csv",
+   "doi": "10.5061/dryad.pc866t1qd",
+   "form": "linear",
+   "params": [
+    -7.653126280021402,
+    1.0916174589166958
+   ],
+   "seed": 3084312071,
+   "x": "LogTC_AVG",
+   "y": "AirTC_Avg"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'High-resolution tropical rain-forest canopy climate data' (Zenodo, doi 10.5061/dryad.pc866t1qd): 'AirTC_Avg' is linear in 'LogTC_AVG' (R\u00b2 = 0.905 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]

@@ -3559,3 +3559,4 @@
 - 2026-11-14 08:57 FINDING (confirmed on held-out rows): In 'Low-voltage Secondary Electron Emission Spectromicroscopy using a Scanning Auger Microscop' (Zenodo, doi 10.5281/zenodo.13753168): 'Normalized1' follows a power law in 'NI' (R² = 0.937 on the discovery half); held-out R² = 0.917 [emp-fae0c06dccfc]
 - 2026-11-14 08:57 data feeds: 21837 datasets analysed so far, 3190 confirmed findings
 - 2026-11-14 09:59 data feeds: online
+- 2026-11-14 10:00 FINDING (confirmed on held-out rows): In 'High-resolution tropical rain-forest canopy climate data' (Zenodo, doi 10.5061/dryad.pc866t1qd): 'BoxTC_AVG' is linear in 'LogTC_AVG' (R² = 0.985 on the discovery half); held-out R² = 0.983 [emp-074e2ee0cd12]
