@@ -5080,3 +5080,4 @@
 - 2026-11-14 21:33 round 4658: collision
 - 2026-11-14 21:35 round 4659: driven oscillator
 - 2026-11-14 21:36 round 4660: velocity addition
+- 2026-11-14 21:37 round 4661: Compton scattering
