@@ -2930400,5 +2930400,788 @@
   "statement": "Octal game 0.0045332 is completely solved: its Grundy values are periodic with pre-period 260 and period 44 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rfj6q57hc",
+   "held_out_r2": 0.967,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9bbe5b23a747",
+  "kind": "empirical",
+  "novelty": "KNOWN: equation of state of a simulated fluid (pressure, density, temperature, chemical potential, kinetic energy) \u2014 not a discovery",
+  "payload": {
+   "dataset": "f2a22bb224f48093.csv",
+   "doi": "10.5061/dryad.rfj6q57hc",
+   "form": "linear",
+   "params": [
+    6.03391993724949,
+    0.44186616198221484
+   ],
+   "seed": 2501928102,
+   "x": "pop_density",
+   "y": "housing_density"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Structural and socioeconomic features of cities predict migratory bird species richness' (Zenodo, doi 10.5061/dryad.rfj6q57hc): 'housing_density' is linear in 'pop_density' (R\u00b2 = 0.969 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.2bvq83bzf",
+   "held_out_r2": 0.9085,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-23e27c2e727d",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "2c90255dc4dbbc1f.csv",
+   "doi": "10.5061/dryad.2bvq83bzf",
+   "form": "linear",
+   "params": [
+    0.059164842351678064,
+    0.8864613204379653
+   ],
+   "seed": 453406086,
+   "x": "MedRatio",
+   "y": "AvgRatio"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Putative climate adaptation in American pikas (Ochotona princeps) is associated' (Zenodo, doi 10.5061/dryad.2bvq83bzf): 'AvgRatio' is linear in 'MedRatio' (R\u00b2 = 0.908 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.2bvq83bzf",
+   "held_out_r2": 0.9876,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4d833e4cbe12",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "1b8afbc4f5885c32.csv",
+   "doi": "10.5061/dryad.2bvq83bzf",
+   "form": "linear",
+   "params": [
+    -0.0010544858142054762,
+    0.023091098490290042
+   ],
+   "seed": 610498658,
+   "x": "NumHet",
+   "y": "PropHet"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Putative climate adaptation in American pikas (Ochotona princeps) is associated' (Zenodo, doi 10.5061/dryad.2bvq83bzf): 'PropHet' is linear in 'NumHet' (R\u00b2 = 0.988 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.2bvq83bzf",
+   "held_out_r2": 0.9882,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-0ea2761fe2b4",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "1b8afbc4f5885c32.csv",
+   "doi": "10.5061/dryad.2bvq83bzf",
+   "form": "linear",
+   "params": [
+    42.829792241926796,
+    -42.62768772093496
+   ],
+   "seed": 610498658,
+   "x": "PropHomFreq",
+   "y": "NumRare"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Putative climate adaptation in American pikas (Ochotona princeps) is associated' (Zenodo, doi 10.5061/dryad.2bvq83bzf): 'NumRare' is linear in 'PropHomFreq' (R\u00b2 = 0.988 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15356092",
+   "held_out_r2": 0.9826,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5836a12312a6",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "7b5f4c79d9919892.csv",
+   "doi": "10.5281/zenodo.15356092",
+   "form": "linear",
+   "params": [
+    16.6995398870706,
+    -0.021992386383193886
+   ],
+   "seed": 3734229530,
+   "x": "ene_SVP",
+   "y": "entropy_SVP"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'COMPAS-4 Datasets' (Zenodo, doi 10.5281/zenodo.15356092): 'entropy_SVP' is linear in 'ene_SVP' (R\u00b2 = 0.984 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15356092",
+   "held_out_r2": 0.9826,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-56c680ba9a07",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "7b5f4c79d9919892.csv",
+   "doi": "10.5281/zenodo.15356092",
+   "form": "linear",
+   "params": [
+    16.700137055083406,
+    -0.021999581985126422
+   ],
+   "seed": 3734229530,
+   "x": "enthalpy_SVP",
+   "y": "entropy_SVP"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'COMPAS-4 Datasets' (Zenodo, doi 10.5281/zenodo.15356092): 'entropy_SVP' is linear in 'enthalpy_SVP' (R\u00b2 = 0.984 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15356092",
+   "held_out_r2": 0.9826,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-123f99f06569",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "7b5f4c79d9919892.csv",
+   "doi": "10.5281/zenodo.15356092",
+   "form": "linear",
+   "params": [
+    731.5231237343447,
+    -44.72454631475788
+   ],
+   "seed": 3734229530,
+   "x": "entropy_SVP",
+   "y": "inner_ene_SVP"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'COMPAS-4 Datasets' (Zenodo, doi 10.5281/zenodo.15356092): 'inner_ene_SVP' is linear in 'entropy_SVP' (R\u00b2 = 0.984 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15356092",
+   "held_out_r2": 0.9826,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-2e21d0d9b2a7",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "7b5f4c79d9919892.csv",
+   "doi": "10.5281/zenodo.15356092",
+   "form": "linear",
+   "params": [
+    731.5240690632983,
+    -44.72613994953865
+   ],
+   "seed": 3734229530,
+   "x": "entropy_SVP",
+   "y": "final_gibbs_free_SVP"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'COMPAS-4 Datasets' (Zenodo, doi 10.5281/zenodo.15356092): 'final_gibbs_free_SVP' is linear in 'entropy_SVP' (R\u00b2 = 0.984 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15356092",
+   "held_out_r2": 0.9826,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-816005ec10cb",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "7b5f4c79d9919892.csv",
+   "doi": "10.5281/zenodo.15356092",
+   "form": "linear",
+   "params": [
+    731.803130973092,
+    -44.74232084444617
+   ],
+   "seed": 3734229530,
+   "x": "entropy_SVP",
+   "y": "n_ene_SVP"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'COMPAS-4 Datasets' (Zenodo, doi 10.5281/zenodo.15356092): 'n_ene_SVP' is linear in 'entropy_SVP' (R\u00b2 = 0.984 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15356092",
+   "held_out_r2": 0.9826,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-0f883c5a0491",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "7b5f4c79d9919892.csv",
+   "doi": "10.5281/zenodo.15356092",
+   "form": "linear",
+   "params": [
+    732.0673117102663,
+    -44.742133397122664
+   ],
+   "seed": 3734229530,
+   "x": "entropy_SVP",
+   "y": "p_ene_SVP"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'COMPAS-4 Datasets' (Zenodo, doi 10.5281/zenodo.15356092): 'p_ene_SVP' is linear in 'entropy_SVP' (R\u00b2 = 0.984 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15356092",
+   "held_out_r2": 0.9048,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f91752b607b8",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "92685abfbcfda28f.csv",
+   "doi": "10.5281/zenodo.15356092",
+   "form": "linear",
+   "params": [
+    0.008330672344222825,
+    0.0006364792569429598
+   ],
+   "seed": 2505425194,
+   "x": "tot_e_gfn1",
+   "y": "scc_disp_gfn1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'COMPAS-4 Datasets' (Zenodo, doi 10.5281/zenodo.15356092): 'scc_disp_gfn1' is linear in 'tot_e_gfn1' (R\u00b2 = 0.901 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15356092",
+   "held_out_r2": 0.9048,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-27b9f16d15d9",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "92685abfbcfda28f.csv",
+   "doi": "10.5281/zenodo.15356092",
+   "form": "linear",
+   "params": [
+    -17.7965613953134,
+    1409.0051556618473
+   ],
+   "seed": 2505425194,
+   "x": "scc_disp_gfn1",
+   "y": "tot_fe_gfn1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'COMPAS-4 Datasets' (Zenodo, doi 10.5281/zenodo.15356092): 'tot_fe_gfn1' is linear in 'scc_disp_gfn1' (R\u00b2 = 0.901 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15356092",
+   "held_out_r2": 0.9048,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d0a5af99e8d8",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "92685abfbcfda28f.csv",
+   "doi": "10.5281/zenodo.15356092",
+   "form": "linear",
+   "params": [
+    -17.75930924433668,
+    1408.1327154735284
+   ],
+   "seed": 2505425194,
+   "x": "scc_disp_gfn1",
+   "y": "tot_en_gfn1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'COMPAS-4 Datasets' (Zenodo, doi 10.5281/zenodo.15356092): 'tot_en_gfn1' is linear in 'scc_disp_gfn1' (R\u00b2 = 0.901 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15356092",
+   "held_out_r2": 0.9046,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-1197f594ae38",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "92685abfbcfda28f.csv",
+   "doi": "10.5281/zenodo.15356092",
+   "form": "linear",
+   "params": [
+    -17.397185076455486,
+    1416.2346229919622
+   ],
+   "seed": 2505425194,
+   "x": "scc_disp_gfn1",
+   "y": "p_tot_e_gfn1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'COMPAS-4 Datasets' (Zenodo, doi 10.5281/zenodo.15356092): 'p_tot_e_gfn1' is linear in 'scc_disp_gfn1' (R\u00b2 = 0.901 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15356092",
+   "held_out_r2": 0.9046,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d1645f12005f",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "92685abfbcfda28f.csv",
+   "doi": "10.5281/zenodo.15356092",
+   "form": "linear",
+   "params": [
+    -17.328716305978638,
+    1409.9736729195934
+   ],
+   "seed": 2505425194,
+   "x": "scc_disp_gfn1",
+   "y": "p_tot_fe_gfn1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'COMPAS-4 Datasets' (Zenodo, doi 10.5281/zenodo.15356092): 'p_tot_fe_gfn1' is linear in 'scc_disp_gfn1' (R\u00b2 = 0.901 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15356092",
+   "held_out_r2": 0.9046,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-04d6ef7e384a",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "92685abfbcfda28f.csv",
+   "doi": "10.5281/zenodo.15356092",
+   "form": "linear",
+   "params": [
+    -17.29072787379602,
+    1409.10598092489
+   ],
+   "seed": 2505425194,
+   "x": "scc_disp_gfn1",
+   "y": "p_tot_en_gfn1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'COMPAS-4 Datasets' (Zenodo, doi 10.5281/zenodo.15356092): 'p_tot_en_gfn1' is linear in 'scc_disp_gfn1' (R\u00b2 = 0.901 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15356092",
+   "held_out_r2": 0.9045,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-836bf979f898",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "92685abfbcfda28f.csv",
+   "doi": "10.5281/zenodo.15356092",
+   "form": "linear",
+   "params": [
+    -18.098814237136494,
+    1416.2835448763765
+   ],
+   "seed": 2505425194,
+   "x": "scc_disp_gfn1",
+   "y": "n_tot_e_gfn1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'COMPAS-4 Datasets' (Zenodo, doi 10.5281/zenodo.15356092): 'n_tot_e_gfn1' is linear in 'scc_disp_gfn1' (R\u00b2 = 0.900 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.f7m0cfxw2",
+   "held_out_r2": 0.9407,
+   "held_out_rows": 1456,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-994edfb0114d",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "b02f096ef356d0f5.csv",
+   "doi": "10.5061/dryad.f7m0cfxw2",
+   "form": "linear",
+   "params": [
+    -7.995363199096389,
+    0.8258045557513409
+   ],
+   "seed": 2027158270,
+   "x": "Avg_daily_maxima",
+   "y": "Avg_daily_minima"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Influence of topographic features and vegetation on climate refugia in the bore' (Zenodo, doi 10.5061/dryad.f7m0cfxw2): 'Avg_daily_minima' is linear in 'Avg_daily_maxima' (R\u00b2 = 0.935 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.f7m0cfxw2",
+   "held_out_r2": 0.9672,
+   "held_out_rows": 1456,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-0b26dc87cc0e",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "b02f096ef356d0f5.csv",
+   "doi": "10.5061/dryad.f7m0cfxw2",
+   "form": "linear",
+   "params": [
+    8.305616129176084,
+    0.9267540016565983
+   ],
+   "seed": 2027158270,
+   "x": "Avg_daily_maxima",
+   "y": "th95dailymax"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Influence of topographic features and vegetation on climate refugia in the bore' (Zenodo, doi 10.5061/dryad.f7m0cfxw2): 'th95dailymax' is linear in 'Avg_daily_maxima' (R\u00b2 = 0.951 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.f7m0cfxw2",
+   "held_out_r2": 0.9103,
+   "held_out_rows": 1456,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-90e020b91242",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "b02f096ef356d0f5.csv",
+   "doi": "10.5061/dryad.f7m0cfxw2",
+   "form": "linear",
+   "params": [
+    -16.767888562840486,
+    0.9984248708075376
+   ],
+   "seed": 2027158270,
+   "x": "Avg_daily_maxima",
+   "y": "th95dailymin"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Influence of topographic features and vegetation on climate refugia in the bore' (Zenodo, doi 10.5061/dryad.f7m0cfxw2): 'th95dailymin' is linear in 'Avg_daily_maxima' (R\u00b2 = 0.900 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.f7m0cfxw2",
+   "held_out_r2": 0.9575,
+   "held_out_rows": 1456,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-71e3bd6d0437",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "b02f096ef356d0f5.csv",
+   "doi": "10.5061/dryad.f7m0cfxw2",
+   "form": "linear",
+   "params": [
+    9.594130148131987,
+    0.9274381118320024
+   ],
+   "seed": 2027158270,
+   "x": "Avg_daily_maxima",
+   "y": "th99dailymax"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Influence of topographic features and vegetation on climate refugia in the bore' (Zenodo, doi 10.5061/dryad.f7m0cfxw2): 'th99dailymax' is linear in 'Avg_daily_maxima' (R\u00b2 = 0.946 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.f7m0cfxw2",
+   "held_out_r2": 0.9846,
+   "held_out_rows": 1456,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f7277d53c4b1",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "b02f096ef356d0f5.csv",
+   "doi": "10.5061/dryad.f7m0cfxw2",
+   "form": "linear",
+   "params": [
+    -4.031434358650728,
+    0.9015367810786812
+   ],
+   "seed": 2027158270,
+   "x": "Avg_daily_maxima",
+   "y": "Avg_Monthly"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Influence of topographic features and vegetation on climate refugia in the bore' (Zenodo, doi 10.5061/dryad.f7m0cfxw2): 'Avg_Monthly' is linear in 'Avg_daily_maxima' (R\u00b2 = 0.984 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.f7m0cfxw2",
+   "held_out_r2": 0.9693,
+   "held_out_rows": 1456,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b2133f5dea8e",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "b02f096ef356d0f5.csv",
+   "doi": "10.5061/dryad.f7m0cfxw2",
+   "form": "linear",
+   "params": [
+    -7.101057063412503,
+    1.2113688039046933
+   ],
+   "seed": 2027158270,
+   "x": "Avg_daily_minima",
+   "y": "th95dailymin"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Influence of topographic features and vegetation on climate refugia in the bore' (Zenodo, doi 10.5061/dryad.f7m0cfxw2): 'th95dailymin' is linear in 'Avg_daily_minima' (R\u00b2 = 0.967 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.f7m0cfxw2",
+   "held_out_r2": 0.9624,
+   "held_out_rows": 1456,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f725f4da2e99",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "b02f096ef356d0f5.csv",
+   "doi": "10.5061/dryad.f7m0cfxw2",
+   "form": "linear",
+   "params": [
+    -8.43787169766735,
+    1.2275805155824573
+   ],
+   "seed": 2027158270,
+   "x": "Avg_daily_minima",
+   "y": "th99dailymin"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Influence of topographic features and vegetation on climate refugia in the bore' (Zenodo, doi 10.5061/dryad.f7m0cfxw2): 'th99dailymin' is linear in 'Avg_daily_minima' (R\u00b2 = 0.960 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.f7m0cfxw2",
+   "held_out_r2": 0.9842,
+   "held_out_rows": 1456,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-0c45b9ae7955",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "b02f096ef356d0f5.csv",
+   "doi": "10.5061/dryad.f7m0cfxw2",
+   "form": "linear",
+   "params": [
+    4.694416975827354,
+    1.0549513364602567
+   ],
+   "seed": 2027158270,
+   "x": "Avg_daily_minima",
+   "y": "Avg_Monthly"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Influence of topographic features and vegetation on climate refugia in the bore' (Zenodo, doi 10.5061/dryad.f7m0cfxw2): 'Avg_Monthly' is linear in 'Avg_daily_minima' (R\u00b2 = 0.982 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.f7m0cfxw2",
+   "held_out_r2": 0.9328,
+   "held_out_rows": 1456,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-cc1c052de4fb",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "b02f096ef356d0f5.csv",
+   "doi": "10.5061/dryad.f7m0cfxw2",
+   "form": "linear",
+   "params": [
+    -11.086611542791958,
+    0.9132104212223437
+   ],
+   "seed": 2027158270,
+   "x": "th95dailymax",
+   "y": "Avg_Monthly"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Influence of topographic features and vegetation on climate refugia in the bore' (Zenodo, doi 10.5061/dryad.f7m0cfxw2): 'Avg_Monthly' is linear in 'th95dailymax' (R\u00b2 = 0.911 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.f7m0cfxw2",
+   "held_out_r2": 0.9521,
+   "held_out_rows": 1456,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5190accbc1d8",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "b02f096ef356d0f5.csv",
+   "doi": "10.5061/dryad.f7m0cfxw2",
+   "form": "linear",
+   "params": [
+    10.660536663358775,
+    0.840559579404954
+   ],
+   "seed": 2027158270,
+   "x": "th95dailymin",
+   "y": "Avg_Monthly"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Influence of topographic features and vegetation on climate refugia in the bore' (Zenodo, doi 10.5061/dryad.f7m0cfxw2): 'Avg_Monthly' is linear in 'th95dailymin' (R\u00b2 = 0.947 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.f7m0cfxw2",
+   "held_out_r2": 0.9203,
+   "held_out_rows": 1456,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-2d58e7e652af",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "b02f096ef356d0f5.csv",
+   "doi": "10.5061/dryad.f7m0cfxw2",
+   "form": "linear",
+   "params": [
+    -12.111980899352702,
+    0.9047025676248941
+   ],
+   "seed": 2027158270,
+   "x": "th99dailymax",
+   "y": "Avg_Monthly"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Influence of topographic features and vegetation on climate refugia in the bore' (Zenodo, doi 10.5061/dryad.f7m0cfxw2): 'Avg_Monthly' is linear in 'th99dailymax' (R\u00b2 = 0.901 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.f7m0cfxw2",
+   "held_out_r2": 0.9435,
+   "held_out_rows": 1456,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e8314da13b4b",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "b02f096ef356d0f5.csv",
+   "doi": "10.5061/dryad.f7m0cfxw2",
+   "form": "linear",
+   "params": [
+    11.638100068558034,
+    0.823310512074492
+   ],
+   "seed": 2027158270,
+   "x": "th99dailymin",
+   "y": "Avg_Monthly"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Influence of topographic features and vegetation on climate refugia in the bore' (Zenodo, doi 10.5061/dryad.f7m0cfxw2): 'Avg_Monthly' is linear in 'th99dailymin' (R\u00b2 = 0.939 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
