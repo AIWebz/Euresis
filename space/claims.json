@@ -2918938,5 +2918938,923 @@
   "statement": "In 'Climate warming changes synchrony of plants and pollinators' (Zenodo, doi 10.5061/dryad.v41ns1rxv): 'slope_std_err' follows a power law in 'intercept_std_err' (R\u00b2 = 0.992 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-a38608307569",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'scattered photon energy / initial energy'",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "c/(x + 1) + 1/(x + 1) >= 1/6*(x/(c*x + 1))",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 4437",
+  "statement": "[physics: Compton scattering] Scattered photon wavelength shift factor (alternative) [model-proposed; physical meaning unverified] \u2265 1/6 \u00d7 scattered photon energy / (m_e c\u00b2)   on x < 2, c < 2 (tight only at the edge of the domain, near (2, 6.1e-15))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-53ef851e051c",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "c/(x + 1) + 1/(x + 1) >= 1/2*(c)",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 4437",
+  "statement": "[physics: Compton scattering] Scattered photon wavelength shift factor (alternative) [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 wavelength shift / Compton wavelength   on x < 2, c < 2 (tight only at the edge of the domain, near (2, 2))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-eda18633c54d",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "c/(x + 1) + 1/(x + 1) >= 1/6*(x)",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 4437",
+  "statement": "[physics: Compton scattering] Scattered photon wavelength shift factor (alternative) [model-proposed; physical meaning unverified] \u2265 1/6 \u00d7 photon energy / (m_e c\u00b2)   on x < 2, c < 2 (tight only at the edge of the domain, near (2, 1.87e-13))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-887df5be7477",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "c/(x + 1) + 1/(x + 1) >= 1/3*(1/(2*c**2*x**2 + 1))",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 4437",
+  "statement": "[physics: Compton scattering] Scattered photon wavelength shift factor (alternative) [model-proposed; physical meaning unverified] \u2265 1/3 \u00d7 Electron recoil angle (cosine) [model-proposed; physical meaning unverified]   on x < 2, c < 2 (tight only at the edge of the domain, near (2, 1.08e-15))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-d8856453da3e",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "c/(x + 1) + 1/(x + 1) >= 1*(c/(c + x))",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 4437",
+  "statement": "[physics: Compton scattering] Scattered photon wavelength shift factor (alternative) [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Compton wavelength shift / (initial photon wavelength) [model-proposed; physical meaning unverified]   on x < 2, c < 2 (tight only at the edge of the domain, near (2.84e-29, 1.26e-14))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-562020765f03",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'scattered photon energy / initial energy'",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "c/(x + 1) + 1/(x + 1) >= 1/3*(1/(2*c*x + 1))",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 4437",
+  "statement": "[physics: Compton scattering] Scattered photon wavelength shift factor (alternative) [model-proposed; physical meaning unverified] \u2265 1/3 \u00d7 Compton scattering formula (recoil angle cosine) [model-proposed; physical meaning unverified]   on x < 2, c < 2 (tight only at the edge of the domain, near (2, 1.76e-15))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-54e23978f98f",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "c/(x + 1) + 1/(x + 1) >= 1/3*(c/(x + 1) + 1)",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 4437",
+  "statement": "[physics: Compton scattering] Scattered photon wavelength shift factor (alternative) [model-proposed; physical meaning unverified] \u2265 1/3 \u00d7 Scattered photon wavelength / initial photon wavelength [model-proposed; physical meaning unverified]   on x < 2, c < 2 (tight only at the edge of the domain, near (2, 1.18e-14))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-b7e322f88c1c",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "c/(x + 1) + 1/(x + 1) >= 9/16*(1 - 1/(2*c**2*x**2 + 1)**2)",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 4437",
+  "statement": "[physics: Compton scattering] Scattered photon wavelength shift factor (alternative) [model-proposed; physical meaning unverified] \u2265 9/16 \u00d7 Electron recoil angle (sine squared) [model-proposed; physical meaning unverified]   on x < 2, c < 2 (tight only at the edge of the domain, near (2, 0.5))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-df3a3b19af02",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "c/(x + 1) + 1/(x + 1) >= 3/4*(c*x**2/(c*x**2 + 1))",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 4437",
+  "statement": "[physics: Compton scattering] Scattered photon wavelength shift factor (alternative) [model-proposed; physical meaning unverified] \u2265 3/4 \u00d7 Electron kinetic energy fraction [model-proposed; physical meaning unverified]   on x < 2, c < 2 (tight only at the edge of the domain, near (2, 0.5))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-52d5b1d8fa3c",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'wavelength shift / Compton wavelength'",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "c/(x + 1) + 1/(x + 1) >= 3/20*(c*x**2/(x + 1) + c*x)",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 4437",
+  "statement": "[physics: Compton scattering] Scattered photon wavelength shift factor (alternative) [model-proposed; physical meaning unverified] \u2265 3/20 \u00d7 Electron kinetic energy / initial photon energy [model-proposed; physical meaning unverified]   on x < 2, c < 2 (tight only at the edge of the domain, near (2, 2))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-b563fbfb04e8",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'Scattered photon wavelength / initial photon wavelength [model-proposed; physical meaning unverified]'",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "c/(x + 1) + 1/(x + 1) >= 1/6*(-c/(c*x + 1) + 1 + 1/(c*x + 1))",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 4437",
+  "statement": "[physics: Compton scattering] Scattered photon wavelength shift factor (alternative) [model-proposed; physical meaning unverified] \u2265 1/6 \u00d7 Compton scattering factor [model-proposed; physical meaning unverified]   on x < 2, c < 2 (tight only at the edge of the domain, near (2, 2.53e-14))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-d399b86cb38e",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'scattered photon energy / initial energy'",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "c/(x + 1) + 1/(x + 1) >= 1/6*(1/(c*x + 1) + (c*x + 1)**(-2))",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 4437",
+  "statement": "[physics: Compton scattering] Scattered photon wavelength shift factor (alternative) [model-proposed; physical meaning unverified] \u2265 1/6 \u00d7 Compton scattering cross-section factor [model-proposed; physical meaning unverified]   on x < 2, c < 2 (tight only at the edge of the domain, near (2, 2.25e-14))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-aef920bade3d",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "c/(x + 1) + 1/(x + 1) >= 3/4*(c/(x + 1) + c/(x + 1)**2)",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 4437",
+  "statement": "[physics: Compton scattering] Scattered photon wavelength shift factor (alternative) [model-proposed; physical meaning unverified] \u2265 3/4 \u00d7 Scattered photon wavelength shift factor [model-proposed; physical meaning unverified]   on x < 2, c < 2 (tight only at the edge of the domain, near (1.08e-15, 2))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-1064dedfdd0a",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "-4*r**3/3 + r**2 + 1/3 >= 2/3*((2*r**3/3 - r**2 + 1/3)/(-2*r**3/3 + r**2 + 2/3))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 4440",
+  "statement": "[economics: auction with a reserve price] expected revenue \u2265 2/3 \u00d7 Bidder Surplus Efficiency Ratio [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (1.39e-19, 0.000152))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-dd7f3c29be19",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'expected revenue'",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "-4*r**3/3 + r**2*v + r**2 + 1/3 >= 2/3*((2*r**3/3 - r**2 + 1/3)/(-2*r**3/3 + r**2 + 2/3))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 4440",
+  "statement": "[economics: auction with a reserve price] seller's expected payoff \u2265 2/3 \u00d7 Bidder Surplus Efficiency Ratio [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (4.88e-09, 0.000119))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-2dfca063a0ce",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "2*r**3/3 - r**2 + 1/3 >= 2/3*((2*r**3/3 - r**2 + 1/3)/(-2*r**3/3 + r**2 + 2/3))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 4440",
+  "statement": "[economics: auction with a reserve price] expected total bidder surplus \u2265 2/3 \u00d7 Bidder Surplus Efficiency Ratio [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (1.39e-19, 0.000152))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-9f780a5e1cb8",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'expected total bidder surplus'",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "-2*r**3/3 + r**2*v + 2/3 >= 4/3*((2*r**3/3 - r**2 + 1/3)/(-2*r**3/3 + r**2 + 2/3))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 4440",
+  "statement": "[economics: auction with a reserve price] expected total welfare \u2265 4/3 \u00d7 Bidder Surplus Efficiency Ratio [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (4.88e-09, 0.000119))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-087135b689c4",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'expected total bidder surplus'",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "v**3/3 + 2/3 >= 4/3*((2*r**3/3 - r**2 + 1/3)/(-2*r**3/3 + r**2 + 2/3))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 4440",
+  "statement": "[economics: auction with a reserve price] welfare with the efficient reserve (r = v) \u2265 4/3 \u00d7 Bidder Surplus Efficiency Ratio [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (4.16e-09, 3.18e-06))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-1ed89a7a8677",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'expected total bidder surplus'",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "(2*r**3/3 - r**2 + 1/3)/(2/3 - 2*r**3/3) >= 1*((2*r**3/3 - r**2 + 1/3)/(-2*r**3/3 + r**2 + 2/3))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 4440",
+  "statement": "[economics: auction with a reserve price] expected bidder surplus ratio [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Bidder Surplus Efficiency Ratio [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (1.39e-19, 0.000152))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-9b3bc85c31a9",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'expected total bidder surplus'",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "(2*r**3/3 - r**2 + 1/3)/(1 - r**2) >= 2/3*((2*r**3/3 - r**2 + 1/3)/(-2*r**3/3 + r**2 + 2/3))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 4440",
+  "statement": "[economics: auction with a reserve price] expected bidder surplus given reserve [model-proposed; physical meaning unverified] \u2265 2/3 \u00d7 Bidder Surplus Efficiency Ratio [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (1.39e-19, 0.000152))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-3f7649283f3f",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'expected total bidder surplus'",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "(2*r**3/3 - r**2 + 1/3)/(2*r**3/3 - r**2*(2*r**3/3 - r**2 + 1/3) - r**2 + 1/3) >= 2*((2*r**3/3 - r**2 + 1/3)/(-2*r**3/3 + r**2 + 2/3))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 4440",
+  "statement": "[economics: auction with a reserve price] reserve price elasticity of bidder surplus [model-proposed; physical meaning unverified] \u2265 2 \u00d7 Bidder Surplus Efficiency Ratio [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (1.39e-19, 0.000152))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-da85265c2127",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'expected total bidder surplus'",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "(2*r**3/3 + r**2*v - r**2 + 1/3)/(1 - r**2) >= 2/3*((2*r**3/3 - r**2 + 1/3)/(-2*r**3/3 + r**2 + 2/3))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 4440",
+  "statement": "[economics: auction with a reserve price] expected bidder surplus given reserve and seller's value [model-proposed; physical meaning unverified] \u2265 2/3 \u00d7 Bidder Surplus Efficiency Ratio [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (4.88e-09, 0.000119))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-99a21df0d216",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "(-2*r**3/3 + r**2*v + 2/3)/(-2*r**3 + r**2*v + 2*r**2) >= 8*((2*r**3/3 - r**2 + 1/3)/(-2*r**3/3 + r**2 + 2/3))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 4440",
+  "statement": "[economics: auction with a reserve price] Welfare Efficiency Ratio [model-proposed; physical meaning unverified] \u2265 8 \u00d7 Bidder Surplus Efficiency Ratio [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (0.433, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-838cd0f99a1d",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'expected total bidder surplus'",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "(2*r**3/3 + r**2*v - r**2 + 1/3)/(r**2*v - r**2 + 1) >= 2/3*((2*r**3/3 - r**2 + 1/3)/(-2*r**3/3 + r**2 + 2/3))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 4440",
+  "statement": "[economics: auction with a reserve price] Bidder Surplus Given Reserve and Seller Value Ratio [model-proposed; physical meaning unverified] \u2265 2/3 \u00d7 Bidder Surplus Efficiency Ratio [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (4.88e-09, 0.000119))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-2b685bc566f8",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'expected total bidder surplus'",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "(r**2*v + 2/3)/(-2*r**3/3 + r**2*v + 2/3) >= 2*((2*r**3/3 - r**2 + 1/3)/(-2*r**3/3 + r**2 + 2/3))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 4440",
+  "statement": "[economics: auction with a reserve price] Welfare Reserve Ratio [model-proposed; physical meaning unverified] \u2265 2 \u00d7 Bidder Surplus Efficiency Ratio [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (7.8e-11, 0.883))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-c009ab1c2d92",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'expected total bidder surplus'",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "(2*r**3/3 - r**2 + 1/3)/(-r**2*v + 1) >= 2/3*((2*r**3/3 - r**2 + 1/3)/(-2*r**3/3 + r**2 + 2/3))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 4440",
+  "statement": "[economics: auction with a reserve price] Bidder Surplus Reserve Ratio [model-proposed; physical meaning unverified] \u2265 2/3 \u00d7 Bidder Surplus Efficiency Ratio [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (4.88e-09, 0.000119))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-244e5d901120",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'expected total bidder surplus'",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "(-2*r**3/3 + r**2*v + 2/3)/(4*r**3/3 - r**2 + 1/3) >= 4*((2*r**3/3 - r**2 + 1/3)/(-2*r**3/3 + r**2 + 2/3))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 4440",
+  "statement": "[economics: auction with a reserve price] Welfare Reserve Efficiency Ratio [model-proposed; physical meaning unverified] \u2265 4 \u00d7 Bidder Surplus Efficiency Ratio [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (4.88e-09, 0.000119))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-145a59665511",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "(2*r**3/3 - r**2 + 1/3)/(4*r**3/3 + r**2*v - 2*r**2 + 2/3) >= 1*((2*r**3/3 - r**2 + 1/3)/(-2*r**3/3 + r**2 + 2/3))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 4440",
+  "statement": "[economics: auction with a reserve price] Bidder Surplus Reserve Efficiency Ratio [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Bidder Surplus Efficiency Ratio [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (7.8e-11, 0.883))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-4b14727759af",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'expected total bidder surplus'",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "(-2*r**3/3 + r**2*v + 2/3)/(4*r**3/3 + r**2*v - r**2 + 1/3) >= 4*((2*r**3/3 - r**2 + 1/3)/(-2*r**3/3 + r**2 + 2/3))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 4440",
+  "statement": "[economics: auction with a reserve price] Welfare Reserve Efficiency with Seller Value [model-proposed; physical meaning unverified] \u2265 4 \u00d7 Bidder Surplus Efficiency Ratio [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (7.8e-11, 0.883))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-09be11b1d6ee",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'expected total bidder surplus'",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "(2*r**3/3 + r**2*v - r**2 + 1/3)/(2*r**3/3 + r**2*v - 2*r**2 + 4/3) >= 1/2*((2*r**3/3 - r**2 + 1/3)/(-2*r**3/3 + r**2 + 2/3))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 4440",
+  "statement": "[economics: auction with a reserve price] Bidder Surplus Reserve Ratio with Seller Value [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 Bidder Surplus Efficiency Ratio [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (4.88e-09, 0.000119))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-ae508d9b7bb8",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'expected total bidder surplus'",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "(r**2*v + 2/3)/(4*r**3/3 + 2*r**2*v - r**2 + 1) >= 4/3*((2*r**3/3 - r**2 + 1/3)/(-2*r**3/3 + r**2 + 2/3))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 4440",
+  "statement": "[economics: auction with a reserve price] Welfare Reserve Efficiency with Seller Value and Reserve [model-proposed; physical meaning unverified] \u2265 4/3 \u00d7 Bidder Surplus Efficiency Ratio [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (7.8e-11, 0.883))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-fe4b9efb7cdc",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'expected total bidder surplus'",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "(2*r**3/3 + r**2*v - r**2 + 1/3)/(4*r**3/3 + r**2*v - 2*r**2 + 4/3) >= 1/2*((2*r**3/3 - r**2 + 1/3)/(-2*r**3/3 + r**2 + 2/3))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 4440",
+  "statement": "[economics: auction with a reserve price] Bidder Surplus Reserve Efficiency with Seller Value [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 Bidder Surplus Efficiency Ratio [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (4.88e-09, 0.000119))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-7881a195a159",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'expected total bidder surplus'",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "(2*r**3/3 + r**2*v - r**2 + 1/3)/(2*r**3/3 - r**2 + 1) >= 2/3*((2*r**3/3 - r**2 + 1/3)/(-2*r**3/3 + r**2 + 2/3))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 4440",
+  "statement": "[economics: auction with a reserve price] Bidder Surplus Reserve Efficiency with Seller Value and Reserve Ratio [model-proposed; physical meaning unverified] \u2265 2/3 \u00d7 Bidder Surplus Efficiency Ratio [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (4.88e-09, 0.000119))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-24c83cd1c938",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'expected revenue'",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "(-2*r**3/3 + r**2 + 1/3)/v >= 2/3*((2*r**3/3 - r**2 + 1/3)/(-2*r**3/3 + r**2 + 2/3))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 4440",
+  "statement": "[economics: auction with a reserve price] Expected Revenue to Seller's Value Ratio [model-proposed; physical meaning unverified] \u2265 2/3 \u00d7 Bidder Surplus Efficiency Ratio [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (9.12e-05, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]

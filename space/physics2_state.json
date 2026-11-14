@@ -230,7 +230,8 @@
    "Welfare Reserve Elasticity Ratio [model-proposed; physical meaning unverified]": "(-2*r**3/3 + r**2*v + 2/3)/(-2*r**3/3 + r**2*v + r**2 + 2/3)",
    "Welfare Reserve Elasticity with Seller Value [model-proposed; physical meaning unverified]": "(-2*r**3/3 + r**2*v + 2/3)/(2*r**3/3 + r**2*v)",
    "Welfare Reserve Efficiency with Seller Value Ratio [model-proposed; physical meaning unverified]": "r**2*v/(-2*r**3/3 + r**2*v + 2/3) + (r**2*v + 2/3)/(4*r**3/3 + r**2*v - r**2 + 1/3)",
-   "Welfare Efficiency with Seller Value [model-proposed; physical meaning unverified]": "(-2*r**3/3 + r**2*v/3 + 2/3)/(-2*r**3/3 + 4*r**2*v/3 + 2/3)"
+   "Welfare Efficiency with Seller Value [model-proposed; physical meaning unverified]": "(-2*r**3/3 + r**2*v/3 + 2/3)/(-2*r**3/3 + 4*r**2*v/3 + 2/3)",
+   "Bidder Surplus Efficiency Ratio [model-proposed; physical meaning unverified]": "(2*r**3/3 - r**2 + 1/3)/(-2*r**3/3 + r**2 + 2/3)"
   }
  },
  "rejected": [
@@ -62158,6 +62159,176 @@
    "family": "auction with a reserve price",
    "expr": "(2*r**3/3 + r**2*v - r**2 + 1/3)/(8*r**3/3 - 3*r**2 + 1)",
    "why": "affine combination of known quantities (expected revenue, Bidder Surplus Reserve Efficiency with Seller Value and Reserve [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "sqrt((1 - (a + b)**2)*(1 - (a - b)**2) + (a**2 - b**2 + 1)**2 + (-a**2 + b**2 + 1)**2)",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), Boost factor of the system [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2",
+   "why": "affine combination of known quantities (Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified], Fraction of kinetic energy transferred to the target [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2",
+   "why": "affine combination of known quantities (Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified], Fraction of kinetic energy transferred to the target [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "(-e**2*m**2/(m + 1)**2 - e**2*m/(m + 1) - (1 - e**2)/(m + 1) + 1)/(-e**2*m**2/(m + 1)**2 - (1 - e**2",
+   "why": "affine combination of known quantities (target speed / initial speed, Fraction of Kinetic Energy Retained by the Projectile Relative to the System [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt((1 - r**2)**2 + (2*z*r)**2)/sqrt(4*z**2 + 1)",
+   "why": "affine combination of known quantities (amplitude / static deflection, Mechanical Impedance Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(4*r**2*z**2 + 1)/sqrt(4*z**2 + 1)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(1 + (2*z*r)**2)/sqrt((1 - r**2)**2 + (2*z*r)**2)",
+   "why": "affine combination of known quantities (amplitude / static deflection, transmissibility)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(16*r**4*z**4 + 4*r**2*z**2 + 1)/sqrt((1 - r**2)**2 + (2*z*r)**2)",
+   "why": "affine combination of known quantities (amplitude / static deflection, Acceleration transmissibility [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 + u)/(1 - u)) * sqrt((1 + v)/(1 - v)) / sqrt((1 + (u + v)/(1 + u*v)) / (1 - (u + v)/(1 + u*v",
+   "why": "affine combination of known quantities (composed speed / c)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 - u**2)*(1 - v**2) + ((u + v)/(1 + u*v))**2) / (1 + u*v)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((u**2 + 2*u*v + v**2)/(u*v + 1)**2 + (u*v + 1)**2/((1 - u**2)*(1 - v**2)))",
+   "why": "affine combination of known quantities (composed speed / c, Relativistic momentum magnitude ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt(1 - u**2)*sqrt(1 - v**2) + (u + v)*sqrt(1 - ((u + v)/(1 + u*v))**2)/(1 + u*v)",
+   "why": "affine combination of known quantities (composed speed / c, Relativistic Energy-Momentum Invariant [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "1 - c/(c*x + 1)",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "((1 - c1 - c2)**2/18)/(((1 - 2*c1 + c2)**2 + (1 - 2*c2 + c1)**2)/9)",
+   "why": "affine combination of known quantities (Price Elasticity of Demand [model-proposed; physical meaning unverified], Total Welfare Deviation Index [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "sqrt(-L*p + 1)/(-p*sqrt(1 - L) + p + 1)",
+   "why": "affine combination of known quantities (expected wealth, Risk Adjustment Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "-1 + sqrt(-L*p + 1)/sqrt(1 - L)",
+   "why": "affine combination of known quantities (expected wealth, Insurance Risk Exposure Index [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "sqrt(-L*p + 1)/(-p*sqrt(1 - L) + 1)",
+   "why": "affine combination of known quantities (expected wealth, Relative Risk Adjustment Index [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "sqrt(-L*p + 1)/(-p*sqrt(1 - L) + p + 1)",
+   "why": "affine combination of known quantities (expected wealth, Risk Adjustment Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "sqrt((1 - (a + b)**2)*(1 - (a - b)**2))",
+   "why": "affine combination of known quantities (momentum of each product / (Mc))"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "sqrt((1 - (a + b)**2)**2 + (a**2 - b**2 + 1)**2)/sqrt((1 - (a + b)**2)**2 + (-a**2 + b**2 + 1)**2)",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), Invariant Mass Ratio of the Two Products [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "(-b**2 + (1 - a)**2)/(-a**2 - b**2 + (1 - a)**2 + 1)",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), Ratio of kinetic energy of product 1 to total kinetic energy [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "sqrt((1 - (a - b)**2)*(1 - (a + b)**2)/4 + (a**2 - b**2 + 1)**2)/sqrt((1 - (a - b)**2)*(1 - (a + b)*",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), Lorentz Factor Ratio of Products [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2",
+   "why": "affine combination of known quantities (Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified], Fraction of kinetic energy transferred to the target [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "e / (1 + m)",
+   "why": "affine combination of known quantities (momentum transferred / initial momentum, speed of the centre of mass / initial speed)"
+  },
+  {
+   "family": "collision",
+   "expr": "1 - (1 - e**2)/(1 + m)",
+   "why": "affine combination of known quantities (target speed / initial speed, fraction of kinetic energy lost)"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2*m**2 / ((e**2*m**2 + 1) * (1 + m))",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt((1 - r**2)**2 + (2*z*r)**2)/sqrt(4*z**2 + 1)",
+   "why": "affine combination of known quantities (amplitude / static deflection, Mechanical Impedance Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(4*r**2*z**2 + 1)/sqrt(4*z**2 + 1)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt((1 + (2*z*r)**2)/((1 - r**2)**2 + (2*z*r)**2))",
+   "why": "affine combination of known quantities (amplitude / static deflection, transmissibility)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(8*r**2*z**2 + 1)/sqrt((1 - r**2)**2 + (2*z*r)**2)",
+   "why": "affine combination of known quantities (amplitude / static deflection, Velocity transmissibility [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 + u)/(1 - u)) * sqrt((1 + v)/(1 - v)) / sqrt((1 + (u + v)/(1 + u*v)) / (1 - (u + v)/(1 + u*v",
+   "why": "affine combination of known quantities (composed speed / c)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 - u**2)*(1 - v**2) + ((u + v)/(1 + u*v))**2) / (1 + u*v)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "1 - c/(c*x + 1)",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "((1 - 2*c1 + c2)**2 + (1 - 2*c2 + c1)**2)/((1 - c1)**2 + (1 - c2)**2)",
+   "why": "affine combination of known quantities (output of firm 1, Hirshleifer Index [model-proposed; physical meaning unverified])"
   }
  ],
  "tried": [
@@ -68032,7 +68203,75 @@
   "insurance and risk|Relative Risk Aversion Ratio [model-proposed; physical meaning unverified]|Insurance risk sensitivity [model-proposed; physical meaning unverified]",
   "insurance and risk|Relative Risk Aversion Ratio [model-proposed; physical meaning unverified]|Coefficient of Risk Aversion [model-proposed; physical meaning unverified]",
   "insurance and risk|Relative Risk Aversion Ratio [model-proposed; physical meaning unverified]|Relative Risk Aversion [model-proposed; physical meaning unverified]",
-  "insurance and risk|Relative Risk Aversion Ratio [model-proposed; physical meaning unverified]|Expected Utility Deviation [model-proposed; physical meaning unverified]"
+  "insurance and risk|Relative Risk Aversion Ratio [model-proposed; physical meaning unverified]|Expected Utility Deviation [model-proposed; physical meaning unverified]",
+  "Compton scattering|Scattered photon wavelength shift factor (alternative) [model-proposed; physical meaning unverified]|scattered photon energy / (m_e c\u00b2)",
+  "Compton scattering|Scattered photon wavelength shift factor (alternative) [model-proposed; physical meaning unverified]|electron kinetic energy / (m_e c\u00b2)",
+  "Compton scattering|Scattered photon wavelength shift factor (alternative) [model-proposed; physical meaning unverified]|wavelength shift / Compton wavelength",
+  "Compton scattering|Scattered photon wavelength shift factor (alternative) [model-proposed; physical meaning unverified]|photon energy / (m_e c\u00b2)",
+  "Compton scattering|Scattered photon wavelength shift factor (alternative) [model-proposed; physical meaning unverified]|Recoil electron momentum / (m_e c) [model-proposed; physical meaning unverified]",
+  "Compton scattering|Scattered photon wavelength shift factor (alternative) [model-proposed; physical meaning unverified]|Electron recoil angle (cosine) [model-proposed; physical meaning unverified]",
+  "Compton scattering|Scattered photon wavelength shift factor (alternative) [model-proposed; physical meaning unverified]|Compton wavelength shift / (initial photon wavelength) [model-proposed; physical meaning unverified]",
+  "Compton scattering|Scattered photon wavelength shift factor (alternative) [model-proposed; physical meaning unverified]|Compton scattering formula (recoil angle cosine) [model-proposed; physical meaning unverified]",
+  "Compton scattering|Scattered photon wavelength shift factor (alternative) [model-proposed; physical meaning unverified]|Scattered photon wavelength / initial photon wavelength [model-proposed; physical meaning unverified]",
+  "Compton scattering|Scattered photon wavelength shift factor (alternative) [model-proposed; physical meaning unverified]|Scattered photon momentum / initial photon momentum [model-proposed; physical meaning unverified]",
+  "Compton scattering|Scattered photon wavelength shift factor (alternative) [model-proposed; physical meaning unverified]|Scattered photon wavelength / Compton wavelength [model-proposed; physical meaning unverified]",
+  "Compton scattering|Scattered photon wavelength shift factor (alternative) [model-proposed; physical meaning unverified]|Electron recoil angle (sine squared) [model-proposed; physical meaning unverified]",
+  "Compton scattering|Scattered photon wavelength shift factor (alternative) [model-proposed; physical meaning unverified]|Electron momentum fraction [model-proposed; physical meaning unverified]",
+  "Compton scattering|Scattered photon wavelength shift factor (alternative) [model-proposed; physical meaning unverified]|Electron kinetic energy fraction [model-proposed; physical meaning unverified]",
+  "Compton scattering|Scattered photon wavelength shift factor (alternative) [model-proposed; physical meaning unverified]|Electron kinetic energy / initial photon energy [model-proposed; physical meaning unverified]",
+  "Compton scattering|Scattered photon wavelength shift factor (alternative) [model-proposed; physical meaning unverified]|Compton scattering factor [model-proposed; physical meaning unverified]",
+  "Compton scattering|Scattered photon wavelength shift factor (alternative) [model-proposed; physical meaning unverified]|Compton scattering cross-section factor [model-proposed; physical meaning unverified]",
+  "Compton scattering|Scattered photon wavelength shift factor (alternative) [model-proposed; physical meaning unverified]|Electron kinetic energy to scattered photon energy ratio [model-proposed; physical meaning unverified]",
+  "Compton scattering|Scattered photon wavelength shift factor (alternative) [model-proposed; physical meaning unverified]|Scattered photon wavelength shift factor [model-proposed; physical meaning unverified]",
+  "Compton scattering|Scattered photon wavelength shift factor (alternative) [model-proposed; physical meaning unverified]|Recoil electron momentum to initial photon momentum ratio [model-proposed; physical meaning unverified]",
+  "insurance and risk|Relative Risk Aversion Ratio [model-proposed; physical meaning unverified]|Insurance Coverage Ratio [model-proposed; physical meaning unverified]",
+  "insurance and risk|Relative Risk Aversion Ratio [model-proposed; physical meaning unverified]|Insurance Risk Adjustment Factor [model-proposed; physical meaning unverified]",
+  "insurance and risk|Relative Risk Aversion Ratio [model-proposed; physical meaning unverified]|Insurance Risk Adjustment Index [model-proposed; physical meaning unverified]",
+  "insurance and risk|Relative Risk Aversion Ratio [model-proposed; physical meaning unverified]|Insurance Risk Sensitivity Ratio [model-proposed; physical meaning unverified]",
+  "insurance and risk|Relative Risk Aversion Ratio [model-proposed; physical meaning unverified]|Relative Risk Sensitivity [model-proposed; physical meaning unverified]",
+  "insurance and risk|Relative Risk Aversion Ratio [model-proposed; physical meaning unverified]|Insurance Risk Adjustment Ratio [model-proposed; physical meaning unverified]",
+  "insurance and risk|Relative Risk Aversion Ratio [model-proposed; physical meaning unverified]|Insurance Risk Adjustment Factor Squared [model-proposed; physical meaning unverified]",
+  "insurance and risk|Relative Risk Aversion Ratio [model-proposed; physical meaning unverified]|Relative Risk Aversion Squared [model-proposed; physical meaning unverified]",
+  "insurance and risk|Relative Risk Aversion Ratio [model-proposed; physical meaning unverified]|Insurance Risk Exposure Index [model-proposed; physical meaning unverified]",
+  "insurance and risk|Relative Risk Aversion Ratio [model-proposed; physical meaning unverified]|Risk Adjustment Ratio [model-proposed; physical meaning unverified]",
+  "insurance and risk|Relative Risk Aversion Ratio [model-proposed; physical meaning unverified]|Expected Utility Adjustment Factor [model-proposed; physical meaning unverified]",
+  "insurance and risk|Relative Risk Aversion Ratio [model-proposed; physical meaning unverified]|Insurance Risk Sensitivity Index [model-proposed; physical meaning unverified]",
+  "insurance and risk|Relative Risk Aversion Ratio [model-proposed; physical meaning unverified]|Relative Risk Sensitivity Index [model-proposed; physical meaning unverified]",
+  "insurance and risk|Relative Risk Aversion Ratio [model-proposed; physical meaning unverified]|Insurance Risk Exposure Ratio [model-proposed; physical meaning unverified]",
+  "insurance and risk|Relative Risk Aversion Ratio [model-proposed; physical meaning unverified]|Risk Sensitivity Ratio [model-proposed; physical meaning unverified]",
+  "insurance and risk|Relative Risk Aversion Ratio [model-proposed; physical meaning unverified]|Relative Risk Adjustment Index [model-proposed; physical meaning unverified]",
+  "insurance and risk|Relative Risk Aversion Ratio [model-proposed; physical meaning unverified]|Insurance Risk Adjustment Ratio Squared [model-proposed; physical meaning unverified]",
+  "insurance and risk|Relative Risk Aversion Ratio [model-proposed; physical meaning unverified]|Insurance Coverage Ratio Adjusted [model-proposed; physical meaning unverified]",
+  "insurance and risk|Relative Risk Aversion Ratio [model-proposed; physical meaning unverified]|Insurance Coverage Ratio Adjusted Squared [model-proposed; physical meaning unverified]",
+  "insurance and risk|Relative Risk Aversion Ratio [model-proposed; physical meaning unverified]|Insurance Risk Sensitivity Ratio Adjusted [model-proposed; physical meaning unverified]",
+  "insurance and risk|Relative Risk Aversion Ratio [model-proposed; physical meaning unverified]|Insurance Risk Exposure Ratio Adjusted [model-proposed; physical meaning unverified]",
+  "insurance and risk|Relative Risk Aversion Ratio [model-proposed; physical meaning unverified]|Relative Risk Sensitivity Index Adjusted [model-proposed; physical meaning unverified]",
+  "insurance and risk|Relative Risk Aversion Ratio [model-proposed; physical meaning unverified]|Insurance Coverage Sensitivity [model-proposed; physical meaning unverified]",
+  "insurance and risk|Relative Risk Aversion Ratio [model-proposed; physical meaning unverified]|Relative Risk Adjustment Index Adjusted [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|expected revenue|Bidder Surplus Efficiency Ratio [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|seller's expected payoff|Bidder Surplus Efficiency Ratio [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|probability the item is not sold|Bidder Surplus Efficiency Ratio [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|expected total bidder surplus|Bidder Surplus Efficiency Ratio [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|expected total welfare|Bidder Surplus Efficiency Ratio [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|welfare with the efficient reserve (r = v)|Bidder Surplus Efficiency Ratio [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|probability the seller's value is below reserve [model-proposed; physical meaning unverified]|Bidder Surplus Efficiency Ratio [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|expected bidder surplus ratio [model-proposed; physical meaning unverified]|Bidder Surplus Efficiency Ratio [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|reserve price elasticity of welfare [model-proposed; physical meaning unverified]|Bidder Surplus Efficiency Ratio [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|expected bidder surplus given reserve [model-proposed; physical meaning unverified]|Bidder Surplus Efficiency Ratio [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|reserve price elasticity of bidder surplus [model-proposed; physical meaning unverified]|Bidder Surplus Efficiency Ratio [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|expected bidder surplus given reserve and seller's value [model-proposed; physical meaning unverified]|Bidder Surplus Efficiency Ratio [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|Welfare Efficiency Ratio [model-proposed; physical meaning unverified]|Bidder Surplus Efficiency Ratio [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|Bidder Surplus Given Reserve and Seller Value Ratio [model-proposed; physical meaning unverified]|Bidder Surplus Efficiency Ratio [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|Welfare Reserve Ratio [model-proposed; physical meaning unverified]|Bidder Surplus Efficiency Ratio [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|Bidder Surplus Reserve Ratio [model-proposed; physical meaning unverified]|Bidder Surplus Efficiency Ratio [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|Welfare Reserve Efficiency Ratio [model-proposed; physical meaning unverified]|Bidder Surplus Efficiency Ratio [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|Bidder Surplus Reserve Efficiency Ratio [model-proposed; physical meaning unverified]|Bidder Surplus Efficiency Ratio [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|Welfare Reserve Efficiency with Seller Value [model-proposed; physical meaning unverified]|Bidder Surplus Efficiency Ratio [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|Bidder Surplus Reserve Ratio with Seller Value [model-proposed; physical meaning unverified]|Bidder Surplus Efficiency Ratio [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|Welfare Reserve Efficiency with Seller Value and Reserve [model-proposed; physical meaning unverified]|Bidder Surplus Efficiency Ratio [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|Bidder Surplus Reserve Efficiency with Seller Value [model-proposed; physical meaning unverified]|Bidder Surplus Efficiency Ratio [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|Bidder Surplus Reserve Efficiency with Seller Value and Reserve Ratio [model-proposed; physical meaning unverified]|Bidder Surplus Efficiency Ratio [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|Expected Revenue to Seller's Value Ratio [model-proposed; physical meaning unverified]|Bidder Surplus Efficiency Ratio [model-proposed; physical meaning unverified]"
  ],
  "edges": [
   {
@@ -76020,9 +76259,213 @@
    "f": "Relative Risk Adjustment Index [model-proposed; physical meaning unverified]",
    "g": "Relative Risk Aversion Ratio [model-proposed; physical meaning unverified]",
    "k": "1"
+  },
+  {
+   "family": "Compton scattering",
+   "f": "Scattered photon wavelength shift factor (alternative) [model-proposed; physical meaning unverified]",
+   "g": "scattered photon energy / (m_e c\u00b2)",
+   "k": "1/6"
+  },
+  {
+   "family": "Compton scattering",
+   "f": "Scattered photon wavelength shift factor (alternative) [model-proposed; physical meaning unverified]",
+   "g": "wavelength shift / Compton wavelength",
+   "k": "1/2"
+  },
+  {
+   "family": "Compton scattering",
+   "f": "Scattered photon wavelength shift factor (alternative) [model-proposed; physical meaning unverified]",
+   "g": "photon energy / (m_e c\u00b2)",
+   "k": "1/6"
+  },
+  {
+   "family": "Compton scattering",
+   "f": "Scattered photon wavelength shift factor (alternative) [model-proposed; physical meaning unverified]",
+   "g": "Electron recoil angle (cosine) [model-proposed; physical meaning unverified]",
+   "k": "1/3"
+  },
+  {
+   "family": "Compton scattering",
+   "f": "Scattered photon wavelength shift factor (alternative) [model-proposed; physical meaning unverified]",
+   "g": "Compton wavelength shift / (initial photon wavelength) [model-proposed; physical meaning unverified]",
+   "k": "1"
+  },
+  {
+   "family": "Compton scattering",
+   "f": "Scattered photon wavelength shift factor (alternative) [model-proposed; physical meaning unverified]",
+   "g": "Compton scattering formula (recoil angle cosine) [model-proposed; physical meaning unverified]",
+   "k": "1/3"
+  },
+  {
+   "family": "Compton scattering",
+   "f": "Scattered photon wavelength shift factor (alternative) [model-proposed; physical meaning unverified]",
+   "g": "Scattered photon wavelength / initial photon wavelength [model-proposed; physical meaning unverified]",
+   "k": "1/3"
+  },
+  {
+   "family": "Compton scattering",
+   "f": "Scattered photon wavelength shift factor (alternative) [model-proposed; physical meaning unverified]",
+   "g": "Electron recoil angle (sine squared) [model-proposed; physical meaning unverified]",
+   "k": "9/16"
+  },
+  {
+   "family": "Compton scattering",
+   "f": "Scattered photon wavelength shift factor (alternative) [model-proposed; physical meaning unverified]",
+   "g": "Electron kinetic energy fraction [model-proposed; physical meaning unverified]",
+   "k": "3/4"
+  },
+  {
+   "family": "Compton scattering",
+   "f": "Scattered photon wavelength shift factor (alternative) [model-proposed; physical meaning unverified]",
+   "g": "Electron kinetic energy / initial photon energy [model-proposed; physical meaning unverified]",
+   "k": "3/20"
+  },
+  {
+   "family": "Compton scattering",
+   "f": "Scattered photon wavelength shift factor (alternative) [model-proposed; physical meaning unverified]",
+   "g": "Compton scattering factor [model-proposed; physical meaning unverified]",
+   "k": "1/6"
+  },
+  {
+   "family": "Compton scattering",
+   "f": "Scattered photon wavelength shift factor (alternative) [model-proposed; physical meaning unverified]",
+   "g": "Compton scattering cross-section factor [model-proposed; physical meaning unverified]",
+   "k": "1/6"
+  },
+  {
+   "family": "Compton scattering",
+   "f": "Scattered photon wavelength shift factor (alternative) [model-proposed; physical meaning unverified]",
+   "g": "Scattered photon wavelength shift factor [model-proposed; physical meaning unverified]",
+   "k": "3/4"
+  },
+  {
+   "family": "auction with a reserve price",
+   "f": "expected revenue",
+   "g": "Bidder Surplus Efficiency Ratio [model-proposed; physical meaning unverified]",
+   "k": "2/3"
+  },
+  {
+   "family": "auction with a reserve price",
+   "f": "seller's expected payoff",
+   "g": "Bidder Surplus Efficiency Ratio [model-proposed; physical meaning unverified]",
+   "k": "2/3"
+  },
+  {
+   "family": "auction with a reserve price",
+   "f": "expected total bidder surplus",
+   "g": "Bidder Surplus Efficiency Ratio [model-proposed; physical meaning unverified]",
+   "k": "2/3"
+  },
+  {
+   "family": "auction with a reserve price",
+   "f": "expected total welfare",
+   "g": "Bidder Surplus Efficiency Ratio [model-proposed; physical meaning unverified]",
+   "k": "4/3"
+  },
+  {
+   "family": "auction with a reserve price",
+   "f": "welfare with the efficient reserve (r = v)",
+   "g": "Bidder Surplus Efficiency Ratio [model-proposed; physical meaning unverified]",
+   "k": "4/3"
+  },
+  {
+   "family": "auction with a reserve price",
+   "f": "expected bidder surplus ratio [model-proposed; physical meaning unverified]",
+   "g": "Bidder Surplus Efficiency Ratio [model-proposed; physical meaning unverified]",
+   "k": "1"
+  },
+  {
+   "family": "auction with a reserve price",
+   "f": "expected bidder surplus given reserve [model-proposed; physical meaning unverified]",
+   "g": "Bidder Surplus Efficiency Ratio [model-proposed; physical meaning unverified]",
+   "k": "2/3"
+  },
+  {
+   "family": "auction with a reserve price",
+   "f": "reserve price elasticity of bidder surplus [model-proposed; physical meaning unverified]",
+   "g": "Bidder Surplus Efficiency Ratio [model-proposed; physical meaning unverified]",
+   "k": "2"
+  },
+  {
+   "family": "auction with a reserve price",
+   "f": "expected bidder surplus given reserve and seller's value [model-proposed; physical meaning unverified]",
+   "g": "Bidder Surplus Efficiency Ratio [model-proposed; physical meaning unverified]",
+   "k": "2/3"
+  },
+  {
+   "family": "auction with a reserve price",
+   "f": "Welfare Efficiency Ratio [model-proposed; physical meaning unverified]",
+   "g": "Bidder Surplus Efficiency Ratio [model-proposed; physical meaning unverified]",
+   "k": "8"
+  },
+  {
+   "family": "auction with a reserve price",
+   "f": "Bidder Surplus Given Reserve and Seller Value Ratio [model-proposed; physical meaning unverified]",
+   "g": "Bidder Surplus Efficiency Ratio [model-proposed; physical meaning unverified]",
+   "k": "2/3"
+  },
+  {
+   "family": "auction with a reserve price",
+   "f": "Welfare Reserve Ratio [model-proposed; physical meaning unverified]",
+   "g": "Bidder Surplus Efficiency Ratio [model-proposed; physical meaning unverified]",
+   "k": "2"
+  },
+  {
+   "family": "auction with a reserve price",
+   "f": "Bidder Surplus Reserve Ratio [model-proposed; physical meaning unverified]",
+   "g": "Bidder Surplus Efficiency Ratio [model-proposed; physical meaning unverified]",
+   "k": "2/3"
+  },
+  {
+   "family": "auction with a reserve price",
+   "f": "Welfare Reserve Efficiency Ratio [model-proposed; physical meaning unverified]",
+   "g": "Bidder Surplus Efficiency Ratio [model-proposed; physical meaning unverified]",
+   "k": "4"
+  },
+  {
+   "family": "auction with a reserve price",
+   "f": "Bidder Surplus Reserve Efficiency Ratio [model-proposed; physical meaning unverified]",
+   "g": "Bidder Surplus Efficiency Ratio [model-proposed; physical meaning unverified]",
+   "k": "1"
+  },
+  {
+   "family": "auction with a reserve price",
+   "f": "Welfare Reserve Efficiency with Seller Value [model-proposed; physical meaning unverified]",
+   "g": "Bidder Surplus Efficiency Ratio [model-proposed; physical meaning unverified]",
+   "k": "4"
+  },
+  {
+   "family": "auction with a reserve price",
+   "f": "Bidder Surplus Reserve Ratio with Seller Value [model-proposed; physical meaning unverified]",
+   "g": "Bidder Surplus Efficiency Ratio [model-proposed; physical meaning unverified]",
+   "k": "1/2"
+  },
+  {
+   "family": "auction with a reserve price",
+   "f": "Welfare Reserve Efficiency with Seller Value and Reserve [model-proposed; physical meaning unverified]",
+   "g": "Bidder Surplus Efficiency Ratio [model-proposed; physical meaning unverified]",
+   "k": "4/3"
+  },
+  {
+   "family": "auction with a reserve price",
+   "f": "Bidder Surplus Reserve Efficiency with Seller Value [model-proposed; physical meaning unverified]",
+   "g": "Bidder Surplus Efficiency Ratio [model-proposed; physical meaning unverified]",
+   "k": "1/2"
+  },
+  {
+   "family": "auction with a reserve price",
+   "f": "Bidder Surplus Reserve Efficiency with Seller Value and Reserve Ratio [model-proposed; physical meaning unverified]",
+   "g": "Bidder Surplus Efficiency Ratio [model-proposed; physical meaning unverified]",
+   "k": "2/3"
+  },
+  {
+   "family": "auction with a reserve price",
+   "f": "Expected Revenue to Seller's Value Ratio [model-proposed; physical meaning unverified]",
+   "g": "Bidder Surplus Efficiency Ratio [model-proposed; physical meaning unverified]",
+   "k": "2/3"
   }
  ],
- "rounds": 4432,
+ "rounds": 4446,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",
