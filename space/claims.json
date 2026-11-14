@@ -2854665,5 +2854665,383 @@
   "statement": "Octal game 0.776504 is completely solved: its Grundy values are periodic with pre-period 332 and period 4 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3515062",
+   "held_out_r2": 0.9097,
+   "held_out_rows": 183,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c3e1232b78b2",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "40543c59f08439d5.csv",
+   "doi": "10.5281/zenodo.3515062",
+   "form": "linear",
+   "params": [
+    0.7874914035560553,
+    0.7472554850379065
+   ],
+   "seed": 1370083493,
+   "x": "Q_mean",
+   "y": "Q_min"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Isotopes and related data associated with water tracing with environmental DNA in a high-A' (Zenodo, doi 10.5281/zenodo.3515062): 'Q_min' is linear in 'Q_mean' (R\u00b2 = 0.942 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3515062",
+   "held_out_r2": -Infinity,
+   "held_out_rows": 183,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b2d4e3b011f9",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "40543c59f08439d5.csv",
+   "doi": "10.5281/zenodo.3515062",
+   "form": "power law",
+   "params": [
+    0.07434691433844301,
+    1.0546376853306674
+   ],
+   "seed": 1370083493,
+   "x": "Q_mean",
+   "y": "Q_max"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Isotopes and related data associated with water tracing with environmental DNA in a high-A' (Zenodo, doi 10.5281/zenodo.3515062): 'Q_max' follows a power law in 'Q_mean' (R\u00b2 = 0.943 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3515062",
+   "held_out_r2": -Infinity,
+   "held_out_rows": 183,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b391e802d7fa",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "40543c59f08439d5.csv",
+   "doi": "10.5281/zenodo.3515062",
+   "form": "power law",
+   "params": [
+    0.1948481735770331,
+    0.9068557757573033
+   ],
+   "seed": 1370083493,
+   "x": "Q_mean",
+   "y": "Q_baseflow"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Isotopes and related data associated with water tracing with environmental DNA in a high-A' (Zenodo, doi 10.5281/zenodo.3515062): 'Q_baseflow' follows a power law in 'Q_mean' (R\u00b2 = 0.950 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3515062",
+   "held_out_r2": 0.9428,
+   "held_out_rows": 183,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-6ce03e6d09ec",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "40543c59f08439d5.csv",
+   "doi": "10.5281/zenodo.3515062",
+   "form": "linear",
+   "params": [
+    4.189211251027064,
+    0.9596218856501308
+   ],
+   "seed": 1370083493,
+   "x": "Q_min",
+   "y": "Q_baseflow"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Isotopes and related data associated with water tracing with environmental DNA in a high-A' (Zenodo, doi 10.5281/zenodo.3515062): 'Q_baseflow' is linear in 'Q_min' (R\u00b2 = 0.918 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.10830852",
+   "held_out_r2": 0.9529,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-92016be037eb",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "31476700b2691e85.csv",
+   "doi": "10.5281/zenodo.10830852",
+   "form": "linear",
+   "params": [
+    -4.463519023275338,
+    0.9568474214847493
+   ],
+   "seed": 1569414534,
+   "x": "n_meas",
+   "y": "nmeas_cont_seq"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'nuts-STeauRY dataset: hydrochemical and catchment characteristics dataset for large sample' (Zenodo, doi 10.5281/zenodo.10830852): 'nmeas_cont_seq' is linear in 'n_meas' (R\u00b2 = 0.956 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.10830852",
+   "held_out_r2": 0.9887,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-590c63014fd4",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "31476700b2691e85.csv",
+   "doi": "10.5281/zenodo.10830852",
+   "form": "power law",
+   "params": [
+    -0.15854667411116907,
+    1.0356423573965787
+   ],
+   "seed": 1569414534,
+   "x": "mean",
+   "y": "median"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'nuts-STeauRY dataset: hydrochemical and catchment characteristics dataset for large sample' (Zenodo, doi 10.5281/zenodo.10830852): 'median' follows a power law in 'mean' (R\u00b2 = 0.989 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.6084/m9.figshare.33993595.v1",
+   "held_out_r2": 0.8731,
+   "held_out_rows": 89,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-14cfee01c82b",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8b5a2b119f3cce26.csv",
+   "doi": "10.6084/m9.figshare.33993595.v1",
+   "form": "linear",
+   "params": [
+    78.73051361970731,
+    -0.9097089358371843
+   ],
+   "seed": 4084180063,
+   "x": "No Teeth",
+   "y": "Regular teeth"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Quantitative reconstruction of Late Miocene monsoon-driven climate and hydrology in the Hi' (Figshare, doi 10.6084/m9.figshare.33993595.v1): 'Regular teeth' is linear in 'No Teeth' (R\u00b2 = 0.918 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.6084/m9.figshare.33993595.v1",
+   "held_out_r2": 0.9134,
+   "held_out_rows": 89,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9aecdb237545",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8b5a2b119f3cce26.csv",
+   "doi": "10.6084/m9.figshare.33993595.v1",
+   "form": "linear",
+   "params": [
+    -0.6190696465474116,
+    0.8538461395065032
+   ],
+   "seed": 4084180063,
+   "x": "Regular teeth",
+   "y": "Close teeth"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Quantitative reconstruction of Late Miocene monsoon-driven climate and hydrology in the Hi' (Figshare, doi 10.6084/m9.figshare.33993595.v1): 'Close teeth' is linear in 'Regular teeth' (R\u00b2 = 0.913 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.6084/m9.figshare.33993595.v1",
+   "held_out_r2": 0.9591,
+   "held_out_rows": 89,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d564cf0a48cd",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "915b51c2a225f99c.csv",
+   "doi": "10.6084/m9.figshare.33993595.v1",
+   "form": "linear",
+   "params": [
+    -191.97515369951216,
+    32.32463255006093
+   ],
+   "seed": 781189411,
+   "x": "MAT",
+   "y": "Thermicity"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Quantitative reconstruction of Late Miocene monsoon-driven climate and hydrology in the Hi' (Figshare, doi 10.6084/m9.figshare.33993595.v1): 'Thermicity' is linear in 'MAT' (R\u00b2 = 0.953 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.6084/m9.figshare.33993595.v1",
+   "held_out_r2": 0.9285,
+   "held_out_rows": 89,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b303bfb8b326",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "915b51c2a225f99c.csv",
+   "doi": "10.6084/m9.figshare.33993595.v1",
+   "form": "linear",
+   "params": [
+    137.8544873909192,
+    23.25505015670784
+   ],
+   "seed": 781189411,
+   "x": "CMMT",
+   "y": "Thermicity"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Quantitative reconstruction of Late Miocene monsoon-driven climate and hydrology in the Hi' (Figshare, doi 10.6084/m9.figshare.33993595.v1): 'Thermicity' is linear in 'CMMT' (R\u00b2 = 0.947 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.6084/m9.figshare.33993595.v1",
+   "held_out_r2": 0.9647,
+   "held_out_rows": 89,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-72949ff1b5c6",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "915b51c2a225f99c.csv",
+   "doi": "10.6084/m9.figshare.33993595.v1",
+   "form": "linear",
+   "params": [
+    27.762883828586368,
+    0.5196776671829302
+   ],
+   "seed": 781189411,
+   "x": "SH",
+   "y": "ENTHAL"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Quantitative reconstruction of Late Miocene monsoon-driven climate and hydrology in the Hi' (Figshare, doi 10.6084/m9.figshare.33993595.v1): 'ENTHAL' is linear in 'SH' (R\u00b2 = 0.966 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.6084/m9.figshare.33993595.v1",
+   "held_out_r2": 0.9164,
+   "held_out_rows": 89,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-2a99fb26371f",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "915b51c2a225f99c.csv",
+   "doi": "10.6084/m9.figshare.33993595.v1",
+   "form": "power law",
+   "params": [
+    -0.10731708316491208,
+    1.0885956376952584
+   ],
+   "seed": 781189411,
+   "x": "VPD_ann",
+   "y": "VPD_SPR"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Quantitative reconstruction of Late Miocene monsoon-driven climate and hydrology in the Hi' (Figshare, doi 10.6084/m9.figshare.33993595.v1): 'VPD_SPR' follows a power law in 'VPD_ann' (R\u00b2 = 0.902 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.6084/m9.figshare.33993595.v1",
+   "held_out_r2": 0.9546,
+   "held_out_rows": 89,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3851987fb785",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "915b51c2a225f99c.csv",
+   "doi": "10.6084/m9.figshare.33993595.v1",
+   "form": "power law",
+   "params": [
+    0.25199121154782106,
+    0.8443875231174439
+   ],
+   "seed": 781189411,
+   "x": "VPD_ann",
+   "y": "VPD_AUT"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Quantitative reconstruction of Late Miocene monsoon-driven climate and hydrology in the Hi' (Figshare, doi 10.6084/m9.figshare.33993595.v1): 'VPD_AUT' follows a power law in 'VPD_ann' (R\u00b2 = 0.921 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.6084/m9.figshare.33993595.v1",
+   "held_out_r2": 0.8962,
+   "held_out_rows": 89,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-072554d2e283",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "915b51c2a225f99c.csv",
+   "doi": "10.6084/m9.figshare.33993595.v1",
+   "form": "linear",
+   "params": [
+    1.764185553442603,
+    0.5301253448958645
+   ],
+   "seed": 781189411,
+   "x": "VPD_SUM",
+   "y": "VPD_AUT"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Quantitative reconstruction of Late Miocene monsoon-driven climate and hydrology in the Hi' (Figshare, doi 10.6084/m9.figshare.33993595.v1): 'VPD_AUT' is linear in 'VPD_SUM' (R\u00b2 = 0.909 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
