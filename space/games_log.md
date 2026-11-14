@@ -28445,3 +28445,4 @@
 - 2026-11-14 07:56 SOLVED (proved): 0.0017732 — pre-period 259, period 44  [gam-24293eeb7344]
 - 2026-11-14 07:56 SOLVED (proved): 0.0017733 — pre-period 259, period 44  [gam-32b4d8b0376c]
 - 2026-11-14 08:03 games: 67941 octal games solved, 201561 unresolved up to n = 3000
+- 2026-11-14 08:49 games: 67983 octal games solved, 201953 unresolved up to n = 3000
