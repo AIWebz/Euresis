@@ -3361,3 +3361,4 @@
 - 2026-11-14 03:53 FINDING (confirmed on held-out rows): In 'Data for: Imaging the short-lived hydroxyl-hydronium pair in ionized liquid water' (Zenodo, doi 10.5061/dryad.9ghx3ffhm): '-0.0256564338792986' is linear in '-0.0237770183688209.1' (R² = 0.972 on the discovery half); held-out R² = 0.969 [emp-47e354f5f954]
 - 2026-11-14 03:54 FINDING (confirmed on held-out rows): In 'Satellite-based estimates of radiative forcing of long-lived halogenated gases from spectr' (Zenodo, doi 10.5281/zenodo.20157609): 'CFC-12 deseas. (1161 cm^{-1}) [W m-2 yr-1 (cm-1)-1]' is linear in 'baseline deseas. (1161.5 cm^{-1})' (R² = 0.971 on the discovery half); held-out R² = 0.976 [emp-4961a0e52ff9]
 - 2026-11-14 03:54 data feeds: 21113 datasets analysed so far, 3005 confirmed findings
+- 2026-11-14 04:41 data feeds: online
