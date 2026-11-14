@@ -2987715,5 +2987715,59 @@
   "statement": "Octal game 0.0120262 is completely solved: its Grundy values are periodic with pre-period 1125 and period 234 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17372252",
+   "held_out_r2": 0.9181,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-1a6a1f30b898",
+  "kind": "empirical",
+  "novelty": "KNOWN: equation of state of a simulated fluid (pressure, density, temperature, chemical potential, kinetic energy) \u2014 not a discovery",
+  "payload": {
+   "dataset": "56b4e46d73749178.csv",
+   "doi": "10.5281/zenodo.17372252",
+   "form": "linear",
+   "params": [
+    8.620437458003753,
+    0.3927393186711104
+   ],
+   "seed": 743821806,
+   "x": "Ustd_cm/s",
+   "y": "Wstd_cm/s"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'UNR Sonic Anemometer Data Mosquito Fire Smoke Density Current' (Zenodo, doi 10.5281/zenodo.17372252): 'Wstd_cm/s' is linear in 'Ustd_cm/s' (R\u00b2 = 0.921 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17372252",
+   "held_out_r2": 0.9668,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b014e6c45d84",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "56b4e46d73749178.csv",
+   "doi": "10.5281/zenodo.17372252",
+   "form": "power law",
+   "params": [
+    -8.357741925458832,
+    1.8028419719624678
+   ],
+   "seed": 743821806,
+   "x": "Ustd_cm/s",
+   "y": "TurbulentKE_(m/s)^2"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'UNR Sonic Anemometer Data Mosquito Fire Smoke Density Current' (Zenodo, doi 10.5281/zenodo.17372252): 'TurbulentKE_(m/s)^2' follows a power law in 'Ustd_cm/s' (R\u00b2 = 0.967 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
