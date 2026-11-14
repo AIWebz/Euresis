@@ -2997885,7 +2997885,12 @@
   "verifier": "guy-smith-periodicity"
  },
  {
-  "evidence": null,
+  "evidence": {
+   "doi": "10.5281/zenodo.4593057",
+   "held_out_r2": 0.6206,
+   "held_out_rows": 256,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
   "id": "emp-f1dc1baabc30",
   "kind": "empirical",
   "novelty": "not checked",
@@ -2997903,7 +2997908,34 @@
   },
   "source": "datafeeds.py",
   "statement": "In 'Water restriction in viviparous lizards causes transgenerational effects on behavioral anx' (Zenodo, doi 10.5281/zenodo.4593057): 'X_BL' is linear in 'X_TL' (R\u00b2 = 0.952 on the discovery half)",
-  "status": "candidate",
-  "verifier": null
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.4593057",
+   "held_out_r2": -0.4285,
+   "held_out_rows": 256,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-072545703ddb",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "069ae79bd663f2fe.csv",
+   "doi": "10.5281/zenodo.4593057",
+   "form": "power law",
+   "params": [
+    -1.1536716093088157,
+    1.1333927542585627
+   ],
+   "seed": 2924253094,
+   "x": "X_TR",
+   "y": "Y_BL"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Water restriction in viviparous lizards causes transgenerational effects on behavioral anx' (Zenodo, doi 10.5281/zenodo.4593057): 'Y_BL' follows a power law in 'X_TR' (R\u00b2 = 0.919 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
  }
 ]
