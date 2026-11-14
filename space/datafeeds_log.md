@@ -3516,3 +3516,4 @@
 - 2026-11-14 07:01 FINDING (confirmed on held-out rows): In 'Data from: Response of marine communities to local temperature changes' (Zenodo, doi 10.5061/dryad.bg08269): 'SBTmodePA' is linear in 'SBTwtdMean' (R² = 0.922 on the discovery half); held-out R² = 0.938 [emp-55a97cee534b]
 - 2026-11-14 07:01 FINDING (confirmed on held-out rows): In 'Data from: Response of marine communities to local temperature changes' (Zenodo, doi 10.5061/dryad.bg08269): 'SBTmodePA' is linear in 'SBTmedPA' (R² = 0.961 on the discovery half); held-out R² = 0.953 [emp-680431569dd0]
 - 2026-11-14 07:01 FINDING (confirmed on held-out rows): In 'Data from: Response of marine communities to local temperature changes' (Zenodo, doi 10.5061/dryad.bg08269): 'SBTwtdMeanPA' is linear in 'SBTmodePA' (R² = 0.947 on the discovery half); held-out R² = 0.939 [emp-e18d1534b1c6]
+- 2026-11-14 07:01 data feeds: 21567 datasets analysed so far, 3153 confirmed findings
