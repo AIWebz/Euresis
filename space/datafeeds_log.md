@@ -3322,3 +3322,4 @@
 - 2026-11-14 01:59 FINDING (confirmed on held-out rows): In 'Quantitative reconstruction of Late Miocene monsoon-driven climate and hydrology in the Hi' (Figshare, doi 10.6084/m9.figshare.33993595.v1): 'VPD_AUT' follows a power law in 'VPD_ann' (R² = 0.921 on the discovery half); held-out R² = 0.955 [emp-3851987fb785]
 - 2026-11-14 01:59 FINDING (confirmed on held-out rows): In 'Quantitative reconstruction of Late Miocene monsoon-driven climate and hydrology in the Hi' (Figshare, doi 10.6084/m9.figshare.33993595.v1): 'VPD_AUT' is linear in 'VPD_SUM' (R² = 0.909 on the discovery half); held-out R² = 0.896 [emp-072554d2e283]
 - 2026-11-14 01:59 data feeds: 20941 datasets analysed so far, 2970 confirmed findings
+- 2026-11-14 02:47 data feeds: online
