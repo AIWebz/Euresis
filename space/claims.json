@@ -3007944,5 +3007944,81 @@
   "statement": "Octal game 0.0133225 is completely solved: its Grundy values are periodic with pre-period 395 and period 100 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17353516",
+   "held_out_r2": 0.9832,
+   "held_out_rows": 703,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-2cdbf8b881cb",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "5837ecb50029c40d.csv",
+   "doi": "10.5281/zenodo.17353516",
+   "form": "power law",
+   "params": [
+    0.5192932708782635,
+    0.9453753399005008
+   ],
+   "seed": 3674067655,
+   "x": "Carnosine@Cu2+/GLYMO-IDA@PSiO2",
+   "y": "HCl treatment on Cu2+/GLYMO-IDA@PSiO2"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Reconfigurable Optical Sensor for Metal-Ion-Mediated Label-Free Recognition of Different B' (Zenodo, doi 10.5281/zenodo.17353516): 'HCl treatment on Cu2+/GLYMO-IDA@PSiO2' follows a power law in 'Carnosine@Cu2+/GLYMO-IDA@PSiO2' (R\u00b2 = 0.984 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17353516",
+   "held_out_r2": 0.9784,
+   "held_out_rows": 703,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-bb0048cca543",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "5837ecb50029c40d.csv",
+   "doi": "10.5281/zenodo.17353516",
+   "form": "power law",
+   "params": [
+    0.6646208480202282,
+    0.927963477662889
+   ],
+   "seed": 3674067655,
+   "x": "Carnosine@Cu2+/GLYMO-IDA@PSiO2",
+   "y": "EDTA treatment on Cu2+/GLYMO-IDA@PSiO2"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Reconfigurable Optical Sensor for Metal-Ion-Mediated Label-Free Recognition of Different B' (Zenodo, doi 10.5281/zenodo.17353516): 'EDTA treatment on Cu2+/GLYMO-IDA@PSiO2' follows a power law in 'Carnosine@Cu2+/GLYMO-IDA@PSiO2' (R\u00b2 = 0.974 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": null,
+  "id": "emp-c9575cdd78ed",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "5837ecb50029c40d.csv",
+   "doi": "10.5281/zenodo.17353516",
+   "form": "power law",
+   "params": [
+    0.31124600178833683,
+    0.9645785210904522
+   ],
+   "seed": 3674067655,
+   "x": "Carnosine@Cu2+/GLYMO-IDA@PSiO2",
+   "y": "Zn2+/GLYMO-IDA@PSiO2"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Reconfigurable Optical Sensor for Metal-Ion-Mediated Label-Free Recognition of Different B' (Zenodo, doi 10.5281/zenodo.17353516): 'Zn2+/GLYMO-IDA@PSiO2' follows a power law in 'Carnosine@Cu2+/GLYMO-IDA@PSiO2' (R\u00b2 = 0.986 on the discovery half)",
+  "status": "candidate",
+  "verifier": null
  }
 ]

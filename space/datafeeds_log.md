@@ -3741,3 +3741,5 @@
 - 2026-11-14 22:12 data feeds: online
 - 2026-11-14 22:13 data feeds: 23013 datasets analysed so far, 3344 confirmed findings
 - 2026-11-14 23:14 data feeds: online
+- 2026-11-14 23:14 FINDING (confirmed on held-out rows): In 'Reconfigurable Optical Sensor for Metal-Ion-Mediated Label-Free Recognition of Different B' (Zenodo, doi 10.5281/zenodo.17353516): 'HCl treatment on Cu2+/GLYMO-IDA@PSiO2' follows a power law in 'Carnosine@Cu2+/GLYMO-IDA@PSiO2' (R² = 0.984 on the discovery half); held-out R² = 0.983 [emp-2cdbf8b881cb]
+- 2026-11-14 23:14 FINDING (confirmed on held-out rows): In 'Reconfigurable Optical Sensor for Metal-Ion-Mediated Label-Free Recognition of Different B' (Zenodo, doi 10.5281/zenodo.17353516): 'EDTA treatment on Cu2+/GLYMO-IDA@PSiO2' follows a power law in 'Carnosine@Cu2+/GLYMO-IDA@PSiO2' (R² = 0.974 on the discovery half); held-out R² = 0.978 [emp-bb0048cca543]
