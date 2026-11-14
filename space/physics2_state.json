@@ -60741,6 +60741,11 @@
    "family": "driven oscillator",
    "expr": "sqrt(4*z**2 + 1) - 1",
    "why": "affine combination of known quantities (amplitude / static deflection, Resonance Width [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 - u**2)*(1 - v**2) + ((u + v)/(1 + u*v))**2) / (1 + u*v)",
+   "why": "a power or product of known quantities"
   }
  ],
  "tried": [
@@ -74443,7 +74448,7 @@
    "k": "1/2"
   }
  ],
- "rounds": 4323,
+ "rounds": 4324,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",

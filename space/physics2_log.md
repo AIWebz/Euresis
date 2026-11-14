@@ -4708,3 +4708,4 @@
 - 2026-11-14 04:50 round 4322: collision
 - 2026-11-14 04:51 round 4323: driven oscillator
 - 2026-11-14 04:52 round 4324: velocity addition
+- 2026-11-14 04:53 round 4325: Compton scattering
