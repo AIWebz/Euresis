@@ -2918911,5 +2918911,32 @@
   "statement": "In 'High-resolution tropical rain-forest canopy climate data' (Zenodo, doi 10.5061/dryad.pc866t1qd): 'PAR_Tot_Tot' is linear in 'PAR_Den_Avg' (R\u00b2 = 0.975 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.v41ns1rxv",
+   "held_out_r2": 0.9915,
+   "held_out_rows": 882,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-bbabdc6ed196",
+  "kind": "empirical",
+  "novelty": "KNOWN: astrometric uncertainties (Gaia-type errors all scale with source brightness) \u2014 not a discovery",
+  "payload": {
+   "dataset": "8b25b129e27d156e.csv",
+   "doi": "10.5061/dryad.v41ns1rxv",
+   "form": "power law",
+   "params": [
+    -2.192321957782509,
+    0.978776702281647
+   ],
+   "seed": 3056562915,
+   "x": "intercept_std_err",
+   "y": "slope_std_err"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Climate warming changes synchrony of plants and pollinators' (Zenodo, doi 10.5061/dryad.v41ns1rxv): 'slope_std_err' follows a power law in 'intercept_std_err' (R\u00b2 = 0.992 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
