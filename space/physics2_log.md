@@ -4946,3 +4946,6 @@
 - 2026-11-14 15:01 round 4538: collision
 - 2026-11-14 15:02 round 4539: driven oscillator
 - 2026-11-14 15:04 round 4540: velocity addition
+- 2026-11-14 15:05 round 4541: Compton scattering
+- 2026-11-14 15:06 round 4542: Cournot duopoly
+- 2026-11-14 15:07 segment end: 4542 rounds, 5 discoveries, 2 known laws rediscovered
