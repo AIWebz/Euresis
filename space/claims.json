@@ -2987985,5 +2987985,26 @@
   "statement": "In 'UNR Sonic Anemometer Data Mosquito Fire Smoke Density Current' (Zenodo, doi 10.5281/zenodo.17372252): 'TurbulentKE_(m/s)^2' follows a power law in 'Wvar_(cm/s)^2' (R\u00b2 = 0.950 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
+ },
+ {
+  "evidence": null,
+  "id": "phy-f1798efc99c2",
+  "kind": "physics-relation",
+  "novelty": "not checked",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "e**2 + m**2 >= 7/2*(e**2*m**2/(e**2*m**2 - e**2*m**2/(m + 1)**2 + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 4618",
+  "statement": "[physics: collision] Sum of Squares of Mass Ratio and Coefficient of Restitution [model-proposed; physical meaning unverified] \u2265 7/2 \u00d7 Fraction of kinetic energy retained by the target relative to the projectile [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "candidate",
+  "verifier": null
  }
 ]
