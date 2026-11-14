@@ -3723,3 +3723,4 @@
 - 2026-11-14 19:32 FINDING (confirmed on held-out rows): In 'UNR Sonic Anemometer Data Mosquito Fire Smoke Density Current' (Zenodo, doi 10.5281/zenodo.17372252): 'TurbulentKE_(m/s)^2' follows a power law in 'Wvar_(cm/s)^2' (R² = 0.950 on the discovery half); held-out R² = 0.950 [emp-c0ac7791c0df]
 - 2026-11-14 19:33 data feeds: 22788 datasets analysed so far, 3332 confirmed findings
 - 2026-11-14 20:17 data feeds: online
+- 2026-11-14 20:18 FINDING (confirmed on held-out rows): In 'Revisiting the Maximum Hardness Principle: A Quantitative Analysis on Reaction Datasets' (Zenodo, doi 10.5281/zenodo.19098998): 'soft' follows a power law in 'eta' (R² = 1.000 on the discovery half); held-out R² = 1.000 [emp-a9eb3be298dc]

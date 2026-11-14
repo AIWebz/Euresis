@@ -2991306,5 +2991306,59 @@
   "statement": "Octal game 0.0121212 is completely solved: its Grundy values are periodic with pre-period 1 and period 2 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.19098998",
+   "held_out_r2": 0.9999,
+   "held_out_rows": 880,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a9eb3be298dc",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "ca7dcc8ba0f1ba95.csv",
+   "doi": "10.5281/zenodo.19098998",
+   "form": "power law",
+   "params": [
+    0.0004169102593564593,
+    -1.0001449839719405
+   ],
+   "seed": 919470149,
+   "x": "eta",
+   "y": "soft"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Revisiting the Maximum Hardness Principle: A Quantitative Analysis on Reaction Datasets' (Zenodo, doi 10.5281/zenodo.19098998): 'soft' follows a power law in 'eta' (R\u00b2 = 1.000 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.19098998",
+   "held_out_r2": 0.9259,
+   "held_out_rows": 888,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4a22dc4aa6f5",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "9675f211d0fec0c6.csv",
+   "doi": "10.5281/zenodo.19098998",
+   "form": "linear",
+   "params": [
+    -2.3817521554207057,
+    -1.8153172712548173
+   ],
+   "seed": 2017983186,
+   "x": "E_HOMO",
+   "y": "mu"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Revisiting the Maximum Hardness Principle: A Quantitative Analysis on Reaction Datasets' (Zenodo, doi 10.5281/zenodo.19098998): 'mu' is linear in 'E_HOMO' (R\u00b2 = 0.929 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
