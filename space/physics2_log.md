@@ -5012,3 +5012,7 @@
 - 2026-11-14 18:10 segment end: 4597 rounds, 5 discoveries, 2 known laws rediscovered
 - 2026-11-14 18:29 segment start (budget 30 min; model: Qwen3-8B; 5 discoveries so far)
 - 2026-11-14 18:29 round 4598: Cournot duopoly
+- 2026-11-14 18:30 round 4599: insurance and risk
+- 2026-11-14 18:32 round 4600: auction with a reserve price
+- 2026-11-14 18:34 round 4601: two-body decay
+- 2026-11-14 18:35 round 4602: collision
