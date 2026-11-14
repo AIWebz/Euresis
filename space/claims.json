@@ -2908922,10 +2908922,15 @@
   "verifier": "held-out-replication"
  },
  {
-  "evidence": null,
+  "evidence": {
+   "doi": "10.5281/zenodo.23036952",
+   "held_out_r2": 0.9919,
+   "held_out_rows": 4403,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
   "id": "emp-593a5d4125b1",
   "kind": "empirical",
-  "novelty": "not checked",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
   "payload": {
    "dataset": "bf4d6090defa754a.csv",
    "doi": "10.5281/zenodo.23036952",
@@ -2908940,7 +2908945,871 @@
   },
   "source": "datafeeds.py",
   "statement": "In 'Microwave field of a two-wire antenna on diamond: analytic model, design maps and finite-e' (Zenodo, doi 10.5281/zenodo.23036952): 'Bx_analytic_T' follows a power law in 'Bx_comsol_T' (R\u00b2 = 0.992 on the discovery half)",
-  "status": "candidate",
-  "verifier": null
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17632982",
+   "held_out_r2": 0.9567,
+   "held_out_rows": 67,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-145ba98720e6",
+  "kind": "empirical",
+  "novelty": "KNOWN: equation of state of a simulated fluid (pressure, density, temperature, chemical potential, kinetic energy) \u2014 not a discovery",
+  "payload": {
+   "dataset": "2f8344243a86f6d1.csv",
+   "doi": "10.5281/zenodo.17632982",
+   "form": "linear",
+   "params": [
+    -3.793569572597407,
+    1.0266341870028353
+   ],
+   "seed": 1697634315,
+   "x": "Distance from Sun (kpc)",
+   "y": "Distance from galactic center (kpc)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Expanded Globular Cluster Database' (Zenodo, doi 10.5281/zenodo.17632982): 'Distance from galactic center (kpc)' is linear in 'Distance from Sun (kpc)' (R\u00b2 = 0.968 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.19398530",
+   "held_out_r2": 0.9771,
+   "held_out_rows": 118,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4e1e88b2ffb7",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "c18ea03ffb0f07cd.csv",
+   "doi": "10.5281/zenodo.19398530",
+   "form": "power law",
+   "params": [
+    -16.128349484636697,
+    0.9077614656405837
+   ],
+   "seed": 1797626143,
+   "x": "Lacc_CA",
+   "y": "Mdot_CA"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Source data for \"Hydrogen Line Emission in Accreting Low-Mass Objects\"' (Zenodo, doi 10.5281/zenodo.19398530): 'Mdot_CA' follows a power law in 'Lacc_CA' (R\u00b2 = 0.975 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.19398530",
+   "held_out_r2": -1.7917,
+   "held_out_rows": 150,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-bd88e3aa4d27",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "c7cb1e3d5f64a916.csv",
+   "doi": "10.5281/zenodo.19398530",
+   "form": "linear",
+   "params": [
+    -2.0476436797876905,
+    0.4109978029766561
+   ],
+   "seed": 1487561532,
+   "x": "Area_Rsun",
+   "y": "ff"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Source data for \"Hydrogen Line Emission in Accreting Low-Mass Objects\"' (Zenodo, doi 10.5281/zenodo.19398530): 'ff' is linear in 'Area_Rsun' (R\u00b2 = 0.998 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.19398530",
+   "held_out_r2": 0.931,
+   "held_out_rows": 150,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-86d06bfb6f53",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "c7cb1e3d5f64a916.csv",
+   "doi": "10.5281/zenodo.19398530",
+   "form": "power law",
+   "params": [
+    -15.0359367419259,
+    0.9075456312253602
+   ],
+   "seed": 1487561532,
+   "x": "Lacc",
+   "y": "Mdot_Msun"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Source data for \"Hydrogen Line Emission in Accreting Low-Mass Objects\"' (Zenodo, doi 10.5281/zenodo.19398530): 'Mdot_Msun' follows a power law in 'Lacc' (R\u00b2 = 0.918 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20724561",
+   "held_out_r2": 0.9014,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9be570e6cbd2",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "dcab0cdd7820e698.csv",
+   "doi": "10.5281/zenodo.20724561",
+   "form": "exponential",
+   "params": [
+    10.850312625581854,
+    1.7314776398756812e-20
+   ],
+   "seed": 3937429926,
+   "x": "specobjid",
+   "y": "mjd"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'EmissionGaiaXP: Data and Models for H\u03b1 Emission Detection in Gaia XP Spectra' (Zenodo, doi 10.5281/zenodo.20724561): 'mjd' grows exponentially in 'specobjid' (R\u00b2 = 0.907 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20724561",
+   "held_out_r2": 0.9014,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-18928c59bb06",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "dcab0cdd7820e698.csv",
+   "doi": "10.5281/zenodo.20724561",
+   "form": "exponential",
+   "params": [
+    10.850314152765513,
+    1.949471076207683e-05
+   ],
+   "seed": 3937429926,
+   "x": "plate",
+   "y": "mjd"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'EmissionGaiaXP: Data and Models for H\u03b1 Emission Detection in Gaia XP Spectra' (Zenodo, doi 10.5281/zenodo.20724561): 'mjd' grows exponentially in 'plate' (R\u00b2 = 0.907 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20724561",
+   "held_out_r2": 0.917,
+   "held_out_rows": 66,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4e90150b0195",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "c6522fdcc86253d2.csv",
+   "doi": "10.5281/zenodo.20724561",
+   "form": "power law",
+   "params": [
+    -3.4669329164023543,
+    0.4546208481496253
+   ],
+   "seed": 443896005,
+   "x": "rp_chi_squared",
+   "y": "rp_standard_deviation"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'EmissionGaiaXP: Data and Models for H\u03b1 Emission Detection in Gaia XP Spectra' (Zenodo, doi 10.5281/zenodo.20724561): 'rp_standard_deviation' follows a power law in 'rp_chi_squared' (R\u00b2 = 0.939 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20724561",
+   "held_out_r2": 0.9305,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d7a3d93f532e",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "3a772e019c36f78a.csv",
+   "doi": "10.5281/zenodo.20724561",
+   "form": "power law",
+   "params": [
+    0.05847278860122443,
+    0.9995181470373563
+   ],
+   "seed": 2013775664,
+   "x": "e_Plx",
+   "y": "e_pmRA"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'EmissionGaiaXP: Data and Models for H\u03b1 Emission Detection in Gaia XP Spectra' (Zenodo, doi 10.5281/zenodo.20724561): 'e_pmRA' follows a power law in 'e_Plx' (R\u00b2 = 0.931 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20724561",
+   "held_out_r2": 0.9217,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-eb98e28ce01f",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "3a772e019c36f78a.csv",
+   "doi": "10.5281/zenodo.20724561",
+   "form": "power law",
+   "params": [
+    -0.10200408841179934,
+    0.9825473591595141
+   ],
+   "seed": 2013775664,
+   "x": "e_Plx",
+   "y": "e_pmDE"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'EmissionGaiaXP: Data and Models for H\u03b1 Emission Detection in Gaia XP Spectra' (Zenodo, doi 10.5281/zenodo.20724561): 'e_pmDE' follows a power law in 'e_Plx' (R\u00b2 = 0.923 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20724561",
+   "held_out_r2": 0.9091,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-fef7cdf74488",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "3a772e019c36f78a.csv",
+   "doi": "10.5281/zenodo.20724561",
+   "form": "power law",
+   "params": [
+    4.314405638327475,
+    -1.4137956947964383
+   ],
+   "seed": 2013775664,
+   "x": "e_Plx",
+   "y": "FG"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'EmissionGaiaXP: Data and Models for H\u03b1 Emission Detection in Gaia XP Spectra' (Zenodo, doi 10.5281/zenodo.20724561): 'FG' follows a power law in 'e_Plx' (R\u00b2 = 0.906 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20724561",
+   "held_out_r2": 0.9034,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-885e82c876fe",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "3a772e019c36f78a.csv",
+   "doi": "10.5281/zenodo.20724561",
+   "form": "power law",
+   "params": [
+    4.277980527782231,
+    -1.378116633072127
+   ],
+   "seed": 2013775664,
+   "x": "e_pmDE",
+   "y": "FG"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'EmissionGaiaXP: Data and Models for H\u03b1 Emission Detection in Gaia XP Spectra' (Zenodo, doi 10.5281/zenodo.20724561): 'FG' follows a power law in 'e_pmDE' (R\u00b2 = 0.901 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24051054",
+   "held_out_r2": 0.9845,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-93251400b2fc",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "ba3fc432a6df6cf6.csv",
+   "doi": "10.5281/zenodo.24051054",
+   "form": "power law",
+   "params": [
+    -2.93466119187547,
+    1.0037816217041353
+   ],
+   "seed": 433087582,
+   "x": "n_pix",
+   "y": "area_msh"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data and models for \"Umbral Darkness and Interpretable McIntosh Classification of Solar Ac' (Zenodo, doi 10.5281/zenodo.24051054): 'area_msh' follows a power law in 'n_pix' (R\u00b2 = 0.984 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24051054",
+   "held_out_r2": 0.9345,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f262eb3c2168",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "ba3fc432a6df6cf6.csv",
+   "doi": "10.5281/zenodo.24051054",
+   "form": "linear",
+   "params": [
+    -18.618336768680486,
+    13.135120769229664
+   ],
+   "seed": 433087582,
+   "x": "area_msh",
+   "y": "n_pix_erode2"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data and models for \"Umbral Darkness and Interpretable McIntosh Classification of Solar Ac' (Zenodo, doi 10.5281/zenodo.24051054): 'n_pix_erode2' is linear in 'area_msh' (R\u00b2 = 0.932 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24051054",
+   "held_out_r2": 0.9876,
+   "held_out_rows": 2824,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d3a222c70307",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "c2985ed78368e252.csv",
+   "doi": "10.5281/zenodo.24051054",
+   "form": "linear",
+   "params": [
+    -64.3744839341977,
+    0.03358344184344783
+   ],
+   "seed": 4050455006,
+   "x": "bbox_x1_4096",
+   "y": "center_lon_deg"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data and models for \"Umbral Darkness and Interpretable McIntosh Classification of Solar Ac' (Zenodo, doi 10.5281/zenodo.24051054): 'center_lon_deg' is linear in 'bbox_x1_4096' (R\u00b2 = 0.988 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24051054",
+   "held_out_r2": 0.9283,
+   "held_out_rows": 2824,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-37356c322e4b",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "c2985ed78368e252.csv",
+   "doi": "10.5281/zenodo.24051054",
+   "form": "linear",
+   "params": [
+    53.482624907660565,
+    -0.027692184145094764
+   ],
+   "seed": 4050455006,
+   "x": "bbox_y1_4096",
+   "y": "center_lat_deg"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data and models for \"Umbral Darkness and Interpretable McIntosh Classification of Solar Ac' (Zenodo, doi 10.5281/zenodo.24051054): 'center_lat_deg' is linear in 'bbox_y1_4096' (R\u00b2 = 0.929 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24051054",
+   "held_out_r2": 0.986,
+   "held_out_rows": 2824,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9a774dd667a6",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "c2985ed78368e252.csv",
+   "doi": "10.5281/zenodo.24051054",
+   "form": "linear",
+   "params": [
+    -73.90775431203609,
+    0.03364010649194912
+   ],
+   "seed": 4050455006,
+   "x": "bbox_x2_4096",
+   "y": "center_lon_deg"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data and models for \"Umbral Darkness and Interpretable McIntosh Classification of Solar Ac' (Zenodo, doi 10.5281/zenodo.24051054): 'center_lon_deg' is linear in 'bbox_x2_4096' (R\u00b2 = 0.986 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24051054",
+   "held_out_r2": 0.9284,
+   "held_out_rows": 2824,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ee9676c5c79e",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "c2985ed78368e252.csv",
+   "doi": "10.5281/zenodo.24051054",
+   "form": "linear",
+   "params": [
+    59.05763494848015,
+    -0.02772724472851489
+   ],
+   "seed": 4050455006,
+   "x": "bbox_y2_4096",
+   "y": "center_lat_deg"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data and models for \"Umbral Darkness and Interpretable McIntosh Classification of Solar Ac' (Zenodo, doi 10.5281/zenodo.24051054): 'center_lat_deg' is linear in 'bbox_y2_4096' (R\u00b2 = 0.929 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24051054",
+   "held_out_r2": 0.9545,
+   "held_out_rows": 2824,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-be2c2cfb6839",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "c2985ed78368e252.csv",
+   "doi": "10.5281/zenodo.24051054",
+   "form": "linear",
+   "params": [
+    0.23167791514714037,
+    4.276854454560715
+   ],
+   "seed": 4050455006,
+   "x": "grp_umb_deg2",
+   "y": "grp_pen_deg2"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data and models for \"Umbral Darkness and Interpretable McIntosh Classification of Solar Ac' (Zenodo, doi 10.5281/zenodo.24051054): 'grp_pen_deg2' is linear in 'grp_umb_deg2' (R\u00b2 = 0.948 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24051054",
+   "held_out_r2": 0.934,
+   "held_out_rows": 2824,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e00b3d911ea0",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "c2985ed78368e252.csv",
+   "doi": "10.5281/zenodo.24051054",
+   "form": "power law",
+   "params": [
+    -0.3639330571731738,
+    0.9566246595945861
+   ],
+   "seed": 4050455006,
+   "x": "grp_umb_deg2",
+   "y": "ls_umb_deg2"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data and models for \"Umbral Darkness and Interpretable McIntosh Classification of Solar Ac' (Zenodo, doi 10.5281/zenodo.24051054): 'ls_umb_deg2' follows a power law in 'grp_umb_deg2' (R\u00b2 = 0.934 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24051054",
+   "held_out_r2": 0.9505,
+   "held_out_rows": 2824,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e9cc244829be",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "c2985ed78368e252.csv",
+   "doi": "10.5281/zenodo.24051054",
+   "form": "linear",
+   "params": [
+    0.1183145159993692,
+    3.489323563792983
+   ],
+   "seed": 4050455006,
+   "x": "ls_umb_deg2",
+   "y": "ls_pen_deg2"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data and models for \"Umbral Darkness and Interpretable McIntosh Classification of Solar Ac' (Zenodo, doi 10.5281/zenodo.24051054): 'ls_pen_deg2' is linear in 'ls_umb_deg2' (R\u00b2 = 0.938 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.19830179",
+   "held_out_r2": 0.9844,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-241f382d2ad3",
+  "kind": "empirical",
+  "novelty": "KNOWN: equation of state of a simulated fluid (pressure, density, temperature, chemical potential, kinetic energy) \u2014 not a discovery",
+  "payload": {
+   "dataset": "6aa1d7572927c47e.csv",
+   "doi": "10.5281/zenodo.19830179",
+   "form": "logarithmic",
+   "params": [
+    -50.81776286417978,
+    23.503516887333802
+   ],
+   "seed": 724630484,
+   "x": "acsf814w_dust",
+   "y": "VISTA_Y_dust"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for \" COSMOS2025: A Machine Learning Census of Massive Quiescent Galaxies at 2.5 < z ' (Zenodo, doi 10.5281/zenodo.19830179): 'VISTA_Y_dust' grows logarithmically in 'acsf814w_dust' (R\u00b2 = 0.984 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.19830179",
+   "held_out_r2": 0.9218,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5a1eebaffb13",
+  "kind": "empirical",
+  "novelty": "KNOWN: equation of state of a simulated fluid (pressure, density, temperature, chemical potential, kinetic energy) \u2014 not a discovery",
+  "payload": {
+   "dataset": "6aa1d7572927c47e.csv",
+   "doi": "10.5281/zenodo.19830179",
+   "form": "logarithmic",
+   "params": [
+    -42.58295507585359,
+    20.87301389169781
+   ],
+   "seed": 724630484,
+   "x": "acsf814w_dust",
+   "y": "VISTA_J_dust"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for \" COSMOS2025: A Machine Learning Census of Massive Quiescent Galaxies at 2.5 < z ' (Zenodo, doi 10.5281/zenodo.19830179): 'VISTA_J_dust' grows logarithmically in 'acsf814w_dust' (R\u00b2 = 0.920 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.19830179",
+   "held_out_r2": 0.953,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-17efdc20caa5",
+  "kind": "empirical",
+  "novelty": "KNOWN: equation of state of a simulated fluid (pressure, density, temperature, chemical potential, kinetic energy) \u2014 not a discovery",
+  "payload": {
+   "dataset": "6aa1d7572927c47e.csv",
+   "doi": "10.5281/zenodo.19830179",
+   "form": "logarithmic",
+   "params": [
+    -45.81253768154514,
+    21.907103254374704
+   ],
+   "seed": 724630484,
+   "x": "acsf814w_dust",
+   "y": "NIRCam_F115W_dust"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for \" COSMOS2025: A Machine Learning Census of Massive Quiescent Galaxies at 2.5 < z ' (Zenodo, doi 10.5281/zenodo.19830179): 'NIRCam_F115W_dust' grows logarithmically in 'acsf814w_dust' (R\u00b2 = 0.951 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.19830179",
+   "held_out_r2": 0.9896,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ffc4a8db2e76",
+  "kind": "empirical",
+  "novelty": "KNOWN: equation of state of a simulated fluid (pressure, density, temperature, chemical potential, kinetic energy) \u2014 not a discovery",
+  "payload": {
+   "dataset": "6aa1d7572927c47e.csv",
+   "doi": "10.5281/zenodo.19830179",
+   "form": "logarithmic",
+   "params": [
+    -52.69849658500639,
+    24.095405975345553
+   ],
+   "seed": 724630484,
+   "x": "VISTA_Y_dust",
+   "y": "NIRCam_F115W_dust"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for \" COSMOS2025: A Machine Learning Census of Massive Quiescent Galaxies at 2.5 < z ' (Zenodo, doi 10.5281/zenodo.19830179): 'NIRCam_F115W_dust' grows logarithmically in 'VISTA_Y_dust' (R\u00b2 = 0.990 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.19830179",
+   "held_out_r2": 0.9715,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-84ee578aa39e",
+  "kind": "empirical",
+  "novelty": "KNOWN: equation of state of a simulated fluid (pressure, density, temperature, chemical potential, kinetic energy) \u2014 not a discovery",
+  "payload": {
+   "dataset": "6aa1d7572927c47e.csv",
+   "doi": "10.5281/zenodo.19830179",
+   "form": "logarithmic",
+   "params": [
+    -51.3015536015,
+    23.47477332530252
+   ],
+   "seed": 724630484,
+   "x": "VISTA_J_dust",
+   "y": "NIRCam_F150W_dust"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for \" COSMOS2025: A Machine Learning Census of Massive Quiescent Galaxies at 2.5 < z ' (Zenodo, doi 10.5281/zenodo.19830179): 'NIRCam_F150W_dust' grows logarithmically in 'VISTA_J_dust' (R\u00b2 = 0.971 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.19830179",
+   "held_out_r2": 0.9124,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-2f76bd8ae6a3",
+  "kind": "empirical",
+  "novelty": "KNOWN: equation of state of a simulated fluid (pressure, density, temperature, chemical potential, kinetic energy) \u2014 not a discovery",
+  "payload": {
+   "dataset": "6aa1d7572927c47e.csv",
+   "doi": "10.5281/zenodo.19830179",
+   "form": "exponential",
+   "params": [
+    2.2222953892999318,
+    0.041634536703147366
+   ],
+   "seed": 724630484,
+   "x": "VISTA_H_dust",
+   "y": "NIRCam_F115W_dust"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for \" COSMOS2025: A Machine Learning Census of Massive Quiescent Galaxies at 2.5 < z ' (Zenodo, doi 10.5281/zenodo.19830179): 'NIRCam_F115W_dust' grows exponentially in 'VISTA_H_dust' (R\u00b2 = 0.912 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.19830179",
+   "held_out_r2": 0.9064,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-035d286aca33",
+  "kind": "empirical",
+  "novelty": "KNOWN: equation of state of a simulated fluid (pressure, density, temperature, chemical potential, kinetic energy) \u2014 not a discovery",
+  "payload": {
+   "dataset": "6aa1d7572927c47e.csv",
+   "doi": "10.5281/zenodo.19830179",
+   "form": "logarithmic",
+   "params": [
+    -50.067180300992405,
+    23.130404710705065
+   ],
+   "seed": 724630484,
+   "x": "VISTA_H_dust",
+   "y": "NIRCam_F277W_dust"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for \" COSMOS2025: A Machine Learning Census of Massive Quiescent Galaxies at 2.5 < z ' (Zenodo, doi 10.5281/zenodo.19830179): 'NIRCam_F277W_dust' grows logarithmically in 'VISTA_H_dust' (R\u00b2 = 0.906 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.19830179",
+   "held_out_r2": 0.9246,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-35ed665fdb9c",
+  "kind": "empirical",
+  "novelty": "KNOWN: equation of state of a simulated fluid (pressure, density, temperature, chemical potential, kinetic energy) \u2014 not a discovery",
+  "payload": {
+   "dataset": "6aa1d7572927c47e.csv",
+   "doi": "10.5281/zenodo.19830179",
+   "form": "logarithmic",
+   "params": [
+    -55.57631455042616,
+    24.868393764059242
+   ],
+   "seed": 724630484,
+   "x": "VISTA_Ks_dust",
+   "y": "irac_ch1_dust"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for \" COSMOS2025: A Machine Learning Census of Massive Quiescent Galaxies at 2.5 < z ' (Zenodo, doi 10.5281/zenodo.19830179): 'irac_ch1_dust' grows logarithmically in 'VISTA_Ks_dust' (R\u00b2 = 0.924 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.19830179",
+   "held_out_r2": 0.9433,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d21b79981623",
+  "kind": "empirical",
+  "novelty": "KNOWN: equation of state of a simulated fluid (pressure, density, temperature, chemical potential, kinetic energy) \u2014 not a discovery",
+  "payload": {
+   "dataset": "6aa1d7572927c47e.csv",
+   "doi": "10.5281/zenodo.19830179",
+   "form": "exponential",
+   "params": [
+    2.214902407082344,
+    0.04099347333355234
+   ],
+   "seed": 724630484,
+   "x": "VISTA_Ks_dust",
+   "y": "NIRCam_F150W_dust"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for \" COSMOS2025: A Machine Learning Census of Massive Quiescent Galaxies at 2.5 < z ' (Zenodo, doi 10.5281/zenodo.19830179): 'NIRCam_F150W_dust' grows exponentially in 'VISTA_Ks_dust' (R\u00b2 = 0.943 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.19830179",
+   "held_out_r2": 0.9794,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d1580a8b3ed5",
+  "kind": "empirical",
+  "novelty": "KNOWN: equation of state of a simulated fluid (pressure, density, temperature, chemical potential, kinetic energy) \u2014 not a discovery",
+  "payload": {
+   "dataset": "6aa1d7572927c47e.csv",
+   "doi": "10.5281/zenodo.19830179",
+   "form": "logarithmic",
+   "params": [
+    -52.25700368715924,
+    23.915281891491855
+   ],
+   "seed": 724630484,
+   "x": "VISTA_Ks_dust",
+   "y": "NIRCam_F277W_dust"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for \" COSMOS2025: A Machine Learning Census of Massive Quiescent Galaxies at 2.5 < z ' (Zenodo, doi 10.5281/zenodo.19830179): 'NIRCam_F277W_dust' grows logarithmically in 'VISTA_Ks_dust' (R\u00b2 = 0.979 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.19830179",
+   "held_out_r2": 0.9819,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9eea73ab52f3",
+  "kind": "empirical",
+  "novelty": "KNOWN: equation of state of a simulated fluid (pressure, density, temperature, chemical potential, kinetic energy) \u2014 not a discovery",
+  "payload": {
+   "dataset": "6aa1d7572927c47e.csv",
+   "doi": "10.5281/zenodo.19830179",
+   "form": "power law",
+   "params": [
+    0.28629462568026093,
+    0.9130739717708461
+   ],
+   "seed": 724630484,
+   "x": "irac_ch1_dust",
+   "y": "NIRCam_F277W_dust"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for \" COSMOS2025: A Machine Learning Census of Massive Quiescent Galaxies at 2.5 < z ' (Zenodo, doi 10.5281/zenodo.19830179): 'NIRCam_F277W_dust' follows a power law in 'irac_ch1_dust' (R\u00b2 = 0.982 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.19830179",
+   "held_out_r2": 0.952,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-2d6c72bdea69",
+  "kind": "empirical",
+  "novelty": "KNOWN: equation of state of a simulated fluid (pressure, density, temperature, chemical potential, kinetic energy) \u2014 not a discovery",
+  "payload": {
+   "dataset": "6aa1d7572927c47e.csv",
+   "doi": "10.5281/zenodo.19830179",
+   "form": "power law",
+   "params": [
+    0.5028283103295095,
+    0.84570551482693
+   ],
+   "seed": 724630484,
+   "x": "irac_ch2_dust",
+   "y": "NIRCam_F277W_dust"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for \" COSMOS2025: A Machine Learning Census of Massive Quiescent Galaxies at 2.5 < z ' (Zenodo, doi 10.5281/zenodo.19830179): 'NIRCam_F277W_dust' follows a power law in 'irac_ch2_dust' (R\u00b2 = 0.953 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
