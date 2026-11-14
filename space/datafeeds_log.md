@@ -3715,3 +3715,4 @@
 - 2026-11-14 18:26 FINDING (confirmed on held-out rows): In 'Multi-level in vivo selection of the biocontrol agent Akanthomyces muscarius, virulence, g' (Zenodo, doi 10.5061/dryad.9s4mw6mpz): 'dia_b' follows a power law in 'd2' (R² = 0.992 on the discovery half); held-out R² = 0.986 [emp-79080bb6fe42]
 - 2026-11-14 18:26 FINDING (confirmed on held-out rows): In 'Multi-level in vivo selection of the biocontrol agent Akanthomyces muscarius, virulence, g' (Zenodo, doi 10.5061/dryad.9s4mw6mpz): 'dia_c' is linear in 'd2' (R² = 0.991 on the discovery half); held-out R² = 0.982 [emp-5ec8385763b4]
 - 2026-11-14 18:28 data feeds: 22715 datasets analysed so far, 3327 confirmed findings
+- 2026-11-14 19:31 data feeds: online
