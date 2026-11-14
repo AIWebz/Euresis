@@ -3376,3 +3376,4 @@
 - 2026-11-14 04:43 FINDING (confirmed on held-out rows): In 'Data Sets for the study "Leveraging Benchmarking Data for Informed One-Shot Dynamic Algori' (Zenodo, doi 10.5281/zenodo.4501275): 'ERT' follows a power law in 'mean' (R² = 0.999 on the discovery half); held-out R² = 0.999 [emp-35fdaa0809b4]
 - 2026-11-14 04:43 FINDING (confirmed on held-out rows): In 'Data Sets for the study "Leveraging Benchmarking Data for Informed One-Shot Dynamic Algori' (Zenodo, doi 10.5281/zenodo.4501275): 'ERT' follows a power law in 'median' (R² = 0.994 on the discovery half); held-out R² = 0.993 [emp-db90bbcdcf1e]
 - 2026-11-14 04:44 data feeds: 21173 datasets analysed so far, 3018 confirmed findings
+- 2026-11-14 05:00 data feeds: online
