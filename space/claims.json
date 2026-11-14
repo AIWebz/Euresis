@@ -2883483,5 +2883483,32 @@
   "statement": "Octal game 0.0007511 is completely solved: its Grundy values are periodic with pre-period 284 and period 48 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.422jp",
+   "held_out_r2": 0.8412,
+   "held_out_rows": 460,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4272b1fa41f5",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "a2a6841424e3c1f0.csv",
+   "doi": "10.5061/dryad.422jp",
+   "form": "linear",
+   "params": [
+    0.2792309292744285,
+    0.9431681960844082
+   ],
+   "seed": 1981357373,
+   "x": "clutch1",
+   "y": "d3"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Fitness consequences of altered feeding behavior in immune-challenged mosquitoe' (Zenodo, doi 10.5061/dryad.422jp): 'd3' is linear in 'clutch1' (R\u00b2 = 0.903 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
  }
 ]
