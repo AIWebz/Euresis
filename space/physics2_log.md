@@ -4709,3 +4709,8 @@
 - 2026-11-14 04:51 round 4323: driven oscillator
 - 2026-11-14 04:52 round 4324: velocity addition
 - 2026-11-14 04:53 round 4325: Compton scattering
+- 2026-11-14 04:54 round 4326: Cournot duopoly
+- 2026-11-14 04:55 round 4327: insurance and risk
+- 2026-11-14 04:56 round 4328: auction with a reserve price
+- 2026-11-14 04:57 round 4329: two-body decay
+- 2026-11-14 04:59 round 4330: collision
