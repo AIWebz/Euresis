@@ -3602,3 +3602,4 @@
 - 2026-11-14 11:57 FINDING (confirmed on held-out rows): In 'Data from: Influence of topographic features and vegetation on climate refugia in the bore' (Zenodo, doi 10.5061/dryad.f7m0cfxw2): 'Avg_Monthly' is linear in 'th99dailymax' (R² = 0.901 on the discovery half); held-out R² = 0.920 [emp-2d58e7e652af]
 - 2026-11-14 11:57 FINDING (confirmed on held-out rows): In 'Data from: Influence of topographic features and vegetation on climate refugia in the bore' (Zenodo, doi 10.5061/dryad.f7m0cfxw2): 'Avg_Monthly' is linear in 'th99dailymin' (R² = 0.939 on the discovery half); held-out R² = 0.944 [emp-e8314da13b4b]
 - 2026-11-14 11:57 data feeds: 22048 datasets analysed so far, 3228 confirmed findings
+- 2026-11-14 12:39 data feeds: online
