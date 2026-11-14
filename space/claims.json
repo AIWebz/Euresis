@@ -2974031,5 +2974031,67 @@
   "statement": "[physics: driven oscillator] Acceleration Transmissibility [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Resonance frequency ratio (corrected) [model-proposed; physical meaning unverified]   on r < 2, z < 1 (tight only at the edge of the domain, near (2.78e-19, 0.000153))",
   "status": "proved",
   "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "checked_up_to": 75,
+   "method": "Grundy values recomputed; Guy\u2013Smith periodicity theorem condition checked",
+   "values_of_one_period": [
+    2,
+    1,
+    1,
+    1,
+    1,
+    3,
+    0,
+    0,
+    0,
+    0,
+    2
+   ]
+  },
+  "id": "gam-4596f6833c42",
+  "kind": "game",
+  "novelty": "novelty unchecked: octal games of up to three digits are tabulated in Winning Ways and Flammenkamp's tables, which cannot be searched from here",
+  "payload": {
+   "code": "0113312",
+   "period": 11,
+   "preperiod": 23
+  },
+  "source": "games.py",
+  "statement": "Octal game 0.0113312 is completely solved: its Grundy values are periodic with pre-period 23 and period 11 (Guy\u2013Smith periodicity theorem)",
+  "status": "proved",
+  "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "checked_up_to": 29,
+   "method": "Grundy values recomputed; Guy\u2013Smith periodicity theorem condition checked",
+   "values_of_one_period": [
+    0,
+    0,
+    1,
+    1,
+    1,
+    1,
+    2,
+    2,
+    2,
+    0,
+    0
+   ]
+  },
+  "id": "gam-b4dc535080a0",
+  "kind": "game",
+  "novelty": "not checked",
+  "payload": {
+   "code": "0113313",
+   "period": 11,
+   "preperiod": 0
+  },
+  "source": "games.py",
+  "statement": "Octal game 0.0113313 is completely solved: its Grundy values are periodic with pre-period 0 and period 11 (Guy\u2013Smith periodicity theorem)",
+  "status": "proved",
+  "verifier": "guy-smith-periodicity"
  }
 ]
