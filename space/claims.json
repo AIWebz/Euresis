@@ -2908903,7 +2908903,7 @@
   },
   "id": "emp-23f567e40cce",
   "kind": "empirical",
-  "novelty": "not checked",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
   "payload": {
    "dataset": "0637fae13a549af8.csv",
    "doi": "10.5281/zenodo.22918207",
@@ -2908920,5 +2908920,27 @@
   "statement": "In 'SRIM Monte Carlo vacancy profiles for helium-implanted NV layers in diamond (g-layers)' (Zenodo, doi 10.5281/zenodo.22918207): 'vacancies_C_per_A_ion' is linear in 'knockons_He_per_A_ion' (R\u00b2 = 0.970 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
+ },
+ {
+  "evidence": null,
+  "id": "emp-593a5d4125b1",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "bf4d6090defa754a.csv",
+   "doi": "10.5281/zenodo.23036952",
+   "form": "power law",
+   "params": [
+    0.0993441657415662,
+    1.0170513643602432
+   ],
+   "seed": 2630723985,
+   "x": "Bx_comsol_T",
+   "y": "Bx_analytic_T"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Microwave field of a two-wire antenna on diamond: analytic model, design maps and finite-e' (Zenodo, doi 10.5281/zenodo.23036952): 'Bx_analytic_T' follows a power law in 'Bx_comsol_T' (R\u00b2 = 0.992 on the discovery half)",
+  "status": "candidate",
+  "verifier": null
  }
 ]

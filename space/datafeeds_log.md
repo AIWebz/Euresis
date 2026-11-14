@@ -3518,3 +3518,4 @@
 - 2026-11-14 07:01 FINDING (confirmed on held-out rows): In 'Data from: Response of marine communities to local temperature changes' (Zenodo, doi 10.5061/dryad.bg08269): 'SBTwtdMeanPA' is linear in 'SBTmodePA' (R² = 0.947 on the discovery half); held-out R² = 0.939 [emp-e18d1534b1c6]
 - 2026-11-14 07:01 data feeds: 21567 datasets analysed so far, 3153 confirmed findings
 - 2026-11-14 08:03 data feeds: online
+- 2026-11-14 08:04 FINDING (confirmed on held-out rows): In 'SRIM Monte Carlo vacancy profiles for helium-implanted NV layers in diamond (g-layers)' (Zenodo, doi 10.5281/zenodo.22918207): 'vacancies_C_per_A_ion' is linear in 'knockons_He_per_A_ion' (R² = 0.970 on the discovery half); held-out R² = 0.967 [emp-23f567e40cce]
