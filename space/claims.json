@@ -2843649,7 +2843649,7 @@
   },
   "id": "gam-9276395c212a",
   "kind": "game",
-  "novelty": "not checked",
+  "novelty": "novelty unchecked: octal games of up to three digits are tabulated in Winning Ways and Flammenkamp's tables, which cannot be searched from here",
   "payload": {
    "code": "772114",
    "period": 4,
@@ -2843659,5 +2843659,275 @@
   "statement": "Octal game 0.772114 is completely solved: its Grundy values are periodic with pre-period 8 and period 4 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.9s4mw6mm7",
+   "held_out_r2": 0.9638,
+   "held_out_rows": 9210,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d436d366dfe6",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "b4b3f6ad727fcd60.csv",
+   "doi": "10.5061/dryad.9s4mw6mm7",
+   "form": "linear",
+   "params": [
+    3.1057917881939265,
+    0.9785748450796388
+   ],
+   "seed": 1086486504,
+   "x": "Seapath.PSXN.Heading",
+   "y": "USBL.PTSAH.Heading"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Heterogeneity in the abyssal plains: A case study in the Bering Sea' (Zenodo, doi 10.5061/dryad.9s4mw6mm7): 'USBL.PTSAH.Heading' is linear in 'Seapath.PSXN.Heading' (R\u00b2 = 0.958 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22920325",
+   "held_out_r2": -5.2451,
+   "held_out_rows": 37,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e863335c5902",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "65824cc1e17ef812.csv",
+   "doi": "10.5281/zenodo.22920325",
+   "form": "linear",
+   "params": [
+    0.1470589031569003,
+    1.0931504460519126
+   ],
+   "seed": 117160113,
+   "x": "flux",
+   "y": "sd"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Marine volatile organic compounds air-sea exchange dynamics across a summer-to-a' (Zenodo, doi 10.5281/zenodo.22920325): 'sd' is linear in 'flux' (R\u00b2 = 0.980 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22920325",
+   "held_out_r2": -3.2942,
+   "held_out_rows": 37,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5d2b9aadc3af",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "65824cc1e17ef812.csv",
+   "doi": "10.5281/zenodo.22920325",
+   "form": "linear",
+   "params": [
+    0.014843662310736189,
+    0.09671773913587801
+   ],
+   "seed": 117160113,
+   "x": "flux",
+   "y": "ensemble_sem"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Marine volatile organic compounds air-sea exchange dynamics across a summer-to-a' (Zenodo, doi 10.5281/zenodo.22920325): 'ensemble_sem' is linear in 'flux' (R\u00b2 = 0.975 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22920325",
+   "held_out_r2": 0.9404,
+   "held_out_rows": 37,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c847acb90a3f",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "65824cc1e17ef812.csv",
+   "doi": "10.5281/zenodo.22920325",
+   "form": "linear",
+   "params": [
+    0.0017711167391247366,
+    0.0886583366893763
+   ],
+   "seed": 117160113,
+   "x": "sd",
+   "y": "ensemble_sem"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Marine volatile organic compounds air-sea exchange dynamics across a summer-to-a' (Zenodo, doi 10.5281/zenodo.22920325): 'ensemble_sem' is linear in 'sd' (R\u00b2 = 0.999 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22920325",
+   "held_out_r2": -1.3375,
+   "held_out_rows": 37,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4141701c8ec9",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "3aeae837249ea448.csv",
+   "doi": "10.5281/zenodo.22920325",
+   "form": "linear",
+   "params": [
+    0.06072475961245336,
+    -0.29563505253808675
+   ],
+   "seed": 1656642113,
+   "x": "Mean flux (\u00b5mol m\u207b\u00b2 d\u207b\u00b9)",
+   "y": "Systematic uncertainty"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Marine volatile organic compounds air-sea exchange dynamics across a summer-to-a' (Zenodo, doi 10.5281/zenodo.22920325): 'Systematic uncertainty' is linear in 'Mean flux (\u00b5mol m\u207b\u00b2 d\u207b\u00b9)' (R\u00b2 = 0.974 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22920325",
+   "held_out_r2": -1.1981,
+   "held_out_rows": 37,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ecef25716557",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "3aeae837249ea448.csv",
+   "doi": "10.5281/zenodo.22920325",
+   "form": "linear",
+   "params": [
+    0.07029570165819485,
+    -0.2981407234732993
+   ],
+   "seed": 1656642113,
+   "x": "Mean flux (\u00b5mol m\u207b\u00b2 d\u207b\u00b9)",
+   "y": "Total flux uncertainty"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Marine volatile organic compounds air-sea exchange dynamics across a summer-to-a' (Zenodo, doi 10.5281/zenodo.22920325): 'Total flux uncertainty' is linear in 'Mean flux (\u00b5mol m\u207b\u00b2 d\u207b\u00b9)' (R\u00b2 = 0.974 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22920325",
+   "held_out_r2": 0.785,
+   "held_out_rows": 37,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-11774d0738d3",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "3aeae837249ea448.csv",
+   "doi": "10.5281/zenodo.22920325",
+   "form": "linear",
+   "params": [
+    -0.08131524945460054,
+    6.628943952374997
+   ],
+   "seed": 1656642113,
+   "x": "Random error SEM",
+   "y": "Systematic uncertainty"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Marine volatile organic compounds air-sea exchange dynamics across a summer-to-a' (Zenodo, doi 10.5281/zenodo.22920325): 'Systematic uncertainty' is linear in 'Random error SEM' (R\u00b2 = 0.938 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22920325",
+   "held_out_r2": 0.8567,
+   "held_out_rows": 37,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a04f7a10b18b",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3aeae837249ea448.csv",
+   "doi": "10.5281/zenodo.22920325",
+   "form": "linear",
+   "params": [
+    -0.07391199099088475,
+    6.713680496105077
+   ],
+   "seed": 1656642113,
+   "x": "Random error SEM",
+   "y": "Total flux uncertainty"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Marine volatile organic compounds air-sea exchange dynamics across a summer-to-a' (Zenodo, doi 10.5281/zenodo.22920325): 'Total flux uncertainty' is linear in 'Random error SEM' (R\u00b2 = 0.946 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22920325",
+   "held_out_r2": -0.9871,
+   "held_out_rows": 37,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-05d0fd6a9ce9",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "3aeae837249ea448.csv",
+   "doi": "10.5281/zenodo.22920325",
+   "form": "linear",
+   "params": [
+    -0.1119138214362807,
+    6.3923962106150825
+   ],
+   "seed": 1656642113,
+   "x": "Total random error",
+   "y": "Systematic uncertainty"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Marine volatile organic compounds air-sea exchange dynamics across a summer-to-a' (Zenodo, doi 10.5281/zenodo.22920325): 'Systematic uncertainty' is linear in 'Total random error' (R\u00b2 = 0.911 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22920325",
+   "held_out_r2": -0.662,
+   "held_out_rows": 37,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-433f266eee5a",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "3aeae837249ea448.csv",
+   "doi": "10.5281/zenodo.22920325",
+   "form": "linear",
+   "params": [
+    -0.10509926811954334,
+    6.47907410282971
+   ],
+   "seed": 1656642113,
+   "x": "Total random error",
+   "y": "Total flux uncertainty"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Marine volatile organic compounds air-sea exchange dynamics across a summer-to-a' (Zenodo, doi 10.5281/zenodo.22920325): 'Total flux uncertainty' is linear in 'Total random error' (R\u00b2 = 0.920 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
  }
 ]
