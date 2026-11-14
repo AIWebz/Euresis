@@ -3008000,10 +3008000,15 @@
   "verifier": "held-out-replication"
  },
  {
-  "evidence": null,
+  "evidence": {
+   "doi": "10.5281/zenodo.17353516",
+   "held_out_r2": 0.9877,
+   "held_out_rows": 703,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
   "id": "emp-c9575cdd78ed",
   "kind": "empirical",
-  "novelty": "not checked",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
   "payload": {
    "dataset": "5837ecb50029c40d.csv",
    "doi": "10.5281/zenodo.17353516",
@@ -3008018,7 +3008023,250 @@
   },
   "source": "datafeeds.py",
   "statement": "In 'Reconfigurable Optical Sensor for Metal-Ion-Mediated Label-Free Recognition of Different B' (Zenodo, doi 10.5281/zenodo.17353516): 'Zn2+/GLYMO-IDA@PSiO2' follows a power law in 'Carnosine@Cu2+/GLYMO-IDA@PSiO2' (R\u00b2 = 0.986 on the discovery half)",
-  "status": "candidate",
-  "verifier": null
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17353516",
+   "held_out_r2": 0.9936,
+   "held_out_rows": 703,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3f5181e683bf",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "5837ecb50029c40d.csv",
+   "doi": "10.5281/zenodo.17353516",
+   "form": "power law",
+   "params": [
+    -0.2675936614607673,
+    1.028889127515143
+   ],
+   "seed": 3674067655,
+   "x": "EDTA treatment on Cu2+/GLYMO-IDA@PSiO2",
+   "y": "Zn2+/GLYMO-IDA@PSiO2"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Reconfigurable Optical Sensor for Metal-Ion-Mediated Label-Free Recognition of Different B' (Zenodo, doi 10.5281/zenodo.17353516): 'Zn2+/GLYMO-IDA@PSiO2' follows a power law in 'EDTA treatment on Cu2+/GLYMO-IDA@PSiO2' (R\u00b2 = 0.992 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17353516",
+   "held_out_r2": 0.9103,
+   "held_out_rows": 301,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c400a15c0510",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "4441d493b4975e48.csv",
+   "doi": "10.5281/zenodo.17353516",
+   "form": "exponential",
+   "params": [
+    7.428270594772042,
+    0.00018426539719507598
+   ],
+   "seed": 3365201448,
+   "x": "Cu2+",
+   "y": "carnosine"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Reconfigurable Optical Sensor for Metal-Ion-Mediated Label-Free Recognition of Different B' (Zenodo, doi 10.5281/zenodo.17353516): 'carnosine' grows exponentially in 'Cu2+' (R\u00b2 = 0.933 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15260288",
+   "held_out_r2": 0.9423,
+   "held_out_rows": 386,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-1a5defe90b83",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "567a490b077fcb39.csv",
+   "doi": "10.5281/zenodo.15260288",
+   "form": "power law",
+   "params": [
+    -5.726924081833082,
+    15.144051762162373
+   ],
+   "seed": 1840287019,
+   "x": "potential [V]",
+   "y": "Ru"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset - Accelerating Combinatorial Electrocatalyst Discovery with  Bayesian Optimization' (Zenodo, doi 10.5281/zenodo.15260288): 'Ru' follows a power law in 'potential [V]' (R\u00b2 = 0.945 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15260288",
+   "held_out_r2": 0.9789,
+   "held_out_rows": 386,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f62550740216",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "567a490b077fcb39.csv",
+   "doi": "10.5281/zenodo.15260288",
+   "form": "linear",
+   "params": [
+    -0.0021230624177008047,
+    0.3713511825813232
+   ],
+   "seed": 1840287019,
+   "x": "Ni",
+   "y": "Pd"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset - Accelerating Combinatorial Electrocatalyst Discovery with  Bayesian Optimization' (Zenodo, doi 10.5281/zenodo.15260288): 'Pd' is linear in 'Ni' (R\u00b2 = 0.969 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15260288",
+   "held_out_r2": 0.9892,
+   "held_out_rows": 386,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4346e4faaedb",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "567a490b077fcb39.csv",
+   "doi": "10.5281/zenodo.15260288",
+   "form": "linear",
+   "params": [
+    -0.0085711324476026,
+    0.2956795186746298
+   ],
+   "seed": 1840287019,
+   "x": "Pd",
+   "y": "Pt"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset - Accelerating Combinatorial Electrocatalyst Discovery with  Bayesian Optimization' (Zenodo, doi 10.5281/zenodo.15260288): 'Pt' is linear in 'Pd' (R\u00b2 = 0.985 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3606467",
+   "held_out_r2": 0.9465,
+   "held_out_rows": 960,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a351731bc64c",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "0e07ff50c9792742.csv",
+   "doi": "10.5281/zenodo.3606467",
+   "form": "linear",
+   "params": [
+    8.738668775236107,
+    0.9513229981648157
+   ],
+   "seed": 1395257871,
+   "x": "mean_resptime_correct",
+   "y": "mean_resptime_congruent"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Thermal Comfort and Perception of Different Materials for Tabletops: Datasets, Processing ' (Zenodo, doi 10.5281/zenodo.3606467): 'mean_resptime_congruent' is linear in 'mean_resptime_correct' (R\u00b2 = 0.949 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3606467",
+   "held_out_r2": 0.9468,
+   "held_out_rows": 960,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-de0838e566de",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "0e07ff50c9792742.csv",
+   "doi": "10.5281/zenodo.3606467",
+   "form": "linear",
+   "params": [
+    -6.701934186960955,
+    1.04667164855272
+   ],
+   "seed": 1395257871,
+   "x": "mean_resptime_correct",
+   "y": "mean_resptime_incongruent"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Thermal Comfort and Perception of Different Materials for Tabletops: Datasets, Processing ' (Zenodo, doi 10.5281/zenodo.3606467): 'mean_resptime_incongruent' is linear in 'mean_resptime_correct' (R\u00b2 = 0.950 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17259448",
+   "held_out_r2": 0.9077,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e379939dbe41",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "e34229cf272ab90a.csv",
+   "doi": "10.5281/zenodo.17259448",
+   "form": "linear",
+   "params": [
+    0.4663452450170077,
+    473.48264219380775
+   ],
+   "seed": 2061529705,
+   "x": "frequency",
+   "y": "n_strains"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Supplementary data for \"Timely vaccine strain selection and genomic surveillance improves ' (Zenodo, doi 10.5281/zenodo.17259448): 'n_strains' is linear in 'frequency' (R\u00b2 = 0.909 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17259448",
+   "held_out_r2": 0.9798,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3aaa8f3a9284",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "e34229cf272ab90a.csv",
+   "doi": "10.5281/zenodo.17259448",
+   "form": "linear",
+   "params": [
+    3.93363501021456,
+    593.8596471900348
+   ],
+   "seed": 2061529705,
+   "x": "observed_frequency",
+   "y": "future_n_strains"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Supplementary data for \"Timely vaccine strain selection and genomic surveillance improves ' (Zenodo, doi 10.5281/zenodo.17259448): 'future_n_strains' is linear in 'observed_frequency' (R\u00b2 = 0.981 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
