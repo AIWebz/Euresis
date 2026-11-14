@@ -29268,3 +29268,5 @@
 - 2026-11-14 20:05 SOLVED (proved): 0.0120271 — pre-period 1125, period 234  [gam-d3f37f7d71de]
 - 2026-11-14 20:05 SOLVED (proved): 0.0120272 — pre-period 1125, period 234  [gam-3c4a6c1b934a]
 - 2026-11-14 20:05 SOLVED (proved): 0.0120273 — pre-period 1125, period 234  [gam-51cf5464230d]
+- 2026-11-14 20:06 SOLVED (proved): 0.0120304 — pre-period 97, period 80  [gam-e7e06d99b21d]
+- 2026-11-14 20:06 SOLVED (proved): 0.0120314 — pre-period 97, period 80  [gam-c8016d839a31]
