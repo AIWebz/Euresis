@@ -3457,3 +3457,4 @@
 - 2026-11-14 06:16 FINDING (confirmed on held-out rows): In 'Supporting data for manuscript "Argon versus helium as carrier gas for LA-ICP-MS impurity ' (Zenodo, doi 10.5281/zenodo.15068538): '-9.005216038185175105e-14' follows a power law in '2.436428530000000308e+02' (R² = 0.965 on the discovery half); held-out R² = 0.960 [emp-8ffdf1f98081]
 - 2026-11-14 06:16 FINDING (confirmed on held-out rows): In 'Supporting data for manuscript "Argon versus helium as carrier gas for LA-ICP-MS impurity ' (Zenodo, doi 10.5281/zenodo.15068538): '2.088000030000002596e+02' follows a power law in '-9.005216038185175105e-14' (R² = 0.929 on the discovery half); held-out R² = 0.973 [emp-fa8f99acc17a]
 - 2026-11-14 06:19 data feeds: 21519 datasets analysed so far, 3095 confirmed findings
+- 2026-11-14 06:55 data feeds: online
