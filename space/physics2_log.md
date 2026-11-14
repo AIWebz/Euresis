@@ -5111,3 +5111,7 @@
 - 2026-11-14 22:34 round 4687: insurance and risk
 - 2026-11-14 22:36 round 4688: auction with a reserve price
 - 2026-11-14 22:38 round 4689: two-body decay
+- 2026-11-14 22:39 round 4690: collision
+- 2026-11-14 22:41 round 4691: driven oscillator
+- 2026-11-14 22:42 round 4692: velocity addition
+- 2026-11-14 22:43 segment end: 4692 rounds, 5 discoveries, 2 known laws rediscovered
