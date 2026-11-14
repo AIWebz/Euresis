@@ -59891,6 +59891,86 @@
    "family": "Cournot duopoly",
    "expr": "((1 - 2*c1 + c2)**2 + (1 - 2*c2 + c1)**2)/((1 - c1)**2 + (1 - c2)**2)",
    "why": "affine combination of known quantities (output of firm 1, Hirshleifer Index [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "sqrt(-L*p + 1)/(-p*sqrt(1 - L) + sqrt(1 - L) + 1)",
+   "why": "affine combination of known quantities (expected wealth, Insurance Risk Exposure Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "sqrt(-L*p + 1)/(-p*sqrt(1 - L) + 1)",
+   "why": "affine combination of known quantities (expected wealth, Relative Risk Adjustment Index [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "L*p/(-p*sqrt(1 - L) + p + sqrt(1 - L) - 1 + 1/(p*sqrt(1 - L) - p + 1))",
+   "why": "affine combination of known quantities (expected wealth, Insurance Coverage Sensitivity [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "sqrt(-L*p + 1)/(-p*sqrt(1 - L) + p + 1)",
+   "why": "affine combination of known quantities (expected wealth, Risk Adjustment Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(2*r**3/3 - r**2 + 1/3)/(2/3 - 2*r**3/3 + v*r**2)",
+   "why": "affine combination of known quantities (expected revenue, 1/(Welfare Efficiency Ratio [model-proposed; physical meaning unverified]))"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(-2*r**3/3 + r**2*v + 2/3)/(2*r**3/3 + r**2*v)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(2*r**3/3 + r**2*v - r**2 + 1/3)/(2*r**3/3 - r**2 + 1)",
+   "why": "affine combination of known quantities (expected revenue, Bidder Surplus Reserve Efficiency with Seller Value and Reserve Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(r**2*v + 2/3)/(4*r**3/3 + r**2*v - r**2 + 1/3)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "sqrt((1 - (a + b)**2)*(1 - (a - b)**2))",
+   "why": "affine combination of known quantities (momentum of each product / (Mc))"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "sqrt((1 - (a - b)**2)*(1 - (a + b)**2))/sqrt((-a**2 + b**2 + 1)**2 + (a**2 - b**2 + 1)**2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "sqrt((1 - (a + b)**2)**2 + (a**2 - b**2 + 1)**2)/sqrt((1 - (a + b)**2)**2 + (-a**2 + b**2 + 1)**2)",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), Invariant Mass Ratio of the Two Products [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "sqrt((1 - (a - b)**2)*(1 - (a + b)**2)/4 + (a**2 - b**2 + 1)**2)/sqrt((1 - (a - b)**2)*(1 - (a + b)*",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), Lorentz Factor Ratio of Products [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2",
+   "why": "affine combination of known quantities (Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified], Fraction of kinetic energy transferred to the target [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2",
+   "why": "affine combination of known quantities (Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified], Fraction of kinetic energy transferred to the target [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "m**2*(e + 1)**2/( (e**2 + 1)*(m + 1)**2 )",
+   "why": "affine combination of known quantities (target speed / initial speed, Kinetic energy ratio after collision [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "(-e**2*m**2/(m + 1)**2 - e**2*m/(m + 1) - (1 - e**2)/(m + 1) + 1)/(-e**2*m**2/(m + 1)**2 - (1 - e**2",
+   "why": "affine combination of known quantities (target speed / initial speed, Fraction of Kinetic Energy Retained by the Projectile Relative to the System [model-proposed; physical meaning unverified])"
   }
  ],
  "tried": [
@@ -65661,7 +65741,31 @@
   "auction with a reserve price|Welfare Reserve Efficiency with Seller Value and Reserve [model-proposed; physical meaning unverified]|Welfare Efficiency with Seller Value [model-proposed; physical meaning unverified]",
   "auction with a reserve price|Bidder Surplus Reserve Efficiency with Seller Value [model-proposed; physical meaning unverified]|Welfare Efficiency with Seller Value [model-proposed; physical meaning unverified]",
   "auction with a reserve price|Bidder Surplus Reserve Efficiency with Seller Value and Reserve Ratio [model-proposed; physical meaning unverified]|Welfare Efficiency with Seller Value [model-proposed; physical meaning unverified]",
-  "auction with a reserve price|Expected Revenue to Seller's Value Ratio [model-proposed; physical meaning unverified]|Welfare Efficiency with Seller Value [model-proposed; physical meaning unverified]"
+  "auction with a reserve price|Expected Revenue to Seller's Value Ratio [model-proposed; physical meaning unverified]|Welfare Efficiency with Seller Value [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|Bidder Surplus Reserve Efficiency with Seller Value and Reserve [model-proposed; physical meaning unverified]|Welfare Efficiency with Seller Value [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|Welfare Reserve Elasticity Ratio [model-proposed; physical meaning unverified]|Welfare Efficiency with Seller Value [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|Welfare Reserve Elasticity with Seller Value [model-proposed; physical meaning unverified]|Welfare Efficiency with Seller Value [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|Welfare Reserve Efficiency with Seller Value Ratio [model-proposed; physical meaning unverified]|Welfare Efficiency with Seller Value [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|Welfare Efficiency with Seller Value [model-proposed; physical meaning unverified]|expected revenue",
+  "auction with a reserve price|Welfare Efficiency with Seller Value [model-proposed; physical meaning unverified]|seller's expected payoff",
+  "auction with a reserve price|Welfare Efficiency with Seller Value [model-proposed; physical meaning unverified]|probability the item is not sold",
+  "auction with a reserve price|Welfare Efficiency with Seller Value [model-proposed; physical meaning unverified]|expected total bidder surplus",
+  "auction with a reserve price|Welfare Efficiency with Seller Value [model-proposed; physical meaning unverified]|expected total welfare",
+  "auction with a reserve price|Welfare Efficiency with Seller Value [model-proposed; physical meaning unverified]|welfare with the efficient reserve (r = v)",
+  "auction with a reserve price|Welfare Efficiency with Seller Value [model-proposed; physical meaning unverified]|probability the seller's value is below reserve [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|Welfare Efficiency with Seller Value [model-proposed; physical meaning unverified]|expected bidder surplus ratio [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|Welfare Efficiency with Seller Value [model-proposed; physical meaning unverified]|reserve price elasticity of welfare [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|Welfare Efficiency with Seller Value [model-proposed; physical meaning unverified]|expected bidder surplus given reserve [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|Welfare Efficiency with Seller Value [model-proposed; physical meaning unverified]|reserve price elasticity of bidder surplus [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|Welfare Efficiency with Seller Value [model-proposed; physical meaning unverified]|expected bidder surplus given reserve and seller's value [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|Welfare Efficiency with Seller Value [model-proposed; physical meaning unverified]|Welfare Efficiency Ratio [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|Welfare Efficiency with Seller Value [model-proposed; physical meaning unverified]|Bidder Surplus Given Reserve and Seller Value Ratio [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|Welfare Efficiency with Seller Value [model-proposed; physical meaning unverified]|Welfare Reserve Ratio [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|Welfare Efficiency with Seller Value [model-proposed; physical meaning unverified]|Bidder Surplus Reserve Ratio [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|Welfare Efficiency with Seller Value [model-proposed; physical meaning unverified]|Welfare Reserve Efficiency Ratio [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|Welfare Efficiency with Seller Value [model-proposed; physical meaning unverified]|Bidder Surplus Reserve Efficiency Ratio [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|Welfare Efficiency with Seller Value [model-proposed; physical meaning unverified]|Welfare Reserve Efficiency with Seller Value [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|Welfare Efficiency with Seller Value [model-proposed; physical meaning unverified]|Bidder Surplus Reserve Ratio with Seller Value [model-proposed; physical meaning unverified]"
  ],
  "edges": [
   {
@@ -73451,9 +73555,87 @@
    "f": "Expected Revenue to Seller's Value Ratio [model-proposed; physical meaning unverified]",
    "g": "Welfare Efficiency with Seller Value [model-proposed; physical meaning unverified]",
    "k": "1/3"
+  },
+  {
+   "family": "auction with a reserve price",
+   "f": "Welfare Efficiency with Seller Value [model-proposed; physical meaning unverified]",
+   "g": "seller's expected payoff",
+   "k": "1/4"
+  },
+  {
+   "family": "auction with a reserve price",
+   "f": "Welfare Efficiency with Seller Value [model-proposed; physical meaning unverified]",
+   "g": "probability the item is not sold",
+   "k": "1/4"
+  },
+  {
+   "family": "auction with a reserve price",
+   "f": "Welfare Efficiency with Seller Value [model-proposed; physical meaning unverified]",
+   "g": "expected total bidder surplus",
+   "k": "3"
+  },
+  {
+   "family": "auction with a reserve price",
+   "f": "Welfare Efficiency with Seller Value [model-proposed; physical meaning unverified]",
+   "g": "expected total welfare",
+   "k": "1/4"
+  },
+  {
+   "family": "auction with a reserve price",
+   "f": "Welfare Efficiency with Seller Value [model-proposed; physical meaning unverified]",
+   "g": "welfare with the efficient reserve (r = v)",
+   "k": "1/4"
+  },
+  {
+   "family": "auction with a reserve price",
+   "f": "Welfare Efficiency with Seller Value [model-proposed; physical meaning unverified]",
+   "g": "probability the seller's value is below reserve [model-proposed; physical meaning unverified]",
+   "k": "1/4"
+  },
+  {
+   "family": "auction with a reserve price",
+   "f": "Welfare Efficiency with Seller Value [model-proposed; physical meaning unverified]",
+   "g": "expected bidder surplus ratio [model-proposed; physical meaning unverified]",
+   "k": "2"
+  },
+  {
+   "family": "auction with a reserve price",
+   "f": "Welfare Efficiency with Seller Value [model-proposed; physical meaning unverified]",
+   "g": "expected bidder surplus given reserve [model-proposed; physical meaning unverified]",
+   "k": "3"
+  },
+  {
+   "family": "auction with a reserve price",
+   "f": "Welfare Efficiency with Seller Value [model-proposed; physical meaning unverified]",
+   "g": "Bidder Surplus Given Reserve and Seller Value Ratio [model-proposed; physical meaning unverified]",
+   "k": "1/4"
+  },
+  {
+   "family": "auction with a reserve price",
+   "f": "Welfare Efficiency with Seller Value [model-proposed; physical meaning unverified]",
+   "g": "Bidder Surplus Reserve Ratio [model-proposed; physical meaning unverified]",
+   "k": "3"
+  },
+  {
+   "family": "auction with a reserve price",
+   "f": "Welfare Efficiency with Seller Value [model-proposed; physical meaning unverified]",
+   "g": "Welfare Reserve Efficiency Ratio [model-proposed; physical meaning unverified]",
+   "k": "1/6"
+  },
+  {
+   "family": "auction with a reserve price",
+   "f": "Welfare Efficiency with Seller Value [model-proposed; physical meaning unverified]",
+   "g": "Bidder Surplus Reserve Efficiency Ratio [model-proposed; physical meaning unverified]",
+   "k": "2"
+  },
+  {
+   "family": "auction with a reserve price",
+   "f": "Welfare Efficiency with Seller Value [model-proposed; physical meaning unverified]",
+   "g": "Bidder Surplus Reserve Ratio with Seller Value [model-proposed; physical meaning unverified]",
+   "k": "1/4"
   }
  ],
- "rounds": 4262,
+ "rounds": 4266,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",
