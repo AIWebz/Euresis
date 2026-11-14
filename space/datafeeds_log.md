@@ -3683,3 +3683,4 @@
 - 2026-11-14 17:38 FINDING (confirmed on held-out rows): In 'Hoval Ultrasol 2 1V (STC) Real Measurements in Switzerland' (Zenodo, doi 10.5281/zenodo.18335233): 'T_OutHE' follows a power law in 'T_InHE' (R² = 0.992 on the discovery half); held-out R² = 0.991 [emp-ed7f3e1ee4c0]
 - 2026-11-14 17:39 FINDING (confirmed on held-out rows): In 'Data from "Automated morphological characterization of Mediterranean dehesa using a low-de' (Zenodo, doi 10.3390/f17010016): 'd_gnss' is linear in 'd_lidar' (R² = 0.969 on the discovery half); held-out R² = 0.967 [emp-0314b18059b9]
 - 2026-11-14 17:39 data feeds: 22565 datasets analysed so far, 3297 confirmed findings
+- 2026-11-14 18:23 data feeds: online
