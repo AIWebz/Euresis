@@ -2898257,7 +2898257,7 @@
   },
   "id": "emp-55a97cee534b",
   "kind": "empirical",
-  "novelty": "not checked",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
   "payload": {
    "dataset": "fbadcb1725e15338.csv",
    "doi": "10.5061/dryad.bg08269",
@@ -2898272,6 +2898272,60 @@
   },
   "source": "datafeeds.py",
   "statement": "In 'Data from: Response of marine communities to local temperature changes' (Zenodo, doi 10.5061/dryad.bg08269): 'SBTmodePA' is linear in 'SBTwtdMean' (R\u00b2 = 0.922 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.bg08269",
+   "held_out_r2": 0.9534,
+   "held_out_rows": 352,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-680431569dd0",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "fbadcb1725e15338.csv",
+   "doi": "10.5061/dryad.bg08269",
+   "form": "linear",
+   "params": [
+    -1.1760697559487434,
+    1.0829508228423486
+   ],
+   "seed": 2423872741,
+   "x": "SBTmedPA",
+   "y": "SBTmodePA"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Response of marine communities to local temperature changes' (Zenodo, doi 10.5061/dryad.bg08269): 'SBTmodePA' is linear in 'SBTmedPA' (R\u00b2 = 0.961 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.bg08269",
+   "held_out_r2": 0.9393,
+   "held_out_rows": 352,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e18d1534b1c6",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "fbadcb1725e15338.csv",
+   "doi": "10.5061/dryad.bg08269",
+   "form": "linear",
+   "params": [
+    1.9493130311649132,
+    0.8615925519028385
+   ],
+   "seed": 2423872741,
+   "x": "SBTmodePA",
+   "y": "SBTwtdMeanPA"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Response of marine communities to local temperature changes' (Zenodo, doi 10.5061/dryad.bg08269): 'SBTwtdMeanPA' is linear in 'SBTmodePA' (R\u00b2 = 0.947 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
  }
