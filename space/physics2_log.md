@@ -4697,3 +4697,5 @@
 - 2026-11-14 04:20 round 4313: two-body decay
 - 2026-11-14 04:21 round 4314: collision
 - 2026-11-14 04:22 round 4315: driven oscillator
+- 2026-11-14 04:24 round 4316: velocity addition
+- 2026-11-14 04:25 segment end: 4316 rounds, 5 discoveries, 2 known laws rediscovered
