@@ -2912094,5 +2912094,410 @@
   "statement": "In 'Low-voltage Secondary Electron Emission Spectromicroscopy using a Scanning Auger Microscop' (Zenodo, doi 10.5281/zenodo.13753168): 'Normalized1' follows a power law in 'NI' (R\u00b2 = 0.937 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-7fd4d8a41255",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "(p*sqrt(1 - L) - p + 1)/sqrt(-p*(1 - L) + 1) >= 1*(sqrt(1 - L)/sqrt(-L + 1/(p*sqrt(1 - L) - p + 1)))",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 4423",
+  "statement": "[economics: insurance and risk] Risk-adjusted expected utility [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Relative Risk Aversion Ratio [model-proposed; physical meaning unverified]   on p < 1, L < 1 (tight only at the edge of the domain, near (1.72e-16, 0.7))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-c63eab625cc8",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "1/(2 - 2*sqrt(1 - L)) >= 1/2*(sqrt(1 - L)/sqrt(-L + 1/(p*sqrt(1 - L) - p + 1)))",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 4423",
+  "statement": "[economics: insurance and risk] Coefficient of Risk Aversion [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 Relative Risk Aversion Ratio [model-proposed; physical meaning unverified]   on p < 1, L < 1 (tight only at the edge of the domain, near (3.04e-17, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-1e212a665223",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "1/sqrt(1 - L) >= 1*(sqrt(1 - L)/sqrt(-L + 1/(p*sqrt(1 - L) - p + 1)))",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 4423",
+  "statement": "[economics: insurance and risk] Relative Risk Aversion [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Relative Risk Aversion Ratio [model-proposed; physical meaning unverified]   on p < 1, L < 1 (tight only at the edge of the domain, near (0.000117, 5.75e-16))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-f86e2371172e",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "sqrt(-L*p + 1)/(-p + sqrt(1 - L) + 1) >= 1/2*(sqrt(1 - L)/sqrt(-L + 1/(p*sqrt(1 - L) - p + 1)))",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 4423",
+  "statement": "[economics: insurance and risk] Insurance Risk Adjustment Index [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 Relative Risk Aversion Ratio [model-proposed; physical meaning unverified]   on p < 1, L < 1 (tight only at the edge of the domain, near (1.55e-14, 1.27e-13))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-f9644ab581ef",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "sqrt(-L*p + 1)/(-p*sqrt(1 - L) + p - sqrt(1 - L) + 1) >= 1*(sqrt(1 - L)/sqrt(-L + 1/(p*sqrt(1 - L) - p + 1)))",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 4423",
+  "statement": "[economics: insurance and risk] Insurance Risk Adjustment Ratio [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Relative Risk Aversion Ratio [model-proposed; physical meaning unverified]   on p < 1, L < 1 (tight only at the edge of the domain, near (3.04e-17, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-b5078bd91828",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "1/(c*x + 1) >= 1/5*(c/(x + 1) + 1/(x + 1))",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 4429",
+  "statement": "[physics: Compton scattering] scattered photon energy / initial energy \u2265 1/5 \u00d7 Scattered photon wavelength shift factor (alternative) [model-proposed; physical meaning unverified]   on x < 2, c < 2 (tight only at the edge of the domain, near (2, 2))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-0d98cc73db39",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'scattered photon energy / initial energy'",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "1/(2*c**2*x**2 + 1) >= 1/33*(c/(x + 1) + 1/(x + 1))",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 4429",
+  "statement": "[physics: Compton scattering] Electron recoil angle (cosine) [model-proposed; physical meaning unverified] \u2265 1/33 \u00d7 Scattered photon wavelength shift factor (alternative) [model-proposed; physical meaning unverified]   on x < 2, c < 2 (tight only at the edge of the domain, near (2, 2))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-cd907ca8769b",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'scattered photon energy / initial energy'",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "1/(2*c*x + 1) >= 1/9*(c/(x + 1) + 1/(x + 1))",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 4429",
+  "statement": "[physics: Compton scattering] Compton scattering formula (recoil angle cosine) [model-proposed; physical meaning unverified] \u2265 1/9 \u00d7 Scattered photon wavelength shift factor (alternative) [model-proposed; physical meaning unverified]   on x < 2, c < 2 (tight only at the edge of the domain, near (2, 2))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-1f287da7ce25",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "c/(x + 1) + 1 >= 1*(c/(x + 1) + 1/(x + 1))",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 4429",
+  "statement": "[physics: Compton scattering] Scattered photon wavelength / initial photon wavelength [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Scattered photon wavelength shift factor (alternative) [model-proposed; physical meaning unverified]   on x < 2, c < 2 (tight only at the edge of the domain, near (1.08e-16, 1.89))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-b50cb22764fa",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "c/(c*x + 1) + (c*x + 1)/x >= 3/2*(c/(x + 1) + 1/(x + 1))",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 4429",
+  "statement": "[physics: Compton scattering] Scattered photon wavelength / Compton wavelength [model-proposed; physical meaning unverified] \u2265 3/2 \u00d7 Scattered photon wavelength shift factor (alternative) [model-proposed; physical meaning unverified]   on x < 2, c < 2 (tight only at the edge of the domain, near (2, 3.35e-15))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-20c408015f23",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'Scattered photon wavelength / initial photon wavelength [model-proposed; physical meaning unverified]'",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "1 + sqrt(c**2*x**2/(c*x + 1)**2 + c*x**2/(c*x + 1))/(c*x + 1) + 1/(c*x + 1) >= 2/3*(c/(x + 1) + 1/(x + 1))",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 4429",
+  "statement": "[physics: Compton scattering] Electron momentum fraction [model-proposed; physical meaning unverified] \u2265 2/3 \u00d7 Scattered photon wavelength shift factor (alternative) [model-proposed; physical meaning unverified]   on x < 2, c < 2 (tight only at the edge of the domain, near (3.64e-15, 2))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-7f91bab351c3",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'scattered photon energy / initial energy'",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "1/(c*x + 1) + (c*x + 1)**(-2) >= 6/25*(c/(x + 1) + 1/(x + 1))",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 4429",
+  "statement": "[physics: Compton scattering] Compton scattering cross-section factor [model-proposed; physical meaning unverified] \u2265 6/25 \u00d7 Scattered photon wavelength shift factor (alternative) [model-proposed; physical meaning unverified]   on x < 2, c < 2 (tight only at the edge of the domain, near (2, 2))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "x < 2",
+    "c < 2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-39957dd65b6b",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "x < 2",
+    "c < 2"
+   ],
+   "claim": "c/(x + 1) + 1/(x + 1) >= 1/3*(1/(c*x + 1))",
+   "symbols": [
+    "x",
+    "c"
+   ]
+  },
+  "source": "physics_discover2 round 4429",
+  "statement": "[physics: Compton scattering] Scattered photon wavelength shift factor (alternative) [model-proposed; physical meaning unverified] \u2265 1/3 \u00d7 scattered photon energy / initial energy   on x < 2, c < 2 (tight only at the edge of the domain, near (2, 3.29e-15))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-f7f5159568f4",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "sqrt(-L*p + 1)/(-p*sqrt(1 - L) + sqrt(1 - L) + 1) >= 1/2*(sqrt(1 - L)/sqrt(-L + 1/(p*sqrt(1 - L) - p + 1)))",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 4431",
+  "statement": "[economics: insurance and risk] Insurance Risk Exposure Ratio [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 Relative Risk Aversion Ratio [model-proposed; physical meaning unverified]   on p < 1, L < 1 (tight only at the edge of the domain, near (1.55e-14, 1.27e-13))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-fd25dab6a558",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'Risk-adjusted expected utility [model-proposed; physical meaning unverified]'",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "sqrt(-L*p + 1)/(-p*sqrt(1 - L) + 1) >= 1*(sqrt(1 - L)/sqrt(-L + 1/(p*sqrt(1 - L) - p + 1)))",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 4431",
+  "statement": "[economics: insurance and risk] Relative Risk Adjustment Index [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Relative Risk Aversion Ratio [model-proposed; physical meaning unverified]   on p < 1, L < 1 (tight only at the edge of the domain, near (2.41e-16, 0.583))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]
