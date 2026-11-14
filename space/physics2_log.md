@@ -4575,3 +4575,24 @@
 - 2026-11-14 00:08 segment start (budget 30 min; model: Qwen3-8B; 5 discoveries so far)
 - 2026-11-14 00:08 round 4200: auction with a reserve price
 - 2026-11-14 00:10 round 4201: two-body decay
+- 2026-11-14 00:12 round 4202: collision
+- 2026-11-14 00:14 round 4203: driven oscillator
+- 2026-11-14 00:15 round 4204: velocity addition
+- 2026-11-14 00:17 round 4205: Compton scattering
+- 2026-11-14 00:17 round 4206: Cournot duopoly
+- 2026-11-14 00:18 round 4207: insurance and risk
+- 2026-11-14 00:20 round 4208: auction with a reserve price
+- 2026-11-14 00:21 round 4209: two-body decay
+- 2026-11-14 00:23 round 4210: collision
+- 2026-11-14 00:24 round 4211: driven oscillator
+- 2026-11-14 00:26 round 4212: velocity addition
+- 2026-11-14 00:27 round 4213: Compton scattering
+- 2026-11-14 00:28 round 4214: Cournot duopoly
+- 2026-11-14 00:29 round 4215: insurance and risk
+- 2026-11-14 00:30 round 4216: auction with a reserve price
+- 2026-11-14 00:31 round 4217: two-body decay
+- 2026-11-14 00:33 round 4218: collision
+- 2026-11-14 00:34 round 4219: driven oscillator
+- 2026-11-14 00:36 round 4220: velocity addition
+- 2026-11-14 00:37 round 4221: Compton scattering
+- 2026-11-14 00:37 round 4222: Cournot duopoly
