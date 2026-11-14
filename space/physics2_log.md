@@ -4802,3 +4802,10 @@
 - 2026-11-14 08:25 round 4408: auction with a reserve price
 - 2026-11-14 08:27 round 4409: two-body decay
 - 2026-11-14 08:29 round 4410: collision
+- 2026-11-14 08:34 round 4411: driven oscillator
+- 2026-11-14 08:35 round 4412: velocity addition
+- 2026-11-14 08:37 round 4413: Compton scattering
+- 2026-11-14 08:38 round 4414: Cournot duopoly
+- 2026-11-14 08:39 round 4415: insurance and risk
+- 2026-11-14 08:40 round 4416: auction with a reserve price
+- 2026-11-14 08:42 segment end: 4416 rounds, 5 discoveries, 2 known laws rediscovered
