@@ -2862294,5 +2862294,140 @@
   "statement": "In 'Data from the paper \"Productive restoration planning in the irrigated drylands: Soil salin' (Zenodo, doi 10.5281/zenodo.18354038): 'B12_summer' is linear in 'B12_mean' (R\u00b2 = 0.911 on the discovery half)",
   "status": "refuted",
   "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-003c5d16332d",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "(-2*r**3/3 + r**2*v/3 + 2/3)/(-2*r**3/3 + 4*r**2*v/3 + 2/3) >= 1/2*((r**2*v + 2/3)/(4*r**3/3 + 2*r**2*v - r**2 + 1))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 4272",
+  "statement": "[economics: auction with a reserve price] Welfare Efficiency with Seller Value [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 Welfare Reserve Efficiency with Seller Value and Reserve [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-47d8a6a53334",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'Welfare Reserve Efficiency with Seller Value and Reserve [model-proposed; physical meaning unverified]'",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "(-2*r**3/3 + r**2*v/3 + 2/3)/(-2*r**3/3 + 4*r**2*v/3 + 2/3) >= 5/12*((2*r**3/3 + r**2*v - r**2 + 1/3)/(4*r**3/3 + r**2*v - 2*r**2 + 4/3))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 4272",
+  "statement": "[economics: auction with a reserve price] Welfare Efficiency with Seller Value [model-proposed; physical meaning unverified] \u2265 5/12 \u00d7 Bidder Surplus Reserve Efficiency with Seller Value [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-46a2461770e8",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'seller's expected payoff'",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "(-2*r**3/3 + r**2*v/3 + 2/3)/(-2*r**3/3 + 4*r**2*v/3 + 2/3) >= 1/6*((2*r**3/3 + r**2*v - r**2 + 1/3)/(2*r**3/3 - r**2 + 1))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 4272",
+  "statement": "[economics: auction with a reserve price] Welfare Efficiency with Seller Value [model-proposed; physical meaning unverified] \u2265 1/6 \u00d7 Bidder Surplus Reserve Efficiency with Seller Value and Reserve Ratio [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-217893e5bb3c",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'Welfare Reserve Efficiency Ratio [model-proposed; physical meaning unverified]'",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "(-2*r**3/3 + r**2*v/3 + 2/3)/(-2*r**3/3 + 4*r**2*v/3 + 2/3) >= 1/6*((2*r**3/3 + r**2*v - r**2 + 1/3)/(8*r**3/3 - 3*r**2 + 1))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 4272",
+  "statement": "[economics: auction with a reserve price] Welfare Efficiency with Seller Value [model-proposed; physical meaning unverified] \u2265 1/6 \u00d7 Bidder Surplus Reserve Efficiency with Seller Value and Reserve [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-c008544508df",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "(-2*r**3/3 + r**2*v/3 + 2/3)/(-2*r**3/3 + 4*r**2*v/3 + 2/3) >= 1/2*((-2*r**3/3 + r**2*v + 2/3)/(-2*r**3/3 + r**2*v + r**2 + 2/3))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 4272",
+  "statement": "[economics: auction with a reserve price] Welfare Efficiency with Seller Value [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 Welfare Reserve Elasticity Ratio [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]
