@@ -2972546,5 +2972546,59 @@
   "statement": "Octal game 0.0113311 is completely solved: its Grundy values are periodic with pre-period 7 and period 9 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.n42p4k7",
+   "held_out_r2": 0.9656,
+   "held_out_rows": 1699,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d8decd570a91",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "2c4ce5d873c773e5.csv",
+   "doi": "10.5061/dryad.n42p4k7",
+   "form": "linear",
+   "params": [
+    0.15540200058770343,
+    0.943408739531116
+   ],
+   "seed": 3438534068,
+   "x": "trw",
+   "y": "detrend_recover"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Adaptive limitations of white spruce populations to drought imply vulnerability' (Zenodo, doi 10.5061/dryad.n42p4k7): 'detrend_recover' is linear in 'trw' (R\u00b2 = 0.965 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.8289764",
+   "held_out_r2": 0.9449,
+   "held_out_rows": 4509,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-7a98182a3f9b",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "854348e30912a8f4.csv",
+   "doi": "10.5281/zenodo.8289764",
+   "form": "exponential",
+   "params": [
+    -0.5491448334229746,
+    1.3374604111254285
+   ],
+   "seed": 1227959666,
+   "x": "temp.C",
+   "y": "unkn.ctd"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Raw EK80 echosounder data of northern shrimp collected by wideband autonomous transceiver ' (Zenodo, doi 10.5281/zenodo.8289764): 'unkn.ctd' grows exponentially in 'temp.C' (R\u00b2 = 0.967 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]

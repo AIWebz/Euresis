@@ -3641,3 +3641,6 @@
 - 2026-11-14 16:30 FINDING (confirmed on held-out rows): In 'Data from: Biotic and abiotic plant-soil feedback depends on nitrogen-acquisition strategy' (Zenodo, doi 10.5061/dryad.4tc6292): 'total.dwt' is linear in 'total.fwt' (R² = 0.928 on the discovery half); held-out R² = 0.932 [emp-8fb35f3480b2]
 - 2026-11-14 16:30 FINDING (confirmed on held-out rows): In 'Synthesis data for manuscript: Global stocks and capacity of mineral-associated soil organ' (Zenodo, doi 10.5281/zenodo.5987415): 'SiltClayPercent' is linear in 'Sand' (R² = 0.989 on the discovery half); held-out R² = 0.973 [emp-4a4eb330f11a]
 - 2026-11-14 16:30 data feeds: 22425 datasets analysed so far, 3257 confirmed findings
+- 2026-11-14 17:32 data feeds: online
+- 2026-11-14 17:32 FINDING (confirmed on held-out rows): In 'Data from: Adaptive limitations of white spruce populations to drought imply vulnerability' (Zenodo, doi 10.5061/dryad.n42p4k7): 'detrend_recover' is linear in 'trw' (R² = 0.965 on the discovery half); held-out R² = 0.966 [emp-d8decd570a91]
+- 2026-11-14 17:33 FINDING (confirmed on held-out rows): In 'Raw EK80 echosounder data of northern shrimp collected by wideband autonomous transceiver ' (Zenodo, doi 10.5281/zenodo.8289764): 'unkn.ctd' grows exponentially in 'temp.C' (R² = 0.967 on the discovery half); held-out R² = 0.945 [emp-7a98182a3f9b]
