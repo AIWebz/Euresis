@@ -2963708,10 +2963708,15 @@
   "verifier": "guy-smith-periodicity"
  },
  {
-  "evidence": null,
+  "evidence": {
+   "doi": "10.5061/dryad.b1m1h",
+   "held_out_r2": 0.9112,
+   "held_out_rows": 38,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
   "id": "emp-c8f65b7f6915",
   "kind": "empirical",
-  "novelty": "not checked",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
   "payload": {
    "dataset": "712979dd6e2d53b3.csv",
    "doi": "10.5061/dryad.b1m1h",
@@ -2963726,7 +2963731,277 @@
   },
   "source": "datafeeds.py",
   "statement": "In 'Data from: Direct and indirect effects of native range expansion on soil microbial communi' (Zenodo, doi 10.5061/dryad.b1m1h): 'Copiotrophic.Rich' grows exponentially in 'Actinobacteria.Rich' (R\u00b2 = 0.944 on the discovery half)",
-  "status": "candidate",
-  "verifier": null
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.n2z34tmzh",
+   "held_out_r2": 0.9628,
+   "held_out_rows": 1376,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-1a4450113a5e",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "55a4db20bc504c0a.csv",
+   "doi": "10.5061/dryad.n2z34tmzh",
+   "form": "exponential",
+   "params": [
+    0.20534249185908263,
+    0.9566212461894414
+   ],
+   "seed": 3473394980,
+   "x": "shannon_wiener",
+   "y": "species_richness"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Is more less? A comprehensive experimental test of soil depth effects on grassland diversi' (Zenodo, doi 10.5061/dryad.n2z34tmzh): 'species_richness' grows exponentially in 'shannon_wiener' (R\u00b2 = 0.963 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.n2z34tmzh",
+   "held_out_r2": 0.9628,
+   "held_out_rows": 1376,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-0849d00ff223",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "55a4db20bc504c0a.csv",
+   "doi": "10.5061/dryad.n2z34tmzh",
+   "form": "exponential",
+   "params": [
+    -3.483536962254853,
+    0.9566212461894408
+   ],
+   "seed": 3473394980,
+   "x": "shannon_wiener",
+   "y": "prop_species_emerged"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Is more less? A comprehensive experimental test of soil depth effects on grassland diversi' (Zenodo, doi 10.5061/dryad.n2z34tmzh): 'prop_species_emerged' grows exponentially in 'shannon_wiener' (R\u00b2 = 0.963 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.6t1g1jx2z",
+   "held_out_r2": 0.9898,
+   "held_out_rows": 50,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-73e36500b6f3",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "0d26ac15ac1d6aff.csv",
+   "doi": "10.5061/dryad.6t1g1jx2z",
+   "form": "logarithmic",
+   "params": [
+    0.523395834018857,
+    0.2332286881164185
+   ],
+   "seed": 2354618897,
+   "x": "enzyme C/N",
+   "y": "length"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Implications of plant N/P stoichiometry influenced by arbuscular mycorrhizal fun' (Zenodo, doi 10.5061/dryad.6t1g1jx2z): 'length' grows logarithmically in 'enzyme C/N' (R\u00b2 = 0.993 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.6t1g1jx2z",
+   "held_out_r2": 0.9053,
+   "held_out_rows": 50,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b8a1366d8c14",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "0d26ac15ac1d6aff.csv",
+   "doi": "10.5061/dryad.6t1g1jx2z",
+   "form": "power law",
+   "params": [
+    4.021854365537996,
+    -0.16278605291010137
+   ],
+   "seed": 2354618897,
+   "x": "enzyme N/P",
+   "y": "angle"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Implications of plant N/P stoichiometry influenced by arbuscular mycorrhizal fun' (Zenodo, doi 10.5061/dryad.6t1g1jx2z): 'angle' follows a power law in 'enzyme N/P' (R\u00b2 = 0.906 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.6t1g1jx2z",
+   "held_out_r2": 0.9687,
+   "held_out_rows": 50,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-0401d0200246",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "b38e445279ccca67.csv",
+   "doi": "10.5061/dryad.6t1g1jx2z",
+   "form": "power law",
+   "params": [
+    0.6693199580715348,
+    0.7950415727814809
+   ],
+   "seed": 562118707,
+   "x": "shoot CN",
+   "y": "root CN"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Implications of plant N/P stoichiometry influenced by arbuscular mycorrhizal fun' (Zenodo, doi 10.5061/dryad.6t1g1jx2z): 'root CN' follows a power law in 'shoot CN' (R\u00b2 = 0.926 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.6t1g1jx2z",
+   "held_out_r2": 0.9457,
+   "held_out_rows": 50,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e96e0f76ffcd",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "b38e445279ccca67.csv",
+   "doi": "10.5061/dryad.6t1g1jx2z",
+   "form": "exponential",
+   "params": [
+    4.500496317065069,
+    -0.04598220264774052
+   ],
+   "seed": 562118707,
+   "x": "root CN",
+   "y": "root NP"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Implications of plant N/P stoichiometry influenced by arbuscular mycorrhizal fun' (Zenodo, doi 10.5061/dryad.6t1g1jx2z): 'root NP' grows exponentially in 'root CN' (R\u00b2 = 0.950 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.4tc6292",
+   "held_out_r2": 0.9256,
+   "held_out_rows": 648,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-bcb14263a4f3",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "311922ad4b8cf31d.csv",
+   "doi": "10.5061/dryad.4tc6292",
+   "form": "linear",
+   "params": [
+    0.016488426278486047,
+    0.2856831366483922
+   ],
+   "seed": 4185630838,
+   "x": "ag.fwt",
+   "y": "ag.dwt"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Biotic and abiotic plant-soil feedback depends on nitrogen-acquisition strategy' (Zenodo, doi 10.5061/dryad.4tc6292): 'ag.dwt' is linear in 'ag.fwt' (R\u00b2 = 0.917 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.4tc6292",
+   "held_out_r2": 0.8876,
+   "held_out_rows": 648,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a96a5b26a58f",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "311922ad4b8cf31d.csv",
+   "doi": "10.5061/dryad.4tc6292",
+   "form": "linear",
+   "params": [
+    0.044488982674770056,
+    0.13526053369894267
+   ],
+   "seed": 4185630838,
+   "x": "total.fwt",
+   "y": "ag.dwt"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Biotic and abiotic plant-soil feedback depends on nitrogen-acquisition strategy' (Zenodo, doi 10.5061/dryad.4tc6292): 'ag.dwt' is linear in 'total.fwt' (R\u00b2 = 0.901 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.4tc6292",
+   "held_out_r2": 0.9325,
+   "held_out_rows": 648,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-8fb35f3480b2",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "311922ad4b8cf31d.csv",
+   "doi": "10.5061/dryad.4tc6292",
+   "form": "linear",
+   "params": [
+    0.011757978947668932,
+    0.23520196046959277
+   ],
+   "seed": 4185630838,
+   "x": "total.fwt",
+   "y": "total.dwt"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Biotic and abiotic plant-soil feedback depends on nitrogen-acquisition strategy' (Zenodo, doi 10.5061/dryad.4tc6292): 'total.dwt' is linear in 'total.fwt' (R\u00b2 = 0.928 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.5987415",
+   "held_out_r2": 0.973,
+   "held_out_rows": 660,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4a4eb330f11a",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3a712dc46f3bc3e6.csv",
+   "doi": "10.5281/zenodo.5987415",
+   "form": "linear",
+   "params": [
+    99.10321172745867,
+    -0.9884685084396649
+   ],
+   "seed": 373093976,
+   "x": "Sand",
+   "y": "SiltClayPercent"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Synthesis data for manuscript: Global stocks and capacity of mineral-associated soil organ' (Zenodo, doi 10.5281/zenodo.5987415): 'SiltClayPercent' is linear in 'Sand' (R\u00b2 = 0.989 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
