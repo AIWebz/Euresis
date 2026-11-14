@@ -3308,3 +3308,4 @@
 - 2026-11-14 00:54 FINDING (confirmed on held-out rows): In 'Data for: Marine volatile organic compounds air-sea exchange dynamics across a summer-to-a' (Zenodo, doi 10.5281/zenodo.22920325): 'ensemble_sem' is linear in 'sd' (R² = 0.999 on the discovery half); held-out R² = 0.940 [emp-c847acb90a3f]
 - 2026-11-14 00:55 FINDING (confirmed on held-out rows): In 'Data for: Marine volatile organic compounds air-sea exchange dynamics across a summer-to-a' (Zenodo, doi 10.5281/zenodo.22920325): 'Total flux uncertainty' is linear in 'Random error SEM' (R² = 0.946 on the discovery half); held-out R² = 0.857 [emp-a04f7a10b18b]
 - 2026-11-14 00:55 data feeds: 20859 datasets analysed so far, 2958 confirmed findings
+- 2026-11-14 01:56 data feeds: online
