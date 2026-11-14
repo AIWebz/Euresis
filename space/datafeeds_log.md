@@ -3426,3 +3426,4 @@
 - 2026-11-14 05:08 FINDING (confirmed on held-out rows): In 'Scaling regimes and fluctuations of observables in computer glasses approaching the unjamm' (Zenodo, doi 10.5061/dryad.69p8cz97c): ' chi_mu_med' follows a power law in ' dz' (R² = 0.970 on the discovery half); held-out R² = 0.959 [emp-036d160cf102]
 - 2026-11-14 05:09 FINDING (confirmed on held-out rows): In 'Scaling regimes and fluctuations of observables in computer glasses approaching the unjamm' (Zenodo, doi 10.5061/dryad.69p8cz97c): ' chi_G' follows a power law in ' dz' (R² = 0.987 on the discovery half); held-out R² = 0.977 [emp-9e93e548bcd1]
 - 2026-11-14 05:09 data feeds: 21319 datasets analysed so far, 3066 confirmed findings
+- 2026-11-14 06:11 data feeds: online
