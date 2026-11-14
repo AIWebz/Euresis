@@ -64305,6 +64305,41 @@
    "family": "collision",
    "expr": "m / (1 + e)",
    "why": "a power or product of known quantities"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(4*r**2*z**2 + (1 - r**2)**2)/sqrt(4*z**4 - 2*z**2 + 1)",
+   "why": "affine combination of known quantities (amplitude / static deflection, Dynamic Magnification Factor [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt((1 + (2*z*r)**2)/((1 - r**2)**2 + (2*z*r)**2))",
+   "why": "affine combination of known quantities (amplitude / static deflection, transmissibility)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(4*r**2*z**2 + 1)*sqrt(4*r**2*z**2 + (1 - r**2)**2)/(2*r*z*(sqrt(4*r**2*z**2 + 1) + sqrt(4*r**2*",
+   "why": "affine combination of known quantities (quality factor, Power Amplification Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "2*r**2*z/((r**2 + 1)*(4*r**2*z**2 + (1 - r**2)**2))",
+   "why": "affine combination of known quantities (amplitude / static deflection, Energy Dissipation Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 + u)/(1 - u)) * sqrt((1 + v)/(1 - v)) / sqrt((1 + (u + v)/(1 + u*v)) / (1 - (u + v)/(1 + u*v",
+   "why": "affine combination of known quantities (composed speed / c)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 - u**2)*(1 - v**2) + (u + v)**2/(u*v + 1)**2) / (u*v + 1)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "x/(x + 1)",
+   "why": "affine combination of known quantities (Scattered photon wavelength / initial photon wavelength [model-proposed; physical meaning unverified], Scattered photon wavelength shift factor (alternative) [model-proposed; physical meaning unverified])"
   }
  ],
  "tried": [
@@ -70613,7 +70648,31 @@
   "collision|Sum of Squares of Mass Ratio and Coefficient of Restitution [model-proposed; physical meaning unverified]|relative velocity after collision divided by initial velocity of projectile [model-proposed; physical meaning unverified]",
   "collision|Sum of Squares of Mass Ratio and Coefficient of Restitution [model-proposed; physical meaning unverified]|Fraction of kinetic energy retained by projectile [model-proposed; physical meaning unverified]",
   "collision|Sum of Squares of Mass Ratio and Coefficient of Restitution [model-proposed; physical meaning unverified]|Fraction of kinetic energy retained by target [model-proposed; physical meaning unverified]",
-  "collision|Sum of Squares of Mass Ratio and Coefficient of Restitution [model-proposed; physical meaning unverified]|Fraction of kinetic energy retained by the system [model-proposed; physical meaning unverified]"
+  "collision|Sum of Squares of Mass Ratio and Coefficient of Restitution [model-proposed; physical meaning unverified]|Fraction of kinetic energy retained by the system [model-proposed; physical meaning unverified]",
+  "driven oscillator|Acceleration Transmissibility [model-proposed; physical meaning unverified]|amplitude / static deflection",
+  "driven oscillator|Acceleration Transmissibility [model-proposed; physical meaning unverified]|transmissibility",
+  "driven oscillator|Acceleration Transmissibility [model-proposed; physical meaning unverified]|velocity amplitude / (\u03c90 \u00d7 static deflection)",
+  "driven oscillator|Acceleration Transmissibility [model-proposed; physical meaning unverified]|acceleration amplitude / (\u03c90\u00b2 \u00d7 static deflection)",
+  "driven oscillator|Acceleration Transmissibility [model-proposed; physical meaning unverified]|mean absorbed power (normalised)",
+  "driven oscillator|Acceleration Transmissibility [model-proposed; physical meaning unverified]|quality factor",
+  "driven oscillator|Acceleration Transmissibility [model-proposed; physical meaning unverified]|log decrement [model-proposed; physical meaning unverified]",
+  "driven oscillator|Acceleration Transmissibility [model-proposed; physical meaning unverified]|resonance frequency ratio [model-proposed; physical meaning unverified]",
+  "driven oscillator|Acceleration Transmissibility [model-proposed; physical meaning unverified]|resonance amplitude ratio [model-proposed; physical meaning unverified]",
+  "driven oscillator|Acceleration Transmissibility [model-proposed; physical meaning unverified]|Resonance frequency shift [model-proposed; physical meaning unverified]",
+  "driven oscillator|Acceleration Transmissibility [model-proposed; physical meaning unverified]|Peak amplitude ratio [model-proposed; physical meaning unverified]",
+  "driven oscillator|Acceleration Transmissibility [model-proposed; physical meaning unverified]|Resonance frequency ratio (corrected) [model-proposed; physical meaning unverified]",
+  "driven oscillator|Acceleration Transmissibility [model-proposed; physical meaning unverified]|Relative energy loss per cycle [model-proposed; physical meaning unverified]",
+  "driven oscillator|Acceleration Transmissibility [model-proposed; physical meaning unverified]|Normalized power transmission [model-proposed; physical meaning unverified]",
+  "driven oscillator|Acceleration Transmissibility [model-proposed; physical meaning unverified]|Velocity transmissibility [model-proposed; physical meaning unverified]",
+  "driven oscillator|Acceleration Transmissibility [model-proposed; physical meaning unverified]|Acceleration transmissibility [model-proposed; physical meaning unverified]",
+  "driven oscillator|Acceleration Transmissibility [model-proposed; physical meaning unverified]|Energy Dissipation Ratio [model-proposed; physical meaning unverified]",
+  "driven oscillator|Acceleration Transmissibility [model-proposed; physical meaning unverified]|Power Amplification Factor [model-proposed; physical meaning unverified]",
+  "driven oscillator|Acceleration Transmissibility [model-proposed; physical meaning unverified]|Power Amplification Ratio [model-proposed; physical meaning unverified]",
+  "driven oscillator|Acceleration Transmissibility [model-proposed; physical meaning unverified]|Resonance Width [model-proposed; physical meaning unverified]",
+  "driven oscillator|Acceleration Transmissibility [model-proposed; physical meaning unverified]|Mechanical Impedance Ratio [model-proposed; physical meaning unverified]",
+  "driven oscillator|Acceleration Transmissibility [model-proposed; physical meaning unverified]|Normalized Power Transmission (Corrected) [model-proposed; physical meaning unverified]",
+  "driven oscillator|Acceleration Transmissibility [model-proposed; physical meaning unverified]|Damping factor ratio [model-proposed; physical meaning unverified]",
+  "driven oscillator|Acceleration Transmissibility [model-proposed; physical meaning unverified]|Dynamic Magnification Factor [model-proposed; physical meaning unverified]"
  ],
  "edges": [
   {
@@ -79261,9 +79320,39 @@
    "f": "Sum of Squares of Mass Ratio and Coefficient of Restitution [model-proposed; physical meaning unverified]",
    "g": "Fraction of kinetic energy retained by target [model-proposed; physical meaning unverified]",
    "k": "1"
+  },
+  {
+   "family": "driven oscillator",
+   "f": "Acceleration Transmissibility [model-proposed; physical meaning unverified]",
+   "g": "amplitude / static deflection",
+   "k": "1"
+  },
+  {
+   "family": "driven oscillator",
+   "f": "Acceleration Transmissibility [model-proposed; physical meaning unverified]",
+   "g": "transmissibility",
+   "k": "1"
+  },
+  {
+   "family": "driven oscillator",
+   "f": "Acceleration Transmissibility [model-proposed; physical meaning unverified]",
+   "g": "resonance frequency ratio [model-proposed; physical meaning unverified]",
+   "k": "1"
+  },
+  {
+   "family": "driven oscillator",
+   "f": "Acceleration Transmissibility [model-proposed; physical meaning unverified]",
+   "g": "Resonance frequency shift [model-proposed; physical meaning unverified]",
+   "k": "1"
+  },
+  {
+   "family": "driven oscillator",
+   "f": "Acceleration Transmissibility [model-proposed; physical meaning unverified]",
+   "g": "Resonance frequency ratio (corrected) [model-proposed; physical meaning unverified]",
+   "k": "1"
   }
  ],
- "rounds": 4594,
+ "rounds": 4597,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",

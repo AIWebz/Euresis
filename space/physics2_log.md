@@ -5007,3 +5007,6 @@
 - 2026-11-14 18:02 round 4593: two-body decay
 - 2026-11-14 18:03 round 4594: collision
 - 2026-11-14 18:06 round 4595: driven oscillator
+- 2026-11-14 18:08 round 4596: velocity addition
+- 2026-11-14 18:09 round 4597: Compton scattering
+- 2026-11-14 18:10 segment end: 4597 rounds, 5 discoveries, 2 known laws rediscovered
