@@ -2861322,5 +2861322,977 @@
   "statement": "Octal game 0.777524 is completely solved: its Grundy values are periodic with pre-period 245 and period 4 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15171280",
+   "held_out_r2": 0.9853,
+   "held_out_rows": 1077,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3598929d5513",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "e081d90ad7e19658.csv",
+   "doi": "10.5281/zenodo.15171280",
+   "form": "linear",
+   "params": [
+    99.38217206473695,
+    -0.9921793739219381
+   ],
+   "seed": 2668478500,
+   "x": "Sand",
+   "y": "SiltClayPercent"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Supporting data for review article: Soil carbon saturation: what do we really know?' (Zenodo, doi 10.5281/zenodo.15171280): 'SiltClayPercent' is linear in 'Sand' (R\u00b2 = 0.994 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.wpzgmsbv7",
+   "held_out_r2": 0.9892,
+   "held_out_rows": 35,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-1790a2d26be7",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "6df0f3848f3efcf7.csv",
+   "doi": "10.5061/dryad.wpzgmsbv7",
+   "form": "power law",
+   "params": [
+    0.05258840115397082,
+    0.7017936457524687
+   ],
+   "seed": 3150785711,
+   "x": "plant_bray",
+   "y": "plant_jaccard"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Habitat quality drives the species-area relationship of plants and soil microbes in an oce' (Zenodo, doi 10.5061/dryad.wpzgmsbv7): 'plant_jaccard' follows a power law in 'plant_bray' (R\u00b2 = 0.995 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.wpzgmsbv7",
+   "held_out_r2": 0.965,
+   "held_out_rows": 375,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-580b30314fba",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "2008bb0bd740278e.csv",
+   "doi": "10.5061/dryad.wpzgmsbv7",
+   "form": "power law",
+   "params": [
+    0.05060170031166651,
+    0.7403276606142175
+   ],
+   "seed": 1404177537,
+   "x": "fungi_bray",
+   "y": "fungi_jac"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Habitat quality drives the species-area relationship of plants and soil microbes in an oce' (Zenodo, doi 10.5061/dryad.wpzgmsbv7): 'fungi_jac' follows a power law in 'fungi_bray' (R\u00b2 = 0.979 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3834337",
+   "held_out_r2": 0.8143,
+   "held_out_rows": 40,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-100f89cb1c26",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "87fc71179bf6c28b.csv",
+   "doi": "10.5281/zenodo.3834337",
+   "form": "logarithmic",
+   "params": [
+    -0.5986970831030043,
+    -0.5981199866831367
+   ],
+   "seed": 601054383,
+   "x": "Saprotroph",
+   "y": "EMF-Sap"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Fungal responses to plant invasion are greater under soil warming than simulated nitrogen ' (Zenodo, doi 10.5281/zenodo.3834337): 'EMF-Sap' grows logarithmically in 'Saprotroph' (R\u00b2 = 0.977 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3834337",
+   "held_out_r2": 0.8488,
+   "held_out_rows": 34,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-812a7611bcdc",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "37787c1a6df5073c.csv",
+   "doi": "10.5281/zenodo.3834337",
+   "form": "power law",
+   "params": [
+    -3.1586650119665705,
+    0.9537791686589567
+   ],
+   "seed": 3329572031,
+   "x": "Carbon",
+   "y": "Nitrogen"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Fungal responses to plant invasion are greater under soil warming than simulated nitrogen ' (Zenodo, doi 10.5281/zenodo.3834337): 'Nitrogen' follows a power law in 'Carbon' (R\u00b2 = 0.926 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.2z34tmph7",
+   "held_out_r2": 0.9594,
+   "held_out_rows": 62,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d5da5e93f5e6",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "5f862a3a97b6b48d.csv",
+   "doi": "10.5061/dryad.2z34tmph7",
+   "form": "linear",
+   "params": [
+    1913.9463757422984,
+    855.979877866325
+   ],
+   "seed": 162315790,
+   "x": "PC1",
+   "y": "New_P_noBD"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Arbuscular mycorrhizal fungi in roots and soil respond differently to biotic and abiotic f' (Zenodo, doi 10.5061/dryad.2z34tmph7): 'New_P_noBD' is linear in 'PC1' (R\u00b2 = 0.967 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.2z34tmph7",
+   "held_out_r2": 0.9527,
+   "held_out_rows": 62,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-dfd3ba594a6b",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "5f862a3a97b6b48d.csv",
+   "doi": "10.5061/dryad.2z34tmph7",
+   "form": "linear",
+   "params": [
+    2124.036941244691,
+    909.4736818769129
+   ],
+   "seed": 162315790,
+   "x": "PC1",
+   "y": "New_P"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Arbuscular mycorrhizal fungi in roots and soil respond differently to biotic and abiotic f' (Zenodo, doi 10.5061/dryad.2z34tmph7): 'New_P' is linear in 'PC1' (R\u00b2 = 0.954 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.2z34tmph7",
+   "held_out_r2": 0.9397,
+   "held_out_rows": 62,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a4c362d53a87",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "5f862a3a97b6b48d.csv",
+   "doi": "10.5061/dryad.2z34tmph7",
+   "form": "exponential",
+   "params": [
+    8.259250648111712,
+    0.3847386691022112
+   ],
+   "seed": 162315790,
+   "x": "PC1",
+   "y": "TotCappm_noBD"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Arbuscular mycorrhizal fungi in roots and soil respond differently to biotic and abiotic f' (Zenodo, doi 10.5061/dryad.2z34tmph7): 'TotCappm_noBD' grows exponentially in 'PC1' (R\u00b2 = 0.962 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.2z34tmph7",
+   "held_out_r2": 0.9217,
+   "held_out_rows": 62,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4d1d9a6fceee",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "5f862a3a97b6b48d.csv",
+   "doi": "10.5061/dryad.2z34tmph7",
+   "form": "exponential",
+   "params": [
+    8.427667706035773,
+    0.3563992738200934
+   ],
+   "seed": 162315790,
+   "x": "PC1",
+   "y": "TotCappm"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Arbuscular mycorrhizal fungi in roots and soil respond differently to biotic and abiotic f' (Zenodo, doi 10.5061/dryad.2z34tmph7): 'TotCappm' grows exponentially in 'PC1' (R\u00b2 = 0.945 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.2z34tmph7",
+   "held_out_r2": 0.86,
+   "held_out_rows": 62,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3f48988a1586",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "5f862a3a97b6b48d.csv",
+   "doi": "10.5061/dryad.2z34tmph7",
+   "form": "linear",
+   "params": [
+    11504.531447084986,
+    2810.463758708003
+   ],
+   "seed": 162315790,
+   "x": "PC1",
+   "y": "TotFeppm_noBD"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Arbuscular mycorrhizal fungi in roots and soil respond differently to biotic and abiotic f' (Zenodo, doi 10.5061/dryad.2z34tmph7): 'TotFeppm_noBD' is linear in 'PC1' (R\u00b2 = 0.901 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.2z34tmph7",
+   "held_out_r2": 0.9582,
+   "held_out_rows": 62,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-adf93c0456ad",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "5f862a3a97b6b48d.csv",
+   "doi": "10.5061/dryad.2z34tmph7",
+   "form": "logarithmic",
+   "params": [
+    145.38443780673074,
+    -39.09018045123157
+   ],
+   "seed": 162315790,
+   "x": "Clay",
+   "y": "Sand"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Arbuscular mycorrhizal fungi in roots and soil respond differently to biotic and abiotic f' (Zenodo, doi 10.5061/dryad.2z34tmph7): 'Sand' grows logarithmically in 'Clay' (R\u00b2 = 0.960 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.2z34tmph7",
+   "held_out_r2": 0.853,
+   "held_out_rows": 62,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e90c247f010b",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "5f862a3a97b6b48d.csv",
+   "doi": "10.5061/dryad.2z34tmph7",
+   "form": "exponential",
+   "params": [
+    7.7085654325734065,
+    0.08750887265530755
+   ],
+   "seed": 162315790,
+   "x": "Clay",
+   "y": "TotFeppm_noBD"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Arbuscular mycorrhizal fungi in roots and soil respond differently to biotic and abiotic f' (Zenodo, doi 10.5061/dryad.2z34tmph7): 'TotFeppm_noBD' grows exponentially in 'Clay' (R\u00b2 = 0.907 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.2z34tmph7",
+   "held_out_r2": 0.9838,
+   "held_out_rows": 62,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-138898a7ff07",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "5f862a3a97b6b48d.csv",
+   "doi": "10.5061/dryad.2z34tmph7",
+   "form": "linear",
+   "params": [
+    107.69929292769054,
+    -1.5615884084834715
+   ],
+   "seed": 162315790,
+   "x": "Silt",
+   "y": "Sand"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Arbuscular mycorrhizal fungi in roots and soil respond differently to biotic and abiotic f' (Zenodo, doi 10.5061/dryad.2z34tmph7): 'Sand' is linear in 'Silt' (R\u00b2 = 0.978 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.2z34tmph7",
+   "held_out_r2": 0.9258,
+   "held_out_rows": 62,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-0916805db7ef",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "5f862a3a97b6b48d.csv",
+   "doi": "10.5061/dryad.2z34tmph7",
+   "form": "exponential",
+   "params": [
+    7.639514368969824,
+    0.00041260217550010667
+   ],
+   "seed": 162315790,
+   "x": "New_P_noBD",
+   "y": "TotCappm"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Arbuscular mycorrhizal fungi in roots and soil respond differently to biotic and abiotic f' (Zenodo, doi 10.5061/dryad.2z34tmph7): 'TotCappm' grows exponentially in 'New_P_noBD' (R\u00b2 = 0.960 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.2z34tmph7",
+   "held_out_r2": 0.9252,
+   "held_out_rows": 62,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c67889f152bc",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "5f862a3a97b6b48d.csv",
+   "doi": "10.5061/dryad.2z34tmph7",
+   "form": "exponential",
+   "params": [
+    7.396965368662597,
+    0.0004088744994738728
+   ],
+   "seed": 162315790,
+   "x": "New_P",
+   "y": "TotCappm_noBD"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Arbuscular mycorrhizal fungi in roots and soil respond differently to biotic and abiotic f' (Zenodo, doi 10.5061/dryad.2z34tmph7): 'TotCappm_noBD' grows exponentially in 'New_P' (R\u00b2 = 0.942 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.2z34tmph7",
+   "held_out_r2": 0.9203,
+   "held_out_rows": 62,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-16aeaa19cfc0",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "5f862a3a97b6b48d.csv",
+   "doi": "10.5061/dryad.2z34tmph7",
+   "form": "exponential",
+   "params": [
+    7.615159867705167,
+    0.0003841225906744543
+   ],
+   "seed": 162315790,
+   "x": "New_P",
+   "y": "TotCappm"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Arbuscular mycorrhizal fungi in roots and soil respond differently to biotic and abiotic f' (Zenodo, doi 10.5061/dryad.2z34tmph7): 'TotCappm' grows exponentially in 'New_P' (R\u00b2 = 0.952 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.8w9ghx3pq",
+   "held_out_r2": 0.9241,
+   "held_out_rows": 72,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b88e8f1e8eec",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f6fc9e89b923d726.csv",
+   "doi": "10.5061/dryad.8w9ghx3pq",
+   "form": "power law",
+   "params": [
+    3.504572233835802,
+    0.8892796146978376
+   ],
+   "seed": 3316595131,
+   "x": "RootN_10to60cm_ kg N/ha",
+   "y": "Roots10-60cm_kg C C/ha"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Cover crop and nitrogen rate management practices influence corn (Zea mays) NDVI and nitro' (Zenodo, doi 10.5061/dryad.8w9ghx3pq): 'Roots10-60cm_kg C C/ha' follows a power law in 'RootN_10to60cm_ kg N/ha' (R\u00b2 = 0.942 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.3ffbg79rn",
+   "held_out_r2": 0.9199,
+   "held_out_rows": 79,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e78b4e267d73",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "397ea9955733fb38.csv",
+   "doi": "10.5061/dryad.3ffbg79rn",
+   "form": "power law",
+   "params": [
+    -1.0185769408743137,
+    1.3380488057372548
+   ],
+   "seed": 1107030002,
+   "x": "AGB",
+   "y": "BGB"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Does European-introduced Phragmites australis experience below-ground microbial enemy rele' (Zenodo, doi 10.5061/dryad.3ffbg79rn): 'BGB' follows a power law in 'AGB' (R\u00b2 = 0.936 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.3ffbg79rn",
+   "held_out_r2": 0.98,
+   "held_out_rows": 79,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e680246dc7f3",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "397ea9955733fb38.csv",
+   "doi": "10.5061/dryad.3ffbg79rn",
+   "form": "power law",
+   "params": [
+    0.4235346055200733,
+    1.092761098063939
+   ],
+   "seed": 1107030002,
+   "x": "AGB",
+   "y": "TOT_BM"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Does European-introduced Phragmites australis experience below-ground microbial enemy rele' (Zenodo, doi 10.5061/dryad.3ffbg79rn): 'TOT_BM' follows a power law in 'AGB' (R\u00b2 = 0.989 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.3ffbg79rn",
+   "held_out_r2": 0.973,
+   "held_out_rows": 79,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-29411f37111a",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "397ea9955733fb38.csv",
+   "doi": "10.5061/dryad.3ffbg79rn",
+   "form": "power law",
+   "params": [
+    1.3091358334232623,
+    0.7823710239672816
+   ],
+   "seed": 1107030002,
+   "x": "BGB",
+   "y": "TOT_BM"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Does European-introduced Phragmites australis experience below-ground microbial enemy rele' (Zenodo, doi 10.5061/dryad.3ffbg79rn): 'TOT_BM' follows a power law in 'BGB' (R\u00b2 = 0.970 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.18354038",
+   "held_out_r2": 0.8578,
+   "held_out_rows": 83,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-bcae99c80ded",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "b53bfb2c9f1329c5.csv",
+   "doi": "10.5281/zenodo.18354038",
+   "form": "linear",
+   "params": [
+    0.10505190083186658,
+    -5.1845727137903586
+   ],
+   "seed": 2300647123,
+   "x": "B11",
+   "y": "AWEI_8A"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from the paper \"Productive restoration planning in the irrigated drylands: Soil salin' (Zenodo, doi 10.5281/zenodo.18354038): 'AWEI_8A' is linear in 'B11' (R\u00b2 = 0.915 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.18354038",
+   "held_out_r2": 0.8639,
+   "held_out_rows": 83,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-59143fe8f3b1",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "b53bfb2c9f1329c5.csv",
+   "doi": "10.5281/zenodo.18354038",
+   "form": "linear",
+   "params": [
+    0.052516362224871625,
+    -0.9927967377738721
+   ],
+   "seed": 2300647123,
+   "x": "NDMI_8A",
+   "y": "NDWI1_8"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from the paper \"Productive restoration planning in the irrigated drylands: Soil salin' (Zenodo, doi 10.5281/zenodo.18354038): 'NDWI1_8' is linear in 'NDMI_8A' (R\u00b2 = 0.911 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.18354038",
+   "held_out_r2": 0.8662,
+   "held_out_rows": 83,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-948f5b5b9522",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "b53bfb2c9f1329c5.csv",
+   "doi": "10.5281/zenodo.18354038",
+   "form": "linear",
+   "params": [
+    -0.04991720068023545,
+    -0.9172401068280326
+   ],
+   "seed": 2300647123,
+   "x": "NDMI_8",
+   "y": "NDWI1_8A"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from the paper \"Productive restoration planning in the irrigated drylands: Soil salin' (Zenodo, doi 10.5281/zenodo.18354038): 'NDWI1_8A' is linear in 'NDMI_8' (R\u00b2 = 0.911 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.18354038",
+   "held_out_r2": 0.9481,
+   "held_out_rows": 79,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f51ee5a089f9",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "eb064b1adcb016c6.csv",
+   "doi": "10.5281/zenodo.18354038",
+   "form": "linear",
+   "params": [
+    0.0533442316674451,
+    1.7821890082515948
+   ],
+   "seed": 1087418530,
+   "x": "B2",
+   "y": "SI3"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from the paper \"Productive restoration planning in the irrigated drylands: Soil salin' (Zenodo, doi 10.5281/zenodo.18354038): 'SI3' is linear in 'B2' (R\u00b2 = 0.903 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.18354038",
+   "held_out_r2": 0.9813,
+   "held_out_rows": 79,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ac89f363b22b",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "eb064b1adcb016c6.csv",
+   "doi": "10.5281/zenodo.18354038",
+   "form": "linear",
+   "params": [
+    0.009915927136851925,
+    1.3088276506305456
+   ],
+   "seed": 1087418530,
+   "x": "B2",
+   "y": "SI4"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from the paper \"Productive restoration planning in the irrigated drylands: Soil salin' (Zenodo, doi 10.5281/zenodo.18354038): 'SI4' is linear in 'B2' (R\u00b2 = 0.980 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.18354038",
+   "held_out_r2": 0.9893,
+   "held_out_rows": 79,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f538565aa37a",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "eb064b1adcb016c6.csv",
+   "doi": "10.5281/zenodo.18354038",
+   "form": "linear",
+   "params": [
+    0.012027090144792146,
+    1.2204888681301567
+   ],
+   "seed": 1087418530,
+   "x": "B2",
+   "y": "SI6"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from the paper \"Productive restoration planning in the irrigated drylands: Soil salin' (Zenodo, doi 10.5281/zenodo.18354038): 'SI6' is linear in 'B2' (R\u00b2 = 0.980 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.18354038",
+   "held_out_r2": 0.9663,
+   "held_out_rows": 79,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-40910f2e638f",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "eb064b1adcb016c6.csv",
+   "doi": "10.5281/zenodo.18354038",
+   "form": "linear",
+   "params": [
+    0.03637773118516884,
+    1.5380600308982568
+   ],
+   "seed": 1087418530,
+   "x": "B3",
+   "y": "SI3"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from the paper \"Productive restoration planning in the irrigated drylands: Soil salin' (Zenodo, doi 10.5281/zenodo.18354038): 'SI3' is linear in 'B3' (R\u00b2 = 0.949 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.18354038",
+   "held_out_r2": 0.9789,
+   "held_out_rows": 79,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-7314c11294d5",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "eb064b1adcb016c6.csv",
+   "doi": "10.5281/zenodo.18354038",
+   "form": "linear",
+   "params": [
+    0.00037629662326198594,
+    1.0993820348708898
+   ],
+   "seed": 1087418530,
+   "x": "B3",
+   "y": "SI4"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from the paper \"Productive restoration planning in the irrigated drylands: Soil salin' (Zenodo, doi 10.5281/zenodo.18354038): 'SI4' is linear in 'B3' (R\u00b2 = 0.976 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.18354038",
+   "held_out_r2": 0.9869,
+   "held_out_rows": 79,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-7ef9c5164968",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "eb064b1adcb016c6.csv",
+   "doi": "10.5281/zenodo.18354038",
+   "form": "linear",
+   "params": [
+    0.0026213860075038615,
+    1.030445817700287
+   ],
+   "seed": 1087418530,
+   "x": "B3",
+   "y": "SI6"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from the paper \"Productive restoration planning in the irrigated drylands: Soil salin' (Zenodo, doi 10.5281/zenodo.18354038): 'SI6' is linear in 'B3' (R\u00b2 = 0.985 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.18354038",
+   "held_out_r2": 0.9845,
+   "held_out_rows": 79,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-894409f0fbaa",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "eb064b1adcb016c6.csv",
+   "doi": "10.5281/zenodo.18354038",
+   "form": "linear",
+   "params": [
+    0.021043831451994774,
+    1.1712578804415539
+   ],
+   "seed": 1087418530,
+   "x": "B4",
+   "y": "SI3"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from the paper \"Productive restoration planning in the irrigated drylands: Soil salin' (Zenodo, doi 10.5281/zenodo.18354038): 'SI3' is linear in 'B4' (R\u00b2 = 0.975 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.18354038",
+   "held_out_r2": 0.9857,
+   "held_out_rows": 79,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-2bfe6184ee76",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "eb064b1adcb016c6.csv",
+   "doi": "10.5281/zenodo.18354038",
+   "form": "linear",
+   "params": [
+    -0.009513592982980712,
+    0.829564426503202
+   ],
+   "seed": 1087418530,
+   "x": "B4",
+   "y": "SI4"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from the paper \"Productive restoration planning in the irrigated drylands: Soil salin' (Zenodo, doi 10.5281/zenodo.18354038): 'SI4' is linear in 'B4' (R\u00b2 = 0.984 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.18354038",
+   "held_out_r2": 0.9878,
+   "held_out_rows": 79,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-98dc2f2cc882",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "eb064b1adcb016c6.csv",
+   "doi": "10.5281/zenodo.18354038",
+   "form": "linear",
+   "params": [
+    -0.006205427225835369,
+    0.7743888764296929
+   ],
+   "seed": 1087418530,
+   "x": "B4",
+   "y": "SI6"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from the paper \"Productive restoration planning in the irrigated drylands: Soil salin' (Zenodo, doi 10.5281/zenodo.18354038): 'SI6' is linear in 'B4' (R\u00b2 = 0.986 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.18354038",
+   "held_out_r2": 0.9364,
+   "held_out_rows": 79,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-77848c6d721c",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "eb064b1adcb016c6.csv",
+   "doi": "10.5281/zenodo.18354038",
+   "form": "logarithmic",
+   "params": [
+    0.7713422699092027,
+    0.2947271267866068
+   ],
+   "seed": 1087418530,
+   "x": "B8",
+   "y": "SI5_8"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from the paper \"Productive restoration planning in the irrigated drylands: Soil salin' (Zenodo, doi 10.5281/zenodo.18354038): 'SI5_8' grows logarithmically in 'B8' (R\u00b2 = 0.913 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.18354038",
+   "held_out_r2": 0.9324,
+   "held_out_rows": 137,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c993cf91f6df",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "73c630720ee0d3f1.csv",
+   "doi": "10.5281/zenodo.18354038",
+   "form": "power law",
+   "params": [
+    -0.7055288399580654,
+    -0.18201453266337295
+   ],
+   "seed": 1980857543,
+   "x": "B2",
+   "y": "CRSI_B8"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from the paper \"Productive restoration planning in the irrigated drylands: Soil salin' (Zenodo, doi 10.5281/zenodo.18354038): 'CRSI_B8' follows a power law in 'B2' (R\u00b2 = 0.940 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.18354038",
+   "held_out_r2": 0.9023,
+   "held_out_rows": 137,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-22e280395efa",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "73c630720ee0d3f1.csv",
+   "doi": "10.5281/zenodo.18354038",
+   "form": "power law",
+   "params": [
+    -0.6953726527529817,
+    -0.19943160727182518
+   ],
+   "seed": 1980857543,
+   "x": "B3",
+   "y": "CRSI_B8"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from the paper \"Productive restoration planning in the irrigated drylands: Soil salin' (Zenodo, doi 10.5281/zenodo.18354038): 'CRSI_B8' follows a power law in 'B3' (R\u00b2 = 0.916 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.18354038",
+   "held_out_r2": 0.788,
+   "held_out_rows": 137,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5951bdcd800e",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "73c630720ee0d3f1.csv",
+   "doi": "10.5281/zenodo.18354038",
+   "form": "linear",
+   "params": [
+    -0.10160296523215381,
+    1.4291298887747226
+   ],
+   "seed": 1980857543,
+   "x": "B12_mean",
+   "y": "B12_summer"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from the paper \"Productive restoration planning in the irrigated drylands: Soil salin' (Zenodo, doi 10.5281/zenodo.18354038): 'B12_summer' is linear in 'B12_mean' (R\u00b2 = 0.911 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
  }
 ]
