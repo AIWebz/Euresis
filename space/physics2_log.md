@@ -4857,3 +4857,16 @@
 - 2026-11-14 10:59 round 4457: two-body decay
 - 2026-11-14 11:00 round 4458: collision
 - 2026-11-14 11:01 round 4459: driven oscillator
+- 2026-11-14 11:03 round 4460: velocity addition
+- 2026-11-14 11:04 round 4461: Compton scattering
+- 2026-11-14 11:05 round 4462: Cournot duopoly
+- 2026-11-14 11:06 round 4463: insurance and risk
+- 2026-11-14 11:07 round 4464: auction with a reserve price
+- 2026-11-14 11:09 round 4465: two-body decay
+- 2026-11-14 11:10 round 4466: collision
+- 2026-11-14 11:12 round 4467: driven oscillator
+- 2026-11-14 11:13 round 4468: velocity addition
+- 2026-11-14 11:15 round 4469: Compton scattering
+- 2026-11-14 11:15 round 4470: Cournot duopoly
+- 2026-11-14 11:17 round 4471: insurance and risk
+- 2026-11-14 11:18 segment end: 4471 rounds, 5 discoveries, 2 known laws rediscovered
