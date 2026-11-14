@@ -3684,3 +3684,4 @@
 - 2026-11-14 17:39 FINDING (confirmed on held-out rows): In 'Data from "Automated morphological characterization of Mediterranean dehesa using a low-de' (Zenodo, doi 10.3390/f17010016): 'd_gnss' is linear in 'd_lidar' (R² = 0.969 on the discovery half); held-out R² = 0.967 [emp-0314b18059b9]
 - 2026-11-14 17:39 data feeds: 22565 datasets analysed so far, 3297 confirmed findings
 - 2026-11-14 18:23 data feeds: online
+- 2026-11-14 18:23 FINDING (confirmed on held-out rows): In 'Metabolic and demographic data from the LTEE' (Zenodo, doi 10.5061/dryad.kd51c5b7n): 'Logprod' grows logarithmically in 'LogKbiovol' (R² = 0.956 on the discovery half); held-out R² = 0.936 [emp-7e991a781044]
