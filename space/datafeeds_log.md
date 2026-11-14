@@ -3731,3 +3731,4 @@
 - 2026-11-14 20:19 FINDING (confirmed on held-out rows): In 'Chemical effects of snowmelt on an alpine lake in the Wind River Range, WY' (Zenodo, doi 10.5061/dryad.8pk0p2nn1): 'water_temp' follows a power law in 'depth' (R² = 0.950 on the discovery half); held-out R² = 0.965 [emp-77274bb98fe4]
 - 2026-11-14 20:19 FINDING (confirmed on held-out rows): In 'Data and analyses from: Herbivory and time since flowering shape floral rewards and pollin' (Zenodo, doi 10.5061/dryad.bk3j9kd8m): 'j-ft' is linear in 'j-tt' (R² = 0.952 on the discovery half); held-out R² = 0.965 [emp-6d705fa05fb1]
 - 2026-11-14 20:19 data feeds: 22828 datasets analysed so far, 3339 confirmed findings
+- 2026-11-14 21:21 data feeds: online
