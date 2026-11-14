@@ -3722,3 +3722,4 @@
 - 2026-11-14 19:32 FINDING (confirmed on held-out rows): In 'UNR Sonic Anemometer Data Mosquito Fire Smoke Density Current' (Zenodo, doi 10.5281/zenodo.17372252): 'TurbulentKE_(m/s)^2' follows a power law in 'Vvar_(cm/s)^2' (R² = 0.946 on the discovery half); held-out R² = 0.947 [emp-4ce14c85b3e6]
 - 2026-11-14 19:32 FINDING (confirmed on held-out rows): In 'UNR Sonic Anemometer Data Mosquito Fire Smoke Density Current' (Zenodo, doi 10.5281/zenodo.17372252): 'TurbulentKE_(m/s)^2' follows a power law in 'Wvar_(cm/s)^2' (R² = 0.950 on the discovery half); held-out R² = 0.950 [emp-c0ac7791c0df]
 - 2026-11-14 19:33 data feeds: 22788 datasets analysed so far, 3332 confirmed findings
+- 2026-11-14 20:17 data feeds: online
