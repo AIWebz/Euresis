@@ -2875347,5 +2875347,59 @@
   "statement": "Octal game 0.0002331 is completely solved: its Grundy values are periodic with pre-period 1 and period 10 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.9ghx3ffhm",
+   "held_out_r2": 0.9685,
+   "held_out_rows": 124,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-47e354f5f954",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f4ea2ba8707316a0.csv",
+   "doi": "10.5061/dryad.9ghx3ffhm",
+   "form": "linear",
+   "params": [
+    0.0016810581262948815,
+    0.806220794944705
+   ],
+   "seed": 933043117,
+   "x": "-0.0237770183688209.1",
+   "y": "-0.0256564338792986"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Imaging the short-lived hydroxyl-hydronium pair in ionized liquid water' (Zenodo, doi 10.5061/dryad.9ghx3ffhm): '-0.0256564338792986' is linear in '-0.0237770183688209.1' (R\u00b2 = 0.972 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20157609",
+   "held_out_r2": 0.9764,
+   "held_out_rows": 2714,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4961a0e52ff9",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "89f9f271c4748248.csv",
+   "doi": "10.5281/zenodo.20157609",
+   "form": "linear",
+   "params": [
+    -0.001956595786146892,
+    0.9870587446394866
+   ],
+   "seed": 739733217,
+   "x": "baseline deseas. (1161.5 cm^{-1})",
+   "y": "CFC-12 deseas. (1161 cm^{-1}) [W m-2 yr-1 (cm-1)-1]"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Satellite-based estimates of radiative forcing of long-lived halogenated gases from spectr' (Zenodo, doi 10.5281/zenodo.20157609): 'CFC-12 deseas. (1161 cm^{-1}) [W m-2 yr-1 (cm-1)-1]' is linear in 'baseline deseas. (1161.5 cm^{-1})' (R\u00b2 = 0.971 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
