@@ -3753,3 +3753,4 @@
 - 2026-11-14 23:17 FINDING (confirmed on held-out rows): In 'Thermal Comfort and Perception of Different Materials for Tabletops: Datasets, Processing ' (Zenodo, doi 10.5281/zenodo.3606467): 'mean_resptime_incongruent' is linear in 'mean_resptime_correct' (R² = 0.950 on the discovery half); held-out R² = 0.947 [emp-de0838e566de]
 - 2026-11-14 23:18 data feeds: 23127 datasets analysed so far, 3354 confirmed findings
 - 2026-11-15 00:07 data feeds: online
+- 2026-11-15 00:08 FINDING (confirmed on held-out rows): In 'Plant functional traits differ in adaptability and are predicted to be differentially affe' (Zenodo, doi 10.5061/dryad.nk98sf7pv): 'Fam' is linear in 'UniqueID' (R² = 0.974 on the discovery half); held-out R² = 0.975 [emp-ddef034acee6]
