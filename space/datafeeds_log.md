@@ -3867,3 +3867,5 @@
 - 2026-11-15 09:42 FINDING (confirmed on held-out rows): In 'A Physics-Informed Intelligent Framework for Non-Contact River Hydrodynamic Inversion via ' (Zenodo, doi 10.5281/zenodo.22074194): 'water_depth' is linear in 'zb' (R² = 0.987 on the discovery half); held-out R² = 0.987 [emp-8fcbee80d07f]
 - 2026-11-15 09:44 data feeds: 23847 datasets analysed so far, 3446 confirmed findings
 - 2026-11-15 10:46 data feeds: online
+- 2026-11-15 11:10 FINDING (confirmed on held-out rows): In 'Baltic Sea 2023 R/V Skagerak Cruise Data (CTD Stations; Radium; DSi)' (Zenodo, doi 10.5281/zenodo.15370408): 'Rho_kg_m3' is linear in 'Salinity' (R² = 0.981 on the discovery half); held-out R² = 0.973 [emp-e95229887344]
+- 2026-11-15 11:10 data feeds: 24476 datasets analysed so far, 3447 confirmed findings

@@ -3087811,5 +3087811,86 @@
   "statement": "Octal game 0.0312176 is completely solved: its Grundy values are periodic with pre-period 315 and period 412 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23363882",
+   "held_out_r2": 0.1452,
+   "held_out_rows": 77,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9454e84a2ce1",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "49723060e2afb6ab.csv",
+   "doi": "10.5281/zenodo.23363882",
+   "form": "linear",
+   "params": [
+    -3.5423396786559356,
+    0.9910319044476279
+   ],
+   "seed": 674147073,
+   "x": "rows_in_table",
+   "y": "rows_counted"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A global compilation of coastal groundwater chemistry for submarine groundwater discharge ' (Zenodo, doi 10.5281/zenodo.23363882): 'rows_counted' is linear in 'rows_in_table' (R\u00b2 = 0.976 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11917517",
+   "held_out_r2": 0.9434,
+   "held_out_rows": 120,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9fa5c79979ff",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "42e5220d71ba5f0b.csv",
+   "doi": "10.5281/zenodo.11917517",
+   "form": "power law",
+   "params": [
+    1.3502556960923304,
+    0.9101438451236141
+   ],
+   "seed": 1393918277,
+   "x": "inflevergreen",
+   "y": "respevergreen"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Atmospheric CO2 simulations over Indian sites using STILT driven by ECMWF meteorology.' (Zenodo, doi 10.5281/zenodo.11917517): 'respevergreen' follows a power law in 'inflevergreen' (R\u00b2 = 0.962 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15370408",
+   "held_out_r2": 0.9734,
+   "held_out_rows": 126,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e95229887344",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "4a9ea3dec348f63e.csv",
+   "doi": "10.5281/zenodo.15370408",
+   "form": "linear",
+   "params": [
+    1000.2838680059905,
+    0.761409653397394
+   ],
+   "seed": 2819254933,
+   "x": "Salinity",
+   "y": "Rho_kg_m3"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Baltic Sea 2023 R/V Skagerak Cruise Data (CTD Stations; Radium; DSi)' (Zenodo, doi 10.5281/zenodo.15370408): 'Rho_kg_m3' is linear in 'Salinity' (R\u00b2 = 0.981 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
