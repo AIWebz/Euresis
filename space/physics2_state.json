@@ -71744,6 +71744,71 @@
    "family": "insurance and risk",
    "expr": "sqrt(-L*p + 1)/(-p*sqrt(1 - L) + 1)",
    "why": "affine combination of known quantities (expected wealth, Relative Risk Adjustment Index [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(-2*r**3/3 + r**2*v + 2/3)/(2*r**3/3 - r**2 + 1/3)",
+   "why": "affine combination of known quantities (1/(expected bidder surplus ratio [model-proposed; physical meaning unverified]), 1/(Bidder Surplus Reserve Efficiency Ratio [model-proposed; physical meaning unverified]))"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(-2*r**3/3 + r**2*v + 2/3)/(2*r**3/3 + r**2*v)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(2*r**3/3 + r**2*v - r**2 + 1/3)/(2*r**3/3 - r**2*(2*r**3/3 + r**2*v - r**2 + 1/3) - r**2 + 1/3)",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(-2*r**3/3 + r**2*v + 2/3)/(4*r**3/3 + r**2*v - r**2 + 1/3)",
+   "why": "affine combination of known quantities (expected revenue, Welfare Reserve Efficiency with Seller Value [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "(-b**2/2 + (1 - a)**2/2)/(-a**2/2 - b**2 + (1 - a)**2 + 1/2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "sqrt((1 - (a + b)**2)**2 + (a**2 - b**2 + 1)**2)/sqrt((1 - (a + b)**2)**2 + (-a**2 + b**2 + 1)**2)",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), Invariant Mass Ratio of the Two Products [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "sqrt((1 - (a - b)**2)*(1 - (a + b)**2)/4 + (a**2 - b**2 + 1)**2)/sqrt((1 - (a - b)**2)*(1 - (a + b)*",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), Lorentz Factor Ratio of Products [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "sqrt((1 - (a - b)**2)*(1 - (a + b)**2) + (-a**2 + b**2 + 1)**2 + (a**2 - b**2 + 1)**2)",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), Boost factor of the system [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "1 - (1 - e**2)*m/(1 + m) - (1 - e**2)/(1 + m)",
+   "why": "affine combination of known quantities (Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified], Fraction of kinetic energy transferred to the target [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt((1 - r**2)**2 + (2*z*r)**2)/sqrt(4*z**2 + 1)",
+   "why": "affine combination of known quantities (amplitude / static deflection, Mechanical Impedance Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt((1 - r**2)**2 + (2*z*r)**2)/sqrt(4*z**2 + 1)",
+   "why": "affine combination of known quantities (amplitude / static deflection, Mechanical Impedance Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt((1 - r**2)**2 + (2*z*r)**2)/sqrt(4*z**2 + 1)",
+   "why": "affine combination of known quantities (amplitude / static deflection, Mechanical Impedance Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt((1 - r**2)**2 + (2*z*r)**2)/sqrt(4*z**2 + 1)",
+   "why": "affine combination of known quantities (amplitude / static deflection, Mechanical Impedance Ratio [model-proposed; physical meaning unverified])"
   }
  ],
  "tried": [
@@ -88624,7 +88689,7 @@
    "k": "1"
   }
  ],
- "rounds": 5127,
+ "rounds": 5131,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",

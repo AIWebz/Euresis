@@ -5592,3 +5592,7 @@
 - 2026-11-15 18:44 round 5126: Cournot duopoly
 - 2026-11-15 18:46 round 5127: insurance and risk
 - 2026-11-15 18:47 round 5128: auction with a reserve price
+- 2026-11-15 18:48 round 5129: two-body decay
+- 2026-11-15 18:50 round 5130: collision
+- 2026-11-15 18:52 round 5131: driven oscillator
+- 2026-11-15 18:53 segment end: 5131 rounds, 5 discoveries, 2 known laws rediscovered
