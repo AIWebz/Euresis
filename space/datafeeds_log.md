@@ -3843,3 +3843,4 @@
 - 2026-11-15 06:58 FINDING (confirmed on held-out rows): In 'Data from: Creating fen initiation conditions: a new approach for peatland reclamation in ' (Zenodo, doi 10.5061/dryad.534ng): 'HP' is linear in 'Litter' (R² = 0.941 on the discovery half); held-out R² = 0.928 [emp-187c835112ca]
 - 2026-11-15 06:58 FINDING (confirmed on held-out rows): In 'Data from: Creating fen initiation conditions: a new approach for peatland reclamation in ' (Zenodo, doi 10.5061/dryad.534ng): 'HP' grows logarithmically in 'Weeds' (R² = 0.911 on the discovery half); held-out R² = 0.907 [emp-895014197f27]
 - 2026-11-15 06:58 data feeds: 23526 datasets analysed so far, 3429 confirmed findings
+- 2026-11-15 07:45 data feeds: online
