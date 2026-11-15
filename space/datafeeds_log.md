@@ -3876,3 +3876,4 @@
 - 2026-11-15 11:37 FINDING (confirmed on held-out rows): In 'Data and code for Cowan et al. "Contrasting effects of maternal and paternal heat exposure' (Figshare, doi 10.6084/m9.figshare.32145010.v1): 'Total_offspring' is linear in 'Egg_count' (R² = 0.982 on the discovery half); held-out R² = 0.998 [emp-2cf2a7922c02]
 - 2026-11-15 11:37 data feeds: 24549 datasets analysed so far, 3451 confirmed findings
 - 2026-11-15 12:39 data feeds: online
+- 2026-11-15 12:39 data feeds: 24549 datasets analysed so far, 3451 confirmed findings
