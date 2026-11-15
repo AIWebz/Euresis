@@ -3866,3 +3866,4 @@
 - 2026-11-15 09:42 FINDING (confirmed on held-out rows): In 'Dataset to accompany publication "Re-defining non-tracking solar cell efficiency limits wi' (Zenodo, doi 10.5281/zenodo.15020700): 'Diffuse absorptance.3' is linear in 'Direct absorptance.3' (R² = 0.979 on the discovery half); held-out R² = 0.974 [emp-70a601de6183]
 - 2026-11-15 09:42 FINDING (confirmed on held-out rows): In 'A Physics-Informed Intelligent Framework for Non-Contact River Hydrodynamic Inversion via ' (Zenodo, doi 10.5281/zenodo.22074194): 'water_depth' is linear in 'zb' (R² = 0.987 on the discovery half); held-out R² = 0.987 [emp-8fcbee80d07f]
 - 2026-11-15 09:44 data feeds: 23847 datasets analysed so far, 3446 confirmed findings
+- 2026-11-15 10:46 data feeds: online
