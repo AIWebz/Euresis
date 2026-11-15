@@ -4015,3 +4015,5 @@
 - 2026-11-15 20:20 FINDING (confirmed on held-out rows): In 'Data for "The Functional Diversity of Ungauged Catchments: A global Hydrological Synthesis' (Figshare, doi 10.6084/m9.figshare.30174601.v1): 'Sep' is linear in 'Aug' (R² = 0.917 on the discovery half); held-out R² = 0.913 [emp-de5ef861551a]
 - 2026-11-15 20:20 data feeds: 25077 datasets analysed so far, 3572 confirmed findings
 - 2026-11-15 21:08 data feeds: online
+- 2026-11-15 21:08 FINDING (confirmed on held-out rows): In 'Transferable neural operators to estimate sub-surface soil moisture datasets' (Zenodo, doi 10.5281/zenodo.16106763): 'EC1_5cm S/m' is linear in 'SM1_5cm Vol %' (R² = 0.935 on the discovery half); held-out R² = 0.935 [emp-d45c9b75bf46]
+- 2026-11-15 21:09 FINDING (confirmed on held-out rows): In 'Transferable neural operators to estimate sub-surface soil moisture datasets' (Zenodo, doi 10.5281/zenodo.16106763): 'RDP1_5cm' follows a power law in 'EC1_5cm S/m' (R² = 0.939 on the discovery half); held-out R² = 0.939 [emp-03243a184416]

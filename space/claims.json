@@ -3151826,5 +3151826,59 @@
   "statement": "Octal game 0.0506353 is completely solved: its Grundy values are periodic with pre-period 59 and period 100 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.16106763",
+   "held_out_r2": 0.935,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d45c9b75bf46",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f59209ca022dab9c.csv",
+   "doi": "10.5281/zenodo.16106763",
+   "form": "linear",
+   "params": [
+    0.017125214227890432,
+    0.004193582068085708
+   ],
+   "seed": 3209555274,
+   "x": "SM1_5cm Vol %",
+   "y": "EC1_5cm S/m"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Transferable neural operators to estimate sub-surface soil moisture datasets' (Zenodo, doi 10.5281/zenodo.16106763): 'EC1_5cm S/m' is linear in 'SM1_5cm Vol %' (R\u00b2 = 0.935 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.16106763",
+   "held_out_r2": 0.9389,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-03243a184416",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f59209ca022dab9c.csv",
+   "doi": "10.5281/zenodo.16106763",
+   "form": "power law",
+   "params": [
+    4.06103067039558,
+    0.7827810913577438
+   ],
+   "seed": 3209555274,
+   "x": "EC1_5cm S/m",
+   "y": "RDP1_5cm"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Transferable neural operators to estimate sub-surface soil moisture datasets' (Zenodo, doi 10.5281/zenodo.16106763): 'RDP1_5cm' follows a power law in 'EC1_5cm S/m' (R\u00b2 = 0.939 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
