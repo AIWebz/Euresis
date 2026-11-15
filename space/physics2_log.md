@@ -5648,3 +5648,16 @@
 - 2026-11-15 21:15 round 5176: auction with a reserve price
 - 2026-11-15 21:17 round 5177: two-body decay
 - 2026-11-15 21:18 round 5178: collision
+- 2026-11-15 21:21 round 5179: driven oscillator
+- 2026-11-15 21:22 round 5180: velocity addition
+- 2026-11-15 21:23 round 5181: Compton scattering
+- 2026-11-15 21:24 round 5182: Cournot duopoly
+- 2026-11-15 21:25 round 5183: insurance and risk
+- 2026-11-15 21:26 round 5184: auction with a reserve price
+- 2026-11-15 21:27 round 5185: two-body decay
+- 2026-11-15 21:29 round 5186: collision
+- 2026-11-15 21:31 round 5187: driven oscillator
+- 2026-11-15 21:32 round 5188: velocity addition
+- 2026-11-15 21:33 round 5189: Compton scattering
+- 2026-11-15 21:35 round 5190: Cournot duopoly
+- 2026-11-15 21:36 round 5191: insurance and risk
