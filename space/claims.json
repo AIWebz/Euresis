@@ -3107009,5 +3107009,86 @@
   "statement": "Octal game 0.0332132 is completely solved: its Grundy values are periodic with pre-period 0 and period 9 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.5848439",
+   "held_out_r2": 0.9662,
+   "held_out_rows": 88,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e59af7b613b9",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8b679a7e1b9a0354.csv",
+   "doi": "10.5281/zenodo.5848439",
+   "form": "linear",
+   "params": [
+    -12.380211850191781,
+    0.9796271679555826
+   ],
+   "seed": 2174037585,
+   "x": "gains",
+   "y": "sum"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Economic losses from hurricanes cannot be nationally offset under unabated warming - Data ' (Zenodo, doi 10.5281/zenodo.5848439): 'sum' is linear in 'gains' (R\u00b2 = 0.975 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.5848439",
+   "held_out_r2": 0.9844,
+   "held_out_rows": 30,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-8043a9a3b279",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "00c389c0a42068b5.csv",
+   "doi": "10.5281/zenodo.5848439",
+   "form": "power law",
+   "params": [
+    0.36398070879944333,
+    0.9077827082616139
+   ],
+   "seed": 45430841,
+   "x": "min",
+   "y": "max"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Economic losses from hurricanes cannot be nationally offset under unabated warming - Data ' (Zenodo, doi 10.5281/zenodo.5848439): 'max' follows a power law in 'min' (R\u00b2 = 0.993 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.5848439",
+   "held_out_r2": 0.9903,
+   "held_out_rows": 30,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-af6858302d0d",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f011e52d25b857ef.csv",
+   "doi": "10.5281/zenodo.5848439",
+   "form": "power law",
+   "params": [
+    -0.08811993772082555,
+    1.0464891884326923
+   ],
+   "seed": 2601896455,
+   "x": "mean",
+   "y": "max"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Economic losses from hurricanes cannot be nationally offset under unabated warming - Data ' (Zenodo, doi 10.5281/zenodo.5848439): 'max' follows a power law in 'mean' (R\u00b2 = 0.987 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
