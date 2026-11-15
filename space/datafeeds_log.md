@@ -3835,3 +3835,4 @@
 - 2026-11-15 05:54 FINDING (confirmed on held-out rows): In 'A Complete Water Balance of a Rain Garden' (Zenodo, doi 10.5281/zenodo.8263436): 'Pervious Area Retention in Watershed (L)' follows a power law in 'Total Rain Volume over Watershed (Rainfall over Watershed and Ponded Water, L)' (R² = 0.991 on the discovery half); held-out R² = 0.991 [emp-72883b9e001f]
 - 2026-11-15 05:54 FINDING (confirmed on held-out rows): In 'Spatial structure and temporal dynamics in Clear Lake, CA: The role of wind in promoting a' (Zenodo, doi 10.5281/zenodo.17566822): 'salinity' is linear in 'conductivity' (R² = 0.980 on the discovery half); held-out R² = 0.979 [emp-44500113d575]
 - 2026-11-15 05:54 data feeds: 23453 datasets analysed so far, 3423 confirmed findings
+- 2026-11-15 06:56 data feeds: online
