@@ -3024068,10 +3024068,15 @@
   "verifier": "held-out-replication"
  },
  {
-  "evidence": null,
+  "evidence": {
+   "doi": "10.5061/dryad.vr157",
+   "held_out_r2": 0.9388,
+   "held_out_rows": 410,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
   "id": "emp-a6049ab86524",
   "kind": "empirical",
-  "novelty": "not checked",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
   "payload": {
    "dataset": "a09085822c8e976d.csv",
    "doi": "10.5061/dryad.vr157",
@@ -3024086,7 +3024091,61 @@
   },
   "source": "datafeeds.py",
   "statement": "In 'Data from: Body size and extinction risk in terrestrial mammals above the species level' (Zenodo, doi 10.5061/dryad.vr157): 'm1W' grows exponentially in 'LnMass' (R\u00b2 = 0.939 on the discovery half)",
-  "status": "candidate",
-  "verifier": null
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.wdbrv15wz",
+   "held_out_r2": 0.925,
+   "held_out_rows": 191,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-97b506915d0d",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "6526991731016ace.csv",
+   "doi": "10.5061/dryad.wdbrv15wz",
+   "form": "power law",
+   "params": [
+    4.4387202348852615,
+    0.43198574479303103
+   ],
+   "seed": 2912516700,
+   "x": "Dittrichia_biomass",
+   "y": "DittrichiaLLL_mm_2"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Invasion away from roadsides was not driven by adaptation to grassland habitats in Dittric' (Zenodo, doi 10.5061/dryad.wdbrv15wz): 'DittrichiaLLL_mm_2' follows a power law in 'Dittrichia_biomass' (R\u00b2 = 0.931 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.wdbrv15wz",
+   "held_out_r2": 0.9523,
+   "held_out_rows": 191,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-75259afb7619",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "6526991731016ace.csv",
+   "doi": "10.5061/dryad.wdbrv15wz",
+   "form": "power law",
+   "params": [
+    4.659141044691008,
+    0.41081020800339835
+   ],
+   "seed": 2912516700,
+   "x": "Dittrichia_biomass",
+   "y": "DittrichiaLLL_mm_3"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Invasion away from roadsides was not driven by adaptation to grassland habitats in Dittric' (Zenodo, doi 10.5061/dryad.wdbrv15wz): 'DittrichiaLLL_mm_3' follows a power law in 'Dittrichia_biomass' (R\u00b2 = 0.933 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]

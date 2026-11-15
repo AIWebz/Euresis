@@ -3757,3 +3757,7 @@
 - 2026-11-15 00:09 data feeds: 23210 datasets analysed so far, 3355 confirmed findings
 - 2026-11-15 01:10 data feeds: online
 - 2026-11-15 01:11 FINDING (confirmed on held-out rows): In 'Population demographic history and evolutionary rescue: Influence of a bottleneck event' (Zenodo, doi 10.5061/dryad.xsj3tx9mx): 'HC_Total_Adults' is linear in 'MC_Total_Adults' (R² = 0.985 on the discovery half); held-out R² = 0.974 [emp-5a07e633ed02]
+- 2026-11-15 01:11 FINDING (confirmed on held-out rows): In 'Data from: Body size and extinction risk in terrestrial mammals above the species level' (Zenodo, doi 10.5061/dryad.vr157): 'm1W' grows exponentially in 'LnMass' (R² = 0.939 on the discovery half); held-out R² = 0.939 [emp-a6049ab86524]
+- 2026-11-15 01:11 FINDING (confirmed on held-out rows): In 'Invasion away from roadsides was not driven by adaptation to grassland habitats in Dittric' (Zenodo, doi 10.5061/dryad.wdbrv15wz): 'DittrichiaLLL_mm_2' follows a power law in 'Dittrichia_biomass' (R² = 0.931 on the discovery half); held-out R² = 0.925 [emp-97b506915d0d]
+- 2026-11-15 01:11 FINDING (confirmed on held-out rows): In 'Invasion away from roadsides was not driven by adaptation to grassland habitats in Dittric' (Zenodo, doi 10.5061/dryad.wdbrv15wz): 'DittrichiaLLL_mm_3' follows a power law in 'Dittrichia_biomass' (R² = 0.933 on the discovery half); held-out R² = 0.952 [emp-75259afb7619]
+- 2026-11-15 01:12 data feeds: 23256 datasets analysed so far, 3359 confirmed findings
