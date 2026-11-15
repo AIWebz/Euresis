@@ -5584,3 +5584,11 @@
 - 2026-11-15 18:36 round 5118: Cournot duopoly
 - 2026-11-15 18:37 round 5119: insurance and risk
 - 2026-11-15 18:38 round 5120: auction with a reserve price
+- 2026-11-15 18:39 round 5121: two-body decay
+- 2026-11-15 18:40 round 5122: collision
+- 2026-11-15 18:41 round 5123: driven oscillator
+- 2026-11-15 18:42 round 5124: velocity addition
+- 2026-11-15 18:43 round 5125: Compton scattering
+- 2026-11-15 18:44 round 5126: Cournot duopoly
+- 2026-11-15 18:46 round 5127: insurance and risk
+- 2026-11-15 18:47 round 5128: auction with a reserve price
