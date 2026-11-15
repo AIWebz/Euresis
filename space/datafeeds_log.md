@@ -3969,3 +3969,5 @@
 - 2026-11-15 15:25 FINDING (confirmed on held-out rows): In 'Data from: A persistent lack of international representation on editorial boards in enviro' (Zenodo, doi 10.5061/dryad.mh189): 'Pcnt_Pubs' follows a power law in 'N_Articles' (R² = 0.956 on the discovery half); held-out R² = 0.958 [emp-64423cfbcaa1]
 - 2026-11-15 15:25 data feeds: 24885 datasets analysed so far, 3536 confirmed findings
 - 2026-11-15 16:27 data feeds: online
+- 2026-11-15 16:27 FINDING (confirmed on held-out rows): In 'Meta-analysis shows forest soil CO2 effluxes are dependent on the disturbance regime and b' (Zenodo, doi 10.5061/dryad.51c59zwcr): 'nDist' follows a power law in 'nCont' (R² = 0.932 on the discovery half); held-out R² = 0.926 [emp-f51ed236045a]
+- 2026-11-15 16:27 FINDING (confirmed on held-out rows): In 'Data from: The role of behavioural flexibility in primate diversification' (Zenodo, doi 10.5061/dryad.bcc2fqzb3): 'Imputed_Body_Mass' follows a power law in 'Imputed_ECV' (R² = 0.953 on the discovery half); held-out R² = 0.953 [emp-2c6b7ea2cf09]

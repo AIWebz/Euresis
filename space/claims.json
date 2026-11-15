@@ -3114512,10 +3114512,15 @@
   "verifier": "guy-smith-periodicity"
  },
  {
-  "evidence": null,
+  "evidence": {
+   "doi": "10.5061/dryad.51c59zwcr",
+   "held_out_r2": 0.9257,
+   "held_out_rows": 587,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
   "id": "emp-f51ed236045a",
   "kind": "empirical",
-  "novelty": "not checked",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
   "payload": {
    "dataset": "017a4a28037d3b25.csv",
    "doi": "10.5061/dryad.51c59zwcr",
@@ -3114530,7 +3114535,34 @@
   },
   "source": "datafeeds.py",
   "statement": "In 'Meta-analysis shows forest soil CO2 effluxes are dependent on the disturbance regime and b' (Zenodo, doi 10.5061/dryad.51c59zwcr): 'nDist' follows a power law in 'nCont' (R\u00b2 = 0.932 on the discovery half)",
-  "status": "candidate",
-  "verifier": null
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.bcc2fqzb3",
+   "held_out_r2": 0.9528,
+   "held_out_rows": 120,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-2c6b7ea2cf09",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8b4751cb89e33fdf.csv",
+   "doi": "10.5061/dryad.bcc2fqzb3",
+   "form": "power law",
+   "params": [
+    3.591726988887587,
+    1.2099041642252748
+   ],
+   "seed": 1373464816,
+   "x": "Imputed_ECV",
+   "y": "Imputed_Body_Mass"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: The role of behavioural flexibility in primate diversification' (Zenodo, doi 10.5061/dryad.bcc2fqzb3): 'Imputed_Body_Mass' follows a power law in 'Imputed_ECV' (R\u00b2 = 0.953 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
