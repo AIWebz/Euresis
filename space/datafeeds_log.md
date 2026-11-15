@@ -3755,3 +3755,4 @@
 - 2026-11-15 00:07 data feeds: online
 - 2026-11-15 00:08 FINDING (confirmed on held-out rows): In 'Plant functional traits differ in adaptability and are predicted to be differentially affe' (Zenodo, doi 10.5061/dryad.nk98sf7pv): 'Fam' is linear in 'UniqueID' (R² = 0.974 on the discovery half); held-out R² = 0.975 [emp-ddef034acee6]
 - 2026-11-15 00:09 data feeds: 23210 datasets analysed so far, 3355 confirmed findings
+- 2026-11-15 01:10 data feeds: online
