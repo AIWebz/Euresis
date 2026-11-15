@@ -3079253,5 +3079253,167 @@
   "statement": "[physics: collision] Impulse ratio of target to projectile [model-proposed; physical meaning unverified] \u2265 1/3 \u00d7 Square Root of Mass Ratio Plus Coefficient of Restitution [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
   "status": "proved",
   "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-6a15bbadd6e1",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified]'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "(-e**2*m**2/(m + 1)**2 - e**2*m/(m + 1) + 2)/(e**2*m**2/(m + 1)**2 + e**2*m/(m + 1)) >= 5/6*(sqrt(e) + sqrt(m))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 4962",
+  "statement": "[physics: collision] Fraction of Kinetic Energy Retained by the Projectile Relative to the Target [model-proposed; physical meaning unverified] \u2265 5/6 \u00d7 Sum of Square Roots of Mass Ratio and Coefficient of Restitution [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-cb7f06250b57",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'momentum transferred / initial momentum'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "(-e**2*m**2/(m + 1)**2 - e**2*m/(m + 1) + 2)/(e**2*m**2/(m + 1)**2 + e**2*m/(m + 1)) >= 5/6*(e + sqrt(m))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 4962",
+  "statement": "[physics: collision] Fraction of Kinetic Energy Retained by the Projectile Relative to the Target [model-proposed; physical meaning unverified] \u2265 5/6 \u00d7 Square Root of Mass Ratio Plus Coefficient of Restitution [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-8fa10a1e1db9",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "m**2 + m**(-2) >= 2*(m*(e + 1)/(m + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 4962",
+  "statement": "[physics: collision] Mass Ratio Squared Plus Reciprocal [model-proposed; physical meaning unverified] \u2265 2 \u00d7 target speed / initial speed   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-906b2b664fbb",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "m**2 + m**(-2) >= 2*(m*(e + 1)**2/(m + 1)**2)",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 4962",
+  "statement": "[physics: collision] Mass Ratio Squared Plus Reciprocal [model-proposed; physical meaning unverified] \u2265 2 \u00d7 fraction of kinetic energy given to the target   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-bbc1d041b328",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "m**2 + m**(-2) >= 4*(m/(m + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 4962",
+  "statement": "[physics: collision] Mass Ratio Squared Plus Reciprocal [model-proposed; physical meaning unverified] \u2265 4 \u00d7 speed of the centre of mass / initial speed   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-dcb1fd96c396",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "m**2 + m**(-2) >= 2*(e)",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 4962",
+  "statement": "[physics: collision] Mass Ratio Squared Plus Reciprocal [model-proposed; physical meaning unverified] \u2265 2 \u00d7 relative speed after / relative speed before   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]

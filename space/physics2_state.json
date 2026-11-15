@@ -69451,6 +69451,46 @@
    "family": "two-body decay",
    "expr": "sqrt((a**2 - b**2 + 1)**2 + (1 - (a + b)**2)**2)/sqrt((-a**2 + b**2 + 1)**2 + (1 - (a + b)**2)**2)",
    "why": "affine combination of known quantities (momentum of each product / (Mc), Invariant Mass Ratio of the Two Products [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "e * (m + 1) / (m + 1 + e * m)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "collision",
+   "expr": "m / (e + 1)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "collision",
+   "expr": "sqrt(m**2 + e**2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "collision",
+   "expr": "m + 1 / e",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt((1 - r**2)**2 + (2*z*r)**2)/sqrt(4*z**2 + 1)",
+   "why": "affine combination of known quantities (amplitude / static deflection, Mechanical Impedance Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt((1 - r**2)**2 + (2*z*r)**2)/sqrt(4*z**2 + 1)",
+   "why": "affine combination of known quantities (amplitude / static deflection, Mechanical Impedance Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(1 + (2*z*r)**2)/sqrt((1 - r**2)**2 + (2*z*r)**2)",
+   "why": "affine combination of known quantities (amplitude / static deflection, transmissibility)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(1 + (2*z*r)**2)/sqrt((1 - r**2)**2 + (2*z*r)**2)",
+   "why": "affine combination of known quantities (amplitude / static deflection, transmissibility)"
   }
  ],
  "tried": [
@@ -76067,7 +76107,31 @@
   "collision|Kinetic Energy Ratio of the Target to the System After Collision [model-proposed; physical meaning unverified]|Square Root of Mass Ratio Plus Coefficient of Restitution [model-proposed; physical meaning unverified]",
   "collision|Fraction of kinetic energy retained by projectile relative to initial [model-proposed; physical meaning unverified]|Mass Ratio Squared Plus Reciprocal [model-proposed; physical meaning unverified]",
   "collision|Fraction of kinetic energy retained by projectile relative to initial [model-proposed; physical meaning unverified]|Sum of Square Roots of Mass Ratio and Coefficient of Restitution [model-proposed; physical meaning unverified]",
-  "collision|Fraction of kinetic energy retained by projectile relative to initial [model-proposed; physical meaning unverified]|Square Root of Mass Ratio Plus Coefficient of Restitution [model-proposed; physical meaning unverified]"
+  "collision|Fraction of kinetic energy retained by projectile relative to initial [model-proposed; physical meaning unverified]|Square Root of Mass Ratio Plus Coefficient of Restitution [model-proposed; physical meaning unverified]",
+  "collision|Fraction of Kinetic Energy Retained by the Projectile Relative to the Target [model-proposed; physical meaning unverified]|Mass Ratio Squared Plus Reciprocal [model-proposed; physical meaning unverified]",
+  "collision|Fraction of Kinetic Energy Retained by the Projectile Relative to the Target [model-proposed; physical meaning unverified]|Sum of Square Roots of Mass Ratio and Coefficient of Restitution [model-proposed; physical meaning unverified]",
+  "collision|Fraction of Kinetic Energy Retained by the Projectile Relative to the Target [model-proposed; physical meaning unverified]|Square Root of Mass Ratio Plus Coefficient of Restitution [model-proposed; physical meaning unverified]",
+  "collision|Fraction of Kinetic Energy Retained by Projectile Relative to Target [model-proposed; physical meaning unverified]|Mass Ratio Squared Plus Reciprocal [model-proposed; physical meaning unverified]",
+  "collision|Fraction of Kinetic Energy Retained by Projectile Relative to Target [model-proposed; physical meaning unverified]|Sum of Square Roots of Mass Ratio and Coefficient of Restitution [model-proposed; physical meaning unverified]",
+  "collision|Fraction of Kinetic Energy Retained by Projectile Relative to Target [model-proposed; physical meaning unverified]|Square Root of Mass Ratio Plus Coefficient of Restitution [model-proposed; physical meaning unverified]",
+  "collision|Fraction of kinetic energy retained by the target relative to the system [model-proposed; physical meaning unverified]|Mass Ratio Squared Plus Reciprocal [model-proposed; physical meaning unverified]",
+  "collision|Fraction of kinetic energy retained by the target relative to the system [model-proposed; physical meaning unverified]|Sum of Square Roots of Mass Ratio and Coefficient of Restitution [model-proposed; physical meaning unverified]",
+  "collision|Fraction of kinetic energy retained by the target relative to the system [model-proposed; physical meaning unverified]|Square Root of Mass Ratio Plus Coefficient of Restitution [model-proposed; physical meaning unverified]",
+  "collision|Sum of Mass Ratio and Coefficient of Restitution [model-proposed; physical meaning unverified]|Mass Ratio Squared Plus Reciprocal [model-proposed; physical meaning unverified]",
+  "collision|Sum of Mass Ratio and Coefficient of Restitution [model-proposed; physical meaning unverified]|Sum of Square Roots of Mass Ratio and Coefficient of Restitution [model-proposed; physical meaning unverified]",
+  "collision|Sum of Mass Ratio and Coefficient of Restitution [model-proposed; physical meaning unverified]|Square Root of Mass Ratio Plus Coefficient of Restitution [model-proposed; physical meaning unverified]",
+  "collision|Sum of Squares of Mass Ratio and Coefficient of Restitution [model-proposed; physical meaning unverified]|Mass Ratio Squared Plus Reciprocal [model-proposed; physical meaning unverified]",
+  "collision|Sum of Squares of Mass Ratio and Coefficient of Restitution [model-proposed; physical meaning unverified]|Sum of Square Roots of Mass Ratio and Coefficient of Restitution [model-proposed; physical meaning unverified]",
+  "collision|Sum of Squares of Mass Ratio and Coefficient of Restitution [model-proposed; physical meaning unverified]|Square Root of Mass Ratio Plus Coefficient of Restitution [model-proposed; physical meaning unverified]",
+  "collision|Mass ratio squared plus coefficient of restitution [model-proposed; physical meaning unverified]|Mass Ratio Squared Plus Reciprocal [model-proposed; physical meaning unverified]",
+  "collision|Mass ratio squared plus coefficient of restitution [model-proposed; physical meaning unverified]|Sum of Square Roots of Mass Ratio and Coefficient of Restitution [model-proposed; physical meaning unverified]",
+  "collision|Mass ratio squared plus coefficient of restitution [model-proposed; physical meaning unverified]|Square Root of Mass Ratio Plus Coefficient of Restitution [model-proposed; physical meaning unverified]",
+  "collision|Mass Ratio Squared Plus Reciprocal [model-proposed; physical meaning unverified]|target speed / initial speed",
+  "collision|Mass Ratio Squared Plus Reciprocal [model-proposed; physical meaning unverified]|momentum transferred / initial momentum",
+  "collision|Mass Ratio Squared Plus Reciprocal [model-proposed; physical meaning unverified]|fraction of kinetic energy lost",
+  "collision|Mass Ratio Squared Plus Reciprocal [model-proposed; physical meaning unverified]|fraction of kinetic energy given to the target",
+  "collision|Mass Ratio Squared Plus Reciprocal [model-proposed; physical meaning unverified]|speed of the centre of mass / initial speed",
+  "collision|Mass Ratio Squared Plus Reciprocal [model-proposed; physical meaning unverified]|relative speed after / relative speed before"
  ],
  "edges": [
   {
@@ -85135,9 +85199,45 @@
    "f": "Impulse ratio of target to projectile [model-proposed; physical meaning unverified]",
    "g": "Square Root of Mass Ratio Plus Coefficient of Restitution [model-proposed; physical meaning unverified]",
    "k": "1/3"
+  },
+  {
+   "family": "collision",
+   "f": "Fraction of Kinetic Energy Retained by the Projectile Relative to the Target [model-proposed; physical meaning unverified]",
+   "g": "Sum of Square Roots of Mass Ratio and Coefficient of Restitution [model-proposed; physical meaning unverified]",
+   "k": "5/6"
+  },
+  {
+   "family": "collision",
+   "f": "Fraction of Kinetic Energy Retained by the Projectile Relative to the Target [model-proposed; physical meaning unverified]",
+   "g": "Square Root of Mass Ratio Plus Coefficient of Restitution [model-proposed; physical meaning unverified]",
+   "k": "5/6"
+  },
+  {
+   "family": "collision",
+   "f": "Mass Ratio Squared Plus Reciprocal [model-proposed; physical meaning unverified]",
+   "g": "target speed / initial speed",
+   "k": "2"
+  },
+  {
+   "family": "collision",
+   "f": "Mass Ratio Squared Plus Reciprocal [model-proposed; physical meaning unverified]",
+   "g": "fraction of kinetic energy given to the target",
+   "k": "2"
+  },
+  {
+   "family": "collision",
+   "f": "Mass Ratio Squared Plus Reciprocal [model-proposed; physical meaning unverified]",
+   "g": "speed of the centre of mass / initial speed",
+   "k": "4"
+  },
+  {
+   "family": "collision",
+   "f": "Mass Ratio Squared Plus Reciprocal [model-proposed; physical meaning unverified]",
+   "g": "relative speed after / relative speed before",
+   "k": "2"
   }
  ],
- "rounds": 4961,
+ "rounds": 4963,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",

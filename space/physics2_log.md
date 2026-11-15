@@ -5408,3 +5408,5 @@
 - 2026-11-15 10:06 round 4960: auction with a reserve price
 - 2026-11-15 10:08 round 4961: two-body decay
 - 2026-11-15 10:10 round 4962: collision
+- 2026-11-15 10:14 round 4963: driven oscillator
+- 2026-11-15 10:15 segment end: 4963 rounds, 5 discoveries, 2 known laws rediscovered
