@@ -3869,3 +3869,4 @@
 - 2026-11-15 10:46 data feeds: online
 - 2026-11-15 11:10 FINDING (confirmed on held-out rows): In 'Baltic Sea 2023 R/V Skagerak Cruise Data (CTD Stations; Radium; DSi)' (Zenodo, doi 10.5281/zenodo.15370408): 'Rho_kg_m3' is linear in 'Salinity' (R² = 0.981 on the discovery half); held-out R² = 0.973 [emp-e95229887344]
 - 2026-11-15 11:10 data feeds: 24476 datasets analysed so far, 3447 confirmed findings
+- 2026-11-15 11:35 data feeds: online
