@@ -3966,3 +3966,5 @@
 - 2026-11-15 14:48 FINDING (confirmed on held-out rows): In 'Data for "International reliance on Brazil's water through soy and beef supply chains"' (Zenodo, doi 10.5281/zenodo.17392718): 'soy_ghg_g_5y_per_tonne' is linear in 'soy_def_5y_tot_per_tonne' (R² = 0.954 on the discovery half); held-out R² = 0.863 [emp-833f7debc598]
 - 2026-11-15 14:49 data feeds: 24832 datasets analysed so far, 3535 confirmed findings
 - 2026-11-15 15:24 data feeds: online
+- 2026-11-15 15:25 FINDING (confirmed on held-out rows): In 'Data from: A persistent lack of international representation on editorial boards in enviro' (Zenodo, doi 10.5061/dryad.mh189): 'Pcnt_Pubs' follows a power law in 'N_Articles' (R² = 0.956 on the discovery half); held-out R² = 0.958 [emp-64423cfbcaa1]
+- 2026-11-15 15:25 data feeds: 24885 datasets analysed so far, 3536 confirmed findings
