@@ -5430,3 +5430,5 @@
 - 2026-11-15 11:37 segment start (budget 30 min; model: Qwen3-8B; 5 discoveries so far)
 - 2026-11-15 11:37 round 4979: driven oscillator
 - 2026-11-15 11:40 round 4980: velocity addition
+- 2026-11-15 11:41 round 4981: Compton scattering
+- 2026-11-15 11:42 round 4982: Cournot duopoly

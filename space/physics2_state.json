@@ -69716,6 +69716,36 @@
    "family": "driven oscillator",
    "expr": "2*r**2*z/(4*r**2*z**2 + (1 - r**2)**2 + 1)",
    "why": "affine combination of known quantities (amplitude / static deflection, Relative energy loss per cycle [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 + u)/(1 - u)) * sqrt((1 + v)/(1 - v)) / sqrt((1 + (u + v)/(1 + u*v)) / (1 - (u + v)/(1 + u*v",
+   "why": "affine combination of known quantities (composed speed / c)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt(1 - u**2) + sqrt(1 - v**2) / sqrt(-(u + v)**2/(u*v + 1)**2 + 1)",
+   "why": "affine combination of known quantities (composed speed / c, Relativistic Energy-Momentum Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "1 - c/(c*x + 1)",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "c/(x + 1) + 1/(x + 1) - 1",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "c*x**2/(c*x + 1) - c*x/(c*x + 1) + 1",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, electron kinetic energy / (m_e c\u00b2))"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "sqrt(c**2*x**2/(c*x + 1)**2 + c*x**2/(c*x + 1)) + c*x/(c*x + 1) - 1",
+   "why": "not positive on the physical domain"
   }
  ],
  "tried": [
@@ -85708,7 +85738,7 @@
    "k": "1"
   }
  ],
- "rounds": 4979,
+ "rounds": 4981,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",
