@@ -3982,3 +3982,4 @@
 - 2026-11-15 16:29 FINDING (confirmed on held-out rows): In 'Artificial displacement alters movement behavior of a terrestrial amphibian' (Zenodo, doi 10.5061/dryad.x3ffbg7ms): 'Final Northing' grows logarithmically in 'Released Northing' (R² = 0.961 on the discovery half); held-out R² = 0.905 [emp-252de6dce69d]
 - 2026-11-15 16:29 FINDING (confirmed on held-out rows): In 'Artificial displacement alters movement behavior of a terrestrial amphibian' (Zenodo, doi 10.5061/dryad.x3ffbg7ms): 'Final Northing' is linear in 'Final Easting' (R² = 0.921 on the discovery half); held-out R² = 0.940 [emp-75147877c168]
 - 2026-11-15 16:29 data feeds: 24958 datasets analysed so far, 3548 confirmed findings
+- 2026-11-15 17:19 data feeds: online
