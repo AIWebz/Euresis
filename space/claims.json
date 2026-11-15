@@ -3101367,10 +3101367,16 @@
   "verifier": "z3-sqrt"
  },
  {
-  "evidence": null,
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
   "id": "phy-59ba545c0f9c",
   "kind": "physics-relation",
-  "novelty": "not checked",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
   "payload": {
    "assumptions": [
     "r < 1",
@@ -3101384,7 +3101390,61 @@
   },
   "source": "physics_discover2 round 5016",
   "statement": "[economics: auction with a reserve price] Welfare Reserve Efficiency with Seller Value and Reserve Ratio [model-proposed; physical meaning unverified] \u2265 3/4 \u00d7 Welfare Reserve Elasticity Ratio [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (1, 1))",
-  "status": "candidate",
-  "verifier": null
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-a28775ca41eb",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'expected total bidder surplus'",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "(-2*r**3/3 + r**2*v + 2/3)/(4*r**3/3 + 2*r**2*v - r**2 + 1/3) >= 4*((2*r**3/3 - r**2 + 1/3)/(-2*r**3/3 + r**2 + 2/3))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 5016",
+  "statement": "[economics: auction with a reserve price] Welfare Reserve Efficiency with Seller Value and Reserve Ratio [model-proposed; physical meaning unverified] \u2265 4 \u00d7 Bidder Surplus Efficiency Ratio [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (2.65e-09, 0.94))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-a565d070cae5",
+  "kind": "physics-relation",
+  "novelty": "not checked",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "(-2*r**3/3 + r**2*v + 2/3)/(4*r**3/3 + 2*r**2*v - r**2 + 1/3) >= 9/8*((-2*r**3/3 + r**2*v + 2/3)/(-2*r**3/3 + r**2*v + 2*r**2 + 2/3))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 5016",
+  "statement": "[economics: auction with a reserve price] Welfare Reserve Efficiency with Seller Value and Reserve Ratio [model-proposed; physical meaning unverified] \u2265 9/8 \u00d7 Welfare Efficiency with Seller Value Ratio [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]
