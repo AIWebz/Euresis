@@ -5382,3 +5382,11 @@
 - 2026-11-15 09:07 round 4936: auction with a reserve price
 - 2026-11-15 09:09 round 4937: two-body decay
 - 2026-11-15 09:10 round 4938: collision
+- 2026-11-15 09:12 round 4939: driven oscillator
+- 2026-11-15 09:14 round 4940: velocity addition
+- 2026-11-15 09:15 round 4941: Compton scattering
+- 2026-11-15 09:15 round 4942: Cournot duopoly
+- 2026-11-15 09:17 round 4943: insurance and risk
+- 2026-11-15 09:18 round 4944: auction with a reserve price
+- 2026-11-15 09:20 round 4945: two-body decay
+- 2026-11-15 09:22 segment end: 4945 rounds, 5 discoveries, 2 known laws rediscovered
