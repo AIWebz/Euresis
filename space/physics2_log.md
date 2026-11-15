@@ -5515,3 +5515,6 @@
 - 2026-11-15 15:35 round 5055: insurance and risk
 - 2026-11-15 15:37 round 5056: auction with a reserve price
 - 2026-11-15 15:38 round 5057: two-body decay
+- 2026-11-15 15:39 round 5058: collision
+- 2026-11-15 15:43 round 5059: driven oscillator
+- 2026-11-15 15:44 round 5060: velocity addition
