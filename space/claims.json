@@ -3057933,5 +3057933,869 @@
   "statement": "Octal game 0.0222112 is completely solved: its Grundy values are periodic with pre-period 1 and period 11 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.70h0b6b",
+   "held_out_r2": 0.9477,
+   "held_out_rows": 32,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-16e9de4e737f",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "bc86fec0b09df848.csv",
+   "doi": "10.5061/dryad.70h0b6b",
+   "form": "power law",
+   "params": [
+    -3.272629282368511,
+    0.8904509295951676
+   ],
+   "seed": 1590083001,
+   "x": "DistanceInterval",
+   "y": "Velocity"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Linking beaver dam affected flow dynamics to upstream passage of Arctic graylin' (Zenodo, doi 10.5061/dryad.70h0b6b): 'Velocity' follows a power law in 'DistanceInterval' (R\u00b2 = 0.951 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.70h0b6b",
+   "held_out_r2": 0.9477,
+   "held_out_rows": 32,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c15b1b2ddc20",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "bc86fec0b09df848.csv",
+   "doi": "10.5061/dryad.70h0b6b",
+   "form": "logarithmic",
+   "params": [
+    -3.2726292832040387,
+    0.8904509297272517
+   ],
+   "seed": 1590083001,
+   "x": "DistanceInterval",
+   "y": "logVelocity"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Linking beaver dam affected flow dynamics to upstream passage of Arctic graylin' (Zenodo, doi 10.5061/dryad.70h0b6b): 'logVelocity' grows logarithmically in 'DistanceInterval' (R\u00b2 = 0.951 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.70h0b6b",
+   "held_out_r2": 0.9478,
+   "held_out_rows": 32,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ced64e122b0a",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "bc86fec0b09df848.csv",
+   "doi": "10.5061/dryad.70h0b6b",
+   "form": "logarithmic",
+   "params": [
+    3.7960829882227967,
+    1.0683586988485911
+   ],
+   "seed": 1590083001,
+   "x": "Velocity",
+   "y": "logDistanceInterval"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Linking beaver dam affected flow dynamics to upstream passage of Arctic graylin' (Zenodo, doi 10.5061/dryad.70h0b6b): 'logDistanceInterval' grows logarithmically in 'Velocity' (R\u00b2 = 0.951 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.70h0b6b",
+   "held_out_r2": 0.9478,
+   "held_out_rows": 32,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-1290e6b78024",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "bc86fec0b09df848.csv",
+   "doi": "10.5061/dryad.70h0b6b",
+   "form": "linear",
+   "params": [
+    3.7960829885584904,
+    1.0683586987074554
+   ],
+   "seed": 1590083001,
+   "x": "logVelocity",
+   "y": "logDistanceInterval"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Linking beaver dam affected flow dynamics to upstream passage of Arctic graylin' (Zenodo, doi 10.5061/dryad.70h0b6b): 'logDistanceInterval' is linear in 'logVelocity' (R\u00b2 = 0.951 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.70h0b6b",
+   "held_out_r2": 0.9087,
+   "held_out_rows": 249,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b8e75dcc7dce",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "690bd6b36f4650e6.csv",
+   "doi": "10.5061/dryad.70h0b6b",
+   "form": "linear",
+   "params": [
+    8.709743253813455,
+    0.6876782182549395
+   ],
+   "seed": 3864313372,
+   "x": "MaxCFS",
+   "y": "AvgCFS"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Linking beaver dam affected flow dynamics to upstream passage of Arctic graylin' (Zenodo, doi 10.5061/dryad.70h0b6b): 'AvgCFS' is linear in 'MaxCFS' (R\u00b2 = 0.906 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.3897/BDJ.11.e105314.suppl7",
+   "held_out_r2": 0.9257,
+   "held_out_rows": 216,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d5ded31d18be",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "fd9b544350832b17.csv",
+   "doi": "10.3897/BDJ.11.e105314.suppl7",
+   "form": "power law",
+   "params": [
+    3.6017040927397135,
+    -0.6621785977528792
+   ],
+   "seed": 406548949,
+   "x": "Abundance",
+   "y": "C.Volume"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Supplementary material 7 from: Seleznev DG, Dinh CN, Hai TB, Karpova EP, Kim Chi DT, Kosol' (Zenodo, doi 10.3897/BDJ.11.e105314.suppl7): 'C.Volume' follows a power law in 'Abundance' (R\u00b2 = 0.933 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.3897/BDJ.11.e105314.suppl1",
+   "held_out_r2": 0.9319,
+   "held_out_rows": 463,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-2ecf02f40d60",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "b64a817ac1e01db9.csv",
+   "doi": "10.3897/BDJ.11.e105314.suppl1",
+   "form": "power law",
+   "params": [
+    0.22229776345308644,
+    0.8731488503376097
+   ],
+   "seed": 1318932966,
+   "x": "Cond",
+   "y": "TDS"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Supplementary material 1 from: Seleznev DG, Dinh CN, Hai TB, Karpova EP, Kim Chi DT, Kosol' (Zenodo, doi 10.3897/BDJ.11.e105314.suppl1): 'TDS' follows a power law in 'Cond' (R\u00b2 = 0.938 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.3897/BDJ.11.e105314.suppl1",
+   "held_out_r2": 0.998,
+   "held_out_rows": 463,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-649e2bfb729f",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "b64a817ac1e01db9.csv",
+   "doi": "10.3897/BDJ.11.e105314.suppl1",
+   "form": "power law",
+   "params": [
+    -8.122995925620554,
+    1.0648265348346193
+   ],
+   "seed": 1318932966,
+   "x": "Cond",
+   "y": "Sal"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Supplementary material 1 from: Seleznev DG, Dinh CN, Hai TB, Karpova EP, Kim Chi DT, Kosol' (Zenodo, doi 10.3897/BDJ.11.e105314.suppl1): 'Sal' follows a power law in 'Cond' (R\u00b2 = 0.999 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.3897/BDJ.11.e105314.suppl1",
+   "held_out_r2": 0.9301,
+   "held_out_rows": 463,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-8f837294e272",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "b64a817ac1e01db9.csv",
+   "doi": "10.3897/BDJ.11.e105314.suppl1",
+   "form": "power law",
+   "params": [
+    0.32022720855515785,
+    0.8688689178554111
+   ],
+   "seed": 1318932966,
+   "x": "SCond",
+   "y": "TDS"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Supplementary material 1 from: Seleznev DG, Dinh CN, Hai TB, Karpova EP, Kim Chi DT, Kosol' (Zenodo, doi 10.3897/BDJ.11.e105314.suppl1): 'TDS' follows a power law in 'SCond' (R\u00b2 = 0.936 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.3897/BDJ.11.e105314.suppl1",
+   "held_out_r2": 0.9988,
+   "held_out_rows": 463,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-03de3405c05b",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "b64a817ac1e01db9.csv",
+   "doi": "10.3897/BDJ.11.e105314.suppl1",
+   "form": "power law",
+   "params": [
+    -8.01132554720304,
+    1.0606432257805163
+   ],
+   "seed": 1318932966,
+   "x": "SCond",
+   "y": "Sal"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Supplementary material 1 from: Seleznev DG, Dinh CN, Hai TB, Karpova EP, Kim Chi DT, Kosol' (Zenodo, doi 10.3897/BDJ.11.e105314.suppl1): 'Sal' follows a power law in 'SCond' (R\u00b2 = 0.999 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.3897/BDJ.11.e105314.suppl1",
+   "held_out_r2": 0.9243,
+   "held_out_rows": 463,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-bc74eb5284a4",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "b64a817ac1e01db9.csv",
+   "doi": "10.3897/BDJ.11.e105314.suppl1",
+   "form": "power law",
+   "params": [
+    -7.859649971038441,
+    1.1412149322612881
+   ],
+   "seed": 1318932966,
+   "x": "TDS",
+   "y": "Sal"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Supplementary material 1 from: Seleznev DG, Dinh CN, Hai TB, Karpova EP, Kim Chi DT, Kosol' (Zenodo, doi 10.3897/BDJ.11.e105314.suppl1): 'Sal' follows a power law in 'TDS' (R\u00b2 = 0.933 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14584655",
+   "held_out_r2": 0.9632,
+   "held_out_rows": 75,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e73f179f5daa",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "fb14810016b8b5b9.csv",
+   "doi": "10.5281/zenodo.14584655",
+   "form": "linear",
+   "params": [
+    3715.7994137010232,
+    0.6325876171031806
+   ],
+   "seed": 695497400,
+   "x": "Maximal Flow Length",
+   "y": "Downvalley Length"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'INDOFLOODS: A Comprehensive Database for Flood Events in India Enhanced with Catchment Att' (Zenodo, doi 10.5281/zenodo.14584655): 'Downvalley Length' is linear in 'Maximal Flow Length' (R\u00b2 = 0.986 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14584655",
+   "held_out_r2": 0.9849,
+   "held_out_rows": 75,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-52774d4a34f1",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "fb14810016b8b5b9.csv",
+   "doi": "10.5281/zenodo.14584655",
+   "form": "power law",
+   "params": [
+    1.250810919038468,
+    0.8715443883616092
+   ],
+   "seed": 695497400,
+   "x": "Maximal Flow Length",
+   "y": "Catchment Length"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'INDOFLOODS: A Comprehensive Database for Flood Events in India Enhanced with Catchment Att' (Zenodo, doi 10.5281/zenodo.14584655): 'Catchment Length' follows a power law in 'Maximal Flow Length' (R\u00b2 = 0.989 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14584655",
+   "held_out_r2": 0.9682,
+   "held_out_rows": 75,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-6a717e26c0ce",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "fb14810016b8b5b9.csv",
+   "doi": "10.5281/zenodo.14584655",
+   "form": "power law",
+   "params": [
+    1.8508312832896998,
+    0.927224616588207
+   ],
+   "seed": 695497400,
+   "x": "Maximal Flow Length",
+   "y": "Catchment Perimeter"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'INDOFLOODS: A Comprehensive Database for Flood Events in India Enhanced with Catchment Att' (Zenodo, doi 10.5281/zenodo.14584655): 'Catchment Perimeter' follows a power law in 'Maximal Flow Length' (R\u00b2 = 0.979 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14584655",
+   "held_out_r2": 0.9862,
+   "held_out_rows": 75,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d45ce80381b4",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "fb14810016b8b5b9.csv",
+   "doi": "10.5281/zenodo.14584655",
+   "form": "power law",
+   "params": [
+    -1.3631547997941726,
+    -1.6930538973816025
+   ],
+   "seed": 695497400,
+   "x": "Maximal Flow Length",
+   "y": "Elongation Ratio"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'INDOFLOODS: A Comprehensive Database for Flood Events in India Enhanced with Catchment Att' (Zenodo, doi 10.5281/zenodo.14584655): 'Elongation Ratio' follows a power law in 'Maximal Flow Length' (R\u00b2 = 0.985 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14584655",
+   "held_out_r2": 0.9167,
+   "held_out_rows": 75,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-db9d0f40f134",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "fb14810016b8b5b9.csv",
+   "doi": "10.5281/zenodo.14584655",
+   "form": "power law",
+   "params": [
+    -11.505895439503032,
+    1.7360970865206957
+   ],
+   "seed": 695497400,
+   "x": "Downvalley Length",
+   "y": "Drainage Area"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'INDOFLOODS: A Comprehensive Database for Flood Events in India Enhanced with Catchment Att' (Zenodo, doi 10.5281/zenodo.14584655): 'Drainage Area' follows a power law in 'Downvalley Length' (R\u00b2 = 0.949 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14584655",
+   "held_out_r2": 0.9664,
+   "held_out_rows": 75,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-6b378b32bcbb",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "fb14810016b8b5b9.csv",
+   "doi": "10.5281/zenodo.14584655",
+   "form": "power law",
+   "params": [
+    -0.8151217941206362,
+    -1.7966473353783818
+   ],
+   "seed": 695497400,
+   "x": "Downvalley Length",
+   "y": "Elongation Ratio"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'INDOFLOODS: A Comprehensive Database for Flood Events in India Enhanced with Catchment Att' (Zenodo, doi 10.5281/zenodo.14584655): 'Elongation Ratio' follows a power law in 'Downvalley Length' (R\u00b2 = 0.981 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14584655",
+   "held_out_r2": 0.9801,
+   "held_out_rows": 75,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f05e3f52ed30",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "fb14810016b8b5b9.csv",
+   "doi": "10.5281/zenodo.14584655",
+   "form": "power law",
+   "params": [
+    8.1671678466776,
+    0.5555404705676986
+   ],
+   "seed": 695497400,
+   "x": "Drainage Area",
+   "y": "Catchment Perimeter"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'INDOFLOODS: A Comprehensive Database for Flood Events in India Enhanced with Catchment Att' (Zenodo, doi 10.5281/zenodo.14584655): 'Catchment Perimeter' follows a power law in 'Drainage Area' (R\u00b2 = 0.987 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14584655",
+   "held_out_r2": 0.9837,
+   "held_out_rows": 75,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e81d6d23a1de",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "fb14810016b8b5b9.csv",
+   "doi": "10.5281/zenodo.14584655",
+   "form": "power law",
+   "params": [
+    -12.910130159602142,
+    -1.012764112614612
+   ],
+   "seed": 695497400,
+   "x": "Drainage Area",
+   "y": "Elongation Ratio"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'INDOFLOODS: A Comprehensive Database for Flood Events in India Enhanced with Catchment Att' (Zenodo, doi 10.5281/zenodo.14584655): 'Elongation Ratio' follows a power law in 'Drainage Area' (R\u00b2 = 0.990 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14584655",
+   "held_out_r2": 0.9278,
+   "held_out_rows": 75,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-485c5faed9f0",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "fb14810016b8b5b9.csv",
+   "doi": "10.5281/zenodo.14584655",
+   "form": "power law",
+   "params": [
+    -11.900845341940014,
+    0.407896716423713
+   ],
+   "seed": 695497400,
+   "x": "Drainage Area",
+   "y": "Drainage Texture"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'INDOFLOODS: A Comprehensive Database for Flood Events in India Enhanced with Catchment Att' (Zenodo, doi 10.5281/zenodo.14584655): 'Drainage Texture' follows a power law in 'Drainage Area' (R\u00b2 = 0.926 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14584655",
+   "held_out_r2": 0.9585,
+   "held_out_rows": 75,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d096da76718d",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "fb14810016b8b5b9.csv",
+   "doi": "10.5281/zenodo.14584655",
+   "form": "power law",
+   "params": [
+    0.5709158427563908,
+    1.059515712772259
+   ],
+   "seed": 695497400,
+   "x": "Catchment Length",
+   "y": "Catchment Perimeter"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'INDOFLOODS: A Comprehensive Database for Flood Events in India Enhanced with Catchment Att' (Zenodo, doi 10.5281/zenodo.14584655): 'Catchment Perimeter' follows a power law in 'Catchment Length' (R\u00b2 = 0.982 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14584655",
+   "held_out_r2": 0.9851,
+   "held_out_rows": 75,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5c3ec25e427a",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "fb14810016b8b5b9.csv",
+   "doi": "10.5281/zenodo.14584655",
+   "form": "power law",
+   "params": [
+    1.0099027810460028,
+    -1.937707496078461
+   ],
+   "seed": 695497400,
+   "x": "Catchment Length",
+   "y": "Elongation Ratio"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'INDOFLOODS: A Comprehensive Database for Flood Events in India Enhanced with Catchment Att' (Zenodo, doi 10.5281/zenodo.14584655): 'Elongation Ratio' follows a power law in 'Catchment Length' (R\u00b2 = 0.991 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14584655",
+   "held_out_r2": 0.9846,
+   "held_out_rows": 75,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f1f1f0330ad3",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "fb14810016b8b5b9.csv",
+   "doi": "10.5281/zenodo.14584655",
+   "form": "power law",
+   "params": [
+    1.875649638997749,
+    -1.815018301608775
+   ],
+   "seed": 695497400,
+   "x": "Catchment Perimeter",
+   "y": "Elongation Ratio"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'INDOFLOODS: A Comprehensive Database for Flood Events in India Enhanced with Catchment Att' (Zenodo, doi 10.5281/zenodo.14584655): 'Elongation Ratio' follows a power law in 'Catchment Perimeter' (R\u00b2 = 0.994 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23463929",
+   "held_out_r2": 0.998,
+   "held_out_rows": 42,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-942cdefe41d8",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "ded449e4aee8a9e4.csv",
+   "doi": "10.5281/zenodo.23463929",
+   "form": "exponential",
+   "params": [
+    7.0398872528589385,
+    0.0005534604741451244
+   ],
+   "seed": 1005534794,
+   "x": "start_s_after_origin",
+   "y": "end_s_after_origin"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data and code for \"Transferable Groundwater Responses to Seismic Waves Across Earthquakes\"' (Zenodo, doi 10.5281/zenodo.23463929): 'end_s_after_origin' grows exponentially in 'start_s_after_origin' (R\u00b2 = 0.999 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23463929",
+   "held_out_r2": 0.8856,
+   "held_out_rows": 42,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f21df207a925",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "ded449e4aee8a9e4.csv",
+   "doi": "10.5281/zenodo.23463929",
+   "form": "exponential",
+   "params": [
+    6.418119044909454,
+    0.0002521808783428239
+   ],
+   "seed": 1005534794,
+   "x": "end_s_after_origin",
+   "y": "length_s"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data and code for \"Transferable Groundwater Responses to Seismic Waves Across Earthquakes\"' (Zenodo, doi 10.5281/zenodo.23463929): 'length_s' grows exponentially in 'end_s_after_origin' (R\u00b2 = 0.946 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23463929",
+   "held_out_r2": 0.8856,
+   "held_out_rows": 42,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-500b34c14c49",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "ded449e4aee8a9e4.csv",
+   "doi": "10.5281/zenodo.23463929",
+   "form": "exponential",
+   "params": [
+    6.419502063497817,
+    0.00025198208568874195
+   ],
+   "seed": 1005534794,
+   "x": "end_s_after_origin",
+   "y": "npts"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data and code for \"Transferable Groundwater Responses to Seismic Waves Across Earthquakes\"' (Zenodo, doi 10.5281/zenodo.23463929): 'npts' grows exponentially in 'end_s_after_origin' (R\u00b2 = 0.946 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.8263436",
+   "held_out_r2": 0.9632,
+   "held_out_rows": 923,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b2abdcda06c9",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "a62517b5a46e75ff.csv",
+   "doi": "10.5281/zenodo.8263436",
+   "form": "linear",
+   "params": [
+    -11833.430972635888,
+    3969.2721571685915
+   ],
+   "seed": 3667131052,
+   "x": "Total Rain Depth (mm)",
+   "y": "Inflow (Runoff and Rainfall over Ponded Water, L)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A Complete Water Balance of a Rain Garden' (Zenodo, doi 10.5281/zenodo.8263436): 'Inflow (Runoff and Rainfall over Ponded Water, L)' is linear in 'Total Rain Depth (mm)' (R\u00b2 = 0.967 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.8263436",
+   "held_out_r2": 0.992,
+   "held_out_rows": 923,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-26b8570ca7af",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "a62517b5a46e75ff.csv",
+   "doi": "10.5281/zenodo.8263436",
+   "form": "power law",
+   "params": [
+    8.43482403748236,
+    0.8260511170006434
+   ],
+   "seed": 3667131052,
+   "x": "Total Rain Depth (mm)",
+   "y": "Pervious Area Retention in Watershed (L)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A Complete Water Balance of a Rain Garden' (Zenodo, doi 10.5281/zenodo.8263436): 'Pervious Area Retention in Watershed (L)' follows a power law in 'Total Rain Depth (mm)' (R\u00b2 = 0.992 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.8263436",
+   "held_out_r2": 0.9674,
+   "held_out_rows": 923,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-bb8028adda0a",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "a62517b5a46e75ff.csv",
+   "doi": "10.5281/zenodo.8263436",
+   "form": "linear",
+   "params": [
+    16252.26958628776,
+    1.2981416156489256
+   ],
+   "seed": 3667131052,
+   "x": "Inflow (Runoff and Rainfall over Ponded Water, L)",
+   "y": "Total Rain Volume over Watershed (Rainfall over Watershed and Ponded Water, L)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A Complete Water Balance of a Rain Garden' (Zenodo, doi 10.5281/zenodo.8263436): 'Total Rain Volume over Watershed (Rainfall over Watershed and Ponded Water, L)' is linear in 'Inflow (Runoff and Rainfall over Ponded Water, L)' (R\u00b2 = 0.971 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.8263436",
+   "held_out_r2": 0.9777,
+   "held_out_rows": 923,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f43cba69106f",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "a62517b5a46e75ff.csv",
+   "doi": "10.5281/zenodo.8263436",
+   "form": "power law",
+   "params": [
+    6.287531121423578,
+    0.41539266820442994
+   ],
+   "seed": 3667131052,
+   "x": "Inflow (Runoff and Rainfall over Ponded Water, L)",
+   "y": "Pervious Area Retention in Watershed (L)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A Complete Water Balance of a Rain Garden' (Zenodo, doi 10.5281/zenodo.8263436): 'Pervious Area Retention in Watershed (L)' follows a power law in 'Inflow (Runoff and Rainfall over Ponded Water, L)' (R\u00b2 = 0.972 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.8263436",
+   "held_out_r2": 0.9912,
+   "held_out_rows": 923,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-72883b9e001f",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "a62517b5a46e75ff.csv",
+   "doi": "10.5281/zenodo.8263436",
+   "form": "power law",
+   "params": [
+    1.3639478958758224,
+    0.826179790702426
+   ],
+   "seed": 3667131052,
+   "x": "Total Rain Volume over Watershed (Rainfall over Watershed and Ponded Water, L)",
+   "y": "Pervious Area Retention in Watershed (L)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A Complete Water Balance of a Rain Garden' (Zenodo, doi 10.5281/zenodo.8263436): 'Pervious Area Retention in Watershed (L)' follows a power law in 'Total Rain Volume over Watershed (Rainfall over Watershed and Ponded Water, L)' (R\u00b2 = 0.991 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17566822",
+   "held_out_r2": 0.9794,
+   "held_out_rows": 5230,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-44500113d575",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "32976433e5661ab4.csv",
+   "doi": "10.5281/zenodo.17566822",
+   "form": "linear",
+   "params": [
+    -0.0064745162082514044,
+    0.4960284133362104
+   ],
+   "seed": 1199256537,
+   "x": "conductivity",
+   "y": "salinity"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Spatial structure and temporal dynamics in Clear Lake, CA: The role of wind in promoting a' (Zenodo, doi 10.5281/zenodo.17566822): 'salinity' is linear in 'conductivity' (R\u00b2 = 0.980 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
