@@ -3761,3 +3761,4 @@
 - 2026-11-15 01:11 FINDING (confirmed on held-out rows): In 'Invasion away from roadsides was not driven by adaptation to grassland habitats in Dittric' (Zenodo, doi 10.5061/dryad.wdbrv15wz): 'DittrichiaLLL_mm_2' follows a power law in 'Dittrichia_biomass' (R² = 0.931 on the discovery half); held-out R² = 0.925 [emp-97b506915d0d]
 - 2026-11-15 01:11 FINDING (confirmed on held-out rows): In 'Invasion away from roadsides was not driven by adaptation to grassland habitats in Dittric' (Zenodo, doi 10.5061/dryad.wdbrv15wz): 'DittrichiaLLL_mm_3' follows a power law in 'Dittrichia_biomass' (R² = 0.933 on the discovery half); held-out R² = 0.952 [emp-75259afb7619]
 - 2026-11-15 01:12 data feeds: 23256 datasets analysed so far, 3359 confirmed findings
+- 2026-11-15 02:01 data feeds: online
