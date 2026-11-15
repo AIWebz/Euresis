@@ -4035,3 +4035,4 @@
 - 2026-11-15 22:13 FINDING (confirmed on held-out rows): In 'Data from: Nocturnality in Synapsids predates the origin of mammals by over 100 million ye' (Zenodo, doi 10.5061/dryad.1v8kj): 'geomm' follows a power law in 'ext' (R² = 0.982 on the discovery half); held-out R² = 0.984 [emp-4ae333e3e05d]
 - 2026-11-15 22:14 FINDING (confirmed on held-out rows): In 'Data from: Nocturnality in Synapsids predates the origin of mammals by over 100 million ye' (Zenodo, doi 10.5061/dryad.1v8kj): 'geomm' is linear in 'int' (R² = 0.971 on the discovery half); held-out R² = 0.969 [emp-6410edd592b8]
 - 2026-11-15 22:14 data feeds: 25161 datasets analysed so far, 3589 confirmed findings
+- 2026-11-15 23:02 data feeds: online
