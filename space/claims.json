@@ -3146423,5 +3146423,32 @@
   "statement": "In 'Greenhouse gas emissions, soil chemistry, organic carbon pool and microbial biomass after ' (Zenodo, doi 10.5281/zenodo.17069243): 'PLFA_Gplus' is linear in 'PLFA_bacteria' (R\u00b2 = 0.973 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17069243",
+   "held_out_r2": 0.949,
+   "held_out_rows": 61,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-618ef42e81b5",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "67970649e1e7fede.csv",
+   "doi": "10.5281/zenodo.17069243",
+   "form": "power law",
+   "params": [
+    -0.8091524784496141,
+    0.9738368008209477
+   ],
+   "seed": 1853101664,
+   "x": "PLFA_bacteria",
+   "y": "PLFA_Gminus"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Greenhouse gas emissions, soil chemistry, organic carbon pool and microbial biomass after ' (Zenodo, doi 10.5281/zenodo.17069243): 'PLFA_Gminus' follows a power law in 'PLFA_bacteria' (R\u00b2 = 0.954 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
