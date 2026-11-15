@@ -5470,3 +5470,18 @@
 - 2026-11-15 13:39 round 5014: Cournot duopoly
 - 2026-11-15 13:41 round 5015: insurance and risk
 - 2026-11-15 13:42 round 5016: auction with a reserve price
+- 2026-11-15 13:44 round 5017: two-body decay
+- 2026-11-15 13:45 round 5018: collision
+- 2026-11-15 13:48 round 5019: driven oscillator
+- 2026-11-15 13:49 round 5020: velocity addition
+- 2026-11-15 13:50 round 5021: Compton scattering
+- 2026-11-15 13:51 round 5022: Cournot duopoly
+- 2026-11-15 13:52 round 5023: insurance and risk
+- 2026-11-15 13:54 round 5024: auction with a reserve price
+- 2026-11-15 13:55 round 5025: two-body decay
+- 2026-11-15 13:57 round 5026: collision
+- 2026-11-15 14:00 round 5027: driven oscillator
+- 2026-11-15 14:01 round 5028: velocity addition
+- 2026-11-15 14:03 round 5029: Compton scattering
+- 2026-11-15 14:04 round 5030: Cournot duopoly
+- 2026-11-15 14:06 segment end: 5030 rounds, 5 discoveries, 2 known laws rediscovered
