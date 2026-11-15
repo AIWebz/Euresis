@@ -3762,3 +3762,4 @@
 - 2026-11-15 01:11 FINDING (confirmed on held-out rows): In 'Invasion away from roadsides was not driven by adaptation to grassland habitats in Dittric' (Zenodo, doi 10.5061/dryad.wdbrv15wz): 'DittrichiaLLL_mm_3' follows a power law in 'Dittrichia_biomass' (R² = 0.933 on the discovery half); held-out R² = 0.952 [emp-75259afb7619]
 - 2026-11-15 01:12 data feeds: 23256 datasets analysed so far, 3359 confirmed findings
 - 2026-11-15 02:01 data feeds: online
+- 2026-11-15 02:02 FINDING (confirmed on held-out rows): In 'Dimensionality and modularity of adaptive variation: Divergence in threespine stickleback ' (Zenodo, doi 10.5061/dryad.v15dv41xw): 'TL' is linear in 'SL_mm' (R² = 0.946 on the discovery half); held-out R² = 0.961 [emp-54d6df593afa]

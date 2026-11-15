@@ -3030193,5 +3030193,32 @@
   "statement": "Octal game 0.0161432 is completely solved: its Grundy values are periodic with pre-period 20 and period 32 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.v15dv41xw",
+   "held_out_r2": 0.9607,
+   "held_out_rows": 442,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-54d6df593afa",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "b5a39111629435fc.csv",
+   "doi": "10.5061/dryad.v15dv41xw",
+   "form": "linear",
+   "params": [
+    0.06675253047724874,
+    0.10576394030061244
+   ],
+   "seed": 3900881418,
+   "x": "SL_mm",
+   "y": "TL"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dimensionality and modularity of adaptive variation: Divergence in threespine stickleback ' (Zenodo, doi 10.5061/dryad.v15dv41xw): 'TL' is linear in 'SL_mm' (R\u00b2 = 0.946 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
