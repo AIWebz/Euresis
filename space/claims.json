@@ -3067921,5 +3067921,59 @@
   "statement": "Octal game 0.0236001 is completely solved: its Grundy values are periodic with pre-period 21 and period 8 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.13357030",
+   "held_out_r2": 0.9681,
+   "held_out_rows": 112,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-819e58de64ac",
+  "kind": "empirical",
+  "novelty": "KNOWN: astrometric uncertainties (Gaia-type errors all scale with source brightness) \u2014 not a discovery",
+  "payload": {
+   "dataset": "e10fe5787b71ac29.csv",
+   "doi": "10.5281/zenodo.13357030",
+   "form": "power law",
+   "params": [
+    0.09018444595309971,
+    0.9493999692580247
+   ],
+   "seed": 780977631,
+   "x": "center_f_err",
+   "y": "bandwidth_err"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Measurements and Scripts for \"Spectro-temporal analysis of ultra-fast radio bursts using p' (Zenodo, doi 10.5281/zenodo.13357030): 'bandwidth_err' follows a power law in 'center_f_err' (R\u00b2 = 0.973 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.13357030",
+   "held_out_r2": 0.8944,
+   "held_out_rows": 80,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e25aac38533d",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "67c109086127cfd4.csv",
+   "doi": "10.5281/zenodo.13357030",
+   "form": "linear",
+   "params": [
+    67.6189604615831,
+    1484.564789462497
+   ],
+   "seed": 3624229293,
+   "x": "drift (ms/MHz)",
+   "y": "nu_drift"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Measurements and Scripts for \"Spectro-temporal analysis of ultra-fast radio bursts using p' (Zenodo, doi 10.5281/zenodo.13357030): 'nu_drift' is linear in 'drift (ms/MHz)' (R\u00b2 = 0.959 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]

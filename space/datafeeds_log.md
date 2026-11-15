@@ -3844,3 +3844,4 @@
 - 2026-11-15 06:58 FINDING (confirmed on held-out rows): In 'Data from: Creating fen initiation conditions: a new approach for peatland reclamation in ' (Zenodo, doi 10.5061/dryad.534ng): 'HP' grows logarithmically in 'Weeds' (R² = 0.911 on the discovery half); held-out R² = 0.907 [emp-895014197f27]
 - 2026-11-15 06:58 data feeds: 23526 datasets analysed so far, 3429 confirmed findings
 - 2026-11-15 07:45 data feeds: online
+- 2026-11-15 07:46 FINDING (confirmed on held-out rows): In 'Measurements and Scripts for "Spectro-temporal analysis of ultra-fast radio bursts using p' (Zenodo, doi 10.5281/zenodo.13357030): 'nu_drift' is linear in 'drift (ms/MHz)' (R² = 0.959 on the discovery half); held-out R² = 0.894 [emp-e25aac38533d]
