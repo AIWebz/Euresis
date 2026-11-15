@@ -3870,3 +3870,5 @@
 - 2026-11-15 11:10 FINDING (confirmed on held-out rows): In 'Baltic Sea 2023 R/V Skagerak Cruise Data (CTD Stations; Radium; DSi)' (Zenodo, doi 10.5281/zenodo.15370408): 'Rho_kg_m3' is linear in 'Salinity' (R² = 0.981 on the discovery half); held-out R² = 0.973 [emp-e95229887344]
 - 2026-11-15 11:10 data feeds: 24476 datasets analysed so far, 3447 confirmed findings
 - 2026-11-15 11:35 data feeds: online
+- 2026-11-15 11:35 FINDING (confirmed on held-out rows): In 'Data for: Age structure eliminates the impact of coinfection on epidemic dynamics in a fre' (Zenodo, doi 10.5061/dryad.jh9w0vtbv): 'spores_ingested' follows a power law in 'Dose_per_ml' (R² = 0.920 on the discovery half); held-out R² = 0.918 [emp-be160b329cfc]
+- 2026-11-15 11:36 FINDING (confirmed on held-out rows): In 'Data for "Approximating the age of Eurasian otter (Lutra lutra) cubs from camera trap foot' (Zenodo, doi 10.5281/zenodo.20720318): 'Cub body length (Cb) in pixels' is linear in 'Cub tail length in pixels (Ct)' (R² = 0.933 on the discovery half); held-out R² = 0.937 [emp-3c3c133b42e0]

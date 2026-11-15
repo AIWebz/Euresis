@@ -3088783,5 +3088783,59 @@
   "statement": "[physics: collision] Sum of Square Roots of Mass Ratio and Coefficient of Restitution [model-proposed; physical meaning unverified] \u2265 1 \u00d7 relative velocity after collision divided by initial velocity of projectile [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (5.35e-29, 1))",
   "status": "proved",
   "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.jh9w0vtbv",
+   "held_out_r2": 0.9182,
+   "held_out_rows": 600,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-be160b329cfc",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "56b168db563d1dbb.csv",
+   "doi": "10.5061/dryad.jh9w0vtbv",
+   "form": "power law",
+   "params": [
+    2.690119566939077,
+    1.1082984905752733
+   ],
+   "seed": 1217163261,
+   "x": "Dose_per_ml",
+   "y": "spores_ingested"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Age structure eliminates the impact of coinfection on epidemic dynamics in a fre' (Zenodo, doi 10.5061/dryad.jh9w0vtbv): 'spores_ingested' follows a power law in 'Dose_per_ml' (R\u00b2 = 0.920 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20720318",
+   "held_out_r2": 0.9368,
+   "held_out_rows": 178,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3c3c133b42e0",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "932369505b58e3ca.csv",
+   "doi": "10.5281/zenodo.20720318",
+   "form": "linear",
+   "params": [
+    13.508034439375116,
+    1.8853949367237908
+   ],
+   "seed": 3866290756,
+   "x": "Cub tail length in pixels (Ct)",
+   "y": "Cub body length (Cb) in pixels"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for \"Approximating the age of Eurasian otter (Lutra lutra) cubs from camera trap foot' (Zenodo, doi 10.5281/zenodo.20720318): 'Cub body length (Cb) in pixels' is linear in 'Cub tail length in pixels (Ct)' (R\u00b2 = 0.933 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
