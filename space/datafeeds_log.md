@@ -3875,3 +3875,4 @@
 - 2026-11-15 11:36 FINDING (confirmed on held-out rows): In 'Data for "Approximating the age of Eurasian otter (Lutra lutra) cubs from camera trap foot' (Zenodo, doi 10.5281/zenodo.20720318): 'Tail length (mm)' follows a power law in 'Body length(mm)' (R² = 0.932 on the discovery half); held-out R² = 0.941 [emp-d12923e1c6ff]
 - 2026-11-15 11:37 FINDING (confirmed on held-out rows): In 'Data and code for Cowan et al. "Contrasting effects of maternal and paternal heat exposure' (Figshare, doi 10.6084/m9.figshare.32145010.v1): 'Total_offspring' is linear in 'Egg_count' (R² = 0.982 on the discovery half); held-out R² = 0.998 [emp-2cf2a7922c02]
 - 2026-11-15 11:37 data feeds: 24549 datasets analysed so far, 3451 confirmed findings
+- 2026-11-15 12:39 data feeds: online
