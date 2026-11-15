@@ -3801,3 +3801,4 @@
 - 2026-11-15 05:00 FINDING (confirmed on held-out rows): In 'Seamounts lists' (Figshare, doi 10.6084/m9.figshare.32320047.v2): 'area_new_km2' follows a power law in 'base_area_pixel' (R² = 0.918 on the discovery half); held-out R² = 0.919 [emp-c87bbbd014d3]
 - 2026-11-15 05:00 FINDING (confirmed on held-out rows): In 'Seamounts lists' (Figshare, doi 10.6084/m9.figshare.32320047.v2): 'area_new_km2' follows a power law in 'volume_new_km3' (R² = 0.954 on the discovery half); held-out R² = 0.955 [emp-5533f049fbbb]
 - 2026-11-15 05:00 data feeds: 23395 datasets analysed so far, 3391 confirmed findings
+- 2026-11-15 05:51 data feeds: online
