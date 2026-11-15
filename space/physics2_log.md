@@ -5598,3 +5598,5 @@
 - 2026-11-15 18:53 segment end: 5131 rounds, 5 discoveries, 2 known laws rediscovered
 - 2026-11-15 19:14 segment start (budget 30 min; model: Qwen3-8B; 5 discoveries so far)
 - 2026-11-15 19:14 round 5132: velocity addition
+- 2026-11-15 19:15 round 5133: Compton scattering
+- 2026-11-15 19:16 round 5134: Cournot duopoly
