@@ -3146234,5 +3146234,194 @@
   "statement": "Octal game 0.0505033 is completely solved: its Grundy values are periodic with pre-period 152 and period 154 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.2547d7wpb",
+   "held_out_r2": 0.8965,
+   "held_out_rows": 58,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-6e49aac593ca",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "cedb269609ef0aaa.csv",
+   "doi": "10.5061/dryad.2547d7wpb",
+   "form": "linear",
+   "params": [
+    -8.391130559358485,
+    0.8552289754407532
+   ],
+   "seed": 3349129820,
+   "x": "a_spared",
+   "y": "a_hab1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Evaluating spatially explicit sharing-sparing scenarios for multiple environmental outcome' (Zenodo, doi 10.5061/dryad.2547d7wpb): 'a_hab1' is linear in 'a_spared' (R\u00b2 = 0.921 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.4q50bp6",
+   "held_out_r2": 0.9875,
+   "held_out_rows": 912,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-65596a46a03a",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "779cae92e01f0153.csv",
+   "doi": "10.5061/dryad.4q50bp6",
+   "form": "linear",
+   "params": [
+    -5.506319920738447,
+    1.058055629173946
+   ],
+   "seed": 2465854350,
+   "x": "FINE_OM_TARE_WEIGHT_UG",
+   "y": "FINE_OM_GROSS_WEIGHT_UG"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: The trophic ecology of a desert river fish assemblage: influence of season and ' (Zenodo, doi 10.5061/dryad.4q50bp6): 'FINE_OM_GROSS_WEIGHT_UG' is linear in 'FINE_OM_TARE_WEIGHT_UG' (R\u00b2 = 0.986 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.4q50bp6",
+   "held_out_r2": 0.9897,
+   "held_out_rows": 1163,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-35f575f3833a",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "af48467f3e03c23d.csv",
+   "doi": "10.5061/dryad.4q50bp6",
+   "form": "power law",
+   "params": [
+    -0.008526243632490726,
+    1.0076396791278677
+   ],
+   "seed": 4044930765,
+   "x": "TARE_WEIGHT_UG",
+   "y": "GROSS_WEIGHT_UG"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: The trophic ecology of a desert river fish assemblage: influence of season and ' (Zenodo, doi 10.5061/dryad.4q50bp6): 'GROSS_WEIGHT_UG' follows a power law in 'TARE_WEIGHT_UG' (R\u00b2 = 0.987 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.85cb4",
+   "held_out_r2": 0.9472,
+   "held_out_rows": 60,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-18e92e1e9be6",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "83482281f3254bf3.csv",
+   "doi": "10.5061/dryad.85cb4",
+   "form": "power law",
+   "params": [
+    0.23360865149554008,
+    0.9131263869517303
+   ],
+   "seed": 2833782396,
+   "x": "Ptot",
+   "y": "Pi"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Decay of ecosystem differences and decoupling of tree community-soil environmen' (Zenodo, doi 10.5061/dryad.85cb4): 'Pi' follows a power law in 'Ptot' (R\u00b2 = 0.948 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17069243",
+   "held_out_r2": 0.984,
+   "held_out_rows": 855,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-de23cceab9de",
+  "kind": "empirical",
+  "novelty": "KNOWN: standard atmosphere / hydrostatics (temperature, pressure and altitude, T \u221d P^(R\u00b7\u0393/g)) \u2014 not a discovery",
+  "payload": {
+   "dataset": "2c4296d795b89b63.csv",
+   "doi": "10.5281/zenodo.17069243",
+   "form": "linear",
+   "params": [
+    0.04230210362347506,
+    1.01482429764985
+   ],
+   "seed": 1176702818,
+   "x": "start_temp",
+   "y": "end_temp"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Greenhouse gas emissions, soil chemistry, organic carbon pool and microbial biomass after ' (Zenodo, doi 10.5281/zenodo.17069243): 'end_temp' is linear in 'start_temp' (R\u00b2 = 0.986 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17069243",
+   "held_out_r2": 0.9471,
+   "held_out_rows": 61,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a1b0cb3112a0",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "67970649e1e7fede.csv",
+   "doi": "10.5281/zenodo.17069243",
+   "form": "exponential",
+   "params": [
+    4.511219948403343,
+    -0.6441690402228323
+   ],
+   "seed": 1853101664,
+   "x": "N",
+   "y": "C_N_ratio"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Greenhouse gas emissions, soil chemistry, organic carbon pool and microbial biomass after ' (Zenodo, doi 10.5281/zenodo.17069243): 'C_N_ratio' grows exponentially in 'N' (R\u00b2 = 0.936 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17069243",
+   "held_out_r2": 0.9664,
+   "held_out_rows": 61,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f59b165b9b76",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "67970649e1e7fede.csv",
+   "doi": "10.5281/zenodo.17069243",
+   "form": "linear",
+   "params": [
+    -0.32019614093548826,
+    0.45166816445103763
+   ],
+   "seed": 1853101664,
+   "x": "PLFA_bacteria",
+   "y": "PLFA_Gplus"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Greenhouse gas emissions, soil chemistry, organic carbon pool and microbial biomass after ' (Zenodo, doi 10.5281/zenodo.17069243): 'PLFA_Gplus' is linear in 'PLFA_bacteria' (R\u00b2 = 0.973 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
