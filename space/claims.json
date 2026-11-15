@@ -3053144,5 +3053144,81 @@
   "statement": "Octal game 0.0214201 is completely solved: its Grundy values are periodic with pre-period 121 and period 62 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.21717522",
+   "held_out_r2": 0.9561,
+   "held_out_rows": 63,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-42112283c2ae",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "fc873979301ed5b0.csv",
+   "doi": "10.5281/zenodo.21717522",
+   "form": "linear",
+   "params": [
+    0.7654649746843568,
+    -7.345222072678328
+   ],
+   "seed": 3409091904,
+   "x": "ONI",
+   "y": "SOI"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'ENSO Historical Dataset (1950\u20132026)' (Zenodo, doi 10.5281/zenodo.21717522): 'SOI' is linear in 'ONI' (R\u00b2 = 0.959 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.21717522",
+   "held_out_r2": 0.9744,
+   "held_out_rows": 63,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-6aac95e1ec0d",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "fc873979301ed5b0.csv",
+   "doi": "10.5281/zenodo.21717522",
+   "form": "linear",
+   "params": [
+    0.025849729752825134,
+    1.2261103633916552
+   ],
+   "seed": 3409091904,
+   "x": "ONI",
+   "y": "Subsurface_Anomaly"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'ENSO Historical Dataset (1950\u20132026)' (Zenodo, doi 10.5281/zenodo.21717522): 'Subsurface_Anomaly' is linear in 'ONI' (R\u00b2 = 0.978 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": null,
+  "id": "emp-dbb3e8ef6831",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "fc873979301ed5b0.csv",
+   "doi": "10.5281/zenodo.21717522",
+   "form": "linear",
+   "params": [
+    0.17665462299882997,
+    -0.16166397805975236
+   ],
+   "seed": 3409091904,
+   "x": "SOI",
+   "y": "Subsurface_Anomaly"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'ENSO Historical Dataset (1950\u20132026)' (Zenodo, doi 10.5281/zenodo.21717522): 'Subsurface_Anomaly' is linear in 'SOI' (R\u00b2 = 0.956 on the discovery half)",
+  "status": "candidate",
+  "verifier": null
  }
 ]

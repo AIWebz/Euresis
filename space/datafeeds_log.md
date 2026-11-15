@@ -3789,3 +3789,5 @@
 - 2026-11-15 03:56 data feeds: online
 - 2026-11-15 03:57 data feeds: 23342 datasets analysed so far, 3380 confirmed findings
 - 2026-11-15 04:58 data feeds: online
+- 2026-11-15 04:58 FINDING (confirmed on held-out rows): In 'ENSO Historical Dataset (1950–2026)' (Zenodo, doi 10.5281/zenodo.21717522): 'SOI' is linear in 'ONI' (R² = 0.959 on the discovery half); held-out R² = 0.956 [emp-42112283c2ae]
+- 2026-11-15 04:58 FINDING (confirmed on held-out rows): In 'ENSO Historical Dataset (1950–2026)' (Zenodo, doi 10.5281/zenodo.21717522): 'Subsurface_Anomaly' is linear in 'ONI' (R² = 0.978 on the discovery half); held-out R² = 0.974 [emp-6aac95e1ec0d]
