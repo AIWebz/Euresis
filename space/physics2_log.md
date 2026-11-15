@@ -5501,3 +5501,7 @@
 - 2026-11-15 15:13 round 5043: driven oscillator
 - 2026-11-15 15:14 round 5044: velocity addition
 - 2026-11-15 15:15 round 5045: Compton scattering
+- 2026-11-15 15:16 round 5046: Cournot duopoly
+- 2026-11-15 15:17 round 5047: insurance and risk
+- 2026-11-15 15:19 round 5048: auction with a reserve price
+- 2026-11-15 15:20 segment end: 5048 rounds, 5 discoveries, 2 known laws rediscovered
