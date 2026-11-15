@@ -4029,3 +4029,9 @@
 - 2026-11-15 21:11 data feeds: 25131 datasets analysed so far, 3583 confirmed findings
 - 2026-11-15 22:12 data feeds: online
 - 2026-11-15 22:13 FINDING (confirmed on held-out rows): In 'Control - Schizophrenia - Schizophrenia-Dementia' (Zenodo, doi 10.5281/zenodo.3901876): 'mmse' grows logarithmically in 'ace' (R² = 0.930 on the discovery half); held-out R² = 0.851 [emp-b7add302f149]
+- 2026-11-15 22:13 FINDING (confirmed on held-out rows): In 'Photograph measurements of broad whitefish (Coregonus nasus) body size' (Zenodo, doi 10.5281/zenodo.4677774): 'Measurement 3-D' is linear in 'Depth (3-E)' (R² = 0.901 on the discovery half); held-out R² = 0.900 [emp-3427aaf3e8fa]
+- 2026-11-15 22:13 FINDING (confirmed on held-out rows): In 'Data from: Nocturnality in Synapsids predates the origin of mammals by over 100 million ye' (Zenodo, doi 10.5061/dryad.1v8kj): 'geomm' follows a power law in 'ol' (R² = 0.925 on the discovery half); held-out R² = 0.941 [emp-7d1a957583f0]
+- 2026-11-15 22:13 FINDING (confirmed on held-out rows): In 'Data from: Nocturnality in Synapsids predates the origin of mammals by over 100 million ye' (Zenodo, doi 10.5061/dryad.1v8kj): 'int' is linear in 'ext' (R² = 0.955 on the discovery half); held-out R² = 0.941 [emp-dd36630723c3]
+- 2026-11-15 22:13 FINDING (confirmed on held-out rows): In 'Data from: Nocturnality in Synapsids predates the origin of mammals by over 100 million ye' (Zenodo, doi 10.5061/dryad.1v8kj): 'geomm' follows a power law in 'ext' (R² = 0.982 on the discovery half); held-out R² = 0.984 [emp-4ae333e3e05d]
+- 2026-11-15 22:14 FINDING (confirmed on held-out rows): In 'Data from: Nocturnality in Synapsids predates the origin of mammals by over 100 million ye' (Zenodo, doi 10.5061/dryad.1v8kj): 'geomm' is linear in 'int' (R² = 0.971 on the discovery half); held-out R² = 0.969 [emp-6410edd592b8]
+- 2026-11-15 22:14 data feeds: 25161 datasets analysed so far, 3589 confirmed findings
