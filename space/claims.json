@@ -3064944,5 +3064944,194 @@
   "statement": "Octal game 0.0231333 is completely solved: its Grundy values are periodic with pre-period 1 and period 9 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.10724811",
+   "held_out_r2": 0.9333,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-0e5dc9a21ca3",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "efc17bdb15e7134f.csv",
+   "doi": "10.5281/zenodo.10724811",
+   "form": "logarithmic",
+   "params": [
+    0.5531329203639685,
+    0.2430788084419805
+   ],
+   "seed": 3178650754,
+   "x": "WATERCONT20INA_FRAC",
+   "y": "WATERCONT8INB_FRAC"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'iRON_Soil_Moisture_Uncalibrated_2023' (Zenodo, doi 10.5281/zenodo.10724811): 'WATERCONT8INB_FRAC' grows logarithmically in 'WATERCONT20INA_FRAC' (R\u00b2 = 0.932 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22685339",
+   "held_out_r2": 0.9979,
+   "held_out_rows": 99,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ed67de14fe00",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "2ecf46edc378efb1.csv",
+   "doi": "10.5281/zenodo.22685339",
+   "form": "power law",
+   "params": [
+    0.4114843231935749,
+    1.308560791070202
+   ],
+   "seed": 470038047,
+   "x": "RG_DBH_%",
+   "y": "RG_BA_%"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Long-term effects of biochar addition on diameter growth in young established boreal Scots' (Zenodo, doi 10.5281/zenodo.22685339): 'RG_BA_%' follows a power law in 'RG_DBH_%' (R\u00b2 = 0.996 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.vc1s9f3",
+   "held_out_r2": 0.7666,
+   "held_out_rows": 106,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-207673b93702",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "45aba6d944db56e3.csv",
+   "doi": "10.5061/dryad.vc1s9f3",
+   "form": "linear",
+   "params": [
+    -0.909447526349711,
+    4.261233023052838
+   ],
+   "seed": 4066026569,
+   "x": "TOC_area",
+   "y": "TOC_mass"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Desiccation and rehydration of mosses greatly increases resource fluxes that al' (Zenodo, doi 10.5061/dryad.vc1s9f3): 'TOC_mass' is linear in 'TOC_area' (R\u00b2 = 0.911 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17495105",
+   "held_out_r2": 0.9395,
+   "held_out_rows": 40,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c10696ca13c7",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "33285172414ab588.csv",
+   "doi": "10.5281/zenodo.17495105",
+   "form": "linear",
+   "params": [
+    30974.379076325647,
+    12.06111524105159
+   ],
+   "seed": 3852813588,
+   "x": "Pi (ug)",
+   "y": "Po (ug)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Adaptable economies: Depth\u2010dependent plant carbon allocation acquires distinct phosphorus ' (Zenodo, doi 10.5281/zenodo.17495105): 'Po (ug)' is linear in 'Pi (ug)' (R\u00b2 = 0.917 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17495105",
+   "held_out_r2": 0.9162,
+   "held_out_rows": 120,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c5dfdc74f770",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "4703ea02780d5c9a.csv",
+   "doi": "10.5281/zenodo.17495105",
+   "form": "linear",
+   "params": [
+    -22.501690264646967,
+    0.07370622668467494
+   ],
+   "seed": 3977434145,
+   "x": "ugPo",
+   "y": "ug Pi extract"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Adaptable economies: Depth\u2010dependent plant carbon allocation acquires distinct phosphorus ' (Zenodo, doi 10.5281/zenodo.17495105): 'ug Pi extract' is linear in 'ugPo' (R\u00b2 = 0.927 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.534ng",
+   "held_out_r2": 0.9281,
+   "held_out_rows": 32,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-187c835112ca",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8d0b3c2f7764c73d.csv",
+   "doi": "10.5061/dryad.534ng",
+   "form": "linear",
+   "params": [
+    -5.520912797579909,
+    1.0593384190451136
+   ],
+   "seed": 4124168806,
+   "x": "Litter",
+   "y": "HP"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Creating fen initiation conditions: a new approach for peatland reclamation in ' (Zenodo, doi 10.5061/dryad.534ng): 'HP' is linear in 'Litter' (R\u00b2 = 0.941 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.534ng",
+   "held_out_r2": 0.9073,
+   "held_out_rows": 32,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-895014197f27",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8d0b3c2f7764c73d.csv",
+   "doi": "10.5061/dryad.534ng",
+   "form": "logarithmic",
+   "params": [
+    80.7424550609812,
+    -22.155839939631026
+   ],
+   "seed": 4124168806,
+   "x": "Weeds",
+   "y": "HP"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Creating fen initiation conditions: a new approach for peatland reclamation in ' (Zenodo, doi 10.5061/dryad.534ng): 'HP' grows logarithmically in 'Weeds' (R\u00b2 = 0.911 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
