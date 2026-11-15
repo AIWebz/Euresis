@@ -4028,3 +4028,4 @@
 - 2026-11-15 21:10 FINDING (confirmed on held-out rows): In 'Transferable neural operators to estimate sub-surface soil moisture datasets' (Zenodo, doi 10.5281/zenodo.16106763): 'EC3_50cm dS/m' follows a power law in 'RDP2_15cm' (R² = 0.916 on the discovery half); held-out R² = 0.915 [emp-4b372cce7a63]
 - 2026-11-15 21:11 data feeds: 25131 datasets analysed so far, 3583 confirmed findings
 - 2026-11-15 22:12 data feeds: online
+- 2026-11-15 22:13 FINDING (confirmed on held-out rows): In 'Control - Schizophrenia - Schizophrenia-Dementia' (Zenodo, doi 10.5281/zenodo.3901876): 'mmse' grows logarithmically in 'ace' (R² = 0.930 on the discovery half); held-out R² = 0.851 [emp-b7add302f149]

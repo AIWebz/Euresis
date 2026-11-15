@@ -3161557,10 +3161557,15 @@
   "verifier": "guy-smith-periodicity"
  },
  {
-  "evidence": null,
+  "evidence": {
+   "doi": "10.5281/zenodo.3901876",
+   "held_out_r2": 0.8508,
+   "held_out_rows": 35,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
   "id": "emp-b7add302f149",
   "kind": "empirical",
-  "novelty": "not checked",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
   "payload": {
    "dataset": "5b1f1d76f9b9befd.csv",
    "doi": "10.5281/zenodo.3901876",
@@ -3161575,7 +3161580,88 @@
   },
   "source": "datafeeds.py",
   "statement": "In 'Control - Schizophrenia - Schizophrenia-Dementia' (Zenodo, doi 10.5281/zenodo.3901876): 'mmse' grows logarithmically in 'ace' (R\u00b2 = 0.930 on the discovery half)",
-  "status": "candidate",
-  "verifier": null
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3901876",
+   "held_out_r2": 0.7861,
+   "held_out_rows": 35,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-65c88fed0586",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "5b1f1d76f9b9befd.csv",
+   "doi": "10.5281/zenodo.3901876",
+   "form": "linear",
+   "params": [
+    -2.4349860827355783,
+    0.13224850336233285
+   ],
+   "seed": 1028357731,
+   "x": "hvlt_palabras_de_rey_total_recall",
+   "y": "hvlt_delayed_recall"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Control - Schizophrenia - Schizophrenia-Dementia' (Zenodo, doi 10.5281/zenodo.3901876): 'hvlt_delayed_recall' is linear in 'hvlt_palabras_de_rey_total_recall' (R\u00b2 = 0.904 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.4677774",
+   "held_out_r2": 0.8399,
+   "held_out_rows": 141,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ff62787b7123",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "9babb069b28ea0f0.csv",
+   "doi": "10.5281/zenodo.4677774",
+   "form": "linear",
+   "params": [
+    2.0273321379350846,
+    0.956781908981788
+   ],
+   "seed": 4098011028,
+   "x": "Depth (3-E)",
+   "y": "Measurement 3-4"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Photograph measurements of broad whitefish (Coregonus nasus) body size' (Zenodo, doi 10.5281/zenodo.4677774): 'Measurement 3-4' is linear in 'Depth (3-E)' (R\u00b2 = 0.939 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.4677774",
+   "held_out_r2": 0.9002,
+   "held_out_rows": 141,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3427aaf3e8fa",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "9babb069b28ea0f0.csv",
+   "doi": "10.5281/zenodo.4677774",
+   "form": "linear",
+   "params": [
+    10.12078264005175,
+    0.9713815740727025
+   ],
+   "seed": 4098011028,
+   "x": "Depth (3-E)",
+   "y": "Measurement 3-D"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Photograph measurements of broad whitefish (Coregonus nasus) body size' (Zenodo, doi 10.5281/zenodo.4677774): 'Measurement 3-D' is linear in 'Depth (3-E)' (R\u00b2 = 0.901 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
