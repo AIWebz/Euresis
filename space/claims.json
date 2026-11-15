@@ -3053200,10 +3053200,15 @@
   "verifier": "held-out-replication"
  },
  {
-  "evidence": null,
+  "evidence": {
+   "doi": "10.5281/zenodo.21717522",
+   "held_out_r2": 0.9633,
+   "held_out_rows": 63,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
   "id": "emp-dbb3e8ef6831",
   "kind": "empirical",
-  "novelty": "not checked",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
   "payload": {
    "dataset": "fc873979301ed5b0.csv",
    "doi": "10.5281/zenodo.21717522",
@@ -3053218,7 +3053223,358 @@
   },
   "source": "datafeeds.py",
   "statement": "In 'ENSO Historical Dataset (1950\u20132026)' (Zenodo, doi 10.5281/zenodo.21717522): 'Subsurface_Anomaly' is linear in 'SOI' (R\u00b2 = 0.956 on the discovery half)",
-  "status": "candidate",
-  "verifier": null
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15513848",
+   "held_out_r2": 0.9499,
+   "held_out_rows": 40,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-04bdb5d933ca",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "27572e53832c61e3.csv",
+   "doi": "10.5281/zenodo.15513848",
+   "form": "linear",
+   "params": [
+    372.97444321666325,
+    -1.0822070881309944
+   ],
+   "seed": 4173801105,
+   "x": "Dissolved Oxygen (umol/kg)",
+   "y": "AOU (umol/kg)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Spatial Variability of \u03b413CDIC, hydrographic and biogeochemistry variables along the Brans' (Zenodo, doi 10.5281/zenodo.15513848): 'AOU (umol/kg)' is linear in 'Dissolved Oxygen (umol/kg)' (R\u00b2 = 0.914 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15513848",
+   "held_out_r2": 0.9804,
+   "held_out_rows": 40,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-00456a35dfc9",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "27572e53832c61e3.csv",
+   "doi": "10.5281/zenodo.15513848",
+   "form": "exponential",
+   "params": [
+    3.225569669726314,
+    0.004113092109779982
+   ],
+   "seed": 4173801105,
+   "x": "Dissolved Oxygen (umol/kg)",
+   "y": "Oxygen Saturation (%)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Spatial Variability of \u03b413CDIC, hydrographic and biogeochemistry variables along the Brans' (Zenodo, doi 10.5281/zenodo.15513848): 'Oxygen Saturation (%)' grows exponentially in 'Dissolved Oxygen (umol/kg)' (R\u00b2 = 0.965 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.18188705",
+   "held_out_r2": 0.0015,
+   "held_out_rows": 626,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-474c99d04baa",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "21c71b3db865a208.csv",
+   "doi": "10.5281/zenodo.18188705",
+   "form": "linear",
+   "params": [
+    3.580206823831984,
+    0.9942023182140175
+   ],
+   "seed": 440055672,
+   "x": "Bluegreen",
+   "y": "Total.conc."
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Phytoplankton microscopy-based biovolumes and chlorophyll a concentrations based on Fluoro' (Zenodo, doi 10.5281/zenodo.18188705): 'Total.conc.' is linear in 'Bluegreen' (R\u00b2 = 0.978 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.18188705",
+   "held_out_r2": 0.8756,
+   "held_out_rows": 398,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-99ad38dcbc19",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "11a06e24ae19710e.csv",
+   "doi": "10.5281/zenodo.18188705",
+   "form": "linear",
+   "params": [
+    3.5773268957385085,
+    2.0698052653322874
+   ],
+   "seed": 1007147620,
+   "x": "turbidity_ntu",
+   "y": "tp_ug_L"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Phytoplankton microscopy-based biovolumes and chlorophyll a concentrations based on Fluoro' (Zenodo, doi 10.5281/zenodo.18188705): 'tp_ug_L' is linear in 'turbidity_ntu' (R\u00b2 = 0.927 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.5259802",
+   "held_out_r2": 0.8885,
+   "held_out_rows": 38,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a2f337071651",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "85c73bfbbdbe7da4.csv",
+   "doi": "10.5281/zenodo.5259802",
+   "form": "linear",
+   "params": [
+    3.534732207768939,
+    2.4474230904524195
+   ],
+   "seed": 1863682804,
+   "x": "Zmean",
+   "y": "Zmax"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Patterns and variation of littoral habitat size among lakes' (Zenodo, doi 10.5281/zenodo.5259802): 'Zmax' is linear in 'Zmean' (R\u00b2 = 0.975 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.19678997",
+   "held_out_r2": 0.9178,
+   "held_out_rows": 4854,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-2c131856d923",
+  "kind": "empirical",
+  "novelty": "KNOWN: standard atmosphere / hydrostatics (temperature, pressure and altitude, T \u221d P^(R\u00b7\u0393/g)) \u2014 not a discovery",
+  "payload": {
+   "dataset": "e8e6c9d525870d34.csv",
+   "doi": "10.5281/zenodo.19678997",
+   "form": "linear",
+   "params": [
+    -4.857592779097052,
+    1.0701706547452097
+   ],
+   "seed": 1064512969,
+   "x": "Maximum air temperature (24 h)",
+   "y": "Minimum air temperature (24 h)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Sea Ice and Atmosphere-Ocean Forcing Dataset for Isfjorden, Svalbard (2000\u20132024)' (Zenodo, doi 10.5281/zenodo.19678997): 'Minimum air temperature (24 h)' is linear in 'Maximum air temperature (24 h)' (R\u00b2 = 0.920 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23475702",
+   "held_out_r2": -13.2023,
+   "held_out_rows": 305,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-2b444a8c179d",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "25b4900aea312f5a.csv",
+   "doi": "10.5281/zenodo.23475702",
+   "form": "linear",
+   "params": [
+    -0.00016970588430145796,
+    0.5273651620223291
+   ],
+   "seed": 547068955,
+   "x": "Diadinoxanthin",
+   "y": "Lutein_Zeaxanthin"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Carotenoid functional groups underpin ecological strategies  in phytoplankton (associated ' (Zenodo, doi 10.5281/zenodo.23475702): 'Lutein_Zeaxanthin' is linear in 'Diadinoxanthin' (R\u00b2 = 0.945 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23475702",
+   "held_out_r2": 0.9299,
+   "held_out_rows": 301,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-32cbdaf14261",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "47a2667365d6211b.csv",
+   "doi": "10.5281/zenodo.23475702",
+   "form": "power law",
+   "params": [
+    -0.8748408654082338,
+    0.9860288904096731
+   ],
+   "seed": 1064766401,
+   "x": "total.pfd",
+   "y": "total.PUR"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Carotenoid functional groups underpin ecological strategies  in phytoplankton (associated ' (Zenodo, doi 10.5281/zenodo.23475702): 'total.PUR' follows a power law in 'total.pfd' (R\u00b2 = 0.937 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.6084/m9.figshare.32320047.v2",
+   "held_out_r2": 0.9489,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a8ac8ca0a9d8",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "9e5866ec432b7355.csv",
+   "doi": "10.6084/m9.figshare.32320047.v2",
+   "form": "power law",
+   "params": [
+    2.3863747810173086,
+    0.7272221200953326
+   ],
+   "seed": 2524475289,
+   "x": "volume_km3",
+   "y": "area_new_km2"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Seamounts lists' (Figshare, doi 10.6084/m9.figshare.32320047.v2): 'area_new_km2' follows a power law in 'volume_km3' (R\u00b2 = 0.948 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.6084/m9.figshare.32320047.v2",
+   "held_out_r2": 0.9193,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c87bbbd014d3",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "9e5866ec432b7355.csv",
+   "doi": "10.6084/m9.figshare.32320047.v2",
+   "form": "power law",
+   "params": [
+    -1.2419860755652925,
+    0.9328365046851299
+   ],
+   "seed": 2524475289,
+   "x": "base_area_pixel",
+   "y": "area_new_km2"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Seamounts lists' (Figshare, doi 10.6084/m9.figshare.32320047.v2): 'area_new_km2' follows a power law in 'base_area_pixel' (R\u00b2 = 0.918 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.6084/m9.figshare.32320047.v2",
+   "held_out_r2": 0.9547,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5533f049fbbb",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "9e5866ec432b7355.csv",
+   "doi": "10.6084/m9.figshare.32320047.v2",
+   "form": "power law",
+   "params": [
+    2.301673441726808,
+    0.7355100082335446
+   ],
+   "seed": 2524475289,
+   "x": "volume_new_km3",
+   "y": "area_new_km2"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Seamounts lists' (Figshare, doi 10.6084/m9.figshare.32320047.v2): 'area_new_km2' follows a power law in 'volume_new_km3' (R\u00b2 = 0.954 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.6084/m9.figshare.31596730.v5",
+   "held_out_r2": -14.7217,
+   "held_out_rows": 270,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-7c2bfd90b973",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "cd4a2779d2a86fc6.csv",
+   "doi": "10.6084/m9.figshare.31596730.v5",
+   "form": "linear",
+   "params": [
+    -3.796137639898183e-12,
+    0.8930943411806713
+   ],
+   "seed": 1427665781,
+   "x": "2.40E-09",
+   "y": "2.39E-09.1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset for: TWP drives a slowdown in Antarctic mass loss' (Figshare, doi 10.6084/m9.figshare.31596730.v5): '2.39E-09.1' is linear in '2.40E-09' (R\u00b2 = 0.909 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.6084/m9.figshare.31596730.v5",
+   "held_out_r2": -4.186,
+   "held_out_rows": 270,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-08ccc2d190dc",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "cd4a2779d2a86fc6.csv",
+   "doi": "10.6084/m9.figshare.31596730.v5",
+   "form": "linear",
+   "params": [
+    -2.114472101548042e-12,
+    0.8998777274427938
+   ],
+   "seed": 1427665781,
+   "x": "2.40E-09",
+   "y": "2.39E-09.2"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset for: TWP drives a slowdown in Antarctic mass loss' (Figshare, doi 10.6084/m9.figshare.31596730.v5): '2.39E-09.2' is linear in '2.40E-09' (R\u00b2 = 0.918 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
  }
 ]
