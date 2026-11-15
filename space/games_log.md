@@ -30221,3 +30221,11 @@
 - 2026-11-15 10:42 SOLVED (proved): 0.0312075 — pre-period 315, period 412  [gam-fe0437f9122a]
 - 2026-11-15 10:42 SOLVED (proved): 0.0312076 — pre-period 315, period 412  [gam-6a653bd78efb]
 - 2026-11-15 10:43 SOLVED (proved): 0.0312077 — pre-period 315, period 412  [gam-2af7719cf9b8]
+- 2026-11-15 10:45 SOLVED (proved): 0.0312164 — pre-period 315, period 412  [gam-ef9d4ac6538f]
+- 2026-11-15 10:45 SOLVED (proved): 0.0312165 — pre-period 315, period 412  [gam-516a4ae909d2]
+- 2026-11-15 10:45 SOLVED (proved): 0.0312166 — pre-period 315, period 412  [gam-588f896200dc]
+- 2026-11-15 10:45 SOLVED (proved): 0.0312167 — pre-period 315, period 412  [gam-26ba9366c024]
+- 2026-11-15 10:45 SOLVED (proved): 0.0312174 — pre-period 315, period 412  [gam-49f048dd28f3]
+- 2026-11-15 10:45 SOLVED (proved): 0.0312175 — pre-period 315, period 412  [gam-21a24be89908]
+- 2026-11-15 10:45 SOLVED (proved): 0.0312176 — pre-period 315, period 412  [gam-c0e6b8755174]
+- 2026-11-15 10:45 games: 71966 octal games solved, 280784 unresolved up to n = 3000
