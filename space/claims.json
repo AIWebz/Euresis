@@ -3073654,5 +3073654,32 @@
   "statement": "Octal game 0.0302011 is completely solved: its Grundy values are periodic with pre-period 8 and period 6 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11122222",
+   "held_out_r2": 0.9938,
+   "held_out_rows": 1219,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-12cea4e1b6a5",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "9e5973a25241c022.csv",
+   "doi": "10.5281/zenodo.11122222",
+   "form": "power law",
+   "params": [
+    0.8712532435065508,
+    0.8541933574676617
+   ],
+   "seed": 3151686727,
+   "x": "sensit_perc",
+   "y": "f1_score_perc"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'kMetaShot Benchmark Data' (Zenodo, doi 10.5281/zenodo.11122222): 'f1_score_perc' follows a power law in 'sensit_perc' (R\u00b2 = 0.994 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]

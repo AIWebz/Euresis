@@ -3849,3 +3849,4 @@
 - 2026-11-15 07:47 FINDING (confirmed on held-out rows): In 'Exploring Warming Effects on lower food-web dynamics in the plankton of the River Elbe Est' (Zenodo, doi 10.5281/zenodo.18348948): 'chlc' is linear in 'chla' (R² = 0.918 on the discovery half); held-out R² = 0.955 [emp-8a787ea90ce2]
 - 2026-11-15 07:47 FINDING (confirmed on held-out rows): In 'Biometry data to reveal geographic variation in Bramblings Fringilla montifringilla' (Zenodo, doi 10.5281/zenodo.5077897): 'Ala' grows logarithmically in 'F3' (R² = 0.904 on the discovery half); held-out R² = 0.889 [emp-2ac1a3af6a98]
 - 2026-11-15 07:47 data feeds: 23651 datasets analysed so far, 3433 confirmed findings
+- 2026-11-15 08:49 data feeds: online
