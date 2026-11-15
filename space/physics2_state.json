@@ -69491,6 +69491,26 @@
    "family": "driven oscillator",
    "expr": "sqrt(1 + (2*z*r)**2)/sqrt((1 - r**2)**2 + (2*z*r)**2)",
    "why": "affine combination of known quantities (amplitude / static deflection, transmissibility)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 + u)/(1 - u)) * sqrt((1 + v)/(1 - v)) / sqrt((1 + (u + v)/(1 + u*v)) / (1 - (u + v)/(1 + u*v",
+   "why": "affine combination of known quantities (composed speed / c)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt(1 - u**2) * sqrt(1 - v**2) + (u + v) * sqrt(-(u + v)**2/(u*v + 1)**2 + 1)/(u*v + 1)",
+   "why": "affine combination of known quantities (composed speed / c, Relativistic Energy-Momentum Invariant [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 - u**2)*(1 - v**2) + (u + v)**2/(u*v + 1)**2)",
+   "why": "affine combination of known quantities (composed speed / c, Relativistic Beta Addition [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 - u**2)*(1 - v**2))/(-u*v + 1)",
+   "why": "affine combination of known quantities (composed speed / c, Relativistic velocity parameter [model-proposed; physical meaning unverified])"
   }
  ],
  "tried": [
@@ -85237,7 +85257,7 @@
    "k": "2"
   }
  ],
- "rounds": 4963,
+ "rounds": 4964,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",
