@@ -3965,3 +3965,4 @@
 - 2026-11-15 14:48 FINDING (confirmed on held-out rows): In 'Data for "International reliance on Brazil's water through soy and beef supply chains"' (Zenodo, doi 10.5281/zenodo.17392718): 'harvest_ha' is linear in 'tonnes' (R² = 0.977 on the discovery half); held-out R² = 0.985 [emp-4e9886a0232b]
 - 2026-11-15 14:48 FINDING (confirmed on held-out rows): In 'Data for "International reliance on Brazil's water through soy and beef supply chains"' (Zenodo, doi 10.5281/zenodo.17392718): 'soy_ghg_g_5y_per_tonne' is linear in 'soy_def_5y_tot_per_tonne' (R² = 0.954 on the discovery half); held-out R² = 0.863 [emp-833f7debc598]
 - 2026-11-15 14:49 data feeds: 24832 datasets analysed so far, 3535 confirmed findings
+- 2026-11-15 15:24 data feeds: online
