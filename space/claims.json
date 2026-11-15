@@ -3168561,5 +3168561,26 @@
   "statement": "[physics: collision] Ratio of Kinetic Energy of Projectile to Kinetic Energy of System After Collisio [model-proposed; physical meaning unverified] \u2265 20/21 \u00d7 Fraction of kinetic energy retained by projectile relative to initial kinetic en [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
   "status": "proved",
   "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": null,
+  "id": "phy-d162c11174a5",
+  "kind": "physics-relation",
+  "novelty": "not checked",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "(-e**2*m**2/(m + 1)**2 - e**2*m/(m + 1) - (1 - e**2)/(m + 1) + 2)/(e**2*m**2/(m + 1)**2 + e**2*m/(m + 1) + (1 - e**2)/(m + 1)) >= 20/21*(e**2*m**2/(m + 1)**2 + e**2*m/(m + 1) - 2*m*(1 - e**2)/(m + 1) + 1)",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 5218",
+  "statement": "[physics: collision] Ratio of Kinetic Energy of Projectile to Kinetic Energy of System After Collisio [model-proposed; physical meaning unverified] \u2265 20/21 \u00d7 Fraction of kinetic energy transferred to the target relative to initial kinetic [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "candidate",
+  "verifier": null
  }
 ]
