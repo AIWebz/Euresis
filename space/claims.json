@@ -3121329,5 +3121329,248 @@
   "statement": "Octal game 0.0462221 is completely solved: its Grundy values are periodic with pre-period 214 and period 36 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.12561790",
+   "held_out_r2": 0.7389,
+   "held_out_rows": 57,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-1681ccd9eea4",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "6e10dd625b2ce2ab.csv",
+   "doi": "10.5281/zenodo.12561790",
+   "form": "logarithmic",
+   "params": [
+    -1578.9375481880545,
+    311.4031222425062
+   ],
+   "seed": 2924799761,
+   "x": "Tres_init",
+   "y": "ROI"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Techno-economics of Geothermal Power in the Contiguous United States Under Baseload and Fl' (Zenodo, doi 10.5281/zenodo.12561790): 'ROI' grows logarithmically in 'Tres_init' (R\u00b2 = 0.901 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.12561790",
+   "held_out_r2": 0.8938,
+   "held_out_rows": 57,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-cc5379e9fe2f",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "6e10dd625b2ce2ab.csv",
+   "doi": "10.5281/zenodo.12561790",
+   "form": "logarithmic",
+   "params": [
+    -2877.0112676762096,
+    574.0175008103706
+   ],
+   "seed": 2924799761,
+   "x": "Tres_init",
+   "y": "PPA_ROI"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Techno-economics of Geothermal Power in the Contiguous United States Under Baseload and Fl' (Zenodo, doi 10.5281/zenodo.12561790): 'PPA_ROI' grows logarithmically in 'Tres_init' (R\u00b2 = 0.909 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.12561790",
+   "held_out_r2": 0.6769,
+   "held_out_rows": 57,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4789ca9e1428",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "6e10dd625b2ce2ab.csv",
+   "doi": "10.5281/zenodo.12561790",
+   "form": "linear",
+   "params": [
+    -23.28624395369786,
+    11.983714307923591
+   ],
+   "seed": 2924799761,
+   "x": "V_res",
+   "y": "powerplant_capacity"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Techno-economics of Geothermal Power in the Contiguous United States Under Baseload and Fl' (Zenodo, doi 10.5281/zenodo.12561790): 'powerplant_capacity' is linear in 'V_res' (R\u00b2 = 0.964 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.12561790",
+   "held_out_r2": 0.9145,
+   "held_out_rows": 57,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-1d23a839899f",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "6e10dd625b2ce2ab.csv",
+   "doi": "10.5281/zenodo.12561790",
+   "form": "logarithmic",
+   "params": [
+    -183.8631171192064,
+    94.20288667619056
+   ],
+   "seed": 2924799761,
+   "x": "powerplant_capacity",
+   "y": "PPA_ROI"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Techno-economics of Geothermal Power in the Contiguous United States Under Baseload and Fl' (Zenodo, doi 10.5281/zenodo.12561790): 'PPA_ROI' grows logarithmically in 'powerplant_capacity' (R\u00b2 = 0.917 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.z8w9ghxn9",
+   "held_out_r2": 0.7387,
+   "held_out_rows": 58,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-322d9540cc3d",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "a932c045b7d06e12.csv",
+   "doi": "10.5061/dryad.z8w9ghxn9",
+   "form": "power law",
+   "params": [
+    6.077521280602915,
+    -0.9936274740108547
+   ],
+   "seed": 2979867496,
+   "x": "RN",
+   "y": "C/N"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Diverse root strategies associated with fast to slow resource acquisition vary among plant' (Zenodo, doi 10.5061/dryad.z8w9ghxn9): 'C/N' follows a power law in 'RN' (R\u00b2 = 0.919 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17921588",
+   "held_out_r2": 0.9949,
+   "held_out_rows": 1880,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5560e99d1ae0",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "e34650afe3c52dac.csv",
+   "doi": "10.5281/zenodo.17921588",
+   "form": "power law",
+   "params": [
+    -0.45804249068903224,
+    0.9617708375198555
+   ],
+   "seed": 4105647234,
+   "x": "Infrastructure_Index",
+   "y": "Score_PCA"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Global Transport and Logistics Infrastructure Index (2007-2022): Composite Indicator Data' (Zenodo, doi 10.5281/zenodo.17921588): 'Score_PCA' follows a power law in 'Infrastructure_Index' (R\u00b2 = 0.996 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17921588",
+   "held_out_r2": 0.9146,
+   "held_out_rows": 1880,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-7d9ad2070a03",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "e34650afe3c52dac.csv",
+   "doi": "10.5281/zenodo.17921588",
+   "form": "exponential",
+   "params": [
+    8.486004368015504,
+    -10.718220492982143
+   ],
+   "seed": 4105647234,
+   "x": "Infrastructure_Index",
+   "y": "Rank_Equal"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Global Transport and Logistics Infrastructure Index (2007-2022): Composite Indicator Data' (Zenodo, doi 10.5281/zenodo.17921588): 'Rank_Equal' grows exponentially in 'Infrastructure_Index' (R\u00b2 = 0.918 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17921588",
+   "held_out_r2": 0.9055,
+   "held_out_rows": 1880,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3397da33f1e8",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "e34650afe3c52dac.csv",
+   "doi": "10.5281/zenodo.17921588",
+   "form": "exponential",
+   "params": [
+    8.486673214412505,
+    -10.771901912304887
+   ],
+   "seed": 4105647234,
+   "x": "Infrastructure_Index",
+   "y": "Rank_PCA"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Global Transport and Logistics Infrastructure Index (2007-2022): Composite Indicator Data' (Zenodo, doi 10.5281/zenodo.17921588): 'Rank_PCA' grows exponentially in 'Infrastructure_Index' (R\u00b2 = 0.910 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17921588",
+   "held_out_r2": 0.8908,
+   "held_out_rows": 1880,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9522dfba8e6b",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "e34650afe3c52dac.csv",
+   "doi": "10.5281/zenodo.17921588",
+   "form": "exponential",
+   "params": [
+    8.223342215905426,
+    -11.86606510151582
+   ],
+   "seed": 4105647234,
+   "x": "Score_PCA",
+   "y": "Rank_PCA"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Global Transport and Logistics Infrastructure Index (2007-2022): Composite Indicator Data' (Zenodo, doi 10.5281/zenodo.17921588): 'Rank_PCA' grows exponentially in 'Score_PCA' (R\u00b2 = 0.903 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
