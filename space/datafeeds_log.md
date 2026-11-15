@@ -3756,3 +3756,4 @@
 - 2026-11-15 00:08 FINDING (confirmed on held-out rows): In 'Plant functional traits differ in adaptability and are predicted to be differentially affe' (Zenodo, doi 10.5061/dryad.nk98sf7pv): 'Fam' is linear in 'UniqueID' (R² = 0.974 on the discovery half); held-out R² = 0.975 [emp-ddef034acee6]
 - 2026-11-15 00:09 data feeds: 23210 datasets analysed so far, 3355 confirmed findings
 - 2026-11-15 01:10 data feeds: online
+- 2026-11-15 01:11 FINDING (confirmed on held-out rows): In 'Population demographic history and evolutionary rescue: Influence of a bottleneck event' (Zenodo, doi 10.5061/dryad.xsj3tx9mx): 'HC_Total_Adults' is linear in 'MC_Total_Adults' (R² = 0.985 on the discovery half); held-out R² = 0.974 [emp-5a07e633ed02]
