@@ -5265,3 +5265,5 @@
 - 2026-11-15 04:26 round 4829: Compton scattering
 - 2026-11-15 04:27 round 4830: Cournot duopoly
 - 2026-11-15 04:27 segment end: 4830 rounds, 5 discoveries, 2 known laws rediscovered
+- 2026-11-15 05:01 segment start (budget 30 min; model: Qwen3-8B; 5 discoveries so far)
+- 2026-11-15 05:01 round 4831: insurance and risk
