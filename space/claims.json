@@ -3073664,7 +3073664,7 @@
   },
   "id": "emp-12cea4e1b6a5",
   "kind": "empirical",
-  "novelty": "not checked",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
   "payload": {
    "dataset": "9e5973a25241c022.csv",
    "doi": "10.5281/zenodo.11122222",
@@ -3073679,6 +3073679,33 @@
   },
   "source": "datafeeds.py",
   "statement": "In 'kMetaShot Benchmark Data' (Zenodo, doi 10.5281/zenodo.11122222): 'f1_score_perc' follows a power law in 'sensit_perc' (R\u00b2 = 0.994 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11122222",
+   "held_out_r2": 0.9904,
+   "held_out_rows": 1219,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ff2e03035d30",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "9e5973a25241c022.csv",
+   "doi": "10.5281/zenodo.11122222",
+   "form": "logarithmic",
+   "params": [
+    -602.3190812188794,
+    154.65840216652566
+   ],
+   "seed": 3151686727,
+   "x": "ba_perc",
+   "y": "f1_score_perc"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'kMetaShot Benchmark Data' (Zenodo, doi 10.5281/zenodo.11122222): 'f1_score_perc' grows logarithmically in 'ba_perc' (R\u00b2 = 0.991 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
  }

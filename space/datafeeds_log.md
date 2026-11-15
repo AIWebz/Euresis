@@ -3850,3 +3850,5 @@
 - 2026-11-15 07:47 FINDING (confirmed on held-out rows): In 'Biometry data to reveal geographic variation in Bramblings Fringilla montifringilla' (Zenodo, doi 10.5281/zenodo.5077897): 'Ala' grows logarithmically in 'F3' (R² = 0.904 on the discovery half); held-out R² = 0.889 [emp-2ac1a3af6a98]
 - 2026-11-15 07:47 data feeds: 23651 datasets analysed so far, 3433 confirmed findings
 - 2026-11-15 08:49 data feeds: online
+- 2026-11-15 08:49 FINDING (confirmed on held-out rows): In 'kMetaShot Benchmark Data' (Zenodo, doi 10.5281/zenodo.11122222): 'f1_score_perc' follows a power law in 'sensit_perc' (R² = 0.994 on the discovery half); held-out R² = 0.994 [emp-12cea4e1b6a5]
+- 2026-11-15 08:49 FINDING (confirmed on held-out rows): In 'kMetaShot Benchmark Data' (Zenodo, doi 10.5281/zenodo.11122222): 'f1_score_perc' grows logarithmically in 'ba_perc' (R² = 0.991 on the discovery half); held-out R² = 0.990 [emp-ff2e03035d30]
