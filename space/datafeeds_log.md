@@ -3845,3 +3845,7 @@
 - 2026-11-15 06:58 data feeds: 23526 datasets analysed so far, 3429 confirmed findings
 - 2026-11-15 07:45 data feeds: online
 - 2026-11-15 07:46 FINDING (confirmed on held-out rows): In 'Measurements and Scripts for "Spectro-temporal analysis of ultra-fast radio bursts using p' (Zenodo, doi 10.5281/zenodo.13357030): 'nu_drift' is linear in 'drift (ms/MHz)' (R² = 0.959 on the discovery half); held-out R² = 0.894 [emp-e25aac38533d]
+- 2026-11-15 07:47 FINDING (confirmed on held-out rows): In 'Exploring Warming Effects on lower food-web dynamics in the plankton of the River Elbe Est' (Zenodo, doi 10.5281/zenodo.18348948): 'o2_mg' follows a power law in 'o2_conc' (R² = 0.986 on the discovery half); held-out R² = 0.980 [emp-f28381609678]
+- 2026-11-15 07:47 FINDING (confirmed on held-out rows): In 'Exploring Warming Effects on lower food-web dynamics in the plankton of the River Elbe Est' (Zenodo, doi 10.5281/zenodo.18348948): 'chlc' is linear in 'chla' (R² = 0.918 on the discovery half); held-out R² = 0.955 [emp-8a787ea90ce2]
+- 2026-11-15 07:47 FINDING (confirmed on held-out rows): In 'Biometry data to reveal geographic variation in Bramblings Fringilla montifringilla' (Zenodo, doi 10.5281/zenodo.5077897): 'Ala' grows logarithmically in 'F3' (R² = 0.904 on the discovery half); held-out R² = 0.889 [emp-2ac1a3af6a98]
+- 2026-11-15 07:47 data feeds: 23651 datasets analysed so far, 3433 confirmed findings
