@@ -3030895,5 +3030895,194 @@
   "statement": "In 'Supplementary material for \"Automatic Identification of Machine Learning-Specific Code Sme' (Zenodo, doi 10.5281/zenodo.15793835): ' original_forks_count' is linear in ' original_stars_count' (R\u00b2 = 0.949 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-cf48ff97f7ef",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "claim": "c1/3 + c2/3 + 1/3 >= 128/17*((-2*c1/3 + c2/3 - (1 - c1)**2/4 + 1/3)**2 + (c1/3 - 2*c2/3 - (1 - c2)**2/4 + 1/3)**2)",
+   "symbols": [
+    "c1",
+    "c2"
+   ]
+  },
+  "source": "physics_discover2 round 4782",
+  "statement": "[economics: Cournot duopoly] market price \u2265 128/17 \u00d7 Cournot Equilibrium Deviation Ratio [model-proposed; physical meaning unverified]   on c1 < 1/2, c2 < 1/2 (tight only at the edge of the domain, near (3.62e-16, 0.5))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-ba9ab162ff6b",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "claim": "(-c1 - c2 + 2)**2/18 >= 32/17*((-2*c1/3 + c2/3 - (1 - c1)**2/4 + 1/3)**2 + (c1/3 - 2*c2/3 - (1 - c2)**2/4 + 1/3)**2)",
+   "symbols": [
+    "c1",
+    "c2"
+   ]
+  },
+  "source": "physics_discover2 round 4782",
+  "statement": "[economics: Cournot duopoly] consumer surplus \u2265 32/17 \u00d7 Cournot Equilibrium Deviation Ratio [model-proposed; physical meaning unverified]   on c1 < 1/2, c2 < 1/2 (tight only at the edge of the domain, near (3.74e-16, 0.5))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-5a995c1dbfef",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "claim": "(-2*c1 + c2 + 1)**2/9 + (c1 - 2*c2 + 1)**2/9 >= 64/25*((-2*c1/3 + c2/3 - (1 - c1)**2/4 + 1/3)**2 + (c1/3 - 2*c2/3 - (1 - c2)**2/4 + 1/3)**2)",
+   "symbols": [
+    "c1",
+    "c2"
+   ]
+  },
+  "source": "physics_discover2 round 4782",
+  "statement": "[economics: Cournot duopoly] total industry profit \u2265 64/25 \u00d7 Cournot Equilibrium Deviation Ratio [model-proposed; physical meaning unverified]   on c1 < 1/2, c2 < 1/2 (tight only at the edge of the domain, near (0.5, 0.5))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-1e838ab02e6f",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'consumer surplus'",
+  "payload": {
+   "assumptions": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "claim": "(1 - c1)**2/4 >= 16/17*((-2*c1/3 + c2/3 - (1 - c1)**2/4 + 1/3)**2 + (c1/3 - 2*c2/3 - (1 - c2)**2/4 + 1/3)**2)",
+   "symbols": [
+    "c1",
+    "c2"
+   ]
+  },
+  "source": "physics_discover2 round 4782",
+  "statement": "[economics: Cournot duopoly] firm 1's profit as a monopolist \u2265 16/17 \u00d7 Cournot Equilibrium Deviation Ratio [model-proposed; physical meaning unverified]   on c1 < 1/2, c2 < 1/2 (tight only at the edge of the domain, near (0.5, 8.66e-16))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-f0e2da04c2ab",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'market price'",
+  "payload": {
+   "assumptions": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "claim": "(c1/3 + c2/3 + 1/3)/c2 >= 256/17*((-2*c1/3 + c2/3 - (1 - c1)**2/4 + 1/3)**2 + (c1/3 - 2*c2/3 - (1 - c2)**2/4 + 1/3)**2)",
+   "symbols": [
+    "c1",
+    "c2"
+   ]
+  },
+  "source": "physics_discover2 round 4782",
+  "statement": "[economics: Cournot duopoly] Price to Marginal Cost Ratio for Firm 2 [model-proposed; physical meaning unverified] \u2265 256/17 \u00d7 Cournot Equilibrium Deviation Ratio [model-proposed; physical meaning unverified]   on c1 < 1/2, c2 < 1/2 (tight only at the edge of the domain, near (3.2e-16, 0.5))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-8b8e42f1aa5e",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'total industry profit'",
+  "payload": {
+   "assumptions": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "claim": "(-2*c1 + c2 + 1)**2/9 + (-c1 - c2 + 1)**2/18 + (c1 - 2*c2 + 1)**2/9 >= 64/25*((-2*c1/3 + c2/3 - (1 - c1)**2/4 + 1/3)**2 + (c1/3 - 2*c2/3 - (1 - c2)**2/4 + 1/3)**2)",
+   "symbols": [
+    "c1",
+    "c2"
+   ]
+  },
+  "source": "physics_discover2 round 4782",
+  "statement": "[economics: Cournot duopoly] Total Welfare Index [model-proposed; physical meaning unverified] \u2265 64/25 \u00d7 Cournot Equilibrium Deviation Ratio [model-proposed; physical meaning unverified]   on c1 < 1/2, c2 < 1/2 (tight only at the edge of the domain, near (0.5, 0.5))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-860084cba199",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "claim": "(-2*c1/3 + c2/3 - (1 - c1)**2/4 + 1/3)**2 + (c1/3 - 2*c2/3 - (1 - c2)**2/4 + 1/3)**2 >= 1/24*(-2*c1/3 + c2/3 + 1/3)",
+   "symbols": [
+    "c1",
+    "c2"
+   ]
+  },
+  "source": "physics_discover2 round 4782",
+  "statement": "[economics: Cournot duopoly] Cournot Equilibrium Deviation Ratio [model-proposed; physical meaning unverified] \u2265 1/24 \u00d7 output of firm 1   on c1 < 1/2, c2 < 1/2 (tight only at the edge of the domain, near (2.22e-14, 1.32e-13))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]
