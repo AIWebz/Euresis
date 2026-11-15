@@ -4014,3 +4014,4 @@
 - 2026-11-15 20:20 FINDING (confirmed on held-out rows): In 'Data for "The Functional Diversity of Ungauged Catchments: A global Hydrological Synthesis' (Figshare, doi 10.6084/m9.figshare.30174601.v1): 'Jul' is linear in 'Feb' (R² = 0.934 on the discovery half); held-out R² = 0.929 [emp-db4bfe86d45e]
 - 2026-11-15 20:20 FINDING (confirmed on held-out rows): In 'Data for "The Functional Diversity of Ungauged Catchments: A global Hydrological Synthesis' (Figshare, doi 10.6084/m9.figshare.30174601.v1): 'Sep' is linear in 'Aug' (R² = 0.917 on the discovery half); held-out R² = 0.913 [emp-de5ef861551a]
 - 2026-11-15 20:20 data feeds: 25077 datasets analysed so far, 3572 confirmed findings
+- 2026-11-15 21:08 data feeds: online
