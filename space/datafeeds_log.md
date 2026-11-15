@@ -3990,3 +3990,5 @@
 - 2026-11-15 17:20 FINDING (confirmed on held-out rows): In 'Global Transport and Logistics Infrastructure Index (2007-2022): Composite Indicator Data' (Zenodo, doi 10.5281/zenodo.17921588): 'Rank_PCA' grows exponentially in 'Infrastructure_Index' (R² = 0.910 on the discovery half); held-out R² = 0.905 [emp-3397da33f1e8]
 - 2026-11-15 17:20 FINDING (confirmed on held-out rows): In 'Global Transport and Logistics Infrastructure Index (2007-2022): Composite Indicator Data' (Zenodo, doi 10.5281/zenodo.17921588): 'Rank_PCA' grows exponentially in 'Score_PCA' (R² = 0.903 on the discovery half); held-out R² = 0.891 [emp-9522dfba8e6b]
 - 2026-11-15 17:20 data feeds: 25003 datasets analysed so far, 3554 confirmed findings
+- 2026-11-15 18:22 data feeds: online
+- 2026-11-15 18:22 data feeds: 25005 datasets analysed so far, 3554 confirmed findings
