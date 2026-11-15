@@ -5186,3 +5186,6 @@
 - 2026-11-15 01:37 round 4756: velocity addition
 - 2026-11-15 01:38 round 4757: Compton scattering
 - 2026-11-15 01:38 round 4758: Cournot duopoly
+- 2026-11-15 01:39 round 4759: insurance and risk
+- 2026-11-15 01:41 round 4760: auction with a reserve price
+- 2026-11-15 01:42 segment end: 4760 rounds, 5 discoveries, 2 known laws rediscovered
