@@ -3856,3 +3856,4 @@
 - 2026-11-15 08:50 FINDING (confirmed on held-out rows): In 'Data from: Genome size influences adaptive plasticity of water loss, but not metabolic rat' (Zenodo, doi 10.5061/dryad.t76hdr7zh): 'surface_area' follows a power law in 'mass' (R² = 1.000 on the discovery half); held-out R² = 1.000 [emp-d580b7381a84]
 - 2026-11-15 08:51 FINDING (confirmed on held-out rows): In 'Data from: Experimental warming in the field delays phenology and reduces body mass and su' (Zenodo, doi 10.5061/dryad.tv8v1d6): 'mass_after_lipid_extraction_mg' is linear in 'mass_before_lipid_extraction_mg' (R² = 0.927 on the discovery half); held-out R² = 0.916 [emp-e0fd2183cc47]
 - 2026-11-15 08:51 data feeds: 23722 datasets analysed so far, 3438 confirmed findings
+- 2026-11-15 09:40 data feeds: online
