@@ -3088837,5 +3088837,59 @@
   "statement": "In 'Data for \"Approximating the age of Eurasian otter (Lutra lutra) cubs from camera trap foot' (Zenodo, doi 10.5281/zenodo.20720318): 'Cub body length (Cb) in pixels' is linear in 'Cub tail length in pixels (Ct)' (R\u00b2 = 0.933 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20720318",
+   "held_out_r2": 0.9414,
+   "held_out_rows": 1595,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d12923e1c6ff",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f9b202d9ae3e1be6.csv",
+   "doi": "10.5281/zenodo.20720318",
+   "form": "power law",
+   "params": [
+    -1.442944370722912,
+    1.138570131475723
+   ],
+   "seed": 1577462078,
+   "x": "Body length(mm)",
+   "y": "Tail length (mm)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for \"Approximating the age of Eurasian otter (Lutra lutra) cubs from camera trap foot' (Zenodo, doi 10.5281/zenodo.20720318): 'Tail length (mm)' follows a power law in 'Body length(mm)' (R\u00b2 = 0.932 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.6084/m9.figshare.32145010.v1",
+   "held_out_r2": 0.9977,
+   "held_out_rows": 30,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-2cf2a7922c02",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "db5b440f5a4e2bc1.csv",
+   "doi": "10.6084/m9.figshare.32145010.v1",
+   "form": "linear",
+   "params": [
+    3.077227039644457,
+    1.0190684955664635
+   ],
+   "seed": 727732160,
+   "x": "Egg_count",
+   "y": "Total_offspring"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data and code for Cowan et al. \"Contrasting effects of maternal and paternal heat exposure' (Figshare, doi 10.6084/m9.figshare.32145010.v1): 'Total_offspring' is linear in 'Egg_count' (R\u00b2 = 0.982 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
