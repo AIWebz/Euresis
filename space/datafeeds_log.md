@@ -3878,3 +3878,4 @@
 - 2026-11-15 12:39 data feeds: online
 - 2026-11-15 12:39 data feeds: 24549 datasets analysed so far, 3451 confirmed findings
 - 2026-11-15 13:29 data feeds: online
+- 2026-11-15 13:30 FINDING (confirmed on held-out rows): In 'Explaining the positions of political parties towards direct democracy' (Zenodo, doi 10.5281/zenodo.21159000): 'supporting' is linear in 'directdemocracy' (R² = 0.905 on the discovery half); held-out R² = 0.868 [emp-e70bd31dc72f]

@@ -3100393,5 +3100393,32 @@
   "statement": "Octal game 0.0323113 is completely solved: its Grundy values are periodic with pre-period 12 and period 11 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.21159000",
+   "held_out_r2": 0.8676,
+   "held_out_rows": 351,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e70bd31dc72f",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "69d273d7034406ce.csv",
+   "doi": "10.5281/zenodo.21159000",
+   "form": "linear",
+   "params": [
+    -0.004138600100454746,
+    0.6955841171330474
+   ],
+   "seed": 1458727210,
+   "x": "directdemocracy",
+   "y": "supporting"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Explaining the positions of political parties towards direct democracy' (Zenodo, doi 10.5281/zenodo.21159000): 'supporting' is linear in 'directdemocracy' (R\u00b2 = 0.905 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
