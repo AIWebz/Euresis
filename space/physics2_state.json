@@ -77,7 +77,8 @@
    "Ratio of Kinetic Energy of Target to System After Collision [model-proposed; physical meaning unverified]": "e**2*m**2/(m + 1)**2 + e**2*m/((m + 1)*(-e**2*m**2/(m + 1)**2 - e**2*m/(m + 1) - (1 - e**2)/(m + 1) + 2))",
    "Square Root of Coefficient of Restitution Plus Mass Ratio [model-proposed; physical meaning unverified]": "sqrt(e) + m",
    "Ratio of Kinetic Energy of Projectile to Kinetic Energy of System After Collisio [model-proposed; physical meaning unverified]": "(-e**2*m**2/(m + 1)**2 - e**2*m/(m + 1) - (1 - e**2)/(m + 1) + 2)/(e**2*m**2/(m + 1)**2 + e**2*m/(m + 1) + (1 - e**2)/(m + 1))",
-   "Square Root of Mass Ratio Plus Reciprocal of Coefficient of Restitution [model-proposed; physical meaning unverified]": "sqrt(m) + 1/e"
+   "Square Root of Mass Ratio Plus Reciprocal of Coefficient of Restitution [model-proposed; physical meaning unverified]": "sqrt(m) + 1/e",
+   "Kinetic Energy Ratio of Projectile to Target After Collision [model-proposed; physical meaning unverified]": "(m*(1 - e**2)/(m + 1) + (1 - e**2)/(m + 1))/((1 - e**2)*(1 - m)/(m + 1) + (1 - e**2)/(m + 1))"
   },
   "driven oscillator": {
    "amplitude / static deflection": "1/sqrt((1 - r**2)**2 + (2*z*r)**2)",
@@ -79586,6 +79587,76 @@
    "family": "two-body decay",
    "expr": "(-b**2 + (1 - a)**2)/(-a**2 + b**2 - (1 - a)**2 + 1)",
    "why": "affine combination of known quantities (momentum of each product / (Mc), Kinetic Energy Ratio of Products [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "1 - (1 - e**2)*m/(1 + m) - (1 - e**2)/(1 + m) - (1 - e**2)*(1 - m)/(1 + m) + 1",
+   "why": "affine combination of known quantities (target speed / initial speed, fraction of kinetic energy lost)"
+  },
+  {
+   "family": "collision",
+   "expr": "1 - (1 - e**2)/(1 + m) - (1 - e**2)*(1 - m)/(1 + m) - (1 - e**2)*m/(1 + m) + 1",
+   "why": "affine combination of known quantities (target speed / initial speed, fraction of kinetic energy lost)"
+  },
+  {
+   "family": "collision",
+   "expr": "(1 - e**2)*m/(1 + m) + (1 - e**2)*(1 - m)/(1 + m)",
+   "why": "affine combination of known quantities (target speed / initial speed, fraction of kinetic energy lost)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(4*r**2*z**2 + (1 - r**2)**2)/sqrt(4*z**4 - 2*z**2 + 1)",
+   "why": "affine combination of known quantities (amplitude / static deflection, Dynamic Magnification Factor [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt((1 + (2*z*r)**2)/((1 - r**2)**2 + (2*z*r)**2))",
+   "why": "affine combination of known quantities (amplitude / static deflection, transmissibility)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(4*r**2*z**2 + 1)*sqrt(4*r**2*z**2 + (1 - r**2)**2)/(2*r*z*(sqrt(4*r**2*z**2 + 1) + sqrt(4*r**2*",
+   "why": "affine combination of known quantities (quality factor, Power Amplification Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "2*r**2*z/((r**2 + 1)*(4*r**2*z**2 + (1 - r**2)**2))",
+   "why": "affine combination of known quantities (amplitude / static deflection, Energy Dissipation Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 + u)/(1 - u)) * sqrt((1 + v)/(1 - v)) / sqrt((1 + (u + v)/(1 + u*v)) / (1 - (u + v)/(1 + u*v",
+   "why": "affine combination of known quantities (composed speed / c)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt(1 - u**2) * sqrt(1 - v**2) + (u + v) * sqrt(-(u + v)**2/(u*v + 1)**2 + 1)/(u*v + 1)",
+   "why": "affine combination of known quantities (composed speed / c, Relativistic Energy-Momentum Invariant [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "1 - c/(c*x + 1) - 1/(c*x + 1)",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "c2/(c1/3 + c2/3 + 1/3)",
+   "why": "affine combination of known quantities (output of firm 1, 1/(Price to Marginal Cost Ratio for Firm 2 [model-proposed; physical meaning unverified]))"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "((1 - 2*c1 + c2)**2)/((1 - 2*c2 + c1)**2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "((2 - c1 - c2)**2/18)/(((1 - 2*c1 + c2)**2 + (1 - 2*c2 + c1)**2)/9)",
+   "why": "affine combination of known quantities (output of firm 1, 1/(Hirshleifer Index [model-proposed; physical meaning unverified]))"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "((c1/3 + 5*c2/6 - 1/6)**2)/((5*c1/6 + c2/3 - 1/6)**2)",
+   "why": "affine combination of known quantities (output of firm 1, 1/(Market Price Variance Ratio [model-proposed; physical meaning unverified]))"
   }
  ],
  "tried": [
@@ -87054,7 +87125,31 @@
   "auction with a reserve price|Bidder Surplus Reserve Elasticity with Seller Value [model-proposed; physical meaning unverified]|Bidder Surplus Efficiency Ratio [model-proposed; physical meaning unverified]",
   "auction with a reserve price|Bidder Surplus Reserve Elasticity with Seller Value [model-proposed; physical meaning unverified]|Welfare Efficiency with Seller Value Ratio [model-proposed; physical meaning unverified]",
   "auction with a reserve price|Bidder Surplus Reserve Elasticity with Seller Value [model-proposed; physical meaning unverified]|Welfare Reserve Efficiency with Seller Value and Reserve Ratio [model-proposed; physical meaning unverified]",
-  "auction with a reserve price|Bidder Surplus Reserve Elasticity with Seller Value [model-proposed; physical meaning unverified]|Welfare Efficiency with Seller Value and Reserve [model-proposed; physical meaning unverified]"
+  "auction with a reserve price|Bidder Surplus Reserve Elasticity with Seller Value [model-proposed; physical meaning unverified]|Welfare Efficiency with Seller Value and Reserve [model-proposed; physical meaning unverified]",
+  "collision|target speed / initial speed|Kinetic Energy Ratio of Projectile to Target After Collision [model-proposed; physical meaning unverified]",
+  "collision|momentum transferred / initial momentum|Kinetic Energy Ratio of Projectile to Target After Collision [model-proposed; physical meaning unverified]",
+  "collision|fraction of kinetic energy lost|Kinetic Energy Ratio of Projectile to Target After Collision [model-proposed; physical meaning unverified]",
+  "collision|fraction of kinetic energy given to the target|Kinetic Energy Ratio of Projectile to Target After Collision [model-proposed; physical meaning unverified]",
+  "collision|speed of the centre of mass / initial speed|Kinetic Energy Ratio of Projectile to Target After Collision [model-proposed; physical meaning unverified]",
+  "collision|relative speed after / relative speed before|Kinetic Energy Ratio of Projectile to Target After Collision [model-proposed; physical meaning unverified]",
+  "collision|velocity ratio of target to projectile after collision [model-proposed; physical meaning unverified]|Kinetic Energy Ratio of Projectile to Target After Collision [model-proposed; physical meaning unverified]",
+  "collision|velocity ratio of projectile to target after collision [model-proposed; physical meaning unverified]|Kinetic Energy Ratio of Projectile to Target After Collision [model-proposed; physical meaning unverified]",
+  "collision|relative velocity after collision divided by initial velocity of projectile [model-proposed; physical meaning unverified]|Kinetic Energy Ratio of Projectile to Target After Collision [model-proposed; physical meaning unverified]",
+  "collision|Fraction of kinetic energy retained by projectile [model-proposed; physical meaning unverified]|Kinetic Energy Ratio of Projectile to Target After Collision [model-proposed; physical meaning unverified]",
+  "collision|Fraction of kinetic energy retained by target [model-proposed; physical meaning unverified]|Kinetic Energy Ratio of Projectile to Target After Collision [model-proposed; physical meaning unverified]",
+  "collision|Fraction of kinetic energy retained by the system [model-proposed; physical meaning unverified]|Kinetic Energy Ratio of Projectile to Target After Collision [model-proposed; physical meaning unverified]",
+  "collision|Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified]|Kinetic Energy Ratio of Projectile to Target After Collision [model-proposed; physical meaning unverified]",
+  "collision|Fraction of kinetic energy transferred to the target [model-proposed; physical meaning unverified]|Kinetic Energy Ratio of Projectile to Target After Collision [model-proposed; physical meaning unverified]",
+  "collision|Fraction of kinetic energy retained by the target [model-proposed; physical meaning unverified]|Kinetic Energy Ratio of Projectile to Target After Collision [model-proposed; physical meaning unverified]",
+  "collision|Fraction of kinetic energy retained by the projectile relative to initial kineti [model-proposed; physical meaning unverified]|Kinetic Energy Ratio of Projectile to Target After Collision [model-proposed; physical meaning unverified]",
+  "collision|Fraction of kinetic energy retained by projectile relative to initial kinetic en [model-proposed; physical meaning unverified]|Kinetic Energy Ratio of Projectile to Target After Collision [model-proposed; physical meaning unverified]",
+  "collision|Fraction of kinetic energy transferred to the target relative to initial kinetic [model-proposed; physical meaning unverified]|Kinetic Energy Ratio of Projectile to Target After Collision [model-proposed; physical meaning unverified]",
+  "collision|Fraction of kinetic energy retained by the system relative to initial kinetic en [model-proposed; physical meaning unverified]|Kinetic Energy Ratio of Projectile to Target After Collision [model-proposed; physical meaning unverified]",
+  "collision|Kinetic energy ratio after collision [model-proposed; physical meaning unverified]|Kinetic Energy Ratio of Projectile to Target After Collision [model-proposed; physical meaning unverified]",
+  "collision|Ratio of kinetic energy transferred to the target over initial kinetic energy [model-proposed; physical meaning unverified]|Kinetic Energy Ratio of Projectile to Target After Collision [model-proposed; physical meaning unverified]",
+  "collision|Fraction of kinetic energy retained by projectile relative to target [model-proposed; physical meaning unverified]|Kinetic Energy Ratio of Projectile to Target After Collision [model-proposed; physical meaning unverified]",
+  "collision|Kinetic energy ratio of the target to the projectile after collision [model-proposed; physical meaning unverified]|Kinetic Energy Ratio of Projectile to Target After Collision [model-proposed; physical meaning unverified]",
+  "collision|Kinetic energy ratio of the target to the system after collision [model-proposed; physical meaning unverified]|Kinetic Energy Ratio of Projectile to Target After Collision [model-proposed; physical meaning unverified]"
  ],
  "edges": [
   {
@@ -97796,9 +97891,27 @@
    "f": "Bidder Surplus Reserve Elasticity with Seller Value [model-proposed; physical meaning unverified]",
    "g": "Bidder Surplus Efficiency Ratio [model-proposed; physical meaning unverified]",
    "k": "1/2"
+  },
+  {
+   "family": "collision",
+   "f": "momentum transferred / initial momentum",
+   "g": "Kinetic Energy Ratio of Projectile to Target After Collision [model-proposed; physical meaning unverified]",
+   "k": "1/4"
+  },
+  {
+   "family": "collision",
+   "f": "Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified]",
+   "g": "Kinetic Energy Ratio of Projectile to Target After Collision [model-proposed; physical meaning unverified]",
+   "k": "3/8"
+  },
+  {
+   "family": "collision",
+   "f": "Fraction of kinetic energy retained by the system relative to initial kinetic en [model-proposed; physical meaning unverified]",
+   "g": "Kinetic Energy Ratio of Projectile to Target After Collision [model-proposed; physical meaning unverified]",
+   "k": "1/4"
   }
  ],
- "rounds": 5657,
+ "rounds": 5662,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",
