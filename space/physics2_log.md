@@ -5968,3 +5968,6 @@
 - 2026-11-16 11:53 round 5466: collision
 - 2026-11-16 11:56 round 5467: driven oscillator
 - 2026-11-16 11:57 round 5468: velocity addition
+- 2026-11-16 11:58 round 5469: Compton scattering
+- 2026-11-16 11:59 round 5470: Cournot duopoly
+- 2026-11-16 12:01 round 5471: insurance and risk
