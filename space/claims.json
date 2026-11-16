@@ -3249095,7 +3249095,12 @@
   "verifier": "held-out-replication"
  },
  {
-  "evidence": null,
+  "evidence": {
+   "doi": "10.6084/m9.figshare.28946447.v1",
+   "held_out_r2": 0.2505,
+   "held_out_rows": 37,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
   "id": "emp-d15be31c0400",
   "kind": "empirical",
   "novelty": "not checked",
@@ -3249113,7 +3249118,34 @@
   },
   "source": "datafeeds.py",
   "statement": "In 'Data supporting the study: High-frequency in situ total alkalinity measurements for monito' (Figshare, doi 10.6084/m9.figshare.28946447.v1): 'Total dosed [kg]' is linear in 'Total dosing minutes ' (R\u00b2 = 0.906 on the discovery half)",
-  "status": "candidate",
-  "verifier": null
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.6084/m9.figshare.32189775.v1",
+   "held_out_r2": 0.933,
+   "held_out_rows": 617,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9e84f5c52fe0",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "e47dc9f3e3939a06.csv",
+   "doi": "10.6084/m9.figshare.32189775.v1",
+   "form": "power law",
+   "params": [
+    -0.6197442024889067,
+    1.0495661039179698
+   ],
+   "seed": 1166141570,
+   "x": "input1_air",
+   "y": "input2_surf"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data associated with manuscript titled: Pore water ammonium and sulfide toxicity constrain' (Figshare, doi 10.6084/m9.figshare.32189775.v1): 'input2_surf' follows a power law in 'input1_air' (R\u00b2 = 0.936 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
