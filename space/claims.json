@@ -3254195,5 +3254195,135 @@
   "statement": "Octal game 0.0562303 is completely solved: its Grundy values are periodic with pre-period 19 and period 28 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22116642",
+   "held_out_r2": 0.9018,
+   "held_out_rows": 206,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-626459ffbceb",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "b74720b204525671.csv",
+   "doi": "10.5281/zenodo.22116642",
+   "form": "linear",
+   "params": [
+    -26.540814651718577,
+    0.6392194244529878
+   ],
+   "seed": 3457346374,
+   "x": "Mean",
+   "y": "Min"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Integrated Hydrological Monitoring Dataset for a Complex Hydrogeological Basin in Northeas' (Zenodo, doi 10.5281/zenodo.22116642): 'Min' is linear in 'Mean' (R\u00b2 = 0.920 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22116642",
+   "held_out_r2": 0.9323,
+   "held_out_rows": 206,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4ad15b7d22b8",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "b74720b204525671.csv",
+   "doi": "10.5281/zenodo.22116642",
+   "form": "linear",
+   "params": [
+    218.05102263490662,
+    1.267192780115429
+   ],
+   "seed": 3457346374,
+   "x": "Mean",
+   "y": "Max"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Integrated Hydrological Monitoring Dataset for a Complex Hydrogeological Basin in Northeas' (Zenodo, doi 10.5281/zenodo.22116642): 'Max' is linear in 'Mean' (R\u00b2 = 0.913 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22116642",
+   "held_out_r2": 0.9109,
+   "held_out_rows": 206,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-edc815d512aa",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "b74720b204525671.csv",
+   "doi": "10.5281/zenodo.22116642",
+   "form": "linear",
+   "params": [
+    29.701958678848435,
+    1.3245576591737425
+   ],
+   "seed": 3457346374,
+   "x": "Min",
+   "y": "25%"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Integrated Hydrological Monitoring Dataset for a Complex Hydrogeological Basin in Northeas' (Zenodo, doi 10.5281/zenodo.22116642): '25%' is linear in 'Min' (R\u00b2 = 0.932 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22116642",
+   "held_out_r2": 0.9016,
+   "held_out_rows": 206,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-88d43c42a841",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "b74720b204525671.csv",
+   "doi": "10.5281/zenodo.22116642",
+   "form": "linear",
+   "params": [
+    56.19068614770872,
+    1.4642288073391765
+   ],
+   "seed": 3457346374,
+   "x": "Min",
+   "y": "50%"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Integrated Hydrological Monitoring Dataset for a Complex Hydrogeological Basin in Northeas' (Zenodo, doi 10.5281/zenodo.22116642): '50%' is linear in 'Min' (R\u00b2 = 0.916 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": null,
+  "id": "emp-e73749c8d745",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "b74720b204525671.csv",
+   "doi": "10.5281/zenodo.22116642",
+   "form": "linear",
+   "params": [
+    194.29788638527484,
+    1.1580974197223417
+   ],
+   "seed": 3457346374,
+   "x": "75%",
+   "y": "Max"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Integrated Hydrological Monitoring Dataset for a Complex Hydrogeological Basin in Northeas' (Zenodo, doi 10.5281/zenodo.22116642): 'Max' is linear in '75%' (R\u00b2 = 0.927 on the discovery half)",
+  "status": "candidate",
+  "verifier": null
  }
 ]
