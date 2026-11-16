@@ -4198,3 +4198,5 @@
 - 2026-11-16 11:45 FINDING (confirmed on held-out rows): In 'Data for: Soil organic carbon contents of collected soil samples from China's black soil r' (Zenodo, doi 10.5061/dryad.cvdncjt89): 'Prediction' is linear in 'Measurement' (R² = 0.907 on the discovery half); held-out R² = 0.912 [emp-a7c9f37e05f8]
 - 2026-11-16 11:45 data feeds: 26768 datasets analysed so far, 3723 confirmed findings
 - 2026-11-16 12:24 data feeds: online
+- 2026-11-16 12:24 FINDING (confirmed on held-out rows): In 'Data from: Pollination and fruit set in two rewardless slipper orchids and their hybrids (' (Zenodo, doi 10.5061/dryad.2bg7pk5): 'thorax_wid' follows a power law in 'abd_width' (R² = 0.937 on the discovery half); held-out R² = 0.890 [emp-d074f7db3b1d]
+- 2026-11-16 12:25 FINDING (confirmed on held-out rows): In 'Data from: Pollination and fruit set in two rewardless slipper orchids and their hybrids (' (Zenodo, doi 10.5061/dryad.2bg7pk5): 'thorax_ht' follows a power law in 'thorax_wid' (R² = 0.911 on the discovery half); held-out R² = 0.924 [emp-eb4f038e46b2]
