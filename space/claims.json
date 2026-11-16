@@ -3274861,5 +3274861,81 @@
   "statement": "Octal game 0.0577311 is completely solved: its Grundy values are periodic with pre-period 1192 and period 8 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14868935",
+   "held_out_r2": 0.9312,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-55bc3c3a172d",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "2c9bd863d8f716c4.csv",
+   "doi": "10.5281/zenodo.14868935",
+   "form": "linear",
+   "params": [
+    -0.16561383419299971,
+    1.1327827329678484
+   ],
+   "seed": 1358818012,
+   "x": "shdi",
+   "y": "edindex"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Global development data from GDL' (Zenodo, doi 10.5281/zenodo.14868935): 'edindex' is linear in 'shdi' (R\u00b2 = 0.930 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14868935",
+   "held_out_r2": 0.9999,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-dbad3758ffcf",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "2c9bd863d8f716c4.csv",
+   "doi": "10.5281/zenodo.14868935",
+   "form": "exponential",
+   "params": [
+    4.6001611738007435,
+    6.628648211411262
+   ],
+   "seed": 1358818012,
+   "x": "incindex",
+   "y": "gnic"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Global development data from GDL' (Zenodo, doi 10.5281/zenodo.14868935): 'gnic' grows exponentially in 'incindex' (R\u00b2 = 1.000 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": null,
+  "id": "emp-6767af138789",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "2c9bd863d8f716c4.csv",
+   "doi": "10.5281/zenodo.14868935",
+   "form": "linear",
+   "params": [
+    -2.0822896099800507,
+    16.269539702885528
+   ],
+   "seed": 1358818012,
+   "x": "edindex",
+   "y": "msch"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Global development data from GDL' (Zenodo, doi 10.5281/zenodo.14868935): 'msch' is linear in 'edindex' (R\u00b2 = 0.912 on the discovery half)",
+  "status": "candidate",
+  "verifier": null
  }
 ]
