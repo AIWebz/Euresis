@@ -5827,3 +5827,5 @@
 - 2026-11-16 05:16 round 5339: driven oscillator
 - 2026-11-16 05:17 round 5340: velocity addition
 - 2026-11-16 05:18 segment end: 5340 rounds, 5 discoveries, 2 known laws rediscovered
+- 2026-11-16 05:52 segment start (budget 30 min; model: Qwen3-8B; 5 discoveries so far)
+- 2026-11-16 05:52 round 5341: Compton scattering
