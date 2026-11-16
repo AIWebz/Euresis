@@ -4162,3 +4162,4 @@
 - 2026-11-16 09:37 data feeds: online
 - 2026-11-16 09:37 FINDING (confirmed on held-out rows): In 'Data associated with manuscript titled: Pore water ammonium and sulfide toxicity constrain' (Figshare, doi 10.6084/m9.figshare.32189775.v1): 'input2_surf' follows a power law in 'input1_air' (R² = 0.936 on the discovery half); held-out R² = 0.933 [emp-9e84f5c52fe0]
 - 2026-11-16 09:38 data feeds: 25928 datasets analysed so far, 3692 confirmed findings
+- 2026-11-16 10:29 data feeds: online
