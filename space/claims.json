@@ -3219737,5 +3219737,86 @@
   "statement": "Octal game 0.0532452 is completely solved: its Grundy values are periodic with pre-period 1145 and period 10 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.13732064",
+   "held_out_r2": 0.9193,
+   "held_out_rows": 844,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d884bb8b291b",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "23479d01436f6b34.csv",
+   "doi": "10.5281/zenodo.13732064",
+   "form": "linear",
+   "params": [
+    -0.11757396308193882,
+    1.0291325265003473
+   ],
+   "seed": 3531840498,
+   "x": "AtomicUnw",
+   "y": "AtomicMinMax"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Datasets and Jupyter notebook for the structural analysis of protein-RNA interface evoluti' (Zenodo, doi 10.5281/zenodo.13732064): 'AtomicMinMax' is linear in 'AtomicUnw' (R\u00b2 = 0.920 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.13732064",
+   "held_out_r2": 0.8987,
+   "held_out_rows": 844,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-8998cfc52bd0",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "23479d01436f6b34.csv",
+   "doi": "10.5281/zenodo.13732064",
+   "form": "linear",
+   "params": [
+    -0.016377428191168088,
+    0.9192394364944626
+   ],
+   "seed": 3531840498,
+   "x": "ApoUnw",
+   "y": "AtomicMinMax"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Datasets and Jupyter notebook for the structural analysis of protein-RNA interface evoluti' (Zenodo, doi 10.5281/zenodo.13732064): 'AtomicMinMax' is linear in 'ApoUnw' (R\u00b2 = 0.907 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.13732064",
+   "held_out_r2": 0.9467,
+   "held_out_rows": 844,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-41fcdbb14159",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "23479d01436f6b34.csv",
+   "doi": "10.5281/zenodo.13732064",
+   "form": "linear",
+   "params": [
+    -0.05413728472449604,
+    1.0436660994427847
+   ],
+   "seed": 3531840498,
+   "x": "AtomicMinMax",
+   "y": "ApoMinMax"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Datasets and Jupyter notebook for the structural analysis of protein-RNA interface evoluti' (Zenodo, doi 10.5281/zenodo.13732064): 'ApoMinMax' is linear in 'AtomicMinMax' (R\u00b2 = 0.953 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
