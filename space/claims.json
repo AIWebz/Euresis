@@ -3274944,10 +3274944,15 @@
   "verifier": "held-out-replication"
  },
  {
-  "evidence": null,
+  "evidence": {
+   "doi": "10.5281/zenodo.17467221",
+   "held_out_r2": 0.9336,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
   "id": "emp-3786d7ccb311",
   "kind": "empirical",
-  "novelty": "not checked",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
   "payload": {
    "dataset": "366581bc637aab54.csv",
    "doi": "10.5281/zenodo.17467221",
@@ -3274962,7 +3274967,844 @@
   },
   "source": "datafeeds.py",
   "statement": "In 'Global Data Lab SHDI and regions with codes' (Zenodo, doi 10.5281/zenodo.17467221): 'edindex' is linear in 'shdi' (R\u00b2 = 0.934 on the discovery half)",
-  "status": "candidate",
-  "verifier": null
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17467221",
+   "held_out_r2": 0.901,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-41b38b7eb228",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "366581bc637aab54.csv",
+   "doi": "10.5281/zenodo.17467221",
+   "form": "power law",
+   "params": [
+    2.9304783125299423,
+    0.7927464279165488
+   ],
+   "seed": 1652519637,
+   "x": "edindex",
+   "y": "esch"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Global Data Lab SHDI and regions with codes' (Zenodo, doi 10.5281/zenodo.17467221): 'esch' follows a power law in 'edindex' (R\u00b2 = 0.903 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17467221",
+   "held_out_r2": 0.91,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c8680001d755",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "366581bc637aab54.csv",
+   "doi": "10.5281/zenodo.17467221",
+   "form": "linear",
+   "params": [
+    -2.0248083291867833,
+    16.13141044440417
+   ],
+   "seed": 1652519637,
+   "x": "edindex",
+   "y": "msch"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Global Data Lab SHDI and regions with codes' (Zenodo, doi 10.5281/zenodo.17467221): 'msch' is linear in 'edindex' (R\u00b2 = 0.910 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22912223",
+   "held_out_r2": 0.9504,
+   "held_out_rows": 338,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-635e017314a6",
+  "kind": "empirical",
+  "novelty": "KNOWN: equation of state of a simulated fluid (pressure, density, temperature, chemical potential, kinetic energy) \u2014 not a discovery",
+  "payload": {
+   "dataset": "99786d0dfb7e307e.csv",
+   "doi": "10.5281/zenodo.22912223",
+   "form": "linear",
+   "params": [
+    -0.010742953051696626,
+    1.3069361902550605
+   ],
+   "seed": 1339352610,
+   "x": "kendall_tau",
+   "y": "spearman_rho"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Experimental data for \"Evaluating an LLM Pipeline for End-to-End MCDA\"' (Zenodo, doi 10.5281/zenodo.22912223): 'spearman_rho' is linear in 'kendall_tau' (R\u00b2 = 0.940 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.1016/j.ijrefrig.2025.05.013",
+   "held_out_r2": 0.9639,
+   "held_out_rows": 33,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b1744d5b7428",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "47277957e1924ac6.csv",
+   "doi": "10.1016/j.ijrefrig.2025.05.013",
+   "form": "linear",
+   "params": [
+    -0.3280639810708967,
+    0.9769637067622476
+   ],
+   "seed": 1444123428,
+   "x": "P_ex_cp_value",
+   "y": "P_su_valve_oil_value"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset of the Experimental Study of a commercial Scroll Compressor with Two-phase Refrige' (Zenodo, doi 10.1016/j.ijrefrig.2025.05.013): 'P_su_valve_oil_value' is linear in 'P_ex_cp_value' (R\u00b2 = 0.945 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.1016/j.ijrefrig.2025.05.013",
+   "held_out_r2": 0.9571,
+   "held_out_rows": 33,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-06f1441c3345",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "47277957e1924ac6.csv",
+   "doi": "10.1016/j.ijrefrig.2025.05.013",
+   "form": "power law",
+   "params": [
+    -0.14872410842564596,
+    1.032038019043126
+   ],
+   "seed": 1444123428,
+   "x": "P_ex_resistor_value",
+   "y": "P_su_valve_oil_value"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset of the Experimental Study of a commercial Scroll Compressor with Two-phase Refrige' (Zenodo, doi 10.1016/j.ijrefrig.2025.05.013): 'P_su_valve_oil_value' follows a power law in 'P_ex_resistor_value' (R\u00b2 = 0.956 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.1016/j.ijrefrig.2025.05.013",
+   "held_out_r2": 0.9571,
+   "held_out_rows": 33,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d35ddb4a8753",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "47277957e1924ac6.csv",
+   "doi": "10.1016/j.ijrefrig.2025.05.013",
+   "form": "power law",
+   "params": [
+    0.17187899373884608,
+    0.936897483944123
+   ],
+   "seed": 1444123428,
+   "x": "P_su_valve_oil_value",
+   "y": "P_ex_sub_value"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset of the Experimental Study of a commercial Scroll Compressor with Two-phase Refrige' (Zenodo, doi 10.1016/j.ijrefrig.2025.05.013): 'P_ex_sub_value' follows a power law in 'P_su_valve_oil_value' (R\u00b2 = 0.958 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.1016/j.ijrefrig.2025.05.013",
+   "held_out_r2": 0.9572,
+   "held_out_rows": 33,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d81b4272ecdd",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "47277957e1924ac6.csv",
+   "doi": "10.1016/j.ijrefrig.2025.05.013",
+   "form": "power law",
+   "params": [
+    0.16063768660622701,
+    0.942285370514224
+   ],
+   "seed": 1444123428,
+   "x": "P_su_valve_oil_value",
+   "y": "P_vap_high_value"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset of the Experimental Study of a commercial Scroll Compressor with Two-phase Refrige' (Zenodo, doi 10.1016/j.ijrefrig.2025.05.013): 'P_vap_high_value' follows a power law in 'P_su_valve_oil_value' (R\u00b2 = 0.959 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.1016/j.ijrefrig.2025.05.013",
+   "held_out_r2": 0.9926,
+   "held_out_rows": 71,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-384ea6c4fb3d",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "e0fed9e77bcd35fc.csv",
+   "doi": "10.1016/j.ijrefrig.2025.05.013",
+   "form": "linear",
+   "params": [
+    0.08581396032704013,
+    1.0071918131027378
+   ],
+   "seed": 2325728848,
+   "x": "P_su_cp_value",
+   "y": "P_liq_low_value"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset of the Experimental Study of a commercial Scroll Compressor with Two-phase Refrige' (Zenodo, doi 10.1016/j.ijrefrig.2025.05.013): 'P_liq_low_value' is linear in 'P_su_cp_value' (R\u00b2 = 0.980 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.1016/j.ijrefrig.2025.05.013",
+   "held_out_r2": 0.9918,
+   "held_out_rows": 71,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-46c73ec64a97",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "e0fed9e77bcd35fc.csv",
+   "doi": "10.1016/j.ijrefrig.2025.05.013",
+   "form": "linear",
+   "params": [
+    0.07540395640881692,
+    1.0093273554588693
+   ],
+   "seed": 2325728848,
+   "x": "P_su_cp_value",
+   "y": "P_oil_low_value"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset of the Experimental Study of a commercial Scroll Compressor with Two-phase Refrige' (Zenodo, doi 10.1016/j.ijrefrig.2025.05.013): 'P_oil_low_value' is linear in 'P_su_cp_value' (R\u00b2 = 0.980 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.4fp90",
+   "held_out_r2": -0.0616,
+   "held_out_rows": 178,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5ec7604e7a22",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "5ae4aff8f2d4a705.csv",
+   "doi": "10.5061/dryad.4fp90",
+   "form": "linear",
+   "params": [
+    -0.37699168894597707,
+    1.2526035134602767
+   ],
+   "seed": 1639851521,
+   "x": "initial",
+   "y": "END.1C"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Phytoplankton responses to nitrogen enrichment in Pacific Northwest, USA mounta' (Zenodo, doi 10.5061/dryad.4fp90): 'END.1C' is linear in 'initial' (R\u00b2 = 0.901 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.4fp90",
+   "held_out_r2": -0.4511,
+   "held_out_rows": 178,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-499ee0107bd7",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "5ae4aff8f2d4a705.csv",
+   "doi": "10.5061/dryad.4fp90",
+   "form": "linear",
+   "params": [
+    -4.759096099030127,
+    1.7735761449848753
+   ],
+   "seed": 1639851521,
+   "x": "initial",
+   "y": "END.2A"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Phytoplankton responses to nitrogen enrichment in Pacific Northwest, USA mounta' (Zenodo, doi 10.5061/dryad.4fp90): 'END.2A' is linear in 'initial' (R\u00b2 = 0.960 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.4fp90",
+   "held_out_r2": -0.2772,
+   "held_out_rows": 178,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-abd44caa9ba2",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "5ae4aff8f2d4a705.csv",
+   "doi": "10.5061/dryad.4fp90",
+   "form": "linear",
+   "params": [
+    -4.958321510884748,
+    1.7285298184122364
+   ],
+   "seed": 1639851521,
+   "x": "initial",
+   "y": "END.2C"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Phytoplankton responses to nitrogen enrichment in Pacific Northwest, USA mounta' (Zenodo, doi 10.5061/dryad.4fp90): 'END.2C' is linear in 'initial' (R\u00b2 = 0.934 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.4fp90",
+   "held_out_r2": -0.448,
+   "held_out_rows": 178,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a4308c8a3b72",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "5ae4aff8f2d4a705.csv",
+   "doi": "10.5061/dryad.4fp90",
+   "form": "linear",
+   "params": [
+    -6.124175179431225,
+    1.862976322195542
+   ],
+   "seed": 1639851521,
+   "x": "initial",
+   "y": "END.3A"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Phytoplankton responses to nitrogen enrichment in Pacific Northwest, USA mounta' (Zenodo, doi 10.5061/dryad.4fp90): 'END.3A' is linear in 'initial' (R\u00b2 = 0.911 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.4fp90",
+   "held_out_r2": -0.9569,
+   "held_out_rows": 178,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-fb52a1534bc2",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "5ae4aff8f2d4a705.csv",
+   "doi": "10.5061/dryad.4fp90",
+   "form": "linear",
+   "params": [
+    -4.028756866760748,
+    1.9282125884638448
+   ],
+   "seed": 1639851521,
+   "x": "initial",
+   "y": "END.3B"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Phytoplankton responses to nitrogen enrichment in Pacific Northwest, USA mounta' (Zenodo, doi 10.5061/dryad.4fp90): 'END.3B' is linear in 'initial' (R\u00b2 = 0.916 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.4fp90",
+   "held_out_r2": -0.1828,
+   "held_out_rows": 178,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3c2d095934f8",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "5ae4aff8f2d4a705.csv",
+   "doi": "10.5061/dryad.4fp90",
+   "form": "linear",
+   "params": [
+    -0.6570368297376633,
+    1.4207708087568378
+   ],
+   "seed": 1639851521,
+   "x": "initial.1",
+   "y": "END.1A"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Phytoplankton responses to nitrogen enrichment in Pacific Northwest, USA mounta' (Zenodo, doi 10.5061/dryad.4fp90): 'END.1A' is linear in 'initial.1' (R\u00b2 = 0.964 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.4fp90",
+   "held_out_r2": -1.1337,
+   "held_out_rows": 178,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d802239386d2",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "5ae4aff8f2d4a705.csv",
+   "doi": "10.5061/dryad.4fp90",
+   "form": "linear",
+   "params": [
+    -3.1700395353011794,
+    1.8686858969905575
+   ],
+   "seed": 1639851521,
+   "x": "initial.1",
+   "y": "END.1B"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Phytoplankton responses to nitrogen enrichment in Pacific Northwest, USA mounta' (Zenodo, doi 10.5061/dryad.4fp90): 'END.1B' is linear in 'initial.1' (R\u00b2 = 0.959 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.4fp90",
+   "held_out_r2": -0.6543,
+   "held_out_rows": 178,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-67480bff4462",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "5ae4aff8f2d4a705.csv",
+   "doi": "10.5061/dryad.4fp90",
+   "form": "linear",
+   "params": [
+    -0.3324484136727334,
+    1.4248417014152455
+   ],
+   "seed": 1639851521,
+   "x": "initial.1",
+   "y": "END.1C"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Phytoplankton responses to nitrogen enrichment in Pacific Northwest, USA mounta' (Zenodo, doi 10.5061/dryad.4fp90): 'END.1C' is linear in 'initial.1' (R\u00b2 = 0.964 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.4fp90",
+   "held_out_r2": -1.097,
+   "held_out_rows": 178,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-eba08b5fc038",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "5ae4aff8f2d4a705.csv",
+   "doi": "10.5061/dryad.4fp90",
+   "form": "linear",
+   "params": [
+    -2.803201669054307,
+    1.9003480752045188
+   ],
+   "seed": 1639851521,
+   "x": "initial.1",
+   "y": "END.2A"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Phytoplankton responses to nitrogen enrichment in Pacific Northwest, USA mounta' (Zenodo, doi 10.5061/dryad.4fp90): 'END.2A' is linear in 'initial.1' (R\u00b2 = 0.912 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.4fp90",
+   "held_out_r2": -4.0989,
+   "held_out_rows": 178,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c62dcdfd1457",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "5ae4aff8f2d4a705.csv",
+   "doi": "10.5061/dryad.4fp90",
+   "form": "linear",
+   "params": [
+    -10.194403082879985,
+    2.440457963192241
+   ],
+   "seed": 1639851521,
+   "x": "initial.1",
+   "y": "END.2B"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Phytoplankton responses to nitrogen enrichment in Pacific Northwest, USA mounta' (Zenodo, doi 10.5061/dryad.4fp90): 'END.2B' is linear in 'initial.1' (R\u00b2 = 0.937 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.4fp90",
+   "held_out_r2": -0.7293,
+   "held_out_rows": 178,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a36b59f80fa9",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "5ae4aff8f2d4a705.csv",
+   "doi": "10.5061/dryad.4fp90",
+   "form": "linear",
+   "params": [
+    -4.129853920475133,
+    1.9187583614102592
+   ],
+   "seed": 1639851521,
+   "x": "initial.1",
+   "y": "END.2C"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Phytoplankton responses to nitrogen enrichment in Pacific Northwest, USA mounta' (Zenodo, doi 10.5061/dryad.4fp90): 'END.2C' is linear in 'initial.1' (R\u00b2 = 0.952 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.4fp90",
+   "held_out_r2": -1.161,
+   "held_out_rows": 178,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3683861e2c34",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "5ae4aff8f2d4a705.csv",
+   "doi": "10.5061/dryad.4fp90",
+   "form": "linear",
+   "params": [
+    -5.325583940680205,
+    2.0738359411278524
+   ],
+   "seed": 1639851521,
+   "x": "initial.1",
+   "y": "END.3A"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Phytoplankton responses to nitrogen enrichment in Pacific Northwest, USA mounta' (Zenodo, doi 10.5061/dryad.4fp90): 'END.3A' is linear in 'initial.1' (R\u00b2 = 0.934 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.4fp90",
+   "held_out_r2": -1.6205,
+   "held_out_rows": 178,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f6adaad1c080",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "5ae4aff8f2d4a705.csv",
+   "doi": "10.5061/dryad.4fp90",
+   "form": "linear",
+   "params": [
+    -3.078409885277621,
+    2.1387974126217975
+   ],
+   "seed": 1639851521,
+   "x": "initial.1",
+   "y": "END.3B"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Phytoplankton responses to nitrogen enrichment in Pacific Northwest, USA mounta' (Zenodo, doi 10.5061/dryad.4fp90): 'END.3B' is linear in 'initial.1' (R\u00b2 = 0.932 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.4fp90",
+   "held_out_r2": -1.2416,
+   "held_out_rows": 178,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4f7897d3a74f",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "5ae4aff8f2d4a705.csv",
+   "doi": "10.5061/dryad.4fp90",
+   "form": "linear",
+   "params": [
+    -8.404079796453058,
+    2.341628697443435
+   ],
+   "seed": 1639851521,
+   "x": "initial.1",
+   "y": "END.3C"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Phytoplankton responses to nitrogen enrichment in Pacific Northwest, USA mounta' (Zenodo, doi 10.5061/dryad.4fp90): 'END.3C' is linear in 'initial.1' (R\u00b2 = 0.948 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.4fp90",
+   "held_out_r2": -7.5026,
+   "held_out_rows": 178,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-95951d7f108f",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "5ae4aff8f2d4a705.csv",
+   "doi": "10.5061/dryad.4fp90",
+   "form": "linear",
+   "params": [
+    -17.533492199731896,
+    3.6488075505429824
+   ],
+   "seed": 1639851521,
+   "x": "initial.1",
+   "y": "END.4A"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Phytoplankton responses to nitrogen enrichment in Pacific Northwest, USA mounta' (Zenodo, doi 10.5061/dryad.4fp90): 'END.4A' is linear in 'initial.1' (R\u00b2 = 0.925 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.4fp90",
+   "held_out_r2": -2.1766,
+   "held_out_rows": 178,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4ac333b4a499",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "5ae4aff8f2d4a705.csv",
+   "doi": "10.5061/dryad.4fp90",
+   "form": "linear",
+   "params": [
+    -12.139079879083335,
+    3.116353419189279
+   ],
+   "seed": 1639851521,
+   "x": "initial.1",
+   "y": "END.4B"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Phytoplankton responses to nitrogen enrichment in Pacific Northwest, USA mounta' (Zenodo, doi 10.5061/dryad.4fp90): 'END.4B' is linear in 'initial.1' (R\u00b2 = 0.933 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.4fp90",
+   "held_out_r2": -2.6842,
+   "held_out_rows": 178,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-38d037ce6ecb",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "5ae4aff8f2d4a705.csv",
+   "doi": "10.5061/dryad.4fp90",
+   "form": "linear",
+   "params": [
+    -10.332575419283655,
+    2.7069969429336185
+   ],
+   "seed": 1639851521,
+   "x": "initial.1",
+   "y": "END.4C"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Phytoplankton responses to nitrogen enrichment in Pacific Northwest, USA mounta' (Zenodo, doi 10.5061/dryad.4fp90): 'END.4C' is linear in 'initial.1' (R\u00b2 = 0.935 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.4fp90",
+   "held_out_r2": -0.5739,
+   "held_out_rows": 178,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-af33dd39e5e3",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "5ae4aff8f2d4a705.csv",
+   "doi": "10.5061/dryad.4fp90",
+   "form": "linear",
+   "params": [
+    -4.397091747758327,
+    1.5807172576337292
+   ],
+   "seed": 1639851521,
+   "x": "initial.2",
+   "y": "END.2A"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Phytoplankton responses to nitrogen enrichment in Pacific Northwest, USA mounta' (Zenodo, doi 10.5061/dryad.4fp90): 'END.2A' is linear in 'initial.2' (R\u00b2 = 0.967 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.4fp90",
+   "held_out_r2": -0.0364,
+   "held_out_rows": 178,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a9157a1eb4f7",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "5ae4aff8f2d4a705.csv",
+   "doi": "10.5061/dryad.4fp90",
+   "form": "linear",
+   "params": [
+    -4.367399786861093,
+    1.5289203397197901
+   ],
+   "seed": 1639851521,
+   "x": "initial.2",
+   "y": "END.2C"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Phytoplankton responses to nitrogen enrichment in Pacific Northwest, USA mounta' (Zenodo, doi 10.5061/dryad.4fp90): 'END.2C' is linear in 'initial.2' (R\u00b2 = 0.926 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.4fp90",
+   "held_out_r2": -0.3215,
+   "held_out_rows": 178,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-136de6227662",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "5ae4aff8f2d4a705.csv",
+   "doi": "10.5061/dryad.4fp90",
+   "form": "linear",
+   "params": [
+    -5.494205071007476,
+    1.648179298095534
+   ],
+   "seed": 1639851521,
+   "x": "initial.2",
+   "y": "END.3A"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Phytoplankton responses to nitrogen enrichment in Pacific Northwest, USA mounta' (Zenodo, doi 10.5061/dryad.4fp90): 'END.3A' is linear in 'initial.2' (R\u00b2 = 0.904 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.4fp90",
+   "held_out_r2": -0.8153,
+   "held_out_rows": 178,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e482819b139b",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "5ae4aff8f2d4a705.csv",
+   "doi": "10.5061/dryad.4fp90",
+   "form": "linear",
+   "params": [
+    -3.5674741603609346,
+    1.7152257272855052
+   ],
+   "seed": 1639851521,
+   "x": "initial.2",
+   "y": "END.3B"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Phytoplankton responses to nitrogen enrichment in Pacific Northwest, USA mounta' (Zenodo, doi 10.5061/dryad.4fp90): 'END.3B' is linear in 'initial.2' (R\u00b2 = 0.918 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23086907",
+   "held_out_r2": 0.908,
+   "held_out_rows": 640,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d5863dc66906",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "902ae357ad9d69ef.csv",
+   "doi": "10.5281/zenodo.23086907",
+   "form": "linear",
+   "params": [
+    0.004232331567435128,
+    0.8810090366102415
+   ],
+   "seed": 681322642,
+   "x": "psi0_V",
+   "y": "zeta_V"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'In-situ Streaming Potential Quantification via Liquid Jet Photoelectron Spectroscopy - dat' (Zenodo, doi 10.5281/zenodo.23086907): 'zeta_V' is linear in 'psi0_V' (R\u00b2 = 0.916 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
