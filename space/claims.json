@@ -3177977,7 +3177977,7 @@
   },
   "id": "emp-dca8aefa9d9c",
   "kind": "empirical",
-  "novelty": "not checked",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
   "payload": {
    "dataset": "57b89d36199ac2d9.csv",
    "doi": "10.5281/zenodo.17149812",
@@ -3177992,6 +3177992,87 @@
   },
   "source": "datafeeds.py",
   "statement": "In 'How Spatial Resolutions Impact the Large-scale River Hydrodynamic Model Simulations: Analy' (Zenodo, doi 10.5281/zenodo.17149812): 'D 15min 351' follows a power law in 'Q 1min 351' (R\u00b2 = 0.996 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17149812",
+   "held_out_r2": 0.9968,
+   "held_out_rows": 183,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-85042b12f5c3",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "57b89d36199ac2d9.csv",
+   "doi": "10.5281/zenodo.17149812",
+   "form": "power law",
+   "params": [
+    4.613032822433805,
+    1.8647175050713813
+   ],
+   "seed": 2615264116,
+   "x": "D 1min 351",
+   "y": "Q 3min 351"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'How Spatial Resolutions Impact the Large-scale River Hydrodynamic Model Simulations: Analy' (Zenodo, doi 10.5281/zenodo.17149812): 'Q 3min 351' follows a power law in 'D 1min 351' (R\u00b2 = 0.997 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17149812",
+   "held_out_r2": 0.9952,
+   "held_out_rows": 183,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-369d78f08186",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "57b89d36199ac2d9.csv",
+   "doi": "10.5281/zenodo.17149812",
+   "form": "power law",
+   "params": [
+    4.611797981183224,
+    1.8648605297897998
+   ],
+   "seed": 2615264116,
+   "x": "D 1min 351",
+   "y": "Q 6min 351"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'How Spatial Resolutions Impact the Large-scale River Hydrodynamic Model Simulations: Analy' (Zenodo, doi 10.5281/zenodo.17149812): 'Q 6min 351' follows a power law in 'D 1min 351' (R\u00b2 = 0.996 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17149812",
+   "held_out_r2": 0.994,
+   "held_out_rows": 183,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-03ad683447b0",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "57b89d36199ac2d9.csv",
+   "doi": "10.5281/zenodo.17149812",
+   "form": "power law",
+   "params": [
+    4.6213807328231,
+    1.8597596877623133
+   ],
+   "seed": 2615264116,
+   "x": "D 1min 351",
+   "y": "Q 15min 351"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'How Spatial Resolutions Impact the Large-scale River Hydrodynamic Model Simulations: Analy' (Zenodo, doi 10.5281/zenodo.17149812): 'Q 15min 351' follows a power law in 'D 1min 351' (R\u00b2 = 0.995 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
  }
