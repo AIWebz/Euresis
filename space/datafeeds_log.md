@@ -4095,3 +4095,5 @@
 - 2026-11-16 02:51 data feeds: online
 - 2026-11-16 02:52 data feeds: 25583 datasets analysed so far, 3638 confirmed findings
 - 2026-11-16 03:53 data feeds: online
+- 2026-11-16 03:54 FINDING (confirmed on held-out rows): In 'Stop codon recoding is widespread in diverse phage lineages and has the potential to regul' (Zenodo, doi 10.5281/zenodo.5275335): 'original_contig_len' is linear in 'Len_nt' (R² = 0.997 on the discovery half); held-out R² = 0.934 [emp-ba9ca15e35d8]
+- 2026-11-16 03:54 data feeds: 25655 datasets analysed so far, 3639 confirmed findings

@@ -3203085,5 +3203085,86 @@
   "statement": "Octal game 0.0526141 is completely solved: its Grundy values are periodic with pre-period 59 and period 100 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.5275335",
+   "held_out_r2": 0.934,
+   "held_out_rows": 367,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ba9ca15e35d8",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "4404618afa6cd7d3.csv",
+   "doi": "10.5281/zenodo.5275335",
+   "form": "linear",
+   "params": [
+    922.1691079938638,
+    0.9957402146910526
+   ],
+   "seed": 3098620312,
+   "x": "Len_nt",
+   "y": "original_contig_len"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Stop codon recoding is widespread in diverse phage lineages and has the potential to regul' (Zenodo, doi 10.5281/zenodo.5275335): 'original_contig_len' is linear in 'Len_nt' (R\u00b2 = 0.997 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17314787",
+   "held_out_r2": 0.6716,
+   "held_out_rows": 591,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-27814ade6119",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "14749bdfa9a2a3ab.csv",
+   "doi": "10.5281/zenodo.17314787",
+   "form": "linear",
+   "params": [
+    0.0017843996224912871,
+    1.2089313462202076
+   ],
+   "seed": 3366713589,
+   "x": "0.5h",
+   "y": "3h"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Development of a Biodegradable Green Emitter Chitosan-Based OLED for Implantable Biomedica' (Zenodo, doi 10.5281/zenodo.17314787): '3h' is linear in '0.5h' (R\u00b2 = 0.997 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.6790211",
+   "held_out_r2": 0.936,
+   "held_out_rows": 91,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-936d862a5f3d",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "1982016a5bba0d2b.csv",
+   "doi": "10.5281/zenodo.6790211",
+   "form": "power law",
+   "params": [
+    -0.27624089050339445,
+    0.8334011722250481
+   ],
+   "seed": 3460901347,
+   "x": "Order",
+   "y": "Set"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset for a physical model characterizing visualization of the cervix during pelvic exam' (Zenodo, doi 10.5281/zenodo.6790211): 'Set' follows a power law in 'Order' (R\u00b2 = 0.925 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
