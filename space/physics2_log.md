@@ -5927,3 +5927,12 @@
 - 2026-11-16 09:53 round 5429: Compton scattering
 - 2026-11-16 09:54 round 5430: Cournot duopoly
 - 2026-11-16 09:55 round 5431: insurance and risk
+- 2026-11-16 09:56 round 5432: auction with a reserve price
+- 2026-11-16 09:58 round 5433: two-body decay
+- 2026-11-16 10:00 round 5434: collision
+- 2026-11-16 10:02 round 5435: driven oscillator
+- 2026-11-16 10:04 round 5436: velocity addition
+- 2026-11-16 10:05 round 5437: Compton scattering
+- 2026-11-16 10:06 round 5438: Cournot duopoly
+- 2026-11-16 10:08 round 5439: insurance and risk
+- 2026-11-16 10:09 segment end: 5439 rounds, 5 discoveries, 2 known laws rediscovered
