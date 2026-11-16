@@ -4197,3 +4197,4 @@
 - 2026-11-16 11:44 FINDING (confirmed on held-out rows): In 'Precipitation Effectiveness Data & Code' (Zenodo, doi 10.5281/zenodo.17228793): 'peakInt' follows a power law in 'avgInt' (R² = 0.922 on the discovery half); held-out R² = 0.932 [emp-d5fbe751945c]
 - 2026-11-16 11:45 FINDING (confirmed on held-out rows): In 'Data for: Soil organic carbon contents of collected soil samples from China's black soil r' (Zenodo, doi 10.5061/dryad.cvdncjt89): 'Prediction' is linear in 'Measurement' (R² = 0.907 on the discovery half); held-out R² = 0.912 [emp-a7c9f37e05f8]
 - 2026-11-16 11:45 data feeds: 26768 datasets analysed so far, 3723 confirmed findings
+- 2026-11-16 12:24 data feeds: online
