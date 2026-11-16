@@ -3344405,5 +3344405,167 @@
   "statement": "[physics: collision] Fraction of kinetic energy retained by the system relative to initial kinetic en [model-proposed; physical meaning unverified] \u2265 1/4 \u00d7 Mass Ratio Adjusted by Restitution [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1.85e-14))",
   "status": "proved",
   "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-72072e692954",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "(e + 1)/((m + 1)*(e*m/(m + 1) + 1)) >= 1/4*((m*(1 - e**2)/(m + 1) + (1 - e**2)/(m + 1))/((1 - e**2)*(1 - m)/(m + 1) + (1 - e**2)/(m + 1)))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 5674",
+  "statement": "[physics: collision] Impulse ratio of target to projectile [model-proposed; physical meaning unverified] \u2265 1/4 \u00d7 Kinetic Energy Ratio of Projectile to Target After Collision [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 4.13e-14))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-c5dbe21f4bf7",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified]'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "(e + 1)/((m + 1)*(e*m/(m + 1) + 1)) >= 1/4*(m/(e + 1) + 1)",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 5674",
+  "statement": "[physics: collision] Impulse ratio of target to projectile [model-proposed; physical meaning unverified] \u2265 1/4 \u00d7 Mass Ratio Adjusted by Restitution [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 9.59e-14))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-558599407d88",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified]'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "(-e**2*m**2/(m + 1)**2 - e**2*m/(m + 1) - (1 - e**2)/(m + 1) + 1)/(-e**2*m**2/(m + 1)**2 - (1 - e**2)/(m + 1) + 1) >= 1/6*((m*(1 - e**2)/(m + 1) + (1 - e**2)/(m + 1))/((1 - e**2)*(1 - m)/(m + 1) + (1 - e**2)/(m + 1)))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 5674",
+  "statement": "[physics: collision] Fraction of Kinetic Energy Retained by the Projectile Relative to the System [model-proposed; physical meaning unverified] \u2265 1/6 \u00d7 Kinetic Energy Ratio of Projectile to Target After Collision [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-c85fa7c69eb9",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified]'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "(-e**2*m**2/(m + 1)**2 - e**2*m/(m + 1) - (1 - e**2)/(m + 1) + 1)/(-e**2*m**2/(m + 1)**2 - (1 - e**2)/(m + 1) + 1) >= 2/9*(m/(e + 1) + 1)",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 5674",
+  "statement": "[physics: collision] Fraction of Kinetic Energy Retained by the Projectile Relative to the System [model-proposed; physical meaning unverified] \u2265 2/9 \u00d7 Mass Ratio Adjusted by Restitution [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-71b93db1e867",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified]'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "(-e**2*m**2/(m + 1)**2 - e**2*m/(m + 1) + 2)/(e**2*m**2/(m + 1)**2 + e**2*m/(m + 1)) >= 5/6*((m*(1 - e**2)/(m + 1) + (1 - e**2)/(m + 1))/((1 - e**2)*(1 - m)/(m + 1) + (1 - e**2)/(m + 1)))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 5674",
+  "statement": "[physics: collision] Fraction of Kinetic Energy Retained by the Projectile Relative to the Target [model-proposed; physical meaning unverified] \u2265 5/6 \u00d7 Kinetic Energy Ratio of Projectile to Target After Collision [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-b637d4ea5bb3",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified]'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "(-e**2*m**2/(m + 1)**2 - e**2*m/(m + 1) + 2)/(e**2*m**2/(m + 1)**2 + e**2*m/(m + 1)) >= 10/9*(m/(e + 1) + 1)",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 5674",
+  "statement": "[physics: collision] Fraction of Kinetic Energy Retained by the Projectile Relative to the Target [model-proposed; physical meaning unverified] \u2265 10/9 \u00d7 Mass Ratio Adjusted by Restitution [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]

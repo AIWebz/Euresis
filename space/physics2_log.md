@@ -6194,3 +6194,7 @@
 - 2026-11-16 21:26 round 5672: auction with a reserve price
 - 2026-11-16 21:28 round 5673: two-body decay
 - 2026-11-16 21:30 round 5674: collision
+- 2026-11-16 21:33 round 5675: driven oscillator
+- 2026-11-16 21:35 round 5676: velocity addition
+- 2026-11-16 21:36 round 5677: Compton scattering
+- 2026-11-16 21:36 round 5678: Cournot duopoly
