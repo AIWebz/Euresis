@@ -4157,3 +4157,4 @@
 - 2026-11-16 07:48 FINDING (confirmed on held-out rows): In 'MEOBDET: Mendel Everyday Object Detection dataset - 154,854 annotated images of 147 everyd' (Zenodo, doi 10.5281/zenodo.23432572): 'images_test' is linear in 'images_val' (R² = 0.925 on the discovery half); held-out R² = 0.987 [emp-502a8e5bc715]
 - 2026-11-16 07:48 FINDING (confirmed on held-out rows): In 'MEOBDET: Mendel Everyday Object Detection dataset - 154,854 annotated images of 147 everyd' (Zenodo, doi 10.5281/zenodo.23432572): 'boxes_test' is linear in 'boxes_val' (R² = 0.958 on the discovery half); held-out R² = 0.951 [emp-9fae0055a953]
 - 2026-11-16 07:49 data feeds: 25911 datasets analysed so far, 3691 confirmed findings
+- 2026-11-16 08:34 data feeds: online
