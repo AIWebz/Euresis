@@ -4323,3 +4323,4 @@
 - 2026-11-16 21:10 FINDING (confirmed on held-out rows): In 'Data and analysis scripts: Evidence supporting an evolutionary trade-off between material ' (Zenodo, doi 10.5061/dryad.9p8cz8wpp): 'BSI' grows logarithmically in 'SMA' (R² = 0.998 on the discovery half); held-out R² = 0.998 [emp-cdc6e8f6fa9a]
 - 2026-11-16 21:11 FINDING (confirmed on held-out rows): In 'Data and analysis scripts: Evidence supporting an evolutionary trade-off between material ' (Zenodo, doi 10.5061/dryad.9p8cz8wpp): 'BSI' grows logarithmically in 'csa' (R² = 0.994 on the discovery half); held-out R² = 0.994 [emp-eacbc12b46db]
 - 2026-11-16 21:11 data feeds: 27994 datasets analysed so far, 3829 confirmed findings
+- 2026-11-16 21:58 data feeds: online
