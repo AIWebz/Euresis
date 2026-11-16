@@ -3289862,5 +3289862,194 @@
   "statement": "Octal game 0.0702716 is completely solved: its Grundy values are periodic with pre-period 284 and period 48 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.13140/RG.2.2.13864.99844",
+   "held_out_r2": 0.9687,
+   "held_out_rows": 137,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-2ef66d314696",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "822783d731449e55.csv",
+   "doi": "10.13140/RG.2.2.13864.99844",
+   "form": "linear",
+   "params": [
+    3.726584601577407,
+    0.017605210098977638
+   ],
+   "seed": 2264139097,
+   "x": "BertzCT_Lig",
+   "y": "Chi0_Lig"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'ESA Toolbox - Vanadium-Catalyzed Epoxidation Reaction Database' (Zenodo, doi 10.13140/RG.2.2.13864.99844): 'Chi0_Lig' is linear in 'BertzCT_Lig' (R\u00b2 = 0.956 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.q2bvq83ks",
+   "held_out_r2": 0.9632,
+   "held_out_rows": 44,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e37602645a57",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "03c65285ff02d306.csv",
+   "doi": "10.5061/dryad.q2bvq83ks",
+   "form": "logarithmic",
+   "params": [
+    0.03216208752433247,
+    0.8544766290661009
+   ],
+   "seed": 2907335646,
+   "x": "FSpecies Richness",
+   "y": "H"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Road salt inputs alter biogeochemistry but not plant community composition in exurban fore' (Zenodo, doi 10.5061/dryad.q2bvq83ks): 'H' grows logarithmically in 'FSpecies Richness' (R\u00b2 = 0.958 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.18251093",
+   "held_out_r2": 0.6442,
+   "held_out_rows": 39,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e8f06cd90371",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "be70467609fd9885.csv",
+   "doi": "10.5281/zenodo.18251093",
+   "form": "linear",
+   "params": [
+    0.23791836747558617,
+    0.028891890987422314
+   ],
+   "seed": 674126668,
+   "x": "rainfall",
+   "y": "stemflow"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset on stemflow generation and chemistry of selected urban tree species in Sri Lanka' (Zenodo, doi 10.5281/zenodo.18251093): 'stemflow' is linear in 'rainfall' (R\u00b2 = 0.931 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.73n5tb2ss",
+   "held_out_r2": 0.9838,
+   "held_out_rows": 1555,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d96854de06c9",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3856e42db5bd48bc.csv",
+   "doi": "10.5061/dryad.73n5tb2ss",
+   "form": "linear",
+   "params": [
+    507.9802808210103,
+    2.033414098301274
+   ],
+   "seed": 4012640699,
+   "x": "low_abun",
+   "y": "up_abun"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Unnatural selection of salmon life histories in a modified riverscape' (Zenodo, doi 10.5061/dryad.73n5tb2ss): 'up_abun' is linear in 'low_abun' (R\u00b2 = 0.973 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.73n5tb2ss",
+   "held_out_r2": 0.9339,
+   "held_out_rows": 1555,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3e455a25cd22",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8bd7d920382348be.csv",
+   "doi": "10.5061/dryad.73n5tb2ss",
+   "form": "linear",
+   "params": [
+    -31.30731122104858,
+    0.5200661954953064
+   ],
+   "seed": 3354489344,
+   "x": "med_abun",
+   "y": "low_abun"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Unnatural selection of salmon life histories in a modified riverscape' (Zenodo, doi 10.5061/dryad.73n5tb2ss): 'low_abun' is linear in 'med_abun' (R\u00b2 = 0.959 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.6p46m",
+   "held_out_r2": 0.9123,
+   "held_out_rows": 50,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-63ec9970ee3a",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "10f0b36969567504.csv",
+   "doi": "10.5061/dryad.6p46m",
+   "form": "exponential",
+   "params": [
+    8.717556604503297,
+    -5.264774241131916e-05
+   ],
+   "seed": 1513900418,
+   "x": "irrad",
+   "y": "Precip.Dry.Q"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Plant toxin levels in nectar vary spatially across native and introduced popula' (Zenodo, doi 10.5061/dryad.6p46m): 'Precip.Dry.Q' grows exponentially in 'irrad' (R\u00b2 = 0.920 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.6p46m",
+   "held_out_r2": 0.9717,
+   "held_out_rows": 50,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-78e89f2326b5",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "10f0b36969567504.csv",
+   "doi": "10.5061/dryad.6p46m",
+   "form": "logarithmic",
+   "params": [
+    226.36796875173005,
+    -25.41797372552816
+   ],
+   "seed": 1513900418,
+   "x": "Precip.Dry.Q",
+   "y": "An.temp"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Plant toxin levels in nectar vary spatially across native and introduced popula' (Zenodo, doi 10.5061/dryad.6p46m): 'An.temp' grows logarithmically in 'Precip.Dry.Q' (R\u00b2 = 0.966 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
