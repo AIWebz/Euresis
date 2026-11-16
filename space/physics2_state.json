@@ -77981,6 +77981,26 @@
    "family": "insurance and risk",
    "expr": "sqrt(-L*p + 1)/(-p*sqrt(1 - L) + p + 1)",
    "why": "affine combination of known quantities (expected wealth, Risk Adjustment Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(-2*r**3/3 + r**2*v + 2/3)/(4*r**3/3 + r**2*v - r**2 + 1/3)",
+   "why": "affine combination of known quantities (expected revenue, Welfare Reserve Efficiency with Seller Value [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(2*r**3/3 + r**2*v - r**2 + 1/3)/(8*r**3/3 + 2*r**2*v - 4*r**2 + 4/3)",
+   "why": "affine combination of known quantities (expected revenue, Bidder Surplus Reserve Efficiency Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(-2*r**3/3 + r**2*v + 2/3)/(2*r**3/3 + r**2*v + 2*r**2 + 2/3)",
+   "why": "affine combination of known quantities (expected revenue, Welfare Efficiency with Seller Value and Reserve [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(2*r**3/3 + r**2*v - r**2 + 1/3)/(2*r**3/3 - r**2 + 1/3 + r**2*v)",
+   "why": "must depend only on r, v"
   }
  ],
  "tried": [
@@ -96193,7 +96213,7 @@
    "k": "1/2"
   }
  ],
- "rounds": 5543,
+ "rounds": 5544,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",
