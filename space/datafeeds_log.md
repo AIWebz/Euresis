@@ -4061,3 +4061,5 @@
 - 2026-11-15 23:07 FINDING (confirmed on held-out rows): In 'Data from: Experimental feeding regime influences urban bird disease dynamics' (Zenodo, doi 10.5061/dryad.6rq0c): 'TARSUS_LONG (mm)' is linear in 'BILL_LENGTH (mm)' (R² = 0.914 on the discovery half); held-out R² = 0.927 [emp-68833431cf98]
 - 2026-11-15 23:07 FINDING (confirmed on held-out rows): In 'Data from: Experimental feeding regime influences urban bird disease dynamics' (Zenodo, doi 10.5061/dryad.6rq0c): 'TARSUS_LONG (mm)' is linear in 'TARSUS_SHORT (mm)' (R² = 0.988 on the discovery half); held-out R² = 0.988 [emp-225f0d603435]
 - 2026-11-15 23:07 data feeds: 25253 datasets analysed so far, 3613 confirmed findings
+- 2026-11-16 00:14 data feeds: online
+- 2026-11-16 00:15 FINDING (confirmed on held-out rows): In 'Dataset for "Long-term fluxes of carbonyl sulfide and their seasonality and interannual va' (Zenodo, doi 10.5281/zenodo.5906705): 'FVPD' grows exponentially in 'FPAR' (R² = 0.916 on the discovery half); held-out R² = 0.908 [emp-9ea1b30849c7]
