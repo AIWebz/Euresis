@@ -5804,3 +5804,6 @@
 - 2026-11-16 04:17 round 5318: Cournot duopoly
 - 2026-11-16 04:19 round 5319: insurance and risk
 - 2026-11-16 04:20 round 5320: auction with a reserve price
+- 2026-11-16 04:22 round 5321: two-body decay
+- 2026-11-16 04:23 round 5322: collision
+- 2026-11-16 04:25 segment end: 5322 rounds, 5 discoveries, 2 known laws rediscovered
