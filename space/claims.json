@@ -3195569,5 +3195569,122 @@
   "statement": "[economics: Cournot duopoly] Consumer Surplus to Total Welfare Ratio [model-proposed; physical meaning unverified] \u2265 256/51 \u00d7 Cournot Equilibrium Deviation Ratio [model-proposed; physical meaning unverified]   on c1 < 1/2, c2 < 1/2 (tight only at the edge of the domain, near (1.25e-14, 0.5))",
   "status": "proved",
   "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "checked_up_to": 619,
+   "method": "Grundy values recomputed; Guy\u2013Smith periodicity theorem condition checked",
+   "values_of_one_period": [
+    7,
+    2,
+    9,
+    0,
+    1,
+    0,
+    1,
+    0,
+    7,
+    2,
+    3,
+    2,
+    9,
+    8,
+    1,
+    0,
+    1,
+    0,
+    1,
+    10,
+    3,
+    2,
+    7,
+    2,
+    9,
+    0,
+    1,
+    0,
+    1,
+    0,
+    11,
+    2,
+    3,
+    2,
+    9,
+    8,
+    1,
+    0,
+    1,
+    0,
+    1,
+    6,
+    3,
+    2,
+    3,
+    2,
+    9,
+    0,
+    1,
+    0,
+    1,
+    0,
+    11,
+    2,
+    3,
+    6,
+    9,
+    8,
+    1,
+    0
+   ]
+  },
+  "id": "gam-f297e1c8255a",
+  "kind": "game",
+  "novelty": "novelty unchecked: octal games of up to three digits are tabulated in Winning Ways and Flammenkamp's tables, which cannot be searched from here",
+  "payload": {
+   "code": "0524033",
+   "period": 154,
+   "preperiod": 152
+  },
+  "source": "games.py",
+  "statement": "Octal game 0.0524033 is completely solved: its Grundy values are periodic with pre-period 152 and period 154 (Guy\u2013Smith periodicity theorem)",
+  "status": "proved",
+  "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "checked_up_to": 27,
+   "method": "Grundy values recomputed; Guy\u2013Smith periodicity theorem condition checked",
+   "values_of_one_period": [
+    1,
+    0
+   ]
+  },
+  "id": "gam-c69c57720309",
+  "kind": "game",
+  "novelty": "novelty unchecked: octal games of up to three digits are tabulated in Winning Ways and Flammenkamp's tables, which cannot be searched from here",
+  "payload": {
+   "code": "0524041",
+   "period": 2,
+   "preperiod": 8
+  },
+  "source": "games.py",
+  "statement": "Octal game 0.0524041 is completely solved: its Grundy values are periodic with pre-period 8 and period 2 (Guy\u2013Smith periodicity theorem)",
+  "status": "proved",
+  "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": null,
+  "id": "gam-d486257086a7",
+  "kind": "game",
+  "novelty": "not checked",
+  "payload": {
+   "code": "0524042",
+   "period": 2,
+   "preperiod": 1
+  },
+  "source": "games.py",
+  "statement": "Octal game 0.0524042 is completely solved: its Grundy values are periodic with pre-period 1 and period 2 (Guy\u2013Smith periodicity theorem)",
+  "status": "candidate",
+  "verifier": null
  }
 ]
