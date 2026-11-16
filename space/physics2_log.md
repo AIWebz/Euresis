@@ -6243,3 +6243,5 @@
 - 2026-11-16 23:31 round 5717: Compton scattering
 - 2026-11-16 23:32 round 5718: Cournot duopoly
 - 2026-11-16 23:33 round 5719: insurance and risk
+- 2026-11-16 23:39 segment start (budget 30 min; model: Qwen3-8B; 5 discoveries so far)
+- 2026-11-16 23:39 round 5719: insurance and risk
