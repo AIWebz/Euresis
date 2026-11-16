@@ -6198,3 +6198,4 @@
 - 2026-11-16 21:35 round 5676: velocity addition
 - 2026-11-16 21:36 round 5677: Compton scattering
 - 2026-11-16 21:36 round 5678: Cournot duopoly
+- 2026-11-16 21:38 round 5679: insurance and risk

@@ -79913,6 +79913,26 @@
    "family": "Compton scattering",
    "expr": "1 - c/(c*x + 1) - 1/(c*x + 1)",
    "why": "not positive on the physical domain"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "((1 - c1 - c2)**2)/((1 - 2*c1 + c2)**2 + (1 - 2*c2 + c1)**2)",
+   "why": "affine combination of known quantities (Price Elasticity of Demand [model-proposed; physical meaning unverified], Total Welfare Deviation Index [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "((1 - 2*c1 + c2)**2)/((1 - 2*c2 + c1)**2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "sqrt((-2*c1 + c2 + 1)**2 + (c1 - 2*c2 + 1)**2)/((1 - c1)**2 + (1 - c2)**2 + (-c1 - c2 + 1)**2)",
+   "why": "affine combination of known quantities (output of firm 1, Total Welfare Efficiency Index [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "(-c1 - c2 + 2)**2/(18*((-2*c1 + c2 + 1)**2/9 + (-c1 - c2 + 2)**2/18 + (c1 - 2*c2 + 1)**2/9))",
+   "why": "affine combination of known quantities (output of firm 1, Consumer Surplus to Total Welfare Ratio [model-proposed; physical meaning unverified])"
   }
  ],
  "tried": [
@@ -98269,7 +98289,7 @@
    "k": "10/9"
   }
  ],
- "rounds": 5677,
+ "rounds": 5678,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",
