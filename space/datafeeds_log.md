@@ -4113,3 +4113,4 @@
 - 2026-11-16 05:51 FINDING (confirmed on held-out rows): In 'Data from: Distinct developmental mechanisms influence sexual dimorphisms in the milkweed ' (Zenodo, doi 10.5061/dryad.kwh70rz3q): 'melanic.A3.sq.mm' is linear in 'melanic.px.A3' (R² = 0.988 on the discovery half); held-out R² = 0.990 [emp-0540fac96b14]
 - 2026-11-16 05:52 data feeds: 25789 datasets analysed so far, 3650 confirmed findings
 - 2026-11-16 06:40 data feeds: online
+- 2026-11-16 06:40 FINDING (confirmed on held-out rows): In 'Data for: Global change risks a threatened species due to alteration of predator-prey dyna' (Zenodo, doi 10.5061/dryad.ht76hdrkt): 'Isolation' grows exponentially in 'Prop.Broadleaf' (R² = 0.907 on the discovery half); held-out R² = 0.887 [emp-ab2ba3b63cae]
