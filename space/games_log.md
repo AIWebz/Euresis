@@ -31902,3 +31902,7 @@
 - 2026-11-16 09:36 SOLVED (proved): 0.0554201 — pre-period 1192, period 8  [gam-40ef35db2044]
 - 2026-11-16 09:36 SOLVED (proved): 0.0554211 — pre-period 1192, period 8  [gam-a9f3d1da543e]
 - 2026-11-16 09:36 games: 75229 octal games solved, 350106 unresolved up to n = 3000
+- 2026-11-16 10:10 SOLVED (proved): 0.0554301 — pre-period 1192, period 8  [gam-cd5267a4b952]
+- 2026-11-16 10:10 SOLVED (proved): 0.0554311 — pre-period 1192, period 8  [gam-4085582c62c5]
+- 2026-11-16 10:10 SOLVED (proved): 0.0555001 — pre-period 1192, period 8  [gam-b37531388f60]
+- 2026-11-16 10:10 SOLVED (proved): 0.0555011 — pre-period 1192, period 8  [gam-90094724c517]
