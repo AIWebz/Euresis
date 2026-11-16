@@ -5735,3 +5735,10 @@
 - 2026-11-16 01:15 round 5255: insurance and risk
 - 2026-11-16 01:16 round 5256: auction with a reserve price
 - 2026-11-16 01:18 round 5257: two-body decay
+- 2026-11-16 01:23 round 5258: collision
+- 2026-11-16 01:25 round 5259: driven oscillator
+- 2026-11-16 01:26 round 5260: velocity addition
+- 2026-11-16 01:27 round 5261: Compton scattering
+- 2026-11-16 01:28 round 5262: Cournot duopoly
+- 2026-11-16 01:29 round 5263: insurance and risk
+- 2026-11-16 01:30 segment end: 5263 rounds, 5 discoveries, 2 known laws rediscovered
