@@ -4092,3 +4092,4 @@
 - 2026-11-16 02:05 FINDING (confirmed on held-out rows): In 'Nectar bacteria stimulate pollen germination and bursting to enhance microbial fitness' (Zenodo, doi 10.25338/B8BS75): 'allgerm' is linear in 'Prop.germ' (R² = 0.942 on the discovery half); held-out R² = 0.966 [emp-010bafb6ae34]
 - 2026-11-16 02:05 FINDING (confirmed on held-out rows): In 'Animal Biodiversity at Nachusa Grasslands' (Zenodo, doi 10.5061/dryad.gf1vhhmnv): 'sm_invsimp' grows exponentially in 'sm_shannon' (R² = 0.948 on the discovery half); held-out R² = 0.969 [emp-74f88b06fe92]
 - 2026-11-16 02:05 data feeds: 25583 datasets analysed so far, 3638 confirmed findings
+- 2026-11-16 02:51 data feeds: online
