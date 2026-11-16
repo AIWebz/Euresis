@@ -4288,3 +4288,4 @@
 - 2026-11-16 17:28 FINDING (confirmed on held-out rows): In 'Nonlinear optical excitation of plasmons in graphene: intensity and polarisation dependenc' (Figshare): 'signal' is linear in 'dRoverR' (R² = 0.986 on the discovery half); held-out R² = 0.988 [emp-fa288582c32c]
 - 2026-11-16 17:28 data feeds: 27728 datasets analysed so far, 3801 confirmed findings
 - 2026-11-16 18:08 data feeds: online
+- 2026-11-16 18:10 data feeds: 27807 datasets analysed so far, 3801 confirmed findings

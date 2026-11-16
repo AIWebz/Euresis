@@ -3312212,5 +3312212,32 @@
   "statement": "Octal game 0.0705136 is completely solved: its Grundy values are periodic with pre-period 284 and period 48 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22647104",
+   "held_out_r2": 0.9306,
+   "held_out_rows": 96,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-0ec8c23d9daa",
+  "kind": "empirical",
+  "novelty": "KNOWN: equation of state of a simulated fluid (pressure, density, temperature, chemical potential, kinetic energy) \u2014 not a discovery",
+  "payload": {
+   "dataset": "89900943be83af42.csv",
+   "doi": "10.5281/zenodo.22647104",
+   "form": "linear",
+   "params": [
+    792.2259319726583,
+    0.9788615171798241
+   ],
+   "seed": 277580682,
+   "x": "Duration_without_stuttering_ms",
+   "y": "Duration_with_stuttering_ms"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Post-Sentence Responses to Syntax\u2013Plausibility Conflict in Dative Sentences Produced With ' (Zenodo, doi 10.5281/zenodo.22647104): 'Duration_with_stuttering_ms' is linear in 'Duration_without_stuttering_ms' (R\u00b2 = 0.922 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
