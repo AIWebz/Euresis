@@ -4083,3 +4083,4 @@
 - 2026-11-16 00:59 FINDING (confirmed on held-out rows): In 'Data from: Resource allocation trade-offs and the loss of chemical defences during apple d' (Zenodo, doi 10.5061/dryad.dm33k0c): 'width' follows a power law in 'weight' (R² = 0.992 on the discovery half); held-out R² = 0.991 [emp-33aba062f432]
 - 2026-11-16 00:59 FINDING (confirmed on held-out rows): In 'Data from: Resource allocation trade-offs and the loss of chemical defences during apple d' (Zenodo, doi 10.5061/dryad.dm33k0c): 'width' follows a power law in 'length' (R² = 0.911 on the discovery half); held-out R² = 0.942 [emp-a91d879e86b7]
 - 2026-11-16 00:59 data feeds: 25505 datasets analysed so far, 3631 confirmed findings
+- 2026-11-16 02:01 data feeds: online
