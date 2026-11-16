@@ -3179398,5 +3179398,86 @@
   "statement": "[physics: collision] Square Root of Mass Ratio Plus Reciprocal of Coefficient of Restitution [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Mass ratio squared plus coefficient of restitution [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
   "status": "proved",
   "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-710c28278449",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "sqrt(m) + 1/e >= 1*(sqrt(e) + sqrt(m))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 5242",
+  "statement": "[physics: collision] Square Root of Mass Ratio Plus Reciprocal of Coefficient of Restitution [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Sum of Square Roots of Mass Ratio and Coefficient of Restitution [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-1a6593d2c286",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'Sum of Square Roots of Mass Ratio and Coefficient of Restitution [model-proposed; physical meaning unverified]'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "sqrt(m) + 1/e >= 1*(e + sqrt(m))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 5242",
+  "statement": "[physics: collision] Square Root of Mass Ratio Plus Reciprocal of Coefficient of Restitution [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Square Root of Mass Ratio Plus Coefficient of Restitution [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-d7c37385bd66",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'Sum of Square Roots of Mass Ratio and Coefficient of Restitution [model-proposed; physical meaning unverified]'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "sqrt(m) + 1/e >= 1*(sqrt(e) + m)",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 5242",
+  "statement": "[physics: collision] Square Root of Mass Ratio Plus Reciprocal of Coefficient of Restitution [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Square Root of Coefficient of Restitution Plus Mass Ratio [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]
