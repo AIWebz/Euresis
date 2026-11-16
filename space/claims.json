@@ -3274917,10 +3274917,15 @@
   "verifier": "held-out-replication"
  },
  {
-  "evidence": null,
+  "evidence": {
+   "doi": "10.5281/zenodo.14868935",
+   "held_out_r2": 0.9102,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
   "id": "emp-6767af138789",
   "kind": "empirical",
-  "novelty": "not checked",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
   "payload": {
    "dataset": "2c9bd863d8f716c4.csv",
    "doi": "10.5281/zenodo.14868935",
@@ -3274935,6 +3274940,28 @@
   },
   "source": "datafeeds.py",
   "statement": "In 'Global development data from GDL' (Zenodo, doi 10.5281/zenodo.14868935): 'msch' is linear in 'edindex' (R\u00b2 = 0.912 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": null,
+  "id": "emp-3786d7ccb311",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "366581bc637aab54.csv",
+   "doi": "10.5281/zenodo.17467221",
+   "form": "linear",
+   "params": [
+    -0.1738473846149989,
+    1.143436562609014
+   ],
+   "seed": 1652519637,
+   "x": "shdi",
+   "y": "edindex"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Global Data Lab SHDI and regions with codes' (Zenodo, doi 10.5281/zenodo.17467221): 'edindex' is linear in 'shdi' (R\u00b2 = 0.934 on the discovery half)",
   "status": "candidate",
   "verifier": null
  }

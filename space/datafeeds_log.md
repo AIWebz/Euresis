@@ -4206,3 +4206,4 @@
 - 2026-11-16 13:28 data feeds: online
 - 2026-11-16 13:29 FINDING (confirmed on held-out rows): In 'Global development data from GDL' (Zenodo, doi 10.5281/zenodo.14868935): 'edindex' is linear in 'shdi' (R² = 0.930 on the discovery half); held-out R² = 0.931 [emp-55bc3c3a172d]
 - 2026-11-16 13:29 FINDING (confirmed on held-out rows): In 'Global development data from GDL' (Zenodo, doi 10.5281/zenodo.14868935): 'gnic' grows exponentially in 'incindex' (R² = 1.000 on the discovery half); held-out R² = 1.000 [emp-dbad3758ffcf]
+- 2026-11-16 13:29 FINDING (confirmed on held-out rows): In 'Global development data from GDL' (Zenodo, doi 10.5281/zenodo.14868935): 'msch' is linear in 'edindex' (R² = 0.912 on the discovery half); held-out R² = 0.910 [emp-6767af138789]
