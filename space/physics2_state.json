@@ -78001,6 +78001,86 @@
    "family": "auction with a reserve price",
    "expr": "(2*r**3/3 + r**2*v - r**2 + 1/3)/(2*r**3/3 - r**2 + 1/3 + r**2*v)",
    "why": "must depend only on r, v"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "sqrt((1 - (a + b)**2)*(1 - (a - b)**2)) / sqrt((-a**2 + b**2 + 1)**2 + (a**2 - b**2 + 1)**2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "collision",
+   "expr": "(-e**2*m**2/(m + 1)**2 - e**2*m/(m + 1) - (1 - e**2)/(m + 1) + 1)/(-e**2*m**2/(m + 1)**2 - (1 - e**2",
+   "why": "affine combination of known quantities (target speed / initial speed, Fraction of Kinetic Energy Retained by the Projectile Relative to the System [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "(-e**2*m**2/(m + 1)**2 - e**2*m/(m + 1) + 2)/(e**2*m**2/(m + 1)**2 + e**2*m/(m + 1))",
+   "why": "affine combination of known quantities (Fraction of Kinetic Energy Retained by the Projectile Relative to the Target [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2*m**2/(e**2*m**2 + e**2*m/(m + 1) + (1 - e**2)/(m + 1) + 1)",
+   "why": "affine combination of known quantities (target speed / initial speed, Fraction of kinetic energy retained by the target relative to the system [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "(-e**2*m**2/(m + 1)**2 - e**2*m/(m + 1) + 2)/(e**2*m**2/(m + 1)**2 + e**2*m/(m + 1))",
+   "why": "affine combination of known quantities (Fraction of Kinetic Energy Retained by the Projectile Relative to the Target [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt((1 - r**2)**2 + (2*z*r)**2)/sqrt(4*z**2 + 1)",
+   "why": "affine combination of known quantities (amplitude / static deflection, Mechanical Impedance Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(1 + (2*z*r)**2)/sqrt((1 - r**2)**2 + (2*z*r)**2)",
+   "why": "affine combination of known quantities (amplitude / static deflection, transmissibility)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(r**4 + 4*r**2*z**2 + 1)/sqrt((1 - r**2)**2 + (2*z*r)**2)",
+   "why": "affine combination of known quantities (amplitude / static deflection, Acceleration Transmissibility [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(4*r**2*z**2 + 1)/sqrt(4*z**2 + 1)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 + u)/(1 - u)) * sqrt((1 + v)/(1 - v)) / sqrt((1 + (u + v)/(1 + u*v)) / (1 - (u + v)/(1 + u*v",
+   "why": "affine combination of known quantities (composed speed / c)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 - u**2)*(1 - v**2) + (u + v)**2/(u*v + 1)**2) / (u*v + 1)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt(1 - u**2) + sqrt(1 - v**2) / sqrt(-(u + v)**2/(u*v + 1)**2 + 1)",
+   "why": "affine combination of known quantities (composed speed / c, Relativistic Energy-Momentum Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 - u**2)*(1 - v**2) + (u + v)**2/(u*v + 1)**2) / (u*v + 1)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "sqrt(c**2*x**2 + 1)/(x*(c*x + 1))",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, Scattered photon momentum / initial photon momentum [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "c*x**2/(x + 1) + c*x",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, Electron kinetic energy / initial photon energy [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "1/(c*x + 1) + (c*x + 1)**(-2)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, Compton scattering cross-section factor [model-proposed; physical meaning unverified])"
   }
  ],
  "tried": [
@@ -96213,7 +96293,7 @@
    "k": "1/2"
   }
  ],
- "rounds": 5544,
+ "rounds": 5549,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",

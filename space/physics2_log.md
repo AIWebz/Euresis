@@ -6053,3 +6053,8 @@
 - 2026-11-16 15:27 round 5543: insurance and risk
 - 2026-11-16 15:28 round 5544: auction with a reserve price
 - 2026-11-16 15:30 round 5545: two-body decay
+- 2026-11-16 15:31 round 5546: collision
+- 2026-11-16 15:33 round 5547: driven oscillator
+- 2026-11-16 15:35 round 5548: velocity addition
+- 2026-11-16 15:36 round 5549: Compton scattering
+- 2026-11-16 15:37 round 5550: Cournot duopoly
