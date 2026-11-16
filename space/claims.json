@@ -3219953,5 +3219953,167 @@
   "statement": "In 'Data from: Distinct developmental mechanisms influence sexual dimorphisms in the milkweed ' (Zenodo, doi 10.5061/dryad.kwh70rz3q): 'melanic.A3.sq.mm' is linear in 'melanic.px.A3' (R\u00b2 = 0.988 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-468c3273e16f",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "(-2*r**3/3 + r**2*v + 2/3)/(2*r**3/3 + r**2*v + 2*r**2 + 2/3) >= 1/5*((2*r**3/3 + r**2*v - r**2 + 1/3)/(4*r**3/3 + r**2*v - 2*r**2 + 4/3))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 5344",
+  "statement": "[economics: auction with a reserve price] Welfare Efficiency with Seller Value and Reserve [model-proposed; physical meaning unverified] \u2265 1/5 \u00d7 Bidder Surplus Reserve Efficiency with Seller Value [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (1, 1.44e-08))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-c2ce2369f656",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'seller's expected payoff'",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "(-2*r**3/3 + r**2*v + 2/3)/(2*r**3/3 + r**2*v + 2*r**2 + 2/3) >= 2/13*((2*r**3/3 + r**2*v - r**2 + 1/3)/(2*r**3/3 - r**2 + 1))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 5344",
+  "statement": "[economics: auction with a reserve price] Welfare Efficiency with Seller Value and Reserve [model-proposed; physical meaning unverified] \u2265 2/13 \u00d7 Bidder Surplus Reserve Efficiency with Seller Value and Reserve Ratio [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-e5a350036eae",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "(-2*r**3/3 + r**2*v + 2/3)/(2*r**3/3 + r**2*v + 2*r**2 + 2/3) >= 2/13*((2*r**3/3 + r**2*v - r**2 + 1/3)/(8*r**3/3 - 3*r**2 + 1))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 5344",
+  "statement": "[economics: auction with a reserve price] Welfare Efficiency with Seller Value and Reserve [model-proposed; physical meaning unverified] \u2265 2/13 \u00d7 Bidder Surplus Reserve Efficiency with Seller Value and Reserve [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-95b23a1886be",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "(-2*r**3/3 + r**2*v + 2/3)/(2*r**3/3 + r**2*v + 2*r**2 + 2/3) >= 3/10*((-2*r**3/3 + r**2*v + 2/3)/(-2*r**3/3 + r**2*v + r**2 + 2/3))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 5344",
+  "statement": "[economics: auction with a reserve price] Welfare Efficiency with Seller Value and Reserve [model-proposed; physical meaning unverified] \u2265 3/10 \u00d7 Welfare Reserve Elasticity Ratio [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (1, 1.19e-14))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-037e71169f41",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "(-2*r**3/3 + r**2*v + 2/3)/(2*r**3/3 + r**2*v + 2*r**2 + 2/3) >= 2*((2*r**3/3 - r**2 + 1/3)/(-2*r**3/3 + r**2 + 2/3))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 5344",
+  "statement": "[economics: auction with a reserve price] Welfare Efficiency with Seller Value and Reserve [model-proposed; physical meaning unverified] \u2265 2 \u00d7 Bidder Surplus Efficiency Ratio [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (1.39e-19, 0.000221))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-670e225a18a4",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "(-2*r**3/3 + r**2*v + 2/3)/(2*r**3/3 + r**2*v + 2*r**2 + 2/3) >= 3/5*((-2*r**3/3 + r**2*v + 2/3)/(-2*r**3/3 + r**2*v + 2*r**2 + 2/3))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 5344",
+  "statement": "[economics: auction with a reserve price] Welfare Efficiency with Seller Value and Reserve [model-proposed; physical meaning unverified] \u2265 3/5 \u00d7 Welfare Efficiency with Seller Value Ratio [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (1, 3.27e-14))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]
