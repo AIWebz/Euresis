@@ -6131,3 +6131,5 @@
 - 2026-11-16 18:32 round 5615: insurance and risk
 - 2026-11-16 18:34 round 5616: auction with a reserve price
 - 2026-11-16 18:36 round 5617: two-body decay
+- 2026-11-16 18:38 round 5618: collision
+- 2026-11-16 18:41 segment end: 5618 rounds, 5 discoveries, 2 known laws rediscovered
