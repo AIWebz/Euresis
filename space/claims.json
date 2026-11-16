@@ -3254305,10 +3254305,15 @@
   "verifier": "held-out-replication"
  },
  {
-  "evidence": null,
+  "evidence": {
+   "doi": "10.5281/zenodo.22116642",
+   "held_out_r2": 0.9396,
+   "held_out_rows": 206,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
   "id": "emp-e73749c8d745",
   "kind": "empirical",
-  "novelty": "not checked",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
   "payload": {
    "dataset": "b74720b204525671.csv",
    "doi": "10.5281/zenodo.22116642",
@@ -3254323,7 +3254328,412 @@
   },
   "source": "datafeeds.py",
   "statement": "In 'Integrated Hydrological Monitoring Dataset for a Complex Hydrogeological Basin in Northeas' (Zenodo, doi 10.5281/zenodo.22116642): 'Max' is linear in '75%' (R\u00b2 = 0.927 on the discovery half)",
-  "status": "candidate",
-  "verifier": null
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3663630",
+   "held_out_r2": 0.9699,
+   "held_out_rows": 329,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-29a3e450e168",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "155bc8b4b7c3acb0.csv",
+   "doi": "10.5281/zenodo.3663630",
+   "form": "power law",
+   "params": [
+    2.1429153133212826,
+    0.6092749748665365
+   ],
+   "seed": 828349040,
+   "x": "Area",
+   "y": "Perimeter"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A deep learning reconstruction of mass balance series for all glaciers in the French Alps:' (Zenodo, doi 10.5281/zenodo.3663630): 'Perimeter' follows a power law in 'Area' (R\u00b2 = 0.971 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3663630",
+   "held_out_r2": 0.9343,
+   "held_out_rows": 329,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b6286cf6e7d1",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "155bc8b4b7c3acb0.csv",
+   "doi": "10.5281/zenodo.3663630",
+   "form": "power law",
+   "params": [
+    7.3894278830157365,
+    0.535344320521944
+   ],
+   "seed": 828349040,
+   "x": "Area",
+   "y": "Length"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A deep learning reconstruction of mass balance series for all glaciers in the French Alps:' (Zenodo, doi 10.5281/zenodo.3663630): 'Length' follows a power law in 'Area' (R\u00b2 = 0.919 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3663630",
+   "held_out_r2": 0.8141,
+   "held_out_rows": 329,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5470f35502c6",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "155bc8b4b7c3acb0.csv",
+   "doi": "10.5281/zenodo.3663630",
+   "form": "linear",
+   "params": [
+    172.51585837298296,
+    151.63363483283683
+   ],
+   "seed": 828349040,
+   "x": "Perimeter",
+   "y": "Length"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A deep learning reconstruction of mass balance series for all glaciers in the French Alps:' (Zenodo, doi 10.5281/zenodo.3663630): 'Length' is linear in 'Perimeter' (R\u00b2 = 0.919 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3663630",
+   "held_out_r2": 0.9063,
+   "held_out_rows": 329,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f63bb03673bd",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "155bc8b4b7c3acb0.csv",
+   "doi": "10.5281/zenodo.3663630",
+   "form": "logarithmic",
+   "params": [
+    2164.3802727510993,
+    -564.8521093232888
+   ],
+   "seed": 828349040,
+   "x": "y_coord",
+   "y": "Massif_SAFRAN"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A deep learning reconstruction of mass balance series for all glaciers in the French Alps:' (Zenodo, doi 10.5281/zenodo.3663630): 'Massif_SAFRAN' grows logarithmically in 'y_coord' (R\u00b2 = 0.926 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.5p464rm",
+   "held_out_r2": 0.9901,
+   "held_out_rows": 171,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-0d5e0f264d7e",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "c8a4beeb78f987b8.csv",
+   "doi": "10.5061/dryad.5p464rm",
+   "form": "power law",
+   "params": [
+    -11.889081486324006,
+    3.0929366578848354
+   ],
+   "seed": 1231581636,
+   "x": "FL",
+   "y": "wt"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Do precipitation extremes drive growth and migration timing of a Pacific salmon' (Zenodo, doi 10.5061/dryad.5p464rm): 'wt' follows a power law in 'FL' (R\u00b2 = 0.993 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.5p464rm",
+   "held_out_r2": 0.9834,
+   "held_out_rows": 107,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-036ffb9bc4ff",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "0fa6cf02c96780a8.csv",
+   "doi": "10.5061/dryad.5p464rm",
+   "form": "power law",
+   "params": [
+    -12.097705473003579,
+    3.137205317618425
+   ],
+   "seed": 4132279941,
+   "x": "FL",
+   "y": "wt_early_summer"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Do precipitation extremes drive growth and migration timing of a Pacific salmon' (Zenodo, doi 10.5061/dryad.5p464rm): 'wt_early_summer' follows a power law in 'FL' (R\u00b2 = 0.986 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.5p464rm",
+   "held_out_r2": 0.9794,
+   "held_out_rows": 107,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-fb0ba91a53f9",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "0fa6cf02c96780a8.csv",
+   "doi": "10.5061/dryad.5p464rm",
+   "form": "power law",
+   "params": [
+    3.8040439797263885,
+    0.3372006062575766
+   ],
+   "seed": 4132279941,
+   "x": "wt",
+   "y": "FL_early_summer"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Do precipitation extremes drive growth and migration timing of a Pacific salmon' (Zenodo, doi 10.5061/dryad.5p464rm): 'FL_early_summer' follows a power law in 'wt' (R\u00b2 = 0.983 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.5p464rm",
+   "held_out_r2": 0.9941,
+   "held_out_rows": 107,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-6eaa55718e12",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "0fa6cf02c96780a8.csv",
+   "doi": "10.5061/dryad.5p464rm",
+   "form": "power law",
+   "params": [
+    -11.696024483324981,
+    3.053512190533987
+   ],
+   "seed": 4132279941,
+   "x": "FL_early_summer",
+   "y": "wt_early_summer"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Do precipitation extremes drive growth and migration timing of a Pacific salmon' (Zenodo, doi 10.5061/dryad.5p464rm): 'wt_early_summer' follows a power law in 'FL_early_summer' (R\u00b2 = 0.994 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3925378",
+   "held_out_r2": 0.9718,
+   "held_out_rows": 329,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-964f9193aebe",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "758a121a14b4395f.csv",
+   "doi": "10.5281/zenodo.3925378",
+   "form": "power law",
+   "params": [
+    2.107977447082587,
+    0.6026522839277859
+   ],
+   "seed": 3326960306,
+   "x": "Area",
+   "y": "Perimeter"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A deep learning reconstruction of mass balance series for all glaciers in the French Alps:' (Zenodo, doi 10.5281/zenodo.3925378): 'Perimeter' follows a power law in 'Area' (R\u00b2 = 0.970 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3925378",
+   "held_out_r2": 0.9291,
+   "held_out_rows": 329,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3be29336e78c",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "758a121a14b4395f.csv",
+   "doi": "10.5281/zenodo.3925378",
+   "form": "power law",
+   "params": [
+    7.461544596772447,
+    0.5500918621622091
+   ],
+   "seed": 3326960306,
+   "x": "Area",
+   "y": "Length"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A deep learning reconstruction of mass balance series for all glaciers in the French Alps:' (Zenodo, doi 10.5281/zenodo.3925378): 'Length' follows a power law in 'Area' (R\u00b2 = 0.923 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3925378",
+   "held_out_r2": 0.9181,
+   "held_out_rows": 329,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ded96b36d37d",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "758a121a14b4395f.csv",
+   "doi": "10.5281/zenodo.3925378",
+   "form": "power law",
+   "params": [
+    5.5460214691944,
+    0.8975109048503793
+   ],
+   "seed": 3326960306,
+   "x": "Perimeter",
+   "y": "Length"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A deep learning reconstruction of mass balance series for all glaciers in the French Alps:' (Zenodo, doi 10.5281/zenodo.3925378): 'Length' follows a power law in 'Perimeter' (R\u00b2 = 0.920 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3925378",
+   "held_out_r2": 0.9024,
+   "held_out_rows": 329,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-60deb1260b69",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "758a121a14b4395f.csv",
+   "doi": "10.5281/zenodo.3925378",
+   "form": "logarithmic",
+   "params": [
+    2167.2019424506925,
+    -565.58660158784
+   ],
+   "seed": 3326960306,
+   "x": "y_coord",
+   "y": "Massif_SAFRAN"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A deep learning reconstruction of mass balance series for all glaciers in the French Alps:' (Zenodo, doi 10.5281/zenodo.3925378): 'Massif_SAFRAN' grows logarithmically in 'y_coord' (R\u00b2 = 0.928 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.10068778",
+   "held_out_r2": 0.914,
+   "held_out_rows": 40,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f96cbb2b590e",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3dc1f4e56fd1c652.csv",
+   "doi": "10.5281/zenodo.10068778",
+   "form": "logarithmic",
+   "params": [
+    -195.12050662431687,
+    -34.91573631823907
+   ],
+   "seed": 3695860126,
+   "x": "Nmol",
+   "y": "cn"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset on surface peat stoichiometry and physical properties in boreal forestry-drained p' (Zenodo, doi 10.5281/zenodo.10068778): 'cn' grows logarithmically in 'Nmol' (R\u00b2 = 0.964 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.10068778",
+   "held_out_r2": 0.7083,
+   "held_out_rows": 40,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4ca5cd2aef57",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "3dc1f4e56fd1c652.csv",
+   "doi": "10.5281/zenodo.10068778",
+   "form": "linear",
+   "params": [
+    -0.08953246174518219,
+    26.636314105942862
+   ],
+   "seed": 3695860126,
+   "x": "Omol",
+   "y": "oc"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset on surface peat stoichiometry and physical properties in boreal forestry-drained p' (Zenodo, doi 10.5281/zenodo.10068778): 'oc' is linear in 'Omol' (R\u00b2 = 0.906 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17712777",
+   "held_out_r2": 0.9764,
+   "held_out_rows": 363,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9807ed6e1712",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "7185497f6029cea3.csv",
+   "doi": "10.5281/zenodo.17712777",
+   "form": "linear",
+   "params": [
+    0.032631468716450084,
+    0.2618818040798536
+   ],
+   "seed": 1464519272,
+   "x": "Radon_air_Bq_m3",
+   "y": "Radon_water _Bq_m3"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Hydrogeochemical and isotopic observations in the Baltic Sea system' (Zenodo, doi 10.5281/zenodo.17712777): 'Radon_water _Bq_m3' is linear in 'Radon_air_Bq_m3' (R\u00b2 = 0.971 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
