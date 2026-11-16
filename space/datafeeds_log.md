@@ -4112,3 +4112,4 @@
 - 2026-11-16 05:51 FINDING (confirmed on held-out rows): In 'The Evolution of Antibiotic Resistance in Europe, 1998-2019' (Zenodo, doi 10.5281/zenodo.14224680): 'p_max' is linear in 'p_min' (R² = 0.957 on the discovery half); held-out R² = 0.956 [emp-f70a44900ab5]
 - 2026-11-16 05:51 FINDING (confirmed on held-out rows): In 'Data from: Distinct developmental mechanisms influence sexual dimorphisms in the milkweed ' (Zenodo, doi 10.5061/dryad.kwh70rz3q): 'melanic.A3.sq.mm' is linear in 'melanic.px.A3' (R² = 0.988 on the discovery half); held-out R² = 0.990 [emp-0540fac96b14]
 - 2026-11-16 05:52 data feeds: 25789 datasets analysed so far, 3650 confirmed findings
+- 2026-11-16 06:40 data feeds: online
