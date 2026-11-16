@@ -5710,3 +5710,9 @@
 - 2026-11-16 00:30 round 5232: auction with a reserve price
 - 2026-11-16 00:31 round 5233: two-body decay
 - 2026-11-16 00:33 round 5234: collision
+- 2026-11-16 00:43 round 5235: driven oscillator
+- 2026-11-16 00:44 round 5236: velocity addition
+- 2026-11-16 00:45 round 5237: Compton scattering
+- 2026-11-16 00:46 round 5238: Cournot duopoly
+- 2026-11-16 00:47 round 5239: insurance and risk
+- 2026-11-16 00:49 round 5240: auction with a reserve price
