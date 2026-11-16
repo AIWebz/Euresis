@@ -4289,3 +4289,16 @@
 - 2026-11-16 17:28 data feeds: 27728 datasets analysed so far, 3801 confirmed findings
 - 2026-11-16 18:08 data feeds: online
 - 2026-11-16 18:10 data feeds: 27807 datasets analysed so far, 3801 confirmed findings
+- 2026-11-16 19:11 data feeds: online
+- 2026-11-16 19:13 FINDING (confirmed on held-out rows): In 'Holar climate forcing datasets' (Zenodo, doi 10.5281/zenodo.18222602): 'PLA_E' is linear in 'RW_W2' (R² = 0.916 on the discovery half); held-out R² = 0.917 [emp-ce78797325c3]
+- 2026-11-16 19:14 FINDING (confirmed on held-out rows): In 'Holar climate forcing datasets' (Zenodo, doi 10.5281/zenodo.18222602): 'Talus_mid' is linear in 'Talus_top' (R² = 0.983 on the discovery half); held-out R² = 0.983 [emp-e351ae457940]
+- 2026-11-16 19:14 FINDING (confirmed on held-out rows): In 'Holar climate forcing datasets' (Zenodo, doi 10.5281/zenodo.18222602): 'Plateau' is linear in 'Talus_top' (R² = 0.986 on the discovery half); held-out R² = 0.986 [emp-40372dbe131f]
+- 2026-11-16 19:14 FINDING (confirmed on held-out rows): In 'Holar climate forcing datasets' (Zenodo, doi 10.5281/zenodo.18222602): 'PLA_N' is linear in 'Talus_top' (R² = 0.968 on the discovery half); held-out R² = 0.968 [emp-e31bec824363]
+- 2026-11-16 19:14 FINDING (confirmed on held-out rows): In 'Holar climate forcing datasets' (Zenodo, doi 10.5281/zenodo.18222602): 'Talus_bottom' is linear in 'Talus_mid' (R² = 0.980 on the discovery half); held-out R² = 0.980 [emp-71b293c8cc93]
+- 2026-11-16 19:14 FINDING (confirmed on held-out rows): In 'Holar climate forcing datasets' (Zenodo, doi 10.5281/zenodo.18222602): 'PLA_E' is linear in 'Talus_mid' (R² = 0.916 on the discovery half); held-out R² = 0.917 [emp-679f357abc81]
+- 2026-11-16 19:14 FINDING (confirmed on held-out rows): In 'Holar climate forcing datasets' (Zenodo, doi 10.5281/zenodo.18222602): 'PLA_E' is linear in 'Talus_bottom' (R² = 0.929 on the discovery half); held-out R² = 0.930 [emp-fe29d008fc78]
+- 2026-11-16 19:14 FINDING (confirmed on held-out rows): In 'Holar climate forcing datasets' (Zenodo, doi 10.5281/zenodo.18222602): 'PLA_N' is linear in 'Talus_bottom' (R² = 0.976 on the discovery half); held-out R² = 0.977 [emp-d11da763939b]
+- 2026-11-16 19:14 FINDING (confirmed on held-out rows): In 'Holar climate forcing datasets' (Zenodo, doi 10.5281/zenodo.18222602): 'PLA_E' is linear in 'Plateau' (R² = 0.942 on the discovery half); held-out R² = 0.943 [emp-93503e12bd28]
+- 2026-11-16 19:15 FINDING (confirmed on held-out rows): In 'Morphological consequences of climate change for resident birds in intact Amazonian rainfo' (Zenodo, doi 10.5061/dryad.fqz612jsp): 'spMeanMW' follows a power law in 'spMeanMass' (R² = 0.954 on the discovery half); held-out R² = 0.954 [emp-27f576a3da7a]
+- 2026-11-16 19:15 FINDING (confirmed on held-out rows): In 'Morphological consequences of climate change for resident birds in intact Amazonian rainfo' (Zenodo, doi 10.5061/dryad.fqz612jsp): 'mass' follows a power law in 'spMeanMW' (R² = 0.934 on the discovery half); held-out R² = 0.934 [emp-e0042920e763]
+- 2026-11-16 19:15 data feeds: 27844 datasets analysed so far, 3812 confirmed findings
