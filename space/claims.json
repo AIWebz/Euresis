@@ -3267873,5 +3267873,113 @@
   "statement": "In 'Frequency-Based Decoupling and Modeling of BLE RSS Measurements for Indoor Positioning' (Zenodo, doi 10.5281/zenodo.14835351): 'measurementId' follows a power law in 'distance_gt_m' (R\u00b2 = 0.995 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-b3a5dcb7b9e8",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "(2*r**3/3 + r**2*v - r**2 + 1/3)/(2*r**3/3 - r**2*v - r**2 + 4/3) >= 3/4*((2*r**3/3 - r**2 + 1/3)/(-r**2*v + 1))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 5488",
+  "statement": "[economics: auction with a reserve price] Bidder Surplus Reserve Elasticity with Seller Value [model-proposed; physical meaning unverified] \u2265 3/4 \u00d7 Bidder Surplus Reserve Ratio [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (9.77e-09, 0.000117))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-0358a2c56b20",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "(2*r**3/3 + r**2*v - r**2 + 1/3)/(2*r**3/3 - r**2*v - r**2 + 4/3) >= 2/3*((2*r**3/3 + r**2*v - r**2 + 1/3)/(4*r**3/3 + r**2*v - 2*r**2 + 4/3))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 5488",
+  "statement": "[economics: auction with a reserve price] Bidder Surplus Reserve Elasticity with Seller Value [model-proposed; physical meaning unverified] \u2265 2/3 \u00d7 Bidder Surplus Reserve Efficiency with Seller Value [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (1, 6.56e-18))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-86a5848ab4c2",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "(2*r**3/3 + r**2*v - r**2 + 1/3)/(2*r**3/3 - r**2*v - r**2 + 4/3) >= 2/3*((2*r**3/3 + r**2*v - r**2 + 1/3)/(2*r**3/3 - r**2 + 1))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 5488",
+  "statement": "[economics: auction with a reserve price] Bidder Surplus Reserve Elasticity with Seller Value [model-proposed; physical meaning unverified] \u2265 2/3 \u00d7 Bidder Surplus Reserve Efficiency with Seller Value and Reserve Ratio [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (1, 4.36e-17))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-042c8fabf563",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'expected total bidder surplus'",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "(2*r**3/3 + r**2*v - r**2 + 1/3)/(2*r**3/3 - r**2*v - r**2 + 4/3) >= 1/2*((2*r**3/3 - r**2 + 1/3)/(-2*r**3/3 + r**2 + 2/3))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 5488",
+  "statement": "[economics: auction with a reserve price] Bidder Surplus Reserve Elasticity with Seller Value [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 Bidder Surplus Efficiency Ratio [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (4.88e-09, 0.000119))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]
