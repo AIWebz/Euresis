@@ -6241,3 +6241,5 @@
 - 2026-11-16 23:29 round 5715: driven oscillator
 - 2026-11-16 23:30 round 5716: velocity addition
 - 2026-11-16 23:31 round 5717: Compton scattering
+- 2026-11-16 23:32 round 5718: Cournot duopoly
+- 2026-11-16 23:33 round 5719: insurance and risk
