@@ -4284,3 +4284,6 @@
 - 2026-11-16 16:26 FINDING (confirmed on held-out rows): In 'Data from: Genetic and environmental factors shape rates of plasticity: the temporal dynam' (Zenodo, doi 10.5281/zenodo.15053155): 'G_mean' is linear in 'GAPDH' (R² = 0.940 on the discovery half); held-out R² = 0.957 [emp-d342751d2a4c]
 - 2026-11-16 16:26 FINDING (confirmed on held-out rows): In 'Data for: Environmental conditions and small-scale variation in diversity determine the st' (Zenodo, doi 10.5281/zenodo.18925871): 'end_wp' is linear in 'start_wp' (R² = 1.000 on the discovery half); held-out R² = 0.934 [emp-d9f32ad06624]
 - 2026-11-16 16:27 data feeds: 27725 datasets analysed so far, 3800 confirmed findings
+- 2026-11-16 17:28 data feeds: online
+- 2026-11-16 17:28 FINDING (confirmed on held-out rows): In 'Nonlinear optical excitation of plasmons in graphene: intensity and polarisation dependenc' (Figshare): 'signal' is linear in 'dRoverR' (R² = 0.986 on the discovery half); held-out R² = 0.988 [emp-fa288582c32c]
+- 2026-11-16 17:28 data feeds: 27728 datasets analysed so far, 3801 confirmed findings

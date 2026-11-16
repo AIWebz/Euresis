@@ -3309425,5 +3309425,32 @@
   "statement": "Octal game 0.0704717 is completely solved: its Grundy values are periodic with pre-period 284 and period 48 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "",
+   "held_out_r2": 0.9883,
+   "held_out_rows": 105,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-fa288582c32c",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "ada200dc71a8e95f.csv",
+   "doi": "",
+   "form": "linear",
+   "params": [
+    6.5222725383762015e-06,
+    2.8557248879479533
+   ],
+   "seed": 3852452234,
+   "x": "dRoverR",
+   "y": "signal"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Nonlinear optical excitation of plasmons in graphene: intensity and polarisation dependenc' (Figshare): 'signal' is linear in 'dRoverR' (R\u00b2 = 0.986 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
