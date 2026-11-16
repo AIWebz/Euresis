@@ -4219,3 +4219,8 @@
 - 2026-11-16 13:33 FINDING (confirmed on held-out rows): In 'In-situ Streaming Potential Quantification via Liquid Jet Photoelectron Spectroscopy - dat' (Zenodo, doi 10.5281/zenodo.23086907): 'zeta_V' is linear in 'psi0_V' (R² = 0.916 on the discovery half); held-out R² = 0.908 [emp-d5863dc66906]
 - 2026-11-16 13:33 data feeds: 26916 datasets analysed so far, 3740 confirmed findings
 - 2026-11-16 14:19 data feeds: online
+- 2026-11-16 14:20 FINDING (confirmed on held-out rows): In 'The data for Chinese Sunspot Drawings and Their Digitization – (VIII) Release of a Machine' (Zenodo, doi 10.5281/zenodo.20837870): 'r/R' follows a power law in 'r' (R² = 0.977 on the discovery half); held-out R² = 0.908 [emp-9f4fc556c020]
+- 2026-11-16 14:20 FINDING (confirmed on held-out rows): In 'The data for Chinese Sunspot Drawings and Their Digitization – (VIII) Release of a Machine' (Zenodo, doi 10.5281/zenodo.20837870): 'maximum' follows a power law in 'Total group' (R² = 0.917 on the discovery half); held-out R² = 0.923 [emp-27ecc9722c57]
+- 2026-11-16 14:20 FINDING (confirmed on held-out rows): In 'The data for Chinese Sunspot Drawings and Their Digitization – (VIII) Release of a Machine' (Zenodo, doi 10.5281/zenodo.20837870): 'Maximum sunspot' follows a power law in 'total group' (R² = 0.926 on the discovery half); held-out R² = 0.917 [emp-b707b10efc85]
+- 2026-11-16 14:20 FINDING (confirmed on held-out rows): In 'The data for Chinese Sunspot Drawings and Their Digitization – (VIII) Release of a Machine' (Zenodo, doi 10.5281/zenodo.20837870): 'Number of sunspots' is linear in 'r' (R² = 0.986 on the discovery half); held-out R² = 0.979 [emp-77652edab440]
+- 2026-11-16 14:21 data feeds: 26991 datasets analysed so far, 3744 confirmed findings
