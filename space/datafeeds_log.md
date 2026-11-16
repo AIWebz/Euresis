@@ -4232,3 +4232,4 @@
 - 2026-11-16 15:24 FINDING (confirmed on held-out rows): In 'Data from: Plant toxin levels in nectar vary spatially across native and introduced popula' (Zenodo, doi 10.5061/dryad.6p46m): 'Precip.Dry.Q' grows exponentially in 'irrad' (R² = 0.920 on the discovery half); held-out R² = 0.912 [emp-63ec9970ee3a]
 - 2026-11-16 15:24 FINDING (confirmed on held-out rows): In 'Data from: Plant toxin levels in nectar vary spatially across native and introduced popula' (Zenodo, doi 10.5061/dryad.6p46m): 'An.temp' grows logarithmically in 'Precip.Dry.Q' (R² = 0.966 on the discovery half); held-out R² = 0.972 [emp-78e89f2326b5]
 - 2026-11-16 15:24 data feeds: 27044 datasets analysed so far, 3750 confirmed findings
+- 2026-11-16 16:13 data feeds: online
