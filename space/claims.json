@@ -3179749,5 +3179749,237 @@
   "statement": "In 'Valence photoelectron and photoelectron-photoion coincidence data of DME conversion over Z' (Zenodo, doi 10.5281/zenodo.15535335): 'Electron_triggers' is linear in 'Random_triggers' (R\u00b2 = 0.937 on the discovery half)",
   "status": "refuted",
   "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-9f0fa19bba8e",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "claim": "(a**2 - b**2 + 1)/(2*a) >= 1/2*(sqrt((1 - (a - b)**2)*(1 - (a + b)**2)/4 + (-a**2 + b**2 + 1)**2 + (a**2 - b**2 + 1)**2))",
+   "symbols": [
+    "a",
+    "b"
+   ]
+  },
+  "source": "physics_discover2 round 5249",
+  "statement": "[physics: two-body decay] Lorentz factor of product 1 \u2265 1/2 \u00d7 Lorentz Factor of the System [model-proposed; physical meaning unverified]   on a < 1, b < 1, a + b < 1 (tight only at the edge of the domain, near (1, 2.13e-15))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-d0dab95f99fc",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "claim": "sqrt((1 - (a - b)**2)*(1 - (a + b)**2)/4 + (a**2 - b**2 + 1)**2)/(a**2 - b**2 + 1) >= 1/2*(sqrt((1 - (a - b)**2)*(1 - (a + b)**2)/4 + (-a**2 + b**2 + 1)**2 + (a**2 - b**2 + 1)**2))",
+   "symbols": [
+    "a",
+    "b"
+   ]
+  },
+  "source": "physics_discover2 round 5249",
+  "statement": "[physics: two-body decay] Gamma factor of product 1 [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 Lorentz Factor of the System [model-proposed; physical meaning unverified]   on a < 1, b < 1, a + b < 1 (tight only at the edge of the domain, near (1, 2.13e-15))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-afe8705e842e",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "claim": "sqrt((1 - (a - b)**2)*(1 - (a + b)**2) + (-a**2 + b**2 + 1)**2 + (a**2 - b**2 + 1)**2) >= 1*(sqrt((1 - (a - b)**2)*(1 - (a + b)**2)/4 + (-a**2 + b**2 + 1)**2 + (a**2 - b**2 + 1)**2))",
+   "symbols": [
+    "a",
+    "b"
+   ]
+  },
+  "source": "physics_discover2 round 5249",
+  "statement": "[physics: two-body decay] Boost factor of the system [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Lorentz Factor of the System [model-proposed; physical meaning unverified]   on a < 1, b < 1, a + b < 1 (tight only at the edge of the domain, near (0.000107, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-83e879414b5c",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'Gamma factor of product 1 [model-proposed; physical meaning unverified]'",
+  "payload": {
+   "assumptions": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "claim": "sqrt(2)*sqrt(a**2 - b**2 + 1)/(2*sqrt(a)*sqrt((-a**2 + b**2 + 1)/(2 - 2*a))) >= 1/2*(sqrt((1 - (a - b)**2)*(1 - (a + b)**2)/4 + (-a**2 + b**2 + 1)**2 + (a**2 - b**2 + 1)**2))",
+   "symbols": [
+    "a",
+    "b"
+   ]
+  },
+  "source": "physics_discover2 round 5249",
+  "statement": "[physics: two-body decay] Relativistic Doppler Shift Factor for Product 1 [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 Lorentz Factor of the System [model-proposed; physical meaning unverified]   on a < 1, b < 1, a + b < 1 (tight only at the edge of the domain, near (1, 2.41e-14))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-22f8afe3ed00",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'Boost factor of the system [model-proposed; physical meaning unverified]'",
+  "payload": {
+   "assumptions": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "claim": "sqrt(-(a + b)**2 + (-a**2 + b**2 + 1)**2 + (a**2 - b**2 + 1)**2 + 1) >= 1*(sqrt((1 - (a - b)**2)*(1 - (a + b)**2)/4 + (-a**2 + b**2 + 1)**2 + (a**2 - b**2 + 1)**2))",
+   "symbols": [
+    "a",
+    "b"
+   ]
+  },
+  "source": "physics_discover2 round 5257",
+  "statement": "[physics: two-body decay] Center of Mass Energy [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Lorentz Factor of the System [model-proposed; physical meaning unverified]   on a < 1, b < 1, a + b < 1 (tight only at the edge of the domain, near (1, 0.000107))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-8750572ae7fb",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "claim": "sqrt((1 - (a - b)**2)*(1 - (a + b)**2)/4 + (-a**2 + b**2 + 1)**2 + (a**2 - b**2 + 1)**2) >= 3*(sqrt((1 - (a - b)**2)*(1 - (a + b)**2))/2)",
+   "symbols": [
+    "a",
+    "b"
+   ]
+  },
+  "source": "physics_discover2 round 5257",
+  "statement": "[physics: two-body decay] Lorentz Factor of the System [model-proposed; physical meaning unverified] \u2265 3 \u00d7 momentum of each product / (Mc)   on a < 1, b < 1, a + b < 1 (tight only at the edge of the domain, near (1.23e-08, 8.13e-09))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-9d051ed0a3d6",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "claim": "sqrt((1 - (a - b)**2)*(1 - (a + b)**2)/4 + (-a**2 + b**2 + 1)**2 + (a**2 - b**2 + 1)**2) >= 2*(a**2/2 - b**2/2 + 1/2)",
+   "symbols": [
+    "a",
+    "b"
+   ]
+  },
+  "source": "physics_discover2 round 5257",
+  "statement": "[physics: two-body decay] Lorentz Factor of the System [model-proposed; physical meaning unverified] \u2265 2 \u00d7 energy of product 1 / (Mc\u00b2)   on a < 1, b < 1, a + b < 1 (tight only at the edge of the domain, near (1, 6.38e-09))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-5f2223ca615e",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "claim": "sqrt((1 - (a - b)**2)*(1 - (a + b)**2)/4 + (-a**2 + b**2 + 1)**2 + (a**2 - b**2 + 1)**2) >= 2*(-a**2/2 + b**2/2 + 1/2)",
+   "symbols": [
+    "a",
+    "b"
+   ]
+  },
+  "source": "physics_discover2 round 5257",
+  "statement": "[physics: two-body decay] Lorentz Factor of the System [model-proposed; physical meaning unverified] \u2265 2 \u00d7 energy of product 2 / (Mc\u00b2)   on a < 1, b < 1, a + b < 1 (tight only at the edge of the domain, near (6.38e-09, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]
