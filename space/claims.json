@@ -3249066,5 +3249066,54 @@
   "statement": "Octal game 0.0554211 is completely solved: its Grundy values are periodic with pre-period 1192 and period 8 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.6084/m9.figshare.28946447.v1",
+   "held_out_r2": 0.5449,
+   "held_out_rows": 37,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-16aae6b7c0d2",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "6154de5b6e3fcfd7.csv",
+   "doi": "10.6084/m9.figshare.28946447.v1",
+   "form": "linear",
+   "params": [
+    54.740268327999416,
+    70.76091614527996
+   ],
+   "seed": 3313070276,
+   "x": "Mass dosed [T]",
+   "y": "Total dosing minutes "
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data supporting the study: High-frequency in situ total alkalinity measurements for monito' (Figshare, doi 10.6084/m9.figshare.28946447.v1): 'Total dosing minutes ' is linear in 'Mass dosed [T]' (R\u00b2 = 0.906 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": null,
+  "id": "emp-d15be31c0400",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "6154de5b6e3fcfd7.csv",
+   "doi": "10.6084/m9.figshare.28946447.v1",
+   "form": "linear",
+   "params": [
+    -254.3734138626008,
+    12.799643521219826
+   ],
+   "seed": 3313070276,
+   "x": "Total dosing minutes ",
+   "y": "Total dosed [kg]"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data supporting the study: High-frequency in situ total alkalinity measurements for monito' (Figshare, doi 10.6084/m9.figshare.28946447.v1): 'Total dosed [kg]' is linear in 'Total dosing minutes ' (R\u00b2 = 0.906 on the discovery half)",
+  "status": "candidate",
+  "verifier": null
  }
 ]
