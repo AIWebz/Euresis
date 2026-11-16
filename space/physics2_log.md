@@ -6127,3 +6127,7 @@
 - 2026-11-16 18:27 round 5611: driven oscillator
 - 2026-11-16 18:29 round 5612: velocity addition
 - 2026-11-16 18:30 round 5613: Compton scattering
+- 2026-11-16 18:31 round 5614: Cournot duopoly
+- 2026-11-16 18:32 round 5615: insurance and risk
+- 2026-11-16 18:34 round 5616: auction with a reserve price
+- 2026-11-16 18:36 round 5617: two-body decay
