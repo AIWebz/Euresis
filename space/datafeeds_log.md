@@ -4344,3 +4344,4 @@
 - 2026-11-16 22:00 FINDING (confirmed on held-out rows): In 'State of Maine's Forests: Maine Forest Dashboard, 2026 release (data tables)' (Zenodo, doi 10.5281/zenodo.22796520): 'Max' follows a power law in 'Average' (R² = 0.955 on the discovery half); held-out R² = 0.946 [emp-22484109b19c]
 - 2026-11-16 22:00 FINDING (confirmed on held-out rows): In 'Graduate Student Remunerations' (Zenodo, doi 10.5281/zenodo.1156472): 'YrsContSq' is linear in 'YrsOrgSq' (R² = 0.919 on the discovery half); held-out R² = 0.951 [emp-fd2d17b53707]
 - 2026-11-16 22:01 data feeds: 28070 datasets analysed so far, 3848 confirmed findings
+- 2026-11-16 23:03 data feeds: online
