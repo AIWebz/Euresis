@@ -6022,3 +6022,6 @@
 - 2026-11-16 13:57 round 5516: velocity addition
 - 2026-11-16 13:58 round 5517: Compton scattering
 - 2026-11-16 13:59 round 5518: Cournot duopoly
+- 2026-11-16 14:00 round 5519: insurance and risk
+- 2026-11-16 14:02 round 5520: auction with a reserve price
+- 2026-11-16 14:04 segment end: 5520 rounds, 5 discoveries, 2 known laws rediscovered
