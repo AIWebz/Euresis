@@ -4218,3 +4218,4 @@
 - 2026-11-16 13:31 FINDING (confirmed on held-out rows): In 'Dataset of the Experimental Study of a commercial Scroll Compressor with Two-phase Refrige' (Zenodo, doi 10.1016/j.ijrefrig.2025.05.013): 'P_oil_low_value' is linear in 'P_su_cp_value' (R² = 0.980 on the discovery half); held-out R² = 0.992 [emp-46c73ec64a97]
 - 2026-11-16 13:33 FINDING (confirmed on held-out rows): In 'In-situ Streaming Potential Quantification via Liquid Jet Photoelectron Spectroscopy - dat' (Zenodo, doi 10.5281/zenodo.23086907): 'zeta_V' is linear in 'psi0_V' (R² = 0.916 on the discovery half); held-out R² = 0.908 [emp-d5863dc66906]
 - 2026-11-16 13:33 data feeds: 26916 datasets analysed so far, 3740 confirmed findings
+- 2026-11-16 14:19 data feeds: online
