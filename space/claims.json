@@ -3179479,5 +3179479,275 @@
   "statement": "[physics: collision] Square Root of Mass Ratio Plus Reciprocal of Coefficient of Restitution [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Square Root of Coefficient of Restitution Plus Mass Ratio [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
   "status": "proved",
   "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.x95x69pgv",
+   "held_out_r2": 0.957,
+   "held_out_rows": 43,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-797e9c6253ce",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "0ba8bdc128761ba9.csv",
+   "doi": "10.5061/dryad.x95x69pgv",
+   "form": "power law",
+   "params": [
+    0.11775574033453402,
+    0.8081396104909824
+   ],
+   "seed": 3652912667,
+   "x": "richness",
+   "y": "sapro"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Contrasting fungal responses to wildfire across different ecosystem types' (Zenodo, doi 10.5061/dryad.x95x69pgv): 'sapro' follows a power law in 'richness' (R\u00b2 = 0.949 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.x95x69pgv",
+   "held_out_r2": 0.9257,
+   "held_out_rows": 43,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ab0205156038",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "0ba8bdc128761ba9.csv",
+   "doi": "10.5061/dryad.x95x69pgv",
+   "form": "power law",
+   "params": [
+    0.17102795884630762,
+    0.8544321109181552
+   ],
+   "seed": 3652912667,
+   "x": "mycorrhiza",
+   "y": "ecto"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Contrasting fungal responses to wildfire across different ecosystem types' (Zenodo, doi 10.5061/dryad.x95x69pgv): 'ecto' follows a power law in 'mycorrhiza' (R\u00b2 = 0.936 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.dv41ns1v9",
+   "held_out_r2": 0.973,
+   "held_out_rows": 51,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b2bce2962a8f",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "ebe805d04aa9bdf0.csv",
+   "doi": "10.5061/dryad.dv41ns1v9",
+   "form": "power law",
+   "params": [
+    -0.15927585943763506,
+    1.0238164382765607
+   ],
+   "seed": 3537394505,
+   "x": "NEW surcose weight (g) ",
+   "y": "OLD sucrose weight (g) "
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Assessing chemical mechanisms underlying the effects of sunflower pollen on a gut pathogen' (Zenodo, doi 10.5061/dryad.dv41ns1v9): 'OLD sucrose weight (g) ' follows a power law in 'NEW surcose weight (g) ' (R\u00b2 = 0.941 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14628251",
+   "held_out_r2": 0.851,
+   "held_out_rows": 128,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-65d4f3d6a3c0",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f8617b87f294731a.csv",
+   "doi": "10.5281/zenodo.14628251",
+   "form": "linear",
+   "params": [
+    -11.1141052114424,
+    0.9614641943148049
+   ],
+   "seed": 678446848,
+   "x": "648.306",
+   "y": "0.000000.5"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Correlative bioimaging of structural biochemistry in plant and food quality research withi' (Zenodo, doi 10.5281/zenodo.14628251): '0.000000.5' is linear in '648.306' (R\u00b2 = 0.914 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14628251",
+   "held_out_r2": 0.7894,
+   "held_out_rows": 128,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-21765a6231f6",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "f8617b87f294731a.csv",
+   "doi": "10.5281/zenodo.14628251",
+   "form": "linear",
+   "params": [
+    -68.67481522938887,
+    1.2708407934518962
+   ],
+   "seed": 678446848,
+   "x": "648.306",
+   "y": "0.000000.6"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Correlative bioimaging of structural biochemistry in plant and food quality research withi' (Zenodo, doi 10.5281/zenodo.14628251): '0.000000.6' is linear in '648.306' (R\u00b2 = 0.919 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14628251",
+   "held_out_r2": 0.6875,
+   "held_out_rows": 128,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-6676df93c9d9",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "f8617b87f294731a.csv",
+   "doi": "10.5281/zenodo.14628251",
+   "form": "linear",
+   "params": [
+    170.54843836756478,
+    0.6966031114079793
+   ],
+   "seed": 678446848,
+   "x": "0.000000.7",
+   "y": "97.2130"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Correlative bioimaging of structural biochemistry in plant and food quality research withi' (Zenodo, doi 10.5281/zenodo.14628251): '97.2130' is linear in '0.000000.7' (R\u00b2 = 0.906 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.dm33k0c",
+   "held_out_r2": 0.9605,
+   "held_out_rows": 41,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-020801a9f596",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "c07b05fb800265f0.csv",
+   "doi": "10.5061/dryad.dm33k0c",
+   "form": "power law",
+   "params": [
+    2.5407454510222505,
+    0.3095505082635048
+   ],
+   "seed": 3715864155,
+   "x": "weight",
+   "y": "length"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Resource allocation trade-offs and the loss of chemical defences during apple d' (Zenodo, doi 10.5061/dryad.dm33k0c): 'length' follows a power law in 'weight' (R\u00b2 = 0.931 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.dm33k0c",
+   "held_out_r2": 0.9912,
+   "held_out_rows": 41,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-33aba062f432",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "c07b05fb800265f0.csv",
+   "doi": "10.5061/dryad.dm33k0c",
+   "form": "power law",
+   "params": [
+    2.5158755388118266,
+    0.3466160430547452
+   ],
+   "seed": 3715864155,
+   "x": "weight",
+   "y": "width"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Resource allocation trade-offs and the loss of chemical defences during apple d' (Zenodo, doi 10.5061/dryad.dm33k0c): 'width' follows a power law in 'weight' (R\u00b2 = 0.992 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.dm33k0c",
+   "held_out_r2": 0.9423,
+   "held_out_rows": 41,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a91d879e86b7",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "c07b05fb800265f0.csv",
+   "doi": "10.5061/dryad.dm33k0c",
+   "form": "power law",
+   "params": [
+    -0.03509494057410767,
+    1.0353925338650485
+   ],
+   "seed": 3715864155,
+   "x": "length",
+   "y": "width"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Resource allocation trade-offs and the loss of chemical defences during apple d' (Zenodo, doi 10.5061/dryad.dm33k0c): 'width' follows a power law in 'length' (R\u00b2 = 0.911 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15535335",
+   "held_out_r2": 0.7976,
+   "held_out_rows": 2344,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d5d68e59dd51",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "dfabef6773cf1408.csv",
+   "doi": "10.5281/zenodo.15535335",
+   "form": "linear",
+   "params": [
+    -1.892334130915142e-05,
+    1.4127644853246901
+   ],
+   "seed": 1641786426,
+   "x": "Random_triggers",
+   "y": "Electron_triggers"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Valence photoelectron and photoelectron-photoion coincidence data of DME conversion over Z' (Zenodo, doi 10.5281/zenodo.15535335): 'Electron_triggers' is linear in 'Random_triggers' (R\u00b2 = 0.937 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
  }
 ]
