@@ -4074,3 +4074,4 @@
 - 2026-11-16 00:24 FINDING (confirmed on held-out rows): In 'Data for the "Energy Scaling Laws of Solar Wind Switchbacks Observed by the Parker Solar P' (Zenodo, doi 10.5281/zenodo.21416151): 'TE(INSIDE)' follows a power law in 'KE(INSIDE)' (R² = 0.985 on the discovery half); held-out R² = 0.984 [emp-bfb931dfb18e]
 - 2026-11-16 00:24 FINDING (confirmed on held-out rows): In 'Data for the "Energy Scaling Laws of Solar Wind Switchbacks Observed by the Parker Solar P' (Zenodo, doi 10.5281/zenodo.21416151): 'TE(OUTSIDE)' follows a power law in 'KE(OUTSIDE)' (R² = 0.983 on the discovery half); held-out R² = 0.984 [emp-42d769e37f93]
 - 2026-11-16 00:24 data feeds: 25349 datasets analysed so far, 3624 confirmed findings
+- 2026-11-16 00:56 data feeds: online
