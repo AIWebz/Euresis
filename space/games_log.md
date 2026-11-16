@@ -31438,3 +31438,7 @@
 - 2026-11-16 06:39 SOLVED (proved): 0.0533551 — pre-period 1145, period 10  [gam-b11ccd40df02]
 - 2026-11-16 06:39 SOLVED (proved): 0.0533552 — pre-period 1145, period 10  [gam-dbf48b50e6ed]
 - 2026-11-16 06:39 games: 74768 octal games solved, 343148 unresolved up to n = 3000
+- 2026-11-16 07:16 SOLVED (proved): 0.0533553 — pre-period 1145, period 10  [gam-34bbc9931885]
+- 2026-11-16 07:16 SOLVED (proved): 0.0533561 — pre-period 1145, period 10  [gam-ff55c85cb968]
+- 2026-11-16 07:16 SOLVED (proved): 0.0533562 — pre-period 1145, period 10  [gam-22fa1ba9d0d7]
+- 2026-11-16 07:16 SOLVED (proved): 0.0533563 — pre-period 1145, period 10  [gam-a79d6d1c478e]
