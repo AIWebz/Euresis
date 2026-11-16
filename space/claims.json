@@ -3189207,5 +3189207,32 @@
   "statement": "Octal game 0.0523032 is completely solved: its Grundy values are periodic with pre-period 12 and period 10 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.n5h64",
+   "held_out_r2": 0.9504,
+   "held_out_rows": 64,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c1f6034b3600",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "d157581eb9db63f7.csv",
+   "doi": "10.5061/dryad.n5h64",
+   "form": "power law",
+   "params": [
+    -11.59071791623483,
+    0.7963220002988697
+   ],
+   "seed": 2334913312,
+   "x": "bmass",
+   "y": "metabolic.demand"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Decreasing stoichiometric resource quality drives compensatory feeding across t' (Zenodo, doi 10.5061/dryad.n5h64): 'metabolic.demand' follows a power law in 'bmass' (R\u00b2 = 0.932 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
