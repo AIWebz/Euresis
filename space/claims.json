@@ -3189774,5 +3189774,63 @@
   "statement": "In 'Animal Biodiversity at Nachusa Grasslands' (Zenodo, doi 10.5061/dryad.gf1vhhmnv): 'sm_invsimp' grows exponentially in 'sm_shannon' (R\u00b2 = 0.948 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-ee3e06fa3f09",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "claim": "sqrt((1 - (a - b)**2)*(1 - (a + b)**2)/4 + (-a**2 + b**2 + 1)**2 + (a**2 - b**2 + 1)**2) >= 9/2*((-b**2/2 + (1 - a)**2/2)/(-a**2 - b**2 + 3/2))",
+   "symbols": [
+    "a",
+    "b"
+   ]
+  },
+  "source": "physics_discover2 round 5265",
+  "statement": "[physics: two-body decay] Lorentz Factor of the System [model-proposed; physical meaning unverified] \u2265 9/2 \u00d7 Relative Kinetic Energy Ratio [model-proposed; physical meaning unverified]   on a < 1, b < 1, a + b < 1 (tight only at the edge of the domain, near (2.11e-16, 1.95e-08))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-6b23160f8962",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'momentum of each product / (Mc)'",
+  "payload": {
+   "assumptions": [
+    "a < 1",
+    "b < 1",
+    "a + b < 1"
+   ],
+   "claim": "sqrt((1 - (a - b)**2)*(1 - (a + b)**2)/4 + (-a**2 + b**2 + 1)**2 + (a**2 - b**2 + 1)**2) >= 3/2*(sqrt((1 - (a - b)**2)*(1 - (a + b)**2))/sqrt((-a**2 + b**2 + 1)**2 + (b**2 - (1 - a)**2 + 1)**2))",
+   "symbols": [
+    "a",
+    "b"
+   ]
+  },
+  "source": "physics_discover2 round 5265",
+  "statement": "[physics: two-body decay] Lorentz Factor of the System [model-proposed; physical meaning unverified] \u2265 3/2 \u00d7 Relative Velocity Magnitude [model-proposed; physical meaning unverified]   on a < 1, b < 1, a + b < 1 (tight only at the edge of the domain, near (6.16e-09, 1.53e-09))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]
