@@ -77956,6 +77956,31 @@
    "family": "Compton scattering",
    "expr": "1/(c*x + 1) - 1 + 1/(c*x + 1)",
    "why": "not positive on the physical domain"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "(-2*c1 + c2 + 1)*(c1 - 2*c2 + 1)/((-c1 - c2 + 1)**2)",
+   "why": "affine combination of known quantities (output of firm 1, 1/(Price Elasticity of Demand [model-proposed; physical meaning unverified]))"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "((1 - 2*c1 + c2)**2)/((1 - 2*c2 + c1)**2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "((2 - c1 - c2)**2/18)/(((1 - 2*c1 + c2)**2 + (1 - 2*c2 + c1)**2)/9)",
+   "why": "affine combination of known quantities (output of firm 1, 1/(Hirshleifer Index [model-proposed; physical meaning unverified]))"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "((-2*c1 + c2 + 1)**2/9 + (-c1 - c2 + 1)**2/18 + (c1 - 2*c2 + 1)**2/9)/((1 - c1)**2/4 + (1 - c2)**2/4",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "sqrt(-L*p + 1)/(-p*sqrt(1 - L) + p + 1)",
+   "why": "affine combination of known quantities (expected wealth, Risk Adjustment Ratio [model-proposed; physical meaning unverified])"
   }
  ],
  "tried": [
@@ -96168,7 +96193,7 @@
    "k": "1/2"
   }
  ],
- "rounds": 5541,
+ "rounds": 5543,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",
