@@ -4224,3 +4224,4 @@
 - 2026-11-16 14:20 FINDING (confirmed on held-out rows): In 'The data for Chinese Sunspot Drawings and Their Digitization – (VIII) Release of a Machine' (Zenodo, doi 10.5281/zenodo.20837870): 'Maximum sunspot' follows a power law in 'total group' (R² = 0.926 on the discovery half); held-out R² = 0.917 [emp-b707b10efc85]
 - 2026-11-16 14:20 FINDING (confirmed on held-out rows): In 'The data for Chinese Sunspot Drawings and Their Digitization – (VIII) Release of a Machine' (Zenodo, doi 10.5281/zenodo.20837870): 'Number of sunspots' is linear in 'r' (R² = 0.986 on the discovery half); held-out R² = 0.979 [emp-77652edab440]
 - 2026-11-16 14:21 data feeds: 26991 datasets analysed so far, 3744 confirmed findings
+- 2026-11-16 15:22 data feeds: online
