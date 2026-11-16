@@ -4302,3 +4302,4 @@
 - 2026-11-16 19:15 FINDING (confirmed on held-out rows): In 'Morphological consequences of climate change for resident birds in intact Amazonian rainfo' (Zenodo, doi 10.5061/dryad.fqz612jsp): 'spMeanMW' follows a power law in 'spMeanMass' (R² = 0.954 on the discovery half); held-out R² = 0.954 [emp-27f576a3da7a]
 - 2026-11-16 19:15 FINDING (confirmed on held-out rows): In 'Morphological consequences of climate change for resident birds in intact Amazonian rainfo' (Zenodo, doi 10.5061/dryad.fqz612jsp): 'mass' follows a power law in 'spMeanMW' (R² = 0.934 on the discovery half); held-out R² = 0.934 [emp-e0042920e763]
 - 2026-11-16 19:15 data feeds: 27844 datasets analysed so far, 3812 confirmed findings
+- 2026-11-16 20:03 data feeds: online
