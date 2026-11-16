@@ -5754,3 +5754,15 @@
 - 2026-11-16 02:17 round 5272: auction with a reserve price
 - 2026-11-16 02:18 round 5273: two-body decay
 - 2026-11-16 02:20 round 5274: collision
+- 2026-11-16 02:22 round 5275: driven oscillator
+- 2026-11-16 02:23 round 5276: velocity addition
+- 2026-11-16 02:24 round 5277: Compton scattering
+- 2026-11-16 02:25 round 5278: Cournot duopoly
+- 2026-11-16 02:26 round 5279: insurance and risk
+- 2026-11-16 02:27 round 5280: auction with a reserve price
+- 2026-11-16 02:29 round 5281: two-body decay
+- 2026-11-16 02:30 round 5282: collision
+- 2026-11-16 02:33 round 5283: driven oscillator
+- 2026-11-16 02:34 round 5284: velocity addition
+- 2026-11-16 02:36 round 5285: Compton scattering
+- 2026-11-16 02:36 segment end: 5285 rounds, 5 discoveries, 2 known laws rediscovered
