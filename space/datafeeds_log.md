@@ -4203,3 +4203,4 @@
 - 2026-11-16 12:25 FINDING (confirmed on held-out rows): In 'Dataset for "On the variability of the leaf relative uptake rate of carbonyl sulfide compa' (Zenodo, doi 10.5281/zenodo.7915225): 'RH' is linear in 'VPD' (R² = 0.938 on the discovery half); held-out R² = 0.938 [emp-85d3a5817cd6]
 - 2026-11-16 12:25 FINDING (confirmed on held-out rows): In 'Dataset for "On the variability of the leaf relative uptake rate of carbonyl sulfide compa' (Zenodo, doi 10.5281/zenodo.7915225): 'SWC_MG' is linear in 'SWC_WT' (R² = 0.971 on the discovery half); held-out R² = 0.972 [emp-a9aef72eb013]
 - 2026-11-16 12:27 data feeds: 26853 datasets analysed so far, 3727 confirmed findings
+- 2026-11-16 13:28 data feeds: online
