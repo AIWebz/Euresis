@@ -3381700,5 +3381700,32 @@
   "statement": "In 'Data from: Organic matter loading by hippopotami causes subsidy overload resulting in down' (Zenodo, doi 10.5061/dryad.nh6hn04): 'DO (mg/L)' follows a power law in 'DO (%sat)' (R\u00b2 = 0.997 on the discovery half)",
   "status": "refuted",
   "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-cb11e1756b44",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "L*p/(-p*sqrt(1 - L) + p + sqrt(1 - L) - 1 + 2/(p*sqrt(1 - L) - p + 1)) >= 1/2*(L*p/(-2*sqrt(1 - L) + sqrt(-L*p + 1) + 1 + 1/(p*sqrt(1 - L) - p + 1)))",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 5743",
+  "statement": "[economics: insurance and risk] Insurance Coverage Sensitivity Adjusted [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 Relative Risk Sensitivity Index Adjusted [model-proposed; physical meaning unverified]   on p < 1, L < 1 (tight only at the edge of the domain, near (0.966, 1.17e-16))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]
