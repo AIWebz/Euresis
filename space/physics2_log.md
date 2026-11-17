@@ -6548,3 +6548,15 @@
 - 2026-11-17 14:10 round 5988: velocity addition
 - 2026-11-17 14:12 round 5989: Compton scattering
 - 2026-11-17 14:13 round 5990: Cournot duopoly
+- 2026-11-17 14:14 round 5991: insurance and risk
+- 2026-11-17 14:16 round 5992: auction with a reserve price
+- 2026-11-17 14:19 round 5993: two-body decay
+- 2026-11-17 14:21 round 5994: collision
+- 2026-11-17 14:27 round 5995: driven oscillator
+- 2026-11-17 14:29 round 5996: velocity addition
+- 2026-11-17 14:30 round 5997: Compton scattering
+- 2026-11-17 14:31 round 5998: Cournot duopoly
+- 2026-11-17 14:32 round 5999: insurance and risk
+- 2026-11-17 14:34 round 6000: auction with a reserve price
+- 2026-11-17 14:35 round 6001: two-body decay
+- 2026-11-17 14:37 round 6002: collision
