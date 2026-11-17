@@ -4615,3 +4615,4 @@
 - 2026-11-17 21:41 data feeds: online
 - 2026-11-17 21:42 FINDING (confirmed on held-out rows): In 'Data and Code for Reproducible Benchmarking of BRCA Multi-Omics Analysis' (Zenodo, doi 10.5281/zenodo.21245488): 'rs_ADH1B' is linear in 'rs_ADIPOQ' (R² = 0.908 on the discovery half); held-out R² = 0.899 [emp-820d12fa5e69]
 - 2026-11-17 21:42 data feeds: 29711 datasets analysed so far, 4065 confirmed findings
+- 2026-11-17 22:31 data feeds: online
