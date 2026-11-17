@@ -6648,3 +6648,6 @@
 - 2026-11-17 19:08 round 6078: Cournot duopoly
 - 2026-11-17 19:10 round 6079: insurance and risk
 - 2026-11-17 19:12 round 6080: auction with a reserve price
+- 2026-11-17 19:14 round 6081: two-body decay
+- 2026-11-17 19:16 round 6082: collision
+- 2026-11-17 19:18 segment end: 6082 rounds, 5 discoveries, 2 known laws rediscovered
