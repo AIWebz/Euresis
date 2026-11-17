@@ -3530454,5 +3530454,32 @@
   "statement": "In 'Rifugio Bo\u00e9 (Dolomites, 2871 m) Hourly Hygrothermal Dataset, 2020\u20132025' (Zenodo, doi 10.5281/zenodo.17473383): 'GF_DryingRooms_Temp' is linear in 'FF_Bathroom_South_Temp' (R\u00b2 = 0.923 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-1fc46b804019",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "L*p/(sqrt(1 - L) - sqrt(-L*p + 1) + 1 + 1/(p*sqrt(1 - L) - p + 1)) >= 1*(L*p/(-p*sqrt(1 - L) + p + sqrt(1 - L) - sqrt(-L*p + 1) + 1 + 1/(p*sqrt(1 - L) - p + 1)))",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 6055",
+  "statement": "[economics: insurance and risk] Risk Sensitivity Index Adjusted [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Insurance Risk Sensitivity Ratio Adjusted [model-proposed; physical meaning unverified]   on p < 1, L < 1 (tight only at the edge of the domain, near (0.000113, 4.23e-13))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]
