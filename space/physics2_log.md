@@ -6331,3 +6331,5 @@
 - 2026-11-17 03:08 round 5797: Compton scattering
 - 2026-11-17 03:09 round 5798: Cournot duopoly
 - 2026-11-17 03:11 round 5799: insurance and risk
+- 2026-11-17 03:12 round 5800: auction with a reserve price
+- 2026-11-17 03:15 segment end: 5800 rounds, 5 discoveries, 2 known laws rediscovered
