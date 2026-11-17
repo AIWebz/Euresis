@@ -3426098,5 +3426098,59 @@
   "statement": "[physics: two-body decay] Invariant Mass Ratio of Product 1 to Total [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 Invariant mass of product 1 [model-proposed; physical meaning unverified]   on a < 1, b < 1, a + b < 1 (tight only at the edge of the domain, near (1.62e-14, 1))",
   "status": "proved",
   "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.1mc01",
+   "held_out_r2": 0.9503,
+   "held_out_rows": 178,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-70fc5e4fb947",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "ba79a3f8e3d302c2.csv",
+   "doi": "10.5061/dryad.1mc01",
+   "form": "power law",
+   "params": [
+    -0.47388343658594395,
+    0.9471007466915138
+   ],
+   "seed": 3394014975,
+   "x": "total.cone",
+   "y": "total.opsins"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Rapid adaptive evolution of colour vision in the threespine stickleback radiati' (Zenodo, doi 10.5061/dryad.1mc01): 'total.opsins' follows a power law in 'total.cone' (R\u00b2 = 0.941 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.c6kj2",
+   "held_out_r2": 0.9045,
+   "held_out_rows": 38,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-00451b21aef1",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "4b65981a645c7394.csv",
+   "doi": "10.5061/dryad.c6kj2",
+   "form": "linear",
+   "params": [
+    -10.441216690797493,
+    0.009685829509249485
+   ],
+   "seed": 3314137752,
+   "x": "rou",
+   "y": "slo"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: An approach for identifying cryptic barriers to gene flow that limit species' g' (Zenodo, doi 10.5061/dryad.c6kj2): 'slo' is linear in 'rou' (R\u00b2 = 0.954 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
