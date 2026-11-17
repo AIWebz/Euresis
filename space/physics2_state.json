@@ -83490,6 +83490,46 @@
    "family": "collision",
    "expr": "e**2*m**2/(m + 1)**2 + e**2*m/(m + 1) - (1 - e**2)/(m + 1) + 1 - (-e**2*m**2/(m + 1)**2 - e**2*m/(m ",
    "why": "affine combination of known quantities (target speed / initial speed, Fraction of kinetic energy retained by the target [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt((1 - r**2)**2 + (2*z*r)**2)/sqrt(4*z**4 - 2*z**2 + 1)",
+   "why": "affine combination of known quantities (amplitude / static deflection, Dynamic Magnification Factor [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt((1 + (2*z*r)**2)/((1 - r**2)**2 + (2*z*r)**2))",
+   "why": "affine combination of known quantities (amplitude / static deflection, transmissibility)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "1 + sqrt(4*r**2*z**2 + 1)/(2*r*z*sqrt(4*r**2*z**2 + (1 - r**2)**2))",
+   "why": "affine combination of known quantities (amplitude / static deflection, Power Amplification Factor [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "2*r**2*z/((r**2 + 1)*(4*r**2*z**2 + (1 - r**2)**2))",
+   "why": "affine combination of known quantities (amplitude / static deflection, Energy Dissipation Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 + u)/(1 - u)) * sqrt((1 + v)/(1 - v)) / sqrt((1 + (u + v)/(1 + u*v)) / (1 - (u + v)/(1 + u*v",
+   "why": "affine combination of known quantities (composed speed / c)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "(u + v)/(1 + u*v)",
+   "why": "affine combination of known quantities (composed speed / c)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "(u + v)/(1 + u*v)",
+   "why": "affine combination of known quantities (composed speed / c)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "1/(sqrt(1 - u**2)*sqrt(1 - v**2))",
+   "why": "affine combination of known quantities (composed speed / c, product of the two Lorentz factors)"
   }
  ],
  "tried": [
@@ -102628,7 +102668,7 @@
    "k": "1/2"
   }
  ],
- "rounds": 5922,
+ "rounds": 5924,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",
