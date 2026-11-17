@@ -4655,3 +4655,4 @@
 - 2026-11-17 22:36 FINDING (confirmed on held-out rows): In 'Data from: Ability of seedlings to survive heat and drought portends future demographic ch' (Zenodo, doi 10.5061/dryad.280gb5mt5): 'DRY_WEIGHT' follows a power law in 'WEIGHT_WEEK_1' (R² = 0.907 on the discovery half); held-out R² = 0.901 [emp-845bcc3acc29]
 - 2026-11-17 22:36 FINDING (confirmed on held-out rows): In 'Data for "Revisiting the zonally asymmetric extratropical circulation of the Southern Hemi' (Zenodo, doi 10.5281/zenodo.7730671): 'ONI' is linear in 'dSST3.4' (R² = 0.988 on the discovery half); held-out R² = 0.989 [emp-f94dfb570675]
 - 2026-11-17 22:36 data feeds: 29765 datasets analysed so far, 4103 confirmed findings
+- 2026-11-17 23:39 data feeds: online
