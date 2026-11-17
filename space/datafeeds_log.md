@@ -4656,3 +4656,6 @@
 - 2026-11-17 22:36 FINDING (confirmed on held-out rows): In 'Data for "Revisiting the zonally asymmetric extratropical circulation of the Southern Hemi' (Zenodo, doi 10.5281/zenodo.7730671): 'ONI' is linear in 'dSST3.4' (R² = 0.988 on the discovery half); held-out R² = 0.989 [emp-f94dfb570675]
 - 2026-11-17 22:36 data feeds: 29765 datasets analysed so far, 4103 confirmed findings
 - 2026-11-17 23:39 data feeds: online
+- 2026-11-17 23:39 FINDING (confirmed on held-out rows): In 'Data from: Warning signal brightness variation: sexual selection may work under the radar ' (Zenodo, doi 10.5061/dryad.p5g5j): 'Mossy' is linear in 'Green.leaf' (R² = 0.959 on the discovery half); held-out R² = 0.952 [emp-1639ee3af6c6]
+- 2026-11-17 23:40 FINDING (confirmed on held-out rows): In 'Density, parasitism, and sexual reproduction are strongly correlated in lake Daphnia popul' (Zenodo, doi 10.5061/dryad.pzgmsbcm6): 'metsch.inf.adu' is linear in 'metsch.inf.all' (R² = 0.988 on the discovery half); held-out R² = 0.965 [emp-32ee108862b8]
+- 2026-11-17 23:40 data feeds: 29814 datasets analysed so far, 4105 confirmed findings

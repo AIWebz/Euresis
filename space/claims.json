@@ -3573549,5 +3573549,86 @@
   "statement": "Octal game 0.0736465 is completely solved: its Grundy values are periodic with pre-period 284 and period 48 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.p5g5j",
+   "held_out_r2": 0.9523,
+   "held_out_rows": 201,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-1639ee3af6c6",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "6799ad83cac91472.csv",
+   "doi": "10.5061/dryad.p5g5j",
+   "form": "linear",
+   "params": [
+    -6.798107115719036,
+    0.776135088047271
+   ],
+   "seed": 3684547226,
+   "x": "Green.leaf",
+   "y": "Mossy"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Warning signal brightness variation: sexual selection may work under the radar ' (Zenodo, doi 10.5061/dryad.p5g5j): 'Mossy' is linear in 'Green.leaf' (R\u00b2 = 0.959 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.pzgmsbcm6",
+   "held_out_r2": 0.965,
+   "held_out_rows": 247,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-32ee108862b8",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "562c253178ecd3bd.csv",
+   "doi": "10.5061/dryad.pzgmsbcm6",
+   "form": "linear",
+   "params": [
+    0.04786731700813351,
+    0.6757616328163192
+   ],
+   "seed": 1219830539,
+   "x": "metsch.inf.all",
+   "y": "metsch.inf.adu"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Density, parasitism, and sexual reproduction are strongly correlated in lake Daphnia popul' (Zenodo, doi 10.5061/dryad.pzgmsbcm6): 'metsch.inf.adu' is linear in 'metsch.inf.all' (R\u00b2 = 0.988 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rt1np",
+   "held_out_r2": -0.0902,
+   "held_out_rows": 39,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-edefd3f486c7",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "c135ce0217e34e83.csv",
+   "doi": "10.5061/dryad.rt1np",
+   "form": "power law",
+   "params": [
+    -3.385532133622203,
+    0.9952047811534009
+   ],
+   "seed": 1609812686,
+   "x": "Number of eggs that survived",
+   "y": "Proportion of eggs that survived"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Assessing the alignment of sexual and natural selection using radio-mutagenized' (Zenodo, doi 10.5061/dryad.rt1np): 'Proportion of eggs that survived' follows a power law in 'Number of eggs that survived' (R\u00b2 = 0.993 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
  }
 ]
