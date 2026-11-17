@@ -3530481,5 +3530481,32 @@
   "statement": "[economics: insurance and risk] Risk Sensitivity Index Adjusted [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Insurance Risk Sensitivity Ratio Adjusted [model-proposed; physical meaning unverified]   on p < 1, L < 1 (tight only at the edge of the domain, near (0.000113, 4.23e-13))",
   "status": "proved",
   "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "p < 1",
+    "L < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-f99c1099174d",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'Insurance Risk Sensitivity Ratio Adjusted [model-proposed; physical meaning unverified]'",
+  "payload": {
+   "assumptions": [
+    "p < 1",
+    "L < 1"
+   ],
+   "claim": "L*p/(sqrt(1 - L) - sqrt(-L*p + 1) + 1 + 1/(p*sqrt(1 - L) - p + 1)) >= 1*(L*p/(-p*sqrt(1 - L) + p + sqrt(1 - L) - 1 + 2/(p*sqrt(1 - L) - p + 1)))",
+   "symbols": [
+    "p",
+    "L"
+   ]
+  },
+  "source": "physics_discover2 round 6063",
+  "statement": "[economics: insurance and risk] Risk Sensitivity Index Adjusted [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Insurance Coverage Sensitivity Adjusted [model-proposed; physical meaning unverified]   on p < 1, L < 1 (tight only at the edge of the domain, near (0.000113, 7.3e-13))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]
