@@ -3456078,7 +3456078,7 @@
   },
   "id": "emp-8689488414ca",
   "kind": "empirical",
-  "novelty": "not checked",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
   "payload": {
    "dataset": "42e7930ef86ea01b.csv",
    "doi": "10.5281/zenodo.6460346",
@@ -3456093,6 +3456093,114 @@
   },
   "source": "datafeeds.py",
   "statement": "In 'Data from: Neuron numbers link innovativeness with both absolute and relative brain size i' (Zenodo, doi 10.5281/zenodo.6460346): 'BS_M_g' follows a power law in 'Cer_M_g' (R\u00b2 = 0.965 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.6460346",
+   "held_out_r2": 0.9283,
+   "held_out_rows": 55,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c990666d77fc",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "42e7930ef86ea01b.csv",
+   "doi": "10.5281/zenodo.6460346",
+   "form": "power law",
+   "params": [
+    2.1430556727845844,
+    0.9686730247554883
+   ],
+   "seed": 1013039930,
+   "x": "Cer_M_g",
+   "y": "AbsBrain"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Neuron numbers link innovativeness with both absolute and relative brain size i' (Zenodo, doi 10.5281/zenodo.6460346): 'AbsBrain' follows a power law in 'Cer_M_g' (R\u00b2 = 0.922 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.6460346",
+   "held_out_r2": 0.9884,
+   "held_out_rows": 55,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-59414f5a63c3",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "42e7930ef86ea01b.csv",
+   "doi": "10.5281/zenodo.6460346",
+   "form": "power law",
+   "params": [
+    0.6329861467737724,
+    0.9016686696092884
+   ],
+   "seed": 1013039930,
+   "x": "Pall_M_g",
+   "y": "AbsBrain"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Neuron numbers link innovativeness with both absolute and relative brain size i' (Zenodo, doi 10.5281/zenodo.6460346): 'AbsBrain' follows a power law in 'Pall_M_g' (R\u00b2 = 0.984 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.6460346",
+   "held_out_r2": 0.8961,
+   "held_out_rows": 55,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-745d0f20ecc3",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "42e7930ef86ea01b.csv",
+   "doi": "10.5281/zenodo.6460346",
+   "form": "power law",
+   "params": [
+    2.7083759831910448,
+    1.0170582202886074
+   ],
+   "seed": 1013039930,
+   "x": "BS_M_g",
+   "y": "AbsBrain"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Neuron numbers link innovativeness with both absolute and relative brain size i' (Zenodo, doi 10.5281/zenodo.6460346): 'AbsBrain' follows a power law in 'BS_M_g' (R\u00b2 = 0.903 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.6460346",
+   "held_out_r2": 0.9869,
+   "held_out_rows": 55,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-027332875f69",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "42e7930ef86ea01b.csv",
+   "doi": "10.5281/zenodo.6460346",
+   "form": "linear",
+   "params": [
+    0.43278845215059353,
+    0.8716997769775122
+   ],
+   "seed": 1013039930,
+   "x": "NSBI_all",
+   "y": "NSBI_gradeshifts"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Neuron numbers link innovativeness with both absolute and relative brain size i' (Zenodo, doi 10.5281/zenodo.6460346): 'NSBI_gradeshifts' is linear in 'NSBI_all' (R\u00b2 = 0.979 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
  }
