@@ -6408,3 +6408,7 @@
 - 2026-11-17 06:32 round 5866: collision
 - 2026-11-17 06:35 round 5867: driven oscillator
 - 2026-11-17 06:37 round 5868: velocity addition
+- 2026-11-17 06:38 round 5869: Compton scattering
+- 2026-11-17 06:39 round 5870: Cournot duopoly
+- 2026-11-17 06:40 round 5871: insurance and risk
+- 2026-11-17 06:41 round 5872: auction with a reserve price
