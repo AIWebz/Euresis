@@ -4461,3 +4461,4 @@
 - 2026-11-17 07:13 FINDING (confirmed on held-out rows): In 'Influence of socio-economic, demographic and climate factors on the regional distribution ' (Zenodo, doi 10.5061/dryad.m0cfxpnzx): 'INCOME_PRIM' grows exponentially in 'EDU38_SH' (R² = 0.978 on the discovery half); held-out R² = 0.977 [emp-5e0e80b889ba]
 - 2026-11-17 07:14 FINDING (confirmed on held-out rows): In 'Data from: Global vegetation patterns of the past 140,000 years' (Zenodo, doi 10.5061/dryad.2fqz612mk): 'TeIBS' is linear in 'TeBS' (R² = 0.928 on the discovery half); held-out R² = 0.940 [emp-32626a41e0c7]
 - 2026-11-17 07:32 data feeds: 28844 datasets analysed so far, 3941 confirmed findings
+- 2026-11-17 08:35 data feeds: online
