@@ -84193,6 +84193,26 @@
    "family": "Cournot duopoly",
    "expr": "((2 - c1 - c2)**2 / 18) / (((1 - 2*c1 + c2)**2 + (1 - 2*c2 + c1)**2)/9)",
    "why": "affine combination of known quantities (output of firm 1, 1/(Hirshleifer Index [model-proposed; physical meaning unverified]))"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "(-L*p + 1)**2/(-p*sqrt(1 - L) + sqrt(1 - L) - 1 + 1/(p*sqrt(1 - L) - p + 1))**2",
+   "why": "affine combination of known quantities (expected wealth, Insurance Risk Adjustment Ratio Squared [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "sqrt(-L*p + 1)/(-p*sqrt(1 - L) + sqrt(1 - L) + 1 + 1/(p*sqrt(1 - L) - p + 1))",
+   "why": "affine combination of known quantities (expected wealth, Insurance Risk Exposure Ratio Adjusted [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "-(p*sqrt(1 - L) - p + 1)**2/(-L*p + p*sqrt(1 - L) - p + 2) + 1",
+   "why": "affine combination of known quantities (expected wealth, Insurance Coverage Ratio Adjusted [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "sqrt(-L*p + 1)/(-p*sqrt(1 - L) + 1 + 1/(p*sqrt(1 - L) - p + 1))",
+   "why": "affine combination of known quantities (expected wealth, Relative Risk Adjustment Index Adjusted [model-proposed; physical meaning unverified])"
   }
  ],
  "tried": [
@@ -103709,7 +103729,7 @@
    "k": "1"
   }
  ],
- "rounds": 5974,
+ "rounds": 5975,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",
