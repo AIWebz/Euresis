@@ -4611,3 +4611,4 @@
 - 2026-11-17 19:49 FINDING (confirmed on held-out rows): In 'Seasonal dynamics in the mammalian microbiome between disparate environments' (Zenodo, doi 10.5061/dryad.v6wwpzh2r): 'right_tag' follows a power law in 'left_tag' (R² = 0.904 on the discovery half); held-out R² = 0.893 [emp-52cbbeccce37]
 - 2026-11-17 19:51 data feeds: 29644 datasets analysed so far, 4064 confirmed findings
 - 2026-11-17 20:36 data feeds: online
+- 2026-11-17 20:37 data feeds: 29645 datasets analysed so far, 4064 confirmed findings
