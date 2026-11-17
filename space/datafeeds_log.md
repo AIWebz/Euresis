@@ -4501,3 +4501,4 @@
 - 2026-11-17 09:08 FINDING (confirmed on held-out rows): In 'Xalan' (Zenodo, doi 10.5281/zenodo.268436): 'npm' is linear in 'wmc' (R² = 0.914 on the discovery half); held-out R² = 0.904 [emp-69eb0e9abd3f]
 - 2026-11-17 09:09 data feeds: 28982 datasets analysed so far, 3976 confirmed findings
 - 2026-11-17 10:11 data feeds: OFFLINE — using datasets on disk
+- 2026-11-17 10:12 data feeds: 28982 datasets analysed so far, 3976 confirmed findings
