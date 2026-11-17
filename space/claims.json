@@ -3545916,5 +3545916,518 @@
   "statement": "Octal game 0.0734146 is completely solved: its Grundy values are periodic with pre-period 284 and period 48 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-d56833ba330f",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'momentum transferred / initial momentum'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "(e + 1)/((m + 1)*(e*m/(m + 1) + 1)) >= 2/3*((e**2*m**2 + e**2*m)/((m + 1)*((1 - e**2)*(m + 1) + (e**2*m**2 + e**2*m)/(m + 1))))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 6106",
+  "statement": "[physics: collision] Impulse ratio of target to projectile [model-proposed; physical meaning unverified] \u2265 2/3 \u00d7 Relative Kinetic Energy Ratio After Collision [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-afc581f9db4a",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'momentum transferred / initial momentum'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "(-e**2*m**2/(m + 1)**2 - e**2*m/(m + 1) - (1 - e**2)/(m + 1) + 1)/(-e**2*m**2/(m + 1)**2 - (1 - e**2)/(m + 1) + 1) >= 1/3*((e**2*m**2 + e**2*m)/((m + 1)*((1 - e**2)*(m + 1) + (e**2*m**2 + e**2*m)/(m + 1))))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 6106",
+  "statement": "[physics: collision] Fraction of Kinetic Energy Retained by the Projectile Relative to the System [model-proposed; physical meaning unverified] \u2265 1/3 \u00d7 Relative Kinetic Energy Ratio After Collision [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-96e9fde27f82",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "m**2*(1 - e**2)/(m + 1)**2 - m*(1 - e**2)/(m + 1) - (1 - e**2)/(m + 1) + 1 >= 1*((e**2*m**2 + e**2*m)/((m + 1)*((1 - e**2)*(m + 1) + (e**2*m**2 + e**2*m)/(m + 1))))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 6106",
+  "statement": "[physics: collision] Fraction of kinetic energy retained by projectile relative to initial [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Relative Kinetic Energy Ratio After Collision [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-9411a07f7225",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'momentum transferred / initial momentum'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "(-e**2*m**2/(m + 1)**2 - e**2*m/(m + 1) + 2)/(e**2*m**2/(m + 1)**2 + e**2*m/(m + 1)) >= 5/3*((e**2*m**2 + e**2*m)/((m + 1)*((1 - e**2)*(m + 1) + (e**2*m**2 + e**2*m)/(m + 1))))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 6106",
+  "statement": "[physics: collision] Fraction of Kinetic Energy Retained by the Projectile Relative to the Target [model-proposed; physical meaning unverified] \u2265 5/3 \u00d7 Relative Kinetic Energy Ratio After Collision [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-194300ca3bd3",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'relative speed after / relative speed before'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "e + m >= 1*((e**2*m**2 + e**2*m)/((m + 1)*((1 - e**2)*(m + 1) + (e**2*m**2 + e**2*m)/(m + 1))))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 6106",
+  "statement": "[physics: collision] Sum of Mass Ratio and Coefficient of Restitution [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Relative Kinetic Energy Ratio After Collision [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1.31e-08, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-26a85709cc4b",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'Fraction of kinetic energy transferred to the target [model-proposed; physical meaning unverified]'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "e**2 + m**2 >= 1*((e**2*m**2 + e**2*m)/((m + 1)*((1 - e**2)*(m + 1) + (e**2*m**2 + e**2*m)/(m + 1))))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 6106",
+  "statement": "[physics: collision] Sum of Squares of Mass Ratio and Coefficient of Restitution [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Relative Kinetic Energy Ratio After Collision [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (5.81e-06, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-8f1df44d1b9a",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'relative speed after / relative speed before'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "e + m**2 >= 1*((e**2*m**2 + e**2*m)/((m + 1)*((1 - e**2)*(m + 1) + (e**2*m**2 + e**2*m)/(m + 1))))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 6106",
+  "statement": "[physics: collision] Mass ratio squared plus coefficient of restitution [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Relative Kinetic Energy Ratio After Collision [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (5.81e-06, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-3e1fe546d425",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'relative speed after / relative speed before'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "m**2 + m**(-2) >= 2*((e**2*m**2 + e**2*m)/((m + 1)*((1 - e**2)*(m + 1) + (e**2*m**2 + e**2*m)/(m + 1))))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 6106",
+  "statement": "[physics: collision] Mass Ratio Squared Plus Reciprocal [model-proposed; physical meaning unverified] \u2265 2 \u00d7 Relative Kinetic Energy Ratio After Collision [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-85c23cd6e70e",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'relative speed after / relative speed before'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "sqrt(e) + sqrt(m) >= 1*((e**2*m**2 + e**2*m)/((m + 1)*((1 - e**2)*(m + 1) + (e**2*m**2 + e**2*m)/(m + 1))))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 6106",
+  "statement": "[physics: collision] Sum of Square Roots of Mass Ratio and Coefficient of Restitution [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Relative Kinetic Energy Ratio After Collision [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1.28e-10, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-bd18853fa31e",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'relative speed after / relative speed before'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "e + sqrt(m) >= 1*((e**2*m**2 + e**2*m)/((m + 1)*((1 - e**2)*(m + 1) + (e**2*m**2 + e**2*m)/(m + 1))))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 6106",
+  "statement": "[physics: collision] Square Root of Mass Ratio Plus Coefficient of Restitution [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Relative Kinetic Energy Ratio After Collision [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1.28e-10, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-74b8c11a3189",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'relative speed after / relative speed before'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "sqrt(e) + m >= 1*((e**2*m**2 + e**2*m)/((m + 1)*((1 - e**2)*(m + 1) + (e**2*m**2 + e**2*m)/(m + 1))))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 6106",
+  "statement": "[physics: collision] Square Root of Coefficient of Restitution Plus Mass Ratio [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Relative Kinetic Energy Ratio After Collision [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1.31e-08, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-c031b43493f8",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'relative speed after / relative speed before'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "(-e**2*m**2/(m + 1)**2 - e**2*m/(m + 1) - (1 - e**2)/(m + 1) + 2)/(e**2*m**2/(m + 1)**2 + e**2*m/(m + 1) + (1 - e**2)/(m + 1)) >= 5/3*((e**2*m**2 + e**2*m)/((m + 1)*((1 - e**2)*(m + 1) + (e**2*m**2 + e**2*m)/(m + 1))))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 6106",
+  "statement": "[physics: collision] Ratio of Kinetic Energy of Projectile to Kinetic Energy of System After Collisio [model-proposed; physical meaning unverified] \u2265 5/3 \u00d7 Relative Kinetic Energy Ratio After Collision [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-868c1e335f53",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'Fraction of kinetic energy retained by the system [model-proposed; physical meaning unverified]'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "sqrt(m) + 1/e >= 1*((e**2*m**2 + e**2*m)/((m + 1)*((1 - e**2)*(m + 1) + (e**2*m**2 + e**2*m)/(m + 1))))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 6106",
+  "statement": "[physics: collision] Square Root of Mass Ratio Plus Reciprocal of Coefficient of Restitution [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Relative Kinetic Energy Ratio After Collision [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1.28e-10, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-c20b145716ef",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'relative speed after / relative speed before'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "(m*(1 - e**2)/(m + 1) + (1 - e**2)/(m + 1))/((1 - e**2)*(1 - m)/(m + 1) + (1 - e**2)/(m + 1)) >= 1/2*((e**2*m**2 + e**2*m)/((m + 1)*((1 - e**2)*(m + 1) + (e**2*m**2 + e**2*m)/(m + 1))))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 6106",
+  "statement": "[physics: collision] Kinetic Energy Ratio of Projectile to Target After Collision [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 Relative Kinetic Energy Ratio After Collision [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (2.24e-08, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-42497d705b60",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'relative speed after / relative speed before'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "m/(e + 1) + 1 >= 1*((e**2*m**2 + e**2*m)/((m + 1)*((1 - e**2)*(m + 1) + (e**2*m**2 + e**2*m)/(m + 1))))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 6106",
+  "statement": "[physics: collision] Mass Ratio Adjusted by Restitution [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Relative Kinetic Energy Ratio After Collision [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (2.12e-08, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-ae8c3eb99b98",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'relative speed after / relative speed before'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "e**2*m**2/(e**2*m**2 + (m + 1)**2) + 1 >= 1*((e**2*m**2 + e**2*m)/((m + 1)*((1 - e**2)*(m + 1) + (e**2*m**2 + e**2*m)/(m + 1))))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 6106",
+  "statement": "[physics: collision] Kinetic Energy Ratio of Target to Projectile After Collision [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Relative Kinetic Energy Ratio After Collision [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (4.8e-06, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-8ccacaa78b8a",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'relative speed after / relative speed before'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "e**2*m**2/(e**2*m**2 + (1 - e**2)*(m + 1)) + 1 >= 1*((e**2*m**2 + e**2*m)/((m + 1)*((1 - e**2)*(m + 1) + (e**2*m**2 + e**2*m)/(m + 1))))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 6114",
+  "statement": "[physics: collision] Fraction of Kinetic Energy Retained by Target Relative to Projectile [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Relative Kinetic Energy Ratio After Collision [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (2.91e-11, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-ba107d5a88b4",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'Fraction of kinetic energy retained by projectile relative to initial [model-proposed; physical meaning unverified]'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "m**2*(1 - e**2)/(m + 1)**2 + m*(1 - e**2)/(m + 1) - (1 - e**2)/(m + 1) + 1 >= 1*((e**2*m**2 + e**2*m)/((m + 1)*((1 - e**2)*(m + 1) + (e**2*m**2 + e**2*m)/(m + 1))))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 6114",
+  "statement": "[physics: collision] Kinetic Energy Ratio of the Projectile to the Target [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Relative Kinetic Energy Ratio After Collision [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-d0c1db10865d",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "(e**2*m**2 + e**2*m)/((m + 1)*((1 - e**2)*(m + 1) + (e**2*m**2 + e**2*m)/(m + 1))) >= 2/3*(e**2*m**2/(m + 1)**2 + e**2*m/(m + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 6114",
+  "statement": "[physics: collision] Relative Kinetic Energy Ratio After Collision [model-proposed; physical meaning unverified] \u2265 2/3 \u00d7 Fraction of kinetic energy retained by the target [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 9.12e-05))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]
