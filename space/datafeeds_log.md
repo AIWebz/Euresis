@@ -4435,3 +4435,4 @@
 - 2026-11-17 05:13 FINDING (confirmed on held-out rows): In 'Data from: Rapid adaptive evolution of colour vision in the threespine stickleback radiati' (Zenodo, doi 10.5061/dryad.1mc01): 'total.opsins' follows a power law in 'total.cone' (R² = 0.941 on the discovery half); held-out R² = 0.950 [emp-70fc5e4fb947]
 - 2026-11-17 05:13 FINDING (confirmed on held-out rows): In 'Data from: An approach for identifying cryptic barriers to gene flow that limit species' g' (Zenodo, doi 10.5061/dryad.c6kj2): 'slo' is linear in 'rou' (R² = 0.954 on the discovery half); held-out R² = 0.904 [emp-00451b21aef1]
 - 2026-11-17 05:13 data feeds: 28542 datasets analysed so far, 3921 confirmed findings
+- 2026-11-17 06:15 data feeds: online
