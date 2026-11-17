@@ -3443808,5 +3443808,410 @@
   "statement": "Octal game 0.0722464 is completely solved: its Grundy values are periodic with pre-period 284 and period 48 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3565781",
+   "held_out_r2": 0.9981,
+   "held_out_rows": 258,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-72a9300c133c",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "5a12caf041d01ef5.csv",
+   "doi": "10.5281/zenodo.3565781",
+   "form": "power law",
+   "params": [
+    12.498224406057949,
+    0.9819603202888535
+   ],
+   "seed": 268028599,
+   "x": "mrr",
+   "y": "vann"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'LCI data for materials and processes comparing energy and water use of aqueous and gas-bas' (Zenodo, doi 10.5281/zenodo.3565781): 'vann' follows a power law in 'mrr' (R\u00b2 = 0.998 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3565781",
+   "held_out_r2": 0.913,
+   "held_out_rows": 258,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d695878c2eba",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "5a12caf041d01ef5.csv",
+   "doi": "10.5281/zenodo.3565781",
+   "form": "linear",
+   "params": [
+    29525.5601236434,
+    0.18841873309097493
+   ],
+   "seed": 268028599,
+   "x": "fd",
+   "y": "wd"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'LCI data for materials and processes comparing energy and water use of aqueous and gas-bas' (Zenodo, doi 10.5281/zenodo.3565781): 'wd' is linear in 'fd' (R\u00b2 = 0.936 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3565781",
+   "held_out_r2": 0.9108,
+   "held_out_rows": 129,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-0b05b6166744",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "d9d24121ac55d625.csv",
+   "doi": "10.5281/zenodo.3565781",
+   "form": "linear",
+   "params": [
+    23658.529843746634,
+    0.17506747765577532
+   ],
+   "seed": 1013366214,
+   "x": "del_fd",
+   "y": "del_wd"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'LCI data for materials and processes comparing energy and water use of aqueous and gas-bas' (Zenodo, doi 10.5281/zenodo.3565781): 'del_wd' is linear in 'del_fd' (R\u00b2 = 0.914 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3565781",
+   "held_out_r2": 0.9079,
+   "held_out_rows": 129,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-cfe045945387",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "d9d24121ac55d625.csv",
+   "doi": "10.5281/zenodo.3565781",
+   "form": "linear",
+   "params": [
+    0.33468482373816,
+    0.32173047265362853
+   ],
+   "seed": 1013366214,
+   "x": "reldel_fd",
+   "y": "reldel_wd"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'LCI data for materials and processes comparing energy and water use of aqueous and gas-bas' (Zenodo, doi 10.5281/zenodo.3565781): 'reldel_wd' is linear in 'reldel_fd' (R\u00b2 = 0.908 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3565781",
+   "held_out_r2": 0.8136,
+   "held_out_rows": 129,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-01c9b8e5faed",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "d9d24121ac55d625.csv",
+   "doi": "10.5281/zenodo.3565781",
+   "form": "linear",
+   "params": [
+    -0.2921080094951856,
+    4.236176501498602e-05
+   ],
+   "seed": 1013366214,
+   "x": "del_wd",
+   "y": "reldel_wdnorm"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'LCI data for materials and processes comparing energy and water use of aqueous and gas-bas' (Zenodo, doi 10.5281/zenodo.3565781): 'reldel_wdnorm' is linear in 'del_wd' (R\u00b2 = 0.961 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3565781",
+   "held_out_r2": 0.921,
+   "held_out_rows": 129,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9a12fd7a1c1e",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "d9d24121ac55d625.csv",
+   "doi": "10.5281/zenodo.3565781",
+   "form": "linear",
+   "params": [
+    -0.14421367386867243,
+    2.728156294957753
+   ],
+   "seed": 1013366214,
+   "x": "reldel_wd",
+   "y": "reldel_fdnorm"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'LCI data for materials and processes comparing energy and water use of aqueous and gas-bas' (Zenodo, doi 10.5281/zenodo.3565781): 'reldel_fdnorm' is linear in 'reldel_wd' (R\u00b2 = 0.918 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3565781",
+   "held_out_r2": 0.9079,
+   "held_out_rows": 129,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-0202edc4e8a1",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "d9d24121ac55d625.csv",
+   "doi": "10.5281/zenodo.3565781",
+   "form": "linear",
+   "params": [
+    0.2421913539874249,
+    0.3262671566962247
+   ],
+   "seed": 1013366214,
+   "x": "reldel_fdnorm",
+   "y": "reldel_wdnorm"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'LCI data for materials and processes comparing energy and water use of aqueous and gas-bas' (Zenodo, doi 10.5281/zenodo.3565781): 'reldel_wdnorm' is linear in 'reldel_fdnorm' (R\u00b2 = 0.912 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.5164v",
+   "held_out_r2": 0.9583,
+   "held_out_rows": 3183,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c1b21aea8437",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "1598baf0bb023282.csv",
+   "doi": "10.5061/dryad.5164v",
+   "form": "power law",
+   "params": [
+    -8.078003852796032,
+    4.480748269988623
+   ],
+   "seed": 3202320612,
+   "x": "MWMT ",
+   "y": "DD>18 "
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Decreases in beetle body size linked to climate change and warming temperatures' (Zenodo, doi 10.5061/dryad.5164v): 'DD>18 ' follows a power law in 'MWMT ' (R\u00b2 = 0.958 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.5164v",
+   "held_out_r2": 0.9921,
+   "held_out_rows": 3183,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-1acea6615d41",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "1598baf0bb023282.csv",
+   "doi": "10.5061/dryad.5164v",
+   "form": "power law",
+   "params": [
+    9.9161756288586,
+    -0.9990230705249543
+   ],
+   "seed": 3202320612,
+   "x": "MAP ",
+   "y": "AHM "
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Decreases in beetle body size linked to climate change and warming temperatures' (Zenodo, doi 10.5061/dryad.5164v): 'AHM ' follows a power law in 'MAP ' (R\u00b2 = 0.993 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.5164v",
+   "held_out_r2": 0.9752,
+   "held_out_rows": 3183,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c0c79ee65bcc",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "1598baf0bb023282.csv",
+   "doi": "10.5061/dryad.5164v",
+   "form": "power law",
+   "params": [
+    10.848417150531228,
+    -1.175262516283479
+   ],
+   "seed": 3202320612,
+   "x": "MSP ",
+   "y": "SHM "
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Decreases in beetle body size linked to climate change and warming temperatures' (Zenodo, doi 10.5061/dryad.5164v): 'SHM ' follows a power law in 'MSP ' (R\u00b2 = 0.974 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.5164v",
+   "held_out_r2": 0.9276,
+   "held_out_rows": 3183,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d7fb3dc74801",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "1598baf0bb023282.csv",
+   "doi": "10.5061/dryad.5164v",
+   "form": "power law",
+   "params": [
+    6.583265290898475,
+    -0.18589470759162424
+   ],
+   "seed": 3202320612,
+   "x": "DD<0 ",
+   "y": "NFFD "
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Decreases in beetle body size linked to climate change and warming temperatures' (Zenodo, doi 10.5061/dryad.5164v): 'NFFD ' follows a power law in 'DD<0 ' (R\u00b2 = 0.926 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.19220643",
+   "held_out_r2": 0.9968,
+   "held_out_rows": 40,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-22d13dbad450",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8dd7b9295264e811.csv",
+   "doi": "10.5281/zenodo.19220643",
+   "form": "exponential",
+   "params": [
+    9.797949000793974,
+    -0.000867738795139926
+   ],
+   "seed": 241507302,
+   "x": "Status",
+   "y": "Positives"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset for: Development and evaluation of control materials for nucleic acid-based detect' (Zenodo, doi 10.5281/zenodo.19220643): 'Positives' grows exponentially in 'Status' (R\u00b2 = 0.919 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.19220643",
+   "held_out_r2": 0.6426,
+   "held_out_rows": 40,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-bc090ee78bed",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "8dd7b9295264e811.csv",
+   "doi": "10.5281/zenodo.19220643",
+   "form": "linear",
+   "params": [
+    2265.4921019075473,
+    2.8194588270606875
+   ],
+   "seed": 241507302,
+   "x": "Status",
+   "y": "MeanAmplitudeofNegatives"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset for: Development and evaluation of control materials for nucleic acid-based detect' (Zenodo, doi 10.5281/zenodo.19220643): 'MeanAmplitudeofNegatives' is linear in 'Status' (R\u00b2 = 0.963 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.19220643",
+   "held_out_r2": 0.9968,
+   "held_out_rows": 40,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-36cfcb661f31",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8dd7b9295264e811.csv",
+   "doi": "10.5281/zenodo.19220643",
+   "form": "exponential",
+   "params": [
+    9.797949000793974,
+    -4.3386939756996296e-05
+   ],
+   "seed": 241507302,
+   "x": "Supermix",
+   "y": "Positives"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset for: Development and evaluation of control materials for nucleic acid-based detect' (Zenodo, doi 10.5281/zenodo.19220643): 'Positives' grows exponentially in 'Supermix' (R\u00b2 = 0.919 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.19220643",
+   "held_out_r2": 0.6426,
+   "held_out_rows": 40,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-38cd77ca5168",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "8dd7b9295264e811.csv",
+   "doi": "10.5281/zenodo.19220643",
+   "form": "linear",
+   "params": [
+    2265.4921019075464,
+    0.14097294135303443
+   ],
+   "seed": 241507302,
+   "x": "Supermix",
+   "y": "MeanAmplitudeofNegatives"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset for: Development and evaluation of control materials for nucleic acid-based detect' (Zenodo, doi 10.5281/zenodo.19220643): 'MeanAmplitudeofNegatives' is linear in 'Supermix' (R\u00b2 = 0.963 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
  }
 ]
