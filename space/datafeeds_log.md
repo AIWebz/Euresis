@@ -4497,3 +4497,4 @@
 - 2026-11-17 08:43 FINDING (confirmed on held-out rows): In 'Data from: Neuron numbers link innovativeness with both absolute and relative brain size i' (Zenodo, doi 10.5281/zenodo.6460346): 'AbsBrain' follows a power law in 'BS_M_g' (R² = 0.903 on the discovery half); held-out R² = 0.896 [emp-745d0f20ecc3]
 - 2026-11-17 08:43 FINDING (confirmed on held-out rows): In 'Data from: Neuron numbers link innovativeness with both absolute and relative brain size i' (Zenodo, doi 10.5281/zenodo.6460346): 'NSBI_gradeshifts' is linear in 'NSBI_all' (R² = 0.979 on the discovery half); held-out R² = 0.987 [emp-027332875f69]
 - 2026-11-17 08:43 data feeds: 28906 datasets analysed so far, 3975 confirmed findings
+- 2026-11-17 09:07 data feeds: online
