@@ -3555757,5 +3555757,32 @@
   "statement": "Octal game 0.0735164 is completely solved: its Grundy values are periodic with pre-period 284 and period 48 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.21245488",
+   "held_out_r2": 0.8994,
+   "held_out_rows": 353,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-820d12fa5e69",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "bfe175c56c10f571.csv",
+   "doi": "10.5281/zenodo.21245488",
+   "form": "linear",
+   "params": [
+    0.5410564772423396,
+    0.961010658932141
+   ],
+   "seed": 1664269764,
+   "x": "rs_ADIPOQ",
+   "y": "rs_ADH1B"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data and Code for Reproducible Benchmarking of BRCA Multi-Omics Analysis' (Zenodo, doi 10.5281/zenodo.21245488): 'rs_ADH1B' is linear in 'rs_ADIPOQ' (R\u00b2 = 0.908 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
