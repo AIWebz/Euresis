@@ -4442,3 +4442,4 @@
 - 2026-11-17 06:17 FINDING (confirmed on held-out rows): In '<b>Geometric Albedo Curves for Impact-Plume Particles </b><b>from Sub-micron to cm Scale</' (Figshare, doi 10.6084/m9.figshare.29617838.v1): 'Sub_mm' follows a power law in 'Micron_Size' (R² = 0.995 on the discovery half); held-out R² = 0.877 [emp-77bacb8062f7]
 - 2026-11-17 06:17 FINDING (confirmed on held-out rows): In '<b>Geometric Albedo Curves for Impact-Plume Particles </b><b>from Sub-micron to cm Scale</' (Figshare, doi 10.6084/m9.figshare.29617838.v1): 'Sub_mm_H' follows a power law in 'Micron_Size' (R² = 0.995 on the discovery half); held-out R² = 0.878 [emp-81cbd1723aae]
 - 2026-11-17 06:18 data feeds: 28549 datasets analysed so far, 3926 confirmed findings
+- 2026-11-17 07:07 data feeds: online
