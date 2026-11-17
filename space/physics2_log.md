@@ -6537,3 +6537,9 @@
 - 2026-11-17 13:09 round 5979: driven oscillator
 - 2026-11-17 13:11 round 5980: velocity addition
 - 2026-11-17 13:12 round 5981: Compton scattering
+- 2026-11-17 13:14 round 5982: Cournot duopoly
+- 2026-11-17 13:16 round 5983: insurance and risk
+- 2026-11-17 13:18 round 5984: auction with a reserve price
+- 2026-11-17 13:20 round 5985: two-body decay
+- 2026-11-17 13:23 round 5986: collision
+- 2026-11-17 13:29 segment end: 5986 rounds, 5 discoveries, 2 known laws rediscovered
