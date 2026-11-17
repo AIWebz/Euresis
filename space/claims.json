@@ -3405817,5 +3405817,248 @@
   "statement": "Octal game 0.0716257 is completely solved: its Grundy values are periodic with pre-period 284 and period 48 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.10673763",
+   "held_out_r2": 0.9074,
+   "held_out_rows": 4624,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-7d90ce0f982f",
+  "kind": "empirical",
+  "novelty": "KNOWN: standard atmosphere / hydrostatics (temperature, pressure and altitude, T \u221d P^(R\u00b7\u0393/g)) \u2014 not a discovery",
+  "payload": {
+   "dataset": "56eb3d7cde390229.csv",
+   "doi": "10.5281/zenodo.10673763",
+   "form": "exponential",
+   "params": [
+    1.9596114511808609,
+    0.05690645986240728
+   ],
+   "seed": 3536845036,
+   "x": "Heating:Sensor__water_temperature__return",
+   "y": "Heating:Sensor__water_temperature__supply"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A Danish high-resolution dataset for six office rooms with occupancy, indoor environment ,' (Zenodo, doi 10.5281/zenodo.10673763): 'Heating:Sensor__water_temperature__supply' grows exponentially in 'Heating:Sensor__water_temperature__return' (R\u00b2 = 0.919 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.19450048",
+   "held_out_r2": 0.9623,
+   "held_out_rows": 263,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-eb862eae6e3c",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "981f7535265824fd.csv",
+   "doi": "10.5281/zenodo.19450048",
+   "form": "power law",
+   "params": [
+    0.30159218971573787,
+    1.1660766785319407
+   ],
+   "seed": 3652505804,
+   "x": "NH4",
+   "y": "NO3"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data of cloud condensation nuclei number concentration and chemical compositions mass conc' (Zenodo, doi 10.5281/zenodo.19450048): 'NO3' follows a power law in 'NH4' (R\u00b2 = 0.964 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20845165",
+   "held_out_r2": 0.9907,
+   "held_out_rows": 36,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-31a37b8af4bd",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "ff81f500434d7294.csv",
+   "doi": "10.5281/zenodo.20845165",
+   "form": "exponential",
+   "params": [
+    2.615595031058435,
+    0.025163715748750363
+   ],
+   "seed": 2723545867,
+   "x": "T01[\u00b0C]",
+   "y": "TCW2[\u00b0C]"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'FlexGeo - Deliverable 2.1: First experimental data of a reversible heat pump/ORC test rig ' (Zenodo, doi 10.5281/zenodo.20845165): 'TCW2[\u00b0C]' grows exponentially in 'T01[\u00b0C]' (R\u00b2 = 0.991 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20845165",
+   "held_out_r2": 0.9743,
+   "held_out_rows": 36,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d82412579cf8",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "ff81f500434d7294.csv",
+   "doi": "10.5281/zenodo.20845165",
+   "form": "power law",
+   "params": [
+    0.7333133964914189,
+    0.8357385622628746
+   ],
+   "seed": 2723545867,
+   "x": "T03[\u00b0C]",
+   "y": "THW1[\u00b0C]"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'FlexGeo - Deliverable 2.1: First experimental data of a reversible heat pump/ORC test rig ' (Zenodo, doi 10.5281/zenodo.20845165): 'THW1[\u00b0C]' follows a power law in 'T03[\u00b0C]' (R\u00b2 = 0.960 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20845165",
+   "held_out_r2": 0.9617,
+   "held_out_rows": 36,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-1fde51b2e02b",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "ff81f500434d7294.csv",
+   "doi": "10.5281/zenodo.20845165",
+   "form": "power law",
+   "params": [
+    -4.034340768514607,
+    1.354238001192498
+   ],
+   "seed": 2723545867,
+   "x": "T03[\u00b0C]",
+   "y": "P02[bar]"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'FlexGeo - Deliverable 2.1: First experimental data of a reversible heat pump/ORC test rig ' (Zenodo, doi 10.5281/zenodo.20845165): 'P02[bar]' follows a power law in 'T03[\u00b0C]' (R\u00b2 = 0.974 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20845165",
+   "held_out_r2": 0.9964,
+   "held_out_rows": 36,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-08e91b842819",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "ff81f500434d7294.csv",
+   "doi": "10.5281/zenodo.20845165",
+   "form": "exponential",
+   "params": [
+    -0.45755736632587823,
+    0.031168310846986978
+   ],
+   "seed": 2723545867,
+   "x": "THW1[\u00b0C]",
+   "y": "P02[bar]"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'FlexGeo - Deliverable 2.1: First experimental data of a reversible heat pump/ORC test rig ' (Zenodo, doi 10.5281/zenodo.20845165): 'P02[bar]' grows exponentially in 'THW1[\u00b0C]' (R\u00b2 = 0.995 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20845165",
+   "held_out_r2": 0.9574,
+   "held_out_rows": 36,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-538bc80ff1ab",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "ff81f500434d7294.csv",
+   "doi": "10.5281/zenodo.20845165",
+   "form": "power law",
+   "params": [
+    -3.9145217112539306,
+    1.3278785299533251
+   ],
+   "seed": 2723545867,
+   "x": "THW2[\u00b0C]",
+   "y": "P02[bar]"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'FlexGeo - Deliverable 2.1: First experimental data of a reversible heat pump/ORC test rig ' (Zenodo, doi 10.5281/zenodo.20845165): 'P02[bar]' follows a power law in 'THW2[\u00b0C]' (R\u00b2 = 0.974 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.21788550",
+   "held_out_r2": 0.9119,
+   "held_out_rows": 5000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-363fbd06deee",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8509c2b1d8cb6b17.csv",
+   "doi": "10.5281/zenodo.21788550",
+   "form": "exponential",
+   "params": [
+    5.792618795613819,
+    -4.994020669216618e-05
+   ],
+   "seed": 4241814269,
+   "x": "Temperature_milliC",
+   "y": "Humidity_percent"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Bosch XDK110 Environmental Temperature and Humidity Dataset for Secure Communication Evalu' (Zenodo, doi 10.5281/zenodo.21788550): 'Humidity_percent' grows exponentially in 'Temperature_milliC' (R\u00b2 = 0.930 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.19032540",
+   "held_out_r2": 0.9035,
+   "held_out_rows": 348,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-dfcb4d1c4b64",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "b5afbda78ca4f4ba.csv",
+   "doi": "10.5281/zenodo.19032540",
+   "form": "power law",
+   "params": [
+    2.6406836865379257,
+    2.0181175200405406
+   ],
+   "seed": 2576675506,
+   "x": "V_SG",
+   "y": "Dp.G"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Pressure Drop Measurements in Air-Water Two-Phase Flow Through Orifices' (Zenodo, doi 10.5281/zenodo.19032540): 'Dp.G' follows a power law in 'V_SG' (R\u00b2 = 0.914 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
