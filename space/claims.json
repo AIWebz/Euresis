@@ -3456203,5 +3456203,59 @@
   "statement": "In 'Data from: Neuron numbers link innovativeness with both absolute and relative brain size i' (Zenodo, doi 10.5281/zenodo.6460346): 'NSBI_gradeshifts' is linear in 'NSBI_all' (R\u00b2 = 0.979 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14010744",
+   "held_out_r2": -Infinity,
+   "held_out_rows": 1985,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c0d8e5488b1c",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "d253752978f1db8e.csv",
+   "doi": "10.5281/zenodo.14010744",
+   "form": "power law",
+   "params": [
+    0.4693036089588263,
+    1.0222287469125881
+   ],
+   "seed": 2275643972,
+   "x": "AAH_PerCapita",
+   "y": "Integrated_PerCapita"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Integrated seismic risk analysis - Nepal (Outputs)' (Zenodo, doi 10.5281/zenodo.14010744): 'Integrated_PerCapita' follows a power law in 'AAH_PerCapita' (R\u00b2 = 0.980 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.268436",
+   "held_out_r2": 0.9036,
+   "held_out_rows": 455,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-69eb0e9abd3f",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "256a30a067cdc8a5.csv",
+   "doi": "10.5281/zenodo.268436",
+   "form": "linear",
+   "params": [
+    -0.7404913730501708,
+    0.8742446174004188
+   ],
+   "seed": 3409358589,
+   "x": "wmc",
+   "y": "npm"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Xalan' (Zenodo, doi 10.5281/zenodo.268436): 'npm' is linear in 'wmc' (R\u00b2 = 0.914 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]

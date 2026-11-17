@@ -4498,3 +4498,5 @@
 - 2026-11-17 08:43 FINDING (confirmed on held-out rows): In 'Data from: Neuron numbers link innovativeness with both absolute and relative brain size i' (Zenodo, doi 10.5281/zenodo.6460346): 'NSBI_gradeshifts' is linear in 'NSBI_all' (R² = 0.979 on the discovery half); held-out R² = 0.987 [emp-027332875f69]
 - 2026-11-17 08:43 data feeds: 28906 datasets analysed so far, 3975 confirmed findings
 - 2026-11-17 09:07 data feeds: online
+- 2026-11-17 09:08 FINDING (confirmed on held-out rows): In 'Xalan' (Zenodo, doi 10.5281/zenodo.268436): 'npm' is linear in 'wmc' (R² = 0.914 on the discovery half); held-out R² = 0.904 [emp-69eb0e9abd3f]
+- 2026-11-17 09:09 data feeds: 28982 datasets analysed so far, 3976 confirmed findings
