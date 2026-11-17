@@ -4429,3 +4429,5 @@
 - 2026-11-17 03:49 FINDING (confirmed on held-out rows): In 'Phys-AbGAT: A Physics-Informed Multi-Task Graph Attention Network for Robust Antibody-Anti' (Zenodo, doi 10.5281/zenodo.18426407): 'delta_g' grows logarithmically in 'affinity' (R² = 0.998 on the discovery half); held-out R² = 0.998 [emp-2910f6136b53]
 - 2026-11-17 03:49 data feeds: 28418 datasets analysed so far, 3918 confirmed findings
 - 2026-11-17 04:37 data feeds: online
+- 2026-11-17 04:38 FINDING (confirmed on held-out rows): In 'Data from: A century of preserved plant chemistry: Herbarium specimens enable large-scale ' (Zenodo, doi 10.5281/zenodo.20545280): 'MeanWithinDist' follows a power law in 'Dispersion' (R² = 0.988 on the discovery half); held-out R² = 0.990 [emp-aa7976017605]
+- 2026-11-17 04:38 data feeds: 28484 datasets analysed so far, 3919 confirmed findings
