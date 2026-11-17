@@ -3515463,5 +3515463,599 @@
   "statement": "Octal game 0.0727736 is completely solved: its Grundy values are periodic with pre-period 284 and period 48 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23082794",
+   "held_out_r2": 0.9985,
+   "held_out_rows": 72,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-77ccdde6ccbf",
+  "kind": "empirical",
+  "novelty": "KNOWN: standard atmosphere / hydrostatics (temperature, pressure and altitude, T \u221d P^(R\u00b7\u0393/g)) \u2014 not a discovery",
+  "payload": {
+   "dataset": "bb30fdc9241feda5.csv",
+   "doi": "10.5281/zenodo.23082794",
+   "form": "exponential",
+   "params": [
+    7.091698409613429,
+    -0.00015948396761812636
+   ],
+   "seed": 134463028,
+   "x": "GPS Altitude (m)",
+   "y": "Pressure (hPa)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Observations of GLE 77 from Radiosondes, Aircraft, and UK Neutron Monitors' (Zenodo, doi 10.5281/zenodo.23082794): 'Pressure (hPa)' grows exponentially in 'GPS Altitude (m)' (R\u00b2 = 0.999 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23082794",
+   "held_out_r2": 0.8753,
+   "held_out_rows": 72,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3229f91e1305",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "bb30fdc9241feda5.csv",
+   "doi": "10.5281/zenodo.23082794",
+   "form": "linear",
+   "params": [
+    -17.770521939440787,
+    0.0025549469531285624
+   ],
+   "seed": 134463028,
+   "x": "GPS Altitude (m)",
+   "y": "Absorbed Dose (uGy/hr)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Observations of GLE 77 from Radiosondes, Aircraft, and UK Neutron Monitors' (Zenodo, doi 10.5281/zenodo.23082794): 'Absorbed Dose (uGy/hr)' is linear in 'GPS Altitude (m)' (R\u00b2 = 0.927 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23082794",
+   "held_out_r2": 0.9808,
+   "held_out_rows": 72,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-88d4e85fc4dd",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "bb30fdc9241feda5.csv",
+   "doi": "10.5281/zenodo.23082794",
+   "form": "logarithmic",
+   "params": [
+    1270.6209294816977,
+    -171.0922231541681
+   ],
+   "seed": 134463028,
+   "x": "Pressure (hPa)",
+   "y": "Flight Level"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Observations of GLE 77 from Radiosondes, Aircraft, and UK Neutron Monitors' (Zenodo, doi 10.5281/zenodo.23082794): 'Flight Level' grows logarithmically in 'Pressure (hPa)' (R\u00b2 = 0.985 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23082794",
+   "held_out_r2": 0.8437,
+   "held_out_rows": 72,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b7ebe0905a69",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "bb30fdc9241feda5.csv",
+   "doi": "10.5281/zenodo.23082794",
+   "form": "logarithmic",
+   "params": [
+    741.9446422484045,
+    -122.49582076828527
+   ],
+   "seed": 134463028,
+   "x": "Pressure (hPa)",
+   "y": "Ambient Dose Equivalent (USv/h)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Observations of GLE 77 from Radiosondes, Aircraft, and UK Neutron Monitors' (Zenodo, doi 10.5281/zenodo.23082794): 'Ambient Dose Equivalent (USv/h)' grows logarithmically in 'Pressure (hPa)' (R\u00b2 = 0.900 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23082794",
+   "held_out_r2": 0.8949,
+   "held_out_rows": 72,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-09fa77186468",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "bb30fdc9241feda5.csv",
+   "doi": "10.5281/zenodo.23082794",
+   "form": "logarithmic",
+   "params": [
+    96.23406792942926,
+    -16.110033577471317
+   ],
+   "seed": 134463028,
+   "x": "Pressure (hPa)",
+   "y": "Absorbed Dose (uGy/hr)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Observations of GLE 77 from Radiosondes, Aircraft, and UK Neutron Monitors' (Zenodo, doi 10.5281/zenodo.23082794): 'Absorbed Dose (uGy/hr)' grows logarithmically in 'Pressure (hPa)' (R\u00b2 = 0.939 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23082794",
+   "held_out_r2": 0.9555,
+   "held_out_rows": 72,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e5935b12644f",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "bb30fdc9241feda5.csv",
+   "doi": "10.5281/zenodo.23082794",
+   "form": "linear",
+   "params": [
+    -0.274817362892452,
+    0.12628129148623082
+   ],
+   "seed": 134463028,
+   "x": "Ambient Dose Equivalent (USv/h)",
+   "y": "Absorbed Dose (uGy/hr)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Observations of GLE 77 from Radiosondes, Aircraft, and UK Neutron Monitors' (Zenodo, doi 10.5281/zenodo.23082794): 'Absorbed Dose (uGy/hr)' is linear in 'Ambient Dose Equivalent (USv/h)' (R\u00b2 = 0.962 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23082794",
+   "held_out_r2": 0.9959,
+   "held_out_rows": 58,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4f2e907c177c",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "d9653129257a03c3.csv",
+   "doi": "10.5281/zenodo.23082794",
+   "form": "power law",
+   "params": [
+    -3.2646938748118433,
+    0.9786878761247519
+   ],
+   "seed": 622940779,
+   "x": "GPS Altitude (m)",
+   "y": "Flight Level"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Observations of GLE 77 from Radiosondes, Aircraft, and UK Neutron Monitors' (Zenodo, doi 10.5281/zenodo.23082794): 'Flight Level' follows a power law in 'GPS Altitude (m)' (R\u00b2 = 0.996 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14718615",
+   "held_out_r2": 0.8387,
+   "held_out_rows": 76,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-99f8d7cbc95b",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "c937ef72d7f4fd3d.csv",
+   "doi": "10.5281/zenodo.14718615",
+   "form": "power law",
+   "params": [
+    -2.9011159081272098,
+    2.8125814832303595
+   ],
+   "seed": 1859872658,
+   "x": "width",
+   "y": "ww"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data relating to publication: Stable isotope analysis suggests nutrient connectivity betwe' (Zenodo, doi 10.5281/zenodo.14718615): 'ww' follows a power law in 'width' (R\u00b2 = 0.912 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14718615",
+   "held_out_r2": 0.8387,
+   "held_out_rows": 76,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-23f518025511",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "c937ef72d7f4fd3d.csv",
+   "doi": "10.5281/zenodo.14718615",
+   "form": "power law",
+   "params": [
+    -5.203701001121254,
+    2.8125814832303595
+   ],
+   "seed": 1859872658,
+   "x": "width",
+   "y": "dw"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data relating to publication: Stable isotope analysis suggests nutrient connectivity betwe' (Zenodo, doi 10.5281/zenodo.14718615): 'dw' follows a power law in 'width' (R\u00b2 = 0.912 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.3q83177",
+   "held_out_r2": 0.9528,
+   "held_out_rows": 249,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d1d70c689a50",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "34c6458d0667d553.csv",
+   "doi": "10.5061/dryad.3q83177",
+   "form": "power law",
+   "params": [
+    0.16988197339893604,
+    0.9429564827533606
+   ],
+   "seed": 1154781821,
+   "x": "CAN_19_Tmin",
+   "y": "airTmin"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Substantial reduction in thermo-suitable microhabitat for a rainforest marsupia' (Zenodo, doi 10.5061/dryad.3q83177): 'airTmin' follows a power law in 'CAN_19_Tmin' (R\u00b2 = 0.950 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.3q83177",
+   "held_out_r2": 0.9056,
+   "held_out_rows": 249,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b5b1c02237d9",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "34c6458d0667d553.csv",
+   "doi": "10.5061/dryad.3q83177",
+   "form": "linear",
+   "params": [
+    2.4039012279127143,
+    0.810213016041503
+   ],
+   "seed": 1154781821,
+   "x": "CAN_19_Tmax",
+   "y": "airTmax"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Substantial reduction in thermo-suitable microhabitat for a rainforest marsupia' (Zenodo, doi 10.5061/dryad.3q83177): 'airTmax' is linear in 'CAN_19_Tmax' (R\u00b2 = 0.910 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3701492",
+   "held_out_r2": 0.9712,
+   "held_out_rows": 312,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-fc46d6da000b",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "772e9d621740dde9.csv",
+   "doi": "10.5281/zenodo.3701492",
+   "form": "logarithmic",
+   "params": [
+    3292.320274071492,
+    -1372.0470227510543
+   ],
+   "seed": 2583512470,
+   "x": "MultiAnnualTemp",
+   "y": "elevation"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Summer aridity rather than management shapes fitness-related functional traits of the thre' (Zenodo, doi 10.5281/zenodo.3701492): 'elevation' grows logarithmically in 'MultiAnnualTemp' (R\u00b2 = 0.972 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3701492",
+   "held_out_r2": 0.9712,
+   "held_out_rows": 312,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-49bb199d9af0",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "772e9d621740dde9.csv",
+   "doi": "10.5281/zenodo.3701492",
+   "form": "logarithmic",
+   "params": [
+    12.906339454354923,
+    -6.811381069610142
+   ],
+   "seed": 2583512470,
+   "x": "MultiAnnualTemp",
+   "y": "elevationSC"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Summer aridity rather than management shapes fitness-related functional traits of the thre' (Zenodo, doi 10.5281/zenodo.3701492): 'elevationSC' grows logarithmically in 'MultiAnnualTemp' (R\u00b2 = 0.972 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3701492",
+   "held_out_r2": 0.9147,
+   "held_out_rows": 312,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-1131c3d9c66f",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "772e9d621740dde9.csv",
+   "doi": "10.5281/zenodo.3701492",
+   "form": "logarithmic",
+   "params": [
+    11.1555033054881,
+    -3.7668718001261823
+   ],
+   "seed": 2583512470,
+   "x": "MultiAnnualTemp",
+   "y": "ARIDITYsummer"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Summer aridity rather than management shapes fitness-related functional traits of the thre' (Zenodo, doi 10.5281/zenodo.3701492): 'ARIDITYsummer' grows logarithmically in 'MultiAnnualTemp' (R\u00b2 = 0.903 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3701492",
+   "held_out_r2": 0.9147,
+   "held_out_rows": 312,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4d6669f0c82a",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "772e9d621740dde9.csv",
+   "doi": "10.5281/zenodo.3701492",
+   "form": "logarithmic",
+   "params": [
+    12.50724368618403,
+    -6.592976697947949
+   ],
+   "seed": 2583512470,
+   "x": "MultiAnnualTemp",
+   "y": "ARIDITYsummerSC"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Summer aridity rather than management shapes fitness-related functional traits of the thre' (Zenodo, doi 10.5281/zenodo.3701492): 'ARIDITYsummerSC' grows logarithmically in 'MultiAnnualTemp' (R\u00b2 = 0.903 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3701492",
+   "held_out_r2": 0.9662,
+   "held_out_rows": 312,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-933b4b80509b",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "772e9d621740dde9.csv",
+   "doi": "10.5281/zenodo.3701492",
+   "form": "linear",
+   "params": [
+    2335.33976864468,
+    -19.473308010240864
+   ],
+   "seed": 2583512470,
+   "x": "RasterID_Temp",
+   "y": "elevation"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Summer aridity rather than management shapes fitness-related functional traits of the thre' (Zenodo, doi 10.5281/zenodo.3701492): 'elevation' is linear in 'RasterID_Temp' (R\u00b2 = 0.965 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3701492",
+   "held_out_r2": 0.9662,
+   "held_out_rows": 312,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-961965407700",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "772e9d621740dde9.csv",
+   "doi": "10.5281/zenodo.3701492",
+   "form": "linear",
+   "params": [
+    8.155511829262238,
+    -0.09667316013568049
+   ],
+   "seed": 2583512470,
+   "x": "RasterID_Temp",
+   "y": "elevationSC"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Summer aridity rather than management shapes fitness-related functional traits of the thre' (Zenodo, doi 10.5281/zenodo.3701492): 'elevationSC' is linear in 'RasterID_Temp' (R\u00b2 = 0.965 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3701492",
+   "held_out_r2": 0.9113,
+   "held_out_rows": 312,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-85105ba9c7bf",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "772e9d621740dde9.csv",
+   "doi": "10.5281/zenodo.3701492",
+   "form": "linear",
+   "params": [
+    2.1372421833855957,
+    0.0027157938998593235
+   ],
+   "seed": 2583512470,
+   "x": "elevation",
+   "y": "ARIDITYsummer"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Summer aridity rather than management shapes fitness-related functional traits of the thre' (Zenodo, doi 10.5281/zenodo.3701492): 'ARIDITYsummer' is linear in 'elevation' (R\u00b2 = 0.908 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3701492",
+   "held_out_r2": 0.9113,
+   "held_out_rows": 312,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d1d584fce4e1",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "772e9d621740dde9.csv",
+   "doi": "10.5281/zenodo.3701492",
+   "form": "linear",
+   "params": [
+    -3.27699017913266,
+    0.004753324999632875
+   ],
+   "seed": 2583512470,
+   "x": "elevation",
+   "y": "ARIDITYsummerSC"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Summer aridity rather than management shapes fitness-related functional traits of the thre' (Zenodo, doi 10.5281/zenodo.3701492): 'ARIDITYsummerSC' is linear in 'elevation' (R\u00b2 = 0.908 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3701492",
+   "held_out_r2": 0.9113,
+   "held_out_rows": 312,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-0b050bff4da8",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "772e9d621740dde9.csv",
+   "doi": "10.5281/zenodo.3701492",
+   "form": "linear",
+   "params": [
+    4.01803391266656,
+    0.5470545395402695
+   ],
+   "seed": 2583512470,
+   "x": "elevationSC",
+   "y": "ARIDITYsummer"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Summer aridity rather than management shapes fitness-related functional traits of the thre' (Zenodo, doi 10.5281/zenodo.3701492): 'ARIDITYsummer' is linear in 'elevationSC' (R\u00b2 = 0.908 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3701492",
+   "held_out_r2": 0.9113,
+   "held_out_rows": 312,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f9bddafca125",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "772e9d621740dde9.csv",
+   "doi": "10.5281/zenodo.3701492",
+   "form": "linear",
+   "params": [
+    0.014870203334893887,
+    0.9574835627600877
+   ],
+   "seed": 2583512470,
+   "x": "elevationSC",
+   "y": "ARIDITYsummerSC"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Summer aridity rather than management shapes fitness-related functional traits of the thre' (Zenodo, doi 10.5281/zenodo.3701492): 'ARIDITYsummerSC' is linear in 'elevationSC' (R\u00b2 = 0.908 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.br47r",
+   "held_out_r2": 0.7447,
+   "held_out_rows": 49,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9e0f94ef6bb6",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "9382ac2914b6524b.csv",
+   "doi": "10.5061/dryad.br47r",
+   "form": "linear",
+   "params": [
+    -8.472815975356857,
+    4.727160910229635
+   ],
+   "seed": 1599046071,
+   "x": "Wet_5km_STD",
+   "y": "Water_5km"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Landscape and environmental influences on Mycobacterium ulcerans distribution a' (Zenodo, doi 10.5061/dryad.br47r): 'Water_5km' is linear in 'Wet_5km_STD' (R\u00b2 = 0.905 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
  }
 ]
