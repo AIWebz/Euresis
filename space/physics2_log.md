@@ -6245,3 +6245,17 @@
 - 2026-11-16 23:33 round 5719: insurance and risk
 - 2026-11-16 23:39 segment start (budget 30 min; model: Qwen3-8B; 5 discoveries so far)
 - 2026-11-16 23:39 round 5719: insurance and risk
+- 2026-11-16 23:46 round 5720: auction with a reserve price
+- 2026-11-16 23:48 round 5721: two-body decay
+- 2026-11-16 23:49 round 5722: collision
+- 2026-11-16 23:51 round 5723: driven oscillator
+- 2026-11-16 23:52 round 5724: velocity addition
+- 2026-11-16 23:53 round 5725: Compton scattering
+- 2026-11-16 23:54 round 5726: Cournot duopoly
+- 2026-11-16 23:55 round 5727: insurance and risk
+- 2026-11-16 23:59 round 5728: auction with a reserve price
+- 2026-11-17 00:01 round 5729: two-body decay
+- 2026-11-17 00:03 round 5730: collision
+- 2026-11-17 00:05 round 5731: driven oscillator
+- 2026-11-17 00:06 round 5732: velocity addition
+- 2026-11-17 00:07 round 5733: Compton scattering
