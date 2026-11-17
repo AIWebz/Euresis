@@ -81929,6 +81929,36 @@
    "family": "velocity addition",
    "expr": "sqrt((1 - u**2)*(1 - v**2)) / sqrt(1 - ((u + v)/(1 + u*v))**2)",
    "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "1 - c/(c*x + 1)",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "((-2*c1 + c2 + 1)*(c1 - 2*c2 + 1))/((-c1 - c2 + 1)**2)",
+   "why": "affine combination of known quantities (output of firm 1, 1/(Price Elasticity of Demand [model-proposed; physical meaning unverified]))"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "sqrt(-L*p + 1)/(-p*sqrt(1 - L) + p + 1)",
+   "why": "affine combination of known quantities (expected wealth, Risk Adjustment Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "sqrt(-L*p + 1)/(-p*sqrt(1 - L) + 1)",
+   "why": "affine combination of known quantities (expected wealth, Relative Risk Adjustment Index [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "-1 + sqrt(-L*p + 1)/sqrt(1 - L)",
+   "why": "affine combination of known quantities (expected wealth, Insurance Risk Exposure Index [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "sqrt(-L*p + 1)/(-p*sqrt(1 - L) + p + 1)",
+   "why": "affine combination of known quantities (expected wealth, Risk Adjustment Ratio [model-proposed; physical meaning unverified])"
   }
  ],
  "tried": [
@@ -100971,7 +101001,7 @@
    "k": "1/2"
   }
  ],
- "rounds": 5820,
+ "rounds": 5823,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",
