@@ -4564,3 +4564,4 @@
 - 2026-11-17 16:49 FINDING (confirmed on held-out rows): In 'Hydrologic and Isotopic Data from the Montepaldi Experimental Vineyard, Tuscany, Italy' (Zenodo, doi 10.5281/zenodo.12708488): '3). Generated automatically from script 'process_5min_moisture_data.m'' grows logarithmically in '2' (R² = 0.923 on the discovery half); held-out R² = 0.926 [emp-b3fb67d62c99]
 - 2026-11-17 16:49 FINDING (confirmed on held-out rows): In 'Data from: Comparing the responses of bryophytes and short-statured vascular plants to cli' (Zenodo, doi 10.5061/dryad.k1g95): 'cover.bryo%' is linear in 'Did.vin' (R² = 0.961 on the discovery half); held-out R² = 0.960 [emp-32e75c1d8dd3]
 - 2026-11-17 16:49 data feeds: 29327 datasets analysed so far, 4024 confirmed findings
+- 2026-11-17 17:52 data feeds: online
