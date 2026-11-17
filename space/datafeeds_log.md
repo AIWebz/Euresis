@@ -4530,3 +4530,4 @@
 - 2026-11-17 14:53 FINDING (confirmed on held-out rows): In 'European soil bulk density and organic carbon stock database using LUCAS Soil 2018' (Zenodo, doi 10.5281/zenodo.10211884): 'GPS_LONG' is linear in 'POINTID' (R² = 0.976 on the discovery half); held-out R² = 0.975 [emp-63a14e54e7b0]
 - 2026-11-17 14:53 FINDING (confirmed on held-out rows): In 'Data for: Predation and biophysical context control long-term carcass nutrient inputs in a' (Zenodo, doi 10.5061/dryad.kkwh70s8t): 'percentC' follows a power law in 'percentN' (R² = 0.913 on the discovery half); held-out R² = 0.893 [emp-26449371f0fa]
 - 2026-11-17 14:54 data feeds: 29215 datasets analysed so far, 3994 confirmed findings
+- 2026-11-17 15:57 data feeds: online
