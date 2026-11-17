@@ -4416,3 +4416,4 @@
 - 2026-11-17 02:40 FINDING (confirmed on held-out rows): In 'Data sets related to a publication "Effect of snow cover and soil temperature on tree and ' (Zenodo, doi 10.5281/zenodo.15228613): 'mean' is linear in '25' (R² = 0.985 on the discovery half); held-out R² = 0.987 [emp-01b30c0383ae]
 - 2026-11-17 02:40 data feeds: 28259 datasets analysed so far, 3909 confirmed findings
 - 2026-11-17 02:42 data feeds: online
+- 2026-11-17 02:43 data feeds: 28318 datasets analysed so far, 3909 confirmed findings
