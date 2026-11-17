@@ -4349,3 +4349,10 @@
 - 2026-11-16 23:38 data feeds: online
 - 2026-11-16 23:39 data feeds: 28070 datasets analysed so far, 3848 confirmed findings
 - 2026-11-17 00:41 data feeds: online
+- 2026-11-17 00:42 FINDING (confirmed on held-out rows): In 'Warming response of peatland CO2 sink is sensitive to seasonality in warming trends' (Zenodo, doi 10.5281/zenodo.6685222): 'VPD_CRU' is linear in 'PET_CRU' (R² = 0.919 on the discovery half); held-out R² = 0.923 [emp-f5328301e491]
+- 2026-11-17 00:42 FINDING (confirmed on held-out rows): In 'Data from: The diversity of population responses to environmental change' (Zenodo, doi 10.5061/dryad.d5f54s7): 'Tx' follows a power law in 'lx' (R² = 0.940 on the discovery half); held-out R² = 0.946 [emp-8b3b6ad0da72]
+- 2026-11-17 00:42 FINDING (confirmed on held-out rows): In 'Data from: The diversity of population responses to environmental change' (Zenodo, doi 10.5061/dryad.d5f54s7): 'qx' is linear in 'mx' (R² = 0.950 on the discovery half); held-out R² = 0.953 [emp-b3d6024bffa6]
+- 2026-11-17 00:42 FINDING (confirmed on held-out rows): In 'Data from: The diversity of population responses to environmental change' (Zenodo, doi 10.5061/dryad.d5f54s7): 'px' is linear in 'mx' (R² = 0.950 on the discovery half); held-out R² = 0.953 [emp-222aa399ec56]
+- 2026-11-17 00:42 FINDING (confirmed on held-out rows): In 'Data from: The diversity of population responses to environmental change' (Zenodo, doi 10.5061/dryad.d5f54s7): 'Tx' follows a power law in 'Lx' (R² = 0.964 on the discovery half); held-out R² = 0.971 [emp-bfdc71bb4440]
+- 2026-11-17 00:43 FINDING (confirmed on held-out rows): In 'Snow cover in the European Alps: Station observations of snow depth and depth of snowfall' (Zenodo, doi 10.5281/zenodo.5109574): 'HS_year_end' follows a power law in 'HN_year_end' (R² = 0.961 on the discovery half); held-out R² = 0.979 [emp-79b5f556d049]
+- 2026-11-17 00:44 data feeds: 28138 datasets analysed so far, 3854 confirmed findings
