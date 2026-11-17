@@ -4428,3 +4428,4 @@
 - 2026-11-17 03:47 FINDING (confirmed on held-out rows): In 'Velocity and temperature dependence of steady-state friction of natural gouge controlled b' (Zenodo, doi 10.5281/zenodo.11004553): 'norstr corr' grows exponentially in '68:EfNorS  ' (R² = 0.980 on the discovery half); held-out R² = 0.981 [emp-af8a321a1bac]
 - 2026-11-17 03:49 FINDING (confirmed on held-out rows): In 'Phys-AbGAT: A Physics-Informed Multi-Task Graph Attention Network for Robust Antibody-Anti' (Zenodo, doi 10.5281/zenodo.18426407): 'delta_g' grows logarithmically in 'affinity' (R² = 0.998 on the discovery half); held-out R² = 0.998 [emp-2910f6136b53]
 - 2026-11-17 03:49 data feeds: 28418 datasets analysed so far, 3918 confirmed findings
+- 2026-11-17 04:37 data feeds: online
