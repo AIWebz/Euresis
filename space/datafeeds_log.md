@@ -4549,3 +4549,4 @@
 - 2026-11-17 16:02 FINDING (confirmed on held-out rows): In 'Summer aridity rather than management shapes fitness-related functional traits of the thre' (Zenodo, doi 10.5281/zenodo.3701492): 'ARIDITYsummer' is linear in 'elevationSC' (R² = 0.908 on the discovery half); held-out R² = 0.911 [emp-0b050bff4da8]
 - 2026-11-17 16:02 FINDING (confirmed on held-out rows): In 'Summer aridity rather than management shapes fitness-related functional traits of the thre' (Zenodo, doi 10.5281/zenodo.3701492): 'ARIDITYsummerSC' is linear in 'elevationSC' (R² = 0.908 on the discovery half); held-out R² = 0.911 [emp-f9bddafca125]
 - 2026-11-17 16:02 data feeds: 29288 datasets analysed so far, 4011 confirmed findings
+- 2026-11-17 16:46 data feeds: online
