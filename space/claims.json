@@ -3533024,5 +3533024,113 @@
   "statement": "Octal game 0.0732716 is completely solved: its Grundy values are periodic with pre-period 284 and period 48 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.d51c5b046",
+   "held_out_r2": 0.8663,
+   "held_out_rows": 84,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-bd573aa15533",
+  "kind": "empirical",
+  "novelty": "KNOWN: equation of state of a simulated fluid (pressure, density, temperature, chemical potential, kinetic energy) \u2014 not a discovery",
+  "payload": {
+   "dataset": "f79d072738c0432d.csv",
+   "doi": "10.5061/dryad.d51c5b046",
+   "form": "logarithmic",
+   "params": [
+    -14.723562602157267,
+    4.948309466271494
+   ],
+   "seed": 2052551186,
+   "x": "CWM_GrowthStart",
+   "y": "CWM_PCA2_Systat"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Plant diversity effects on herbivory are related to soil biodiversity and plant ' (Zenodo, doi 10.5061/dryad.d51c5b046): 'CWM_PCA2_Systat' grows logarithmically in 'CWM_GrowthStart' (R\u00b2 = 0.928 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15828602",
+   "held_out_r2": 0.9687,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-0e363ad78d2a",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "09c253854d320224.csv",
+   "doi": "10.5281/zenodo.15828602",
+   "form": "linear",
+   "params": [
+    -0.8678996379598631,
+    0.4913357922352082
+   ],
+   "seed": 1451413457,
+   "x": "MMM_diff_TCO",
+   "y": "STDEV_diff_TCO"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Climate Forcing due to Future Ozone Changes: An intercomparison of metrics and methods' (Zenodo, doi 10.5281/zenodo.15828602): 'STDEV_diff_TCO' is linear in 'MMM_diff_TCO' (R\u00b2 = 0.970 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23081791",
+   "held_out_r2": 0.9966,
+   "held_out_rows": 142,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ca26b759e7b3",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8f47170057425bb3.csv",
+   "doi": "10.5281/zenodo.23081791",
+   "form": "power law",
+   "params": [
+    -0.8672677003177229,
+    0.9948682008993421
+   ],
+   "seed": 2477857026,
+   "x": "fr_weight_leaf",
+   "y": "dry_weight_leaf"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Leaf traits for 90 species from ARBOfun' (Zenodo, doi 10.5281/zenodo.23081791): 'dry_weight_leaf' follows a power law in 'fr_weight_leaf' (R\u00b2 = 0.997 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23081791",
+   "held_out_r2": 0.9707,
+   "held_out_rows": 142,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c7a053f96dd1",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "8f47170057425bb3.csv",
+   "doi": "10.5281/zenodo.23081791",
+   "form": "power law",
+   "params": [
+    3.881721634994242,
+    1.1740187796029846
+   ],
+   "seed": 2477857026,
+   "x": "fr_weight_leaf",
+   "y": "size_leaf"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Leaf traits for 90 species from ARBOfun' (Zenodo, doi 10.5281/zenodo.23081791): 'size_leaf' follows a power law in 'fr_weight_leaf' (R\u00b2 = 0.979 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]

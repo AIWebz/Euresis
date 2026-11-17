@@ -4592,3 +4592,5 @@
 - 2026-11-17 17:59 FINDING (confirmed on held-out rows): In 'Data associated to the figures of "https://arxiv.org/abs/2503.23593" (to be published in O' (Zenodo, doi 10.5281/zenodo.18212231): 'Projection M_3 - RL' grows exponentially in 'Projection M_3 - DA' (R² = 0.969 on the discovery half); held-out R² = 0.957 [emp-910658de6885]
 - 2026-11-17 18:01 data feeds: 29454 datasets analysed so far, 4049 confirmed findings
 - 2026-11-17 18:41 data feeds: online
+- 2026-11-17 18:43 FINDING (confirmed on held-out rows): In 'Climate Forcing due to Future Ozone Changes: An intercomparison of metrics and methods' (Zenodo, doi 10.5281/zenodo.15828602): 'STDEV_diff_TCO' is linear in 'MMM_diff_TCO' (R² = 0.970 on the discovery half); held-out R² = 0.969 [emp-0e363ad78d2a]
+- 2026-11-17 18:44 FINDING (confirmed on held-out rows): In 'Leaf traits for 90 species from ARBOfun' (Zenodo, doi 10.5281/zenodo.23081791): 'dry_weight_leaf' follows a power law in 'fr_weight_leaf' (R² = 0.997 on the discovery half); held-out R² = 0.997 [emp-ca26b759e7b3]
