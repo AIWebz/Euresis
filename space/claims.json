@@ -3472451,5 +3472451,32 @@
   "statement": "Octal game 0.0725155 is completely solved: its Grundy values are periodic with pre-period 284 and period 48 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.4tmpg4fdx",
+   "held_out_r2": 0.8172,
+   "held_out_rows": 35,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-616e23f375e0",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "20128f1ce376a346.csv",
+   "doi": "10.5061/dryad.4tmpg4fdx",
+   "form": "power law",
+   "params": [
+    6.040215398376204,
+    -0.97803487551233
+   ],
+   "seed": 3333276149,
+   "x": "RN",
+   "y": "RCN"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Lianas have a faster resource acquisition strategy than trees: belowground evidence from r' (Zenodo, doi 10.5061/dryad.4tmpg4fdx): 'RCN' follows a power law in 'RN' (R\u00b2 = 0.930 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
  }
 ]
