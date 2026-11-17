@@ -4456,3 +4456,4 @@
 - 2026-11-17 07:09 FINDING (confirmed on held-out rows): In 'Dataset for: Development and evaluation of control materials for nucleic acid-based detect' (Zenodo, doi 10.5281/zenodo.19220643): 'Positives' grows exponentially in 'Status' (R² = 0.919 on the discovery half); held-out R² = 0.997 [emp-22d13dbad450]
 - 2026-11-17 07:09 FINDING (confirmed on held-out rows): In 'Dataset for: Development and evaluation of control materials for nucleic acid-based detect' (Zenodo, doi 10.5281/zenodo.19220643): 'Positives' grows exponentially in 'Supermix' (R² = 0.919 on the discovery half); held-out R² = 0.997 [emp-36cfcb661f31]
 - 2026-11-17 07:09 data feeds: 28621 datasets analysed so far, 3938 confirmed findings
+- 2026-11-17 07:12 data feeds: online
