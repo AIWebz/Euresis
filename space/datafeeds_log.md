@@ -4508,3 +4508,13 @@
 - 2026-11-17 12:06 data feeds: 29037 datasets analysed so far, 3976 confirmed findings
 - 2026-11-17 12:57 data feeds: online
 - 2026-11-17 12:57 data feeds: 29040 datasets analysed so far, 3976 confirmed findings
+- 2026-11-17 14:00 data feeds: online
+- 2026-11-17 14:01 FINDING (confirmed on held-out rows): In 'A database of Defra statutory biodiversity metric unit values for terrestrial habitat samp' (Zenodo, doi 10.5061/dryad.n5tb2rc0k): 'MEANUNITS' follows a power law in 'MEANDIST' (R² = 0.932 on the discovery half); held-out R² = 0.910 [emp-61e7d5ac657b]
+- 2026-11-17 14:05 FINDING (confirmed on held-out rows): In 'Madagascar's extraordinary biodiversity: a data repository' (Zenodo, doi 10.5281/zenodo.7326129): 'SG_AreaMod' follows a power law in 'CEPF_area' (R² = 0.959 on the discovery half); held-out R² = 0.932 [emp-b3a13ec0302b]
+- 2026-11-17 14:05 FINDING (confirmed on held-out rows): In 'Madagascar's extraordinary biodiversity: a data repository' (Zenodo, doi 10.5281/zenodo.7326129): 'SG_AreaMod' is linear in 'AREA' (R² = 0.984 on the discovery half); held-out R² = 0.958 [emp-f87cce6dc357]
+- 2026-11-17 14:05 FINDING (confirmed on held-out rows): In 'Madagascar's extraordinary biodiversity: a data repository' (Zenodo, doi 10.5281/zenodo.7326129): 'SG_AreaMod' is linear in 'AREA_LAND' (R² = 0.984 on the discovery half); held-out R² = 0.958 [emp-a0f1f87b8f11]
+- 2026-11-17 14:06 FINDING (confirmed on held-out rows): In 'Climate and hydrology shape the growth and water use efficiency in South Florida's (USA) p' (Zenodo, doi 10.5281/zenodo.15635388): 'tmean' follows a power law in 'tmin' (R² = 0.962 on the discovery half); held-out R² = 0.963 [emp-ec4a88654f88]
+- 2026-11-17 14:06 FINDING (confirmed on held-out rows): In 'Climate and hydrology shape the growth and water use efficiency in South Florida's (USA) p' (Zenodo, doi 10.5281/zenodo.15635388): 'tdmean' follows a power law in 'tmin' (R² = 0.957 on the discovery half); held-out R² = 0.958 [emp-8e17d7d289a2]
+- 2026-11-17 14:07 FINDING (confirmed on held-out rows): In 'Climate and hydrology shape the growth and water use efficiency in South Florida's (USA) p' (Zenodo, doi 10.5281/zenodo.15635388): 'tmax' follows a power law in 'tmean' (R² = 0.938 on the discovery half); held-out R² = 0.941 [emp-874d0236b028]
+- 2026-11-17 14:07 FINDING (confirmed on held-out rows): In 'Climate and hydrology shape the growth and water use efficiency in South Florida's (USA) p' (Zenodo, doi 10.5281/zenodo.15635388): 'tdmean' is linear in 'tmean' (R² = 0.962 on the discovery half); held-out R² = 0.957 [emp-1f548c2def7d]
+- 2026-11-17 14:07 data feeds: 29183 datasets analysed so far, 3984 confirmed findings
