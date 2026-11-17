@@ -4388,3 +4388,4 @@
 - 2026-11-17 01:36 FINDING (confirmed on held-out rows): In 'No evidence that conifer biochar impacts soil functioning by serving as microbial refugia ' (Zenodo, doi 10.5061/dryad.g79cnp5s3): 'Actinomycetes' follows a power law in 'gramnegative' (R² = 0.987 on the discovery half); held-out R² = 0.981 [emp-e634a260f93a]
 - 2026-11-17 01:36 FINDING (confirmed on held-out rows): In 'No evidence that conifer biochar impacts soil functioning by serving as microbial refugia ' (Zenodo, doi 10.5061/dryad.g79cnp5s3): 'total PLFA' follows a power law in 'Actinomycetes' (R² = 0.996 on the discovery half); held-out R² = 0.995 [emp-d7d40b93c12e]
 - 2026-11-17 01:36 data feeds: 28196 datasets analysed so far, 3884 confirmed findings
+- 2026-11-17 02:37 data feeds: online
