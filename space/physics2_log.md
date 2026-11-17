@@ -6517,3 +6517,15 @@
 - 2026-11-17 12:06 round 5961: two-body decay
 - 2026-11-17 12:08 round 5962: collision
 - 2026-11-17 12:11 round 5963: driven oscillator
+- 2026-11-17 12:13 round 5964: velocity addition
+- 2026-11-17 12:14 round 5965: Compton scattering
+- 2026-11-17 12:15 round 5966: Cournot duopoly
+- 2026-11-17 12:17 round 5967: insurance and risk
+- 2026-11-17 12:19 round 5968: auction with a reserve price
+- 2026-11-17 12:22 round 5969: two-body decay
+- 2026-11-17 12:24 round 5970: collision
+- 2026-11-17 12:30 round 5971: driven oscillator
+- 2026-11-17 12:31 round 5972: velocity addition
+- 2026-11-17 12:32 round 5973: Compton scattering
+- 2026-11-17 12:33 round 5974: Cournot duopoly
+- 2026-11-17 12:35 round 5975: insurance and risk
