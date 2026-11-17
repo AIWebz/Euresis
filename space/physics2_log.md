@@ -6424,3 +6424,18 @@
 - 2026-11-17 07:37 round 5878: Cournot duopoly
 - 2026-11-17 07:39 round 5879: insurance and risk
 - 2026-11-17 07:40 round 5880: auction with a reserve price
+- 2026-11-17 07:42 round 5881: two-body decay
+- 2026-11-17 07:44 round 5882: collision
+- 2026-11-17 07:45 round 5883: driven oscillator
+- 2026-11-17 07:47 round 5884: velocity addition
+- 2026-11-17 07:48 round 5885: Compton scattering
+- 2026-11-17 07:49 round 5886: Cournot duopoly
+- 2026-11-17 07:51 round 5887: insurance and risk
+- 2026-11-17 07:52 round 5888: auction with a reserve price
+- 2026-11-17 07:54 round 5889: two-body decay
+- 2026-11-17 07:56 round 5890: collision
+- 2026-11-17 07:59 round 5891: driven oscillator
+- 2026-11-17 08:00 round 5892: velocity addition
+- 2026-11-17 08:02 round 5893: Compton scattering
+- 2026-11-17 08:03 round 5894: Cournot duopoly
+- 2026-11-17 08:04 segment end: 5894 rounds, 5 discoveries, 2 known laws rediscovered
