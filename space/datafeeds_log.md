@@ -4607,3 +4607,6 @@
 - 2026-11-17 18:46 FINDING (confirmed on held-out rows): In 'DLR Falcon in situ and University MAinz Quantum Cascade Absorption Spectrometer (UMAQS) da' (Zenodo, doi 10.5281/zenodo.15250507): 'Temp' is linear in 'Pres' (R² = 0.978 on the discovery half); held-out R² = 0.976 [emp-36a291f85c7c]
 - 2026-11-17 18:46 FINDING (confirmed on held-out rows): In 'DLR Falcon in situ and University MAinz Quantum Cascade Absorption Spectrometer (UMAQS) da' (Zenodo, doi 10.5281/zenodo.15250507): 'EastWind' is linear in 'HorWind' (R² = 0.941 on the discovery half); held-out R² = 0.940 [emp-f6a2be52dcb6]
 - 2026-11-17 18:46 data feeds: 29602 datasets analysed so far, 4063 confirmed findings
+- 2026-11-17 19:48 data feeds: online
+- 2026-11-17 19:49 FINDING (confirmed on held-out rows): In 'Seasonal dynamics in the mammalian microbiome between disparate environments' (Zenodo, doi 10.5061/dryad.v6wwpzh2r): 'right_tag' follows a power law in 'left_tag' (R² = 0.904 on the discovery half); held-out R² = 0.893 [emp-52cbbeccce37]
+- 2026-11-17 19:51 data feeds: 29644 datasets analysed so far, 4064 confirmed findings
