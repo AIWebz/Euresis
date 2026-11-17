@@ -4591,3 +4591,4 @@
 - 2026-11-17 17:59 FINDING (confirmed on held-out rows): In 'Data associated to the figures of "https://arxiv.org/abs/2503.23593" (to be published in O' (Zenodo, doi 10.5281/zenodo.18212231): 'Projection M_3 - RL' grows exponentially in 'Projection M_3 - HV' (R² = 0.978 on the discovery half); held-out R² = 0.967 [emp-b723bcd6d31c]
 - 2026-11-17 17:59 FINDING (confirmed on held-out rows): In 'Data associated to the figures of "https://arxiv.org/abs/2503.23593" (to be published in O' (Zenodo, doi 10.5281/zenodo.18212231): 'Projection M_3 - RL' grows exponentially in 'Projection M_3 - DA' (R² = 0.969 on the discovery half); held-out R² = 0.957 [emp-910658de6885]
 - 2026-11-17 18:01 data feeds: 29454 datasets analysed so far, 4049 confirmed findings
+- 2026-11-17 18:41 data feeds: online
