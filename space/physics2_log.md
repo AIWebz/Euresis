@@ -6494,3 +6494,8 @@
 - 2026-11-17 10:39 round 5942: Cournot duopoly
 - 2026-11-17 10:40 round 5943: insurance and risk
 - 2026-11-17 10:42 segment end: 5943 rounds, 5 discoveries, 2 known laws rediscovered
+- 2026-11-17 11:04 segment start (budget 30 min; model: Qwen3-8B; 5 discoveries so far)
+- 2026-11-17 11:04 round 5944: auction with a reserve price
+- 2026-11-17 11:07 round 5945: two-body decay
+- 2026-11-17 11:08 round 5946: collision
+- 2026-11-17 11:12 round 5947: driven oscillator
