@@ -6829,3 +6829,5 @@
 - 2026-11-18 03:52 round 6241: two-body decay
 - 2026-11-18 03:54 round 6242: collision
 - 2026-11-18 03:57 round 6243: driven oscillator
+- 2026-11-18 04:08 segment start (budget 30 min; model: Qwen3-8B; 5 discoveries so far)
+- 2026-11-18 04:08 round 6243: driven oscillator
