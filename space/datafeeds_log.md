@@ -4660,3 +4660,8 @@
 - 2026-11-17 23:40 FINDING (confirmed on held-out rows): In 'Density, parasitism, and sexual reproduction are strongly correlated in lake Daphnia popul' (Zenodo, doi 10.5061/dryad.pzgmsbcm6): 'metsch.inf.adu' is linear in 'metsch.inf.all' (R² = 0.988 on the discovery half); held-out R² = 0.965 [emp-32ee108862b8]
 - 2026-11-17 23:40 data feeds: 29814 datasets analysed so far, 4105 confirmed findings
 - 2026-11-18 00:26 data feeds: online
+- 2026-11-18 00:27 FINDING (confirmed on held-out rows): In 'CRC3D: compartment-switching analysis of colorectal cancer Hi-C (code, results, and audit ' (Zenodo, doi 10.5281/zenodo.24149189): 'nbins' is linear in 'lenMb' (R² = 0.995 on the discovery half); held-out R² = 0.936 [emp-a69528c5a613]
+- 2026-11-18 00:27 FINDING (confirmed on held-out rows): In 'CRC3D: compartment-switching analysis of colorectal cancer Hi-C (code, results, and audit ' (Zenodo, doi 10.5281/zenodo.24149189): 'B2A' is linear in 'lenMb' (R² = 0.986 on the discovery half); held-out R² = 0.925 [emp-227edf504bea]
+- 2026-11-18 00:27 FINDING (confirmed on held-out rows): In 'CRC3D: compartment-switching analysis of colorectal cancer Hi-C (code, results, and audit ' (Zenodo, doi 10.5281/zenodo.24149189): 'B2A' is linear in 'nbins' (R² = 0.991 on the discovery half); held-out R² = 0.978 [emp-434a832fb2e6]
+- 2026-11-18 00:27 FINDING (confirmed on held-out rows): In 'CRC3D: compartment-switching analysis of colorectal cancer Hi-C (code, results, and audit ' (Zenodo, doi 10.5281/zenodo.24149189): 'lenMb' follows a power law in 'nbins' (R² = 0.957 on the discovery half); held-out R² = 0.976 [emp-d2a1ed59bd1b]
+- 2026-11-18 00:29 data feeds: 29936 datasets analysed so far, 4109 confirmed findings

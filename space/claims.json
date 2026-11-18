@@ -3578050,5 +3578050,167 @@
   "statement": "Octal game 0.0736666 is completely solved: its Grundy values are periodic with pre-period 284 and period 48 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24149189",
+   "held_out_r2": 0.9358,
+   "held_out_rows": 93,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a69528c5a613",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "1097e7477e81d07d.csv",
+   "doi": "10.5281/zenodo.24149189",
+   "form": "linear",
+   "params": [
+    -0.05780414049779129,
+    8.947429634798786
+   ],
+   "seed": 3957189704,
+   "x": "lenMb",
+   "y": "nbins"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'CRC3D: compartment-switching analysis of colorectal cancer Hi-C (code, results, and audit ' (Zenodo, doi 10.5281/zenodo.24149189): 'nbins' is linear in 'lenMb' (R\u00b2 = 0.995 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24149189",
+   "held_out_r2": 0.925,
+   "held_out_rows": 93,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-227edf504bea",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "1097e7477e81d07d.csv",
+   "doi": "10.5281/zenodo.24149189",
+   "form": "linear",
+   "params": [
+    -0.3606133044300266,
+    8.97140849183135
+   ],
+   "seed": 3957189704,
+   "x": "lenMb",
+   "y": "B2A"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'CRC3D: compartment-switching analysis of colorectal cancer Hi-C (code, results, and audit ' (Zenodo, doi 10.5281/zenodo.24149189): 'B2A' is linear in 'lenMb' (R\u00b2 = 0.986 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24149189",
+   "held_out_r2": 0.9775,
+   "held_out_rows": 93,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-434a832fb2e6",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "1097e7477e81d07d.csv",
+   "doi": "10.5281/zenodo.24149189",
+   "form": "linear",
+   "params": [
+    -0.30192880505736497,
+    1.002468095445326
+   ],
+   "seed": 3957189704,
+   "x": "nbins",
+   "y": "B2A"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'CRC3D: compartment-switching analysis of colorectal cancer Hi-C (code, results, and audit ' (Zenodo, doi 10.5281/zenodo.24149189): 'B2A' is linear in 'nbins' (R\u00b2 = 0.991 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24149189",
+   "held_out_r2": 0.976,
+   "held_out_rows": 93,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d2a1ed59bd1b",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8c75fb49b1b33031.csv",
+   "doi": "10.5281/zenodo.24149189",
+   "form": "power law",
+   "params": [
+    -2.2611192717711877,
+    1.0905700806872654
+   ],
+   "seed": 2318366261,
+   "x": "nbins",
+   "y": "lenMb"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'CRC3D: compartment-switching analysis of colorectal cancer Hi-C (code, results, and audit ' (Zenodo, doi 10.5281/zenodo.24149189): 'lenMb' follows a power law in 'nbins' (R\u00b2 = 0.957 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.13127/inge.1",
+   "held_out_r2": 0.9791,
+   "held_out_rows": 162,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4ef09a0b1aa9",
+  "kind": "empirical",
+  "novelty": "KNOWN: coordinate transformations (geographic / geomagnetic / apex latitudes and longitudes) \u2014 not a discovery",
+  "payload": {
+   "dataset": "df9a12b51f69d523.csv",
+   "doi": "10.13127/inge.1",
+   "form": "power law",
+   "params": [
+    0.0044548640242282715,
+    0.9992494386099594
+   ],
+   "seed": 3740096098,
+   "x": "ev_latitude",
+   "y": "st_latitude"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset from Article \"INGe: Intensity-ground motion data set for Italy\"' (Zenodo, doi 10.13127/inge.1): 'st_latitude' follows a power law in 'ev_latitude' (R\u00b2 = 0.976 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.13127/inge.1",
+   "held_out_r2": 0.9255,
+   "held_out_rows": 162,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-bf7ddad31b08",
+  "kind": "empirical",
+  "novelty": "KNOWN: coordinate transformations (geographic / geomagnetic / apex latitudes and longitudes) \u2014 not a discovery",
+  "payload": {
+   "dataset": "df9a12b51f69d523.csv",
+   "doi": "10.13127/inge.1",
+   "form": "power law",
+   "params": [
+    -0.1052390289278298,
+    1.0368377388030618
+   ],
+   "seed": 3740096098,
+   "x": "ev_longitude",
+   "y": "st_longitude"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset from Article \"INGe: Intensity-ground motion data set for Italy\"' (Zenodo, doi 10.13127/inge.1): 'st_longitude' follows a power law in 'ev_longitude' (R\u00b2 = 0.936 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
