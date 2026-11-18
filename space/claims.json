@@ -3681332,5 +3681332,275 @@
   "statement": "In 'LBSR illustrative case: Reconstructed coding book, synthetic datasets, validation material' (Zenodo, doi 10.5281/zenodo.21470169): 'achieved_min' is linear in 'target_max' (R\u00b2 = 0.990 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-a5094a2f973a",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'Fraction of kinetic energy transferred to the target [model-proposed; physical meaning unverified]'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "e**2*m**2/(m**2 + 1) + e**2*m/(m + 1) - m*(1 - e**2)/(m + 1) - (1 - e**2)/(m + 1) + 1 >= 1*((e**2*m**2 + e**2*m)/((m + 1)*((1 - e**2)*(m + 1) + (e**2*m**2 + e**2*m)/(m + 1))))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 6410",
+  "statement": "[physics: collision] Relative Kinetic Energy Ratio of Target to Projectile [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Relative Kinetic Energy Ratio After Collision [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1.31e-08, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-43cd6f803e9e",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "claim": "c1/3 + c2/3 + 1/3 >= 1/3*(((1 - c1)**2 + (1 - c2)**2)/((-c1 - c2 + 1)**2 + 1))",
+   "symbols": [
+    "c1",
+    "c2"
+   ]
+  },
+  "source": "physics_discover2 round 6414",
+  "statement": "[economics: Cournot duopoly] market price \u2265 1/3 \u00d7 Price Competition Index [model-proposed; physical meaning unverified]   on c1 < 1/2, c2 < 1/2 (tight only at the edge of the domain, near (4.08e-14, 6.85e-15))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-1f11f49e43ce",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "claim": "(-c1 - c2 + 2)**2/18 >= 1/9*(((1 - c1)**2 + (1 - c2)**2)/((-c1 - c2 + 1)**2 + 1))",
+   "symbols": [
+    "c1",
+    "c2"
+   ]
+  },
+  "source": "physics_discover2 round 6414",
+  "statement": "[economics: Cournot duopoly] consumer surplus \u2265 1/9 \u00d7 Price Competition Index [model-proposed; physical meaning unverified]   on c1 < 1/2, c2 < 1/2 (tight only at the edge of the domain, near (0.5, 0.5))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-e74b7a7b44ff",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'consumer surplus'",
+  "payload": {
+   "assumptions": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "claim": "(-2*c1 + c2 + 1)**2/9 + (c1 - 2*c2 + 1)**2/9 >= 1/9*(((1 - c1)**2 + (1 - c2)**2)/((-c1 - c2 + 1)**2 + 1))",
+   "symbols": [
+    "c1",
+    "c2"
+   ]
+  },
+  "source": "physics_discover2 round 6414",
+  "statement": "[economics: Cournot duopoly] total industry profit \u2265 1/9 \u00d7 Price Competition Index [model-proposed; physical meaning unverified]   on c1 < 1/2, c2 < 1/2 (tight only at the edge of the domain, near (0.5, 0.5))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-f437fbe09994",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "claim": "(1 - c1)**2/4 >= 1/16*(((1 - c1)**2 + (1 - c2)**2)/((-c1 - c2 + 1)**2 + 1))",
+   "symbols": [
+    "c1",
+    "c2"
+   ]
+  },
+  "source": "physics_discover2 round 6414",
+  "statement": "[economics: Cournot duopoly] firm 1's profit as a monopolist \u2265 1/16 \u00d7 Price Competition Index [model-proposed; physical meaning unverified]   on c1 < 1/2, c2 < 1/2 (tight only at the edge of the domain, near (0.5, 5.93e-14))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-d4be4ce01278",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "claim": "((-2*c1 + c2 + 1)**2 + (c1 - 2*c2 + 1)**2)/((1 - c1)**2 + (1 - c2)**2) >= 1*(((1 - c1)**2 + (1 - c2)**2)/((-c1 - c2 + 1)**2 + 1))",
+   "symbols": [
+    "c1",
+    "c2"
+   ]
+  },
+  "source": "physics_discover2 round 6414",
+  "statement": "[economics: Cournot duopoly] Hirshleifer Index [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Price Competition Index [model-proposed; physical meaning unverified]   on c1 < 1/2, c2 < 1/2 (tight only at the edge of the domain, near (4.43e-09, 8.42e-09))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-2f0a100fdc7f",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "claim": "(c1/3 + c2/3 + 1/3)/c2 >= 1*(((1 - c1)**2 + (1 - c2)**2)/((-c1 - c2 + 1)**2 + 1))",
+   "symbols": [
+    "c1",
+    "c2"
+   ]
+  },
+  "source": "physics_discover2 round 6414",
+  "statement": "[economics: Cournot duopoly] Price to Marginal Cost Ratio for Firm 2 [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Price Competition Index [model-proposed; physical meaning unverified]   on c1 < 1/2, c2 < 1/2 (tight only at the edge of the domain, near (7.85e-16, 0.5))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-73100ac47439",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "claim": "(c1/3 + c2/3 - (1 - c1)**2/4 + 1/3)/(c1/3 + c2/3 - (1 - c2)**2/4 + 1/3)**2 >= 64/49*(((1 - c1)**2 + (1 - c2)**2)/((-c1 - c2 + 1)**2 + 1))",
+   "symbols": [
+    "c1",
+    "c2"
+   ]
+  },
+  "source": "physics_discover2 round 6414",
+  "statement": "[economics: Cournot duopoly] Price Deviation Index [model-proposed; physical meaning unverified] \u2265 64/49 \u00d7 Price Competition Index [model-proposed; physical meaning unverified]   on c1 < 1/2, c2 < 1/2 (tight only at the edge of the domain, near (1.51e-15, 0.5))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-f114b9813824",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'consumer surplus'",
+  "payload": {
+   "assumptions": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "claim": "(-2*c1 + c2 + 1)**2/9 + (-c1 - c2 + 1)**2/18 + (c1 - 2*c2 + 1)**2/9 >= 1/9*(((1 - c1)**2 + (1 - c2)**2)/((-c1 - c2 + 1)**2 + 1))",
+   "symbols": [
+    "c1",
+    "c2"
+   ]
+  },
+  "source": "physics_discover2 round 6414",
+  "statement": "[economics: Cournot duopoly] Total Welfare Index [model-proposed; physical meaning unverified] \u2265 1/9 \u00d7 Price Competition Index [model-proposed; physical meaning unverified]   on c1 < 1/2, c2 < 1/2 (tight only at the edge of the domain, near (0.5, 0.5))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-4cdf8440bd4f",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "claim": "(c1/3 + c2/3 - (1 - c1)**2/4 + 1/3)/(c1/3 + c2/3 - (1 - c2)**2/4 + 1/3) >= 4/7*(((1 - c1)**2 + (1 - c2)**2)/((-c1 - c2 + 1)**2 + 1))",
+   "symbols": [
+    "c1",
+    "c2"
+   ]
+  },
+  "source": "physics_discover2 round 6414",
+  "statement": "[economics: Cournot duopoly] Price Deviation Ratio [model-proposed; physical meaning unverified] \u2265 4/7 \u00d7 Price Competition Index [model-proposed; physical meaning unverified]   on c1 < 1/2, c2 < 1/2 (tight only at the edge of the domain, near (4.65e-17, 0.5))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]
