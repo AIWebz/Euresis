@@ -6816,3 +6816,5 @@
 - 2026-11-18 03:31 round 6228: velocity addition
 - 2026-11-18 03:32 round 6229: Compton scattering
 - 2026-11-18 03:33 round 6230: Cournot duopoly
+- 2026-11-18 03:36 round 6231: insurance and risk
+- 2026-11-18 03:37 round 6232: auction with a reserve price
