@@ -6756,3 +6756,7 @@
 - 2026-11-18 00:34 round 6174: Cournot duopoly
 - 2026-11-18 00:35 round 6175: insurance and risk
 - 2026-11-18 00:37 round 6176: auction with a reserve price
+- 2026-11-18 00:38 round 6177: two-body decay
+- 2026-11-18 00:40 round 6178: collision
+- 2026-11-18 00:43 round 6179: driven oscillator
+- 2026-11-18 00:44 round 6180: velocity addition
