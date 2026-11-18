@@ -3606069,5 +3606069,1544 @@
   "statement": "Octal game 0.0740627 is completely solved: its Grundy values are periodic with pre-period 284 and period 48 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23857923",
+   "held_out_r2": 0.9542,
+   "held_out_rows": 33,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-38381be67cc2",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "02b16cd6e335fe51.csv",
+   "doi": "10.5281/zenodo.23857923",
+   "form": "power law",
+   "params": [
+    -0.007871809248363849,
+    1.1601334746859835
+   ],
+   "seed": 1464636042,
+   "x": "NSE_train",
+   "y": "NSE_val"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'RNA-Hydro HESS v18: run configurations, input\u2013output series and CAWM reference for five Br' (Zenodo, doi 10.5281/zenodo.23857923): 'NSE_val' follows a power law in 'NSE_train' (R\u00b2 = 0.950 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23857923",
+   "held_out_r2": 0.735,
+   "held_out_rows": 33,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-6bcc2351ee5f",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "02b16cd6e335fe51.csv",
+   "doi": "10.5281/zenodo.23857923",
+   "form": "logarithmic",
+   "params": [
+    0.9528605581355237,
+    0.4782908140952679
+   ],
+   "seed": 1464636042,
+   "x": "NSE_train",
+   "y": "KGE_train"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'RNA-Hydro HESS v18: run configurations, input\u2013output series and CAWM reference for five Br' (Zenodo, doi 10.5281/zenodo.23857923): 'KGE_train' grows logarithmically in 'NSE_train' (R\u00b2 = 0.985 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23857923",
+   "held_out_r2": 0.73,
+   "held_out_rows": 33,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d64d027538e8",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "02b16cd6e335fe51.csv",
+   "doi": "10.5281/zenodo.23857923",
+   "form": "logarithmic",
+   "params": [
+    0.8891493274539419,
+    0.4362426741045736
+   ],
+   "seed": 1464636042,
+   "x": "NSE_train",
+   "y": "KGE_val"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'RNA-Hydro HESS v18: run configurations, input\u2013output series and CAWM reference for five Br' (Zenodo, doi 10.5281/zenodo.23857923): 'KGE_val' grows logarithmically in 'NSE_train' (R\u00b2 = 0.908 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23857923",
+   "held_out_r2": 0.9769,
+   "held_out_rows": 33,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-66f2b2fdcc26",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "02b16cd6e335fe51.csv",
+   "doi": "10.5281/zenodo.23857923",
+   "form": "power law",
+   "params": [
+    0.0037998885234877414,
+    0.5307423480509637
+   ],
+   "seed": 1464636042,
+   "x": "NSE_train",
+   "y": "r_val"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'RNA-Hydro HESS v18: run configurations, input\u2013output series and CAWM reference for five Br' (Zenodo, doi 10.5281/zenodo.23857923): 'r_val' follows a power law in 'NSE_train' (R\u00b2 = 0.969 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23857923",
+   "held_out_r2": 0.9917,
+   "held_out_rows": 33,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5ccd2872b5ac",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "02b16cd6e335fe51.csv",
+   "doi": "10.5281/zenodo.23857923",
+   "form": "power law",
+   "params": [
+    -0.004987409376930046,
+    1.044014433232083
+   ],
+   "seed": 1464636042,
+   "x": "NSE_train",
+   "y": "NSE_all"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'RNA-Hydro HESS v18: run configurations, input\u2013output series and CAWM reference for five Br' (Zenodo, doi 10.5281/zenodo.23857923): 'NSE_all' follows a power law in 'NSE_train' (R\u00b2 = 0.992 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23857923",
+   "held_out_r2": 0.7533,
+   "held_out_rows": 33,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ce3717742486",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "02b16cd6e335fe51.csv",
+   "doi": "10.5281/zenodo.23857923",
+   "form": "logarithmic",
+   "params": [
+    0.9279999211033466,
+    0.4591915785530246
+   ],
+   "seed": 1464636042,
+   "x": "NSE_train",
+   "y": "KGE_all"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'RNA-Hydro HESS v18: run configurations, input\u2013output series and CAWM reference for five Br' (Zenodo, doi 10.5281/zenodo.23857923): 'KGE_all' grows logarithmically in 'NSE_train' (R\u00b2 = 0.978 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23857923",
+   "held_out_r2": 0.8919,
+   "held_out_rows": 33,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-cbc3bdc4e050",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "02b16cd6e335fe51.csv",
+   "doi": "10.5281/zenodo.23857923",
+   "form": "linear",
+   "params": [
+    0.10246826284578468,
+    0.9441286933373852
+   ],
+   "seed": 1464636042,
+   "x": "NSE_val",
+   "y": "KGE_train"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'RNA-Hydro HESS v18: run configurations, input\u2013output series and CAWM reference for five Br' (Zenodo, doi 10.5281/zenodo.23857923): 'KGE_train' is linear in 'NSE_val' (R\u00b2 = 0.928 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23857923",
+   "held_out_r2": 0.8939,
+   "held_out_rows": 33,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f2e0da9a8e73",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "02b16cd6e335fe51.csv",
+   "doi": "10.5281/zenodo.23857923",
+   "form": "linear",
+   "params": [
+    0.0913747811315242,
+    0.8946978655001108
+   ],
+   "seed": 1464636042,
+   "x": "NSE_val",
+   "y": "KGE_val"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'RNA-Hydro HESS v18: run configurations, input\u2013output series and CAWM reference for five Br' (Zenodo, doi 10.5281/zenodo.23857923): 'KGE_val' is linear in 'NSE_val' (R\u00b2 = 0.924 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23857923",
+   "held_out_r2": 0.9538,
+   "held_out_rows": 33,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-91a787affeb8",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "02b16cd6e335fe51.csv",
+   "doi": "10.5281/zenodo.23857923",
+   "form": "power law",
+   "params": [
+    -0.009821005911016418,
+    0.4043838309796777
+   ],
+   "seed": 1464636042,
+   "x": "NSE_val",
+   "y": "r_train"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'RNA-Hydro HESS v18: run configurations, input\u2013output series and CAWM reference for five Br' (Zenodo, doi 10.5281/zenodo.23857923): 'r_train' follows a power law in 'NSE_val' (R\u00b2 = 0.950 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23857923",
+   "held_out_r2": 0.9838,
+   "held_out_rows": 33,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c85834c9282a",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "02b16cd6e335fe51.csv",
+   "doi": "10.5281/zenodo.23857923",
+   "form": "power law",
+   "params": [
+    -0.013611516836219186,
+    0.871861524377982
+   ],
+   "seed": 1464636042,
+   "x": "NSE_val",
+   "y": "NSE_all"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'RNA-Hydro HESS v18: run configurations, input\u2013output series and CAWM reference for five Br' (Zenodo, doi 10.5281/zenodo.23857923): 'NSE_all' follows a power law in 'NSE_val' (R\u00b2 = 0.980 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23857923",
+   "held_out_r2": 0.6371,
+   "held_out_rows": 33,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-fbaf2ce445ce",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "02b16cd6e335fe51.csv",
+   "doi": "10.5281/zenodo.23857923",
+   "form": "logarithmic",
+   "params": [
+    0.9216375089898899,
+    0.3788856094112953
+   ],
+   "seed": 1464636042,
+   "x": "NSE_val",
+   "y": "KGE_all"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'RNA-Hydro HESS v18: run configurations, input\u2013output series and CAWM reference for five Br' (Zenodo, doi 10.5281/zenodo.23857923): 'KGE_all' grows logarithmically in 'NSE_val' (R\u00b2 = 0.943 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23857923",
+   "held_out_r2": -Infinity,
+   "held_out_rows": 33,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-02f22ea7958b",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "02b16cd6e335fe51.csv",
+   "doi": "10.5281/zenodo.23857923",
+   "form": "power law",
+   "params": [
+    -0.035711034957873866,
+    1.0952495483260767
+   ],
+   "seed": 1464636042,
+   "x": "KGE_train",
+   "y": "KGE_val"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'RNA-Hydro HESS v18: run configurations, input\u2013output series and CAWM reference for five Br' (Zenodo, doi 10.5281/zenodo.23857923): 'KGE_val' follows a power law in 'KGE_train' (R\u00b2 = 0.972 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23857923",
+   "held_out_r2": 0.9649,
+   "held_out_rows": 33,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-bd83f65d6776",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "02b16cd6e335fe51.csv",
+   "doi": "10.5281/zenodo.23857923",
+   "form": "linear",
+   "params": [
+    0.2938445248003812,
+    0.7090766052301937
+   ],
+   "seed": 1464636042,
+   "x": "KGE_train",
+   "y": "r_val"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'RNA-Hydro HESS v18: run configurations, input\u2013output series and CAWM reference for five Br' (Zenodo, doi 10.5281/zenodo.23857923): 'r_val' is linear in 'KGE_train' (R\u00b2 = 0.957 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23857923",
+   "held_out_r2": 0.9347,
+   "held_out_rows": 33,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-0898a38d6382",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "02b16cd6e335fe51.csv",
+   "doi": "10.5281/zenodo.23857923",
+   "form": "linear",
+   "params": [
+    -0.027318740345255717,
+    0.976725975608303
+   ],
+   "seed": 1464636042,
+   "x": "KGE_train",
+   "y": "NSE_all"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'RNA-Hydro HESS v18: run configurations, input\u2013output series and CAWM reference for five Br' (Zenodo, doi 10.5281/zenodo.23857923): 'NSE_all' is linear in 'KGE_train' (R\u00b2 = 0.974 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23857923",
+   "held_out_r2": -Infinity,
+   "held_out_rows": 33,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-6e7795aed83c",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "02b16cd6e335fe51.csv",
+   "doi": "10.5281/zenodo.23857923",
+   "form": "power law",
+   "params": [
+    -0.011826628110184392,
+    1.0293420903822454
+   ],
+   "seed": 1464636042,
+   "x": "KGE_train",
+   "y": "KGE_all"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'RNA-Hydro HESS v18: run configurations, input\u2013output series and CAWM reference for five Br' (Zenodo, doi 10.5281/zenodo.23857923): 'KGE_all' follows a power law in 'KGE_train' (R\u00b2 = 0.995 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23857923",
+   "held_out_r2": 0.8126,
+   "held_out_rows": 33,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-deea42e846f7",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "02b16cd6e335fe51.csv",
+   "doi": "10.5281/zenodo.23857923",
+   "form": "exponential",
+   "params": [
+    -0.9368121151117063,
+    1.0278805704993397
+   ],
+   "seed": 1464636042,
+   "x": "KGE_val",
+   "y": "r_train"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'RNA-Hydro HESS v18: run configurations, input\u2013output series and CAWM reference for five Br' (Zenodo, doi 10.5281/zenodo.23857923): 'r_train' grows exponentially in 'KGE_val' (R\u00b2 = 0.908 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23857923",
+   "held_out_r2": 0.819,
+   "held_out_rows": 33,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c3e2aff657b1",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "02b16cd6e335fe51.csv",
+   "doi": "10.5281/zenodo.23857923",
+   "form": "exponential",
+   "params": [
+    -2.002574817098223,
+    2.201972681905598
+   ],
+   "seed": 1464636042,
+   "x": "KGE_val",
+   "y": "NSE_all"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'RNA-Hydro HESS v18: run configurations, input\u2013output series and CAWM reference for five Br' (Zenodo, doi 10.5281/zenodo.23857923): 'NSE_all' grows exponentially in 'KGE_val' (R\u00b2 = 0.925 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23857923",
+   "held_out_r2": -Infinity,
+   "held_out_rows": 33,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-addfe4c0ef30",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "02b16cd6e335fe51.csv",
+   "doi": "10.5281/zenodo.23857923",
+   "form": "power law",
+   "params": [
+    0.012943648795836963,
+    0.9234714412122543
+   ],
+   "seed": 1464636042,
+   "x": "KGE_val",
+   "y": "KGE_all"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'RNA-Hydro HESS v18: run configurations, input\u2013output series and CAWM reference for five Br' (Zenodo, doi 10.5281/zenodo.23857923): 'KGE_all' follows a power law in 'KGE_val' (R\u00b2 = 0.989 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23857923",
+   "held_out_r2": 0.9763,
+   "held_out_rows": 33,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-69d99f6e7015",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "02b16cd6e335fe51.csv",
+   "doi": "10.5281/zenodo.23857923",
+   "form": "power law",
+   "params": [
+    0.005218380815173917,
+    1.07505414774802
+   ],
+   "seed": 1464636042,
+   "x": "r_train",
+   "y": "r_val"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'RNA-Hydro HESS v18: run configurations, input\u2013output series and CAWM reference for five Br' (Zenodo, doi 10.5281/zenodo.23857923): 'r_val' follows a power law in 'r_train' (R\u00b2 = 0.969 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23857923",
+   "held_out_r2": 0.991,
+   "held_out_rows": 33,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d7917528ad52",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "02b16cd6e335fe51.csv",
+   "doi": "10.5281/zenodo.23857923",
+   "form": "power law",
+   "params": [
+    -0.0024255997907855803,
+    2.1137541792918704
+   ],
+   "seed": 1464636042,
+   "x": "r_train",
+   "y": "NSE_all"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'RNA-Hydro HESS v18: run configurations, input\u2013output series and CAWM reference for five Br' (Zenodo, doi 10.5281/zenodo.23857923): 'NSE_all' follows a power law in 'r_train' (R\u00b2 = 0.992 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23857923",
+   "held_out_r2": 0.7348,
+   "held_out_rows": 33,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c1644baf79aa",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "02b16cd6e335fe51.csv",
+   "doi": "10.5281/zenodo.23857923",
+   "form": "logarithmic",
+   "params": [
+    0.9292513755354367,
+    0.9302256582154333
+   ],
+   "seed": 1464636042,
+   "x": "r_train",
+   "y": "KGE_all"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'RNA-Hydro HESS v18: run configurations, input\u2013output series and CAWM reference for five Br' (Zenodo, doi 10.5281/zenodo.23857923): 'KGE_all' grows logarithmically in 'r_train' (R\u00b2 = 0.978 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23857923",
+   "held_out_r2": 0.9938,
+   "held_out_rows": 33,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-974f8b75d6d5",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "02b16cd6e335fe51.csv",
+   "doi": "10.5281/zenodo.23857923",
+   "form": "power law",
+   "params": [
+    -0.021068122954629846,
+    1.9324952179809054
+   ],
+   "seed": 1464636042,
+   "x": "r_val",
+   "y": "NSE_all"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'RNA-Hydro HESS v18: run configurations, input\u2013output series and CAWM reference for five Br' (Zenodo, doi 10.5281/zenodo.23857923): 'NSE_all' follows a power law in 'r_val' (R\u00b2 = 0.988 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23857923",
+   "held_out_r2": 0.9622,
+   "held_out_rows": 33,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ca7f69bbc1db",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "02b16cd6e335fe51.csv",
+   "doi": "10.5281/zenodo.23857923",
+   "form": "linear",
+   "params": [
+    -0.3459174713445123,
+    1.3060159441137054
+   ],
+   "seed": 1464636042,
+   "x": "r_val",
+   "y": "KGE_all"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'RNA-Hydro HESS v18: run configurations, input\u2013output series and CAWM reference for five Br' (Zenodo, doi 10.5281/zenodo.23857923): 'KGE_all' is linear in 'r_val' (R\u00b2 = 0.965 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23857923",
+   "held_out_r2": 0.7311,
+   "held_out_rows": 33,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-90d4415c9239",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "02b16cd6e335fe51.csv",
+   "doi": "10.5281/zenodo.23857923",
+   "form": "logarithmic",
+   "params": [
+    0.9291832643364988,
+    0.43781968252126185
+   ],
+   "seed": 1464636042,
+   "x": "NSE_all",
+   "y": "KGE_all"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'RNA-Hydro HESS v18: run configurations, input\u2013output series and CAWM reference for five Br' (Zenodo, doi 10.5281/zenodo.23857923): 'KGE_all' grows logarithmically in 'NSE_all' (R\u00b2 = 0.976 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.16101785",
+   "held_out_r2": 0.9241,
+   "held_out_rows": 3550,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-34c4b298d265",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "15e06d1ecea84e11.csv",
+   "doi": "10.5281/zenodo.16101785",
+   "form": "power law",
+   "params": [
+    1.1686782628420758,
+    1.0160499518401034
+   ],
+   "seed": 909836949,
+   "x": "daily_mean_sim",
+   "y": "Q05_highflow_sim"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'FLOWBra: Future Lines Of Water in Brazil' (Zenodo, doi 10.5281/zenodo.16101785): 'Q05_highflow_sim' follows a power law in 'daily_mean_sim' (R\u00b2 = 0.928 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.16101785",
+   "held_out_r2": 0.9096,
+   "held_out_rows": 3550,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-8747c67ed36e",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "15e06d1ecea84e11.csv",
+   "doi": "10.5281/zenodo.16101785",
+   "form": "power law",
+   "params": [
+    0.7039479455712817,
+    0.9379521035989788
+   ],
+   "seed": 909836949,
+   "x": "daily_mean_obs",
+   "y": "Q05_highflow_obs"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'FLOWBra: Future Lines Of Water in Brazil' (Zenodo, doi 10.5281/zenodo.16101785): 'Q05_highflow_obs' follows a power law in 'daily_mean_obs' (R\u00b2 = 0.914 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.19206453",
+   "held_out_r2": 0.976,
+   "held_out_rows": 324,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-97e9b3f9bef5",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8ee40113845972cb.csv",
+   "doi": "10.5281/zenodo.19206453",
+   "form": "exponential",
+   "params": [
+    -3.240554248115986,
+    9.479728256179836e-09
+   ],
+   "seed": 29284303,
+   "x": "size_bytes",
+   "y": "valid_fraction_approx"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Global Soil Moisture Anomalies (SMA Z-score) from the EUMETSAT - TU Wien ASCAT-SSM-CDR-12.' (Zenodo, doi 10.5281/zenodo.19206453): 'valid_fraction_approx' grows exponentially in 'size_bytes' (R\u00b2 = 0.981 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.19528793",
+   "held_out_r2": 0.9874,
+   "held_out_rows": 233,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3d8b4453e43b",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "4ed5cce222c44fba.csv",
+   "doi": "10.5281/zenodo.19528793",
+   "form": "logarithmic",
+   "params": [
+    14965.537629240185,
+    -1966.0271999785166
+   ],
+   "seed": 3715203784,
+   "x": "StartYear",
+   "y": "RecordLength"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data and Code for \"Automated Adaptive Baseflow Separation Across Australian Catchments Usi' (Zenodo, doi 10.5281/zenodo.19528793): 'RecordLength' grows logarithmically in 'StartYear' (R\u00b2 = 0.950 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.19528793",
+   "held_out_r2": 0.9494,
+   "held_out_rows": 233,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5023c1a379b4",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "4ed5cce222c44fba.csv",
+   "doi": "10.5281/zenodo.19528793",
+   "form": "power law",
+   "params": [
+    -0.4860233050377509,
+    0.8994871749723089
+   ],
+   "seed": 3715203784,
+   "x": "MeanFlow",
+   "y": "FastFlow"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data and Code for \"Automated Adaptive Baseflow Separation Across Australian Catchments Usi' (Zenodo, doi 10.5281/zenodo.19528793): 'FastFlow' follows a power law in 'MeanFlow' (R\u00b2 = 0.957 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.19528793",
+   "held_out_r2": 0.9684,
+   "held_out_rows": 233,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-8be552b4bc1f",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "4ed5cce222c44fba.csv",
+   "doi": "10.5281/zenodo.19528793",
+   "form": "linear",
+   "params": [
+    -8.6766284049661,
+    0.5885366590892143
+   ],
+   "seed": 3715203784,
+   "x": "MeanFlow",
+   "y": "SlowFlow"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data and Code for \"Automated Adaptive Baseflow Separation Across Australian Catchments Usi' (Zenodo, doi 10.5281/zenodo.19528793): 'SlowFlow' is linear in 'MeanFlow' (R\u00b2 = 0.972 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.19528793",
+   "held_out_r2": 0.9819,
+   "held_out_rows": 233,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-37f999ea650d",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "4ed5cce222c44fba.csv",
+   "doi": "10.5281/zenodo.19528793",
+   "form": "power law",
+   "params": [
+    -0.8123527720679631,
+    1.064600084510035
+   ],
+   "seed": 3715203784,
+   "x": "MeanFlow",
+   "y": "BaseFlow"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data and Code for \"Automated Adaptive Baseflow Separation Across Australian Catchments Usi' (Zenodo, doi 10.5281/zenodo.19528793): 'BaseFlow' follows a power law in 'MeanFlow' (R\u00b2 = 0.987 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.19528793",
+   "held_out_r2": 0.9492,
+   "held_out_rows": 233,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-7722ca1c960b",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "4ed5cce222c44fba.csv",
+   "doi": "10.5281/zenodo.19528793",
+   "form": "power law",
+   "params": [
+    -0.49419256535438205,
+    0.8999983792379135
+   ],
+   "seed": 3715203784,
+   "x": "TotalFlow",
+   "y": "FastFlow"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data and Code for \"Automated Adaptive Baseflow Separation Across Australian Catchments Usi' (Zenodo, doi 10.5281/zenodo.19528793): 'FastFlow' follows a power law in 'TotalFlow' (R\u00b2 = 0.957 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.19528793",
+   "held_out_r2": 0.9683,
+   "held_out_rows": 233,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-8bacd9df521d",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "4ed5cce222c44fba.csv",
+   "doi": "10.5281/zenodo.19528793",
+   "form": "linear",
+   "params": [
+    -9.264087427825507,
+    0.5886882875984778
+   ],
+   "seed": 3715203784,
+   "x": "TotalFlow",
+   "y": "SlowFlow"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data and Code for \"Automated Adaptive Baseflow Separation Across Australian Catchments Usi' (Zenodo, doi 10.5281/zenodo.19528793): 'SlowFlow' is linear in 'TotalFlow' (R\u00b2 = 0.972 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.19528793",
+   "held_out_r2": 0.9823,
+   "held_out_rows": 233,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3c6a89174159",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "4ed5cce222c44fba.csv",
+   "doi": "10.5281/zenodo.19528793",
+   "form": "power law",
+   "params": [
+    -0.8211933915040349,
+    1.065029045147256
+   ],
+   "seed": 3715203784,
+   "x": "TotalFlow",
+   "y": "BaseFlow"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data and Code for \"Automated Adaptive Baseflow Separation Across Australian Catchments Usi' (Zenodo, doi 10.5281/zenodo.19528793): 'BaseFlow' follows a power law in 'TotalFlow' (R\u00b2 = 0.987 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.19528793",
+   "held_out_r2": 0.8783,
+   "held_out_rows": 233,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d02855ca6444",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "4ed5cce222c44fba.csv",
+   "doi": "10.5281/zenodo.19528793",
+   "form": "power law",
+   "params": [
+    0.05086771787328803,
+    1.1065431668836434
+   ],
+   "seed": 3715203784,
+   "x": "FastFlow",
+   "y": "BaseFlow"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data and Code for \"Automated Adaptive Baseflow Separation Across Australian Catchments Usi' (Zenodo, doi 10.5281/zenodo.19528793): 'BaseFlow' follows a power law in 'FastFlow' (R\u00b2 = 0.902 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.19528793",
+   "held_out_r2": 0.9808,
+   "held_out_rows": 233,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a1e24d5d67b4",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "4ed5cce222c44fba.csv",
+   "doi": "10.5281/zenodo.19528793",
+   "form": "linear",
+   "params": [
+    7.3710711830874915,
+    1.1288369669829386
+   ],
+   "seed": 3715203784,
+   "x": "SlowFlow",
+   "y": "BaseFlow"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data and Code for \"Automated Adaptive Baseflow Separation Across Australian Catchments Usi' (Zenodo, doi 10.5281/zenodo.19528793): 'BaseFlow' is linear in 'SlowFlow' (R\u00b2 = 0.986 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20218450",
+   "held_out_r2": 0.9572,
+   "held_out_rows": 32,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-bbd3096d3188",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "e14794465071a080.csv",
+   "doi": "10.5281/zenodo.20218450",
+   "form": "power law",
+   "params": [
+    0.23584394812945433,
+    1.0498307692470186
+   ],
+   "seed": 2012699629,
+   "x": "SPI_1_sen_slope",
+   "y": "SPEI_1_sen_slope"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A Climate Dataset for Drought Analysis Across All 64 Districts of Bangladesh (1981\u20132025): ' (Zenodo, doi 10.5281/zenodo.20218450): 'SPEI_1_sen_slope' follows a power law in 'SPI_1_sen_slope' (R\u00b2 = 0.974 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20218450",
+   "held_out_r2": 0.8988,
+   "held_out_rows": 32,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-277b40dbb08b",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "e14794465071a080.csv",
+   "doi": "10.5281/zenodo.20218450",
+   "form": "exponential",
+   "params": [
+    -7.354978138239396,
+    696.6964157414362
+   ],
+   "seed": 2012699629,
+   "x": "SPI_1_sen_slope",
+   "y": "SPEI_3_sen_slope"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A Climate Dataset for Drought Analysis Across All 64 Districts of Bangladesh (1981\u20132025): ' (Zenodo, doi 10.5281/zenodo.20218450): 'SPEI_3_sen_slope' grows exponentially in 'SPI_1_sen_slope' (R\u00b2 = 0.936 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20218450",
+   "held_out_r2": 0.7453,
+   "held_out_rows": 32,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b0d46e9696aa",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "e14794465071a080.csv",
+   "doi": "10.5281/zenodo.20218450",
+   "form": "linear",
+   "params": [
+    -0.0016287536764025465,
+    1.0263801121423868
+   ],
+   "seed": 2012699629,
+   "x": "SPI_3_pvalue",
+   "y": "SPEI_3_pvalue"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A Climate Dataset for Drought Analysis Across All 64 Districts of Bangladesh (1981\u20132025): ' (Zenodo, doi 10.5281/zenodo.20218450): 'SPEI_3_pvalue' is linear in 'SPI_3_pvalue' (R\u00b2 = 0.936 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20218450",
+   "held_out_r2": 0.911,
+   "held_out_rows": 32,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f6db37ef7669",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "e14794465071a080.csv",
+   "doi": "10.5281/zenodo.20218450",
+   "form": "power law",
+   "params": [
+    1.1787580549467302,
+    1.2513454441263527
+   ],
+   "seed": 2012699629,
+   "x": "SPI_3_sen_slope",
+   "y": "SPEI_1_sen_slope"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A Climate Dataset for Drought Analysis Across All 64 Districts of Bangladesh (1981\u20132025): ' (Zenodo, doi 10.5281/zenodo.20218450): 'SPEI_1_sen_slope' follows a power law in 'SPI_3_sen_slope' (R\u00b2 = 0.951 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20218450",
+   "held_out_r2": 0.8988,
+   "held_out_rows": 32,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f9686afea092",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "e14794465071a080.csv",
+   "doi": "10.5281/zenodo.20218450",
+   "form": "exponential",
+   "params": [
+    -7.5263130890786325,
+    605.309217821511
+   ],
+   "seed": 2012699629,
+   "x": "SPI_3_sen_slope",
+   "y": "SPEI_3_sen_slope"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A Climate Dataset for Drought Analysis Across All 64 Districts of Bangladesh (1981\u20132025): ' (Zenodo, doi 10.5281/zenodo.20218450): 'SPEI_3_sen_slope' grows exponentially in 'SPI_3_sen_slope' (R\u00b2 = 0.956 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20218450",
+   "held_out_r2": 0.8432,
+   "held_out_rows": 32,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ce8ba8675e72",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "e14794465071a080.csv",
+   "doi": "10.5281/zenodo.20218450",
+   "form": "exponential",
+   "params": [
+    -3.1535843523687386,
+    8.387114172363116
+   ],
+   "seed": 2012699629,
+   "x": "SPI_6_pvalue",
+   "y": "SPEI_3_pvalue"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A Climate Dataset for Drought Analysis Across All 64 Districts of Bangladesh (1981\u20132025): ' (Zenodo, doi 10.5281/zenodo.20218450): 'SPEI_3_pvalue' grows exponentially in 'SPI_6_pvalue' (R\u00b2 = 0.915 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20218450",
+   "held_out_r2": 0.9789,
+   "held_out_rows": 32,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-956dcd60760d",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "e14794465071a080.csv",
+   "doi": "10.5281/zenodo.20218450",
+   "form": "linear",
+   "params": [
+    -0.0033179738865611826,
+    1.0335369223755997
+   ],
+   "seed": 2012699629,
+   "x": "SPI_6_pvalue",
+   "y": "SPEI_6_pvalue"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A Climate Dataset for Drought Analysis Across All 64 Districts of Bangladesh (1981\u20132025): ' (Zenodo, doi 10.5281/zenodo.20218450): 'SPEI_6_pvalue' is linear in 'SPI_6_pvalue' (R\u00b2 = 0.992 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20218450",
+   "held_out_r2": 0.7838,
+   "held_out_rows": 32,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-90504bbb09f7",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "e14794465071a080.csv",
+   "doi": "10.5281/zenodo.20218450",
+   "form": "linear",
+   "params": [
+    -0.000496634790292273,
+    0.6258437568565328
+   ],
+   "seed": 2012699629,
+   "x": "SPI_6_sen_slope",
+   "y": "SPEI_1_sen_slope"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A Climate Dataset for Drought Analysis Across All 64 Districts of Bangladesh (1981\u20132025): ' (Zenodo, doi 10.5281/zenodo.20218450): 'SPEI_1_sen_slope' is linear in 'SPI_6_sen_slope' (R\u00b2 = 0.912 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20218450",
+   "held_out_r2": 0.7468,
+   "held_out_rows": 32,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9fec188d7bd1",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "e14794465071a080.csv",
+   "doi": "10.5281/zenodo.20218450",
+   "form": "exponential",
+   "params": [
+    -7.6920711503940264,
+    462.6734483223477
+   ],
+   "seed": 2012699629,
+   "x": "SPI_6_sen_slope",
+   "y": "SPEI_3_sen_slope"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A Climate Dataset for Drought Analysis Across All 64 Districts of Bangladesh (1981\u20132025): ' (Zenodo, doi 10.5281/zenodo.20218450): 'SPEI_3_sen_slope' grows exponentially in 'SPI_6_sen_slope' (R\u00b2 = 0.929 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20218450",
+   "held_out_r2": 0.9823,
+   "held_out_rows": 128,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f415a2b9e083",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "9aa63211ae07a46f.csv",
+   "doi": "10.5281/zenodo.20218450",
+   "form": "power law",
+   "params": [
+    4.592940523408942,
+    -0.9805161475863726
+   ],
+   "seed": 2048119122,
+   "x": "total_events",
+   "y": "mean_duration_months"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A Climate Dataset for Drought Analysis Across All 64 Districts of Bangladesh (1981\u20132025): ' (Zenodo, doi 10.5281/zenodo.20218450): 'mean_duration_months' follows a power law in 'total_events' (R\u00b2 = 0.982 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20218450",
+   "held_out_r2": 0.9415,
+   "held_out_rows": 128,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-babe5f2cbbcf",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "9aa63211ae07a46f.csv",
+   "doi": "10.5281/zenodo.20218450",
+   "form": "power law",
+   "params": [
+    6.116811913766007,
+    -1.2315719136988157
+   ],
+   "seed": 2048119122,
+   "x": "total_events",
+   "y": "longest_event_months"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A Climate Dataset for Drought Analysis Across All 64 Districts of Bangladesh (1981\u20132025): ' (Zenodo, doi 10.5281/zenodo.20218450): 'longest_event_months' follows a power law in 'total_events' (R\u00b2 = 0.944 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20218450",
+   "held_out_r2": 0.9503,
+   "held_out_rows": 128,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-62182d8104c1",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "9aa63211ae07a46f.csv",
+   "doi": "10.5281/zenodo.20218450",
+   "form": "power law",
+   "params": [
+    0.3560079441659968,
+    1.251470970986234
+   ],
+   "seed": 2048119122,
+   "x": "mean_duration_months",
+   "y": "longest_event_months"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A Climate Dataset for Drought Analysis Across All 64 Districts of Bangladesh (1981\u20132025): ' (Zenodo, doi 10.5281/zenodo.20218450): 'longest_event_months' follows a power law in 'mean_duration_months' (R\u00b2 = 0.955 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20752992",
+   "held_out_r2": 0.905,
+   "held_out_rows": 836,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-8c8f28a6d041",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "a6cb642c109fb58f.csv",
+   "doi": "10.5281/zenodo.20752992",
+   "form": "power law",
+   "params": [
+    1.0943088189902603,
+    0.9179731599345069
+   ],
+   "seed": 3712327370,
+   "x": "Na+",
+   "y": "Cl-"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Bangladesh Groundwater Arsenic Dataset: 1,807 Samples across Seven Physiographic Zones' (Zenodo, doi 10.5281/zenodo.20752992): 'Cl-' follows a power law in 'Na+' (R\u00b2 = 0.916 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15224728",
+   "held_out_r2": 0.9531,
+   "held_out_rows": 80,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-770f49e354bc",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "7ccf02823bb257ab.csv",
+   "doi": "10.5281/zenodo.15224728",
+   "form": "exponential",
+   "params": [
+    -0.027518239362263212,
+    0.48333787087924585
+   ],
+   "seed": 1560953261,
+   "x": "no3",
+   "y": "tn"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Phytoplankton community dynamics and vertical nutrient fluxes during the winter-to-spring ' (Zenodo, doi 10.5281/zenodo.15224728): 'tn' grows exponentially in 'no3' (R\u00b2 = 0.929 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15224728",
+   "held_out_r2": 0.8996,
+   "held_out_rows": 121,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-72fd8f3d1a81",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "b053f04e3bb55f78.csv",
+   "doi": "10.5281/zenodo.15224728",
+   "form": "exponential",
+   "params": [
+    -1.9220800749747482,
+    0.01689951519647595
+   ],
+   "seed": 4288679454,
+   "x": "rad",
+   "y": "PAR"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Phytoplankton community dynamics and vertical nutrient fluxes during the winter-to-spring ' (Zenodo, doi 10.5281/zenodo.15224728): 'PAR' grows exponentially in 'rad' (R\u00b2 = 0.909 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15224728",
+   "held_out_r2": 0.907,
+   "held_out_rows": 121,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-77f4a77cce97",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "b053f04e3bb55f78.csv",
+   "doi": "10.5281/zenodo.15224728",
+   "form": "exponential",
+   "params": [
+    -1.4477824730452062,
+    0.015563610614114433
+   ],
+   "seed": 4288679454,
+   "x": "rad",
+   "y": "PAR2"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Phytoplankton community dynamics and vertical nutrient fluxes during the winter-to-spring ' (Zenodo, doi 10.5281/zenodo.15224728): 'PAR2' grows exponentially in 'rad' (R\u00b2 = 0.916 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15224728",
+   "held_out_r2": 0.8632,
+   "held_out_rows": 121,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9c223972e0d4",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "b053f04e3bb55f78.csv",
+   "doi": "10.5281/zenodo.15224728",
+   "form": "logarithmic",
+   "params": [
+    23.788271886607887,
+    -6.89196507244753
+   ],
+   "seed": 4288679454,
+   "x": "zmix",
+   "y": "PAR"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Phytoplankton community dynamics and vertical nutrient fluxes during the winter-to-spring ' (Zenodo, doi 10.5281/zenodo.15224728): 'PAR' grows logarithmically in 'zmix' (R\u00b2 = 0.918 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15224728",
+   "held_out_r2": 0.8555,
+   "held_out_rows": 121,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-6548da110d62",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "b053f04e3bb55f78.csv",
+   "doi": "10.5281/zenodo.15224728",
+   "form": "logarithmic",
+   "params": [
+    24.659310831401093,
+    -7.053234023554061
+   ],
+   "seed": 4288679454,
+   "x": "zmix",
+   "y": "PAR2"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Phytoplankton community dynamics and vertical nutrient fluxes during the winter-to-spring ' (Zenodo, doi 10.5281/zenodo.15224728): 'PAR2' grows logarithmically in 'zmix' (R\u00b2 = 0.910 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15224728",
+   "held_out_r2": 0.8996,
+   "held_out_rows": 121,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-10ad98fc44ac",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "b053f04e3bb55f78.csv",
+   "doi": "10.5281/zenodo.15224728",
+   "form": "exponential",
+   "params": [
+    -1.9220800749747478,
+    0.09531980540933387
+   ],
+   "seed": 4288679454,
+   "x": "I0",
+   "y": "PAR"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Phytoplankton community dynamics and vertical nutrient fluxes during the winter-to-spring ' (Zenodo, doi 10.5281/zenodo.15224728): 'PAR' grows exponentially in 'I0' (R\u00b2 = 0.909 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15224728",
+   "held_out_r2": 0.907,
+   "held_out_rows": 121,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b85617c9258b",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "b053f04e3bb55f78.csv",
+   "doi": "10.5281/zenodo.15224728",
+   "form": "exponential",
+   "params": [
+    -1.4477824730452058,
+    0.08778478660224459
+   ],
+   "seed": 4288679454,
+   "x": "I0",
+   "y": "PAR2"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Phytoplankton community dynamics and vertical nutrient fluxes during the winter-to-spring ' (Zenodo, doi 10.5281/zenodo.15224728): 'PAR2' grows exponentially in 'I0' (R\u00b2 = 0.916 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.15482/USDA.ADC/33325038.v1",
+   "held_out_r2": 0.9726,
+   "held_out_rows": 1969,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-19947957d529",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "413102e87a1ce955.csv",
+   "doi": "10.15482/USDA.ADC/33325038.v1",
+   "form": "linear",
+   "params": [
+    3941.3976529804518,
+    4.258942601649269
+   ],
+   "seed": 3111908834,
+   "x": "project_id_sg",
+   "y": "wri_database_no"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Considering the Resistance and Resilience Framework as a Tool for Building Site' (Figshare, doi 10.15482/USDA.ADC/33325038.v1): 'wri_database_no' is linear in 'project_id_sg' (R\u00b2 = 0.971 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
