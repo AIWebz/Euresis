@@ -4815,3 +4815,4 @@
 - 2026-11-18 10:51 FINDING (confirmed on held-out rows): In 'Mineral composition and Sr isotopic data of the Takada Granodiorite and related rocks, Sou' (Figshare, doi 10.51087/data.geosoc.28919306.v1): 'Na2O  ' is linear in 'CaO   ' (R² = 0.989 on the discovery half); held-out R² = 0.979 [emp-2f81650a88b4]
 - 2026-11-18 10:51 FINDING (confirmed on held-out rows): In 'Mineral composition and Sr isotopic data of the Takada Granodiorite and related rocks, Sou' (Figshare, doi 10.51087/data.geosoc.28919306.v1): 'An' is linear in 'Na2O  ' (R² = 0.993 on the discovery half); held-out R² = 0.987 [emp-f889632a27f3]
 - 2026-11-18 10:52 data feeds: 30897 datasets analysed so far, 4237 confirmed findings
+- 2026-11-18 11:38 data feeds: online
