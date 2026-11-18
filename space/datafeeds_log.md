@@ -4872,3 +4872,5 @@
 - 2026-11-18 11:47 FINDING (confirmed on held-out rows): In 'Data for: Superconductivity and quantized anomalous Hall effects in rhombohedral graphene' (Zenodo, doi 10.5281/zenodo.14458163): '2.603319232020826917e+02.1' is linear in '2.667534157449577492e+02' (R² = 0.984 on the discovery half); held-out R² = 0.980 [emp-4a97798833b0]
 - 2026-11-18 11:48 data feeds: 31043 datasets analysed so far, 4291 confirmed findings
 - 2026-11-18 12:49 data feeds: online
+- 2026-11-18 12:55 FINDING (confirmed on held-out rows): In 'Data from: Trading water for carbon in the future: effects of elevated CO2 and warming on ' (Zenodo, doi 10.5061/dryad.2280gb5vn): 'Turgor loss point (MPa)' is linear in 'Leaf osmotic potential at full turgor (MPa)' (R² = 0.919 on the discovery half); held-out R² = 0.947 [emp-fe1c11781a0f]
+- 2026-11-18 12:55 data feeds: 31200 datasets analysed so far, 4292 confirmed findings
