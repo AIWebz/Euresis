@@ -4665,3 +4665,4 @@
 - 2026-11-18 00:27 FINDING (confirmed on held-out rows): In 'CRC3D: compartment-switching analysis of colorectal cancer Hi-C (code, results, and audit ' (Zenodo, doi 10.5281/zenodo.24149189): 'B2A' is linear in 'nbins' (R² = 0.991 on the discovery half); held-out R² = 0.978 [emp-434a832fb2e6]
 - 2026-11-18 00:27 FINDING (confirmed on held-out rows): In 'CRC3D: compartment-switching analysis of colorectal cancer Hi-C (code, results, and audit ' (Zenodo, doi 10.5281/zenodo.24149189): 'lenMb' follows a power law in 'nbins' (R² = 0.957 on the discovery half); held-out R² = 0.976 [emp-d2a1ed59bd1b]
 - 2026-11-18 00:29 data feeds: 29936 datasets analysed so far, 4109 confirmed findings
+- 2026-11-18 01:34 data feeds: online
