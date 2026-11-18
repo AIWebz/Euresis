@@ -6818,3 +6818,14 @@
 - 2026-11-18 03:33 round 6230: Cournot duopoly
 - 2026-11-18 03:36 round 6231: insurance and risk
 - 2026-11-18 03:37 round 6232: auction with a reserve price
+- 2026-11-18 03:39 round 6233: two-body decay
+- 2026-11-18 03:41 round 6234: collision
+- 2026-11-18 03:44 round 6235: driven oscillator
+- 2026-11-18 03:45 round 6236: velocity addition
+- 2026-11-18 03:46 round 6237: Compton scattering
+- 2026-11-18 03:47 round 6238: Cournot duopoly
+- 2026-11-18 03:49 round 6239: insurance and risk
+- 2026-11-18 03:50 round 6240: auction with a reserve price
+- 2026-11-18 03:52 round 6241: two-body decay
+- 2026-11-18 03:54 round 6242: collision
+- 2026-11-18 03:57 round 6243: driven oscillator
