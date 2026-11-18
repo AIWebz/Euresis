@@ -3638559,5 +3638559,248 @@
   "statement": "Octal game 0.0743265 is completely solved: its Grundy values are periodic with pre-period 284 and period 48 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.19061737",
+   "held_out_r2": 0.9507,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-1ede9583b34d",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "582cbbce5b654359.csv",
+   "doi": "10.5281/zenodo.19061737",
+   "form": "exponential",
+   "params": [
+    2.7015167434426304,
+    -3.3874070676790735
+   ],
+   "seed": 487416795,
+   "x": "dockq",
+   "y": "irms"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Cognate and non-cognate antibody-antigen complexes: 1.8 million AI-generated structures' (Zenodo, doi 10.5281/zenodo.19061737): 'irms' grows exponentially in 'dockq' (R\u00b2 = 0.951 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.19061737",
+   "held_out_r2": 0.9253,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-020766e25327",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "582cbbce5b654359.csv",
+   "doi": "10.5281/zenodo.19061737",
+   "form": "exponential",
+   "params": [
+    3.745687032806023,
+    -3.663968985634181
+   ],
+   "seed": 487416795,
+   "x": "dockq",
+   "y": "lrms"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Cognate and non-cognate antibody-antigen complexes: 1.8 million AI-generated structures' (Zenodo, doi 10.5281/zenodo.19061737): 'lrms' grows exponentially in 'dockq' (R\u00b2 = 0.927 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.19061737",
+   "held_out_r2": 0.9731,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-95c84aa038e4",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "582cbbce5b654359.csv",
+   "doi": "10.5281/zenodo.19061737",
+   "form": "linear",
+   "params": [
+    -0.0007337521014842125,
+    1.064677888151131
+   ],
+   "seed": 487416795,
+   "x": "dockq",
+   "y": "fnat"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Cognate and non-cognate antibody-antigen complexes: 1.8 million AI-generated structures' (Zenodo, doi 10.5281/zenodo.19061737): 'fnat' is linear in 'dockq' (R\u00b2 = 0.973 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.19061737",
+   "held_out_r2": 0.9483,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f37794b8528f",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "582cbbce5b654359.csv",
+   "doi": "10.5281/zenodo.19061737",
+   "form": "linear",
+   "params": [
+    0.9890787075725759,
+    -1.020439058020242
+   ],
+   "seed": 487416795,
+   "x": "dockq",
+   "y": "fnonnat"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Cognate and non-cognate antibody-antigen complexes: 1.8 million AI-generated structures' (Zenodo, doi 10.5281/zenodo.19061737): 'fnonnat' is linear in 'dockq' (R\u00b2 = 0.948 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.19061737",
+   "held_out_r2": 0.9037,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-7fd9c504fa4f",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "582cbbce5b654359.csv",
+   "doi": "10.5281/zenodo.19061737",
+   "form": "logarithmic",
+   "params": [
+    0.8212627158084972,
+    -0.2957372673257948
+   ],
+   "seed": 487416795,
+   "x": "irms",
+   "y": "fnat"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Cognate and non-cognate antibody-antigen complexes: 1.8 million AI-generated structures' (Zenodo, doi 10.5281/zenodo.19061737): 'fnat' grows logarithmically in 'irms' (R\u00b2 = 0.905 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.19061737",
+   "held_out_r2": 0.9694,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-fa9a1a00ab1d",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "582cbbce5b654359.csv",
+   "doi": "10.5281/zenodo.19061737",
+   "form": "linear",
+   "params": [
+    0.987533067808998,
+    -0.956286327285276
+   ],
+   "seed": 487416795,
+   "x": "fnat",
+   "y": "fnonnat"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Cognate and non-cognate antibody-antigen complexes: 1.8 million AI-generated structures' (Zenodo, doi 10.5281/zenodo.19061737): 'fnonnat' is linear in 'fnat' (R\u00b2 = 0.970 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.19061737",
+   "held_out_r2": 0.9743,
+   "held_out_rows": 1182,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4f2c9f10cc09",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "11543422ee12452e.csv",
+   "doi": "10.5281/zenodo.19061737",
+   "form": "linear",
+   "params": [
+    -19.039697723531766,
+    0.34833140520848427
+   ],
+   "seed": 2423423268,
+   "x": "avg_power_w",
+   "y": "avg_util_pct"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Cognate and non-cognate antibody-antigen complexes: 1.8 million AI-generated structures' (Zenodo, doi 10.5281/zenodo.19061737): 'avg_util_pct' is linear in 'avg_power_w' (R\u00b2 = 0.975 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.19061737",
+   "held_out_r2": 0.9876,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b9228f8ab62c",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "90988547006a8579.csv",
+   "doi": "10.5281/zenodo.19061737",
+   "form": "linear",
+   "params": [
+    0.09103213647673776,
+    0.9154151346359584
+   ],
+   "seed": 2079510310,
+   "x": "iptm",
+   "y": "aggregate_score"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Cognate and non-cognate antibody-antigen complexes: 1.8 million AI-generated structures' (Zenodo, doi 10.5281/zenodo.19061737): 'aggregate_score' is linear in 'iptm' (R\u00b2 = 0.988 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.6m905qg22",
+   "held_out_r2": 0.947,
+   "held_out_rows": 432,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-01ca27a8ad54",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "7cf6044a01bf3f48.csv",
+   "doi": "10.5061/dryad.6m905qg22",
+   "form": "power law",
+   "params": [
+    0.13501477943289553,
+    0.8584542199168413
+   ],
+   "seed": 211679551,
+   "x": "F",
+   "y": "Fm"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Interactions among multiple stressors vary with exposure duration and biological response' (Zenodo, doi 10.5061/dryad.6m905qg22): 'Fm' follows a power law in 'F' (R\u00b2 = 0.935 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
