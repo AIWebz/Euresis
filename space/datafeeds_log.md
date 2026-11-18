@@ -4749,3 +4749,4 @@
 - 2026-11-18 07:08 FINDING (confirmed on held-out rows): In 'Cognate and non-cognate antibody-antigen complexes: 1.8 million AI-generated structures' (Zenodo, doi 10.5281/zenodo.19061737): 'aggregate_score' is linear in 'iptm' (R² = 0.988 on the discovery half); held-out R² = 0.988 [emp-b9228f8ab62c]
 - 2026-11-18 07:09 FINDING (confirmed on held-out rows): In 'Interactions among multiple stressors vary with exposure duration and biological response' (Zenodo, doi 10.5061/dryad.6m905qg22): 'Fm' follows a power law in 'F' (R² = 0.935 on the discovery half); held-out R² = 0.947 [emp-01ca27a8ad54]
 - 2026-11-18 07:09 data feeds: 30648 datasets analysed so far, 4179 confirmed findings
+- 2026-11-18 07:48 data feeds: online
