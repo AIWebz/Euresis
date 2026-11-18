@@ -3578212,5 +3578212,32 @@
   "statement": "In 'Dataset from Article \"INGe: Intensity-ground motion data set for Italy\"' (Zenodo, doi 10.13127/inge.1): 'st_longitude' follows a power law in 'ev_longitude' (R\u00b2 = 0.936 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "u < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-c76d5ee4385f",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "u < 1",
+    "v < 1"
+   ],
+   "claim": "1/sqrt(-(u + v)**2/(u*v + 1)**2 + 1) >= 1*(u/sqrt(1 - u**2) + v/(sqrt(1 - v**2)*sqrt(u + 1)*sqrt(v + 1)*sqrt(1/(1 - u))*sqrt(1/(1 - v))))",
+   "symbols": [
+    "u",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 6188",
+  "statement": "[physics: velocity addition] Lorentz gamma of the composed motion [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Relativistic Momentum Ratio [model-proposed; physical meaning unverified]   on u < 1, v < 1 (tight only at the edge of the domain, near (1, 1.51e-08))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]
