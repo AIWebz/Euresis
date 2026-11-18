@@ -4722,3 +4722,4 @@
 - 2026-11-18 05:09 FINDING (confirmed on held-out rows): In 'Slow soil enzyme recovery following invasive tree removal through gradual changes in bacte' (Zenodo, doi 10.5061/dryad.jdfn2z3gr): 'MineralN' follows a power law in 'AvailN' (R² = 0.942 on the discovery half); held-out R² = 0.938 [emp-43975e0c26f6]
 - 2026-11-18 05:10 FINDING (confirmed on held-out rows): In 'Exploring the Relationship between Lipid Profile Changes, Growth and Reproduction in Folso' (Zenodo, doi 10.5281/zenodo.10519042): 'biomass.individual.dry(g)' follows a power law in 'biomass.individual.wet(g)' (R² = 0.971 on the discovery half); held-out R² = 0.983 [emp-10cd88932135]
 - 2026-11-18 05:10 data feeds: 30157 datasets analysed so far, 4156 confirmed findings
+- 2026-11-18 05:54 data feeds: online
