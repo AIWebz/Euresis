@@ -90677,6 +90677,201 @@
    "family": "driven oscillator",
    "expr": "2*r**2*z/((1 - r**2)**2 + (2*z*r)**2)",
    "why": "affine combination of known quantities (amplitude / static deflection, mean absorbed power (normalised))"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 + u)/(1 - u)) * sqrt((1 + v)/(1 - v)) / sqrt((1 + (u + v)/(1 + u*v)) / (1 - (u + v)/(1 + u*v",
+   "why": "affine combination of known quantities (composed speed / c)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 - u**2)*(1 - v**2) + (u + v)**2/(u*v + 1)**2) / (u*v + 1)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt(1 - u**2)*sqrt(1 - v**2) + (u + v)*sqrt(1 - (u + v)**2/(u*v + 1)**2)/(u*v + 1)",
+   "why": "affine combination of known quantities (composed speed / c, Relativistic Energy-Momentum Invariant [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 - u**2)*(1 - v**2) + (u + v)**2/(u*v + 1)**2)",
+   "why": "affine combination of known quantities (composed speed / c, Relativistic Beta Addition [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "1 - c/(c*x + 1) + 1/(c*x + 1) - 1/(c*x + 1)**2",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "c*x**2/(c*x + 1)**2 + c*x/(c*x + 1) - 1/(c*x + 1)",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "c2/(c1/3 + c2/3 + 1/3)",
+   "why": "affine combination of known quantities (output of firm 1, 1/(Price to Marginal Cost Ratio for Firm 2 [model-proposed; physical meaning unverified]))"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "((1 - 2*c1 + c2)**2)/((1 - 2*c2 + c1)**2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "sqrt((-2*c1 + c2 + 1)**2 + (c1 - 2*c2 + 1)**2)/((1 - c1)**2 + (1 - c2)**2 + (-c1 - c2 + 1)**2)",
+   "why": "affine combination of known quantities (output of firm 1, Total Welfare Efficiency Index [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "(-c1 - c2 + 2)**2/(18*((-2*c1 + c2 + 1)**2/9 + (-c1 - c2 + 2)**2/18 + (c1 - 2*c2 + 1)**2/9))",
+   "why": "affine combination of known quantities (output of firm 1, Consumer Surplus to Total Welfare Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "(-L*p + 1)**2/(-p*sqrt(1 - L) + sqrt(1 - L) - 1 + 1/(p*sqrt(1 - L) - p + 1))**2",
+   "why": "affine combination of known quantities (expected wealth, Insurance Risk Adjustment Ratio Squared [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "1 + 1/(1 - L) - 2/sqrt(1 - L)",
+   "why": "affine combination of known quantities (expected wealth, Relative Risk Aversion Squared [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "-(p*sqrt(1 - L) - p + 1)**2/(-L*p + p*sqrt(1 - L) - p + 2) + 1",
+   "why": "affine combination of known quantities (expected wealth, Insurance Coverage Ratio Adjusted [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "L*p/(-p*sqrt(1 - L) + p + sqrt(1 - L) - sqrt(-L*p + 1) + 1 + 1/(p*sqrt(1 - L) - p + 1))",
+   "why": "affine combination of known quantities (expected wealth, Insurance Risk Sensitivity Ratio Adjusted [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(-2*r**3/3 + r**2*v + 2/3)/(-2*r**3/3 + r**2*v + 2*r**2 + 2/3)",
+   "why": "affine combination of known quantities (expected revenue, Welfare Efficiency with Seller Value Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(2*r**3/3 + r**2*v - r**2 + 1/3)/(8*r**3/3 - 3*r**2 + 1)",
+   "why": "affine combination of known quantities (expected revenue, Bidder Surplus Reserve Efficiency with Seller Value and Reserve [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(r**2*v + 2/3)/(4*r**3/3 + 2*r**2*v - r**2 + 1)",
+   "why": "affine combination of known quantities (expected revenue, Welfare Reserve Efficiency with Seller Value and Reserve [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(2*r**3/3 + r**2*v - r**2 + 1/3)/(2*r**3/3 - r**2 + 1)",
+   "why": "affine combination of known quantities (expected revenue, Bidder Surplus Reserve Efficiency with Seller Value and Reserve Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "sqrt((1 - (a - b)**2)*(1 - (a + b)**2))/sqrt((-a**2 + b**2 + 1)**2 + (a**2 - b**2 + 1)**2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "collision",
+   "expr": "e * m / (1 + m) + 1",
+   "why": "affine combination of known quantities (target speed / initial speed, speed of the centre of mass / initial speed)"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2 * m**2 / ((m + 1)**2 * (-e**2 * m**2 / (m + 1)**2 - e**2 * m / (m + 1) - (1 - e**2) / (m + 1) +",
+   "why": "affine combination of known quantities (target speed / initial speed, Fraction of Kinetic Energy Retained by the Target Relative to the System [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2 * m**2 / (e**2 * m**2 - e**2 * m**2 / (m + 1)**2 - e**2 * m / (m + 1) + 1",
+   "why": "does not parse"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2 * m**2 / (e**2 * m**2 + (m + 1)**2)",
+   "why": "affine combination of known quantities (target speed / initial speed, Kinetic Energy Ratio of Target to Projectile After Collision [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(4*r**2*z**2 + 1)*sqrt(4*r**2*z**2 + (1 - r**2)**2)/(2*r*z*(sqrt(4*r**2*z**2 + 1) + sqrt(4*r**2*",
+   "why": "affine combination of known quantities (quality factor, Power Amplification Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "2*r**2*z/(8*r**2*z**2 + (1 - r**2)**2 + 1)",
+   "why": "affine combination of known quantities (amplitude / static deflection, Normalized Power Transmission (Corrected) [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(4*z**2 + 1) - 1",
+   "why": "affine combination of known quantities (amplitude / static deflection, Resonance Width [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 + u)/(1 - u)) * sqrt((1 + v)/(1 - v)) / sqrt((1 + (u + v)/(1 + u*v)) / (1 - (u + v)/(1 + u*v",
+   "why": "affine combination of known quantities (composed speed / c)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt(1 - u**2) * sqrt(1 - v**2) + (u + v) * sqrt(1 - ((u + v)/(1 + u*v))**2) / (1 + u*v)",
+   "why": "affine combination of known quantities (composed speed / c, Relativistic Energy-Momentum Invariant [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 - u**2)*(1 - v**2) + (u + v)**2/(1 + u*v)**2) / (1 + u*v)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 - u**2)*(1 - v**2) + (u + v)**2/(1 + u*v)**2) / (sqrt(1 - u**2) * sqrt(1 - v**2))",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "1 - c/(c*x + 1) + 1/(c*x + 1) - 1/(c*x + 1)**2",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "c*x**2/(c*x + 1)**2 + c*x/(c*x + 1) - 1/(c*x + 1) + 1",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, Electron kinetic energy to scattered photon energy ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "c/(x + 1) + c/(x + 1)**2 + 1/(x + 1) - 1",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "c**2*x**2/(c*x + 1)**2 + c*x**2/(c*x + 1) + sqrt(c**2*x**2/(c*x + 1)**2 + c*x**2/(c*x + 1)) + 1/(c*x",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, Recoil electron momentum to initial photon momentum ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "((1 - 2*c1 + c2)**2)/((1 - 2*c2 + c1)**2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "sqrt(-L*p + 1)/(-p*sqrt(1 - L) + p + 1)",
+   "why": "affine combination of known quantities (expected wealth, Risk Adjustment Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "1/sqrt(1 - L)",
+   "why": "affine combination of known quantities (expected wealth, Relative Risk Aversion [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "sqrt(-L*p + 1)/(-p*sqrt(1 - L) + 1)",
+   "why": "affine combination of known quantities (expected wealth, Relative Risk Adjustment Index [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "1 - (p*sqrt(1 - L) + 1 - p)**2",
+   "why": "affine combination of known quantities (expected wealth, certainty equivalent)"
   }
  ],
  "tried": [
@@ -99283,7 +99478,45 @@
   "Cournot duopoly|Cournot Price Ratio [model-proposed; physical meaning unverified]|Price Deviation Index [model-proposed; physical meaning unverified]",
   "Cournot duopoly|Cournot Price Ratio [model-proposed; physical meaning unverified]|Price Deviation from Monopoly Price [model-proposed; physical meaning unverified]",
   "Cournot duopoly|Cournot Price Ratio [model-proposed; physical meaning unverified]|Market Price Variance Ratio [model-proposed; physical meaning unverified]",
-  "Cournot duopoly|Cournot Price Ratio [model-proposed; physical meaning unverified]|Total Welfare Index [model-proposed; physical meaning unverified]"
+  "Cournot duopoly|Cournot Price Ratio [model-proposed; physical meaning unverified]|Total Welfare Index [model-proposed; physical meaning unverified]",
+  "Cournot duopoly|Cournot Price Ratio [model-proposed; physical meaning unverified]|Welfare Efficiency Ratio [model-proposed; physical meaning unverified]",
+  "Cournot duopoly|Cournot Price Ratio [model-proposed; physical meaning unverified]|Total Welfare Deviation Index [model-proposed; physical meaning unverified]",
+  "Cournot duopoly|Cournot Price Ratio [model-proposed; physical meaning unverified]|Market Price Variance [model-proposed; physical meaning unverified]",
+  "Cournot duopoly|Cournot Price Ratio [model-proposed; physical meaning unverified]|Total Welfare Efficiency Index [model-proposed; physical meaning unverified]",
+  "Cournot duopoly|Cournot Price Ratio [model-proposed; physical meaning unverified]|Price Deviation Ratio [model-proposed; physical meaning unverified]",
+  "Cournot duopoly|Cournot Price Ratio [model-proposed; physical meaning unverified]|Cournot Equilibrium Deviation Ratio [model-proposed; physical meaning unverified]",
+  "Cournot duopoly|Cournot Price Ratio [model-proposed; physical meaning unverified]|Consumer Surplus to Total Welfare Ratio [model-proposed; physical meaning unverified]",
+  "Cournot duopoly|Cournot Price Ratio [model-proposed; physical meaning unverified]|Consumer Surplus Efficiency Ratio [model-proposed; physical meaning unverified]",
+  "Cournot duopoly|Cournot Price Ratio [model-proposed; physical meaning unverified]|Cournot Price Deviation Index [model-proposed; physical meaning unverified]",
+  "Cournot duopoly|Cournot Price Ratio [model-proposed; physical meaning unverified]|Price Competition Index [model-proposed; physical meaning unverified]",
+  "Cournot duopoly|Price Competition Index [model-proposed; physical meaning unverified]|output of firm 1",
+  "Cournot duopoly|Price Competition Index [model-proposed; physical meaning unverified]|output of firm 2",
+  "Cournot duopoly|Price Competition Index [model-proposed; physical meaning unverified]|market price",
+  "Cournot duopoly|Price Competition Index [model-proposed; physical meaning unverified]|profit of firm 1",
+  "Cournot duopoly|Price Competition Index [model-proposed; physical meaning unverified]|profit of firm 2",
+  "Cournot duopoly|Price Competition Index [model-proposed; physical meaning unverified]|consumer surplus",
+  "Cournot duopoly|Price Competition Index [model-proposed; physical meaning unverified]|total industry profit",
+  "Cournot duopoly|Price Competition Index [model-proposed; physical meaning unverified]|firm 1's profit as a monopolist",
+  "Cournot duopoly|Price Competition Index [model-proposed; physical meaning unverified]|Lerner Index for Firm 1 [model-proposed; physical meaning unverified]",
+  "Cournot duopoly|Price Competition Index [model-proposed; physical meaning unverified]|Hirshleifer Index [model-proposed; physical meaning unverified]",
+  "Cournot duopoly|Price Competition Index [model-proposed; physical meaning unverified]|Mark-up Ratio [model-proposed; physical meaning unverified]",
+  "Cournot duopoly|Price Competition Index [model-proposed; physical meaning unverified]|Price Elasticity of Demand [model-proposed; physical meaning unverified]",
+  "Cournot duopoly|Price Competition Index [model-proposed; physical meaning unverified]|Market Price to Marginal Cost Ratio [model-proposed; physical meaning unverified]",
+  "Cournot duopoly|Price Competition Index [model-proposed; physical meaning unverified]|Price to Marginal Cost Ratio for Firm 2 [model-proposed; physical meaning unverified]",
+  "Cournot duopoly|Price Competition Index [model-proposed; physical meaning unverified]|Price Deviation Index [model-proposed; physical meaning unverified]",
+  "Cournot duopoly|Price Competition Index [model-proposed; physical meaning unverified]|Price Deviation from Monopoly Price [model-proposed; physical meaning unverified]",
+  "Cournot duopoly|Price Competition Index [model-proposed; physical meaning unverified]|Market Price Variance Ratio [model-proposed; physical meaning unverified]",
+  "Cournot duopoly|Price Competition Index [model-proposed; physical meaning unverified]|Total Welfare Index [model-proposed; physical meaning unverified]",
+  "Cournot duopoly|Price Competition Index [model-proposed; physical meaning unverified]|Welfare Efficiency Ratio [model-proposed; physical meaning unverified]",
+  "Cournot duopoly|Price Competition Index [model-proposed; physical meaning unverified]|Total Welfare Deviation Index [model-proposed; physical meaning unverified]",
+  "Cournot duopoly|Price Competition Index [model-proposed; physical meaning unverified]|Market Price Variance [model-proposed; physical meaning unverified]",
+  "Cournot duopoly|Price Competition Index [model-proposed; physical meaning unverified]|Total Welfare Efficiency Index [model-proposed; physical meaning unverified]",
+  "Cournot duopoly|Price Competition Index [model-proposed; physical meaning unverified]|Price Deviation Ratio [model-proposed; physical meaning unverified]",
+  "Cournot duopoly|Price Competition Index [model-proposed; physical meaning unverified]|Cournot Equilibrium Deviation Ratio [model-proposed; physical meaning unverified]",
+  "Cournot duopoly|Price Competition Index [model-proposed; physical meaning unverified]|Consumer Surplus to Total Welfare Ratio [model-proposed; physical meaning unverified]",
+  "Cournot duopoly|Price Competition Index [model-proposed; physical meaning unverified]|Consumer Surplus Efficiency Ratio [model-proposed; physical meaning unverified]",
+  "Cournot duopoly|Price Competition Index [model-proposed; physical meaning unverified]|Cournot Price Deviation Index [model-proposed; physical meaning unverified]",
+  "Cournot duopoly|Price Competition Index [model-proposed; physical meaning unverified]|Cournot Price Ratio [model-proposed; physical meaning unverified]"
  ],
  "edges": [
   {
@@ -112203,9 +112436,159 @@
    "f": "Cournot Price Ratio [model-proposed; physical meaning unverified]",
    "g": "Total Welfare Index [model-proposed; physical meaning unverified]",
    "k": "24/19"
+  },
+  {
+   "family": "Cournot duopoly",
+   "f": "Cournot Price Ratio [model-proposed; physical meaning unverified]",
+   "g": "Welfare Efficiency Ratio [model-proposed; physical meaning unverified]",
+   "k": "13/27"
+  },
+  {
+   "family": "Cournot duopoly",
+   "f": "Cournot Price Ratio [model-proposed; physical meaning unverified]",
+   "g": "Market Price Variance [model-proposed; physical meaning unverified]",
+   "k": "72/25"
+  },
+  {
+   "family": "Cournot duopoly",
+   "f": "Cournot Price Ratio [model-proposed; physical meaning unverified]",
+   "g": "Total Welfare Efficiency Index [model-proposed; physical meaning unverified]",
+   "k": "1/3"
+  },
+  {
+   "family": "Cournot duopoly",
+   "f": "Cournot Price Ratio [model-proposed; physical meaning unverified]",
+   "g": "Price Deviation Ratio [model-proposed; physical meaning unverified]",
+   "k": "4/21"
+  },
+  {
+   "family": "Cournot duopoly",
+   "f": "Cournot Price Ratio [model-proposed; physical meaning unverified]",
+   "g": "Cournot Equilibrium Deviation Ratio [model-proposed; physical meaning unverified]",
+   "k": "256/51"
+  },
+  {
+   "family": "Cournot duopoly",
+   "f": "Cournot Price Ratio [model-proposed; physical meaning unverified]",
+   "g": "Consumer Surplus to Total Welfare Ratio [model-proposed; physical meaning unverified]",
+   "k": "1"
+  },
+  {
+   "family": "Cournot duopoly",
+   "f": "Cournot Price Ratio [model-proposed; physical meaning unverified]",
+   "g": "Cournot Price Deviation Index [model-proposed; physical meaning unverified]",
+   "k": "9/8"
+  },
+  {
+   "family": "Cournot duopoly",
+   "f": "Cournot Price Ratio [model-proposed; physical meaning unverified]",
+   "g": "Price Competition Index [model-proposed; physical meaning unverified]",
+   "k": "1/3"
+  },
+  {
+   "family": "Cournot duopoly",
+   "f": "Price Competition Index [model-proposed; physical meaning unverified]",
+   "g": "output of firm 1",
+   "k": "2"
+  },
+  {
+   "family": "Cournot duopoly",
+   "f": "Price Competition Index [model-proposed; physical meaning unverified]",
+   "g": "output of firm 2",
+   "k": "2"
+  },
+  {
+   "family": "Cournot duopoly",
+   "f": "Price Competition Index [model-proposed; physical meaning unverified]",
+   "g": "market price",
+   "k": "3/4"
+  },
+  {
+   "family": "Cournot duopoly",
+   "f": "Price Competition Index [model-proposed; physical meaning unverified]",
+   "g": "profit of firm 1",
+   "k": "4"
+  },
+  {
+   "family": "Cournot duopoly",
+   "f": "Price Competition Index [model-proposed; physical meaning unverified]",
+   "g": "profit of firm 2",
+   "k": "4"
+  },
+  {
+   "family": "Cournot duopoly",
+   "f": "Price Competition Index [model-proposed; physical meaning unverified]",
+   "g": "consumer surplus",
+   "k": "9/2"
+  },
+  {
+   "family": "Cournot duopoly",
+   "f": "Price Competition Index [model-proposed; physical meaning unverified]",
+   "g": "total industry profit",
+   "k": "4"
+  },
+  {
+   "family": "Cournot duopoly",
+   "f": "Price Competition Index [model-proposed; physical meaning unverified]",
+   "g": "firm 1's profit as a monopolist",
+   "k": "4"
+  },
+  {
+   "family": "Cournot duopoly",
+   "f": "Price Competition Index [model-proposed; physical meaning unverified]",
+   "g": "Lerner Index for Firm 1 [model-proposed; physical meaning unverified]",
+   "k": "2/3"
+  },
+  {
+   "family": "Cournot duopoly",
+   "f": "Price Competition Index [model-proposed; physical meaning unverified]",
+   "g": "Hirshleifer Index [model-proposed; physical meaning unverified]",
+   "k": "1/2"
+  },
+  {
+   "family": "Cournot duopoly",
+   "f": "Price Competition Index [model-proposed; physical meaning unverified]",
+   "g": "Total Welfare Index [model-proposed; physical meaning unverified]",
+   "k": "18/5"
+  },
+  {
+   "family": "Cournot duopoly",
+   "f": "Price Competition Index [model-proposed; physical meaning unverified]",
+   "g": "Market Price Variance [model-proposed; physical meaning unverified]",
+   "k": "36/25"
+  },
+  {
+   "family": "Cournot duopoly",
+   "f": "Price Competition Index [model-proposed; physical meaning unverified]",
+   "g": "Cournot Equilibrium Deviation Ratio [model-proposed; physical meaning unverified]",
+   "k": "256/17"
+  },
+  {
+   "family": "Cournot duopoly",
+   "f": "Price Competition Index [model-proposed; physical meaning unverified]",
+   "g": "Consumer Surplus to Total Welfare Ratio [model-proposed; physical meaning unverified]",
+   "k": "1"
+  },
+  {
+   "family": "Cournot duopoly",
+   "f": "Price Competition Index [model-proposed; physical meaning unverified]",
+   "g": "Consumer Surplus Efficiency Ratio [model-proposed; physical meaning unverified]",
+   "k": "8"
+  },
+  {
+   "family": "Cournot duopoly",
+   "f": "Price Competition Index [model-proposed; physical meaning unverified]",
+   "g": "Cournot Price Deviation Index [model-proposed; physical meaning unverified]",
+   "k": "9/16"
+  },
+  {
+   "family": "Cournot duopoly",
+   "f": "Price Competition Index [model-proposed; physical meaning unverified]",
+   "g": "Cournot Price Ratio [model-proposed; physical meaning unverified]",
+   "k": "1/3"
   }
  ],
- "rounds": 6427,
+ "rounds": 6439,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",
