@@ -4718,3 +4718,7 @@
 - 2026-11-18 04:05 FINDING (confirmed on held-out rows): In 'Phytoplankton community dynamics and vertical nutrient fluxes during the winter-to-spring ' (Zenodo, doi 10.5281/zenodo.15224728): 'PAR2' grows exponentially in 'I0' (R² = 0.916 on the discovery half); held-out R² = 0.907 [emp-b85617c9258b]
 - 2026-11-18 04:07 FINDING (confirmed on held-out rows): In 'Data from: Considering the Resistance and Resilience Framework as a Tool for Building Site' (Figshare, doi 10.15482/USDA.ADC/33325038.v1): 'wri_database_no' is linear in 'project_id_sg' (R² = 0.971 on the discovery half); held-out R² = 0.973 [emp-19947957d529]
 - 2026-11-18 04:07 data feeds: 30100 datasets analysed so far, 4154 confirmed findings
+- 2026-11-18 05:09 data feeds: online
+- 2026-11-18 05:09 FINDING (confirmed on held-out rows): In 'Slow soil enzyme recovery following invasive tree removal through gradual changes in bacte' (Zenodo, doi 10.5061/dryad.jdfn2z3gr): 'MineralN' follows a power law in 'AvailN' (R² = 0.942 on the discovery half); held-out R² = 0.938 [emp-43975e0c26f6]
+- 2026-11-18 05:10 FINDING (confirmed on held-out rows): In 'Exploring the Relationship between Lipid Profile Changes, Growth and Reproduction in Folso' (Zenodo, doi 10.5281/zenodo.10519042): 'biomass.individual.dry(g)' follows a power law in 'biomass.individual.wet(g)' (R² = 0.971 on the discovery half); held-out R² = 0.983 [emp-10cd88932135]
+- 2026-11-18 05:10 data feeds: 30157 datasets analysed so far, 4156 confirmed findings

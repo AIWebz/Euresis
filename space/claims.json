@@ -3620656,5 +3620656,59 @@
   "statement": "Octal game 0.0741655 is completely solved: its Grundy values are periodic with pre-period 284 and period 48 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.jdfn2z3gr",
+   "held_out_r2": 0.9384,
+   "held_out_rows": 55,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-43975e0c26f6",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "b89f0d29961f95d9.csv",
+   "doi": "10.5061/dryad.jdfn2z3gr",
+   "form": "power law",
+   "params": [
+    -1.019187832954949,
+    1.155401178768422
+   ],
+   "seed": 3950746297,
+   "x": "AvailN",
+   "y": "MineralN"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Slow soil enzyme recovery following invasive tree removal through gradual changes in bacte' (Zenodo, doi 10.5061/dryad.jdfn2z3gr): 'MineralN' follows a power law in 'AvailN' (R\u00b2 = 0.942 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.10519042",
+   "held_out_r2": 0.9825,
+   "held_out_rows": 49,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-10cd88932135",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "78a1a8b14defae43.csv",
+   "doi": "10.5281/zenodo.10519042",
+   "form": "power law",
+   "params": [
+    1.7375770596208027,
+    0.9521769368333755
+   ],
+   "seed": 1443258808,
+   "x": "biomass.individual.wet(g)",
+   "y": "biomass.individual.dry(g)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Exploring the Relationship between Lipid Profile Changes, Growth and Reproduction in Folso' (Zenodo, doi 10.5281/zenodo.10519042): 'biomass.individual.dry(g)' follows a power law in 'biomass.individual.wet(g)' (R\u00b2 = 0.971 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
