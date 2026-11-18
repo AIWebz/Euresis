@@ -4737,3 +4737,4 @@
 - 2026-11-18 05:57 FINDING (confirmed on held-out rows): In 'Concentrated Hoval Ultrasol 2 1V (STC) Real Measurements in Switzerland' (Zenodo, doi 10.5281/zenodo.21788967): 'T_Out' follows a power law in 'T_In' (R² = 0.957 on the discovery half); held-out R² = 0.955 [emp-194c8f8b608a]
 - 2026-11-18 05:57 FINDING (confirmed on held-out rows): In 'Concentrated Hoval Ultrasol 2 1V (STC) Real Measurements in Switzerland' (Zenodo, doi 10.5281/zenodo.21788967): 'T_OutHE' grows logarithmically in 'T_In' (R² = 0.958 on the discovery half); held-out R² = 0.958 [emp-f7ff32af940f]
 - 2026-11-18 05:57 FINDING (confirmed on held-out rows): In 'Concentrated Hoval Ultrasol 2 1V (STC) Real Measurements in Switzerland' (Zenodo, doi 10.5281/zenodo.21788967): 'T_OutHE' follows a power law in 'T_InHE' (R² = 0.994 on the discovery half); held-out R² = 0.993 [emp-727fb37d6f90]
+- 2026-11-18 06:03 data feeds: 30606 datasets analysed so far, 4170 confirmed findings
