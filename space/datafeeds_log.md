@@ -4750,3 +4750,4 @@
 - 2026-11-18 07:09 FINDING (confirmed on held-out rows): In 'Interactions among multiple stressors vary with exposure duration and biological response' (Zenodo, doi 10.5061/dryad.6m905qg22): 'Fm' follows a power law in 'F' (R² = 0.935 on the discovery half); held-out R² = 0.947 [emp-01ca27a8ad54]
 - 2026-11-18 07:09 data feeds: 30648 datasets analysed so far, 4179 confirmed findings
 - 2026-11-18 07:48 data feeds: online
+- 2026-11-18 07:50 data feeds: 30690 datasets analysed so far, 4179 confirmed findings

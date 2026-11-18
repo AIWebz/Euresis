@@ -3642012,5 +3642012,140 @@
   "statement": "Octal game 0.0743455 is completely solved: its Grundy values are periodic with pre-period 284 and period 48 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22699997",
+   "held_out_r2": 0.9388,
+   "held_out_rows": 5333,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-59f14cf3de54",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "663f7f0a20b2a4b8.csv",
+   "doi": "10.5281/zenodo.22699997",
+   "form": "linear",
+   "params": [
+    1.0444051626458084,
+    -9.778205616364852
+   ],
+   "seed": 903560467,
+   "x": "blue_reflectance",
+   "y": "ENDVI"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data and code for \"Cross-Scale Winter Wheat Evapotranspiration Mapping by Integrating UAV\u2013' (Zenodo, doi 10.5281/zenodo.22699997): 'ENDVI' is linear in 'blue_reflectance' (R\u00b2 = 0.935 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22699997",
+   "held_out_r2": 0.9404,
+   "held_out_rows": 5333,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3fd3686cd2b7",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "663f7f0a20b2a4b8.csv",
+   "doi": "10.5281/zenodo.22699997",
+   "form": "exponential",
+   "params": [
+    -4.391971204658805,
+    24.306234954828316
+   ],
+   "seed": 903560467,
+   "x": "green_reflectance",
+   "y": "red_reflectance"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data and code for \"Cross-Scale Winter Wheat Evapotranspiration Mapping by Integrating UAV\u2013' (Zenodo, doi 10.5281/zenodo.22699997): 'red_reflectance' grows exponentially in 'green_reflectance' (R\u00b2 = 0.939 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22699997",
+   "held_out_r2": 0.9819,
+   "held_out_rows": 5333,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-52efa765971f",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "663f7f0a20b2a4b8.csv",
+   "doi": "10.5281/zenodo.22699997",
+   "form": "linear",
+   "params": [
+    -0.15802829516088596,
+    1.2912216945971866
+   ],
+   "seed": 903560467,
+   "x": "nir_reflectance",
+   "y": "DVI"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data and code for \"Cross-Scale Winter Wheat Evapotranspiration Mapping by Integrating UAV\u2013' (Zenodo, doi 10.5281/zenodo.22699997): 'DVI' is linear in 'nir_reflectance' (R\u00b2 = 0.981 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22699997",
+   "held_out_r2": 0.9615,
+   "held_out_rows": 5333,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-1c5dcdb5b3db",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "663f7f0a20b2a4b8.csv",
+   "doi": "10.5281/zenodo.22699997",
+   "form": "logarithmic",
+   "params": [
+    1.1713089314528142,
+    0.6308952682561251
+   ],
+   "seed": 903560467,
+   "x": "nir_reflectance",
+   "y": "EVI2"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data and code for \"Cross-Scale Winter Wheat Evapotranspiration Mapping by Integrating UAV\u2013' (Zenodo, doi 10.5281/zenodo.22699997): 'EVI2' grows logarithmically in 'nir_reflectance' (R\u00b2 = 0.960 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22699997",
+   "held_out_r2": 0.9326,
+   "held_out_rows": 5333,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d01a7be87c03",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "663f7f0a20b2a4b8.csv",
+   "doi": "10.5281/zenodo.22699997",
+   "form": "power law",
+   "params": [
+    -0.10120334536360469,
+    1.7643678563391862
+   ],
+   "seed": 903560467,
+   "x": "ENDVI",
+   "y": "EVI2"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data and code for \"Cross-Scale Winter Wheat Evapotranspiration Mapping by Integrating UAV\u2013' (Zenodo, doi 10.5281/zenodo.22699997): 'EVI2' follows a power law in 'ENDVI' (R\u00b2 = 0.930 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
