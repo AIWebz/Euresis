@@ -4778,3 +4778,4 @@
 - 2026-11-18 08:57 FINDING (confirmed on held-out rows): In 'Data from: Ocean acidification induces subtle shifts in gene expression and DNA methylatio' (Zenodo, doi 10.5061/dryad.8cz8w9gnk): 'pH_scaleFree_2W' grows logarithmically in 'ArgSat_Complete' (R² = 0.932 on the discovery half); held-out R² = 0.937 [emp-94c5134d4fbe]
 - 2026-11-18 08:57 FINDING (confirmed on held-out rows): In 'Data from: Ocean acidification induces subtle shifts in gene expression and DNA methylatio' (Zenodo, doi 10.5061/dryad.8cz8w9gnk): 'qvalue' follows a power law in 'pvalue' (R² = 0.998 on the discovery half); held-out R² = 0.985 [emp-92d4df9e2e9a]
 - 2026-11-18 08:58 data feeds: 30767 datasets analysed so far, 4204 confirmed findings
+- 2026-11-18 09:43 data feeds: online
