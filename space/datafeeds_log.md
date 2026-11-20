@@ -5145,3 +5145,4 @@
 - 2026-11-20 19:24 FINDING (confirmed on held-out rows): In 'Data for Causal Climate Factor (CCF) for (Re)Insurance' (Figshare, doi 10.6084/m9.figshare.34918680.v2): 'CPI' follows a power law in 'Start Year' (R² = 0.955 on the discovery half); held-out R² = 0.945 [emp-533a7d8c9bf1]
 - 2026-11-20 19:24 FINDING (confirmed on held-out rows): In 'Data for Causal Climate Factor (CCF) for (Re)Insurance' (Figshare, doi 10.6084/m9.figshare.34918680.v2): 'CPI' follows a power law in 'End Year' (R² = 0.956 on the discovery half); held-out R² = 0.946 [emp-09efce454f79]
 - 2026-11-20 19:24 data feeds: 32016 datasets analysed so far, 4534 confirmed findings
+- 2026-11-20 20:03 data feeds: online
