@@ -7281,3 +7281,6 @@
 - 2026-11-20 18:34 round 6647: insurance and risk
 - 2026-11-20 18:35 round 6648: auction with a reserve price
 - 2026-11-20 18:38 round 6649: two-body decay
+- 2026-11-20 18:40 round 6650: collision
+- 2026-11-20 18:42 round 6651: driven oscillator
+- 2026-11-20 18:44 segment end: 6651 rounds, 5 discoveries, 2 known laws rediscovered
