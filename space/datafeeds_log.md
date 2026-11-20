@@ -5017,3 +5017,4 @@
 - 2026-11-20 14:22 FINDING (confirmed on held-out rows): In 'Dataset Publication for  "A Comprehensive Stress Drop Map from Trench to Depth in the Nort' (Zenodo, doi 10.5281/zenodo.10400961): 'fcbound1' is linear in 'fc1' (R² = 0.983 on the discovery half); held-out R² = 0.983 [emp-3e0a4ef5dd6e]
 - 2026-11-20 14:22 FINDING (confirmed on held-out rows): In 'Dataset Publication for  "A Comprehensive Stress Drop Map from Trench to Depth in the Nort' (Zenodo, doi 10.5281/zenodo.10400961): 'fcbound2' follows a power law in 'fc1' (R² = 0.976 on the discovery half); held-out R² = 0.977 [emp-93ddfa670845]
 - 2026-11-20 14:23 data feeds: 31809 datasets analysed so far, 4416 confirmed findings
+- 2026-11-20 15:26 data feeds: online
