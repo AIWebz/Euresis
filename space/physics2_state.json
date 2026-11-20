@@ -91282,6 +91282,121 @@
    "family": "driven oscillator",
    "expr": "sqrt(r**4 + 4*r**2*z**2 + 1)/sqrt(4*r**2*z**2 + (1 - r**2)**2)",
    "why": "affine combination of known quantities (amplitude / static deflection, Acceleration Transmissibility [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 + u)/(1 - u)) * sqrt((1 + v)/(1 - v)) / sqrt((1 + (u + v)/(1 + u*v)) / (1 - (u + v)/(1 + u*v",
+   "why": "affine combination of known quantities (composed speed / c)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 - u**2)*(1 - v**2) + (u + v)**2/(u*v + 1)**2) / (u*v + 1)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "sqrt(c**2*x**2 + 1)/(x*(c*x + 1))",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, Scattered photon momentum / initial photon momentum [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "1/(2*c*x + 1)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, Compton scattering formula (recoil angle cosine) [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "c*x**2/(c*x + 1)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, electron kinetic energy / (m_e c\u00b2))"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "1/(c*x + 1)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy)"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "(1 - 2*c1 + c2)/(1 - 2*c2 + c1)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "((1 - c1)**2/4 - (1 - 2*c1 + c2)**2/9)/((1 - c2)**2/4 - (1 - 2*c2 + c1)**2/9)",
+   "why": "affine combination of known quantities (output of firm 1, Price Deviation from Monopoly Price [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "((1 - 2*c1 + c2)**2)/((1 - 2*c2 + c1)**2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "((2 - c1 - c2)**2/18)/((1 - c1)**2/4 + (1 - c2)**2/4 - (2 - c1 - c2)**2/18)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "sqrt(-L*p + 1)/(-p*sqrt(1 - L) + p + 1)",
+   "why": "affine combination of known quantities (expected wealth, Risk Adjustment Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "1/sqrt(1 - L)",
+   "why": "affine combination of known quantities (expected wealth, Relative Risk Aversion [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "1 - (p*sqrt(1 - L) + 1 - p)**2/(1 - p*L)",
+   "why": "affine combination of known quantities (expected wealth, Insurance Coverage Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "1 - (p*sqrt(1 - L) - p + 1)**2/(-L*p + 1)",
+   "why": "affine combination of known quantities (expected wealth, Insurance Coverage Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(-2*r**3/3 + r**2 + 1/3)/(1/3 + r**2 - 4*r**3/3)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(r**2*v + 2/3)/(4*r**3/3 + 2*r**2*v - r**2 + 1)",
+   "why": "affine combination of known quantities (expected revenue, Welfare Reserve Efficiency with Seller Value and Reserve [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(2*r**3/3 + r**2*v - r**2 + 1/3)/(4*r**3/3 + r**2*v - 2*r**2 + 4/3)",
+   "why": "affine combination of known quantities (expected revenue, Bidder Surplus Reserve Efficiency with Seller Value [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(-2*r**3/3 + r**2*v + 2/3)/(2*r**3/3 + r**2*v)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "1 - (a**2 + b**2 - (a - b)**2)/(-a - b + 1)",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2",
+   "why": "affine combination of known quantities (Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified], Fraction of kinetic energy transferred to the target [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "m + e",
+   "why": "affine combination of known quantities (target speed / initial speed, Sum of Mass Ratio and Coefficient of Restitution [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "m**2 + e",
+   "why": "affine combination of known quantities (target speed / initial speed, Mass ratio squared plus coefficient of restitution [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "sqrt(m**2 + e)",
+   "why": "a power or product of known quantities"
   }
  ],
  "tried": [
@@ -112998,7 +113113,7 @@
    "k": "1/3"
   }
  ],
- "rounds": 6467,
+ "rounds": 6474,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",
