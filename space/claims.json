@@ -3740495,5 +3740495,113 @@
   "statement": "[physics: collision] Ratio of Kinetic Energy of Target to System After Collision [model-proposed; physical meaning unverified] \u2265 13/5 \u00d7 Normalized Kinetic Energy Transfer to Target [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
   "status": "proved",
   "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-0588c305ab0f",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'target speed / initial speed'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "(-e**2*m**2/(m + 1)**2 - e**2*m/(m + 1) - (1 - e**2)/(m + 1) + 2)/(e**2*m**2/(m + 1)**2 + e**2*m/(m + 1) + (1 - e**2)/(m + 1)) >= 20/3*(e**2*m**2/(-e**2 + (m + 1)**2 + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 6538",
+  "statement": "[physics: collision] Ratio of Kinetic Energy of Projectile to Kinetic Energy of System After Collisio [model-proposed; physical meaning unverified] \u2265 20/3 \u00d7 Normalized Kinetic Energy Transfer to Target [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-2b5a4b254046",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'Kinetic energy ratio after collision [model-proposed; physical meaning unverified]'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "(m*(1 - e**2)/(m + 1) + (1 - e**2)/(m + 1))/((1 - e**2)*(1 - m)/(m + 1) + (1 - e**2)/(m + 1)) >= 243/32*(e**2*m**2/(-e**2 + (m + 1)**2 + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 6538",
+  "statement": "[physics: collision] Kinetic Energy Ratio of Projectile to Target After Collision [model-proposed; physical meaning unverified] \u2265 243/32 \u00d7 Normalized Kinetic Energy Transfer to Target [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (0.8, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-a129b8f05d7d",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'target speed / initial speed'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "m/(e + 1) + 1 >= 6*(e**2*m**2/(-e**2 + (m + 1)**2 + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 6538",
+  "statement": "[physics: collision] Mass Ratio Adjusted by Restitution [model-proposed; physical meaning unverified] \u2265 6 \u00d7 Normalized Kinetic Energy Transfer to Target [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-aaefa848f295",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'target speed / initial speed'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "e**2*m**2/(e**2*m**2 + (m + 1)**2) + 1 >= 24/5*(e**2*m**2/(-e**2 + (m + 1)**2 + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 6538",
+  "statement": "[physics: collision] Kinetic Energy Ratio of Target to Projectile After Collision [model-proposed; physical meaning unverified] \u2265 24/5 \u00d7 Normalized Kinetic Energy Transfer to Target [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]
