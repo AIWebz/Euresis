@@ -92783,6 +92783,31 @@
    "family": "auction with a reserve price",
    "expr": "(r**2*v + 2/3)/(4*r**3/3 + r**2*v - r**2 + 1/3)",
    "why": "a power or product of known quantities"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "sqrt((1 - (a - b)**2)*(1 - (a + b)**2)/4 + (a**2 - b**2 + 1)**2)/(a**2 - b**2 + 1)",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), Gamma factor of product 1 [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "sqrt((1 - (a - b)**2)*(1 - (a + b)**2)/4 + (-a**2 + b**2 + 1)**2)/(-a**2 + b**2 + 1)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "sqrt((1 - (a - b)**2)*(1 - (a + b)**2))/sqrt((-a**2 + b**2 + 1)**2 + (a**2 - b**2 + 1)**2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "sqrt(-(1 - (a - b)**2)*(1 - (a + b)**2)/4 + (a**2 - b**2 + 1)**2)/sqrt(-(1 - (a - b)**2)*(1 - (a + b",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), Invariant Mass Ratio of Product 1 to Total [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "1 - (1 - e**2)*m/(1 + m) - (1 - e**2)/(1 + m)",
+   "why": "affine combination of known quantities (Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified], Fraction of kinetic energy transferred to the target [model-proposed; physical meaning unverified])"
   }
  ],
  "tried": [
@@ -114891,7 +114916,7 @@
    "k": "3/10"
   }
  ],
- "rounds": 6568,
+ "rounds": 6570,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",
