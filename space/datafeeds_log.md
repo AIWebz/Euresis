@@ -5054,3 +5054,4 @@
 - 2026-11-20 17:20 FINDING (confirmed on held-out rows): In 'Results of zircon U–Pb dating from the Sawando Complex, the Mino Terrane, in the Takane ar' (Figshare, doi 10.51087/data.geosoc.28606019.v1): '235U-207Pb date (Ma)' is linear in 'Uncertainity (2ƒÐ; Ma)' (R² = 0.952 on the discovery half); held-out R² = 0.950 [emp-1d3fc8257460]
 - 2026-11-20 17:20 FINDING (confirmed on held-out rows): In 'Results of zircon U–Pb dating from the Sawando Complex, the Mino Terrane, in the Takane ar' (Figshare, doi 10.51087/data.geosoc.28606019.v1): 'Uncertainity (2ƒÐ; Ma).1' follows a power law in '235U-207Pb date (Ma)' (R² = 0.971 on the discovery half); held-out R² = 0.973 [emp-8b710254e975]
 - 2026-11-20 17:20 data feeds: 31911 datasets analysed so far, 4447 confirmed findings
+- 2026-11-20 18:08 data feeds: online
