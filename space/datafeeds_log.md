@@ -4984,3 +4984,4 @@
 - 2026-11-20 12:28 FINDING (confirmed on held-out rows): In 'Daily and hourly noise pollution metrics measured at 146 locations in Accra, Ghana for 201' (Zenodo, doi 10.1038/s41598-021-90454-6): 'LDEN' follows a power law in 'LDay' (R² = 0.927 on the discovery half); held-out R² = 0.933 [emp-cf57417d4358]
 - 2026-11-20 12:29 FINDING (confirmed on held-out rows): In 'Daily and hourly noise pollution metrics measured at 146 locations in Accra, Ghana for 201' (Zenodo, doi 10.1038/s41598-021-90454-6): 'LDEN' is linear in 'LNight' (R² = 0.941 on the discovery half); held-out R² = 0.938 [emp-9ce351613b0c]
 - 2026-11-20 12:29 data feeds: 31595 datasets analysed so far, 4387 confirmed findings
+- 2026-11-20 13:32 data feeds: online
