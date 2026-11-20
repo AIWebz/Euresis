@@ -4929,3 +4929,5 @@
 - 2026-11-20 07:50 FINDING (confirmed on held-out rows): In 'Critical Raw Materials Index (CRMI)' (Zenodo, doi 10.5281/zenodo.24287752): 'CRMI_wind__cap_proportional' follows a power law in 'CRMI_solar_pv__cap_proportional' (R² = 0.945 on the discovery half); held-out R² = 0.941 [emp-0c093b18f7bf]
 - 2026-11-20 07:50 FINDING (confirmed on held-out rows): In 'Impacts of Rising Temperatures of Global Energy Demand: The Role of Climatic Shifts and We' (Zenodo, doi 10.5281/zenodo.18481098): 'hdd15_clim_pop_w' is linear in 'cdd24_clim_pop_w' (R² = 0.984 on the discovery half); held-out R² = 0.982 [emp-396eafbdc9c2]
 - 2026-11-20 07:50 data feeds: 31368 datasets analysed so far, 4342 confirmed findings
+- 2026-11-20 08:34 data feeds: online
+- 2026-11-20 08:35 data feeds: 31371 datasets analysed so far, 4342 confirmed findings

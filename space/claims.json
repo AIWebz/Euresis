@@ -3712863,5 +3712863,32 @@
   "statement": "Octal game 0.0747345 is completely solved: its Grundy values are periodic with pre-period 284 and period 48 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.6084/m9.figshare.32747367.v2",
+   "held_out_r2": 0.771,
+   "held_out_rows": 1250,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f2af58c677e8",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "9998befa7099fda5.csv",
+   "doi": "10.6084/m9.figshare.32747367.v2",
+   "form": "linear",
+   "params": [
+    2.3677022743209752,
+    0.3398736320172437
+   ],
+   "seed": 529857522,
+   "x": "C_527.07_YellowGouge",
+   "y": "C_527.05_BlackGouge"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Raw data for Mechanoradical hydrogen generation during seismic slip in an active fault zon' (Figshare, doi 10.6084/m9.figshare.32747367.v2): 'C_527.05_BlackGouge' is linear in 'C_527.07_YellowGouge' (R\u00b2 = 0.904 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
  }
 ]
