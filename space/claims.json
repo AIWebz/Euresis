@@ -3786549,5 +3786549,140 @@
   "statement": "In 'Dataset for paper \"Fs-laser significantly enhances both above- and below-bandgap absorptio' (Zenodo, doi 10.5281/zenodo.13268476): '0.38 J/cm2.1' is linear in 'c-Ge' (R\u00b2 = 0.924 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-62ffdea6a7bb",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "claim": "((1 - c1)**2/4 + (1 - c2)**2/4 + (-c1 - c2 + 1)**2/18)/((-2*c1 + c2 + 1)**2/9 + (-c1 - c2 + 1)**2/18 + (c1 - 2*c2 + 1)**2/9) >= 162/25*((c1/3 + 5*c2/6 - 1/6)**2 + (5*c1/6 + c2/3 - 1/6)**2)",
+   "symbols": [
+    "c1",
+    "c2"
+   ]
+  },
+  "source": "physics_discover2 round 6638",
+  "statement": "[economics: Cournot duopoly] Total Welfare Efficiency Ratio [model-proposed; physical meaning unverified] \u2265 162/25 \u00d7 Market Price Variance [model-proposed; physical meaning unverified]   on c1 < 1/2, c2 < 1/2 (tight only at the edge of the domain, near (0.5, 0.5))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-7adbac8af4f6",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "claim": "((1 - c1)**2/4 + (1 - c2)**2/4 + (-c1 - c2 + 1)**2/18)/((-2*c1 + c2 + 1)**2/9 + (-c1 - c2 + 1)**2/18 + (c1 - 2*c2 + 1)**2/9) >= 141/38*((-c1 - c2 + 2)**2/(2*(-2*c1 + c2 + 1)**2 + (-c1 - c2 + 2)**2 + 2*(c1 - 2*c2 + 1)**2))",
+   "symbols": [
+    "c1",
+    "c2"
+   ]
+  },
+  "source": "physics_discover2 round 6638",
+  "statement": "[economics: Cournot duopoly] Total Welfare Efficiency Ratio [model-proposed; physical meaning unverified] \u2265 141/38 \u00d7 Consumer Surplus to Total Welfare Ratio [model-proposed; physical meaning unverified]   on c1 < 1/2, c2 < 1/2 (tight only at the edge of the domain, near (0.5, 1.74e-14))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-fd2acc92976f",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "claim": "((1 - c1)**2/4 + (1 - c2)**2/4 + (-c1 - c2 + 1)**2/18)/((-2*c1 + c2 + 1)**2/9 + (-c1 - c2 + 1)**2/18 + (c1 - 2*c2 + 1)**2/9) >= 16*((-c1 - c2 + 1)**2/(9*(1 - c1)**2/2 + 9*(1 - c2)**2/2 - (-c1 - c2 + 1)**2))",
+   "symbols": [
+    "c1",
+    "c2"
+   ]
+  },
+  "source": "physics_discover2 round 6638",
+  "statement": "[economics: Cournot duopoly] Total Welfare Efficiency Ratio [model-proposed; physical meaning unverified] \u2265 16 \u00d7 Consumer Surplus Efficiency Ratio [model-proposed; physical meaning unverified]   on c1 < 1/2, c2 < 1/2 (tight only at the edge of the domain, near (5.76e-17, 3.19e-16))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-1c23cbec1953",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "claim": "((1 - c1)**2/4 + (1 - c2)**2/4 + (-c1 - c2 + 1)**2/18)/((-2*c1 + c2 + 1)**2/9 + (-c1 - c2 + 1)**2/18 + (c1 - 2*c2 + 1)**2/9) >= 81/32*((-5*c1/6 - 5*c2/6 + 1/6)**2/((1 - c1)**2 + (1 - c2)**2))",
+   "symbols": [
+    "c1",
+    "c2"
+   ]
+  },
+  "source": "physics_discover2 round 6638",
+  "statement": "[economics: Cournot duopoly] Total Welfare Efficiency Ratio [model-proposed; physical meaning unverified] \u2265 81/32 \u00d7 Cournot Price Deviation Index [model-proposed; physical meaning unverified]   on c1 < 1/2, c2 < 1/2 (tight only at the edge of the domain, near (0.5, 0.5))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-f5595c1b8ae2",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'Consumer Surplus to Total Welfare Ratio [model-proposed; physical meaning unverified]'",
+  "payload": {
+   "assumptions": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "claim": "((1 - c1)**2/4 + (1 - c2)**2/4 + (-c1 - c2 + 1)**2/18)/((-2*c1 + c2 + 1)**2/9 + (-c1 - c2 + 1)**2/18 + (c1 - 2*c2 + 1)**2/9) >= 47/38*(((1 - c1)**2 + (1 - c2)**2)/((-c1 - c2 + 1)**2 + 1))",
+   "symbols": [
+    "c1",
+    "c2"
+   ]
+  },
+  "source": "physics_discover2 round 6638",
+  "statement": "[economics: Cournot duopoly] Total Welfare Efficiency Ratio [model-proposed; physical meaning unverified] \u2265 47/38 \u00d7 Price Competition Index [model-proposed; physical meaning unverified]   on c1 < 1/2, c2 < 1/2 (tight only at the edge of the domain, near (0.5, 1.24e-15))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]
