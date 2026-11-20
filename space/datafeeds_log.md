@@ -5146,3 +5146,5 @@
 - 2026-11-20 19:24 FINDING (confirmed on held-out rows): In 'Data for Causal Climate Factor (CCF) for (Re)Insurance' (Figshare, doi 10.6084/m9.figshare.34918680.v2): 'CPI' follows a power law in 'End Year' (R² = 0.956 on the discovery half); held-out R² = 0.946 [emp-09efce454f79]
 - 2026-11-20 19:24 data feeds: 32016 datasets analysed so far, 4534 confirmed findings
 - 2026-11-20 20:03 data feeds: online
+- 2026-11-20 20:04 FINDING (confirmed on held-out rows): In 'Data from: Copulation order, density cues and variance in fertilization success in a cesto' (Zenodo, doi 10.5061/dryad.v7b3n): 'SL' grows exponentially in 'TL' (R² = 0.932 on the discovery half); held-out R² = 0.894 [emp-4ff95a57e0c4]
+- 2026-11-20 20:04 data feeds: 32071 datasets analysed so far, 4535 confirmed findings
