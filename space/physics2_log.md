@@ -7329,3 +7329,18 @@
 - 2026-11-20 21:11 round 6689: two-body decay
 - 2026-11-20 21:13 round 6690: collision
 - 2026-11-20 21:16 round 6691: driven oscillator
+- 2026-11-20 21:17 round 6692: velocity addition
+- 2026-11-20 21:18 round 6693: Compton scattering
+- 2026-11-20 21:19 round 6694: Cournot duopoly
+- 2026-11-20 21:21 round 6695: insurance and risk
+- 2026-11-20 21:23 round 6696: auction with a reserve price
+- 2026-11-20 21:25 round 6697: two-body decay
+- 2026-11-20 21:26 round 6698: collision
+- 2026-11-20 21:28 round 6699: driven oscillator
+- 2026-11-20 21:29 round 6700: velocity addition
+- 2026-11-20 21:30 round 6701: Compton scattering
+- 2026-11-20 21:31 round 6702: Cournot duopoly
+- 2026-11-20 21:32 round 6703: insurance and risk
+- 2026-11-20 21:34 round 6704: auction with a reserve price
+- 2026-11-20 21:36 round 6705: two-body decay
+- 2026-11-20 21:37 round 6706: collision
