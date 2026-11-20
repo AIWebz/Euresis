@@ -5026,3 +5026,4 @@
 - 2026-11-20 16:14 data feeds: online
 - 2026-11-20 16:14 FINDING (confirmed on held-out rows): In 'Supplementary material for: Phylogenetic biodiversity metrics should account for both accu' (Zenodo, doi 10.5061/dryad.z08kprrgs): 'LF.uq' is linear in 'LF.lq' (R² = 0.921 on the discovery half); held-out R² = 0.922 [emp-6400f3170773]
 - 2026-11-20 16:14 data feeds: 31899 datasets analysed so far, 4421 confirmed findings
+- 2026-11-20 17:16 data feeds: online
