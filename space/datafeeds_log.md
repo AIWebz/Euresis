@@ -5150,3 +5150,5 @@
 - 2026-11-20 20:04 data feeds: 32071 datasets analysed so far, 4535 confirmed findings
 - 2026-11-20 21:06 data feeds: online
 - 2026-11-20 21:08 data feeds: 32149 datasets analysed so far, 4535 confirmed findings
+- 2026-11-20 21:58 data feeds: online
+- 2026-11-20 21:58 FINDING (confirmed on held-out rows): In 'Detention Money: appropriations, contract obligations, and contract ceilings for U.S. immi' (Zenodo, doi 10.5281/zenodo.23624848): 'ceiling_base_and_all_options' is linear in 'obligated_amount' (R² = 0.984 on the discovery half); held-out R² = 0.977 [emp-f96565abf83e]

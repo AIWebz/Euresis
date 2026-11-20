@@ -3816370,5 +3816370,32 @@
   "statement": "Octal game 0.0756145 is completely solved: its Grundy values are periodic with pre-period 284 and period 48 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23624848",
+   "held_out_r2": 0.9774,
+   "held_out_rows": 115,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f96565abf83e",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "80cc11ec8f0994da.csv",
+   "doi": "10.5281/zenodo.23624848",
+   "form": "linear",
+   "params": [
+    1067718.413456472,
+    0.9933737414899039
+   ],
+   "seed": 3568753188,
+   "x": "obligated_amount",
+   "y": "ceiling_base_and_all_options"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Detention Money: appropriations, contract obligations, and contract ceilings for U.S. immi' (Zenodo, doi 10.5281/zenodo.23624848): 'ceiling_base_and_all_options' is linear in 'obligated_amount' (R\u00b2 = 0.984 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
