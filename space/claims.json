@@ -3798205,5 +3798205,86 @@
   "statement": "In 'Data for Causal Climate Factor (CCF) for (Re)Insurance' (Figshare, doi 10.6084/m9.figshare.34918680.v2): 'CPI' follows a power law in 'End Year' (R\u00b2 = 0.956 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-e41d7d5bbdc8",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "(-2*r**3/3 + r**2*v + 2/3)/(-2*r**3 + 2*r**2) >= 1*(-r**2*v + 1 - (2*r**3/3 - r**2 + 1/3)/(1 - r**2))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 6664",
+  "statement": "[economics: auction with a reserve price] reserve price elasticity of welfare [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Bidder Surplus Efficiency with Seller Value [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (1, 9.37e-18))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-9d6f40915c52",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "(2*r**3/3 - r**2 + 1/3)/(2*r**3/3 - r**2*(2*r**3/3 - r**2 + 1/3) - r**2 + 1/3) >= 3/2*(-r**2*v + 1 - (2*r**3/3 - r**2 + 1/3)/(1 - r**2))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 6664",
+  "statement": "[economics: auction with a reserve price] reserve price elasticity of bidder surplus [model-proposed; physical meaning unverified] \u2265 3/2 \u00d7 Bidder Surplus Efficiency with Seller Value [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (6.25e-07, 0.000121))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-78e0284216d9",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "(-2*r**3/3 + r**2 + 1/3)/v >= 1/2*(-r**2*v + 1 - (2*r**3/3 - r**2 + 1/3)/(1 - r**2))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 6664",
+  "statement": "[economics: auction with a reserve price] Expected Revenue to Seller's Value Ratio [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 Bidder Surplus Efficiency with Seller Value [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (9.12e-05, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]
