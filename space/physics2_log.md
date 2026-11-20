@@ -7218,3 +7218,6 @@
 - 2026-11-20 15:33 round 6590: Cournot duopoly
 - 2026-11-20 15:35 round 6591: insurance and risk
 - 2026-11-20 15:37 round 6592: auction with a reserve price
+- 2026-11-20 15:40 round 6593: two-body decay
+- 2026-11-20 15:41 round 6594: collision
+- 2026-11-20 15:43 round 6595: driven oscillator
