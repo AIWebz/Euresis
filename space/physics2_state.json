@@ -93824,6 +93824,21 @@
    "family": "collision",
    "expr": "sqrt(m**2 + e**2)}, {",
    "why": "does not parse"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(8*r**2*z**2 + 1)/sqrt(4*r**2*z**2 + (1 - r**2)**2)",
+   "why": "affine combination of known quantities (amplitude / static deflection, Velocity transmissibility [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(16*r**4*z**4 + 4*r**2*z**2 + 1)/sqrt(4*r**2*z**2 + (1 - r**2)**2)",
+   "why": "affine combination of known quantities (amplitude / static deflection, Acceleration transmissibility [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(4*r**2*z**2 + 1)*sqrt(4*r**2*z**2 + (1 - r**2)**2)/(2*r*z*(sqrt(4*r**2*z**2 + 1) + sqrt(4*r**2*",
+   "why": "affine combination of known quantities (quality factor, Power Amplification Ratio [model-proposed; physical meaning unverified])"
   }
  ],
  "tried": [
@@ -116058,7 +116073,7 @@
    "k": "47/38"
   }
  ],
- "rounds": 6634,
+ "rounds": 6635,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",
