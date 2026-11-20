@@ -3728889,5 +3728889,356 @@
   "statement": "Octal game 0.0750516 is completely solved: its Grundy values are periodic with pre-period 284 and period 48 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22259728",
+   "held_out_r2": 0.9787,
+   "held_out_rows": 853,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d9d842339b2d",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "a8c5fd73bdf19347.csv",
+   "doi": "10.5281/zenodo.22259728",
+   "form": "linear",
+   "params": [
+    -1.704451632777002,
+    1.5769401989565521
+   ],
+   "seed": 1481816087,
+   "x": "RVA_low",
+   "y": "RVA_high"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Separating drought and impoundment signals in regulated dryland rivers: data products, cod' (Zenodo, doi 10.5281/zenodo.22259728): 'RVA_high' is linear in 'RVA_low' (R\u00b2 = 0.982 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.21312171",
+   "held_out_r2": 0.9907,
+   "held_out_rows": 217,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-001d766a438e",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "d013018900c25bd5.csv",
+   "doi": "10.5281/zenodo.21312171",
+   "form": "linear",
+   "params": [
+    -0.5960733078472243,
+    1.3109567668105557
+   ],
+   "seed": 2302319787,
+   "x": "booked_raw_mm",
+   "y": "intensity_modulated_mm"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Quality-controlled precipitation dataset with capped, intensity-modulated wind correction ' (Zenodo, doi 10.5281/zenodo.21312171): 'intensity_modulated_mm' is linear in 'booked_raw_mm' (R\u00b2 = 0.977 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.21312171",
+   "held_out_r2": 0.9903,
+   "held_out_rows": 217,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b7e0498029eb",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "d013018900c25bd5.csv",
+   "doi": "10.5281/zenodo.21312171",
+   "form": "linear",
+   "params": [
+    -1.3874205298293867,
+    1.5990922526939766
+   ],
+   "seed": 2302319787,
+   "x": "booked_raw_mm",
+   "y": "capped_alter_mm"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Quality-controlled precipitation dataset with capped, intensity-modulated wind correction ' (Zenodo, doi 10.5281/zenodo.21312171): 'capped_alter_mm' is linear in 'booked_raw_mm' (R\u00b2 = 0.977 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.21312171",
+   "held_out_r2": 0.9896,
+   "held_out_rows": 217,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-25061295ae1a",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "d013018900c25bd5.csv",
+   "doi": "10.5281/zenodo.21312171",
+   "form": "linear",
+   "params": [
+    -1.9156289745229071,
+    1.895643534200669
+   ],
+   "seed": 2302319787,
+   "x": "booked_raw_mm",
+   "y": "high_correction_mm"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Quality-controlled precipitation dataset with capped, intensity-modulated wind correction ' (Zenodo, doi 10.5281/zenodo.21312171): 'high_correction_mm' is linear in 'booked_raw_mm' (R\u00b2 = 0.976 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.21312171",
+   "held_out_r2": 0.9547,
+   "held_out_rows": 217,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-0532ed854017",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "d013018900c25bd5.csv",
+   "doi": "10.5281/zenodo.21312171",
+   "form": "linear",
+   "params": [
+    1.8350019220186715,
+    1.0294906559761554
+   ],
+   "seed": 2302319787,
+   "x": "twb_mean",
+   "y": "t2m_mean"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Quality-controlled precipitation dataset with capped, intensity-modulated wind correction ' (Zenodo, doi 10.5281/zenodo.21312171): 't2m_mean' is linear in 'twb_mean' (R\u00b2 = 0.955 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.21312171",
+   "held_out_r2": 0.9536,
+   "held_out_rows": 725,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-833e6389e2cd",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "aa98e6eefdc81084.csv",
+   "doi": "10.5281/zenodo.21312171",
+   "form": "linear",
+   "params": [
+    2.769911431581516,
+    1.0690878934338532
+   ],
+   "seed": 3493736361,
+   "x": "t2m_mean",
+   "y": "t2m_max"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Quality-controlled precipitation dataset with capped, intensity-modulated wind correction ' (Zenodo, doi 10.5281/zenodo.21312171): 't2m_max' is linear in 't2m_mean' (R\u00b2 = 0.955 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.21312171",
+   "held_out_r2": 0.9911,
+   "held_out_rows": 731,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-afed71957d9f",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "bb4fb21c7f2ca226.csv",
+   "doi": "10.5281/zenodo.21312171",
+   "form": "linear",
+   "params": [
+    -0.15036302517758954,
+    0.9609957364628755
+   ],
+   "seed": 3842776332,
+   "x": "precip_filled_overflow_topup",
+   "y": "precip_intensity_modulated_obs"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Quality-controlled precipitation dataset with capped, intensity-modulated wind correction ' (Zenodo, doi 10.5281/zenodo.21312171): 'precip_intensity_modulated_obs' is linear in 'precip_filled_overflow_topup' (R\u00b2 = 0.963 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20389808",
+   "held_out_r2": -0.0655,
+   "held_out_rows": 33,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-6d5c2765ea4a",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "17cb7618a21b51f2.csv",
+   "doi": "10.5281/zenodo.20389808",
+   "form": "linear",
+   "params": [
+    0.10741847647060936,
+    5.525209361308031e-14
+   ],
+   "seed": 3669832242,
+   "x": "site_no",
+   "y": "alt_acy_va"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Input dataset for \"Where to Watch the Water: Multi-Sensor Network Design Optimization for ' (Zenodo, doi 10.5281/zenodo.20389808): 'alt_acy_va' is linear in 'site_no' (R\u00b2 = 1.000 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22107776",
+   "held_out_r2": 0.9146,
+   "held_out_rows": 1731,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-7ead812565ef",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "29f7cccf4f09a246.csv",
+   "doi": "10.5281/zenodo.22107776",
+   "form": "linear",
+   "params": [
+    11.307966054956532,
+    1.0120471107661397
+   ],
+   "seed": 52250484,
+   "x": "elevation",
+   "y": "terrain_mean_1000m"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'TEMPLAR Wales: A georeferenced environmental-toponymy dataset for Welsh settlements' (Zenodo, doi 10.5281/zenodo.22107776): 'terrain_mean_1000m' is linear in 'elevation' (R\u00b2 = 0.915 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22107776",
+   "held_out_r2": 0.9477,
+   "held_out_rows": 1731,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9ca6643962a9",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "29f7cccf4f09a246.csv",
+   "doi": "10.5281/zenodo.22107776",
+   "form": "linear",
+   "params": [
+    0.0025698125498688387,
+    1.020211123586675
+   ],
+   "seed": 52250484,
+   "x": "forest_landcover_fraction_500m",
+   "y": "woody_landcover_fraction_500m"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'TEMPLAR Wales: A georeferenced environmental-toponymy dataset for Welsh settlements' (Zenodo, doi 10.5281/zenodo.22107776): 'woody_landcover_fraction_500m' is linear in 'forest_landcover_fraction_500m' (R\u00b2 = 0.955 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22109904",
+   "held_out_r2": 0.83,
+   "held_out_rows": 191,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-823ee0dc7946",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "748e287e3a14f9d5.csv",
+   "doi": "10.5281/zenodo.22109904",
+   "form": "linear",
+   "params": [
+    -8.069198858584892,
+    0.7063570184272988
+   ],
+   "seed": 2224458277,
+   "x": "max_swe_mm",
+   "y": "longest_continuous_snow_days"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Lund University Global Drought Dataset (LUGD): Weekly snow-adjusted multiscale drought ind' (Zenodo, doi 10.5281/zenodo.22109904): 'longest_continuous_snow_days' is linear in 'max_swe_mm' (R\u00b2 = 0.999 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22109904",
+   "held_out_r2": 0.8737,
+   "held_out_rows": 191,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-41b73ea586c4",
+  "kind": "empirical",
+  "novelty": "KNOWN: astrometric uncertainties (Gaia-type errors all scale with source brightness) \u2014 not a discovery",
+  "payload": {
+   "dataset": "1b1ac2385e4c7d8b.csv",
+   "doi": "10.5281/zenodo.22109904",
+   "form": "linear",
+   "params": [
+    -3.112048890789604e-09,
+    1.007184471976901
+   ],
+   "seed": 2253591235,
+   "x": "max_dsa_closure_error",
+   "y": "max_dconventional_closure_error"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Lund University Global Drought Dataset (LUGD): Weekly snow-adjusted multiscale drought ind' (Zenodo, doi 10.5281/zenodo.22109904): 'max_dconventional_closure_error' is linear in 'max_dsa_closure_error' (R\u00b2 = 0.929 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.18269229",
+   "held_out_r2": 0.961,
+   "held_out_rows": 36,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-07da677cce97",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8a472fb4cb51b97c.csv",
+   "doi": "10.5281/zenodo.18269229",
+   "form": "linear",
+   "params": [
+    -3.8614481869829396,
+    1.6554198852612048
+   ],
+   "seed": 1424218391,
+   "x": "sa_m2m2",
+   "y": "len_kmm2"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Plant belowground trait and vegetation survey data from the Stordalen mire 2023' (Zenodo, doi 10.5281/zenodo.18269229): 'len_kmm2' is linear in 'sa_m2m2' (R\u00b2 = 0.979 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
