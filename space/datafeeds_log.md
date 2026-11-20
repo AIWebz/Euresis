@@ -5018,3 +5018,8 @@
 - 2026-11-20 14:22 FINDING (confirmed on held-out rows): In 'Dataset Publication for  "A Comprehensive Stress Drop Map from Trench to Depth in the Nort' (Zenodo, doi 10.5281/zenodo.10400961): 'fcbound2' follows a power law in 'fc1' (R² = 0.976 on the discovery half); held-out R² = 0.977 [emp-93ddfa670845]
 - 2026-11-20 14:23 data feeds: 31809 datasets analysed so far, 4416 confirmed findings
 - 2026-11-20 15:26 data feeds: online
+- 2026-11-20 15:27 FINDING (confirmed on held-out rows): In 'Outputs of the Jupyter Notebook - SEVIRI Level 1.5' (Zenodo, doi 10.5281/zenodo.6299135): 'frp' follows a power law in 'ERR_BACKGROUND' (R² = 0.950 on the discovery half); held-out R² = 0.937 [emp-a80130a15bdf]
+- 2026-11-20 15:27 FINDING (confirmed on held-out rows): In 'Outputs of the Jupyter Notebook - SEVIRI Level 1.5' (Zenodo, doi 10.5281/zenodo.6299135): 'frp' follows a power law in 'ERR_RADIOMETRIC' (R² = 0.943 on the discovery half); held-out R² = 0.928 [emp-47dcf5b25867]
+- 2026-11-20 15:28 FINDING (confirmed on held-out rows): In 'AMS and FTIR spectra of primary and aged fine PM from wood burning and coal combustion.' (Zenodo, doi 10.5281/zenodo.4882967): 'ammSO4f.Value' is linear in 'ammNO3f.Value' (R² = 0.979 on the discovery half); held-out R² = 0.982 [emp-8a1c4f2ec771]
+- 2026-11-20 15:28 FINDING (confirmed on held-out rows): In 'Monsoonal wet season influences the migration tendency of a catadromous fish (barramundi L' (Zenodo, doi 10.5061/dryad.70rxwdc4p): 'psphgrowth' follows a power law in 'Increment' (R² = 0.915 on the discovery half); held-out R² = 0.895 [emp-c36b1fe22e92]
+- 2026-11-20 15:28 data feeds: 31876 datasets analysed so far, 4420 confirmed findings
