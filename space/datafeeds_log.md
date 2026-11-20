@@ -4968,3 +4968,4 @@
 - 2026-11-20 11:40 FINDING (confirmed on held-out rows): In 'Biogeochemial Soil Dataset for Old Growth and Disturbed Forest Sites at Mount Kilimanjaro' (Zenodo, doi 10.5281/zenodo.7125139): 'altitude' grows exponentially in 'latitude_decimal_degrees' (R² = 0.952 on the discovery half); held-out R² = 0.954 [emp-d14cf9efd3f1]
 - 2026-11-20 11:40 FINDING (confirmed on held-out rows): In 'Biogeochemial Soil Dataset for Old Growth and Disturbed Forest Sites at Mount Kilimanjaro' (Zenodo, doi 10.5281/zenodo.7125139): 'altitude' grows logarithmically in 'longitude_decimal_degrees' (R² = 0.943 on the discovery half); held-out R² = 0.963 [emp-9d4d9dec9a28]
 - 2026-11-20 11:40 data feeds: 31530 datasets analysed so far, 4373 confirmed findings
+- 2026-11-20 12:24 data feeds: online
