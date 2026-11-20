@@ -93063,6 +93063,86 @@
    "family": "collision",
    "expr": "m/(1/e + 1) + 1",
    "why": "affine combination of known quantities (1/(momentum transferred / initial momentum), 1/(Impulse ratio of target to projectile [model-proposed; physical meaning unverified]))"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt((1 - r**2)**2 + (2*z*r)**2)/sqrt(4*z**2 + 1)",
+   "why": "affine combination of known quantities (amplitude / static deflection, Mechanical Impedance Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(1 + (2*z*r)**2)/sqrt((1 - r**2)**2 + (2*z*r)**2)",
+   "why": "affine combination of known quantities (amplitude / static deflection, transmissibility)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(r**4 + 4*r**2*z**2 + 1)/sqrt((1 - r**2)**2 + (2*z*r)**2)",
+   "why": "affine combination of known quantities (amplitude / static deflection, Acceleration Transmissibility [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(4*r**2*z**2 + 1)/sqrt(4*z**2 + 1)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 + u)/(1 - u)) * sqrt((1 + v)/(1 - v)) / sqrt((1 + (u + v)/(1 + u*v)) / (1 - (u + v)/(1 + u*v",
+   "why": "affine combination of known quantities (composed speed / c)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt(1 - u**2) * sqrt(1 - v**2) + (u + v) * sqrt(1 - ((u + v)/(1 + u*v))**2) / (1 + u*v)",
+   "why": "affine combination of known quantities (composed speed / c, Relativistic Energy-Momentum Invariant [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 - u**2)*(1 - v**2) + (u + v)**2/(u*v + 1)**2)",
+   "why": "affine combination of known quantities (composed speed / c, Relativistic Beta Addition [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 - u**2)*(1 - v**2))/(-u*v + 1)",
+   "why": "affine combination of known quantities (composed speed / c, Relativistic velocity parameter [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "1 - c/(c*x + 1)",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "x/(1 + x*c) - 1/(1 + x*c)",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "c*x**2/(1 + x*c) - 1/(1 + x*c)",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "c/(x + 1) - 1/(x + 1)",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "c2/(c1/3 + c2/3 + 1/3)",
+   "why": "affine combination of known quantities (output of firm 1, 1/(Price to Marginal Cost Ratio for Firm 2 [model-proposed; physical meaning unverified]))"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "((1 - 2*c1 + c2)/3)/((1 - 2*c2 + c1)/3)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "((1 - 2*c1 + c2)**2/9)/((1 - 2*c2 + c1)**2/9)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "((-c1 - c2 + 1)**2/18)/((-2*c1 + c2 + 1)**2/9 + (c1 - 2*c2 + 1)**2/9 + (-c1 - c2 + 1)**2/18)",
+   "why": "a power or product of known quantities"
   }
  ],
  "tried": [
@@ -115171,7 +115251,7 @@
    "k": "3/10"
   }
  ],
- "rounds": 6586,
+ "rounds": 6590,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",
