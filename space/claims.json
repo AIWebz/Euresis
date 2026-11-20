@@ -3723032,10 +3723032,15 @@
   "verifier": "guy-smith-periodicity"
  },
  {
-  "evidence": null,
+  "evidence": {
+   "doi": "10.6084/m9.figshare.31558687.v1",
+   "held_out_r2": 0.972,
+   "held_out_rows": 118,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
   "id": "emp-d86ca0d10449",
   "kind": "empirical",
-  "novelty": "not checked",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
   "payload": {
    "dataset": "21fcc9646b719f9a.csv",
    "doi": "10.6084/m9.figshare.31558687.v1",
@@ -3723050,7 +3723055,7 @@
   },
   "source": "datafeeds.py",
   "statement": "In 'Datasets to accompany journal article: 'Looking beyond the vent to the environmental seasc' (Figshare, doi 10.6084/m9.figshare.31558687.v1): 'Average.SST' grows logarithmically in 'Average.Dissolved.Oxygen' (R\u00b2 = 0.984 on the discovery half)",
-  "status": "candidate",
-  "verifier": null
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
