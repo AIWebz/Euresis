@@ -5012,3 +5012,8 @@
 - 2026-11-20 13:45 data feeds: 31714 datasets analysed so far, 4411 confirmed findings
 - 2026-11-20 14:19 data feeds: online
 - 2026-11-20 14:19 FINDING (confirmed on held-out rows): In 'Ab initio BCC calculations of nuclear charge radii of Sn isotopes' (Zenodo, doi 10.5281/zenodo.19134310): 'Rch2bccsd' grows logarithmically in 'Rch2hfb' (R² = 0.977 on the discovery half); held-out R² = 0.970 [emp-31ff31259a9d]
+- 2026-11-20 14:21 FINDING (confirmed on held-out rows): In 'The Influence of Space Weathering on the Far-Ultraviolet Reflectance of Apollo-era Soils' (Zenodo, doi 10.5281/zenodo.16049005): 'K' follows a power law in 'w' (R² = 0.989 on the discovery half); held-out R² = 0.988 [emp-6bb9c8a731be]
+- 2026-11-20 14:21 FINDING (confirmed on held-out rows): In 'The Influence of Space Weathering on the Far-Ultraviolet Reflectance of Apollo-era Soils' (Zenodo, doi 10.5281/zenodo.16049005): 'c' grows exponentially in 'b' (R² = 0.923 on the discovery half); held-out R² = 0.920 [emp-12eb6352cfee]
+- 2026-11-20 14:22 FINDING (confirmed on held-out rows): In 'Dataset Publication for  "A Comprehensive Stress Drop Map from Trench to Depth in the Nort' (Zenodo, doi 10.5281/zenodo.10400961): 'fcbound1' is linear in 'fc1' (R² = 0.983 on the discovery half); held-out R² = 0.983 [emp-3e0a4ef5dd6e]
+- 2026-11-20 14:22 FINDING (confirmed on held-out rows): In 'Dataset Publication for  "A Comprehensive Stress Drop Map from Trench to Depth in the Nort' (Zenodo, doi 10.5281/zenodo.10400961): 'fcbound2' follows a power law in 'fc1' (R² = 0.976 on the discovery half); held-out R² = 0.977 [emp-93ddfa670845]
+- 2026-11-20 14:23 data feeds: 31809 datasets analysed so far, 4416 confirmed findings
