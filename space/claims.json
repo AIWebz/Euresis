@@ -3754355,7 +3754355,7 @@
   },
   "id": "emp-cbd426332eac",
   "kind": "empirical",
-  "novelty": "not checked",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
   "payload": {
    "dataset": "71cc48999464bf10.csv",
    "doi": "10.5281/zenodo.24120809",
@@ -3754370,6 +3754370,357 @@
   },
   "source": "datafeeds.py",
   "statement": "In 'Experimental strike-slip faulting: Surface deformation partitioning data from twelve analo' (Zenodo, doi 10.5281/zenodo.24120809): 'p50_F_on_total' is linear in 'p75_F_off' (R\u00b2 = 0.955 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24120809",
+   "held_out_r2": 0.5861,
+   "held_out_rows": 52,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-2aab1b1d789b",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "71cc48999464bf10.csv",
+   "doi": "10.5281/zenodo.24120809",
+   "form": "linear",
+   "params": [
+    1.1380253889348633,
+    -1.2981334463755703
+   ],
+   "seed": 68758085,
+   "x": "p75_F_off",
+   "y": "p75_F_on_total"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Experimental strike-slip faulting: Surface deformation partitioning data from twelve analo' (Zenodo, doi 10.5281/zenodo.24120809): 'p75_F_on_total' is linear in 'p75_F_off' (R\u00b2 = 0.908 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24120809",
+   "held_out_r2": 0.9131,
+   "held_out_rows": 52,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-791059d45bc5",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "71cc48999464bf10.csv",
+   "doi": "10.5281/zenodo.24120809",
+   "form": "linear",
+   "params": [
+    1.0895708523161354,
+    -1.2899394676585962
+   ],
+   "seed": 68758085,
+   "x": "p75_F_off",
+   "y": "mean_F_on_total"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Experimental strike-slip faulting: Surface deformation partitioning data from twelve analo' (Zenodo, doi 10.5281/zenodo.24120809): 'mean_F_on_total' is linear in 'p75_F_off' (R\u00b2 = 0.968 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24120809",
+   "held_out_r2": 0.9212,
+   "held_out_rows": 52,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-34acd130f81c",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "71cc48999464bf10.csv",
+   "doi": "10.5281/zenodo.24120809",
+   "form": "linear",
+   "params": [
+    0.5725087240766112,
+    -0.6369736616578012
+   ],
+   "seed": 68758085,
+   "x": "p95_F_off",
+   "y": "p05_F_dominant_fault"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Experimental strike-slip faulting: Surface deformation partitioning data from twelve analo' (Zenodo, doi 10.5281/zenodo.24120809): 'p05_F_dominant_fault' is linear in 'p95_F_off' (R\u00b2 = 0.916 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24120809",
+   "held_out_r2": 0.9576,
+   "held_out_rows": 52,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c3b48383ba3c",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "71cc48999464bf10.csv",
+   "doi": "10.5281/zenodo.24120809",
+   "form": "linear",
+   "params": [
+    1.011615722284978,
+    -1.330326295586096
+   ],
+   "seed": 68758085,
+   "x": "mean_F_off",
+   "y": "p25_F_on_total"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Experimental strike-slip faulting: Surface deformation partitioning data from twelve analo' (Zenodo, doi 10.5281/zenodo.24120809): 'p25_F_on_total' is linear in 'mean_F_off' (R\u00b2 = 0.983 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24120809",
+   "held_out_r2": 0.974,
+   "held_out_rows": 52,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-fc4bc621d694",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "71cc48999464bf10.csv",
+   "doi": "10.5281/zenodo.24120809",
+   "form": "linear",
+   "params": [
+    1.0657982149947585,
+    -1.3717196047215219
+   ],
+   "seed": 68758085,
+   "x": "mean_F_off",
+   "y": "p50_F_on_total"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Experimental strike-slip faulting: Surface deformation partitioning data from twelve analo' (Zenodo, doi 10.5281/zenodo.24120809): 'p50_F_on_total' is linear in 'mean_F_off' (R\u00b2 = 0.979 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24120809",
+   "held_out_r2": 0.8347,
+   "held_out_rows": 52,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-65713a069139",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "71cc48999464bf10.csv",
+   "doi": "10.5281/zenodo.24120809",
+   "form": "linear",
+   "params": [
+    1.1097962044569314,
+    -1.378652039878631
+   ],
+   "seed": 68758085,
+   "x": "mean_F_off",
+   "y": "p75_F_on_total"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Experimental strike-slip faulting: Surface deformation partitioning data from twelve analo' (Zenodo, doi 10.5281/zenodo.24120809): 'p75_F_on_total' is linear in 'mean_F_off' (R\u00b2 = 0.953 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24120809",
+   "held_out_r2": 0.3082,
+   "held_out_rows": 52,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-46c3fa2034fa",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "71cc48999464bf10.csv",
+   "doi": "10.5281/zenodo.24120809",
+   "form": "linear",
+   "params": [
+    1.1763197477989074,
+    -1.3650886583211996
+   ],
+   "seed": 68758085,
+   "x": "mean_F_off",
+   "y": "p95_F_on_total"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Experimental strike-slip faulting: Surface deformation partitioning data from twelve analo' (Zenodo, doi 10.5281/zenodo.24120809): 'p95_F_on_total' is linear in 'mean_F_off' (R\u00b2 = 0.904 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24120809",
+   "held_out_r2": 0.989,
+   "held_out_rows": 52,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e0270f73ef1c",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "71cc48999464bf10.csv",
+   "doi": "10.5281/zenodo.24120809",
+   "form": "linear",
+   "params": [
+    1.056014494624424,
+    -1.348869762049443
+   ],
+   "seed": 68758085,
+   "x": "mean_F_off",
+   "y": "mean_F_on_total"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Experimental strike-slip faulting: Surface deformation partitioning data from twelve analo' (Zenodo, doi 10.5281/zenodo.24120809): 'mean_F_on_total' is linear in 'mean_F_off' (R\u00b2 = 0.985 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24120809",
+   "held_out_r2": 0.9295,
+   "held_out_rows": 52,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-27221ac7caf0",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "71cc48999464bf10.csv",
+   "doi": "10.5281/zenodo.24120809",
+   "form": "linear",
+   "params": [
+    0.012420233439768225,
+    0.5482788882709092
+   ],
+   "seed": 68758085,
+   "x": "p05_F_on_total",
+   "y": "p05_F_dominant_fault"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Experimental strike-slip faulting: Surface deformation partitioning data from twelve analo' (Zenodo, doi 10.5281/zenodo.24120809): 'p05_F_dominant_fault' is linear in 'p05_F_on_total' (R\u00b2 = 0.933 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24120809",
+   "held_out_r2": 0.9511,
+   "held_out_rows": 52,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9f9161886681",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "082a6f47239aa676.csv",
+   "doi": "10.5281/zenodo.24120809",
+   "form": "linear",
+   "params": [
+    1.0276548168325288,
+    -1.1442395307570985
+   ],
+   "seed": 3055378662,
+   "x": "p95_F_off",
+   "y": "p05_F_on_total"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Experimental strike-slip faulting: Surface deformation partitioning data from twelve analo' (Zenodo, doi 10.5281/zenodo.24120809): 'p05_F_on_total' is linear in 'p95_F_off' (R\u00b2 = 0.978 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24120809",
+   "held_out_r2": 0.9063,
+   "held_out_rows": 65,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b5c5ca5c4a7d",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "1f7642322441e4e4.csv",
+   "doi": "10.5281/zenodo.24120809",
+   "form": "linear",
+   "params": [
+    1.0046332398724167,
+    -1.1792006780859254
+   ],
+   "seed": 2721881030,
+   "x": "p75_F_off",
+   "y": "p25_F_on_total"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Experimental strike-slip faulting: Surface deformation partitioning data from twelve analo' (Zenodo, doi 10.5281/zenodo.24120809): 'p25_F_on_total' is linear in 'p75_F_off' (R\u00b2 = 0.992 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24120809",
+   "held_out_r2": 0.9164,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-bc5c1460ae92",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "19dcb7cb0402577a.csv",
+   "doi": "10.5281/zenodo.24120809",
+   "form": "linear",
+   "params": [
+    -0.008888923291139727,
+    0.9091168160912402
+   ],
+   "seed": 2556090580,
+   "x": "F_on_total",
+   "y": "F_dominant_fault"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Experimental strike-slip faulting: Surface deformation partitioning data from twelve analo' (Zenodo, doi 10.5281/zenodo.24120809): 'F_dominant_fault' is linear in 'F_on_total' (R\u00b2 = 0.917 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24120809",
+   "held_out_r2": 0.9106,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-0371bd261a7f",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "19dcb7cb0402577a.csv",
+   "doi": "10.5281/zenodo.24120809",
+   "form": "linear",
+   "params": [
+    0.9391351048427846,
+    -1.063355144405857
+   ],
+   "seed": 2556090580,
+   "x": "F_dominant_fault",
+   "y": "OFD_ratio"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Experimental strike-slip faulting: Surface deformation partitioning data from twelve analo' (Zenodo, doi 10.5281/zenodo.24120809): 'OFD_ratio' is linear in 'F_dominant_fault' (R\u00b2 = 0.911 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
  }
