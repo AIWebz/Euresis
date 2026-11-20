@@ -3800693,5 +3800693,113 @@
   "statement": "In 'Data from: Copulation order, density cues and variance in fertilization success in a cesto' (Zenodo, doi 10.5061/dryad.v7b3n): 'SL' grows exponentially in 'TL' (R\u00b2 = 0.932 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-393d570b3992",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "-r**2*v + 1 - (2*r**3/3 - r**2 + 1/3)/(1 - r**2) >= 3/4*(-4*r**3/3 + r**2 + 1/3)",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 6672",
+  "statement": "[economics: auction with a reserve price] Bidder Surplus Efficiency with Seller Value [model-proposed; physical meaning unverified] \u2265 3/4 \u00d7 expected revenue   on r < 1, v < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-585fde225d78",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "-r**2*v + 1 - (2*r**3/3 - r**2 + 1/3)/(1 - r**2) >= 2*(2*r**3/3 - r**2 + 1/3)",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 6672",
+  "statement": "[economics: auction with a reserve price] Bidder Surplus Efficiency with Seller Value [model-proposed; physical meaning unverified] \u2265 2 \u00d7 expected total bidder surplus   on r < 1, v < 1 (tight only at the edge of the domain, near (8.45e-09, 0.881))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-a99509adf8b0",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "-r**2*v + 1 - (2*r**3/3 - r**2 + 1/3)/(1 - r**2) >= 4/3*((2*r**3/3 - r**2 + 1/3)/(2/3 - 2*r**3/3))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 6672",
+  "statement": "[economics: auction with a reserve price] Bidder Surplus Efficiency with Seller Value [model-proposed; physical meaning unverified] \u2265 4/3 \u00d7 expected bidder surplus ratio [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (8.45e-09, 0.881))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-f867bd519333",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "-r**2*v + 1 - (2*r**3/3 - r**2 + 1/3)/(1 - r**2) >= 2*((2*r**3/3 - r**2 + 1/3)/(1 - r**2))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 6672",
+  "statement": "[economics: auction with a reserve price] Bidder Surplus Efficiency with Seller Value [model-proposed; physical meaning unverified] \u2265 2 \u00d7 expected bidder surplus given reserve [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (2.65e-09, 0.94))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]
