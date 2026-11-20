@@ -93598,6 +93598,21 @@
    "family": "velocity addition",
    "expr": "sqrt((1 - u**2)*(1 - v**2) + (u + v)**2/(u*v + 1)**2) / (u*v + 1)",
    "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "c*x**2/(x + 1) + c*x",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, Electron kinetic energy / initial photon energy [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "c/(x + 1) + c/(x + 1)**2",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, Scattered photon wavelength shift factor [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "1/(2*c**2*x**2 + 1)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, Electron recoil angle (cosine) [model-proposed; physical meaning unverified])"
   }
  ],
  "tried": [
@@ -115706,7 +115721,7 @@
    "k": "3/10"
   }
  ],
- "rounds": 6620,
+ "rounds": 6621,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",
