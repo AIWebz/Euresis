@@ -4946,3 +4946,4 @@
 - 2026-11-20 10:32 FINDING (confirmed on held-out rows): In 'TEMPLAR Wales: A georeferenced environmental-toponymy dataset for Welsh settlements' (Zenodo, doi 10.5281/zenodo.22107776): 'woody_landcover_fraction_500m' is linear in 'forest_landcover_fraction_500m' (R² = 0.955 on the discovery half); held-out R² = 0.948 [emp-9ca6643962a9]
 - 2026-11-20 10:33 FINDING (confirmed on held-out rows): In 'Plant belowground trait and vegetation survey data from the Stordalen mire 2023' (Zenodo, doi 10.5281/zenodo.18269229): 'len_kmm2' is linear in 'sa_m2m2' (R² = 0.979 on the discovery half); held-out R² = 0.961 [emp-07da677cce97]
 - 2026-11-20 10:34 data feeds: 31488 datasets analysed so far, 4353 confirmed findings
+- 2026-11-20 11:36 data feeds: online
