@@ -3707418,5 +3707418,1166 @@
   "statement": "Octal game 0.0747126 is completely solved: its Grundy values are periodic with pre-period 284 and period 48 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.21106558",
+   "held_out_r2": 0.9378,
+   "held_out_rows": 446,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-87b13956c677",
+  "kind": "empirical",
+  "novelty": "KNOWN: equation of state of a simulated fluid (pressure, density, temperature, chemical potential, kinetic energy) \u2014 not a discovery",
+  "payload": {
+   "dataset": "26c836cf500a94d7.csv",
+   "doi": "10.5281/zenodo.21106558",
+   "form": "linear",
+   "params": [
+    1.266971232279806,
+    0.9875509083464441
+   ],
+   "seed": 3350309825,
+   "x": "Target_maximum",
+   "y": "Target_consistent"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data on renewable targets' (Zenodo, doi 10.5281/zenodo.21106558): 'Target_consistent' is linear in 'Target_maximum' (R\u00b2 = 0.958 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.21106558",
+   "held_out_r2": 0.938,
+   "held_out_rows": 446,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-1212b9933f59",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "26c836cf500a94d7.csv",
+   "doi": "10.5281/zenodo.21106558",
+   "form": "linear",
+   "params": [
+    1.302397746907399,
+    0.9873688687778809
+   ],
+   "seed": 3350309825,
+   "x": "Target_average",
+   "y": "Target_consistent"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data on renewable targets' (Zenodo, doi 10.5281/zenodo.21106558): 'Target_consistent' is linear in 'Target_average' (R\u00b2 = 0.958 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22822940",
+   "held_out_r2": 0.3224,
+   "held_out_rows": 237,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3cb0135bc175",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "16d85f8ec8856481.csv",
+   "doi": "10.5281/zenodo.22822940",
+   "form": "linear",
+   "params": [
+    -0.3475768221609538,
+    0.8380737149675712
+   ],
+   "seed": 2011190746,
+   "x": "n_deposits_installing",
+   "y": "n_deposits_loading"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Validated use: per-package counts of software loaded by social science replication code' (Zenodo, doi 10.5281/zenodo.22822940): 'n_deposits_loading' is linear in 'n_deposits_installing' (R\u00b2 = 0.930 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17897382",
+   "held_out_r2": 0.9637,
+   "held_out_rows": 126,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-6a16aa08f703",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8de81a40eb2d0604.csv",
+   "doi": "10.5281/zenodo.17897382",
+   "form": "linear",
+   "params": [
+    0.001741060134622265,
+    1.001876878299547
+   ],
+   "seed": 3142751296,
+   "x": "Total",
+   "y": "nDIL"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Open Data Set for the article Verd\u00fa, Carchano, Farin\u00f3s (2024). Arbitrage opportunities and' (Zenodo, doi 10.5281/zenodo.17897382): 'nDIL' is linear in 'Total' (R\u00b2 = 0.962 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17897382",
+   "held_out_r2": 0.9741,
+   "held_out_rows": 126,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c5d3f736bb7a",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8de81a40eb2d0604.csv",
+   "doi": "10.5281/zenodo.17897382",
+   "form": "linear",
+   "params": [
+    0.00112490732032827,
+    0.9627435203418555
+   ],
+   "seed": 3142751296,
+   "x": "Total",
+   "y": "nINS"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Open Data Set for the article Verd\u00fa, Carchano, Farin\u00f3s (2024). Arbitrage opportunities and' (Zenodo, doi 10.5281/zenodo.17897382): 'nINS' is linear in 'Total' (R\u00b2 = 0.971 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17897382",
+   "held_out_r2": 0.9524,
+   "held_out_rows": 126,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a71e56d02f83",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8de81a40eb2d0604.csv",
+   "doi": "10.5281/zenodo.17897382",
+   "form": "linear",
+   "params": [
+    -0.0005375453190514977,
+    0.9303182658316483
+   ],
+   "seed": 3142751296,
+   "x": "nDIL",
+   "y": "nINS"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Open Data Set for the article Verd\u00fa, Carchano, Farin\u00f3s (2024). Arbitrage opportunities and' (Zenodo, doi 10.5281/zenodo.17897382): 'nINS' is linear in 'nDIL' (R\u00b2 = 0.946 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24287752",
+   "held_out_r2": 0.9501,
+   "held_out_rows": 318,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-03e7077aa024",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "2fd1fad10079a766.csv",
+   "doi": "10.5281/zenodo.24287752",
+   "form": "power law",
+   "params": [
+    0.9736615016813557,
+    0.78221081635015
+   ],
+   "seed": 435339562,
+   "x": "CRMI_global__equal",
+   "y": "CRMI_global__trade"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Critical Raw Materials Index (CRMI)' (Zenodo, doi 10.5281/zenodo.24287752): 'CRMI_global__trade' follows a power law in 'CRMI_global__equal' (R\u00b2 = 0.953 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24287752",
+   "held_out_r2": 0.9654,
+   "held_out_rows": 318,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-093b39cf1a1a",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "2fd1fad10079a766.csv",
+   "doi": "10.5281/zenodo.24287752",
+   "form": "power law",
+   "params": [
+    0.9500984849526698,
+    0.7939903931960044
+   ],
+   "seed": 435339562,
+   "x": "CRMI_global__equal",
+   "y": "CRMI_global__cap_proportional"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Critical Raw Materials Index (CRMI)' (Zenodo, doi 10.5281/zenodo.24287752): 'CRMI_global__cap_proportional' follows a power law in 'CRMI_global__equal' (R\u00b2 = 0.965 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24287752",
+   "held_out_r2": 0.9392,
+   "held_out_rows": 318,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-40582aeaa418",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "2fd1fad10079a766.csv",
+   "doi": "10.5281/zenodo.24287752",
+   "form": "exponential",
+   "params": [
+    3.696115368496434,
+    0.010379958441630732
+   ],
+   "seed": 435339562,
+   "x": "CRMI_global__equal",
+   "y": "CRMI_EV__cap_proportional"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Critical Raw Materials Index (CRMI)' (Zenodo, doi 10.5281/zenodo.24287752): 'CRMI_EV__cap_proportional' grows exponentially in 'CRMI_global__equal' (R\u00b2 = 0.945 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24287752",
+   "held_out_r2": 0.9004,
+   "held_out_rows": 318,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a25f9a715e12",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "2fd1fad10079a766.csv",
+   "doi": "10.5281/zenodo.24287752",
+   "form": "power law",
+   "params": [
+    1.293119951522418,
+    0.7069923984007166
+   ],
+   "seed": 435339562,
+   "x": "CRMI_global__equal",
+   "y": "CRMI_electricity_networks__cap_proportional"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Critical Raw Materials Index (CRMI)' (Zenodo, doi 10.5281/zenodo.24287752): 'CRMI_electricity_networks__cap_proportional' follows a power law in 'CRMI_global__equal' (R\u00b2 = 0.908 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24287752",
+   "held_out_r2": 0.9037,
+   "held_out_rows": 318,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-2b677d1897a9",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "2fd1fad10079a766.csv",
+   "doi": "10.5281/zenodo.24287752",
+   "form": "exponential",
+   "params": [
+    3.7687268450413893,
+    0.010345060895599636
+   ],
+   "seed": 435339562,
+   "x": "CRMI_global__equal",
+   "y": "CRMI_battery_storage__cap_proportional"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Critical Raw Materials Index (CRMI)' (Zenodo, doi 10.5281/zenodo.24287752): 'CRMI_battery_storage__cap_proportional' grows exponentially in 'CRMI_global__equal' (R\u00b2 = 0.912 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24287752",
+   "held_out_r2": 0.9044,
+   "held_out_rows": 318,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-8970838bef37",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "2fd1fad10079a766.csv",
+   "doi": "10.5281/zenodo.24287752",
+   "form": "power law",
+   "params": [
+    1.1152341440283557,
+    0.7407417457973687
+   ],
+   "seed": 435339562,
+   "x": "CRMI_global__equal",
+   "y": "CRMI_hydrogen__cap_proportional"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Critical Raw Materials Index (CRMI)' (Zenodo, doi 10.5281/zenodo.24287752): 'CRMI_hydrogen__cap_proportional' follows a power law in 'CRMI_global__equal' (R\u00b2 = 0.912 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24287752",
+   "held_out_r2": 0.9453,
+   "held_out_rows": 318,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-0a5250b427ca",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "2fd1fad10079a766.csv",
+   "doi": "10.5281/zenodo.24287752",
+   "form": "power law",
+   "params": [
+    0.8714847917508897,
+    0.807770996174086
+   ],
+   "seed": 435339562,
+   "x": "CRMI_global__equal",
+   "y": "CRMI_solar_pv__cap_proportional"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Critical Raw Materials Index (CRMI)' (Zenodo, doi 10.5281/zenodo.24287752): 'CRMI_solar_pv__cap_proportional' follows a power law in 'CRMI_global__equal' (R\u00b2 = 0.944 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24287752",
+   "held_out_r2": 0.9461,
+   "held_out_rows": 318,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-db70aaae708c",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "2fd1fad10079a766.csv",
+   "doi": "10.5281/zenodo.24287752",
+   "form": "linear",
+   "params": [
+    6.663236342421341,
+    1.0167148895356668
+   ],
+   "seed": 435339562,
+   "x": "CRMI_global__equal",
+   "y": "CRMI_wind__cap_proportional"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Critical Raw Materials Index (CRMI)' (Zenodo, doi 10.5281/zenodo.24287752): 'CRMI_wind__cap_proportional' is linear in 'CRMI_global__equal' (R\u00b2 = 0.948 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24287752",
+   "held_out_r2": 0.9876,
+   "held_out_rows": 318,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-577f6fa49345",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "2fd1fad10079a766.csv",
+   "doi": "10.5281/zenodo.24287752",
+   "form": "power law",
+   "params": [
+    -0.28876100510874697,
+    1.0692539346657295
+   ],
+   "seed": 435339562,
+   "x": "CRMI_global__trade",
+   "y": "CRMI_global__cap_equal"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Critical Raw Materials Index (CRMI)' (Zenodo, doi 10.5281/zenodo.24287752): 'CRMI_global__cap_equal' follows a power law in 'CRMI_global__trade' (R\u00b2 = 0.989 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24287752",
+   "held_out_r2": 0.9901,
+   "held_out_rows": 318,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-40340d72f0b3",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "2fd1fad10079a766.csv",
+   "doi": "10.5281/zenodo.24287752",
+   "form": "power law",
+   "params": [
+    0.010799197775460961,
+    1.00427802263596
+   ],
+   "seed": 435339562,
+   "x": "CRMI_global__trade",
+   "y": "CRMI_global__cap_proportional"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Critical Raw Materials Index (CRMI)' (Zenodo, doi 10.5281/zenodo.24287752): 'CRMI_global__cap_proportional' follows a power law in 'CRMI_global__trade' (R\u00b2 = 0.991 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24287752",
+   "held_out_r2": 0.8921,
+   "held_out_rows": 318,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4aa2f15f6479",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "2fd1fad10079a766.csv",
+   "doi": "10.5281/zenodo.24287752",
+   "form": "exponential",
+   "params": [
+    3.4560221800700774,
+    0.013239323528091606
+   ],
+   "seed": 435339562,
+   "x": "CRMI_global__trade",
+   "y": "CRMI_EV__cap_proportional"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Critical Raw Materials Index (CRMI)' (Zenodo, doi 10.5281/zenodo.24287752): 'CRMI_EV__cap_proportional' grows exponentially in 'CRMI_global__trade' (R\u00b2 = 0.901 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24287752",
+   "held_out_r2": 0.9814,
+   "held_out_rows": 318,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-06d42b1c0fdb",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "2fd1fad10079a766.csv",
+   "doi": "10.5281/zenodo.24287752",
+   "form": "power law",
+   "params": [
+    0.3502116726269435,
+    0.9176659218624295
+   ],
+   "seed": 435339562,
+   "x": "CRMI_global__trade",
+   "y": "CRMI_electricity_networks__cap_proportional"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Critical Raw Materials Index (CRMI)' (Zenodo, doi 10.5281/zenodo.24287752): 'CRMI_electricity_networks__cap_proportional' follows a power law in 'CRMI_global__trade' (R\u00b2 = 0.982 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24287752",
+   "held_out_r2": 0.9436,
+   "held_out_rows": 318,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-0c22670b7e15",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "2fd1fad10079a766.csv",
+   "doi": "10.5281/zenodo.24287752",
+   "form": "power law",
+   "params": [
+    0.20944860559475612,
+    0.9434096107307469
+   ],
+   "seed": 435339562,
+   "x": "CRMI_global__trade",
+   "y": "CRMI_hydrogen__cap_proportional"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Critical Raw Materials Index (CRMI)' (Zenodo, doi 10.5281/zenodo.24287752): 'CRMI_hydrogen__cap_proportional' follows a power law in 'CRMI_global__trade' (R\u00b2 = 0.950 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24287752",
+   "held_out_r2": 0.9886,
+   "held_out_rows": 318,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b472e7693939",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "2fd1fad10079a766.csv",
+   "doi": "10.5281/zenodo.24287752",
+   "form": "power law",
+   "params": [
+    -0.13555306535707226,
+    1.0330199479281388
+   ],
+   "seed": 435339562,
+   "x": "CRMI_global__trade",
+   "y": "CRMI_solar_pv__cap_proportional"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Critical Raw Materials Index (CRMI)' (Zenodo, doi 10.5281/zenodo.24287752): 'CRMI_solar_pv__cap_proportional' follows a power law in 'CRMI_global__trade' (R\u00b2 = 0.991 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24287752",
+   "held_out_r2": 0.9457,
+   "held_out_rows": 318,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-bbd4db553355",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "2fd1fad10079a766.csv",
+   "doi": "10.5281/zenodo.24287752",
+   "form": "power law",
+   "params": [
+    -0.6043821804512427,
+    1.1559677472506271
+   ],
+   "seed": 435339562,
+   "x": "CRMI_global__trade",
+   "y": "CRMI_wind__cap_proportional"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Critical Raw Materials Index (CRMI)' (Zenodo, doi 10.5281/zenodo.24287752): 'CRMI_wind__cap_proportional' follows a power law in 'CRMI_global__trade' (R\u00b2 = 0.951 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24287752",
+   "held_out_r2": 0.9396,
+   "held_out_rows": 318,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-2f38f9b2520a",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "2fd1fad10079a766.csv",
+   "doi": "10.5281/zenodo.24287752",
+   "form": "exponential",
+   "params": [
+    3.531693254627252,
+    0.012084842492074612
+   ],
+   "seed": 435339562,
+   "x": "CRMI_global__cap_equal",
+   "y": "CRMI_EV__cap_proportional"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Critical Raw Materials Index (CRMI)' (Zenodo, doi 10.5281/zenodo.24287752): 'CRMI_EV__cap_proportional' grows exponentially in 'CRMI_global__cap_equal' (R\u00b2 = 0.944 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24287752",
+   "held_out_r2": 0.9502,
+   "held_out_rows": 318,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-452197222fad",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "2fd1fad10079a766.csv",
+   "doi": "10.5281/zenodo.24287752",
+   "form": "power law",
+   "params": [
+    0.6759110515912814,
+    0.8412019389350087
+   ],
+   "seed": 435339562,
+   "x": "CRMI_global__cap_equal",
+   "y": "CRMI_electricity_networks__cap_proportional"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Critical Raw Materials Index (CRMI)' (Zenodo, doi 10.5281/zenodo.24287752): 'CRMI_electricity_networks__cap_proportional' follows a power law in 'CRMI_global__cap_equal' (R\u00b2 = 0.954 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24287752",
+   "held_out_r2": 0.9012,
+   "held_out_rows": 318,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-6ab5580f1380",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "2fd1fad10079a766.csv",
+   "doi": "10.5281/zenodo.24287752",
+   "form": "exponential",
+   "params": [
+    3.605541919143726,
+    0.01203735696393882
+   ],
+   "seed": 435339562,
+   "x": "CRMI_global__cap_equal",
+   "y": "CRMI_battery_storage__cap_proportional"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Critical Raw Materials Index (CRMI)' (Zenodo, doi 10.5281/zenodo.24287752): 'CRMI_battery_storage__cap_proportional' grows exponentially in 'CRMI_global__cap_equal' (R\u00b2 = 0.910 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24287752",
+   "held_out_r2": 0.9317,
+   "held_out_rows": 318,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d19ed930f794",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "2fd1fad10079a766.csv",
+   "doi": "10.5281/zenodo.24287752",
+   "form": "power law",
+   "params": [
+    0.5100181789979711,
+    0.8722932421981457
+   ],
+   "seed": 435339562,
+   "x": "CRMI_global__cap_equal",
+   "y": "CRMI_hydrogen__cap_proportional"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Critical Raw Materials Index (CRMI)' (Zenodo, doi 10.5281/zenodo.24287752): 'CRMI_hydrogen__cap_proportional' follows a power law in 'CRMI_global__cap_equal' (R\u00b2 = 0.939 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24287752",
+   "held_out_r2": 0.9802,
+   "held_out_rows": 318,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b7d69bc8b06f",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "2fd1fad10079a766.csv",
+   "doi": "10.5281/zenodo.24287752",
+   "form": "power law",
+   "params": [
+    0.18995712136252677,
+    0.9559377201296946
+   ],
+   "seed": 435339562,
+   "x": "CRMI_global__cap_equal",
+   "y": "CRMI_solar_pv__cap_proportional"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Critical Raw Materials Index (CRMI)' (Zenodo, doi 10.5281/zenodo.24287752): 'CRMI_solar_pv__cap_proportional' follows a power law in 'CRMI_global__cap_equal' (R\u00b2 = 0.981 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24287752",
+   "held_out_r2": 0.9653,
+   "held_out_rows": 318,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4a64f2b41f5b",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "2fd1fad10079a766.csv",
+   "doi": "10.5281/zenodo.24287752",
+   "form": "power law",
+   "params": [
+    -0.31032207035078846,
+    1.085059279661933
+   ],
+   "seed": 435339562,
+   "x": "CRMI_global__cap_equal",
+   "y": "CRMI_wind__cap_proportional"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Critical Raw Materials Index (CRMI)' (Zenodo, doi 10.5281/zenodo.24287752): 'CRMI_wind__cap_proportional' follows a power law in 'CRMI_global__cap_equal' (R\u00b2 = 0.969 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24287752",
+   "held_out_r2": 0.937,
+   "held_out_rows": 318,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3d7f8d2926bb",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "2fd1fad10079a766.csv",
+   "doi": "10.5281/zenodo.24287752",
+   "form": "exponential",
+   "params": [
+    3.461045473005033,
+    0.012785160914851289
+   ],
+   "seed": 435339562,
+   "x": "CRMI_global__cap_proportional",
+   "y": "CRMI_EV__cap_proportional"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Critical Raw Materials Index (CRMI)' (Zenodo, doi 10.5281/zenodo.24287752): 'CRMI_EV__cap_proportional' grows exponentially in 'CRMI_global__cap_proportional' (R\u00b2 = 0.939 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24287752",
+   "held_out_r2": 0.9562,
+   "held_out_rows": 318,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-be6a6fc44848",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "2fd1fad10079a766.csv",
+   "doi": "10.5281/zenodo.24287752",
+   "form": "power law",
+   "params": [
+    0.4087509507330407,
+    0.8988125191477995
+   ],
+   "seed": 435339562,
+   "x": "CRMI_global__cap_proportional",
+   "y": "CRMI_electricity_networks__cap_proportional"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Critical Raw Materials Index (CRMI)' (Zenodo, doi 10.5281/zenodo.24287752): 'CRMI_electricity_networks__cap_proportional' follows a power law in 'CRMI_global__cap_proportional' (R\u00b2 = 0.959 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24287752",
+   "held_out_r2": 0.8995,
+   "held_out_rows": 318,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-fd492e08a924",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "2fd1fad10079a766.csv",
+   "doi": "10.5281/zenodo.24287752",
+   "form": "exponential",
+   "params": [
+    3.534378522889532,
+    0.01274286521540611
+   ],
+   "seed": 435339562,
+   "x": "CRMI_global__cap_proportional",
+   "y": "CRMI_battery_storage__cap_proportional"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Critical Raw Materials Index (CRMI)' (Zenodo, doi 10.5281/zenodo.24287752): 'CRMI_battery_storage__cap_proportional' grows exponentially in 'CRMI_global__cap_proportional' (R\u00b2 = 0.907 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24287752",
+   "held_out_r2": 0.9343,
+   "held_out_rows": 318,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9e505289969d",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "2fd1fad10079a766.csv",
+   "doi": "10.5281/zenodo.24287752",
+   "form": "logarithmic",
+   "params": [
+    -304.6130614549677,
+    86.6744481621347
+   ],
+   "seed": 435339562,
+   "x": "CRMI_global__cap_proportional",
+   "y": "CRMI_hydrogen__cap_proportional"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Critical Raw Materials Index (CRMI)' (Zenodo, doi 10.5281/zenodo.24287752): 'CRMI_hydrogen__cap_proportional' grows logarithmically in 'CRMI_global__cap_proportional' (R\u00b2 = 0.943 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24287752",
+   "held_out_r2": 0.9812,
+   "held_out_rows": 318,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-98dd01dad513",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "2fd1fad10079a766.csv",
+   "doi": "10.5281/zenodo.24287752",
+   "form": "power law",
+   "params": [
+    -0.10753650303817537,
+    1.0200722171321983
+   ],
+   "seed": 435339562,
+   "x": "CRMI_global__cap_proportional",
+   "y": "CRMI_solar_pv__cap_proportional"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Critical Raw Materials Index (CRMI)' (Zenodo, doi 10.5281/zenodo.24287752): 'CRMI_solar_pv__cap_proportional' follows a power law in 'CRMI_global__cap_proportional' (R\u00b2 = 0.983 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24287752",
+   "held_out_r2": 0.9668,
+   "held_out_rows": 318,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-0a8fc38e5462",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "2fd1fad10079a766.csv",
+   "doi": "10.5281/zenodo.24287752",
+   "form": "linear",
+   "params": [
+    -18.15800025875174,
+    1.2702873313128633
+   ],
+   "seed": 435339562,
+   "x": "CRMI_global__cap_proportional",
+   "y": "CRMI_wind__cap_proportional"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Critical Raw Materials Index (CRMI)' (Zenodo, doi 10.5281/zenodo.24287752): 'CRMI_wind__cap_proportional' is linear in 'CRMI_global__cap_proportional' (R\u00b2 = 0.969 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24287752",
+   "held_out_r2": 0.989,
+   "held_out_rows": 318,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e943a70bd9e4",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "2fd1fad10079a766.csv",
+   "doi": "10.5281/zenodo.24287752",
+   "form": "linear",
+   "params": [
+    -0.5502556714047487,
+    1.0775145146284004
+   ],
+   "seed": 435339562,
+   "x": "CRMI_EV__cap_proportional",
+   "y": "CRMI_battery_storage__cap_proportional"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Critical Raw Materials Index (CRMI)' (Zenodo, doi 10.5281/zenodo.24287752): 'CRMI_battery_storage__cap_proportional' is linear in 'CRMI_EV__cap_proportional' (R\u00b2 = 0.990 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24287752",
+   "held_out_r2": 0.9621,
+   "held_out_rows": 318,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f46197f5d0d8",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "2fd1fad10079a766.csv",
+   "doi": "10.5281/zenodo.24287752",
+   "form": "logarithmic",
+   "params": [
+    -345.5415536270805,
+    95.87531833948991
+   ],
+   "seed": 435339562,
+   "x": "CRMI_EV__cap_proportional",
+   "y": "CRMI_wind__cap_proportional"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Critical Raw Materials Index (CRMI)' (Zenodo, doi 10.5281/zenodo.24287752): 'CRMI_wind__cap_proportional' grows logarithmically in 'CRMI_EV__cap_proportional' (R\u00b2 = 0.961 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24287752",
+   "held_out_r2": 0.909,
+   "held_out_rows": 318,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d580ac04eeed",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "2fd1fad10079a766.csv",
+   "doi": "10.5281/zenodo.24287752",
+   "form": "power law",
+   "params": [
+    -0.033302749542487416,
+    1.002122837373846
+   ],
+   "seed": 435339562,
+   "x": "CRMI_electricity_networks__cap_proportional",
+   "y": "CRMI_hydrogen__cap_proportional"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Critical Raw Materials Index (CRMI)' (Zenodo, doi 10.5281/zenodo.24287752): 'CRMI_hydrogen__cap_proportional' follows a power law in 'CRMI_electricity_networks__cap_proportional' (R\u00b2 = 0.919 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24287752",
+   "held_out_r2": 0.9637,
+   "held_out_rows": 318,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-12eb4f784cb2",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "2fd1fad10079a766.csv",
+   "doi": "10.5281/zenodo.24287752",
+   "form": "power law",
+   "params": [
+    -0.426758919981985,
+    1.1029250395978882
+   ],
+   "seed": 435339562,
+   "x": "CRMI_electricity_networks__cap_proportional",
+   "y": "CRMI_solar_pv__cap_proportional"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Critical Raw Materials Index (CRMI)' (Zenodo, doi 10.5281/zenodo.24287752): 'CRMI_solar_pv__cap_proportional' follows a power law in 'CRMI_electricity_networks__cap_proportional' (R\u00b2 = 0.968 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24287752",
+   "held_out_r2": 0.8953,
+   "held_out_rows": 318,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-990ccca3b4c3",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "2fd1fad10079a766.csv",
+   "doi": "10.5281/zenodo.24287752",
+   "form": "power law",
+   "params": [
+    -0.8566716457882025,
+    1.2179260308738642
+   ],
+   "seed": 435339562,
+   "x": "CRMI_electricity_networks__cap_proportional",
+   "y": "CRMI_wind__cap_proportional"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Critical Raw Materials Index (CRMI)' (Zenodo, doi 10.5281/zenodo.24287752): 'CRMI_wind__cap_proportional' follows a power law in 'CRMI_electricity_networks__cap_proportional' (R\u00b2 = 0.906 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24287752",
+   "held_out_r2": 0.9256,
+   "held_out_rows": 318,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-495fa694a991",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "2fd1fad10079a766.csv",
+   "doi": "10.5281/zenodo.24287752",
+   "form": "logarithmic",
+   "params": [
+    -338.4043647276581,
+    93.01228961907495
+   ],
+   "seed": 435339562,
+   "x": "CRMI_battery_storage__cap_proportional",
+   "y": "CRMI_wind__cap_proportional"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Critical Raw Materials Index (CRMI)' (Zenodo, doi 10.5281/zenodo.24287752): 'CRMI_wind__cap_proportional' grows logarithmically in 'CRMI_battery_storage__cap_proportional' (R\u00b2 = 0.931 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24287752",
+   "held_out_r2": 0.9128,
+   "held_out_rows": 318,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f1772f1c4ca2",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "2fd1fad10079a766.csv",
+   "doi": "10.5281/zenodo.24287752",
+   "form": "power law",
+   "params": [
+    -0.07217414536025613,
+    1.029926574747623
+   ],
+   "seed": 435339562,
+   "x": "CRMI_hydrogen__cap_proportional",
+   "y": "CRMI_solar_pv__cap_proportional"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Critical Raw Materials Index (CRMI)' (Zenodo, doi 10.5281/zenodo.24287752): 'CRMI_solar_pv__cap_proportional' follows a power law in 'CRMI_hydrogen__cap_proportional' (R\u00b2 = 0.923 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24287752",
+   "held_out_r2": 0.9055,
+   "held_out_rows": 318,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-2a7aedca5e70",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "2fd1fad10079a766.csv",
+   "doi": "10.5281/zenodo.24287752",
+   "form": "linear",
+   "params": [
+    -23.210009156452802,
+    1.4318950022117476
+   ],
+   "seed": 435339562,
+   "x": "CRMI_hydrogen__cap_proportional",
+   "y": "CRMI_wind__cap_proportional"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Critical Raw Materials Index (CRMI)' (Zenodo, doi 10.5281/zenodo.24287752): 'CRMI_wind__cap_proportional' is linear in 'CRMI_hydrogen__cap_proportional' (R\u00b2 = 0.914 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24287752",
+   "held_out_r2": 0.9405,
+   "held_out_rows": 318,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-0c093b18f7bf",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "2fd1fad10079a766.csv",
+   "doi": "10.5281/zenodo.24287752",
+   "form": "power law",
+   "params": [
+    -0.412484918774485,
+    1.110203134521247
+   ],
+   "seed": 435339562,
+   "x": "CRMI_solar_pv__cap_proportional",
+   "y": "CRMI_wind__cap_proportional"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Critical Raw Materials Index (CRMI)' (Zenodo, doi 10.5281/zenodo.24287752): 'CRMI_wind__cap_proportional' follows a power law in 'CRMI_solar_pv__cap_proportional' (R\u00b2 = 0.945 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.18481098",
+   "held_out_r2": 0.9815,
+   "held_out_rows": 75,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-396eafbdc9c2",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f06310fe75301128.csv",
+   "doi": "10.5281/zenodo.18481098",
+   "form": "linear",
+   "params": [
+    1878.8915357611857,
+    -1.81979278642255
+   ],
+   "seed": 1560662754,
+   "x": "cdd24_clim_pop_w",
+   "y": "hdd15_clim_pop_w"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Impacts of Rising Temperatures of Global Energy Demand: The Role of Climatic Shifts and We' (Zenodo, doi 10.5281/zenodo.18481098): 'hdd15_clim_pop_w' is linear in 'cdd24_clim_pop_w' (R\u00b2 = 0.984 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
