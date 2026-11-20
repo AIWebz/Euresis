@@ -5164,3 +5164,4 @@
 - 2026-11-20 22:02 FINDING (confirmed on held-out rows): In 'Auxiliary data files for replication of "Augmenting the availability of historical GDP per' (Zenodo, doi 10.5281/zenodo.11546193): 'sum_visib_ln_5criteria' grows logarithmically in 'wiki_readers_2015_2018' (R² = 0.915 on the discovery half); held-out R² = 0.915 [emp-97115fb5925c]
 - 2026-11-20 22:03 FINDING (confirmed on held-out rows): In 'Auxiliary data files for replication of "Augmenting the availability of historical GDP per' (Zenodo, doi 10.5281/zenodo.11546193): 'ranking_visib_5criteria' grows exponentially in 'sum_visib_ln_5criteria' (R² = 0.945 on the discovery half); held-out R² = 0.924 [emp-016fac9fac43]
 - 2026-11-20 22:04 data feeds: 32300 datasets analysed so far, 4547 confirmed findings
+- 2026-11-20 23:07 data feeds: online
