@@ -5084,3 +5084,4 @@
 - 2026-11-20 18:13 FINDING (confirmed on held-out rows): In 'Dataset for paper "Fs-laser significantly enhances both above- and below-bandgap absorptio' (Zenodo, doi 10.5281/zenodo.13268476): '0.29 J/cm2.1' is linear in 'c-Ge' (R² = 0.924 on the discovery half); held-out R² = 0.865 [emp-ba77940a563d]
 - 2026-11-20 18:13 FINDING (confirmed on held-out rows): In 'Dataset for paper "Fs-laser significantly enhances both above- and below-bandgap absorptio' (Zenodo, doi 10.5281/zenodo.13268476): '0.38 J/cm2.1' is linear in 'c-Ge' (R² = 0.924 on the discovery half); held-out R² = 0.870 [emp-46aca807f069]
 - 2026-11-20 18:13 data feeds: 31968 datasets analysed so far, 4475 confirmed findings
+- 2026-11-20 19:15 data feeds: online

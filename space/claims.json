@@ -3796612,5 +3796612,32 @@
   "statement": "Octal game 0.0755067 is completely solved: its Grundy values are periodic with pre-period 284 and period 48 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.b5mkkwhdd",
+   "held_out_r2": 0.9824,
+   "held_out_rows": 150,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-84d8075b07d2",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "f312e9320b1c08d0.csv",
+   "doi": "10.5061/dryad.b5mkkwhdd",
+   "form": "linear",
+   "params": [
+    -1.4612961707250194,
+    1.493476179469347
+   ],
+   "seed": 4185373015,
+   "x": "Protein",
+   "y": "Iron"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Climate change exacerbates nutrient disparities from seafood' (Zenodo, doi 10.5061/dryad.b5mkkwhdd): 'Iron' is linear in 'Protein' (R\u00b2 = 0.987 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
