@@ -4934,3 +4934,4 @@
 - 2026-11-20 09:37 data feeds: online
 - 2026-11-20 09:37 FINDING (confirmed on held-out rows): In 'Datasets to accompany journal article: 'Looking beyond the vent to the environmental seasc' (Figshare, doi 10.6084/m9.figshare.31558687.v1): 'Average.SST' grows logarithmically in 'Average.Dissolved.Oxygen' (R² = 0.984 on the discovery half); held-out R² = 0.972 [emp-d86ca0d10449]
 - 2026-11-20 09:37 data feeds: 31376 datasets analysed so far, 4343 confirmed findings
+- 2026-11-20 10:29 data feeds: online
