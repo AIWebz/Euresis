@@ -3800801,5 +3800801,86 @@
   "statement": "[economics: auction with a reserve price] Bidder Surplus Efficiency with Seller Value [model-proposed; physical meaning unverified] \u2265 2 \u00d7 expected bidder surplus given reserve [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (2.65e-09, 0.94))",
   "status": "proved",
   "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-55602b4a3578",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'expected bidder surplus given reserve [model-proposed; physical meaning unverified]'",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "-r**2*v + 1 - (2*r**3/3 - r**2 + 1/3)/(1 - r**2) >= 2*((2*r**3/3 - r**2 + 1/3)/(-r**2*v + 1))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 6680",
+  "statement": "[economics: auction with a reserve price] Bidder Surplus Efficiency with Seller Value [model-proposed; physical meaning unverified] \u2265 2 \u00d7 Bidder Surplus Reserve Ratio [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (2.65e-09, 0.94))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-e103b87ce763",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "-r**2*v + 1 - (2*r**3/3 - r**2 + 1/3)/(1 - r**2) >= 4/3*((2*r**3/3 - r**2 + 1/3)/(4*r**3/3 + r**2*v - 2*r**2 + 2/3))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 6680",
+  "statement": "[economics: auction with a reserve price] Bidder Surplus Efficiency with Seller Value [model-proposed; physical meaning unverified] \u2265 4/3 \u00d7 Bidder Surplus Reserve Efficiency Ratio [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (9.77e-09, 0.000138))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "r < 1",
+    "v < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-3ad5d30d272d",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'expected total bidder surplus'",
+  "payload": {
+   "assumptions": [
+    "r < 1",
+    "v < 1"
+   ],
+   "claim": "-r**2*v + 1 - (2*r**3/3 - r**2 + 1/3)/(1 - r**2) >= 4/3*((2*r**3/3 - r**2 + 1/3)/(-2*r**3/3 + r**2 + 2/3))",
+   "symbols": [
+    "r",
+    "v"
+   ]
+  },
+  "source": "physics_discover2 round 6680",
+  "statement": "[economics: auction with a reserve price] Bidder Surplus Efficiency with Seller Value [model-proposed; physical meaning unverified] \u2265 4/3 \u00d7 Bidder Surplus Efficiency Ratio [model-proposed; physical meaning unverified]   on r < 1, v < 1 (tight only at the edge of the domain, near (7.8e-11, 0.883))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]

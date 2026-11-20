@@ -94360,6 +94360,181 @@
    "family": "two-body decay",
    "expr": "sqrt((1 - (a - b)**2)*(1 - (a + b)**2))/sqrt((-a**2 + b**2 + 1)**2 + (a**2 - b**2 + 1)**2)",
    "why": "a power or product of known quantities"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2 / m",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "collision",
+   "expr": "m / e",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "collision",
+   "expr": "sqrt(m) + e",
+   "why": "affine combination of known quantities (target speed / initial speed, Square Root of Mass Ratio Plus Coefficient of Restitution [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "sqrt(e) / sqrt(m)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(4*r**2*z**2 + (1 - r**2)**2)/sqrt(4*z**4 - 2*z**2 + 1)",
+   "why": "affine combination of known quantities (amplitude / static deflection, Dynamic Magnification Factor [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt((1 + (2*z*r)**2)/((1 - r**2)**2 + (2*z*r)**2))",
+   "why": "affine combination of known quantities (amplitude / static deflection, transmissibility)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(4*r**2*z**2 + 1)*sqrt(4*r**2*z**2 + (1 - r**2)**2)/(2*r*z*(sqrt(4*r**2*z**2 + 1) + sqrt(4*r**2*",
+   "why": "affine combination of known quantities (quality factor, Power Amplification Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "2*r**2*z/(8*r**2*z**2 + (1 - r**2)**2 + 1)",
+   "why": "affine combination of known quantities (amplitude / static deflection, Normalized Power Transmission (Corrected) [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 + u)/(1 - u)) * sqrt((1 + v)/(1 - v)) / sqrt((1 + (u + v)/(1 + u*v)) / (1 - (u + v)/(1 + u*v",
+   "why": "affine combination of known quantities (composed speed / c)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 - u**2)*(1 - v**2)) + (u + v)*sqrt(1 - ((u + v)/(1 + u*v))**2)/(1 + u*v)",
+   "why": "affine combination of known quantities (composed speed / c, Relativistic Energy-Momentum Invariant [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "1 - c/(c*x + 1) - 1/(c*x + 1) + 1",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "x/(1 + x*c) - x*c/(1 + x*c) + 1",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, scattered photon energy / (m_e c\u00b2))"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "sqrt(c**2*x**2/(c*x + 1)**2 + c*x**2/(c*x + 1)) + 1/(c*x + 1) + 1",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, Recoil electron momentum / (m_e c) [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "c/(x + 1) + c/(x + 1)**2 + 1",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, Scattered photon wavelength shift factor [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "((1 - 2*c1 + c2)**2 / 9) / ((1 - 2*c2 + c1)**2 / 9)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "sqrt(-L*p + 1)/(-p*sqrt(1 - L) + sqrt(1 - L) + 1)",
+   "why": "affine combination of known quantities (expected wealth, Insurance Risk Exposure Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "L*p/(-2*sqrt(1 - L) + sqrt(-L*p + 1) + 1)",
+   "why": "affine combination of known quantities (expected wealth, Relative Risk Sensitivity Index [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "L*p/(-p*sqrt(1 - L) + p + sqrt(1 - L) - 1 + 1/(p*sqrt(1 - L) - p + 1))",
+   "why": "affine combination of known quantities (expected wealth, Insurance Coverage Sensitivity [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "sqrt(-L*p + 1)/(-p*sqrt(1 - L) + p + 1)",
+   "why": "affine combination of known quantities (expected wealth, Risk Adjustment Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(-2*r**3/3 + r**2*v + 2/3)/(4*r**3/3 + r**2*v - r**2 + 1/3)",
+   "why": "affine combination of known quantities (expected revenue, Welfare Reserve Efficiency with Seller Value [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "((-b**2 + (1 - a)**2)/(-a**2 + b**2 - (1 - a)**2 + 1))",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), Kinetic Energy Ratio of Products [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "sqrt((1 - (a + b)**2)**2 + (a**2 - b**2 + 1)**2)/sqrt((1 - (a + b)**2)**2 + (-a**2 + b**2 + 1)**2)",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), Invariant Mass Ratio of the Two Products [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2 / m",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "collision",
+   "expr": "m**2 / e",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "collision",
+   "expr": "sqrt(m * e)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(4*r**2*z**2 + (1 - r**2)**2)/sqrt(4*z**4 - 2*z**2 + 1)",
+   "why": "affine combination of known quantities (amplitude / static deflection, Dynamic Magnification Factor [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(8*r**2*z**2 + 1)/sqrt(4*r**2*z**2 + (1 - r**2)**2)",
+   "why": "affine combination of known quantities (amplitude / static deflection, Velocity transmissibility [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(16*r**4*z**4 + 4*r**2*z**2 + 1)/sqrt(4*r**2*z**2 + (1 - r**2)**2)",
+   "why": "affine combination of known quantities (amplitude / static deflection, Acceleration transmissibility [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(4*r**2*z**2 + 1)*sqrt(4*r**2*z**2 + (1 - r**2)**2)/(2*r*z*(sqrt(4*r**2*z**2 + 1) + sqrt(4*r**2*",
+   "why": "affine combination of known quantities (quality factor, Power Amplification Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 + u)/(1 - u)) * sqrt((1 + v)/(1 - v)) / sqrt((1 + (u + v)/(1 + u*v)) / (1 - (u + v)/(1 + u*v",
+   "why": "affine combination of known quantities (composed speed / c)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 - u**2)*(1 - v**2) + (u + v)**2/(u*v + 1)**2) / (u*v + 1)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt(1 - u**2)*sqrt(1 - v**2) + (u + v)*sqrt(1 - ((u + v)/(1 + u*v))**2) / (1 + u*v)",
+   "why": "affine combination of known quantities (composed speed / c, Relativistic Energy-Momentum Invariant [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 - u**2)*(1 - v**2) + (u + v)**2/(u*v + 1)**2)",
+   "why": "affine combination of known quantities (composed speed / c, Relativistic Beta Addition [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "1 - c/(c*x + 1)",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "((1 - 2*c1 + c2)**2/9) / ((1 - 2*c2 + c1)**2/9)",
+   "why": "a power or product of known quantities"
   }
  ],
  "tried": [
@@ -103214,7 +103389,27 @@
   "auction with a reserve price|Bidder Surplus Efficiency with Seller Value [model-proposed; physical meaning unverified]|reserve price elasticity of bidder surplus [model-proposed; physical meaning unverified]",
   "auction with a reserve price|Bidder Surplus Efficiency with Seller Value [model-proposed; physical meaning unverified]|expected bidder surplus given reserve and seller's value [model-proposed; physical meaning unverified]",
   "auction with a reserve price|Bidder Surplus Efficiency with Seller Value [model-proposed; physical meaning unverified]|Welfare Efficiency Ratio [model-proposed; physical meaning unverified]",
-  "auction with a reserve price|Bidder Surplus Efficiency with Seller Value [model-proposed; physical meaning unverified]|Bidder Surplus Given Reserve and Seller Value Ratio [model-proposed; physical meaning unverified]"
+  "auction with a reserve price|Bidder Surplus Efficiency with Seller Value [model-proposed; physical meaning unverified]|Bidder Surplus Given Reserve and Seller Value Ratio [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|Bidder Surplus Efficiency with Seller Value [model-proposed; physical meaning unverified]|Welfare Reserve Ratio [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|Bidder Surplus Efficiency with Seller Value [model-proposed; physical meaning unverified]|Bidder Surplus Reserve Ratio [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|Bidder Surplus Efficiency with Seller Value [model-proposed; physical meaning unverified]|Welfare Reserve Efficiency Ratio [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|Bidder Surplus Efficiency with Seller Value [model-proposed; physical meaning unverified]|Bidder Surplus Reserve Efficiency Ratio [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|Bidder Surplus Efficiency with Seller Value [model-proposed; physical meaning unverified]|Welfare Reserve Efficiency with Seller Value [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|Bidder Surplus Efficiency with Seller Value [model-proposed; physical meaning unverified]|Bidder Surplus Reserve Ratio with Seller Value [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|Bidder Surplus Efficiency with Seller Value [model-proposed; physical meaning unverified]|Welfare Reserve Efficiency with Seller Value and Reserve [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|Bidder Surplus Efficiency with Seller Value [model-proposed; physical meaning unverified]|Bidder Surplus Reserve Efficiency with Seller Value [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|Bidder Surplus Efficiency with Seller Value [model-proposed; physical meaning unverified]|Bidder Surplus Reserve Efficiency with Seller Value and Reserve Ratio [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|Bidder Surplus Efficiency with Seller Value [model-proposed; physical meaning unverified]|Expected Revenue to Seller's Value Ratio [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|Bidder Surplus Efficiency with Seller Value [model-proposed; physical meaning unverified]|Bidder Surplus Reserve Efficiency with Seller Value and Reserve [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|Bidder Surplus Efficiency with Seller Value [model-proposed; physical meaning unverified]|Welfare Reserve Elasticity Ratio [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|Bidder Surplus Efficiency with Seller Value [model-proposed; physical meaning unverified]|Welfare Reserve Elasticity with Seller Value [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|Bidder Surplus Efficiency with Seller Value [model-proposed; physical meaning unverified]|Welfare Reserve Efficiency with Seller Value Ratio [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|Bidder Surplus Efficiency with Seller Value [model-proposed; physical meaning unverified]|Welfare Efficiency with Seller Value [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|Bidder Surplus Efficiency with Seller Value [model-proposed; physical meaning unverified]|Bidder Surplus Efficiency Ratio [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|Bidder Surplus Efficiency with Seller Value [model-proposed; physical meaning unverified]|Welfare Efficiency with Seller Value Ratio [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|Bidder Surplus Efficiency with Seller Value [model-proposed; physical meaning unverified]|Welfare Reserve Efficiency with Seller Value and Reserve Ratio [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|Bidder Surplus Efficiency with Seller Value [model-proposed; physical meaning unverified]|Welfare Efficiency with Seller Value and Reserve [model-proposed; physical meaning unverified]",
+  "auction with a reserve price|Bidder Surplus Efficiency with Seller Value [model-proposed; physical meaning unverified]|Bidder Surplus Reserve Elasticity with Seller Value [model-proposed; physical meaning unverified]"
  ],
  "edges": [
   {
@@ -116722,9 +116917,27 @@
    "f": "Bidder Surplus Efficiency with Seller Value [model-proposed; physical meaning unverified]",
    "g": "expected bidder surplus given reserve [model-proposed; physical meaning unverified]",
    "k": "2"
+  },
+  {
+   "family": "auction with a reserve price",
+   "f": "Bidder Surplus Efficiency with Seller Value [model-proposed; physical meaning unverified]",
+   "g": "Bidder Surplus Reserve Ratio [model-proposed; physical meaning unverified]",
+   "k": "2"
+  },
+  {
+   "family": "auction with a reserve price",
+   "f": "Bidder Surplus Efficiency with Seller Value [model-proposed; physical meaning unverified]",
+   "g": "Bidder Surplus Reserve Efficiency Ratio [model-proposed; physical meaning unverified]",
+   "k": "4/3"
+  },
+  {
+   "family": "auction with a reserve price",
+   "f": "Bidder Surplus Efficiency with Seller Value [model-proposed; physical meaning unverified]",
+   "g": "Bidder Surplus Efficiency Ratio [model-proposed; physical meaning unverified]",
+   "k": "4/3"
   }
  ],
- "rounds": 6673,
+ "rounds": 6686,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",
