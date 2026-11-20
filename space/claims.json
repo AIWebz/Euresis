@@ -3743660,5 +3743660,275 @@
   "statement": "In 'Daily and hourly noise pollution metrics measured at 146 locations in Accra, Ghana for 201' (Zenodo, doi 10.1038/s41598-021-90454-6): 'LDEN' is linear in 'LNight' (R\u00b2 = 0.941 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-ea1c0767b359",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'Fraction of kinetic energy retained by the target [model-proposed; physical meaning unverified]'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "e**2*m**2/(e**2*m**2 + (1 - e**2)*(m + 1)) + 1 >= 8*(e**2*m**2/(-e**2 + (m + 1)**2 + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 6546",
+  "statement": "[physics: collision] Fraction of Kinetic Energy Retained by Target Relative to Projectile [model-proposed; physical meaning unverified] \u2265 8 \u00d7 Normalized Kinetic Energy Transfer to Target [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-fdbafc14cb1e",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'target speed / initial speed'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "m**2*(1 - e**2)/(m + 1)**2 + m*(1 - e**2)/(m + 1) - (1 - e**2)/(m + 1) + 1 >= 4*(e**2*m**2/(-e**2 + (m + 1)**2 + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 6546",
+  "statement": "[physics: collision] Kinetic Energy Ratio of the Projectile to the Target [model-proposed; physical meaning unverified] \u2265 4 \u00d7 Normalized Kinetic Energy Transfer to Target [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-e5e9df806ba5",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "(e**2*m**2 + e**2*m)/((m + 1)*((1 - e**2)*(m + 1) + (e**2*m**2 + e**2*m)/(m + 1))) >= 5/2*(e**2*m**2/(-e**2 + (m + 1)**2 + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 6546",
+  "statement": "[physics: collision] Relative Kinetic Energy Ratio After Collision [model-proposed; physical meaning unverified] \u2265 5/2 \u00d7 Normalized Kinetic Energy Transfer to Target [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 9.12e-05))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-9cd723f61280",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'Fraction of kinetic energy retained by the target [model-proposed; physical meaning unverified]'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "e**2*m**2/(m**2 + 1) + e**2*m/(m + 1) - m*(1 - e**2)/(m + 1) - (1 - e**2)/(m + 1) + 1 >= 8*(e**2*m**2/(-e**2 + (m + 1)**2 + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 6546",
+  "statement": "[physics: collision] Relative Kinetic Energy Ratio of Target to Projectile [model-proposed; physical meaning unverified] \u2265 8 \u00d7 Normalized Kinetic Energy Transfer to Target [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-165afc4563cd",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "e**2*m**2/(-e**2 + (m + 1)**2 + 1) >= 1/5*(e**2*m**2/(e**2*m**2 + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 6554",
+  "statement": "[physics: collision] Normalized Kinetic Energy Transfer to Target [model-proposed; physical meaning unverified] \u2265 1/5 \u00d7 Kinetic energy ratio of the target to the projectile after collision [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 9.12e-05))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-3efca3af2739",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'Kinetic energy ratio of the target to the projectile after collision [model-proposed; physical meaning unverified]'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "e**2*m**2/(-e**2 + (m + 1)**2 + 1) >= 1/5*(e**2*m**2/(e**2*m**2 + e**2*m**2/(m + 1)**2 + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 6554",
+  "statement": "[physics: collision] Normalized Kinetic Energy Transfer to Target [model-proposed; physical meaning unverified] \u2265 1/5 \u00d7 Kinetic energy ratio of the target to the system after collision [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 9.12e-05))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-102ddee6c875",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "e**2*m**2/(-e**2 + (m + 1)**2 + 1) >= 1/5*(e**2*m**2/(e**2*m**2 - e**2*m**2/(m + 1)**2 + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 6554",
+  "statement": "[physics: collision] Normalized Kinetic Energy Transfer to Target [model-proposed; physical meaning unverified] \u2265 1/5 \u00d7 Fraction of kinetic energy retained by the target relative to the projectile [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 9.12e-05))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-59d474a431c1",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "e**2*m**2/(-e**2 + (m + 1)**2 + 1) >= 1/2*(e**2*m**2/((m + 1)**2*(-2*e**2*m**2/(m + 1)**2 - 2*e**2*m/(m + 1) + 2)))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 6554",
+  "statement": "[physics: collision] Normalized Kinetic Energy Transfer to Target [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 Ratio of Kinetic Energy of Target to Kinetic Energy of System [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-e81626524f51",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "e**2*m**2/(-e**2 + (m + 1)**2 + 1) >= 1/5*(e**2*m**2/(e**2*m**2 - e**2*m**2/(m + 1)**2 - e**2*m/(m + 1) + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 6554",
+  "statement": "[physics: collision] Normalized Kinetic Energy Transfer to Target [model-proposed; physical meaning unverified] \u2265 1/5 \u00d7 Fraction of Kinetic Energy Retained by the Target Relative to the Projectile [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 9.12e-05))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-6c87c395aabe",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "e**2*m**2/(-e**2 + (m + 1)**2 + 1) >= 3/10*(e**2*m**2/(e**2*m**2 + e**2*m/(m + 1) + (1 - e**2)/(m + 1) + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 6554",
+  "statement": "[physics: collision] Normalized Kinetic Energy Transfer to Target [model-proposed; physical meaning unverified] \u2265 3/10 \u00d7 Fraction of kinetic energy retained by the target relative to the system [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 9.12e-05))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]
