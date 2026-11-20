@@ -3769223,5 +3769223,32 @@
   "statement": "Octal game 0.0753446 is completely solved: its Grundy values are periodic with pre-period 284 and period 48 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.z08kprrgs",
+   "held_out_r2": 0.9217,
+   "held_out_rows": 2956,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-6400f3170773",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "893bccfac616e9b9.csv",
+   "doi": "10.5061/dryad.z08kprrgs",
+   "form": "linear",
+   "params": [
+    0.5551181049078657,
+    0.9335432701079031
+   ],
+   "seed": 3644432879,
+   "x": "LF.lq",
+   "y": "LF.uq"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Supplementary material for: Phylogenetic biodiversity metrics should account for both accu' (Zenodo, doi 10.5061/dryad.z08kprrgs): 'LF.uq' is linear in 'LF.lq' (R\u00b2 = 0.921 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]

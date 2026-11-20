@@ -5023,3 +5023,5 @@
 - 2026-11-20 15:28 FINDING (confirmed on held-out rows): In 'AMS and FTIR spectra of primary and aged fine PM from wood burning and coal combustion.' (Zenodo, doi 10.5281/zenodo.4882967): 'ammSO4f.Value' is linear in 'ammNO3f.Value' (R² = 0.979 on the discovery half); held-out R² = 0.982 [emp-8a1c4f2ec771]
 - 2026-11-20 15:28 FINDING (confirmed on held-out rows): In 'Monsoonal wet season influences the migration tendency of a catadromous fish (barramundi L' (Zenodo, doi 10.5061/dryad.70rxwdc4p): 'psphgrowth' follows a power law in 'Increment' (R² = 0.915 on the discovery half); held-out R² = 0.895 [emp-c36b1fe22e92]
 - 2026-11-20 15:28 data feeds: 31876 datasets analysed so far, 4420 confirmed findings
+- 2026-11-20 16:14 data feeds: online
+- 2026-11-20 16:14 FINDING (confirmed on held-out rows): In 'Supplementary material for: Phylogenetic biodiversity metrics should account for both accu' (Zenodo, doi 10.5061/dryad.z08kprrgs): 'LF.uq' is linear in 'LF.lq' (R² = 0.921 on the discovery half); held-out R² = 0.922 [emp-6400f3170773]
