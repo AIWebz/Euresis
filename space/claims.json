@@ -3695942,5 +3695942,302 @@
   "statement": "Octal game 0.0746376 is completely solved: its Grundy values are periodic with pre-period 284 and period 48 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11200892",
+   "held_out_r2": 0.9663,
+   "held_out_rows": 149,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-8cdcce2be5f2",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "05f979789f1c6897.csv",
+   "doi": "10.5281/zenodo.11200892",
+   "form": "linear",
+   "params": [
+    -120490729.89378579,
+    7.751577545685157
+   ],
+   "seed": 3435207953,
+   "x": "bp_cds",
+   "y": "bp_intron"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Supporting Information for: Single-fly genome assemblies fill major phylogenomic gaps acro' (Zenodo, doi 10.5281/zenodo.11200892): 'bp_intron' is linear in 'bp_cds' (R\u00b2 = 0.969 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11200892",
+   "held_out_r2": 0.8847,
+   "held_out_rows": 149,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b31982fe3a3f",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "05f979789f1c6897.csv",
+   "doi": "10.5281/zenodo.11200892",
+   "form": "linear",
+   "params": [
+    -56238733.58472262,
+    3.648934822033467
+   ],
+   "seed": 3435207953,
+   "x": "bp_cds",
+   "y": "bp_intergenic"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Supporting Information for: Single-fly genome assemblies fill major phylogenomic gaps acro' (Zenodo, doi 10.5281/zenodo.11200892): 'bp_intergenic' is linear in 'bp_cds' (R\u00b2 = 0.969 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11200892",
+   "held_out_r2": 0.8336,
+   "held_out_rows": 149,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ab0bdd65603d",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "05f979789f1c6897.csv",
+   "doi": "10.5281/zenodo.11200892",
+   "form": "exponential",
+   "params": [
+    9.504239195893735,
+    2.5294960830112514e-07
+   ],
+   "seed": 3435207953,
+   "x": "bp_cds",
+   "y": "bp_repeat"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Supporting Information for: Single-fly genome assemblies fill major phylogenomic gaps acro' (Zenodo, doi 10.5281/zenodo.11200892): 'bp_repeat' grows exponentially in 'bp_cds' (R\u00b2 = 0.969 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11200892",
+   "held_out_r2": 0.9027,
+   "held_out_rows": 149,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-6c49ab202855",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "05f979789f1c6897.csv",
+   "doi": "10.5281/zenodo.11200892",
+   "form": "linear",
+   "params": [
+    8.658687982476273,
+    -3.7030754465634346e-07
+   ],
+   "seed": 3435207953,
+   "x": "bp_cds",
+   "y": "dist_dmel"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Supporting Information for: Single-fly genome assemblies fill major phylogenomic gaps acro' (Zenodo, doi 10.5281/zenodo.11200892): 'dist_dmel' is linear in 'bp_cds' (R\u00b2 = 0.916 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11200892",
+   "held_out_r2": 0.9402,
+   "held_out_rows": 149,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c2e0673d8db7",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "05f979789f1c6897.csv",
+   "doi": "10.5281/zenodo.11200892",
+   "form": "linear",
+   "params": [
+    497698.38144905766,
+    0.47002364757191484
+   ],
+   "seed": 3435207953,
+   "x": "bp_intron",
+   "y": "bp_intergenic"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Supporting Information for: Single-fly genome assemblies fill major phylogenomic gaps acro' (Zenodo, doi 10.5281/zenodo.11200892): 'bp_intergenic' is linear in 'bp_intron' (R\u00b2 = 0.997 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11200892",
+   "held_out_r2": 0.8702,
+   "held_out_rows": 149,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-008f3686d2b9",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "05f979789f1c6897.csv",
+   "doi": "10.5281/zenodo.11200892",
+   "form": "exponential",
+   "params": [
+    13.451020776586398,
+    3.201840470745813e-08
+   ],
+   "seed": 3435207953,
+   "x": "bp_intron",
+   "y": "bp_repeat"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Supporting Information for: Single-fly genome assemblies fill major phylogenomic gaps acro' (Zenodo, doi 10.5281/zenodo.11200892): 'bp_repeat' grows exponentially in 'bp_intron' (R\u00b2 = 0.963 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11200892",
+   "held_out_r2": 0.9406,
+   "held_out_rows": 149,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d1e2ca4e95d5",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "05f979789f1c6897.csv",
+   "doi": "10.5281/zenodo.11200892",
+   "form": "linear",
+   "params": [
+    2.9046602425815213,
+    -4.7855869924717e-08
+   ],
+   "seed": 3435207953,
+   "x": "bp_intron",
+   "y": "dist_dmel"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Supporting Information for: Single-fly genome assemblies fill major phylogenomic gaps acro' (Zenodo, doi 10.5281/zenodo.11200892): 'dist_dmel' is linear in 'bp_intron' (R\u00b2 = 0.949 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11200892",
+   "held_out_r2": 0.9728,
+   "held_out_rows": 149,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-12c033d5c899",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "05f979789f1c6897.csv",
+   "doi": "10.5281/zenodo.11200892",
+   "form": "exponential",
+   "params": [
+    13.413225136843476,
+    6.844704805575628e-08
+   ],
+   "seed": 3435207953,
+   "x": "bp_intergenic",
+   "y": "bp_repeat"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Supporting Information for: Single-fly genome assemblies fill major phylogenomic gaps acro' (Zenodo, doi 10.5281/zenodo.11200892): 'bp_repeat' grows exponentially in 'bp_intergenic' (R\u00b2 = 0.975 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11200892",
+   "held_out_r2": 0.8194,
+   "held_out_rows": 149,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-bc556963b84f",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "05f979789f1c6897.csv",
+   "doi": "10.5281/zenodo.11200892",
+   "form": "linear",
+   "params": [
+    2.9437133608531276,
+    -1.008419023966151e-07
+   ],
+   "seed": 3435207953,
+   "x": "bp_intergenic",
+   "y": "dist_dmel"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Supporting Information for: Single-fly genome assemblies fill major phylogenomic gaps acro' (Zenodo, doi 10.5281/zenodo.11200892): 'dist_dmel' is linear in 'bp_intergenic' (R\u00b2 = 0.933 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11200892",
+   "held_out_r2": -8.2455,
+   "held_out_rows": 149,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-0c58a74b76ad",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "05f979789f1c6897.csv",
+   "doi": "10.5281/zenodo.11200892",
+   "form": "exponential",
+   "params": [
+    1.691450747359818,
+    -7.58983697212121e-07
+   ],
+   "seed": 3435207953,
+   "x": "bp_repeat",
+   "y": "dist_dmel"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Supporting Information for: Single-fly genome assemblies fill major phylogenomic gaps acro' (Zenodo, doi 10.5281/zenodo.11200892): 'dist_dmel' grows exponentially in 'bp_repeat' (R\u00b2 = 0.951 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.83bk3j9zk",
+   "held_out_r2": 0.9056,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e5548a3b66e1",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "024a16a21b93a090.csv",
+   "doi": "10.5061/dryad.83bk3j9zk",
+   "form": "linear",
+   "params": [
+    1.1053682420857656,
+    0.9433711951493583
+   ],
+   "seed": 767875847,
+   "x": "Talca",
+   "y": "Chillan"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Fitness surfaces and local thermal adaptation in Drosophila along a latitudinal' (Zenodo, doi 10.5061/dryad.83bk3j9zk): 'Chillan' is linear in 'Talca' (R\u00b2 = 0.902 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
