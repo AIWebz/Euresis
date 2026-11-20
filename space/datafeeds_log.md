@@ -4883,3 +4883,4 @@
 - 2026-11-18 13:34 FINDING (confirmed on held-out rows): In 'Supporting Information for: Single-fly genome assemblies fill major phylogenomic gaps acro' (Zenodo, doi 10.5281/zenodo.11200892): 'dist_dmel' is linear in 'bp_intron' (R² = 0.949 on the discovery half); held-out R² = 0.941 [emp-d1e2ca4e95d5]
 - 2026-11-18 13:34 FINDING (confirmed on held-out rows): In 'Supporting Information for: Single-fly genome assemblies fill major phylogenomic gaps acro' (Zenodo, doi 10.5281/zenodo.11200892): 'bp_repeat' grows exponentially in 'bp_intergenic' (R² = 0.975 on the discovery half); held-out R² = 0.973 [emp-12c033d5c899]
 - 2026-11-18 13:34 FINDING (confirmed on held-out rows): In 'Data from: Fitness surfaces and local thermal adaptation in Drosophila along a latitudinal' (Zenodo, doi 10.5061/dryad.83bk3j9zk): 'Chillan' is linear in 'Talca' (R² = 0.902 on the discovery half); held-out R² = 0.906 [emp-e5548a3b66e1]
+- 2026-11-20 06:40 data feeds: online
