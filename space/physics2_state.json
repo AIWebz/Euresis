@@ -91397,6 +91397,46 @@
    "family": "collision",
    "expr": "sqrt(m**2 + e)",
    "why": "a power or product of known quantities"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt((1 - r**2)**2 + (2*z*r)**2)/sqrt(4*z**2 + 1)",
+   "why": "affine combination of known quantities (amplitude / static deflection, Mechanical Impedance Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(4*r**2*z**2 + 1)/sqrt(4*z**2 + 1)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(4*r**2*z**2 + (1 - r**2)**2)/sqrt(4*z**2 + 1)",
+   "why": "affine combination of known quantities (amplitude / static deflection, Mechanical Impedance Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(4*z**2 + 1) - 1",
+   "why": "affine combination of known quantities (amplitude / static deflection, Resonance Width [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 + u)/(1 - u)) * sqrt((1 + v)/(1 - v)) / sqrt((1 + (u + v)/(1 + u*v)) / (1 - (u + v)/(1 + u*v",
+   "why": "affine combination of known quantities (composed speed / c)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 - u**2)*(1 - v**2) + (u + v)**2/(u*v + 1)**2) / (u*v + 1)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "1 - c/(c*x + 1)",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "((-5*c1/6 - 5*c2/6 + 1/6)**2)/((1 - c1)**2 + (1 - c2)**2)",
+   "why": "affine combination of known quantities (output of firm 1, Cournot Price Deviation Index [model-proposed; physical meaning unverified])"
   }
  ],
  "tried": [
@@ -113113,7 +113153,7 @@
    "k": "1/3"
   }
  ],
- "rounds": 6474,
+ "rounds": 6478,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",
