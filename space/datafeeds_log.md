@@ -5010,3 +5010,5 @@
 - 2026-11-20 13:40 FINDING (confirmed on held-out rows): In 'Data for "Observation of Generalized t-J Spin Dynamics with Tunable Dipolar Interactions"' (Zenodo, doi 10.5281/zenodo.14941807): 'Edd_upup' grows logarithmically in 'Edd_updown' (R² = 0.972 on the discovery half); held-out R² = 0.969 [emp-657fe764d697]
 - 2026-11-20 13:40 FINDING (confirmed on held-out rows): In 'Data for "Observation of Generalized t-J Spin Dynamics with Tunable Dipolar Interactions"' (Zenodo, doi 10.5281/zenodo.14941807): 'Density' follows a power law in 'n0' (R² = 0.904 on the discovery half); held-out R² = 0.869 [emp-fc8744fbbd53]
 - 2026-11-20 13:45 data feeds: 31714 datasets analysed so far, 4411 confirmed findings
+- 2026-11-20 14:19 data feeds: online
+- 2026-11-20 14:19 FINDING (confirmed on held-out rows): In 'Ab initio BCC calculations of nuclear charge radii of Sn isotopes' (Zenodo, doi 10.5281/zenodo.19134310): 'Rch2bccsd' grows logarithmically in 'Rch2hfb' (R² = 0.977 on the discovery half); held-out R² = 0.970 [emp-31ff31259a9d]
