@@ -3743257,7 +3743257,12 @@
   "verifier": "guy-smith-periodicity"
  },
  {
-  "evidence": null,
+  "evidence": {
+   "doi": "10.5281/zenodo.21479230",
+   "held_out_r2": 0.8431,
+   "held_out_rows": 53,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
   "id": "emp-3ad9aa00fb6d",
   "kind": "empirical",
   "novelty": "not checked",
@@ -3743275,7 +3743280,385 @@
   },
   "source": "datafeeds.py",
   "statement": "In 'Pituffik SP2-XR Surface Measured Surface Concentrations and NAAPs-RA modeled surface aeros' (Zenodo, doi 10.5281/zenodo.21479230): 'dust_totsink' follows a power law in 'smoke_totsink' (R\u00b2 = 0.934 on the discovery half)",
-  "status": "candidate",
-  "verifier": null
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.21479230",
+   "held_out_r2": 0.9038,
+   "held_out_rows": 53,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-26884ff1926d",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8690345e75983735.csv",
+   "doi": "10.5281/zenodo.21479230",
+   "form": "linear",
+   "params": [
+    -0.003387976618846443,
+    0.10849736789513963
+   ],
+   "seed": 2540777770,
+   "x": "dust_totsink",
+   "y": "abf_totsink"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Pituffik SP2-XR Surface Measured Surface Concentrations and NAAPs-RA modeled surface aeros' (Zenodo, doi 10.5281/zenodo.21479230): 'abf_totsink' is linear in 'dust_totsink' (R\u00b2 = 0.918 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.21479230",
+   "held_out_r2": 0.9044,
+   "held_out_rows": 53,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-65c0a8cf256c",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8690345e75983735.csv",
+   "doi": "10.5281/zenodo.21479230",
+   "form": "linear",
+   "params": [
+    -0.0060441958197883046,
+    0.10800373317476772
+   ],
+   "seed": 2540777770,
+   "x": "dust_totsink",
+   "y": "abf_wetsink"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Pituffik SP2-XR Surface Measured Surface Concentrations and NAAPs-RA modeled surface aeros' (Zenodo, doi 10.5281/zenodo.21479230): 'abf_wetsink' is linear in 'dust_totsink' (R\u00b2 = 0.920 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.21479230",
+   "held_out_r2": 0.9019,
+   "held_out_rows": 53,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3656cab21a56",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8690345e75983735.csv",
+   "doi": "10.5281/zenodo.21479230",
+   "form": "linear",
+   "params": [
+    0.0008065947616914696,
+    0.10964876609280909
+   ],
+   "seed": 2540777770,
+   "x": "dust_wetsink",
+   "y": "abf_totsink"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Pituffik SP2-XR Surface Measured Surface Concentrations and NAAPs-RA modeled surface aeros' (Zenodo, doi 10.5281/zenodo.21479230): 'abf_totsink' is linear in 'dust_wetsink' (R\u00b2 = 0.915 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.21479230",
+   "held_out_r2": 0.9026,
+   "held_out_rows": 53,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a627cf0f63e1",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8690345e75983735.csv",
+   "doi": "10.5281/zenodo.21479230",
+   "form": "linear",
+   "params": [
+    -0.0018986546070936048,
+    0.10923795818518035
+   ],
+   "seed": 2540777770,
+   "x": "dust_wetsink",
+   "y": "abf_wetsink"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Pituffik SP2-XR Surface Measured Surface Concentrations and NAAPs-RA modeled surface aeros' (Zenodo, doi 10.5281/zenodo.21479230): 'abf_wetsink' is linear in 'dust_wetsink' (R\u00b2 = 0.918 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.16759573",
+   "held_out_r2": 0.927,
+   "held_out_rows": 42,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c686ca0b4852",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "c3124db4ca30e4d3.csv",
+   "doi": "10.5281/zenodo.16759573",
+   "form": "linear",
+   "params": [
+    -0.023606672558209914,
+    0.7416003999069701
+   ],
+   "seed": 3565013323,
+   "x": "TPC BD",
+   "y": "FRAP BD"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset for manuscript \"Effects of drying method and temperature on phenolic composition, ' (Zenodo, doi 10.5281/zenodo.16759573): 'FRAP BD' is linear in 'TPC BD' (R\u00b2 = 0.943 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.s7h44j13f",
+   "held_out_r2": 0.9382,
+   "held_out_rows": 139,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9e986ca54bbc",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "a66c800eaea8a5f9.csv",
+   "doi": "10.5061/dryad.s7h44j13f",
+   "form": "power law",
+   "params": [
+    -0.3643285219900658,
+    0.7905192513098641
+   ],
+   "seed": 3533754349,
+   "x": "weber.length",
+   "y": "head.width"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'The Cryptic impacts of invasion: functional homogenization of tropical ant communities by ' (Zenodo, doi 10.5061/dryad.s7h44j13f): 'head.width' follows a power law in 'weber.length' (R\u00b2 = 0.904 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.s7h44j13f",
+   "held_out_r2": 0.9685,
+   "held_out_rows": 139,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-7bd8af385a58",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "a66c800eaea8a5f9.csv",
+   "doi": "10.5061/dryad.s7h44j13f",
+   "form": "linear",
+   "params": [
+    0.06592555846689832,
+    0.39824100663328915
+   ],
+   "seed": 3533754349,
+   "x": "weber.length",
+   "y": "pronotum.width"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'The Cryptic impacts of invasion: functional homogenization of tropical ant communities by ' (Zenodo, doi 10.5061/dryad.s7h44j13f): 'pronotum.width' is linear in 'weber.length' (R\u00b2 = 0.957 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.s7h44j13f",
+   "held_out_r2": 0.9556,
+   "held_out_rows": 139,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-08d81dcb1b0c",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "a66c800eaea8a5f9.csv",
+   "doi": "10.5061/dryad.s7h44j13f",
+   "form": "linear",
+   "params": [
+    -0.08231012725470772,
+    0.7854465536954452
+   ],
+   "seed": 3533754349,
+   "x": "weber.length",
+   "y": "scape.length"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'The Cryptic impacts of invasion: functional homogenization of tropical ant communities by ' (Zenodo, doi 10.5061/dryad.s7h44j13f): 'scape.length' is linear in 'weber.length' (R\u00b2 = 0.906 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.s7h44j13f",
+   "held_out_r2": 0.9623,
+   "held_out_rows": 139,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a796becb128b",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "a66c800eaea8a5f9.csv",
+   "doi": "10.5061/dryad.s7h44j13f",
+   "form": "power law",
+   "params": [
+    -0.37098482781055636,
+    1.074803782209523
+   ],
+   "seed": 3533754349,
+   "x": "head.width",
+   "y": "pronotum.width"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'The Cryptic impacts of invasion: functional homogenization of tropical ant communities by ' (Zenodo, doi 10.5061/dryad.s7h44j13f): 'pronotum.width' follows a power law in 'head.width' (R\u00b2 = 0.948 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.s7h44j13f",
+   "held_out_r2": 0.8665,
+   "held_out_rows": 139,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d2562f811ca4",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "a66c800eaea8a5f9.csv",
+   "doi": "10.5061/dryad.s7h44j13f",
+   "form": "power law",
+   "params": [
+    -0.6223310120039484,
+    0.9197729148942683
+   ],
+   "seed": 3533754349,
+   "x": "head.width",
+   "y": "mandible.length"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'The Cryptic impacts of invasion: functional homogenization of tropical ant communities by ' (Zenodo, doi 10.5061/dryad.s7h44j13f): 'mandible.length' follows a power law in 'head.width' (R\u00b2 = 0.924 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.1038/s41598-021-90454-6",
+   "held_out_r2": 0.9885,
+   "held_out_rows": 1608,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-de8c73bbd5d8",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "89caeecd4ad4b2d7.csv",
+   "doi": "10.1038/s41598-021-90454-6",
+   "form": "power law",
+   "params": [
+    0.12704361249451243,
+    0.9737101243750385
+   ],
+   "seed": 1023684190,
+   "x": "LAeq24hr",
+   "y": "LDay"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Daily and hourly noise pollution metrics measured at 146 locations in Accra, Ghana for 201' (Zenodo, doi 10.1038/s41598-021-90454-6): 'LDay' follows a power law in 'LAeq24hr' (R\u00b2 = 0.986 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.1038/s41598-021-90454-6",
+   "held_out_r2": 0.9705,
+   "held_out_rows": 1608,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a7d00be89d10",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "89caeecd4ad4b2d7.csv",
+   "doi": "10.1038/s41598-021-90454-6",
+   "form": "power law",
+   "params": [
+    0.17079858861844985,
+    0.9719930096030017
+   ],
+   "seed": 1023684190,
+   "x": "LAeq24hr",
+   "y": "LDEN"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Daily and hourly noise pollution metrics measured at 146 locations in Accra, Ghana for 201' (Zenodo, doi 10.1038/s41598-021-90454-6): 'LDEN' follows a power law in 'LAeq24hr' (R\u00b2 = 0.969 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.1038/s41598-021-90454-6",
+   "held_out_r2": 0.9332,
+   "held_out_rows": 1608,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-cf57417d4358",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "89caeecd4ad4b2d7.csv",
+   "doi": "10.1038/s41598-021-90454-6",
+   "form": "power law",
+   "params": [
+    0.1667980000453663,
+    0.9691347366530486
+   ],
+   "seed": 1023684190,
+   "x": "LDay",
+   "y": "LDEN"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Daily and hourly noise pollution metrics measured at 146 locations in Accra, Ghana for 201' (Zenodo, doi 10.1038/s41598-021-90454-6): 'LDEN' follows a power law in 'LDay' (R\u00b2 = 0.927 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.1038/s41598-021-90454-6",
+   "held_out_r2": 0.9375,
+   "held_out_rows": 1608,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9ce351613b0c",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "89caeecd4ad4b2d7.csv",
+   "doi": "10.1038/s41598-021-90454-6",
+   "form": "linear",
+   "params": [
+    15.416656218496712,
+    0.8927724842879391
+   ],
+   "seed": 1023684190,
+   "x": "LNight",
+   "y": "LDEN"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Daily and hourly noise pollution metrics measured at 146 locations in Accra, Ghana for 201' (Zenodo, doi 10.1038/s41598-021-90454-6): 'LDEN' is linear in 'LNight' (R\u00b2 = 0.941 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
