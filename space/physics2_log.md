@@ -7217,3 +7217,4 @@
 - 2026-11-20 15:32 round 6589: Compton scattering
 - 2026-11-20 15:33 round 6590: Cournot duopoly
 - 2026-11-20 15:35 round 6591: insurance and risk
+- 2026-11-20 15:37 round 6592: auction with a reserve price
