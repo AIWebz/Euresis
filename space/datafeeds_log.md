@@ -5149,3 +5149,4 @@
 - 2026-11-20 20:04 FINDING (confirmed on held-out rows): In 'Data from: Copulation order, density cues and variance in fertilization success in a cesto' (Zenodo, doi 10.5061/dryad.v7b3n): 'SL' grows exponentially in 'TL' (R² = 0.932 on the discovery half); held-out R² = 0.894 [emp-4ff95a57e0c4]
 - 2026-11-20 20:04 data feeds: 32071 datasets analysed so far, 4535 confirmed findings
 - 2026-11-20 21:06 data feeds: online
+- 2026-11-20 21:08 data feeds: 32149 datasets analysed so far, 4535 confirmed findings
