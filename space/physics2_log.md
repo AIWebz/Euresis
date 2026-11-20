@@ -7091,3 +7091,15 @@
 - 2026-11-20 08:38 round 6477: Compton scattering
 - 2026-11-20 08:39 round 6478: Cournot duopoly
 - 2026-11-20 08:40 round 6479: insurance and risk
+- 2026-11-20 08:42 round 6480: auction with a reserve price
+- 2026-11-20 08:44 round 6481: two-body decay
+- 2026-11-20 08:46 round 6482: collision
+- 2026-11-20 08:50 round 6483: driven oscillator
+- 2026-11-20 08:52 round 6484: velocity addition
+- 2026-11-20 08:54 round 6485: Compton scattering
+- 2026-11-20 08:55 round 6486: Cournot duopoly
+- 2026-11-20 08:57 round 6487: insurance and risk
+- 2026-11-20 08:59 round 6488: auction with a reserve price
+- 2026-11-20 09:01 round 6489: two-body decay
+- 2026-11-20 09:03 round 6490: collision
+- 2026-11-20 09:06 segment end: 6490 rounds, 5 discoveries, 2 known laws rediscovered
