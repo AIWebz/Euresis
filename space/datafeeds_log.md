@@ -5456,3 +5456,5 @@
 - 2026-11-21 17:05 data feeds: online
 - 2026-11-21 17:06 data feeds: 33127 datasets analysed so far, 4798 confirmed findings
 - 2026-11-21 18:08 data feeds: online
+- 2026-11-21 18:09 FINDING (confirmed on held-out rows): In '<b>Hydraulic scaling reduces between-campaign dispersion in the localization of soil water' (Figshare, doi 10.6084/m9.figshare.33314682.v1): 'theta_wetting' follows a power law in 'theta_drying' (R² = 0.977 on the discovery half); held-out R² = 0.979 [emp-be39d837b17a]
+- 2026-11-21 18:09 data feeds: 33147 datasets analysed so far, 4799 confirmed findings

@@ -3974183,5 +3974183,32 @@
   "statement": "Octal game 0.0770111 is completely solved: its Grundy values are periodic with pre-period 142 and period 24 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.6084/m9.figshare.33314682.v1",
+   "held_out_r2": 0.979,
+   "held_out_rows": 7011,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-be39d837b17a",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "062058d4fd323f1c.csv",
+   "doi": "10.6084/m9.figshare.33314682.v1",
+   "form": "power law",
+   "params": [
+    -0.12452399131551904,
+    1.0279527249418925
+   ],
+   "seed": 1245205467,
+   "x": "theta_drying",
+   "y": "theta_wetting"
+  },
+  "source": "datafeeds.py",
+  "statement": "In '<b>Hydraulic scaling reduces between-campaign dispersion in the localization of soil water' (Figshare, doi 10.6084/m9.figshare.33314682.v1): 'theta_wetting' follows a power law in 'theta_drying' (R\u00b2 = 0.977 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
