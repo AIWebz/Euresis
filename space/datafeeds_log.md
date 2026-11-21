@@ -5286,3 +5286,4 @@
 - 2026-11-21 05:40 FINDING (confirmed on held-out rows): In 'Dataset for Formation of spontaneous phonon frequency combs from anharmonic potential' (Zenodo, doi 10.5281/zenodo.20522284): '2.81E-06' is linear in '-4.34E-06' (R² = 0.970 on the discovery half); held-out R² = 0.965 [emp-dc524782424e]
 - 2026-11-21 05:40 FINDING (confirmed on held-out rows): In 'Dataset for Formation of spontaneous phonon frequency combs from anharmonic potential' (Zenodo, doi 10.5281/zenodo.20522284): '3.53E-06' is linear in '-4.34E-06' (R² = 0.927 on the discovery half); held-out R² = 0.919 [emp-4515ce977b33]
 - 2026-11-21 05:41 data feeds: 32696 datasets analysed so far, 4653 confirmed findings
+- 2026-11-21 06:42 data feeds: online
