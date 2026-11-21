@@ -7696,3 +7696,9 @@
 - 2026-11-21 15:21 round 7018: collision
 - 2026-11-21 15:24 round 7019: driven oscillator
 - 2026-11-21 15:25 round 7020: velocity addition
+- 2026-11-21 15:27 round 7021: Compton scattering
+- 2026-11-21 15:28 round 7022: Cournot duopoly
+- 2026-11-21 15:30 round 7023: insurance and risk
+- 2026-11-21 15:32 round 7024: auction with a reserve price
+- 2026-11-21 15:34 round 7025: two-body decay
+- 2026-11-21 15:37 round 7026: collision
