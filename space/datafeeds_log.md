@@ -5486,3 +5486,4 @@
 - 2026-11-21 20:07 data feeds: online
 - 2026-11-21 20:08 FINDING (confirmed on held-out rows): In 'Validating the use of stereo-video cameras to conduct remote measurements of sea turtles' (Zenodo, doi 10.5061/dryad.hhmgqnkgk): 'Individual__Eventmeasure_Measurement' is linear in 'Measured_Standard_cm' (R² = 0.988 on the discovery half); held-out R² = 0.988 [emp-d84c3442757e]
 - 2026-11-21 20:08 FINDING (confirmed on held-out rows): In 'Ammonia emissions from a wastwater treatment plant' (Zenodo, doi 10.5281/zenodo.8032908): 'U_sonic' follows a power law in 'Ustar' (R² = 0.938 on the discovery half); held-out R² = 0.939 [emp-093e26908057]
+- 2026-11-21 20:39 data feeds: 33370 datasets analysed so far, 4824 confirmed findings
