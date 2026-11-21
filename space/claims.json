@@ -3974210,5 +3974210,32 @@
   "statement": "In '<b>Hydraulic scaling reduces between-campaign dispersion in the localization of soil water' (Figshare, doi 10.6084/m9.figshare.33314682.v1): 'theta_wetting' follows a power law in 'theta_drying' (R\u00b2 = 0.977 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-6393ced50eca",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "e**2*m**2/((m + 1)**2*(e**2*m**2/(m + 1)**2 + e**2*m/(m + 1) + (1 - e**2)/(m + 1) + 1)) >= 4/7*(e**2*m**2/(-e**2 + (m + 1)**2 + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 7066",
+  "statement": "[physics: collision] Relative Kinetic Energy Ratio of Target to System [model-proposed; physical meaning unverified] \u2265 4/7 \u00d7 Normalized Kinetic Energy Transfer to Target [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]
