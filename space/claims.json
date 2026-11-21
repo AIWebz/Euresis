@@ -3930903,5 +3930903,86 @@
   "statement": "Octal game 0.0765405 is completely solved: its Grundy values are periodic with pre-period 284 and period 48 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22275392",
+   "held_out_r2": 0.897,
+   "held_out_rows": 63,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a8b54c6f9952",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "ec89f113156549ed.csv",
+   "doi": "10.5281/zenodo.22275392",
+   "form": "linear",
+   "params": [
+    0.006513037487190177,
+    0.9532802725716684
+   ],
+   "seed": 873972820,
+   "x": "tasks_social_care",
+   "y": "ess_social_care"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Task content of occupations based on the ESCO database' (Zenodo, doi 10.5281/zenodo.22275392): 'ess_social_care' is linear in 'tasks_social_care' (R\u00b2 = 0.941 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.83bk3j9tp",
+   "held_out_r2": 0.9412,
+   "held_out_rows": 210,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f15f03e8f8e9",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "9a71911182057be7.csv",
+   "doi": "10.5061/dryad.83bk3j9tp",
+   "form": "linear",
+   "params": [
+    0.25767089275735094,
+    0.1685556993872925
+   ],
+   "seed": 162751465,
+   "x": "Education level",
+   "y": "Capital stock"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Intelligentization and regional industrial competitiveness' (Zenodo, doi 10.5061/dryad.83bk3j9tp): 'Capital stock' is linear in 'Education level' (R\u00b2 = 0.946 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.18756572",
+   "held_out_r2": 0.9799,
+   "held_out_rows": 479,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e3886523823a",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "e14e0a79460eb990.csv",
+   "doi": "10.5281/zenodo.18756572",
+   "form": "linear",
+   "params": [
+    49371.31510962929,
+    2.076240662567661
+   ],
+   "seed": 1255137994,
+   "x": "KLIMA Holders",
+   "y": "klimates"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Datasets: Tokenized carbon credits in voluntary carbon markets: the case of KlimaDAO' (Zenodo, doi 10.5281/zenodo.18756572): 'klimates' is linear in 'KLIMA Holders' (R\u00b2 = 0.978 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]

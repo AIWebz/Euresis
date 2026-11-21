@@ -5440,3 +5440,8 @@
 - 2026-11-21 11:22 FINDING (confirmed on held-out rows): In 'The umbrella value of caribou management strategies for biodiversity conservation in borea' (Zenodo, doi 10.5061/dryad.djh9w0w5z): 'Prop.Broadleaf' follows a power law in 'Prop.Caribou_killed' (R² = 0.943 on the discovery half); held-out R² = 0.939 [emp-1d9c3c88acb9]
 - 2026-11-21 11:22 FINDING (confirmed on held-out rows): In 'The umbrella value of caribou management strategies for biodiversity conservation in borea' (Zenodo, doi 10.5061/dryad.djh9w0w5z): 'Isolation' follows a power law in 'Prop.Broadleaf' (R² = 0.949 on the discovery half); held-out R² = 0.960 [emp-5651713e9234]
 - 2026-11-21 11:23 data feeds: 33069 datasets analysed so far, 4795 confirmed findings
+- 2026-11-21 12:24 data feeds: online
+- 2026-11-21 12:24 FINDING (confirmed on held-out rows): In 'Task content of occupations based on the ESCO database' (Zenodo, doi 10.5281/zenodo.22275392): 'ess_social_care' is linear in 'tasks_social_care' (R² = 0.941 on the discovery half); held-out R² = 0.897 [emp-a8b54c6f9952]
+- 2026-11-21 12:25 FINDING (confirmed on held-out rows): In 'Intelligentization and regional industrial competitiveness' (Zenodo, doi 10.5061/dryad.83bk3j9tp): 'Capital stock' is linear in 'Education level' (R² = 0.946 on the discovery half); held-out R² = 0.941 [emp-f15f03e8f8e9]
+- 2026-11-21 12:26 FINDING (confirmed on held-out rows): In 'Datasets: Tokenized carbon credits in voluntary carbon markets: the case of KlimaDAO' (Zenodo, doi 10.5281/zenodo.18756572): 'klimates' is linear in 'KLIMA Holders' (R² = 0.978 on the discovery half); held-out R² = 0.980 [emp-e3886523823a]
+- 2026-11-21 12:26 data feeds: 33125 datasets analysed so far, 4798 confirmed findings
