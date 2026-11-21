@@ -5259,3 +5259,4 @@
 - 2026-11-21 03:43 FINDING (confirmed on held-out rows): In 'A multi-lab experimental assessment reveals that replicability can be improved by using em' (Zenodo, doi 10.5281/zenodo.7672235): 'sdd' is linear in 'meann' (R² = 0.942 on the discovery half); held-out R² = 0.910 [emp-c6015ab977d6]
 - 2026-11-21 03:43 FINDING (confirmed on held-out rows): In 'Data for: Torii et al., Influence of amino acid substitutions in capsid proteins of coxsac' (Zenodo, doi 10.5281/zenodo.10141286): 'Inactivation' is linear in 'CT' (R² = 0.912 on the discovery half); held-out R² = 0.861 [emp-0b49a4842d3a]
 - 2026-11-21 03:45 data feeds: 32581 datasets analysed so far, 4630 confirmed findings
+- 2026-11-21 04:46 data feeds: online
