@@ -3859245,5 +3859245,86 @@
   "statement": "In 'Data from: Post-hatch heat warms adult beaks: irreversible physiological plasticity in Jap' (Zenodo, doi 10.5061/dryad.gs661): 'Mass (g)' follows a power law in 'Age (days)' (R\u00b2 = 0.910 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-bd1488c81dd4",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "(e + 1)/(m + 1) >= 1/4*(m/(e**2 + 1) + 1)",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 6802",
+  "statement": "[physics: collision] momentum transferred / initial momentum \u2265 1/4 \u00d7 Mass Ratio Adjusted by Square of Coefficient of Restitution [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 9.59e-14))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-3ebf54a5bc40",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "-e**2*m**2/(m + 1)**2 + 1 >= 1/2*(m/(e**2 + 1) + 1)",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 6802",
+  "statement": "[physics: collision] Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 Mass Ratio Adjusted by Square of Coefficient of Restitution [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 9.12e-05))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-e9831739ca63",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified]'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "-e**2*m**2/(m + 1)**2 - m*(1 - e**2)/(m + 1) + 1 >= 1/4*(m/(e**2 + 1) + 1)",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 6802",
+  "statement": "[physics: collision] Fraction of kinetic energy retained by the system relative to initial kinetic en [model-proposed; physical meaning unverified] \u2265 1/4 \u00d7 Mass Ratio Adjusted by Square of Coefficient of Restitution [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 9.12e-05))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]
