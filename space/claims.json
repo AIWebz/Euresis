@@ -3863314,5 +3863314,32 @@
   "statement": "Octal game 0.0761077 is completely solved: its Grundy values are periodic with pre-period 284 and period 48 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3250707",
+   "held_out_r2": 0.9712,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c540d89efc70",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "043790482cc06019.csv",
+   "doi": "10.5281/zenodo.3250707",
+   "form": "linear",
+   "params": [
+    1994.3673965344133,
+    0.9734809003161257
+   ],
+   "seed": 3441194225,
+   "x": "Age",
+   "y": "Year_measurement"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Geographic variation of tree height of Pinus pinea L. gathered from common gardens in Euro' (Zenodo, doi 10.5281/zenodo.3250707): 'Year_measurement' is linear in 'Age' (R\u00b2 = 0.972 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
