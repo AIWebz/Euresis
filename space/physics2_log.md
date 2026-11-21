@@ -7708,3 +7708,7 @@
 - 2026-11-21 16:14 segment start (budget 30 min; model: Qwen3-8B; 5 discoveries so far)
 - 2026-11-21 16:14 round 7029: Compton scattering
 - 2026-11-21 16:15 round 7030: Cournot duopoly
+- 2026-11-21 16:18 round 7031: insurance and risk
+- 2026-11-21 16:20 round 7032: auction with a reserve price
+- 2026-11-21 16:22 round 7033: two-body decay
+- 2026-11-21 16:24 round 7034: collision
