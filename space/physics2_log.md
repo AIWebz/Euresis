@@ -7555,3 +7555,12 @@
 - 2026-11-21 07:43 round 6893: Compton scattering
 - 2026-11-21 07:45 round 6894: Cournot duopoly
 - 2026-11-21 07:46 round 6895: insurance and risk
+- 2026-11-21 07:52 round 6896: auction with a reserve price
+- 2026-11-21 07:53 round 6897: two-body decay
+- 2026-11-21 07:55 round 6898: collision
+- 2026-11-21 07:58 round 6899: driven oscillator
+- 2026-11-21 08:00 round 6900: velocity addition
+- 2026-11-21 08:01 round 6901: Compton scattering
+- 2026-11-21 08:02 round 6902: Cournot duopoly
+- 2026-11-21 08:04 round 6903: insurance and risk
+- 2026-11-21 08:12 segment end: 6903 rounds, 5 discoveries, 2 known laws rediscovered
