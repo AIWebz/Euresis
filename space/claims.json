@@ -3863341,5 +3863341,86 @@
   "statement": "In 'Geographic variation of tree height of Pinus pinea L. gathered from common gardens in Euro' (Zenodo, doi 10.5281/zenodo.3250707): 'Year_measurement' is linear in 'Age' (R\u00b2 = 0.972 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7672235",
+   "held_out_r2": 0.91,
+   "held_out_rows": 44,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c6015ab977d6",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "43f6f8eeec12ec3d.csv",
+   "doi": "10.5281/zenodo.7672235",
+   "form": "linear",
+   "params": [
+    -9.95718275762348,
+    0.43019244585731503
+   ],
+   "seed": 2033081574,
+   "x": "meann",
+   "y": "sdd"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A multi-lab experimental assessment reveals that replicability can be improved by using em' (Zenodo, doi 10.5281/zenodo.7672235): 'sdd' is linear in 'meann' (R\u00b2 = 0.942 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.10141286",
+   "held_out_r2": 0.7943,
+   "held_out_rows": 48,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-7b22e2af25f9",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "0699ca3f038be2ed.csv",
+   "doi": "10.5281/zenodo.10141286",
+   "form": "logarithmic",
+   "params": [
+    5.489279060554645,
+    -3.4158206645309983
+   ],
+   "seed": 4070710925,
+   "x": "LogConc",
+   "y": "Inactivation"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Torii et al., Influence of amino acid substitutions in capsid proteins of coxsac' (Zenodo, doi 10.5281/zenodo.10141286): 'Inactivation' grows logarithmically in 'LogConc' (R\u00b2 = 0.928 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.10141286",
+   "held_out_r2": 0.8611,
+   "held_out_rows": 48,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-0b49a4842d3a",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "0699ca3f038be2ed.csv",
+   "doi": "10.5281/zenodo.10141286",
+   "form": "linear",
+   "params": [
+    -0.09566331707636408,
+    2.223395736625318
+   ],
+   "seed": 4070710925,
+   "x": "CT",
+   "y": "Inactivation"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Torii et al., Influence of amino acid substitutions in capsid proteins of coxsac' (Zenodo, doi 10.5281/zenodo.10141286): 'Inactivation' is linear in 'CT' (R\u00b2 = 0.912 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
