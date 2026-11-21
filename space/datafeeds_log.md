@@ -5260,3 +5260,8 @@
 - 2026-11-21 03:43 FINDING (confirmed on held-out rows): In 'Data for: Torii et al., Influence of amino acid substitutions in capsid proteins of coxsac' (Zenodo, doi 10.5281/zenodo.10141286): 'Inactivation' is linear in 'CT' (R² = 0.912 on the discovery half); held-out R² = 0.861 [emp-0b49a4842d3a]
 - 2026-11-21 03:45 data feeds: 32581 datasets analysed so far, 4630 confirmed findings
 - 2026-11-21 04:46 data feeds: online
+- 2026-11-21 04:49 FINDING (confirmed on held-out rows): In 'CheckMyBlob web server ligand datasets' (Zenodo, doi 10.5281/zenodo.4554474): 'electrons_over_resolution_00' follows a power law in 'part_00_electrons' (R² = 0.963 on the discovery half); held-out R² = 0.965 [emp-cf4163bb0242]
+- 2026-11-21 04:50 FINDING (confirmed on held-out rows): In 'CheckMyBlob web server ligand datasets' (Zenodo, doi 10.5281/zenodo.4554474): 'volume_over_resolution_00' follows a power law in 'part_00_electrons' (R² = 0.945 on the discovery half); held-out R² = 0.943 [emp-0aef911261b4]
+- 2026-11-21 04:50 FINDING (confirmed on held-out rows): In 'CheckMyBlob web server ligand datasets' (Zenodo, doi 10.5281/zenodo.4554474): 'local_electrons' follows a power law in 'electrons_over_resolution_00' (R² = 0.961 on the discovery half); held-out R² = 0.963 [emp-3314085e8593]
+- 2026-11-21 04:50 FINDING (confirmed on held-out rows): In 'CheckMyBlob web server ligand datasets' (Zenodo, doi 10.5281/zenodo.4554474): 'local_electrons' follows a power law in 'volume_over_resolution_00' (R² = 0.944 on the discovery half); held-out R² = 0.941 [emp-6412cf7141f3]
+- 2026-11-21 04:50 data feeds: 32641 datasets analysed so far, 4634 confirmed findings
