@@ -5222,3 +5222,9 @@
 - 2026-11-21 01:04 data feeds: 32386 datasets analysed so far, 4597 confirmed findings
 - 2026-11-21 01:47 data feeds: online
 - 2026-11-21 01:48 FINDING (confirmed on held-out rows): In 'Swallowwort biomass allocation in contrasting competitive environments' (Zenodo, doi 10.5281/zenodo.4765779): 'abvmass' is linear in 'podmass' (R² = 0.931 on the discovery half); held-out R² = 0.953 [emp-aa74e73ff8ab]
+- 2026-11-21 01:48 FINDING (confirmed on held-out rows): In 'Swallowwort biomass allocation in contrasting competitive environments' (Zenodo, doi 10.5281/zenodo.4765779): 'totmass' is linear in 'abvmass' (R² = 0.938 on the discovery half); held-out R² = 0.944 [emp-28b361f3f128]
+- 2026-11-21 01:48 FINDING (confirmed on held-out rows): In 'Soil respiration dataset for European forest sites evaluating holistic management practice' (Zenodo, doi 10.5281/zenodo.17519671): 'slope' is linear in 'flux' (R² = 0.974 on the discovery half); held-out R² = 0.975 [emp-a8b026c07eed]
+- 2026-11-21 01:49 FINDING (confirmed on held-out rows): In 'Measurement of several quality/flow parameters at crop field' (Zenodo, doi 10.5281/zenodo.7116977): 'WaterLevel' is linear in 'Pressure' (R² = 0.921 on the discovery half); held-out R² = 0.925 [emp-baecd02cbf5b]
+- 2026-11-21 01:49 FINDING (confirmed on held-out rows): In 'Measurement of several quality/flow parameters at crop field' (Zenodo, doi 10.5281/zenodo.7116977): 'WaterLevel_val' is linear in 'Pressure' (R² = 0.921 on the discovery half); held-out R² = 0.925 [emp-aadcb9fd132d]
+- 2026-11-21 01:49 FINDING (confirmed on held-out rows): In 'Measurement of several quality/flow parameters at crop field' (Zenodo, doi 10.5281/zenodo.7116977): 'GWLdepth_cm' grows exponentially in 'Pressure' (R² = 0.922 on the discovery half); held-out R² = 0.928 [emp-95ec37dc2ed5]
+- 2026-11-21 01:49 data feeds: 32431 datasets analysed so far, 4603 confirmed findings
