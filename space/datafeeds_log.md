@@ -5322,3 +5322,4 @@
 - 2026-11-21 08:45 FINDING (confirmed on held-out rows): In 'Data-Driven Analysis of Reinforced Polyester Composites: EDS, FTIR, Long-Term Gravimetric ' (Zenodo, doi 10.5281/zenodo.23210236): 'transmittance_composite_pct' grows exponentially in 'absorbance_neat_resin' (R² = 0.933 on the discovery half); held-out R² = 0.933 [emp-50066793110f]
 - 2026-11-21 08:45 FINDING (confirmed on held-out rows): In 'Data-Driven Analysis of Reinforced Polyester Composites: EDS, FTIR, Long-Term Gravimetric ' (Zenodo, doi 10.5281/zenodo.23210236): 'transmittance_neat_resin_pct' grows logarithmically in 'transmittance_composite_pct' (R² = 0.933 on the discovery half); held-out R² = 0.931 [emp-20239c54d138]
 - 2026-11-21 08:45 data feeds: 32873 datasets analysed so far, 4683 confirmed findings
+- 2026-11-21 09:26 data feeds: online
