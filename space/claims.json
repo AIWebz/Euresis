@@ -3921669,5 +3921669,59 @@
   "statement": "In 'Data from: Phenotypic plasticity in visual opsin gene expression: a meta-analysis in teleo' (Zenodo, doi 10.5281/zenodo.14776297): 'SD2' is linear in 'Mean2' (R\u00b2 = 0.904 on the discovery half)",
   "status": "refuted",
   "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.djh9w0w5z",
+   "held_out_r2": 0.9393,
+   "held_out_rows": 65,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-1d9c3c88acb9",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "38fd3d5d2cb0d806.csv",
+   "doi": "10.5061/dryad.djh9w0w5z",
+   "form": "power law",
+   "params": [
+    0.7307149700108138,
+    0.9852025801894986
+   ],
+   "seed": 2439099641,
+   "x": "Prop.Caribou_killed",
+   "y": "Prop.Broadleaf"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'The umbrella value of caribou management strategies for biodiversity conservation in borea' (Zenodo, doi 10.5061/dryad.djh9w0w5z): 'Prop.Broadleaf' follows a power law in 'Prop.Caribou_killed' (R\u00b2 = 0.943 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.djh9w0w5z",
+   "held_out_r2": 0.9597,
+   "held_out_rows": 65,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5651713e9234",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "38fd3d5d2cb0d806.csv",
+   "doi": "10.5061/dryad.djh9w0w5z",
+   "form": "power law",
+   "params": [
+    4.422677046505043,
+    3.83604756632626
+   ],
+   "seed": 2439099641,
+   "x": "Prop.Broadleaf",
+   "y": "Isolation"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'The umbrella value of caribou management strategies for biodiversity conservation in borea' (Zenodo, doi 10.5061/dryad.djh9w0w5z): 'Isolation' follows a power law in 'Prop.Broadleaf' (R\u00b2 = 0.949 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
