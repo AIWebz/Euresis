@@ -3974237,5 +3974237,80 @@
   "statement": "[physics: collision] Relative Kinetic Energy Ratio of Target to System [model-proposed; physical meaning unverified] \u2265 4/7 \u00d7 Normalized Kinetic Energy Transfer to Target [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
   "status": "proved",
   "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-afb1e7d5ac63",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "m*(e + 1)/(m + 1) >= 9/4*(e**2*m**2/(e**2*m**2/(m + 1)**2 + m**2 + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 7074",
+  "statement": "[physics: collision] target speed / initial speed \u2265 9/4 \u00d7 Normalized Kinetic Energy Transfer Ratio [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-3cd4ec08b30e",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'target speed / initial speed'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "(e + 1)/(m + 1) >= 9/4*(e**2*m**2/(e**2*m**2/(m + 1)**2 + m**2 + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 7074",
+  "statement": "[physics: collision] momentum transferred / initial momentum \u2265 9/4 \u00d7 Normalized Kinetic Energy Transfer Ratio [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": null,
+  "id": "phy-217f03604649",
+  "kind": "physics-relation",
+  "novelty": "not checked",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "m*(e + 1)**2/(m + 1)**2 >= 9/4*(e**2*m**2/(e**2*m**2/(m + 1)**2 + m**2 + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 7074",
+  "statement": "[physics: collision] fraction of kinetic energy given to the target \u2265 9/4 \u00d7 Normalized Kinetic Energy Transfer Ratio [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "candidate",
+  "verifier": null
  }
 ]

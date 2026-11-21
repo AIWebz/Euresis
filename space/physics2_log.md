@@ -7753,3 +7753,6 @@
 - 2026-11-21 18:24 round 7069: Compton scattering
 - 2026-11-21 18:25 round 7070: Cournot duopoly
 - 2026-11-21 18:27 round 7071: insurance and risk
+- 2026-11-21 18:29 round 7072: auction with a reserve price
+- 2026-11-21 18:31 round 7073: two-body decay
+- 2026-11-21 18:33 round 7074: collision
