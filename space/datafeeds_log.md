@@ -5439,3 +5439,4 @@
 - 2026-11-21 11:21 data feeds: online
 - 2026-11-21 11:22 FINDING (confirmed on held-out rows): In 'The umbrella value of caribou management strategies for biodiversity conservation in borea' (Zenodo, doi 10.5061/dryad.djh9w0w5z): 'Prop.Broadleaf' follows a power law in 'Prop.Caribou_killed' (R² = 0.943 on the discovery half); held-out R² = 0.939 [emp-1d9c3c88acb9]
 - 2026-11-21 11:22 FINDING (confirmed on held-out rows): In 'The umbrella value of caribou management strategies for biodiversity conservation in borea' (Zenodo, doi 10.5061/dryad.djh9w0w5z): 'Isolation' follows a power law in 'Prop.Broadleaf' (R² = 0.949 on the discovery half); held-out R² = 0.960 [emp-5651713e9234]
+- 2026-11-21 11:23 data feeds: 33069 datasets analysed so far, 4795 confirmed findings
