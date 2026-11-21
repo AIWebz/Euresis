@@ -7788,3 +7788,8 @@
 - 2026-11-21 21:21 round 7096: auction with a reserve price
 - 2026-11-21 21:23 round 7097: two-body decay
 - 2026-11-21 21:25 round 7098: collision
+- 2026-11-21 21:29 round 7099: driven oscillator
+- 2026-11-21 21:31 round 7100: velocity addition
+- 2026-11-21 21:33 round 7101: Compton scattering
+- 2026-11-21 21:34 round 7102: Cournot duopoly
+- 2026-11-21 21:36 round 7103: insurance and risk
