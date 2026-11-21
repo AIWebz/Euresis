@@ -95396,6 +95396,56 @@
    "family": "Cournot duopoly",
    "expr": "sqrt((-2*c1 + c2 + 1)**2 + (c1 - 2*c2 + 1)**2)/((1 - c1)**2 + (1 - c2)**2 + (-c1 - c2 + 1)**2)",
    "why": "affine combination of known quantities (output of firm 1, Total Welfare Efficiency Index [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "sqrt(-L*p + 1)/(-p*sqrt(1 - L) + p + 1)",
+   "why": "affine combination of known quantities (expected wealth, Risk Adjustment Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "1/(sqrt(1 - L) - 1)",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "sqrt(-L*p + 1)/(-p*sqrt(1 - L) + sqrt(1 - L) + 1)",
+   "why": "affine combination of known quantities (expected wealth, Insurance Risk Exposure Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "sqrt(-L*p + 1)/(-p*sqrt(1 - L) + p + 1)",
+   "why": "affine combination of known quantities (expected wealth, Risk Adjustment Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(-2*r**3/3 + r**2*v + 2/3)/(4*r**3/3 + r**2*v - r**2 + 1/3)",
+   "why": "affine combination of known quantities (expected revenue, Welfare Reserve Efficiency with Seller Value [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "sqrt((1 - (a - b)**2)*(1 - (a + b)**2))/sqrt((-a**2 + b**2 + 1)**2 + (a**2 - b**2 + 1)**2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2/m",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "collision",
+   "expr": "m/e",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "collision",
+   "expr": "sqrt(m + e)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "collision",
+   "expr": "m*sqrt(e)",
+   "why": "a power or product of known quantities"
   }
  ],
  "tried": [
@@ -118054,7 +118104,7 @@
    "k": "5"
   }
  ],
- "rounds": 6758,
+ "rounds": 6762,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",

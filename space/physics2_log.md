@@ -7403,3 +7403,7 @@
 - 2026-11-21 00:14 round 6757: Compton scattering
 - 2026-11-21 00:15 round 6758: Cournot duopoly
 - 2026-11-21 00:17 round 6759: insurance and risk
+- 2026-11-21 00:19 round 6760: auction with a reserve price
+- 2026-11-21 00:20 round 6761: two-body decay
+- 2026-11-21 00:21 round 6762: collision
+- 2026-11-21 00:24 segment end: 6762 rounds, 5 discoveries, 2 known laws rediscovered
