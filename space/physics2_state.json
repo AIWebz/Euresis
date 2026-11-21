@@ -99130,6 +99130,11 @@
    "family": "velocity addition",
    "expr": "sqrt(1 - u**2) * sqrt(1 - v**2) + (u + v) * sqrt(-(u + v)**2/(u*v + 1)**2 + 1)/(u*v + 1)",
    "why": "affine combination of known quantities (composed speed / c, Relativistic Energy-Momentum Invariant [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "1 - c/(c*x + 1)",
+   "why": "not positive on the physical domain"
   }
  ],
  "tried": [
@@ -122580,7 +122585,7 @@
    "k": "1"
   }
  ],
- "rounds": 7028,
+ "rounds": 7029,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",
