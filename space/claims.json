@@ -3894271,5 +3894271,86 @@
   "statement": "In 'Best matches between DECaLS and MGCLS within the 2R<sub>200</sub>.' (Figshare, doi 10.25388/nwu.27151284.v1): 'rErr' is linear in 'r_1' (R\u00b2 = 0.989 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.25388/nwu.27151284.v1",
+   "held_out_r2": 0.976,
+   "held_out_rows": 402,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b652fb03fb34",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "4254ae2a518650aa.csv",
+   "doi": "10.25388/nwu.27151284.v1",
+   "form": "linear",
+   "params": [
+    -25.46109297644388,
+    1.2435793559608253
+   ],
+   "seed": 2449429744,
+   "x": "z_1",
+   "y": "zErr"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Best matches between DECaLS and MGCLS within the 2R<sub>200</sub>.' (Figshare, doi 10.25388/nwu.27151284.v1): 'zErr' is linear in 'z_1' (R\u00b2 = 0.986 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.25388/nwu.27151284.v1",
+   "held_out_r2": -16.5834,
+   "held_out_rows": 194,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d3471dd25f58",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "9f502560bb56283d.csv",
+   "doi": "10.25388/nwu.27151284.v1",
+   "form": "exponential",
+   "params": [
+    -18.399312686932674,
+    0.7092446499113219
+   ],
+   "seed": 3862604784,
+   "x": "g_1",
+   "y": "gErr"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Best matches between DECaLS and MGCLS within the 2R<sub>200</sub>.' (Figshare, doi 10.25388/nwu.27151284.v1): 'gErr' grows exponentially in 'g_1' (R\u00b2 = 0.958 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.51087/data.geosoc.28050641.v1",
+   "held_out_r2": 0.9997,
+   "held_out_rows": 57,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-42dc838c42c0",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "32e51876eb768586.csv",
+   "doi": "10.51087/data.geosoc.28050641.v1",
+   "form": "power law",
+   "params": [
+    8.666027582972387,
+    -0.9818128986568966
+   ],
+   "seed": 1023086597,
+   "x": "Isotopic ratios",
+   "y": "238U\u2013206Pb* ages"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Supplementary data on the geology and petrology of the Middle Miocene Takano Formation (Is' (Figshare, doi 10.51087/data.geosoc.28050641.v1): '238U\u2013206Pb* ages' follows a power law in 'Isotopic ratios' (R\u00b2 = 1.000 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]

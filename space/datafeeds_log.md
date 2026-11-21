@@ -5305,3 +5305,6 @@
 - 2026-11-21 06:45 data feeds: 32730 datasets analysed so far, 4668 confirmed findings
 - 2026-11-21 07:32 data feeds: online
 - 2026-11-21 07:32 FINDING (confirmed on held-out rows): In 'Best matches between DECaLS and MGCLS within the 2R<sub>200</sub>.' (Figshare, doi 10.25388/nwu.27151284.v1): 'rErr' is linear in 'r_1' (R² = 0.989 on the discovery half); held-out R² = 0.986 [emp-b6a2c667f3fa]
+- 2026-11-21 07:32 FINDING (confirmed on held-out rows): In 'Best matches between DECaLS and MGCLS within the 2R<sub>200</sub>.' (Figshare, doi 10.25388/nwu.27151284.v1): 'zErr' is linear in 'z_1' (R² = 0.986 on the discovery half); held-out R² = 0.976 [emp-b652fb03fb34]
+- 2026-11-21 07:34 FINDING (confirmed on held-out rows): In 'Supplementary data on the geology and petrology of the Middle Miocene Takano Formation (Is' (Figshare, doi 10.51087/data.geosoc.28050641.v1): '238U–206Pb* ages' follows a power law in 'Isotopic ratios' (R² = 1.000 on the discovery half); held-out R² = 1.000 [emp-42dc838c42c0]
+- 2026-11-21 07:34 data feeds: 32814 datasets analysed so far, 4671 confirmed findings
