@@ -3905338,5 +3905338,167 @@
   "statement": "In 'Data-Driven Analysis of Reinforced Polyester Composites: EDS, FTIR, Long-Term Gravimetric ' (Zenodo, doi 10.5281/zenodo.23210236): 'transmittance_neat_resin_pct' grows logarithmically in 'transmittance_composite_pct' (R\u00b2 = 0.933 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-21d484c4cbd3",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "(e + 1)/(m + 1) >= 1*(-m*(1 - e**2)*(e + 1)**2/(m + 1)**3 + (1 - e**2)/(m + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 6914",
+  "statement": "[physics: collision] momentum transferred / initial momentum \u2265 1 \u00d7 Fraction of Kinetic Energy Lost Relative to Initial [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (2.26e-14, 1.03e-14))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-e15929d2841f",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "(1 - e**2)/(m + 1) >= 1*(-m*(1 - e**2)*(e + 1)**2/(m + 1)**3 + (1 - e**2)/(m + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 6914",
+  "statement": "[physics: collision] fraction of kinetic energy lost \u2265 1 \u00d7 Fraction of Kinetic Energy Lost Relative to Initial [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (3.45e-17, 0.000117))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-903962634a2e",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'fraction of kinetic energy lost'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "(-e**2*m + 1)/(m + 1) >= 1*(-m*(1 - e**2)*(e + 1)**2/(m + 1)**3 + (1 - e**2)/(m + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 6914",
+  "statement": "[physics: collision] Fraction of kinetic energy retained by projectile [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Fraction of Kinetic Energy Lost Relative to Initial [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (2.8e-17, 6.49e-09))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-8a3fa42711f4",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'fraction of kinetic energy lost'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "-e**2*m**2/(m + 1)**2 + 1 >= 1*(-m*(1 - e**2)*(e + 1)**2/(m + 1)**3 + (1 - e**2)/(m + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 6914",
+  "statement": "[physics: collision] Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Fraction of Kinetic Energy Lost Relative to Initial [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (5.99e-18, 6.6e-09))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-57f9bcaecbfe",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'fraction of kinetic energy lost'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "-e**2*m**2/(m + 1)**2 - m*(1 - e**2)/(m + 1) + 1 >= 1*(-m*(1 - e**2)*(e + 1)**2/(m + 1)**3 + (1 - e**2)/(m + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 6914",
+  "statement": "[physics: collision] Fraction of kinetic energy retained by the system relative to initial kinetic en [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Fraction of Kinetic Energy Lost Relative to Initial [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (4.97e-17, 3.85e-09))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-93964aee24f3",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'fraction of kinetic energy lost'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "(-e**2*m + 1)/(e**2*m + 1) >= 1*(-m*(1 - e**2)*(e + 1)**2/(m + 1)**3 + (1 - e**2)/(m + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 6914",
+  "statement": "[physics: collision] Fraction of kinetic energy retained by projectile relative to target [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Fraction of Kinetic Energy Lost Relative to Initial [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (5.99e-18, 6.6e-09))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]
