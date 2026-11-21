@@ -7454,3 +7454,11 @@
 - 2026-11-21 03:01 round 6802: collision
 - 2026-11-21 03:04 round 6803: driven oscillator
 - 2026-11-21 03:05 round 6804: velocity addition
+- 2026-11-21 03:06 round 6805: Compton scattering
+- 2026-11-21 03:07 round 6806: Cournot duopoly
+- 2026-11-21 03:08 round 6807: insurance and risk
+- 2026-11-21 03:09 round 6808: auction with a reserve price
+- 2026-11-21 03:11 round 6809: two-body decay
+- 2026-11-21 03:13 round 6810: collision
+- 2026-11-21 03:17 round 6811: driven oscillator
+- 2026-11-21 03:18 round 6812: velocity addition
