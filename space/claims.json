@@ -3889722,5 +3889722,545 @@
   "statement": "Octal game 0.0763067 is completely solved: its Grundy values are periodic with pre-period 284 and period 48 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3524285",
+   "held_out_r2": 0.9706,
+   "held_out_rows": 66,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e956165ccb1a",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "2e7f5cb5a778f4f3.csv",
+   "doi": "10.5281/zenodo.3524285",
+   "form": "power law",
+   "params": [
+    -2.3856288386004194,
+    0.8557650508150064
+   ],
+   "seed": 3569832696,
+   "x": "totalC",
+   "y": "totalN"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data files of Carteron et al. \"Soil abiotic and biotic properties constrain the establishm' (Zenodo, doi 10.5281/zenodo.3524285): 'totalN' follows a power law in 'totalC' (R\u00b2 = 0.985 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3524285",
+   "held_out_r2": 0.9826,
+   "held_out_rows": 75,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-05348e58cd1f",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "4cdc7ecdd2f9ac43.csv",
+   "doi": "10.5281/zenodo.3524285",
+   "form": "linear",
+   "params": [
+    0.00926832216982832,
+    0.3528603601962002
+   ],
+   "seed": 4184792782,
+   "x": "leaf.humid.w",
+   "y": "leaf.dry.w"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data files of Carteron et al. \"Soil abiotic and biotic properties constrain the establishm' (Zenodo, doi 10.5281/zenodo.3524285): 'leaf.dry.w' is linear in 'leaf.humid.w' (R\u00b2 = 0.967 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3524285",
+   "held_out_r2": 0.9539,
+   "held_out_rows": 75,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-dbad6bd7f19b",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "4cdc7ecdd2f9ac43.csv",
+   "doi": "10.5281/zenodo.3524285",
+   "form": "linear",
+   "params": [
+    -0.0048479824109658246,
+    0.09806990714372071
+   ],
+   "seed": 4184792782,
+   "x": "leaf.humid.w",
+   "y": "petiole.humid.w"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data files of Carteron et al. \"Soil abiotic and biotic properties constrain the establishm' (Zenodo, doi 10.5281/zenodo.3524285): 'petiole.humid.w' is linear in 'leaf.humid.w' (R\u00b2 = 0.927 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3524285",
+   "held_out_r2": 0.8765,
+   "held_out_rows": 75,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-943959c69a9a",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "4cdc7ecdd2f9ac43.csv",
+   "doi": "10.5281/zenodo.3524285",
+   "form": "linear",
+   "params": [
+    -0.000971451347761803,
+    0.030381125165054028
+   ],
+   "seed": 4184792782,
+   "x": "leaf.humid.w",
+   "y": "petiole.dry.w"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data files of Carteron et al. \"Soil abiotic and biotic properties constrain the establishm' (Zenodo, doi 10.5281/zenodo.3524285): 'petiole.dry.w' is linear in 'leaf.humid.w' (R\u00b2 = 0.966 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3524285",
+   "held_out_r2": 0.9892,
+   "held_out_rows": 75,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-bf7eba5ce8d1",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "4cdc7ecdd2f9ac43.csv",
+   "doi": "10.5281/zenodo.3524285",
+   "form": "linear",
+   "params": [
+    0.1755112052928892,
+    102.28392485353436
+   ],
+   "seed": 4184792782,
+   "x": "leaf.humid.w",
+   "y": "leaf.area"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data files of Carteron et al. \"Soil abiotic and biotic properties constrain the establishm' (Zenodo, doi 10.5281/zenodo.3524285): 'leaf.area' is linear in 'leaf.humid.w' (R\u00b2 = 0.987 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3524285",
+   "held_out_r2": 0.9632,
+   "held_out_rows": 75,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-edfec5b94f98",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "4cdc7ecdd2f9ac43.csv",
+   "doi": "10.5281/zenodo.3524285",
+   "form": "linear",
+   "params": [
+    -0.028882087343326965,
+    1.3466772417846662
+   ],
+   "seed": 4184792782,
+   "x": "leaf.humid.w",
+   "y": "petiole.area"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data files of Carteron et al. \"Soil abiotic and biotic properties constrain the establishm' (Zenodo, doi 10.5281/zenodo.3524285): 'petiole.area' is linear in 'leaf.humid.w' (R\u00b2 = 0.936 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3524285",
+   "held_out_r2": 0.8662,
+   "held_out_rows": 75,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f851827a5552",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "4cdc7ecdd2f9ac43.csv",
+   "doi": "10.5281/zenodo.3524285",
+   "form": "linear",
+   "params": [
+    -0.0011005404361030349,
+    0.0817797141842809
+   ],
+   "seed": 4184792782,
+   "x": "leaf.dry.w",
+   "y": "petiole.dry.w"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data files of Carteron et al. \"Soil abiotic and biotic properties constrain the establishm' (Zenodo, doi 10.5281/zenodo.3524285): 'petiole.dry.w' is linear in 'leaf.dry.w' (R\u00b2 = 0.901 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3524285",
+   "held_out_r2": 0.968,
+   "held_out_rows": 75,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-cf0dd3f62987",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "4cdc7ecdd2f9ac43.csv",
+   "doi": "10.5281/zenodo.3524285",
+   "form": "linear",
+   "params": [
+    -0.6587645706572705,
+    277.90830788565756
+   ],
+   "seed": 4184792782,
+   "x": "leaf.dry.w",
+   "y": "leaf.area"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data files of Carteron et al. \"Soil abiotic and biotic properties constrain the establishm' (Zenodo, doi 10.5281/zenodo.3524285): 'leaf.area' is linear in 'leaf.dry.w' (R\u00b2 = 0.938 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3524285",
+   "held_out_r2": 0.8667,
+   "held_out_rows": 75,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-0c51754c78ce",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "4cdc7ecdd2f9ac43.csv",
+   "doi": "10.5281/zenodo.3524285",
+   "form": "linear",
+   "params": [
+    0.0008728847053952227,
+    0.3001735920833271
+   ],
+   "seed": 4184792782,
+   "x": "petiole.humid.w",
+   "y": "petiole.dry.w"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data files of Carteron et al. \"Soil abiotic and biotic properties constrain the establishm' (Zenodo, doi 10.5281/zenodo.3524285): 'petiole.dry.w' is linear in 'petiole.humid.w' (R\u00b2 = 0.979 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3524285",
+   "held_out_r2": 0.9443,
+   "held_out_rows": 75,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4f8673484fda",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "4cdc7ecdd2f9ac43.csv",
+   "doi": "10.5281/zenodo.3524285",
+   "form": "linear",
+   "params": [
+    7.459400901903827,
+    980.4178113584229
+   ],
+   "seed": 4184792782,
+   "x": "petiole.humid.w",
+   "y": "leaf.area"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data files of Carteron et al. \"Soil abiotic and biotic properties constrain the establishm' (Zenodo, doi 10.5281/zenodo.3524285): 'leaf.area' is linear in 'petiole.humid.w' (R\u00b2 = 0.941 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3524285",
+   "held_out_r2": 0.8256,
+   "held_out_rows": 75,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ec0e8f092a81",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "4cdc7ecdd2f9ac43.csv",
+   "doi": "10.5281/zenodo.3524285",
+   "form": "linear",
+   "params": [
+    4.532325534396248,
+    3272.749751983719
+   ],
+   "seed": 4184792782,
+   "x": "petiole.dry.w",
+   "y": "leaf.area"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data files of Carteron et al. \"Soil abiotic and biotic properties constrain the establishm' (Zenodo, doi 10.5281/zenodo.3524285): 'leaf.area' is linear in 'petiole.dry.w' (R\u00b2 = 0.966 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3524285",
+   "held_out_r2": 0.8335,
+   "held_out_rows": 75,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-edcc84870a85",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "4cdc7ecdd2f9ac43.csv",
+   "doi": "10.5281/zenodo.3524285",
+   "form": "linear",
+   "params": [
+    0.011996753160092076,
+    44.514810324023394
+   ],
+   "seed": 4184792782,
+   "x": "petiole.dry.w",
+   "y": "petiole.area"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data files of Carteron et al. \"Soil abiotic and biotic properties constrain the establishm' (Zenodo, doi 10.5281/zenodo.3524285): 'petiole.area' is linear in 'petiole.dry.w' (R\u00b2 = 0.978 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3524285",
+   "held_out_r2": 0.9905,
+   "held_out_rows": 75,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-39a94b876697",
+  "kind": "empirical",
+  "novelty": "KNOWN: equation of state of a simulated fluid (pressure, density, temperature, chemical potential, kinetic energy) \u2014 not a discovery",
+  "payload": {
+   "dataset": "4cdc7ecdd2f9ac43.csv",
+   "doi": "10.5281/zenodo.3524285",
+   "form": "linear",
+   "params": [
+    -0.0034891957937750943,
+    0.4410890372387232
+   ],
+   "seed": 4184792782,
+   "x": "stem.humid.w",
+   "y": "stem.dry.w"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data files of Carteron et al. \"Soil abiotic and biotic properties constrain the establishm' (Zenodo, doi 10.5281/zenodo.3524285): 'stem.dry.w' is linear in 'stem.humid.w' (R\u00b2 = 0.988 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3524285",
+   "held_out_r2": 0.8156,
+   "held_out_rows": 75,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-84fa406a5873",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "4cdc7ecdd2f9ac43.csv",
+   "doi": "10.5281/zenodo.3524285",
+   "form": "linear",
+   "params": [
+    -0.1252880774104949,
+    4.133044159783657
+   ],
+   "seed": 4184792782,
+   "x": "stem.humid.w",
+   "y": "total.root.humid.w"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data files of Carteron et al. \"Soil abiotic and biotic properties constrain the establishm' (Zenodo, doi 10.5281/zenodo.3524285): 'total.root.humid.w' is linear in 'stem.humid.w' (R\u00b2 = 0.902 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3524285",
+   "held_out_r2": 0.8398,
+   "held_out_rows": 75,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-dde629d2460d",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "4cdc7ecdd2f9ac43.csv",
+   "doi": "10.5281/zenodo.3524285",
+   "form": "linear",
+   "params": [
+    -0.09144992391372621,
+    9.359051638796549
+   ],
+   "seed": 4184792782,
+   "x": "stem.dry.w",
+   "y": "total.root.humid.w"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data files of Carteron et al. \"Soil abiotic and biotic properties constrain the establishm' (Zenodo, doi 10.5281/zenodo.3524285): 'total.root.humid.w' is linear in 'stem.dry.w' (R\u00b2 = 0.910 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3524285",
+   "held_out_r2": 0.9774,
+   "held_out_rows": 75,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-6b3e43e4d205",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "4cdc7ecdd2f9ac43.csv",
+   "doi": "10.5281/zenodo.3524285",
+   "form": "linear",
+   "params": [
+    -0.007989607288864893,
+    0.22726814114206642
+   ],
+   "seed": 4184792782,
+   "x": "total.root.humid.w",
+   "y": "subs.root.dry.w"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data files of Carteron et al. \"Soil abiotic and biotic properties constrain the establishm' (Zenodo, doi 10.5281/zenodo.3524285): 'subs.root.dry.w' is linear in 'total.root.humid.w' (R\u00b2 = 0.962 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3524285",
+   "held_out_r2": 0.9794,
+   "held_out_rows": 75,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-163c10e0f705",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "4cdc7ecdd2f9ac43.csv",
+   "doi": "10.5281/zenodo.3524285",
+   "form": "linear",
+   "params": [
+    -0.0030031040606790177,
+    0.2637086924597716
+   ],
+   "seed": 4184792782,
+   "x": "subs.root.humid.w",
+   "y": "subs.root.dry.w"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data files of Carteron et al. \"Soil abiotic and biotic properties constrain the establishm' (Zenodo, doi 10.5281/zenodo.3524285): 'subs.root.dry.w' is linear in 'subs.root.humid.w' (R\u00b2 = 0.969 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3524285",
+   "held_out_r2": 0.9577,
+   "held_out_rows": 75,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-1373f114fb3b",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "4cdc7ecdd2f9ac43.csv",
+   "doi": "10.5281/zenodo.3524285",
+   "form": "linear",
+   "params": [
+    -0.03257604234965582,
+    0.013198711027230884
+   ],
+   "seed": 4184792782,
+   "x": "leaf.area",
+   "y": "petiole.area"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data files of Carteron et al. \"Soil abiotic and biotic properties constrain the establishm' (Zenodo, doi 10.5281/zenodo.3524285): 'petiole.area' is linear in 'leaf.area' (R\u00b2 = 0.953 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23920206",
+   "held_out_r2": 0.9016,
+   "held_out_rows": 943,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-7086b93375c3",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "572a75ae47af1e1a.csv",
+   "doi": "10.5281/zenodo.23920206",
+   "form": "linear",
+   "params": [
+    -0.017397922840528993,
+    1.4547905957793823
+   ],
+   "seed": 4113094615,
+   "x": "rG",
+   "y": "zr"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Tipping the scales: when, where, and why are trade-offs observed in animal energy allocati' (Zenodo, doi 10.5281/zenodo.23920206): 'zr' is linear in 'rG' (R\u00b2 = 0.916 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.52650",
+   "held_out_r2": 0.9397,
+   "held_out_rows": 3563,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a95adc041c50",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "c009665e4d347b89.csv",
+   "doi": "10.5061/dryad.52650",
+   "form": "linear",
+   "params": [
+    -1.5832542393216866,
+    0.2809440973344446
+   ],
+   "seed": 2334185370,
+   "x": "MaxPrecip",
+   "y": "SDPrecip"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Precipitation drives global variation in natural selection' (Zenodo, doi 10.5061/dryad.52650): 'SDPrecip' is linear in 'MaxPrecip' (R\u00b2 = 0.934 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
