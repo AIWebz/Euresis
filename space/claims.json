@@ -4008709,5 +4008709,248 @@
   "statement": "Octal game 0.0772277 is completely solved: its Grundy values are periodic with pre-period 284 and period 48 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.3q9k0",
+   "held_out_r2": 0.9285,
+   "held_out_rows": 43,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-015861cb2fbb",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "468960c192aa4e85.csv",
+   "doi": "10.5061/dryad.3q9k0",
+   "form": "linear",
+   "params": [
+    -0.40222527484470194,
+    1.2177391659675099
+   ],
+   "seed": 3058346517,
+   "x": "Empty Spartina squares",
+   "y": "Total squares eaten"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Consumer trait variation influences tri-trophic interactions in salt marsh comm' (Zenodo, doi 10.5061/dryad.3q9k0): 'Total squares eaten' is linear in 'Empty Spartina squares' (R\u00b2 = 0.973 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.r4xgxd2mz",
+   "held_out_r2": 0.9213,
+   "held_out_rows": 696,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-66a18cf7be0f",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "cb3550aacf262aac.csv",
+   "doi": "10.5061/dryad.r4xgxd2mz",
+   "form": "power law",
+   "params": [
+    0.3596900402778906,
+    0.9865594583268644
+   ],
+   "seed": 1753817213,
+   "x": "precip_daymet_-121_152-nlcd-crop",
+   "y": "precip_daymet_-121_152-nlcd-noncrop"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Leveraging satellite observations to reveal ecological drivers of pest densitie' (Zenodo, doi 10.5061/dryad.r4xgxd2mz): 'precip_daymet_-121_152-nlcd-noncrop' follows a power law in 'precip_daymet_-121_152-nlcd-crop' (R\u00b2 = 0.915 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.r4xgxd2mz",
+   "held_out_r2": 0.9801,
+   "held_out_rows": 696,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-034e76d5b56d",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "cb3550aacf262aac.csv",
+   "doi": "10.5061/dryad.r4xgxd2mz",
+   "form": "linear",
+   "params": [
+    0.8555904673060692,
+    -0.8448379423633648
+   ],
+   "seed": 1753817213,
+   "x": "nlcd-crop-prop",
+   "y": "nlcd-noncrop-prop"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Leveraging satellite observations to reveal ecological drivers of pest densitie' (Zenodo, doi 10.5061/dryad.r4xgxd2mz): 'nlcd-noncrop-prop' is linear in 'nlcd-crop-prop' (R\u00b2 = 0.980 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.r4xgxd2mz",
+   "held_out_r2": 0.9159,
+   "held_out_rows": 696,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e3f2881afc85",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "cb3550aacf262aac.csv",
+   "doi": "10.5061/dryad.r4xgxd2mz",
+   "form": "exponential",
+   "params": [
+    4.312124927592405,
+    0.006903999834915665
+   ],
+   "seed": 1753817213,
+   "x": "MidGreenup30km",
+   "y": "Peak30km"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Leveraging satellite observations to reveal ecological drivers of pest densitie' (Zenodo, doi 10.5061/dryad.r4xgxd2mz): 'Peak30km' grows exponentially in 'MidGreenup30km' (R\u00b2 = 0.907 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.r4xgxd2mz",
+   "held_out_r2": 0.9547,
+   "held_out_rows": 696,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a576ab3cb015",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "cb3550aacf262aac.csv",
+   "doi": "10.5061/dryad.r4xgxd2mz",
+   "form": "linear",
+   "params": [
+    40.832429856567195,
+    0.8979113260575642
+   ],
+   "seed": 1753817213,
+   "x": "MidGreenup30km",
+   "y": "Maturity30km"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Leveraging satellite observations to reveal ecological drivers of pest densitie' (Zenodo, doi 10.5061/dryad.r4xgxd2mz): 'Maturity30km' is linear in 'MidGreenup30km' (R\u00b2 = 0.946 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.r4xgxd2mz",
+   "held_out_r2": 0.9456,
+   "held_out_rows": 696,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-95ba9ad5ef5c",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "cb3550aacf262aac.csv",
+   "doi": "10.5061/dryad.r4xgxd2mz",
+   "form": "exponential",
+   "params": [
+    4.392519556167314,
+    0.006142224105370938
+   ],
+   "seed": 1753817213,
+   "x": "Peak30km",
+   "y": "MidGreendown30km"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Leveraging satellite observations to reveal ecological drivers of pest densitie' (Zenodo, doi 10.5061/dryad.r4xgxd2mz): 'MidGreendown30km' grows exponentially in 'Peak30km' (R\u00b2 = 0.945 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.r4xgxd2mz",
+   "held_out_r2": 0.976,
+   "held_out_rows": 696,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-01375e0e95d7",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "cb3550aacf262aac.csv",
+   "doi": "10.5061/dryad.r4xgxd2mz",
+   "form": "linear",
+   "params": [
+    31.043395193881267,
+    1.0483000916149203
+   ],
+   "seed": 1753817213,
+   "x": "Maturity30km",
+   "y": "Senescence30km"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Leveraging satellite observations to reveal ecological drivers of pest densitie' (Zenodo, doi 10.5061/dryad.r4xgxd2mz): 'Senescence30km' is linear in 'Maturity30km' (R\u00b2 = 0.975 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.r4xgxd2mz",
+   "held_out_r2": 0.9023,
+   "held_out_rows": 696,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c007c90b3ec8",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "cb3550aacf262aac.csv",
+   "doi": "10.5061/dryad.r4xgxd2mz",
+   "form": "exponential",
+   "params": [
+    4.502945439143257,
+    0.006147220972313478
+   ],
+   "seed": 1753817213,
+   "x": "Maturity30km",
+   "y": "MidGreendown30km"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Leveraging satellite observations to reveal ecological drivers of pest densitie' (Zenodo, doi 10.5061/dryad.r4xgxd2mz): 'MidGreendown30km' grows exponentially in 'Maturity30km' (R\u00b2 = 0.902 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.r4xgxd2mz",
+   "held_out_r2": 0.9662,
+   "held_out_rows": 696,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-6fb7428d695f",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "cb3550aacf262aac.csv",
+   "doi": "10.5061/dryad.r4xgxd2mz",
+   "form": "exponential",
+   "params": [
+    4.302078545268321,
+    0.005993652465232628
+   ],
+   "seed": 1753817213,
+   "x": "Senescence30km",
+   "y": "MidGreendown30km"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Leveraging satellite observations to reveal ecological drivers of pest densitie' (Zenodo, doi 10.5061/dryad.r4xgxd2mz): 'MidGreendown30km' grows exponentially in 'Senescence30km' (R\u00b2 = 0.966 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
