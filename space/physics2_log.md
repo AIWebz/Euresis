@@ -7766,3 +7766,5 @@
 - 2026-11-21 19:14 round 7080: auction with a reserve price
 - 2026-11-21 19:15 round 7081: two-body decay
 - 2026-11-21 19:18 round 7082: collision
+- 2026-11-21 19:35 round 7083: driven oscillator
+- 2026-11-21 19:37 segment end: 7083 rounds, 5 discoveries, 2 known laws rediscovered
