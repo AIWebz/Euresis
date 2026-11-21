@@ -5483,3 +5483,4 @@
 - 2026-11-21 19:05 FINDING (confirmed on held-out rows): In 'The role of soil fauna in modulating the effect of mixed litter diversity on microbial com' (Zenodo, doi 10.5281/zenodo.15783843): 'GN' follows a power law in 'bacteria' (R² = 0.958 on the discovery half); held-out R² = 0.966 [emp-2c94631ae160]
 - 2026-11-21 19:05 FINDING (confirmed on held-out rows): In 'The role of soil fauna in modulating the effect of mixed litter diversity on microbial com' (Zenodo, doi 10.5281/zenodo.15783843): 'simpson' follows a power law in 'shannon' (R² = 0.952 on the discovery half); held-out R² = 0.924 [emp-94da3108dcba]
 - 2026-11-21 19:05 data feeds: 33204 datasets analysed so far, 4822 confirmed findings
+- 2026-11-21 20:07 data feeds: online
