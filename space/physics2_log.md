@@ -7793,3 +7793,5 @@
 - 2026-11-21 21:33 round 7101: Compton scattering
 - 2026-11-21 21:34 round 7102: Cournot duopoly
 - 2026-11-21 21:36 round 7103: insurance and risk
+- 2026-11-21 21:38 round 7104: auction with a reserve price
+- 2026-11-21 21:40 segment end: 7104 rounds, 5 discoveries, 2 known laws rediscovered
