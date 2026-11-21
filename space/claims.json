@@ -3980168,5 +3980168,54 @@
   "statement": "Octal game 0.0770515 is completely solved: its Grundy values are periodic with pre-period 284 and period 48 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.6086/D1VQ36",
+   "held_out_r2": 0.9738,
+   "held_out_rows": 48,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a2e26725fe78",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "494f4935c5094629.csv",
+   "doi": "10.6086/D1VQ36",
+   "form": "exponential",
+   "params": [
+    -0.0022806313541119025,
+    1.0655762407240912
+   ],
+   "seed": 1596083796,
+   "x": "otu.H",
+   "y": "S.obs"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Prescribed versus wildfire impacts on exotic plants and soil microbes in Califor' (Zenodo, doi 10.6086/D1VQ36): 'S.obs' grows exponentially in 'otu.H' (R\u00b2 = 0.987 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": null,
+  "id": "emp-1f3817ed25a7",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "4874aa0f854d952f.csv",
+   "doi": "10.5061/dryad.jj3ft18",
+   "form": "exponential",
+   "params": [
+    6.947872865765526,
+    -2.252483180694231
+   ],
+   "seed": 4006890963,
+   "x": "ph_in_BaCl2",
+   "y": "H"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: The local impact of macrofauna and land-use intensity on soil nutrient concentr' (Zenodo, doi 10.5061/dryad.jj3ft18): 'H' grows exponentially in 'ph_in_BaCl2' (R\u00b2 = 0.984 on the discovery half)",
+  "status": "candidate",
+  "verifier": null
  }
 ]

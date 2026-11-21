@@ -5458,3 +5458,5 @@
 - 2026-11-21 18:08 data feeds: online
 - 2026-11-21 18:09 FINDING (confirmed on held-out rows): In '<b>Hydraulic scaling reduces between-campaign dispersion in the localization of soil water' (Figshare, doi 10.6084/m9.figshare.33314682.v1): 'theta_wetting' follows a power law in 'theta_drying' (R² = 0.977 on the discovery half); held-out R² = 0.979 [emp-be39d837b17a]
 - 2026-11-21 18:09 data feeds: 33147 datasets analysed so far, 4799 confirmed findings
+- 2026-11-21 19:00 data feeds: online
+- 2026-11-21 19:01 FINDING (confirmed on held-out rows): In 'Data for: Prescribed versus wildfire impacts on exotic plants and soil microbes in Califor' (Zenodo, doi 10.6086/D1VQ36): 'S.obs' grows exponentially in 'otu.H' (R² = 0.987 on the discovery half); held-out R² = 0.974 [emp-a2e26725fe78]
