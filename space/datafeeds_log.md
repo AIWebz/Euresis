@@ -5220,3 +5220,5 @@
 - 2026-11-21 01:03 FINDING (confirmed on held-out rows): In 'Great Salt Lake Accounting Data & Datasets' (Zenodo, doi 10.5281/zenodo.21629715): 'hydromapper_total_volume_af' follows a power law in 'basin_plan_total_area_ac' (R² = 0.982 on the discovery half); held-out R² = 0.972 [emp-4e8f2ebebcda]
 - 2026-11-21 01:03 FINDING (confirmed on held-out rows): In 'Great Salt Lake Accounting Data & Datasets' (Zenodo, doi 10.5281/zenodo.21629715): 'hydromapper_total_area_ac' follows a power law in 'basin_plan_total_volume_af' (R² = 0.986 on the discovery half); held-out R² = 0.980 [emp-619c7ec4d03f]
 - 2026-11-21 01:04 data feeds: 32386 datasets analysed so far, 4597 confirmed findings
+- 2026-11-21 01:47 data feeds: online
+- 2026-11-21 01:48 FINDING (confirmed on held-out rows): In 'Swallowwort biomass allocation in contrasting competitive environments' (Zenodo, doi 10.5281/zenodo.4765779): 'abvmass' is linear in 'podmass' (R² = 0.931 on the discovery half); held-out R² = 0.953 [emp-aa74e73ff8ab]

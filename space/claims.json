@@ -3847523,5 +3847523,59 @@
   "statement": "Octal game 0.0757737 is completely solved: its Grundy values are periodic with pre-period 284 and period 48 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.13338424",
+   "held_out_r2": 0.8195,
+   "held_out_rows": 288,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5a05a84bc419",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "acca2d06a01b1d04.csv",
+   "doi": "10.5281/zenodo.13338424",
+   "form": "linear",
+   "params": [
+    0.03157143449789738,
+    2.8592508655849045
+   ],
+   "seed": 998044804,
+   "x": "oxalate",
+   "y": "phosphate"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data on respiration, substrate incorporation, and soil compound concentration in response ' (Zenodo, doi 10.5281/zenodo.13338424): 'phosphate' is linear in 'oxalate' (R\u00b2 = 0.974 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.4765779",
+   "held_out_r2": 0.9534,
+   "held_out_rows": 176,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-aa74e73ff8ab",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "ed53d2030f3cbdd8.csv",
+   "doi": "10.5281/zenodo.4765779",
+   "form": "linear",
+   "params": [
+    2.113427553072958,
+    1.4908991536866127
+   ],
+   "seed": 1773783532,
+   "x": "podmass",
+   "y": "abvmass"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Swallowwort biomass allocation in contrasting competitive environments' (Zenodo, doi 10.5281/zenodo.4765779): 'abvmass' is linear in 'podmass' (R\u00b2 = 0.931 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
