@@ -4006135,5 +4006135,59 @@
   "statement": "In 'C-14, U-236, and I-129 data from Fram Strait 2018' (Zenodo, doi 10.5281/zenodo.22649184): 'U236_at_l' follows a power law in 'U236_U238' (R\u00b2 = 0.973 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-5405dadf7433",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "e**2*m**2/(e**2*m**2/(m + 1)**2 + m**2 + 1) >= 1*(e**2*m**2/(-e**2 + (m + 1)**2 + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 7106",
+  "statement": "[physics: collision] Normalized Kinetic Energy Transfer Ratio [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Normalized Kinetic Energy Transfer to Target [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1.16e-14, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-1a4c89de3947",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'Normalized Kinetic Energy Transfer to Target [model-proposed; physical meaning unverified]'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "e**2*m**2/(e**2*m**2/(m + 1)**2 + m**2 + 1) >= 1*(e**2*m**2/((m + 1)**2*(e**2*m**2/(m + 1)**2 + e**2*m/(m + 1) + (1 - e**2)/(m + 1) + 1)))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 7106",
+  "statement": "[physics: collision] Normalized Kinetic Energy Transfer Ratio [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Relative Kinetic Energy Ratio of Target to System [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1.95e-15, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]
