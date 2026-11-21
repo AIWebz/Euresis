@@ -7637,3 +7637,11 @@
 - 2026-11-21 12:35 round 6965: Compton scattering
 - 2026-11-21 12:36 round 6966: Cournot duopoly
 - 2026-11-21 12:37 round 6967: insurance and risk
+- 2026-11-21 12:39 round 6968: auction with a reserve price
+- 2026-11-21 12:42 round 6969: two-body decay
+- 2026-11-21 12:43 round 6970: collision
+- 2026-11-21 12:46 round 6971: driven oscillator
+- 2026-11-21 12:48 round 6972: velocity addition
+- 2026-11-21 12:50 round 6973: Compton scattering
+- 2026-11-21 12:51 round 6974: Cournot duopoly
+- 2026-11-21 12:52 round 6975: insurance and risk
