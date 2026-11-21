@@ -7702,3 +7702,6 @@
 - 2026-11-21 15:32 round 7024: auction with a reserve price
 - 2026-11-21 15:34 round 7025: two-body decay
 - 2026-11-21 15:37 round 7026: collision
+- 2026-11-21 15:39 round 7027: driven oscillator
+- 2026-11-21 15:41 round 7028: velocity addition
+- 2026-11-21 15:43 segment end: 7028 rounds, 5 discoveries, 2 known laws rediscovered
