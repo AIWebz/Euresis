@@ -5303,3 +5303,5 @@
 - 2026-11-21 06:45 FINDING (confirmed on held-out rows): In 'Tipping the scales: when, where, and why are trade-offs observed in animal energy allocati' (Zenodo, doi 10.5281/zenodo.23920206): 'zr' is linear in 'rG' (R² = 0.916 on the discovery half); held-out R² = 0.902 [emp-7086b93375c3]
 - 2026-11-21 06:45 FINDING (confirmed on held-out rows): In 'Data from: Precipitation drives global variation in natural selection' (Zenodo, doi 10.5061/dryad.52650): 'SDPrecip' is linear in 'MaxPrecip' (R² = 0.934 on the discovery half); held-out R² = 0.940 [emp-a95adc041c50]
 - 2026-11-21 06:45 data feeds: 32730 datasets analysed so far, 4668 confirmed findings
+- 2026-11-21 07:32 data feeds: online
+- 2026-11-21 07:32 FINDING (confirmed on held-out rows): In 'Best matches between DECaLS and MGCLS within the 2R<sub>200</sub>.' (Figshare, doi 10.25388/nwu.27151284.v1): 'rErr' is linear in 'r_1' (R² = 0.989 on the discovery half); held-out R² = 0.986 [emp-b6a2c667f3fa]

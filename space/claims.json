@@ -3894244,5 +3894244,32 @@
   "statement": "Octal game 0.0763425 is completely solved: its Grundy values are periodic with pre-period 284 and period 48 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.25388/nwu.27151284.v1",
+   "held_out_r2": 0.9864,
+   "held_out_rows": 402,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b6a2c667f3fa",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "4254ae2a518650aa.csv",
+   "doi": "10.25388/nwu.27151284.v1",
+   "form": "linear",
+   "params": [
+    -27.131564266332813,
+    1.2636742052433667
+   ],
+   "seed": 2449429744,
+   "x": "r_1",
+   "y": "rErr"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Best matches between DECaLS and MGCLS within the 2R<sub>200</sub>.' (Figshare, doi 10.25388/nwu.27151284.v1): 'rErr' is linear in 'r_1' (R\u00b2 = 0.989 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
