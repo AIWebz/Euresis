@@ -5265,3 +5265,4 @@
 - 2026-11-21 04:50 FINDING (confirmed on held-out rows): In 'CheckMyBlob web server ligand datasets' (Zenodo, doi 10.5281/zenodo.4554474): 'local_electrons' follows a power law in 'electrons_over_resolution_00' (R² = 0.961 on the discovery half); held-out R² = 0.963 [emp-3314085e8593]
 - 2026-11-21 04:50 FINDING (confirmed on held-out rows): In 'CheckMyBlob web server ligand datasets' (Zenodo, doi 10.5281/zenodo.4554474): 'local_electrons' follows a power law in 'volume_over_resolution_00' (R² = 0.944 on the discovery half); held-out R² = 0.941 [emp-6412cf7141f3]
 - 2026-11-21 04:50 data feeds: 32641 datasets analysed so far, 4634 confirmed findings
+- 2026-11-21 05:37 data feeds: online
