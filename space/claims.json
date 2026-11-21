@@ -3918213,5 +3918213,54 @@
   "statement": "Octal game 0.0764726 is completely solved: its Grundy values are periodic with pre-period 284 and period 48 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14906898",
+   "held_out_r2": 0.9248,
+   "held_out_rows": 82,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-7ac55d4283c6",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "85edc88cb73b12be.csv",
+   "doi": "10.5281/zenodo.14906898",
+   "form": "linear",
+   "params": [
+    -12.860619803571458,
+    0.3381159257733268
+   ],
+   "seed": 3479875933,
+   "x": "Temp",
+   "y": "P18O"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'The role of connectivity with groundwater in sustaining water balance in European lakes' (Zenodo, doi 10.5281/zenodo.14906898): 'P18O' is linear in 'Temp' (R\u00b2 = 0.908 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": null,
+  "id": "emp-1deed37c35d1",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "85edc88cb73b12be.csv",
+   "doi": "10.5281/zenodo.14906898",
+   "form": "linear",
+   "params": [
+    9.628413153326496,
+    8.006024025090328
+   ],
+   "seed": 3479875933,
+   "x": "P18O",
+   "y": "P2H"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'The role of connectivity with groundwater in sustaining water balance in European lakes' (Zenodo, doi 10.5281/zenodo.14906898): 'P2H' is linear in 'P18O' (R\u00b2 = 0.969 on the discovery half)",
+  "status": "candidate",
+  "verifier": null
  }
 ]

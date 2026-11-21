@@ -5330,3 +5330,5 @@
 - 2026-11-21 09:28 FINDING (confirmed on held-out rows): In 'Data from: Climate change is predicted to impact the global distribution and richness of p' (Zenodo, doi 10.5061/dryad.44j0zpcnh): 'gam_tss_mean' grows logarithmically in 'glm_tss_mean' (R² = 0.929 on the discovery half); held-out R² = 0.949 [emp-33d3425243d8]
 - 2026-11-21 09:28 FINDING (confirmed on held-out rows): In 'Data from: Climate change is predicted to impact the global distribution and richness of p' (Zenodo, doi 10.5061/dryad.44j0zpcnh): 'gam_auc_mean' grows logarithmically in 'glm_auc_mean' (R² = 0.932 on the discovery half); held-out R² = 0.961 [emp-c6e50aced64d]
 - 2026-11-21 09:28 data feeds: 32909 datasets analysed so far, 4689 confirmed findings
+- 2026-11-21 10:33 data feeds: online
+- 2026-11-21 10:33 FINDING (confirmed on held-out rows): In 'The role of connectivity with groundwater in sustaining water balance in European lakes' (Zenodo, doi 10.5281/zenodo.14906898): 'P18O' is linear in 'Temp' (R² = 0.908 on the discovery half); held-out R² = 0.925 [emp-7ac55d4283c6]
