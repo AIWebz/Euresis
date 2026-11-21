@@ -5445,3 +5445,5 @@
 - 2026-11-21 12:25 FINDING (confirmed on held-out rows): In 'Intelligentization and regional industrial competitiveness' (Zenodo, doi 10.5061/dryad.83bk3j9tp): 'Capital stock' is linear in 'Education level' (R² = 0.946 on the discovery half); held-out R² = 0.941 [emp-f15f03e8f8e9]
 - 2026-11-21 12:26 FINDING (confirmed on held-out rows): In 'Datasets: Tokenized carbon credits in voluntary carbon markets: the case of KlimaDAO' (Zenodo, doi 10.5281/zenodo.18756572): 'klimates' is linear in 'KLIMA Holders' (R² = 0.978 on the discovery half); held-out R² = 0.980 [emp-e3886523823a]
 - 2026-11-21 12:26 data feeds: 33125 datasets analysed so far, 4798 confirmed findings
+- 2026-11-21 13:16 data feeds: OFFLINE — using datasets on disk
+- 2026-11-21 13:16 data feeds: 33125 datasets analysed so far, 4798 confirmed findings
