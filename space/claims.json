@@ -3996007,5 +3996007,32 @@
   "statement": "In 'The data from PROBES. I. A Compendium of Deep Rotation Curves and Matched Multiband Photom' (Zenodo, doi 10.5281/zenodo.10456320): ' Mpc' is linear in ' km s^-1.2' (R\u00b2 = 0.990 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-5e95b6b34bdf",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "claim": "(-(-2*c1 + c2 + 1)**2/9 + (-c1 - c2 + 1)**2/18 - (c1 - 2*c2 + 1)**2/9)**2/((1 - c1)**2/4 + (1 - c2)**2/4 - (-c1 - c2 + 1)**2/18)**2 >= 9/8*((-c1 - c2 + 1)**2/(9*(1 - c1)**2/2 + 9*(1 - c2)**2/2 - (-c1 - c2 + 1)**2))",
+   "symbols": [
+    "c1",
+    "c2"
+   ]
+  },
+  "source": "physics_discover2 round 7094",
+  "statement": "[economics: Cournot duopoly] Total Welfare Deviation Ratio [model-proposed; physical meaning unverified] \u2265 9/8 \u00d7 Consumer Surplus Efficiency Ratio [model-proposed; physical meaning unverified]   on c1 < 1/2, c2 < 1/2 (tight only at the edge of the domain, near (4.02e-15, 2.59e-15))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]

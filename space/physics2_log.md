@@ -7781,3 +7781,10 @@
 - 2026-11-21 21:00 round 7091: driven oscillator
 - 2026-11-21 21:09 segment start (budget 30 min; model: Qwen3-8B; 5 discoveries so far)
 - 2026-11-21 21:09 round 7091: driven oscillator
+- 2026-11-21 21:10 round 7092: velocity addition
+- 2026-11-21 21:11 round 7093: Compton scattering
+- 2026-11-21 21:13 round 7094: Cournot duopoly
+- 2026-11-21 21:19 round 7095: insurance and risk
+- 2026-11-21 21:21 round 7096: auction with a reserve price
+- 2026-11-21 21:23 round 7097: two-body decay
+- 2026-11-21 21:25 round 7098: collision
