@@ -3995602,5 +3995602,140 @@
   "statement": "[physics: collision] Relative Kinetic Energy Ratio of Target to System [model-proposed; physical meaning unverified] \u2265 9/28 \u00d7 Normalized Kinetic Energy Transfer Ratio [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
   "status": "proved",
   "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.158pj",
+   "held_out_r2": 0.9565,
+   "held_out_rows": 41,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-87db8b44aa9d",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "1bb301a4e41639cf.csv",
+   "doi": "10.5061/dryad.158pj",
+   "form": "linear",
+   "params": [
+    -1.344824882127489,
+    1.4548751678641805
+   ],
+   "seed": 771395075,
+   "x": "count.of.intraspecific.fights.1per.dyad.per.day",
+   "y": "count.of.intraspecific.fights.all.fight.observations"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Interspecific aggression, not interspecific mating, drives character displaceme' (Zenodo, doi 10.5061/dryad.158pj): 'count.of.intraspecific.fights.all.fight.observations' is linear in 'count.of.intraspecific.fights.1per.dyad.per.day' (R\u00b2 = 0.918 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.158pj",
+   "held_out_r2": 0.9129,
+   "held_out_rows": 41,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a20ec9915793",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "1bb301a4e41639cf.csv",
+   "doi": "10.5061/dryad.158pj",
+   "form": "linear",
+   "params": [
+    -0.04732847149873449,
+    1.3021282929007287
+   ],
+   "seed": 771395075,
+   "x": "count.of.interspecific.fights.1per.dyad.per.day",
+   "y": "count.of.interspecific.fights.all.fight.observations"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Interspecific aggression, not interspecific mating, drives character displaceme' (Zenodo, doi 10.5061/dryad.158pj): 'count.of.interspecific.fights.all.fight.observations' is linear in 'count.of.interspecific.fights.1per.dyad.per.day' (R\u00b2 = 0.955 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.158pj",
+   "held_out_r2": 0.8872,
+   "held_out_rows": 41,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-864e675eeced",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "1bb301a4e41639cf.csv",
+   "doi": "10.5061/dryad.158pj",
+   "form": "linear",
+   "params": [
+    0.4081202064265932,
+    2.4599406951216034
+   ],
+   "seed": 771395075,
+   "x": "count.of.intraspecific.fights.escalated.1per.dyad.per.day",
+   "y": "count.of.intraspecific.fights.all.fight.observations"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Interspecific aggression, not interspecific mating, drives character displaceme' (Zenodo, doi 10.5061/dryad.158pj): 'count.of.intraspecific.fights.all.fight.observations' is linear in 'count.of.intraspecific.fights.escalated.1per.dyad.per.day' (R\u00b2 = 0.902 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.158pj",
+   "held_out_r2": 0.917,
+   "held_out_rows": 41,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-8ada48119ff7",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "1bb301a4e41639cf.csv",
+   "doi": "10.5061/dryad.158pj",
+   "form": "linear",
+   "params": [
+    0.008979347500748374,
+    1.2407961688117333
+   ],
+   "seed": 771395075,
+   "x": "count.of.interspecific.fights.escalated.1per.dyad.per.day",
+   "y": "count.of.interspecific.fights.escalated.all.fight.observations"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Interspecific aggression, not interspecific mating, drives character displaceme' (Zenodo, doi 10.5061/dryad.158pj): 'count.of.interspecific.fights.escalated.all.fight.observations' is linear in 'count.of.interspecific.fights.escalated.1per.dyad.per.day' (R\u00b2 = 0.969 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.hg505",
+   "held_out_r2": 0.8849,
+   "held_out_rows": 132,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9b01b62ce0af",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "c279537b1949bbef.csv",
+   "doi": "10.5061/dryad.hg505",
+   "form": "linear",
+   "params": [
+    -0.04046046290283344,
+    3.8357055616334135e-06
+   ],
+   "seed": 980319836,
+   "x": "Eggs",
+   "y": "Gonad"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Spatially variable habitat quality contributes to within-population variation i' (Zenodo, doi 10.5061/dryad.hg505): 'Gonad' is linear in 'Eggs' (R\u00b2 = 0.934 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
