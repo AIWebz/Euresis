@@ -7586,3 +7586,8 @@
 - 2026-11-21 09:33 round 6920: auction with a reserve price
 - 2026-11-21 09:36 round 6921: two-body decay
 - 2026-11-21 09:37 round 6922: collision
+- 2026-11-21 09:44 round 6923: driven oscillator
+- 2026-11-21 09:45 round 6924: velocity addition
+- 2026-11-21 09:47 round 6925: Compton scattering
+- 2026-11-21 09:48 round 6926: Cournot duopoly
+- 2026-11-21 09:50 round 6927: insurance and risk
