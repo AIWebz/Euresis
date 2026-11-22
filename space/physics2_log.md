@@ -7847,3 +7847,6 @@
 - 2026-11-22 00:25 round 7149: Compton scattering
 - 2026-11-22 00:26 round 7150: Cournot duopoly
 - 2026-11-22 00:28 round 7151: insurance and risk
+- 2026-11-22 00:31 round 7152: auction with a reserve price
+- 2026-11-22 00:33 round 7153: two-body decay
+- 2026-11-22 00:35 round 7154: collision
