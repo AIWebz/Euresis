@@ -7974,3 +7974,8 @@
 - 2026-11-22 06:56 round 7262: Cournot duopoly
 - 2026-11-22 06:58 round 7263: insurance and risk
 - 2026-11-22 07:00 round 7264: auction with a reserve price
+- 2026-11-22 07:03 round 7265: two-body decay
+- 2026-11-22 07:06 round 7266: collision
+- 2026-11-22 07:10 round 7267: driven oscillator
+- 2026-11-22 07:12 round 7268: velocity addition
+- 2026-11-22 07:13 segment end: 7268 rounds, 5 discoveries, 2 known laws rediscovered
