@@ -4091850,7 +4091850,7 @@
   },
   "id": "emp-bd747b4b1151",
   "kind": "empirical",
-  "novelty": "not checked",
+  "novelty": "KNOWN: equation of state of a simulated fluid (pressure, density, temperature, chemical potential, kinetic energy) \u2014 not a discovery",
   "payload": {
    "dataset": "e840b19e951ecc17.csv",
    "doi": "10.5281/zenodo.8289594",
@@ -4091865,6 +4091865,33 @@
   },
   "source": "datafeeds.py",
   "statement": "In 'Dataset associated to the manuscript \"A novel method for characterising the inter- and int' (Zenodo, doi 10.5281/zenodo.8289594): 'STD average' is linear in 'STD 1st injection' (R\u00b2 = 0.979 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.8289594",
+   "held_out_r2": 0.9794,
+   "held_out_rows": 56,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c154be1c74ed",
+  "kind": "empirical",
+  "novelty": "KNOWN: equation of state of a simulated fluid (pressure, density, temperature, chemical potential, kinetic energy) \u2014 not a discovery",
+  "payload": {
+   "dataset": "e840b19e951ecc17.csv",
+   "doi": "10.5281/zenodo.8289594",
+   "form": "linear",
+   "params": [
+    -0.13743719235062404,
+    1.0308032917186805
+   ],
+   "seed": 161499573,
+   "x": "STD 2nd injection",
+   "y": "STD average"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset associated to the manuscript \"A novel method for characterising the inter- and int' (Zenodo, doi 10.5281/zenodo.8289594): 'STD average' is linear in 'STD 2nd injection' (R\u00b2 = 0.975 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
  }
