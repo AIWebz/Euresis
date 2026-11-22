@@ -4150901,5 +4150901,194 @@
   "statement": "Octal game 0.1010547 is completely solved: its Grundy values are periodic with pre-period 7 and period 20 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.6084/m9.figshare.31673851.v3",
+   "held_out_r2": 0.9381,
+   "held_out_rows": 73,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-39d3d92b758a",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "392ccee9b36156cc.csv",
+   "doi": "10.6084/m9.figshare.31673851.v3",
+   "form": "linear",
+   "params": [
+    0.013089275979825092,
+    1.0704936985670106
+   ],
+   "seed": 2903999722,
+   "x": "PO4",
+   "y": "DTP"
+  },
+  "source": "datafeeds.py",
+  "statement": "In '<b>Seasonal wet</b>\u2013<b>dry transitions reveal contrasting microbial stability and nutrient' (Figshare, doi 10.6084/m9.figshare.31673851.v3): 'DTP' is linear in 'PO4' (R\u00b2 = 0.984 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.6084/m9.figshare.33210438.v1",
+   "held_out_r2": 0.959,
+   "held_out_rows": 42,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-69a608d8ae8c",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "5a6ca093ba02d326.csv",
+   "doi": "10.6084/m9.figshare.33210438.v1",
+   "form": "linear",
+   "params": [
+    -0.18916708209210972,
+    88.97734338748653
+   ],
+   "seed": 3511667633,
+   "x": "mean_abundance",
+   "y": "median_percent"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Microbial diversity and functional profiles as a signature of land-sea and land-use dynami' (Figshare, doi 10.6084/m9.figshare.33210438.v1): 'median_percent' is linear in 'mean_abundance' (R\u00b2 = 0.951 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.6084/m9.figshare.33210438.v1",
+   "held_out_r2": 0.9576,
+   "held_out_rows": 42,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d965efa6793d",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "5a6ca093ba02d326.csv",
+   "doi": "10.6084/m9.figshare.33210438.v1",
+   "form": "linear",
+   "params": [
+    0.6774242750242224,
+    106.82925802525105
+   ],
+   "seed": 3511667633,
+   "x": "median_abundance",
+   "y": "mean_percent"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Microbial diversity and functional profiles as a signature of land-sea and land-use dynami' (Figshare, doi 10.6084/m9.figshare.33210438.v1): 'mean_percent' is linear in 'median_abundance' (R\u00b2 = 0.951 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.6084/m9.figshare.33210438.v1",
+   "held_out_r2": 0.9886,
+   "held_out_rows": 291,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d73ae86d1979",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "a4e0499efef9e925.csv",
+   "doi": "10.6084/m9.figshare.33210438.v1",
+   "form": "power law",
+   "params": [
+    -0.007470666828007176,
+    0.23475730181715443
+   ],
+   "seed": 2590044580,
+   "x": "p.value",
+   "y": "FDR"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Microbial diversity and functional profiles as a signature of land-sea and land-use dynami' (Figshare, doi 10.6084/m9.figshare.33210438.v1): 'FDR' follows a power law in 'p.value' (R\u00b2 = 0.978 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.6084/m9.figshare.33210438.v1",
+   "held_out_r2": 0.9987,
+   "held_out_rows": 1499,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-27105af910c3",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "aabf5bc76d589e8a.csv",
+   "doi": "10.6084/m9.figshare.33210438.v1",
+   "form": "exponential",
+   "params": [
+    0.32783837923932846,
+    -0.4218696637280212
+   ],
+   "seed": 4053252108,
+   "x": "Statistic",
+   "y": "P_value"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Microbial diversity and functional profiles as a signature of land-sea and land-use dynami' (Figshare, doi 10.6084/m9.figshare.33210438.v1): 'P_value' grows exponentially in 'Statistic' (R\u00b2 = 0.999 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.6084/m9.figshare.33197052.v1",
+   "held_out_r2": 0.9153,
+   "held_out_rows": 3540,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-2d7ba473db6f",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "6c5f6cd18e663be9.csv",
+   "doi": "10.6084/m9.figshare.33197052.v1",
+   "form": "linear",
+   "params": [
+    7.589168942017303,
+    -12.579792379306792
+   ],
+   "seed": 1143522208,
+   "x": "mean_flood_fraction",
+   "y": "mean_integrated_NDVI"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Sampled monitoring points in the study \"Multi-sensor satellite fusion for mapping methane ' (Figshare, doi 10.6084/m9.figshare.33197052.v1): 'mean_integrated_NDVI' is linear in 'mean_flood_fraction' (R\u00b2 = 0.922 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.6084/m9.figshare.33197052.v1",
+   "held_out_r2": 0.9158,
+   "held_out_rows": 3540,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4d3e5d8d27ae",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "6c5f6cd18e663be9.csv",
+   "doi": "10.6084/m9.figshare.33197052.v1",
+   "form": "exponential",
+   "params": [
+    5.572685790568949,
+    -0.10703522227422448
+   ],
+   "seed": 1143522208,
+   "x": "mean_integrated_NDVI",
+   "y": "mean_calibrated_ch4_flux_kg_ha_yr"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Sampled monitoring points in the study \"Multi-sensor satellite fusion for mapping methane ' (Figshare, doi 10.6084/m9.figshare.33197052.v1): 'mean_calibrated_ch4_flux_kg_ha_yr' grows exponentially in 'mean_integrated_NDVI' (R\u00b2 = 0.923 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
