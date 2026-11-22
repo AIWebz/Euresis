@@ -105987,6 +105987,26 @@
    "family": "collision",
    "expr": "1/(m + e)}, {",
    "why": "does not parse"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt((1 - r**2)**2 + (2*z*r)**2)/sqrt(4*z**2 + 1)",
+   "why": "affine combination of known quantities (amplitude / static deflection, Mechanical Impedance Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(4*r**2*z**2 + 1)/sqrt(4*z**2 + 1)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "r**2/sqrt((1 - r**2)**2 + (2*z*r)**2)",
+   "why": "affine combination of known quantities (amplitude / static deflection, acceleration amplitude / (\u03c90\u00b2 \u00d7 static deflection))"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt((1 + (2*z*r)**2)/((1 - r**2)**2 + (2*z*r)**2))",
+   "why": "affine combination of known quantities (amplitude / static deflection, transmissibility)"
   }
  ],
  "tried": [
@@ -132889,7 +132909,7 @@
    "k": "1"
   }
  ],
- "rounds": 7498,
+ "rounds": 7499,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",
