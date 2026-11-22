@@ -4140194,5 +4140194,437 @@
   "statement": "[physics: collision] Mass Ratio Adjusted by Square Root of Coefficient of Restitution [model-proposed; physical meaning unverified] \u2265 1 \u00d7 fraction of kinetic energy lost   on m < 1, e < 1 (tight only at the edge of the domain, near (4.33e-17, 1.36e-08))",
   "status": "proved",
   "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-12d9de3f9af0",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "m/(sqrt(e) + 1) + 1 >= 3*(m/(m + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 7458",
+  "statement": "[physics: collision] Mass Ratio Adjusted by Square Root of Coefficient of Restitution [model-proposed; physical meaning unverified] \u2265 3 \u00d7 speed of the centre of mass / initial speed   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-4068223dff00",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "m/(sqrt(e) + 1) + 1 >= 1*(e)",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 7458",
+  "statement": "[physics: collision] Mass Ratio Adjusted by Square Root of Coefficient of Restitution [model-proposed; physical meaning unverified] \u2265 1 \u00d7 relative speed after / relative speed before   on m < 1, e < 1 (tight only at the edge of the domain, near (1.25e-14, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-2230d82dc8bc",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "m/(sqrt(e) + 1) + 1 >= 1*(e*(m + 1)/(e*m + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 7458",
+  "statement": "[physics: collision] Mass Ratio Adjusted by Square Root of Coefficient of Restitution [model-proposed; physical meaning unverified] \u2265 1 \u00d7 velocity ratio of target to projectile after collision [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1.25e-14, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-1e9a2407717d",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "m/(sqrt(e) + 1) + 1 >= 1*((-e*m + 1)/(e*m + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 7458",
+  "statement": "[physics: collision] Mass Ratio Adjusted by Square Root of Coefficient of Restitution [model-proposed; physical meaning unverified] \u2265 1 \u00d7 velocity ratio of projectile to target after collision [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (3.45e-17, 0.0386))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-620e1c55d634",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'momentum transferred / initial momentum'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "m/(sqrt(e) + 1) + 1 >= 1*(e*(1 - m)/(m + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 7458",
+  "statement": "[physics: collision] Mass Ratio Adjusted by Square Root of Coefficient of Restitution [model-proposed; physical meaning unverified] \u2265 1 \u00d7 relative velocity after collision divided by initial velocity of projectile [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1.03e-15, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-bfca917b3834",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "m/(sqrt(e) + 1) + 1 >= 1*((-e**2*m + 1)/(m + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 7458",
+  "statement": "[physics: collision] Mass Ratio Adjusted by Square Root of Coefficient of Restitution [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Fraction of kinetic energy retained by projectile [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (3.45e-17, 0.278))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-66f2715f49c1",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'momentum transferred / initial momentum'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "m/(sqrt(e) + 1) + 1 >= 1*(e**2*(m**2 + 1)/(m + 1)**2)",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 7458",
+  "statement": "[physics: collision] Mass Ratio Adjusted by Square Root of Coefficient of Restitution [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Fraction of kinetic energy retained by target [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (6.42e-16, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-869f0094f618",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "m/(sqrt(e) + 1) + 1 >= 1*(-m*(1 - e**2)*(e + 1)**2/(m + 1)**2 - m*(1 - e**2)/(m + 1) + 1)",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 7458",
+  "statement": "[physics: collision] Mass Ratio Adjusted by Square Root of Coefficient of Restitution [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Fraction of kinetic energy retained by the system [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1.33e-15, 0.998))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-a8fde5c5f125",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "m/(sqrt(e) + 1) + 1 >= 1*(-e**2*m**2/(m + 1)**2 + 1)",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 7458",
+  "statement": "[physics: collision] Mass Ratio Adjusted by Square Root of Coefficient of Restitution [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1.88e-16, 0.883))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-746e78b2f0a8",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "m/(sqrt(e) + 1) + 1 >= 1*(e**2*m**2/(m + 1)**2 + e**2)",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 7458",
+  "statement": "[physics: collision] Mass Ratio Adjusted by Square Root of Coefficient of Restitution [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Fraction of kinetic energy transferred to the target [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1.73e-15, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-e39b1e3bcbaa",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified]'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "m/(sqrt(e) + 1) + 1 >= 1*(-e**2*m/(m + 1) - m*(1 - e**2)/(m + 1) - (1 - e**2)*(1 - m)/(m + 1) + 1)",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 7458",
+  "statement": "[physics: collision] Mass Ratio Adjusted by Square Root of Coefficient of Restitution [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Fraction of kinetic energy retained by the projectile relative to initial kineti [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (2.04e-15, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-adaf005cbced",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified]'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "m/(sqrt(e) + 1) + 1 >= 1*(-e**2*m**2/(m + 1)**2 - m*(1 - e**2)/(m + 1) + 1)",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 7458",
+  "statement": "[physics: collision] Mass Ratio Adjusted by Square Root of Coefficient of Restitution [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Fraction of kinetic energy retained by the system relative to initial kinetic en [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (4.21e-17, 0.988))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-215d3c4c4e97",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'speed of the centre of mass / initial speed'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "m/(sqrt(e) + 1) + 1 >= 3*(m**2*(e + 1)**2/((e**2 + 1)*(m + 1)**2))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 7458",
+  "statement": "[physics: collision] Mass Ratio Adjusted by Square Root of Coefficient of Restitution [model-proposed; physical meaning unverified] \u2265 3 \u00d7 Kinetic energy ratio after collision [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-57cb46eccb40",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified]'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "m/(sqrt(e) + 1) + 1 >= 1*((-e**2*m + 1)/(e**2*m + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 7458",
+  "statement": "[physics: collision] Mass Ratio Adjusted by Square Root of Coefficient of Restitution [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Fraction of kinetic energy retained by projectile relative to target [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (3.45e-17, 0.192))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-7f65a413f40f",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'target speed / initial speed'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "m/(sqrt(e) + 1) + 1 >= 3*(e**2*m**2/(e**2*m**2 + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 7458",
+  "statement": "[physics: collision] Mass Ratio Adjusted by Square Root of Coefficient of Restitution [model-proposed; physical meaning unverified] \u2265 3 \u00d7 Kinetic energy ratio of the target to the projectile after collision [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-bc243e1755a1",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'momentum transferred / initial momentum'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "m/(sqrt(e) + 1) + 1 >= 1/2*((e + 1)/((m + 1)*(e*m/(m + 1) + 1)))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 7458",
+  "statement": "[physics: collision] Mass Ratio Adjusted by Square Root of Coefficient of Restitution [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 Impulse ratio of target to projectile [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (5.23e-15, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]
