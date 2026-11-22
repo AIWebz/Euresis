@@ -4081662,5 +4081662,302 @@
   "statement": "Octal game 0.0776514 is completely solved: its Grundy values are periodic with pre-period 284 and period 48 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15845683",
+   "held_out_r2": 0.9443,
+   "held_out_rows": 34,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-89125a0dae44",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "47b52a989911ee01.csv",
+   "doi": "10.5281/zenodo.15845683",
+   "form": "linear",
+   "params": [
+    32.131503484034724,
+    0.8984147547242985
+   ],
+   "seed": 1903327050,
+   "x": "Observed.resid",
+   "y": "Observed.rarmean"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'metadata of AGEE_109854; soil information belonging to \"Nematode and protist community res' (Zenodo, doi 10.5281/zenodo.15845683): 'Observed.rarmean' is linear in 'Observed.resid' (R\u00b2 = 0.961 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15845683",
+   "held_out_r2": 0.9826,
+   "held_out_rows": 34,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c7a86a6649ba",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "47b52a989911ee01.csv",
+   "doi": "10.5281/zenodo.15845683",
+   "form": "linear",
+   "params": [
+    2.192359130012726,
+    1.0255412741059828
+   ],
+   "seed": 1903327050,
+   "x": "Shannon.resid",
+   "y": "Shannon.rarmean"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'metadata of AGEE_109854; soil information belonging to \"Nematode and protist community res' (Zenodo, doi 10.5281/zenodo.15845683): 'Shannon.rarmean' is linear in 'Shannon.resid' (R\u00b2 = 0.989 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.34810/data726",
+   "held_out_r2": 0.9,
+   "held_out_rows": 96,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-8da825b5d659",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "296fde972cf6be14.csv",
+   "doi": "10.34810/data726",
+   "form": "power law",
+   "params": [
+    -6.227017364752108,
+    1.026311104837518
+   ],
+   "seed": 3618172943,
+   "x": "GRAIN",
+   "y": "WUE"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Crop diversification and digestate application effect on the productivity and efficiency o' (Zenodo, doi 10.34810/data726): 'WUE' follows a power law in 'GRAIN' (R\u00b2 = 0.926 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.34810/data726",
+   "held_out_r2": 0.8969,
+   "held_out_rows": 96,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a52f78eb186f",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "296fde972cf6be14.csv",
+   "doi": "10.34810/data726",
+   "form": "power law",
+   "params": [
+    0.8743838669177789,
+    0.9615216109470647
+   ],
+   "seed": 3618172943,
+   "x": "STRAW",
+   "y": "AGBM"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Crop diversification and digestate application effect on the productivity and efficiency o' (Zenodo, doi 10.34810/data726): 'AGBM' follows a power law in 'STRAW' (R\u00b2 = 0.925 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.dt3nm",
+   "held_out_r2": 0.9339,
+   "held_out_rows": 158,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-97386db22c9b",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "c612c0fb1b84bfd5.csv",
+   "doi": "10.5061/dryad.dt3nm",
+   "form": "power law",
+   "params": [
+    -3.5449062029677267,
+    1.0025339183377386
+   ],
+   "seed": 1750731522,
+   "x": "ml",
+   "y": "DOCleach"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Disentangling plant and soil microbial controls on carbon and nitrogen loss in ' (Zenodo, doi 10.5061/dryad.dt3nm): 'DOCleach' follows a power law in 'ml' (R\u00b2 = 0.929 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.dt3nm",
+   "held_out_r2": 0.9553,
+   "held_out_rows": 158,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-1585f3c8228a",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "c612c0fb1b84bfd5.csv",
+   "doi": "10.5061/dryad.dt3nm",
+   "form": "linear",
+   "params": [
+    0.6911753539902232,
+    0.8361332473814806
+   ],
+   "seed": 1750731522,
+   "x": "TotalN",
+   "y": "DON"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Disentangling plant and soil microbial controls on carbon and nitrogen loss in ' (Zenodo, doi 10.5061/dryad.dt3nm): 'DON' is linear in 'TotalN' (R\u00b2 = 0.946 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.6903152",
+   "held_out_r2": 0.6333,
+   "held_out_rows": 1587,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3066556c6732",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "94d85f88dafb26f2.csv",
+   "doi": "10.5281/zenodo.6903152",
+   "form": "linear",
+   "params": [
+    -1107.964117990937,
+    1.2669218217186573
+   ],
+   "seed": 3115906672,
+   "x": "Control_mean",
+   "y": "Treatment_mean"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'GC impacts on soil biodiversity' (Zenodo, doi 10.5281/zenodo.6903152): 'Treatment_mean' is linear in 'Control_mean' (R\u00b2 = 0.978 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.6903152",
+   "held_out_r2": 0.4175,
+   "held_out_rows": 1587,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-76c1e71f11a0",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "94d85f88dafb26f2.csv",
+   "doi": "10.5281/zenodo.6903152",
+   "form": "linear",
+   "params": [
+    -1168.8552266019692,
+    2.254427788981117
+   ],
+   "seed": 3115906672,
+   "x": "Control_SD",
+   "y": "Treatment_mean"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'GC impacts on soil biodiversity' (Zenodo, doi 10.5281/zenodo.6903152): 'Treatment_mean' is linear in 'Control_SD' (R\u00b2 = 0.959 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.6903152",
+   "held_out_r2": 0.9885,
+   "held_out_rows": 1587,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3f2a4bb85a00",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "94d85f88dafb26f2.csv",
+   "doi": "10.5281/zenodo.6903152",
+   "form": "linear",
+   "params": [
+    -0.03791514713834758,
+    1.0067045101308234
+   ],
+   "seed": 3115906672,
+   "x": "Control_N",
+   "y": "Treatment_N"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'GC impacts on soil biodiversity' (Zenodo, doi 10.5281/zenodo.6903152): 'Treatment_N' is linear in 'Control_N' (R\u00b2 = 0.989 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.j0zpc86j6",
+   "held_out_r2": 0.9487,
+   "held_out_rows": 124,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-53b4c02962c6",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "a1e7794905d8b77d.csv",
+   "doi": "10.5061/dryad.j0zpc86j6",
+   "form": "exponential",
+   "params": [
+    0.34549092774727747,
+    0.23763429078977044
+   ],
+   "seed": 1578771810,
+   "x": "Tree",
+   "y": "Dist.m"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Trees out-forage understorey shrubs for nitrogen patches in a subarctic mountain birch for' (Zenodo, doi 10.5061/dryad.j0zpc86j6): 'Dist.m' grows exponentially in 'Tree' (R\u00b2 = 0.957 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.j0zpc86j6",
+   "held_out_r2": 0.9487,
+   "held_out_rows": 124,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-546ab35f340a",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "a1e7794905d8b77d.csv",
+   "doi": "10.5061/dryad.j0zpc86j6",
+   "form": "exponential",
+   "params": [
+    4.950661113735368,
+    0.23763429078977058
+   ],
+   "seed": 1578771810,
+   "x": "Tree",
+   "y": "Dist.cm"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Trees out-forage understorey shrubs for nitrogen patches in a subarctic mountain birch for' (Zenodo, doi 10.5061/dryad.j0zpc86j6): 'Dist.cm' grows exponentially in 'Tree' (R\u00b2 = 0.957 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
