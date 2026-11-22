@@ -4032166,5 +4032166,194 @@
   "statement": "Octal game 0.0773775 is completely solved: its Grundy values are periodic with pre-period 284 and period 48 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.7291/D1V10Q",
+   "held_out_r2": 0.9664,
+   "held_out_rows": 111,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-6e5f569dfcd3",
+  "kind": "empirical",
+  "novelty": "KNOWN: seawater carbonate chemistry (CO2SYS-type calculations) \u2014 not a discovery",
+  "payload": {
+   "dataset": "ac33fc51bb10ff0b.csv",
+   "doi": "10.7291/D1V10Q",
+   "form": "linear",
+   "params": [
+    5670.124352922638,
+    -476.77363343392256
+   ],
+   "seed": 3177318755,
+   "x": "pH Ave",
+   "y": "HCO3 out"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Population-specific vulnerability to ocean change in a multi-stressor environment' (Zenodo, doi 10.7291/D1V10Q): 'HCO3 out' is linear in 'pH Ave' (R\u00b2 = 0.972 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.7291/D1V10Q",
+   "held_out_r2": 0.9976,
+   "held_out_rows": 111,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-8738fb39991e",
+  "kind": "empirical",
+  "novelty": "KNOWN: seawater carbonate chemistry (CO2SYS-type calculations) \u2014 not a discovery",
+  "payload": {
+   "dataset": "ac33fc51bb10ff0b.csv",
+   "doi": "10.7291/D1V10Q",
+   "form": "power law",
+   "params": [
+    -29.778699376680258,
+    16.873712845919144
+   ],
+   "seed": 3177318755,
+   "x": "pH Ave",
+   "y": "CO3 out"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Population-specific vulnerability to ocean change in a multi-stressor environment' (Zenodo, doi 10.7291/D1V10Q): 'CO3 out' follows a power law in 'pH Ave' (R\u00b2 = 0.998 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.7291/D1V10Q",
+   "held_out_r2": 0.9922,
+   "held_out_rows": 111,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c048c8042ad2",
+  "kind": "empirical",
+  "novelty": "KNOWN: seawater carbonate chemistry (CO2SYS-type calculations) \u2014 not a discovery",
+  "payload": {
+   "dataset": "ac33fc51bb10ff0b.csv",
+   "doi": "10.7291/D1V10Q",
+   "form": "power law",
+   "params": [
+    42.92272996490587,
+    -19.45805497881191
+   ],
+   "seed": 3177318755,
+   "x": "pH Ave",
+   "y": "CO2 out"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Population-specific vulnerability to ocean change in a multi-stressor environment' (Zenodo, doi 10.7291/D1V10Q): 'CO2 out' follows a power law in 'pH Ave' (R\u00b2 = 0.991 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.7291/D1V10Q",
+   "held_out_r2": 0.9939,
+   "held_out_rows": 111,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-991b1a53a173",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "ac33fc51bb10ff0b.csv",
+   "doi": "10.7291/D1V10Q",
+   "form": "power law",
+   "params": [
+    -29.355111860909645,
+    16.290125988332697
+   ],
+   "seed": 3177318755,
+   "x": "pH Ave",
+   "y": "B Alk out"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Population-specific vulnerability to ocean change in a multi-stressor environment' (Zenodo, doi 10.7291/D1V10Q): 'B Alk out' follows a power law in 'pH Ave' (R\u00b2 = 0.993 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.7291/D1V10Q",
+   "held_out_r2": 0.957,
+   "held_out_rows": 111,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-98a3d0bd7963",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "ac33fc51bb10ff0b.csv",
+   "doi": "10.7291/D1V10Q",
+   "form": "linear",
+   "params": [
+    111.75191123892684,
+    -12.655718290750478
+   ],
+   "seed": 3177318755,
+   "x": "pH Ave",
+   "y": "Revelle out"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Population-specific vulnerability to ocean change in a multi-stressor environment' (Zenodo, doi 10.7291/D1V10Q): 'Revelle out' is linear in 'pH Ave' (R\u00b2 = 0.955 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.7291/D1V10Q",
+   "held_out_r2": 0.9975,
+   "held_out_rows": 111,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-58c6cfa1431c",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "ac33fc51bb10ff0b.csv",
+   "doi": "10.7291/D1V10Q",
+   "form": "power law",
+   "params": [
+    -33.55538158584537,
+    16.894878235723006
+   ],
+   "seed": 3177318755,
+   "x": "pH Ave",
+   "y": "Wca out"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Population-specific vulnerability to ocean change in a multi-stressor environment' (Zenodo, doi 10.7291/D1V10Q): 'Wca out' follows a power law in 'pH Ave' (R\u00b2 = 0.997 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.7291/D1V10Q",
+   "held_out_r2": 0.9954,
+   "held_out_rows": 111,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-723ed03e1512",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "ac33fc51bb10ff0b.csv",
+   "doi": "10.7291/D1V10Q",
+   "form": "power law",
+   "params": [
+    -34.32992331192049,
+    17.05818053108302
+   ],
+   "seed": 3177318755,
+   "x": "pH Ave",
+   "y": "War out"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Population-specific vulnerability to ocean change in a multi-stressor environment' (Zenodo, doi 10.7291/D1V10Q): 'War out' follows a power law in 'pH Ave' (R\u00b2 = 0.995 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
