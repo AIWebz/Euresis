@@ -5545,3 +5545,4 @@
 - 2026-11-21 23:01 FINDING (confirmed on held-out rows): In 'Data from: Leveraging satellite observations to reveal ecological drivers of pest densitie' (Zenodo, doi 10.5061/dryad.r4xgxd2mz): 'Dormancy10km' follows a power law in 'MidGreendown10km' (R² = 0.978 on the discovery half); held-out R² = 0.977 [emp-0f5a3043cf40]
 - 2026-11-21 23:01 FINDING (confirmed on held-out rows): In 'Morphological diversity in the sensory system of phyllostomid bats: implications for acous' (Zenodo, doi 10.5061/dryad.95x69p8g9): 'quart 50(max)' is linear in 'peak freq(max)' (R² = 0.930 on the discovery half); held-out R² = 0.931 [emp-fe183fb83751]
 - 2026-11-21 23:01 data feeds: 33686 datasets analysed so far, 4874 confirmed findings
+- 2026-11-22 00:05 data feeds: online
