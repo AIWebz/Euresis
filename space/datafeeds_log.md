@@ -5681,3 +5681,5 @@
 - 2026-11-22 06:41 FINDING (confirmed on held-out rows): In '<b>Dataset to accompany the journal of Limnology & Oceanography Methods manuscript (LOM-25' (Figshare, doi 10.6084/m9.figshare.31061971.v1): 'POC CELL -1' follows a power law in 'PIC' (R² = 0.987 on the discovery half); held-out R² = 0.985 [emp-caa0590ae3fc]
 - 2026-11-22 06:41 FINDING (confirmed on held-out rows): In '<b>Dataset to accompany the journal of Limnology & Oceanography Methods manuscript (LOM-25' (Figshare, doi 10.6084/m9.figshare.31061971.v1): 'POC' follows a power law in 'PIC' (R² = 0.987 on the discovery half); held-out R² = 0.985 [emp-fd1f6312dd6c]
 - 2026-11-22 06:42 data feeds: 34241 datasets analysed so far, 4994 confirmed findings
+- 2026-11-22 07:44 data feeds: online
+- 2026-11-22 07:46 data feeds: 34247 datasets analysed so far, 4994 confirmed findings
