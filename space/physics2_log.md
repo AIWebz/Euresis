@@ -8136,3 +8136,9 @@
 - 2026-11-22 16:30 round 7404: velocity addition
 - 2026-11-22 16:31 round 7405: Compton scattering
 - 2026-11-22 16:32 round 7406: Cournot duopoly
+- 2026-11-22 16:34 round 7407: insurance and risk
+- 2026-11-22 16:35 round 7408: auction with a reserve price
+- 2026-11-22 16:38 round 7409: two-body decay
+- 2026-11-22 16:39 round 7410: collision
+- 2026-11-22 16:43 round 7411: driven oscillator
+- 2026-11-22 16:44 segment end: 7411 rounds, 5 discoveries, 2 known laws rediscovered
