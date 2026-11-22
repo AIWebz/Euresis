@@ -4107745,5 +4107745,1679 @@
   "statement": "[physics: collision] Kinetic energy ratio of the target to the system after collision [model-proposed; physical meaning unverified] \u2265 2/3 \u00d7 Kinetic Energy Ratio of Target to System Adjusted by Mass [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
   "status": "proved",
   "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.hmgqnk9k8",
+   "held_out_r2": 0.9794,
+   "held_out_rows": 198,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b50a9821a872",
+  "kind": "empirical",
+  "novelty": "KNOWN: seawater carbonate chemistry (CO2SYS-type calculations) \u2014 not a discovery",
+  "payload": {
+   "dataset": "740f031d7973c669.csv",
+   "doi": "10.5061/dryad.hmgqnk9k8",
+   "form": "linear",
+   "params": [
+    -0.505524602851516,
+    0.036967724947838794
+   ],
+   "seed": 764277757,
+   "x": "CO2_ppm",
+   "y": "CO2_uM"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Physiological control on carbon isotope fractionation in marine phytoplankton' (Zenodo, doi 10.5061/dryad.hmgqnk9k8): 'CO2_uM' is linear in 'CO2_ppm' (R\u00b2 = 0.977 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.10056556",
+   "held_out_r2": 0.9308,
+   "held_out_rows": 423,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-28116524d2da",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "acd1b6a0b42d0eb1.csv",
+   "doi": "10.5281/zenodo.10056556",
+   "form": "logarithmic",
+   "params": [
+    2.2261863699410647,
+    7.277291512424455
+   ],
+   "seed": 1658411077,
+   "x": "scan#.3",
+   "y": "energy_eV.1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A Post-Synthetic Modification Strategy for Enhancing Pt adsorption Efficiency in MOF/Polym' (Zenodo, doi 10.5281/zenodo.10056556): 'energy_eV.1' grows logarithmically in 'scan#.3' (R\u00b2 = 0.935 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.10056556",
+   "held_out_r2": 0.9533,
+   "held_out_rows": 423,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f20adefbac44",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "acd1b6a0b42d0eb1.csv",
+   "doi": "10.5281/zenodo.10056556",
+   "form": "power law",
+   "params": [
+    0.3969405788899055,
+    2.3236857022014137
+   ],
+   "seed": 1658411077,
+   "x": "scan#.4",
+   "y": "energy_eV.1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A Post-Synthetic Modification Strategy for Enhancing Pt adsorption Efficiency in MOF/Polym' (Zenodo, doi 10.5281/zenodo.10056556): 'energy_eV.1' follows a power law in 'scan#.4' (R\u00b2 = 0.952 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.10056556",
+   "held_out_r2": 0.9839,
+   "held_out_rows": 423,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-35d12cf9a4de",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "acd1b6a0b42d0eb1.csv",
+   "doi": "10.5281/zenodo.10056556",
+   "form": "power law",
+   "params": [
+    0.17432926176789793,
+    1.4990321710739587
+   ],
+   "seed": 1658411077,
+   "x": "scan#.5",
+   "y": "energy_eV.1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A Post-Synthetic Modification Strategy for Enhancing Pt adsorption Efficiency in MOF/Polym' (Zenodo, doi 10.5281/zenodo.10056556): 'energy_eV.1' follows a power law in 'scan#.5' (R\u00b2 = 0.984 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.10056556",
+   "held_out_r2": 0.9935,
+   "held_out_rows": 423,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d9b12fb4031e",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "acd1b6a0b42d0eb1.csv",
+   "doi": "10.5281/zenodo.10056556",
+   "form": "power law",
+   "params": [
+    0.09571049994893145,
+    1.2298856835455716
+   ],
+   "seed": 1658411077,
+   "x": "scan#.6",
+   "y": "energy_eV.1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A Post-Synthetic Modification Strategy for Enhancing Pt adsorption Efficiency in MOF/Polym' (Zenodo, doi 10.5281/zenodo.10056556): 'energy_eV.1' follows a power law in 'scan#.6' (R\u00b2 = 0.993 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.10056556",
+   "held_out_r2": 0.9952,
+   "held_out_rows": 423,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-37109e293209",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "acd1b6a0b42d0eb1.csv",
+   "doi": "10.5281/zenodo.10056556",
+   "form": "power law",
+   "params": [
+    0.04331422031709371,
+    1.107483194642174
+   ],
+   "seed": 1658411077,
+   "x": "scan#.7",
+   "y": "energy_eV.1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A Post-Synthetic Modification Strategy for Enhancing Pt adsorption Efficiency in MOF/Polym' (Zenodo, doi 10.5281/zenodo.10056556): 'energy_eV.1' follows a power law in 'scan#.7' (R\u00b2 = 0.995 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.10056556",
+   "held_out_r2": 0.9533,
+   "held_out_rows": 214,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-374cd2fe4e07",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "4c0c8ad21479e35b.csv",
+   "doi": "10.5281/zenodo.10056556",
+   "form": "linear",
+   "params": [
+    116.24871431589428,
+    -0.0099649579003052
+   ],
+   "seed": 1351104066,
+   "x": "energy_eV",
+   "y": "Fe-BTC_10ppm"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A Post-Synthetic Modification Strategy for Enhancing Pt adsorption Efficiency in MOF/Polym' (Zenodo, doi 10.5281/zenodo.10056556): 'Fe-BTC_10ppm' is linear in 'energy_eV' (R\u00b2 = 0.972 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.10056556",
+   "held_out_r2": 0.9628,
+   "held_out_rows": 214,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-dbab694fc34f",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "4c0c8ad21479e35b.csv",
+   "doi": "10.5281/zenodo.10056556",
+   "form": "linear",
+   "params": [
+    140.57051314144027,
+    -0.0120647806954639
+   ],
+   "seed": 1351104066,
+   "x": "energy_eV",
+   "y": "Fe-BTC-PDA_10ppm"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A Post-Synthetic Modification Strategy for Enhancing Pt adsorption Efficiency in MOF/Polym' (Zenodo, doi 10.5281/zenodo.10056556): 'Fe-BTC-PDA_10ppm' is linear in 'energy_eV' (R\u00b2 = 0.977 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.10056556",
+   "held_out_r2": 0.9792,
+   "held_out_rows": 91,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ff97bb703b8c",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "e0b76760bbd07a38.csv",
+   "doi": "10.5281/zenodo.10056556",
+   "form": "linear",
+   "params": [
+    0.007884742367511448,
+    0.951578489925764
+   ],
+   "seed": 3437148659,
+   "x": "Fe-BTC/PDA-DIP_10ppm",
+   "y": "PtCl4"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A Post-Synthetic Modification Strategy for Enhancing Pt adsorption Efficiency in MOF/Polym' (Zenodo, doi 10.5281/zenodo.10056556): 'PtCl4' is linear in 'Fe-BTC/PDA-DIP_10ppm' (R\u00b2 = 0.987 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.10056556",
+   "held_out_r2": 0.9402,
+   "held_out_rows": 91,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a65b2d33cc48",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "e0b76760bbd07a38.csv",
+   "doi": "10.5281/zenodo.10056556",
+   "form": "linear",
+   "params": [
+    0.08571064477962086,
+    0.8564915085154093
+   ],
+   "seed": 3437148659,
+   "x": "Fe-BTC/PDA-DIP_200ppm",
+   "y": "K2PtCl4"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A Post-Synthetic Modification Strategy for Enhancing Pt adsorption Efficiency in MOF/Polym' (Zenodo, doi 10.5281/zenodo.10056556): 'K2PtCl4' is linear in 'Fe-BTC/PDA-DIP_200ppm' (R\u00b2 = 0.925 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.10056556",
+   "held_out_r2": 0.9437,
+   "held_out_rows": 91,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-43ee1bf7ae49",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "e0b76760bbd07a38.csv",
+   "doi": "10.5281/zenodo.10056556",
+   "form": "linear",
+   "params": [
+    0.06953526390833037,
+    0.8755287185037031
+   ],
+   "seed": 3437148659,
+   "x": "Fe-BTC/PDA-DIP_200ppm",
+   "y": "Pt0_foil"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A Post-Synthetic Modification Strategy for Enhancing Pt adsorption Efficiency in MOF/Polym' (Zenodo, doi 10.5281/zenodo.10056556): 'Pt0_foil' is linear in 'Fe-BTC/PDA-DIP_200ppm' (R\u00b2 = 0.930 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.10056556",
+   "held_out_r2": 0.9852,
+   "held_out_rows": 91,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-821cd910da72",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "e0b76760bbd07a38.csv",
+   "doi": "10.5281/zenodo.10056556",
+   "form": "linear",
+   "params": [
+    -0.017042299252387455,
+    1.0482706657599623
+   ],
+   "seed": 3437148659,
+   "x": "Fe-BTC/PDA-DIP_200ppm",
+   "y": "PtCl4"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A Post-Synthetic Modification Strategy for Enhancing Pt adsorption Efficiency in MOF/Polym' (Zenodo, doi 10.5281/zenodo.10056556): 'PtCl4' is linear in 'Fe-BTC/PDA-DIP_200ppm' (R\u00b2 = 0.984 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.10056556",
+   "held_out_r2": 0.9361,
+   "held_out_rows": 91,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ddbff8a60d1a",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "bcf0235a0c5d6af3.csv",
+   "doi": "10.5281/zenodo.10056556",
+   "form": "linear",
+   "params": [
+    -0.004684905242973471,
+    1.0821130495929359
+   ],
+   "seed": 3337492161,
+   "x": "Fe-BTC-PDA-DIP_10ppm",
+   "y": "PtCl4"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A Post-Synthetic Modification Strategy for Enhancing Pt adsorption Efficiency in MOF/Polym' (Zenodo, doi 10.5281/zenodo.10056556): 'PtCl4' is linear in 'Fe-BTC-PDA-DIP_10ppm' (R\u00b2 = 0.960 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.10056556",
+   "held_out_r2": 0.9472,
+   "held_out_rows": 91,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b14f3e33932f",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "bcf0235a0c5d6af3.csv",
+   "doi": "10.5281/zenodo.10056556",
+   "form": "linear",
+   "params": [
+    -0.0024426735571173555,
+    1.1516014701618007
+   ],
+   "seed": 3337492161,
+   "x": "Fe-BTC-PDA-DIP_100ppm",
+   "y": "PtCl4"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A Post-Synthetic Modification Strategy for Enhancing Pt adsorption Efficiency in MOF/Polym' (Zenodo, doi 10.5281/zenodo.10056556): 'PtCl4' is linear in 'Fe-BTC-PDA-DIP_100ppm' (R\u00b2 = 0.969 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.10056556",
+   "held_out_r2": 0.929,
+   "held_out_rows": 91,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-54bc5d93a557",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "bcf0235a0c5d6af3.csv",
+   "doi": "10.5281/zenodo.10056556",
+   "form": "linear",
+   "params": [
+    -0.003926352189925754,
+    1.3487989082291718
+   ],
+   "seed": 3337492161,
+   "x": "Fe-BTC-PDA-DIP_200ppm",
+   "y": "PtCl4"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A Post-Synthetic Modification Strategy for Enhancing Pt adsorption Efficiency in MOF/Polym' (Zenodo, doi 10.5281/zenodo.10056556): 'PtCl4' is linear in 'Fe-BTC-PDA-DIP_200ppm' (R\u00b2 = 0.950 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.10056556",
+   "held_out_r2": 0.9681,
+   "held_out_rows": 91,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-99b4c266489c",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "bcf0235a0c5d6af3.csv",
+   "doi": "10.5281/zenodo.10056556",
+   "form": "linear",
+   "params": [
+    0.0018113053977786544,
+    0.9180051577143038
+   ],
+   "seed": 3337492161,
+   "x": "K2PtCl4",
+   "y": "Pt0_foil"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A Post-Synthetic Modification Strategy for Enhancing Pt adsorption Efficiency in MOF/Polym' (Zenodo, doi 10.5281/zenodo.10056556): 'Pt0_foil' is linear in 'K2PtCl4' (R\u00b2 = 0.942 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11150960",
+   "held_out_r2": 0.9681,
+   "held_out_rows": 51,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9936aece49a4",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "1ec18f13a4a4d41c.csv",
+   "doi": "10.5281/zenodo.11150960",
+   "form": "power law",
+   "params": [
+    -0.9301287430003324,
+    1.206749234905812
+   ],
+   "seed": 1130983190,
+   "x": "bulk weight (g)",
+   "y": "petri tare (g)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Phosphorous fertilization and soil pH affect the growth of deciduous trees in a temperate ' (Zenodo, doi 10.5281/zenodo.11150960): 'petri tare (g)' follows a power law in 'bulk weight (g)' (R\u00b2 = 0.973 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11150960",
+   "held_out_r2": 0.962,
+   "held_out_rows": 51,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b852f5fbd830",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "1ec18f13a4a4d41c.csv",
+   "doi": "10.5281/zenodo.11150960",
+   "form": "linear",
+   "params": [
+    -0.8512886075668205,
+    0.8962921974962345
+   ],
+   "seed": 1130983190,
+   "x": "tube and roots (g)",
+   "y": "root portion (g)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Phosphorous fertilization and soil pH affect the growth of deciduous trees in a temperate ' (Zenodo, doi 10.5281/zenodo.11150960): 'root portion (g)' is linear in 'tube and roots (g)' (R\u00b2 = 0.963 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11150960",
+   "held_out_r2": 0.9994,
+   "held_out_rows": 626,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3c8fb7d61a5e",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3855f6f89c2a33e8.csv",
+   "doi": "10.5281/zenodo.11150960",
+   "form": "power law",
+   "params": [
+    -9.340554378431039,
+    1.9755115286713247
+   ],
+   "seed": 2216918543,
+   "x": "DBH_2010",
+   "y": "BA_2011"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Phosphorous fertilization and soil pH affect the growth of deciduous trees in a temperate ' (Zenodo, doi 10.5281/zenodo.11150960): 'BA_2011' follows a power law in 'DBH_2010' (R\u00b2 = 0.999 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11150960",
+   "held_out_r2": 0.9987,
+   "held_out_rows": 626,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-425a1b482fe4",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3855f6f89c2a33e8.csv",
+   "doi": "10.5281/zenodo.11150960",
+   "form": "power law",
+   "params": [
+    -9.297650020858564,
+    1.968506616973528
+   ],
+   "seed": 2216918543,
+   "x": "DBH_2010",
+   "y": "BA_2012"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Phosphorous fertilization and soil pH affect the growth of deciduous trees in a temperate ' (Zenodo, doi 10.5281/zenodo.11150960): 'BA_2012' follows a power law in 'DBH_2010' (R\u00b2 = 0.999 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11150960",
+   "held_out_r2": 0.9984,
+   "held_out_rows": 626,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-82bd6db28df3",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3855f6f89c2a33e8.csv",
+   "doi": "10.5281/zenodo.11150960",
+   "form": "power law",
+   "params": [
+    -9.269917828628463,
+    1.963915504610297
+   ],
+   "seed": 2216918543,
+   "x": "DBH_2010",
+   "y": "BA_2013"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Phosphorous fertilization and soil pH affect the growth of deciduous trees in a temperate ' (Zenodo, doi 10.5281/zenodo.11150960): 'BA_2013' follows a power law in 'DBH_2010' (R\u00b2 = 0.998 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11150960",
+   "held_out_r2": 0.9412,
+   "held_out_rows": 626,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ed53de0f85b8",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3855f6f89c2a33e8.csv",
+   "doi": "10.5281/zenodo.11150960",
+   "form": "power law",
+   "params": [
+    -9.226752891361144,
+    1.956283141968791
+   ],
+   "seed": 2216918543,
+   "x": "DBH_2010",
+   "y": "BA_2014"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Phosphorous fertilization and soil pH affect the growth of deciduous trees in a temperate ' (Zenodo, doi 10.5281/zenodo.11150960): 'BA_2014' follows a power law in 'DBH_2010' (R\u00b2 = 0.997 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11150960",
+   "held_out_r2": 0.9953,
+   "held_out_rows": 626,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-22227e9dd856",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3855f6f89c2a33e8.csv",
+   "doi": "10.5281/zenodo.11150960",
+   "form": "power law",
+   "params": [
+    -9.178811954812721,
+    1.9476107896328425
+   ],
+   "seed": 2216918543,
+   "x": "DBH_2010",
+   "y": "BA_2015"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Phosphorous fertilization and soil pH affect the growth of deciduous trees in a temperate ' (Zenodo, doi 10.5281/zenodo.11150960): 'BA_2015' follows a power law in 'DBH_2010' (R\u00b2 = 0.996 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11150960",
+   "held_out_r2": 0.9994,
+   "held_out_rows": 626,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9e6b2602cbae",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3855f6f89c2a33e8.csv",
+   "doi": "10.5281/zenodo.11150960",
+   "form": "power law",
+   "params": [
+    4.723759655193295,
+    0.49387788092325446
+   ],
+   "seed": 2216918543,
+   "x": "BA_2010",
+   "y": "DBH_2011"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Phosphorous fertilization and soil pH affect the growth of deciduous trees in a temperate ' (Zenodo, doi 10.5281/zenodo.11150960): 'DBH_2011' follows a power law in 'BA_2010' (R\u00b2 = 0.999 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11150960",
+   "held_out_r2": 0.9987,
+   "held_out_rows": 626,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-93c53387a729",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3855f6f89c2a33e8.csv",
+   "doi": "10.5281/zenodo.11150960",
+   "form": "power law",
+   "params": [
+    4.728659403939744,
+    0.49212665529522237
+   ],
+   "seed": 2216918543,
+   "x": "BA_2010",
+   "y": "DBH_2012"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Phosphorous fertilization and soil pH affect the growth of deciduous trees in a temperate ' (Zenodo, doi 10.5281/zenodo.11150960): 'DBH_2012' follows a power law in 'BA_2010' (R\u00b2 = 0.999 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11150960",
+   "held_out_r2": 0.9984,
+   "held_out_rows": 626,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ced0178d2783",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3855f6f89c2a33e8.csv",
+   "doi": "10.5281/zenodo.11150960",
+   "form": "power law",
+   "params": [
+    4.7316768135778595,
+    0.4909788770892258
+   ],
+   "seed": 2216918543,
+   "x": "BA_2010",
+   "y": "DBH_2013"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Phosphorous fertilization and soil pH affect the growth of deciduous trees in a temperate ' (Zenodo, doi 10.5281/zenodo.11150960): 'DBH_2013' follows a power law in 'BA_2010' (R\u00b2 = 0.998 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11150960",
+   "held_out_r2": 0.9412,
+   "held_out_rows": 626,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b004f512090b",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3855f6f89c2a33e8.csv",
+   "doi": "10.5281/zenodo.11150960",
+   "form": "power law",
+   "params": [
+    4.735224186784001,
+    0.4890707829504744
+   ],
+   "seed": 2216918543,
+   "x": "BA_2010",
+   "y": "DBH_2014"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Phosphorous fertilization and soil pH affect the growth of deciduous trees in a temperate ' (Zenodo, doi 10.5281/zenodo.11150960): 'DBH_2014' follows a power law in 'BA_2010' (R\u00b2 = 0.997 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11150960",
+   "held_out_r2": 0.9953,
+   "held_out_rows": 626,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-6c3d17d083b3",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3855f6f89c2a33e8.csv",
+   "doi": "10.5281/zenodo.11150960",
+   "form": "power law",
+   "params": [
+    4.738702104344735,
+    0.4869026976339237
+   ],
+   "seed": 2216918543,
+   "x": "BA_2010",
+   "y": "DBH_2015"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Phosphorous fertilization and soil pH affect the growth of deciduous trees in a temperate ' (Zenodo, doi 10.5281/zenodo.11150960): 'DBH_2015' follows a power law in 'BA_2010' (R\u00b2 = 0.996 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11150960",
+   "held_out_r2": 0.9957,
+   "held_out_rows": 626,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-bff58294f796",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3855f6f89c2a33e8.csv",
+   "doi": "10.5281/zenodo.11150960",
+   "form": "power law",
+   "params": [
+    4.743212402576273,
+    0.4862767648564238
+   ],
+   "seed": 2216918543,
+   "x": "BA_2010",
+   "y": "DBH_2016"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Phosphorous fertilization and soil pH affect the growth of deciduous trees in a temperate ' (Zenodo, doi 10.5281/zenodo.11150960): 'DBH_2016' follows a power law in 'BA_2010' (R\u00b2 = 0.995 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11150960",
+   "held_out_r2": 0.9996,
+   "held_out_rows": 626,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-6af0716de082",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3855f6f89c2a33e8.csv",
+   "doi": "10.5281/zenodo.11150960",
+   "form": "power law",
+   "params": [
+    -9.409262589333862,
+    1.993140691552145
+   ],
+   "seed": 2216918543,
+   "x": "DBH_2011",
+   "y": "BA_2012"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Phosphorous fertilization and soil pH affect the growth of deciduous trees in a temperate ' (Zenodo, doi 10.5281/zenodo.11150960): 'BA_2012' follows a power law in 'DBH_2011' (R\u00b2 = 1.000 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11150960",
+   "held_out_r2": 0.9995,
+   "held_out_rows": 626,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-2bb5caba7409",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3855f6f89c2a33e8.csv",
+   "doi": "10.5281/zenodo.11150960",
+   "form": "power law",
+   "params": [
+    -9.381747810546548,
+    1.988660557294532
+   ],
+   "seed": 2216918543,
+   "x": "DBH_2011",
+   "y": "BA_2013"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Phosphorous fertilization and soil pH affect the growth of deciduous trees in a temperate ' (Zenodo, doi 10.5281/zenodo.11150960): 'BA_2013' follows a power law in 'DBH_2011' (R\u00b2 = 0.999 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11150960",
+   "held_out_r2": 0.9433,
+   "held_out_rows": 626,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-0081379dccc6",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3855f6f89c2a33e8.csv",
+   "doi": "10.5281/zenodo.11150960",
+   "form": "power law",
+   "params": [
+    -9.339407778605382,
+    1.9813760936074427
+   ],
+   "seed": 2216918543,
+   "x": "DBH_2011",
+   "y": "BA_2014"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Phosphorous fertilization and soil pH affect the growth of deciduous trees in a temperate ' (Zenodo, doi 10.5281/zenodo.11150960): 'BA_2014' follows a power law in 'DBH_2011' (R\u00b2 = 0.999 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11150960",
+   "held_out_r2": 0.997,
+   "held_out_rows": 626,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f73573570c97",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3855f6f89c2a33e8.csv",
+   "doi": "10.5281/zenodo.11150960",
+   "form": "power law",
+   "params": [
+    -9.292004816610168,
+    1.9729582523006997
+   ],
+   "seed": 2216918543,
+   "x": "DBH_2011",
+   "y": "BA_2015"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Phosphorous fertilization and soil pH affect the growth of deciduous trees in a temperate ' (Zenodo, doi 10.5281/zenodo.11150960): 'BA_2015' follows a power law in 'DBH_2011' (R\u00b2 = 0.998 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11150960",
+   "held_out_r2": 0.9996,
+   "held_out_rows": 626,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-360883262c01",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3855f6f89c2a33e8.csv",
+   "doi": "10.5281/zenodo.11150960",
+   "form": "power law",
+   "params": [
+    4.731062837412174,
+    0.4982851737440971
+   ],
+   "seed": 2216918543,
+   "x": "BA_2011",
+   "y": "DBH_2012"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Phosphorous fertilization and soil pH affect the growth of deciduous trees in a temperate ' (Zenodo, doi 10.5281/zenodo.11150960): 'DBH_2012' follows a power law in 'BA_2011' (R\u00b2 = 1.000 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11150960",
+   "held_out_r2": 0.9995,
+   "held_out_rows": 626,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-822e874855ab",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3855f6f89c2a33e8.csv",
+   "doi": "10.5281/zenodo.11150960",
+   "form": "power law",
+   "params": [
+    4.734233778803393,
+    0.49716514004131457
+   ],
+   "seed": 2216918543,
+   "x": "BA_2011",
+   "y": "DBH_2013"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Phosphorous fertilization and soil pH affect the growth of deciduous trees in a temperate ' (Zenodo, doi 10.5281/zenodo.11150960): 'DBH_2013' follows a power law in 'BA_2011' (R\u00b2 = 0.999 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11150960",
+   "held_out_r2": 0.9433,
+   "held_out_rows": 626,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d00c3543b033",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3855f6f89c2a33e8.csv",
+   "doi": "10.5281/zenodo.11150960",
+   "form": "power law",
+   "params": [
+    4.73819077620833,
+    0.4953440206323588
+   ],
+   "seed": 2216918543,
+   "x": "BA_2011",
+   "y": "DBH_2014"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Phosphorous fertilization and soil pH affect the growth of deciduous trees in a temperate ' (Zenodo, doi 10.5281/zenodo.11150960): 'DBH_2014' follows a power law in 'BA_2011' (R\u00b2 = 0.999 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11150960",
+   "held_out_r2": 0.997,
+   "held_out_rows": 626,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b04d9d249ce5",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3855f6f89c2a33e8.csv",
+   "doi": "10.5281/zenodo.11150960",
+   "form": "power law",
+   "params": [
+    4.742001109670081,
+    0.49323956305693883
+   ],
+   "seed": 2216918543,
+   "x": "BA_2011",
+   "y": "DBH_2015"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Phosphorous fertilization and soil pH affect the growth of deciduous trees in a temperate ' (Zenodo, doi 10.5281/zenodo.11150960): 'DBH_2015' follows a power law in 'BA_2011' (R\u00b2 = 0.998 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11150960",
+   "held_out_r2": 0.9975,
+   "held_out_rows": 626,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9749021a8fda",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3855f6f89c2a33e8.csv",
+   "doi": "10.5281/zenodo.11150960",
+   "form": "power law",
+   "params": [
+    4.74669438575207,
+    0.4926550223220334
+   ],
+   "seed": 2216918543,
+   "x": "BA_2011",
+   "y": "DBH_2016"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Phosphorous fertilization and soil pH affect the growth of deciduous trees in a temperate ' (Zenodo, doi 10.5281/zenodo.11150960): 'DBH_2016' follows a power law in 'BA_2011' (R\u00b2 = 0.997 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11150960",
+   "held_out_r2": 0.9997,
+   "held_out_rows": 626,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-1ae2efc0f866",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3855f6f89c2a33e8.csv",
+   "doi": "10.5281/zenodo.11150960",
+   "form": "power law",
+   "params": [
+    -9.424271986666415,
+    1.9954974621124624
+   ],
+   "seed": 2216918543,
+   "x": "DBH_2012",
+   "y": "BA_2013"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Phosphorous fertilization and soil pH affect the growth of deciduous trees in a temperate ' (Zenodo, doi 10.5281/zenodo.11150960): 'BA_2013' follows a power law in 'DBH_2012' (R\u00b2 = 1.000 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11150960",
+   "held_out_r2": 0.9438,
+   "held_out_rows": 626,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-09883679e9da",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3855f6f89c2a33e8.csv",
+   "doi": "10.5281/zenodo.11150960",
+   "form": "power law",
+   "params": [
+    -9.382406802424123,
+    1.9884093854023261
+   ],
+   "seed": 2216918543,
+   "x": "DBH_2012",
+   "y": "BA_2014"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Phosphorous fertilization and soil pH affect the growth of deciduous trees in a temperate ' (Zenodo, doi 10.5281/zenodo.11150960): 'BA_2014' follows a power law in 'DBH_2012' (R\u00b2 = 0.999 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11150960",
+   "held_out_r2": 0.9977,
+   "held_out_rows": 626,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e6a9af39deec",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3855f6f89c2a33e8.csv",
+   "doi": "10.5281/zenodo.11150960",
+   "form": "power law",
+   "params": [
+    -9.335549891082797,
+    1.9802175463234282
+   ],
+   "seed": 2216918543,
+   "x": "DBH_2012",
+   "y": "BA_2015"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Phosphorous fertilization and soil pH affect the growth of deciduous trees in a temperate ' (Zenodo, doi 10.5281/zenodo.11150960): 'BA_2015' follows a power law in 'DBH_2012' (R\u00b2 = 0.999 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11150960",
+   "held_out_r2": 0.9997,
+   "held_out_rows": 626,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-af478bcf9b2b",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3855f6f89c2a33e8.csv",
+   "doi": "10.5281/zenodo.11150960",
+   "form": "power law",
+   "params": [
+    4.7291271355947275,
+    0.4988743685379346
+   ],
+   "seed": 2216918543,
+   "x": "BA_2012",
+   "y": "DBH_2013"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Phosphorous fertilization and soil pH affect the growth of deciduous trees in a temperate ' (Zenodo, doi 10.5281/zenodo.11150960): 'DBH_2013' follows a power law in 'BA_2012' (R\u00b2 = 1.000 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11150960",
+   "held_out_r2": 0.9438,
+   "held_out_rows": 626,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-27b0878b8bb7",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3855f6f89c2a33e8.csv",
+   "doi": "10.5281/zenodo.11150960",
+   "form": "power law",
+   "params": [
+    4.733310766673105,
+    0.49710234581745283
+   ],
+   "seed": 2216918543,
+   "x": "BA_2012",
+   "y": "DBH_2014"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Phosphorous fertilization and soil pH affect the growth of deciduous trees in a temperate ' (Zenodo, doi 10.5281/zenodo.11150960): 'DBH_2014' follows a power law in 'BA_2012' (R\u00b2 = 0.999 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11150960",
+   "held_out_r2": 0.9977,
+   "held_out_rows": 626,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c814f8271781",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3855f6f89c2a33e8.csv",
+   "doi": "10.5281/zenodo.11150960",
+   "form": "power law",
+   "params": [
+    4.737382112547866,
+    0.4950543888081592
+   ],
+   "seed": 2216918543,
+   "x": "BA_2012",
+   "y": "DBH_2015"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Phosphorous fertilization and soil pH affect the growth of deciduous trees in a temperate ' (Zenodo, doi 10.5281/zenodo.11150960): 'DBH_2015' follows a power law in 'BA_2012' (R\u00b2 = 0.999 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11150960",
+   "held_out_r2": 0.9984,
+   "held_out_rows": 626,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c24e8f582873",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3855f6f89c2a33e8.csv",
+   "doi": "10.5281/zenodo.11150960",
+   "form": "power law",
+   "params": [
+    4.742161863187205,
+    0.49448926245621605
+   ],
+   "seed": 2216918543,
+   "x": "BA_2012",
+   "y": "DBH_2016"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Phosphorous fertilization and soil pH affect the growth of deciduous trees in a temperate ' (Zenodo, doi 10.5281/zenodo.11150960): 'DBH_2016' follows a power law in 'BA_2012' (R\u00b2 = 0.998 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11150960",
+   "held_out_r2": 0.9439,
+   "held_out_rows": 626,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-08cfcbf5ff78",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3855f6f89c2a33e8.csv",
+   "doi": "10.5281/zenodo.11150960",
+   "form": "power law",
+   "params": [
+    -9.409780501275549,
+    1.992840358105234
+   ],
+   "seed": 2216918543,
+   "x": "DBH_2013",
+   "y": "BA_2014"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Phosphorous fertilization and soil pH affect the growth of deciduous trees in a temperate ' (Zenodo, doi 10.5281/zenodo.11150960): 'BA_2014' follows a power law in 'DBH_2013' (R\u00b2 = 1.000 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11150960",
+   "held_out_r2": 0.9981,
+   "held_out_rows": 626,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-aec9bcefcd19",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3855f6f89c2a33e8.csv",
+   "doi": "10.5281/zenodo.11150960",
+   "form": "power law",
+   "params": [
+    -9.36311683965865,
+    1.9847374413426988
+   ],
+   "seed": 2216918543,
+   "x": "DBH_2013",
+   "y": "BA_2015"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Phosphorous fertilization and soil pH affect the growth of deciduous trees in a temperate ' (Zenodo, doi 10.5281/zenodo.11150960): 'BA_2015' follows a power law in 'DBH_2013' (R\u00b2 = 0.999 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11150960",
+   "held_out_r2": 0.9439,
+   "held_out_rows": 626,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f4429a275a3a",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3855f6f89c2a33e8.csv",
+   "doi": "10.5281/zenodo.11150960",
+   "form": "power law",
+   "params": [
+    4.730094197831477,
+    0.49821008885992096
+   ],
+   "seed": 2216918543,
+   "x": "BA_2013",
+   "y": "DBH_2014"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Phosphorous fertilization and soil pH affect the growth of deciduous trees in a temperate ' (Zenodo, doi 10.5281/zenodo.11150960): 'DBH_2014' follows a power law in 'BA_2013' (R\u00b2 = 1.000 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11150960",
+   "held_out_r2": 0.9981,
+   "held_out_rows": 626,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-8e3863929607",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3855f6f89c2a33e8.csv",
+   "doi": "10.5281/zenodo.11150960",
+   "form": "power law",
+   "params": [
+    4.734279040150753,
+    0.4961843624521104
+   ],
+   "seed": 2216918543,
+   "x": "BA_2013",
+   "y": "DBH_2015"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Phosphorous fertilization and soil pH affect the growth of deciduous trees in a temperate ' (Zenodo, doi 10.5281/zenodo.11150960): 'DBH_2015' follows a power law in 'BA_2013' (R\u00b2 = 0.999 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11150960",
+   "held_out_r2": 0.9988,
+   "held_out_rows": 626,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-17de5f526a5c",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3855f6f89c2a33e8.csv",
+   "doi": "10.5281/zenodo.11150960",
+   "form": "power law",
+   "params": [
+    4.73910449094209,
+    0.4956292144844722
+   ],
+   "seed": 2216918543,
+   "x": "BA_2013",
+   "y": "DBH_2016"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Phosphorous fertilization and soil pH affect the growth of deciduous trees in a temperate ' (Zenodo, doi 10.5281/zenodo.11150960): 'DBH_2016' follows a power law in 'BA_2013' (R\u00b2 = 0.998 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11150960",
+   "held_out_r2": 0.9391,
+   "held_out_rows": 626,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9fc1638cf678",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3855f6f89c2a33e8.csv",
+   "doi": "10.5281/zenodo.11150960",
+   "form": "power law",
+   "params": [
+    -9.405282610994226,
+    1.9919429947020164
+   ],
+   "seed": 2216918543,
+   "x": "DBH_2014",
+   "y": "BA_2015"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Phosphorous fertilization and soil pH affect the growth of deciduous trees in a temperate ' (Zenodo, doi 10.5281/zenodo.11150960): 'BA_2015' follows a power law in 'DBH_2014' (R\u00b2 = 1.000 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11150960",
+   "held_out_r2": 0.9391,
+   "held_out_rows": 626,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4c27aeb70ef0",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3855f6f89c2a33e8.csv",
+   "doi": "10.5281/zenodo.11150960",
+   "form": "power law",
+   "params": [
+    4.730222692765043,
+    0.4979857471942072
+   ],
+   "seed": 2216918543,
+   "x": "BA_2014",
+   "y": "DBH_2015"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Phosphorous fertilization and soil pH affect the growth of deciduous trees in a temperate ' (Zenodo, doi 10.5281/zenodo.11150960): 'DBH_2015' follows a power law in 'BA_2014' (R\u00b2 = 1.000 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11150960",
+   "held_out_r2": 0.9402,
+   "held_out_rows": 626,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-cb5f598197ad",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3855f6f89c2a33e8.csv",
+   "doi": "10.5281/zenodo.11150960",
+   "form": "power law",
+   "params": [
+    4.7352278856978876,
+    0.4974756866167909
+   ],
+   "seed": 2216918543,
+   "x": "BA_2014",
+   "y": "DBH_2016"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Phosphorous fertilization and soil pH affect the growth of deciduous trees in a temperate ' (Zenodo, doi 10.5281/zenodo.11150960): 'DBH_2016' follows a power law in 'BA_2014' (R\u00b2 = 0.999 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11150960",
+   "held_out_r2": 0.9988,
+   "held_out_rows": 626,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ea57532be3db",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3855f6f89c2a33e8.csv",
+   "doi": "10.5281/zenodo.11150960",
+   "form": "power law",
+   "params": [
+    4.731017872407047,
+    0.49950331191078967
+   ],
+   "seed": 2216918543,
+   "x": "BA_2015",
+   "y": "DBH_2016"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Phosphorous fertilization and soil pH affect the growth of deciduous trees in a temperate ' (Zenodo, doi 10.5281/zenodo.11150960): 'DBH_2016' follows a power law in 'BA_2015' (R\u00b2 = 1.000 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11150960",
+   "held_out_r2": 0.9682,
+   "held_out_rows": 51,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ff6e04878c8a",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "896930cd19bdf977.csv",
+   "doi": "10.5281/zenodo.11150960",
+   "form": "power law",
+   "params": [
+    -0.8656605538883121,
+    1.1910980528195338
+   ],
+   "seed": 3104302582,
+   "x": "bulk.weight..g.",
+   "y": "petri.tare..g."
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Phosphorous fertilization and soil pH affect the growth of deciduous trees in a temperate ' (Zenodo, doi 10.5281/zenodo.11150960): 'petri.tare..g.' follows a power law in 'bulk.weight..g.' (R\u00b2 = 0.975 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11150960",
+   "held_out_r2": 0.9338,
+   "held_out_rows": 51,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4780528db8d8",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "896930cd19bdf977.csv",
+   "doi": "10.5281/zenodo.11150960",
+   "form": "linear",
+   "params": [
+    -0.9317896291995243,
+    0.9720646203732067
+   ],
+   "seed": 3104302582,
+   "x": "tube.and.roots..g.",
+   "y": "root.portion..g."
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Phosphorous fertilization and soil pH affect the growth of deciduous trees in a temperate ' (Zenodo, doi 10.5281/zenodo.11150960): 'root.portion..g.' is linear in 'tube.and.roots..g.' (R\u00b2 = 0.972 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11150960",
+   "held_out_r2": -186.2089,
+   "held_out_rows": 48,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3f09d5a70054",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "8155101d8918eeb4.csv",
+   "doi": "10.5281/zenodo.11150960",
+   "form": "linear",
+   "params": [
+    0.3448296549366503,
+    1.7652446289085963
+   ],
+   "seed": 1710151096,
+   "x": "tube with Ctab (g)",
+   "y": "envelope (g).1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Phosphorous fertilization and soil pH affect the growth of deciduous trees in a temperate ' (Zenodo, doi 10.5281/zenodo.11150960): 'envelope (g).1' is linear in 'tube with Ctab (g)' (R\u00b2 = 0.900 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11150960",
+   "held_out_r2": 0.9657,
+   "held_out_rows": 48,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-8ed6dda5548b",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8155101d8918eeb4.csv",
+   "doi": "10.5281/zenodo.11150960",
+   "form": "power law",
+   "params": [
+    0.08478038604717772,
+    1.0042905269581444
+   ],
+   "seed": 1710151096,
+   "x": "root dry (g)",
+   "y": "total_dry_mass"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Phosphorous fertilization and soil pH affect the growth of deciduous trees in a temperate ' (Zenodo, doi 10.5281/zenodo.11150960): 'total_dry_mass' follows a power law in 'root dry (g)' (R\u00b2 = 0.955 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11150960",
+   "held_out_r2": -10.6675,
+   "held_out_rows": 48,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5c726f000870",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "10d07395c7ba00cd.csv",
+   "doi": "10.5281/zenodo.11150960",
+   "form": "linear",
+   "params": [
+    0.3617291481314909,
+    0.7007496057961208
+   ],
+   "seed": 573340063,
+   "x": "tube.and.tips..g.",
+   "y": "tube.with.Ctab..g."
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Phosphorous fertilization and soil pH affect the growth of deciduous trees in a temperate ' (Zenodo, doi 10.5281/zenodo.11150960): 'tube.with.Ctab..g.' is linear in 'tube.and.tips..g.' (R\u00b2 = 0.936 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.11150960",
+   "held_out_r2": 0.9565,
+   "held_out_rows": 48,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3ed6ae18618e",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "10d07395c7ba00cd.csv",
+   "doi": "10.5281/zenodo.11150960",
+   "form": "power law",
+   "params": [
+    0.09186048681994335,
+    1.008685241003604
+   ],
+   "seed": 573340063,
+   "x": "root.dry..g.",
+   "y": "total_dry_mass"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Phosphorous fertilization and soil pH affect the growth of deciduous trees in a temperate ' (Zenodo, doi 10.5281/zenodo.11150960): 'total_dry_mass' follows a power law in 'root.dry..g.' (R\u00b2 = 0.966 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20433428",
+   "held_out_r2": 0.8736,
+   "held_out_rows": 652,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3936a0d65aa3",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f6a55a737b7ef9ad.csv",
+   "doi": "10.5281/zenodo.20433428",
+   "form": "linear",
+   "params": [
+    -12.01074425883262,
+    0.8540819731865724
+   ],
+   "seed": 3915295864,
+   "x": "er_measured",
+   "y": "delta_lst"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'CMLTRPCNN \u2014 ABO3 microwave-dielectric permittivity dataset (n = 1,304)' (Zenodo, doi 10.5281/zenodo.20433428): 'delta_lst' is linear in 'er_measured' (R\u00b2 = 0.904 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20433428",
+   "held_out_r2": 0.8757,
+   "held_out_rows": 652,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5bec07276980",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f6a55a737b7ef9ad.csv",
+   "doi": "10.5281/zenodo.20433428",
+   "form": "linear",
+   "params": [
+    -12.060168469676013,
+    0.864419183405961
+   ],
+   "seed": 3915295864,
+   "x": "er_predicted",
+   "y": "delta_lst"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'CMLTRPCNN \u2014 ABO3 microwave-dielectric permittivity dataset (n = 1,304)' (Zenodo, doi 10.5281/zenodo.20433428): 'delta_lst' is linear in 'er_predicted' (R\u00b2 = 0.917 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
