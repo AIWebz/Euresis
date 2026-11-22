@@ -5748,3 +5748,4 @@
 - 2026-11-22 11:42 FINDING (confirmed on held-out rows): In 'Data Products for "An HST Transmission Spectrum of the Closest M-Dwarf Transiting Rocky Pl' (Zenodo, doi 10.5281/zenodo.13227947): 'Flux 9 exposures after flare (erg/s/cm^2/A)' follows a power law in 'Wavelength (microns)' (R² = 0.931 on the discovery half); held-out R² = 0.936 [emp-99e5c970a2d2]
 - 2026-11-22 11:42 FINDING (confirmed on held-out rows): In 'Data Products for "An HST Transmission Spectrum of the Closest M-Dwarf Transiting Rocky Pl' (Zenodo, doi 10.5281/zenodo.13227947): 'Flux 10 exposures after flare (erg/s/cm^2/A)' follows a power law in 'Wavelength (microns)' (R² = 0.928 on the discovery half); held-out R² = 0.936 [emp-7207bf0555de]
 - 2026-11-22 11:42 data feeds: 34585 datasets analysed so far, 5051 confirmed findings
+- 2026-11-22 12:21 data feeds: online
