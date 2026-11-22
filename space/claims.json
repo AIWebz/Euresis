@@ -4142014,5 +4142014,41 @@
   "statement": "[physics: collision] Mass Ratio Adjusted by Square Root of Coefficient of Restitution [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Relative Kinetic Energy Ratio After Collision [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (2.12e-08, 1))",
   "status": "proved",
   "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "checked_up_to": 47,
+   "method": "Grundy values recomputed; Guy\u2013Smith periodicity theorem condition checked",
+   "values_of_one_period": [
+    1,
+    1,
+    1,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    4,
+    4,
+    4,
+    4,
+    1,
+    1,
+    1
+   ]
+  },
+  "id": "gam-e404ce02f6a4",
+  "kind": "game",
+  "novelty": "not checked",
+  "payload": {
+   "code": "1005545",
+   "period": 16,
+   "preperiod": 4
+  },
+  "source": "games.py",
+  "statement": "Octal game 0.1005545 is completely solved: its Grundy values are periodic with pre-period 4 and period 16 (Guy\u2013Smith periodicity theorem)",
+  "status": "proved",
+  "verifier": "guy-smith-periodicity"
  }
 ]
