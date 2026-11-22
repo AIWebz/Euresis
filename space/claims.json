@@ -4065457,5 +4065457,59 @@
   "statement": "Octal game 0.0775635 is completely solved: its Grundy values are periodic with pre-period 284 and period 48 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.6084/m9.figshare.28811663.v4",
+   "held_out_r2": 0.1519,
+   "held_out_rows": 83,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-8f33cfa495c2",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "404cab3ab413e7f8.csv",
+   "doi": "10.6084/m9.figshare.28811663.v4",
+   "form": "linear",
+   "params": [
+    0.5534759322321487,
+    0.04291204364617425
+   ],
+   "seed": 1627621164,
+   "x": "standard_length_mm_power_function",
+   "y": "oto length mm for size conversion"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Supplementary data files' (Figshare, doi 10.6084/m9.figshare.28811663.v4): 'oto length mm for size conversion' is linear in 'standard_length_mm_power_function' (R\u00b2 = 0.931 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.6084/m9.figshare.28811663.v4",
+   "held_out_r2": 0.1518,
+   "held_out_rows": 83,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3dbcba54b303",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "404cab3ab413e7f8.csv",
+   "doi": "10.6084/m9.figshare.28811663.v4",
+   "form": "linear",
+   "params": [
+    0.5530888625832846,
+    0.4292094913044944
+   ],
+   "seed": 1627621164,
+   "x": "standard_leng_cm",
+   "y": "oto length mm for size conversion"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Supplementary data files' (Figshare, doi 10.6084/m9.figshare.28811663.v4): 'oto length mm for size conversion' is linear in 'standard_leng_cm' (R\u00b2 = 0.931 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
  }
 ]
