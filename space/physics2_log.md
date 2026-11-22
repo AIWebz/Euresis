@@ -8064,3 +8064,13 @@
 - 2026-11-22 12:33 round 7340: velocity addition
 - 2026-11-22 12:35 round 7341: Compton scattering
 - 2026-11-22 12:36 round 7342: Cournot duopoly
+- 2026-11-22 12:38 round 7343: insurance and risk
+- 2026-11-22 12:40 round 7344: auction with a reserve price
+- 2026-11-22 12:43 round 7345: two-body decay
+- 2026-11-22 12:44 round 7346: collision
+- 2026-11-22 12:52 round 7347: driven oscillator
+- 2026-11-22 12:53 round 7348: velocity addition
+- 2026-11-22 12:55 round 7349: Compton scattering
+- 2026-11-22 12:56 round 7350: Cournot duopoly
+- 2026-11-22 12:58 round 7351: insurance and risk
+- 2026-11-22 13:00 round 7352: auction with a reserve price
