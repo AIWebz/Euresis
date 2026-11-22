@@ -7886,3 +7886,9 @@
 - 2026-11-22 02:24 round 7184: auction with a reserve price
 - 2026-11-22 02:26 round 7185: two-body decay
 - 2026-11-22 02:27 round 7186: collision
+- 2026-11-22 02:30 round 7187: driven oscillator
+- 2026-11-22 02:32 round 7188: velocity addition
+- 2026-11-22 02:34 round 7189: Compton scattering
+- 2026-11-22 02:34 round 7190: Cournot duopoly
+- 2026-11-22 02:37 round 7191: insurance and risk
+- 2026-11-22 02:39 segment end: 7191 rounds, 5 discoveries, 2 known laws rediscovered
