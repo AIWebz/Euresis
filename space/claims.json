@@ -4096910,10 +4096910,15 @@
   "verifier": "held-out-replication"
  },
  {
-  "evidence": null,
+  "evidence": {
+   "doi": "10.5281/zenodo.21241160",
+   "held_out_r2": 0.987,
+   "held_out_rows": 2811,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
   "id": "emp-bf0ee1a15e99",
   "kind": "empirical",
-  "novelty": "not checked",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
   "payload": {
    "dataset": "93f02c9ebc837389.csv",
    "doi": "10.5281/zenodo.21241160",
@@ -4096928,7 +4096933,385 @@
   },
   "source": "datafeeds.py",
   "statement": "In 'Low-frequency electrical measurements from laboratory jaw crushing tests of granite' (Zenodo, doi 10.5281/zenodo.21241160): 'var_full_b_l2' is linear in 'va_full_c_l3' (R\u00b2 = 0.980 on the discovery half)",
-  "status": "candidate",
-  "verifier": null
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.21241160",
+   "held_out_r2": 0.9907,
+   "held_out_rows": 2811,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-463e86af5f43",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "93f02c9ebc837389.csv",
+   "doi": "10.5281/zenodo.21241160",
+   "form": "linear",
+   "params": [
+    -27.86702188401455,
+    -0.7974586177221403
+   ],
+   "seed": 2914372697,
+   "x": "va_full_c_l3",
+   "y": "var_full_c_l3"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Low-frequency electrical measurements from laboratory jaw crushing tests of granite' (Zenodo, doi 10.5281/zenodo.21241160): 'var_full_c_l3' is linear in 'va_full_c_l3' (R\u00b2 = 0.983 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.21241160",
+   "held_out_r2": 0.988,
+   "held_out_rows": 2811,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-332b0df9cc6e",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "93f02c9ebc837389.csv",
+   "doi": "10.5281/zenodo.21241160",
+   "form": "linear",
+   "params": [
+    -30.841555365437078,
+    -0.8072820183634737
+   ],
+   "seed": 2914372697,
+   "x": "va_full_c_l3",
+   "y": "var_full_total"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Low-frequency electrical measurements from laboratory jaw crushing tests of granite' (Zenodo, doi 10.5281/zenodo.21241160): 'var_full_total' is linear in 'va_full_c_l3' (R\u00b2 = 0.982 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.21241160",
+   "held_out_r2": 0.999,
+   "held_out_rows": 2811,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-09b4bfaeeed6",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "93f02c9ebc837389.csv",
+   "doi": "10.5281/zenodo.21241160",
+   "form": "power law",
+   "params": [
+    -1.1336619705359814,
+    0.9924471782307527
+   ],
+   "seed": 2914372697,
+   "x": "va_full_total",
+   "y": "var_full_a_l1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Low-frequency electrical measurements from laboratory jaw crushing tests of granite' (Zenodo, doi 10.5281/zenodo.21241160): 'var_full_a_l1' follows a power law in 'va_full_total' (R\u00b2 = 0.999 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.21241160",
+   "held_out_r2": 0.9886,
+   "held_out_rows": 2811,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-cc0ae81508fa",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "93f02c9ebc837389.csv",
+   "doi": "10.5281/zenodo.21241160",
+   "form": "linear",
+   "params": [
+    -31.34101045125439,
+    -0.2670931578402032
+   ],
+   "seed": 2914372697,
+   "x": "va_full_total",
+   "y": "var_full_b_l2"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Low-frequency electrical measurements from laboratory jaw crushing tests of granite' (Zenodo, doi 10.5281/zenodo.21241160): 'var_full_b_l2' is linear in 'va_full_total' (R\u00b2 = 0.982 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.21241160",
+   "held_out_r2": 0.9916,
+   "held_out_rows": 2811,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f56228a95021",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "93f02c9ebc837389.csv",
+   "doi": "10.5281/zenodo.21241160",
+   "form": "linear",
+   "params": [
+    -25.098526740920327,
+    -0.26529641868752923
+   ],
+   "seed": 2914372697,
+   "x": "va_full_total",
+   "y": "var_full_c_l3"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Low-frequency electrical measurements from laboratory jaw crushing tests of granite' (Zenodo, doi 10.5281/zenodo.21241160): 'var_full_c_l3' is linear in 'va_full_total' (R\u00b2 = 0.984 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.21241160",
+   "held_out_r2": 0.9892,
+   "held_out_rows": 2811,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d9d6fc8e210a",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "93f02c9ebc837389.csv",
+   "doi": "10.5281/zenodo.21241160",
+   "form": "linear",
+   "params": [
+    -28.009812099225794,
+    -0.26860357704205556
+   ],
+   "seed": 2914372697,
+   "x": "va_full_total",
+   "y": "var_full_total"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Low-frequency electrical measurements from laboratory jaw crushing tests of granite' (Zenodo, doi 10.5281/zenodo.21241160): 'var_full_total' is linear in 'va_full_total' (R\u00b2 = 0.983 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.21241160",
+   "held_out_r2": 0.9829,
+   "held_out_rows": 2811,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9532faa93b8b",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "93f02c9ebc837389.csv",
+   "doi": "10.5281/zenodo.21241160",
+   "form": "logarithmic",
+   "params": [
+    1.2828887435454206,
+    -0.2500902733213173
+   ],
+   "seed": 2914372697,
+   "x": "va_full_total",
+   "y": "pf_a_l1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Low-frequency electrical measurements from laboratory jaw crushing tests of granite' (Zenodo, doi 10.5281/zenodo.21241160): 'pf_a_l1' grows logarithmically in 'va_full_total' (R\u00b2 = 0.983 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.21241160",
+   "held_out_r2": 0.9555,
+   "held_out_rows": 2811,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f6064ce72ea4",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "93f02c9ebc837389.csv",
+   "doi": "10.5281/zenodo.21241160",
+   "form": "logarithmic",
+   "params": [
+    1.3495408605991988,
+    -0.2704091533359982
+   ],
+   "seed": 2914372697,
+   "x": "va_full_total",
+   "y": "cos_phi_a_l1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Low-frequency electrical measurements from laboratory jaw crushing tests of granite' (Zenodo, doi 10.5281/zenodo.21241160): 'cos_phi_a_l1' grows logarithmically in 'va_full_total' (R\u00b2 = 0.956 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.21241160",
+   "held_out_r2": 0.9776,
+   "held_out_rows": 2811,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-0c44a2e5b1a2",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "93f02c9ebc837389.csv",
+   "doi": "10.5281/zenodo.21241160",
+   "form": "logarithmic",
+   "params": [
+    0.9931001480810708,
+    -0.2511797390078312
+   ],
+   "seed": 2914372697,
+   "x": "var_full_a_l1",
+   "y": "pf_a_l1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Low-frequency electrical measurements from laboratory jaw crushing tests of granite' (Zenodo, doi 10.5281/zenodo.21241160): 'pf_a_l1' grows logarithmically in 'var_full_a_l1' (R\u00b2 = 0.978 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.21241160",
+   "held_out_r2": 0.943,
+   "held_out_rows": 2811,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-86bc15c0f180",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "93f02c9ebc837389.csv",
+   "doi": "10.5281/zenodo.21241160",
+   "form": "logarithmic",
+   "params": [
+    1.030812759599152,
+    -0.27051965215766566
+   ],
+   "seed": 2914372697,
+   "x": "var_full_a_l1",
+   "y": "cos_phi_a_l1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Low-frequency electrical measurements from laboratory jaw crushing tests of granite' (Zenodo, doi 10.5281/zenodo.21241160): 'cos_phi_a_l1' grows logarithmically in 'var_full_a_l1' (R\u00b2 = 0.943 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.21241160",
+   "held_out_r2": 0.9789,
+   "held_out_rows": 2811,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-64ae3310b662",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "93f02c9ebc837389.csv",
+   "doi": "10.5281/zenodo.21241160",
+   "form": "linear",
+   "params": [
+    -0.03639509169297228,
+    1.0855245070862092
+   ],
+   "seed": 2914372697,
+   "x": "pf_a_l1",
+   "y": "cos_phi_a_l1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Low-frequency electrical measurements from laboratory jaw crushing tests of granite' (Zenodo, doi 10.5281/zenodo.21241160): 'cos_phi_a_l1' is linear in 'pf_a_l1' (R\u00b2 = 0.980 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.fv584",
+   "held_out_r2": 0.9805,
+   "held_out_rows": 184,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c2422b07253e",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "fe05c4e825352c5a.csv",
+   "doi": "10.5061/dryad.fv584",
+   "form": "logarithmic",
+   "params": [
+    -0.6995763516579119,
+    0.4219805469055593
+   ],
+   "seed": 2937061012,
+   "x": "Total.Time.On",
+   "y": "Log.Avg.Time.Day"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Feeder density enhances house finch disease transmission in experimental epidem' (Zenodo, doi 10.5061/dryad.fv584): 'Log.Avg.Time.Day' grows logarithmically in 'Total.Time.On' (R\u00b2 = 0.982 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.fv584",
+   "held_out_r2": 0.9857,
+   "held_out_rows": 184,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c48df344ab0c",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "fe05c4e825352c5a.csv",
+   "doi": "10.5061/dryad.fv584",
+   "form": "logarithmic",
+   "params": [
+    -0.7200900883067053,
+    0.4185673934171956
+   ],
+   "seed": 2937061012,
+   "x": "Total.Bouts",
+   "y": "Log.Bout.Num"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Feeder density enhances house finch disease transmission in experimental epidem' (Zenodo, doi 10.5061/dryad.fv584): 'Log.Bout.Num' grows logarithmically in 'Total.Bouts' (R\u00b2 = 0.983 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.fv584",
+   "held_out_r2": 0.9805,
+   "held_out_rows": 184,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c5b51c265199",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "fe05c4e825352c5a.csv",
+   "doi": "10.5061/dryad.fv584",
+   "form": "logarithmic",
+   "params": [
+    0.7808524547575666,
+    0.43911185224778226
+   ],
+   "seed": 2937061012,
+   "x": "Avg.Time.On.Per.Day",
+   "y": "Log.Total.Time"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Feeder density enhances house finch disease transmission in experimental epidem' (Zenodo, doi 10.5061/dryad.fv584): 'Log.Total.Time' grows logarithmically in 'Avg.Time.On.Per.Day' (R\u00b2 = 0.982 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
