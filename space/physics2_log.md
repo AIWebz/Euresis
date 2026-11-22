@@ -8175,3 +8175,4 @@
 - 2026-11-22 18:30 round 7439: insurance and risk
 - 2026-11-22 18:31 round 7440: auction with a reserve price
 - 2026-11-22 18:34 round 7441: two-body decay
+- 2026-11-22 18:36 round 7442: collision
