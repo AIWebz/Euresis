@@ -5570,3 +5570,4 @@
 - 2026-11-22 00:55 FINDING (confirmed on held-out rows): In 'Data from: Greater root phosphatase activity in nitrogen-fixing rhizobial but not actinorh' (Zenodo, doi 10.5061/dryad.65vs3): 'AM%' is linear in 'hyphae%' (R² = 0.992 on the discovery half); held-out R² = 0.983 [emp-874d7356e9ff]
 - 2026-11-22 00:55 FINDING (confirmed on held-out rows): In 'Data from: Greater root phosphatase activity in nitrogen-fixing rhizobial but not actinorh' (Zenodo, doi 10.5061/dryad.65vs3): 'AM%' is linear in 'vesicles%' (R² = 0.970 on the discovery half); held-out R² = 0.942 [emp-bdd0a39c16ed]
 - 2026-11-22 00:56 data feeds: 33901 datasets analysed so far, 4895 confirmed findings
+- 2026-11-22 01:58 data feeds: online
