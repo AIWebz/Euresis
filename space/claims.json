@@ -4106665,5 +4106665,437 @@
   "statement": "Octal game 0.0777766 is completely solved: its Grundy values are periodic with pre-period 284 and period 48 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7802679",
+   "held_out_r2": 0.9379,
+   "held_out_rows": 5657,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c4cb82f0e0ef",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8207b82beaa16b59.csv",
+   "doi": "10.5281/zenodo.7802679",
+   "form": "power law",
+   "params": [
+    0.26284721813202816,
+    0.9432131782172297
+   ],
+   "seed": 1278427875,
+   "x": " errH",
+   "y": " errZ"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Supplementary Datasets and Movies for the Paper \"Major California faults are smooth across' (Zenodo, doi 10.5281/zenodo.7802679): ' errZ' follows a power law in ' errH' (R\u00b2 = 0.937 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.12787594",
+   "held_out_r2": 0.8911,
+   "held_out_rows": 998,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-da2ad1e9eae4",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "b982c0ff56d6ca2f.csv",
+   "doi": "10.5281/zenodo.12787594",
+   "form": "logarithmic",
+   "params": [
+    17.78179379367666,
+    -1.9527639544062696
+   ],
+   "seed": 186136135,
+   "x": "teff",
+   "y": "BPRP0"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data set, Model, and Catalog for: Data-driven stellar intrinsic colors and dust reddenings' (Zenodo, doi 10.5281/zenodo.12787594): 'BPRP0' grows logarithmically in 'teff' (R\u00b2 = 0.904 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.12787594",
+   "held_out_r2": 0.9256,
+   "held_out_rows": 998,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9f4da20b6160",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "b982c0ff56d6ca2f.csv",
+   "doi": "10.5281/zenodo.12787594",
+   "form": "logarithmic",
+   "params": [
+    37.04711363204505,
+    -4.061964298851084
+   ],
+   "seed": 186136135,
+   "x": "teff",
+   "y": "BPK0"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data set, Model, and Catalog for: Data-driven stellar intrinsic colors and dust reddenings' (Zenodo, doi 10.5281/zenodo.12787594): 'BPK0' grows logarithmically in 'teff' (R\u00b2 = 0.938 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.12787594",
+   "held_out_r2": 0.9201,
+   "held_out_rows": 998,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a9adb6687752",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "b982c0ff56d6ca2f.csv",
+   "doi": "10.5281/zenodo.12787594",
+   "form": "logarithmic",
+   "params": [
+    7.757107614683256,
+    -0.8487789725079328
+   ],
+   "seed": 186136135,
+   "x": "teff",
+   "y": "JK0"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data set, Model, and Catalog for: Data-driven stellar intrinsic colors and dust reddenings' (Zenodo, doi 10.5281/zenodo.12787594): 'JK0' grows logarithmically in 'teff' (R\u00b2 = 0.932 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.12787594",
+   "held_out_r2": 0.9878,
+   "held_out_rows": 998,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ecfb1fc1bd43",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "b982c0ff56d6ca2f.csv",
+   "doi": "10.5281/zenodo.12787594",
+   "form": "linear",
+   "params": [
+    0.10742180910547444,
+    2.029037295729229
+   ],
+   "seed": 186136135,
+   "x": "BPRP0",
+   "y": "BPK0"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data set, Model, and Catalog for: Data-driven stellar intrinsic colors and dust reddenings' (Zenodo, doi 10.5281/zenodo.12787594): 'BPK0' is linear in 'BPRP0' (R\u00b2 = 0.987 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.12787594",
+   "held_out_r2": 0.941,
+   "held_out_rows": 998,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c4cb42f3c45c",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "b982c0ff56d6ca2f.csv",
+   "doi": "10.5281/zenodo.12787594",
+   "form": "linear",
+   "params": [
+    0.02847979479845063,
+    0.20272495107157232
+   ],
+   "seed": 186136135,
+   "x": "BPK0",
+   "y": "JK0"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data set, Model, and Catalog for: Data-driven stellar intrinsic colors and dust reddenings' (Zenodo, doi 10.5281/zenodo.12787594): 'JK0' is linear in 'BPK0' (R\u00b2 = 0.935 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.13227947",
+   "held_out_r2": 0.9474,
+   "held_out_rows": 48,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ea8b89667433",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "b0db0107b6b17052.csv",
+   "doi": "10.5281/zenodo.13227947",
+   "form": "power law",
+   "params": [
+    17490.830674151537,
+    -1189.1621807513995
+   ],
+   "seed": 2720563605,
+   "x": "BJD_TDB",
+   "y": "Error (-1 Order)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data Products for \"An HST Transmission Spectrum of the Closest M-Dwarf Transiting Rocky Pl' (Zenodo, doi 10.5281/zenodo.13227947): 'Error (-1 Order)' follows a power law in 'BJD_TDB' (R\u00b2 = 0.956 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.13227947",
+   "held_out_r2": 0.9374,
+   "held_out_rows": 229,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9324dcdc77fe",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8b161678d6d0de9a.csv",
+   "doi": "10.5281/zenodo.13227947",
+   "form": "power law",
+   "params": [
+    -28.760143152980113,
+    4.444691499943861
+   ],
+   "seed": 188480362,
+   "x": "Wavelength (microns)",
+   "y": "Flux 3 exposures before flare (erg/s/cm^2/A)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data Products for \"An HST Transmission Spectrum of the Closest M-Dwarf Transiting Rocky Pl' (Zenodo, doi 10.5281/zenodo.13227947): 'Flux 3 exposures before flare (erg/s/cm^2/A)' follows a power law in 'Wavelength (microns)' (R\u00b2 = 0.934 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.13227947",
+   "held_out_r2": 0.9398,
+   "held_out_rows": 229,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-6bb83097d94b",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8b161678d6d0de9a.csv",
+   "doi": "10.5281/zenodo.13227947",
+   "form": "power law",
+   "params": [
+    -28.74227841052002,
+    4.444023820604741
+   ],
+   "seed": 188480362,
+   "x": "Wavelength (microns)",
+   "y": "Flux 2 exposures before flare (erg/s/cm^2/A)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data Products for \"An HST Transmission Spectrum of the Closest M-Dwarf Transiting Rocky Pl' (Zenodo, doi 10.5281/zenodo.13227947): 'Flux 2 exposures before flare (erg/s/cm^2/A)' follows a power law in 'Wavelength (microns)' (R\u00b2 = 0.934 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.13227947",
+   "held_out_r2": 0.9362,
+   "held_out_rows": 229,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-6353821fc13e",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8b161678d6d0de9a.csv",
+   "doi": "10.5281/zenodo.13227947",
+   "form": "power law",
+   "params": [
+    -28.684734685425585,
+    4.5370163274453805
+   ],
+   "seed": 188480362,
+   "x": "Wavelength (microns)",
+   "y": "Flux 1 exposure before flare (erg/s/cm^2/A)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data Products for \"An HST Transmission Spectrum of the Closest M-Dwarf Transiting Rocky Pl' (Zenodo, doi 10.5281/zenodo.13227947): 'Flux 1 exposure before flare (erg/s/cm^2/A)' follows a power law in 'Wavelength (microns)' (R\u00b2 = 0.930 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.13227947",
+   "held_out_r2": 0.9403,
+   "held_out_rows": 229,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f043990e10bf",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8b161678d6d0de9a.csv",
+   "doi": "10.5281/zenodo.13227947",
+   "form": "power law",
+   "params": [
+    -28.695013397663185,
+    4.45775174592007
+   ],
+   "seed": 188480362,
+   "x": "Wavelength (microns)",
+   "y": "Flux 2 exposures after flare (erg/s/cm^2/A)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data Products for \"An HST Transmission Spectrum of the Closest M-Dwarf Transiting Rocky Pl' (Zenodo, doi 10.5281/zenodo.13227947): 'Flux 2 exposures after flare (erg/s/cm^2/A)' follows a power law in 'Wavelength (microns)' (R\u00b2 = 0.936 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.13227947",
+   "held_out_r2": 0.9432,
+   "held_out_rows": 229,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-beffc996adb5",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8b161678d6d0de9a.csv",
+   "doi": "10.5281/zenodo.13227947",
+   "form": "power law",
+   "params": [
+    -28.68722611787494,
+    4.445027486816481
+   ],
+   "seed": 188480362,
+   "x": "Wavelength (microns)",
+   "y": "Flux 5 exposures after flare (erg/s/cm^2/A)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data Products for \"An HST Transmission Spectrum of the Closest M-Dwarf Transiting Rocky Pl' (Zenodo, doi 10.5281/zenodo.13227947): 'Flux 5 exposures after flare (erg/s/cm^2/A)' follows a power law in 'Wavelength (microns)' (R\u00b2 = 0.937 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.13227947",
+   "held_out_r2": 0.9353,
+   "held_out_rows": 229,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-85a68c63e926",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8b161678d6d0de9a.csv",
+   "doi": "10.5281/zenodo.13227947",
+   "form": "power law",
+   "params": [
+    -28.69408796650245,
+    4.554485226311116
+   ],
+   "seed": 188480362,
+   "x": "Wavelength (microns)",
+   "y": "Flux 6 exposures after flare (erg/s/cm^2/A)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data Products for \"An HST Transmission Spectrum of the Closest M-Dwarf Transiting Rocky Pl' (Zenodo, doi 10.5281/zenodo.13227947): 'Flux 6 exposures after flare (erg/s/cm^2/A)' follows a power law in 'Wavelength (microns)' (R\u00b2 = 0.931 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.13227947",
+   "held_out_r2": 0.9398,
+   "held_out_rows": 229,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-7b9698274820",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8b161678d6d0de9a.csv",
+   "doi": "10.5281/zenodo.13227947",
+   "form": "power law",
+   "params": [
+    -28.70620731921328,
+    4.459078586720175
+   ],
+   "seed": 188480362,
+   "x": "Wavelength (microns)",
+   "y": "Flux 8 exposures after flare (erg/s/cm^2/A)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data Products for \"An HST Transmission Spectrum of the Closest M-Dwarf Transiting Rocky Pl' (Zenodo, doi 10.5281/zenodo.13227947): 'Flux 8 exposures after flare (erg/s/cm^2/A)' follows a power law in 'Wavelength (microns)' (R\u00b2 = 0.937 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.13227947",
+   "held_out_r2": 0.9357,
+   "held_out_rows": 229,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-99e5c970a2d2",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8b161678d6d0de9a.csv",
+   "doi": "10.5281/zenodo.13227947",
+   "form": "power law",
+   "params": [
+    -28.65391638231317,
+    4.5678290267732615
+   ],
+   "seed": 188480362,
+   "x": "Wavelength (microns)",
+   "y": "Flux 9 exposures after flare (erg/s/cm^2/A)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data Products for \"An HST Transmission Spectrum of the Closest M-Dwarf Transiting Rocky Pl' (Zenodo, doi 10.5281/zenodo.13227947): 'Flux 9 exposures after flare (erg/s/cm^2/A)' follows a power law in 'Wavelength (microns)' (R\u00b2 = 0.931 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.13227947",
+   "held_out_r2": 0.9359,
+   "held_out_rows": 229,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-7207bf0555de",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8b161678d6d0de9a.csv",
+   "doi": "10.5281/zenodo.13227947",
+   "form": "power law",
+   "params": [
+    -28.630766456177913,
+    4.607130141136956
+   ],
+   "seed": 188480362,
+   "x": "Wavelength (microns)",
+   "y": "Flux 10 exposures after flare (erg/s/cm^2/A)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data Products for \"An HST Transmission Spectrum of the Closest M-Dwarf Transiting Rocky Pl' (Zenodo, doi 10.5281/zenodo.13227947): 'Flux 10 exposures after flare (erg/s/cm^2/A)' follows a power law in 'Wavelength (microns)' (R\u00b2 = 0.928 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
