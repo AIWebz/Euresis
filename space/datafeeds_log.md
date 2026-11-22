@@ -5849,3 +5849,4 @@
 - 2026-11-22 21:58 FINDING (confirmed on held-out rows): In 'Sampled monitoring points in the study "Multi-sensor satellite fusion for mapping methane ' (Figshare, doi 10.6084/m9.figshare.33197052.v1): 'mean_integrated_NDVI' is linear in 'mean_flood_fraction' (R² = 0.922 on the discovery half); held-out R² = 0.915 [emp-2d7ba473db6f]
 - 2026-11-22 21:58 FINDING (confirmed on held-out rows): In 'Sampled monitoring points in the study "Multi-sensor satellite fusion for mapping methane ' (Figshare, doi 10.6084/m9.figshare.33197052.v1): 'mean_calibrated_ch4_flux_kg_ha_yr' grows exponentially in 'mean_integrated_NDVI' (R² = 0.923 on the discovery half); held-out R² = 0.916 [emp-4d3e5d8d27ae]
 - 2026-11-22 21:58 data feeds: 35103 datasets analysed so far, 5130 confirmed findings
+- 2026-11-22 23:01 data feeds: online
