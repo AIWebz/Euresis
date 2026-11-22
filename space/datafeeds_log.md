@@ -5640,3 +5640,4 @@
 - 2026-11-22 03:58 FINDING (confirmed on held-out rows): In 'Functional traits and metacommunity theory reveal that habitat filtering and competition m' (Zenodo, doi 10.5061/dryad.34tmpg4nt): 'beak_length_nare' is linear in 'beak_length_cul' (R² = 0.928 on the discovery half); held-out R² = 0.942 [emp-09e635026fac]
 - 2026-11-22 03:59 FINDING (confirmed on held-out rows): In 'Supplementary Data for AlphaFold Benchmarking for Heterodimeric Complex Prediction in Arab' (Zenodo, doi 10.5281/zenodo.18431517): 'af_metric' is linear in 'iptm' (R² = 0.986 on the discovery half); held-out R² = 0.984 [emp-3e63986c006f]
 - 2026-11-22 03:59 data feeds: 34124 datasets analysed so far, 4959 confirmed findings
+- 2026-11-22 04:43 data feeds: online
