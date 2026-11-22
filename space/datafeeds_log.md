@@ -5833,3 +5833,6 @@
 - 2026-11-22 18:07 FINDING (confirmed on held-out rows): In 'GAI-Supported Instruction and Creative Thinking in Engineering Undergraduates: A Quasi-Exp' (Zenodo, doi 10.5281/zenodo.24136498): 'Vprefluency' follows a power law in 'Fprefluency' (R² = 0.927 on the discovery half); held-out R² = 0.877 [emp-aa604c04bf2e]
 - 2026-11-22 18:08 FINDING (confirmed on held-out rows): In 'Real-Time Automated Feedback on Reflective Writing in Software Engineering Education (supp' (Zenodo, doi 10.5281/zenodo.20635468): 'NudgesIgnored' is linear in 'OpenedPercentage' (R² = 0.910 on the discovery half); held-out R² = 0.900 [emp-3c5760703f14]
 - 2026-11-22 18:09 data feeds: 34935 datasets analysed so far, 5122 confirmed findings
+- 2026-11-22 19:12 data feeds: online
+- 2026-11-22 19:12 FINDING (confirmed on held-out rows): In 'Biodiversity conservation and socioeconomic development' (Zenodo, doi 10.5281/zenodo.6401123): 'HDI_2017' grows logarithmically in 'PGDP_2017' (R² = 0.975 on the discovery half); held-out R² = 0.968 [emp-c34185ea336d]
+- 2026-11-22 19:14 data feeds: 35007 datasets analysed so far, 5123 confirmed findings

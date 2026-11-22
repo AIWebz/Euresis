@@ -4139978,5 +4139978,32 @@
   "statement": "Octal game 0.1005501 is completely solved: its Grundy values are periodic with pre-period 4 and period 14 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.6401123",
+   "held_out_r2": 0.9675,
+   "held_out_rows": 55,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c34185ea336d",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "157b612b4dff8c84.csv",
+   "doi": "10.5281/zenodo.6401123",
+   "form": "logarithmic",
+   "params": [
+    -0.6177390158007164,
+    0.14214949443024724
+   ],
+   "seed": 3573024050,
+   "x": "PGDP_2017",
+   "y": "HDI_2017"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Biodiversity conservation and socioeconomic development' (Zenodo, doi 10.5281/zenodo.6401123): 'HDI_2017' grows logarithmically in 'PGDP_2017' (R\u00b2 = 0.975 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
