@@ -8021,3 +8021,8 @@
 - 2026-11-22 09:56 round 7303: insurance and risk
 - 2026-11-22 09:58 round 7304: auction with a reserve price
 - 2026-11-22 10:00 round 7305: two-body decay
+- 2026-11-22 10:02 round 7306: collision
+- 2026-11-22 10:05 round 7307: driven oscillator
+- 2026-11-22 10:07 round 7308: velocity addition
+- 2026-11-22 10:09 round 7309: Compton scattering
+- 2026-11-22 10:10 segment end: 7309 rounds, 5 discoveries, 2 known laws rediscovered
