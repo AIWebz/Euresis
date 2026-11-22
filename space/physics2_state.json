@@ -104284,6 +104284,101 @@
    "family": "velocity addition",
    "expr": "sqrt(1 - u**2) + sqrt(1 - v**2) + (u*v + 1)/(sqrt(1 - u**2)*sqrt(1 - v**2)*(-2 + 1/sqrt(1 - v**2) + ",
    "why": "affine combination of known quantities (composed speed / c, Total Relativistic Energy Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "c*x**2/(x + 1) + c*x",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, Electron kinetic energy / initial photon energy [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "sqrt(c**2*x**2 + 1)/(x*(c*x + 1))",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, Scattered photon momentum / initial photon momentum [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "sqrt(c**2*x**2/(c*x + 1)**2 + c*x**2/(c*x + 1)) + c**2*x**2/(c*x + 1)**2 + c*x**2/(c*x + 1)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, Recoil electron momentum to initial photon momentum ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "(-c1/3 + c2/3 + 1/3)/(c1/3 - c2/3 + 1/3)",
+   "why": "affine combination of known quantities (output of firm 1, Cournot Price Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "((1 - c1)**2 + (1 - c2)**2)/((-c1 - c2 + 1)**2 + 1)",
+   "why": "affine combination of known quantities (output of firm 1, Price Competition Index [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "((1 - c1)**2/4 + (1 - c2)**2/4 + (-c1 - c2 + 1)**2/18)/((-2*c1 + c2 + 1)**2/9 + (-c1 - c2 + 1)**2/18",
+   "why": "affine combination of known quantities (output of firm 1, Total Welfare Efficiency Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "(-2*c1/3 + c2/3 - (1 - c1)**2/4 + 1/3)**2/(c1/3 - 2*c2/3 - (1 - c2)**2/4 + 1/3)**2",
+   "why": "affine combination of known quantities (output of firm 1, Output Deviation Index [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "sqrt(-L*p + 1)/(-p*sqrt(1 - L) + sqrt(1 - L) + 1)",
+   "why": "affine combination of known quantities (expected wealth, Insurance Risk Exposure Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "1/sqrt(1 - L) - 1/sqrt(-L*p + 1)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "L*p/(sqrt(1 - L) - sqrt(-L*p + 1) + 1)",
+   "why": "affine combination of known quantities (expected wealth, Risk Sensitivity Index [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "1 - (p*sqrt(1 - L) - p + 1)**2/(-L*p + 1)",
+   "why": "affine combination of known quantities (expected wealth, Insurance Coverage Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(r**2*v + 2/3)/(-2*r**3/3 + r**2*v + 2/3)",
+   "why": "affine combination of known quantities (expected revenue, Welfare Reserve Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(2*r**3/3 + r**2*v - r**2 + 1/3)/(r**2*v - r**2 + 1)",
+   "why": "affine combination of known quantities (expected revenue, Bidder Surplus Given Reserve and Seller Value Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(-2*r**3/3 + r**2*v + 2/3)/(4*r**3/3 + r**2*v - r**2 + 1/3)",
+   "why": "affine combination of known quantities (expected revenue, Welfare Reserve Efficiency with Seller Value [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(2*r**3/3 + r**2*v - r**2 + 1/3)/(4*r**3/3 + r**2*v - 2*r**2 + 4/3)",
+   "why": "affine combination of known quantities (expected revenue, Bidder Surplus Reserve Efficiency with Seller Value [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "(-b**2/2 + (1 - a)**2/2)/(-a**2/2 - b**2 + (1 - a)**2 + 1/2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "sqrt((1 - (a + b)**2)**2 + (a**2 - b**2 + 1)**2)/sqrt((1 - (a + b)**2)**2 + (-a**2 + b**2 + 1)**2)",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), Invariant Mass Ratio of the Two Products [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "sqrt((1 - (a - b)**2)*(1 - (a + b)**2)/4 + (-a**2 + b**2 + 1)**2 + (a**2 - b**2 + 1)**2)",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), Lorentz Factor of the System [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "sqrt(-(a + b)**2 + (-a**2 + b**2 + 1)**2 + (a**2 - b**2 + 1)**2 + 1)",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), Center of Mass Energy [model-proposed; physical meaning unverified])"
   }
  ],
  "tried": [
@@ -130538,7 +130633,7 @@
    "k": "1/2"
   }
  ],
- "rounds": 7380,
+ "rounds": 7385,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",
