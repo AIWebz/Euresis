@@ -5606,3 +5606,5 @@
 - 2026-11-22 02:07 data feeds: 33969 datasets analysed so far, 4927 confirmed findings
 - 2026-11-22 02:48 data feeds: online
 - 2026-11-22 02:48 FINDING (confirmed on held-out rows): In 'Data from: The rise of biting during the cenozoic fueled reef fish body shape diversificat' (Zenodo, doi 10.25338/B8NM0K): 'Head_depth' follows a power law in 'Max_body_depth' (R² = 0.953 on the discovery half); held-out R² = 0.955 [emp-37ccdc92df45]
+- 2026-11-22 02:49 FINDING (confirmed on held-out rows): In 'Microhabitat humidity rather than food availability drives thermo-hydroregulation response' (Zenodo, doi 10.5281/zenodo.7711397): 'C_GLUCOSE' follows a power law in 'DO' (R² = 0.987 on the discovery half); held-out R² = 0.984 [emp-46cab295ef22]
+- 2026-11-22 02:49 FINDING (confirmed on held-out rows): In 'Microhabitat humidity rather than food availability drives thermo-hydroregulation response' (Zenodo, doi 10.5281/zenodo.7711397): 'C_GLUCOSE' is linear in 'DO_CORRECTED' (R² = 0.916 on the discovery half); held-out R² = 0.901 [emp-6228e542213c]

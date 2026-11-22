@@ -4035895,5 +4035895,86 @@
   "statement": "In 'Data from: The rise of biting during the cenozoic fueled reef fish body shape diversificat' (Zenodo, doi 10.25338/B8NM0K): 'Head_depth' follows a power law in 'Max_body_depth' (R\u00b2 = 0.953 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7711397",
+   "held_out_r2": 0.9841,
+   "held_out_rows": 79,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-46cab295ef22",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "a1e7ee5c345c809a.csv",
+   "doi": "10.5281/zenodo.7711397",
+   "form": "power law",
+   "params": [
+    6.194517975998747,
+    1.4604429978199474
+   ],
+   "seed": 3724596767,
+   "x": "DO",
+   "y": "C_GLUCOSE"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Microhabitat humidity rather than food availability drives thermo-hydroregulation response' (Zenodo, doi 10.5281/zenodo.7711397): 'C_GLUCOSE' follows a power law in 'DO' (R\u00b2 = 0.987 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7711397",
+   "held_out_r2": 0.901,
+   "held_out_rows": 79,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-6228e542213c",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "a1e7ee5c345c809a.csv",
+   "doi": "10.5281/zenodo.7711397",
+   "form": "linear",
+   "params": [
+    -11.81156846894364,
+    541.9461235300543
+   ],
+   "seed": 3724596767,
+   "x": "DO_CORRECTED",
+   "y": "C_GLUCOSE"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Microhabitat humidity rather than food availability drives thermo-hydroregulation response' (Zenodo, doi 10.5281/zenodo.7711397): 'C_GLUCOSE' is linear in 'DO_CORRECTED' (R\u00b2 = 0.916 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.25338/B8HS83",
+   "held_out_r2": 0.8795,
+   "held_out_rows": 67,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-8e136f3907b9",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "023c042534c7455c.csv",
+   "doi": "10.25338/B8HS83",
+   "form": "linear",
+   "params": [
+    -2.014418692953274,
+    0.2991673523629498
+   ],
+   "seed": 3272063347,
+   "x": "TEST_TEMP",
+   "y": "RMR"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Effects of acclimation temperature and feed restriction on the metabolic performance of Gr' (Zenodo, doi 10.25338/B8HS83): 'RMR' is linear in 'TEST_TEMP' (R\u00b2 = 0.902 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
