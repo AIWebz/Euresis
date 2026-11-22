@@ -4050354,5 +4050354,167 @@
   "statement": "In 'Counties being part of a logistics cluster in the US from 1998 to 2022' (Zenodo, doi 10.5281/zenodo.23993778): 'emp_expd' follows a power law in 'tot_emp_adj' (R\u00b2 = 0.996 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-3f67ea2dad31",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "claim": "c1/3 + c2/3 + 1/3 >= 1/6*((-c1/3 - c2/3 + 1/3)/(c1/12 + c2/12 + 1/6))",
+   "symbols": [
+    "c1",
+    "c2"
+   ]
+  },
+  "source": "physics_discover2 round 7230",
+  "statement": "[economics: Cournot duopoly] market price \u2265 1/6 \u00d7 Cournot Price Index [model-proposed; physical meaning unverified]   on c1 < 1/2, c2 < 1/2 (tight only at the edge of the domain, near (1.86e-14, 2.19e-14))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-0db8e4903faa",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "claim": "(-c1 - c2 + 2)**2/18 >= 1/9*((-c1/3 - c2/3 + 1/3)/(c1/12 + c2/12 + 1/6))",
+   "symbols": [
+    "c1",
+    "c2"
+   ]
+  },
+  "source": "physics_discover2 round 7230",
+  "statement": "[economics: Cournot duopoly] consumer surplus \u2265 1/9 \u00d7 Cournot Price Index [model-proposed; physical meaning unverified]   on c1 < 1/2, c2 < 1/2 (tight only at the edge of the domain, near (2.18e-13, 1.34e-13))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-3c6236c4f98a",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'consumer surplus'",
+  "payload": {
+   "assumptions": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "claim": "(-2*c1 + c2 + 1)**2/9 + (c1 - 2*c2 + 1)**2/9 >= 1/9*((-c1/3 - c2/3 + 1/3)/(c1/12 + c2/12 + 1/6))",
+   "symbols": [
+    "c1",
+    "c2"
+   ]
+  },
+  "source": "physics_discover2 round 7230",
+  "statement": "[economics: Cournot duopoly] total industry profit \u2265 1/9 \u00d7 Cournot Price Index [model-proposed; physical meaning unverified]   on c1 < 1/2, c2 < 1/2 (tight only at the edge of the domain, near (2.18e-13, 1.34e-13))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-c76bcc817400",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "claim": "(1 - c1)**2/4 >= 5/64*((-c1/3 - c2/3 + 1/3)/(c1/12 + c2/12 + 1/6))",
+   "symbols": [
+    "c1",
+    "c2"
+   ]
+  },
+  "source": "physics_discover2 round 7230",
+  "statement": "[economics: Cournot duopoly] firm 1's profit as a monopolist \u2265 5/64 \u00d7 Cournot Price Index [model-proposed; physical meaning unverified]   on c1 < 1/2, c2 < 1/2 (tight only at the edge of the domain, near (0.5, 4.83e-15))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-ba56e29f8c42",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'consumer surplus'",
+  "payload": {
+   "assumptions": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "claim": "((-2*c1 + c2 + 1)**2 + (c1 - 2*c2 + 1)**2)/((1 - c1)**2 + (1 - c2)**2) >= 1/2*((-c1/3 - c2/3 + 1/3)/(c1/12 + c2/12 + 1/6))",
+   "symbols": [
+    "c1",
+    "c2"
+   ]
+  },
+  "source": "physics_discover2 round 7230",
+  "statement": "[economics: Cournot duopoly] Hirshleifer Index [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 Cournot Price Index [model-proposed; physical meaning unverified]   on c1 < 1/2, c2 < 1/2 (tight only at the edge of the domain, near (1.14e-16, 1.94e-14))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-592cc92e49a4",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "claim": "(-2*c1 + c2 + 1)**2/9 + (-c1 - c2 + 1)**2/18 + (c1 - 2*c2 + 1)**2/9 >= 5/36*((-c1/3 - c2/3 + 1/3)/(c1/12 + c2/12 + 1/6))",
+   "symbols": [
+    "c1",
+    "c2"
+   ]
+  },
+  "source": "physics_discover2 round 7230",
+  "statement": "[economics: Cournot duopoly] Total Welfare Index [model-proposed; physical meaning unverified] \u2265 5/36 \u00d7 Cournot Price Index [model-proposed; physical meaning unverified]   on c1 < 1/2, c2 < 1/2 (tight only at the edge of the domain, near (9.32e-14, 3.12e-13))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]
