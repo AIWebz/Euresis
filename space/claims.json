@@ -4035868,5 +4035868,32 @@
   "statement": "Octal game 0.0774116 is completely solved: its Grundy values are periodic with pre-period 284 and period 48 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.25338/B8NM0K",
+   "held_out_r2": 0.9552,
+   "held_out_rows": 765,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-37ccdc92df45",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "7d7bff5c35dc5a0f.csv",
+   "doi": "10.25338/B8NM0K",
+   "form": "power law",
+   "params": [
+    -0.38982723058536656,
+    0.9849206643594791
+   ],
+   "seed": 2869075700,
+   "x": "Max_body_depth",
+   "y": "Head_depth"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: The rise of biting during the cenozoic fueled reef fish body shape diversificat' (Zenodo, doi 10.25338/B8NM0K): 'Head_depth' follows a power law in 'Max_body_depth' (R\u00b2 = 0.953 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]

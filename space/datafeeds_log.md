@@ -5604,3 +5604,5 @@
 - 2026-11-22 02:07 FINDING (confirmed on held-out rows): In 'Interactions between protea plants and their animal mutualists and antagonists are structu' (Zenodo, doi 10.5061/dryad.nvx0k6dwm): 'sp_potential_seed_crop' is linear in 'sp_viable_seeds' (R² = 0.972 on the discovery half); held-out R² = 0.973 [emp-96139d9b9220]
 - 2026-11-22 02:07 FINDING (confirmed on held-out rows): In 'Data for: Costs of reproduction under experimental climate change across elevations in the' (Zenodo, doi 10.5061/dryad.1zcrjdfrf): 'Total_length' is linear in 'Total_Silique_Number' (R² = 0.911 on the discovery half); held-out R² = 0.917 [emp-6a67d0a6ac1e]
 - 2026-11-22 02:07 data feeds: 33969 datasets analysed so far, 4927 confirmed findings
+- 2026-11-22 02:48 data feeds: online
+- 2026-11-22 02:48 FINDING (confirmed on held-out rows): In 'Data from: The rise of biting during the cenozoic fueled reef fish body shape diversificat' (Zenodo, doi 10.25338/B8NM0K): 'Head_depth' follows a power law in 'Max_body_depth' (R² = 0.953 on the discovery half); held-out R² = 0.955 [emp-37ccdc92df45]
