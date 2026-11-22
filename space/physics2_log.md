@@ -8004,3 +8004,6 @@
 - 2026-11-22 08:53 round 7288: auction with a reserve price
 - 2026-11-22 08:55 round 7289: two-body decay
 - 2026-11-22 08:58 round 7290: collision
+- 2026-11-22 09:02 round 7291: driven oscillator
+- 2026-11-22 09:04 round 7292: velocity addition
+- 2026-11-22 09:05 segment end: 7292 rounds, 5 discoveries, 2 known laws rediscovered
