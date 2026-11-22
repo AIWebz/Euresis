@@ -4097313,5 +4097313,302 @@
   "statement": "In 'Data from: Feeder density enhances house finch disease transmission in experimental epidem' (Zenodo, doi 10.5061/dryad.fv584): 'Log.Total.Time' grows logarithmically in 'Avg.Time.On.Per.Day' (R\u00b2 = 0.982 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-4d55f0014655",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "(e + 1)/(m + 1) >= 1*(e**2*m**2/(e**2*m**2 + (1 - e**2)*(m + 1) + (1 - e**2)/(m + 1)))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 7314",
+  "statement": "[physics: collision] momentum transferred / initial momentum \u2265 1 \u00d7 Kinetic Energy Ratio of Target to Projectile Relative to System [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-5b72ffe3f1fe",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "e >= 1*(e**2*m**2/(e**2*m**2 + (1 - e**2)*(m + 1) + (1 - e**2)/(m + 1)))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 7314",
+  "statement": "[physics: collision] relative speed after / relative speed before \u2265 1 \u00d7 Kinetic Energy Ratio of Target to Projectile Relative to System [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-4c9f1a49fbcf",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'relative speed after / relative speed before'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "e*(m + 1)/(e*m + 1) >= 1*(e**2*m**2/(e**2*m**2 + (1 - e**2)*(m + 1) + (1 - e**2)/(m + 1)))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 7314",
+  "statement": "[physics: collision] velocity ratio of target to projectile after collision [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Kinetic Energy Ratio of Target to Projectile Relative to System [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-6cde032c7199",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "e**2*(m**2 + 1)/(m + 1)**2 >= 1/2*(e**2*m**2/(e**2*m**2 + (1 - e**2)*(m + 1) + (1 - e**2)/(m + 1)))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 7314",
+  "statement": "[physics: collision] Fraction of kinetic energy retained by target [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 Kinetic Energy Ratio of Target to Projectile Relative to System [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-0b1df8573ab0",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "-m*(1 - e**2)*(e + 1)**2/(m + 1)**2 - m*(1 - e**2)/(m + 1) + 1 >= 1*(e**2*m**2/(e**2*m**2 + (1 - e**2)*(m + 1) + (1 - e**2)/(m + 1)))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 7314",
+  "statement": "[physics: collision] Fraction of kinetic energy retained by the system [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Kinetic Energy Ratio of Target to Projectile Relative to System [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-737e57160ad8",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'relative speed after / relative speed before'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "-e**2*m**2/(m + 1)**2 + 1 >= 3/4*(e**2*m**2/(e**2*m**2 + (1 - e**2)*(m + 1) + (1 - e**2)/(m + 1)))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 7314",
+  "statement": "[physics: collision] Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified] \u2265 3/4 \u00d7 Kinetic Energy Ratio of Target to Projectile Relative to System [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-b65c383e9bc1",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "e**2*m**2/(m + 1)**2 + e**2 >= 1*(e**2*m**2/(e**2*m**2 + (1 - e**2)*(m + 1) + (1 - e**2)/(m + 1)))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 7314",
+  "statement": "[physics: collision] Fraction of kinetic energy transferred to the target [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Kinetic Energy Ratio of Target to Projectile Relative to System [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (0.000149, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-dc88fec51681",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'Fraction of kinetic energy retained by target [model-proposed; physical meaning unverified]'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "-e**2*m/(m + 1) - m*(1 - e**2)/(m + 1) - (1 - e**2)*(1 - m)/(m + 1) + 1 >= 1/2*(e**2*m**2/(e**2*m**2 + (1 - e**2)*(m + 1) + (1 - e**2)/(m + 1)))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 7314",
+  "statement": "[physics: collision] Fraction of kinetic energy retained by the projectile relative to initial kineti [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 Kinetic Energy Ratio of Target to Projectile Relative to System [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-dfa86658e3f6",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'Fraction of kinetic energy transferred to the target [model-proposed; physical meaning unverified]'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "e**2*m**2/(m + 1)**2 + e**2*m/(m + 1) - m*(1 - e**2)/(m + 1) - (1 - e**2)/(m + 1) + 1 >= 1*(e**2*m**2/(e**2*m**2 + (1 - e**2)*(m + 1) + (1 - e**2)/(m + 1)))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 7314",
+  "statement": "[physics: collision] Fraction of kinetic energy retained by projectile relative to initial kinetic en [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Kinetic Energy Ratio of Target to Projectile Relative to System [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1.4e-05, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-af190eb8c91d",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'Fraction of kinetic energy transferred to the target [model-proposed; physical meaning unverified]'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "e**2*m**2/(m + 1)**2 + e**2*m/(m + 1) - 2*m*(1 - e**2)/(m + 1) + 1 >= 1*(e**2*m**2/(e**2*m**2 + (1 - e**2)*(m + 1) + (1 - e**2)/(m + 1)))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 7314",
+  "statement": "[physics: collision] Fraction of kinetic energy transferred to the target relative to initial kinetic [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Kinetic Energy Ratio of Target to Projectile Relative to System [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1.4e-05, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-f22492ab02a5",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'relative speed after / relative speed before'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "-e**2*m**2/(m + 1)**2 - m*(1 - e**2)/(m + 1) + 1 >= 3/4*(e**2*m**2/(e**2*m**2 + (1 - e**2)*(m + 1) + (1 - e**2)/(m + 1)))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 7314",
+  "statement": "[physics: collision] Fraction of kinetic energy retained by the system relative to initial kinetic en [model-proposed; physical meaning unverified] \u2265 3/4 \u00d7 Kinetic Energy Ratio of Target to Projectile Relative to System [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]
