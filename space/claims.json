@@ -4035959,7 +4035959,7 @@
   },
   "id": "emp-8e136f3907b9",
   "kind": "empirical",
-  "novelty": "not checked",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
   "payload": {
    "dataset": "023c042534c7455c.csv",
    "doi": "10.25338/B8HS83",
@@ -4035975,6 +4035975,195 @@
   "source": "datafeeds.py",
   "statement": "In 'Effects of acclimation temperature and feed restriction on the metabolic performance of Gr' (Zenodo, doi 10.25338/B8HS83): 'RMR' is linear in 'TEST_TEMP' (R\u00b2 = 0.902 on the discovery half)",
   "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.25338/B8HS83",
+   "held_out_r2": 0.9312,
+   "held_out_rows": 67,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-960834bfd50a",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "023c042534c7455c.csv",
+   "doi": "10.25338/B8HS83",
+   "form": "linear",
+   "params": [
+    -0.3003071532731164,
+    1.1314127730892822
+   ],
+   "seed": 3272063347,
+   "x": "FL",
+   "y": "TL"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Effects of acclimation temperature and feed restriction on the metabolic performance of Gr' (Zenodo, doi 10.25338/B8HS83): 'TL' is linear in 'FL' (R\u00b2 = 0.977 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.dr7sqv9xp",
+   "held_out_r2": 0.8412,
+   "held_out_rows": 78,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b0c1e2d05fa8",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "40d6e02d1f56c28e.csv",
+   "doi": "10.5061/dryad.dr7sqv9xp",
+   "form": "linear",
+   "params": [
+    23.51335329438627,
+    -0.004990769828785237
+   ],
+   "seed": 1894714690,
+   "x": "Elevation",
+   "y": "Tmin_hab"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Environmental heterogeneity shapes physiological traits in tropical direct-developing frog' (Zenodo, doi 10.5061/dryad.dr7sqv9xp): 'Tmin_hab' is linear in 'Elevation' (R\u00b2 = 0.908 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.dr7sqv9xp",
+   "held_out_r2": 0.8675,
+   "held_out_rows": 78,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-80c939cd2b43",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "40d6e02d1f56c28e.csv",
+   "doi": "10.5061/dryad.dr7sqv9xp",
+   "form": "exponential",
+   "params": [
+    3.526961797880048,
+    -0.03462176900770075
+   ],
+   "seed": 1894714690,
+   "x": "WT",
+   "y": "Tmax_hab"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Environmental heterogeneity shapes physiological traits in tropical direct-developing frog' (Zenodo, doi 10.5061/dryad.dr7sqv9xp): 'Tmax_hab' grows exponentially in 'WT' (R\u00b2 = 0.910 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.dr7sqv9xp",
+   "held_out_r2": 0.9497,
+   "held_out_rows": 143,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-7c71ebb1e260",
+  "kind": "empirical",
+  "novelty": "KNOWN: standard atmosphere / hydrostatics (temperature, pressure and altitude, T \u221d P^(R\u00b7\u0393/g)) \u2014 not a discovery",
+  "payload": {
+   "dataset": "0971da5702b1d875.csv",
+   "doi": "10.5061/dryad.dr7sqv9xp",
+   "form": "power law",
+   "params": [
+    0.04877392310398687,
+    0.9805704506631968
+   ],
+   "seed": 4070301846,
+   "x": "SubsTemp",
+   "y": "AirTemp"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Environmental heterogeneity shapes physiological traits in tropical direct-developing frog' (Zenodo, doi 10.5061/dryad.dr7sqv9xp): 'AirTemp' follows a power law in 'SubsTemp' (R\u00b2 = 0.958 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.612jm6420",
+   "held_out_r2": 0.9907,
+   "held_out_rows": 172,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b4f01d612451",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "081d592e9f750279.csv",
+   "doi": "10.5061/dryad.612jm6420",
+   "form": "linear",
+   "params": [
+    552.1403766127953,
+    1028.7826122222034
+   ],
+   "seed": 1216579485,
+   "x": "Average",
+   "y": "spores_daphnia"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Infectivity of the parasite Metschnikowia bicuspidata is decreased by time spent as a tran' (Zenodo, doi 10.5061/dryad.612jm6420): 'spores_daphnia' is linear in 'Average' (R\u00b2 = 0.959 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.612jm6420",
+   "held_out_r2": 0.9907,
+   "held_out_rows": 172,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-12cfb3945b4d",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "081d592e9f750279.csv",
+   "doi": "10.5061/dryad.612jm6420",
+   "form": "linear",
+   "params": [
+    552.1403766127972,
+    0.1028782612222203
+   ],
+   "seed": 1216579485,
+   "x": "spores_mL",
+   "y": "spores_daphnia"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Infectivity of the parasite Metschnikowia bicuspidata is decreased by time spent as a tran' (Zenodo, doi 10.5061/dryad.612jm6420): 'spores_daphnia' is linear in 'spores_mL' (R\u00b2 = 0.959 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17780311",
+   "held_out_r2": -0.0687,
+   "held_out_rows": 139,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d30581f59cb3",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "d13c6d34305622f3.csv",
+   "doi": "10.5281/zenodo.17780311",
+   "form": "linear",
+   "params": [
+    -0.06584867385805668,
+    1.0289527862328465
+   ],
+   "seed": 2783346787,
+   "x": "(2-oxo-2,3-dihydro-1H-indol-3-yl)acetic acid",
+   "y": "(3-Oxo-2,3-dihydro-4H-1,4-benzoxazin-4-yl)acetic acid"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Discrimination of Normal from Slow-Aging Mice by Plasma Metabolomic and Proteomic Features' (Zenodo, doi 10.5281/zenodo.17780311): '(3-Oxo-2,3-dihydro-4H-1,4-benzoxazin-4-yl)acetic acid' is linear in '(2-oxo-2,3-dihydro-1H-indol-3-yl)acetic acid' (R\u00b2 = 0.924 on the discovery half)",
+  "status": "refuted",
   "verifier": "held-out-replication"
  }
 ]
