@@ -5826,3 +5826,4 @@
 - 2026-11-22 17:17 FINDING (confirmed on held-out rows): In 'Assessment of microphytobenthos communities in the Kinzig catchment using photosynthesis-r' (Zenodo, doi 10.5281/zenodo.11061732): 'Total.cell.count' is linear in 'Cyano2' (R² = 0.933 on the discovery half); held-out R² = 0.929 [emp-d6a0ce6c6b0f]
 - 2026-11-22 17:17 FINDING (confirmed on held-out rows): In 'Data from: Vertebral evolution and the diversification of squamate reptiles' (Zenodo, doi 10.5061/dryad.4d5h8g12): 'scFootL' is linear in 'scHLL' (R² = 0.912 on the discovery half); held-out R² = 0.896 [emp-0ecc13a6c9de]
 - 2026-11-22 17:17 data feeds: 34882 datasets analysed so far, 5117 confirmed findings
+- 2026-11-22 18:05 data feeds: online
