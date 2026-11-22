@@ -5702,3 +5702,4 @@
 - 2026-11-22 09:38 FINDING (confirmed on held-out rows): In 'Data from: No carbon "bet hedging" in pine seedlings under prolonged summer drought and el' (Zenodo, doi 10.5061/dryad.005sk): 'weight.roots.g' follows a power law in 'weight.needles.g' (R² = 0.943 on the discovery half); held-out R² = 0.951 [emp-ab8f5d9849eb]
 - 2026-11-22 09:39 FINDING (confirmed on held-out rows): In 'Data from: No carbon "bet hedging" in pine seedlings under prolonged summer drought and el' (Zenodo, doi 10.5061/dryad.005sk): 'weight.roots.g' follows a power law in 'weight.stems.g' (R² = 0.928 on the discovery half); held-out R² = 0.929 [emp-08f7e944471a]
 - 2026-11-22 09:39 data feeds: 34319 datasets analysed so far, 5009 confirmed findings
+- 2026-11-22 10:27 data feeds: online
