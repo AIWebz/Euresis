@@ -4045957,5 +4045957,815 @@
   "statement": "Octal game 0.0774576 is completely solved: its Grundy values are periodic with pre-period 284 and period 48 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.hmgqnk9g0",
+   "held_out_r2": 0.9539,
+   "held_out_rows": 47,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-daf1939f8744",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "15976df4555f95f5.csv",
+   "doi": "10.5061/dryad.hmgqnk9g0",
+   "form": "exponential",
+   "params": [
+    3.4839995400690644,
+    -0.04885784938690598
+   ],
+   "seed": 1470627711,
+   "x": "dur_tomincanopy",
+   "y": "date_senesstart"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset for Ongole at al. - Functional traits predict tree-level phenological strategies i' (Zenodo, doi 10.5061/dryad.hmgqnk9g0): 'date_senesstart' grows exponentially in 'dur_tomincanopy' (R\u00b2 = 0.957 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.10453832",
+   "held_out_r2": 0.8182,
+   "held_out_rows": 49,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5790a25158f2",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "639a941691ba8e00.csv",
+   "doi": "10.5281/zenodo.10453832",
+   "form": "linear",
+   "params": [
+    0.35719808960654964,
+    0.5421196270184216
+   ],
+   "seed": 1576659130,
+   "x": "numComments",
+   "y": "numNonauthorComments"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset for \"Beyond Self-Promotion: How Software Engineering Research Is Discussed on Link' (Zenodo, doi 10.5281/zenodo.10453832): 'numNonauthorComments' is linear in 'numComments' (R\u00b2 = 0.945 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.10453832",
+   "held_out_r2": 0.9217,
+   "held_out_rows": 49,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-1cd9313ad31d",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "639a941691ba8e00.csv",
+   "doi": "10.5281/zenodo.10453832",
+   "form": "linear",
+   "params": [
+    -0.11911114359855289,
+    0.7529512810204305
+   ],
+   "seed": 1576659130,
+   "x": "numNonauthorComments",
+   "y": "numCommentsFromIndustry"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset for \"Beyond Self-Promotion: How Software Engineering Research Is Discussed on Link' (Zenodo, doi 10.5281/zenodo.10453832): 'numCommentsFromIndustry' is linear in 'numNonauthorComments' (R\u00b2 = 0.932 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.cc2fqz6c8",
+   "held_out_r2": 0.9606,
+   "held_out_rows": 361,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ec2c5318f8a1",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "aa63c11a60d20b51.csv",
+   "doi": "10.5061/dryad.cc2fqz6c8",
+   "form": "linear",
+   "params": [
+    22.76291117245833,
+    -0.9080519014037096
+   ],
+   "seed": 1534830428,
+   "x": "Max_Temp",
+   "y": "Heat_Deg_Days"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'High-resolution environmental and host-related factors impacting questing Ixodes scapulari' (Zenodo, doi 10.5061/dryad.cc2fqz6c8): 'Heat_Deg_Days' is linear in 'Max_Temp' (R\u00b2 = 0.969 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.cc2fqz6c8",
+   "held_out_r2": 0.9541,
+   "held_out_rows": 361,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e3cbbc58047e",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "aa63c11a60d20b51.csv",
+   "doi": "10.5061/dryad.cc2fqz6c8",
+   "form": "linear",
+   "params": [
+    13.101898817315456,
+    -0.9710279082155227
+   ],
+   "seed": 1534830428,
+   "x": "Min_Temp",
+   "y": "Heat_Deg_Days"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'High-resolution environmental and host-related factors impacting questing Ixodes scapulari' (Zenodo, doi 10.5061/dryad.cc2fqz6c8): 'Heat_Deg_Days' is linear in 'Min_Temp' (R\u00b2 = 0.962 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.cc2fqz6c8",
+   "held_out_r2": 0.9883,
+   "held_out_rows": 351,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f7f228329038",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "6846842cc6679662.csv",
+   "doi": "10.5061/dryad.cc2fqz6c8",
+   "form": "linear",
+   "params": [
+    18.247413121403554,
+    -0.9324482990125191
+   ],
+   "seed": 3459454541,
+   "x": "Mean_Temp",
+   "y": "Heat_Deg_Days"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'High-resolution environmental and host-related factors impacting questing Ixodes scapulari' (Zenodo, doi 10.5061/dryad.cc2fqz6c8): 'Heat_Deg_Days' is linear in 'Mean_Temp' (R\u00b2 = 0.988 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.cc2fqz6c8",
+   "held_out_r2": 0.9886,
+   "held_out_rows": 710,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-239047b73eff",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "603af298e4c772f3.csv",
+   "doi": "10.5061/dryad.cc2fqz6c8",
+   "form": "linear",
+   "params": [
+    0.11199383577631204,
+    0.9934388597351436
+   ],
+   "seed": 2741616836,
+   "x": "# larva",
+   "y": "Total # ticks"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'High-resolution environmental and host-related factors impacting questing Ixodes scapulari' (Zenodo, doi 10.5061/dryad.cc2fqz6c8): 'Total # ticks' is linear in '# larva' (R\u00b2 = 0.982 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.x3ffbg7th",
+   "held_out_r2": 0.9806,
+   "held_out_rows": 229,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3e8208ae9fc0",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3007974a1b4c271c.csv",
+   "doi": "10.5061/dryad.x3ffbg7th",
+   "form": "exponential",
+   "params": [
+    3.908771384940506,
+    -0.008012474096652303
+   ],
+   "seed": 2044788229,
+   "x": "A",
+   "y": "Ca"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Regional differences in leaf evolution facilitate photosynthesis following severe drought' (Zenodo, doi 10.5061/dryad.x3ffbg7th): 'Ca' grows exponentially in 'A' (R\u00b2 = 0.984 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.x3ffbg7th",
+   "held_out_r2": 0.923,
+   "held_out_rows": 94,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4823d48585e1",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "00f211d5abb1bf6a.csv",
+   "doi": "10.5061/dryad.x3ffbg7th",
+   "form": "linear",
+   "params": [
+    16.726655004274374,
+    1.0927527144539335
+   ],
+   "seed": 2550170304,
+   "x": "Length 1",
+   "y": "Thickness 1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Regional differences in leaf evolution facilitate photosynthesis following severe drought' (Zenodo, doi 10.5061/dryad.x3ffbg7th): 'Thickness 1' is linear in 'Length 1' (R\u00b2 = 0.976 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.x3ffbg7th",
+   "held_out_r2": 0.9008,
+   "held_out_rows": 94,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-44ae25c208e0",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "00f211d5abb1bf6a.csv",
+   "doi": "10.5061/dryad.x3ffbg7th",
+   "form": "power law",
+   "params": [
+    0.7074048257551115,
+    0.894274772988275
+   ],
+   "seed": 2550170304,
+   "x": "Length 1",
+   "y": "Thickness 2"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Regional differences in leaf evolution facilitate photosynthesis following severe drought' (Zenodo, doi 10.5061/dryad.x3ffbg7th): 'Thickness 2' follows a power law in 'Length 1' (R\u00b2 = 0.938 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.x3ffbg7th",
+   "held_out_r2": 0.8325,
+   "held_out_rows": 94,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-6756bd95dd59",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "00f211d5abb1bf6a.csv",
+   "doi": "10.5061/dryad.x3ffbg7th",
+   "form": "power law",
+   "params": [
+    0.8026840021275642,
+    0.8780718950540084
+   ],
+   "seed": 2550170304,
+   "x": "Length 1",
+   "y": "Thickness 3"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Regional differences in leaf evolution facilitate photosynthesis following severe drought' (Zenodo, doi 10.5061/dryad.x3ffbg7th): 'Thickness 3' follows a power law in 'Length 1' (R\u00b2 = 0.917 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.x3ffbg7th",
+   "held_out_r2": 0.9145,
+   "held_out_rows": 94,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d0edf6d95e19",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "00f211d5abb1bf6a.csv",
+   "doi": "10.5061/dryad.x3ffbg7th",
+   "form": "power law",
+   "params": [
+    0.67668196128144,
+    0.901911836152544
+   ],
+   "seed": 2550170304,
+   "x": "Length 1",
+   "y": "Average_thick"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Regional differences in leaf evolution facilitate photosynthesis following severe drought' (Zenodo, doi 10.5061/dryad.x3ffbg7th): 'Average_thick' follows a power law in 'Length 1' (R\u00b2 = 0.968 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.x3ffbg7th",
+   "held_out_r2": 0.9145,
+   "held_out_rows": 94,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-8c456f8a74de",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "00f211d5abb1bf6a.csv",
+   "doi": "10.5061/dryad.x3ffbg7th",
+   "form": "power law",
+   "params": [
+    0.4264476520403172,
+    0.9518519344430884
+   ],
+   "seed": 2550170304,
+   "x": "Length 2",
+   "y": "Thickness 1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Regional differences in leaf evolution facilitate photosynthesis following severe drought' (Zenodo, doi 10.5061/dryad.x3ffbg7th): 'Thickness 1' follows a power law in 'Length 2' (R\u00b2 = 0.956 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.x3ffbg7th",
+   "held_out_r2": 0.9655,
+   "held_out_rows": 94,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-61fe96074aa7",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "00f211d5abb1bf6a.csv",
+   "doi": "10.5061/dryad.x3ffbg7th",
+   "form": "power law",
+   "params": [
+    0.47209356110304046,
+    0.9392410325706557
+   ],
+   "seed": 2550170304,
+   "x": "Length 2",
+   "y": "Thickness 2"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Regional differences in leaf evolution facilitate photosynthesis following severe drought' (Zenodo, doi 10.5061/dryad.x3ffbg7th): 'Thickness 2' follows a power law in 'Length 2' (R\u00b2 = 0.971 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.x3ffbg7th",
+   "held_out_r2": 0.9015,
+   "held_out_rows": 94,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d023127591f0",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "00f211d5abb1bf6a.csv",
+   "doi": "10.5061/dryad.x3ffbg7th",
+   "form": "power law",
+   "params": [
+    0.5987082267142543,
+    0.9172483203654951
+   ],
+   "seed": 2550170304,
+   "x": "Length 2",
+   "y": "Thickness 3"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Regional differences in leaf evolution facilitate photosynthesis following severe drought' (Zenodo, doi 10.5061/dryad.x3ffbg7th): 'Thickness 3' follows a power law in 'Length 2' (R\u00b2 = 0.939 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.x3ffbg7th",
+   "held_out_r2": 0.9611,
+   "held_out_rows": 94,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-1b99649c0662",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "00f211d5abb1bf6a.csv",
+   "doi": "10.5061/dryad.x3ffbg7th",
+   "form": "power law",
+   "params": [
+    0.49739915178482663,
+    0.9365962659569331
+   ],
+   "seed": 2550170304,
+   "x": "Length 2",
+   "y": "Average_thick"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Regional differences in leaf evolution facilitate photosynthesis following severe drought' (Zenodo, doi 10.5061/dryad.x3ffbg7th): 'Average_thick' follows a power law in 'Length 2' (R\u00b2 = 0.980 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.x3ffbg7th",
+   "held_out_r2": 0.8475,
+   "held_out_rows": 94,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-dc9f7a2b7d79",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "00f211d5abb1bf6a.csv",
+   "doi": "10.5061/dryad.x3ffbg7th",
+   "form": "power law",
+   "params": [
+    0.4753138339004194,
+    0.9424427412932619
+   ],
+   "seed": 2550170304,
+   "x": "Length 3",
+   "y": "Thickness 1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Regional differences in leaf evolution facilitate photosynthesis following severe drought' (Zenodo, doi 10.5061/dryad.x3ffbg7th): 'Thickness 1' follows a power law in 'Length 3' (R\u00b2 = 0.917 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.x3ffbg7th",
+   "held_out_r2": 0.899,
+   "held_out_rows": 94,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3565afdb795e",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "00f211d5abb1bf6a.csv",
+   "doi": "10.5061/dryad.x3ffbg7th",
+   "form": "power law",
+   "params": [
+    0.5461300107974961,
+    0.9252140548579361
+   ],
+   "seed": 2550170304,
+   "x": "Length 3",
+   "y": "Thickness 2"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Regional differences in leaf evolution facilitate photosynthesis following severe drought' (Zenodo, doi 10.5061/dryad.x3ffbg7th): 'Thickness 2' follows a power law in 'Length 3' (R\u00b2 = 0.922 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.x3ffbg7th",
+   "held_out_r2": 0.9708,
+   "held_out_rows": 94,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9ef9c8785394",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "00f211d5abb1bf6a.csv",
+   "doi": "10.5061/dryad.x3ffbg7th",
+   "form": "power law",
+   "params": [
+    0.4438797493646101,
+    0.9452714947441391
+   ],
+   "seed": 2550170304,
+   "x": "Length 3",
+   "y": "Thickness 3"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Regional differences in leaf evolution facilitate photosynthesis following severe drought' (Zenodo, doi 10.5061/dryad.x3ffbg7th): 'Thickness 3' follows a power law in 'Length 3' (R\u00b2 = 0.977 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.x3ffbg7th",
+   "held_out_r2": 0.9404,
+   "held_out_rows": 94,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-cd6f4ae39150",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "00f211d5abb1bf6a.csv",
+   "doi": "10.5061/dryad.x3ffbg7th",
+   "form": "power law",
+   "params": [
+    0.4871684947917386,
+    0.9380494975849895
+   ],
+   "seed": 2550170304,
+   "x": "Length 3",
+   "y": "Average_thick"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Regional differences in leaf evolution facilitate photosynthesis following severe drought' (Zenodo, doi 10.5061/dryad.x3ffbg7th): 'Average_thick' follows a power law in 'Length 3' (R\u00b2 = 0.962 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.x3ffbg7th",
+   "held_out_r2": 0.9613,
+   "held_out_rows": 94,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b743a561ec30",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "00f211d5abb1bf6a.csv",
+   "doi": "10.5061/dryad.x3ffbg7th",
+   "form": "power law",
+   "params": [
+    0.20942284813050127,
+    0.960491011726856
+   ],
+   "seed": 2550170304,
+   "x": "Thickness 1",
+   "y": "Average_thick"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Regional differences in leaf evolution facilitate photosynthesis following severe drought' (Zenodo, doi 10.5061/dryad.x3ffbg7th): 'Average_thick' follows a power law in 'Thickness 1' (R\u00b2 = 0.977 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.x3ffbg7th",
+   "held_out_r2": 0.9798,
+   "held_out_rows": 94,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-7ba97b4fdc34",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "00f211d5abb1bf6a.csv",
+   "doi": "10.5061/dryad.x3ffbg7th",
+   "form": "power law",
+   "params": [
+    0.10845961911581646,
+    0.9825279961534664
+   ],
+   "seed": 2550170304,
+   "x": "Thickness 2",
+   "y": "Average_thick"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Regional differences in leaf evolution facilitate photosynthesis following severe drought' (Zenodo, doi 10.5061/dryad.x3ffbg7th): 'Average_thick' follows a power law in 'Thickness 2' (R\u00b2 = 0.980 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.x3ffbg7th",
+   "held_out_r2": 0.9535,
+   "held_out_rows": 94,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-710a905cf31b",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "00f211d5abb1bf6a.csv",
+   "doi": "10.5061/dryad.x3ffbg7th",
+   "form": "power law",
+   "params": [
+    0.09260042312957224,
+    0.984144987521739
+   ],
+   "seed": 2550170304,
+   "x": "Thickness 3",
+   "y": "Average_thick"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Regional differences in leaf evolution facilitate photosynthesis following severe drought' (Zenodo, doi 10.5061/dryad.x3ffbg7th): 'Average_thick' follows a power law in 'Thickness 3' (R\u00b2 = 0.969 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14418415",
+   "held_out_r2": -0.0805,
+   "held_out_rows": 427,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-8f16a06081c8",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "335ea3bc69957018.csv",
+   "doi": "10.5281/zenodo.14418415",
+   "form": "linear",
+   "params": [
+    0.01573221690822365,
+    0.6179201776222567
+   ],
+   "seed": 4252764155,
+   "x": "Commenting commit",
+   "y": "Publishing a release"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A Dataset of bots and human activities in NumFOCUS' (Zenodo, doi 10.5281/zenodo.14418415): 'Publishing a release' is linear in 'Commenting commit' (R\u00b2 = 0.943 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14418415",
+   "held_out_r2": -1.4097,
+   "held_out_rows": 427,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-770ef2a08564",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "335ea3bc69957018.csv",
+   "doi": "10.5281/zenodo.14418415",
+   "form": "linear",
+   "params": [
+    -23.77896839932952,
+    130.4747038106329
+   ],
+   "seed": 4252764155,
+   "x": "Commenting commit",
+   "y": "Pushing commits"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A Dataset of bots and human activities in NumFOCUS' (Zenodo, doi 10.5281/zenodo.14418415): 'Pushing commits' is linear in 'Commenting commit' (R\u00b2 = 0.931 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14418415",
+   "held_out_r2": -26.027,
+   "held_out_rows": 427,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-156ff554ff4f",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "335ea3bc69957018.csv",
+   "doi": "10.5281/zenodo.14418415",
+   "form": "linear",
+   "params": [
+    -25.065798214638463,
+    209.5693978821827
+   ],
+   "seed": 4252764155,
+   "x": "Publishing a release",
+   "y": "Pushing commits"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A Dataset of bots and human activities in NumFOCUS' (Zenodo, doi 10.5281/zenodo.14418415): 'Pushing commits' is linear in 'Publishing a release' (R\u00b2 = 0.973 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.3696079",
+   "held_out_r2": 0.9701,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-0eb7a01a1e40",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "e08a9c2236ca24f4.csv",
+   "doi": "10.5281/zenodo.3696079",
+   "form": "linear",
+   "params": [
+    -0.06233674568069803,
+    0.9977167899285186
+   ],
+   "seed": 3219509154,
+   "x": "overlap_ratios",
+   "y": "jaccard_similarity"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Software Developer Expertise GitHub and Stack Overflow data sets' (Zenodo, doi 10.5281/zenodo.3696079): 'jaccard_similarity' is linear in 'overlap_ratios' (R\u00b2 = 0.972 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.8kprr4xkf",
+   "held_out_r2": 0.9475,
+   "held_out_rows": 529,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-401ff4ab2748",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "36684fbc31eba728.csv",
+   "doi": "10.5061/dryad.8kprr4xkf",
+   "form": "power law",
+   "params": [
+    -10.811242158523704,
+    2.8954648159485394
+   ],
+   "seed": 4203413112,
+   "x": "LengthMM",
+   "y": "WeightG"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: eDNA concentration, population size structure, and mark-recapture data' (Zenodo, doi 10.5061/dryad.8kprr4xkf): 'WeightG' follows a power law in 'LengthMM' (R\u00b2 = 0.969 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.34tmpg4nt",
+   "held_out_r2": 0.9419,
+   "held_out_rows": 39,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-09e635026fac",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "487213509e34df4d.csv",
+   "doi": "10.5061/dryad.34tmpg4nt",
+   "form": "linear",
+   "params": [
+    0.03662819499400771,
+    1.0781927211984075
+   ],
+   "seed": 542295252,
+   "x": "beak_length_cul",
+   "y": "beak_length_nare"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Functional traits and metacommunity theory reveal that habitat filtering and competition m' (Zenodo, doi 10.5061/dryad.34tmpg4nt): 'beak_length_nare' is linear in 'beak_length_cul' (R\u00b2 = 0.928 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.18431517",
+   "held_out_r2": 0.9844,
+   "held_out_rows": 495,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3e63986c006f",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "6f80e993207add3f.csv",
+   "doi": "10.5281/zenodo.18431517",
+   "form": "linear",
+   "params": [
+    0.04076387566106746,
+    0.9444188389252599
+   ],
+   "seed": 4175353350,
+   "x": "iptm",
+   "y": "af_metric"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Supplementary Data for AlphaFold Benchmarking for Heterodimeric Complex Prediction in Arab' (Zenodo, doi 10.5281/zenodo.18431517): 'af_metric' is linear in 'iptm' (R\u00b2 = 0.986 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
