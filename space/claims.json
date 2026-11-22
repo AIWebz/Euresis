@@ -4117126,5 +4117126,113 @@
   "statement": "Octal game 0.1001201 is completely solved: its Grundy values are periodic with pre-period 1 and period 10 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-51c04559cd36",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "e**2*m**2/(e**2*m**2 + (1 - e**2)*(m + 1) + (1 - e**2)/(m + 1)) >= 1*(e**2*m**2/(-e**2 + (m + 1)**2 + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 7370",
+  "statement": "[physics: collision] Kinetic Energy Ratio of Target to Projectile Relative to System [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Normalized Kinetic Energy Transfer to Target [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (3.18e-16, 1.65e-08))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-bf2feca1a123",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'Normalized Kinetic Energy Transfer to Target [model-proposed; physical meaning unverified]'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "e**2*m**2/(e**2*m**2 + (1 - e**2)*(m + 1) + (1 - e**2)/(m + 1)) >= 1*(e**2*m**2/((m + 1)**2*(e**2*m**2/(m + 1)**2 + e**2*m/(m + 1) + (1 - e**2)/(m + 1) + 1)))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 7370",
+  "statement": "[physics: collision] Kinetic Energy Ratio of Target to Projectile Relative to System [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Relative Kinetic Energy Ratio of Target to System [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1.05e-16, 4.74e-09))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-ae8955e9913d",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "e**2*m**2/(e**2*m**2 + (1 - e**2)*(m + 1) + (1 - e**2)/(m + 1)) >= 1/2*(e**2*m**2/(e**2*m**2/(m + 1)**2 + m**2 + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 7370",
+  "statement": "[physics: collision] Kinetic Energy Ratio of Target to Projectile Relative to System [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 Normalized Kinetic Energy Transfer Ratio [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (2.36e-09, 3.27e-10))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-767bfea5bac1",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "e**2*m**2/(e**2*m**2 + (1 - e**2)*(m + 1) + (1 - e**2)/(m + 1)) >= 1*(e**2*m**2/(e**2*m**2/(m + 1) + (1 - e**2)*(m + 1) + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 7370",
+  "statement": "[physics: collision] Kinetic Energy Ratio of Target to Projectile Relative to System [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Kinetic Energy Ratio of Target to System Adjusted by Mass [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1.39e-16, 5.61e-09))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]
