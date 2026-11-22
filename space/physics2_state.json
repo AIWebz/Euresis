@@ -102216,6 +102216,61 @@
    "family": "collision",
    "expr": "(-e**2*m**2/(m + 1)**2 - e**2*m/(m + 1) - (1 - e**2)/(m + 1) + 1)/(-e**2*m**2/(m + 1)**2 - (1 - e**2",
    "why": "affine combination of known quantities (target speed / initial speed, Fraction of Kinetic Energy Retained by the Projectile Relative to the System [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt((1 - r**2)**2 + (2*z*r)**2)/sqrt(4*z**2 + 1 - 4*z**2*(r**2 - 1)**2/(1 - r**2)**2)",
+   "why": "not finite on the whole physical domain"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(4*r**2*z**2 + 1)*sqrt(4*r**2*z**2 + (1 - r**2)**2)/(2*r*z*(sqrt(4*r**2*z**2 + 1) + sqrt(4*r**2*",
+   "why": "affine combination of known quantities (quality factor, Power Amplification Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(4*r**2*z**2 + (1 - r**2)**2)/sqrt(4*z**2 + 1)",
+   "why": "affine combination of known quantities (amplitude / static deflection, Mechanical Impedance Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(4*z**2 + 1) - 1",
+   "why": "affine combination of known quantities (amplitude / static deflection, Resonance Width [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 + u)/(1 - u)) * sqrt((1 + v)/(1 - v)) / sqrt((1 + (u + v)/(1 + u*v)) / (1 - (u + v)/(1 + u*v",
+   "why": "affine combination of known quantities (composed speed / c)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt(1 - u**2) + sqrt(1 - v**2) / sqrt(1 - ((u + v)/(1 + u*v))**2)",
+   "why": "affine combination of known quantities (composed speed / c, Relativistic Energy-Momentum Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "(-c/(c*x + 1) + 1 + 1/(c*x + 1))**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "(c*x**2/(c*x + 1)**2 + c*x/(c*x + 1))**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "(c/(x + 1) + c/(x + 1)**2)**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "(c**2*x**2/(c*x + 1)**2 + c*x**2/(c*x + 1) + sqrt(c**2*x**2/(c*x + 1)**2 + c*x**2/(c*x + 1)))**2",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "((1 - 2*c1 + c2)**2/9)/((1 - 2*c2 + c1)**2/9)",
+   "why": "a power or product of known quantities"
   }
  ],
  "tried": [
@@ -111988,7 +112043,23 @@
   "collision|Mass Ratio Adjusted by Restitution [model-proposed; physical meaning unverified]|Normalized Kinetic Energy Ratio of Target to System [model-proposed; physical meaning unverified]",
   "collision|Mass Ratio Adjusted by Restitution [model-proposed; physical meaning unverified]|Kinetic Energy Ratio of Target to Projectile [model-proposed; physical meaning unverified]",
   "collision|Kinetic Energy Ratio of Target to Projectile After Collision [model-proposed; physical meaning unverified]|Normalized Kinetic Energy Ratio of Target to System [model-proposed; physical meaning unverified]",
-  "collision|Kinetic Energy Ratio of Target to Projectile After Collision [model-proposed; physical meaning unverified]|Kinetic Energy Ratio of Target to Projectile [model-proposed; physical meaning unverified]"
+  "collision|Kinetic Energy Ratio of Target to Projectile After Collision [model-proposed; physical meaning unverified]|Kinetic Energy Ratio of Target to Projectile [model-proposed; physical meaning unverified]",
+  "Cournot duopoly|Cournot Price Index [model-proposed; physical meaning unverified]|Market Price Variance Ratio [model-proposed; physical meaning unverified]",
+  "Cournot duopoly|Cournot Price Index [model-proposed; physical meaning unverified]|Total Welfare Index [model-proposed; physical meaning unverified]",
+  "Cournot duopoly|Cournot Price Index [model-proposed; physical meaning unverified]|Welfare Efficiency Ratio [model-proposed; physical meaning unverified]",
+  "Cournot duopoly|Cournot Price Index [model-proposed; physical meaning unverified]|Total Welfare Deviation Index [model-proposed; physical meaning unverified]",
+  "Cournot duopoly|Cournot Price Index [model-proposed; physical meaning unverified]|Market Price Variance [model-proposed; physical meaning unverified]",
+  "Cournot duopoly|Cournot Price Index [model-proposed; physical meaning unverified]|Total Welfare Efficiency Index [model-proposed; physical meaning unverified]",
+  "Cournot duopoly|Cournot Price Index [model-proposed; physical meaning unverified]|Price Deviation Ratio [model-proposed; physical meaning unverified]",
+  "Cournot duopoly|Cournot Price Index [model-proposed; physical meaning unverified]|Cournot Equilibrium Deviation Ratio [model-proposed; physical meaning unverified]",
+  "Cournot duopoly|Cournot Price Index [model-proposed; physical meaning unverified]|Consumer Surplus to Total Welfare Ratio [model-proposed; physical meaning unverified]",
+  "Cournot duopoly|Cournot Price Index [model-proposed; physical meaning unverified]|Consumer Surplus Efficiency Ratio [model-proposed; physical meaning unverified]",
+  "Cournot duopoly|Cournot Price Index [model-proposed; physical meaning unverified]|Cournot Price Deviation Index [model-proposed; physical meaning unverified]",
+  "Cournot duopoly|Cournot Price Index [model-proposed; physical meaning unverified]|Cournot Price Ratio [model-proposed; physical meaning unverified]",
+  "Cournot duopoly|Cournot Price Index [model-proposed; physical meaning unverified]|Price Competition Index [model-proposed; physical meaning unverified]",
+  "Cournot duopoly|Cournot Price Index [model-proposed; physical meaning unverified]|Total Welfare Efficiency Ratio [model-proposed; physical meaning unverified]",
+  "Cournot duopoly|Cournot Price Index [model-proposed; physical meaning unverified]|Output Deviation Index [model-proposed; physical meaning unverified]",
+  "Cournot duopoly|Cournot Price Index [model-proposed; physical meaning unverified]|Total Welfare Deviation Ratio [model-proposed; physical meaning unverified]"
  ],
  "edges": [
   {
@@ -126878,7 +126949,7 @@
    "k": "4/5"
   }
  ],
- "rounds": 7242,
+ "rounds": 7246,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",
