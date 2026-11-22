@@ -100988,6 +100988,46 @@
    "family": "two-body decay",
    "expr": "(-a**2/2 - b**2 + (1 - a)**2/2 + 1/2)/(-a**2/2 - b**2 + (1 - a)**2 + 1/2)",
    "why": "affine combination of known quantities (momentum of each product / (Mc), Total Kinetic Energy Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "(-e**2*m**2/(m + 1)**2 - e**2*m/(m + 1) + 2)/(e**2*m**2/(m + 1)**2 + e**2*m/(m + 1))",
+   "why": "affine combination of known quantities (Fraction of Kinetic Energy Retained by the Projectile Relative to the Target [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2*m**2/(e**2*m**2 - e**2*m**2/(m + 1)**2 - e**2*m/(m + 1) + 1",
+   "why": "does not parse"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2*m**2/(m + 1)**2 + e**2*m/(m + 1) - 2*m*(1 - e**2)/(m + 1) + 1",
+   "why": "affine combination of known quantities (target speed / initial speed, Fraction of kinetic energy transferred to the target relative to initial kinetic [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "-e**2*m**2/(m + 1)**2 - m*(1 - e**2)/(m + 1) + 1",
+   "why": "affine combination of known quantities (target speed / initial speed, Fraction of kinetic energy retained by the system relative to initial kinetic en [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt((1 - r**2)**2 + (2*z*r)**2)/sqrt(4*z**2 + 1)",
+   "why": "affine combination of known quantities (amplitude / static deflection, Mechanical Impedance Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(4*r**2*z**2 + 1)/sqrt(4*z**2 + 1)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(1 + (2*z*r)**2)/sqrt((1 - r**2)**2 + (2*z*r)**2)",
+   "why": "affine combination of known quantities (amplitude / static deflection, transmissibility)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(r**4 + 4*r**2*z**2 + 1)/sqrt((1 - r**2)**2 + (2*z*r)**2)",
+   "why": "affine combination of known quantities (amplitude / static deflection, Acceleration Transmissibility [model-proposed; physical meaning unverified])"
   }
  ],
  "tried": [
@@ -125302,7 +125342,7 @@
    "k": "1"
   }
  ],
- "rounds": 7153,
+ "rounds": 7155,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",
