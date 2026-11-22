@@ -5855,3 +5855,4 @@
 - 2026-11-22 23:02 FINDING (confirmed on held-out rows): In 'Data from: Effects of forestry-driven changes to groundcover and soil moisture on amphibia' (Zenodo, doi 10.5061/dryad.1619515): 'littercov' is linear in 'bare' (R² = 0.943 on the discovery half); held-out R² = 0.945 [emp-022903cf74cf]
 - 2026-11-22 23:02 FINDING (confirmed on held-out rows): In 'Data from: Effects of forestry-driven changes to groundcover and soil moisture on amphibia' (Zenodo, doi 10.5061/dryad.1619515): 'pca1' is linear in 'litter' (R² = 0.978 on the discovery half); held-out R² = 0.981 [emp-51589976bcea]
 - 2026-11-22 23:03 data feeds: 35184 datasets analysed so far, 5134 confirmed findings
+- 2026-11-22 23:50 data feeds: online
