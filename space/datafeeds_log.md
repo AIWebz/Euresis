@@ -5694,3 +5694,4 @@
 - 2026-11-22 08:35 FINDING (confirmed on held-out rows): In 'Trees out-forage understorey shrubs for nitrogen patches in a subarctic mountain birch for' (Zenodo, doi 10.5061/dryad.j0zpc86j6): 'Dist.m' grows exponentially in 'Tree' (R² = 0.957 on the discovery half); held-out R² = 0.949 [emp-53b4c02962c6]
 - 2026-11-22 08:35 FINDING (confirmed on held-out rows): In 'Trees out-forage understorey shrubs for nitrogen patches in a subarctic mountain birch for' (Zenodo, doi 10.5061/dryad.j0zpc86j6): 'Dist.cm' grows exponentially in 'Tree' (R² = 0.957 on the discovery half); held-out R² = 0.949 [emp-546ab35f340a]
 - 2026-11-22 08:35 data feeds: 34294 datasets analysed so far, 5003 confirmed findings
+- 2026-11-22 09:36 data feeds: online
