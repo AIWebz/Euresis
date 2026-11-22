@@ -5546,3 +5546,6 @@
 - 2026-11-21 23:01 FINDING (confirmed on held-out rows): In 'Morphological diversity in the sensory system of phyllostomid bats: implications for acous' (Zenodo, doi 10.5061/dryad.95x69p8g9): 'quart 50(max)' is linear in 'peak freq(max)' (R² = 0.930 on the discovery half); held-out R² = 0.931 [emp-fe183fb83751]
 - 2026-11-21 23:01 data feeds: 33686 datasets analysed so far, 4874 confirmed findings
 - 2026-11-22 00:05 data feeds: online
+- 2026-11-22 00:05 FINDING (confirmed on held-out rows): In 'Best matches between MGCLS and DECaLS.' (Figshare, doi 10.25388/nwu.27143832.v1): 'rErr' is linear in 'r_1' (R² = 0.939 on the discovery half); held-out R² = 0.945 [emp-a1f660d41555]
+- 2026-11-22 00:06 FINDING (confirmed on held-out rows): In 'Best matches between MGCLS and DECaLS.' (Figshare, doi 10.25388/nwu.27143832.v1): 'zErr' is linear in 'z_1' (R² = 0.960 on the discovery half); held-out R² = 0.981 [emp-754043f495f0]
+- 2026-11-22 00:09 data feeds: 33832 datasets analysed so far, 4876 confirmed findings

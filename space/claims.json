@@ -4018987,5 +4018987,59 @@
   "statement": "Octal game 0.0772767 is completely solved: its Grundy values are periodic with pre-period 284 and period 48 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.25388/nwu.27143832.v1",
+   "held_out_r2": 0.9454,
+   "held_out_rows": 528,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a1f660d41555",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "bcc133719a69e065.csv",
+   "doi": "10.25388/nwu.27143832.v1",
+   "form": "linear",
+   "params": [
+    -24.32021795981228,
+    1.1840327645791442
+   ],
+   "seed": 2293263947,
+   "x": "r_1",
+   "y": "rErr"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Best matches between MGCLS and DECaLS.' (Figshare, doi 10.25388/nwu.27143832.v1): 'rErr' is linear in 'r_1' (R\u00b2 = 0.939 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.25388/nwu.27143832.v1",
+   "held_out_r2": 0.981,
+   "held_out_rows": 528,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-754043f495f0",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "bcc133719a69e065.csv",
+   "doi": "10.25388/nwu.27143832.v1",
+   "form": "linear",
+   "params": [
+    -23.503638252071465,
+    1.1975298585869025
+   ],
+   "seed": 2293263947,
+   "x": "z_1",
+   "y": "zErr"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Best matches between MGCLS and DECaLS.' (Figshare, doi 10.25388/nwu.27143832.v1): 'zErr' is linear in 'z_1' (R\u00b2 = 0.960 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
