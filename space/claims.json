@@ -4159159,5 +4159159,545 @@
   "statement": "Octal game 0.1012103 is completely solved: its Grundy values are periodic with pre-period 9 and period 11 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23077840",
+   "held_out_r2": 0.9523,
+   "held_out_rows": 416,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-86de8b665ce0",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8dd36bcff02b5cc7.csv",
+   "doi": "10.5281/zenodo.23077840",
+   "form": "power law",
+   "params": [
+    -0.047134998149059436,
+    1.0237633100919172
+   ],
+   "seed": 4135962135,
+   "x": "T_M1",
+   "y": "T_N48"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset for Sensor-Specific Calibration of Low-Cost PM2.5 and PM10 Measurements' (Zenodo, doi 10.5281/zenodo.23077840): 'T_N48' follows a power law in 'T_M1' (R\u00b2 = 0.963 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23077840",
+   "held_out_r2": 0.97,
+   "held_out_rows": 416,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a7327175af04",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8dd36bcff02b5cc7.csv",
+   "doi": "10.5281/zenodo.23077840",
+   "form": "power law",
+   "params": [
+    -0.0763855214127209,
+    1.0356698829356747
+   ],
+   "seed": 4135962135,
+   "x": "T_M3",
+   "y": "T_N48"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset for Sensor-Specific Calibration of Low-Cost PM2.5 and PM10 Measurements' (Zenodo, doi 10.5281/zenodo.23077840): 'T_N48' follows a power law in 'T_M3' (R\u00b2 = 0.980 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14163790",
+   "held_out_r2": 0.9582,
+   "held_out_rows": 139,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-aaad543da4b4",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "0d96762386467ccb.csv",
+   "doi": "10.5281/zenodo.14163790",
+   "form": "exponential",
+   "params": [
+    3.7964511481677916,
+    -1.3597934798805487
+   ],
+   "seed": 791616536,
+   "x": "V",
+   "y": "500_ppb_Pb_WE3"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Voltage-current measurements for several Heavy Metal concentrations, and their combination' (Zenodo, doi 10.5281/zenodo.14163790): '500_ppb_Pb_WE3' grows exponentially in 'V' (R\u00b2 = 0.940 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.r18r8p1",
+   "held_out_r2": 0.933,
+   "held_out_rows": 150,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b56809d08318",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "40a5da7a0a4c88ca.csv",
+   "doi": "10.5061/dryad.r18r8p1",
+   "form": "linear",
+   "params": [
+    8.169881344707898,
+    1.9203728475234878
+   ],
+   "seed": 574483733,
+   "x": "ACT_min_kJ_daytime_minusThermo",
+   "y": "Daytime_EE_adj_kJ"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Hummingbirds budget energy flexibly in response to changing resources' (Zenodo, doi 10.5061/dryad.r18r8p1): 'Daytime_EE_adj_kJ' is linear in 'ACT_min_kJ_daytime_minusThermo' (R\u00b2 = 0.940 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.r18r8p1",
+   "held_out_r2": 0.9453,
+   "held_out_rows": 150,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-aee11d940704",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "40a5da7a0a4c88ca.csv",
+   "doi": "10.5061/dryad.r18r8p1",
+   "form": "linear",
+   "params": [
+    8.431396289930412,
+    1.6550109414808405
+   ],
+   "seed": 574483733,
+   "x": "ACT_min_kJ_daytime_minusThermo",
+   "y": "Daytime_EE_adj_kJ_HovThermo_adj"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Hummingbirds budget energy flexibly in response to changing resources' (Zenodo, doi 10.5061/dryad.r18r8p1): 'Daytime_EE_adj_kJ_HovThermo_adj' is linear in 'ACT_min_kJ_daytime_minusThermo' (R\u00b2 = 0.947 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.r18r8p1",
+   "held_out_r2": 0.9405,
+   "held_out_rows": 150,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-19813b0c28d0",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "40a5da7a0a4c88ca.csv",
+   "doi": "10.5061/dryad.r18r8p1",
+   "form": "linear",
+   "params": [
+    10.616924191399729,
+    1.664660537532183
+   ],
+   "seed": 574483733,
+   "x": "ACT_min_kJ_daytime_minusThermo",
+   "y": "kJ_adjBMR_day_HovThermo_adj"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Hummingbirds budget energy flexibly in response to changing resources' (Zenodo, doi 10.5061/dryad.r18r8p1): 'kJ_adjBMR_day_HovThermo_adj' is linear in 'ACT_min_kJ_daytime_minusThermo' (R\u00b2 = 0.945 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.r18r8p1",
+   "held_out_r2": 0.9603,
+   "held_out_rows": 150,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-bdcef422951e",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "40a5da7a0a4c88ca.csv",
+   "doi": "10.5061/dryad.r18r8p1",
+   "form": "linear",
+   "params": [
+    12.837288383566774,
+    2.336561240396827
+   ],
+   "seed": 574483733,
+   "x": "ACT_min_kJ_daytime_minusThermo",
+   "y": "kJ_max_day_HovThermo_adj"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Hummingbirds budget energy flexibly in response to changing resources' (Zenodo, doi 10.5061/dryad.r18r8p1): 'kJ_max_day_HovThermo_adj' is linear in 'ACT_min_kJ_daytime_minusThermo' (R\u00b2 = 0.964 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.r18r8p1",
+   "held_out_r2": 0.9494,
+   "held_out_rows": 150,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4a887330cb6b",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "40a5da7a0a4c88ca.csv",
+   "doi": "10.5061/dryad.r18r8p1",
+   "form": "linear",
+   "params": [
+    5.532288857058069,
+    1.1561601231494116
+   ],
+   "seed": 574483733,
+   "x": "Act_kJ_day_minusThermo",
+   "y": "Daytime_EE_adj_kJ"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Hummingbirds budget energy flexibly in response to changing resources' (Zenodo, doi 10.5061/dryad.r18r8p1): 'Daytime_EE_adj_kJ' is linear in 'Act_kJ_day_minusThermo' (R\u00b2 = 0.953 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.r18r8p1",
+   "held_out_r2": 0.959,
+   "held_out_rows": 150,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-1f62b522e401",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "40a5da7a0a4c88ca.csv",
+   "doi": "10.5061/dryad.r18r8p1",
+   "form": "linear",
+   "params": [
+    6.169602290858552,
+    0.9954194817027947
+   ],
+   "seed": 574483733,
+   "x": "Act_kJ_day_minusThermo",
+   "y": "Daytime_EE_adj_kJ_HovThermo_adj"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Hummingbirds budget energy flexibly in response to changing resources' (Zenodo, doi 10.5061/dryad.r18r8p1): 'Daytime_EE_adj_kJ_HovThermo_adj' is linear in 'Act_kJ_day_minusThermo' (R\u00b2 = 0.959 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.r18r8p1",
+   "held_out_r2": 0.8995,
+   "held_out_rows": 150,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-204e3aca3d58",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "40a5da7a0a4c88ca.csv",
+   "doi": "10.5061/dryad.r18r8p1",
+   "form": "linear",
+   "params": [
+    7.0221628310178925,
+    0.598630080216742
+   ],
+   "seed": 574483733,
+   "x": "Act_kJ_day_minusThermo",
+   "y": "kJ_min_day_HovThermo_adj"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Hummingbirds budget energy flexibly in response to changing resources' (Zenodo, doi 10.5061/dryad.r18r8p1): 'kJ_min_day_HovThermo_adj' is linear in 'Act_kJ_day_minusThermo' (R\u00b2 = 0.901 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.r18r8p1",
+   "held_out_r2": 0.9547,
+   "held_out_rows": 150,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-54c68170db5f",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "40a5da7a0a4c88ca.csv",
+   "doi": "10.5061/dryad.r18r8p1",
+   "form": "linear",
+   "params": [
+    8.342331860589592,
+    1.0011896629496704
+   ],
+   "seed": 574483733,
+   "x": "Act_kJ_day_minusThermo",
+   "y": "kJ_adjBMR_day_HovThermo_adj"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Hummingbirds budget energy flexibly in response to changing resources' (Zenodo, doi 10.5061/dryad.r18r8p1): 'kJ_adjBMR_day_HovThermo_adj' is linear in 'Act_kJ_day_minusThermo' (R\u00b2 = 0.957 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.r18r8p1",
+   "held_out_r2": 0.9722,
+   "held_out_rows": 150,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3572c1f89c8e",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "40a5da7a0a4c88ca.csv",
+   "doi": "10.5061/dryad.r18r8p1",
+   "form": "linear",
+   "params": [
+    9.662485424803222,
+    1.403750640479659
+   ],
+   "seed": 574483733,
+   "x": "Act_kJ_day_minusThermo",
+   "y": "kJ_max_day_HovThermo_adj"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Hummingbirds budget energy flexibly in response to changing resources' (Zenodo, doi 10.5061/dryad.r18r8p1): 'kJ_max_day_HovThermo_adj' is linear in 'Act_kJ_day_minusThermo' (R\u00b2 = 0.974 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.r18r8p1",
+   "held_out_r2": 0.9556,
+   "held_out_rows": 150,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c4109a2544ae",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "40a5da7a0a4c88ca.csv",
+   "doi": "10.5061/dryad.r18r8p1",
+   "form": "linear",
+   "params": [
+    4.406873882540217,
+    0.8264404953630526
+   ],
+   "seed": 574483733,
+   "x": "ACT_max_kJ_daytime_minusThermo",
+   "y": "Daytime_EE_adj_kJ"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Hummingbirds budget energy flexibly in response to changing resources' (Zenodo, doi 10.5061/dryad.r18r8p1): 'Daytime_EE_adj_kJ' is linear in 'ACT_max_kJ_daytime_minusThermo' (R\u00b2 = 0.958 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.r18r8p1",
+   "held_out_r2": 0.9641,
+   "held_out_rows": 150,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-78b02df94e0e",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "40a5da7a0a4c88ca.csv",
+   "doi": "10.5061/dryad.r18r8p1",
+   "form": "linear",
+   "params": [
+    5.205837240266394,
+    0.7112451813047589
+   ],
+   "seed": 574483733,
+   "x": "ACT_max_kJ_daytime_minusThermo",
+   "y": "Daytime_EE_adj_kJ_HovThermo_adj"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Hummingbirds budget energy flexibly in response to changing resources' (Zenodo, doi 10.5061/dryad.r18r8p1): 'Daytime_EE_adj_kJ_HovThermo_adj' is linear in 'ACT_max_kJ_daytime_minusThermo' (R\u00b2 = 0.963 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.r18r8p1",
+   "held_out_r2": 0.9069,
+   "held_out_rows": 150,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e4a826dde2b6",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "40a5da7a0a4c88ca.csv",
+   "doi": "10.5061/dryad.r18r8p1",
+   "form": "linear",
+   "params": [
+    6.434488876948463,
+    0.4281926244709617
+   ],
+   "seed": 574483733,
+   "x": "ACT_max_kJ_daytime_minusThermo",
+   "y": "kJ_min_day_HovThermo_adj"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Hummingbirds budget energy flexibly in response to changing resources' (Zenodo, doi 10.5061/dryad.r18r8p1): 'kJ_min_day_HovThermo_adj' is linear in 'ACT_max_kJ_daytime_minusThermo' (R\u00b2 = 0.907 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.r18r8p1",
+   "held_out_r2": 0.9601,
+   "held_out_rows": 150,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-781f6f665255",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "40a5da7a0a4c88ca.csv",
+   "doi": "10.5061/dryad.r18r8p1",
+   "form": "linear",
+   "params": [
+    7.373158450291101,
+    0.7153579140655255
+   ],
+   "seed": 574483733,
+   "x": "ACT_max_kJ_daytime_minusThermo",
+   "y": "kJ_adjBMR_day_HovThermo_adj"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Hummingbirds budget energy flexibly in response to changing resources' (Zenodo, doi 10.5061/dryad.r18r8p1): 'kJ_adjBMR_day_HovThermo_adj' is linear in 'ACT_max_kJ_daytime_minusThermo' (R\u00b2 = 0.961 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.r18r8p1",
+   "held_out_r2": 0.9766,
+   "held_out_rows": 150,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-506f516f54d0",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "40a5da7a0a4c88ca.csv",
+   "doi": "10.5061/dryad.r18r8p1",
+   "form": "linear",
+   "params": [
+    8.311811212825702,
+    1.0025241999831584
+   ],
+   "seed": 574483733,
+   "x": "ACT_max_kJ_daytime_minusThermo",
+   "y": "kJ_max_day_HovThermo_adj"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Hummingbirds budget energy flexibly in response to changing resources' (Zenodo, doi 10.5061/dryad.r18r8p1): 'kJ_max_day_HovThermo_adj' is linear in 'ACT_max_kJ_daytime_minusThermo' (R\u00b2 = 0.978 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.r18r8p1",
+   "held_out_r2": 0.9845,
+   "held_out_rows": 150,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-fdd755e37e11",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "40a5da7a0a4c88ca.csv",
+   "doi": "10.5061/dryad.r18r8p1",
+   "form": "linear",
+   "params": [
+    3.9640820895040347,
+    0.5280156195286911
+   ],
+   "seed": 574483733,
+   "x": "Daytime_EE_adj_kJ",
+   "y": "kJ_min_day_HovThermo_adj"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Hummingbirds budget energy flexibly in response to changing resources' (Zenodo, doi 10.5061/dryad.r18r8p1): 'kJ_min_day_HovThermo_adj' is linear in 'Daytime_EE_adj_kJ' (R\u00b2 = 0.983 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.r18r8p1",
+   "held_out_r2": 0.9825,
+   "held_out_rows": 150,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-1a85be3735cd",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "40a5da7a0a4c88ca.csv",
+   "doi": "10.5061/dryad.r18r8p1",
+   "form": "linear",
+   "params": [
+    3.0690325633680673,
+    0.6151172872613174
+   ],
+   "seed": 574483733,
+   "x": "Daytime_EE_adj_kJ_HovThermo_adj",
+   "y": "kJ_min_day_HovThermo_adj"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Hummingbirds budget energy flexibly in response to changing resources' (Zenodo, doi 10.5061/dryad.r18r8p1): 'kJ_min_day_HovThermo_adj' is linear in 'Daytime_EE_adj_kJ_HovThermo_adj' (R\u00b2 = 0.984 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.21512426",
+   "held_out_r2": 0.9484,
+   "held_out_rows": 39,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-8ff64f5aea4c",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "7a1844eb0f9d0dd3.csv",
+   "doi": "10.5281/zenodo.21512426",
+   "form": "linear",
+   "params": [
+    980031708.304326,
+    -329.17573925359306
+   ],
+   "seed": 2329518773,
+   "x": "h [meter]",
+   "y": "g at h [\u00b5Gal]"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Mount Etna Absolute Gravimetry Dataset: 19 Years of Measurements (2007-2025)' (Zenodo, doi 10.5281/zenodo.21512426): 'g at h [\u00b5Gal]' is linear in 'h [meter]' (R\u00b2 = 0.990 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
