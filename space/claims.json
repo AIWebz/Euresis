@@ -4122386,5 +4122386,275 @@
   "statement": "Octal game 0.1003002 is completely solved: its Grundy values are periodic with pre-period 0 and period 11 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24138712",
+   "held_out_r2": -0.3331,
+   "held_out_rows": 50,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-45c934c66ba8",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "8291038bbffcf33d.csv",
+   "doi": "10.5281/zenodo.24138712",
+   "form": "power law",
+   "params": [
+    4.770828253821278,
+    -0.12696187729491712
+   ],
+   "seed": 3298687100,
+   "x": "t_s",
+   "y": "U_V"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data and scripts for: Identifiability of a Regenerative Braking Loss Model for an In-Wheel' (Zenodo, doi 10.5281/zenodo.24138712): 'U_V' follows a power law in 't_s' (R\u00b2 = 0.981 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24138712",
+   "held_out_r2": -0.1417,
+   "held_out_rows": 50,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-41baf400365f",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "8291038bbffcf33d.csv",
+   "doi": "10.5281/zenodo.24138712",
+   "form": "logarithmic",
+   "params": [
+    645.1647465787973,
+    -180.22036154214246
+   ],
+   "seed": 3298687100,
+   "x": "t_s",
+   "y": "I_b_A"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data and scripts for: Identifiability of a Regenerative Braking Loss Model for an In-Wheel' (Zenodo, doi 10.5281/zenodo.24138712): 'I_b_A' grows logarithmically in 't_s' (R\u00b2 = 0.988 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24138712",
+   "held_out_r2": -0.1456,
+   "held_out_rows": 50,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c35cd8975c7d",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "8291038bbffcf33d.csv",
+   "doi": "10.5281/zenodo.24138712",
+   "form": "exponential",
+   "params": [
+    4.31408459996164,
+    0.0006169217069068064
+   ],
+   "seed": 3298687100,
+   "x": "v_kmh",
+   "y": "U_V"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data and scripts for: Identifiability of a Regenerative Braking Loss Model for an In-Wheel' (Zenodo, doi 10.5281/zenodo.24138712): 'U_V' grows exponentially in 'v_kmh' (R\u00b2 = 0.987 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24138712",
+   "held_out_r2": 0.0343,
+   "held_out_rows": 50,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-2de64f543bed",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "8291038bbffcf33d.csv",
+   "doi": "10.5281/zenodo.24138712",
+   "form": "linear",
+   "params": [
+    -3.14353772308978,
+    0.8745645467188398
+   ],
+   "seed": 3298687100,
+   "x": "v_kmh",
+   "y": "I_b_A"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data and scripts for: Identifiability of a Regenerative Braking Loss Model for an In-Wheel' (Zenodo, doi 10.5281/zenodo.24138712): 'I_b_A' is linear in 'v_kmh' (R\u00b2 = 0.991 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24138712",
+   "held_out_r2": 0.9812,
+   "held_out_rows": 50,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d699131516d7",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "8291038bbffcf33d.csv",
+   "doi": "10.5281/zenodo.24138712",
+   "form": "linear",
+   "params": [
+    -1387.353168982569,
+    18.522717101877326
+   ],
+   "seed": 3298687100,
+   "x": "U_V",
+   "y": "I_b_A"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data and scripts for: Identifiability of a Regenerative Braking Loss Model for an In-Wheel' (Zenodo, doi 10.5281/zenodo.24138712): 'I_b_A' is linear in 'U_V' (R\u00b2 = 0.993 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22045367",
+   "held_out_r2": 0.8953,
+   "held_out_rows": 6874,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-13b8f05d4e8e",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8f64a840bd8c636e.csv",
+   "doi": "10.5281/zenodo.22045367",
+   "form": "linear",
+   "params": [
+    0.654211106062543,
+    0.9270343784570471
+   ],
+   "seed": 540291409,
+   "x": "Mock_1",
+   "y": "Infected_1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Supporting Data for \"SARS-CoV-2 Infection Reprograms Calu-3 Cells from Cholesterol Metabol' (Zenodo, doi 10.5281/zenodo.22045367): 'Infected_1' is linear in 'Mock_1' (R\u00b2 = 0.901 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22045367",
+   "held_out_r2": 0.8967,
+   "held_out_rows": 6874,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b3e20b2e7cd5",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8f64a840bd8c636e.csv",
+   "doi": "10.5281/zenodo.22045367",
+   "form": "linear",
+   "params": [
+    0.7486528051950873,
+    0.9181045799723377
+   ],
+   "seed": 540291409,
+   "x": "Mock_1",
+   "y": "Infected_3"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Supporting Data for \"SARS-CoV-2 Infection Reprograms Calu-3 Cells from Cholesterol Metabol' (Zenodo, doi 10.5281/zenodo.22045367): 'Infected_3' is linear in 'Mock_1' (R\u00b2 = 0.904 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22045367",
+   "held_out_r2": 0.9004,
+   "held_out_rows": 6874,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ced02f1a69a7",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8f64a840bd8c636e.csv",
+   "doi": "10.5281/zenodo.22045367",
+   "form": "linear",
+   "params": [
+    0.5583771565061573,
+    0.9377560995285587
+   ],
+   "seed": 540291409,
+   "x": "Mock_3",
+   "y": "Infected_1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Supporting Data for \"SARS-CoV-2 Infection Reprograms Calu-3 Cells from Cholesterol Metabol' (Zenodo, doi 10.5281/zenodo.22045367): 'Infected_1' is linear in 'Mock_3' (R\u00b2 = 0.906 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22045367",
+   "held_out_r2": 0.9065,
+   "held_out_rows": 6874,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-711e57feec52",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8f64a840bd8c636e.csv",
+   "doi": "10.5281/zenodo.22045367",
+   "form": "linear",
+   "params": [
+    0.6358510920405528,
+    0.9310073311213579
+   ],
+   "seed": 540291409,
+   "x": "Mock_3",
+   "y": "Infected_3"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Supporting Data for \"SARS-CoV-2 Infection Reprograms Calu-3 Cells from Cholesterol Metabol' (Zenodo, doi 10.5281/zenodo.22045367): 'Infected_3' is linear in 'Mock_3' (R\u00b2 = 0.913 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22964288",
+   "held_out_r2": 0.9223,
+   "held_out_rows": 94,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-88770316f22e",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "04da5bd6d04e3334.csv",
+   "doi": "10.5281/zenodo.22964288",
+   "form": "linear",
+   "params": [
+    7072.222780657793,
+    0.03921896405919875
+   ],
+   "seed": 682675950,
+   "x": "Active",
+   "y": "New cases"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Reproducibility Package for \"Horizon-dependent forecast performance under structural chang' (Zenodo, doi 10.5281/zenodo.22964288): 'New cases' is linear in 'Active' (R\u00b2 = 0.939 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]

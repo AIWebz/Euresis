@@ -5802,3 +5802,8 @@
 - 2026-11-22 14:16 data feeds: online
 - 2026-11-22 14:16 data feeds: 34719 datasets analysed so far, 5098 confirmed findings
 - 2026-11-22 15:19 data feeds: online
+- 2026-11-22 15:21 FINDING (confirmed on held-out rows): In 'Supporting Data for "SARS-CoV-2 Infection Reprograms Calu-3 Cells from Cholesterol Metabol' (Zenodo, doi 10.5281/zenodo.22045367): 'Infected_1' is linear in 'Mock_1' (R² = 0.901 on the discovery half); held-out R² = 0.895 [emp-13b8f05d4e8e]
+- 2026-11-22 15:21 FINDING (confirmed on held-out rows): In 'Supporting Data for "SARS-CoV-2 Infection Reprograms Calu-3 Cells from Cholesterol Metabol' (Zenodo, doi 10.5281/zenodo.22045367): 'Infected_3' is linear in 'Mock_1' (R² = 0.904 on the discovery half); held-out R² = 0.897 [emp-b3e20b2e7cd5]
+- 2026-11-22 15:21 FINDING (confirmed on held-out rows): In 'Supporting Data for "SARS-CoV-2 Infection Reprograms Calu-3 Cells from Cholesterol Metabol' (Zenodo, doi 10.5281/zenodo.22045367): 'Infected_1' is linear in 'Mock_3' (R² = 0.906 on the discovery half); held-out R² = 0.900 [emp-ced02f1a69a7]
+- 2026-11-22 15:22 FINDING (confirmed on held-out rows): In 'Supporting Data for "SARS-CoV-2 Infection Reprograms Calu-3 Cells from Cholesterol Metabol' (Zenodo, doi 10.5281/zenodo.22045367): 'Infected_3' is linear in 'Mock_3' (R² = 0.913 on the discovery half); held-out R² = 0.906 [emp-711e57feec52]
+- 2026-11-22 15:22 data feeds: 34809 datasets analysed so far, 5102 confirmed findings
