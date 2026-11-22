@@ -44627,3 +44627,4 @@
 - 2026-11-22 23:00 SOLVED (proved): 0.1011503 — pre-period 739, period 34  [gam-032780031492]
 - 2026-11-22 23:01 SOLVED (proved): 0.1011511 — pre-period 23, period 20  [gam-3b5781a7801d]
 - 2026-11-22 23:01 games: 88347 octal games solved, 407492 unresolved up to n = 3000
+- 2026-11-22 23:36 SOLVED (proved): 0.1011512 — pre-period 23, period 20  [gam-63877a5bcfbc]
