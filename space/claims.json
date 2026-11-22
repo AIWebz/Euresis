@@ -4050516,5 +4050516,599 @@
   "statement": "[economics: Cournot duopoly] Total Welfare Index [model-proposed; physical meaning unverified] \u2265 5/36 \u00d7 Cournot Price Index [model-proposed; physical meaning unverified]   on c1 < 1/2, c2 < 1/2 (tight only at the edge of the domain, near (9.32e-14, 3.12e-13))",
   "status": "proved",
   "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-0d785f91b635",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'momentum transferred / initial momentum'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "(e + 1)/((m + 1)*(e*m/(m + 1) + 1)) >= 1/3*(e**2*m**2/((1 - e**2)*(m + 1)**2 + 1) + 1)",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 7234",
+  "statement": "[physics: collision] Impulse ratio of target to projectile [model-proposed; physical meaning unverified] \u2265 1/3 \u00d7 Normalized Kinetic Energy Ratio of Target to System [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-75ab341b12c8",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'Fraction of kinetic energy retained by the system relative to initial kinetic en [model-proposed; physical meaning unverified]'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "(e + 1)/((m + 1)*(e*m/(m + 1) + 1)) >= 4/9*(e**2*m**2/(m**2 + 1) + 1)",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 7234",
+  "statement": "[physics: collision] Impulse ratio of target to projectile [model-proposed; physical meaning unverified] \u2265 4/9 \u00d7 Kinetic Energy Ratio of Target to Projectile [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-8ee511c05ff1",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'momentum transferred / initial momentum'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "(-e**2*m**2/(m + 1)**2 - e**2*m/(m + 1) - (1 - e**2)/(m + 1) + 1)/(-e**2*m**2/(m + 1)**2 - (1 - e**2)/(m + 1) + 1) >= 1/6*(e**2*m**2/((1 - e**2)*(m + 1)**2 + 1) + 1)",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 7234",
+  "statement": "[physics: collision] Fraction of Kinetic Energy Retained by the Projectile Relative to the System [model-proposed; physical meaning unverified] \u2265 1/6 \u00d7 Normalized Kinetic Energy Ratio of Target to System [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-64df1bd1715e",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified]'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "(-e**2*m**2/(m + 1)**2 - e**2*m/(m + 1) - (1 - e**2)/(m + 1) + 1)/(-e**2*m**2/(m + 1)**2 - (1 - e**2)/(m + 1) + 1) >= 2/9*(e**2*m**2/(m**2 + 1) + 1)",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 7234",
+  "statement": "[physics: collision] Fraction of Kinetic Energy Retained by the Projectile Relative to the System [model-proposed; physical meaning unverified] \u2265 2/9 \u00d7 Kinetic Energy Ratio of Target to Projectile [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-209e20e47e53",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'momentum transferred / initial momentum'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "(-e**2*m**2/(m + 1)**2 - e**2*m/(m + 1) + 2)/(e**2*m**2/(m + 1)**2 + e**2*m/(m + 1)) >= 5/6*(e**2*m**2/((1 - e**2)*(m + 1)**2 + 1) + 1)",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 7234",
+  "statement": "[physics: collision] Fraction of Kinetic Energy Retained by the Projectile Relative to the Target [model-proposed; physical meaning unverified] \u2265 5/6 \u00d7 Normalized Kinetic Energy Ratio of Target to System [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-1d8cc28f0a09",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified]'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "(-e**2*m**2/(m + 1)**2 - e**2*m/(m + 1) + 2)/(e**2*m**2/(m + 1)**2 + e**2*m/(m + 1)) >= 10/9*(e**2*m**2/(m**2 + 1) + 1)",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 7234",
+  "statement": "[physics: collision] Fraction of Kinetic Energy Retained by the Projectile Relative to the Target [model-proposed; physical meaning unverified] \u2265 10/9 \u00d7 Kinetic Energy Ratio of Target to Projectile [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-f4f3d7e99f3f",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'consumer surplus'",
+  "payload": {
+   "assumptions": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "claim": "(-c1 - c2 + 2)**2/(2*(-2*c1 + c2 + 1)**2 + (-c1 - c2 + 2)**2 + 2*(c1 - 2*c2 + 1)**2) >= 1/4*((-c1/3 - c2/3 + 1/3)/(c1/12 + c2/12 + 1/6))",
+   "symbols": [
+    "c1",
+    "c2"
+   ]
+  },
+  "source": "physics_discover2 round 7238",
+  "statement": "[economics: Cournot duopoly] Consumer Surplus to Total Welfare Ratio [model-proposed; physical meaning unverified] \u2265 1/4 \u00d7 Cournot Price Index [model-proposed; physical meaning unverified]   on c1 < 1/2, c2 < 1/2 (tight only at the edge of the domain, near (4.08e-14, 6.85e-15))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-8b1b2c3d9f1f",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "claim": "(-c1/3 + c2/3 + 1/3)/(c1/3 - c2/3 + 1/3) >= 5/12*((-c1/3 - c2/3 + 1/3)/(c1/12 + c2/12 + 1/6))",
+   "symbols": [
+    "c1",
+    "c2"
+   ]
+  },
+  "source": "physics_discover2 round 7238",
+  "statement": "[economics: Cournot duopoly] Cournot Price Ratio [model-proposed; physical meaning unverified] \u2265 5/12 \u00d7 Cournot Price Index [model-proposed; physical meaning unverified]   on c1 < 1/2, c2 < 1/2 (tight only at the edge of the domain, near (0.5, 4.16e-15))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-1796f8edf45a",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'consumer surplus'",
+  "payload": {
+   "assumptions": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "claim": "((1 - c1)**2 + (1 - c2)**2)/((-c1 - c2 + 1)**2 + 1) >= 1/2*((-c1/3 - c2/3 + 1/3)/(c1/12 + c2/12 + 1/6))",
+   "symbols": [
+    "c1",
+    "c2"
+   ]
+  },
+  "source": "physics_discover2 round 7238",
+  "statement": "[economics: Cournot duopoly] Price Competition Index [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 Cournot Price Index [model-proposed; physical meaning unverified]   on c1 < 1/2, c2 < 1/2 (tight only at the edge of the domain, near (1.14e-16, 1.94e-14))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-42d37e262d66",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "claim": "((1 - c1)**2/4 + (1 - c2)**2/4 + (-c1 - c2 + 1)**2/18)/((-2*c1 + c2 + 1)**2/9 + (-c1 - c2 + 1)**2/18 + (c1 - 2*c2 + 1)**2/9) >= 1*((-c1/3 - c2/3 + 1/3)/(c1/12 + c2/12 + 1/6))",
+   "symbols": [
+    "c1",
+    "c2"
+   ]
+  },
+  "source": "physics_discover2 round 7238",
+  "statement": "[economics: Cournot duopoly] Total Welfare Efficiency Ratio [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Cournot Price Index [model-proposed; physical meaning unverified]   on c1 < 1/2, c2 < 1/2 (tight only at the edge of the domain, near (1.13e-14, 5.16e-15))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-aba8b4756e56",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "m**2 + m**(-2) >= 1*(e**2*m**2/((1 - e**2)*(m + 1)**2 + 1) + 1)",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 7242",
+  "statement": "[physics: collision] Mass Ratio Squared Plus Reciprocal [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Normalized Kinetic Energy Ratio of Target to System [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-e28a30d300d8",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "m**2 + m**(-2) >= 4/3*(e**2*m**2/(m**2 + 1) + 1)",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 7242",
+  "statement": "[physics: collision] Mass Ratio Squared Plus Reciprocal [model-proposed; physical meaning unverified] \u2265 4/3 \u00d7 Kinetic Energy Ratio of Target to Projectile [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-7d48673d1129",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "(-e**2*m**2/(m + 1)**2 - e**2*m/(m + 1) - (1 - e**2)/(m + 1) + 2)/(e**2*m**2/(m + 1)**2 + e**2*m/(m + 1) + (1 - e**2)/(m + 1)) >= 5/6*(e**2*m**2/((1 - e**2)*(m + 1)**2 + 1) + 1)",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 7242",
+  "statement": "[physics: collision] Ratio of Kinetic Energy of Projectile to Kinetic Energy of System After Collisio [model-proposed; physical meaning unverified] \u2265 5/6 \u00d7 Normalized Kinetic Energy Ratio of Target to System [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-af9fdbca1f8f",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "(-e**2*m**2/(m + 1)**2 - e**2*m/(m + 1) - (1 - e**2)/(m + 1) + 2)/(e**2*m**2/(m + 1)**2 + e**2*m/(m + 1) + (1 - e**2)/(m + 1)) >= 1*(e**2*m**2/(m**2 + 1) + 1)",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 7242",
+  "statement": "[physics: collision] Ratio of Kinetic Energy of Projectile to Kinetic Energy of System After Collisio [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Kinetic Energy Ratio of Target to Projectile [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (4.97e-17, 3.85e-09))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-a99dd265a193",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "sqrt(m) + 1/e >= 1*(e**2*m**2/((1 - e**2)*(m + 1)**2 + 1) + 1)",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 7242",
+  "statement": "[physics: collision] Square Root of Mass Ratio Plus Reciprocal of Coefficient of Restitution [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Normalized Kinetic Energy Ratio of Target to System [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-01cdf30617e7",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "sqrt(m) + 1/e >= 1*(e**2*m**2/(m**2 + 1) + 1)",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 7242",
+  "statement": "[physics: collision] Square Root of Mass Ratio Plus Reciprocal of Coefficient of Restitution [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Kinetic Energy Ratio of Target to Projectile [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1.2e-19, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-6b7b1e354bf3",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "(m*(1 - e**2)/(m + 1) + (1 - e**2)/(m + 1))/((1 - e**2)*(1 - m)/(m + 1) + (1 - e**2)/(m + 1)) >= 1/2*(e**2*m**2/((1 - e**2)*(m + 1)**2 + 1) + 1)",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 7242",
+  "statement": "[physics: collision] Kinetic Energy Ratio of Projectile to Target After Collision [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 Normalized Kinetic Energy Ratio of Target to System [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (3.85e-17, 0.883))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-004b01ea03e0",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "(m*(1 - e**2)/(m + 1) + (1 - e**2)/(m + 1))/((1 - e**2)*(1 - m)/(m + 1) + (1 - e**2)/(m + 1)) >= 1/2*(e**2*m**2/(m**2 + 1) + 1)",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 7242",
+  "statement": "[physics: collision] Kinetic Energy Ratio of Projectile to Target After Collision [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 Kinetic Energy Ratio of Target to Projectile [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (3.85e-17, 0.883))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-b58863a571ff",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "m/(e + 1) + 1 >= 3/4*(e**2*m**2/((1 - e**2)*(m + 1)**2 + 1) + 1)",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 7242",
+  "statement": "[physics: collision] Mass Ratio Adjusted by Restitution [model-proposed; physical meaning unverified] \u2265 3/4 \u00d7 Normalized Kinetic Energy Ratio of Target to System [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-e5872f32f9f5",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "m/(e + 1) + 1 >= 1*(e**2*m**2/(m**2 + 1) + 1)",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 7242",
+  "statement": "[physics: collision] Mass Ratio Adjusted by Restitution [model-proposed; physical meaning unverified] \u2265 1 \u00d7 Kinetic Energy Ratio of Target to Projectile [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1.97e-16, 0.944))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-e3abaa452d4b",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "e**2*m**2/(e**2*m**2 + (m + 1)**2) + 1 >= 3/5*(e**2*m**2/((1 - e**2)*(m + 1)**2 + 1) + 1)",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 7242",
+  "statement": "[physics: collision] Kinetic Energy Ratio of Target to Projectile After Collision [model-proposed; physical meaning unverified] \u2265 3/5 \u00d7 Normalized Kinetic Energy Ratio of Target to System [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-6822893e7209",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "e**2*m**2/(e**2*m**2 + (m + 1)**2) + 1 >= 4/5*(e**2*m**2/(m**2 + 1) + 1)",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 7242",
+  "statement": "[physics: collision] Kinetic Energy Ratio of Target to Projectile After Collision [model-proposed; physical meaning unverified] \u2265 4/5 \u00d7 Kinetic Energy Ratio of Target to Projectile [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]
