@@ -5794,3 +5794,8 @@
 - 2026-11-22 12:31 FINDING (confirmed on held-out rows): In 'CMLTRPCNN — ABO3 microwave-dielectric permittivity dataset (n = 1,304)' (Zenodo, doi 10.5281/zenodo.20433428): 'delta_lst' is linear in 'er_measured' (R² = 0.904 on the discovery half); held-out R² = 0.874 [emp-3936a0d65aa3]
 - 2026-11-22 12:31 FINDING (confirmed on held-out rows): In 'CMLTRPCNN — ABO3 microwave-dielectric permittivity dataset (n = 1,304)' (Zenodo, doi 10.5281/zenodo.20433428): 'delta_lst' is linear in 'er_predicted' (R² = 0.917 on the discovery half); held-out R² = 0.876 [emp-5bec07276980]
 - 2026-11-22 12:31 data feeds: 34667 datasets analysed so far, 5095 confirmed findings
+- 2026-11-22 13:33 data feeds: online
+- 2026-11-22 13:34 FINDING (confirmed on held-out rows): In 'Data from: Personality and social network structure influence cooperative dynamics across ' (Zenodo, doi 10.5281/zenodo.13986812): 'Qsimhi' follows a power law in 'Q95hi' (R² = 0.995 on the discovery half); held-out R² = 0.995 [emp-2973aac09814]
+- 2026-11-22 13:35 FINDING (confirmed on held-out rows): In 'Data from: How to map forest structure from aircraft, one tree at a time' (Zenodo, doi 10.5061/dryad.632dn89): 'AGB_kg' follows a power law in 'Height_m' (R² = 0.941 on the discovery half); held-out R² = 0.945 [emp-da31e1669cd5]
+- 2026-11-22 13:36 FINDING (confirmed on held-out rows): In 'Data from: How to map forest structure from aircraft, one tree at a time' (Zenodo, doi 10.5061/dryad.632dn89): 'AGB_kg' follows a power law in 'DBH_cm' (R² = 0.960 on the discovery half); held-out R² = 0.960 [emp-8f4fc6b23b30]
+- 2026-11-22 13:36 data feeds: 34710 datasets analysed so far, 5098 confirmed findings
