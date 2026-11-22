@@ -5800,3 +5800,4 @@
 - 2026-11-22 13:36 FINDING (confirmed on held-out rows): In 'Data from: How to map forest structure from aircraft, one tree at a time' (Zenodo, doi 10.5061/dryad.632dn89): 'AGB_kg' follows a power law in 'DBH_cm' (R² = 0.960 on the discovery half); held-out R² = 0.960 [emp-8f4fc6b23b30]
 - 2026-11-22 13:36 data feeds: 34710 datasets analysed so far, 5098 confirmed findings
 - 2026-11-22 14:16 data feeds: online
+- 2026-11-22 14:16 data feeds: 34719 datasets analysed so far, 5098 confirmed findings
