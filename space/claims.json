@@ -4134110,5 +4134110,545 @@
   "statement": "Octal game 0.1004756 is completely solved: its Grundy values are periodic with pre-period 697 and period 108 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14210265",
+   "held_out_r2": 0.934,
+   "held_out_rows": 4695,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-2518bc92b7a1",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "5c3c44adb1a0e8b4.csv",
+   "doi": "10.5281/zenodo.14210265",
+   "form": "exponential",
+   "params": [
+    1.6309238138575972,
+    0.0717625100549057
+   ],
+   "seed": 3631239786,
+   "x": "UPSTREAM",
+   "y": "MIDREACH"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Hydraulic geometry and whitewater coverage for a steep proglacial stream -- data sets and ' (Zenodo, doi 10.5281/zenodo.14210265): 'MIDREACH' grows exponentially in 'UPSTREAM' (R\u00b2 = 0.937 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23115707",
+   "held_out_r2": 0.9625,
+   "held_out_rows": 4748,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-295e65694152",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "e9d24b27884ddc8a.csv",
+   "doi": "10.5281/zenodo.23115707",
+   "form": "linear",
+   "params": [
+    6.86087240525642,
+    0.8883581516845656
+   ],
+   "seed": 57926236,
+   "x": "pm10",
+   "y": "AQI"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'West Bengal Pollution Control Board (WBPCB) Dataset' (Zenodo, doi 10.5281/zenodo.23115707): 'AQI' is linear in 'pm10' (R\u00b2 = 0.959 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24439878",
+   "held_out_r2": 0.962,
+   "held_out_rows": 5310,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-2282e328aa6c",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "457cb063f0734b88.csv",
+   "doi": "10.5281/zenodo.24439878",
+   "form": "logarithmic",
+   "params": [
+    0.44471824365860235,
+    0.27508558809796363
+   ],
+   "seed": 3570222366,
+   "x": "lai_max",
+   "y": "gvf_max"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data, code and trained models for: Holding Measured Precipitation Fixed Is Not Holding Pre' (Zenodo, doi 10.5281/zenodo.24439878): 'gvf_max' grows logarithmically in 'lai_max' (R\u00b2 = 0.963 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24136498",
+   "held_out_r2": 0.8734,
+   "held_out_rows": 55,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-8c5a4c40455a",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "d3ea04bb097bfd7c.csv",
+   "doi": "10.5281/zenodo.24136498",
+   "form": "linear",
+   "params": [
+    0.2788209857223499,
+    0.8836589475388796
+   ],
+   "seed": 2264229517,
+   "x": "Fprefluency",
+   "y": "Fpreelaboration"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'GAI-Supported Instruction and Creative Thinking in Engineering Undergraduates: A Quasi-Exp' (Zenodo, doi 10.5281/zenodo.24136498): 'Fpreelaboration' is linear in 'Fprefluency' (R\u00b2 = 0.906 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24136498",
+   "held_out_r2": 0.8766,
+   "held_out_rows": 55,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-aa604c04bf2e",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "d3ea04bb097bfd7c.csv",
+   "doi": "10.5281/zenodo.24136498",
+   "form": "power law",
+   "params": [
+    0.20413807071595802,
+    0.8803266805006906
+   ],
+   "seed": 2264229517,
+   "x": "Fprefluency",
+   "y": "Vprefluency"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'GAI-Supported Instruction and Creative Thinking in Engineering Undergraduates: A Quasi-Exp' (Zenodo, doi 10.5281/zenodo.24136498): 'Vprefluency' follows a power law in 'Fprefluency' (R\u00b2 = 0.927 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24136498",
+   "held_out_r2": 0.9634,
+   "held_out_rows": 55,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-69d9d02b16cc",
+  "kind": "empirical",
+  "novelty": "KNOWN: equation of state of a simulated fluid (pressure, density, temperature, chemical potential, kinetic energy) \u2014 not a discovery",
+  "payload": {
+   "dataset": "d3ea04bb097bfd7c.csv",
+   "doi": "10.5281/zenodo.24136498",
+   "form": "linear",
+   "params": [
+    -0.8689999000070273,
+    0.99364641945751
+   ],
+   "seed": 2264229517,
+   "x": "Fpostfluency",
+   "y": "Fpostelaboration"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'GAI-Supported Instruction and Creative Thinking in Engineering Undergraduates: A Quasi-Exp' (Zenodo, doi 10.5281/zenodo.24136498): 'Fpostelaboration' is linear in 'Fpostfluency' (R\u00b2 = 0.983 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24136498",
+   "held_out_r2": 0.8354,
+   "held_out_rows": 55,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-506460cae5a6",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "d3ea04bb097bfd7c.csv",
+   "doi": "10.5281/zenodo.24136498",
+   "form": "linear",
+   "params": [
+    -0.004985994214434061,
+    0.9587399423048802
+   ],
+   "seed": 2264229517,
+   "x": "Fpostfluency",
+   "y": "Vpostoriginality"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'GAI-Supported Instruction and Creative Thinking in Engineering Undergraduates: A Quasi-Exp' (Zenodo, doi 10.5281/zenodo.24136498): 'Vpostoriginality' is linear in 'Fpostfluency' (R\u00b2 = 0.950 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24136498",
+   "held_out_r2": 0.7136,
+   "held_out_rows": 55,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-7c951bed0447",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "d3ea04bb097bfd7c.csv",
+   "doi": "10.5281/zenodo.24136498",
+   "form": "power law",
+   "params": [
+    0.11800803955058899,
+    0.9238469029937537
+   ],
+   "seed": 2264229517,
+   "x": "Fpreelaboration",
+   "y": "Vpreoriginality"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'GAI-Supported Instruction and Creative Thinking in Engineering Undergraduates: A Quasi-Exp' (Zenodo, doi 10.5281/zenodo.24136498): 'Vpreoriginality' follows a power law in 'Fpreelaboration' (R\u00b2 = 0.950 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24136498",
+   "held_out_r2": 0.7625,
+   "held_out_rows": 55,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-09b88d92c71a",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "d3ea04bb097bfd7c.csv",
+   "doi": "10.5281/zenodo.24136498",
+   "form": "linear",
+   "params": [
+    -0.2249205795730776,
+    0.6466613240993399
+   ],
+   "seed": 2264229517,
+   "x": "Fpostelaboration",
+   "y": "Fpostoriginality"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'GAI-Supported Instruction and Creative Thinking in Engineering Undergraduates: A Quasi-Exp' (Zenodo, doi 10.5281/zenodo.24136498): 'Fpostoriginality' is linear in 'Fpostelaboration' (R\u00b2 = 0.909 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24136498",
+   "held_out_r2": 0.7601,
+   "held_out_rows": 55,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-2a335eeeb42d",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "d3ea04bb097bfd7c.csv",
+   "doi": "10.5281/zenodo.24136498",
+   "form": "linear",
+   "params": [
+    -0.22466250949835906,
+    0.6470882359869137
+   ],
+   "seed": 2264229517,
+   "x": "Fpostelaboration",
+   "y": "Fpostresistance"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'GAI-Supported Instruction and Creative Thinking in Engineering Undergraduates: A Quasi-Exp' (Zenodo, doi 10.5281/zenodo.24136498): 'Fpostresistance' is linear in 'Fpostelaboration' (R\u00b2 = 0.909 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24136498",
+   "held_out_r2": 0.9488,
+   "held_out_rows": 55,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-333cd7494055",
+  "kind": "empirical",
+  "novelty": "KNOWN: equation of state of a simulated fluid (pressure, density, temperature, chemical potential, kinetic energy) \u2014 not a discovery",
+  "payload": {
+   "dataset": "d3ea04bb097bfd7c.csv",
+   "doi": "10.5281/zenodo.24136498",
+   "form": "linear",
+   "params": [
+    1.108170342106837,
+    0.989354766699846
+   ],
+   "seed": 2264229517,
+   "x": "Fpostelaboration",
+   "y": "Vpostfluency"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'GAI-Supported Instruction and Creative Thinking in Engineering Undergraduates: A Quasi-Exp' (Zenodo, doi 10.5281/zenodo.24136498): 'Vpostfluency' is linear in 'Fpostelaboration' (R\u00b2 = 0.983 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24136498",
+   "held_out_r2": 0.8491,
+   "held_out_rows": 55,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5d6308120207",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "d3ea04bb097bfd7c.csv",
+   "doi": "10.5281/zenodo.24136498",
+   "form": "linear",
+   "params": [
+    0.8284213458761969,
+    0.9652397478526175
+   ],
+   "seed": 2264229517,
+   "x": "Fpostelaboration",
+   "y": "Vpostoriginality"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'GAI-Supported Instruction and Creative Thinking in Engineering Undergraduates: A Quasi-Exp' (Zenodo, doi 10.5281/zenodo.24136498): 'Vpostoriginality' is linear in 'Fpostelaboration' (R\u00b2 = 0.967 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24136498",
+   "held_out_r2": 0.759,
+   "held_out_rows": 55,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3a3fcf5e9613",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "d3ea04bb097bfd7c.csv",
+   "doi": "10.5281/zenodo.24136498",
+   "form": "linear",
+   "params": [
+    -0.22046071634284264,
+    0.6481054618525205
+   ],
+   "seed": 2264229517,
+   "x": "Fpostelaboration",
+   "y": "Vpostflexibility"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'GAI-Supported Instruction and Creative Thinking in Engineering Undergraduates: A Quasi-Exp' (Zenodo, doi 10.5281/zenodo.24136498): 'Vpostflexibility' is linear in 'Fpostelaboration' (R\u00b2 = 0.910 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24136498",
+   "held_out_r2": 0.6879,
+   "held_out_rows": 55,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-82a239f0b4a3",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "d3ea04bb097bfd7c.csv",
+   "doi": "10.5281/zenodo.24136498",
+   "form": "linear",
+   "params": [
+    2.1574555451058828,
+    1.3776974358978202
+   ],
+   "seed": 2264229517,
+   "x": "Fpostoriginality",
+   "y": "Vpostoriginality"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'GAI-Supported Instruction and Creative Thinking in Engineering Undergraduates: A Quasi-Exp' (Zenodo, doi 10.5281/zenodo.24136498): 'Vpostoriginality' is linear in 'Fpostoriginality' (R\u00b2 = 0.907 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24136498",
+   "held_out_r2": 0.6948,
+   "held_out_rows": 55,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-35262d351bce",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "d3ea04bb097bfd7c.csv",
+   "doi": "10.5281/zenodo.24136498",
+   "form": "linear",
+   "params": [
+    2.1528870355616285,
+    1.3772521096493597
+   ],
+   "seed": 2264229517,
+   "x": "Fpostresistance",
+   "y": "Vpostoriginality"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'GAI-Supported Instruction and Creative Thinking in Engineering Undergraduates: A Quasi-Exp' (Zenodo, doi 10.5281/zenodo.24136498): 'Vpostoriginality' is linear in 'Fpostresistance' (R\u00b2 = 0.907 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24136498",
+   "held_out_r2": 0.8548,
+   "held_out_rows": 55,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-2d6631b83238",
+  "kind": "empirical",
+  "novelty": "KNOWN: equation of state of a simulated fluid (pressure, density, temperature, chemical potential, kinetic energy) \u2014 not a discovery",
+  "payload": {
+   "dataset": "d3ea04bb097bfd7c.csv",
+   "doi": "10.5281/zenodo.24136498",
+   "form": "linear",
+   "params": [
+    -0.004985994214434061,
+    0.9587399423048802
+   ],
+   "seed": 2264229517,
+   "x": "Vpostfluency",
+   "y": "Vpostoriginality"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'GAI-Supported Instruction and Creative Thinking in Engineering Undergraduates: A Quasi-Exp' (Zenodo, doi 10.5281/zenodo.24136498): 'Vpostoriginality' is linear in 'Vpostfluency' (R\u00b2 = 0.950 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24136498",
+   "held_out_r2": 0.7121,
+   "held_out_rows": 55,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-6be135f1969d",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "d3ea04bb097bfd7c.csv",
+   "doi": "10.5281/zenodo.24136498",
+   "form": "linear",
+   "params": [
+    -0.6103792176938414,
+    0.6596174066707939
+   ],
+   "seed": 2264229517,
+   "x": "Vpostoriginality",
+   "y": "Vpostflexibility"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'GAI-Supported Instruction and Creative Thinking in Engineering Undergraduates: A Quasi-Exp' (Zenodo, doi 10.5281/zenodo.24136498): 'Vpostflexibility' is linear in 'Vpostoriginality' (R\u00b2 = 0.908 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20635468",
+   "held_out_r2": 0.8996,
+   "held_out_rows": 40,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3c5760703f14",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "c4030b0802c771d7.csv",
+   "doi": "10.5281/zenodo.20635468",
+   "form": "linear",
+   "params": [
+    18.752792757934817,
+    -0.1842775785124375
+   ],
+   "seed": 3259695749,
+   "x": "OpenedPercentage",
+   "y": "NudgesIgnored"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Real-Time Automated Feedback on Reflective Writing in Software Engineering Education (supp' (Zenodo, doi 10.5281/zenodo.20635468): 'NudgesIgnored' is linear in 'OpenedPercentage' (R\u00b2 = 0.910 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20635468",
+   "held_out_r2": 0.7273,
+   "held_out_rows": 40,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-84b9f9b6f4a4",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "c4030b0802c771d7.csv",
+   "doi": "10.5281/zenodo.20635468",
+   "form": "linear",
+   "params": [
+    1.579355652625472,
+    4.544888196114398
+   ],
+   "seed": 3259695749,
+   "x": "NudgesDismissedCount",
+   "y": "DismissedPercentage"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Real-Time Automated Feedback on Reflective Writing in Software Engineering Education (supp' (Zenodo, doi 10.5281/zenodo.20635468): 'DismissedPercentage' is linear in 'NudgesDismissedCount' (R\u00b2 = 0.931 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20635468",
+   "held_out_r2": 0.6432,
+   "held_out_rows": 40,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-dcc22396eec9",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "c4030b0802c771d7.csv",
+   "doi": "10.5281/zenodo.20635468",
+   "form": "linear",
+   "params": [
+    -1.3122898453261587,
+    0.9984868863483525
+   ],
+   "seed": 3259695749,
+   "x": "NudgesSatisfiedCount",
+   "y": "NudgesSatisfiedAfterOpening"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Real-Time Automated Feedback on Reflective Writing in Software Engineering Education (supp' (Zenodo, doi 10.5281/zenodo.20635468): 'NudgesSatisfiedAfterOpening' is linear in 'NudgesSatisfiedCount' (R\u00b2 = 0.919 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
  }
 ]
