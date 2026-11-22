@@ -4134650,5 +4134650,32 @@
   "statement": "In 'Real-Time Automated Feedback on Reflective Writing in Software Engineering Education (supp' (Zenodo, doi 10.5281/zenodo.20635468): 'NudgesSatisfiedAfterOpening' is linear in 'NudgesSatisfiedCount' (R\u00b2 = 0.919 on the discovery half)",
   "status": "refuted",
   "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-a6f2a3a6ce8b",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "-e**2*m**2/(m + 1)**2 + 1 >= 1/2*(m/(sqrt(e) + 1) + 1)",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 7434",
+  "statement": "[physics: collision] Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 Mass Ratio Adjusted by Square Root of Coefficient of Restitution [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]
