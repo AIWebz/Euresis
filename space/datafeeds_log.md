@@ -5654,3 +5654,4 @@
 - 2026-11-22 04:46 FINDING (confirmed on held-out rows): In 'Counties being part of a logistics cluster in the US from 1998 to 2022' (Zenodo, doi 10.5281/zenodo.23993778): 'emp_expd' follows a power law in 'tot_emp_adj' (R² = 0.996 on the discovery half); held-out R² = 0.996 [emp-8ec6ccea9780]
 - 2026-11-22 04:46 data feeds: 34211 datasets analysed so far, 4970 confirmed findings
 - 2026-11-22 05:51 data feeds: online
+- 2026-11-22 05:52 data feeds: 34211 datasets analysed so far, 4970 confirmed findings
