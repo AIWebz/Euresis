@@ -4156463,5 +4156463,194 @@
   "statement": "Octal game 0.1011511 is completely solved: its Grundy values are periodic with pre-period 23 and period 20 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.16993947",
+   "held_out_r2": 0.9748,
+   "held_out_rows": 108,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e1066b0df8d0",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "39d89450efc2e8cd.csv",
+   "doi": "10.5281/zenodo.16993947",
+   "form": "linear",
+   "params": [
+    1.4175251338628068,
+    -0.004356373508498187
+   ],
+   "seed": 2042188881,
+   "x": "prev_air_temp",
+   "y": "prev_soil_water"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'The mediating role of fungal microbiome in the relation between crop health and soil nutri' (Zenodo, doi 10.5281/zenodo.16993947): 'prev_soil_water' is linear in 'prev_air_temp' (R\u00b2 = 0.975 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.16993947",
+   "held_out_r2": 0.9756,
+   "held_out_rows": 108,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-48757817eaf4",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "39d89450efc2e8cd.csv",
+   "doi": "10.5281/zenodo.16993947",
+   "form": "linear",
+   "params": [
+    1.21347051918539,
+    -0.00362420026770654
+   ],
+   "seed": 2042188881,
+   "x": "prev_soil_temp",
+   "y": "prev_soil_water"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'The mediating role of fungal microbiome in the relation between crop health and soil nutri' (Zenodo, doi 10.5281/zenodo.16993947): 'prev_soil_water' is linear in 'prev_soil_temp' (R\u00b2 = 0.976 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.1619515",
+   "held_out_r2": 0.945,
+   "held_out_rows": 160,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-022903cf74cf",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "a1f41c8a5ececc8e.csv",
+   "doi": "10.5061/dryad.1619515",
+   "form": "linear",
+   "params": [
+    93.7560278114798,
+    -0.9946559560289597
+   ],
+   "seed": 1329177487,
+   "x": "bare",
+   "y": "littercov"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Effects of forestry-driven changes to groundcover and soil moisture on amphibia' (Zenodo, doi 10.5061/dryad.1619515): 'littercov' is linear in 'bare' (R\u00b2 = 0.943 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.1619515",
+   "held_out_r2": 0.9811,
+   "held_out_rows": 87,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-51589976bcea",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "4e8143f913533e50.csv",
+   "doi": "10.5061/dryad.1619515",
+   "form": "linear",
+   "params": [
+    -59.83801054531571,
+    1.1990404171587241
+   ],
+   "seed": 1398117435,
+   "x": "litter",
+   "y": "pca1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Effects of forestry-driven changes to groundcover and soil moisture on amphibia' (Zenodo, doi 10.5061/dryad.1619515): 'pca1' is linear in 'litter' (R\u00b2 = 0.978 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.fttdz08zc",
+   "held_out_r2": -0.4475,
+   "held_out_rows": 50,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-292efb213857",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "2c0c4db4b0cee937.csv",
+   "doi": "10.5061/dryad.fttdz08zc",
+   "form": "linear",
+   "params": [
+    19.03931121995828,
+    0.9491312228044684
+   ],
+   "seed": 115497744,
+   "x": "G. biloba1",
+   "y": "R. chinensis1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Changes in nitrogen and phosphorus availability driven by secondary succession in temperat' (Zenodo, doi 10.5061/dryad.fttdz08zc): 'R. chinensis1' is linear in 'G. biloba1' (R\u00b2 = 0.932 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.fttdz08zc",
+   "held_out_r2": 0.7741,
+   "held_out_rows": 50,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d0bee65b3c4a",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "2c0c4db4b0cee937.csv",
+   "doi": "10.5061/dryad.fttdz08zc",
+   "form": "linear",
+   "params": [
+    110.49896145156886,
+    0.8772926154199875
+   ],
+   "seed": 115497744,
+   "x": "Q. acutissima1",
+   "y": "Q. variabilis1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Changes in nitrogen and phosphorus availability driven by secondary succession in temperat' (Zenodo, doi 10.5061/dryad.fttdz08zc): 'Q. variabilis1' is linear in 'Q. acutissima1' (R\u00b2 = 0.986 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.fttdz08zc",
+   "held_out_r2": -0.4407,
+   "held_out_rows": 50,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-fe7de5c1a6e3",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "2c0c4db4b0cee937.csv",
+   "doi": "10.5061/dryad.fttdz08zc",
+   "form": "linear",
+   "params": [
+    216.7963874244991,
+    0.7781142708425968
+   ],
+   "seed": 115497744,
+   "x": "Q. acutissima1",
+   "y": "Q. variabilis3"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Changes in nitrogen and phosphorus availability driven by secondary succession in temperat' (Zenodo, doi 10.5061/dryad.fttdz08zc): 'Q. variabilis3' is linear in 'Q. acutissima1' (R\u00b2 = 0.943 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
  }
 ]
