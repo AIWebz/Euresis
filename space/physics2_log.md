@@ -8514,3 +8514,4 @@
 - 2026-11-23 12:35 round 7740: velocity addition
 - 2026-11-23 12:36 round 7741: Compton scattering
 - 2026-11-23 12:37 round 7742: Cournot duopoly
+- 2026-11-23 12:40 round 7743: insurance and risk
