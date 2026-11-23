@@ -4189914,5 +4189914,383 @@
   "statement": "Octal game 0.1021223 is completely solved: its Grundy values are periodic with pre-period 31 and period 10 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20302767",
+   "held_out_r2": -Infinity,
+   "held_out_rows": 252,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-1848e2b016d3",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "595b719b64c4f8cc.csv",
+   "doi": "10.5281/zenodo.20302767",
+   "form": "power law",
+   "params": [
+    0.06299043759828958,
+    1.026723430254366
+   ],
+   "seed": 2285807616,
+   "x": "Transpiration_grass_inter",
+   "y": "Transpiration_grass_subcanopy"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Transpiration, climate, soil moisture data' (Zenodo, doi 10.5281/zenodo.20302767): 'Transpiration_grass_subcanopy' follows a power law in 'Transpiration_grass_inter' (R\u00b2 = 0.983 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20302767",
+   "held_out_r2": 0.989,
+   "held_out_rows": 332,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-517de35e365e",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3973ed6a9332a95a.csv",
+   "doi": "10.5281/zenodo.20302767",
+   "form": "power law",
+   "params": [
+    3.170555090442273,
+    0.9173295594495177
+   ],
+   "seed": 3672912712,
+   "x": "A_subcanopy_grass_MJm2",
+   "y": "A_subcanopy_grass_Wm2"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Transpiration, climate, soil moisture data' (Zenodo, doi 10.5281/zenodo.20302767): 'A_subcanopy_grass_Wm2' follows a power law in 'A_subcanopy_grass_MJm2' (R\u00b2 = 0.991 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20302767",
+   "held_out_r2": 0.9776,
+   "held_out_rows": 332,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-667b9326d2be",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3973ed6a9332a95a.csv",
+   "doi": "10.5281/zenodo.20302767",
+   "form": "linear",
+   "params": [
+    -5.302174326014926,
+    25.432814664524162
+   ],
+   "seed": 3672912712,
+   "x": "A_subcanopy_grass_MJm2",
+   "y": "A_open_grass_Wm2"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Transpiration, climate, soil moisture data' (Zenodo, doi 10.5281/zenodo.20302767): 'A_open_grass_Wm2' is linear in 'A_subcanopy_grass_MJm2' (R\u00b2 = 0.980 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20302767",
+   "held_out_r2": 0.9891,
+   "held_out_rows": 332,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-7c40e89f7a34",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3973ed6a9332a95a.csv",
+   "doi": "10.5281/zenodo.20302767",
+   "form": "linear",
+   "params": [
+    -0.5208946594349476,
+    0.05773843283808265
+   ],
+   "seed": 3672912712,
+   "x": "A_subcanopy_grass_Wm2",
+   "y": "A_open_grass_MJm2"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Transpiration, climate, soil moisture data' (Zenodo, doi 10.5281/zenodo.20302767): 'A_open_grass_MJm2' is linear in 'A_subcanopy_grass_Wm2' (R\u00b2 = 0.990 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20302767",
+   "held_out_r2": 0.9041,
+   "held_out_rows": 332,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-dba1ca0d8602",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3973ed6a9332a95a.csv",
+   "doi": "10.5281/zenodo.20302767",
+   "form": "power law",
+   "params": [
+    0.052502807487040795,
+    0.9585629917388004
+   ],
+   "seed": 3672912712,
+   "x": "RWC.tree.complete",
+   "y": "RWC.open.complete"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Transpiration, climate, soil moisture data' (Zenodo, doi 10.5281/zenodo.20302767): 'RWC.open.complete' follows a power law in 'RWC.tree.complete' (R\u00b2 = 0.920 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20302767",
+   "held_out_r2": 0.9065,
+   "held_out_rows": 332,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-7a7dd67c49a5",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3973ed6a9332a95a.csv",
+   "doi": "10.5281/zenodo.20302767",
+   "form": "exponential",
+   "params": [
+    0.8464245257614817,
+    0.023906611682766865
+   ],
+   "seed": 3672912712,
+   "x": "RWC.tree.complete",
+   "y": "RWC.open10"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Transpiration, climate, soil moisture data' (Zenodo, doi 10.5281/zenodo.20302767): 'RWC.open10' grows exponentially in 'RWC.tree.complete' (R\u00b2 = 0.913 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20302767",
+   "held_out_r2": 0.8908,
+   "held_out_rows": 332,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-0e711c0d9b61",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3973ed6a9332a95a.csv",
+   "doi": "10.5281/zenodo.20302767",
+   "form": "power law",
+   "params": [
+    2.773397290518672,
+    0.5011223645545162
+   ],
+   "seed": 3672912712,
+   "x": "RWC.tree10",
+   "y": "RWC.open.complete"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Transpiration, climate, soil moisture data' (Zenodo, doi 10.5281/zenodo.20302767): 'RWC.open.complete' follows a power law in 'RWC.tree10' (R\u00b2 = 0.909 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20302767",
+   "held_out_r2": 0.9189,
+   "held_out_rows": 332,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d6b68727d6c9",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3973ed6a9332a95a.csv",
+   "doi": "10.5281/zenodo.20302767",
+   "form": "power law",
+   "params": [
+    0.21206836691233727,
+    0.8691694977816368
+   ],
+   "seed": 3672912712,
+   "x": "RWC.tree10",
+   "y": "RWC.open10"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Transpiration, climate, soil moisture data' (Zenodo, doi 10.5281/zenodo.20302767): 'RWC.open10' follows a power law in 'RWC.tree10' (R\u00b2 = 0.925 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20302767",
+   "held_out_r2": 0.9786,
+   "held_out_rows": 337,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-0b51ffa9d581",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "5becc34f9410521a.csv",
+   "doi": "10.5281/zenodo.20302767",
+   "form": "linear",
+   "params": [
+    -5.252093950656735,
+    25.432226854306354
+   ],
+   "seed": 2396295095,
+   "x": "A_subcanopy_grass_MJm2",
+   "y": "A_inter_grass_Wm2"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Transpiration, climate, soil moisture data' (Zenodo, doi 10.5281/zenodo.20302767): 'A_inter_grass_Wm2' is linear in 'A_subcanopy_grass_MJm2' (R\u00b2 = 0.979 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20302767",
+   "held_out_r2": 0.9904,
+   "held_out_rows": 337,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a0a097697338",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "5becc34f9410521a.csv",
+   "doi": "10.5281/zenodo.20302767",
+   "form": "linear",
+   "params": [
+    -0.5099352780527578,
+    0.057576022750012196
+   ],
+   "seed": 2396295095,
+   "x": "A_subcanopy_grass_Wm2",
+   "y": "A_inter_grass_MJm2"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Transpiration, climate, soil moisture data' (Zenodo, doi 10.5281/zenodo.20302767): 'A_inter_grass_MJm2' is linear in 'A_subcanopy_grass_Wm2' (R\u00b2 = 0.989 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20302767",
+   "held_out_r2": 0.9046,
+   "held_out_rows": 337,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-71cc92720f5c",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "5becc34f9410521a.csv",
+   "doi": "10.5281/zenodo.20302767",
+   "form": "power law",
+   "params": [
+    0.12703341984412342,
+    0.9400846745898486
+   ],
+   "seed": 2396295095,
+   "x": "RWC.subcanopy.complete",
+   "y": "RWC.inter.complete"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Transpiration, climate, soil moisture data' (Zenodo, doi 10.5281/zenodo.20302767): 'RWC.inter.complete' follows a power law in 'RWC.subcanopy.complete' (R\u00b2 = 0.926 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20302767",
+   "held_out_r2": 0.9038,
+   "held_out_rows": 337,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-936ebb19272a",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "5becc34f9410521a.csv",
+   "doi": "10.5281/zenodo.20302767",
+   "form": "exponential",
+   "params": [
+    0.8560106675270148,
+    0.023737399690358617
+   ],
+   "seed": 2396295095,
+   "x": "RWC.subcanopy.complete",
+   "y": "RWC.inter10"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Transpiration, climate, soil moisture data' (Zenodo, doi 10.5281/zenodo.20302767): 'RWC.inter10' grows exponentially in 'RWC.subcanopy.complete' (R\u00b2 = 0.924 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20302767",
+   "held_out_r2": 0.8929,
+   "held_out_rows": 337,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-08e2d18a21d1",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "5becc34f9410521a.csv",
+   "doi": "10.5281/zenodo.20302767",
+   "form": "power law",
+   "params": [
+    2.800992491311673,
+    0.48932223856340323
+   ],
+   "seed": 2396295095,
+   "x": "RWC.subcanopy10",
+   "y": "RWC.inter.complete"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Transpiration, climate, soil moisture data' (Zenodo, doi 10.5281/zenodo.20302767): 'RWC.inter.complete' follows a power law in 'RWC.subcanopy10' (R\u00b2 = 0.913 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20302767",
+   "held_out_r2": 0.9156,
+   "held_out_rows": 337,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5652e79e3cea",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "5becc34f9410521a.csv",
+   "doi": "10.5281/zenodo.20302767",
+   "form": "power law",
+   "params": [
+    0.2272294653634348,
+    0.862653518757441
+   ],
+   "seed": 2396295095,
+   "x": "RWC.subcanopy10",
+   "y": "RWC.inter10"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Transpiration, climate, soil moisture data' (Zenodo, doi 10.5281/zenodo.20302767): 'RWC.inter10' follows a power law in 'RWC.subcanopy10' (R\u00b2 = 0.935 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
