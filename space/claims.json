@@ -4263961,5 +4263961,275 @@
   "statement": "In 'Data from: Male serrate-legged treefrogs adjust competition strategies according to visual' (Zenodo, doi 10.5061/dryad.69p8cz8zx): 'agg' is linear in 'total' (R\u00b2 = 0.906 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-e57237505300",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "e**2*m**2/(e**2*m**2 + (1 - e**2)*(m + 1)) + 1 >= 1/2*(e*(m + 1)/(m**2 + 1) + 1)",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 7890",
+  "statement": "[physics: collision] Fraction of Kinetic Energy Retained by Target Relative to Projectile [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 Coefficient of Restitution Adjusted by Mass Ratio [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (5.09e-14, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-b1a33aad222b",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'Mass Ratio Adjusted by Restitution [model-proposed; physical meaning unverified]'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "m/(e**2 + 1) + 1 >= 1/2*(e*(m + 1)/(m**2 + 1) + 1)",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 7890",
+  "statement": "[physics: collision] Mass Ratio Adjusted by Square of Coefficient of Restitution [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 Coefficient of Restitution Adjusted by Mass Ratio [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (9.12e-05, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-4e0f8deeb59f",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "m/(sqrt(e) + 1) + 1 >= 1/2*(e*(m + 1)/(m**2 + 1) + 1)",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 7890",
+  "statement": "[physics: collision] Mass Ratio Adjusted by Square Root of Coefficient of Restitution [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 Coefficient of Restitution Adjusted by Mass Ratio [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (9.12e-05, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-ffe9ef03c039",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "e*(m + 1)/(m**2 + 1) + 1 >= 2*(m*(e + 1)/(m + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 7890",
+  "statement": "[physics: collision] Coefficient of Restitution Adjusted by Mass Ratio [model-proposed; physical meaning unverified] \u2265 2 \u00d7 target speed / initial speed   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 9.12e-05))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-1e1b353a122f",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "e*(m + 1)/(m**2 + 1) + 1 >= 1*((e + 1)/(m + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 7890",
+  "statement": "[physics: collision] Coefficient of Restitution Adjusted by Mass Ratio [model-proposed; physical meaning unverified] \u2265 1 \u00d7 momentum transferred / initial momentum   on m < 1, e < 1 (tight only at the edge of the domain, near (3.45e-17, 0.000117))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-eafbfddc1362",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'momentum transferred / initial momentum'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "e*(m + 1)/(m**2 + 1) + 1 >= 1*((1 - e**2)/(m + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 7890",
+  "statement": "[physics: collision] Coefficient of Restitution Adjusted by Mass Ratio [model-proposed; physical meaning unverified] \u2265 1 \u00d7 fraction of kinetic energy lost   on m < 1, e < 1 (tight only at the edge of the domain, near (1.03e-14, 2.26e-14))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-1159a9b603c3",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "e*(m + 1)/(m**2 + 1) + 1 >= 2*(m*(e + 1)**2/(m + 1)**2)",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 7890",
+  "statement": "[physics: collision] Coefficient of Restitution Adjusted by Mass Ratio [model-proposed; physical meaning unverified] \u2265 2 \u00d7 fraction of kinetic energy given to the target   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-cdb1a5552d25",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'target speed / initial speed'",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "e*(m + 1)/(m**2 + 1) + 1 >= 2*(m/(m + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 7890",
+  "statement": "[physics: collision] Coefficient of Restitution Adjusted by Mass Ratio [model-proposed; physical meaning unverified] \u2265 2 \u00d7 speed of the centre of mass / initial speed   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 3.02e-15))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-1a753fb11014",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "e*(m + 1)/(m**2 + 1) + 1 >= 2*(e)",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 7890",
+  "statement": "[physics: collision] Coefficient of Restitution Adjusted by Mass Ratio [model-proposed; physical meaning unverified] \u2265 2 \u00d7 relative speed after / relative speed before   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "m < 1",
+    "e < 1"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-cec506e16a94",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "m < 1",
+    "e < 1"
+   ],
+   "claim": "e*(m + 1)/(m**2 + 1) + 1 >= 2*(e*(m + 1)/(e*m + 1))",
+   "symbols": [
+    "m",
+    "e"
+   ]
+  },
+  "source": "physics_discover2 round 7890",
+  "statement": "[physics: collision] Coefficient of Restitution Adjusted by Mass Ratio [model-proposed; physical meaning unverified] \u2265 2 \u00d7 velocity ratio of target to projectile after collision [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (1, 1))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]
