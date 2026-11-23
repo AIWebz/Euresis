@@ -31,7 +31,8 @@
    "Invariant Mass Ratio of the Two Products [model-proposed; physical meaning unverified]": "sqrt((1 - (a + b)**2)**2 + (a**2 - b**2 + 1)**2)/sqrt((1 - (a + b)**2)**2 + (-a**2 + b**2 + 1)**2)",
    "Center of Mass Energy [model-proposed; physical meaning unverified]": "sqrt(-(a + b)**2 + (-a**2 + b**2 + 1)**2 + (a**2 - b**2 + 1)**2 + 1)",
    "Lorentz Factor of the System [model-proposed; physical meaning unverified]": "sqrt((1 - (a - b)**2)*(1 - (a + b)**2)/4 + (-a**2 + b**2 + 1)**2 + (a**2 - b**2 + 1)**2)",
-   "Invariant Mass Ratio of Product 1 to Total [model-proposed; physical meaning unverified]": "sqrt(-(1 - (a - b)**2)*(1 - (a + b)**2)/4 + (a**2 - b**2 + 1)**2)/sqrt(-(1 - (a - b)**2)*(1 - (a + b)**2)/4 + (-a**2 + b**2 + 1)**2 + (a**2 - b**2 + 1)**2)"
+   "Invariant Mass Ratio of Product 1 to Total [model-proposed; physical meaning unverified]": "sqrt(-(1 - (a - b)**2)*(1 - (a + b)**2)/4 + (a**2 - b**2 + 1)**2)/sqrt(-(1 - (a - b)**2)*(1 - (a + b)**2)/4 + (-a**2 + b**2 + 1)**2 + (a**2 - b**2 + 1)**2)",
+   "Invariant Mass Ratio of the System to Product 1 [model-proposed; physical meaning unverified]": "sqrt((1 - (a + b)**2)**2 + (a**2 - b**2 + 1)**2)/sqrt((1 - (a + b)**2)*((a - b)**2 - 1)/4 + (a**2 - b**2 + 1)**2)"
   },
   "collision": {
    "target speed / initial speed": "(1 + e)*m/(1 + m)",
@@ -98,7 +99,8 @@
    "Kinetic Energy Ratio of Target to System Adjusted by Mass [model-proposed; physical meaning unverified]": "e**2*m**2/(e**2*m**2/(m + 1) + (1 - e**2)*(m + 1) + 1)",
    "Square Root of Kinetic Energy Ratio of Target to Projectile [model-proposed; physical meaning unverified]": "sqrt(e**2*m**2/(m + 1)**2 + e**2*m/(2 - e**2))",
    "Mass Ratio Adjusted by Square Root of Coefficient of Restitution [model-proposed; physical meaning unverified]": "m/(sqrt(e) + 1) + 1",
-   "Mass Ratio Squared Plus Reciprocal of Coefficient of Restitution [model-proposed; physical meaning unverified]": "m**2 + 1/e"
+   "Mass Ratio Squared Plus Reciprocal of Coefficient of Restitution [model-proposed; physical meaning unverified]": "m**2 + 1/e",
+   "Coefficient of Restitution Adjusted by Mass Ratio [model-proposed; physical meaning unverified]": "e*(m + 1)/(m**2 + 1) + 1"
   },
   "driven oscillator": {
    "amplitude / static deflection": "1/sqrt((1 - r**2)**2 + (2*z*r)**2)",
@@ -111024,6 +111026,156 @@
    "family": "collision",
    "expr": "m/(sqrt(e) + 1) + 1",
    "why": "affine combination of known quantities (target speed / initial speed, Mass Ratio Adjusted by Square Root of Coefficient of Restitution [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt((1 - r**2)**2 + (2*z*r)**2)/sqrt(4*z**2 + 1)",
+   "why": "affine combination of known quantities (amplitude / static deflection, Mechanical Impedance Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt((1 - r**2)**2 + (2*z*r)**2)/sqrt(4*z**2 + 1)",
+   "why": "affine combination of known quantities (amplitude / static deflection, Mechanical Impedance Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt((1 + (2*z*r)**2)/((1 - r**2)**2 + (2*z*r)**2))",
+   "why": "affine combination of known quantities (amplitude / static deflection, transmissibility)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(4*r**2*z**2 + 1)/sqrt(4*z**2 + 1)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 + u)/(1 - u)) * sqrt((1 + v)/(1 - v)) / sqrt((1 + (u + v)/(1 + u*v)) / (1 - (u + v)/(1 + u*v",
+   "why": "affine combination of known quantities (composed speed / c)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 - u**2)*(1 - v**2) + (u + v)**2/(u*v + 1)**2) / (u*v + 1)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "1 - c/(c*x + 1)",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "(-c1/3 + c2/3 + 1/3)/(c1/3 - c2/3 + 1/3)",
+   "why": "affine combination of known quantities (output of firm 1, Cournot Price Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "((-2*c1/3 + c2/3 - (1 - c1)**2/4 + 1/3)**2)/((c1/3 - 2*c2/3 - (1 - c2)**2/4 + 1/3)**2)",
+   "why": "affine combination of known quantities (output of firm 1, Output Deviation Index [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "((-c1 - c2 + 1)**2)/(((-2*c1 + c2 + 1)*(c1 - 2*c2 + 1)))",
+   "why": "affine combination of known quantities (output of firm 1, Price Elasticity of Demand [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "((1 - 2*c1 + c2)/3)/((1 - 2*c2 + c1)/3)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "sqrt(-L*p + 1)/(-p*sqrt(1 - L) + p + 1)",
+   "why": "affine combination of known quantities (expected wealth, Risk Adjustment Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "sqrt(-L*p + 1)/(-p*sqrt(1 - L) + p + 1)",
+   "why": "affine combination of known quantities (expected wealth, Risk Adjustment Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "1 - (p*sqrt(1 - L) + 1 - p)**2",
+   "why": "affine combination of known quantities (expected wealth, certainty equivalent)"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "L*p/(-2*sqrt(1 - L) + sqrt(-L*p + 1) + 1)",
+   "why": "affine combination of known quantities (expected wealth, Relative Risk Sensitivity Index [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(-2*r**3/3 + r**2*v + 2/3)/(4*r**3/3 + r**2*v - r**2 + 1/3)",
+   "why": "affine combination of known quantities (expected revenue, Welfare Reserve Efficiency with Seller Value [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "sqrt((1 - (a + b)**2)*(1 - (a - b)**2))/(1 + a**2 - b**2)",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), speed of product 1 / c)"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "sqrt((1 - (a + b)**2)*(1 - (a - b)**2))/(1 - a**2 + b**2)",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), speed of product 2 / c)"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "sqrt(-(1 - (a - b)**2)*(1 - (a + b)**2)/4 + (a**2 - b**2 + 1)**2)/sqrt(-(1 - (a - b)**2)*(1 - (a + b",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2*m**2/(e**2*m**2/(m + 1)**2 + m**2 + 1) + 1",
+   "why": "affine combination of known quantities (target speed / initial speed, Normalized Kinetic Energy Transfer Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "m**2*(1 - e**2)/(m + 1)**2 + m*(1 - e**2)/(m + 1) - (1 - e**2)/(m + 1) + 1",
+   "why": "affine combination of known quantities (target speed / initial speed, Kinetic Energy Ratio of the Projectile to the Target [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "m/(sqrt(e) + 1) + 1",
+   "why": "affine combination of known quantities (target speed / initial speed, Mass Ratio Adjusted by Square Root of Coefficient of Restitution [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt((1 - r**2)**2 + (2*z*r)**2)/sqrt(4*z**2 + 1)",
+   "why": "affine combination of known quantities (amplitude / static deflection, Mechanical Impedance Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "r**2/sqrt((1 - r**2)**2 + (2*z*r)**2)",
+   "why": "affine combination of known quantities (amplitude / static deflection, acceleration amplitude / (\u03c90\u00b2 \u00d7 static deflection))"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(1 + (2*z*r)**2)/sqrt((1 - r**2)**2 + (2*z*r)**2)",
+   "why": "affine combination of known quantities (amplitude / static deflection, transmissibility)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(1 + (2*z*r)**2)/sqrt((1 - r**2)**2 + (2*z*r)**2)",
+   "why": "affine combination of known quantities (amplitude / static deflection, transmissibility)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 + u)/(1 - u)) * sqrt((1 + v)/(1 - v)) / sqrt((1 + (u + v)/(1 + u*v)) / (1 - (u + v)/(1 + u*v",
+   "why": "affine combination of known quantities (composed speed / c)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 - u**2)*(1 - v**2) + (u + v)**2/(u*v + 1)**2) / (u*v + 1)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "1 - c/(c*x + 1)",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "((-2*c1 + c2 + 1)**2 + (c1 - 2*c2 + 1)**2)/((1 - c1)**2 + (1 - c2)**2)",
+   "why": "affine combination of known quantities (output of firm 1, Hirshleifer Index [model-proposed; physical meaning unverified])"
   }
  ],
  "tried": [
@@ -121790,7 +121942,55 @@
   "collision|Mass Ratio Squared Plus Reciprocal of Coefficient of Restitution [model-proposed; physical meaning unverified]|Kinetic Energy Ratio of Target to Projectile Relative to System [model-proposed; physical meaning unverified]",
   "collision|Mass Ratio Squared Plus Reciprocal of Coefficient of Restitution [model-proposed; physical meaning unverified]|Kinetic Energy Ratio of Target to System Adjusted by Mass [model-proposed; physical meaning unverified]",
   "collision|Mass Ratio Squared Plus Reciprocal of Coefficient of Restitution [model-proposed; physical meaning unverified]|Square Root of Kinetic Energy Ratio of Target to Projectile [model-proposed; physical meaning unverified]",
-  "collision|Mass Ratio Squared Plus Reciprocal of Coefficient of Restitution [model-proposed; physical meaning unverified]|Mass Ratio Adjusted by Square Root of Coefficient of Restitution [model-proposed; physical meaning unverified]"
+  "collision|Mass Ratio Squared Plus Reciprocal of Coefficient of Restitution [model-proposed; physical meaning unverified]|Mass Ratio Adjusted by Square Root of Coefficient of Restitution [model-proposed; physical meaning unverified]",
+  "two-body decay|momentum of each product / (Mc)|Invariant Mass Ratio of the System to Product 1 [model-proposed; physical meaning unverified]",
+  "two-body decay|energy of product 1 / (Mc\u00b2)|Invariant Mass Ratio of the System to Product 1 [model-proposed; physical meaning unverified]",
+  "two-body decay|energy of product 2 / (Mc\u00b2)|Invariant Mass Ratio of the System to Product 1 [model-proposed; physical meaning unverified]",
+  "two-body decay|kinetic energy released Q / (Mc\u00b2)|Invariant Mass Ratio of the System to Product 1 [model-proposed; physical meaning unverified]",
+  "two-body decay|kinetic energy of product 1 / (Mc\u00b2)|Invariant Mass Ratio of the System to Product 1 [model-proposed; physical meaning unverified]",
+  "two-body decay|speed of product 1 / c|Invariant Mass Ratio of the System to Product 1 [model-proposed; physical meaning unverified]",
+  "two-body decay|speed of product 2 / c|Invariant Mass Ratio of the System to Product 1 [model-proposed; physical meaning unverified]",
+  "two-body decay|Lorentz factor of product 1|Invariant Mass Ratio of the System to Product 1 [model-proposed; physical meaning unverified]",
+  "two-body decay|Invariant mass squared of the two products [model-proposed; physical meaning unverified]|Invariant Mass Ratio of the System to Product 1 [model-proposed; physical meaning unverified]",
+  "two-body decay|Ratio of kinetic energies of product 1 to product 2 [model-proposed; physical meaning unverified]|Invariant Mass Ratio of the System to Product 1 [model-proposed; physical meaning unverified]",
+  "two-body decay|Total kinetic energy of the two products / (Mc\u00b2) [model-proposed; physical meaning unverified]|Invariant Mass Ratio of the System to Product 1 [model-proposed; physical meaning unverified]",
+  "two-body decay|Ratio of kinetic energy of product 1 to total kinetic energy [model-proposed; physical meaning unverified]|Invariant Mass Ratio of the System to Product 1 [model-proposed; physical meaning unverified]",
+  "two-body decay|Invariant mass squared of the system [model-proposed; physical meaning unverified]|Invariant Mass Ratio of the System to Product 1 [model-proposed; physical meaning unverified]",
+  "two-body decay|Relative velocity squared of products [model-proposed; physical meaning unverified]|Invariant Mass Ratio of the System to Product 1 [model-proposed; physical meaning unverified]",
+  "two-body decay|Invariant mass of product 1 [model-proposed; physical meaning unverified]|Invariant Mass Ratio of the System to Product 1 [model-proposed; physical meaning unverified]",
+  "two-body decay|Invariant mass of product 2 [model-proposed; physical meaning unverified]|Invariant Mass Ratio of the System to Product 1 [model-proposed; physical meaning unverified]",
+  "two-body decay|Gamma factor of product 1 [model-proposed; physical meaning unverified]|Invariant Mass Ratio of the System to Product 1 [model-proposed; physical meaning unverified]",
+  "two-body decay|Ratio of kinetic energy of product 1 to product 2 [model-proposed; physical meaning unverified]|Invariant Mass Ratio of the System to Product 1 [model-proposed; physical meaning unverified]",
+  "two-body decay|Boost factor of the system [model-proposed; physical meaning unverified]|Invariant Mass Ratio of the System to Product 1 [model-proposed; physical meaning unverified]",
+  "two-body decay|Kinetic Energy Ratio of Products [model-proposed; physical meaning unverified]|Invariant Mass Ratio of the System to Product 1 [model-proposed; physical meaning unverified]",
+  "two-body decay|Lorentz Factor Ratio of Products [model-proposed; physical meaning unverified]|Invariant Mass Ratio of the System to Product 1 [model-proposed; physical meaning unverified]",
+  "two-body decay|Invariant Mass Ratio of Products [model-proposed; physical meaning unverified]|Invariant Mass Ratio of the System to Product 1 [model-proposed; physical meaning unverified]",
+  "two-body decay|Relative Kinetic Energy Ratio [model-proposed; physical meaning unverified]|Invariant Mass Ratio of the System to Product 1 [model-proposed; physical meaning unverified]",
+  "two-body decay|Relativistic Doppler Shift Factor for Product 1 [model-proposed; physical meaning unverified]|Invariant Mass Ratio of the System to Product 1 [model-proposed; physical meaning unverified]",
+  "collision|target speed / initial speed|Coefficient of Restitution Adjusted by Mass Ratio [model-proposed; physical meaning unverified]",
+  "collision|momentum transferred / initial momentum|Coefficient of Restitution Adjusted by Mass Ratio [model-proposed; physical meaning unverified]",
+  "collision|fraction of kinetic energy lost|Coefficient of Restitution Adjusted by Mass Ratio [model-proposed; physical meaning unverified]",
+  "collision|fraction of kinetic energy given to the target|Coefficient of Restitution Adjusted by Mass Ratio [model-proposed; physical meaning unverified]",
+  "collision|speed of the centre of mass / initial speed|Coefficient of Restitution Adjusted by Mass Ratio [model-proposed; physical meaning unverified]",
+  "collision|relative speed after / relative speed before|Coefficient of Restitution Adjusted by Mass Ratio [model-proposed; physical meaning unverified]",
+  "collision|velocity ratio of target to projectile after collision [model-proposed; physical meaning unverified]|Coefficient of Restitution Adjusted by Mass Ratio [model-proposed; physical meaning unverified]",
+  "collision|velocity ratio of projectile to target after collision [model-proposed; physical meaning unverified]|Coefficient of Restitution Adjusted by Mass Ratio [model-proposed; physical meaning unverified]",
+  "collision|relative velocity after collision divided by initial velocity of projectile [model-proposed; physical meaning unverified]|Coefficient of Restitution Adjusted by Mass Ratio [model-proposed; physical meaning unverified]",
+  "collision|Fraction of kinetic energy retained by projectile [model-proposed; physical meaning unverified]|Coefficient of Restitution Adjusted by Mass Ratio [model-proposed; physical meaning unverified]",
+  "collision|Fraction of kinetic energy retained by target [model-proposed; physical meaning unverified]|Coefficient of Restitution Adjusted by Mass Ratio [model-proposed; physical meaning unverified]",
+  "collision|Fraction of kinetic energy retained by the system [model-proposed; physical meaning unverified]|Coefficient of Restitution Adjusted by Mass Ratio [model-proposed; physical meaning unverified]",
+  "collision|Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified]|Coefficient of Restitution Adjusted by Mass Ratio [model-proposed; physical meaning unverified]",
+  "collision|Fraction of kinetic energy transferred to the target [model-proposed; physical meaning unverified]|Coefficient of Restitution Adjusted by Mass Ratio [model-proposed; physical meaning unverified]",
+  "collision|Fraction of kinetic energy retained by the target [model-proposed; physical meaning unverified]|Coefficient of Restitution Adjusted by Mass Ratio [model-proposed; physical meaning unverified]",
+  "collision|Fraction of kinetic energy retained by the projectile relative to initial kineti [model-proposed; physical meaning unverified]|Coefficient of Restitution Adjusted by Mass Ratio [model-proposed; physical meaning unverified]",
+  "collision|Fraction of kinetic energy retained by projectile relative to initial kinetic en [model-proposed; physical meaning unverified]|Coefficient of Restitution Adjusted by Mass Ratio [model-proposed; physical meaning unverified]",
+  "collision|Fraction of kinetic energy transferred to the target relative to initial kinetic [model-proposed; physical meaning unverified]|Coefficient of Restitution Adjusted by Mass Ratio [model-proposed; physical meaning unverified]",
+  "collision|Fraction of kinetic energy retained by the system relative to initial kinetic en [model-proposed; physical meaning unverified]|Coefficient of Restitution Adjusted by Mass Ratio [model-proposed; physical meaning unverified]",
+  "collision|Kinetic energy ratio after collision [model-proposed; physical meaning unverified]|Coefficient of Restitution Adjusted by Mass Ratio [model-proposed; physical meaning unverified]",
+  "collision|Ratio of kinetic energy transferred to the target over initial kinetic energy [model-proposed; physical meaning unverified]|Coefficient of Restitution Adjusted by Mass Ratio [model-proposed; physical meaning unverified]",
+  "collision|Fraction of kinetic energy retained by projectile relative to target [model-proposed; physical meaning unverified]|Coefficient of Restitution Adjusted by Mass Ratio [model-proposed; physical meaning unverified]",
+  "collision|Kinetic energy ratio of the target to the projectile after collision [model-proposed; physical meaning unverified]|Coefficient of Restitution Adjusted by Mass Ratio [model-proposed; physical meaning unverified]",
+  "collision|Kinetic energy ratio of the target to the system after collision [model-proposed; physical meaning unverified]|Coefficient of Restitution Adjusted by Mass Ratio [model-proposed; physical meaning unverified]"
  ],
  "edges": [
   {
@@ -138346,9 +138546,27 @@
    "f": "Mass Ratio Squared Plus Reciprocal of Coefficient of Restitution [model-proposed; physical meaning unverified]",
    "g": "Kinetic Energy Ratio of Target to Projectile Relative to System [model-proposed; physical meaning unverified]",
    "k": "1"
+  },
+  {
+   "family": "two-body decay",
+   "f": "Relativistic Doppler Shift Factor for Product 1 [model-proposed; physical meaning unverified]",
+   "g": "Invariant Mass Ratio of the System to Product 1 [model-proposed; physical meaning unverified]",
+   "k": "1"
+  },
+  {
+   "family": "collision",
+   "f": "momentum transferred / initial momentum",
+   "g": "Coefficient of Restitution Adjusted by Mass Ratio [model-proposed; physical meaning unverified]",
+   "k": "1/2"
+  },
+  {
+   "family": "collision",
+   "f": "Fraction of kinetic energy retained by the projectile [model-proposed; physical meaning unverified]",
+   "g": "Coefficient of Restitution Adjusted by Mass Ratio [model-proposed; physical meaning unverified]",
+   "k": "3/8"
   }
  ],
- "rounds": 7866,
+ "rounds": 7878,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",
