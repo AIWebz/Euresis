@@ -4193061,5 +4193061,545 @@
   "statement": "Octal game 0.1021614 is completely solved: its Grundy values are periodic with pre-period 4 and period 18 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.5863745",
+   "held_out_r2": 0.9163,
+   "held_out_rows": 594,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-bb0b4243375c",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "50a88f07be6e7ba3.csv",
+   "doi": "10.5281/zenodo.5863745",
+   "form": "power law",
+   "params": [
+    -0.39476504643415045,
+    0.9387485525423012
+   ],
+   "seed": 3580816030,
+   "x": "Mean",
+   "y": "Min"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Comparative genomics of eight aphid subfamilies reveals variable relationships between hos' (Zenodo, doi 10.5281/zenodo.5863745): 'Min' follows a power law in 'Mean' (R\u00b2 = 0.922 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.5863745",
+   "held_out_r2": 0.8446,
+   "held_out_rows": 594,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-0191661a5e07",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "50a88f07be6e7ba3.csv",
+   "doi": "10.5281/zenodo.5863745",
+   "form": "power law",
+   "params": [
+    0.4730996181019121,
+    1.0236024243154778
+   ],
+   "seed": 3580816030,
+   "x": "Mean",
+   "y": "Max"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Comparative genomics of eight aphid subfamilies reveals variable relationships between hos' (Zenodo, doi 10.5281/zenodo.5863745): 'Max' follows a power law in 'Mean' (R\u00b2 = 0.911 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.hx3ffbggp",
+   "held_out_r2": 0.9191,
+   "held_out_rows": 535,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-850076850feb",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "dfa9fc4c901c3151.csv",
+   "doi": "10.5061/dryad.hx3ffbggp",
+   "form": "power law",
+   "params": [
+    -0.8196522593477895,
+    1.011696632244435
+   ],
+   "seed": 3315870783,
+   "x": "svl",
+   "y": "thigh.L"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset for: The radiation continuum and the evolution of frog diversity' (Zenodo, doi 10.5061/dryad.hx3ffbggp): 'thigh.L' follows a power law in 'svl' (R\u00b2 = 0.905 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.hx3ffbggp",
+   "held_out_r2": 0.9117,
+   "held_out_rows": 535,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a7c74f1a496c",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "dfa9fc4c901c3151.csv",
+   "doi": "10.5061/dryad.hx3ffbggp",
+   "form": "power law",
+   "params": [
+    -1.1194231481448402,
+    0.9269405404233503
+   ],
+   "seed": 3315870783,
+   "x": "svl",
+   "y": "tarsus.L"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset for: The radiation continuum and the evolution of frog diversity' (Zenodo, doi 10.5061/dryad.hx3ffbggp): 'tarsus.L' follows a power law in 'svl' (R\u00b2 = 0.902 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.hx3ffbggp",
+   "held_out_r2": 0.919,
+   "held_out_rows": 535,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5fb71fedffe9",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "dfa9fc4c901c3151.csv",
+   "doi": "10.5061/dryad.hx3ffbggp",
+   "form": "power law",
+   "params": [
+    -1.02719473062587,
+    1.0643118908086548
+   ],
+   "seed": 3315870783,
+   "x": "svl",
+   "y": "foot.L"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset for: The radiation continuum and the evolution of frog diversity' (Zenodo, doi 10.5061/dryad.hx3ffbggp): 'foot.L' follows a power law in 'svl' (R\u00b2 = 0.908 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.hx3ffbggp",
+   "held_out_r2": 0.9294,
+   "held_out_rows": 535,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-cbbbf5f1a11a",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "dfa9fc4c901c3151.csv",
+   "doi": "10.5061/dryad.hx3ffbggp",
+   "form": "power law",
+   "params": [
+    -1.3283579359128714,
+    1.0649266491870333
+   ],
+   "seed": 3315870783,
+   "x": "svl",
+   "y": "head.W"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset for: The radiation continuum and the evolution of frog diversity' (Zenodo, doi 10.5061/dryad.hx3ffbggp): 'head.W' follows a power law in 'svl' (R\u00b2 = 0.931 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.hx3ffbggp",
+   "held_out_r2": 0.9245,
+   "held_out_rows": 535,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-440c19340830",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "dfa9fc4c901c3151.csv",
+   "doi": "10.5061/dryad.hx3ffbggp",
+   "form": "linear",
+   "params": [
+    0.14240134329456305,
+    0.27017256033442355
+   ],
+   "seed": 3315870783,
+   "x": "svl",
+   "y": "hand.L"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset for: The radiation continuum and the evolution of frog diversity' (Zenodo, doi 10.5061/dryad.hx3ffbggp): 'hand.L' is linear in 'svl' (R\u00b2 = 0.927 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.hx3ffbggp",
+   "held_out_r2": 0.9198,
+   "held_out_rows": 535,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-05c00bf86816",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "dfa9fc4c901c3151.csv",
+   "doi": "10.5061/dryad.hx3ffbggp",
+   "form": "power law",
+   "params": [
+    -1.5715228797733283,
+    0.9862769217063907
+   ],
+   "seed": 3315870783,
+   "x": "svl",
+   "y": "forearm.L"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset for: The radiation continuum and the evolution of frog diversity' (Zenodo, doi 10.5061/dryad.hx3ffbggp): 'forearm.L' follows a power law in 'svl' (R\u00b2 = 0.916 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.hx3ffbggp",
+   "held_out_r2": 0.9685,
+   "held_out_rows": 535,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b2298d008470",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "dfa9fc4c901c3151.csv",
+   "doi": "10.5061/dryad.hx3ffbggp",
+   "form": "power law",
+   "params": [
+    0.09398526274459777,
+    0.97898627302518
+   ],
+   "seed": 3315870783,
+   "x": "thigh.L",
+   "y": "crus.L"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset for: The radiation continuum and the evolution of frog diversity' (Zenodo, doi 10.5061/dryad.hx3ffbggp): 'crus.L' follows a power law in 'thigh.L' (R\u00b2 = 0.964 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.hx3ffbggp",
+   "held_out_r2": 0.9425,
+   "held_out_rows": 535,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d32f03f1f428",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "dfa9fc4c901c3151.csv",
+   "doi": "10.5061/dryad.hx3ffbggp",
+   "form": "power law",
+   "params": [
+    -0.29153964787142184,
+    0.888135727231217
+   ],
+   "seed": 3315870783,
+   "x": "thigh.L",
+   "y": "tarsus.L"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset for: The radiation continuum and the evolution of frog diversity' (Zenodo, doi 10.5061/dryad.hx3ffbggp): 'tarsus.L' follows a power law in 'thigh.L' (R\u00b2 = 0.936 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.hx3ffbggp",
+   "held_out_r2": 0.9317,
+   "held_out_rows": 535,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-807e246ba931",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "dfa9fc4c901c3151.csv",
+   "doi": "10.5061/dryad.hx3ffbggp",
+   "form": "power law",
+   "params": [
+    -0.042739731372363005,
+    1.007381103610964
+   ],
+   "seed": 3315870783,
+   "x": "thigh.L",
+   "y": "foot.L"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset for: The radiation continuum and the evolution of frog diversity' (Zenodo, doi 10.5061/dryad.hx3ffbggp): 'foot.L' follows a power law in 'thigh.L' (R\u00b2 = 0.920 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.hx3ffbggp",
+   "held_out_r2": 0.9219,
+   "held_out_rows": 535,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e4557da12ba7",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "dfa9fc4c901c3151.csv",
+   "doi": "10.5061/dryad.hx3ffbggp",
+   "form": "power law",
+   "params": [
+    -0.47936444369916204,
+    0.9820242867224787
+   ],
+   "seed": 3315870783,
+   "x": "thigh.L",
+   "y": "hand.L"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset for: The radiation continuum and the evolution of frog diversity' (Zenodo, doi 10.5061/dryad.hx3ffbggp): 'hand.L' follows a power law in 'thigh.L' (R\u00b2 = 0.913 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.hx3ffbggp",
+   "held_out_r2": 0.9496,
+   "held_out_rows": 535,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-7f1d9f31b1ac",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "dfa9fc4c901c3151.csv",
+   "doi": "10.5061/dryad.hx3ffbggp",
+   "form": "power law",
+   "params": [
+    -0.3346821524829867,
+    0.8920164112071565
+   ],
+   "seed": 3315870783,
+   "x": "crus.L",
+   "y": "tarsus.L"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset for: The radiation continuum and the evolution of frog diversity' (Zenodo, doi 10.5061/dryad.hx3ffbggp): 'tarsus.L' follows a power law in 'crus.L' (R\u00b2 = 0.938 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.hx3ffbggp",
+   "held_out_r2": 0.9253,
+   "held_out_rows": 535,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-abd3c13f5399",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "dfa9fc4c901c3151.csv",
+   "doi": "10.5061/dryad.hx3ffbggp",
+   "form": "power law",
+   "params": [
+    -0.07038812870644233,
+    1.0041098145678706
+   ],
+   "seed": 3315870783,
+   "x": "crus.L",
+   "y": "foot.L"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset for: The radiation continuum and the evolution of frog diversity' (Zenodo, doi 10.5061/dryad.hx3ffbggp): 'foot.L' follows a power law in 'crus.L' (R\u00b2 = 0.908 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.hx3ffbggp",
+   "held_out_r2": 0.9255,
+   "held_out_rows": 535,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-de6cf2038df1",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "dfa9fc4c901c3151.csv",
+   "doi": "10.5061/dryad.hx3ffbggp",
+   "form": "linear",
+   "params": [
+    0.15516801870150052,
+    0.6999541237268845
+   ],
+   "seed": 3315870783,
+   "x": "thigh.D",
+   "y": "crus.D"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset for: The radiation continuum and the evolution of frog diversity' (Zenodo, doi 10.5061/dryad.hx3ffbggp): 'crus.D' is linear in 'thigh.D' (R\u00b2 = 0.925 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.6078/D1DX4T",
+   "held_out_r2": 0.9783,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-2f280b3e3c44",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "614427e35cab2daf.csv",
+   "doi": "10.6078/D1DX4T",
+   "form": "power law",
+   "params": [
+    0.35644158205092474,
+    1.0646051229620523
+   ],
+   "seed": 1410983046,
+   "x": "flowAgeMin",
+   "y": "flowAgeMax"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Ecological network structure in response to community assembly processes over evolutionary' (Zenodo, doi 10.6078/D1DX4T): 'flowAgeMax' follows a power law in 'flowAgeMin' (R\u00b2 = 0.978 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.6078/D1DX4T",
+   "held_out_r2": 0.8771,
+   "held_out_rows": 48,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-73e7b5c273ca",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "40faac1ab2689a62.csv",
+   "doi": "10.6078/D1DX4T",
+   "form": "linear",
+   "params": [
+    -176.0605912474145,
+    1.282405366998956
+   ],
+   "seed": 353579379,
+   "x": "AvgPrecipMar_mm",
+   "y": "AvgPrecipApr_mm"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Ecological network structure in response to community assembly processes over evolutionary' (Zenodo, doi 10.6078/D1DX4T): 'AvgPrecipApr_mm' is linear in 'AvgPrecipMar_mm' (R\u00b2 = 0.957 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.kh588",
+   "held_out_r2": 0.9141,
+   "held_out_rows": 50,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c356ed8319c8",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "dd9a7a0464ea09cc.csv",
+   "doi": "10.5061/dryad.kh588",
+   "form": "exponential",
+   "params": [
+    -7.407094935162635,
+    -198.41646701212443
+   ],
+   "seed": 535998257,
+   "x": "intcp",
+   "y": "slp"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Species mtDNA genetic diversity explained by infrapopulation size in a host-sym' (Zenodo, doi 10.5061/dryad.kh588): 'slp' grows exponentially in 'intcp' (R\u00b2 = 0.916 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.40sj6",
+   "held_out_r2": 0.9178,
+   "held_out_rows": 231,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-0fe10b35678e",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "c56c0b2dbc0cc8e0.csv",
+   "doi": "10.5061/dryad.40sj6",
+   "form": "exponential",
+   "params": [
+    1.837958869909463,
+    0.4342585632666747
+   ],
+   "seed": 2221613921,
+   "x": "obs[ ,2]",
+   "y": "CP[ ]"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: A multivariate analysis of genetic variation in the advertisement call of the g' (Zenodo, doi 10.5061/dryad.40sj6): 'CP[ ]' grows exponentially in 'obs[ ,2]' (R\u00b2 = 0.927 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.40sj6",
+   "held_out_r2": 0.9614,
+   "held_out_rows": 231,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-8e9887e8e29a",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "c56c0b2dbc0cc8e0.csv",
+   "doi": "10.5061/dryad.40sj6",
+   "form": "linear",
+   "params": [
+    2243.335443249409,
+    144.520038290041
+   ],
+   "seed": 2221613921,
+   "x": "obs[ ,3]",
+   "y": "DF[ ]"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: A multivariate analysis of genetic variation in the advertisement call of the g' (Zenodo, doi 10.5061/dryad.40sj6): 'DF[ ]' is linear in 'obs[ ,3]' (R\u00b2 = 0.968 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
