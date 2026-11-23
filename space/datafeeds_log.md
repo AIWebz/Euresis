@@ -6084,3 +6084,4 @@
 - 2026-11-23 17:09 FINDING (confirmed on held-out rows): In 'Data from: The evolutionary genomics of adaptation to stress in wild rhizobium bacteria' (Zenodo, doi 10.5061/dryad.vt4b8gtxz): 'variant_h2.od_cl1_genes' grows logarithmically in 'lrt-pvalue.od_cl1_genes' (R² = 0.947 on the discovery half); held-out R² = 0.864 [emp-6d4a4dc089a9]
 - 2026-11-23 17:09 FINDING (confirmed on held-out rows): In 'Data from: The evolutionary genomics of adaptation to stress in wild rhizobium bacteria' (Zenodo, doi 10.5061/dryad.vt4b8gtxz): 'fdr-adj lrt-pvalue.od_cl1_genes' is linear in 'variant_h2.od_cl1_genes' (R² = 0.985 on the discovery half); held-out R² = 0.980 [emp-1329bc4b86b4]
 - 2026-11-23 17:09 data feeds: 36913 datasets analysed so far, 5325 confirmed findings
+- 2026-11-23 18:11 data feeds: online
