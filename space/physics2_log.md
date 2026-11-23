@@ -8624,3 +8624,5 @@
 - 2026-11-23 18:33 round 7838: Cournot duopoly
 - 2026-11-23 18:35 round 7839: insurance and risk
 - 2026-11-23 18:37 round 7840: auction with a reserve price
+- 2026-11-23 18:39 round 7841: two-body decay
+- 2026-11-23 18:41 round 7842: collision
