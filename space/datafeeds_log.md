@@ -5961,3 +5961,4 @@
 - 2026-11-23 09:29 FINDING (confirmed on held-out rows): In 'Agricultural water dependency indicators for Azerbaijan' (Zenodo, doi 10.5281/zenodo.21294335): 'crop_production_dependency_score_0_100' follows a power law in 'total_selected_crop_production_tons' (R² = 0.989 on the discovery half); held-out R² = 0.985 [emp-deb20b076f7b]
 - 2026-11-23 09:30 data feeds: 36280 datasets analysed so far, 5217 confirmed findings
 - 2026-11-23 10:33 data feeds: online
+- 2026-11-23 10:34 data feeds: 36280 datasets analysed so far, 5217 confirmed findings
