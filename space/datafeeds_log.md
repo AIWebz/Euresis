@@ -6161,3 +6161,4 @@
 - 2026-11-23 22:50 FINDING (confirmed on held-out rows): In 'Heat flux results (d137b)' (Zenodo, doi 10.5281/zenodo.4077330): 'T2' is linear in 'Heat Flux' (R² = 0.909 on the discovery half); held-out R² = 0.885 [emp-bb322435c849]
 - 2026-11-23 22:50 FINDING (confirmed on held-out rows): In 'Data from: Siring success in kangaroos: size matters for those in the right place at the r' (Zenodo, doi 10.5061/dryad.4mw6m9072): 'w' is linear in 'UDOI' (R² = 0.946 on the discovery half); held-out R² = 0.945 [emp-aa4d06564170]
 - 2026-11-23 22:50 data feeds: 37222 datasets analysed so far, 5390 confirmed findings
+- 2026-11-23 23:52 data feeds: online
