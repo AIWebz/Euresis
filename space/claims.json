@@ -4164945,5 +4164945,977 @@
   "statement": "Octal game 0.1014423 is completely solved: its Grundy values are periodic with pre-period 6 and period 16 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.kd51c5b80",
+   "held_out_r2": 0.9891,
+   "held_out_rows": 316,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-8aeeb548eb39",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "9c396134c8dd29e0.csv",
+   "doi": "10.5061/dryad.kd51c5b80",
+   "form": "linear",
+   "params": [
+    97.12572563576167,
+    -0.9722304533846461
+   ],
+   "seed": 451466743,
+   "x": "LowCover",
+   "y": "Bare"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data and code from: Invasive grass indirectly alters seasonal patterns in seed predation' (Zenodo, doi 10.5061/dryad.kd51c5b80): 'Bare' is linear in 'LowCover' (R\u00b2 = 0.981 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.kd51c5b80",
+   "held_out_r2": 0.987,
+   "held_out_rows": 316,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-78d16257f794",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "9c396134c8dd29e0.csv",
+   "doi": "10.5061/dryad.kd51c5b80",
+   "form": "power law",
+   "params": [
+    0.1437841537815651,
+    0.9689501214705041
+   ],
+   "seed": 451466743,
+   "x": "LowCover",
+   "y": "TotalCover"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data and code from: Invasive grass indirectly alters seasonal patterns in seed predation' (Zenodo, doi 10.5061/dryad.kd51c5b80): 'TotalCover' follows a power law in 'LowCover' (R\u00b2 = 0.979 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.16756870",
+   "held_out_r2": 0.9539,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-1c4c6f9dddd7",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "07a43c1efd932b86.csv",
+   "doi": "10.5281/zenodo.16756870",
+   "form": "power law",
+   "params": [
+    9.44611622839472,
+    -0.11709941502289996
+   ],
+   "seed": 3298637872,
+   "x": "Mass flow rate (mg/s)",
+   "y": "Electron temperature(K)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Collisional-radiative model of a supersonic inductive plasma torch (data)' (Zenodo, doi 10.5281/zenodo.16756870): 'Electron temperature(K)' follows a power law in 'Mass flow rate (mg/s)' (R\u00b2 = 0.972 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.16756870",
+   "held_out_r2": 0.9629,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e41b3f80ea5d",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "07a43c1efd932b86.csv",
+   "doi": "10.5281/zenodo.16756870",
+   "form": "power law",
+   "params": [
+    50.94633278557857,
+    1.0363773518757415
+   ],
+   "seed": 3298637872,
+   "x": "Mass flow rate (mg/s)",
+   "y": "n_gs"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Collisional-radiative model of a supersonic inductive plasma torch (data)' (Zenodo, doi 10.5281/zenodo.16756870): 'n_gs' follows a power law in 'Mass flow rate (mg/s)' (R\u00b2 = 0.984 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.16756870",
+   "held_out_r2": 0.9844,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c956b67446f2",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "07a43c1efd932b86.csv",
+   "doi": "10.5281/zenodo.16756870",
+   "form": "power law",
+   "params": [
+    4.920066649388763,
+    0.587457132557388
+   ],
+   "seed": 3298637872,
+   "x": "Absorbed power (W)",
+   "y": "Gas temperature (K)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Collisional-radiative model of a supersonic inductive plasma torch (data)' (Zenodo, doi 10.5281/zenodo.16756870): 'Gas temperature (K)' follows a power law in 'Absorbed power (W)' (R\u00b2 = 0.972 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.16756870",
+   "held_out_r2": 0.9841,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5a86881fe1a3",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "07a43c1efd932b86.csv",
+   "doi": "10.5281/zenodo.16756870",
+   "form": "power law",
+   "params": [
+    4.437177773757728,
+    0.5420609868113875
+   ],
+   "seed": 3298637872,
+   "x": "Absorbed power (W)",
+   "y": "Stagnation temperature (K)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Collisional-radiative model of a supersonic inductive plasma torch (data)' (Zenodo, doi 10.5281/zenodo.16756870): 'Stagnation temperature (K)' follows a power law in 'Absorbed power (W)' (R\u00b2 = 0.971 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.16756870",
+   "held_out_r2": 0.9662,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-775f1d20ea3f",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "07a43c1efd932b86.csv",
+   "doi": "10.5281/zenodo.16756870",
+   "form": "power law",
+   "params": [
+    26.56302350880903,
+    1.2655684888942718
+   ],
+   "seed": 3298637872,
+   "x": "Absorbed power (W)",
+   "y": "n_2p10"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Collisional-radiative model of a supersonic inductive plasma torch (data)' (Zenodo, doi 10.5281/zenodo.16756870): 'n_2p10' follows a power law in 'Absorbed power (W)' (R\u00b2 = 0.928 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.16756870",
+   "held_out_r2": 0.9679,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3a93d60d556c",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "07a43c1efd932b86.csv",
+   "doi": "10.5281/zenodo.16756870",
+   "form": "power law",
+   "params": [
+    27.19195508086869,
+    1.2602986169884607
+   ],
+   "seed": 3298637872,
+   "x": "Absorbed power (W)",
+   "y": "n_2p9"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Collisional-radiative model of a supersonic inductive plasma torch (data)' (Zenodo, doi 10.5281/zenodo.16756870): 'n_2p9' follows a power law in 'Absorbed power (W)' (R\u00b2 = 0.934 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.16756870",
+   "held_out_r2": 0.9755,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-22a4087ca0c6",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "07a43c1efd932b86.csv",
+   "doi": "10.5281/zenodo.16756870",
+   "form": "power law",
+   "params": [
+    26.238559682095225,
+    1.3435922295678844
+   ],
+   "seed": 3298637872,
+   "x": "Absorbed power (W)",
+   "y": "n_2p8"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Collisional-radiative model of a supersonic inductive plasma torch (data)' (Zenodo, doi 10.5281/zenodo.16756870): 'n_2p8' follows a power law in 'Absorbed power (W)' (R\u00b2 = 0.948 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.16756870",
+   "held_out_r2": 0.9757,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9eacbb1b806b",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "07a43c1efd932b86.csv",
+   "doi": "10.5281/zenodo.16756870",
+   "form": "power law",
+   "params": [
+    25.473836845850958,
+    1.3686838076990522
+   ],
+   "seed": 3298637872,
+   "x": "Absorbed power (W)",
+   "y": "n_2p7"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Collisional-radiative model of a supersonic inductive plasma torch (data)' (Zenodo, doi 10.5281/zenodo.16756870): 'n_2p7' follows a power law in 'Absorbed power (W)' (R\u00b2 = 0.949 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.16756870",
+   "held_out_r2": 0.9571,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e010521b1069",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "07a43c1efd932b86.csv",
+   "doi": "10.5281/zenodo.16756870",
+   "form": "exponential",
+   "params": [
+    44.584610082471734,
+    0.0003828164614303588
+   ],
+   "seed": 3298637872,
+   "x": "Gas temperature (K)",
+   "y": "n_e"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Collisional-radiative model of a supersonic inductive plasma torch (data)' (Zenodo, doi 10.5281/zenodo.16756870): 'n_e' grows exponentially in 'Gas temperature (K)' (R\u00b2 = 0.937 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.16756870",
+   "held_out_r2": 0.9612,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-6b199ce0fc0b",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "07a43c1efd932b86.csv",
+   "doi": "10.5281/zenodo.16756870",
+   "form": "power law",
+   "params": [
+    15.725514463655257,
+    2.2018346985158344
+   ],
+   "seed": 3298637872,
+   "x": "Gas temperature (K)",
+   "y": "n_2p8"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Collisional-radiative model of a supersonic inductive plasma torch (data)' (Zenodo, doi 10.5281/zenodo.16756870): 'n_2p8' follows a power law in 'Gas temperature (K)' (R\u00b2 = 0.904 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.16756870",
+   "held_out_r2": 0.9618,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a2fe01e605a1",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "07a43c1efd932b86.csv",
+   "doi": "10.5281/zenodo.16756870",
+   "form": "power law",
+   "params": [
+    14.748064528203315,
+    2.2448443888684744
+   ],
+   "seed": 3298637872,
+   "x": "Gas temperature (K)",
+   "y": "n_2p7"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Collisional-radiative model of a supersonic inductive plasma torch (data)' (Zenodo, doi 10.5281/zenodo.16756870): 'n_2p7' follows a power law in 'Gas temperature (K)' (R\u00b2 = 0.907 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.16756870",
+   "held_out_r2": 0.9571,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f966021baa08",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "07a43c1efd932b86.csv",
+   "doi": "10.5281/zenodo.16756870",
+   "form": "exponential",
+   "params": [
+    44.4334206878491,
+    0.0008867811101724054
+   ],
+   "seed": 3298637872,
+   "x": "Stagnation temperature (K)",
+   "y": "n_e"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Collisional-radiative model of a supersonic inductive plasma torch (data)' (Zenodo, doi 10.5281/zenodo.16756870): 'n_e' grows exponentially in 'Stagnation temperature (K)' (R\u00b2 = 0.937 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.16756870",
+   "held_out_r2": 0.9605,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4d00d5292189",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "07a43c1efd932b86.csv",
+   "doi": "10.5281/zenodo.16756870",
+   "form": "power law",
+   "params": [
+    15.993715491848059,
+    2.3833002221706394
+   ],
+   "seed": 3298637872,
+   "x": "Stagnation temperature (K)",
+   "y": "n_2p8"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Collisional-radiative model of a supersonic inductive plasma torch (data)' (Zenodo, doi 10.5281/zenodo.16756870): 'n_2p8' follows a power law in 'Stagnation temperature (K)' (R\u00b2 = 0.903 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.16756870",
+   "held_out_r2": 0.9608,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5815d7d47dcc",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "07a43c1efd932b86.csv",
+   "doi": "10.5281/zenodo.16756870",
+   "form": "power law",
+   "params": [
+    15.022574296764981,
+    2.4297191659027866
+   ],
+   "seed": 3298637872,
+   "x": "Stagnation temperature (K)",
+   "y": "n_2p7"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Collisional-radiative model of a supersonic inductive plasma torch (data)' (Zenodo, doi 10.5281/zenodo.16756870): 'n_2p7' follows a power law in 'Stagnation temperature (K)' (R\u00b2 = 0.905 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.16756870",
+   "held_out_r2": 0.9747,
+   "held_out_rows": 200,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e84f03d943ea",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "07a43c1efd932b86.csv",
+   "doi": "10.5281/zenodo.16756870",
+   "form": "power law",
+   "params": [
+    133.17119917906263,
+    -8.696228879894084
+   ],
+   "seed": 3298637872,
+   "x": "Electron temperature(K)",
+   "y": "n_gs"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Collisional-radiative model of a supersonic inductive plasma torch (data)' (Zenodo, doi 10.5281/zenodo.16756870): 'n_gs' follows a power law in 'Electron temperature(K)' (R\u00b2 = 0.978 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.16756870",
+   "held_out_r2": 0.9686,
+   "held_out_rows": 538,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c89d3a31ff36",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "183746a964236570.csv",
+   "doi": "10.5281/zenodo.16756870",
+   "form": "linear",
+   "params": [
+    1.0800955987936242e+16,
+    0.016637847744216772
+   ],
+   "seed": 445990848,
+   "x": "n_1s5",
+   "y": "n_2p10"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Collisional-radiative model of a supersonic inductive plasma torch (data)' (Zenodo, doi 10.5281/zenodo.16756870): 'n_2p10' is linear in 'n_1s5' (R\u00b2 = 0.971 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.16756870",
+   "held_out_r2": 0.9622,
+   "held_out_rows": 538,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-537ba6b50e83",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "183746a964236570.csv",
+   "doi": "10.5281/zenodo.16756870",
+   "form": "linear",
+   "params": [
+    1.8647136846020296e+16,
+    0.024631213305166173
+   ],
+   "seed": 445990848,
+   "x": "n_1s5",
+   "y": "n_2p9"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Collisional-radiative model of a supersonic inductive plasma torch (data)' (Zenodo, doi 10.5281/zenodo.16756870): 'n_2p9' is linear in 'n_1s5' (R\u00b2 = 0.965 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.16756870",
+   "held_out_r2": 0.96,
+   "held_out_rows": 538,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-644913c40063",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "183746a964236570.csv",
+   "doi": "10.5281/zenodo.16756870",
+   "form": "linear",
+   "params": [
+    1.297301614228612e+16,
+    0.0167859724230243
+   ],
+   "seed": 445990848,
+   "x": "n_1s5",
+   "y": "n_2p8"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Collisional-radiative model of a supersonic inductive plasma torch (data)' (Zenodo, doi 10.5281/zenodo.16756870): 'n_2p8' is linear in 'n_1s5' (R\u00b2 = 0.963 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.16756870",
+   "held_out_r2": 0.957,
+   "held_out_rows": 538,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5e80ae65ac8d",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "183746a964236570.csv",
+   "doi": "10.5281/zenodo.16756870",
+   "form": "linear",
+   "params": [
+    7031161368339342.0,
+    0.008628186413899463
+   ],
+   "seed": 445990848,
+   "x": "n_1s5",
+   "y": "n_2p7"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Collisional-radiative model of a supersonic inductive plasma torch (data)' (Zenodo, doi 10.5281/zenodo.16756870): 'n_2p7' is linear in 'n_1s5' (R\u00b2 = 0.960 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.16756870",
+   "held_out_r2": 0.956,
+   "held_out_rows": 538,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a8680c3f78de",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "183746a964236570.csv",
+   "doi": "10.5281/zenodo.16756870",
+   "form": "linear",
+   "params": [
+    1.1330152980797856e+16,
+    0.013656403339880904
+   ],
+   "seed": 445990848,
+   "x": "n_1s5",
+   "y": "n_2p6"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Collisional-radiative model of a supersonic inductive plasma torch (data)' (Zenodo, doi 10.5281/zenodo.16756870): 'n_2p6' is linear in 'n_1s5' (R\u00b2 = 0.959 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.16756870",
+   "held_out_r2": 0.949,
+   "held_out_rows": 538,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-fdca0e3bc4a7",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "183746a964236570.csv",
+   "doi": "10.5281/zenodo.16756870",
+   "form": "linear",
+   "params": [
+    1936223733732886.8,
+    0.0020965533539453432
+   ],
+   "seed": 445990848,
+   "x": "n_1s5",
+   "y": "n_2p5"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Collisional-radiative model of a supersonic inductive plasma torch (data)' (Zenodo, doi 10.5281/zenodo.16756870): 'n_2p5' is linear in 'n_1s5' (R\u00b2 = 0.952 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.16756870",
+   "held_out_r2": 0.9489,
+   "held_out_rows": 538,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-41ea44437525",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "183746a964236570.csv",
+   "doi": "10.5281/zenodo.16756870",
+   "form": "linear",
+   "params": [
+    5651499590138559.0,
+    0.006130988203302579
+   ],
+   "seed": 445990848,
+   "x": "n_1s5",
+   "y": "n_2p4"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Collisional-radiative model of a supersonic inductive plasma torch (data)' (Zenodo, doi 10.5281/zenodo.16756870): 'n_2p4' is linear in 'n_1s5' (R\u00b2 = 0.952 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.16756870",
+   "held_out_r2": 0.9467,
+   "held_out_rows": 538,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-222bf7637cf6",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "183746a964236570.csv",
+   "doi": "10.5281/zenodo.16756870",
+   "form": "linear",
+   "params": [
+    9127050980476564.0,
+    0.009730246310891588
+   ],
+   "seed": 445990848,
+   "x": "n_1s5",
+   "y": "n_2p3"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Collisional-radiative model of a supersonic inductive plasma torch (data)' (Zenodo, doi 10.5281/zenodo.16756870): 'n_2p3' is linear in 'n_1s5' (R\u00b2 = 0.949 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.16756870",
+   "held_out_r2": 0.9582,
+   "held_out_rows": 538,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9ea13fc0e658",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "183746a964236570.csv",
+   "doi": "10.5281/zenodo.16756870",
+   "form": "linear",
+   "params": [
+    1.0949772264686252e+16,
+    0.027959816367614288
+   ],
+   "seed": 445990848,
+   "x": "n_1s4",
+   "y": "n_2p6"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Collisional-radiative model of a supersonic inductive plasma torch (data)' (Zenodo, doi 10.5281/zenodo.16756870): 'n_2p6' is linear in 'n_1s4' (R\u00b2 = 0.961 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.16756870",
+   "held_out_r2": 0.9513,
+   "held_out_rows": 538,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4dca644f01b6",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "183746a964236570.csv",
+   "doi": "10.5281/zenodo.16756870",
+   "form": "linear",
+   "params": [
+    1877042991437793.5,
+    0.004292808808366387
+   ],
+   "seed": 445990848,
+   "x": "n_1s4",
+   "y": "n_2p5"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Collisional-radiative model of a supersonic inductive plasma torch (data)' (Zenodo, doi 10.5281/zenodo.16756870): 'n_2p5' is linear in 'n_1s4' (R\u00b2 = 0.954 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.16756870",
+   "held_out_r2": 0.9512,
+   "held_out_rows": 538,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-51da671a76be",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "183746a964236570.csv",
+   "doi": "10.5281/zenodo.16756870",
+   "form": "linear",
+   "params": [
+    5478367554152550.0,
+    0.012553569653254623
+   ],
+   "seed": 445990848,
+   "x": "n_1s4",
+   "y": "n_2p4"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Collisional-radiative model of a supersonic inductive plasma torch (data)' (Zenodo, doi 10.5281/zenodo.16756870): 'n_2p4' is linear in 'n_1s4' (R\u00b2 = 0.954 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.16756870",
+   "held_out_r2": 0.9491,
+   "held_out_rows": 538,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-96ec0885c037",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "183746a964236570.csv",
+   "doi": "10.5281/zenodo.16756870",
+   "form": "linear",
+   "params": [
+    8851234398999407.0,
+    0.019923764865542384
+   ],
+   "seed": 445990848,
+   "x": "n_1s4",
+   "y": "n_2p3"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Collisional-radiative model of a supersonic inductive plasma torch (data)' (Zenodo, doi 10.5281/zenodo.16756870): 'n_2p3' is linear in 'n_1s4' (R\u00b2 = 0.952 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.16756870",
+   "held_out_r2": 0.9609,
+   "held_out_rows": 538,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-7b657f3cb657",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "183746a964236570.csv",
+   "doi": "10.5281/zenodo.16756870",
+   "form": "linear",
+   "params": [
+    1.043997545153231e+16,
+    0.10948540590668915
+   ],
+   "seed": 445990848,
+   "x": "n_1s3",
+   "y": "n_2p6"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Collisional-radiative model of a supersonic inductive plasma torch (data)' (Zenodo, doi 10.5281/zenodo.16756870): 'n_2p6' is linear in 'n_1s3' (R\u00b2 = 0.963 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.16756870",
+   "held_out_r2": 0.9542,
+   "held_out_rows": 538,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-edbb4a2d8093",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "183746a964236570.csv",
+   "doi": "10.5281/zenodo.16756870",
+   "form": "linear",
+   "params": [
+    1797735561052126.8,
+    0.016811743986747164
+   ],
+   "seed": 445990848,
+   "x": "n_1s3",
+   "y": "n_2p5"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Collisional-radiative model of a supersonic inductive plasma torch (data)' (Zenodo, doi 10.5281/zenodo.16756870): 'n_2p5' is linear in 'n_1s3' (R\u00b2 = 0.957 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.16756870",
+   "held_out_r2": 0.9541,
+   "held_out_rows": 538,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-73e87865268e",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "183746a964236570.csv",
+   "doi": "10.5281/zenodo.16756870",
+   "form": "linear",
+   "params": [
+    5246354036975667.0,
+    0.04916318020306723
+   ],
+   "seed": 445990848,
+   "x": "n_1s3",
+   "y": "n_2p4"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Collisional-radiative model of a supersonic inductive plasma torch (data)' (Zenodo, doi 10.5281/zenodo.16756870): 'n_2p4' is linear in 'n_1s3' (R\u00b2 = 0.956 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.16756870",
+   "held_out_r2": 0.952,
+   "held_out_rows": 538,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d35eb19bcea6",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "183746a964236570.csv",
+   "doi": "10.5281/zenodo.16756870",
+   "form": "linear",
+   "params": [
+    8481630046786768.0,
+    0.07802939651919712
+   ],
+   "seed": 445990848,
+   "x": "n_1s3",
+   "y": "n_2p3"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Collisional-radiative model of a supersonic inductive plasma torch (data)' (Zenodo, doi 10.5281/zenodo.16756870): 'n_2p3' is linear in 'n_1s3' (R\u00b2 = 0.954 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.16756870",
+   "held_out_r2": 0.9637,
+   "held_out_rows": 538,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-06996243d21e",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "183746a964236570.csv",
+   "doi": "10.5281/zenodo.16756870",
+   "form": "linear",
+   "params": [
+    9902596426268906.0,
+    0.048478669117396775
+   ],
+   "seed": 445990848,
+   "x": "n_1s2",
+   "y": "n_2p6"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Collisional-radiative model of a supersonic inductive plasma torch (data)' (Zenodo, doi 10.5281/zenodo.16756870): 'n_2p6' is linear in 'n_1s2' (R\u00b2 = 0.966 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.16756870",
+   "held_out_r2": 0.9573,
+   "held_out_rows": 538,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-303bf21a90a2",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "183746a964236570.csv",
+   "doi": "10.5281/zenodo.16756870",
+   "form": "linear",
+   "params": [
+    1714092857303972.8,
+    0.007444925822359546
+   ],
+   "seed": 445990848,
+   "x": "n_1s2",
+   "y": "n_2p5"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Collisional-radiative model of a supersonic inductive plasma torch (data)' (Zenodo, doi 10.5281/zenodo.16756870): 'n_2p5' is linear in 'n_1s2' (R\u00b2 = 0.959 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.16756870",
+   "held_out_r2": 0.9571,
+   "held_out_rows": 538,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a7a2c7f5f14e",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "183746a964236570.csv",
+   "doi": "10.5281/zenodo.16756870",
+   "form": "linear",
+   "params": [
+    5001655005085581.0,
+    0.021771541684648826
+   ],
+   "seed": 445990848,
+   "x": "n_1s2",
+   "y": "n_2p4"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Collisional-radiative model of a supersonic inductive plasma torch (data)' (Zenodo, doi 10.5281/zenodo.16756870): 'n_2p4' is linear in 'n_1s2' (R\u00b2 = 0.959 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
