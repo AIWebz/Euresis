@@ -5903,3 +5903,5 @@
 - 2026-11-23 02:53 FINDING (confirmed on held-out rows): In 'Data for: Ligand Electronic Properties Dictate Composition of Ni-Based Nanocrystals' (Zenodo, doi 10.5281/zenodo.15228190): 'OLAM reference (a.u.)' is linear in 'intensity reaction solution (a.u.)' (R² = 0.908 on the discovery half); held-out R² = 0.923 [emp-ab6e74fc5e8d]
 - 2026-11-23 02:54 data feeds: 35746 datasets analysed so far, 5173 confirmed findings
 - 2026-11-23 03:39 data feeds: online
+- 2026-11-23 03:40 FINDING (confirmed on held-out rows): In 'A Morphological Dataset of Ant Queens (Hymenoptera: Formicidae) Derived from AntWeb Images' (Zenodo, doi 10.5281/zenodo.19022110): 'HL' follows a power law in 'HW' (R² = 0.919 on the discovery half); held-out R² = 0.914 [emp-6c806086fd2a]
+- 2026-11-23 03:40 data feeds: 35767 datasets analysed so far, 5174 confirmed findings
