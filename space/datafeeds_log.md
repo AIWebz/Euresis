@@ -5910,3 +5910,4 @@
 - 2026-11-23 05:34 data feeds: online
 - 2026-11-23 05:34 FINDING (confirmed on held-out rows): In 'A verified dataset of sulfate-activated solid-waste cementitious materials (1,282 laborato' (Zenodo, doi 10.5281/zenodo.24279861): 'CaSiAl_total' grows exponentially in 'CaSi_total' (R² = 0.970 on the discovery half); held-out R² = 0.966 [emp-148fdf7f97fe]
 - 2026-11-23 05:36 data feeds: 35946 datasets analysed so far, 5175 confirmed findings
+- 2026-11-23 06:39 data feeds: online
