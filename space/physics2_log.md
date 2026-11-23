@@ -8377,3 +8377,7 @@
 - 2026-11-23 05:05 round 7619: driven oscillator
 - 2026-11-23 05:07 round 7620: velocity addition
 - 2026-11-23 05:08 round 7621: Compton scattering
+- 2026-11-23 05:09 round 7622: Cournot duopoly
+- 2026-11-23 05:10 round 7623: insurance and risk
+- 2026-11-23 05:12 round 7624: auction with a reserve price
+- 2026-11-23 05:14 segment end: 7624 rounds, 5 discoveries, 2 known laws rediscovered
