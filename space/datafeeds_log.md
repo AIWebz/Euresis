@@ -5925,3 +5925,4 @@
 - 2026-11-23 06:41 FINDING (confirmed on held-out rows): In 'Transpiration, climate, soil moisture data' (Zenodo, doi 10.5281/zenodo.20302767): 'RWC.inter.complete' follows a power law in 'RWC.subcanopy10' (R² = 0.913 on the discovery half); held-out R² = 0.893 [emp-08e2d18a21d1]
 - 2026-11-23 06:41 FINDING (confirmed on held-out rows): In 'Transpiration, climate, soil moisture data' (Zenodo, doi 10.5281/zenodo.20302767): 'RWC.inter10' follows a power law in 'RWC.subcanopy10' (R² = 0.935 on the discovery half); held-out R² = 0.916 [emp-5652e79e3cea]
 - 2026-11-23 06:42 data feeds: 35978 datasets analysed so far, 5188 confirmed findings
+- 2026-11-23 07:28 data feeds: online
