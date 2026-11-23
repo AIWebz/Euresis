@@ -4200564,5 +4200564,491 @@
   "statement": "Octal game 0.1025301 is completely solved: its Grundy values are periodic with pre-period 40 and period 98 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17832162",
+   "held_out_r2": 0.9255,
+   "held_out_rows": 52,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-46e6f3ff5da7",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "39ea31bdec010c9e.csv",
+   "doi": "10.5281/zenodo.17832162",
+   "form": "power law",
+   "params": [
+    0.05941519640900956,
+    0.9045081219256771
+   ],
+   "seed": 3142233380,
+   "x": "IPRI",
+   "y": "LP"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Guardians of the Legacy: Divergent Paths of Elite Influence and Property Rights Stability' (Zenodo, doi 10.5281/zenodo.17832162): 'LP' follows a power law in 'IPRI' (R\u00b2 = 0.924 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17832162",
+   "held_out_r2": 0.8122,
+   "held_out_rows": 52,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c6d87f593341",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "39ea31bdec010c9e.csv",
+   "doi": "10.5281/zenodo.17832162",
+   "form": "exponential",
+   "params": [
+    0.4202115141596677,
+    0.20327179583270777
+   ],
+   "seed": 3142233380,
+   "x": "IPRI",
+   "y": "Rule of Law (desde 2009)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Guardians of the Legacy: Divergent Paths of Elite Influence and Property Rights Stability' (Zenodo, doi 10.5281/zenodo.17832162): 'Rule of Law (desde 2009)' grows exponentially in 'IPRI' (R\u00b2 = 0.911 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17832162",
+   "held_out_r2": 0.8874,
+   "held_out_rows": 52,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f856ddbfe751",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "39ea31bdec010c9e.csv",
+   "doi": "10.5281/zenodo.17832162",
+   "form": "exponential",
+   "params": [
+    0.2927666518107885,
+    0.21724970873356228
+   ],
+   "seed": 3142233380,
+   "x": "IPRI",
+   "y": "Corruption "
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Guardians of the Legacy: Divergent Paths of Elite Influence and Property Rights Stability' (Zenodo, doi 10.5281/zenodo.17832162): 'Corruption ' grows exponentially in 'IPRI' (R\u00b2 = 0.901 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17832162",
+   "held_out_r2": 0.8911,
+   "held_out_rows": 52,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4c3452fed229",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "39ea31bdec010c9e.csv",
+   "doi": "10.5281/zenodo.17832162",
+   "form": "logarithmic",
+   "params": [
+    -3.9782571649917733,
+    5.76727253647665
+   ],
+   "seed": 3142233380,
+   "x": "IPRI",
+   "y": "PPR"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Guardians of the Legacy: Divergent Paths of Elite Influence and Property Rights Stability' (Zenodo, doi 10.5281/zenodo.17832162): 'PPR' grows logarithmically in 'IPRI' (R\u00b2 = 0.924 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17832162",
+   "held_out_r2": 0.8067,
+   "held_out_rows": 52,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-48d7bb0765b6",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "39ea31bdec010c9e.csv",
+   "doi": "10.5281/zenodo.17832162",
+   "form": "power law",
+   "params": [
+    -0.1079293652024717,
+    1.0806123119164084
+   ],
+   "seed": 3142233380,
+   "x": "IPRI",
+   "y": "Property rights protection"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Guardians of the Legacy: Divergent Paths of Elite Influence and Property Rights Stability' (Zenodo, doi 10.5281/zenodo.17832162): 'Property rights protection' follows a power law in 'IPRI' (R\u00b2 = 0.914 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17832162",
+   "held_out_r2": 0.8174,
+   "held_out_rows": 52,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4a3357534807",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "39ea31bdec010c9e.csv",
+   "doi": "10.5281/zenodo.17832162",
+   "form": "power law",
+   "params": [
+    -0.4374866685522015,
+    1.2172676232890338
+   ],
+   "seed": 3142233380,
+   "x": "IPRI",
+   "y": "Intellectual Property Rights Protection"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Guardians of the Legacy: Divergent Paths of Elite Influence and Property Rights Stability' (Zenodo, doi 10.5281/zenodo.17832162): 'Intellectual Property Rights Protection' follows a power law in 'IPRI' (R\u00b2 = 0.926 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17832162",
+   "held_out_r2": 0.8818,
+   "held_out_rows": 52,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c649812ffe0f",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "39ea31bdec010c9e.csv",
+   "doi": "10.5281/zenodo.17832162",
+   "form": "exponential",
+   "params": [
+    0.38768428972307334,
+    0.23177839849864934
+   ],
+   "seed": 3142233380,
+   "x": "LP",
+   "y": "Rule of Law (desde 2009)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Guardians of the Legacy: Divergent Paths of Elite Influence and Property Rights Stability' (Zenodo, doi 10.5281/zenodo.17832162): 'Rule of Law (desde 2009)' grows exponentially in 'LP' (R\u00b2 = 0.933 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17832162",
+   "held_out_r2": 0.9447,
+   "held_out_rows": 52,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d3bf9de56ef2",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "39ea31bdec010c9e.csv",
+   "doi": "10.5281/zenodo.17832162",
+   "form": "exponential",
+   "params": [
+    0.2366470589573568,
+    0.252050051324377
+   ],
+   "seed": 3142233380,
+   "x": "LP",
+   "y": "Corruption "
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Guardians of the Legacy: Divergent Paths of Elite Influence and Property Rights Stability' (Zenodo, doi 10.5281/zenodo.17832162): 'Corruption ' grows exponentially in 'LP' (R\u00b2 = 0.955 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17832162",
+   "held_out_r2": 0.9339,
+   "held_out_rows": 52,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e9d84129b9a7",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "39ea31bdec010c9e.csv",
+   "doi": "10.5281/zenodo.17832162",
+   "form": "linear",
+   "params": [
+    0.013129683921914935,
+    0.9531875622063349
+   ],
+   "seed": 3142233380,
+   "x": "Rule of Law (desde 2009)",
+   "y": "Corruption "
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Guardians of the Legacy: Divergent Paths of Elite Influence and Property Rights Stability' (Zenodo, doi 10.5281/zenodo.17832162): 'Corruption ' is linear in 'Rule of Law (desde 2009)' (R\u00b2 = 0.941 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24381508",
+   "held_out_r2": 0.9829,
+   "held_out_rows": 43,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9031db7b9c40",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "0bd336b1a6a8bfec.csv",
+   "doi": "10.5281/zenodo.24381508",
+   "form": "linear",
+   "params": [
+    0.1732546077832039,
+    1.0604963531901919
+   ],
+   "seed": 182414923,
+   "x": "lo",
+   "y": "hi"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Judgment Cost Theory: The Accountable Bearing of Judgment in an Age of Cheap Pre' (Zenodo, doi 10.5281/zenodo.24381508): 'hi' is linear in 'lo' (R\u00b2 = 0.989 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.21851268",
+   "held_out_r2": -0.6293,
+   "held_out_rows": 68,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e85eee21cc6c",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "075f7f222300ab12.csv",
+   "doi": "10.5281/zenodo.21851268",
+   "form": "linear",
+   "params": [
+    -0.4976070884244097,
+    1.9836467625864382
+   ],
+   "seed": 101283764,
+   "x": "Positive: Location or Playrooms",
+   "y": "Positive - Food or Drink"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Sex Events in Germany \u2014 Machine-Readable Edition' (Zenodo, doi 10.5281/zenodo.21851268): 'Positive - Food or Drink' is linear in 'Positive: Location or Playrooms' (R\u00b2 = 0.994 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.21851268",
+   "held_out_r2": -0.6477,
+   "held_out_rows": 68,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-abce4d345f9f",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "075f7f222300ab12.csv",
+   "doi": "10.5281/zenodo.21851268",
+   "form": "linear",
+   "params": [
+    -0.2677053737460947,
+    0.8540580234381723
+   ],
+   "seed": 101283764,
+   "x": "Positive: Music DJ Sound",
+   "y": "Positive - Food or Drink"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Sex Events in Germany \u2014 Machine-Readable Edition' (Zenodo, doi 10.5281/zenodo.21851268): 'Positive - Food or Drink' is linear in 'Positive: Music DJ Sound' (R\u00b2 = 0.994 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.21851268",
+   "held_out_r2": 0.9774,
+   "held_out_rows": 65,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-35ce1354d666",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "636c857774ab3d85.csv",
+   "doi": "10.5281/zenodo.21851268",
+   "form": "linear",
+   "params": [
+    5.6295204335958005,
+    1.0372841103414405
+   ],
+   "seed": 2948930052,
+   "x": "NUM_VISITORS",
+   "y": "JCGUESTNO"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Sex Events in Germany \u2014 Machine-Readable Edition' (Zenodo, doi 10.5281/zenodo.21851268): 'JCGUESTNO' is linear in 'NUM_VISITORS' (R\u00b2 = 0.990 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.21294335",
+   "held_out_r2": 0.4534,
+   "held_out_rows": 32,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-bc9b1ea22c28",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "8e2041bf89bc4bbd.csv",
+   "doi": "10.5281/zenodo.21294335",
+   "form": "linear",
+   "params": [
+    -0.45747374293364546,
+    0.20884286982613137
+   ],
+   "seed": 283328647,
+   "x": "water_consumption_million_m3",
+   "y": "irrigation_water_use_score_0_100"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Agricultural water dependency indicators for Azerbaijan' (Zenodo, doi 10.5281/zenodo.21294335): 'irrigation_water_use_score_0_100' is linear in 'water_consumption_million_m3' (R\u00b2 = 0.999 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.21294335",
+   "held_out_r2": 0.985,
+   "held_out_rows": 32,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-deb20b076f7b",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8e2041bf89bc4bbd.csv",
+   "doi": "10.5281/zenodo.21294335",
+   "form": "power law",
+   "params": [
+    -9.70981807023983,
+    1.010514053015659
+   ],
+   "seed": 283328647,
+   "x": "total_selected_crop_production_tons",
+   "y": "crop_production_dependency_score_0_100"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Agricultural water dependency indicators for Azerbaijan' (Zenodo, doi 10.5281/zenodo.21294335): 'crop_production_dependency_score_0_100' follows a power law in 'total_selected_crop_production_tons' (R\u00b2 = 0.989 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14538469",
+   "held_out_r2": 0.8669,
+   "held_out_rows": 750,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-1b32b94d380c",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "75b1b1a6511ef8c7.csv",
+   "doi": "10.5281/zenodo.14538469",
+   "form": "linear",
+   "params": [
+    0.11624413309388197,
+    0.8878337607361514
+   ],
+   "seed": 1947230768,
+   "x": "trainMean",
+   "y": "testMean"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data Files for Climate-based Maize Loss Rate Simulations' (Zenodo, doi 10.5281/zenodo.14538469): 'testMean' is linear in 'trainMean' (R\u00b2 = 0.913 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14538469",
+   "held_out_r2": 0.9327,
+   "held_out_rows": 750,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5c8dde723411",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "75b1b1a6511ef8c7.csv",
+   "doi": "10.5281/zenodo.14538469",
+   "form": "linear",
+   "params": [
+    0.028071226626430815,
+    1.14332752112536
+   ],
+   "seed": 1947230768,
+   "x": "trainStd",
+   "y": "validStd"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data Files for Climate-based Maize Loss Rate Simulations' (Zenodo, doi 10.5281/zenodo.14538469): 'validStd' is linear in 'trainStd' (R\u00b2 = 0.915 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14538469",
+   "held_out_r2": 0.9033,
+   "held_out_rows": 750,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-2c145fc14cbb",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "75b1b1a6511ef8c7.csv",
+   "doi": "10.5281/zenodo.14538469",
+   "form": "linear",
+   "params": [
+    -0.004870962404814796,
+    0.9011803933153404
+   ],
+   "seed": 1947230768,
+   "x": "validStd",
+   "y": "testStd"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data Files for Climate-based Maize Loss Rate Simulations' (Zenodo, doi 10.5281/zenodo.14538469): 'testStd' is linear in 'validStd' (R\u00b2 = 0.930 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
