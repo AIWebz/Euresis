@@ -4208344,5 +4208344,32 @@
   "statement": "Octal game 0.1030711 is completely solved: its Grundy values are periodic with pre-period 7 and period 2 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.6084/m9.figshare.30777779.v1",
+   "held_out_r2": 0.9335,
+   "held_out_rows": 1128,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-83377338ce6f",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "4e452a9484c4bbb8.csv",
+   "doi": "10.6084/m9.figshare.30777779.v1",
+   "form": "power law",
+   "params": [
+    0.23808970578519192,
+    0.9010992185621082
+   ],
+   "seed": 309447096,
+   "x": "Coenosteum.area",
+   "y": "Coenosteum.pores"
+  },
+  "source": "datafeeds.py",
+  "statement": "In '<b>Data used in research article: </b><b>Coral tissue depth reconstructed using skeletal m' (Figshare, doi 10.6084/m9.figshare.30777779.v1): 'Coenosteum.pores' follows a power law in 'Coenosteum.area' (R\u00b2 = 0.923 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
