@@ -4266272,5 +4266272,86 @@
   "statement": "Octal game 0.1044662 is completely solved: its Grundy values are periodic with pre-period 5 and period 15 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.4077330",
+   "held_out_r2": 0.9559,
+   "held_out_rows": 255,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c10c5faf8102",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "83f6aeb13368e213.csv",
+   "doi": "10.5281/zenodo.4077330",
+   "form": "linear",
+   "params": [
+    20.87920868694736,
+    0.3246216977346292
+   ],
+   "seed": 1262680903,
+   "x": "Heat Flux",
+   "y": "T1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Heat flux results (d137b)' (Zenodo, doi 10.5281/zenodo.4077330): 'T1' is linear in 'Heat Flux' (R\u00b2 = 0.960 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.4077330",
+   "held_out_r2": 0.8852,
+   "held_out_rows": 255,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-bb322435c849",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "83f6aeb13368e213.csv",
+   "doi": "10.5281/zenodo.4077330",
+   "form": "linear",
+   "params": [
+    6.054596500162141,
+    1.0839561134837745
+   ],
+   "seed": 1262680903,
+   "x": "Heat Flux",
+   "y": "T2"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Heat flux results (d137b)' (Zenodo, doi 10.5281/zenodo.4077330): 'T2' is linear in 'Heat Flux' (R\u00b2 = 0.909 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.4mw6m9072",
+   "held_out_r2": 0.9453,
+   "held_out_rows": 6104,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-aa4d06564170",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "928ee3736a235dc9.csv",
+   "doi": "10.5061/dryad.4mw6m9072",
+   "form": "linear",
+   "params": [
+    0.04737467234883373,
+    1.1007229794705717
+   ],
+   "seed": 3974529083,
+   "x": "UDOI",
+   "y": "w"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Siring success in kangaroos: size matters for those in the right place at the r' (Zenodo, doi 10.5061/dryad.4mw6m9072): 'w' is linear in 'UDOI' (R\u00b2 = 0.946 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
