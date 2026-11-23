@@ -5947,3 +5947,5 @@
 - 2026-11-23 07:32 FINDING (confirmed on held-out rows): In 'Data from: A multivariate analysis of genetic variation in the advertisement call of the g' (Zenodo, doi 10.5061/dryad.40sj6): 'DF[ ]' is linear in 'obs[ ,3]' (R² = 0.968 on the discovery half); held-out R² = 0.961 [emp-8e9887e8e29a]
 - 2026-11-23 07:33 data feeds: 36041 datasets analysed so far, 5207 confirmed findings
 - 2026-11-23 08:35 data feeds: online
+- 2026-11-23 08:36 FINDING (confirmed on held-out rows): In 'Brain size variation along altitudinal gradients in the Asiatic Toad (Bufo gargarizans)' (Zenodo, doi 10.5061/dryad.mcvdncjzc): 'VLM' follows a power law in 'TEL' (R² = 0.931 on the discovery half); held-out R² = 0.938 [emp-879f461459d8]
+- 2026-11-23 08:37 data feeds: 36079 datasets analysed so far, 5208 confirmed findings

@@ -4197459,5 +4197459,86 @@
   "statement": "Octal game 0.1023211 is completely solved: its Grundy values are periodic with pre-period 7 and period 8 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.4001370",
+   "held_out_r2": 0.848,
+   "held_out_rows": 404,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-680d2486d368",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "83f6baeb48debfe4.csv",
+   "doi": "10.5281/zenodo.4001370",
+   "form": "linear",
+   "params": [
+    -1451298.0201709138,
+    1.6909312685358484
+   ],
+   "seed": 3262914931,
+   "x": "AnswerID",
+   "y": "CommentID"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Are comments on Stack Overflow well organized for easy retrieval by developers?' (Zenodo, doi 10.5281/zenodo.4001370): 'CommentID' is linear in 'AnswerID' (R\u00b2 = 0.936 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.1291582",
+   "held_out_r2": -0.6169,
+   "held_out_rows": 9256,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d8b5ab8b5c3c",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "bd095110e750c113.csv",
+   "doi": "10.5281/zenodo.1291582",
+   "form": "linear",
+   "params": [
+    -44.58806854055121,
+    0.8972276492658988
+   ],
+   "seed": 1022675155,
+   "x": "lines_added",
+   "y": "lines_deleted"
+  },
+  "source": "datafeeds.py",
+  "statement": "In '(No) Influence of Continuous Integration on the Development Activity in GitHub Projects \u2014 ' (Zenodo, doi 10.5281/zenodo.1291582): 'lines_deleted' is linear in 'lines_added' (R\u00b2 = 0.946 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.mcvdncjzc",
+   "held_out_r2": 0.9379,
+   "held_out_rows": 131,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-879f461459d8",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "a07414f46117cc38.csv",
+   "doi": "10.5061/dryad.mcvdncjzc",
+   "form": "power law",
+   "params": [
+    0.7364374211339859,
+    0.9878328588800884
+   ],
+   "seed": 1266988544,
+   "x": "TEL",
+   "y": "VLM"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Brain size variation along altitudinal gradients in the Asiatic Toad (Bufo gargarizans)' (Zenodo, doi 10.5061/dryad.mcvdncjzc): 'VLM' follows a power law in 'TEL' (R\u00b2 = 0.931 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
