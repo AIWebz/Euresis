@@ -6153,3 +6153,6 @@
 - 2026-11-23 21:03 FINDING (confirmed on held-out rows): In 'Climate warming causes photobiont degradation and C starvation in a boreal climate sentine' (Zenodo, doi 10.5061/dryad.rbnzs7hcf): 'thall+app2016' is linear in 'thall+newapp2015' (R² = 0.904 on the discovery half); held-out R² = 0.966 [emp-85c7e21d10c3]
 - 2026-11-23 21:03 data feeds: 37150 datasets analysed so far, 5385 confirmed findings
 - 2026-11-23 22:06 data feeds: online
+- 2026-11-23 22:06 FINDING (confirmed on held-out rows): In 'Data from: Male serrate-legged treefrogs adjust competition strategies according to visual' (Zenodo, doi 10.5061/dryad.69p8cz8zx): 'adv' is linear in 'total' (R² = 0.962 on the discovery half); held-out R² = 0.972 [emp-39ef887a018b]
+- 2026-11-23 22:06 FINDING (confirmed on held-out rows): In 'Data from: Male serrate-legged treefrogs adjust competition strategies according to visual' (Zenodo, doi 10.5061/dryad.69p8cz8zx): 'agg' is linear in 'total' (R² = 0.906 on the discovery half); held-out R² = 0.913 [emp-82d5baa6ec6d]
+- 2026-11-23 22:07 data feeds: 37173 datasets analysed so far, 5387 confirmed findings
