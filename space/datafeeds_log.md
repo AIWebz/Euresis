@@ -6152,3 +6152,4 @@
 - 2026-11-23 21:03 FINDING (confirmed on held-out rows): In 'Climate warming causes photobiont degradation and C starvation in a boreal climate sentine' (Zenodo, doi 10.5061/dryad.rbnzs7hcf): 'thall+newapp2015' follows a power law in 'thall+app2015' (R² = 0.925 on the discovery half); held-out R² = 0.898 [emp-785679e49b29]
 - 2026-11-23 21:03 FINDING (confirmed on held-out rows): In 'Climate warming causes photobiont degradation and C starvation in a boreal climate sentine' (Zenodo, doi 10.5061/dryad.rbnzs7hcf): 'thall+app2016' is linear in 'thall+newapp2015' (R² = 0.904 on the discovery half); held-out R² = 0.966 [emp-85c7e21d10c3]
 - 2026-11-23 21:03 data feeds: 37150 datasets analysed so far, 5385 confirmed findings
+- 2026-11-23 22:06 data feeds: online
