@@ -6091,3 +6091,5 @@
 - 2026-11-23 18:13 FINDING (confirmed on held-out rows): In 'Data from: Aboveground mammal and invertebrate exclusions cause consistent changes in soil' (Zenodo, doi 10.5061/dryad.627sf): 'Nematode Evenness' follows a power law in 'Nematode Diversity' (R² = 0.932 on the discovery half); held-out R² = 0.904 [emp-c1142bae2152]
 - 2026-11-23 18:13 FINDING (confirmed on held-out rows): In 'Invasive plant species in the Horn of Africa' (Zenodo, doi 10.5281/zenodo.21509472): 'Slope' is linear in 'TRI' (R² = 0.975 on the discovery half); held-out R² = 0.975 [emp-222f58940d82]
 - 2026-11-23 18:14 data feeds: 36970 datasets analysed so far, 5330 confirmed findings
+- 2026-11-23 18:59 data feeds: online
+- 2026-11-23 18:59 data feeds: 36973 datasets analysed so far, 5330 confirmed findings
