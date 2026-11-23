@@ -4234080,10 +4234080,15 @@
   "verifier": "held-out-replication"
  },
  {
-  "evidence": null,
+  "evidence": {
+   "doi": "10.5281/zenodo.14794715",
+   "held_out_r2": 0.9444,
+   "held_out_rows": 1236,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
   "id": "emp-69dc1a4f09d0",
   "kind": "empirical",
-  "novelty": "not checked",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
   "payload": {
    "dataset": "0765fc16e45e07a0.csv",
    "doi": "10.5281/zenodo.14794715",
@@ -4234098,7 +4234103,655 @@
   },
   "source": "datafeeds.py",
   "statement": "In 'JWST NIRISS/SOSS analysis of HAT-P-18 b with a photospheric model and TACHELES' (Zenodo, doi 10.5281/zenodo.14794715): 'rp_low' follows a power law in 'rp_up' (R\u00b2 = 0.934 on the discovery half)",
-  "status": "candidate",
-  "verifier": null
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14794715",
+   "held_out_r2": 0.9789,
+   "held_out_rows": 1236,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-0e419781c337",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "6f9dda625627fd5a.csv",
+   "doi": "10.5281/zenodo.14794715",
+   "form": "power law",
+   "params": [
+    1.147288663742291,
+    1.0171256234421795
+   ],
+   "seed": 2064455691,
+   "x": "rp_up",
+   "y": "sigma"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'JWST NIRISS/SOSS analysis of HAT-P-18 b with a photospheric model and TACHELES' (Zenodo, doi 10.5281/zenodo.14794715): 'sigma' follows a power law in 'rp_up' (R\u00b2 = 0.979 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14794715",
+   "held_out_r2": 0.9628,
+   "held_out_rows": 1236,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a1ab9c679083",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "6f9dda625627fd5a.csv",
+   "doi": "10.5281/zenodo.14794715",
+   "form": "power law",
+   "params": [
+    -2.210119436792943,
+    1.0169036418693786
+   ],
+   "seed": 2064455691,
+   "x": "rp_up",
+   "y": "sigma_up"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'JWST NIRISS/SOSS analysis of HAT-P-18 b with a photospheric model and TACHELES' (Zenodo, doi 10.5281/zenodo.14794715): 'sigma_up' follows a power law in 'rp_up' (R\u00b2 = 0.963 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14794715",
+   "held_out_r2": 0.9657,
+   "held_out_rows": 1236,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a070387be78f",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "6f9dda625627fd5a.csv",
+   "doi": "10.5281/zenodo.14794715",
+   "form": "power law",
+   "params": [
+    -2.2960937999238595,
+    1.0133614461851563
+   ],
+   "seed": 2064455691,
+   "x": "rp_up",
+   "y": "sigma_low"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'JWST NIRISS/SOSS analysis of HAT-P-18 b with a photospheric model and TACHELES' (Zenodo, doi 10.5281/zenodo.14794715): 'sigma_low' follows a power law in 'rp_up' (R\u00b2 = 0.961 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14794715",
+   "held_out_r2": 0.9789,
+   "held_out_rows": 1236,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-bab2382ae045",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "6f9dda625627fd5a.csv",
+   "doi": "10.5281/zenodo.14794715",
+   "form": "logarithmic",
+   "params": [
+    -708.846480014518,
+    -441.68980279229083
+   ],
+   "seed": 2064455691,
+   "x": "rp_up",
+   "y": "logz"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'JWST NIRISS/SOSS analysis of HAT-P-18 b with a photospheric model and TACHELES' (Zenodo, doi 10.5281/zenodo.14794715): 'logz' grows logarithmically in 'rp_up' (R\u00b2 = 0.979 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14794715",
+   "held_out_r2": 0.9784,
+   "held_out_rows": 1236,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d37b90c4b985",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "6f9dda625627fd5a.csv",
+   "doi": "10.5281/zenodo.14794715",
+   "form": "power law",
+   "params": [
+    1.1371753324524145,
+    1.0171658915017034
+   ],
+   "seed": 2064455691,
+   "x": "rp_low",
+   "y": "sigma"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'JWST NIRISS/SOSS analysis of HAT-P-18 b with a photospheric model and TACHELES' (Zenodo, doi 10.5281/zenodo.14794715): 'sigma' follows a power law in 'rp_low' (R\u00b2 = 0.979 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14794715",
+   "held_out_r2": 0.964,
+   "held_out_rows": 1236,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-cfc229febd98",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "6f9dda625627fd5a.csv",
+   "doi": "10.5281/zenodo.14794715",
+   "form": "power law",
+   "params": [
+    -2.2212368918516567,
+    1.0167939025645962
+   ],
+   "seed": 2064455691,
+   "x": "rp_low",
+   "y": "sigma_up"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'JWST NIRISS/SOSS analysis of HAT-P-18 b with a photospheric model and TACHELES' (Zenodo, doi 10.5281/zenodo.14794715): 'sigma_up' follows a power law in 'rp_low' (R\u00b2 = 0.963 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14794715",
+   "held_out_r2": 0.9661,
+   "held_out_rows": 1236,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9dd21a83c281",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "6f9dda625627fd5a.csv",
+   "doi": "10.5281/zenodo.14794715",
+   "form": "power law",
+   "params": [
+    -2.2987395319127786,
+    1.014509068882668
+   ],
+   "seed": 2064455691,
+   "x": "rp_low",
+   "y": "sigma_low"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'JWST NIRISS/SOSS analysis of HAT-P-18 b with a photospheric model and TACHELES' (Zenodo, doi 10.5281/zenodo.14794715): 'sigma_low' follows a power law in 'rp_low' (R\u00b2 = 0.963 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14794715",
+   "held_out_r2": 0.9784,
+   "held_out_rows": 1236,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-89a7c39d0162",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "6f9dda625627fd5a.csv",
+   "doi": "10.5281/zenodo.14794715",
+   "form": "logarithmic",
+   "params": [
+    -704.4071706805543,
+    -441.70019946151984
+   ],
+   "seed": 2064455691,
+   "x": "rp_low",
+   "y": "logz"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'JWST NIRISS/SOSS analysis of HAT-P-18 b with a photospheric model and TACHELES' (Zenodo, doi 10.5281/zenodo.14794715): 'logz' grows logarithmically in 'rp_low' (R\u00b2 = 0.979 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14794715",
+   "held_out_r2": 1.0,
+   "held_out_rows": 1236,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-97a74f0851a0",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "6f9dda625627fd5a.csv",
+   "doi": "10.5281/zenodo.14794715",
+   "form": "logarithmic",
+   "params": [
+    -210.626320015934,
+    -434.2517769048759
+   ],
+   "seed": 2064455691,
+   "x": "sigma",
+   "y": "logz"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'JWST NIRISS/SOSS analysis of HAT-P-18 b with a photospheric model and TACHELES' (Zenodo, doi 10.5281/zenodo.14794715): 'logz' grows logarithmically in 'sigma' (R\u00b2 = 1.000 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14794715",
+   "held_out_r2": 0.9627,
+   "held_out_rows": 1236,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e00e38f8d480",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "6f9dda625627fd5a.csv",
+   "doi": "10.5281/zenodo.14794715",
+   "form": "power law",
+   "params": [
+    -0.26431817194092383,
+    0.9776459304176975
+   ],
+   "seed": 2064455691,
+   "x": "sigma_up",
+   "y": "sigma_low"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'JWST NIRISS/SOSS analysis of HAT-P-18 b with a photospheric model and TACHELES' (Zenodo, doi 10.5281/zenodo.14794715): 'sigma_low' follows a power law in 'sigma_up' (R\u00b2 = 0.961 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14794715",
+   "held_out_r2": 0.9808,
+   "held_out_rows": 1236,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3b1b1ff0419f",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "6f9dda625627fd5a.csv",
+   "doi": "10.5281/zenodo.14794715",
+   "form": "logarithmic",
+   "params": [
+    -1597.4892869411628,
+    -426.46111080714223
+   ],
+   "seed": 2064455691,
+   "x": "sigma_up",
+   "y": "logz"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'JWST NIRISS/SOSS analysis of HAT-P-18 b with a photospheric model and TACHELES' (Zenodo, doi 10.5281/zenodo.14794715): 'logz' grows logarithmically in 'sigma_up' (R\u00b2 = 0.980 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14794715",
+   "held_out_r2": 0.9822,
+   "held_out_rows": 1236,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4ef86ee66649",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "6f9dda625627fd5a.csv",
+   "doi": "10.5281/zenodo.14794715",
+   "form": "logarithmic",
+   "params": [
+    -1632.1253863378959,
+    -427.353078031395
+   ],
+   "seed": 2064455691,
+   "x": "sigma_low",
+   "y": "logz"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'JWST NIRISS/SOSS analysis of HAT-P-18 b with a photospheric model and TACHELES' (Zenodo, doi 10.5281/zenodo.14794715): 'logz' grows logarithmically in 'sigma_low' (R\u00b2 = 0.979 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14794715",
+   "held_out_r2": 0.9643,
+   "held_out_rows": 546,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9de6423b2092",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "e90040a626676ac2.csv",
+   "doi": "10.5281/zenodo.14794715",
+   "form": "power law",
+   "params": [
+    24.31197458616611,
+    -1.659014275295634
+   ],
+   "seed": 3245456419,
+   "x": "wave",
+   "y": "log10_fx_5sig"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'JWST NIRISS/SOSS analysis of HAT-P-18 b with a photospheric model and TACHELES' (Zenodo, doi 10.5281/zenodo.14794715): 'log10_fx_5sig' follows a power law in 'wave' (R\u00b2 = 0.965 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.19350026",
+   "held_out_r2": 0.9241,
+   "held_out_rows": 74,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-83d6c8bd70e0",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "d3d89f696df21bb2.csv",
+   "doi": "10.5281/zenodo.19350026",
+   "form": "power law",
+   "params": [
+    -0.007843952031907908,
+    0.9232472258288232
+   ],
+   "seed": 1863323953,
+   "x": "J_measured",
+   "y": "J_modelled"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Nucleation of alpha-pinene oxidation products with sulfuric acid: Figure data' (Zenodo, doi 10.5281/zenodo.19350026): 'J_modelled' follows a power law in 'J_measured' (R\u00b2 = 0.917 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.19350026",
+   "held_out_r2": 0.9407,
+   "held_out_rows": 33,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a037db12ad8c",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "e9d864f4a9515e8b.csv",
+   "doi": "10.5281/zenodo.19350026",
+   "form": "linear",
+   "params": [
+    -6.537774694509662,
+    1919.0414386336276
+   ],
+   "seed": 1030198842,
+   "x": "AP flow rate [$\\mathrm{ml\\ min^{-1}}$]",
+   "y": "AP measured [$\\mathrm{pptv}$]"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Nucleation of alpha-pinene oxidation products with sulfuric acid: Figure data' (Zenodo, doi 10.5281/zenodo.19350026): 'AP measured [$\\mathrm{pptv}$]' is linear in 'AP flow rate [$\\mathrm{ml\\ min^{-1}}$]' (R\u00b2 = 0.985 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.13684228",
+   "held_out_r2": 0.9575,
+   "held_out_rows": 1776,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-10b418c9e612",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "68f0134b12310e63.csv",
+   "doi": "10.5281/zenodo.13684228",
+   "form": "linear",
+   "params": [
+    79.16804938696708,
+    -0.006707620135076013
+   ],
+   "seed": 228888142,
+   "x": "Created as New Dataset",
+   "y": "Sample 134 By Visitantes2023 Date Wednesday"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'MAR2PROTECT Biomass-derived Carbons for the Separation of Fluorinated Gases DATASET' (Zenodo, doi 10.5281/zenodo.13684228): 'Sample 134 By Visitantes2023 Date Wednesday' is linear in 'Created as New Dataset' (R\u00b2 = 0.956 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.13684228",
+   "held_out_r2": 0.9169,
+   "held_out_rows": 188,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a5bca76e1978",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "51bb13c17a329bec.csv",
+   "doi": "10.5281/zenodo.13684228",
+   "form": "linear",
+   "params": [
+    -701.093729653786,
+    0.9286574142876378
+   ],
+   "seed": 931787975,
+   "x": "Fitted envelope",
+   "y": "Fitted Peak C1s B"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'MAR2PROTECT Biomass-derived Carbons for the Separation of Fluorinated Gases DATASET' (Zenodo, doi 10.5281/zenodo.13684228): 'Fitted Peak C1s B' is linear in 'Fitted envelope' (R\u00b2 = 0.949 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.13684228",
+   "held_out_r2": 0.9357,
+   "held_out_rows": 188,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ebfec345d76d",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "51bb13c17a329bec.csv",
+   "doi": "10.5281/zenodo.13684228",
+   "form": "linear",
+   "params": [
+    43.014261005477074,
+    0.7681146654220837
+   ],
+   "seed": 931787975,
+   "x": "Fitted Peak C1s E",
+   "y": "Backgnd."
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'MAR2PROTECT Biomass-derived Carbons for the Separation of Fluorinated Gases DATASET' (Zenodo, doi 10.5281/zenodo.13684228): 'Backgnd.' is linear in 'Fitted Peak C1s E' (R\u00b2 = 0.926 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.13684228",
+   "held_out_r2": 0.9535,
+   "held_out_rows": 188,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-bc4cfba35071",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "51bb13c17a329bec.csv",
+   "doi": "10.5281/zenodo.13684228",
+   "form": "linear",
+   "params": [
+    32.29242171157689,
+    0.8543353285857258
+   ],
+   "seed": 931787975,
+   "x": "Fitted Peak C1s F",
+   "y": "Backgnd."
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'MAR2PROTECT Biomass-derived Carbons for the Separation of Fluorinated Gases DATASET' (Zenodo, doi 10.5281/zenodo.13684228): 'Backgnd.' is linear in 'Fitted Peak C1s F' (R\u00b2 = 0.963 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.13684228",
+   "held_out_r2": 0.9656,
+   "held_out_rows": 1776,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-eb4aa1b47639",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "7c19b24917874808.csv",
+   "doi": "10.5281/zenodo.13684228",
+   "form": "logarithmic",
+   "params": [
+    94.43366927229829,
+    -5.979010458084116
+   ],
+   "seed": 2141754598,
+   "x": "Created as New Dataset",
+   "y": "Sample 135 By Visitantes2023 Date Wednesday"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'MAR2PROTECT Biomass-derived Carbons for the Separation of Fluorinated Gases DATASET' (Zenodo, doi 10.5281/zenodo.13684228): 'Sample 135 By Visitantes2023 Date Wednesday' grows logarithmically in 'Created as New Dataset' (R\u00b2 = 0.967 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.vt4b8gtxz",
+   "held_out_r2": 0.9864,
+   "held_out_rows": 1413,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-21700c5e3158",
+  "kind": "empirical",
+  "novelty": "KNOWN: equation of state of a simulated fluid (pressure, density, temperature, chemical potential, kinetic energy) \u2014 not a discovery",
+  "payload": {
+   "dataset": "20c43782ff275095.csv",
+   "doi": "10.5061/dryad.vt4b8gtxz",
+   "form": "power law",
+   "params": [
+    -1.464675478556774,
+    0.970169148600982
+   ],
+   "seed": 2148440952,
+   "x": "beta-std-err.mic_cl1_genes",
+   "y": "beta-std-err.od_cl1_genes"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: The evolutionary genomics of adaptation to stress in wild rhizobium bacteria' (Zenodo, doi 10.5061/dryad.vt4b8gtxz): 'beta-std-err.od_cl1_genes' follows a power law in 'beta-std-err.mic_cl1_genes' (R\u00b2 = 0.988 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.vt4b8gtxz",
+   "held_out_r2": 0.9322,
+   "held_out_rows": 1413,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4afb4f3259ce",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "20c43782ff275095.csv",
+   "doi": "10.5061/dryad.vt4b8gtxz",
+   "form": "linear",
+   "params": [
+    0.9930527903030877,
+    -2.2323804706476955
+   ],
+   "seed": 2148440952,
+   "x": "variant_h2.mic_cl1_genes",
+   "y": "fdr-adj lrt-pvalue.mic_cl1_genes"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: The evolutionary genomics of adaptation to stress in wild rhizobium bacteria' (Zenodo, doi 10.5061/dryad.vt4b8gtxz): 'fdr-adj lrt-pvalue.mic_cl1_genes' is linear in 'variant_h2.mic_cl1_genes' (R\u00b2 = 0.951 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.vt4b8gtxz",
+   "held_out_r2": 0.8636,
+   "held_out_rows": 1413,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-6d4a4dc089a9",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "20c43782ff275095.csv",
+   "doi": "10.5061/dryad.vt4b8gtxz",
+   "form": "logarithmic",
+   "params": [
+    0.03308440879286538,
+    -0.05698715085700321
+   ],
+   "seed": 2148440952,
+   "x": "lrt-pvalue.od_cl1_genes",
+   "y": "variant_h2.od_cl1_genes"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: The evolutionary genomics of adaptation to stress in wild rhizobium bacteria' (Zenodo, doi 10.5061/dryad.vt4b8gtxz): 'variant_h2.od_cl1_genes' grows logarithmically in 'lrt-pvalue.od_cl1_genes' (R\u00b2 = 0.947 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.vt4b8gtxz",
+   "held_out_r2": 0.9798,
+   "held_out_rows": 1413,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-1329bc4b86b4",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "20c43782ff275095.csv",
+   "doi": "10.5061/dryad.vt4b8gtxz",
+   "form": "linear",
+   "params": [
+    1.029877400957299,
+    -2.296691762701091
+   ],
+   "seed": 2148440952,
+   "x": "variant_h2.od_cl1_genes",
+   "y": "fdr-adj lrt-pvalue.od_cl1_genes"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: The evolutionary genomics of adaptation to stress in wild rhizobium bacteria' (Zenodo, doi 10.5061/dryad.vt4b8gtxz): 'fdr-adj lrt-pvalue.od_cl1_genes' is linear in 'variant_h2.od_cl1_genes' (R\u00b2 = 0.985 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
