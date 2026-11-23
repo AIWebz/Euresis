@@ -6001,3 +6001,4 @@
 - 2026-11-23 14:26 FINDING (confirmed on held-out rows): In 'Field and laboratory measurements of suspended-sediment particle size and concentration fr' (Zenodo, doi 10.5281/zenodo.6788303): 'Dispersed_Particle_size_distribution_by_volume_9' is linear in 'Suspended_sediment_concentration' (R² = 0.975 on the discovery half); held-out R² = 0.915 [emp-8eb394fa4edf]
 - 2026-11-23 14:27 data feeds: 36503 datasets analysed so far, 5247 confirmed findings
 - 2026-11-23 15:08 data feeds: online
+- 2026-11-23 15:10 data feeds: 36555 datasets analysed so far, 5247 confirmed findings
