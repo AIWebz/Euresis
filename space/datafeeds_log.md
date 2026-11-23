@@ -6096,3 +6096,4 @@
 - 2026-11-23 20:00 data feeds: online
 - 2026-11-23 20:02 FINDING (confirmed on held-out rows): In 'Thesis Data chapter 4' (Figshare, doi 10.6084/m9.figshare.35031823.v1): 'BG_nmol_gh' follows a power law in 'B_Xyl_nmol_gh' (R² = 0.946 on the discovery half); held-out R² = 0.914 [emp-90162f6b3774]
 - 2026-11-23 20:02 data feeds: 37068 datasets analysed so far, 5331 confirmed findings
+- 2026-11-23 20:54 data feeds: online
