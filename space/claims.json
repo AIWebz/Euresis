@@ -4251529,5 +4251529,86 @@
   "statement": "Octal game 0.1043576 is completely solved: its Grundy values are periodic with pre-period 173 and period 93 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23544171",
+   "held_out_r2": 0.9488,
+   "held_out_rows": 1580,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a3bbcc5bd3c4",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "53f7d1983284974a.csv",
+   "doi": "10.5281/zenodo.23544171",
+   "form": "linear",
+   "params": [
+    0.25265279495332243,
+    0.936421585638767
+   ],
+   "seed": 1918479171,
+   "x": "y_true",
+   "y": "y_pred"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset and publication: Modelling magnetic material properties with uncertainty-aware neu' (Zenodo, doi 10.5281/zenodo.23544171): 'y_pred' is linear in 'y_true' (R\u00b2 = 0.953 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23544171",
+   "held_out_r2": 0.9868,
+   "held_out_rows": 1580,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4bf82813d7c2",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "53f7d1983284974a.csv",
+   "doi": "10.5281/zenodo.23544171",
+   "form": "power law",
+   "params": [
+    -0.040775276816965134,
+    0.9988414815626635
+   ],
+   "seed": 1918479171,
+   "x": "std_total",
+   "y": "std_aleatoric"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset and publication: Modelling magnetic material properties with uncertainty-aware neu' (Zenodo, doi 10.5281/zenodo.23544171): 'std_aleatoric' follows a power law in 'std_total' (R\u00b2 = 0.983 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.6084/m9.figshare.35031823.v1",
+   "held_out_r2": 0.9141,
+   "held_out_rows": 53,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-90162f6b3774",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3061267243327417.csv",
+   "doi": "10.6084/m9.figshare.35031823.v1",
+   "form": "power law",
+   "params": [
+    3.032824809818716,
+    0.8079901766868286
+   ],
+   "seed": 711196239,
+   "x": "B_Xyl_nmol_gh",
+   "y": "BG_nmol_gh"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Thesis Data chapter 4' (Figshare, doi 10.6084/m9.figshare.35031823.v1): 'BG_nmol_gh' follows a power law in 'B_Xyl_nmol_gh' (R\u00b2 = 0.946 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
