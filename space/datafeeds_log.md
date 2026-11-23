@@ -6162,3 +6162,7 @@
 - 2026-11-23 22:50 FINDING (confirmed on held-out rows): In 'Data from: Siring success in kangaroos: size matters for those in the right place at the r' (Zenodo, doi 10.5061/dryad.4mw6m9072): 'w' is linear in 'UDOI' (R² = 0.946 on the discovery half); held-out R² = 0.945 [emp-aa4d06564170]
 - 2026-11-23 22:50 data feeds: 37222 datasets analysed so far, 5390 confirmed findings
 - 2026-11-23 23:52 data feeds: online
+- 2026-11-23 23:54 FINDING (confirmed on held-out rows): In 'patccat: Claim Types for USPTO Patents (1836-2025)' (Zenodo, doi 10.5281/zenodo.22401669): 'openClaims' is linear in 'indepClaims' (R² = 0.984 on the discovery half); held-out R² = 0.899 [emp-81867c0a3d81]
+- 2026-11-23 23:54 FINDING (confirmed on held-out rows): In 'patccat: Claim Types for USPTO Patents (1836-2025)' (Zenodo, doi 10.5281/zenodo.22401669): 'maxClaimNo' is linear in 'depClaims' (R² = 0.961 on the discovery half); held-out R² = 0.978 [emp-807986a404d2]
+- 2026-11-23 23:54 FINDING (confirmed on held-out rows): In 'patccat: Claim Types for USPTO Patents (1836-2025)' (Zenodo, doi 10.5281/zenodo.22401669): 'wordsClaims' is linear in 'wordsBodies' (R² = 0.952 on the discovery half); held-out R² = 0.955 [emp-e625c0a3ed5b]
+- 2026-11-23 23:55 data feeds: 37317 datasets analysed so far, 5393 confirmed findings

@@ -4272049,5 +4272049,86 @@
   "statement": "Octal game 0.1045164 is completely solved: its Grundy values are periodic with pre-period 4 and period 15 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22401669",
+   "held_out_r2": 0.8988,
+   "held_out_rows": 487,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-81867c0a3d81",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "2dada87b333a2048.csv",
+   "doi": "10.5281/zenodo.22401669",
+   "form": "linear",
+   "params": [
+    -0.04304022215556697,
+    0.9991170864336103
+   ],
+   "seed": 3860733834,
+   "x": "indepClaims",
+   "y": "openClaims"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'patccat: Claim Types for USPTO Patents (1836-2025)' (Zenodo, doi 10.5281/zenodo.22401669): 'openClaims' is linear in 'indepClaims' (R\u00b2 = 0.984 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22401669",
+   "held_out_r2": 0.9783,
+   "held_out_rows": 487,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-807986a404d2",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "2dada87b333a2048.csv",
+   "doi": "10.5281/zenodo.22401669",
+   "form": "linear",
+   "params": [
+    1.8905666748434005,
+    1.048804831488545
+   ],
+   "seed": 3860733834,
+   "x": "depClaims",
+   "y": "maxClaimNo"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'patccat: Claim Types for USPTO Patents (1836-2025)' (Zenodo, doi 10.5281/zenodo.22401669): 'maxClaimNo' is linear in 'depClaims' (R\u00b2 = 0.961 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22401669",
+   "held_out_r2": 0.9553,
+   "held_out_rows": 487,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e625c0a3ed5b",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "2dada87b333a2048.csv",
+   "doi": "10.5281/zenodo.22401669",
+   "form": "linear",
+   "params": [
+    17.797493238195518,
+    1.0104423873851878
+   ],
+   "seed": 3860733834,
+   "x": "wordsBodies",
+   "y": "wordsClaims"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'patccat: Claim Types for USPTO Patents (1836-2025)' (Zenodo, doi 10.5281/zenodo.22401669): 'wordsClaims' is linear in 'wordsBodies' (R\u00b2 = 0.952 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
