@@ -5877,3 +5877,4 @@
 - 2026-11-22 23:53 FINDING (confirmed on held-out rows): In 'Data from: Hummingbirds budget energy flexibly in response to changing resources' (Zenodo, doi 10.5061/dryad.r18r8p1): 'kJ_min_day_HovThermo_adj' is linear in 'Daytime_EE_adj_kJ_HovThermo_adj' (R² = 0.984 on the discovery half); held-out R² = 0.983 [emp-1a85be3735cd]
 - 2026-11-22 23:56 FINDING (confirmed on held-out rows): In 'Mount Etna Absolute Gravimetry Dataset: 19 Years of Measurements (2007-2025)' (Zenodo, doi 10.5281/zenodo.21512426): 'g at h [µGal]' is linear in 'h [meter]' (R² = 0.990 on the discovery half); held-out R² = 0.948 [emp-8ff64f5aea4c]
 - 2026-11-22 23:56 data feeds: 35378 datasets analysed so far, 5154 confirmed findings
+- 2026-11-23 01:00 data feeds: online
