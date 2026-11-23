@@ -8478,3 +8478,16 @@
 - 2026-11-23 10:35 round 7708: velocity addition
 - 2026-11-23 10:37 round 7709: Compton scattering
 - 2026-11-23 10:38 round 7710: Cournot duopoly
+- 2026-11-23 10:40 round 7711: insurance and risk
+- 2026-11-23 10:42 round 7712: auction with a reserve price
+- 2026-11-23 10:43 round 7713: two-body decay
+- 2026-11-23 10:45 round 7714: collision
+- 2026-11-23 10:47 round 7715: driven oscillator
+- 2026-11-23 10:49 round 7716: velocity addition
+- 2026-11-23 10:50 round 7717: Compton scattering
+- 2026-11-23 10:51 round 7718: Cournot duopoly
+- 2026-11-23 10:54 round 7719: insurance and risk
+- 2026-11-23 10:55 round 7720: auction with a reserve price
+- 2026-11-23 10:58 round 7721: two-body decay
+- 2026-11-23 11:00 round 7722: collision
+- 2026-11-23 11:04 segment end: 7722 rounds, 5 discoveries, 2 known laws rediscovered
