@@ -5949,3 +5949,4 @@
 - 2026-11-23 08:35 data feeds: online
 - 2026-11-23 08:36 FINDING (confirmed on held-out rows): In 'Brain size variation along altitudinal gradients in the Asiatic Toad (Bufo gargarizans)' (Zenodo, doi 10.5061/dryad.mcvdncjzc): 'VLM' follows a power law in 'TEL' (R² = 0.931 on the discovery half); held-out R² = 0.938 [emp-879f461459d8]
 - 2026-11-23 08:37 data feeds: 36079 datasets analysed so far, 5208 confirmed findings
+- 2026-11-23 09:23 data feeds: online
