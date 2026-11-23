@@ -5887,3 +5887,4 @@
 - 2026-11-23 01:08 FINDING (confirmed on held-out rows): In 'SNP genotype and phenotype data for a genome-wide association study of 199 experimental te' (Zenodo, doi 10.5281/zenodo.21191679): 'NPTH' follows a power law in 'NPPS' (R² = 0.910 on the discovery half); held-out R² = 0.923 [emp-203d2c3d7925]
 - 2026-11-23 01:08 FINDING (confirmed on held-out rows): In 'SNP genotype and phenotype data for a genome-wide association study of 199 experimental te' (Zenodo, doi 10.5281/zenodo.21191679): 'LP' is linear in 'DPTH' (R² = 0.973 on the discovery half); held-out R² = 0.976 [emp-51a7f2af1328]
 - 2026-11-23 01:09 data feeds: 35504 datasets analysed so far, 5162 confirmed findings
+- 2026-11-23 01:44 data feeds: online
