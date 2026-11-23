@@ -6085,3 +6085,5 @@
 - 2026-11-23 17:09 FINDING (confirmed on held-out rows): In 'Data from: The evolutionary genomics of adaptation to stress in wild rhizobium bacteria' (Zenodo, doi 10.5061/dryad.vt4b8gtxz): 'fdr-adj lrt-pvalue.od_cl1_genes' is linear in 'variant_h2.od_cl1_genes' (R² = 0.985 on the discovery half); held-out R² = 0.980 [emp-1329bc4b86b4]
 - 2026-11-23 17:09 data feeds: 36913 datasets analysed so far, 5325 confirmed findings
 - 2026-11-23 18:11 data feeds: online
+- 2026-11-23 18:12 FINDING (confirmed on held-out rows): In 'Interactive and unimodal relationships between plant biomass, abiotic factors, and plant d' (Zenodo, doi 10.5281/zenodo.14227669): 'inverse_simpson' grows exponentially in 'shannon' (R² = 0.963 on the discovery half); held-out R² = 0.964 [emp-3f6fa003eeb2]
+- 2026-11-23 18:12 FINDING (confirmed on held-out rows): In 'Data from: Social and nutritional factors shape larval aggregation, foraging, and body mas' (Zenodo, doi 10.5061/dryad.b8p41t8): 'weight_final' grows logarithmically in 'weight_initial' (R² = 0.943 on the discovery half); held-out R² = 0.893 [emp-d8f16fb45cc6]

@@ -4239470,5 +4239470,86 @@
   "statement": "Octal game 0.1041651 is completely solved: its Grundy values are periodic with pre-period 4 and period 14 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.14227669",
+   "held_out_r2": 0.9639,
+   "held_out_rows": 1629,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3f6fa003eeb2",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "c8c9ae71b26c1427.csv",
+   "doi": "10.5281/zenodo.14227669",
+   "form": "exponential",
+   "params": [
+    -0.16245646650726112,
+    0.9147110388202438
+   ],
+   "seed": 3719920413,
+   "x": "shannon",
+   "y": "inverse_simpson"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Interactive and unimodal relationships between plant biomass, abiotic factors, and plant d' (Zenodo, doi 10.5281/zenodo.14227669): 'inverse_simpson' grows exponentially in 'shannon' (R\u00b2 = 0.963 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.b8p41t8",
+   "held_out_r2": 0.8933,
+   "held_out_rows": 40,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d8f16fb45cc6",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "4b0519e5df80eb76.csv",
+   "doi": "10.5061/dryad.b8p41t8",
+   "form": "logarithmic",
+   "params": [
+    1.0482245127748477,
+    1.1375688302581863
+   ],
+   "seed": 2798834476,
+   "x": "weight_initial",
+   "y": "weight_final"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Social and nutritional factors shape larval aggregation, foraging, and body mas' (Zenodo, doi 10.5061/dryad.b8p41t8): 'weight_final' grows logarithmically in 'weight_initial' (R\u00b2 = 0.943 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.627sf",
+   "held_out_r2": 0.8987,
+   "held_out_rows": 40,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5a2e84869970",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "f40916230461e458.csv",
+   "doi": "10.5061/dryad.627sf",
+   "form": "linear",
+   "params": [
+    5391.137715850853,
+    1.5184001909828637
+   ],
+   "seed": 4140458064,
+   "x": "Bacterivores",
+   "y": "Total Nematodes"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Aboveground mammal and invertebrate exclusions cause consistent changes in soil' (Zenodo, doi 10.5061/dryad.627sf): 'Total Nematodes' is linear in 'Bacterivores' (R\u00b2 = 0.934 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
