@@ -6072,3 +6072,4 @@
 - 2026-11-23 16:37 FINDING (confirmed on held-out rows): In 'Dataset to the article "Elucidating the Role of Mo Vacancies in a Two-Dimensional Molybden' (Zenodo, doi 10.5281/zenodo.20491031): 'Survey Scan (a.u)' is linear in 'Binding Energy (eV)' (R² = 0.924 on the discovery half); held-out R² = 0.914 [emp-beed11e08926]
 - 2026-11-23 16:37 FINDING (confirmed on held-out rows): In 'Dataset to the article "Elucidating the Role of Mo Vacancies in a Two-Dimensional Molybden' (Zenodo, doi 10.5281/zenodo.20491031): 'Envelope_F1s Scan' is linear in 'F-Mo' (R² = 0.950 on the discovery half); held-out R² = 0.959 [emp-cfb08bd4b620]
 - 2026-11-23 16:42 data feeds: 36837 datasets analysed so far, 5315 confirmed findings
+- 2026-11-23 17:04 data feeds: online
