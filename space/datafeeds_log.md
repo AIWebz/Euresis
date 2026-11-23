@@ -5902,3 +5902,4 @@
 - 2026-11-23 02:52 FINDING (confirmed on held-out rows): In 'Associated Data for - A novel chemical strategy for control of Karenia brevis: Effects on ' (Zenodo, doi 10.5281/zenodo.20241825): 'D2.NP' is linear in 'D2.Con' (R² = 0.939 on the discovery half); held-out R² = 0.896 [emp-0941ddd5609f]
 - 2026-11-23 02:53 FINDING (confirmed on held-out rows): In 'Data for: Ligand Electronic Properties Dictate Composition of Ni-Based Nanocrystals' (Zenodo, doi 10.5281/zenodo.15228190): 'OLAM reference (a.u.)' is linear in 'intensity reaction solution (a.u.)' (R² = 0.908 on the discovery half); held-out R² = 0.923 [emp-ab6e74fc5e8d]
 - 2026-11-23 02:54 data feeds: 35746 datasets analysed so far, 5173 confirmed findings
+- 2026-11-23 03:39 data feeds: online
