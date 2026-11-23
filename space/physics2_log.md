@@ -8708,3 +8708,6 @@
 - 2026-11-23 23:10 round 7912: auction with a reserve price
 - 2026-11-23 23:11 round 7913: two-body decay
 - 2026-11-23 23:13 round 7914: collision
+- 2026-11-23 23:18 round 7915: driven oscillator
+- 2026-11-23 23:19 round 7916: velocity addition
+- 2026-11-23 23:21 segment end: 7916 rounds, 5 discoveries, 2 known laws rediscovered
