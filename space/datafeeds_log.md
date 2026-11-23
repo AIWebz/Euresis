@@ -5946,3 +5946,4 @@
 - 2026-11-23 07:32 FINDING (confirmed on held-out rows): In 'Data from: A multivariate analysis of genetic variation in the advertisement call of the g' (Zenodo, doi 10.5061/dryad.40sj6): 'CP[ ]' grows exponentially in 'obs[ ,2]' (R² = 0.927 on the discovery half); held-out R² = 0.918 [emp-0fe10b35678e]
 - 2026-11-23 07:32 FINDING (confirmed on held-out rows): In 'Data from: A multivariate analysis of genetic variation in the advertisement call of the g' (Zenodo, doi 10.5061/dryad.40sj6): 'DF[ ]' is linear in 'obs[ ,3]' (R² = 0.968 on the discovery half); held-out R² = 0.961 [emp-8e9887e8e29a]
 - 2026-11-23 07:33 data feeds: 36041 datasets analysed so far, 5207 confirmed findings
+- 2026-11-23 08:35 data feeds: online
