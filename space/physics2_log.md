@@ -8515,3 +8515,8 @@
 - 2026-11-23 12:36 round 7741: Compton scattering
 - 2026-11-23 12:37 round 7742: Cournot duopoly
 - 2026-11-23 12:40 round 7743: insurance and risk
+- 2026-11-23 12:42 round 7744: auction with a reserve price
+- 2026-11-23 12:44 round 7745: two-body decay
+- 2026-11-23 12:45 round 7746: collision
+- 2026-11-23 12:50 round 7747: driven oscillator
+- 2026-11-23 12:52 segment end: 7747 rounds, 5 discoveries, 2 known laws rediscovered
