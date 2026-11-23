@@ -4239534,7 +4239534,7 @@
   },
   "id": "emp-5a2e84869970",
   "kind": "empirical",
-  "novelty": "not checked",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
   "payload": {
    "dataset": "f40916230461e458.csv",
    "doi": "10.5061/dryad.627sf",
@@ -4239549,6 +4239549,60 @@
   },
   "source": "datafeeds.py",
   "statement": "In 'Data from: Aboveground mammal and invertebrate exclusions cause consistent changes in soil' (Zenodo, doi 10.5061/dryad.627sf): 'Total Nematodes' is linear in 'Bacterivores' (R\u00b2 = 0.934 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.627sf",
+   "held_out_r2": 0.9037,
+   "held_out_rows": 40,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c1142bae2152",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f40916230461e458.csv",
+   "doi": "10.5061/dryad.627sf",
+   "form": "power law",
+   "params": [
+    -0.9530882837528462,
+    0.741953402579497
+   ],
+   "seed": 4140458064,
+   "x": "Nematode Diversity",
+   "y": "Nematode Evenness"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Aboveground mammal and invertebrate exclusions cause consistent changes in soil' (Zenodo, doi 10.5061/dryad.627sf): 'Nematode Evenness' follows a power law in 'Nematode Diversity' (R\u00b2 = 0.932 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.21509472",
+   "held_out_r2": 0.9747,
+   "held_out_rows": 65,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-222f58940d82",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8ca4db5737ea9c39.csv",
+   "doi": "10.5281/zenodo.21509472",
+   "form": "linear",
+   "params": [
+    -0.6195459163661421,
+    0.6980445361422215
+   ],
+   "seed": 634775309,
+   "x": "TRI",
+   "y": "Slope"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Invasive plant species in the Horn of Africa' (Zenodo, doi 10.5281/zenodo.21509472): 'Slope' is linear in 'TRI' (R\u00b2 = 0.975 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
  }
