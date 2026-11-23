@@ -45993,3 +45993,5 @@
 - 2026-11-23 21:37 SOLVED (proved): 0.1044171 — pre-period 5, period 15  [gam-4297fd23c0ff]
 - 2026-11-23 21:38 SOLVED (proved): 0.1044172 — pre-period 5, period 15  [gam-c7589a754a30]
 - 2026-11-23 21:38 SOLVED (proved): 0.1044173 — pre-period 5, period 15  [gam-2bb2b6fb43f0]
+- 2026-11-23 21:38 SOLVED (proved): 0.1044201 — pre-period 5, period 13  [gam-ded5255b538f]
+- 2026-11-23 21:38 SOLVED (proved): 0.1044202 — pre-period 5, period 13  [gam-a64af9384e37]
