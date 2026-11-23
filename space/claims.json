@@ -4166818,5 +4166818,248 @@
   "statement": "Octal game 0.1014451 is completely solved: its Grundy values are periodic with pre-period 6 and period 17 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23189034",
+   "held_out_r2": 0.9816,
+   "held_out_rows": 600,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d7eb8462b3c1",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "0d24486456fab0ae.csv",
+   "doi": "10.5281/zenodo.23189034",
+   "form": "linear",
+   "params": [
+    8.293088429446131e-05,
+    0.878857525377986
+   ],
+   "seed": 3022220954,
+   "x": "dT_T_Green",
+   "y": "dT_T_BVP_nonlinear"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset version 2 for: Benchmarking wall velocities in cosmological phase transitions: Flu' (Zenodo, doi 10.5281/zenodo.23189034): 'dT_T_BVP_nonlinear' is linear in 'dT_T_Green' (R\u00b2 = 0.983 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23189034",
+   "held_out_r2": 0.9814,
+   "held_out_rows": 600,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-78d52a871ae4",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "0d24486456fab0ae.csv",
+   "doi": "10.5281/zenodo.23189034",
+   "form": "linear",
+   "params": [
+    8.943346447413527e-05,
+    0.8625576122689721
+   ],
+   "seed": 3022220954,
+   "x": "dT_T_BVP_linear",
+   "y": "dT_T_BVP_nonlinear"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset version 2 for: Benchmarking wall velocities in cosmological phase transitions: Flu' (Zenodo, doi 10.5281/zenodo.23189034): 'dT_T_BVP_nonlinear' is linear in 'dT_T_BVP_linear' (R\u00b2 = 0.984 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23189034",
+   "held_out_r2": 0.9164,
+   "held_out_rows": 600,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e73310904bbd",
+  "kind": "empirical",
+  "novelty": "KNOWN: equation of state of a simulated fluid (pressure, density, temperature, chemical potential, kinetic energy) \u2014 not a discovery",
+  "payload": {
+   "dataset": "aa66bca869349739.csv",
+   "doi": "10.5281/zenodo.23189034",
+   "form": "linear",
+   "params": [
+    -0.0016617879811724567,
+    0.7129648716400832
+   ],
+   "seed": 363506824,
+   "x": "mu_Green",
+   "y": "mu_BVP_nonlinear"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset version 2 for: Benchmarking wall velocities in cosmological phase transitions: Flu' (Zenodo, doi 10.5281/zenodo.23189034): 'mu_BVP_nonlinear' is linear in 'mu_Green' (R\u00b2 = 0.904 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23189034",
+   "held_out_r2": 0.9885,
+   "held_out_rows": 600,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-17561a93cda1",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "aa66bca869349739.csv",
+   "doi": "10.5281/zenodo.23189034",
+   "form": "linear",
+   "params": [
+    0.00039870155475229955,
+    1.5032123051174227
+   ],
+   "seed": 363506824,
+   "x": "dv_Green",
+   "y": "dv_BVP_nonlinear"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset version 2 for: Benchmarking wall velocities in cosmological phase transitions: Flu' (Zenodo, doi 10.5281/zenodo.23189034): 'dv_BVP_nonlinear' is linear in 'dv_Green' (R\u00b2 = 0.988 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23189034",
+   "held_out_r2": 0.9213,
+   "held_out_rows": 600,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-98b4f4c23161",
+  "kind": "empirical",
+  "novelty": "KNOWN: equation of state of a simulated fluid (pressure, density, temperature, chemical potential, kinetic energy) \u2014 not a discovery",
+  "payload": {
+   "dataset": "aa66bca869349739.csv",
+   "doi": "10.5281/zenodo.23189034",
+   "form": "linear",
+   "params": [
+    -0.0017140775794893524,
+    0.7039711707358752
+   ],
+   "seed": 363506824,
+   "x": "mu_BVP_linear",
+   "y": "mu_BVP_nonlinear"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset version 2 for: Benchmarking wall velocities in cosmological phase transitions: Flu' (Zenodo, doi 10.5281/zenodo.23189034): 'mu_BVP_nonlinear' is linear in 'mu_BVP_linear' (R\u00b2 = 0.908 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23189034",
+   "held_out_r2": 0.988,
+   "held_out_rows": 600,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-84f005b52365",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "aa66bca869349739.csv",
+   "doi": "10.5281/zenodo.23189034",
+   "form": "linear",
+   "params": [
+    0.00039459368499968696,
+    1.5007417232915228
+   ],
+   "seed": 363506824,
+   "x": "dv_BVP_linear",
+   "y": "dv_BVP_nonlinear"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset version 2 for: Benchmarking wall velocities in cosmological phase transitions: Flu' (Zenodo, doi 10.5281/zenodo.23189034): 'dv_BVP_nonlinear' is linear in 'dv_BVP_linear' (R\u00b2 = 0.988 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.5094384",
+   "held_out_r2": 0.9686,
+   "held_out_rows": 2174,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-aa0c02683cb2",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "523c8c601967509b.csv",
+   "doi": "10.5281/zenodo.5094384",
+   "form": "power law",
+   "params": [
+    -1.2916661769498137,
+    1.0396257961478599
+   ],
+   "seed": 2415511423,
+   "x": "FF_gas",
+   "y": "ENB"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Methane isotopes in Krakow, Poland' (Zenodo, doi 10.5281/zenodo.5094384): 'ENB' follows a power law in 'FF_gas' (R\u00b2 = 0.969 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.5094384",
+   "held_out_r2": 0.9056,
+   "held_out_rows": 2174,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-44abbcd65bdb",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "523c8c601967509b.csv",
+   "doi": "10.5281/zenodo.5094384",
+   "form": "logarithmic",
+   "params": [
+    714.8921473771403,
+    -106.22938515852888
+   ],
+   "seed": 2415511423,
+   "x": "Total",
+   "y": "dD calc11"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Methane isotopes in Krakow, Poland' (Zenodo, doi 10.5281/zenodo.5094384): 'dD calc11' grows logarithmically in 'Total' (R\u00b2 = 0.914 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.10598648",
+   "held_out_r2": 0.9673,
+   "held_out_rows": 300,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-edf9aa81acf8",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "1d4d40dcaf8276e7.csv",
+   "doi": "10.5281/zenodo.10598648",
+   "form": "linear",
+   "params": [
+    0.3709898888667786,
+    -0.33014523678380103
+   ],
+   "seed": 2848229742,
+   "x": "fidelity_2",
+   "y": "Entropy"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Variational quantum simulation of U(1) lattice gauge theories with qudit systems' (Zenodo, doi 10.5281/zenodo.10598648): 'Entropy' is linear in 'fidelity_2' (R\u00b2 = 0.973 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
