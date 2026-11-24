@@ -8818,3 +8818,23 @@
 - 2026-11-24 04:01 round 8012: velocity addition
 - 2026-11-24 04:03 round 8013: Compton scattering
 - 2026-11-24 04:04 segment end: 8013 rounds, 5 discoveries, 2 known laws rediscovered
+- 2026-11-24 04:29 segment start (budget 30 min; model: Qwen3-8B; 5 discoveries so far)
+- 2026-11-24 04:29 round 8014: Cournot duopoly
+- 2026-11-24 04:30 round 8015: insurance and risk
+- 2026-11-24 04:32 round 8016: auction with a reserve price
+- 2026-11-24 04:34 round 8017: two-body decay
+- 2026-11-24 04:36 round 8018: collision
+- 2026-11-24 04:39 round 8019: driven oscillator
+- 2026-11-24 04:41 round 8020: velocity addition
+- 2026-11-24 04:42 round 8021: Compton scattering
+- 2026-11-24 04:43 round 8022: Cournot duopoly
+- 2026-11-24 04:44 round 8023: insurance and risk
+- 2026-11-24 04:45 round 8024: auction with a reserve price
+- 2026-11-24 04:48 round 8025: two-body decay
+- 2026-11-24 04:50 round 8026: collision
+- 2026-11-24 04:54 round 8027: driven oscillator
+- 2026-11-24 04:56 round 8028: velocity addition
+- 2026-11-24 04:57 round 8029: Compton scattering
+- 2026-11-24 04:57 round 8030: Cournot duopoly
+- 2026-11-24 04:59 round 8031: insurance and risk
+- 2026-11-24 05:00 segment end: 8031 rounds, 5 discoveries, 2 known laws rediscovered
