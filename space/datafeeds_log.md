@@ -6166,3 +6166,4 @@
 - 2026-11-23 23:54 FINDING (confirmed on held-out rows): In 'patccat: Claim Types for USPTO Patents (1836-2025)' (Zenodo, doi 10.5281/zenodo.22401669): 'maxClaimNo' is linear in 'depClaims' (R² = 0.961 on the discovery half); held-out R² = 0.978 [emp-807986a404d2]
 - 2026-11-23 23:54 FINDING (confirmed on held-out rows): In 'patccat: Claim Types for USPTO Patents (1836-2025)' (Zenodo, doi 10.5281/zenodo.22401669): 'wordsClaims' is linear in 'wordsBodies' (R² = 0.952 on the discovery half); held-out R² = 0.955 [emp-e625c0a3ed5b]
 - 2026-11-23 23:55 data feeds: 37317 datasets analysed so far, 5393 confirmed findings
+- 2026-11-24 00:34 data feeds: online
