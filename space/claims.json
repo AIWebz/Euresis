@@ -4296578,5 +4296578,815 @@
   "statement": "In 'CO2 and CH4 floating chamber incubation time series from EU Horizon project RESTORE4Cs and' (Zenodo, doi 10.5281/zenodo.17828220): 'HM.C0' is linear in 'LM.Ct' (R\u00b2 = 0.941 on the discovery half)",
   "status": "refuted",
   "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17828220",
+   "held_out_r2": 0.8831,
+   "held_out_rows": 395,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-26b2b6ff9c1b",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "0df405fb7fe6f895.csv",
+   "doi": "10.5281/zenodo.17828220",
+   "form": "linear",
+   "params": [
+    -0.03507368586943244,
+    0.11436071967062626
+   ],
+   "seed": 2380349362,
+   "x": "LM.slope",
+   "y": "LM.SE"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'CO2 and CH4 floating chamber incubation time series from EU Horizon project RESTORE4Cs and' (Zenodo, doi 10.5281/zenodo.17828220): 'LM.SE' is linear in 'LM.slope' (R\u00b2 = 0.964 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17828220",
+   "held_out_r2": 0.8042,
+   "held_out_rows": 395,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ede3dccbf475",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "0df405fb7fe6f895.csv",
+   "doi": "10.5281/zenodo.17828220",
+   "form": "linear",
+   "params": [
+    3.980910546877165,
+    1.5979434652925382
+   ],
+   "seed": 2380349362,
+   "x": "LM.slope",
+   "y": "HM.slope"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'CO2 and CH4 floating chamber incubation time series from EU Horizon project RESTORE4Cs and' (Zenodo, doi 10.5281/zenodo.17828220): 'HM.slope' is linear in 'LM.slope' (R\u00b2 = 0.902 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17828220",
+   "held_out_r2": 0.942,
+   "held_out_rows": 383,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-430422eca4e4",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "1a097cc724cb309e.csv",
+   "doi": "10.5281/zenodo.17828220",
+   "form": "power law",
+   "params": [
+    0.32022382404037464,
+    1.169435953163786
+   ],
+   "seed": 233594654,
+   "x": "LM.MAE",
+   "y": "LM.RMSE"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'CO2 and CH4 floating chamber incubation time series from EU Horizon project RESTORE4Cs and' (Zenodo, doi 10.5281/zenodo.17828220): 'LM.RMSE' follows a power law in 'LM.MAE' (R\u00b2 = 0.951 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.18420947",
+   "held_out_r2": 0.9577,
+   "held_out_rows": 6828,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-dc4a712fa014",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3459272d58fcfd99.csv",
+   "doi": "10.5281/zenodo.18420947",
+   "form": "linear",
+   "params": [
+    -169.69677686956865,
+    1.0759538712088104
+   ],
+   "seed": 3446935362,
+   "x": "AG",
+   "y": "AS01"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Performance Evaluation of AlphaSensor Radon Modules Under Real-World Conditions' (Zenodo, doi 10.5281/zenodo.18420947): 'AS01' is linear in 'AG' (R\u00b2 = 0.958 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.18420947",
+   "held_out_r2": 0.9479,
+   "held_out_rows": 6828,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-bad59e11f17d",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3459272d58fcfd99.csv",
+   "doi": "10.5281/zenodo.18420947",
+   "form": "linear",
+   "params": [
+    -143.70464042913036,
+    1.0435334304891826
+   ],
+   "seed": 3446935362,
+   "x": "AG",
+   "y": "AS02"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Performance Evaluation of AlphaSensor Radon Modules Under Real-World Conditions' (Zenodo, doi 10.5281/zenodo.18420947): 'AS02' is linear in 'AG' (R\u00b2 = 0.949 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.18420947",
+   "held_out_r2": 0.9583,
+   "held_out_rows": 6828,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-21c7147f4671",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3459272d58fcfd99.csv",
+   "doi": "10.5281/zenodo.18420947",
+   "form": "linear",
+   "params": [
+    -52.988266393409894,
+    0.38349004114874474
+   ],
+   "seed": 3446935362,
+   "x": "AG",
+   "y": "AS03"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Performance Evaluation of AlphaSensor Radon Modules Under Real-World Conditions' (Zenodo, doi 10.5281/zenodo.18420947): 'AS03' is linear in 'AG' (R\u00b2 = 0.956 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.18420947",
+   "held_out_r2": 0.9905,
+   "held_out_rows": 6828,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-00810ba81073",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3459272d58fcfd99.csv",
+   "doi": "10.5281/zenodo.18420947",
+   "form": "power law",
+   "params": [
+    -2.784709219796023,
+    1.2938442517173903
+   ],
+   "seed": 3446935362,
+   "x": "AG error",
+   "y": "AG byte70"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Performance Evaluation of AlphaSensor Radon Modules Under Real-World Conditions' (Zenodo, doi 10.5281/zenodo.18420947): 'AG byte70' follows a power law in 'AG error' (R\u00b2 = 0.991 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.18420947",
+   "held_out_r2": 0.9556,
+   "held_out_rows": 6828,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-0ea25fe78b0d",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3459272d58fcfd99.csv",
+   "doi": "10.5281/zenodo.18420947",
+   "form": "linear",
+   "params": [
+    -703.0799928753061,
+    13.41997185372533
+   ],
+   "seed": 3446935362,
+   "x": "AG error",
+   "y": "AS01"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Performance Evaluation of AlphaSensor Radon Modules Under Real-World Conditions' (Zenodo, doi 10.5281/zenodo.18420947): 'AS01' is linear in 'AG error' (R\u00b2 = 0.954 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.18420947",
+   "held_out_r2": 0.9501,
+   "held_out_rows": 6828,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a8a244088f1d",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3459272d58fcfd99.csv",
+   "doi": "10.5281/zenodo.18420947",
+   "form": "linear",
+   "params": [
+    -665.8867598278138,
+    13.03999798326704
+   ],
+   "seed": 3446935362,
+   "x": "AG error",
+   "y": "AS02"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Performance Evaluation of AlphaSensor Radon Modules Under Real-World Conditions' (Zenodo, doi 10.5281/zenodo.18420947): 'AS02' is linear in 'AG error' (R\u00b2 = 0.949 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.18420947",
+   "held_out_r2": 0.9542,
+   "held_out_rows": 6828,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5c04fd468c43",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3459272d58fcfd99.csv",
+   "doi": "10.5281/zenodo.18420947",
+   "form": "linear",
+   "params": [
+    -241.94794789300065,
+    4.777378590938612
+   ],
+   "seed": 3446935362,
+   "x": "AG error",
+   "y": "AS03"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Performance Evaluation of AlphaSensor Radon Modules Under Real-World Conditions' (Zenodo, doi 10.5281/zenodo.18420947): 'AS03' is linear in 'AG error' (R\u00b2 = 0.950 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.21408472",
+   "held_out_r2": 0.9587,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-168257ccd92c",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3b653041526ad516.csv",
+   "doi": "10.5281/zenodo.21408472",
+   "form": "linear",
+   "params": [
+    0.0017092308247348973,
+    0.9144315144000804
+   ],
+   "seed": 423412266,
+   "x": "Voltage_V",
+   "y": "Current_A"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset for: Modular Shape Memory Alloy Linear Actuator Driven Elbow Exoskeleton with Geom' (Zenodo, doi 10.5281/zenodo.21408472): 'Current_A' is linear in 'Voltage_V' (R\u00b2 = 0.954 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.21408472",
+   "held_out_r2": 0.9638,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-2a2fe91fc0e0",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3b653041526ad516.csv",
+   "doi": "10.5281/zenodo.21408472",
+   "form": "linear",
+   "params": [
+    0.004321049713028145,
+    4.627935164173472
+   ],
+   "seed": 423412266,
+   "x": "Voltage_V",
+   "y": "SMA_Power_W"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset for: Modular Shape Memory Alloy Linear Actuator Driven Elbow Exoskeleton with Geom' (Zenodo, doi 10.5281/zenodo.21408472): 'SMA_Power_W' is linear in 'Voltage_V' (R\u00b2 = 0.959 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.5766940",
+   "held_out_r2": 0.9538,
+   "held_out_rows": 4299,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-cdd94a57f51a",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "c68e3003ef16a065.csv",
+   "doi": "10.5281/zenodo.5766940",
+   "form": "power law",
+   "params": [
+    -0.0977992400750857,
+    0.9437928113646326
+   ],
+   "seed": 1283617318,
+   "x": "W_cmp",
+   "y": "W_trb"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'CFD and Testbench Measurements of the Deutz TCD12 V6 Diesel Engine' (Zenodo, doi 10.5281/zenodo.5766940): 'W_trb' follows a power law in 'W_cmp' (R\u00b2 = 0.951 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.5766940",
+   "held_out_r2": 0.9538,
+   "held_out_rows": 4299,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-80d25f033351",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "c68e3003ef16a065.csv",
+   "doi": "10.5281/zenodo.5766940",
+   "form": "power law",
+   "params": [
+    -0.09831044276479077,
+    0.9435936111822887
+   ],
+   "seed": 1283617318,
+   "x": "W_clr",
+   "y": "W_trb"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'CFD and Testbench Measurements of the Deutz TCD12 V6 Diesel Engine' (Zenodo, doi 10.5281/zenodo.5766940): 'W_trb' follows a power law in 'W_clr' (R\u00b2 = 0.951 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.5766940",
+   "held_out_r2": 0.9539,
+   "held_out_rows": 4299,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d8988592f335",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "c68e3003ef16a065.csv",
+   "doi": "10.5281/zenodo.5766940",
+   "form": "power law",
+   "params": [
+    -0.09896005265390047,
+    0.9433417442953496
+   ],
+   "seed": 1283617318,
+   "x": "W_ei",
+   "y": "W_trb"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'CFD and Testbench Measurements of the Deutz TCD12 V6 Diesel Engine' (Zenodo, doi 10.5281/zenodo.5766940): 'W_trb' follows a power law in 'W_ei' (R\u00b2 = 0.951 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.5766940",
+   "held_out_r2": 0.951,
+   "held_out_rows": 4299,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-8258a10c6472",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "c68e3003ef16a065.csv",
+   "doi": "10.5281/zenodo.5766940",
+   "form": "power law",
+   "params": [
+    -0.12834253170648724,
+    0.9520261280834239
+   ],
+   "seed": 1283617318,
+   "x": "W_eo",
+   "y": "W_trb"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'CFD and Testbench Measurements of the Deutz TCD12 V6 Diesel Engine' (Zenodo, doi 10.5281/zenodo.5766940): 'W_trb' follows a power law in 'W_eo' (R\u00b2 = 0.948 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.5766940",
+   "held_out_r2": 0.951,
+   "held_out_rows": 4299,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f62f2b345c4b",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "c68e3003ef16a065.csv",
+   "doi": "10.5281/zenodo.5766940",
+   "form": "power law",
+   "params": [
+    0.04093488879667628,
+    0.9960205769720702
+   ],
+   "seed": 1283617318,
+   "x": "W_trb",
+   "y": "W_etv"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'CFD and Testbench Measurements of the Deutz TCD12 V6 Diesel Engine' (Zenodo, doi 10.5281/zenodo.5766940): 'W_etv' follows a power law in 'W_trb' (R\u00b2 = 0.948 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.5766940",
+   "held_out_r2": 0.958,
+   "held_out_rows": 1000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-762aee46fd92",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "2b2264520f779a21.csv",
+   "doi": "10.5281/zenodo.5766940",
+   "form": "linear",
+   "params": [
+    -0.0007065299057100789,
+    1.3659041011196549e-05
+   ],
+   "seed": 3331911973,
+   "x": "M_l",
+   "y": "W_f_main"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'CFD and Testbench Measurements of the Deutz TCD12 V6 Diesel Engine' (Zenodo, doi 10.5281/zenodo.5766940): 'W_f_main' is linear in 'M_l' (R\u00b2 = 0.943 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.5766940",
+   "held_out_r2": 0.9715,
+   "held_out_rows": 1000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-49e8601f66fc",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "2b2264520f779a21.csv",
+   "doi": "10.5281/zenodo.5766940",
+   "form": "linear",
+   "params": [
+    102207.04371804018,
+    -5207.997055826143
+   ],
+   "seed": 3331911973,
+   "x": "W_cmp",
+   "y": "p_1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'CFD and Testbench Measurements of the Deutz TCD12 V6 Diesel Engine' (Zenodo, doi 10.5281/zenodo.5766940): 'p_1' is linear in 'W_cmp' (R\u00b2 = 0.968 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.5766940",
+   "held_out_r2": 0.9715,
+   "held_out_rows": 1000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-97fba6c2f8aa",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "2b2264520f779a21.csv",
+   "doi": "10.5281/zenodo.5766940",
+   "form": "linear",
+   "params": [
+    102207.04371804018,
+    -5207.997055826143
+   ],
+   "seed": 3331911973,
+   "x": "W_ei",
+   "y": "p_1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'CFD and Testbench Measurements of the Deutz TCD12 V6 Diesel Engine' (Zenodo, doi 10.5281/zenodo.5766940): 'p_1' is linear in 'W_ei' (R\u00b2 = 0.968 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.5766940",
+   "held_out_r2": 0.9715,
+   "held_out_rows": 1000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d3fae5b41dd6",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "2b2264520f779a21.csv",
+   "doi": "10.5281/zenodo.5766940",
+   "form": "linear",
+   "params": [
+    102207.04371804018,
+    -5207.997055826143
+   ],
+   "seed": 3331911973,
+   "x": "W_tva",
+   "y": "p_1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'CFD and Testbench Measurements of the Deutz TCD12 V6 Diesel Engine' (Zenodo, doi 10.5281/zenodo.5766940): 'p_1' is linear in 'W_tva' (R\u00b2 = 0.968 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.5766940",
+   "held_out_r2": 0.9735,
+   "held_out_rows": 1000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-eefcb624cb2b",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "2b2264520f779a21.csv",
+   "doi": "10.5281/zenodo.5766940",
+   "form": "linear",
+   "params": [
+    102194.69408119046,
+    -5055.400816402583
+   ],
+   "seed": 3331911973,
+   "x": "W_eo",
+   "y": "p_1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'CFD and Testbench Measurements of the Deutz TCD12 V6 Diesel Engine' (Zenodo, doi 10.5281/zenodo.5766940): 'p_1' is linear in 'W_eo' (R\u00b2 = 0.971 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.5766940",
+   "held_out_r2": 0.9212,
+   "held_out_rows": 1000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-de670510600c",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "2b2264520f779a21.csv",
+   "doi": "10.5281/zenodo.5766940",
+   "form": "exponential",
+   "params": [
+    11.432333822890914,
+    1.8321927831601486
+   ],
+   "seed": 3331911973,
+   "x": "W_eo",
+   "y": "p_20"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'CFD and Testbench Measurements of the Deutz TCD12 V6 Diesel Engine' (Zenodo, doi 10.5281/zenodo.5766940): 'p_20' grows exponentially in 'W_eo' (R\u00b2 = 0.904 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.5766940",
+   "held_out_r2": 0.9735,
+   "held_out_rows": 1000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-6e1602e9c67e",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "2b2264520f779a21.csv",
+   "doi": "10.5281/zenodo.5766940",
+   "form": "linear",
+   "params": [
+    102194.69408119046,
+    -5055.400816402583
+   ],
+   "seed": 3331911973,
+   "x": "W_trb",
+   "y": "p_1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'CFD and Testbench Measurements of the Deutz TCD12 V6 Diesel Engine' (Zenodo, doi 10.5281/zenodo.5766940): 'p_1' is linear in 'W_trb' (R\u00b2 = 0.971 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.5766940",
+   "held_out_r2": 0.9212,
+   "held_out_rows": 1000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-28fea3e8feb0",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "2b2264520f779a21.csv",
+   "doi": "10.5281/zenodo.5766940",
+   "form": "exponential",
+   "params": [
+    11.432333822890914,
+    1.8321927831601486
+   ],
+   "seed": 3331911973,
+   "x": "W_trb",
+   "y": "p_20"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'CFD and Testbench Measurements of the Deutz TCD12 V6 Diesel Engine' (Zenodo, doi 10.5281/zenodo.5766940): 'p_20' grows exponentially in 'W_trb' (R\u00b2 = 0.904 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.5766940",
+   "held_out_r2": 0.9735,
+   "held_out_rows": 1000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5e68b85873e0",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "2b2264520f779a21.csv",
+   "doi": "10.5281/zenodo.5766940",
+   "form": "linear",
+   "params": [
+    102194.69408119046,
+    -5055.400816402583
+   ],
+   "seed": 3331911973,
+   "x": "W_etv",
+   "y": "p_1"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'CFD and Testbench Measurements of the Deutz TCD12 V6 Diesel Engine' (Zenodo, doi 10.5281/zenodo.5766940): 'p_1' is linear in 'W_etv' (R\u00b2 = 0.971 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.5766940",
+   "held_out_r2": 0.9212,
+   "held_out_rows": 1000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-44a6b0d9d308",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "2b2264520f779a21.csv",
+   "doi": "10.5281/zenodo.5766940",
+   "form": "exponential",
+   "params": [
+    11.432333822890914,
+    1.8321927831601486
+   ],
+   "seed": 3331911973,
+   "x": "W_etv",
+   "y": "p_20"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'CFD and Testbench Measurements of the Deutz TCD12 V6 Diesel Engine' (Zenodo, doi 10.5281/zenodo.5766940): 'p_20' grows exponentially in 'W_etv' (R\u00b2 = 0.904 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.3389/fmars.2026.1966604.s001",
+   "held_out_r2": 0.4632,
+   "held_out_rows": 54,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f6720dbb0c19",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "e0be4a30b40762b2.csv",
+   "doi": "10.3389/fmars.2026.1966604.s001",
+   "form": "linear",
+   "params": [
+    -1.791424406500416e-05,
+    0.865863722242287
+   ],
+   "seed": 2781226151,
+   "x": "test2025_d_pr_auc_mean",
+   "y": "val2024_d_pr_auc_mean"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data Sheet 1_Fishing effort inertia governs daily catch-occurrence predictability for Japa' (Figshare, doi 10.3389/fmars.2026.1966604.s001): 'val2024_d_pr_auc_mean' is linear in 'test2025_d_pr_auc_mean' (R\u00b2 = 0.901 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.3389/fmars.2026.1966604.s001",
+   "held_out_r2": 0.7601,
+   "held_out_rows": 54,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3c483124e3bc",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "e0be4a30b40762b2.csv",
+   "doi": "10.3389/fmars.2026.1966604.s001",
+   "form": "linear",
+   "params": [
+    1.2040811221162288e-06,
+    7.993463983605718
+   ],
+   "seed": 2781226151,
+   "x": "test2025_d_log_loss_sd",
+   "y": "test2025_d_roc_auc_sd"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data Sheet 1_Fishing effort inertia governs daily catch-occurrence predictability for Japa' (Figshare, doi 10.3389/fmars.2026.1966604.s001): 'test2025_d_roc_auc_sd' is linear in 'test2025_d_log_loss_sd' (R\u00b2 = 0.901 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.3389/fmars.2026.1966604.s001",
+   "held_out_r2": 0.8985,
+   "held_out_rows": 54,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-8059f8757df2",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "e0be4a30b40762b2.csv",
+   "doi": "10.3389/fmars.2026.1966604.s001",
+   "form": "linear",
+   "params": [
+    -6.1897545780717325e-06,
+    2.372301821184923
+   ],
+   "seed": 2781226151,
+   "x": "val2024_d_log_loss_sd",
+   "y": "val2024_d_roc_auc_sd"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data Sheet 1_Fishing effort inertia governs daily catch-occurrence predictability for Japa' (Figshare, doi 10.3389/fmars.2026.1966604.s001): 'val2024_d_roc_auc_sd' is linear in 'val2024_d_log_loss_sd' (R\u00b2 = 0.966 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
