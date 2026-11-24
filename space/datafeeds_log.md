@@ -6171,3 +6171,5 @@
 - 2026-11-24 01:37 data feeds: online
 - 2026-11-24 01:37 data feeds: 37340 datasets analysed so far, 5393 confirmed findings
 - 2026-11-24 02:29 data feeds: online
+- 2026-11-24 02:29 FINDING (confirmed on held-out rows): In 'BDA Pressure Transducer Event Metrics' (Figshare, doi 10.6084/m9.figshare.29128262.v1): 'AbsError' is linear in 'AUC' (R² = 0.982 on the discovery half); held-out R² = 0.875 [emp-8f165bd3a7a7]
+- 2026-11-24 02:29 FINDING (confirmed on held-out rows): In 'BDA Pressure Transducer Event Metrics' (Figshare, doi 10.6084/m9.figshare.29128262.v1): 'EventLengthHours' follows a power law in 'AUC' (R² = 0.990 on the discovery half); held-out R² = 0.972 [emp-9e7165f688d4]

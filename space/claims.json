@@ -4281909,7 +4281909,7 @@
   },
   "id": "emp-8f165bd3a7a7",
   "kind": "empirical",
-  "novelty": "not checked",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
   "payload": {
    "dataset": "d3e964fbf19ef603.csv",
    "doi": "10.6084/m9.figshare.29128262.v1",
@@ -4281926,5 +4281926,108 @@
   "statement": "In 'BDA Pressure Transducer Event Metrics' (Figshare, doi 10.6084/m9.figshare.29128262.v1): 'AbsError' is linear in 'AUC' (R\u00b2 = 0.982 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.6084/m9.figshare.29128262.v1",
+   "held_out_r2": 0.9721,
+   "held_out_rows": 65,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9e7165f688d4",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "d3e964fbf19ef603.csv",
+   "doi": "10.6084/m9.figshare.29128262.v1",
+   "form": "power law",
+   "params": [
+    -3.9073017520215743,
+    0.6915885859351674
+   ],
+   "seed": 4128815443,
+   "x": "AUC",
+   "y": "EventLengthHours"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'BDA Pressure Transducer Event Metrics' (Figshare, doi 10.6084/m9.figshare.29128262.v1): 'EventLengthHours' follows a power law in 'AUC' (R\u00b2 = 0.990 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.6084/m9.figshare.32112172.v4",
+   "held_out_r2": 0.1704,
+   "held_out_rows": 32,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3b2b86a758db",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "35cc1cb61c8f5a16.csv",
+   "doi": "10.6084/m9.figshare.32112172.v4",
+   "form": "linear",
+   "params": [
+    -156.34294383671133,
+    0.27481178089125474
+   ],
+   "seed": 2395901316,
+   "x": "ec",
+   "y": "chloride"
+  },
+  "source": "datafeeds.py",
+  "statement": "In '<b>Hydrogeochemistry, microbial, and rainfall dataset from anaerobic dechlorination in sal' (Figshare, doi 10.6084/m9.figshare.32112172.v4): 'chloride' is linear in 'ec' (R\u00b2 = 0.935 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.6084/m9.figshare.32112172.v4",
+   "held_out_r2": 0.724,
+   "held_out_rows": 32,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-19af3b1aaec4",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "35cc1cb61c8f5a16.csv",
+   "doi": "10.6084/m9.figshare.32112172.v4",
+   "form": "linear",
+   "params": [
+    7.853845523304617,
+    0.6131271759641026
+   ],
+   "seed": 2395901316,
+   "x": "ec",
+   "y": "tds"
+  },
+  "source": "datafeeds.py",
+  "statement": "In '<b>Hydrogeochemistry, microbial, and rainfall dataset from anaerobic dechlorination in sal' (Figshare, doi 10.6084/m9.figshare.32112172.v4): 'tds' is linear in 'ec' (R\u00b2 = 0.983 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": null,
+  "id": "emp-ea3c355bea5b",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "35cc1cb61c8f5a16.csv",
+   "doi": "10.6084/m9.figshare.32112172.v4",
+   "form": "linear",
+   "params": [
+    410.19774980484135,
+    2.08113446425871
+   ],
+   "seed": 2395901316,
+   "x": "chloride",
+   "y": "tds"
+  },
+  "source": "datafeeds.py",
+  "statement": "In '<b>Hydrogeochemistry, microbial, and rainfall dataset from anaerobic dechlorination in sal' (Figshare, doi 10.6084/m9.figshare.32112172.v4): 'tds' is linear in 'chloride' (R\u00b2 = 0.915 on the discovery half)",
+  "status": "candidate",
+  "verifier": null
  }
 ]
