@@ -112836,6 +112836,31 @@
    "family": "driven oscillator",
    "expr": "sqrt(1 + 4*r**2*z**2)/sqrt(4*z**2 + 1)",
    "why": "a power or product of known quantities"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 + u)/(1 - u)) * sqrt((1 + v)/(1 - v)) / sqrt((1 + (u + v)/(1 + u*v)) / (1 - (u + v)/(1 + u*v",
+   "why": "affine combination of known quantities (composed speed / c)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 - u**2)*(1 - v**2) + (u + v)**2/(u*v + 1)**2) / (u*v + 1)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt(1 - u**2) + sqrt(1 - v**2) / sqrt(-(u + v)**2/(u*v + 1)**2 + 1)",
+   "why": "affine combination of known quantities (composed speed / c, Relativistic Energy-Momentum Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt(1 - u**2) + sqrt(1 - v**2) - 2 + (u*v + 1)/(sqrt(1 - u**2)*sqrt(1 - v**2))",
+   "why": "affine combination of known quantities (composed speed / c, Total relativistic energy / mc\u00b2 [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "1 - c/(c*x + 1)",
+   "why": "not positive on the physical domain"
   }
  ],
  "tried": [
@@ -140772,7 +140797,7 @@
    "k": "1/2"
   }
  ],
- "rounds": 7995,
+ "rounds": 7997,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",
