@@ -4281899,5 +4281899,32 @@
   "statement": "Octal game 0.1045672 is completely solved: its Grundy values are periodic with pre-period 4 and period 14 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.6084/m9.figshare.29128262.v1",
+   "held_out_r2": 0.8748,
+   "held_out_rows": 65,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-8f165bd3a7a7",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "d3e964fbf19ef603.csv",
+   "doi": "10.6084/m9.figshare.29128262.v1",
+   "form": "linear",
+   "params": [
+    -670.8039170745386,
+    0.13346239669953522
+   ],
+   "seed": 4128815443,
+   "x": "AUC",
+   "y": "AbsError"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'BDA Pressure Transducer Event Metrics' (Figshare, doi 10.6084/m9.figshare.29128262.v1): 'AbsError' is linear in 'AUC' (R\u00b2 = 0.982 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
