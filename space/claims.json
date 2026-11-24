@@ -4296416,5 +4296416,32 @@
   "statement": "Octal game 0.1047631 is completely solved: its Grundy values are periodic with pre-period 4 and period 12 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17828220",
+   "held_out_r2": 0.8781,
+   "held_out_rows": 395,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-be564314ec86",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "0df405fb7fe6f895.csv",
+   "doi": "10.5281/zenodo.17828220",
+   "form": "linear",
+   "params": [
+    -0.013618108943805047,
+    0.0730505835937285
+   ],
+   "seed": 2380349362,
+   "x": "LM.flux",
+   "y": "LM.SE"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'CO2 and CH4 floating chamber incubation time series from EU Horizon project RESTORE4Cs and' (Zenodo, doi 10.5281/zenodo.17828220): 'LM.SE' is linear in 'LM.flux' (R\u00b2 = 0.944 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]

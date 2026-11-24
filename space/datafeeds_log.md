@@ -6177,3 +6177,4 @@
 - 2026-11-24 03:31 data feeds: online
 - 2026-11-24 03:32 FINDING (confirmed on held-out rows): In 'Initial soil conditions outweigh management in a cool-season dairy farm's carbon sequestra' (Zenodo, doi 10.5281/zenodo.5767789): 'SON_conc_perc' follows a power law in 'SOC_conc_perc' (R² = 0.901 on the discovery half); held-out R² = 0.891 [emp-00f3c1d8ef5d]
 - 2026-11-24 03:33 data feeds: 37399 datasets analysed so far, 5396 confirmed findings
+- 2026-11-24 04:24 data feeds: online
