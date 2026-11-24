@@ -46679,3 +46679,9 @@
 - 2026-11-24 03:31 SOLVED (proved): 0.1047355 — pre-period 91, period 93  [gam-3b4c65551b2c]
 - 2026-11-24 03:31 games: 91225 octal games solved, 417974 unresolved up to n = 3000
 - 2026-11-24 04:04 SOLVED (proved): 0.1047356 — pre-period 91, period 93  [gam-20040369173b]
+- 2026-11-24 04:04 SOLVED (proved): 0.1047357 — pre-period 91, period 93  [gam-281e9986e40c]
+- 2026-11-24 04:05 SOLVED (proved): 0.1047364 — pre-period 91, period 93  [gam-79880ab7bbc7]
+- 2026-11-24 04:05 SOLVED (proved): 0.1047365 — pre-period 91, period 93  [gam-16a24291a3f0]
+- 2026-11-24 04:05 SOLVED (proved): 0.1047366 — pre-period 91, period 93  [gam-3260fc735795]
+- 2026-11-24 04:05 SOLVED (proved): 0.1047367 — pre-period 91, period 93  [gam-9c738b6cdd79]
+- 2026-11-24 04:05 SOLVED (proved): 0.1047374 — pre-period 91, period 93  [gam-c6c6e8576a7e]
