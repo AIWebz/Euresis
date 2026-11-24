@@ -4289940,5 +4289940,32 @@
   "statement": "Octal game 0.1047355 is completely solved: its Grundy values are periodic with pre-period 91 and period 93 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.5767789",
+   "held_out_r2": 0.8906,
+   "held_out_rows": 145,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-00f3c1d8ef5d",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3e7d6b921d5b011a.csv",
+   "doi": "10.5281/zenodo.5767789",
+   "form": "power law",
+   "params": [
+    -2.451098248608737,
+    0.9660553079701312
+   ],
+   "seed": 1081870441,
+   "x": "SOC_conc_perc",
+   "y": "SON_conc_perc"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Initial soil conditions outweigh management in a cool-season dairy farm's carbon sequestra' (Zenodo, doi 10.5281/zenodo.5767789): 'SON_conc_perc' follows a power law in 'SOC_conc_perc' (R\u00b2 = 0.901 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
