@@ -4296426,7 +4296426,7 @@
   },
   "id": "emp-be564314ec86",
   "kind": "empirical",
-  "novelty": "not checked",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
   "payload": {
    "dataset": "0df405fb7fe6f895.csv",
    "doi": "10.5281/zenodo.17828220",
@@ -4296442,6 +4296442,141 @@
   "source": "datafeeds.py",
   "statement": "In 'CO2 and CH4 floating chamber incubation time series from EU Horizon project RESTORE4Cs and' (Zenodo, doi 10.5281/zenodo.17828220): 'LM.SE' is linear in 'LM.flux' (R\u00b2 = 0.944 on the discovery half)",
   "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17828220",
+   "held_out_r2": 0.8028,
+   "held_out_rows": 395,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f34ded951586",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "0df405fb7fe6f895.csv",
+   "doi": "10.5281/zenodo.17828220",
+   "form": "linear",
+   "params": [
+    5.224617015575848,
+    1.6477509481023096
+   ],
+   "seed": 2380349362,
+   "x": "LM.flux",
+   "y": "HM.flux"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'CO2 and CH4 floating chamber incubation time series from EU Horizon project RESTORE4Cs and' (Zenodo, doi 10.5281/zenodo.17828220): 'HM.flux' is linear in 'LM.flux' (R\u00b2 = 0.909 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17828220",
+   "held_out_r2": 0.7755,
+   "held_out_rows": 395,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-277669c3552d",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "0df405fb7fe6f895.csv",
+   "doi": "10.5281/zenodo.17828220",
+   "form": "linear",
+   "params": [
+    3.2915919418230026,
+    1.0465847647688071
+   ],
+   "seed": 2380349362,
+   "x": "LM.flux",
+   "y": "HM.slope"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'CO2 and CH4 floating chamber incubation time series from EU Horizon project RESTORE4Cs and' (Zenodo, doi 10.5281/zenodo.17828220): 'HM.slope' is linear in 'LM.flux' (R\u00b2 = 0.928 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17828220",
+   "held_out_r2": 0.8657,
+   "held_out_rows": 395,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-deed6aa3e721",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "0df405fb7fe6f895.csv",
+   "doi": "10.5281/zenodo.17828220",
+   "form": "linear",
+   "params": [
+    -28.4874298880442,
+    0.9745449027943272
+   ],
+   "seed": 2380349362,
+   "x": "LM.C0",
+   "y": "HM.C0"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'CO2 and CH4 floating chamber incubation time series from EU Horizon project RESTORE4Cs and' (Zenodo, doi 10.5281/zenodo.17828220): 'HM.C0' is linear in 'LM.C0' (R\u00b2 = 0.996 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17828220",
+   "held_out_r2": 0.8069,
+   "held_out_rows": 395,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-aedfc9169197",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "0df405fb7fe6f895.csv",
+   "doi": "10.5281/zenodo.17828220",
+   "form": "linear",
+   "params": [
+    -3.544987585537005,
+    0.0010369162827835515
+   ],
+   "seed": 2380349362,
+   "x": "LM.Ct",
+   "y": "LM.SE"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'CO2 and CH4 floating chamber incubation time series from EU Horizon project RESTORE4Cs and' (Zenodo, doi 10.5281/zenodo.17828220): 'LM.SE' is linear in 'LM.Ct' (R\u00b2 = 0.912 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17828220",
+   "held_out_r2": -1.6836,
+   "held_out_rows": 395,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-6b0d971a82f8",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "0df405fb7fe6f895.csv",
+   "doi": "10.5281/zenodo.17828220",
+   "form": "linear",
+   "params": [
+    570.7363527777396,
+    0.6265331129591664
+   ],
+   "seed": 2380349362,
+   "x": "LM.Ct",
+   "y": "HM.C0"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'CO2 and CH4 floating chamber incubation time series from EU Horizon project RESTORE4Cs and' (Zenodo, doi 10.5281/zenodo.17828220): 'HM.C0' is linear in 'LM.Ct' (R\u00b2 = 0.941 on the discovery half)",
+  "status": "refuted",
   "verifier": "held-out-replication"
  }
 ]
