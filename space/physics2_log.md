@@ -8755,3 +8755,5 @@
 - 2026-11-24 01:01 round 7955: driven oscillator
 - 2026-11-24 01:03 round 7956: velocity addition
 - 2026-11-24 01:04 round 7957: Compton scattering
+- 2026-11-24 01:04 round 7958: Cournot duopoly
+- 2026-11-24 01:06 segment end: 7958 rounds, 5 discoveries, 2 known laws rediscovered
