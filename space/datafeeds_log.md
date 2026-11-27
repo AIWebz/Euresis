@@ -6443,3 +6443,5 @@
 - 2026-11-27 21:13 FINDING (confirmed on held-out rows): In 'Within- and transgenerational stress legacy effects of ocean acidification on red abalone ' (Zenodo, doi 10.5061/dryad.m0cfxpp99): 'Dry_div_AreaTotal' is linear in 'Shell_div_AreaTotal' (R² = 0.988 on the discovery half); held-out R² = 0.982 [emp-80a869d30513]
 - 2026-11-27 21:13 data feeds: 38412 datasets analysed so far, 5623 confirmed findings
 - 2026-11-27 21:53 data feeds: online
+- 2026-11-27 21:55 FINDING (confirmed on held-out rows): In 'GHS_winter_activity' (Figshare, doi 10.6084/m9.figshare.35093839.v1): 'Hourly_Maximum_Gust_Speed' is linear in 'Hourly_Mean_Wind_Speed' (R² = 0.947 on the discovery half); held-out R² = 0.961 [emp-86616b938c7c]
+- 2026-11-27 21:55 data feeds: 38452 datasets analysed so far, 5624 confirmed findings

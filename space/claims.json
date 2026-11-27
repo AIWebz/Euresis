@@ -4400289,10 +4400289,15 @@
   "verifier": "guy-smith-periodicity"
  },
  {
-  "evidence": null,
+  "evidence": {
+   "doi": "10.6084/m9.figshare.35093839.v1",
+   "held_out_r2": 0.9308,
+   "held_out_rows": 4049,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
   "id": "emp-b4f9d497d065",
   "kind": "empirical",
-  "novelty": "not checked",
+  "novelty": "KNOWN: standard atmosphere / hydrostatics (temperature, pressure and altitude, T \u221d P^(R\u00b7\u0393/g)) \u2014 not a discovery",
   "payload": {
    "dataset": "236e2fca698193b8.csv",
    "doi": "10.6084/m9.figshare.35093839.v1",
@@ -4400307,7 +4400312,88 @@
   },
   "source": "datafeeds.py",
   "statement": "In 'GHS_winter_activity' (Figshare, doi 10.6084/m9.figshare.35093839.v1): 'wetb_temp' is linear in 'air_temperature' (R\u00b2 = 0.934 on the discovery half)",
-  "status": "candidate",
-  "verifier": null
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.6084/m9.figshare.35093839.v1",
+   "held_out_r2": 0.9852,
+   "held_out_rows": 352,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-24e14413e5bc",
+  "kind": "empirical",
+  "novelty": "KNOWN: standard atmosphere / hydrostatics (temperature, pressure and altitude, T \u221d P^(R\u00b7\u0393/g)) \u2014 not a discovery",
+  "payload": {
+   "dataset": "c481fc8bc9006a7e.csv",
+   "doi": "10.6084/m9.figshare.35093839.v1",
+   "form": "linear",
+   "params": [
+    -0.7102824947404462,
+    0.950004671251989
+   ],
+   "seed": 3049147312,
+   "x": "Hourly_Air_Temperature",
+   "y": "Wetbulb_Temperature"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'GHS_winter_activity' (Figshare, doi 10.6084/m9.figshare.35093839.v1): 'Wetbulb_Temperature' is linear in 'Hourly_Air_Temperature' (R\u00b2 = 0.984 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.6084/m9.figshare.35093839.v1",
+   "held_out_r2": 0.9612,
+   "held_out_rows": 352,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-0eab7dbb507c",
+  "kind": "empirical",
+  "novelty": "KNOWN: standard atmosphere / hydrostatics (temperature, pressure and altitude, T \u221d P^(R\u00b7\u0393/g)) \u2014 not a discovery",
+  "payload": {
+   "dataset": "c481fc8bc9006a7e.csv",
+   "doi": "10.6084/m9.figshare.35093839.v1",
+   "form": "linear",
+   "params": [
+    1.4986359510919862,
+    0.9554900036636887
+   ],
+   "seed": 3049147312,
+   "x": "Dewpoint_Temperature",
+   "y": "Wetbulb_Temperature"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'GHS_winter_activity' (Figshare, doi 10.6084/m9.figshare.35093839.v1): 'Wetbulb_Temperature' is linear in 'Dewpoint_Temperature' (R\u00b2 = 0.959 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.6084/m9.figshare.35093839.v1",
+   "held_out_r2": 0.9611,
+   "held_out_rows": 352,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-86616b938c7c",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "c481fc8bc9006a7e.csv",
+   "doi": "10.6084/m9.figshare.35093839.v1",
+   "form": "linear",
+   "params": [
+    1.177843930519704,
+    1.6655277480234363
+   ],
+   "seed": 3049147312,
+   "x": "Hourly_Mean_Wind_Speed",
+   "y": "Hourly_Maximum_Gust_Speed"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'GHS_winter_activity' (Figshare, doi 10.6084/m9.figshare.35093839.v1): 'Hourly_Maximum_Gust_Speed' is linear in 'Hourly_Mean_Wind_Speed' (R\u00b2 = 0.947 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
