@@ -6291,3 +6291,5 @@
 - 2026-11-27 07:46 FINDING (confirmed on held-out rows): In 'Source data files for qRT-PCR, electrophysiology and behavioural thermoregulation assays' (Figshare, doi 10.6084/m9.figshare.32967956.v4): 'I_Imax' is linear in 'Current' (R² = 0.967 on the discovery half); held-out R² = 0.936 [emp-fb28749868e8]
 - 2026-11-27 07:47 FINDING (confirmed on held-out rows): In 'Source data files for qRT-PCR, electrophysiology and behavioural thermoregulation assays' (Figshare, doi 10.6084/m9.figshare.32967956.v4): 'CV_pct' follows a power law in 'SD' (R² = 0.942 on the discovery half); held-out R² = 0.933 [emp-7888004d0874]
 - 2026-11-27 07:47 data feeds: 37648 datasets analysed so far, 5500 confirmed findings
+- 2026-11-27 08:35 data feeds: online
+- 2026-11-27 08:35 data feeds: 37652 datasets analysed so far, 5500 confirmed findings
