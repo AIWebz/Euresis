@@ -6442,3 +6442,4 @@
 - 2026-11-27 21:13 FINDING (confirmed on held-out rows): In 'Within- and transgenerational stress legacy effects of ocean acidification on red abalone ' (Zenodo, doi 10.5061/dryad.m0cfxpp99): 'Dry_minus_ash' is linear in 'Dry_abs' (R² = 0.921 on the discovery half); held-out R² = 0.926 [emp-460b4f11b8a5]
 - 2026-11-27 21:13 FINDING (confirmed on held-out rows): In 'Within- and transgenerational stress legacy effects of ocean acidification on red abalone ' (Zenodo, doi 10.5061/dryad.m0cfxpp99): 'Dry_div_AreaTotal' is linear in 'Shell_div_AreaTotal' (R² = 0.988 on the discovery half); held-out R² = 0.982 [emp-80a869d30513]
 - 2026-11-27 21:13 data feeds: 38412 datasets analysed so far, 5623 confirmed findings
+- 2026-11-27 21:53 data feeds: online
