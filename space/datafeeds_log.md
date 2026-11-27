@@ -6368,3 +6368,4 @@
 - 2026-11-27 13:34 FINDING (confirmed on held-out rows): In 'Occupation-level scores of exposure to generative AI for Britain, from the Generative AI S' (Figshare, doi 10.5522/04/34857396.v2): 'rank_gpt54' follows a power law in 'rank_glm52' (R² = 0.931 on the discovery half); held-out R² = 0.939 [emp-d9be49e7305f]
 - 2026-11-27 13:34 FINDING (confirmed on held-out rows): In 'Occupation-level scores of exposure to generative AI for Britain, from the Generative AI S' (Figshare, doi 10.5522/04/34857396.v2): 'rank_gpt55' is linear in 'rank_glm52' (R² = 0.959 on the discovery half); held-out R² = 0.971 [emp-9aa5d0afaa21]
 - 2026-11-27 13:35 data feeds: 38100 datasets analysed so far, 5565 confirmed findings
+- 2026-11-27 14:19 data feeds: online
