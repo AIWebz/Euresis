@@ -6276,3 +6276,6 @@
 - 2026-11-24 06:23 FINDING (confirmed on held-out rows): In 'Shielding performance of the 98 first chemical elements against trapped particles on GTO' (Zenodo, doi 10.5281/zenodo.7616012): 'Electron Err [kRad/month]' follows a power law in 'Electron TID [kRad/month]' (R² = 0.958 on the discovery half); held-out R² = 0.933 [emp-cc27b58f6614]
 - 2026-11-27 06:40 data feeds: online
 - 2026-11-27 06:40 FINDING (confirmed on held-out rows): In 'Data from: Transcriptional profile and differential fitness in a specialist milkweed insec' (Zenodo, doi 10.5061/dryad.fc1m8): 'Ax3' follows a power law in 'baseMean' (R² = 0.989 on the discovery half); held-out R² = 0.989 [emp-998caf04009f]
+- 2026-11-27 06:41 FINDING (confirmed on held-out rows): In 'Data from: Transcriptional profile and differential fitness in a specialist milkweed insec' (Zenodo, doi 10.5061/dryad.fc1m8): 'Bx3' follows a power law in 'baseMean' (R² = 0.988 on the discovery half); held-out R² = 0.988 [emp-e19cdccb1979]
+- 2026-11-27 06:41 FINDING (confirmed on held-out rows): In 'Data from: Transcriptional profile and differential fitness in a specialist milkweed insec' (Zenodo, doi 10.5061/dryad.fc1m8): 'Bx3' is linear in 'Ax3' (R² = 0.986 on the discovery half); held-out R² = 0.986 [emp-9db96b54d999]
+- 2026-11-27 06:41 data feeds: 37584 datasets analysed so far, 5490 confirmed findings

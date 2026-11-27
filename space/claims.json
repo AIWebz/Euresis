@@ -4311041,10 +4311041,15 @@
   "verifier": "held-out-replication"
  },
  {
-  "evidence": null,
+  "evidence": {
+   "doi": "10.5061/dryad.fc1m8",
+   "held_out_r2": 0.988,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
   "id": "emp-e19cdccb1979",
   "kind": "empirical",
-  "novelty": "not checked",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
   "payload": {
    "dataset": "109093f340ca81d4.csv",
    "doi": "10.5061/dryad.fc1m8",
@@ -4311059,7 +4311064,34 @@
   },
   "source": "datafeeds.py",
   "statement": "In 'Data from: Transcriptional profile and differential fitness in a specialist milkweed insec' (Zenodo, doi 10.5061/dryad.fc1m8): 'Bx3' follows a power law in 'baseMean' (R\u00b2 = 0.988 on the discovery half)",
-  "status": "candidate",
-  "verifier": null
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.fc1m8",
+   "held_out_r2": 0.9858,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9db96b54d999",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "109093f340ca81d4.csv",
+   "doi": "10.5061/dryad.fc1m8",
+   "form": "linear",
+   "params": [
+    -0.03960782914693704,
+    1.0031035347488955
+   ],
+   "seed": 660866709,
+   "x": "Ax3",
+   "y": "Bx3"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Transcriptional profile and differential fitness in a specialist milkweed insec' (Zenodo, doi 10.5061/dryad.fc1m8): 'Bx3' is linear in 'Ax3' (R\u00b2 = 0.986 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
