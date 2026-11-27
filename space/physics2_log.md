@@ -9038,3 +9038,6 @@
 - 2026-11-27 15:34 round 8208: auction with a reserve price
 - 2026-11-27 15:36 round 8209: two-body decay
 - 2026-11-27 15:37 round 8210: collision
+- 2026-11-27 15:43 round 8211: driven oscillator
+- 2026-11-27 15:45 round 8212: velocity addition
+- 2026-11-27 15:46 round 8213: Compton scattering
