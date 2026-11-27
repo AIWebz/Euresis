@@ -4348005,5 +4348005,113 @@
   "statement": "Octal game 0.1053204 is completely solved: its Grundy values are periodic with pre-period 700 and period 76 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.qfttdz0h9",
+   "held_out_r2": -0.7243,
+   "held_out_rows": 58,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9b6917644b8c",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "8ac765481d999114.csv",
+   "doi": "10.5061/dryad.qfttdz0h9",
+   "form": "linear",
+   "params": [
+    1515.1362355877877,
+    3.651174194256552
+   ],
+   "seed": 891891896,
+   "x": "MatPesAhoHonVal",
+   "y": "total_fish_harvest"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Fishers' ecological knowledge of the Lower Ucayali' (Zenodo, doi 10.5061/dryad.qfttdz0h9): 'total_fish_harvest' is linear in 'MatPesAhoHonVal' (R\u00b2 = 0.905 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.qfttdz0h9",
+   "held_out_r2": 0.9108,
+   "held_out_rows": 154,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-803a92567472",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "10ffa221ce75cbae.csv",
+   "doi": "10.5061/dryad.qfttdz0h9",
+   "form": "linear",
+   "params": [
+    -626.0648621098346,
+    0.9702566705768766
+   ],
+   "seed": 3169405366,
+   "x": "Total fish harvest",
+   "y": "Total fish sold"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Fishers' ecological knowledge of the Lower Ucayali' (Zenodo, doi 10.5061/dryad.qfttdz0h9): 'Total fish sold' is linear in 'Total fish harvest' (R\u00b2 = 0.972 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.x69p8czn0",
+   "held_out_r2": 0.9464,
+   "held_out_rows": 89,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f01ae88585a5",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3958c554895402b6.csv",
+   "doi": "10.5061/dryad.x69p8czn0",
+   "form": "power law",
+   "params": [
+    4.164154432017212,
+    -0.32434945455873926
+   ],
+   "seed": 1680065650,
+   "x": "mean.temp.degC",
+   "y": "mean.sal.psu"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data for: Dynamic coastal pelagic habitat drives rapid changes in growth and condition of ' (Zenodo, doi 10.5061/dryad.x69p8czn0): 'mean.sal.psu' follows a power law in 'mean.temp.degC' (R\u00b2 = 0.934 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.q573n5tn2",
+   "held_out_r2": 0.8484,
+   "held_out_rows": 74,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-0d45333d4e4c",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "b62c058587f00756.csv",
+   "doi": "10.5061/dryad.q573n5tn2",
+   "form": "linear",
+   "params": [
+    -7.714474110406732,
+    5.370624747978872
+   ],
+   "seed": 3290242575,
+   "x": "Pods.number",
+   "y": "Total.seeds"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset from: The effects of crop type, landscape composition and agroecological practices' (Zenodo, doi 10.5061/dryad.q573n5tn2): 'Total.seeds' is linear in 'Pods.number' (R\u00b2 = 0.962 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
  }
 ]
