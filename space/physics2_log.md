@@ -9143,3 +9143,7 @@
 - 2026-11-27 20:23 round 8303: insurance and risk
 - 2026-11-27 20:25 round 8304: auction with a reserve price
 - 2026-11-27 20:27 round 8305: two-body decay
+- 2026-11-27 20:29 round 8306: collision
+- 2026-11-27 20:32 round 8307: driven oscillator
+- 2026-11-27 20:33 round 8308: velocity addition
+- 2026-11-27 20:35 segment end: 8308 rounds, 5 discoveries, 2 known laws rediscovered
