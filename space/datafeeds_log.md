@@ -6394,3 +6394,10 @@
 - 2026-11-27 19:11 data feeds: online
 - 2026-11-27 19:12 data feeds: 38217 datasets analysed so far, 5578 confirmed findings
 - 2026-11-27 19:59 data feeds: online
+- 2026-11-27 19:59 FINDING (confirmed on held-out rows): In 'Data products: A JWST time-series variability census of the globular clusters Liller 1 and' (Zenodo, doi 10.5281/zenodo.21419760): 'sigma_dec_mas' follows a power law in 'sigma_ra_mas' (R² = 0.929 on the discovery half); held-out R² = 0.928 [emp-45c7072fdbda]
+- 2026-11-27 20:00 FINDING (confirmed on held-out rows): In 'I-129, U-236 and C-14 from Mediterranean Sea 2022 (TalPro_2022)' (Zenodo, doi 10.5281/zenodo.22257517): 'Sigma_0' follows a power law in 'Temp_C' (R² = 0.909 on the discovery half); held-out R² = 0.905 [emp-d4e737bf0106]
+- 2026-11-27 20:01 FINDING (confirmed on held-out rows): In 'I-129, U-236 and C-14 from Mediterranean Sea 2022 (TalPro_2022)' (Zenodo, doi 10.5281/zenodo.22257517): 'Sigma_0' grows exponentially in 'Pot_Temp' (R² = 0.907 on the discovery half); held-out R² = 0.901 [emp-72f4b65a51cb]
+- 2026-11-27 20:01 FINDING (confirmed on held-out rows): In 'Measurements of benzene and toluene in underway surface seawater and ambient air in the At' (Zenodo, doi 10.5281/zenodo.6523780): 'toluene_ATM_ppb' is linear in 'benzene_ATM_ppb' (R² = 0.990 on the discovery half); held-out R² = 0.960 [emp-7beb42fafa12]
+- 2026-11-27 20:01 FINDING (confirmed on held-out rows): In 'Measurements of benzene and toluene in underway surface seawater and ambient air in the At' (Zenodo, doi 10.5281/zenodo.6523780): 'benzene_flux_umol_m^(2)_d^(-1)' is linear in 'benzene_sat_%' (R² = 0.989 on the discovery half); held-out R² = 0.986 [emp-cf6cf3dcb58f]
+- 2026-11-27 20:01 FINDING (confirmed on held-out rows): In 'Measurements of benzene and toluene in underway surface seawater and ambient air in the At' (Zenodo, doi 10.5281/zenodo.6523780): 'toluene_flux_umol_m^(2)_d^(-1)' is linear in 'toluene_sat_%' (R² = 0.993 on the discovery half); held-out R² = 0.968 [emp-47b1eb5ed923]
+- 2026-11-27 20:03 data feeds: 38350 datasets analysed so far, 5584 confirmed findings

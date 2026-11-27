@@ -4390053,5 +4390053,344 @@
   "statement": "Octal game 0.1057112 is completely solved: its Grundy values are periodic with pre-period 3 and period 11 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": null,
+  "id": "gam-502f9d14d26a",
+  "kind": "game",
+  "novelty": "not checked",
+  "payload": {
+   "code": "1057113",
+   "period": 11,
+   "preperiod": 3
+  },
+  "source": "games.py",
+  "statement": "Octal game 0.1057113 is completely solved: its Grundy values are periodic with pre-period 3 and period 11 (Guy\u2013Smith periodicity theorem)",
+  "status": "candidate",
+  "verifier": null
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.21419760",
+   "held_out_r2": 0.9283,
+   "held_out_rows": 572,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-45c7072fdbda",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "cca1e9200e1c0e26.csv",
+   "doi": "10.5281/zenodo.21419760",
+   "form": "power law",
+   "params": [
+    0.00433786150430846,
+    1.0000503987757587
+   ],
+   "seed": 2455989161,
+   "x": "sigma_ra_mas",
+   "y": "sigma_dec_mas"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data products: A JWST time-series variability census of the globular clusters Liller 1 and' (Zenodo, doi 10.5281/zenodo.21419760): 'sigma_dec_mas' follows a power law in 'sigma_ra_mas' (R\u00b2 = 0.929 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22257517",
+   "held_out_r2": 0.9047,
+   "held_out_rows": 118,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d4e737bf0106",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "510a406def4fb8c6.csv",
+   "doi": "10.5281/zenodo.22257517",
+   "form": "power law",
+   "params": [
+    3.9087544006873935,
+    -0.20693454295056474
+   ],
+   "seed": 1609197989,
+   "x": "Temp_C",
+   "y": "Sigma_0"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'I-129, U-236 and C-14 from Mediterranean Sea 2022 (TalPro_2022)' (Zenodo, doi 10.5281/zenodo.22257517): 'Sigma_0' follows a power law in 'Temp_C' (R\u00b2 = 0.909 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22257517",
+   "held_out_r2": 0.9014,
+   "held_out_rows": 118,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-72f4b65a51cb",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "510a406def4fb8c6.csv",
+   "doi": "10.5281/zenodo.22257517",
+   "form": "exponential",
+   "params": [
+    3.528092394706252,
+    -0.011929357740102346
+   ],
+   "seed": 1609197989,
+   "x": "Pot_Temp",
+   "y": "Sigma_0"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'I-129, U-236 and C-14 from Mediterranean Sea 2022 (TalPro_2022)' (Zenodo, doi 10.5281/zenodo.22257517): 'Sigma_0' grows exponentially in 'Pot_Temp' (R\u00b2 = 0.907 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.6523780",
+   "held_out_r2": 0.9595,
+   "held_out_rows": 636,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-7beb42fafa12",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "714effd5ef5329fd.csv",
+   "doi": "10.5281/zenodo.6523780",
+   "form": "linear",
+   "params": [
+    -0.020508292383423693,
+    0.9980526071445195
+   ],
+   "seed": 1855297740,
+   "x": "benzene_ATM_ppb",
+   "y": "toluene_ATM_ppb"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Measurements of benzene and toluene in underway surface seawater and ambient air in the At' (Zenodo, doi 10.5281/zenodo.6523780): 'toluene_ATM_ppb' is linear in 'benzene_ATM_ppb' (R\u00b2 = 0.990 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.6523780",
+   "held_out_r2": 0.9861,
+   "held_out_rows": 636,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-cf6cf3dcb58f",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "714effd5ef5329fd.csv",
+   "doi": "10.5281/zenodo.6523780",
+   "form": "linear",
+   "params": [
+    -165.81741991180525,
+    0.8327032287830317
+   ],
+   "seed": 1855297740,
+   "x": "benzene_sat_%",
+   "y": "benzene_flux_umol_m^(2)_d^(-1)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Measurements of benzene and toluene in underway surface seawater and ambient air in the At' (Zenodo, doi 10.5281/zenodo.6523780): 'benzene_flux_umol_m^(2)_d^(-1)' is linear in 'benzene_sat_%' (R\u00b2 = 0.989 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.6523780",
+   "held_out_r2": 0.9679,
+   "held_out_rows": 636,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-47b1eb5ed923",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "714effd5ef5329fd.csv",
+   "doi": "10.5281/zenodo.6523780",
+   "form": "linear",
+   "params": [
+    -148.511147088216,
+    0.8510644796824522
+   ],
+   "seed": 1855297740,
+   "x": "toluene_sat_%",
+   "y": "toluene_flux_umol_m^(2)_d^(-1)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Measurements of benzene and toluene in underway surface seawater and ambient air in the At' (Zenodo, doi 10.5281/zenodo.6523780): 'toluene_flux_umol_m^(2)_d^(-1)' is linear in 'toluene_sat_%' (R\u00b2 = 0.993 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7828929",
+   "held_out_r2": 0.9096,
+   "held_out_rows": 1250,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-10495c8829da",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "6b2f563bde2c02b5.csv",
+   "doi": "10.5281/zenodo.7828929",
+   "form": "power law",
+   "params": [
+    -5.370605909606496,
+    0.4847467851332324
+   ],
+   "seed": 3804866655,
+   "x": "Electron Dose [krad/Month]",
+   "y": "Electron Err [krad/Month]"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Simulated shielding performance of 2500 two-layer permutations of the first 50 chemical el' (Zenodo, doi 10.5281/zenodo.7828929): 'Electron Err [krad/Month]' follows a power law in 'Electron Dose [krad/Month]' (R\u00b2 = 0.924 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7828929",
+   "held_out_r2": 0.9574,
+   "held_out_rows": 1250,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c6bb064e74f8",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "6b2f563bde2c02b5.csv",
+   "doi": "10.5281/zenodo.7828929",
+   "form": "power law",
+   "params": [
+    -6.033355780215799,
+    0.6355491941528326
+   ],
+   "seed": 3804866655,
+   "x": "Proton Dose [krad/Month]",
+   "y": "Proton Err [krad/Month]"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Simulated shielding performance of 2500 two-layer permutations of the first 50 chemical el' (Zenodo, doi 10.5281/zenodo.7828929): 'Proton Err [krad/Month]' follows a power law in 'Proton Dose [krad/Month]' (R\u00b2 = 0.957 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7828929",
+   "held_out_r2": 0.9432,
+   "held_out_rows": 1250,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-44cb6af39ac9",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "6b2f563bde2c02b5.csv",
+   "doi": "10.5281/zenodo.7828929",
+   "form": "power law",
+   "params": [
+    11.035715313267636,
+    5.177722520173691
+   ],
+   "seed": 3804866655,
+   "x": "Proton Dose [krad/Month]",
+   "y": "Proton Rank"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Simulated shielding performance of 2500 two-layer permutations of the first 50 chemical el' (Zenodo, doi 10.5281/zenodo.7828929): 'Proton Rank' follows a power law in 'Proton Dose [krad/Month]' (R\u00b2 = 0.945 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7828929",
+   "held_out_r2": 0.9095,
+   "held_out_rows": 1250,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4d33150c2271",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "6b2f563bde2c02b5.csv",
+   "doi": "10.5281/zenodo.7828929",
+   "form": "power law",
+   "params": [
+    58.18845815392989,
+    7.84140407525757
+   ],
+   "seed": 3804866655,
+   "x": "Proton Err [krad/Month]",
+   "y": "Proton Rank"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Simulated shielding performance of 2500 two-layer permutations of the first 50 chemical el' (Zenodo, doi 10.5281/zenodo.7828929): 'Proton Rank' follows a power law in 'Proton Err [krad/Month]' (R\u00b2 = 0.915 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7620703",
+   "held_out_r2": 0.9434,
+   "held_out_rows": 864,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-57ef153da9b2",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "9edb4a227eb345bc.csv",
+   "doi": "10.5281/zenodo.7620703",
+   "form": "logarithmic",
+   "params": [
+    3284.1228337038397,
+    2831.804161154626
+   ],
+   "seed": 702621558,
+   "x": "Proton Dose [krad/Month]",
+   "y": "Proton Rank"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Simulated shielding performance of 1728 three-layer permutations of 12 common satellite an' (Zenodo, doi 10.5281/zenodo.7620703): 'Proton Rank' grows logarithmically in 'Proton Dose [krad/Month]' (R\u00b2 = 0.929 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7620703",
+   "held_out_r2": 0.9803,
+   "held_out_rows": 864,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-fa526d66980d",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "9edb4a227eb345bc.csv",
+   "doi": "10.5281/zenodo.7620703",
+   "form": "linear",
+   "params": [
+    -2671.4898736358155,
+    4343.313281627411
+   ],
+   "seed": 702621558,
+   "x": "Total Dose [krad/Month]",
+   "y": "Total Rank"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Simulated shielding performance of 1728 three-layer permutations of 12 common satellite an' (Zenodo, doi 10.5281/zenodo.7620703): 'Total Rank' is linear in 'Total Dose [krad/Month]' (R\u00b2 = 0.980 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
