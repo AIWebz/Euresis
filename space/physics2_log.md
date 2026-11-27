@@ -9163,3 +9163,8 @@
 - 2026-11-27 21:32 round 8321: two-body decay
 - 2026-11-27 21:34 round 8322: collision
 - 2026-11-27 21:37 round 8323: driven oscillator
+- 2026-11-27 21:39 round 8324: velocity addition
+- 2026-11-27 21:40 round 8325: Compton scattering
+- 2026-11-27 21:41 round 8326: Cournot duopoly
+- 2026-11-27 21:42 round 8327: insurance and risk
+- 2026-11-27 21:44 segment end: 8327 rounds, 5 discoveries, 2 known laws rediscovered
