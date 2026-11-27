@@ -4365965,5 +4365965,54 @@
   "statement": "[physics: collision] Normalized Kinetic Energy Retention Ratio of Target [model-proposed; physical meaning unverified] \u2265 1/2 \u00d7 Velocity Ratio of Target to Projectile After Collision [model-proposed; physical meaning unverified]   on m < 1, e < 1 (tight only at the edge of the domain, near (2.15e-16, 1))",
   "status": "proved",
   "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "checked_up_to": 45,
+   "method": "Grundy values recomputed; Guy\u2013Smith periodicity theorem condition checked",
+   "values_of_one_period": [
+    1,
+    2,
+    2,
+    2,
+    2,
+    2,
+    4,
+    4,
+    4,
+    4,
+    1,
+    1,
+    1,
+    1
+   ]
+  },
+  "id": "gam-56a1d05b2d5e",
+  "kind": "game",
+  "novelty": "novelty unchecked: octal games of up to three digits are tabulated in Winning Ways and Flammenkamp's tables, which cannot be searched from here",
+  "payload": {
+   "code": "1054633",
+   "period": 14,
+   "preperiod": 5
+  },
+  "source": "games.py",
+  "statement": "Octal game 0.1054633 is completely solved: its Grundy values are periodic with pre-period 5 and period 14 (Guy\u2013Smith periodicity theorem)",
+  "status": "proved",
+  "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": null,
+  "id": "gam-ab0e6491e03b",
+  "kind": "game",
+  "novelty": "not checked",
+  "payload": {
+   "code": "1054641",
+   "period": 15,
+   "preperiod": 5
+  },
+  "source": "games.py",
+  "statement": "Octal game 0.1054641 is completely solved: its Grundy values are periodic with pre-period 5 and period 15 (Guy\u2013Smith periodicity theorem)",
+  "status": "candidate",
+  "verifier": null
  }
 ]
