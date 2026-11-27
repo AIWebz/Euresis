@@ -9094,3 +9094,16 @@
 - 2026-11-27 18:12 round 8258: collision
 - 2026-11-27 18:15 round 8259: driven oscillator
 - 2026-11-27 18:16 round 8260: velocity addition
+- 2026-11-27 18:18 round 8261: Compton scattering
+- 2026-11-27 18:18 round 8262: Cournot duopoly
+- 2026-11-27 18:20 round 8263: insurance and risk
+- 2026-11-27 18:21 round 8264: auction with a reserve price
+- 2026-11-27 18:23 round 8265: two-body decay
+- 2026-11-27 18:25 round 8266: collision
+- 2026-11-27 18:27 round 8267: driven oscillator
+- 2026-11-27 18:29 round 8268: velocity addition
+- 2026-11-27 18:30 round 8269: Compton scattering
+- 2026-11-27 18:31 round 8270: Cournot duopoly
+- 2026-11-27 18:34 round 8271: insurance and risk
+- 2026-11-27 18:36 round 8272: auction with a reserve price
+- 2026-11-27 18:37 round 8273: two-body decay

@@ -4377922,5 +4377922,221 @@
   "statement": "In '<b>Long-term dynamics of radiocesium in water and 43 taxa of fish, shrimp, and crab from L' (Figshare, doi 10.6084/m9.figshare.33338634.v1): 'wet_weight_kg' follows a power law in 'length_cm' (R\u00b2 = 0.929 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-fa0e8c92afcc",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "claim": "c1/3 + c2/3 + 1/3 >= 1/32*((c1/6 - c2/3 - 1/6)**2/(-c1/3 + c2/6 - 1/6)**2)",
+   "symbols": [
+    "c1",
+    "c2"
+   ]
+  },
+  "source": "physics_discover2 round 8270",
+  "statement": "[economics: Cournot duopoly] market price \u2265 1/32 \u00d7 Market Price Deviation from Monopoly [model-proposed; physical meaning unverified]   on c1 < 1/2, c2 < 1/2 (tight only at the edge of the domain, near (1.11e-15, 0.5))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-59d352ad1539",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "claim": "(-2*c1 + c2 + 1)**2/9 + (c1 - 2*c2 + 1)**2/9 >= 1/64*((c1/6 - c2/3 - 1/6)**2/(-c1/3 + c2/6 - 1/6)**2)",
+   "symbols": [
+    "c1",
+    "c2"
+   ]
+  },
+  "source": "physics_discover2 round 8270",
+  "statement": "[economics: Cournot duopoly] total industry profit \u2265 1/64 \u00d7 Market Price Deviation from Monopoly [model-proposed; physical meaning unverified]   on c1 < 1/2, c2 < 1/2 (tight only at the edge of the domain, near (1.28e-13, 0.5))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-e16dfbb82540",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "claim": "(1 - c1)**2/4 >= 1/64*((c1/6 - c2/3 - 1/6)**2/(-c1/3 + c2/6 - 1/6)**2)",
+   "symbols": [
+    "c1",
+    "c2"
+   ]
+  },
+  "source": "physics_discover2 round 8270",
+  "statement": "[economics: Cournot duopoly] firm 1's profit as a monopolist \u2265 1/64 \u00d7 Market Price Deviation from Monopoly [model-proposed; physical meaning unverified]   on c1 < 1/2, c2 < 1/2 (tight only at the edge of the domain, near (4.17e-14, 0.5))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-292f8ce8c135",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'total industry profit'",
+  "payload": {
+   "assumptions": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "claim": "(c1/3 + c2/3 + 1/3)/(c1 + c2) >= 1/16*((c1/6 - c2/3 - 1/6)**2/(-c1/3 + c2/6 - 1/6)**2)",
+   "symbols": [
+    "c1",
+    "c2"
+   ]
+  },
+  "source": "physics_discover2 round 8270",
+  "statement": "[economics: Cournot duopoly] Market Price to Marginal Cost Ratio [model-proposed; physical meaning unverified] \u2265 1/16 \u00d7 Market Price Deviation from Monopoly [model-proposed; physical meaning unverified]   on c1 < 1/2, c2 < 1/2 (tight only at the edge of the domain, near (7.27e-15, 0.5))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-7d9e060a77b5",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'market price'",
+  "payload": {
+   "assumptions": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "claim": "(c1/3 + c2/3 + 1/3)/c2 >= 1/16*((c1/6 - c2/3 - 1/6)**2/(-c1/3 + c2/6 - 1/6)**2)",
+   "symbols": [
+    "c1",
+    "c2"
+   ]
+  },
+  "source": "physics_discover2 round 8270",
+  "statement": "[economics: Cournot duopoly] Price to Marginal Cost Ratio for Firm 2 [model-proposed; physical meaning unverified] \u2265 1/16 \u00d7 Market Price Deviation from Monopoly [model-proposed; physical meaning unverified]   on c1 < 1/2, c2 < 1/2 (tight only at the edge of the domain, near (2e-15, 0.5))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-88452ac503cd",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'total industry profit'",
+  "payload": {
+   "assumptions": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "claim": "(c1/3 + c2/3 - (1 - c1)**2/4 + 1/3)/(c1/3 + c2/3 - (1 - c2)**2/4 + 1/3)**2 >= 4/49*((c1/6 - c2/3 - 1/6)**2/(-c1/3 + c2/6 - 1/6)**2)",
+   "symbols": [
+    "c1",
+    "c2"
+   ]
+  },
+  "source": "physics_discover2 round 8270",
+  "statement": "[economics: Cournot duopoly] Price Deviation Index [model-proposed; physical meaning unverified] \u2265 4/49 \u00d7 Market Price Deviation from Monopoly [model-proposed; physical meaning unverified]   on c1 < 1/2, c2 < 1/2 (tight only at the edge of the domain, near (1.38e-14, 0.5))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-006d3f5a061b",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "claim": "sqrt((-2*c1 + c2 + 1)**2 + (c1 - 2*c2 + 1)**2)/((1 - c1)**2 + (1 - c2)**2 + (-c1 - c2 + 1)**2) >= 1/16*((c1/6 - c2/3 - 1/6)**2/(-c1/3 + c2/6 - 1/6)**2)",
+   "symbols": [
+    "c1",
+    "c2"
+   ]
+  },
+  "source": "physics_discover2 round 8270",
+  "statement": "[economics: Cournot duopoly] Total Welfare Efficiency Index [model-proposed; physical meaning unverified] \u2265 1/16 \u00d7 Market Price Deviation from Monopoly [model-proposed; physical meaning unverified]   on c1 < 1/2, c2 < 1/2 (tight only at the edge of the domain, near (7.43e-15, 0.5))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-b300122f4cf2",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'market price'",
+  "payload": {
+   "assumptions": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "claim": "(c1/3 + c2/3 - (1 - c1)**2/4 + 1/3)/(c1/3 + c2/3 - (1 - c2)**2/4 + 1/3) >= 1/28*((c1/6 - c2/3 - 1/6)**2/(-c1/3 + c2/6 - 1/6)**2)",
+   "symbols": [
+    "c1",
+    "c2"
+   ]
+  },
+  "source": "physics_discover2 round 8270",
+  "statement": "[economics: Cournot duopoly] Price Deviation Ratio [model-proposed; physical meaning unverified] \u2265 1/28 \u00d7 Market Price Deviation from Monopoly [model-proposed; physical meaning unverified]   on c1 < 1/2, c2 < 1/2 (tight only at the edge of the domain, near (1.12e-14, 0.5))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]
