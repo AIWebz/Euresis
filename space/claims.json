@@ -4374033,10 +4374033,15 @@
   "verifier": "guy-smith-periodicity"
  },
  {
-  "evidence": null,
+  "evidence": {
+   "doi": "10.5061/dryad.898t03g",
+   "held_out_r2": 0.9299,
+   "held_out_rows": 49,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
   "id": "emp-56b8f8fc82b1",
   "kind": "empirical",
-  "novelty": "not checked",
+  "novelty": "KNOWN: equation of state of a simulated fluid (pressure, density, temperature, chemical potential, kinetic energy) \u2014 not a discovery",
   "payload": {
    "dataset": "4eead8175ff6514a.csv",
    "doi": "10.5061/dryad.898t03g",
@@ -4374051,7 +4374056,196 @@
   },
   "source": "datafeeds.py",
   "statement": "In 'Data from: Soil erodibility differs according to heritable trait variation and nutrient-in' (Zenodo, doi 10.5061/dryad.898t03g): 'AverageSurfaceSoilShearStrength' follows a power law in 'SurfaceSoilShearStrength_1' (R\u00b2 = 0.922 on the discovery half)",
-  "status": "candidate",
-  "verifier": null
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rv15dv47f",
+   "held_out_r2": 0.8966,
+   "held_out_rows": 33,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-42b76f57c973",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "93501225dba6b56a.csv",
+   "doi": "10.5061/dryad.rv15dv47f",
+   "form": "exponential",
+   "params": [
+    4.62390688480916,
+    -0.4594603880517527
+   ],
+   "seed": 1124951251,
+   "x": "Avg_Pot_VPD",
+   "y": "Avg_Pot_RH"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'The experimental manipulation of atmospheric drought: Teasing out the role of microclimate' (Zenodo, doi 10.5061/dryad.rv15dv47f): 'Avg_Pot_RH' grows exponentially in 'Avg_Pot_VPD' (R\u00b2 = 0.908 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.3n5tb2rr0",
+   "held_out_r2": 0.8826,
+   "held_out_rows": 95,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ec0d398730cc",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "bb8cc5c6a4b7aad3.csv",
+   "doi": "10.5061/dryad.3n5tb2rr0",
+   "form": "power law",
+   "params": [
+    0.24713708864576192,
+    0.7647755626401403
+   ],
+   "seed": 2881073018,
+   "x": "AGbiomass",
+   "y": "BGbiomass"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Plant-soil interactions during the native and exotic range expansion of an annu' (Zenodo, doi 10.5061/dryad.3n5tb2rr0): 'BGbiomass' follows a power law in 'AGbiomass' (R\u00b2 = 0.904 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.3n5tb2rr0",
+   "held_out_r2": 0.9664,
+   "held_out_rows": 95,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ba838135ac69",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "bb8cc5c6a4b7aad3.csv",
+   "doi": "10.5061/dryad.3n5tb2rr0",
+   "form": "power law",
+   "params": [
+    0.8309614534671789,
+    0.8626892192038647
+   ],
+   "seed": 2881073018,
+   "x": "AGbiomass",
+   "y": "total.biomass"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Plant-soil interactions during the native and exotic range expansion of an annu' (Zenodo, doi 10.5061/dryad.3n5tb2rr0): 'total.biomass' follows a power law in 'AGbiomass' (R\u00b2 = 0.973 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.3n5tb2rr0",
+   "held_out_r2": 0.967,
+   "held_out_rows": 95,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-901f0b8e70ea",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "bb8cc5c6a4b7aad3.csv",
+   "doi": "10.5061/dryad.3n5tb2rr0",
+   "form": "power law",
+   "params": [
+    -3.7108845476911023,
+    0.8667819038974697
+   ],
+   "seed": 2881073018,
+   "x": "AGbiomass",
+   "y": "total.growthrate"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Plant-soil interactions during the native and exotic range expansion of an annu' (Zenodo, doi 10.5061/dryad.3n5tb2rr0): 'total.growthrate' follows a power law in 'AGbiomass' (R\u00b2 = 0.976 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.3n5tb2rr0",
+   "held_out_r2": 0.9708,
+   "held_out_rows": 95,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a041399e2932",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "bb8cc5c6a4b7aad3.csv",
+   "doi": "10.5061/dryad.3n5tb2rr0",
+   "form": "power law",
+   "params": [
+    0.5498356497268188,
+    1.074381133627166
+   ],
+   "seed": 2881073018,
+   "x": "BGbiomass",
+   "y": "total.biomass"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Plant-soil interactions during the native and exotic range expansion of an annu' (Zenodo, doi 10.5061/dryad.3n5tb2rr0): 'total.biomass' follows a power law in 'BGbiomass' (R\u00b2 = 0.977 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.3n5tb2rr0",
+   "held_out_r2": 0.9696,
+   "held_out_rows": 95,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-92e846fff078",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "bb8cc5c6a4b7aad3.csv",
+   "doi": "10.5061/dryad.3n5tb2rr0",
+   "form": "power law",
+   "params": [
+    -3.9934973293786835,
+    1.0759755987410156
+   ],
+   "seed": 2881073018,
+   "x": "BGbiomass",
+   "y": "total.growthrate"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Plant-soil interactions during the native and exotic range expansion of an annu' (Zenodo, doi 10.5061/dryad.3n5tb2rr0): 'total.growthrate' follows a power law in 'BGbiomass' (R\u00b2 = 0.973 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.50g8322",
+   "held_out_r2": 0.9861,
+   "held_out_rows": 266,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-77ef0e7fd253",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "c5fc15344836bb97.csv",
+   "doi": "10.5061/dryad.50g8322",
+   "form": "power law",
+   "params": [
+    0.640492198859364,
+    1.0026704894975276
+   ],
+   "seed": 2619303314,
+   "x": "mean_VWC_%",
+   "y": "WFPS_%"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Alteration of nitrous oxide emissions from floodplain soils by aggregate size, ' (Zenodo, doi 10.5061/dryad.50g8322): 'WFPS_%' follows a power law in 'mean_VWC_%' (R\u00b2 = 0.983 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
