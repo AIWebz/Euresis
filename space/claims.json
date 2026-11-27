@@ -4378138,5 +4378138,39 @@
   "statement": "[economics: Cournot duopoly] Price Deviation Ratio [model-proposed; physical meaning unverified] \u2265 1/28 \u00d7 Market Price Deviation from Monopoly [model-proposed; physical meaning unverified]   on c1 < 1/2, c2 < 1/2 (tight only at the edge of the domain, near (1.12e-14, 0.5))",
   "status": "proved",
   "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "checked_up_to": 41,
+   "method": "Grundy values recomputed; Guy\u2013Smith periodicity theorem condition checked",
+   "values_of_one_period": [
+    1,
+    1,
+    1,
+    2,
+    2,
+    2,
+    2,
+    2,
+    4,
+    4,
+    4,
+    4,
+    1,
+    1
+   ]
+  },
+  "id": "gam-1efbc95f56a4",
+  "kind": "game",
+  "novelty": "not checked",
+  "payload": {
+   "code": "1055544",
+   "period": 14,
+   "preperiod": 3
+  },
+  "source": "games.py",
+  "statement": "Octal game 0.1055544 is completely solved: its Grundy values are periodic with pre-period 3 and period 14 (Guy\u2013Smith periodicity theorem)",
+  "status": "proved",
+  "verifier": "guy-smith-periodicity"
  }
 ]
