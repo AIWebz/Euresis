@@ -6369,3 +6369,7 @@
 - 2026-11-27 13:34 FINDING (confirmed on held-out rows): In 'Occupation-level scores of exposure to generative AI for Britain, from the Generative AI S' (Figshare, doi 10.5522/04/34857396.v2): 'rank_gpt55' is linear in 'rank_glm52' (R² = 0.959 on the discovery half); held-out R² = 0.971 [emp-9aa5d0afaa21]
 - 2026-11-27 13:35 data feeds: 38100 datasets analysed so far, 5565 confirmed findings
 - 2026-11-27 14:19 data feeds: online
+- 2026-11-27 14:21 FINDING (confirmed on held-out rows): In 'Shielding performance of the 98 first chemical elements against trapped particles on GTO' (Zenodo, doi 10.5281/zenodo.7616012): 'Electron Err [kRad/month]' follows a power law in 'Electron TID [kRad/month]' (R² = 0.958 on the discovery half); held-out R² = 0.933 [emp-cc27b58f6614]
+- 2026-11-27 14:21 FINDING (confirmed on held-out rows): In 'Shielding performance of the 98 first chemical elements against trapped particles on GTO' (Zenodo, doi 10.5281/zenodo.7616012): 'Total Rel Err [%]' grows exponentially in 'Electron TID [kRad/month]' (R² = 0.943 on the discovery half); held-out R² = 0.891 [emp-13f630af0ee6]
+- 2026-11-27 14:21 FINDING (confirmed on held-out rows): In 'Shielding performance of the 98 first chemical elements against trapped particles on GTO' (Zenodo, doi 10.5281/zenodo.7616012): 'Proton Rank' is linear in 'Electron Rank' (R² = 0.977 on the discovery half); held-out R² = 0.907 [emp-6e05afbee22a]
+- 2026-11-27 14:21 data feeds: 38101 datasets analysed so far, 5568 confirmed findings

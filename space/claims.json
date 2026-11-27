@@ -4310992,10 +4310992,15 @@
   "verifier": "held-out-replication"
  },
  {
-  "evidence": null,
+  "evidence": {
+   "doi": "10.5281/zenodo.7616012",
+   "held_out_r2": 0.8909,
+   "held_out_rows": 49,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
   "id": "emp-13f630af0ee6",
   "kind": "empirical",
-  "novelty": "not checked",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
   "payload": {
    "dataset": "03d4456f13a9ea82.csv",
    "doi": "10.5281/zenodo.7616012",
@@ -4311010,8 +4311015,8 @@
   },
   "source": "datafeeds.py",
   "statement": "In 'Shielding performance of the 98 first chemical elements against trapped particles on GTO' (Zenodo, doi 10.5281/zenodo.7616012): 'Total Rel Err [%]' grows exponentially in 'Electron TID [kRad/month]' (R\u00b2 = 0.943 on the discovery half)",
-  "status": "candidate",
-  "verifier": null
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  },
  {
   "evidence": {
@@ -4359319,5 +4359324,113 @@
   "statement": "Octal game 0.1053774 is completely solved: its Grundy values are periodic with pre-period 605 and period 90 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7616012",
+   "held_out_r2": 0.8419,
+   "held_out_rows": 49,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-79454c5dd51a",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "03d4456f13a9ea82.csv",
+   "doi": "10.5281/zenodo.7616012",
+   "form": "exponential",
+   "params": [
+    -0.3886890818026825,
+    -546.6732043494802
+   ],
+   "seed": 3042037675,
+   "x": "Electron Err [kRad/month]",
+   "y": "Total Rel Err [%]"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Shielding performance of the 98 first chemical elements against trapped particles on GTO' (Zenodo, doi 10.5281/zenodo.7616012): 'Total Rel Err [%]' grows exponentially in 'Electron Err [kRad/month]' (R\u00b2 = 0.931 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7616012",
+   "held_out_r2": 0.7522,
+   "held_out_rows": 49,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3b98763ee284",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "03d4456f13a9ea82.csv",
+   "doi": "10.5281/zenodo.7616012",
+   "form": "linear",
+   "params": [
+    173.18100991955262,
+    -211.73326467424965
+   ],
+   "seed": 3042037675,
+   "x": "Proton TID [kRad/month]",
+   "y": "Electron Rank"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Shielding performance of the 98 first chemical elements against trapped particles on GTO' (Zenodo, doi 10.5281/zenodo.7616012): 'Electron Rank' is linear in 'Proton TID [kRad/month]' (R\u00b2 = 0.970 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7616012",
+   "held_out_r2": 0.5671,
+   "held_out_rows": 49,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-fd20c4a25a79",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "03d4456f13a9ea82.csv",
+   "doi": "10.5281/zenodo.7616012",
+   "form": "logarithmic",
+   "params": [
+    -817.5343490015669,
+    -149.64401827989624
+   ],
+   "seed": 3042037675,
+   "x": "Protons Err [kRad/month]",
+   "y": "Electron Rank"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Shielding performance of the 98 first chemical elements against trapped particles on GTO' (Zenodo, doi 10.5281/zenodo.7616012): 'Electron Rank' grows logarithmically in 'Protons Err [kRad/month]' (R\u00b2 = 0.914 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7616012",
+   "held_out_r2": 0.907,
+   "held_out_rows": 49,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-6e05afbee22a",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "03d4456f13a9ea82.csv",
+   "doi": "10.5281/zenodo.7616012",
+   "form": "linear",
+   "params": [
+    98.88931740026992,
+    -0.9750111659433249
+   ],
+   "seed": 3042037675,
+   "x": "Electron Rank",
+   "y": "Proton Rank"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Shielding performance of the 98 first chemical elements against trapped particles on GTO' (Zenodo, doi 10.5281/zenodo.7616012): 'Proton Rank' is linear in 'Electron Rank' (R\u00b2 = 0.977 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
