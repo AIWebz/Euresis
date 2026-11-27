@@ -6308,3 +6308,4 @@
 - 2026-11-27 10:31 FINDING (confirmed on held-out rows): In 'Relative effects of climate and litter traits on decomposition change with time, climate a' (Zenodo, doi 10.5061/dryad.ttdz08kwb): 'Fe' is linear in 'Al' (R² = 0.902 on the discovery half); held-out R² = 0.900 [emp-53856e1c76b9]
 - 2026-11-27 10:31 FINDING (confirmed on held-out rows): In 'The Human Niche Space of Post-LGM Late Upper Paleolithic Europe - Supplemental Material' (Zenodo, doi 10.5281/zenodo.15703940): 'prop_niche' grows logarithmically in 'nichesize' (R² = 0.907 on the discovery half); held-out R² = 0.916 [emp-7c60c2b1d448]
 - 2026-11-27 10:32 data feeds: 37733 datasets analysed so far, 5511 confirmed findings
+- 2026-11-27 11:35 data feeds: online
