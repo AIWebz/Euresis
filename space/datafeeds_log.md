@@ -6337,3 +6337,4 @@
 - 2026-11-27 12:25 FINDING (confirmed on held-out rows): In 'Fishers' ecological knowledge of the Lower Ucayali' (Zenodo, doi 10.5061/dryad.qfttdz0h9): 'Total fish sold' is linear in 'Total fish harvest' (R² = 0.972 on the discovery half); held-out R² = 0.911 [emp-803a92567472]
 - 2026-11-27 12:25 FINDING (confirmed on held-out rows): In 'Data for: Dynamic coastal pelagic habitat drives rapid changes in growth and condition of ' (Zenodo, doi 10.5061/dryad.x69p8czn0): 'mean.sal.psu' follows a power law in 'mean.temp.degC' (R² = 0.934 on the discovery half); held-out R² = 0.946 [emp-f01ae88585a5]
 - 2026-11-27 12:26 data feeds: 38050 datasets analysed so far, 5536 confirmed findings
+- 2026-11-27 13:29 data feeds: online
