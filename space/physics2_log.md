@@ -9172,3 +9172,12 @@
 - 2026-11-27 21:55 round 8328: auction with a reserve price
 - 2026-11-27 21:57 round 8329: two-body decay
 - 2026-11-27 21:59 round 8330: collision
+- 2026-11-27 22:09 round 8331: driven oscillator
+- 2026-11-27 22:10 round 8332: velocity addition
+- 2026-11-27 22:11 round 8333: Compton scattering
+- 2026-11-27 22:11 round 8334: Cournot duopoly
+- 2026-11-27 22:13 round 8335: insurance and risk
+- 2026-11-27 22:15 round 8336: auction with a reserve price
+- 2026-11-27 22:16 round 8337: two-body decay
+- 2026-11-27 22:18 round 8338: collision
+- 2026-11-27 22:30 segment end: 8338 rounds, 5 discoveries, 2 known laws rediscovered
