@@ -9026,3 +9026,6 @@
 - 2026-11-27 14:40 round 8198: Cournot duopoly
 - 2026-11-27 14:42 round 8199: insurance and risk
 - 2026-11-27 14:44 round 8200: auction with a reserve price
+- 2026-11-27 14:47 round 8201: two-body decay
+- 2026-11-27 14:48 round 8202: collision
+- 2026-11-27 14:54 segment end: 8202 rounds, 5 discoveries, 2 known laws rediscovered
