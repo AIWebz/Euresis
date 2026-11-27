@@ -8981,3 +8981,6 @@
 - 2026-11-27 12:34 round 8157: Compton scattering
 - 2026-11-27 12:34 round 8158: Cournot duopoly
 - 2026-11-27 12:37 round 8159: insurance and risk
+- 2026-11-27 12:39 round 8160: auction with a reserve price
+- 2026-11-27 12:40 round 8161: two-body decay
+- 2026-11-27 12:42 round 8162: collision
