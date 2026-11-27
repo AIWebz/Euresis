@@ -6373,3 +6373,4 @@
 - 2026-11-27 14:21 FINDING (confirmed on held-out rows): In 'Shielding performance of the 98 first chemical elements against trapped particles on GTO' (Zenodo, doi 10.5281/zenodo.7616012): 'Total Rel Err [%]' grows exponentially in 'Electron TID [kRad/month]' (R² = 0.943 on the discovery half); held-out R² = 0.891 [emp-13f630af0ee6]
 - 2026-11-27 14:21 FINDING (confirmed on held-out rows): In 'Shielding performance of the 98 first chemical elements against trapped particles on GTO' (Zenodo, doi 10.5281/zenodo.7616012): 'Proton Rank' is linear in 'Electron Rank' (R² = 0.977 on the discovery half); held-out R² = 0.907 [emp-6e05afbee22a]
 - 2026-11-27 14:21 data feeds: 38101 datasets analysed so far, 5568 confirmed findings
+- 2026-11-27 15:25 data feeds: online
