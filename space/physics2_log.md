@@ -9041,3 +9041,9 @@
 - 2026-11-27 15:43 round 8211: driven oscillator
 - 2026-11-27 15:45 round 8212: velocity addition
 - 2026-11-27 15:46 round 8213: Compton scattering
+- 2026-11-27 15:47 round 8214: Cournot duopoly
+- 2026-11-27 15:49 round 8215: insurance and risk
+- 2026-11-27 15:51 round 8216: auction with a reserve price
+- 2026-11-27 15:53 round 8217: two-body decay
+- 2026-11-27 15:54 round 8218: collision
+- 2026-11-27 15:57 segment end: 8218 rounds, 5 discoveries, 2 known laws rediscovered
