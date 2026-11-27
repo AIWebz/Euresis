@@ -4310990,5 +4310990,76 @@
   "statement": "In 'Shielding performance of the 98 first chemical elements against trapped particles on GTO' (Zenodo, doi 10.5281/zenodo.7616012): 'Electron Err [kRad/month]' follows a power law in 'Electron TID [kRad/month]' (R\u00b2 = 0.958 on the discovery half)",
   "status": "verified-numeric",
   "verifier": "held-out-replication"
+ },
+ {
+  "evidence": null,
+  "id": "emp-13f630af0ee6",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "03d4456f13a9ea82.csv",
+   "doi": "10.5281/zenodo.7616012",
+   "form": "exponential",
+   "params": [
+    -0.7953804205577562,
+    -0.6694386691464631
+   ],
+   "seed": 3042037675,
+   "x": "Electron TID [kRad/month]",
+   "y": "Total Rel Err [%]"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Shielding performance of the 98 first chemical elements against trapped particles on GTO' (Zenodo, doi 10.5281/zenodo.7616012): 'Total Rel Err [%]' grows exponentially in 'Electron TID [kRad/month]' (R\u00b2 = 0.943 on the discovery half)",
+  "status": "candidate",
+  "verifier": null
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.fc1m8",
+   "held_out_r2": 0.9887,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-998caf04009f",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "109093f340ca81d4.csv",
+   "doi": "10.5061/dryad.fc1m8",
+   "form": "power law",
+   "params": [
+    1.4427513620562231,
+    0.12357273056144104
+   ],
+   "seed": 660866709,
+   "x": "baseMean",
+   "y": "Ax3"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Transcriptional profile and differential fitness in a specialist milkweed insec' (Zenodo, doi 10.5061/dryad.fc1m8): 'Ax3' follows a power law in 'baseMean' (R\u00b2 = 0.989 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": null,
+  "id": "emp-e19cdccb1979",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "109093f340ca81d4.csv",
+   "doi": "10.5061/dryad.fc1m8",
+   "form": "power law",
+   "params": [
+    1.4301190438034745,
+    0.12534680214561747
+   ],
+   "seed": 660866709,
+   "x": "baseMean",
+   "y": "Bx3"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Transcriptional profile and differential fitness in a specialist milkweed insec' (Zenodo, doi 10.5061/dryad.fc1m8): 'Bx3' follows a power law in 'baseMean' (R\u00b2 = 0.988 on the discovery half)",
+  "status": "candidate",
+  "verifier": null
  }
 ]
