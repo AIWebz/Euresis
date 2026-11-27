@@ -6387,3 +6387,4 @@
 - 2026-11-27 17:17 FINDING (confirmed on held-out rows): In 'Data from: Plant-soil interactions during the native and exotic range expansion of an annu' (Zenodo, doi 10.5061/dryad.3n5tb2rr0): 'total.growthrate' follows a power law in 'BGbiomass' (R² = 0.973 on the discovery half); held-out R² = 0.970 [emp-92e846fff078]
 - 2026-11-27 17:17 FINDING (confirmed on held-out rows): In 'Data from: Alteration of nitrous oxide emissions from floodplain soils by aggregate size, ' (Zenodo, doi 10.5061/dryad.50g8322): 'WFPS_%' follows a power law in 'mean_VWC_%' (R² = 0.983 on the discovery half); held-out R² = 0.986 [emp-77ef0e7fd253]
 - 2026-11-27 17:17 data feeds: 38164 datasets analysed so far, 5576 confirmed findings
+- 2026-11-27 18:08 data feeds: online
