@@ -4365668,5 +4365668,86 @@
   "statement": "Octal game 0.1054632 is completely solved: its Grundy values are periodic with pre-period 5 and period 14 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.6084/m9.figshare.30591008.v1",
+   "held_out_r2": 0.9694,
+   "held_out_rows": 151,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-cf10187fa568",
+  "kind": "empirical",
+  "novelty": "KNOWN: thermodynamic temperature conversions \u2014 not a discovery",
+  "payload": {
+   "dataset": "e061e8b65d9c8e8d.csv",
+   "doi": "10.6084/m9.figshare.30591008.v1",
+   "form": "power law",
+   "params": [
+    0.055973315938889864,
+    0.9823593438515352
+   ],
+   "seed": 4039389735,
+   "x": "Surface_Temp_C",
+   "y": "Bottom_Temp_C"
+  },
+  "source": "datafeeds.py",
+  "statement": "In '<b>Puerto Rico Coral Reef Monitoring Program Water Quality Data from 2023-2025</b>' (Figshare, doi 10.6084/m9.figshare.30591008.v1): 'Bottom_Temp_C' follows a power law in 'Surface_Temp_C' (R\u00b2 = 0.972 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.6084/m9.figshare.30591008.v1",
+   "held_out_r2": 0.8953,
+   "held_out_rows": 151,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f906eb795326",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "e061e8b65d9c8e8d.csv",
+   "doi": "10.6084/m9.figshare.30591008.v1",
+   "form": "power law",
+   "params": [
+    0.1242023900303939,
+    0.9660929462585491
+   ],
+   "seed": 4039389735,
+   "x": "Surface_Sal_psu",
+   "y": "Bottom_Sal_psu"
+  },
+  "source": "datafeeds.py",
+  "statement": "In '<b>Puerto Rico Coral Reef Monitoring Program Water Quality Data from 2023-2025</b>' (Figshare, doi 10.6084/m9.figshare.30591008.v1): 'Bottom_Sal_psu' follows a power law in 'Surface_Sal_psu' (R\u00b2 = 0.964 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.6084/m9.figshare.30591008.v1",
+   "held_out_r2": 0.8117,
+   "held_out_rows": 151,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-2273115a8f04",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "e061e8b65d9c8e8d.csv",
+   "doi": "10.6084/m9.figshare.30591008.v1",
+   "form": "linear",
+   "params": [
+    -0.07239567417854506,
+    1.0020187971603656
+   ],
+   "seed": 4039389735,
+   "x": "Bottom_Temp_Depth_m",
+   "y": "Bottom_Sal_Depth_m"
+  },
+  "source": "datafeeds.py",
+  "statement": "In '<b>Puerto Rico Coral Reef Monitoring Program Water Quality Data from 2023-2025</b>' (Figshare, doi 10.6084/m9.figshare.30591008.v1): 'Bottom_Sal_Depth_m' is linear in 'Bottom_Temp_Depth_m' (R\u00b2 = 0.995 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
  }
 ]

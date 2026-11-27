@@ -6374,3 +6374,5 @@
 - 2026-11-27 14:21 FINDING (confirmed on held-out rows): In 'Shielding performance of the 98 first chemical elements against trapped particles on GTO' (Zenodo, doi 10.5281/zenodo.7616012): 'Proton Rank' is linear in 'Electron Rank' (R² = 0.977 on the discovery half); held-out R² = 0.907 [emp-6e05afbee22a]
 - 2026-11-27 14:21 data feeds: 38101 datasets analysed so far, 5568 confirmed findings
 - 2026-11-27 15:25 data feeds: online
+- 2026-11-27 15:26 FINDING (confirmed on held-out rows): In '<b>Puerto Rico Coral Reef Monitoring Program Water Quality Data from 2023-2025</b>' (Figshare, doi 10.6084/m9.figshare.30591008.v1): 'Bottom_Sal_psu' follows a power law in 'Surface_Sal_psu' (R² = 0.964 on the discovery half); held-out R² = 0.895 [emp-f906eb795326]
+- 2026-11-27 15:26 data feeds: 38102 datasets analysed so far, 5569 confirmed findings
