@@ -6391,3 +6391,4 @@
 - 2026-11-27 18:09 FINDING (confirmed on held-out rows): In 'Distribution and first insight into the reproductive biology of two species of the genus R' (Zenodo, doi 10.5281/zenodo.18378004): 'Weight_g' follows a power law in 'Total_length_mm' (R² = 0.914 on the discovery half); held-out R² = 0.896 [emp-a6621e4a105d]
 - 2026-11-27 18:10 FINDING (confirmed on held-out rows): In '<b>Long-term dynamics of radiocesium in water and 43 taxa of fish, shrimp, and crab from L' (Figshare, doi 10.6084/m9.figshare.33338634.v1): 'wet_weight_kg' follows a power law in 'length_cm' (R² = 0.929 on the discovery half); held-out R² = 0.933 [emp-d6b4ab529f6c]
 - 2026-11-27 18:10 data feeds: 38189 datasets analysed so far, 5578 confirmed findings
+- 2026-11-27 19:11 data feeds: online
