@@ -6279,3 +6279,4 @@
 - 2026-11-27 06:41 FINDING (confirmed on held-out rows): In 'Data from: Transcriptional profile and differential fitness in a specialist milkweed insec' (Zenodo, doi 10.5061/dryad.fc1m8): 'Bx3' follows a power law in 'baseMean' (R² = 0.988 on the discovery half); held-out R² = 0.988 [emp-e19cdccb1979]
 - 2026-11-27 06:41 FINDING (confirmed on held-out rows): In 'Data from: Transcriptional profile and differential fitness in a specialist milkweed insec' (Zenodo, doi 10.5061/dryad.fc1m8): 'Bx3' is linear in 'Ax3' (R² = 0.986 on the discovery half); held-out R² = 0.986 [emp-9db96b54d999]
 - 2026-11-27 06:41 data feeds: 37584 datasets analysed so far, 5490 confirmed findings
+- 2026-11-27 07:44 data feeds: online
