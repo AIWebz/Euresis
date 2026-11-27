@@ -9158,3 +9158,8 @@
 - 2026-11-27 21:27 round 8316: velocity addition
 - 2026-11-27 21:28 round 8317: Compton scattering
 - 2026-11-27 21:28 round 8318: Cournot duopoly
+- 2026-11-27 21:30 round 8319: insurance and risk
+- 2026-11-27 21:31 round 8320: auction with a reserve price
+- 2026-11-27 21:32 round 8321: two-body decay
+- 2026-11-27 21:34 round 8322: collision
+- 2026-11-27 21:37 round 8323: driven oscillator
