@@ -8885,3 +8885,9 @@
 - 2026-11-27 08:06 round 8071: insurance and risk
 - 2026-11-27 08:07 round 8072: auction with a reserve price
 - 2026-11-27 08:09 round 8073: two-body decay
+- 2026-11-27 08:11 round 8074: collision
+- 2026-11-27 08:13 round 8075: driven oscillator
+- 2026-11-27 08:14 round 8076: velocity addition
+- 2026-11-27 08:15 round 8077: Compton scattering
+- 2026-11-27 08:16 round 8078: Cournot duopoly
+- 2026-11-27 08:18 segment end: 8078 rounds, 5 discoveries, 2 known laws rediscovered
