@@ -115923,6 +115923,26 @@
    "family": "collision",
    "expr": "e**2*m**2/(e**2*m**2/(m + 1)**2 + m**2 + 1)",
    "why": "affine combination of known quantities (target speed / initial speed, Normalized Kinetic Energy Transfer Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt((1 - r**2)**2 + (2*z*r)**2)/sqrt(4*z**2 + 1)",
+   "why": "affine combination of known quantities (amplitude / static deflection, Mechanical Impedance Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 + u)/(1 - u)) * sqrt((1 + v)/(1 - v)) / sqrt((1 + (u + v)/(1 + u*v)) / (1 - (u + v)/(1 + u*v",
+   "why": "affine combination of known quantities (composed speed / c)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 - u**2)*(1 - v**2) + (u + v)**2/(u*v + 1)**2) / (u*v + 1)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "x/(1 + x*c)",
+   "why": "affine combination of known quantities (scattered photon energy / initial energy, scattered photon energy / (m_e c\u00b2))"
   }
  ],
  "tried": [
@@ -144851,7 +144871,7 @@
    "k": "1/2"
   }
  ],
- "rounds": 8218,
+ "rounds": 8221,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",
