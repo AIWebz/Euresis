@@ -6296,3 +6296,6 @@
 - 2026-11-27 09:38 data feeds: online
 - 2026-11-27 09:38 data feeds: 37699 datasets analysed so far, 5500 confirmed findings
 - 2026-11-27 10:29 data feeds: online
+- 2026-11-27 10:30 FINDING (confirmed on held-out rows): In 'Data from: Increase in CO2 concentration could alter the response of Hedera helix to clima' (Zenodo, doi 10.5061/dryad.5688g40): 'd' follows a power law in 'Lumen.area' (R² = 0.925 on the discovery half); held-out R² = 0.933 [emp-c168de24915a]
+- 2026-11-27 10:30 FINDING (confirmed on held-out rows): In 'Data from: Increase in CO2 concentration could alter the response of Hedera helix to clima' (Zenodo, doi 10.5061/dryad.5688g40): 'VUL' follows a power law in 'Lumen.area' (R² = 0.921 on the discovery half); held-out R² = 0.923 [emp-fb157407b5b8]
+- 2026-11-27 10:30 FINDING (confirmed on held-out rows): In 'Data from: Increase in CO2 concentration could alter the response of Hedera helix to clima' (Zenodo, doi 10.5061/dryad.5688g40): 'VUL' follows a power law in 'VF' (R² = 0.964 on the discovery half); held-out R² = 0.965 [emp-18eac96c926b]
