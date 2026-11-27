@@ -115318,6 +115318,161 @@
    "family": "auction with a reserve price",
    "expr": "(-2*r**3/3 + r**2*v + 2/3)/(4*r**3/3 + r**2*v - r**2 + 1/3)",
    "why": "affine combination of known quantities (expected revenue, Welfare Reserve Efficiency with Seller Value [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "sqrt((1 - (a - b)**2)*(1 - (a + b)**2))/sqrt((-a**2 + b**2 + 1)**2 + (b**2 - (1 - a)**2 + 1)**2)",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), Relative Velocity Magnitude [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "sqrt((1 - (a + b)**2)**2 + (a**2 - b**2 + 1)**2)/sqrt((1 - (a + b)**2)**2 + (-a**2 + b**2 + 1)**2)",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), Invariant Mass Ratio of the Two Products [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "sqrt((1 - (a - b)**2)*(1 - (a + b)**2)/4 + (a**2 - b**2 + 1)**2)/sqrt((1 - (a - b)**2)*(1 - (a + b)*",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), Lorentz Factor Ratio of Products [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "(-b**2 + (1 - a)**2)/(-a**2 + b**2 - (1 - a)**2 + 1)",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), Kinetic Energy Ratio of Products [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "e*(m + 1)/(m**2 + 1) + 1",
+   "why": "affine combination of known quantities (target speed / initial speed, Coefficient of Restitution Adjusted by Mass Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "(-e**2*m**2 + 1)/(-e**2*m**2 + e**2*m**2/(m + 1)**2 + 1)",
+   "why": "affine combination of known quantities (target speed / initial speed, Fraction of Kinetic Energy Retained by Projectile Relative to Target [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "(-e**2*m**2/(m + 1)**2 - e**2*m/(m + 1) - (1 - e**2)/(m + 1) + 2)/(e**2*m**2/(m + 1)**2 + e**2*m/(m ",
+   "why": "affine combination of known quantities (target speed / initial speed, Ratio of Kinetic Energy of Projectile to Kinetic Energy of System After Collisio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2*m**2/(e**2*m**2 + e**2*m/(m + 1) + (1 - e**2)/(m + 1) + 1)",
+   "why": "affine combination of known quantities (target speed / initial speed, Fraction of kinetic energy retained by the target relative to the system [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(4*r**2*z**2 + 1)*sqrt(4*r**2*z**2 + (1 - r**2)**2)/(2*r*z*(sqrt(4*r**2*z**2 + 1) + sqrt(4*r**2*",
+   "why": "affine combination of known quantities (quality factor, Power Amplification Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(4*r**2*z**2 + (1 - r**2)**2)/sqrt(4*z**2 + 1)",
+   "why": "affine combination of known quantities (amplitude / static deflection, Mechanical Impedance Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(4*z**2 + 1) - 1",
+   "why": "affine combination of known quantities (amplitude / static deflection, Resonance Width [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 - u**2)*(1 - v**2) + (u + v)**2/(u*v + 1)**2)",
+   "why": "affine combination of known quantities (composed speed / c, Relativistic Beta Addition [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "Compton scattering",
+   "expr": "1 - c/(c*x + 1)",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "Cournot duopoly",
+   "expr": "((-2*c1 + c2 + 1)**2 + (c1 - 2*c2 + 1)**2)/((1 - c1)**2 + (1 - c2)**2)",
+   "why": "affine combination of known quantities (output of firm 1, Hirshleifer Index [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "insurance and risk",
+   "expr": "sqrt(-L*p + 1)/(-p*sqrt(1 - L) + sqrt(1 - L) + 1)",
+   "why": "affine combination of known quantities (expected wealth, Insurance Risk Exposure Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(-2*r**3/3 + r**2*v + 2/3)/(2*r**3/3 + r**2*v - 2*r**2 + 4/3)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(-2*r**3/3 + r**2*v - r**2 + 1/3)/(2*r**3/3 + r**2*v - r**2 + 1/3)",
+   "why": "not positive on the physical domain"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(-2*r**3/3 + r**2*v + 2/3)/(4*r**3/3 + r**2*v - r**2 + 1/3)",
+   "why": "affine combination of known quantities (expected revenue, Welfare Reserve Efficiency with Seller Value [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "auction with a reserve price",
+   "expr": "(2*r**3/3 + r**2*v - r**2 + 1/3)/(4*r**3/3 + r**2*v - 2*r**2 + 4/3)",
+   "why": "affine combination of known quantities (expected revenue, Bidder Surplus Reserve Efficiency with Seller Value [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "sqrt((1 - (a - b)**2)*(1 - (a + b)**2))/sqrt((-a**2 + b**2 + 1)**2 + (b**2 - (1 - a)**2 + 1)**2)",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), Relative Velocity Magnitude [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "sqrt((1 - (a - b)**2)*(1 - (a + b)**2) + (-a**2 + b**2 + 1)**2 + (a**2 - b**2 + 1)**2)",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), Boost factor of the system [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "sqrt(-(1 - (a - b)**2)*(1 - (a + b)**2)/4 + (a**2 - b**2 + 1)**2)/sqrt(-(1 - (a - b)**2)*(1 - (a + b",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), Invariant Mass Ratio of Product 1 to Total [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "(-b**2/2 + (1 - a)**2/2)/(-a**2 - b**2 + 3/2)",
+   "why": "affine combination of known quantities (momentum of each product / (Mc), Relative Kinetic Energy Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "e*(m + 1)/(m**2 + 1) + 1",
+   "why": "affine combination of known quantities (target speed / initial speed, Coefficient of Restitution Adjusted by Mass Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2*m**2/(e**2*m**2 + (1 - e**2)*(m + 1)**2 + 1) + 1",
+   "why": "affine combination of known quantities (target speed / initial speed, 1/(Normalized Kinetic Energy Ratio of Target to System [model-proposed; physical meaning unverified]))"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2*m**2/((1 - e**2)*(m + 1)**2 + 1) + 1",
+   "why": "affine combination of known quantities (target speed / initial speed, Normalized Kinetic Energy Ratio of Target to System [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2*m**2/(e**2*m**2 + (1 - e**2)*(m + 1)**2) + 1",
+   "why": "affine combination of known quantities (target speed / initial speed, Normalized Kinetic Energy Retention Ratio of Target [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt((1 - r**2)**2 + (2*z*r)**2)/sqrt(4*z**2 + 1)",
+   "why": "affine combination of known quantities (amplitude / static deflection, Mechanical Impedance Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(4*r**2*z**2 + 1)/sqrt(4*r**2*z**2 + (1 - r**2)**2)",
+   "why": "affine combination of known quantities (amplitude / static deflection, transmissibility)"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "2*r**2*z/(4*r**2*z**2 + (1 - r**2)**2 + 1)",
+   "why": "affine combination of known quantities (amplitude / static deflection, Relative energy loss per cycle [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(4*z**2 + 1) - 1",
+   "why": "affine combination of known quantities (amplitude / static deflection, Resonance Width [model-proposed; physical meaning unverified])"
   }
  ],
  "tried": [
@@ -126432,7 +126587,55 @@
   "collision|Ratio of kinetic energy transferred to the target over initial kinetic energy [model-proposed; physical meaning unverified]|Normalized Kinetic Energy Retention Ratio of Target [model-proposed; physical meaning unverified]",
   "collision|Fraction of kinetic energy retained by projectile relative to target [model-proposed; physical meaning unverified]|Normalized Kinetic Energy Retention Ratio of Target [model-proposed; physical meaning unverified]",
   "collision|Kinetic energy ratio of the target to the projectile after collision [model-proposed; physical meaning unverified]|Normalized Kinetic Energy Retention Ratio of Target [model-proposed; physical meaning unverified]",
-  "collision|Kinetic energy ratio of the target to the system after collision [model-proposed; physical meaning unverified]|Normalized Kinetic Energy Retention Ratio of Target [model-proposed; physical meaning unverified]"
+  "collision|Kinetic energy ratio of the target to the system after collision [model-proposed; physical meaning unverified]|Normalized Kinetic Energy Retention Ratio of Target [model-proposed; physical meaning unverified]",
+  "collision|Fraction of kinetic energy retained by the target relative to the projectile [model-proposed; physical meaning unverified]|Normalized Kinetic Energy Retention Ratio of Target [model-proposed; physical meaning unverified]",
+  "collision|Impulse ratio of target to projectile [model-proposed; physical meaning unverified]|Normalized Kinetic Energy Retention Ratio of Target [model-proposed; physical meaning unverified]",
+  "collision|Fraction of Kinetic Energy Retained by the Target Relative to the System [model-proposed; physical meaning unverified]|Normalized Kinetic Energy Retention Ratio of Target [model-proposed; physical meaning unverified]",
+  "collision|Ratio of Kinetic Energy of Target to Kinetic Energy of System [model-proposed; physical meaning unverified]|Normalized Kinetic Energy Retention Ratio of Target [model-proposed; physical meaning unverified]",
+  "collision|Fraction of Kinetic Energy Retained by the Target Relative to the Projectile [model-proposed; physical meaning unverified]|Normalized Kinetic Energy Retention Ratio of Target [model-proposed; physical meaning unverified]",
+  "collision|Fraction of Kinetic Energy Retained by the Projectile Relative to the System [model-proposed; physical meaning unverified]|Normalized Kinetic Energy Retention Ratio of Target [model-proposed; physical meaning unverified]",
+  "collision|Kinetic Energy Ratio of the Target to the System After Collision [model-proposed; physical meaning unverified]|Normalized Kinetic Energy Retention Ratio of Target [model-proposed; physical meaning unverified]",
+  "collision|Fraction of kinetic energy retained by projectile relative to initial [model-proposed; physical meaning unverified]|Normalized Kinetic Energy Retention Ratio of Target [model-proposed; physical meaning unverified]",
+  "collision|Fraction of Kinetic Energy Retained by the Projectile Relative to the Target [model-proposed; physical meaning unverified]|Normalized Kinetic Energy Retention Ratio of Target [model-proposed; physical meaning unverified]",
+  "collision|Fraction of Kinetic Energy Retained by Projectile Relative to Target [model-proposed; physical meaning unverified]|Normalized Kinetic Energy Retention Ratio of Target [model-proposed; physical meaning unverified]",
+  "collision|Fraction of kinetic energy retained by the target relative to the system [model-proposed; physical meaning unverified]|Normalized Kinetic Energy Retention Ratio of Target [model-proposed; physical meaning unverified]",
+  "collision|Sum of Mass Ratio and Coefficient of Restitution [model-proposed; physical meaning unverified]|Normalized Kinetic Energy Retention Ratio of Target [model-proposed; physical meaning unverified]",
+  "collision|Sum of Squares of Mass Ratio and Coefficient of Restitution [model-proposed; physical meaning unverified]|Normalized Kinetic Energy Retention Ratio of Target [model-proposed; physical meaning unverified]",
+  "collision|Mass ratio squared plus coefficient of restitution [model-proposed; physical meaning unverified]|Normalized Kinetic Energy Retention Ratio of Target [model-proposed; physical meaning unverified]",
+  "collision|Mass Ratio Squared Plus Reciprocal [model-proposed; physical meaning unverified]|Normalized Kinetic Energy Retention Ratio of Target [model-proposed; physical meaning unverified]",
+  "collision|Sum of Square Roots of Mass Ratio and Coefficient of Restitution [model-proposed; physical meaning unverified]|Normalized Kinetic Energy Retention Ratio of Target [model-proposed; physical meaning unverified]",
+  "collision|Square Root of Mass Ratio Plus Coefficient of Restitution [model-proposed; physical meaning unverified]|Normalized Kinetic Energy Retention Ratio of Target [model-proposed; physical meaning unverified]",
+  "collision|Ratio of Kinetic Energy of Target to System After Collision [model-proposed; physical meaning unverified]|Normalized Kinetic Energy Retention Ratio of Target [model-proposed; physical meaning unverified]",
+  "collision|Square Root of Coefficient of Restitution Plus Mass Ratio [model-proposed; physical meaning unverified]|Normalized Kinetic Energy Retention Ratio of Target [model-proposed; physical meaning unverified]",
+  "collision|Ratio of Kinetic Energy of Projectile to Kinetic Energy of System After Collisio [model-proposed; physical meaning unverified]|Normalized Kinetic Energy Retention Ratio of Target [model-proposed; physical meaning unverified]",
+  "collision|Square Root of Mass Ratio Plus Reciprocal of Coefficient of Restitution [model-proposed; physical meaning unverified]|Normalized Kinetic Energy Retention Ratio of Target [model-proposed; physical meaning unverified]",
+  "collision|Kinetic Energy Ratio of Projectile to Target After Collision [model-proposed; physical meaning unverified]|Normalized Kinetic Energy Retention Ratio of Target [model-proposed; physical meaning unverified]",
+  "collision|Mass Ratio Adjusted by Restitution [model-proposed; physical meaning unverified]|Normalized Kinetic Energy Retention Ratio of Target [model-proposed; physical meaning unverified]",
+  "collision|Kinetic Energy Ratio of Target to Projectile After Collision [model-proposed; physical meaning unverified]|Normalized Kinetic Energy Retention Ratio of Target [model-proposed; physical meaning unverified]",
+  "collision|Fraction of Kinetic Energy Retained by Target Relative to Projectile [model-proposed; physical meaning unverified]|Normalized Kinetic Energy Retention Ratio of Target [model-proposed; physical meaning unverified]",
+  "collision|Kinetic Energy Ratio of the Projectile to the Target [model-proposed; physical meaning unverified]|Normalized Kinetic Energy Retention Ratio of Target [model-proposed; physical meaning unverified]",
+  "collision|Relative Kinetic Energy Ratio After Collision [model-proposed; physical meaning unverified]|Normalized Kinetic Energy Retention Ratio of Target [model-proposed; physical meaning unverified]",
+  "collision|Relative Kinetic Energy Ratio of Target to Projectile [model-proposed; physical meaning unverified]|Normalized Kinetic Energy Retention Ratio of Target [model-proposed; physical meaning unverified]",
+  "collision|Normalized Kinetic Energy Transfer to Target [model-proposed; physical meaning unverified]|Normalized Kinetic Energy Retention Ratio of Target [model-proposed; physical meaning unverified]",
+  "collision|Kinetic Energy Ratio of Projectile to Target [model-proposed; physical meaning unverified]|Normalized Kinetic Energy Retention Ratio of Target [model-proposed; physical meaning unverified]",
+  "collision|Mass Ratio Adjusted by Square of Coefficient of Restitution [model-proposed; physical meaning unverified]|Normalized Kinetic Energy Retention Ratio of Target [model-proposed; physical meaning unverified]",
+  "collision|Fraction of Kinetic Energy Lost Relative to Initial [model-proposed; physical meaning unverified]|Normalized Kinetic Energy Retention Ratio of Target [model-proposed; physical meaning unverified]",
+  "collision|Relative Kinetic Energy Ratio of Target to System [model-proposed; physical meaning unverified]|Normalized Kinetic Energy Retention Ratio of Target [model-proposed; physical meaning unverified]",
+  "collision|Normalized Kinetic Energy Transfer Ratio [model-proposed; physical meaning unverified]|Normalized Kinetic Energy Retention Ratio of Target [model-proposed; physical meaning unverified]",
+  "collision|Normalized Kinetic Energy Ratio of Target to System [model-proposed; physical meaning unverified]|Normalized Kinetic Energy Retention Ratio of Target [model-proposed; physical meaning unverified]",
+  "collision|Kinetic Energy Ratio of Target to Projectile [model-proposed; physical meaning unverified]|Normalized Kinetic Energy Retention Ratio of Target [model-proposed; physical meaning unverified]",
+  "collision|Kinetic Energy Ratio of Target to Projectile Relative to System [model-proposed; physical meaning unverified]|Normalized Kinetic Energy Retention Ratio of Target [model-proposed; physical meaning unverified]",
+  "collision|Kinetic Energy Ratio of Target to System Adjusted by Mass [model-proposed; physical meaning unverified]|Normalized Kinetic Energy Retention Ratio of Target [model-proposed; physical meaning unverified]",
+  "collision|Square Root of Kinetic Energy Ratio of Target to Projectile [model-proposed; physical meaning unverified]|Normalized Kinetic Energy Retention Ratio of Target [model-proposed; physical meaning unverified]",
+  "collision|Mass Ratio Adjusted by Square Root of Coefficient of Restitution [model-proposed; physical meaning unverified]|Normalized Kinetic Energy Retention Ratio of Target [model-proposed; physical meaning unverified]",
+  "collision|Mass Ratio Squared Plus Reciprocal of Coefficient of Restitution [model-proposed; physical meaning unverified]|Normalized Kinetic Energy Retention Ratio of Target [model-proposed; physical meaning unverified]",
+  "collision|Coefficient of Restitution Adjusted by Mass Ratio [model-proposed; physical meaning unverified]|Normalized Kinetic Energy Retention Ratio of Target [model-proposed; physical meaning unverified]",
+  "collision|Velocity Ratio of Target to Projectile After Collision [model-proposed; physical meaning unverified]|Normalized Kinetic Energy Retention Ratio of Target [model-proposed; physical meaning unverified]",
+  "collision|Normalized Kinetic Energy Retention Ratio of Target [model-proposed; physical meaning unverified]|target speed / initial speed",
+  "collision|Normalized Kinetic Energy Retention Ratio of Target [model-proposed; physical meaning unverified]|momentum transferred / initial momentum",
+  "collision|Normalized Kinetic Energy Retention Ratio of Target [model-proposed; physical meaning unverified]|fraction of kinetic energy lost",
+  "collision|Normalized Kinetic Energy Retention Ratio of Target [model-proposed; physical meaning unverified]|fraction of kinetic energy given to the target",
+  "collision|Normalized Kinetic Energy Retention Ratio of Target [model-proposed; physical meaning unverified]|speed of the centre of mass / initial speed"
  ],
  "edges": [
   {
@@ -143816,9 +144019,123 @@
    "f": "Fraction of kinetic energy retained by the system relative to initial kinetic en [model-proposed; physical meaning unverified]",
    "g": "Normalized Kinetic Energy Retention Ratio of Target [model-proposed; physical meaning unverified]",
    "k": "3/8"
+  },
+  {
+   "family": "collision",
+   "f": "Impulse ratio of target to projectile [model-proposed; physical meaning unverified]",
+   "g": "Normalized Kinetic Energy Retention Ratio of Target [model-proposed; physical meaning unverified]",
+   "k": "1/3"
+  },
+  {
+   "family": "collision",
+   "f": "Fraction of Kinetic Energy Retained by the Projectile Relative to the System [model-proposed; physical meaning unverified]",
+   "g": "Normalized Kinetic Energy Retention Ratio of Target [model-proposed; physical meaning unverified]",
+   "k": "1/6"
+  },
+  {
+   "family": "collision",
+   "f": "Fraction of Kinetic Energy Retained by the Projectile Relative to the Target [model-proposed; physical meaning unverified]",
+   "g": "Normalized Kinetic Energy Retention Ratio of Target [model-proposed; physical meaning unverified]",
+   "k": "5/6"
+  },
+  {
+   "family": "collision",
+   "f": "Mass Ratio Squared Plus Reciprocal [model-proposed; physical meaning unverified]",
+   "g": "Normalized Kinetic Energy Retention Ratio of Target [model-proposed; physical meaning unverified]",
+   "k": "1"
+  },
+  {
+   "family": "collision",
+   "f": "Ratio of Kinetic Energy of Projectile to Kinetic Energy of System After Collisio [model-proposed; physical meaning unverified]",
+   "g": "Normalized Kinetic Energy Retention Ratio of Target [model-proposed; physical meaning unverified]",
+   "k": "5/6"
+  },
+  {
+   "family": "collision",
+   "f": "Kinetic Energy Ratio of Projectile to Target After Collision [model-proposed; physical meaning unverified]",
+   "g": "Normalized Kinetic Energy Retention Ratio of Target [model-proposed; physical meaning unverified]",
+   "k": "1/4"
+  },
+  {
+   "family": "collision",
+   "f": "Mass Ratio Adjusted by Restitution [model-proposed; physical meaning unverified]",
+   "g": "Normalized Kinetic Energy Retention Ratio of Target [model-proposed; physical meaning unverified]",
+   "k": "1/2"
+  },
+  {
+   "family": "collision",
+   "f": "Kinetic Energy Ratio of Target to Projectile After Collision [model-proposed; physical meaning unverified]",
+   "g": "Normalized Kinetic Energy Retention Ratio of Target [model-proposed; physical meaning unverified]",
+   "k": "1/2"
+  },
+  {
+   "family": "collision",
+   "f": "Fraction of Kinetic Energy Retained by Target Relative to Projectile [model-proposed; physical meaning unverified]",
+   "g": "Normalized Kinetic Energy Retention Ratio of Target [model-proposed; physical meaning unverified]",
+   "k": "1"
+  },
+  {
+   "family": "collision",
+   "f": "Mass Ratio Adjusted by Square of Coefficient of Restitution [model-proposed; physical meaning unverified]",
+   "g": "Normalized Kinetic Energy Retention Ratio of Target [model-proposed; physical meaning unverified]",
+   "k": "1/2"
+  },
+  {
+   "family": "collision",
+   "f": "Normalized Kinetic Energy Ratio of Target to System [model-proposed; physical meaning unverified]",
+   "g": "Normalized Kinetic Energy Retention Ratio of Target [model-proposed; physical meaning unverified]",
+   "k": "1/2"
+  },
+  {
+   "family": "collision",
+   "f": "Kinetic Energy Ratio of Target to Projectile [model-proposed; physical meaning unverified]",
+   "g": "Normalized Kinetic Energy Retention Ratio of Target [model-proposed; physical meaning unverified]",
+   "k": "1/2"
+  },
+  {
+   "family": "collision",
+   "f": "Mass Ratio Adjusted by Square Root of Coefficient of Restitution [model-proposed; physical meaning unverified]",
+   "g": "Normalized Kinetic Energy Retention Ratio of Target [model-proposed; physical meaning unverified]",
+   "k": "1/2"
+  },
+  {
+   "family": "collision",
+   "f": "Mass Ratio Squared Plus Reciprocal of Coefficient of Restitution [model-proposed; physical meaning unverified]",
+   "g": "Normalized Kinetic Energy Retention Ratio of Target [model-proposed; physical meaning unverified]",
+   "k": "1/2"
+  },
+  {
+   "family": "collision",
+   "f": "Coefficient of Restitution Adjusted by Mass Ratio [model-proposed; physical meaning unverified]",
+   "g": "Normalized Kinetic Energy Retention Ratio of Target [model-proposed; physical meaning unverified]",
+   "k": "1"
+  },
+  {
+   "family": "collision",
+   "f": "Velocity Ratio of Target to Projectile After Collision [model-proposed; physical meaning unverified]",
+   "g": "Normalized Kinetic Energy Retention Ratio of Target [model-proposed; physical meaning unverified]",
+   "k": "1/6"
+  },
+  {
+   "family": "collision",
+   "f": "Normalized Kinetic Energy Retention Ratio of Target [model-proposed; physical meaning unverified]",
+   "g": "momentum transferred / initial momentum",
+   "k": "1/2"
+  },
+  {
+   "family": "collision",
+   "f": "Normalized Kinetic Energy Retention Ratio of Target [model-proposed; physical meaning unverified]",
+   "g": "fraction of kinetic energy lost",
+   "k": "1"
+  },
+  {
+   "family": "collision",
+   "f": "Normalized Kinetic Energy Retention Ratio of Target [model-proposed; physical meaning unverified]",
+   "g": "speed of the centre of mass / initial speed",
+   "k": "2"
   }
  ],
- "rounds": 8176,
+ "rounds": 8187,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",
