@@ -4385275,5 +4385275,86 @@
   "statement": "Octal game 0.1056222 is completely solved: its Grundy values are periodic with pre-period 257 and period 116 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-3f7d9d8033d4",
+  "kind": "physics-relation",
+  "novelty": "follows from proved bounds: follows from bounds through 'market price'",
+  "payload": {
+   "assumptions": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "claim": "(-c1 - c2 + 2)**2/(2*(-2*c1 + c2 + 1)**2 + (-c1 - c2 + 2)**2 + 2*(c1 - 2*c2 + 1)**2) >= 1/48*((c1/6 - c2/3 - 1/6)**2/(-c1/3 + c2/6 - 1/6)**2)",
+   "symbols": [
+    "c1",
+    "c2"
+   ]
+  },
+  "source": "physics_discover2 round 8278",
+  "statement": "[economics: Cournot duopoly] Consumer Surplus to Total Welfare Ratio [model-proposed; physical meaning unverified] \u2265 1/48 \u00d7 Market Price Deviation from Monopoly [model-proposed; physical meaning unverified]   on c1 < 1/2, c2 < 1/2 (tight only at the edge of the domain, near (3.08e-15, 0.5))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-59f19c613ea9",
+  "kind": "physics-relation",
+  "novelty": "boundary comparison (tight only at the edge of the domain) \u2014 proved, not counted",
+  "payload": {
+   "assumptions": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "claim": "(-c1/3 + c2/3 + 1/3)/(c1/3 - c2/3 + 1/3) >= 3/16*((c1/6 - c2/3 - 1/6)**2/(-c1/3 + c2/6 - 1/6)**2)",
+   "symbols": [
+    "c1",
+    "c2"
+   ]
+  },
+  "source": "physics_discover2 round 8278",
+  "statement": "[economics: Cournot duopoly] Cournot Price Ratio [model-proposed; physical meaning unverified] \u2265 3/16 \u00d7 Market Price Deviation from Monopoly [model-proposed; physical meaning unverified]   on c1 < 1/2, c2 < 1/2 (tight only at the edge of the domain, near (2.23e-15, 0.5))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
+ },
+ {
+  "evidence": {
+   "domain": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "z3": "proved"
+  },
+  "id": "phy-51c521afcb6d",
+  "kind": "physics-relation",
+  "novelty": "not checked",
+  "payload": {
+   "assumptions": [
+    "c1 < 1/2",
+    "c2 < 1/2"
+   ],
+   "claim": "((1 - c1)**2 + (1 - c2)**2)/((-c1 - c2 + 1)**2 + 1) >= 1/16*((c1/6 - c2/3 - 1/6)**2/(-c1/3 + c2/6 - 1/6)**2)",
+   "symbols": [
+    "c1",
+    "c2"
+   ]
+  },
+  "source": "physics_discover2 round 8278",
+  "statement": "[economics: Cournot duopoly] Price Competition Index [model-proposed; physical meaning unverified] \u2265 1/16 \u00d7 Market Price Deviation from Monopoly [model-proposed; physical meaning unverified]   on c1 < 1/2, c2 < 1/2 (tight only at the edge of the domain, near (2.68e-15, 0.5))",
+  "status": "proved",
+  "verifier": "z3-sqrt"
  }
 ]
