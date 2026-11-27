@@ -8867,3 +8867,5 @@
 - 2026-11-27 07:06 round 8055: insurance and risk
 - 2026-11-27 07:07 round 8056: auction with a reserve price
 - 2026-11-27 07:09 round 8057: two-body decay
+- 2026-11-27 07:10 round 8058: collision
+- 2026-11-27 07:13 segment end: 8058 rounds, 5 discoveries, 2 known laws rediscovered

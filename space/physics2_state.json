@@ -113652,6 +113652,31 @@
    "family": "auction with a reserve price",
    "expr": "(-2*r**3/3 + r**2*v + 2/3)/(4*r**3/3 + r**2*v - r**2 + 1/3)",
    "why": "affine combination of known quantities (expected revenue, Welfare Reserve Efficiency with Seller Value [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "two-body decay",
+   "expr": "sqrt((1 - (a - b)**2)*(1 - (a + b)**2))/sqrt((-a**2 + b**2 + 1)**2 + (a**2 - b**2 + 1)**2)",
+   "why": "a power or product of known quantities"
+  },
+  {
+   "family": "collision",
+   "expr": "e*(m + 1)/(m**2 + 1) + 1",
+   "why": "affine combination of known quantities (target speed / initial speed, Coefficient of Restitution Adjusted by Mass Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "(-e**2*m**2/(m + 1)**2 - e**2*m/(m + 1) - (1 - e**2)/(m + 1) + 2)/(e**2*m**2/(m + 1)**2 + e**2*m/(m ",
+   "why": "affine combination of known quantities (target speed / initial speed, Ratio of Kinetic Energy of Projectile to Kinetic Energy of System After Collisio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2*m**2/(e**2*m**2 - e**2*m**2/(m + 1)**2 - e**2*m/(m + 1) + 1",
+   "why": "does not parse"
+  },
+  {
+   "family": "collision",
+   "expr": "e**2*m**2/(e**2*m**2/(m + 1)**2 + m**2 + 1)",
+   "why": "affine combination of known quantities (target speed / initial speed, Normalized Kinetic Energy Transfer Ratio [model-proposed; physical meaning unverified])"
   }
  ],
  "tried": [
@@ -142110,7 +142135,7 @@
    "k": "1/6"
   }
  ],
- "rounds": 8056,
+ "rounds": 8058,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",
