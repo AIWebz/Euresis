@@ -4346738,5 +4346738,32 @@
   "statement": "Octal game 0.1053171 is completely solved: its Grundy values are periodic with pre-period 3 and period 12 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.15682629",
+   "held_out_r2": 0.9733,
+   "held_out_rows": 463,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4bd58a668184",
+  "kind": "empirical",
+  "novelty": "KNOWN: coordinate transformations (geographic / geomagnetic / apex latitudes and longitudes) \u2014 not a discovery",
+  "payload": {
+   "dataset": "1ac96c2000669813.csv",
+   "doi": "10.5281/zenodo.15682629",
+   "form": "linear",
+   "params": [
+    17.587886493254768,
+    1.0007036485802185
+   ],
+   "seed": 1340294886,
+   "x": "LatitudeDegN",
+   "y": "LongitudeDegE"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Supplemental Files to accompany: Global Phylogeography and Microdiversity of the Marine Di' (Zenodo, doi 10.5281/zenodo.15682629): 'LongitudeDegE' is linear in 'LatitudeDegN' (R\u00b2 = 0.987 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
