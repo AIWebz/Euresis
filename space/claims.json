@@ -4377814,5 +4377814,113 @@
   "statement": "Octal game 0.1055543 is completely solved: its Grundy values are periodic with pre-period 3 and period 13 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.19047984",
+   "held_out_r2": 0.9002,
+   "held_out_rows": 101,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5e881b60d258",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "7e5ddb142bc65832.csv",
+   "doi": "10.5281/zenodo.19047984",
+   "form": "power law",
+   "params": [
+    -1.2916525286589886,
+    1.0540727050070586
+   ],
+   "seed": 2812293323,
+   "x": "hc",
+   "y": "hg"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A Bayesian Approach to Robust Modeling of Skewed Biomedical Data' (Zenodo, doi 10.5281/zenodo.19047984): 'hg' follows a power law in 'hc' (R\u00b2 = 0.911 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.19047984",
+   "held_out_r2": 0.9277,
+   "held_out_rows": 101,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-3bd253e7ac48",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "7e5ddb142bc65832.csv",
+   "doi": "10.5281/zenodo.19047984",
+   "form": "linear",
+   "params": [
+    0.8351611640662997,
+    0.18241974545405135
+   ],
+   "seed": 2812293323,
+   "x": "ssf",
+   "y": "pcBfat"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'A Bayesian Approach to Robust Modeling of Skewed Biomedical Data' (Zenodo, doi 10.5281/zenodo.19047984): 'pcBfat' is linear in 'ssf' (R\u00b2 = 0.927 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.18378004",
+   "held_out_r2": 0.8958,
+   "held_out_rows": 151,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a6621e4a105d",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "d97dbb51bdc2cd88.csv",
+   "doi": "10.5281/zenodo.18378004",
+   "form": "power law",
+   "params": [
+    -11.193686608555154,
+    2.875294050118259
+   ],
+   "seed": 2465092942,
+   "x": "Total_length_mm",
+   "y": "Weight_g"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Distribution and first insight into the reproductive biology of two species of the genus R' (Zenodo, doi 10.5281/zenodo.18378004): 'Weight_g' follows a power law in 'Total_length_mm' (R\u00b2 = 0.914 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.6084/m9.figshare.33338634.v1",
+   "held_out_r2": 0.9332,
+   "held_out_rows": 2336,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d6b4ab529f6c",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "8a4873a9277991ce.csv",
+   "doi": "10.6084/m9.figshare.33338634.v1",
+   "form": "power law",
+   "params": [
+    -10.65367219365692,
+    2.9158238508765515
+   ],
+   "seed": 1993224067,
+   "x": "length_cm",
+   "y": "wet_weight_kg"
+  },
+  "source": "datafeeds.py",
+  "statement": "In '<b>Long-term dynamics of radiocesium in water and 43 taxa of fish, shrimp, and crab from L' (Figshare, doi 10.6084/m9.figshare.33338634.v1): 'wet_weight_kg' follows a power law in 'length_cm' (R\u00b2 = 0.929 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
