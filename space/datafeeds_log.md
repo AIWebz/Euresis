@@ -6333,3 +6333,4 @@
 - 2026-11-27 11:49 FINDING (confirmed on held-out rows): In 'Territoriality drives patterns of fixed space use in Caribbean parrotfishes' (Zenodo, doi 10.5061/dryad.h44j0zpms): 'UDOI' follows a power law in 'BA' (R² = 1.000 on the discovery half); held-out R² = 1.000 [emp-7ac09f4229fc]
 - 2026-11-27 11:49 FINDING (confirmed on held-out rows): In 'Data for: Off-host survival of blacklegged ticks in eastern North America: A multi-stage, ' (Zenodo, doi 10.5061/dryad.931zcrjnz): 'T_mean' is linear in 'T_min' (R² = 0.944 on the discovery half); held-out R² = 0.944 [emp-37be3352e88a]
 - 2026-11-27 11:49 data feeds: 37989 datasets analysed so far, 5534 confirmed findings
+- 2026-11-27 12:24 data feeds: online
