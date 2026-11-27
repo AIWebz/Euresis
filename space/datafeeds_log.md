@@ -6448,3 +6448,5 @@
 - 2026-11-27 23:01 data feeds: online
 - 2026-11-27 23:01 data feeds: 38463 datasets analysed so far, 5624 confirmed findings
 - 2026-11-27 23:48 data feeds: online
+- 2026-11-27 23:48 FINDING (confirmed on held-out rows): In 'Data and Visualization Code Supporting "A Robust Framework for Compound Flood Risk Analysi' (Zenodo, doi 10.5281/zenodo.24602760): 'rH' grows logarithmically in 'Tide' (R² = 0.926 on the discovery half); held-out R² = 0.877 [emp-aa667774028e]
+- 2026-11-27 23:49 FINDING (confirmed on held-out rows): In 'Data and Visualization Code Supporting "A Robust Framework for Compound Flood Risk Analysi' (Zenodo, doi 10.5281/zenodo.24602760): 'Mean_tide_percentile' is linear in 'Mean_rain_percentile' (R² = 0.930 on the discovery half); held-out R² = 0.928 [emp-4dc4fa072aaf]
