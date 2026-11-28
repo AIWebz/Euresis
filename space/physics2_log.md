@@ -9412,3 +9412,8 @@
 - 2026-11-28 09:27 round 8544: auction with a reserve price
 - 2026-11-28 09:29 round 8545: two-body decay
 - 2026-11-28 09:30 round 8546: collision
+- 2026-11-28 09:33 round 8547: driven oscillator
+- 2026-11-28 09:34 round 8548: velocity addition
+- 2026-11-28 09:35 round 8549: Compton scattering
+- 2026-11-28 09:36 round 8550: Cournot duopoly
+- 2026-11-28 09:37 round 8551: insurance and risk
