@@ -4460913,5 +4460913,437 @@
   "statement": "Octal game 0.1100552 is completely solved: its Grundy values are periodic with pre-period 5 and period 17 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.c43f1",
+   "held_out_r2": 0.986,
+   "held_out_rows": 393,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-7db7ae3b5c43",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f231a610e0191ae5.csv",
+   "doi": "10.5061/dryad.c43f1",
+   "form": "linear",
+   "params": [
+    0.5560480506137322,
+    0.9870946320272367
+   ],
+   "seed": 85239947,
+   "x": "Obs.1",
+   "y": "mean.fert.success"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: The maintenance of sperm variability: context-dependent selection on sperm morp' (Zenodo, doi 10.5061/dryad.c43f1): 'mean.fert.success' is linear in 'Obs.1' (R\u00b2 = 0.987 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.10159204",
+   "held_out_r2": 0.9424,
+   "held_out_rows": 67,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-7da4cbf0de5b",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "a59ae4b8bcf7f2b5.csv",
+   "doi": "10.5281/zenodo.10159204",
+   "form": "power law",
+   "params": [
+    -0.4648252715768594,
+    -0.5417343097867651
+   ],
+   "seed": 3246671522,
+   "x": "Entrance Dose (mGy)",
+   "y": "g"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset related to article \"Phantom\u2011based analysis of variations in automatic exposure con' (Zenodo, doi 10.5281/zenodo.10159204): 'g' follows a power law in 'Entrance Dose (mGy)' (R\u00b2 = 0.958 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.10159204",
+   "held_out_r2": 0.9258,
+   "held_out_rows": 67,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c4ccf270e78f",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "a59ae4b8bcf7f2b5.csv",
+   "doi": "10.5281/zenodo.10159204",
+   "form": "linear",
+   "params": [
+    0.44959969391677224,
+    0.1918305319490888
+   ],
+   "seed": 3246671522,
+   "x": "Entrance Dose (mGy)",
+   "y": "MGD\n(mGy)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset related to article \"Phantom\u2011based analysis of variations in automatic exposure con' (Zenodo, doi 10.5281/zenodo.10159204): 'MGD\n(mGy)' is linear in 'Entrance Dose (mGy)' (R\u00b2 = 0.977 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.10159204",
+   "held_out_r2": 0.8536,
+   "held_out_rows": 67,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-8dfa02753008",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "a59ae4b8bcf7f2b5.csv",
+   "doi": "10.5281/zenodo.10159204",
+   "form": "linear",
+   "params": [
+    0.405876699724942,
+    0.23705331506878097
+   ],
+   "seed": 3246671522,
+   "x": "Entrance Dose (mGy)",
+   "y": "Organ Dose (mGy)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset related to article \"Phantom\u2011based analysis of variations in automatic exposure con' (Zenodo, doi 10.5281/zenodo.10159204): 'Organ Dose (mGy)' is linear in 'Entrance Dose (mGy)' (R\u00b2 = 0.961 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.10159204",
+   "held_out_r2": 0.9885,
+   "held_out_rows": 67,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4e912450ffb2",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "a59ae4b8bcf7f2b5.csv",
+   "doi": "10.5281/zenodo.10159204",
+   "form": "power law",
+   "params": [
+    0.07112203300631657,
+    1.0559781362429133
+   ],
+   "seed": 3246671522,
+   "x": "MGD\n(mGy)",
+   "y": "Organ Dose (mGy)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset related to article \"Phantom\u2011based analysis of variations in automatic exposure con' (Zenodo, doi 10.5281/zenodo.10159204): 'Organ Dose (mGy)' follows a power law in 'MGD\n(mGy)' (R\u00b2 = 0.992 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.10159204",
+   "held_out_r2": 0.9191,
+   "held_out_rows": 63,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-6cf796e54b7a",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f5d42fc4b24498cc.csv",
+   "doi": "10.5281/zenodo.10159204",
+   "form": "exponential",
+   "params": [
+    -0.17313710877521696,
+    0.03637144487397689
+   ],
+   "seed": 59506375,
+   "x": "Nominal PMMA thickness (mm)",
+   "y": "Total Entrance Dose (mGy)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset related to article \"Phantom\u2011based analysis of variations in automatic exposure con' (Zenodo, doi 10.5281/zenodo.10159204): 'Total Entrance Dose (mGy)' grows exponentially in 'Nominal PMMA thickness (mm)' (R\u00b2 = 0.917 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.10159204",
+   "held_out_r2": 0.9088,
+   "held_out_rows": 63,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-71ed6d223005",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f5d42fc4b24498cc.csv",
+   "doi": "10.5281/zenodo.10159204",
+   "form": "exponential",
+   "params": [
+    -0.20029824128090812,
+    0.03876868671970268
+   ],
+   "seed": 59506375,
+   "x": "Body Part Thickness (mm)",
+   "y": "Total Entrance Dose (mGy)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset related to article \"Phantom\u2011based analysis of variations in automatic exposure con' (Zenodo, doi 10.5281/zenodo.10159204): 'Total Entrance Dose (mGy)' grows exponentially in 'Body Part Thickness (mm)' (R\u00b2 = 0.913 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.10159204",
+   "held_out_r2": 0.9168,
+   "held_out_rows": 63,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-2371129e79d1",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f5d42fc4b24498cc.csv",
+   "doi": "10.5281/zenodo.10159204",
+   "form": "power law",
+   "params": [
+    -0.5516337463174276,
+    -0.5328752731893212
+   ],
+   "seed": 59506375,
+   "x": "Total Entrance Dose (mGy)",
+   "y": "g"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset related to article \"Phantom\u2011based analysis of variations in automatic exposure con' (Zenodo, doi 10.5281/zenodo.10159204): 'g' follows a power law in 'Total Entrance Dose (mGy)' (R\u00b2 = 0.917 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.10159204",
+   "held_out_r2": 0.9001,
+   "held_out_rows": 83,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-622c8eeded7c",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "d03d22b301d37069.csv",
+   "doi": "10.5281/zenodo.10159204",
+   "form": "power law",
+   "params": [
+    -0.6767197727147831,
+    -0.510072022252947
+   ],
+   "seed": 3691205691,
+   "x": "Entrance Dose in mGy",
+   "y": "g"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset related to article \"Phantom\u2011based analysis of variations in automatic exposure con' (Zenodo, doi 10.5281/zenodo.10159204): 'g' follows a power law in 'Entrance Dose in mGy' (R\u00b2 = 0.922 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.10159204",
+   "held_out_r2": 0.9567,
+   "held_out_rows": 83,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-310922efb9bb",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "d03d22b301d37069.csv",
+   "doi": "10.5281/zenodo.10159204",
+   "form": "power law",
+   "params": [
+    -0.8064077052417012,
+    0.6807703138020583
+   ],
+   "seed": 3691205691,
+   "x": "Entrance Dose in mGy",
+   "y": "MGD\n(mGy)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset related to article \"Phantom\u2011based analysis of variations in automatic exposure con' (Zenodo, doi 10.5281/zenodo.10159204): 'MGD\n(mGy)' follows a power law in 'Entrance Dose in mGy' (R\u00b2 = 0.965 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.10159204",
+   "held_out_r2": 0.9422,
+   "held_out_rows": 83,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-aced34bb65e0",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "d03d22b301d37069.csv",
+   "doi": "10.5281/zenodo.10159204",
+   "form": "linear",
+   "params": [
+    0.0029202983585920623,
+    0.0022183164021597752
+   ],
+   "seed": 3691205691,
+   "x": "Entrance Dose in mGy",
+   "y": "Organ Dose (dGy)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset related to article \"Phantom\u2011based analysis of variations in automatic exposure con' (Zenodo, doi 10.5281/zenodo.10159204): 'Organ Dose (dGy)' is linear in 'Entrance Dose in mGy' (R\u00b2 = 0.957 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.10159204",
+   "held_out_r2": 0.9422,
+   "held_out_rows": 83,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a8b2cf8ee642",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "d03d22b301d37069.csv",
+   "doi": "10.5281/zenodo.10159204",
+   "form": "linear",
+   "params": [
+    0.2920298358592061,
+    0.22183164021597745
+   ],
+   "seed": 3691205691,
+   "x": "Entrance Dose in mGy",
+   "y": "Organ Dose (mGy)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset related to article \"Phantom\u2011based analysis of variations in automatic exposure con' (Zenodo, doi 10.5281/zenodo.10159204): 'Organ Dose (mGy)' is linear in 'Entrance Dose in mGy' (R\u00b2 = 0.957 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.10159204",
+   "held_out_r2": 0.9792,
+   "held_out_rows": 83,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-17a044a513fb",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "d03d22b301d37069.csv",
+   "doi": "10.5281/zenodo.10159204",
+   "form": "power law",
+   "params": [
+    -4.555521623377104,
+    1.082370507839032
+   ],
+   "seed": 3691205691,
+   "x": "MGD\n(mGy)",
+   "y": "Organ Dose (dGy)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Dataset related to article \"Phantom\u2011based analysis of variations in automatic exposure con' (Zenodo, doi 10.5281/zenodo.10159204): 'Organ Dose (dGy)' follows a power law in 'MGD\n(mGy)' (R\u00b2 = 0.985 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.6084/m9.figshare.35112622.v1",
+   "held_out_r2": 0.9303,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-097d706cf371",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "4e2849762d40eb62.csv",
+   "doi": "10.6084/m9.figshare.35112622.v1",
+   "form": "linear",
+   "params": [
+    -0.4213522512865586,
+    0.2829980135572808
+   ],
+   "seed": 906253370,
+   "x": "rating",
+   "y": "five_star_share"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Google Maps local results for roofing searches (November 2026) and National Weather Servic' (Figshare, doi 10.6084/m9.figshare.35112622.v1): 'five_star_share' is linear in 'rating' (R\u00b2 = 0.946 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.6084/m9.figshare.35112622.v1",
+   "held_out_r2": 0.9241,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-1c5b499ac9fa",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "4e2849762d40eb62.csv",
+   "doi": "10.6084/m9.figshare.35112622.v1",
+   "form": "linear",
+   "params": [
+    1.0586341884669914,
+    -0.2118642283284265
+   ],
+   "seed": 906253370,
+   "x": "rating",
+   "y": "one_star_share"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Google Maps local results for roofing searches (November 2026) and National Weather Servic' (Figshare, doi 10.6084/m9.figshare.35112622.v1): 'one_star_share' is linear in 'rating' (R\u00b2 = 0.931 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.6084/m9.figshare.35112622.v1",
+   "held_out_r2": 0.9625,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4cdb8747c036",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "4e2849762d40eb62.csv",
+   "doi": "10.6084/m9.figshare.35112622.v1",
+   "form": "linear",
+   "params": [
+    380.8403937362785,
+    0.2756356956974085
+   ],
+   "seed": 906253370,
+   "x": "tract_population",
+   "y": "tract_households"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Google Maps local results for roofing searches (November 2026) and National Weather Servic' (Figshare, doi 10.6084/m9.figshare.35112622.v1): 'tract_households' is linear in 'tract_population' (R\u00b2 = 0.964 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
