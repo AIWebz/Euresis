@@ -9298,3 +9298,10 @@
 - 2026-11-28 03:56 round 8442: collision
 - 2026-11-28 03:59 round 8443: driven oscillator
 - 2026-11-28 04:00 round 8444: velocity addition
+- 2026-11-28 04:02 round 8445: Compton scattering
+- 2026-11-28 04:03 round 8446: Cournot duopoly
+- 2026-11-28 04:05 round 8447: insurance and risk
+- 2026-11-28 04:07 round 8448: auction with a reserve price
+- 2026-11-28 04:09 round 8449: two-body decay
+- 2026-11-28 04:10 round 8450: collision
+- 2026-11-28 04:13 segment end: 8450 rounds, 5 discoveries, 2 known laws rediscovered
