@@ -4421454,5 +4421454,59 @@
   "statement": "Octal game 0.1061615 is completely solved: its Grundy values are periodic with pre-period 4 and period 16 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.s04ng",
+   "held_out_r2": 0.8595,
+   "held_out_rows": 32,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-39627753ed79",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "3645ae7772ab4aa9.csv",
+   "doi": "10.5061/dryad.s04ng",
+   "form": "linear",
+   "params": [
+    3.601061957519592,
+    0.7690910992082162
+   ],
+   "seed": 1190825502,
+   "x": "weight (g)",
+   "y": "length (cm)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Mechanisms of thermal adaptation and evolutionary potential of conspecific popu' (Zenodo, doi 10.5061/dryad.s04ng): 'length (cm)' is linear in 'weight (g)' (R\u00b2 = 0.930 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.fj6q573vv",
+   "held_out_r2": 0.8682,
+   "held_out_rows": 350,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-13cc15a79d69",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "768977cc8f72a026.csv",
+   "doi": "10.5061/dryad.fj6q573vv",
+   "form": "linear",
+   "params": [
+    0.049901324946988124,
+    1.4234057573446879
+   ],
+   "seed": 278806406,
+   "x": "denM_1000m2",
+   "y": "denTot_1000m2"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Behavioural modification of range-extending coral reef fishes in temperate ecosystems' (Zenodo, doi 10.5061/dryad.fj6q573vv): 'denTot_1000m2' is linear in 'denM_1000m2' (R\u00b2 = 0.941 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]

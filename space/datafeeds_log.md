@@ -6504,3 +6504,5 @@
 - 2026-11-27 23:56 FINDING (confirmed on held-out rows): In 'Small specimen fatigue crack growth rate data for as-built DED Inconel 718' (Zenodo, doi 10.5281/zenodo.21264501): 'dU_Tot/dN(J/cyc)' follows a power law in 'da/dn(m/cycle)' (R² = 0.987 on the discovery half); held-out R² = 0.970 [emp-8624ec9cd95a]
 - 2026-11-27 23:57 data feeds: 38593 datasets analysed so far, 5678 confirmed findings
 - 2026-11-28 00:59 data feeds: online
+- 2026-11-28 01:00 FINDING (confirmed on held-out rows): In 'Data from: Mechanisms of thermal adaptation and evolutionary potential of conspecific popu' (Zenodo, doi 10.5061/dryad.s04ng): 'length (cm)' is linear in 'weight (g)' (R² = 0.930 on the discovery half); held-out R² = 0.860 [emp-39627753ed79]
+- 2026-11-28 01:00 FINDING (confirmed on held-out rows): In 'Behavioural modification of range-extending coral reef fishes in temperate ecosystems' (Zenodo, doi 10.5061/dryad.fj6q573vv): 'denTot_1000m2' is linear in 'denM_1000m2' (R² = 0.941 on the discovery half); held-out R² = 0.868 [emp-13cc15a79d69]
