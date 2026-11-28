@@ -4433504,7 +4433504,12 @@
   "verifier": "held-out-replication"
  },
  {
-  "evidence": null,
+  "evidence": {
+   "doi": "10.5281/zenodo.17342777",
+   "held_out_r2": 0.3379,
+   "held_out_rows": 32,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
   "id": "emp-dc44797ad4a1",
   "kind": "empirical",
   "novelty": "not checked",
@@ -4433522,7 +4433527,250 @@
   },
   "source": "datafeeds.py",
   "statement": "In 'Time Series Dataset for the United States (1947-2011): Information Rents, Economic Growth,' (Zenodo, doi 10.5281/zenodo.17342777): 'g.S' is linear in 'g.TV' (R\u00b2 = 0.920 on the discovery half)",
-  "status": "candidate",
-  "verifier": null
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17342777",
+   "held_out_r2": 0.8945,
+   "held_out_rows": 32,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-67661730546e",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "908b16f609d0c4f9.csv",
+   "doi": "10.5281/zenodo.17342777",
+   "form": "linear",
+   "params": [
+    -0.0026737220255813672,
+    1.1996259155335878
+   ],
+   "seed": 3828544839,
+   "x": "g.MVA",
+   "y": "g.S"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Time Series Dataset for the United States (1947-2011): Information Rents, Economic Growth,' (Zenodo, doi 10.5281/zenodo.17342777): 'g.S' is linear in 'g.MVA' (R\u00b2 = 0.933 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17342777",
+   "held_out_r2": 0.0569,
+   "held_out_rows": 32,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e6e24bc452c0",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "908b16f609d0c4f9.csv",
+   "doi": "10.5281/zenodo.17342777",
+   "form": "linear",
+   "params": [
+    -0.009015388140247011,
+    1.2672393657781496
+   ],
+   "seed": 3828544839,
+   "x": "g.GIua",
+   "y": "g.NIua"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Time Series Dataset for the United States (1947-2011): Information Rents, Economic Growth,' (Zenodo, doi 10.5281/zenodo.17342777): 'g.NIua' is linear in 'g.GIua' (R\u00b2 = 0.939 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22296566",
+   "held_out_r2": 0.865,
+   "held_out_rows": 36,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-309febbf479f",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "94a7f6da9ec70470.csv",
+   "doi": "10.5281/zenodo.22296566",
+   "form": "power law",
+   "params": [
+    1.3279782300691794,
+    0.7774769261640119
+   ],
+   "seed": 2315092055,
+   "x": "prod_2018/2019",
+   "y": "areaharv_2018/2019"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'District-level maize production risk panel, Zambia (2018/19\u20132022/23)' (Zenodo, doi 10.5281/zenodo.22296566): 'areaharv_2018/2019' follows a power law in 'prod_2018/2019' (R\u00b2 = 0.927 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22296566",
+   "held_out_r2": 0.8055,
+   "held_out_rows": 36,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-063d2a94ac81",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "94a7f6da9ec70470.csv",
+   "doi": "10.5281/zenodo.22296566",
+   "form": "power law",
+   "params": [
+    -0.7916244500205626,
+    0.9894191817892768
+   ],
+   "seed": 2315092055,
+   "x": "prod_2021/2022",
+   "y": "areaharv_2021/2022"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'District-level maize production risk panel, Zambia (2018/19\u20132022/23)' (Zenodo, doi 10.5281/zenodo.22296566): 'areaharv_2021/2022' follows a power law in 'prod_2021/2022' (R\u00b2 = 0.934 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.22296566",
+   "held_out_r2": 0.8314,
+   "held_out_rows": 36,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b6e1597e68a2",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "94a7f6da9ec70470.csv",
+   "doi": "10.5281/zenodo.22296566",
+   "form": "power law",
+   "params": [
+    0.023504290119707772,
+    0.9176576684406053
+   ],
+   "seed": 2315092055,
+   "x": "prod_2022/2023",
+   "y": "areaharv_2022/2023"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'District-level maize production risk panel, Zambia (2018/19\u20132022/23)' (Zenodo, doi 10.5281/zenodo.22296566): 'areaharv_2022/2023' follows a power law in 'prod_2022/2023' (R\u00b2 = 0.918 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20434635",
+   "held_out_r2": 0.9657,
+   "held_out_rows": 149,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-97f7aab84117",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "54481d0e4f7fcbc5.csv",
+   "doi": "10.5281/zenodo.20434635",
+   "form": "power law",
+   "params": [
+    -5.931950391954121,
+    0.891768499489763
+   ],
+   "seed": 2594609778,
+   "x": "frame_count",
+   "y": "runtime"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Hollywood 1990s Shot Data: Visual Parameters' (Zenodo, doi 10.5281/zenodo.20434635): 'runtime' follows a power law in 'frame_count' (R\u00b2 = 0.930 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.20434635",
+   "held_out_r2": 0.9667,
+   "held_out_rows": 149,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-dfb8bbde9110",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "54481d0e4f7fcbc5.csv",
+   "doi": "10.5281/zenodo.20434635",
+   "form": "power law",
+   "params": [
+    -5.99438676754392,
+    0.8963476969206435
+   ],
+   "seed": 2594609778,
+   "x": "film_end",
+   "y": "runtime"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Hollywood 1990s Shot Data: Visual Parameters' (Zenodo, doi 10.5281/zenodo.20434635): 'runtime' follows a power law in 'film_end' (R\u00b2 = 0.932 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.17632/xn9ws8x6j7.1",
+   "held_out_r2": 0.9459,
+   "held_out_rows": 731,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b0d2b148efc3",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "4ef5aab97db5a405.csv",
+   "doi": "10.17632/xn9ws8x6j7.1",
+   "form": "exponential",
+   "params": [
+    13.539508796072175,
+    3.0017310008272088e-06
+   ],
+   "seed": 1136795581,
+   "x": "BlackRock_IBIT",
+   "y": "Total_Holdings"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'The Economic Bomb: A Strategic Financial Warfare Tactic' (Zenodo, doi 10.17632/xn9ws8x6j7.1): 'Total_Holdings' grows exponentially in 'BlackRock_IBIT' (R\u00b2 = 0.944 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.17632/xn9ws8x6j7.1",
+   "held_out_r2": 0.9428,
+   "held_out_rows": 731,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a764316d1bb0",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "4ef5aab97db5a405.csv",
+   "doi": "10.17632/xn9ws8x6j7.1",
+   "form": "exponential",
+   "params": [
+    13.539745840020755,
+    3.7758409080460334e-06
+   ],
+   "seed": 1136795581,
+   "x": "Fidelity_FBTC",
+   "y": "Total_Holdings"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'The Economic Bomb: A Strategic Financial Warfare Tactic' (Zenodo, doi 10.17632/xn9ws8x6j7.1): 'Total_Holdings' grows exponentially in 'Fidelity_FBTC' (R\u00b2 = 0.941 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
