@@ -6632,3 +6632,9 @@
 - 2026-11-28 11:16 data feeds: online
 - 2026-11-28 11:16 FINDING (confirmed on held-out rows): In 'Bovine SAMHD1 mediates antiviral activity against bovine herpesvirus type 1 by restricting' (Zenodo, doi 10.5281/zenodo.23383320): 'ISG15' follows a power law in 'Mx1' (R² = 0.978 on the discovery half); held-out R² = 0.952 [emp-f512c93c367f]
 - 2026-11-28 11:17 data feeds: 39277 datasets analysed so far, 5779 confirmed findings
+- 2026-11-28 12:20 data feeds: online
+- 2026-11-28 12:21 FINDING (confirmed on held-out rows): In 'Effects of ecology on the sociality of coral dwelling gobies, genus Gobiodon' (Zenodo, doi 10.5061/dryad.mcvdnck7m): 'Coral average diameter (cm)' is linear in 'x coral size (cm)' (R² = 0.926 on the discovery half); held-out R² = 0.919 [emp-f5239f2c4d01]
+- 2026-11-28 12:22 FINDING (confirmed on held-out rows): In 'Data and code for: Rocky Mountain subalpine forests now burning more than any time in rece' (Zenodo, doi 10.5061/dryad.rfj6q579n): 'char.con' follows a power law in 'char.count' (R² = 0.961 on the discovery half); held-out R² = 0.956 [emp-d0b4bedfddfa]
+- 2026-11-28 12:22 FINDING (confirmed on held-out rows): In 'Data and code for: Rocky Mountain subalpine forests now burning more than any time in rece' (Zenodo, doi 10.5061/dryad.rfj6q579n): 'thresh.final.neg' is linear in 'thresh.final.pos' (R² = 0.972 on the discovery half); held-out R² = 0.971 [emp-72068190be65]
+- 2026-11-28 12:22 FINDING (confirmed on held-out rows): In 'Data and code for: Rocky Mountain subalpine forests now burning more than any time in rece' (Zenodo, doi 10.5061/dryad.rfj6q579n): 'char.peak' is linear in 'char.acc' (R² = 0.937 on the discovery half); held-out R² = 0.943 [emp-274149cc99cb]
+- 2026-11-28 12:22 data feeds: 39321 datasets analysed so far, 5783 confirmed findings

@@ -4476295,5 +4476295,113 @@
   "statement": "Octal game 0.1104172 is completely solved: its Grundy values are periodic with pre-period 5 and period 16 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.mcvdnck7m",
+   "held_out_r2": 0.9193,
+   "held_out_rows": 484,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f5239f2c4d01",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "baa87ac75af4fab2.csv",
+   "doi": "10.5061/dryad.mcvdnck7m",
+   "form": "linear",
+   "params": [
+    1.045014924404627,
+    0.739942020258798
+   ],
+   "seed": 2145542398,
+   "x": "x coral size (cm)",
+   "y": "Coral average diameter (cm)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Effects of ecology on the sociality of coral dwelling gobies, genus Gobiodon' (Zenodo, doi 10.5061/dryad.mcvdnck7m): 'Coral average diameter (cm)' is linear in 'x coral size (cm)' (R\u00b2 = 0.926 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rfj6q579n",
+   "held_out_r2": 0.9561,
+   "held_out_rows": 985,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d0b4bedfddfa",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "7a725f6fd05537a1.csv",
+   "doi": "10.5061/dryad.rfj6q579n",
+   "form": "power law",
+   "params": [
+    -1.1915640712683688,
+    0.9882967108249135
+   ],
+   "seed": 1938116409,
+   "x": "char.count",
+   "y": "char.con"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data and code for: Rocky Mountain subalpine forests now burning more than any time in rece' (Zenodo, doi 10.5061/dryad.rfj6q579n): 'char.con' follows a power law in 'char.count' (R\u00b2 = 0.961 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rfj6q579n",
+   "held_out_r2": 0.9705,
+   "held_out_rows": 985,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-72068190be65",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "7a725f6fd05537a1.csv",
+   "doi": "10.5061/dryad.rfj6q579n",
+   "form": "linear",
+   "params": [
+    -0.08473910797815751,
+    -0.8333405156027737
+   ],
+   "seed": 1938116409,
+   "x": "thresh.final.pos",
+   "y": "thresh.final.neg"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data and code for: Rocky Mountain subalpine forests now burning more than any time in rece' (Zenodo, doi 10.5061/dryad.rfj6q579n): 'thresh.final.neg' is linear in 'thresh.final.pos' (R\u00b2 = 0.972 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.rfj6q579n",
+   "held_out_r2": 0.9433,
+   "held_out_rows": 802,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-274149cc99cb",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "df2618ae36ad219c.csv",
+   "doi": "10.5061/dryad.rfj6q579n",
+   "form": "linear",
+   "params": [
+    -0.3600235132310483,
+    0.8756396117951082
+   ],
+   "seed": 3044117533,
+   "x": "char.acc",
+   "y": "char.peak"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data and code for: Rocky Mountain subalpine forests now burning more than any time in rece' (Zenodo, doi 10.5061/dryad.rfj6q579n): 'char.peak' is linear in 'char.acc' (R\u00b2 = 0.937 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
