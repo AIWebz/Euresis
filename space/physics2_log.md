@@ -9474,3 +9474,8 @@
 - 2026-11-28 12:25 round 8600: auction with a reserve price
 - 2026-11-28 12:27 round 8601: two-body decay
 - 2026-11-28 12:30 round 8602: collision
+- 2026-11-28 12:33 round 8603: driven oscillator
+- 2026-11-28 12:34 round 8604: velocity addition
+- 2026-11-28 12:35 round 8605: Compton scattering
+- 2026-11-28 12:35 round 8606: Cournot duopoly
+- 2026-11-28 12:38 round 8607: insurance and risk
