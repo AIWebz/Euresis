@@ -6581,3 +6581,4 @@
 - 2026-11-28 07:31 FINDING (confirmed on held-out rows): In 'Data from: Epiphytes improve host plant water use by microenvironment modification' (Zenodo, doi 10.5061/dryad.7gc7k): 'xx_avg' grows logarithmically in 'xix_avg' (R² = 0.902 on the discovery half); held-out R² = 0.904 [emp-196ec86dfd52]
 - 2026-11-28 07:31 FINDING (confirmed on held-out rows): In 'Data from: Epiphytes improve host plant water use by microenvironment modification' (Zenodo, doi 10.5061/dryad.7gc7k): 'xxi_avg' is linear in 'xx_avg' (R² = 0.901 on the discovery half); held-out R² = 0.889 [emp-8d2c293dd8f7]
 - 2026-11-28 07:32 data feeds: 38948 datasets analysed so far, 5740 confirmed findings
+- 2026-11-28 08:33 data feeds: online
