@@ -120976,6 +120976,16 @@
    "family": "driven oscillator",
    "expr": "sqrt((1 - r**2)**2 + (2*z*r)**2)/sqrt(4*z**2 - 1)",
    "why": "not finite on the whole physical domain"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 + u)/(1 - u)) * sqrt((1 + v)/(1 - v)) / sqrt((1 + (u + v)/(1 + u*v)) / (1 - (u + v)/(1 + u*v",
+   "why": "affine combination of known quantities (composed speed / c)"
+  },
+  {
+   "family": "velocity addition",
+   "expr": "sqrt((1 - u**2)*(1 - v**2) + (u + v)**2/(u*v + 1)**2) / (u*v + 1) * sqrt(1 - (u + v)**2/(u*v + 1)**2",
+   "why": "a power or product of known quantities"
   }
  ],
  "tried": [
@@ -150656,7 +150666,7 @@
    "k": "2"
   }
  ],
- "rounds": 8579,
+ "rounds": 8580,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",
