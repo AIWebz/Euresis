@@ -6603,3 +6603,4 @@
 - 2026-11-28 08:36 FINDING (confirmed on held-out rows): In 'Google Maps local results for roofing searches (November 2026) and National Weather Servic' (Figshare, doi 10.6084/m9.figshare.35112622.v1): 'one_star_share' is linear in 'rating' (R² = 0.931 on the discovery half); held-out R² = 0.924 [emp-1c5b499ac9fa]
 - 2026-11-28 08:37 FINDING (confirmed on held-out rows): In 'Google Maps local results for roofing searches (November 2026) and National Weather Servic' (Figshare, doi 10.6084/m9.figshare.35112622.v1): 'tract_households' is linear in 'tract_population' (R² = 0.964 on the discovery half); held-out R² = 0.963 [emp-4cdb8747c036]
 - 2026-11-28 08:37 data feeds: 38985 datasets analysed so far, 5756 confirmed findings
+- 2026-11-28 09:21 data feeds: online
