@@ -4433448,5 +4433448,81 @@
   "statement": "Octal game 0.1071005 is completely solved: its Grundy values are periodic with pre-period 5 and period 2 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17342777",
+   "held_out_r2": 0.9483,
+   "held_out_rows": 32,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-0dd46e38a937",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "908b16f609d0c4f9.csv",
+   "doi": "10.5281/zenodo.17342777",
+   "form": "logarithmic",
+   "params": [
+    1.0017322331581489,
+    0.3534438971950931
+   ],
+   "seed": 3828544839,
+   "x": "GUB",
+   "y": "NUB"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Time Series Dataset for the United States (1947-2011): Information Rents, Economic Growth,' (Zenodo, doi 10.5281/zenodo.17342777): 'NUB' grows logarithmically in 'GUB' (R\u00b2 = 0.930 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.17342777",
+   "held_out_r2": 0.4766,
+   "held_out_rows": 32,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-7ad87ed8a8f1",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "908b16f609d0c4f9.csv",
+   "doi": "10.5281/zenodo.17342777",
+   "form": "linear",
+   "params": [
+    -0.0025206531210960944,
+    1.0734312703504534
+   ],
+   "seed": 3828544839,
+   "x": "g.TV",
+   "y": "g.MVA"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Time Series Dataset for the United States (1947-2011): Information Rents, Economic Growth,' (Zenodo, doi 10.5281/zenodo.17342777): 'g.MVA' is linear in 'g.TV' (R\u00b2 = 0.987 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": null,
+  "id": "emp-dc44797ad4a1",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "908b16f609d0c4f9.csv",
+   "doi": "10.5281/zenodo.17342777",
+   "form": "linear",
+   "params": [
+    -0.005674614130441712,
+    1.2868295447087084
+   ],
+   "seed": 3828544839,
+   "x": "g.TV",
+   "y": "g.S"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Time Series Dataset for the United States (1947-2011): Information Rents, Economic Growth,' (Zenodo, doi 10.5281/zenodo.17342777): 'g.S' is linear in 'g.TV' (R\u00b2 = 0.920 on the discovery half)",
+  "status": "candidate",
+  "verifier": null
  }
 ]
