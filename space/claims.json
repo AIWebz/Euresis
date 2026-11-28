@@ -4471407,5 +4471407,32 @@
   "statement": "Octal game 0.1103111 is completely solved: its Grundy values are periodic with pre-period 7 and period 8 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.23383320",
+   "held_out_r2": 0.9517,
+   "held_out_rows": 36,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f512c93c367f",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "0fb51531c7cb67d6.csv",
+   "doi": "10.5281/zenodo.23383320",
+   "form": "power law",
+   "params": [
+    1.23929433347871,
+    1.133161140331772
+   ],
+   "seed": 1612387011,
+   "x": "Mx1",
+   "y": "ISG15"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Bovine SAMHD1 mediates antiviral activity against bovine herpesvirus type 1 by restricting' (Zenodo, doi 10.5281/zenodo.23383320): 'ISG15' follows a power law in 'Mx1' (R\u00b2 = 0.978 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]

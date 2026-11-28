@@ -6630,3 +6630,5 @@
 - 2026-11-28 10:31 FINDING (confirmed on held-out rows): In 'Data for: Effect of composition on structural and optoelectronic properties of combinatori' (Zenodo, doi 10.5281/zenodo.19235015): 'ZrO2' is linear in 'S_pred' (R² = 0.978 on the discovery half); held-out R² = 0.941 [emp-7992381c7bab]
 - 2026-11-28 10:32 data feeds: 39229 datasets analysed so far, 5778 confirmed findings
 - 2026-11-28 11:16 data feeds: online
+- 2026-11-28 11:16 FINDING (confirmed on held-out rows): In 'Bovine SAMHD1 mediates antiviral activity against bovine herpesvirus type 1 by restricting' (Zenodo, doi 10.5281/zenodo.23383320): 'ISG15' follows a power law in 'Mx1' (R² = 0.978 on the discovery half); held-out R² = 0.952 [emp-f512c93c367f]
+- 2026-11-28 11:17 data feeds: 39277 datasets analysed so far, 5779 confirmed findings
