@@ -6629,3 +6629,4 @@
 - 2026-11-28 10:31 FINDING (confirmed on held-out rows): In 'Data for: Effect of composition on structural and optoelectronic properties of combinatori' (Zenodo, doi 10.5281/zenodo.19235015): 'barich_x_16' follows a power law in 'x_8' (R² = 0.944 on the discovery half); held-out R² = 0.945 [emp-b79554b008a7]
 - 2026-11-28 10:31 FINDING (confirmed on held-out rows): In 'Data for: Effect of composition on structural and optoelectronic properties of combinatori' (Zenodo, doi 10.5281/zenodo.19235015): 'ZrO2' is linear in 'S_pred' (R² = 0.978 on the discovery half); held-out R² = 0.941 [emp-7992381c7bab]
 - 2026-11-28 10:32 data feeds: 39229 datasets analysed so far, 5778 confirmed findings
+- 2026-11-28 11:16 data feeds: online
