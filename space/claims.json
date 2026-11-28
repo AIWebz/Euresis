@@ -4429963,5 +4429963,140 @@
   "statement": "Octal game 0.1070522 is completely solved: its Grundy values are periodic with pre-period 1357 and period 68 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7886743",
+   "held_out_r2": 0.9874,
+   "held_out_rows": 9886,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-eab368e8a9f3",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "a9bbacf3006c6f14.csv",
+   "doi": "10.5281/zenodo.7886743",
+   "form": "linear",
+   "params": [
+    0.19717845623073849,
+    1.001863302037979
+   ],
+   "seed": 1086463935,
+   "x": "DU.w.j",
+   "y": "UD.w.j"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'KeyRecs: Keystroke Dynamics Dataset' (Zenodo, doi 10.5281/zenodo.7886743): 'UD.w.j' is linear in 'DU.w.j' (R\u00b2 = 0.989 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.stqjq2c1d",
+   "held_out_r2": 0.9953,
+   "held_out_rows": 1382,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b793559e9ed7",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "686c40ab548a70a6.csv",
+   "doi": "10.5061/dryad.stqjq2c1d",
+   "form": "power law",
+   "params": [
+    -5.6271831286733685,
+    3.3268973053330457
+   ],
+   "seed": 2379607561,
+   "x": "SL.mm",
+   "y": "weight.mg"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Phosphorus limitation does not drive loss of bony lateral plates in freshwater ' (Zenodo, doi 10.5061/dryad.stqjq2c1d): 'weight.mg' follows a power law in 'SL.mm' (R\u00b2 = 0.995 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.stqjq2c1d",
+   "held_out_r2": 0.9953,
+   "held_out_rows": 1382,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4f0d248f3ee3",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "686c40ab548a70a6.csv",
+   "doi": "10.5061/dryad.stqjq2c1d",
+   "form": "logarithmic",
+   "params": [
+    -5.6271831286070855,
+    3.32689730531026
+   ],
+   "seed": 2379607561,
+   "x": "SL.mm",
+   "y": "ln.weight"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Phosphorus limitation does not drive loss of bony lateral plates in freshwater ' (Zenodo, doi 10.5061/dryad.stqjq2c1d): 'ln.weight' grows logarithmically in 'SL.mm' (R\u00b2 = 0.995 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.stqjq2c1d",
+   "held_out_r2": 0.9953,
+   "held_out_rows": 1382,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-551c9d133313",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "686c40ab548a70a6.csv",
+   "doi": "10.5061/dryad.stqjq2c1d",
+   "form": "exponential",
+   "params": [
+    -5.627183128588438,
+    3.326897305332546
+   ],
+   "seed": 2379607561,
+   "x": "ln.SL",
+   "y": "weight.mg"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Phosphorus limitation does not drive loss of bony lateral plates in freshwater ' (Zenodo, doi 10.5061/dryad.stqjq2c1d): 'weight.mg' grows exponentially in 'ln.SL' (R\u00b2 = 0.995 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.stqjq2c1d",
+   "held_out_r2": 0.9959,
+   "held_out_rows": 329,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-37daa3c6d826",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "b62038f52ecda74b.csv",
+   "doi": "10.5061/dryad.stqjq2c1d",
+   "form": "power law",
+   "params": [
+    0.0678763847846391,
+    0.9940771486469675
+   ],
+   "seed": 3467074248,
+   "x": "start.mean.ug.P.L",
+   "y": "end.mean.ug.P.L"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Phosphorus limitation does not drive loss of bony lateral plates in freshwater ' (Zenodo, doi 10.5061/dryad.stqjq2c1d): 'end.mean.ug.P.L' follows a power law in 'start.mean.ug.P.L' (R\u00b2 = 0.995 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
