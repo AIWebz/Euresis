@@ -6503,3 +6503,4 @@
 - 2026-11-27 23:56 FINDING (confirmed on held-out rows): In 'Small specimen fatigue crack growth rate data for as-built DED Inconel 718' (Zenodo, doi 10.5281/zenodo.21264501): 'f_closed(Hz)' is linear in 'sigma_tip(MPa)' (R² = 0.926 on the discovery half); held-out R² = 0.918 [emp-663454498f17]
 - 2026-11-27 23:56 FINDING (confirmed on held-out rows): In 'Small specimen fatigue crack growth rate data for as-built DED Inconel 718' (Zenodo, doi 10.5281/zenodo.21264501): 'dU_Tot/dN(J/cyc)' follows a power law in 'da/dn(m/cycle)' (R² = 0.987 on the discovery half); held-out R² = 0.970 [emp-8624ec9cd95a]
 - 2026-11-27 23:57 data feeds: 38593 datasets analysed so far, 5678 confirmed findings
+- 2026-11-28 00:59 data feeds: online
