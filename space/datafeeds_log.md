@@ -6535,3 +6535,4 @@
 - 2026-11-28 02:51 FINDING (confirmed on held-out rows): In 'Data from: Phosphorus limitation does not drive loss of bony lateral plates in freshwater ' (Zenodo, doi 10.5061/dryad.stqjq2c1d): 'weight.mg' grows exponentially in 'ln.SL' (R² = 0.995 on the discovery half); held-out R² = 0.995 [emp-551c9d133313]
 - 2026-11-28 02:51 FINDING (confirmed on held-out rows): In 'Data from: Phosphorus limitation does not drive loss of bony lateral plates in freshwater ' (Zenodo, doi 10.5061/dryad.stqjq2c1d): 'end.mean.ug.P.L' follows a power law in 'start.mean.ug.P.L' (R² = 0.995 on the discovery half); held-out R² = 0.996 [emp-37daa3c6d826]
 - 2026-11-28 02:51 data feeds: 38854 datasets analysed so far, 5704 confirmed findings
+- 2026-11-28 03:37 data feeds: online
