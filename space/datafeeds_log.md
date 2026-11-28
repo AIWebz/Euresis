@@ -6528,3 +6528,4 @@
 - 2026-11-28 01:45 FINDING (confirmed on held-out rows): In 'Data from: Mitonuclear interactions impact aerobic metabolism in hybrids and may explain m' (Zenodo, doi 10.5061/dryad.m37pvmd9v): 'AsTM_tlength' is linear in 'ETSII_tlength' (R² = 0.962 on the discovery half); held-out R² = 0.952 [emp-82a67b76f117]
 - 2026-11-28 01:45 FINDING (confirmed on held-out rows): In 'Data from: Mitonuclear interactions impact aerobic metabolism in hybrids and may explain m' (Zenodo, doi 10.5061/dryad.m37pvmd9v): 'OSperc' is linear in 'ODav' (R² = 0.977 on the discovery half); held-out R² = 0.942 [emp-cf1ba1105cff]
 - 2026-11-28 01:46 data feeds: 38762 datasets analysed so far, 5699 confirmed findings
+- 2026-11-28 02:48 data feeds: online
