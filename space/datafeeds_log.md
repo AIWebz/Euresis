@@ -6506,3 +6506,5 @@
 - 2026-11-28 00:59 data feeds: online
 - 2026-11-28 01:00 FINDING (confirmed on held-out rows): In 'Data from: Mechanisms of thermal adaptation and evolutionary potential of conspecific popu' (Zenodo, doi 10.5061/dryad.s04ng): 'length (cm)' is linear in 'weight (g)' (R² = 0.930 on the discovery half); held-out R² = 0.860 [emp-39627753ed79]
 - 2026-11-28 01:00 FINDING (confirmed on held-out rows): In 'Behavioural modification of range-extending coral reef fishes in temperate ecosystems' (Zenodo, doi 10.5061/dryad.fj6q573vv): 'denTot_1000m2' is linear in 'denM_1000m2' (R² = 0.941 on the discovery half); held-out R² = 0.868 [emp-13cc15a79d69]
+- 2026-11-28 01:01 FINDING (confirmed on held-out rows): In 'Ecological Drivers of Invasive Lionfish (Pterois volitans and Pterois miles) Distribution ' (Zenodo, doi 10.5281/zenodo.2602826): 'mean' is linear in 'sum' (R² = 0.969 on the discovery half); held-out R² = 0.963 [emp-1e04dec71603]
+- 2026-11-28 01:02 data feeds: 38667 datasets analysed so far, 5681 confirmed findings
