@@ -4463447,5 +4463447,221 @@
   "statement": "Octal game 0.1101146 is completely solved: its Grundy values are periodic with pre-period 447 and period 202 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.sj179",
+   "held_out_r2": 0.9635,
+   "held_out_rows": 3727,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-88165f45faa6",
+  "kind": "empirical",
+  "novelty": "MODEL OUTPUT: the dataset is simulated/model output, so its relations reflect the model's own equations, not new observations of nature",
+  "payload": {
+   "dataset": "197084aba6a4e711.csv",
+   "doi": "10.5061/dryad.sj179",
+   "form": "linear",
+   "params": [
+    -0.04313225370580107,
+    -0.08358396203801596
+   ],
+   "seed": 2321335487,
+   "x": "Overtone-normalized frequency change for thirteenth overtone, Delta f_13/13 (Hz)",
+   "y": "Dissipation change for thirteenth overtone (a.u.)"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: An experimental study of the putative mechanism of a synthetic autonomous rotar' (Zenodo, doi 10.5061/dryad.sj179): 'Dissipation change for thirteenth overtone (a.u.)' is linear in 'Overtone-normalized frequency change for thirteenth overtone, Delta f_13/13 (Hz)' (R\u00b2 = 0.963 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.g886d9v",
+   "held_out_r2": 0.9055,
+   "held_out_rows": 31,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-d0092a519b7c",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "bd80cbc3f01bf909.csv",
+   "doi": "10.5061/dryad.g886d9v",
+   "form": "power law",
+   "params": [
+    4.583722088119398,
+    0.9004275907179818
+   ],
+   "seed": 1597746962,
+   "x": "discharge",
+   "y": "NO3.Flux.kgd"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Organic matter and nutrient inputs from large wildlife influence ecosystem func' (Zenodo, doi 10.5061/dryad.g886d9v): 'NO3.Flux.kgd' follows a power law in 'discharge' (R\u00b2 = 0.913 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.g886d9v",
+   "held_out_r2": 0.2607,
+   "held_out_rows": 31,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-00c586222c5b",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "bd80cbc3f01bf909.csv",
+   "doi": "10.5061/dryad.g886d9v",
+   "form": "linear",
+   "params": [
+    -220.1402229491616,
+    0.1395412053913173
+   ],
+   "seed": 1597746962,
+   "x": "DOC.Flux.kgd",
+   "y": "TSS.mgL"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Organic matter and nutrient inputs from large wildlife influence ecosystem func' (Zenodo, doi 10.5061/dryad.g886d9v): 'TSS.mgL' is linear in 'DOC.Flux.kgd' (R\u00b2 = 0.907 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.g886d9v",
+   "held_out_r2": 0.9481,
+   "held_out_rows": 31,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-79181490ab12",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "bd80cbc3f01bf909.csv",
+   "doi": "10.5061/dryad.g886d9v",
+   "form": "power law",
+   "params": [
+    -1.389589861200991,
+    0.9047143951346649
+   ],
+   "seed": 1597746962,
+   "x": "TSS.mgL",
+   "y": "AFDM.mgL"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Organic matter and nutrient inputs from large wildlife influence ecosystem func' (Zenodo, doi 10.5061/dryad.g886d9v): 'AFDM.mgL' follows a power law in 'TSS.mgL' (R\u00b2 = 0.965 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.g886d9v",
+   "held_out_r2": 0.938,
+   "held_out_rows": 41,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-cff94524b4b0",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "2a52aae0c2c5916d.csv",
+   "doi": "10.5061/dryad.g886d9v",
+   "form": "power law",
+   "params": [
+    -2.0611536641184913,
+    0.9560243181973338
+   ],
+   "seed": 3876520288,
+   "x": "hippo post",
+   "y": "adj hippo prop rem"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Organic matter and nutrient inputs from large wildlife influence ecosystem func' (Zenodo, doi 10.5061/dryad.g886d9v): 'adj hippo prop rem' follows a power law in 'hippo post' (R\u00b2 = 0.953 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.g886d9v",
+   "held_out_r2": 0.938,
+   "held_out_rows": 41,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-182e1685cf55",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "2a52aae0c2c5916d.csv",
+   "doi": "10.5061/dryad.g886d9v",
+   "form": "power law",
+   "params": [
+    2.5440165217728086,
+    0.9560243183459648
+   ],
+   "seed": 3876520288,
+   "x": "hippo post",
+   "y": "adj hippo pct rem"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Organic matter and nutrient inputs from large wildlife influence ecosystem func' (Zenodo, doi 10.5061/dryad.g886d9v): 'adj hippo pct rem' follows a power law in 'hippo post' (R\u00b2 = 0.953 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.g886d9v",
+   "held_out_r2": 0.938,
+   "held_out_rows": 41,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b5567c902d7a",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "2a52aae0c2c5916d.csv",
+   "doi": "10.5061/dryad.g886d9v",
+   "form": "logarithmic",
+   "params": [
+    -2.0611536640932036,
+    0.9560243181748262
+   ],
+   "seed": 3876520288,
+   "x": "hippo post",
+   "y": "ln hippo prop rem"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Organic matter and nutrient inputs from large wildlife influence ecosystem func' (Zenodo, doi 10.5061/dryad.g886d9v): 'ln hippo prop rem' grows logarithmically in 'hippo post' (R\u00b2 = 0.953 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.g886d9v",
+   "held_out_r2": 0.9233,
+   "held_out_rows": 41,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-a6d8d491d129",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "2a52aae0c2c5916d.csv",
+   "doi": "10.5061/dryad.g886d9v",
+   "form": "power law",
+   "params": [
+    4.707121460697627,
+    0.9479472100836357
+   ],
+   "seed": 3876520288,
+   "x": "hippo prop rem",
+   "y": "adj hippo pct rem"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Organic matter and nutrient inputs from large wildlife influence ecosystem func' (Zenodo, doi 10.5061/dryad.g886d9v): 'adj hippo pct rem' follows a power law in 'hippo prop rem' (R\u00b2 = 0.942 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
  }
 ]
