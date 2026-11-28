@@ -4454942,5 +4454942,842 @@
   "statement": "Octal game 0.1077122 is completely solved: its Grundy values are periodic with pre-period 18 and period 28 (Guy\u2013Smith periodicity theorem)",
   "status": "proved",
   "verifier": "guy-smith-periodicity"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7406389",
+   "held_out_r2": -0.042,
+   "held_out_rows": 174,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-57d2be282677",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "66768a9c94a70892.csv",
+   "doi": "10.5281/zenodo.7406389",
+   "form": "power law",
+   "params": [
+    -0.0395413729682745,
+    0.830406336551385
+   ],
+   "seed": 3357143258,
+   "x": "FmPrime",
+   "y": "FoPrime"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Screen of Arabidopsis mutants homologous to Cowpea GWAS peaks' (Zenodo, doi 10.5281/zenodo.7406389): 'FoPrime' follows a power law in 'FmPrime' (R\u00b2 = 0.947 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7406389",
+   "held_out_r2": 0.9395,
+   "held_out_rows": 128,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-2500af758df3",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "cf1e236ad35f31c5.csv",
+   "doi": "10.5281/zenodo.7406389",
+   "form": "power law",
+   "params": [
+    0.2047479323061151,
+    0.9286076649839182
+   ],
+   "seed": 3598412565,
+   "x": "Weight.After.08.11.2022",
+   "y": "Weight.Before.10.11.2022"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Screen of Arabidopsis mutants homologous to Cowpea GWAS peaks' (Zenodo, doi 10.5281/zenodo.7406389): 'Weight.Before.10.11.2022' follows a power law in 'Weight.After.08.11.2022' (R\u00b2 = 0.952 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7406389",
+   "held_out_r2": 0.9471,
+   "held_out_rows": 128,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-5c813b229bce",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "cf1e236ad35f31c5.csv",
+   "doi": "10.5281/zenodo.7406389",
+   "form": "exponential",
+   "params": [
+    3.407124206427612,
+    0.009627918413043704
+   ],
+   "seed": 3598412565,
+   "x": "Weight.After.08.11.2022",
+   "y": "Weight.Before.12.11.2022"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Screen of Arabidopsis mutants homologous to Cowpea GWAS peaks' (Zenodo, doi 10.5281/zenodo.7406389): 'Weight.Before.12.11.2022' grows exponentially in 'Weight.After.08.11.2022' (R\u00b2 = 0.954 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7406389",
+   "held_out_r2": 0.9174,
+   "held_out_rows": 128,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-add64a71a315",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "cf1e236ad35f31c5.csv",
+   "doi": "10.5281/zenodo.7406389",
+   "form": "exponential",
+   "params": [
+    3.1526964565831337,
+    0.010810926844264386
+   ],
+   "seed": 3598412565,
+   "x": "Weight.After.08.11.2022",
+   "y": "Weight.Before.14.11.2022"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Screen of Arabidopsis mutants homologous to Cowpea GWAS peaks' (Zenodo, doi 10.5281/zenodo.7406389): 'Weight.Before.14.11.2022' grows exponentially in 'Weight.After.08.11.2022' (R\u00b2 = 0.927 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7406389",
+   "held_out_r2": 0.9117,
+   "held_out_rows": 128,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f9433ef9f432",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "cf1e236ad35f31c5.csv",
+   "doi": "10.5281/zenodo.7406389",
+   "form": "power law",
+   "params": [
+    -2.00839348892608,
+    1.4382778637075506
+   ],
+   "seed": 3598412565,
+   "x": "Weight.Before.10.11.2022",
+   "y": "Weight.After.10.11.2022"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Screen of Arabidopsis mutants homologous to Cowpea GWAS peaks' (Zenodo, doi 10.5281/zenodo.7406389): 'Weight.After.10.11.2022' follows a power law in 'Weight.Before.10.11.2022' (R\u00b2 = 0.931 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7406389",
+   "held_out_r2": 0.9803,
+   "held_out_rows": 128,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-9feb3bd178d7",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "cf1e236ad35f31c5.csv",
+   "doi": "10.5281/zenodo.7406389",
+   "form": "power law",
+   "params": [
+    0.2845593434204627,
+    0.9174943228452238
+   ],
+   "seed": 3598412565,
+   "x": "Weight.After.10.11.2022",
+   "y": "Weight.Before.12.11.2022"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Screen of Arabidopsis mutants homologous to Cowpea GWAS peaks' (Zenodo, doi 10.5281/zenodo.7406389): 'Weight.Before.12.11.2022' follows a power law in 'Weight.After.10.11.2022' (R\u00b2 = 0.983 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7406389",
+   "held_out_r2": 0.9653,
+   "held_out_rows": 128,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-f21f31f0b6a0",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "cf1e236ad35f31c5.csv",
+   "doi": "10.5281/zenodo.7406389",
+   "form": "power law",
+   "params": [
+    -0.3894869049091143,
+    1.0376459421882884
+   ],
+   "seed": 3598412565,
+   "x": "Weight.After.10.11.2022",
+   "y": "Weight.Before.14.11.2022"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Screen of Arabidopsis mutants homologous to Cowpea GWAS peaks' (Zenodo, doi 10.5281/zenodo.7406389): 'Weight.Before.14.11.2022' follows a power law in 'Weight.After.10.11.2022' (R\u00b2 = 0.968 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7406389",
+   "held_out_r2": 0.9519,
+   "held_out_rows": 128,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4fd7d6185a79",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "cf1e236ad35f31c5.csv",
+   "doi": "10.5281/zenodo.7406389",
+   "form": "exponential",
+   "params": [
+    3.5550092747612982,
+    0.010759621358510291
+   ],
+   "seed": 3598412565,
+   "x": "Weight.Before.12.11.2022",
+   "y": "Weight.After.12.11.2022"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Screen of Arabidopsis mutants homologous to Cowpea GWAS peaks' (Zenodo, doi 10.5281/zenodo.7406389): 'Weight.After.12.11.2022' grows exponentially in 'Weight.Before.12.11.2022' (R\u00b2 = 0.957 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7406389",
+   "held_out_r2": 0.9145,
+   "held_out_rows": 128,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-4c71a616de19",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "cf1e236ad35f31c5.csv",
+   "doi": "10.5281/zenodo.7406389",
+   "form": "exponential",
+   "params": [
+    3.512489657299298,
+    0.010878718267381059
+   ],
+   "seed": 3598412565,
+   "x": "Weight.Before.12.11.2022",
+   "y": "Weight.After.14.11.2022"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Screen of Arabidopsis mutants homologous to Cowpea GWAS peaks' (Zenodo, doi 10.5281/zenodo.7406389): 'Weight.After.14.11.2022' grows exponentially in 'Weight.Before.12.11.2022' (R\u00b2 = 0.929 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7406389",
+   "held_out_r2": 0.9671,
+   "held_out_rows": 128,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-7326469d70aa",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "cf1e236ad35f31c5.csv",
+   "doi": "10.5281/zenodo.7406389",
+   "form": "power law",
+   "params": [
+    0.31411695318061833,
+    0.9009568921896457
+   ],
+   "seed": 3598412565,
+   "x": "Weight.After.12.11.2022",
+   "y": "Weight.Before.14.11.2022"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Screen of Arabidopsis mutants homologous to Cowpea GWAS peaks' (Zenodo, doi 10.5281/zenodo.7406389): 'Weight.Before.14.11.2022' follows a power law in 'Weight.After.12.11.2022' (R\u00b2 = 0.964 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7406389",
+   "held_out_r2": 0.9294,
+   "held_out_rows": 128,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-fb354aa4e20b",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "cf1e236ad35f31c5.csv",
+   "doi": "10.5281/zenodo.7406389",
+   "form": "exponential",
+   "params": [
+    3.6647182987539684,
+    0.010418338060089833
+   ],
+   "seed": 3598412565,
+   "x": "Weight.Before.14.11.2022",
+   "y": "Weight.After.14.11.2022"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Screen of Arabidopsis mutants homologous to Cowpea GWAS peaks' (Zenodo, doi 10.5281/zenodo.7406389): 'Weight.After.14.11.2022' grows exponentially in 'Weight.Before.14.11.2022' (R\u00b2 = 0.935 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7406389",
+   "held_out_r2": 0.9278,
+   "held_out_rows": 64,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-8e93d4abe427",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "aafee088626a4e12.csv",
+   "doi": "10.5281/zenodo.7406389",
+   "form": "linear",
+   "params": [
+    56.60930643423466,
+    0.6225943667778913
+   ],
+   "seed": 3947966764,
+   "x": "Target.Weight",
+   "y": "After.W.20.11.2022"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Screen of Arabidopsis mutants homologous to Cowpea GWAS peaks' (Zenodo, doi 10.5281/zenodo.7406389): 'After.W.20.11.2022' is linear in 'Target.Weight' (R\u00b2 = 0.940 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7406389",
+   "held_out_r2": 0.9382,
+   "held_out_rows": 64,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-ab855d45b7e2",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "aafee088626a4e12.csv",
+   "doi": "10.5281/zenodo.7406389",
+   "form": "linear",
+   "params": [
+    27.486336803994284,
+    0.8276810500774178
+   ],
+   "seed": 3947966764,
+   "x": "Target.Weight",
+   "y": "After.W.23.11.2022"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Screen of Arabidopsis mutants homologous to Cowpea GWAS peaks' (Zenodo, doi 10.5281/zenodo.7406389): 'After.W.23.11.2022' is linear in 'Target.Weight' (R\u00b2 = 0.964 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7406389",
+   "held_out_r2": 0.9028,
+   "held_out_rows": 64,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-2c58070a9f68",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "aafee088626a4e12.csv",
+   "doi": "10.5281/zenodo.7406389",
+   "form": "exponential",
+   "params": [
+    3.961179585379296,
+    0.005746498178684378
+   ],
+   "seed": 3947966764,
+   "x": "Target.Weight",
+   "y": "Before.W.26.11.2022"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Screen of Arabidopsis mutants homologous to Cowpea GWAS peaks' (Zenodo, doi 10.5281/zenodo.7406389): 'Before.W.26.11.2022' grows exponentially in 'Target.Weight' (R\u00b2 = 0.921 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7406389",
+   "held_out_r2": 0.9506,
+   "held_out_rows": 64,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-bc02ba3f8178",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "aafee088626a4e12.csv",
+   "doi": "10.5281/zenodo.7406389",
+   "form": "exponential",
+   "params": [
+    3.8110462269165524,
+    0.0068904462337361656
+   ],
+   "seed": 3947966764,
+   "x": "Target.Weight",
+   "y": "Before.W.28.11.2022"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Screen of Arabidopsis mutants homologous to Cowpea GWAS peaks' (Zenodo, doi 10.5281/zenodo.7406389): 'Before.W.28.11.2022' grows exponentially in 'Target.Weight' (R\u00b2 = 0.957 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7406389",
+   "held_out_r2": 0.9543,
+   "held_out_rows": 64,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-11c8cdb445d5",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "aafee088626a4e12.csv",
+   "doi": "10.5281/zenodo.7406389",
+   "form": "power law",
+   "params": [
+    -0.9702545847363185,
+    1.1550655716074887
+   ],
+   "seed": 3947966764,
+   "x": "After.W.20.11.2022",
+   "y": "Before.W.26.11.2022"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Screen of Arabidopsis mutants homologous to Cowpea GWAS peaks' (Zenodo, doi 10.5281/zenodo.7406389): 'Before.W.26.11.2022' follows a power law in 'After.W.20.11.2022' (R\u00b2 = 0.942 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7406389",
+   "held_out_r2": 0.9457,
+   "held_out_rows": 64,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-06374307b109",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "aafee088626a4e12.csv",
+   "doi": "10.5281/zenodo.7406389",
+   "form": "exponential",
+   "params": [
+    3.2433412133679003,
+    0.010626907022501611
+   ],
+   "seed": 3947966764,
+   "x": "After.W.20.11.2022",
+   "y": "Before.W.28.11.2022"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Screen of Arabidopsis mutants homologous to Cowpea GWAS peaks' (Zenodo, doi 10.5281/zenodo.7406389): 'Before.W.28.11.2022' grows exponentially in 'After.W.20.11.2022' (R\u00b2 = 0.939 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7406389",
+   "held_out_r2": 0.979,
+   "held_out_rows": 64,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b2048a4e0396",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "aafee088626a4e12.csv",
+   "doi": "10.5281/zenodo.7406389",
+   "form": "power law",
+   "params": [
+    0.5419229939139925,
+    0.8520223556346416
+   ],
+   "seed": 3947966764,
+   "x": "After.W.23.11.2022",
+   "y": "Before.W.26.11.2022"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Screen of Arabidopsis mutants homologous to Cowpea GWAS peaks' (Zenodo, doi 10.5281/zenodo.7406389): 'Before.W.26.11.2022' follows a power law in 'After.W.23.11.2022' (R\u00b2 = 0.968 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7406389",
+   "held_out_r2": 0.9589,
+   "held_out_rows": 64,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b5fc69d076da",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "aafee088626a4e12.csv",
+   "doi": "10.5281/zenodo.7406389",
+   "form": "power law",
+   "params": [
+    -0.19549782972314161,
+    1.002365530508651
+   ],
+   "seed": 3947966764,
+   "x": "After.W.23.11.2022",
+   "y": "Before.W.28.11.2022"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Screen of Arabidopsis mutants homologous to Cowpea GWAS peaks' (Zenodo, doi 10.5281/zenodo.7406389): 'Before.W.28.11.2022' follows a power law in 'After.W.23.11.2022' (R\u00b2 = 0.968 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7406389",
+   "held_out_r2": 0.8534,
+   "held_out_rows": 64,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-c69865b6b6c3",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "aafee088626a4e12.csv",
+   "doi": "10.5281/zenodo.7406389",
+   "form": "linear",
+   "params": [
+    12.546235104132114,
+    0.9985529998567092
+   ],
+   "seed": 3947966764,
+   "x": "Before.W.24.11.2022",
+   "y": "After.W.24.11.2022"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Screen of Arabidopsis mutants homologous to Cowpea GWAS peaks' (Zenodo, doi 10.5281/zenodo.7406389): 'After.W.24.11.2022' is linear in 'Before.W.24.11.2022' (R\u00b2 = 0.989 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7406389",
+   "held_out_r2": 0.9463,
+   "held_out_rows": 64,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-e2c06a097d06",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "aafee088626a4e12.csv",
+   "doi": "10.5281/zenodo.7406389",
+   "form": "logarithmic",
+   "params": [
+    -597.0384235284596,
+    154.6638953088125
+   ],
+   "seed": 3947966764,
+   "x": "Before.W.26.11.2022",
+   "y": "After.W.26.11.2022"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Screen of Arabidopsis mutants homologous to Cowpea GWAS peaks' (Zenodo, doi 10.5281/zenodo.7406389): 'After.W.26.11.2022' grows logarithmically in 'Before.W.26.11.2022' (R\u00b2 = 0.944 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7406389",
+   "held_out_r2": 0.9085,
+   "held_out_rows": 64,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-dd2455d4e2b4",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "aafee088626a4e12.csv",
+   "doi": "10.5281/zenodo.7406389",
+   "form": "logarithmic",
+   "params": [
+    -631.1339987659939,
+    161.78878288013163
+   ],
+   "seed": 3947966764,
+   "x": "Before.W.26.11.2022",
+   "y": "After.W.28.11.2022"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Screen of Arabidopsis mutants homologous to Cowpea GWAS peaks' (Zenodo, doi 10.5281/zenodo.7406389): 'After.W.28.11.2022' grows logarithmically in 'Before.W.26.11.2022' (R\u00b2 = 0.927 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7406389",
+   "held_out_r2": 0.9789,
+   "held_out_rows": 64,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-31e110d77d5e",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "aafee088626a4e12.csv",
+   "doi": "10.5281/zenodo.7406389",
+   "form": "power law",
+   "params": [
+    0.6001724319635715,
+    0.8454386764765477
+   ],
+   "seed": 3947966764,
+   "x": "After.W.26.11.2022",
+   "y": "Before.W.28.11.2022"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Screen of Arabidopsis mutants homologous to Cowpea GWAS peaks' (Zenodo, doi 10.5281/zenodo.7406389): 'Before.W.28.11.2022' follows a power law in 'After.W.26.11.2022' (R\u00b2 = 0.974 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.7406389",
+   "held_out_r2": 0.9544,
+   "held_out_rows": 64,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-7cf2fb6dc3b3",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "aafee088626a4e12.csv",
+   "doi": "10.5281/zenodo.7406389",
+   "form": "logarithmic",
+   "params": [
+    -528.3131532973988,
+    140.04071130020222
+   ],
+   "seed": 3947966764,
+   "x": "Before.W.28.11.2022",
+   "y": "After.W.28.11.2022"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Screen of Arabidopsis mutants homologous to Cowpea GWAS peaks' (Zenodo, doi 10.5281/zenodo.7406389): 'After.W.28.11.2022' grows logarithmically in 'Before.W.28.11.2022' (R\u00b2 = 0.961 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.12162127",
+   "held_out_r2": 0.9648,
+   "held_out_rows": 440,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-8ab4561517b5",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "579da3176f870d88.csv",
+   "doi": "10.5281/zenodo.12162127",
+   "form": "power law",
+   "params": [
+    0.45660463915802885,
+    0.5351485951310768
+   ],
+   "seed": 2796399847,
+   "x": "Resistivity",
+   "y": "Effective_length"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Type-A grounding system effective length database' (Zenodo, doi 10.5281/zenodo.12162127): 'Effective_length' follows a power law in 'Resistivity' (R\u00b2 = 0.965 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.7gc7k",
+   "held_out_r2": 0.9991,
+   "held_out_rows": 10000,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-b7dc2bf1c6d8",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "f74d3b0454a78898.csv",
+   "doi": "10.5061/dryad.7gc7k",
+   "form": "exponential",
+   "params": [
+    -0.4318762873660442,
+    0.06360291656452255
+   ],
+   "seed": 3098021678,
+   "x": "Temp",
+   "y": "esat"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Epiphytes improve host plant water use by microenvironment modification' (Zenodo, doi 10.5061/dryad.7gc7k): 'esat' grows exponentially in 'Temp' (R\u00b2 = 0.999 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.7gc7k",
+   "held_out_r2": 0.9872,
+   "held_out_rows": 90,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-11079446c421",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "75218f9678ec205e.csv",
+   "doi": "10.5061/dryad.7gc7k",
+   "form": "linear",
+   "params": [
+    0.6378571112085679,
+    0.9055483889640784
+   ],
+   "seed": 86851269,
+   "x": "Wetmass",
+   "y": "Drymass"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Epiphytes improve host plant water use by microenvironment modification' (Zenodo, doi 10.5061/dryad.7gc7k): 'Drymass' is linear in 'Wetmass' (R\u00b2 = 0.983 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.7gc7k",
+   "held_out_r2": 0.9102,
+   "held_out_rows": 6621,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-00cad8a424d3",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "fb69d3308e071fab.csv",
+   "doi": "10.5061/dryad.7gc7k",
+   "form": "linear",
+   "params": [
+    -0.08708013667046162,
+    0.8716058266401939
+   ],
+   "seed": 642318340,
+   "x": "iii_avg",
+   "y": "xx_avg"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Epiphytes improve host plant water use by microenvironment modification' (Zenodo, doi 10.5061/dryad.7gc7k): 'xx_avg' is linear in 'iii_avg' (R\u00b2 = 0.910 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.7gc7k",
+   "held_out_r2": 0.9043,
+   "held_out_rows": 6621,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-196ec86dfd52",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "fb69d3308e071fab.csv",
+   "doi": "10.5061/dryad.7gc7k",
+   "form": "logarithmic",
+   "params": [
+    0.38945178881847614,
+    0.14066204269307847
+   ],
+   "seed": 642318340,
+   "x": "xix_avg",
+   "y": "xx_avg"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Epiphytes improve host plant water use by microenvironment modification' (Zenodo, doi 10.5061/dryad.7gc7k): 'xx_avg' grows logarithmically in 'xix_avg' (R\u00b2 = 0.902 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5061/dryad.7gc7k",
+   "held_out_r2": 0.889,
+   "held_out_rows": 6621,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-8d2c293dd8f7",
+  "kind": "empirical",
+  "novelty": "empirical regularity in a published dataset; probably known to its authors \u2014 check the linked paper; units unknown, so not a law until interpreted",
+  "payload": {
+   "dataset": "fb69d3308e071fab.csv",
+   "doi": "10.5061/dryad.7gc7k",
+   "form": "linear",
+   "params": [
+    0.038704365275032536,
+    1.6812317101776806
+   ],
+   "seed": 642318340,
+   "x": "xx_avg",
+   "y": "xxi_avg"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: Epiphytes improve host plant water use by microenvironment modification' (Zenodo, doi 10.5061/dryad.7gc7k): 'xxi_avg' is linear in 'xx_avg' (R\u00b2 = 0.901 on the discovery half)",
+  "status": "verified-numeric",
+  "verifier": "held-out-replication"
+ },
+ {
+  "evidence": {
+   "doi": "10.5281/zenodo.24110862",
+   "held_out_r2": 0.8321,
+   "held_out_rows": 35,
+   "note": "empirical confirmation on held-out rows \u2014 evidence, not proof"
+  },
+  "id": "emp-16da53901eec",
+  "kind": "empirical",
+  "novelty": "not checked",
+  "payload": {
+   "dataset": "b1a1e5709c7d8bc4.csv",
+   "doi": "10.5281/zenodo.24110862",
+   "form": "linear",
+   "params": [
+    30.462489642720016,
+    1.0394590045572616
+   ],
+   "seed": 4125652007,
+   "x": "Abun_Above",
+   "y": "Abun_Combined"
+  },
+  "source": "datafeeds.py",
+  "statement": "In 'Data from: One size does not fit all: Effects of green roof characteristics on above- and ' (Zenodo, doi 10.5281/zenodo.24110862): 'Abun_Combined' is linear in 'Abun_Above' (R\u00b2 = 0.986 on the discovery half)",
+  "status": "refuted",
+  "verifier": "held-out-replication"
  }
 ]
