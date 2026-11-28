@@ -9366,3 +9366,5 @@
 - 2026-11-28 06:57 round 8504: auction with a reserve price
 - 2026-11-28 06:58 round 8505: two-body decay
 - 2026-11-28 07:01 round 8506: collision
+- 2026-11-28 07:03 round 8507: driven oscillator
+- 2026-11-28 07:05 segment end: 8507 rounds, 5 discoveries, 2 known laws rediscovered

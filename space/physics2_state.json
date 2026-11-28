@@ -119986,6 +119986,36 @@
    "family": "two-body decay",
    "expr": "sqrt((1 - (a - b)**2)*(1 - (a + b)**2)/4 + (a**2 - b**2 + 1)**2)/sqrt((1 - (a - b)**2)*(1 - (a + b)*",
    "why": "affine combination of known quantities (momentum of each product / (Mc), Lorentz Factor Ratio of Products [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "e*(m + 1)/(m**2 + 1) + 1",
+   "why": "affine combination of known quantities (target speed / initial speed, Coefficient of Restitution Adjusted by Mass Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "collision",
+   "expr": "(-e*m + 1)/(e*m + 1)",
+   "why": "affine combination of known quantities (target speed / initial speed, velocity ratio of projectile to target after collision [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(4*r**2*z**2 + (1 - r**2)**2)/sqrt(4*z**4 - 2*z**2 + 1)",
+   "why": "affine combination of known quantities (amplitude / static deflection, Dynamic Magnification Factor [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "1 + sqrt(4*r**2*z**2 + 1)/(2*r*z*sqrt(4*r**2*z**2 + (1 - r**2)**2))",
+   "why": "affine combination of known quantities (amplitude / static deflection, Power Amplification Factor [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(4*r**2*z**2 + (1 - r**2)**2)/sqrt(4*z**2 + 1)",
+   "why": "affine combination of known quantities (amplitude / static deflection, Mechanical Impedance Ratio [model-proposed; physical meaning unverified])"
+  },
+  {
+   "family": "driven oscillator",
+   "expr": "sqrt(4*z**2 + 1) - 1",
+   "why": "affine combination of known quantities (amplitude / static deflection, Resonance Width [model-proposed; physical meaning unverified])"
   }
  ],
  "tried": [
@@ -149666,7 +149696,7 @@
    "k": "2"
   }
  ],
- "rounds": 8505,
+ "rounds": 8507,
  "discoveries": [
   {
    "claim": "phy-3ee0aeffbd83",
