@@ -6639,3 +6639,4 @@
 - 2026-11-28 12:22 FINDING (confirmed on held-out rows): In 'Data and code for: Rocky Mountain subalpine forests now burning more than any time in rece' (Zenodo, doi 10.5061/dryad.rfj6q579n): 'char.peak' is linear in 'char.acc' (R² = 0.937 on the discovery half); held-out R² = 0.943 [emp-274149cc99cb]
 - 2026-11-28 12:22 data feeds: 39321 datasets analysed so far, 5783 confirmed findings
 - 2026-11-28 13:05 data feeds: online
+- 2026-11-28 13:05 data feeds: 39339 datasets analysed so far, 5783 confirmed findings
