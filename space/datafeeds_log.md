@@ -6545,3 +6545,4 @@
 - 2026-11-28 03:39 FINDING (confirmed on held-out rows): In 'The Economic Bomb: A Strategic Financial Warfare Tactic' (Zenodo, doi 10.17632/xn9ws8x6j7.1): 'Total_Holdings' grows exponentially in 'Fidelity_FBTC' (R² = 0.941 on the discovery half); held-out R² = 0.943 [emp-a764316d1bb0]
 - 2026-11-28 03:40 data feeds: 38902 datasets analysed so far, 5711 confirmed findings
 - 2026-11-28 04:44 data feeds: online
+- 2026-11-28 04:46 data feeds: 38902 datasets analysed so far, 5711 confirmed findings
